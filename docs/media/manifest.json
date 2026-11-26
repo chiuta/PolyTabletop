@@ -18,6 +18,44 @@
   "font_px": 16,
   "capture": "polytabletop play 66 --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "aadupuli": {
+  "kind": "terminal",
+  "frames": 46,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 45,
+  "terminal_lines": 600,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play aadupuli --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "all_fours": {
+  "kind": "terminal",
+  "frames": 135,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 134,
+  "terminal_lines": 1151,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play all_fours --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "amazoane": {
   "kind": "terminal",
   "frames": 83,
@@ -36,6 +74,25 @@
   "shows_hidden": true,
   "font_px": 17,
   "capture": "polytabletop play amazoane --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "ancora": {
+  "kind": "terminal",
+  "frames": 37,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 36,
+  "terminal_lines": 295,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play ancora --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "apus": {
   "kind": "terminal",
@@ -75,6 +132,25 @@
   "font_px": 12,
   "capture": "polytabletop play arhipelag --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "arhiva_abisala": {
+  "kind": "terminal",
+  "frames": 73,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 72,
+  "terminal_lines": 1294,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play arhiva_abisala --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "artificii": {
   "kind": "terminal",
   "frames": 73,
@@ -93,6 +169,25 @@
   "shows_hidden": false,
   "font_px": 17,
   "capture": "polytabletop play artificii --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "ashtachamma": {
+  "kind": "terminal",
+  "frames": 381,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 380,
+  "terminal_lines": 5144,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play ashtachamma --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "ayo": {
   "kind": "terminal",
@@ -151,6 +246,25 @@
   "font_px": 17,
   "capture": "polytabletop play baloot --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "bao": {
+  "kind": "terminal",
+  "frames": 130,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 129,
+  "terminal_lines": 1172,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play bao --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "barbut": {
   "kind": "terminal",
   "frames": 173,
@@ -207,6 +321,44 @@
   "shows_hidden": false,
   "font_px": 17,
   "capture": "polytabletop play belote --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "bid_whist": {
+  "kind": "terminal",
+  "frames": 68,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 67,
+  "terminal_lines": 566,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play bid_whist --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "bigtwo": {
+  "kind": "terminal",
+  "frames": 145,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 144,
+  "terminal_lines": 1303,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play bigtwo --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "bile": {
   "kind": "terminal",
@@ -340,6 +492,63 @@
   "shows_hidden": false,
   "font_px": 17,
   "capture": "polytabletop play bufet --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "bunco": {
+  "kind": "terminal",
+  "frames": 282,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 281,
+  "terminal_lines": 1974,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 14,
+  "capture": "polytabletop play bunco --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "burako": {
+  "kind": "terminal",
+  "frames": 409,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 408,
+  "terminal_lines": 3689,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 12,
+  "capture": "polytabletop play burako --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "callbreak": {
+  "kind": "terminal",
+  "frames": 141,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 140,
+  "terminal_lines": 1305,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 15,
+  "capture": "polytabletop play callbreak --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "canasta": {
   "kind": "terminal",
@@ -550,6 +759,63 @@
   "font_px": 17,
   "capture": "polytabletop play chess --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "chicken_foot": {
+  "kind": "terminal",
+  "frames": 1504,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 1503,
+  "terminal_lines": 14460,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 12,
+  "capture": "polytabletop play chicken_foot --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "chinchon": {
+  "kind": "terminal",
+  "frames": 537,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 536,
+  "terminal_lines": 4835,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play chinchon --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "chkobba": {
+  "kind": "terminal",
+  "frames": 210,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 209,
+  "terminal_lines": 1692,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 12,
+  "capture": "polytabletop play chkobba --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "codru": {
   "kind": "terminal",
   "frames": 65,
@@ -645,6 +911,25 @@
   "font_px": 17,
   "capture": "polytabletop play connect4 --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "conquian": {
+  "kind": "terminal",
+  "frames": 138,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 137,
+  "terminal_lines": 1441,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play conquian --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "consiliul": {
   "kind": "terminal",
   "frames": 39,
@@ -702,6 +987,44 @@
   "font_px": 12,
   "capture": "polytabletop play coroana --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "courtpiece": {
+  "kind": "terminal",
+  "frames": 319,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 318,
+  "terminal_lines": 3025,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 12,
+  "capture": "polytabletop play courtpiece --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "crazy_eights": {
+  "kind": "terminal",
+  "frames": 252,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 251,
+  "terminal_lines": 2017,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play crazy_eights --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "cribbage": {
   "kind": "terminal",
   "frames": 142,
@@ -758,6 +1081,63 @@
   "shows_hidden": false,
   "font_px": 12,
   "capture": "polytabletop play cristale --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "crokinole": {
+  "kind": "terminal",
+  "frames": 145,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 144,
+  "terminal_lines": 3607,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 13,
+  "capture": "polytabletop play crokinole --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "crucea_de_cenusa": {
+  "kind": "terminal",
+  "frames": 52,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 51,
+  "terminal_lines": 921,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play crucea_de_cenusa --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "cuarenta": {
+  "kind": "terminal",
+  "frames": 111,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 110,
+  "terminal_lines": 915,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play cuarenta --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "culori": {
   "kind": "terminal",
@@ -835,6 +1215,25 @@
   "font_px": 13,
   "capture": "polytabletop play curieri --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "cursa_probelor": {
+  "kind": "terminal",
+  "frames": 40,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 39,
+  "terminal_lines": 1272,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play cursa_probelor --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "cuvantunic": {
   "kind": "terminal",
   "frames": 49,
@@ -853,6 +1252,44 @@
   "shows_hidden": false,
   "font_px": 16,
   "capture": "polytabletop play cuvantunic --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "daifugo": {
+  "kind": "terminal",
+  "frames": 160,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 159,
+  "terminal_lines": 1438,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play daifugo --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "dama": {
+  "kind": "terminal",
+  "frames": 131,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 130,
+  "terminal_lines": 1705,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 16,
+  "capture": "polytabletop play dama --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "dara": {
   "kind": "terminal",
@@ -987,6 +1424,25 @@
   "font_px": 17,
   "capture": "polytabletop play durak --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "epava_din_inelul_sapte": {
+  "kind": "terminal",
+  "frames": 50,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 49,
+  "terminal_lines": 887,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play epava_din_inelul_sapte --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "epoci": {
   "kind": "terminal",
   "frames": 39,
@@ -1005,6 +1461,25 @@
   "shows_hidden": false,
   "font_px": 12,
   "capture": "polytabletop play epoci --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "escoba": {
+  "kind": "terminal",
+  "frames": 294,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 293,
+  "terminal_lines": 2368,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 12,
+  "capture": "polytabletop play escoba --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "euchre": {
   "kind": "terminal",
@@ -1082,6 +1557,25 @@
   "font_px": 17,
   "capture": "polytabletop play fanorona --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "farkle": {
+  "kind": "terminal",
+  "frames": 239,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 238,
+  "terminal_lines": 1776,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play farkle --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "farul": {
   "kind": "terminal",
   "frames": 20,
@@ -1101,6 +1595,25 @@
   "font_px": 17,
   "capture": "polytabletop play farul --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "fiordul_gheatii_negre": {
+  "kind": "terminal",
+  "frames": 67,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 66,
+  "terminal_lines": 1201,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play fiordul_gheatii_negre --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "fitil": {
   "kind": "terminal",
   "frames": 39,
@@ -1119,6 +1632,25 @@
   "shows_hidden": false,
   "font_px": 13,
   "capture": "polytabletop play fitil --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "fivehundred": {
+  "kind": "terminal",
+  "frames": 276,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 275,
+  "terminal_lines": 2936,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 13,
+  "capture": "polytabletop play fivehundred --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "focare": {
   "kind": "terminal",
@@ -1195,6 +1727,44 @@
   "shows_hidden": false,
   "font_px": 17,
   "capture": "polytabletop play ganjifa --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "generala": {
+  "kind": "terminal",
+  "frames": 109,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 108,
+  "terminal_lines": 2071,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play generala --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "gin_rummy": {
+  "kind": "terminal",
+  "frames": 227,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 226,
+  "terminal_lines": 2023,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 15,
+  "capture": "polytabletop play gin_rummy --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "go": {
   "kind": "terminal",
@@ -1348,6 +1918,25 @@
   "font_px": 17,
   "capture": "polytabletop play hex --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "hokm": {
+  "kind": "terminal",
+  "frames": 271,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 270,
+  "terminal_lines": 2567,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 16,
+  "capture": "polytabletop play hokm --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "hotar": {
   "kind": "terminal",
   "frames": 90,
@@ -1366,6 +1955,25 @@
   "shows_hidden": false,
   "font_px": 12,
   "capture": "polytabletop play hotar --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "hotii_din_ceata": {
+  "kind": "terminal",
+  "frames": 53,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 52,
+  "terminal_lines": 934,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play hotii_din_ceata --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "hruba": {
   "kind": "terminal",
@@ -1386,6 +1994,25 @@
   "font_px": 12,
   "capture": "polytabletop play hruba --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "hus": {
+  "kind": "terminal",
+  "frames": 8,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 3.6,
+  "clip_frames": 8,
+  "moves": 7,
+  "terminal_lines": 74,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 16,
+  "capture": "polytabletop play hus --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "hwatu": {
   "kind": "terminal",
   "frames": 111,
@@ -1404,6 +2031,25 @@
   "shows_hidden": false,
   "font_px": 12,
   "capture": "polytabletop play hwatu --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "impletitura": {
+  "kind": "terminal",
+  "frames": 195,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 194,
+  "terminal_lines": 2342,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play impletitura --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "impostor": {
   "kind": "terminal",
@@ -1461,6 +2107,44 @@
   "shows_hidden": false,
   "font_px": 12,
   "capture": "polytabletop play insula --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "insula_celor_doua_luni": {
+  "kind": "terminal",
+  "frames": 52,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 51,
+  "terminal_lines": 922,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play insula_celor_doua_luni --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "itinerar": {
+  "kind": "terminal",
+  "frames": 348,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 347,
+  "terminal_lines": 5561,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play itinerar --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "izolare": {
   "kind": "terminal",
@@ -1537,6 +2221,25 @@
   "shows_hidden": true,
   "font_px": 17,
   "capture": "polytabletop play konane --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "liars_dice": {
+  "kind": "terminal",
+  "frames": 25,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 8.7,
+  "clip_frames": 25,
+  "moves": 24,
+  "terminal_lines": 199,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play liars_dice --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "linii": {
   "kind": "terminal",
@@ -1728,6 +2431,25 @@
   "font_px": 17,
   "capture": "polytabletop play mancala --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "mangala": {
+  "kind": "terminal",
+  "frames": 46,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 45,
+  "terminal_lines": 370,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play mangala --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "mastermind": {
   "kind": "terminal",
   "frames": 13,
@@ -1784,6 +2506,25 @@
   "shows_hidden": true,
   "font_px": 12,
   "capture": "polytabletop play miniaturi --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "mlastina_strigoilor": {
+  "kind": "terminal",
+  "frames": 40,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 39,
+  "terminal_lines": 726,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play mlastina_strigoilor --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "morabaraba": {
   "kind": "terminal",
@@ -1880,6 +2621,25 @@
   "font_px": 17,
   "capture": "polytabletop play mozaic --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "mutorere": {
+  "kind": "terminal",
+  "frames": 21,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 7.5,
+  "clip_frames": 21,
+  "moves": 20,
+  "terminal_lines": 191,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play mutorere --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "nave": {
   "kind": "terminal",
   "frames": 122,
@@ -1899,6 +2659,25 @@
   "font_px": 12,
   "capture": "polytabletop play nave --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "neon_si_rune": {
+  "kind": "terminal",
+  "frames": 49,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 48,
+  "terminal_lines": 866,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play neon_si_rune --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "nim": {
   "kind": "terminal",
   "frames": 10,
@@ -1917,6 +2696,44 @@
   "shows_hidden": true,
   "font_px": 17,
   "capture": "polytabletop play nim --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "noapte_de_catifea": {
+  "kind": "terminal",
+  "frames": 57,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 56,
+  "terminal_lines": 1023,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play noapte_de_catifea --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "okey": {
+  "kind": "terminal",
+  "frames": 46,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 45,
+  "terminal_lines": 416,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 12,
+  "capture": "polytabletop play okey --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "oprite": {
   "kind": "terminal",
@@ -1975,6 +2792,25 @@
   "font_px": 14,
   "capture": "polytabletop play ordine --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "oware": {
+  "kind": "terminal",
+  "frames": 153,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 152,
+  "terminal_lines": 1226,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play oware --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "pachisi": {
   "kind": "terminal",
   "frames": 123,
@@ -1993,6 +2829,25 @@
   "shows_hidden": true,
   "font_px": 17,
   "capture": "polytabletop play pachisi --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "padurea_sticlei": {
+  "kind": "terminal",
+  "frames": 48,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 47,
+  "terminal_lines": 848,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play padurea_sticlei --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "paigow": {
   "kind": "terminal",
@@ -2031,6 +2886,44 @@
   "shows_hidden": true,
   "font_px": 17,
   "capture": "polytabletop play pallanguzhi --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "parques": {
+  "kind": "terminal",
+  "frames": 106,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 105,
+  "terminal_lines": 850,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 16,
+  "capture": "polytabletop play parques --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "pasur": {
+  "kind": "terminal",
+  "frames": 160,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 159,
+  "terminal_lines": 1597,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play pasur --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "patru": {
   "kind": "terminal",
@@ -2108,6 +3001,63 @@
   "font_px": 15,
   "capture": "polytabletop play pica --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "pinochle": {
+  "kind": "terminal",
+  "frames": 244,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 243,
+  "terminal_lines": 2451,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play pinochle --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "pisti": {
+  "kind": "terminal",
+  "frames": 319,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 318,
+  "terminal_lines": 3187,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play pisti --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "pitch": {
+  "kind": "terminal",
+  "frames": 105,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 104,
+  "terminal_lines": 870,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play pitch --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "placute": {
   "kind": "terminal",
   "frames": 169,
@@ -2183,6 +3133,25 @@
   "shows_hidden": true,
   "font_px": 12,
   "capture": "polytabletop play poliedre --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "pontoon": {
+  "kind": "terminal",
+  "frames": 74,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 73,
+  "terminal_lines": 663,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 13,
+  "capture": "polytabletop play pontoon --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "popa": {
   "kind": "terminal",
@@ -2374,6 +3343,25 @@
   "font_px": 12,
   "capture": "polytabletop play rezervatia --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "riichi": {
+  "kind": "terminal",
+  "frames": 611,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 610,
+  "terminal_lines": 6688,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 12,
+  "capture": "polytabletop play riichi --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "roade": {
   "kind": "terminal",
   "frames": 163,
@@ -2412,6 +3400,25 @@
   "font_px": 12,
   "capture": "polytabletop play roata --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "ronda": {
+  "kind": "terminal",
+  "frames": 210,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 209,
+  "terminal_lines": 1701,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play ronda --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "rotire": {
   "kind": "terminal",
   "frames": 37,
@@ -2430,6 +3437,25 @@
   "shows_hidden": true,
   "font_px": 12,
   "capture": "polytabletop play rotire --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "ruinele_cartografilor": {
+  "kind": "terminal",
+  "frames": 50,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 49,
+  "terminal_lines": 883,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play ruinele_cartografilor --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "rummy": {
   "kind": "terminal",
@@ -2488,6 +3514,25 @@
   "font_px": 13,
   "capture": "polytabletop play santinela --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "satul_lanternelor": {
+  "kind": "terminal",
+  "frames": 61,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 60,
+  "terminal_lines": 1081,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play satul_lanternelor --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "schita": {
   "kind": "terminal",
   "frames": 76,
@@ -2526,6 +3571,44 @@
   "font_px": 12,
   "capture": "polytabletop play scopa --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "seega": {
+  "kind": "terminal",
+  "frames": 57,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 56,
+  "terminal_lines": 596,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play seega --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "senet": {
+  "kind": "terminal",
+  "frames": 381,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 380,
+  "terminal_lines": 2859,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play senet --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "septica": {
   "kind": "terminal",
   "frames": 49,
@@ -2563,6 +3646,44 @@
   "shows_hidden": true,
   "font_px": 17,
   "capture": "polytabletop play shogi --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "shologuti": {
+  "kind": "terminal",
+  "frames": 234,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 233,
+  "terminal_lines": 3514,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play shologuti --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "sicbo": {
+  "kind": "terminal",
+  "frames": 115,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 114,
+  "terminal_lines": 911,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play sicbo --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "sideral": {
   "kind": "terminal",
@@ -2659,6 +3780,25 @@
   "font_px": 16,
   "capture": "polytabletop play spionii --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "strada_de_otel": {
+  "kind": "terminal",
+  "frames": 51,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 50,
+  "terminal_lines": 905,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play strada_de_otel --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "strajile": {
   "kind": "terminal",
   "frames": 125,
@@ -2754,6 +3894,25 @@
   "font_px": 15,
   "capture": "polytabletop play surakarta --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "tab": {
+  "kind": "terminal",
+  "frames": 501,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 500,
+  "terminal_lines": 4761,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 13,
+  "capture": "polytabletop play tab --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "tablanet": {
   "kind": "terminal",
   "frames": 52,
@@ -2791,6 +3950,25 @@
   "shows_hidden": true,
   "font_px": 12,
   "capture": "polytabletop play taramuri --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "targul_ciumat": {
+  "kind": "terminal",
+  "frames": 55,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 54,
+  "terminal_lines": 973,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play targul_ciumat --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "tarneeb": {
   "kind": "terminal",
@@ -2944,6 +4122,25 @@
   "font_px": 12,
   "capture": "polytabletop play teenpatti --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "tienlen": {
+  "kind": "terminal",
+  "frames": 76,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 75,
+  "terminal_lines": 682,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play tienlen --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "tigri": {
   "kind": "terminal",
   "frames": 149,
@@ -2963,6 +4160,25 @@
   "font_px": 16,
   "capture": "polytabletop play tigri --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "tinutul_furtunilor": {
+  "kind": "terminal",
+  "frames": 53,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 52,
+  "terminal_lines": 943,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play tinutul_furtunilor --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "tinuturi": {
   "kind": "terminal",
   "frames": 55,
@@ -2981,6 +4197,25 @@
   "shows_hidden": true,
   "font_px": 13,
   "capture": "polytabletop play tinuturi --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "tongits": {
+  "kind": "terminal",
+  "frames": 158,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 157,
+  "terminal_lines": 1645,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 12,
+  "capture": "polytabletop play tongits --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "treicai": {
   "kind": "terminal",
@@ -3096,6 +4331,44 @@
   "font_px": 12,
   "capture": "polytabletop play turnul --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "turnul_zorilor": {
+  "kind": "terminal",
+  "frames": 47,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 46,
+  "terminal_lines": 829,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 12,
+  "capture": "polytabletop play turnul_zorilor --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "twoup": {
+  "kind": "terminal",
+  "frames": 44,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 43,
+  "terminal_lines": 336,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play twoup --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "umbra": {
   "kind": "terminal",
   "frames": 48,
@@ -3153,6 +4426,25 @@
   "font_px": 17,
   "capture": "polytabletop play whist --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
+ "whot": {
+  "kind": "terminal",
+  "frames": 111,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 110,
+  "terminal_lines": 792,
+  "complete": true,
+  "shows_hidden": false,
+  "font_px": 17,
+  "capture": "polytabletop play whot --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
  "xiangqi": {
   "kind": "terminal",
   "frames": 97,
@@ -3171,6 +4463,25 @@
   "shows_hidden": true,
   "font_px": 17,
   "capture": "polytabletop play xiangqi --you none --seed 1 (POLYTABLETOP_LANG=en)"
+ },
+ "yote": {
+  "kind": "terminal",
+  "frames": 155,
+  "shots": [
+   "shot1.png",
+   "shot2.png",
+   "shot3.png"
+  ],
+  "poster": "poster.png",
+  "clip": "clip.mp4",
+  "clip_seconds": 11.4,
+  "clip_frames": 34,
+  "moves": 154,
+  "terminal_lines": 1553,
+  "complete": true,
+  "shows_hidden": true,
+  "font_px": 17,
+  "capture": "polytabletop play yote --you none --seed 1 (POLYTABLETOP_LANG=en)"
  },
  "yut": {
   "kind": "terminal",
