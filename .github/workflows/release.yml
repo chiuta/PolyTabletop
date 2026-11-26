@@ -1,7 +1,14 @@
 name: release
+# Triggers: push a tag v*, push the branch `release` (the tag is then v$(cat VERSION)), or run manually.
 on:
   push:
     tags: ["v*"]
+    branches: [release]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (empty = v + VERSION file)"
+        default: ""
 
 permissions:
   contents: write
@@ -37,7 +44,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          tag="${GITHUB_REF_NAME}"
+          tag="${{ github.event.inputs.tag }}"
+          if [ -z "$tag" ] && [ "${GITHUB_REF_TYPE}" = "tag" ]; then tag="${GITHUB_REF_NAME}"; fi
+          if [ -z "$tag" ]; then tag="v$(cat VERSION)"; fi
           dir="polytabletop-${tag}-${{ matrix.name }}"
           mkdir "$dir"
           ext=""; [ "${{ runner.os }}" = "Windows" ] && ext=".exe"
@@ -73,7 +82,12 @@ jobs:
           merge-multiple: true
       - name: Combined checksums
         run: cd dist && sha256sum polytabletop-*.tar.gz polytabletop-*.zip > SHA256SUMS
+      - uses: actions/checkout@v6
       - name: Create release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" dist/* --repo "$GITHUB_REPOSITORY" --title "$GITHUB_REF_NAME" --generate-notes
+        run: |
+          tag="${{ github.event.inputs.tag }}"
+          if [ -z "$tag" ] && [ "${GITHUB_REF_TYPE}" = "tag" ]; then tag="${GITHUB_REF_NAME}"; fi
+          if [ -z "$tag" ]; then tag="v$(cat VERSION)"; fi
+          gh release create "$tag" dist/* --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "PolyTabletop $tag" --generate-notes
