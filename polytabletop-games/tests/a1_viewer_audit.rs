@@ -459,6 +459,50 @@ const NO_HIDDEN_B6: &[&str] = &[
     "aruncari_cupe",
 ];
 
+/// B4 (strategie, variante originale): informație perfectă sau mâini deschise.
+const NO_HIDDEN_B4: &[&str] = &[
+    "negustori_port",
+    "podgoria",
+    "roata_zilelor",
+    "vanatorii_mamut",
+    "pestera_livezilor",
+    "ospatul_fiordului",
+    "corabii_nord",
+    "mesterii_catedralei",
+    "cavalerii_hotarului",
+    "drumul_matasii",
+    "orasul_piramidelor",
+    "cupolele_abisului",
+    "barajele",
+    "expeditia_ruinelor",
+    "cetatea_mirodeniilor",
+    "colonii_stelare",
+    "treptele_civilizatiei",
+    "asezarile_imperiului",
+    "portul_vechi",
+    "targul_mestesugarilor",
+    "castele_pe_rau",
+    "tara_dintre_fluvii",
+    "tara_faraonilor",
+    "imperii_stelare",
+    "marsul_umbrelor",
+    "linia_frontului",
+    "cronicile_popoarelor",
+    "cortina_influentei",
+    "marile_puteri",
+    "calea_ferata_preriei",
+    "fabrici_si_canale",
+    "liga_orasului",
+    "navigatorii",
+    "cap_de_pod",
+    "legiuni_si_falange",
+    "flotele_cosmice",
+    "drumul_comorii",
+    "hoinarii_pesterii",
+    "lantul_bufetelor",
+    "frontiera_stelara",
+];
+
 #[test]
 fn every_playable_id_is_classified() {
     let mut unclassified = Vec::new();
@@ -470,6 +514,7 @@ fn every_playable_id_is_classified() {
             NO_HIDDEN.contains(&p.id)
                 || NO_HIDDEN_B2.contains(&p.id)
                 || NO_HIDDEN_B5.contains(&p.id)
+                || NO_HIDDEN_B4.contains(&p.id)
                 || NO_HIDDEN_B6.contains(&p.id),
         ]
         .iter()
@@ -499,6 +544,7 @@ fn lists_have_no_stale_or_duplicate_ids() {
         ("NO_HIDDEN_B2", NO_HIDDEN_B2),
         ("NO_HIDDEN_B6", NO_HIDDEN_B6),
         ("NO_HIDDEN_B5", NO_HIDDEN_B5),
+        ("NO_HIDDEN_B4", NO_HIDDEN_B4),
     ] {
         let set: BTreeSet<&str> = l.iter().copied().collect();
         assert_eq!(set.len(), l.len(), "{name} has duplicates");

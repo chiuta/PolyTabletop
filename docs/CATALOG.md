@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (654)
+## Implementat (694)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -466,6 +466,46 @@
 | Great Western Trail | Strategie | Elveția | implementat |
 | Gaia Project | Strategie | Cehia | implementat |
 | Concordia | Strategie | Germania | implementat |
+| Race for the Galaxy | Strategie | SUA | implementat |
+| Through the Ages | Strategie | Cehia | implementat |
+| Twilight Struggle | Strategie | SUA | implementat |
+| Lords of Waterdeep | Strategie | SUA | implementat |
+| Viticulture | Strategie | SUA | implementat |
+| The Castles of Burgundy | Strategie | Germania | implementat |
+| Le Havre | Strategie | Germania | implementat |
+| Orléans | Strategie | Germania | implementat |
+| Tzolk'in: The Mayan Calendar | Strategie | Cehia | implementat |
+| Cosmic Encounter | Strategie | SUA | implementat |
+| Civilization (Tresham) | Strategie | Marea Britanie | implementat |
+| Memoir '44 | Strategie | Franța | implementat |
+| Stone Age | Strategie | Germania | implementat |
+| Age of Steam | Strategie | SUA | implementat |
+| Eclipse | Strategie | Finlanda | implementat |
+| Star Realms | Strategie | SUA | implementat |
+| Clank! | Strategie | SUA | implementat |
+| Lost Ruins of Arnak | Strategie | Cehia | implementat |
+| Caverna: The Cave Farmers | Strategie | Germania | implementat |
+| A Feast for Odin | Strategie | Germania | implementat |
+| Food Chain Magnate | Strategie | Olanda | implementat |
+| War of the Ring | Strategie | Italia | implementat |
+| Brass: Lancashire | Strategie | Marea Britanie | implementat |
+| Barrage | Strategie | Italia | implementat |
+| Underwater Cities | Strategie | Cehia | implementat |
+| Paths of Glory | Strategie | SUA | implementat |
+| Command & Colors: Ancients | Strategie | SUA | implementat |
+| Kemet | Strategie | Franța | implementat |
+| Tigris & Euphrates | Strategie | Germania | implementat |
+| Hansa Teutonica | Strategie | Germania | implementat |
+| Navegador | Strategie | Germania | implementat |
+| Goa | Strategie | Germania | implementat |
+| Imperial | Strategie | Germania | implementat |
+| Imperial Settlers | Strategie | Polonia | implementat |
+| Raiders of the North Sea | Strategie | Germania | implementat |
+| Architects of the West Kingdom | Strategie | Marea Britanie | implementat |
+| Paladins of the West Kingdom | Strategie | Marea Britanie | implementat |
+| The Quest for El Dorado | Strategie | Germania | implementat |
+| The Voyages of Marco Polo | Strategie | Italia | implementat |
+| Teotihuacan: City of Gods | Strategie | Italia | implementat |
 | Oracle of Delphi | Strategie | Germania | implementat |
 | Trajan | Strategie | Italia | implementat |
 | Ora et Labora | Strategie | Germania | implementat |
@@ -666,50 +706,10 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Variantă proprie (274)
+## Variantă proprie (234)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Race for the Galaxy | Strategie | SUA | planificat (variantă proprie) |
-| Through the Ages | Strategie | Cehia | planificat (variantă proprie) |
-| Twilight Struggle | Strategie | SUA | planificat (variantă proprie) |
-| Lords of Waterdeep | Strategie | SUA | planificat (variantă proprie) |
-| Viticulture | Strategie | SUA | planificat (variantă proprie) |
-| The Castles of Burgundy | Strategie | Germania | planificat (variantă proprie) |
-| Le Havre | Strategie | Germania | planificat (variantă proprie) |
-| Orléans | Strategie | Germania | planificat (variantă proprie) |
-| Tzolk'in: The Mayan Calendar | Strategie | Cehia | planificat (variantă proprie) |
-| Cosmic Encounter | Strategie | SUA | planificat (variantă proprie) |
-| Civilization (Tresham) | Strategie | Marea Britanie | planificat (variantă proprie) |
-| Memoir '44 | Strategie | Franța | planificat (variantă proprie) |
-| Stone Age | Strategie | Germania | planificat (variantă proprie) |
-| Age of Steam | Strategie | SUA | planificat (variantă proprie) |
-| Eclipse | Strategie | Finlanda | planificat (variantă proprie) |
-| Star Realms | Strategie | SUA | planificat (variantă proprie) |
-| Clank! | Strategie | SUA | planificat (variantă proprie) |
-| Lost Ruins of Arnak | Strategie | Cehia | planificat (variantă proprie) |
-| Caverna: The Cave Farmers | Strategie | Germania | planificat (variantă proprie) |
-| A Feast for Odin | Strategie | Germania | planificat (variantă proprie) |
-| Food Chain Magnate | Strategie | Olanda | planificat (variantă proprie) |
-| War of the Ring | Strategie | Italia | planificat (variantă proprie) |
-| Brass: Lancashire | Strategie | Marea Britanie | planificat (variantă proprie) |
-| Barrage | Strategie | Italia | planificat (variantă proprie) |
-| Underwater Cities | Strategie | Cehia | planificat (variantă proprie) |
-| Paths of Glory | Strategie | SUA | planificat (variantă proprie) |
-| Command & Colors: Ancients | Strategie | SUA | planificat (variantă proprie) |
-| Kemet | Strategie | Franța | planificat (variantă proprie) |
-| Tigris & Euphrates | Strategie | Germania | planificat (variantă proprie) |
-| Hansa Teutonica | Strategie | Germania | planificat (variantă proprie) |
-| Navegador | Strategie | Germania | planificat (variantă proprie) |
-| Goa | Strategie | Germania | planificat (variantă proprie) |
-| Imperial | Strategie | Germania | planificat (variantă proprie) |
-| Imperial Settlers | Strategie | Polonia | planificat (variantă proprie) |
-| Raiders of the North Sea | Strategie | Germania | planificat (variantă proprie) |
-| Architects of the West Kingdom | Strategie | Marea Britanie | planificat (variantă proprie) |
-| Paladins of the West Kingdom | Strategie | Marea Britanie | planificat (variantă proprie) |
-| The Quest for El Dorado | Strategie | Germania | planificat (variantă proprie) |
-| The Voyages of Marco Polo | Strategie | Italia | planificat (variantă proprie) |
-| Teotihuacan: City of Gods | Strategie | Italia | planificat (variantă proprie) |
 | Rapidough | Party | SUA | planificat (variantă proprie) |
 | Pie Face | Party | SUA | planificat (variantă proprie) |
 | Fibbage | Party | SUA | planificat (variantă proprie) |

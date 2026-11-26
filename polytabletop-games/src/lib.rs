@@ -181,6 +181,56 @@ pub mod telefon_desenat;
 pub mod tesatura_epocilor;
 pub mod trei_runde5;
 // B5-mods-end
+// B4-mods-begin
+pub mod asezarile_imperiului;
+pub mod b4_c;
+pub mod b4_d;
+pub mod b4_db;
+pub mod b4_g;
+pub mod b4_i;
+pub mod b4_n;
+pub mod b4_tb;
+pub mod b4_wp;
+pub mod barajele;
+pub mod calea_ferata_preriei;
+pub mod cap_de_pod;
+pub mod castele_pe_rau;
+pub mod cavalerii_hotarului;
+pub mod cetatea_mirodeniilor;
+pub mod colonii_stelare;
+pub mod corabii_nord;
+pub mod cortina_influentei;
+pub mod cosmic_frontiera;
+pub mod cronicile_popoarelor;
+pub mod cupolele_abisului;
+pub mod drumul_comorii;
+pub mod drumul_matasii;
+pub mod expeditia_ruinelor;
+pub mod fabrici_si_canale;
+pub mod flotele_cosmice;
+pub mod hoinarii_pesterii;
+pub mod imperii_stelare;
+pub mod lantul_bufetelor;
+pub mod legiuni_si_falange;
+pub mod liga_orasului;
+pub mod linia_frontului;
+pub mod marile_puteri;
+pub mod marsul_umbrelor;
+pub mod mesterii_catedralei;
+pub mod navigatorii;
+pub mod negustori_port;
+pub mod orasul_piramidelor;
+pub mod ospatul_fiordului;
+pub mod pestera_livezilor;
+pub mod podgoria;
+pub mod portul_vechi;
+pub mod roata_zilelor;
+pub mod tara_dintre_fluvii;
+pub mod tara_faraonilor;
+pub mod targul_mestesugarilor;
+pub mod treptele_civilizatiei;
+pub mod vanatorii_mamut;
+// B4-mods-end
 pub mod aadupuli;
 pub mod aceydeucey;
 pub mod alquerque;
@@ -4999,6 +5049,288 @@ fn playable_base() -> Vec<Playable> {
             make: || Box::new(brand_util::B(misterul_locatiei::new())),
         },
         // B5-reg-end
+        // B4-reg-begin
+        Playable {
+            id: "negustori_port",
+            title: "Negustorii din Port",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: pescuit, padure, mina, banca, contract1, contract2, contract3, schimb, livrare. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(negustori_port::new())),
+        },
+        Playable {
+            id: "podgoria",
+            title: "Podgoria",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: vita, plantez, recolta, vin, degustare, piata, angajez, contract, butoi. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(podgoria::new())),
+        },
+        Playable {
+            id: "roata_zilelor",
+            title: "Roata Zilelor",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 8 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: padure, cariera, aur, templu, monument, schimb, ofranda, cult, constructie. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(roata_zilelor::new())),
+        },
+        Playable {
+            id: "vanatorii_mamut",
+            title: "Vânătorii de Mamuți",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: vanatoare, pietrar, lemn, foc, coliba, unealta, pictura, ritual, cort. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(vanatorii_mamut::new())),
+        },
+        Playable {
+            id: "pestera_livezilor",
+            title: "Peștera cu Livezi",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 7 runde, 2 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: livada, mina, sapa, ferma, camera, expeditie, armare, recolta, targ. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(pestera_livezilor::new())),
+        },
+        Playable {
+            id: "ospatul_fiordului",
+            title: "Ospățul Fiordului",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 6 runde, 4 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: pescuit, vanatoare, tamplarie, banchet, comert, expeditie, bijuterie, ospat. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(ospatul_fiordului::new())),
+        },
+        Playable {
+            id: "corabii_nord",
+            title: "Corăbii spre Nord",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: port, echipaj, raid1, raid2, raid3, comert, prada, templu. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(corabii_nord::new())),
+        },
+        Playable {
+            id: "mesterii_catedralei",
+            title: "Meșterii Catedralei",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: cariera, padure, atelier, turn, vitraliu, donatie, harti, hram, taverna. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(mesterii_catedralei::new())),
+        },
+        Playable {
+            id: "cavalerii_hotarului",
+            title: "Cavalerii Hotarului",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: tabara, fierarie, antrenament, patrula, asediu, scutier, castel, menestrel. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(cavalerii_hotarului::new())),
+        },
+        Playable {
+            id: "drumul_matasii",
+            title: "Drumul Mătăsii",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: bazar, caravana, han, port, ambasada, ruta1, ruta2, firman, piata. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(drumul_matasii::new())),
+        },
+        Playable {
+            id: "orasul_piramidelor",
+            title: "Orașul Piramidelor",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: piatra, trestii, soare, piramida, templu, masca, observator, ritual, schimb. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(orasul_piramidelor::new())),
+        },
+        Playable {
+            id: "cupolele_abisului",
+            title: "Cupolele Abisului",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: foraj, alge, cupola, tub, reactor, nautilus, submarin, contract, scafandru. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(cupolele_abisului::new())),
+        },
+        Playable {
+            id: "barajele",
+            title: "Barajele",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: rau, excavare, beton, baraj, turbina, centrala, energie, contract, minerit. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(barajele::new())),
+        },
+        Playable {
+            id: "expeditia_ruinelor",
+            title: "Expediția Ruinelor",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: tabara, jungla, ruine1, ruine2, templu, asistent, artefact, cercetare, busola. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(expeditia_ruinelor::new())),
+        },
+        Playable {
+            id: "cetatea_mirodeniilor",
+            title: "Cetatea Mirodeniilor",
+            category: "Strategie",
+            rules: "Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: plantatie, piper, scortisoara, nucsoara, negot, fort, comanda, corabie, licitatie. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.",
+            make: || Box::new(brand_util::B(cetatea_mirodeniilor::new())),
+        },
+        Playable {
+            id: "colonii_stelare",
+            title: "Colonii Stelare",
+            category: "Strategie",
+            rules: "Variantă originală de construit un tablou: piață publică de 5 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Fiecare carte deținută de aceeași culoare reduce prețul cu 1. După 14 ture fiecare, câștigă scorul mai mare (puncte, bonus 3 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt.",
+            make: || Box::new(brand_util::B(colonii_stelare::new())),
+        },
+        Playable {
+            id: "treptele_civilizatiei",
+            title: "Treptele Civilizației",
+            category: "Strategie",
+            rules: "Variantă originală de construit un tablou: piață publică de 4 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Veniturile se dublează. După 12 ture fiecare, câștigă scorul mai mare (puncte, bonus 2 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt.",
+            make: || Box::new(brand_util::B(treptele_civilizatiei::new())),
+        },
+        Playable {
+            id: "asezarile_imperiului",
+            title: "Așezările Imperiului",
+            category: "Strategie",
+            rules: "Variantă originală de construit un tablou: piață publică de 5 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Rasez i (2 monede) distruge o carte a rivalului. După 14 ture fiecare, câștigă scorul mai mare (puncte, bonus 2 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt, rasez i.",
+            make: || Box::new(brand_util::B(asezarile_imperiului::new())),
+        },
+        Playable {
+            id: "portul_vechi",
+            title: "Portul Vechi",
+            category: "Strategie",
+            rules: "Variantă originală de construit un tablou: piață publică de 4 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Imprumut dă 4 monede și costă 3 puncte la final (maxim 2). După 14 ture fiecare, câștigă scorul mai mare (puncte, bonus 3 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt, imprumut.",
+            make: || Box::new(brand_util::B(portul_vechi::new())),
+        },
+        Playable {
+            id: "targul_mestesugarilor",
+            title: "Târgul Meșteșugarilor",
+            category: "Strategie",
+            rules: "Variantă originală de construit un tablou: piață publică de 6 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Fiecare carte deținută de aceeași culoare reduce prețul cu 1. După 12 ture fiecare, câștigă scorul mai mare (puncte, bonus 4 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt.",
+            make: || Box::new(brand_util::B(targul_mestesugarilor::new())),
+        },
+        Playable {
+            id: "castele_pe_rau",
+            title: "Castelele de pe Râu",
+            category: "Strategie",
+            rules: "Variantă originală de plăcuțe pe grilă 5×5: Fiecare are tabla lui; mâini deschise de 3 plăcuțe în 4 culori (A–D), coadă publică. pune r,c k așază plăcuța k (de la 0) lângă una existentă și dă atâtea puncte cât mărimea grupului de aceeași culoare. Scorul e suma punctelor de grup. Se termină când nu mai sunt plăcuțe. Mutări: pune r,c k, pas.",
+            make: || Box::new(brand_util::B(castele_pe_rau::new())),
+        },
+        Playable {
+            id: "tara_dintre_fluvii",
+            title: "Țara dintre Fluvii",
+            category: "Strategie",
+            rules: "Variantă originală de plăcuțe pe grilă 6×6: Tabla e comună; mâini deschise de 3 plăcuțe în 4 culori (A–D), coadă publică. pune r,c k așază plăcuța k (de la 0) lângă una existentă și dă atâtea puncte cât mărimea grupului de aceeași culoare. Scorul final e culoarea cea mai slabă din cele 4 (×4) plus un bonus mic. Se termină când nu mai sunt plăcuțe. Mutări: pune r,c k, pas.",
+            make: || Box::new(brand_util::B(tara_dintre_fluvii::new())),
+        },
+        Playable {
+            id: "tara_faraonilor",
+            title: "Țara Faraonilor",
+            category: "Strategie",
+            rules: "Variantă originală de cucerire pe o hartă cu 9 noduri: 3 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. Luarea capitalei inamice câștigă; după 14 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, fin.",
+            make: || Box::new(brand_util::B(tara_faraonilor::new())),
+        },
+        Playable {
+            id: "imperii_stelare",
+            title: "Imperii Stelare",
+            category: "Strategie",
+            rules: "Variantă originală de cucerire pe o hartă cu 10 noduri: 3 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. tec (2 acțiuni) dă +1 atac, maxim 3. Luarea capitalei inamice câștigă; după 12 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, tec, fin.",
+            make: || Box::new(brand_util::B(imperii_stelare::new())),
+        },
+        Playable {
+            id: "marsul_umbrelor",
+            title: "Marșul Umbrelor",
+            category: "Strategie",
+            rules: "Variantă originală de cucerire pe o hartă cu 11 noduri: 3 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. Luarea capitalei inamice câștigă; după 16 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, fin.",
+            make: || Box::new(brand_util::B(marsul_umbrelor::new())),
+        },
+        Playable {
+            id: "linia_frontului",
+            title: "Linia Frontului",
+            category: "Strategie",
+            rules: "Variantă originală de cucerire pe o hartă cu 12 noduri: 4 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. Luarea capitalei inamice câștigă; după 12 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, fin.",
+            make: || Box::new(brand_util::B(linia_frontului::new())),
+        },
+        Playable {
+            id: "cronicile_popoarelor",
+            title: "Cronicile Popoarelor",
+            category: "Strategie",
+            rules: "Variantă originală de cucerire pe o hartă cu 9 noduri: 3 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. tec (2 acțiuni) dă +1 atac, maxim 3. Luarea capitalei inamice câștigă; după 14 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, tec, fin.",
+            make: || Box::new(brand_util::B(cronicile_popoarelor::new())),
+        },
+        Playable {
+            id: "cortina_influentei",
+            title: "Cortina de Influență",
+            category: "Strategie",
+            rules: "Variantă originală de influență pe o hartă cu 12 noduri: 4 puncte pe tură; inf n pune influență (1 punct lângă prezența ta, altfel 2), cup n scoate 2 influențe rivale (2 puncte); nodul e controlat la diferență ≥ stabilitate. La fiecare 3 runde se face punctajul: nodurile controlate mută bara comună; la ±15 se câștigă imediat, altfel după 9 runde. Mutări: inf n, cup n, fin.",
+            make: || Box::new(brand_util::B(cortina_influentei::new())),
+        },
+        Playable {
+            id: "marile_puteri",
+            title: "Marile Puteri",
+            category: "Strategie",
+            rules: "Variantă originală de influență pe o hartă cu 9 noduri: 3 puncte pe tură; inf n pune influență (1 punct lângă prezența ta, altfel 2), cup n scoate 2 influențe rivale (2 puncte); nodul e controlat la diferență ≥ stabilitate. La fiecare 2 runde se face punctajul: nodurile controlate mută bara comună; la ±12 se câștigă imediat, altfel după 10 runde. Mutări: inf n, cup n, fin.",
+            make: || Box::new(brand_util::B(marile_puteri::new())),
+        },
+        Playable {
+            id: "calea_ferata_preriei",
+            title: "Calea Ferată a Preriei",
+            category: "Strategie",
+            rules: "Variantă originală de rețea de rute: 8 orașe, hub-uri 0 și 3. inc dă venitul (3). tra k construiește o rută (costul ei, 1 punct), ent n livrează de la hub-ul tău la un oraș cu cerere (puncte = cererea, apoi scade). Rutele sunt comune: poți livra pe muchiile rivalului plătind 1. După 14 ture fiecare, câștigă scorul mai mare (puncte + monede/4). Mutări: inc, tra k, ent n.",
+            make: || Box::new(brand_util::B(calea_ferata_preriei::new())),
+        },
+        Playable {
+            id: "fabrici_si_canale",
+            title: "Fabrici și Canale",
+            category: "Strategie",
+            rules: "Variantă originală de rețea de rute: 7 orașe, hub-uri 0 și 3. inc dă venitul (3). tra k construiește o rută (costul ei, 1 punct), ent n livrează de la hub-ul tău la un oraș cu cerere (puncte = cererea, apoi scade). Doar rutele proprii; fiecare livrare crește venitul cu 1. După 14 ture fiecare, câștigă scorul mai mare (puncte + monede/4). Mutări: inc, tra k, ent n.",
+            make: || Box::new(brand_util::B(fabrici_si_canale::new())),
+        },
+        Playable {
+            id: "liga_orasului",
+            title: "Liga Orașelor",
+            category: "Strategie",
+            rules: "Variantă originală de rețea de rute: 6 orașe, hub-uri 0 și 3. inc dă venitul (3). Pui cuburi (1 monedă) pe muchii; la 3 cuburi muchia se închide și majoritatea ia dublul costului. După 14 ture fiecare, câștigă scorul mai mare (puncte + monede/4). Mutări: inc, cub k.",
+            make: || Box::new(brand_util::B(liga_orasului::new())),
+        },
+        Playable {
+            id: "navigatorii",
+            title: "Navigatorii Oceanului",
+            category: "Strategie",
+            rules: "Variantă originală de rețea de rute: 8 orașe, hub-uri 0 și 4. inc dă venitul (3). tra k construiește o rută (costul ei, 1 punct), ent n livrează de la hub-ul tău la un oraș cu cerere (puncte = cererea, apoi scade). Doar rutele proprii; prima livrare într-un oraș dă 2 monede. După 14 ture fiecare, câștigă scorul mai mare (puncte + monede/4). Mutări: inc, tra k, ent n.",
+            make: || Box::new(brand_util::B(navigatorii::new())),
+        },
+        Playable {
+            id: "cap_de_pod",
+            title: "Cap de Pod",
+            category: "Strategie",
+            rules: "Variantă originală de bătălie pe grilă 7×9: infanterie (i), cavalerie (c, mișcă 2, lovește 2), arcași (a, rază 2); 3 ordine pe tură, fiecare unitate o dată. mv r,c>r,c mută, at r,c>r,c lovește (fără zaruri; flancat +1), fin încheie tura. Ordinele unei ture rămân într-o singură treime de tablă. Primul la 6 medalii (unități distruse) câștigă. Mutări: mv, at, fin.",
+            make: || Box::new(brand_util::B(cap_de_pod::new())),
+        },
+        Playable {
+            id: "legiuni_si_falange",
+            title: "Legiuni și Falange",
+            category: "Strategie",
+            rules: "Variantă originală de bătălie pe grilă 7×9: infanterie (i), cavalerie (c, mișcă 2, lovește 2), arcași (a, rază 2); 4 ordine pe tură, fiecare unitate o dată. mv r,c>r,c mută, at r,c>r,c lovește (fără zaruri; flancat +1), fin încheie tura. Primul la 7 medalii (unități distruse) câștigă. Mutări: mv, at, fin.",
+            make: || Box::new(brand_util::B(legiuni_si_falange::new())),
+        },
+        Playable {
+            id: "flotele_cosmice",
+            title: "Flotele Cosmice",
+            category: "Strategie",
+            rules: "Variantă originală de construit pachetul: începi cu 10 cărți, mâini deschise de 5; juc i joacă o carte (monedă/putere), cump j cumpără din piața publică de 5, fin încheie tura (aruncă mâna, trage 5). Puterea scade autoritatea rivalului (35); cine ajunge la 0 pierde. După 25 ture fiecare, scorul mai mare. Mutări: juc i, cump j, fin.",
+            make: || Box::new(brand_util::B(flotele_cosmice::new())),
+        },
+        Playable {
+            id: "drumul_comorii",
+            title: "Drumul Comorii",
+            category: "Strategie",
+            rules: "Variantă originală de construit pachetul: începi cu 10 cărți, mâini deschise de 5; juc i joacă o carte (monedă/putere), cump j cumpără din piața publică de 5, fin încheie tura (aruncă mâna, trage 5). Puterea avansează pe un drum; primul la 30 câștigă. După 25 ture fiecare, scorul mai mare. Mutări: juc i, cump j, fin.",
+            make: || Box::new(brand_util::B(drumul_comorii::new())),
+        },
+        Playable {
+            id: "hoinarii_pesterii",
+            title: "Hoinarii Peșterii",
+            category: "Strategie",
+            rules: "Variantă originală de construit pachetul: începi cu 10 cărți, mâini deschise de 5; juc i joacă o carte (monedă/putere), cump j cumpără din piața publică de 5, fin încheie tura (aruncă mâna, trage 5). Puterea coboară în peșteră (adâncime/2 puncte), cărțile cumpărate dau puncte. După 12 ture fiecare, scorul mai mare. Mutări: juc i, cump j, fin.",
+            make: || Box::new(brand_util::B(hoinarii_pesterii::new())),
+        },
+        Playable {
+            id: "lantul_bufetelor",
+            title: "Lanțul de Bufete",
+            category: "Strategie",
+            rules: "Variantă originală de duel economic în 8 runde: șase clienți cu preț maxim 2, 3, 3, 4, 5, 5. J1 apoi J2 aleg pret p stoc k [rec]; fiecare client cumpără de la cel mai bun preț efectiv (preț minus reclama rec, care costă 2), fiecare unitate vândută aduce prețul, stocul costă 1 pe unitate. Câștigă banii mai mulți. Mutări: pret p stoc k, pret p stoc k rec.",
+            make: || Box::new(brand_util::B(lantul_bufetelor::Bufete::new())),
+        },
+        Playable {
+            id: "frontiera_stelara",
+            title: "Frontiera Stelară",
+            category: "Strategie",
+            rules: "Variantă originală de duel de ambasadori: fiecare are cărțile 0, 1, 2, 3, 5, 8, 13, 21 (indice k de la 0) și 2 aliați (+3, o singură dată). Rolurile alternează: provocatorul joacă ata k [+] cu fața în sus, apărătorul răspunde ras k [+]; totalul mai mare ia o colonie de la celălalt, egal: nimic. Pornești cu 4 colonii; la 7 câștigi, la 1 pierzi. Mutări: ata k, ata k +, ras k, ras k +.",
+            make: || Box::new(brand_util::B(cosmic_frontiera::Cosmic::new())),
+        },
+        // B4-reg-end
     ]
 }
 

@@ -1,0 +1,321 @@
+# B4: jocuri de strategie, variante originale (generat de B4gen/gen.py)
+negustori_port	ro	Negustorii din Port	Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: pescuit, padure, mina, banca, contract1, contract2, contract3, schimb, livrare. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+negustori_port	en	Harbor Merchants	Original variant: worker placement. Moves: pun cod, pas.
+negustori_port	fr	Marchands du port	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+negustori_port	it	Mercanti del porto	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+negustori_port	es	Mercaderes del puerto	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+negustori_port	pt	Mercadores do porto	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+negustori_port	de	Hafenhändler	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+negustori_port	hu	Kikötői kalmárok	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+podgoria	ro	Podgoria	Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: vita, plantez, recolta, vin, degustare, piata, angajez, contract, butoi. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+podgoria	en	The Vineyard Estate	Original variant: worker placement. Moves: pun cod, pas.
+podgoria	fr	Le Domaine viticole	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+podgoria	it	La tenuta del vigneto	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+podgoria	es	La finca del viñedo	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+podgoria	pt	A quinta da vinha	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+podgoria	de	Das Weingut	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+podgoria	hu	A szőlőbirtok	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+roata_zilelor	ro	Roata Zilelor	Variantă originală de plasare de lucrători: 8 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: padure, cariera, aur, templu, monument, schimb, ofranda, cult, constructie. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+roata_zilelor	en	Wheel of Days	Original variant: worker placement. Moves: pun cod, pas.
+roata_zilelor	fr	La Roue des jours	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+roata_zilelor	it	La ruota dei giorni	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+roata_zilelor	es	La rueda de los días	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+roata_zilelor	pt	A roda dos dias	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+roata_zilelor	de	Das Rad der Tage	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+roata_zilelor	hu	A napok kereke	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+vanatorii_mamut	ro	Vânătorii de Mamuți	Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: vanatoare, pietrar, lemn, foc, coliba, unealta, pictura, ritual, cort. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+vanatorii_mamut	en	Mammoth Hunters	Original variant: worker placement. Moves: pun cod, pas.
+vanatorii_mamut	fr	Chasseurs de mammouths	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+vanatorii_mamut	it	Cacciatori di mammut	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+vanatorii_mamut	es	Cazadores de mamuts	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+vanatorii_mamut	pt	Caçadores de mamutes	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+vanatorii_mamut	de	Mammutjäger	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+vanatorii_mamut	hu	Mamutvadászok	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+pestera_livezilor	ro	Peștera cu Livezi	Variantă originală de plasare de lucrători: 7 runde, 2 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: livada, mina, sapa, ferma, camera, expeditie, armare, recolta, targ. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+pestera_livezilor	en	Orchard Cavern	Original variant: worker placement. Moves: pun cod, pas.
+pestera_livezilor	fr	La Caverne aux vergers	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+pestera_livezilor	it	La caverna dei frutteti	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+pestera_livezilor	es	La caverna de los huertos	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+pestera_livezilor	pt	A caverna dos pomares	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+pestera_livezilor	de	Die Obsthöhle	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+pestera_livezilor	hu	A gyümölcsösbarlang	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+ospatul_fiordului	ro	Ospățul Fiordului	Variantă originală de plasare de lucrători: 6 runde, 4 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: pescuit, vanatoare, tamplarie, banchet, comert, expeditie, bijuterie, ospat. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+ospatul_fiordului	en	Fjord Banquet	Original variant: worker placement. Moves: pun cod, pas.
+ospatul_fiordului	fr	Festin du fjord	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+ospatul_fiordului	it	Banchetto del fiordo	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+ospatul_fiordului	es	Banquete del fiordo	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+ospatul_fiordului	pt	Banquete do fiorde	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+ospatul_fiordului	de	Fjordgelage	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+ospatul_fiordului	hu	Fjord-lakoma	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+corabii_nord	ro	Corăbii spre Nord	Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: port, echipaj, raid1, raid2, raid3, comert, prada, templu. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+corabii_nord	en	Longships Northward	Original variant: worker placement. Moves: pun cod, pas.
+corabii_nord	fr	Drakkars vers le nord	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+corabii_nord	it	Navi verso nord	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+corabii_nord	es	Naves hacia el norte	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+corabii_nord	pt	Navios para o norte	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+corabii_nord	de	Langschiffe nach Norden	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+corabii_nord	hu	Hosszúhajók északra	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+mesterii_catedralei	ro	Meșterii Catedralei	Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: cariera, padure, atelier, turn, vitraliu, donatie, harti, hram, taverna. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+mesterii_catedralei	en	Cathedral Builders	Original variant: worker placement. Moves: pun cod, pas.
+mesterii_catedralei	fr	Bâtisseurs de cathédrale	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+mesterii_catedralei	it	Costruttori di cattedrali	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+mesterii_catedralei	es	Constructores de la catedral	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+mesterii_catedralei	pt	Construtores da catedral	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+mesterii_catedralei	de	Dombaumeister	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+mesterii_catedralei	hu	Katedrálisépítők	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+cavalerii_hotarului	ro	Cavalerii Hotarului	Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: tabara, fierarie, antrenament, patrula, asediu, scutier, castel, menestrel. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+cavalerii_hotarului	en	Border Knights	Original variant: worker placement. Moves: pun cod, pas.
+cavalerii_hotarului	fr	Chevaliers de la frontière	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+cavalerii_hotarului	it	Cavalieri di confine	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+cavalerii_hotarului	es	Caballeros de la frontera	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+cavalerii_hotarului	pt	Cavaleiros da fronteira	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+cavalerii_hotarului	de	Grenzritter	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+cavalerii_hotarului	hu	Határlovagok	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+drumul_matasii	ro	Drumul Mătăsii	Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: bazar, caravana, han, port, ambasada, ruta1, ruta2, firman, piata. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+drumul_matasii	en	The Silk Caravan	Original variant: worker placement. Moves: pun cod, pas.
+drumul_matasii	fr	La Caravane de soie	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+drumul_matasii	it	La carovana della seta	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+drumul_matasii	es	La caravana de seda	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+drumul_matasii	pt	A caravana da seda	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+drumul_matasii	de	Die Seidenkarawane	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+drumul_matasii	hu	A selyemkaraván	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+orasul_piramidelor	ro	Orașul Piramidelor	Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: piatra, trestii, soare, piramida, templu, masca, observator, ritual, schimb. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+orasul_piramidelor	en	City of Pyramids	Original variant: worker placement. Moves: pun cod, pas.
+orasul_piramidelor	fr	La Cité des pyramides	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+orasul_piramidelor	it	La città delle piramidi	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+orasul_piramidelor	es	La ciudad de las pirámides	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+orasul_piramidelor	pt	A cidade das pirâmides	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+orasul_piramidelor	de	Die Pyramidenstadt	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+orasul_piramidelor	hu	A piramisok városa	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+cupolele_abisului	ro	Cupolele Abisului	Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: foraj, alge, cupola, tub, reactor, nautilus, submarin, contract, scafandru. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+cupolele_abisului	en	Abyss Domes	Original variant: worker placement. Moves: pun cod, pas.
+cupolele_abisului	fr	Dômes des abysses	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+cupolele_abisului	it	Cupole degli abissi	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+cupolele_abisului	es	Cúpulas del abismo	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+cupolele_abisului	pt	Cúpulas do abismo	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+cupolele_abisului	de	Tiefseekuppeln	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+cupolele_abisului	hu	Mélységi kupolák	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+barajele	ro	Barajele	Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: rau, excavare, beton, baraj, turbina, centrala, energie, contract, minerit. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+barajele	en	Dam Rivals	Original variant: worker placement. Moves: pun cod, pas.
+barajele	fr	Rivaux des barrages	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+barajele	it	Rivali delle dighe	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+barajele	es	Rivales de las presas	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+barajele	pt	Rivais das barragens	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+barajele	de	Staudamm-Rivalen	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+barajele	hu	Gátrivális	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+expeditia_ruinelor	ro	Expediția Ruinelor	Variantă originală de plasare de lucrători: 6 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: tabara, jungla, ruine1, ruine2, templu, asistent, artefact, cercetare, busola. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+expeditia_ruinelor	en	Ruins Expedition	Original variant: worker placement. Moves: pun cod, pas.
+expeditia_ruinelor	fr	Expédition aux ruines	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+expeditia_ruinelor	it	Spedizione alle rovine	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+expeditia_ruinelor	es	Expedición a las ruinas	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+expeditia_ruinelor	pt	Expedição às ruínas	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+expeditia_ruinelor	de	Ruinenexpedition	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+expeditia_ruinelor	hu	Romexpedíció	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+cetatea_mirodeniilor	ro	Cetatea Mirodeniilor	Variantă originală de plasare de lucrători: 7 runde, 3 lucrători pe rundă, resurse a, b, c, d și monede m. pun cod ocupă un spațiu (plătești costul, primești câștigul și punctele; x = o singură dată pe rundă, a = se acumulează dacă rămâne liber, g = lucrător în plus, r = puncte tot mai mari la fiecare folosire), pas încheie participarea la runda curentă. Spații: plantatie, piper, scortisoara, nucsoara, negot, fort, comanda, corabie, licitatie. Câștigă scorul mai mare (puncte, monede, bonus pentru seturi a-d). Mutări: pun cod, pas.
+cetatea_mirodeniilor	en	Spice Fort	Original variant: worker placement. Moves: pun cod, pas.
+cetatea_mirodeniilor	fr	Le Fort des épices	Variante originale: placement d'ouvriers. Coups: pun cod, pas.
+cetatea_mirodeniilor	it	Il forte delle spezie	Variante originale: piazzamento lavoratori. Mosse: pun cod, pas.
+cetatea_mirodeniilor	es	El fuerte de las especias	Variante original: colocación de trabajadores. Jugadas: pun cod, pas.
+cetatea_mirodeniilor	pt	O forte das especiarias	Variante original: colocação de trabalhadores. Jogadas: pun cod, pas.
+cetatea_mirodeniilor	de	Die Gewürzfestung	Eigene Variante: Arbeitereinsatz. Züge: pun cod, pas.
+cetatea_mirodeniilor	hu	A fűszererőd	Saját változat: munkáselhelyezés. Lépések: pun cod, pas.
+colonii_stelare	ro	Colonii Stelare	Variantă originală de construit un tablou: piață publică de 5 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Fiecare carte deținută de aceeași culoare reduce prețul cu 1. După 14 ture fiecare, câștigă scorul mai mare (puncte, bonus 3 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt.
+colonii_stelare	en	Star Colonies	Original variant: market tableau building. Moves: compro i, recolt.
+colonii_stelare	fr	Colonies stellaires	Variante originale: construction de tableau avec marché. Coups: compro i, recolt.
+colonii_stelare	it	Colonie stellari	Variante originale: costruzione di tableau con mercato. Mosse: compro i, recolt.
+colonii_stelare	es	Colonias estelares	Variante original: construcción de tablero con mercado. Jugadas: compro i, recolt.
+colonii_stelare	pt	Colónias estelares	Variante original: construção de tabuleiro com mercado. Jogadas: compro i, recolt.
+colonii_stelare	de	Sternkolonien	Eigene Variante: Tableau-Aufbau mit Markt. Züge: compro i, recolt.
+colonii_stelare	hu	Csillagkolóniák	Saját változat: piacos tablóépítés. Lépések: compro i, recolt.
+treptele_civilizatiei	ro	Treptele Civilizației	Variantă originală de construit un tablou: piață publică de 4 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Veniturile se dublează. După 12 ture fiecare, câștigă scorul mai mare (puncte, bonus 2 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt.
+treptele_civilizatiei	en	Steps of Civilization	Original variant: market tableau building. Moves: compro i, recolt.
+treptele_civilizatiei	fr	Étapes de la civilisation	Variante originale: construction de tableau avec marché. Coups: compro i, recolt.
+treptele_civilizatiei	it	Gradini della civiltà	Variante originale: costruzione di tableau con mercato. Mosse: compro i, recolt.
+treptele_civilizatiei	es	Peldaños de la civilización	Variante original: construcción de tablero con mercado. Jugadas: compro i, recolt.
+treptele_civilizatiei	pt	Degraus da civilização	Variante original: construção de tabuleiro com mercado. Jogadas: compro i, recolt.
+treptele_civilizatiei	de	Stufen der Zivilisation	Eigene Variante: Tableau-Aufbau mit Markt. Züge: compro i, recolt.
+treptele_civilizatiei	hu	A civilizáció lépcsői	Saját változat: piacos tablóépítés. Lépések: compro i, recolt.
+asezarile_imperiului	ro	Așezările Imperiului	Variantă originală de construit un tablou: piață publică de 5 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Rasez i (2 monede) distruge o carte a rivalului. După 14 ture fiecare, câștigă scorul mai mare (puncte, bonus 2 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt, rasez i.
+asezarile_imperiului	en	Empire Settlements	Original variant: market tableau building. Moves: compro i, recolt, rasez i.
+asezarile_imperiului	fr	Colonies de l'empire	Variante originale: construction de tableau avec marché. Coups: compro i, recolt, rasez i.
+asezarile_imperiului	it	Insediamenti dell'impero	Variante originale: costruzione di tableau con mercato. Mosse: compro i, recolt, rasez i.
+asezarile_imperiului	es	Asentamientos del imperio	Variante original: construcción de tablero con mercado. Jugadas: compro i, recolt, rasez i.
+asezarile_imperiului	pt	Assentamentos do império	Variante original: construção de tabuleiro com mercado. Jogadas: compro i, recolt, rasez i.
+asezarile_imperiului	de	Reichssiedlungen	Eigene Variante: Tableau-Aufbau mit Markt. Züge: compro i, recolt, rasez i.
+asezarile_imperiului	hu	Birodalmi telepek	Saját változat: piacos tablóépítés. Lépések: compro i, recolt, rasez i.
+portul_vechi	ro	Portul Vechi	Variantă originală de construit un tablou: piață publică de 4 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Imprumut dă 4 monede și costă 3 puncte la final (maxim 2). După 14 ture fiecare, câștigă scorul mai mare (puncte, bonus 3 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt, imprumut.
+portul_vechi	en	The Old Harbor	Original variant: market tableau building. Moves: compro i, recolt, imprumut.
+portul_vechi	fr	Le Vieux Port	Variante originale: construction de tableau avec marché. Coups: compro i, recolt, imprumut.
+portul_vechi	it	Il vecchio porto	Variante originale: costruzione di tableau con mercato. Mosse: compro i, recolt, imprumut.
+portul_vechi	es	El viejo puerto	Variante original: construcción de tablero con mercado. Jugadas: compro i, recolt, imprumut.
+portul_vechi	pt	O porto velho	Variante original: construção de tabuleiro com mercado. Jogadas: compro i, recolt, imprumut.
+portul_vechi	de	Der Alte Hafen	Eigene Variante: Tableau-Aufbau mit Markt. Züge: compro i, recolt, imprumut.
+portul_vechi	hu	A régi kikötő	Saját változat: piacos tablóépítés. Lépések: compro i, recolt, imprumut.
+targul_mestesugarilor	ro	Târgul Meșteșugarilor	Variantă originală de construit un tablou: piață publică de 6 cărți cu cost, venit, puncte și culoare; coada următoarelor cărți e publică. compro i cumpără o carte, recolt dă 3 monede; după fiecare mutare primești veniturile cărților tale. Fiecare carte deținută de aceeași culoare reduce prețul cu 1. După 12 ture fiecare, câștigă scorul mai mare (puncte, bonus 4 pe set complet de 4 culori, monede/4). Mutări: compro i, recolt.
+targul_mestesugarilor	en	Craftsmen's Fair	Original variant: market tableau building. Moves: compro i, recolt.
+targul_mestesugarilor	fr	Foire des artisans	Variante originale: construction de tableau avec marché. Coups: compro i, recolt.
+targul_mestesugarilor	it	Fiera degli artigiani	Variante originale: costruzione di tableau con mercato. Mosse: compro i, recolt.
+targul_mestesugarilor	es	Feria de artesanos	Variante original: construcción de tablero con mercado. Jugadas: compro i, recolt.
+targul_mestesugarilor	pt	Feira dos artesãos	Variante original: construção de tabuleiro com mercado. Jogadas: compro i, recolt.
+targul_mestesugarilor	de	Handwerkermarkt	Eigene Variante: Tableau-Aufbau mit Markt. Züge: compro i, recolt.
+targul_mestesugarilor	hu	Kézműves vásár	Saját változat: piacos tablóépítés. Lépések: compro i, recolt.
+castele_pe_rau	ro	Castelele de pe Râu	Variantă originală de plăcuțe pe grilă 5×5: Fiecare are tabla lui; mâini deschise de 3 plăcuțe în 4 culori (A–D), coadă publică. pune r,c k așază plăcuța k (de la 0) lângă una existentă și dă atâtea puncte cât mărimea grupului de aceeași culoare. Scorul e suma punctelor de grup. Se termină când nu mai sunt plăcuțe. Mutări: pune r,c k, pas.
+castele_pe_rau	en	Castles on the River	Original variant: tile placement on a grid. Moves: pune r,c k, pas.
+castele_pe_rau	fr	Châteaux sur la rivière	Variante originale: pose de tuiles sur grille. Coups: pune r,c k, pas.
+castele_pe_rau	it	Castelli sul fiume	Variante originale: posa di tessere su griglia. Mosse: pune r,c k, pas.
+castele_pe_rau	es	Castillos del río	Variante original: colocación de losetas en cuadrícula. Jugadas: pune r,c k, pas.
+castele_pe_rau	pt	Castelos do rio	Variante original: colocação de peças em grelha. Jogadas: pune r,c k, pas.
+castele_pe_rau	de	Burgen am Fluss	Eigene Variante: Plättchenlegen auf Raster. Züge: pune r,c k, pas.
+castele_pe_rau	hu	Folyóparti várak	Saját változat: lapkalerakás rácson. Lépések: pune r,c k, pas.
+tara_dintre_fluvii	ro	Țara dintre Fluvii	Variantă originală de plăcuțe pe grilă 6×6: Tabla e comună; mâini deschise de 3 plăcuțe în 4 culori (A–D), coadă publică. pune r,c k așază plăcuța k (de la 0) lângă una existentă și dă atâtea puncte cât mărimea grupului de aceeași culoare. Scorul final e culoarea cea mai slabă din cele 4 (×4) plus un bonus mic. Se termină când nu mai sunt plăcuțe. Mutări: pune r,c k, pas.
+tara_dintre_fluvii	en	Land Between Rivers	Original variant: tile placement on a grid. Moves: pune r,c k, pas.
+tara_dintre_fluvii	fr	Pays entre deux fleuves	Variante originale: pose de tuiles sur grille. Coups: pune r,c k, pas.
+tara_dintre_fluvii	it	Terra tra i fiumi	Variante originale: posa di tessere su griglia. Mosse: pune r,c k, pas.
+tara_dintre_fluvii	es	Tierra entre ríos	Variante original: colocación de losetas en cuadrícula. Jugadas: pune r,c k, pas.
+tara_dintre_fluvii	pt	Terra entre rios	Variante original: colocação de peças em grelha. Jogadas: pune r,c k, pas.
+tara_dintre_fluvii	de	Zweistromland	Eigene Variante: Plättchenlegen auf Raster. Züge: pune r,c k, pas.
+tara_dintre_fluvii	hu	Folyóköz	Saját változat: lapkalerakás rácson. Lépések: pune r,c k, pas.
+tara_faraonilor	ro	Țara Faraonilor	Variantă originală de cucerire pe o hartă cu 9 noduri: 3 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. Luarea capitalei inamice câștigă; după 14 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, fin.
+tara_faraonilor	en	Land of Pharaohs	Original variant: map conquest. Moves: rec a, mov a>b, all a>b, fin.
+tara_faraonilor	fr	Terre des pharaons	Variante originale: conquête de carte. Coups: rec a, mov a>b, all a>b, fin.
+tara_faraonilor	it	Terra dei faraoni	Variante originale: conquista della mappa. Mosse: rec a, mov a>b, all a>b, fin.
+tara_faraonilor	es	Tierra de faraones	Variante original: conquista de mapa. Jugadas: rec a, mov a>b, all a>b, fin.
+tara_faraonilor	pt	Terra dos faraós	Variante original: conquista de mapa. Jogadas: rec a, mov a>b, all a>b, fin.
+tara_faraonilor	de	Land der Pharaonen	Eigene Variante: Gebietseroberung. Züge: rec a, mov a>b, all a>b, fin.
+tara_faraonilor	hu	A fáraók földje	Saját változat: térképhódítás. Lépések: rec a, mov a>b, all a>b, fin.
+imperii_stelare	ro	Imperii Stelare	Variantă originală de cucerire pe o hartă cu 10 noduri: 3 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. tec (2 acțiuni) dă +1 atac, maxim 3. Luarea capitalei inamice câștigă; după 12 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, tec, fin.
+imperii_stelare	en	Star Empires	Original variant: map conquest. Moves: rec a, mov a>b, all a>b, tec, fin.
+imperii_stelare	fr	Empires stellaires	Variante originale: conquête de carte. Coups: rec a, mov a>b, all a>b, tec, fin.
+imperii_stelare	it	Imperi stellari	Variante originale: conquista della mappa. Mosse: rec a, mov a>b, all a>b, tec, fin.
+imperii_stelare	es	Imperios estelares	Variante original: conquista de mapa. Jugadas: rec a, mov a>b, all a>b, tec, fin.
+imperii_stelare	pt	Impérios estelares	Variante original: conquista de mapa. Jogadas: rec a, mov a>b, all a>b, tec, fin.
+imperii_stelare	de	Sternenreiche	Eigene Variante: Gebietseroberung. Züge: rec a, mov a>b, all a>b, tec, fin.
+imperii_stelare	hu	Csillagbirodalmak	Saját változat: térképhódítás. Lépések: rec a, mov a>b, all a>b, tec, fin.
+marsul_umbrelor	ro	Marșul Umbrelor	Variantă originală de cucerire pe o hartă cu 11 noduri: 3 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. Luarea capitalei inamice câștigă; după 16 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, fin.
+marsul_umbrelor	en	March of Shadows	Original variant: map conquest. Moves: rec a, mov a>b, all a>b, fin.
+marsul_umbrelor	fr	Marche des ombres	Variante originale: conquête de carte. Coups: rec a, mov a>b, all a>b, fin.
+marsul_umbrelor	it	Marcia delle ombre	Variante originale: conquista della mappa. Mosse: rec a, mov a>b, all a>b, fin.
+marsul_umbrelor	es	Marcha de las sombras	Variante original: conquista de mapa. Jugadas: rec a, mov a>b, all a>b, fin.
+marsul_umbrelor	pt	Marcha das sombras	Variante original: conquista de mapa. Jogadas: rec a, mov a>b, all a>b, fin.
+marsul_umbrelor	de	Marsch der Schatten	Eigene Variante: Gebietseroberung. Züge: rec a, mov a>b, all a>b, fin.
+marsul_umbrelor	hu	Az árnyak menete	Saját változat: térképhódítás. Lépések: rec a, mov a>b, all a>b, fin.
+linia_frontului	ro	Linia Frontului	Variantă originală de cucerire pe o hartă cu 12 noduri: 4 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. Luarea capitalei inamice câștigă; după 12 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, fin.
+linia_frontului	en	Front Line	Original variant: map conquest. Moves: rec a, mov a>b, all a>b, fin.
+linia_frontului	fr	Ligne de front	Variante originale: conquête de carte. Coups: rec a, mov a>b, all a>b, fin.
+linia_frontului	it	Linea del fronte	Variante originale: conquista della mappa. Mosse: rec a, mov a>b, all a>b, fin.
+linia_frontului	es	Línea del frente	Variante original: conquista de mapa. Jugadas: rec a, mov a>b, all a>b, fin.
+linia_frontului	pt	Linha da frente	Variante original: conquista de mapa. Jogadas: rec a, mov a>b, all a>b, fin.
+linia_frontului	de	Frontlinie	Eigene Variante: Gebietseroberung. Züge: rec a, mov a>b, all a>b, fin.
+linia_frontului	hu	Frontvonal	Saját változat: térképhódítás. Lépések: rec a, mov a>b, all a>b, fin.
+cronicile_popoarelor	ro	Cronicile Popoarelor	Variantă originală de cucerire pe o hartă cu 9 noduri: 3 acțiuni pe tură; rec a adaugă o unitate, mov a>b mută toate unitățile în afară de una, all a>b le mută pe toate; atacul bate apărarea (fortăreața +1) fără zaruri, diferența rămâne. La sfârșitul turei capitala primește o unitate. tec (2 acțiuni) dă +1 atac, maxim 3. Luarea capitalei inamice câștigă; după 14 ture, mai multe puncte de noduri. Mutări: rec a, mov a>b, all a>b, tec, fin.
+cronicile_popoarelor	en	Chronicles of Peoples	Original variant: map conquest. Moves: rec a, mov a>b, all a>b, tec, fin.
+cronicile_popoarelor	fr	Chroniques des peuples	Variante originale: conquête de carte. Coups: rec a, mov a>b, all a>b, tec, fin.
+cronicile_popoarelor	it	Cronache dei popoli	Variante originale: conquista della mappa. Mosse: rec a, mov a>b, all a>b, tec, fin.
+cronicile_popoarelor	es	Crónicas de los pueblos	Variante original: conquista de mapa. Jugadas: rec a, mov a>b, all a>b, tec, fin.
+cronicile_popoarelor	pt	Crônicas dos povos	Variante original: conquista de mapa. Jogadas: rec a, mov a>b, all a>b, tec, fin.
+cronicile_popoarelor	de	Chroniken der Völker	Eigene Variante: Gebietseroberung. Züge: rec a, mov a>b, all a>b, tec, fin.
+cronicile_popoarelor	hu	A népek krónikái	Saját változat: térképhódítás. Lépések: rec a, mov a>b, all a>b, tec, fin.
+cortina_influentei	ro	Cortina de Influență	Variantă originală de influență pe o hartă cu 12 noduri: 4 puncte pe tură; inf n pune influență (1 punct lângă prezența ta, altfel 2), cup n scoate 2 influențe rivale (2 puncte); nodul e controlat la diferență ≥ stabilitate. La fiecare 3 runde se face punctajul: nodurile controlate mută bara comună; la ±15 se câștigă imediat, altfel după 9 runde. Mutări: inf n, cup n, fin.
+cortina_influentei	en	Curtain of Influence	Original variant: influence on a map. Moves: inf n, cup n, fin.
+cortina_influentei	fr	Rideau d'influence	Variante originale: influence sur carte. Coups: inf n, cup n, fin.
+cortina_influentei	it	Sipario d'influenza	Variante originale: influenza sulla mappa. Mosse: inf n, cup n, fin.
+cortina_influentei	es	Telón de influencia	Variante original: influencia en el mapa. Jugadas: inf n, cup n, fin.
+cortina_influentei	pt	Cortina de influência	Variante original: influência no mapa. Jogadas: inf n, cup n, fin.
+cortina_influentei	de	Vorhang des Einflusses	Eigene Variante: Einfluss auf der Karte. Züge: inf n, cup n, fin.
+cortina_influentei	hu	A befolyás függönye	Saját változat: befolyás a térképen. Lépések: inf n, cup n, fin.
+marile_puteri	ro	Marile Puteri	Variantă originală de influență pe o hartă cu 9 noduri: 3 puncte pe tură; inf n pune influență (1 punct lângă prezența ta, altfel 2), cup n scoate 2 influențe rivale (2 puncte); nodul e controlat la diferență ≥ stabilitate. La fiecare 2 runde se face punctajul: nodurile controlate mută bara comună; la ±12 se câștigă imediat, altfel după 10 runde. Mutări: inf n, cup n, fin.
+marile_puteri	en	Great Powers	Original variant: influence on a map. Moves: inf n, cup n, fin.
+marile_puteri	fr	Grandes puissances	Variante originale: influence sur carte. Coups: inf n, cup n, fin.
+marile_puteri	it	Grandi potenze	Variante originale: influenza sulla mappa. Mosse: inf n, cup n, fin.
+marile_puteri	es	Grandes potencias	Variante original: influencia en el mapa. Jugadas: inf n, cup n, fin.
+marile_puteri	pt	Grandes potências	Variante original: influência no mapa. Jogadas: inf n, cup n, fin.
+marile_puteri	de	Großmächte	Eigene Variante: Einfluss auf der Karte. Züge: inf n, cup n, fin.
+marile_puteri	hu	Nagyhatalmak	Saját változat: befolyás a térképen. Lépések: inf n, cup n, fin.
+calea_ferata_preriei	ro	Calea Ferată a Preriei	Variantă originală de rețea de rute: 8 orașe, hub-uri 0 și 3. inc dă venitul (3). tra k construiește o rută (costul ei, 1 punct), ent n livrează de la hub-ul tău la un oraș cu cerere (puncte = cererea, apoi scade). Rutele sunt comune: poți livra pe muchiile rivalului plătind 1. După 14 ture fiecare, câștigă scorul mai mare (puncte + monede/4). Mutări: inc, tra k, ent n.
+calea_ferata_preriei	en	Prairie Rail	Original variant: route network building. Moves: inc, tra k, ent n.
+calea_ferata_preriei	fr	Rail de la prairie	Variante originale: construction de réseau de routes. Coups: inc, tra k, ent n.
+calea_ferata_preriei	it	Ferrovia della prateria	Variante originale: costruzione di reti di rotte. Mosse: inc, tra k, ent n.
+calea_ferata_preriei	es	Ferrocarril de la pradera	Variante original: construcción de red de rutas. Jugadas: inc, tra k, ent n.
+calea_ferata_preriei	pt	Ferrovia da pradaria	Variante original: construção de rede de rotas. Jogadas: inc, tra k, ent n.
+calea_ferata_preriei	de	Prärie-Bahn	Eigene Variante: Streckennetzbau. Züge: inc, tra k, ent n.
+calea_ferata_preriei	hu	Prérivasút	Saját változat: útvonalhálózat-építés. Lépések: inc, tra k, ent n.
+fabrici_si_canale	ro	Fabrici și Canale	Variantă originală de rețea de rute: 7 orașe, hub-uri 0 și 3. inc dă venitul (3). tra k construiește o rută (costul ei, 1 punct), ent n livrează de la hub-ul tău la un oraș cu cerere (puncte = cererea, apoi scade). Doar rutele proprii; fiecare livrare crește venitul cu 1. După 14 ture fiecare, câștigă scorul mai mare (puncte + monede/4). Mutări: inc, tra k, ent n.
+fabrici_si_canale	en	Mills and Canals	Original variant: route network building. Moves: inc, tra k, ent n.
+fabrici_si_canale	fr	Usines et canaux	Variante originale: construction de réseau de routes. Coups: inc, tra k, ent n.
+fabrici_si_canale	it	Fabbriche e canali	Variante originale: costruzione di reti di rotte. Mosse: inc, tra k, ent n.
+fabrici_si_canale	es	Fábricas y canales	Variante original: construcción de red de rutas. Jugadas: inc, tra k, ent n.
+fabrici_si_canale	pt	Fábricas e canais	Variante original: construção de rede de rotas. Jogadas: inc, tra k, ent n.
+fabrici_si_canale	de	Fabriken und Kanäle	Eigene Variante: Streckennetzbau. Züge: inc, tra k, ent n.
+fabrici_si_canale	hu	Gyárak és csatornák	Saját változat: útvonalhálózat-építés. Lépések: inc, tra k, ent n.
+liga_orasului	ro	Liga Orașelor	Variantă originală de rețea de rute: 6 orașe, hub-uri 0 și 3. inc dă venitul (3). Pui cuburi (1 monedă) pe muchii; la 3 cuburi muchia se închide și majoritatea ia dublul costului. După 14 ture fiecare, câștigă scorul mai mare (puncte + monede/4). Mutări: inc, cub k.
+liga_orasului	en	League of Towns	Original variant: route network building. Moves: inc, cub k.
+liga_orasului	fr	Ligue des villes	Variante originale: construction de réseau de routes. Coups: inc, cub k.
+liga_orasului	it	Lega delle città	Variante originale: costruzione di reti di rotte. Mosse: inc, cub k.
+liga_orasului	es	Liga de ciudades	Variante original: construcción de red de rutas. Jugadas: inc, cub k.
+liga_orasului	pt	Liga das cidades	Variante original: construção de rede de rotas. Jogadas: inc, cub k.
+liga_orasului	de	Städtebund	Eigene Variante: Streckennetzbau. Züge: inc, cub k.
+liga_orasului	hu	Városok szövetsége	Saját változat: útvonalhálózat-építés. Lépések: inc, cub k.
+navigatorii	ro	Navigatorii Oceanului	Variantă originală de rețea de rute: 8 orașe, hub-uri 0 și 4. inc dă venitul (3). tra k construiește o rută (costul ei, 1 punct), ent n livrează de la hub-ul tău la un oraș cu cerere (puncte = cererea, apoi scade). Doar rutele proprii; prima livrare într-un oraș dă 2 monede. După 14 ture fiecare, câștigă scorul mai mare (puncte + monede/4). Mutări: inc, tra k, ent n.
+navigatorii	en	Ocean Pilots	Original variant: route network building. Moves: inc, tra k, ent n.
+navigatorii	fr	Pilotes de l'océan	Variante originale: construction de réseau de routes. Coups: inc, tra k, ent n.
+navigatorii	it	Piloti dell'oceano	Variante originale: costruzione di reti di rotte. Mosse: inc, tra k, ent n.
+navigatorii	es	Pilotos del océano	Variante original: construcción de red de rutas. Jugadas: inc, tra k, ent n.
+navigatorii	pt	Pilotos do oceano	Variante original: construção de rede de rotas. Jogadas: inc, tra k, ent n.
+navigatorii	de	Ozeanlotsen	Eigene Variante: Streckennetzbau. Züge: inc, tra k, ent n.
+navigatorii	hu	Óceáni navigátorok	Saját változat: útvonalhálózat-építés. Lépések: inc, tra k, ent n.
+cap_de_pod	ro	Cap de Pod	Variantă originală de bătălie pe grilă 7×9: infanterie (i), cavalerie (c, mișcă 2, lovește 2), arcași (a, rază 2); 3 ordine pe tură, fiecare unitate o dată. mv r,c>r,c mută, at r,c>r,c lovește (fără zaruri; flancat +1), fin încheie tura. Ordinele unei ture rămân într-o singură treime de tablă. Primul la 6 medalii (unități distruse) câștigă. Mutări: mv, at, fin.
+cap_de_pod	en	Beachhead Skirmish	Original variant: tactical grid battle. Moves: mv r,c>r,c, at r,c>r,c, fin.
+cap_de_pod	fr	Tête de pont	Variante originale: bataille tactique sur grille. Coups: mv r,c>r,c, at r,c>r,c, fin.
+cap_de_pod	it	Testa di ponte	Variante originale: battaglia tattica su griglia. Mosse: mv r,c>r,c, at r,c>r,c, fin.
+cap_de_pod	es	Cabeza de playa	Variante original: batalla táctica en cuadrícula. Jugadas: mv r,c>r,c, at r,c>r,c, fin.
+cap_de_pod	pt	Cabeça de ponte	Variante original: batalha tática em grelha. Jogadas: mv r,c>r,c, at r,c>r,c, fin.
+cap_de_pod	de	Brückenkopf	Eigene Variante: taktische Rasterschlacht. Züge: mv r,c>r,c, at r,c>r,c, fin.
+cap_de_pod	hu	Hídfő	Saját változat: taktikai rácsos csata. Lépések: mv r,c>r,c, at r,c>r,c, fin.
+legiuni_si_falange	ro	Legiuni și Falange	Variantă originală de bătălie pe grilă 7×9: infanterie (i), cavalerie (c, mișcă 2, lovește 2), arcași (a, rază 2); 4 ordine pe tură, fiecare unitate o dată. mv r,c>r,c mută, at r,c>r,c lovește (fără zaruri; flancat +1), fin încheie tura. Primul la 7 medalii (unități distruse) câștigă. Mutări: mv, at, fin.
+legiuni_si_falange	en	Legions and Phalanxes	Original variant: tactical grid battle. Moves: mv r,c>r,c, at r,c>r,c, fin.
+legiuni_si_falange	fr	Légions et phalanges	Variante originale: bataille tactique sur grille. Coups: mv r,c>r,c, at r,c>r,c, fin.
+legiuni_si_falange	it	Legioni e falangi	Variante originale: battaglia tattica su griglia. Mosse: mv r,c>r,c, at r,c>r,c, fin.
+legiuni_si_falange	es	Legiones y falanges	Variante original: batalla táctica en cuadrícula. Jugadas: mv r,c>r,c, at r,c>r,c, fin.
+legiuni_si_falange	pt	Legiões e falanges	Variante original: batalha tática em grelha. Jogadas: mv r,c>r,c, at r,c>r,c, fin.
+legiuni_si_falange	de	Legionen und Phalangen	Eigene Variante: taktische Rasterschlacht. Züge: mv r,c>r,c, at r,c>r,c, fin.
+legiuni_si_falange	hu	Légiók és phalanxok	Saját változat: taktikai rácsos csata. Lépések: mv r,c>r,c, at r,c>r,c, fin.
+flotele_cosmice	ro	Flotele Cosmice	Variantă originală de construit pachetul: începi cu 10 cărți, mâini deschise de 5; juc i joacă o carte (monedă/putere), cump j cumpără din piața publică de 5, fin încheie tura (aruncă mâna, trage 5). Puterea scade autoritatea rivalului (35); cine ajunge la 0 pierde. După 25 ture fiecare, scorul mai mare. Mutări: juc i, cump j, fin.
+flotele_cosmice	en	Cosmic Fleets	Original variant: deck building. Moves: juc i, cump j, fin.
+flotele_cosmice	fr	Flottes cosmiques	Variante originale: construction de deck. Coups: juc i, cump j, fin.
+flotele_cosmice	it	Flotte cosmiche	Variante originale: costruzione del mazzo. Mosse: juc i, cump j, fin.
+flotele_cosmice	es	Flotas cósmicas	Variante original: construcción de mazo. Jugadas: juc i, cump j, fin.
+flotele_cosmice	pt	Frotas cósmicas	Variante original: construção de baralho. Jogadas: juc i, cump j, fin.
+flotele_cosmice	de	Kosmische Flotten	Eigene Variante: Deckbau. Züge: juc i, cump j, fin.
+flotele_cosmice	hu	Kozmikus flották	Saját változat: pakliépítés. Lépések: juc i, cump j, fin.
+drumul_comorii	ro	Drumul Comorii	Variantă originală de construit pachetul: începi cu 10 cărți, mâini deschise de 5; juc i joacă o carte (monedă/putere), cump j cumpără din piața publică de 5, fin încheie tura (aruncă mâna, trage 5). Puterea avansează pe un drum; primul la 30 câștigă. După 25 ture fiecare, scorul mai mare. Mutări: juc i, cump j, fin.
+drumul_comorii	en	Treasure Trail	Original variant: deck building. Moves: juc i, cump j, fin.
+drumul_comorii	fr	Piste du trésor	Variante originale: construction de deck. Coups: juc i, cump j, fin.
+drumul_comorii	it	Sentiero del tesoro	Variante originale: costruzione del mazzo. Mosse: juc i, cump j, fin.
+drumul_comorii	es	Senda del tesoro	Variante original: construcción de mazo. Jugadas: juc i, cump j, fin.
+drumul_comorii	pt	Trilha do tesouro	Variante original: construção de baralho. Jogadas: juc i, cump j, fin.
+drumul_comorii	de	Schatzpfad	Eigene Variante: Deckbau. Züge: juc i, cump j, fin.
+drumul_comorii	hu	Kincsösvény	Saját változat: pakliépítés. Lépések: juc i, cump j, fin.
+hoinarii_pesterii	ro	Hoinarii Peșterii	Variantă originală de construit pachetul: începi cu 10 cărți, mâini deschise de 5; juc i joacă o carte (monedă/putere), cump j cumpără din piața publică de 5, fin încheie tura (aruncă mâna, trage 5). Puterea coboară în peșteră (adâncime/2 puncte), cărțile cumpărate dau puncte. După 12 ture fiecare, scorul mai mare. Mutări: juc i, cump j, fin.
+hoinarii_pesterii	en	Cave Wanderers	Original variant: deck building. Moves: juc i, cump j, fin.
+hoinarii_pesterii	fr	Les Rôdeurs de la grotte	Variante originale: construction de deck. Coups: juc i, cump j, fin.
+hoinarii_pesterii	it	Vagabondi della grotta	Variante originale: costruzione del mazzo. Mosse: juc i, cump j, fin.
+hoinarii_pesterii	es	Vagabundos de la cueva	Variante original: construcción de mazo. Jugadas: juc i, cump j, fin.
+hoinarii_pesterii	pt	Andarilhos da gruta	Variante original: construção de baralho. Jogadas: juc i, cump j, fin.
+hoinarii_pesterii	de	Höhlenwanderer	Eigene Variante: Deckbau. Züge: juc i, cump j, fin.
+hoinarii_pesterii	hu	Barlangi vándorok	Saját változat: pakliépítés. Lépések: juc i, cump j, fin.
+lantul_bufetelor	ro	Lanțul de Bufete	Variantă originală de duel economic în 8 runde: șase clienți cu preț maxim 2, 3, 3, 4, 5, 5. J1 apoi J2 aleg pret p stoc k [rec]; fiecare client cumpără de la cel mai bun preț efectiv (preț minus reclama rec, care costă 2), fiecare unitate vândută aduce prețul, stocul costă 1 pe unitate. Câștigă banii mai mulți. Mutări: pret p stoc k, pret p stoc k rec.
+lantul_bufetelor	en	Diner Chain	Original variant: price duel. Moves: pret p stoc k [rec].
+lantul_bufetelor	fr	Chaîne de snacks	Variante originale: duel de prix. Coups: pret p stoc k [rec].
+lantul_bufetelor	it	Catena di tavole calde	Variante originale: duello di prezzi. Mosse: pret p stoc k [rec].
+lantul_bufetelor	es	Cadena de merenderos	Variante original: duelo de precios. Jugadas: pret p stoc k [rec].
+lantul_bufetelor	pt	Cadeia de lanchonetes	Variante original: duelo de preços. Jogadas: pret p stoc k [rec].
+lantul_bufetelor	de	Imbisskette	Eigene Variante: Preisduell. Züge: pret p stoc k [rec].
+lantul_bufetelor	hu	Büfélánc	Saját változat: árpárbaj. Lépések: pret p stoc k [rec].
+frontiera_stelara	ro	Frontiera Stelară	Variantă originală de duel de ambasadori: fiecare are cărțile 0, 1, 2, 3, 5, 8, 13, 21 (indice k de la 0) și 2 aliați (+3, o singură dată). Rolurile alternează: provocatorul joacă ata k [+] cu fața în sus, apărătorul răspunde ras k [+]; totalul mai mare ia o colonie de la celălalt, egal: nimic. Pornești cu 4 colonii; la 7 câștigi, la 1 pierzi. Mutări: ata k, ata k +, ras k, ras k +.
+frontiera_stelara	en	Starry Frontier	Original variant: envoy card duel. Moves: ata k [+], ras k [+].
+frontiera_stelara	fr	Frontière stellaire	Variante originale: duel de cartes d'émissaires. Coups: ata k [+], ras k [+].
+frontiera_stelara	it	Frontiera stellare	Variante originale: duello di carte tra emissari. Mosse: ata k [+], ras k [+].
+frontiera_stelara	es	Frontera estelar	Variante original: duelo de cartas de emisarios. Jugadas: ata k [+], ras k [+].
+frontiera_stelara	pt	Fronteira estelar	Variante original: duelo de cartas de emissários. Jogadas: ata k [+], ras k [+].
+frontiera_stelara	de	Sternengrenze	Eigene Variante: Kartenduell der Gesandten. Züge: ata k [+], ras k [+].
+frontiera_stelara	hu	Csillaghatár	Saját változat: követek kártyapárbaja. Lépések: ata k [+], ras k [+].
