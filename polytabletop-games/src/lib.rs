@@ -6,6 +6,55 @@
 //! used for our own games: we use the generic names ("Reversi",
 //! "Patru în linie", …).
 
+// B6-mods-begin
+pub mod aruncari_cupe;
+pub mod b6_ask;
+pub mod b6_crowd;
+pub mod b6_deduce;
+pub mod b6_mask;
+pub mod b6_pick;
+pub mod b6_slap;
+pub mod b6_util;
+pub mod bal_masti;
+pub mod banda_nebuna;
+pub mod bentita;
+pub mod camere_fitil;
+pub mod categoria_indrazneata;
+pub mod ciocnirea_literelor;
+pub mod crima_din_port;
+pub mod definitii_false;
+pub mod duel_categorii;
+pub mod duel_gloante;
+pub mod duelul_argumentelor;
+pub mod favoritul_judecatorului;
+pub mod fitilul_cuvintelor;
+pub mod gandaci_blufati;
+pub mod ganduri_impartasite;
+pub mod gesturi_mute;
+pub mod grunturi;
+pub mod indicii_cascada;
+pub mod intrusul_tacut;
+pub mod legenda_potrivita;
+pub mod nuanta_ghicita;
+pub mod obiect_fulger;
+pub mod palat_intrigi;
+pub mod palmuta_pe_cuvant;
+pub mod pariu_pe_cifre;
+pub mod povesti_negre;
+pub mod primarul_si_lupul;
+pub mod provocarea_mintii;
+pub mod provocari_trasnite;
+pub mod reguli_schimbatoare;
+pub mod schite_rapide;
+pub mod semne_icoane;
+pub mod totem_grabit;
+pub mod trei_runde;
+pub mod valul_ideilor;
+pub mod vama_bacsis;
+pub mod vorbe_scurte;
+pub mod zaruri_povestit;
+pub mod zece_usi;
+// B6-mods-end
 // B2-mods-begin
 pub mod agenti;
 pub mod ambuteiaj;
@@ -696,6 +745,36 @@ pub const HOTSEAT_SAFE: &[&str] = &[
     "tablou",
     "turnuri_litere",
     // B2-hs-end
+    // B6-hs-begin
+    "vorbe_scurte",
+    "semne_icoane",
+    "grunturi",
+    "gesturi_mute",
+    "trei_runde",
+    "schite_rapide",
+    "crima_din_port",
+    "primarul_si_lupul",
+    "bentita",
+    "totem_grabit",
+    "palmuta_pe_cuvant",
+    "duel_categorii",
+    "duelul_argumentelor",
+    "legenda_potrivita",
+    "banda_nebuna",
+    "favoritul_judecatorului",
+    "ganduri_impartasite",
+    "obiect_fulger",
+    "pariu_pe_cifre",
+    "definitii_false",
+    "nuanta_ghicita",
+    "camere_fitil",
+    "duel_gloante",
+    "vama_bacsis",
+    "gandaci_blufati",
+    "bal_masti",
+    "reguli_schimbatoare",
+    "palat_intrigi",
+    // B6-hs-end
     "burako",
     "chinchon",
     "cuarenta",
@@ -4004,6 +4083,288 @@ fn playable_base() -> Vec<Playable> {
             make: || Box::new(brand_util::B(bambuzeria::Bambuzeria::new())),
         },
         // B2-reg-end
+        // B6-reg-begin
+        Playable {
+            id: "vorbe_scurte",
+            title: "Descrierea în trei vorbe",
+            category: "Party",
+            rules: "Variantă originală: o țintă ascunsă dintre 12 elemente (A tip 1–3, B mărime 1–2, C mișcare 1–2). Cine descrie dă cel mult 3 indicii adevărate, apoi celălalt ghicește; rolurile alternează, 6 runde. Informație ascunsă: ținta. Mutări: ind X=v, gata, ghic k, verific.",
+            make: || Box::new(brand_util::B(vorbe_scurte::new())),
+        },
+        Playable {
+            id: "semne_icoane",
+            title: "Limbajul Icoanelor",
+            category: "Party",
+            rules: "Variantă originală: o țintă ascunsă dintre 32 de elemente cu patru atribute (icoană, culoare, număr, formă). Cine „vorbește” doar prin icoane poate pune până la 4 indicii adevărate; celălalt ghicește. 6 runde, rolurile alternează. Mutări: ind X=v, gata, ghic k, verific.",
+            make: || Box::new(brand_util::B(semne_icoane::new())),
+        },
+        Playable {
+            id: "grunturi",
+            title: "Grunțuri Alese",
+            category: "Party",
+            rules: "Variantă originală: doar „cuvinte scurte” permise: din cele trei atribute ale țintei (sunet, mărime, culoare) poți indica doar primele două, cel mult 2 indicii. Ținta e ascunsă; ghicitorul alege dintre 18 elemente. 6 runde. Mutări: ind X=v, gata, ghic k, verific.",
+            make: || Box::new(brand_util::B(grunturi::new())),
+        },
+        Playable {
+            id: "gesturi_mute",
+            title: "Mimica Mută",
+            category: "Party",
+            rules: "Variantă originală: mimul nu spune cuvinte, doar arată doi dintre cei trei „gesturi” (atributele B și C ale țintei dintre 18 elemente), cel mult 2 indicii; ghicitorul alege ținta. 6 runde, rolurile alternează. Mutări: ind X=v, gata, ghic k, verific.",
+            make: || Box::new(brand_util::B(gesturi_mute::new())),
+        },
+        Playable {
+            id: "trei_runde",
+            title: "Aceleași Cărți, Trei Runde",
+            category: "Party",
+            rules: "Variantă originală: o țintă ascunsă dintre 18 elemente; limita de indicii scade pe parcurs: 3, 3, 2, 2, 1, 1 în cele 6 runde (ca la „aceleași cărți, reguli tot mai stricte”). Cine descrie și cine ghicește alternează. Mutări: ind X=v, gata, ghic k, verific.",
+            make: || Box::new(brand_util::B(trei_runde::new())),
+        },
+        Playable {
+            id: "schite_rapide",
+            title: "Schițe Grăbite",
+            category: "Party",
+            rules: "Variantă originală: schițatorul „desenează” țintei (dintre 20 de elemente) trăsături adevărate, cel mult 3 (A formă 1–5, B contur 1–2, C umbră 1–2); celălalt ghicește. 6 runde, rolurile alternează. Mutări: ind X=v, gata, ghic k, verific.",
+            make: || Box::new(brand_util::B(schite_rapide::new())),
+        },
+        Playable {
+            id: "crima_din_port",
+            title: "Crima din Port: Ancheta",
+            category: "Party",
+            rules: "Variantă originală: criminalul (dintre 36 de suspecți, cu patru atribute: armă, indiciu, loc, motiv) e cunoscut doar de expert, care poate lăsa cel mult 3 indicii; anchetatorul ghicește. 6 runde, rolurile alternează. Mutări: ind X=v, gata, ghic k, verific.",
+            make: || Box::new(brand_util::B(crima_din_port::new())),
+        },
+        Playable {
+            id: "primarul_si_lupul",
+            title: "Primarul și Lupul",
+            category: "Party",
+            rules: "Variantă originală: primarul știe ținta (12 elemente cu atributele tip, mărime, culoare) și răspunde adevărat; celălalt jucător are cel mult 5 întrebări (intreb X=v) și apoi ghicește. Rolurile alternează, 6 runde. Mutări: intreb X=v, ghic k, raspuns, verific.",
+            make: || Box::new(brand_util::B(primarul_si_lupul::new())),
+        },
+        Playable {
+            id: "intrusul_tacut",
+            title: "Intrusul Tăcut",
+            category: "Party",
+            rules: "Variantă originală: un obiect secret dintre 16 (rând A, coloană B, valori 1–4), necunoscut ambilor; pe rând întrebați da/nu (cel mult 6 întrebări în total, răspunsurile sunt publice), iar oricând cineva poate ghici: corect +2, greșit +1 pentru celălalt. 6 runde. Mutări: intreb X=v, ghic k, raspuns, verific.",
+            make: || Box::new(brand_util::B(intrusul_tacut::new())),
+        },
+        Playable {
+            id: "bentita",
+            title: "Banderola pe Frunte",
+            category: "Party",
+            rules: "Variantă originală: fiecare are un obiect (dintre 18) pe care îl vede doar adversarul. Pe rând puneți întrebări da/nu despre al vostru (intreb X=v, cel mult 5 pe jucător) sau ghiciți: corect +2, greșit +1 pentru celălalt. 6 runde. Mutări: intreb X=v, ghic k, raspuns, verific.",
+            make: || Box::new(brand_util::B(bentita::new())),
+        },
+        Playable {
+            id: "povesti_negre",
+            title: "Cazuri Întunecate",
+            category: "Party",
+            rules: "Variantă originală: un caz ascuns dintre 32, definit de cinci fapte da/nu (noaptea, afară, singur, armă, martor). Pe rând întrebați despre un fapt (cel mult 6 întrebări în total, răspunsuri publice) sau ghiciți cazul: corect +2, greșit +1 pentru celălalt. 6 runde. Mutări: intreb X=v, ghic k, raspuns, verific.",
+            make: || Box::new(brand_util::B(povesti_negre::new())),
+        },
+        Playable {
+            id: "indicii_cascada",
+            title: "Indicii în Cascadă",
+            category: "Party",
+            rules: "Variantă originală: un cuvânt-țintă ascuns dintre 18; la fiecare mutare ori ceri un indiciu nou (mai mult, cel mult 3), ori ghicești. Primul ghicit corect ia 1 + indiciile nefolosite; greșeala dă 1 adversarului. 6 runde. Mutări: mai mult, ghic k, arata, verific.",
+            make: || Box::new(brand_util::B(indicii_cascada::new())),
+        },
+        Playable {
+            id: "zece_usi",
+            title: "Zece Uși, Câteva Adevărate",
+            category: "Party",
+            rules: "Variantă originală: zece uși, dintre care 4 (număr cunoscut) sunt bune, pe o mască ascunsă. Pe rând alegi o ușă (alege i, apoi arata): bună +1 și continui; rea: pierzi punctele nesalvate și tura trece. Cu stop salvezi. 6 întrebări. Mutări: alege i, stop, arata.",
+            make: || Box::new(brand_util::B(zece_usi::new())),
+        },
+        Playable {
+            id: "valul_ideilor",
+            title: "Valul Ideilor",
+            category: "Party",
+            rules: "Variantă originală: o listă de 12 idei, 6 dintre ele corecte, pe o mască ascunsă; cele de sus valorează 3, 2 sau 1 punct. Pe rând alegi o idee (alege i, apoi arata): corectă = puncte și continui; greșită = tura trece. 6 liste. Mutări: alege i, arata.",
+            make: || Box::new(brand_util::B(valul_ideilor::new())),
+        },
+        Playable {
+            id: "categoria_indrazneata",
+            title: "Categoria Îndrăzneață",
+            category: "Party",
+            rules: "Variantă originală: opt căsuțe pe o mască ascunsă; categoria (cat j: 2, 3, 4 sau 5 căsuțe bune) o alege ADVERSARUL celui la rând. Apoi alegi căsuțe (alege i, arata) ca la „zece uși”: bună +1 și continui; rea: pierzi banca, tura trece; stop salvează. Mutări: cat j, alege i, stop, arata.",
+            make: || Box::new(brand_util::B(categoria_indrazneata::new())),
+        },
+        Playable {
+            id: "totem_grabit",
+            title: "Totemul Grăbit",
+            category: "Party",
+            rules: "Variantă originală: 8 cărți-simbol fiecare (4 simboluri). Joci pe masă un simbol (joc s); dacă e la fel ca simbolul de deasupra stivei adversarului, are loc un duel de reflexe (prind), câștigat cu șansa 50% ± 8% pe serie; pierzătorul ia toate cărțile de pe masă. Câștigă cine rămâne fără cărți în mână. Mutări: joc s, prind.",
+            make: || Box::new(brand_util::B(totem_grabit::new())),
+        },
+        Playable {
+            id: "palmuta_pe_cuvant",
+            title: "Pălmuța pe Cuvânt",
+            category: "Party",
+            rules: "Variantă originală: se numără în ritm cinci cuvinte (pâine, sare, vin, miere, lapte), ciclic. Joci un simbol (joc s) pe masă; dacă e cel numărat acum, toți dau palma (prind), cel mai lent ia masa. Câștigă cine rămâne primul fără cărți în mână (8 cărți, 5 simboluri). Mutări: joc s, prind.",
+            make: || Box::new(brand_util::B(palmuta_pe_cuvant::new())),
+        },
+        Playable {
+            id: "duel_categorii",
+            title: "Duel de Categorii",
+            category: "Party",
+            rules: "Variantă originală: 10 cărți-simbol fiecare (6 simboluri). Joci un simbol (joc s); dacă se potrivește cu cel de deasupra stivei adversarului, începe un duel de categorii (prind), câștigat cu șansa 50% ± 8% pe serie; pierzătorul ia masa. Câștigă primul fără cărți în mână. Mutări: joc s, prind.",
+            make: || Box::new(brand_util::B(duel_categorii::new())),
+        },
+        Playable {
+            id: "duelul_argumentelor",
+            title: "Duelul Argumentelor",
+            category: "Party",
+            rules: "Variantă originală: mână de 5 cărți cu trei valori 0–4 (ridicol, convingător, periculos). Alegeți în secret două cărți (joc i,j); publicul are gusturi ascunse 0–3 (unul arătat) și scorul fiecărei alegeri e suma valorilor × gusturi; cel mai mare ia runda. 6 runde. Mutări: joc i,j, voteaza.",
+            make: || Box::new(brand_util::B(duelul_argumentelor::new())),
+        },
+        Playable {
+            id: "legenda_potrivita",
+            title: "Legenda Potrivită",
+            category: "Party",
+            rules: "Variantă originală: pentru fiecare imagine-scenă (public, trei valori 0–3) alegeți în secret o legendă din mână (joc i); publicul are gusturi ascunse, iar scorul = valorile legendei × (gusturi + scenă). Cel mai mare ia runda. 6 runde. Mutări: joc i, voteaza.",
+            make: || Box::new(brand_util::B(legenda_potrivita::new())),
+        },
+        Playable {
+            id: "banda_nebuna",
+            title: "Banda Desenată Nebună",
+            category: "Party",
+            rules: "Variantă originală: banda continuă: scena unei runde e cartea câștigătoare din runda precedentă. Alegeți în secret o carte (joc i); publicul are gusturi ascunse; scorul = valorile cărții × (gusturi + scenă). Cel mai mare ia runda. 6 runde. Mutări: joc i, voteaza.",
+            make: || Box::new(brand_util::B(banda_nebuna::new())),
+        },
+        Playable {
+            id: "favoritul_judecatorului",
+            title: "Favoritul Judecătorului",
+            category: "Party",
+            rules: "Variantă originală: judecătorul alege în secret un favorit dintre 5 răspunsuri (alege f); celălalt ghicește cu miza 1–3 (ghic g s). Corect: ghicitorul +miză; greșit: judecătorul +1. Istoricul alegerilor e public. 8 runde, rolurile alternează. Mutări: alege f, ghic g s, dezvalui.",
+            make: || Box::new(brand_util::B(favoritul_judecatorului::new())),
+        },
+        Playable {
+            id: "ganduri_impartasite",
+            title: "Gânduri Împărtășite",
+            category: "Party",
+            rules: "Variantă originală: unul alege în secret un răspuns din 6 (alege f), celălalt ghicește (ghic g). Ghicitorul primește max(0, 3 − |f − g|), cel care a ales primește min(3, |f − g|). Istoricul e public. 8 runde, rolurile alternează. Mutări: alege f, ghic g, dezvalui.",
+            make: || Box::new(brand_util::B(ganduri_impartasite::new())),
+        },
+        Playable {
+            id: "obiect_fulger",
+            title: "Obiectul Fulger",
+            category: "Party",
+            rules: "Variantă originală: cinci obiecte cu culori naturale; pe fiecare carte apar două, în culori oarecare. Fiecare alege în secret obiectul de prins după regula noastră (prind k); apoi verific: corect +1, greșit −1; dacă ambii au nimerit, cel mai rapid (șansă pe serie) ia cartea. 16 cărți. Mutări: prind k, verific.",
+            make: || Box::new(brand_util::B(obiect_fulger::ObiectFulger::new())),
+        },
+        Playable {
+            id: "fitilul_cuvintelor",
+            title: "Fitilul Cuvintelor",
+            category: "Party",
+            rules: "Variantă originală: un fitil ascuns durează 6–14 cuvinte. Pe rând spui 1–3 cuvinte (spun k), apoi suna: dacă fitilul s-a ars, cel care a spus ultimul pierde, iar celălalt primește cuvintele lui notate în rundă. 5 runde. Mutări: spun k, suna.",
+            make: || Box::new(brand_util::B(fitilul_cuvintelor::Fitil::new())),
+        },
+        Playable {
+            id: "pariu_pe_cifre",
+            title: "Pariu pe Cifre",
+            category: "Party",
+            rules: "Variantă originală: o cifră ascunsă T (0–99) cu interval public de 40. Fiecare estimează în secret (est g), apoi pariază pe o estimare cu 1–3 jetoane (pariez j s). Cea mai apropiată estimare aduce +2 autorului și +jetoanele pariorilor. 5 runde. Mutări: est g, pariez j s, verific.",
+            make: || Box::new(brand_util::B(pariu_pe_cifre::Pariu::new())),
+        },
+        Playable {
+            id: "provocari_trasnite",
+            title: "Provocări Trăsnite",
+            category: "Party",
+            rules: "Variantă originală: în fiecare rundă se oferă 3 sarcini (recompensă, șansă de reușită); cel la rând alege una (iau k), adversarul pariază pe da/nu/fara, apoi incerc decide cu zar ascuns. Reușită +r, ratată −1; pariu corect +1, greșit −1. 8 runde. Mutări: iau k, pe da, pe nu, fara, incerc.",
+            make: || Box::new(brand_util::B(provocari_trasnite::Trasnite::new())),
+        },
+        Playable {
+            id: "provocarea_mintii",
+            title: "Provocarea Minții",
+            category: "Party",
+            rules: "Variantă originală: cel la rând alege dificultatea (dif 1–3) a unui șir de patru termeni (aritmetic, geometric sau alternat); răspunde cu al cincilea (rasp n). Corect +dificultatea, greșit +1 adversarului. 8 runde. AI-ul rezolvă șirul (nu greșește). Mutări: dif d, rasp n.",
+            make: || Box::new(brand_util::B(provocarea_mintii::Mintii::new())),
+        },
+        Playable {
+            id: "zaruri_povestit",
+            title: "Zaruri de Povestit",
+            category: "Party",
+            rules: "Variantă originală: 12 zaruri cu șase simboluri la vedere. Pe rând luați un zar și îl puneți la fața sau la spatele lanțului vostru (ia k f|s); o legătură a→b valorează după (b−a) mod 6: 1, 3, 0, 1, 0, 2. Câștigă lanțul cu scorul mai mare. Mutări: ia k f, ia k s.",
+            make: || Box::new(brand_util::B(zaruri_povestit::Zaruri::new())),
+        },
+        Playable {
+            id: "definitii_false",
+            title: "Definiții Mincinoase",
+            category: "Party",
+            rules: "Variantă originală: opt definiții cu plauzibilitate publică 1–9; adevărul (șansă proporțională cu plauzibilitatea) îl știe doar scriitorul, care alege o momeală (momeala b). Ghicitorul alege între două variante (cred 1|2). Ghicit: ghicitorul +2; păcălit: scriitorul +2. 6 runde. Mutări: momeala b, cred k, dezvalui.",
+            make: || Box::new(brand_util::B(definitii_false::Definitii::new())),
+        },
+        Playable {
+            id: "ciocnirea_literelor",
+            title: "Ciocnirea Literelor",
+            category: "Party",
+            rules: "Variantă originală: în fiecare rundă se stabilește lungimea cuvintelor (4–6 litere). Pe rând spuneți un cuvânt din dicționar (cuv CUVANT) a cărui literă de început nu a fost încă folosită; cine nu mai are variante (nu am) pierde runda. 4 runde. Mutări: cuv CUVANT, nu am.",
+            make: || Box::new(brand_util::B(ciocnirea_literelor::Ciocnire::new())),
+        },
+        Playable {
+            id: "nuanta_ghicita",
+            title: "Nuanța Ghicită",
+            category: "Party",
+            rules: "Variantă originală: o grilă 8×8; ținta e cunoscută doar de cel care dă indicii despre bandă (rand b, col b, cel mult 2), celălalt pune un marcaj (ghic r c). Exact 3, vecin 2, la distanță 2 → 1 punct; indicatorul primește 1 (+1 pentru un singur indiciu) dacă ghicitul ia ≥2. 6 runde. Mutări: rand b, col b, gata, ghic r c, verific.",
+            make: || Box::new(brand_util::B(nuanta_ghicita::Nuanta::new())),
+        },
+        Playable {
+            id: "camere_fitil",
+            title: "Două Camere și un Fitil",
+            category: "Party",
+            rules: "Variantă originală: șase personaje în două camere. J1 știe în secret Președintele, J2 Artificierul. Fiecare mută de trei ori (muta c); la final verific: dacă sunt în aceeași cameră câștigă J2, altfel J1. Mutări: muta c, verific.",
+            make: || Box::new(brand_util::B(camere_fitil::Camere::new())),
+        },
+        Playable {
+            id: "aruncari_cupe",
+            title: "Aruncări în Cupe",
+            category: "Party",
+            rules: "Variantă originală: șase cupe în triunghi la fiecare; la rând arunci de două ori (tintesc c, apoi arunc). Șanse 65/50/35% după rând, +10% la cel mult 3 cupe rămase; două reușite la rând dau o aruncare în plus. Pierde cine rămâne fără cupe. Mutări: tintesc c, arunc.",
+            make: || Box::new(brand_util::B(aruncari_cupe::Cupe::new())),
+        },
+        Playable {
+            id: "duel_gloante",
+            title: "Duel cu Gloanțe Ascunse",
+            category: "Party",
+            rules: "Variantă originală: fiecare are un încărcător de 8 cărți (5 încărcate) în ordine ascunsă. În fiecare rundă alegeți în secret foc, scut (max. 2) sau pas; apoi rezolv. Un foc cu carte încărcată rănește dacă adversarul nu s-a ferit. 3 vieți, 8 runde. Mutări: foc, scut, pas, rezolv.",
+            make: || Box::new(brand_util::B(duel_gloante::Duel::new())),
+        },
+        Playable {
+            id: "vama_bacsis",
+            title: "Vama cu Bacșiș",
+            category: "Party",
+            rules: "Variantă originală: negustorul pune 1–3 cărți în sac (sac a,b,c,d), declară un tip legal și un bacșiș (decl t m); vameșul lasă sau inspectează, apoi verific. Cinstit și inspectat: vameșul plătește 2 pe carte; altfel amendă 3 pe carte nepotrivită. 6 runde. Mutări: sac a,b,c,d, decl t m, las, inspectez, verific.",
+            make: || Box::new(brand_util::B(vama_bacsis::Vama::new())),
+        },
+        Playable {
+            id: "gandaci_blufati",
+            title: "Gândaci Bluffați",
+            category: "Party",
+            rules: "Variantă originală: 36 de cărți-gâză (6 feluri), 12 în mână. Joci o carte cu fața în jos și anunți un fel (pas t c); adversarul crede sau nu (adevar/minciuna), apoi arata. Cine greșește sau e prins ia cartea; 4 de același fel pierd. Mutări: pas t c, adevar, minciuna, arata.",
+            make: || Box::new(brand_util::B(gandaci_blufati::Gandaci::new())),
+        },
+        Playable {
+            id: "bal_masti",
+            title: "Balul Măștilor Schimbate",
+            category: "Party",
+            rules: "Variantă originală: fiecare are o mască (rol) pe care o vede doar dacă se uită (privesc); schimb/simulez nu se pot deosebi; rol R anunță un rol (accept sau provoc, apoi arata). Anunț corect: puterea + acuzatorul −2; fals: anunțatorul −2. Primul la 10 monede. Mutări: privesc, schimb, simulez, rol R, accept, provoc, arata.",
+            make: || Box::new(brand_util::B(bal_masti::Bal::new())),
+        },
+        Playable {
+            id: "reguli_schimbatoare",
+            title: "Reguli Mereu Schimbate",
+            category: "Party",
+            rules: "Variantă originală: cărți Obiect, Scop și Regulă; reguli de tras și de jucat (1–3) se schimbă din mers. Joacă obiecte, scopuri sau reguli (joc X); cine are ambele obiecte ale scopului curent câștigă. Informație ascunsă: mâinile. Plafon 80 de mutări. Mutări: joc X, pas.",
+            make: || Box::new(brand_util::B(reguli_schimbatoare::Reguli::new())),
+        },
+        Playable {
+            id: "palat_intrigi",
+            title: "Intrigi de Palat",
+            category: "Party",
+            rules: "Variantă originală: patru roluri (Vistier, Călău, Hoț, Paznic), două cărți secrete fiecare. Acțiuni anunțate (taxa, calau, hot) pot fi acuzate (provoc) sau blocate (bloc R); cine minte pierde o influență. venit, lovitura. Pierde cine rămâne fără influență. Mutări: venit, taxa, calau, hot, lovitura, accept, provoc, bloc R, arata, pierd i.",
+            make: || Box::new(brand_util::B(palat_intrigi::Palat::new())),
+        },
+        // B6-reg-end
     ]
 }
 

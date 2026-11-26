@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (534)
+## Implementat (574)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -428,20 +428,60 @@
 | Isle of Cats | Familie | SUA | implementat |
 | Charades | Party | Franța | implementat |
 | Scattergories | Party | SUA | implementat |
+| Articulate! | Party | Marea Britanie | implementat |
+| Balderdash | Party | Canada | implementat |
+| Concept | Party | Franța | implementat |
+| Jungle Speed | Party | Franța | implementat |
 | Boggle | Party | SUA | implementat |
+| Coup | Party | Franța | implementat |
+| Wits & Wagers | Party | SUA | implementat |
+| Hedbanz | Party | SUA | implementat |
+| Heads Up! | Party | SUA | implementat |
+| Catch Phrase | Party | SUA | implementat |
+| Geistesblitz (Ghost Blitz) | Party | Germania | implementat |
+| Hues and Cues | Party | SUA | implementat |
+| Anomia | Party | SUA | implementat |
+| Sheriff of Nottingham | Party | SUA | implementat |
+| Cortex Challenge | Party | Franța | implementat |
+| Superfight | Party | SUA | implementat |
+| What Do You Meme? | Party | SUA | implementat |
+| Joking Hazard | Party | SUA | implementat |
+| Two Rooms and a Boom | Party | SUA | implementat |
 | Rock Paper Scissors (Piatră, foarfecă, hârtie) | Party | China | implementat |
 | Chinese Whispers (Telefonul fără fir) | Party | — | implementat |
 | Truth or Dare (Adevăr sau provocare) | Party | — | implementat |
 | Twenty Questions (Douăzeci de întrebări) | Party | — | implementat |
 | Never Have I Ever | Party | — | implementat |
+| Beer Pong | Party | SUA | implementat |
 | Kings (Ring of Fire) | Party | SUA | implementat |
 | Flip Cup | Party | SUA | implementat |
 | Would You Rather | Party | — | implementat |
+| Fluxx | Party | SUA | implementat |
+| Taco Cat Goat Cheese Pizza | Party | SUA | implementat |
+| Say Anything | Party | SUA | implementat |
+| Werewords | Party | Coreea de Sud | implementat |
+| Insider | Party | Japonia | implementat |
+| Cash 'n Guns | Party | Franța | implementat |
+| Pictomania | Party | Cehia | implementat |
+| Rory's Story Cubes | Party | Marea Britanie | implementat |
+| Black Stories | Party | Germania | implementat |
+| Monikers | Party | SUA | implementat |
+| Poetry for Neanderthals | Party | SUA | implementat |
+| Deception: Murder in Hong Kong | Party | Hong Kong | implementat |
+| Mascarade | Party | Franța | implementat |
+| Cockroach Poker | Party | Germania | implementat |
 | Ligretto | Party | Elveția | implementat |
 | Pit | Party | SUA | implementat |
 | Spoons | Party | — | implementat |
 | Celebrity (Fishbowl) | Party | — | implementat |
+| Outburst | Party | SUA | implementat |
+| Smart10 | Party | Belgia | implementat |
+| Tapple | Party | Marea Britanie | implementat |
 | Mad Gab | Party | SUA | implementat |
+| Loaded Questions | Party | SUA | implementat |
+| Quelf | Party | Marea Britanie | implementat |
+| Bezzerwizzer | Party | Olanda | implementat |
+| Gestures | Party | SUA | implementat |
 | Zip Zap Zop | Party | — | implementat |
 | Sardines | Party | Marea Britanie | implementat |
 | Wink Murder | Party | Marea Britanie | implementat |
@@ -546,7 +586,7 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Variantă proprie (394)
+## Variantă proprie (354)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -670,46 +710,6 @@
 | Decrypto | Party | Franța | planificat (variantă proprie) |
 | One Night Ultimate Werewolf | Party | SUA | planificat (variantă proprie) |
 | Spyfall | Party | Rusia | planificat (variantă proprie) |
-| Articulate! | Party | Marea Britanie | planificat (variantă proprie) |
-| Balderdash | Party | Canada | planificat (variantă proprie) |
-| Concept | Party | Franța | planificat (variantă proprie) |
-| Jungle Speed | Party | Franța | planificat (variantă proprie) |
-| Coup | Party | Franța | planificat (variantă proprie) |
-| Wits & Wagers | Party | SUA | planificat (variantă proprie) |
-| Hedbanz | Party | SUA | planificat (variantă proprie) |
-| Heads Up! | Party | SUA | planificat (variantă proprie) |
-| Catch Phrase | Party | SUA | planificat (variantă proprie) |
-| Geistesblitz (Ghost Blitz) | Party | Germania | planificat (variantă proprie) |
-| Hues and Cues | Party | SUA | planificat (variantă proprie) |
-| Anomia | Party | SUA | planificat (variantă proprie) |
-| Sheriff of Nottingham | Party | SUA | planificat (variantă proprie) |
-| Cortex Challenge | Party | Franța | planificat (variantă proprie) |
-| Superfight | Party | SUA | planificat (variantă proprie) |
-| What Do You Meme? | Party | SUA | planificat (variantă proprie) |
-| Joking Hazard | Party | SUA | planificat (variantă proprie) |
-| Two Rooms and a Boom | Party | SUA | planificat (variantă proprie) |
-| Beer Pong | Party | SUA | planificat (variantă proprie) |
-| Fluxx | Party | SUA | planificat (variantă proprie) |
-| Taco Cat Goat Cheese Pizza | Party | SUA | planificat (variantă proprie) |
-| Say Anything | Party | SUA | planificat (variantă proprie) |
-| Werewords | Party | Coreea de Sud | planificat (variantă proprie) |
-| Insider | Party | Japonia | planificat (variantă proprie) |
-| Cash 'n Guns | Party | Franța | planificat (variantă proprie) |
-| Pictomania | Party | Cehia | planificat (variantă proprie) |
-| Rory's Story Cubes | Party | Marea Britanie | planificat (variantă proprie) |
-| Black Stories | Party | Germania | planificat (variantă proprie) |
-| Monikers | Party | SUA | planificat (variantă proprie) |
-| Poetry for Neanderthals | Party | SUA | planificat (variantă proprie) |
-| Deception: Murder in Hong Kong | Party | Hong Kong | planificat (variantă proprie) |
-| Mascarade | Party | Franța | planificat (variantă proprie) |
-| Cockroach Poker | Party | Germania | planificat (variantă proprie) |
-| Outburst | Party | SUA | planificat (variantă proprie) |
-| Smart10 | Party | Belgia | planificat (variantă proprie) |
-| Tapple | Party | Marea Britanie | planificat (variantă proprie) |
-| Loaded Questions | Party | SUA | planificat (variantă proprie) |
-| Quelf | Party | Marea Britanie | planificat (variantă proprie) |
-| Bezzerwizzer | Party | Olanda | planificat (variantă proprie) |
-| Gestures | Party | SUA | planificat (variantă proprie) |
 | Rapidough | Party | SUA | planificat (variantă proprie) |
 | Pie Face | Party | SUA | planificat (variantă proprie) |
 | Fibbage | Party | SUA | planificat (variantă proprie) |

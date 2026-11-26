@@ -368,6 +368,22 @@ const NO_HIDDEN_B2: &[&str] = &[
     "bambuzeria",
 ];
 
+/// B6 (jocuri de petrecere, variante originale): nimic privat unui jucător (informația ascunsă e a nimănui sau e publică).
+const NO_HIDDEN_B6: &[&str] = &[
+    "intrusul_tacut",
+    "povesti_negre",
+    "indicii_cascada",
+    "zece_usi",
+    "valul_ideilor",
+    "categoria_indrazneata",
+    "fitilul_cuvintelor",
+    "provocari_trasnite",
+    "provocarea_mintii",
+    "zaruri_povestit",
+    "ciocnirea_literelor",
+    "aruncari_cupe",
+];
+
 #[test]
 fn every_playable_id_is_classified() {
     let mut unclassified = Vec::new();
@@ -376,7 +392,9 @@ fn every_playable_id_is_classified() {
         let n = [
             HOTSEAT_SAFE.contains(&p.id),
             SOLO_GOD.contains(&p.id),
-            NO_HIDDEN.contains(&p.id) || NO_HIDDEN_B2.contains(&p.id),
+            NO_HIDDEN.contains(&p.id)
+                || NO_HIDDEN_B2.contains(&p.id)
+                || NO_HIDDEN_B6.contains(&p.id),
         ]
         .iter()
         .filter(|b| **b)
@@ -403,6 +421,7 @@ fn lists_have_no_stale_or_duplicate_ids() {
         ("SOLO_GOD", SOLO_GOD),
         ("NO_HIDDEN", NO_HIDDEN),
         ("NO_HIDDEN_B2", NO_HIDDEN_B2),
+        ("NO_HIDDEN_B6", NO_HIDDEN_B6),
     ] {
         let set: BTreeSet<&str> = l.iter().copied().collect();
         assert_eq!(set.len(), l.len(), "{name} has duplicates");
