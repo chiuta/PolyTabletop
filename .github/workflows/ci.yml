@@ -20,7 +20,13 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - run: cargo fmt --all -- --check
       - run: cargo clippy --release --all-targets -- -D warnings   # default-members
-      - run: cargo test --release                                   # default-members
+      - name: cargo test --release   # default-members; failures are surfaced as annotations
+        shell: bash
+        run: |
+          set -o pipefail
+          cargo test --release --no-fail-fast 2>&1 | tee /tmp/test.log || rc=$?
+          grep -E "^test .* FAILED|panicked at|^---- .* stdout" /tmp/test.log | head -20 | while read -r l; do echo "::error::$l"; done
+          exit ${rc:-0}
 
   gui:
     runs-on: ubuntu-26.04
