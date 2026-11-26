@@ -6,6 +6,49 @@
 //! used for our own games: we use the generic names ("Reversi",
 //! "Patru în linie", …).
 
+// B2-mods-begin
+pub mod agenti;
+pub mod ambuteiaj;
+pub mod balans;
+pub mod bambuzeria;
+pub mod banane;
+pub mod banchiza;
+pub mod brand_util;
+pub mod caravana;
+pub mod cariera;
+pub mod cazanul;
+pub mod cetate_intrigi;
+pub mod curierii_vraji;
+pub mod detectiv;
+pub mod evadare;
+pub mod firul;
+pub mod genial;
+pub mod lanturi;
+pub mod lumina;
+pub mod marele_bazar;
+pub mod menajerie;
+pub mod morcovi;
+pub mod peisaj;
+pub mod pelerin;
+pub mod pietre_puzzle;
+pub mod pisici;
+pub mod plapuma;
+pub mod postalioni;
+pub mod poteca;
+pub mod rapide;
+pub mod salariu;
+pub mod santier;
+pub mod tablou;
+pub mod templele;
+pub mod tinut_zane;
+pub mod tinuturi_negociate;
+pub mod triunghiuri;
+pub mod turnuri_litere;
+pub mod turnuri_piatra;
+pub mod vamesul;
+pub mod vapor;
+pub mod zgarie_nori;
+// B2-mods-end
 pub mod aadupuli;
 pub mod aceydeucey;
 pub mod alquerque;
@@ -604,6 +647,12 @@ pub const HOTSEAT_SAFE: &[&str] = &[
     "batak",
     "yaniv",
     "ascunselea",
+    // B2-hs-begin
+    "vamesul",
+    "agenti",
+    "tablou",
+    "turnuri_litere",
+    // B2-hs-end
     "burako",
     "chinchon",
     "cuarenta",
@@ -3630,6 +3679,288 @@ fn playable_base() -> Vec<Playable> {
             rules: "Joc cu zaruri de Festivalul Lunii din Xiamen: șase zaruri într-un castron, premii (63 de prăjituri de lună) după combinație: Zhuangyuan cea mai bună, apoi Duitang, Sanhong, Sijin, Erju, Yixiu (după numărul de 4). Fiecare categorie are rezervă limitată; câștigă cine are mai multe puncte după 12 aruncări fiecare. Mutare: arunc.",
             make: || Box::new(bobing::Bobing::new()),
         },
+        // B2-reg-begin
+        Playable {
+            id: "ambuteiaj",
+            title: "Ambuteiaj (duel de mașini pe tablă 6×6)",
+            category: "Familie",
+            rules: "Variantă originală: mașini de 2–3 pătrate pe o tablă 6×6; A (J1) iese pe dreapta rândului 3, B (J2) pe stânga rândului 4. Mutezi o singură mașină pe tură (și pe cele ale adversarului): A+2, C-1. Câștigă cine își eliberează primul ținta; 120 de mutări: remiză. Mutări: A+2, C-1.",
+            make: || Box::new(brand_util::B(ambuteiaj::Ambuteiaj::new())),
+        },
+        Playable {
+            id: "banchiza",
+            title: "Banchiza (pinguini pe sloiuri hexagonale)",
+            category: "Familie",
+            rules: "Variantă originală: 60 de plăci hexagonale cu 1–3 pești. Fiecare pune 4 pinguini pe plăci cu un singur pește (pune x,y), apoi muți un pinguin în linie dreaptă peste plăci libere (mut x,y>x2,y2); placa părăsită dispare, peștii sunt ai tăi. Cine nu poate muta pasează. Câștigă cine are mai mulți pești. Mutări: pune x,y | mut x,y>x2,y2 | pas.",
+            make: || Box::new(brand_util::B(banchiza::Banchiza::new())),
+        },
+        Playable {
+            id: "balans",
+            title: "Balansul Pietrelor (greutăți pe o grindă)",
+            category: "Familie",
+            rules: "Variantă originală: o grindă cu 13 poziții (−6..6) și greutățile 1–6 pentru fiecare. Pui pe rând o greutate pe o poziție liberă (pune g@p, ex. pune 4@-3). Momentul total (greutate × poziție) nu are voie să depășească 18; cine răstoarnă grinda pierde, 12 greutăți puse fără răsturnare = remiză. Mutări: pune g@p.",
+            make: || Box::new(brand_util::B(balans::Balans::new())),
+        },
+        Playable {
+            id: "pietre_puzzle",
+            title: "Piese de Mozaic (puzzle cu forme în doi)",
+            category: "Familie",
+            rules: "Variantă originală: tablă 5×6 cu 6 găuri și 6 piese comune de câte 4 celule (I, O, T, S, L, J). Pe rând pui o piesă nefolosită, în orice orientare (pune T@r,c,o). Cine nu mai poate pune nicio piesă pierde. Mutări: pune T@r,c,o.",
+            make: || Box::new(brand_util::B(pietre_puzzle::PietrePuzzle::new())),
+        },
+        Playable {
+            id: "firul",
+            title: "Firul Luminii (plăci cu drumuri pe tablă 6×6)",
+            category: "Familie",
+            rules: "Variantă originală: plăci cu 4 drumuri între 8 capete; pui placa în celula în care intră jetonul tău, rotită 0–3 sferturi (pune t,r; mâinile sunt deschise), apoi jetoanele aleargă pe drumuri. Cine iese de pe tablă e eliminat, ciocnirea îi elimină pe amândoi; câștigă ultimul rămas. Mutări: pune t,r.",
+            make: || Box::new(brand_util::B(firul::Firul::new())),
+        },
+        Playable {
+            id: "genial",
+            title: "Mozaicul Priceput (domino hexagonal în șase culori)",
+            category: "Familie",
+            rules: "Variantă originală: tablă hexagonală cu 91 de celule; plăcuțe domino de două culori, mâinile sunt deschise. Pui plăcuța i cu prima culoare în (q,r) și a doua în direcția d (pune i@q,r,d). Scorul pe culoare = șirurile de aceeași culoare pornind din fiecare jumătate (max 18). Câștigă cine are cea mai bună culoare cea mai slabă. Mutări: pune i@q,r,d.",
+            make: || Box::new(brand_util::B(genial::Genial::new())),
+        },
+        Playable {
+            id: "pelerin",
+            title: "Drumul Pelerinului (călătorie cu popasuri pe o potecă)",
+            category: "Familie",
+            rules: "Variantă originală: potecă cu 30 de popasuri, hanuri obligatorii la 6, 13, 20, 29. Muți cel din urmă: mut k pe un popas liber înainte, apoi efectul (priveliște, atelier: cumpar/treci, izvor, fermă, templu: dau 0-3, han: mananc/sar). Câștigă cine are mai multe puncte (3 monede = 1 punct). Mutări: mut k, cumpar, treci, dau n, mananc, sar.",
+            make: || Box::new(brand_util::B(pelerin::Pelerin::new())),
+        },
+        Playable {
+            id: "morcovi",
+            title: "Cursa Morcovilor (cursă cu resursă de energie)",
+            category: "Familie",
+            rules: "Variantă originală: potecă cu 41 de câmpuri; avans k costă k(k+1)/2 morcovi. Câmpuri cu morcovi (avans k:iau / avans k:dau), salată la 12, 24, 36 (oprire obligatorie), inapoi (primești 10 morcovi pe câmp), odihna. Câștigă primul care ajunge la 40 având cel mult 20 de morcovi. Mutări: avans k[:iau|:dau], inapoi, odihna, treci.",
+            make: || Box::new(brand_util::B(morcovi::Morcovi::new())),
+        },
+        Playable {
+            id: "rapide",
+            title: "Rapidele (canoe pe râu spre cascadă)",
+            category: "Familie",
+            rules: "Variantă originală: râu cu 22 de câmpuri și cascadă la 21; 3 canoe fiecare, mâini deschise de cărți-vâsle 1–4. vasla c,k mută canoea c cu k câmpuri și încarcă pietre; acostez c la malurile 12, 16, 20 pune încărcătura la loc sigur. Curentul împinge canoele cu 1 la finalul rundei; la cascadă pierzi tot. Câștigă cine are mai multe puncte. Mutări: vasla c,k, acostez c.",
+            make: || Box::new(brand_util::B(rapide::Rapide::new())),
+        },
+        Playable {
+            id: "vapor",
+            title: "Vaporul de pe Râu (cursă cu viteză și cărbune)",
+            category: "Familie",
+            rules: "Variantă originală: râu cu 60 de câmpuri și 3 benzi; mutarea v+1,b2 schimbă viteza (±1 gratis, ±2 costă 1 cărbune; 1–4) și banda. Bancurile de nisip te opresc și costă cărbune, pasagerii dau puncte, primul la capăt +4, al doilea +2. Câștigă cine are mai multe puncte. Mutări: v+1,b2.",
+            make: || Box::new(brand_util::B(vapor::Vapor::new())),
+        },
+        Playable {
+            id: "lumina",
+            title: "Lumina Pădurii (copaci cu umbre pe tablă hexagonală)",
+            category: "Familie",
+            rules: "Variantă originală: 12 zile, soarele își schimbă direcția; copacii mai înalți fac umbră. Pui 2 copaci (pune q,r), apoi planta (1 lumină), creste, culeg (copac 3, 4 lumină, puncte după inel), pas. Lumina o primești la finalul zilei pentru copacii neumbriți. Câștigă cine are mai multe puncte. Mutări: pune/planta/creste/culeg q,r, pas.",
+            make: || Box::new(brand_util::B(lumina::Lumina::new())),
+        },
+        Playable {
+            id: "zgarie_nori",
+            title: "Cartierul Înalt (majorități de zgârie-nori)",
+            category: "Familie",
+            rules: "Variantă originală: 16 cartiere, cărți deschise de 4 pe rundă; etaj n adaugă un etaj în cartierul cărții, muta a>n îți mută etajul de sus dintr-un cartier vecin, arunc n. La finalul celor 3 runde cartierul dă punctele-etaje celui cu majoritatea (egal: cine e deasupra). Câștigă cine are mai multe puncte. Mutări: etaj n, muta a>n, arunc n.",
+            make: || Box::new(brand_util::B(zgarie_nori::ZgarieNori::new())),
+        },
+        Playable {
+            id: "turnuri_piatra",
+            title: "Turnuri de Piatră (cavaleri pe castele în creștere)",
+            category: "Familie",
+            rules: "Variantă originală pe tablă 6×6: fiecare are 4 cavaleri; pune c3, mut a1>a2 (cel mult o treaptă mai sus), etaj c3 (treaptă pe celulă vecină). Câștigă cine urcă primul un cavaler pe înălțimea 4; după 80 de acțiuni, cine are cavalerii mai sus. Mutări: pune c3, mut a1>a2, etaj c3.",
+            make: || Box::new(brand_util::B(turnuri_piatra::TurnuriPiatra::new())),
+        },
+        Playable {
+            id: "templele",
+            title: "Templele din Junglă (explorare și temple pe grilă 5×5)",
+            category: "Familie",
+            rules: "Variantă originală: 3 exploratori, 3 acțiuni pe tură: mut a1>a2, templu c3 (+1 etaj), comoara c3, pas. De 3 ori, după 8 ture, fiecare templu dă etajele celui cu mai mulți exploratori pe celulă sau în vecinătate. Câștigă cine are mai multe puncte. Mutări: mut a1>a2, templu c3, comoara c3, pas.",
+            make: || Box::new(brand_util::B(templele::Templele::new())),
+        },
+        Playable {
+            id: "caravana",
+            title: "Caravana de Mirodenii (negoț între doi neguțători)",
+            category: "Familie",
+            rules: "Variantă originală: 6 mărfuri și cămile, piață de 5 cărți, mâini deschise (max 7). Mutări: ia M, camile, schimb A:B, vand M n (diamantele, aurul și argintul se vând doar câte cel puțin 2; bonus la 3+ cărți). Jocul se termină când 3 feluri de jetoane s-au golit sau piața nu se mai reface; cine are mai multe cămile +5. Câștigă cine are mai multe puncte. Mutări: ia M, camile, schimb A:B, vand M n.",
+            make: || Box::new(brand_util::B(caravana::Caravana::new())),
+        },
+        Playable {
+            id: "poteca",
+            title: "Poteca Pietrelor (cinci poteci de culori)",
+            category: "Familie",
+            rules: "Variantă originală: cărți de 5 culori (1–10), mâini deschise de 8. Joci (joc C n pe poteca culorii dacă e mai mare decât ultima, sau arunc C n), apoi tragi (trage | ia C). Fiecare potecă valorează −4, −3, −1, 2, 6, 11, 17, 24, 32, 41 după număr de cărți. Câștigă scorul mai mare când pachetul e gol. Mutări: joc C n, arunc C n, trage, ia C.",
+            make: || Box::new(brand_util::B(poteca::Poteca::new())),
+        },
+        Playable {
+            id: "evadare",
+            title: "Evadarea din Temniță (pirați care fug printr-un tunel)",
+            category: "Familie",
+            rules: "Variantă originală: tunel cu 36 de pătrate (6 simboluri) și barcă; fiecare are 6 pirați și mâna deschisă de 6 cărți-simbol. 3 acțiuni pe tură: avans p,S (cel mai apropiat pătrat liber cu simbolul S), retras p (trage o carte), gata. Câștigă primul care îmbarcă toți pirații. Mutări: avans p,S, retras p, gata.",
+            make: || Box::new(brand_util::B(evadare::Evadare::new())),
+        },
+        Playable {
+            id: "cetate_intrigi",
+            title: "Intrigile Cetății (alegere de roluri și construcție de cartiere)",
+            category: "Familie",
+            rules: "Variantă originală pentru 2: 6 roluri (Asasin, Hoț, Rege, Negustor, Arhitect, Căpitan), fiecare ia câte 2 pe rundă (alege r). Cu rolul tău: tinta r, aur sau carte, construiesc i (3 pentru Arhitect) sau gata, distrug i / nu (Căpitan). Mâini deschise. La 7 cartiere se termină; scor = costuri + 3 culori complete + 2 primul. Mutări: alege r, tinta r, aur, carte, construiesc i, gata, distrug i, nu.",
+            make: || Box::new(brand_util::B(cetate_intrigi::Cetate::new())),
+        },
+        Playable {
+            id: "menajerie",
+            title: "Menajeria (cărucioare cu animale și țarcuri)",
+            category: "Familie",
+            rules: "Variantă originală: 5 specii, 3 cărucioare de 3 locuri. trage (apoi pune k) sau ia k (luat căruciorul în țarcurile tale: capacități 3, 4, 5, o specie în fiecare) și ieși din rundă. Scor: pătratul numărului de animale per țarc (+2 dacă e plin). Câștigă scorul mai mare. Mutări: trage, pune k, ia k.",
+            make: || Box::new(brand_util::B(menajerie::Menajerie::new())),
+        },
+        Playable {
+            id: "tinut_zane",
+            title: "Ținutul Zânelor (călătorie cu cărți de transport)",
+            category: "Familie",
+            rules: "Variantă originală: 10 orașe în cerc cu scurtături, drumuri cu teren și cost 1–2. ia t (carte din piața de 4) sau mut X plătind cărțile potrivite; primul care ajunge într-un oraș ia valoarea lui (1–3). Se termină la 8 orașe revendicate sau după 80 de mutări. Câștigă scorul mai mare. Mutări: ia t, mut X, descarto t.",
+            make: || Box::new(brand_util::B(tinut_zane::TinutZane::new())),
+        },
+        Playable {
+            id: "postalioni",
+            title: "Poștalionii (rute de livrare între orașe)",
+            category: "Familie",
+            rules: "Variantă originală: 12 orașe în cerc cu scurtături, mâini deschise. joc X (extinde ruta la un capăt vecin), nou X, livrez (rută ≥3: 3, 6, 10, 15, 21 puncte), apoi ia k (din 4 cărți deschise) sau trage. Se termină când pachetul e gol. Câștigă scorul mai mare. Mutări: joc X, nou X, livrez, ia k, trage.",
+            make: || Box::new(brand_util::B(postalioni::Postalioni::new())),
+        },
+        Playable {
+            id: "cazanul",
+            title: "Cazanul Vrăjit (pariu cu pungi de ingrediente)",
+            category: "Familie",
+            rules: "Variantă originală: tragi ingrediente din punga ta (scot, forțat), apoi mai sau opresc. Albele (a1, a2, a3) explodează cazanul peste 7. Fără explozie: monede = valoarea și 1 punct la 4; cu explozie alegi bani sau puncte. Cumperi ingrediente (cumpar a3/r2/z3, gata). 6 runde; câștigă cine are mai multe puncte. Mutări: scot, mai, opresc, bani, puncte, cumpar X, gata.",
+            make: || Box::new(brand_util::B(cazanul::Cazanul::new())),
+        },
+        Playable {
+            id: "santier",
+            title: "Șantierul Piramidei (pietre pe corăbii spre șantiere)",
+            category: "Familie",
+            rules: "Variantă originală: 5 runde, 4 corăbii și 4 șantiere (piramidă, obelisc, templu, piață). iau (+2 pietre), incarc s, navighez s,k, pas. Pietrele se descarcă în ordinea locurilor: piramida dă 1, 2, 3, ... puncte, obeliscul n×n/2 la final, templul pe perechi, piața 1 punct și 1 piatră. Câștigă scorul mai mare. Mutări: iau, incarc s, navighez s,k, pas.",
+            make: || Box::new(brand_util::B(santier::Santier::new())),
+        },
+        Playable {
+            id: "marele_bazar",
+            title: "Marele Bazar (neguțători pe o grilă de locații)",
+            category: "Familie",
+            rules: "Variantă originală: grilă 4×4 de locații (piețe, bănci, ateliere, palate, bijutieri, fântâni). mut a1>b2 (1–2 pași ortogonali; pe adversar plătești 2 lire), apoi se aplică automat acțiunea locației. Câștigă primul cu 5 rubine; după 100 de mutări, mai multe rubine și lire. Mutări: mut a1>b2.",
+            make: || Box::new(brand_util::B(marele_bazar::MareleBazar::new())),
+        },
+        Playable {
+            id: "curierii_vraji",
+            title: "Curierii Vrăjitoarelor (roluri curajoase sau fricoase)",
+            category: "Familie",
+            rules: "Variantă originală pe 8 locuri: 4 roluri (muta, colecteaza, livreaza, odihna), fiecare în mod f (fricos, sigur) sau c (curajos, mare). Un rol curajos rămâne în așteptare: dacă adversarul joacă același rol, curajosul se anulează. muta:f>n, rol:f|c. 4 runde; câștigă scorul mai mare. Mutări: muta:f>n, colecteaza:c, livreaza:f, odihna:c.",
+            make: || Box::new(brand_util::B(curierii_vraji::Curierii::new())),
+        },
+        Playable {
+            id: "vamesul",
+            title: "Vameșul din Poartă (bluf cu geanta de negustor)",
+            category: "Familie",
+            rules: "Variantă originală: 6 runde, rolurile alternează. Negustorul pune 1–4 cărți în geantă și declară un fel legal (sac a,b,c,d>t); vameșul alege las sau inspectez, apoi verific. Cinstit și inspectat: vameșul plătește; altfel penalități, contrabanda valorează 6. Informație ascunsă: mâna și geanta. Câștigă monede + marfă mai multe. Mutări: sac a,b,c,d>t, las, inspectez, verific.",
+            make: || Box::new(brand_util::B(vamesul::Vamesul::new())),
+        },
+        Playable {
+            id: "agenti",
+            title: "Agenții Tăcuți (agenți pe o stradă cu valori secrete)",
+            category: "Familie",
+            rules: "Variantă originală: 6 agenți (A–F) pe o stradă de 10 pași; fiecare jucător are în secret valori distincte 0–5. Pe rând muți orice agent cu 1–3 (mut X,k). După 24 de mutări scorul = Σ valoarea ta × poziția. Informație ascunsă: vezi doar valorile tale. Câștigă scorul mai mare. Mutări: mut X,k.",
+            make: || Box::new(brand_util::B(agenti::Agenti::new())),
+        },
+        Playable {
+            id: "tablou",
+            title: "Schița Ascunsă (indicii dintr-un tablou)",
+            category: "Familie",
+            rules: "Variantă originală: 6 cărți-tablou cu câte 4 simboluri (A–J); una e ținta, cunoscută doar de schițator. Schițatorul spune 1–3 simboluri adevărate (pun S, gata); celălalt ghicește (ghic k, apoi verific). Corect: ghicitor +2, schițator +1; greșit: schițator +2. 6 runde. Informație ascunsă: ținta. Mutări: pun S, gata, ghic k, verific.",
+            make: || Box::new(brand_util::B(tablou::Tablou::new())),
+        },
+        Playable {
+            id: "detectiv",
+            title: "Orașul Detectivilor (urmărirea suspecților pe hartă)",
+            category: "Familie",
+            rules: "Variantă originală: grilă 6×6, 6 suspecți, 8 pași de timp; crima la pasul 5 în celula X. arata s,t dezvăluie public poziția suspectului s la pasul t (apoi afisez), acuz s acuză (apoi verific): corect câștigi, greșit pierzi. Suspecții care nu puteau ajunge în X sunt eliminați. Informație ascunsă: traseele. Mutări: arata s,t, afisez, acuz s, verific.",
+            make: || Box::new(brand_util::B(detectiv::Detectiv::new())),
+        },
+        Playable {
+            id: "tinuturi_negociate",
+            title: "Ținuturi Negociate (prețul tău, alegerea mea)",
+            category: "Familie",
+            rules: "Variantă originală: 8 runde. Se dezvăluie 3 plăcuțe de teren (scot); vânzătorul pune prețuri (pret a,b), cumpărătorul alege una (ia k) și o așază (pune r,c), apoi vânzătorul ia una din rest. Peisaj 5×5; grupurile conexe valorează n(n+1)/2 × valoarea terenului, plus monedele. Câștigă scorul mai mare. Mutări: scot, pret a,b, ia k, pune r,c.",
+            make: || Box::new(brand_util::B(tinuturi_negociate::TinuturiNegociate::new())),
+        },
+        Playable {
+            id: "peisaj",
+            title: "Peisaj Liniștit (plăcuțe hexagonale cu margini de teren)",
+            category: "Familie",
+            rules: "Variantă originală: plăcuțe hexagonale cu 6 margini de teren (p pădure, c câmp, a apă, s sat). Pe rând așezi plăcuța curentă (se vede și următoarea) lipită de cele puse: pune q,r,rot. Fiecare margine potrivită +1, nepotrivită −1. 36 de plăcuțe; câștigă scorul mai mare. Mutări: pune q,r,rot.",
+            make: || Box::new(brand_util::B(peisaj::Peisaj::new())),
+        },
+        Playable {
+            id: "cariera",
+            title: "Cariera Visată (formula succesului și zarul)",
+            category: "Familie",
+            rules: "Variantă originală: fiecare alege public o formulă (tinta 1–4) de faimă / avere / fericire; apoi zar (forțat) și munca f|a|h (+d, dublu cu cariera potrivită) sau schimb A|N|F (alegi cariera). Câștigă primul care atinge toate țintele; după 160 de ture, cine e mai aproape. Mutări: tinta k, zar, munca f|a|h, schimb A|N|F.",
+            make: || Box::new(brand_util::B(cariera::Cariera::new())),
+        },
+        Playable {
+            id: "salariu",
+            title: "Ziua de Salariu (cursă de buget pe trei luni)",
+            category: "Familie",
+            rules: "Variantă originală: 3 luni × 30 de zile. zar (forțat) te mută; poștă (−6..+4), ofertă (cumpar 5 monede, vinzi cu 9 la o zi de vânzare, sau las), salariu +8 la fiecare 30 de zile. Câștigă cine are mai mulți bani la final (loturile nevândute valorează 3). Mutări: zar, cumpar, las.",
+            make: || Box::new(brand_util::B(salariu::Salariu::new())),
+        },
+        Playable {
+            id: "plapuma",
+            title: "Plapuma (petice, timp și nasturi)",
+            category: "Familie",
+            rules: "Variantă originală: plapumă 7×7, 16 petice în cerc cu cost în nasturi, timp și venit. ia i@r,c,o (unul din 3 petice după marcaj) sau avans (cu un loc înaintea adversarului, primești nasturi). Mută cine e în urmă. Pista are 40 de locuri; venit la 8, 16, 24, 32. Scor: nasturi + 2/celulă acoperită − 2/celulă goală. Mutări: ia i@r,c,o, avans.",
+            make: || Box::new(brand_util::B(plapuma::Plapuma::new())),
+        },
+        Playable {
+            id: "pisici",
+            title: "Pisicile din Barcă (pisici-poliomino pe barcă)",
+            category: "Familie",
+            rules: "Variantă originală: 5 runde; se dezvăluie 4 pisici (scot), se aleg pe rând (ia k) și se așază pe barca 5×6 (pune r,c,o) sau se aruncă (arunc, −1). Scor: celule acoperite + valoarea pisicilor + 3 pe rând plin. Câștigă scorul mai mare. Mutări: scot, ia k, pune r,c,o, arunc.",
+            make: || Box::new(brand_util::B(pisici::Pisici::new())),
+        },
+        Playable {
+            id: "triunghiuri",
+            title: "Triunghiurile Numerotate (domino triunghiular)",
+            category: "Familie",
+            rules: "Variantă originală, mâini deschise: 35 de plăcuțe triunghiulare cu numere 0–4 în colțuri. pune i@x,y,s,k pe o celulă lipită de cele puse (s = u sau d, k rotația), cu colțurile comune egale; scor = suma plăcuței. trage / pas dacă nu poți. Cine rămâne fără plăcuțe ia 10 + restul adversarului. Mutări: pune i@x,y,s,k, trage, pas.",
+            make: || Box::new(brand_util::B(triunghiuri::Triunghiuri::new())),
+        },
+        Playable {
+            id: "banane",
+            title: "Banane-Cuvinte (cursă de cuvinte cu literele din mână)",
+            category: "Familie",
+            rules: "Variantă originală: fiecare are 10 litere deschise; cuvant xyz (≥3 litere, din dicționar, folosește literele din mână, apoi tragi una), arunc l (înapoi în sac, tragi 3), pas. Câștigă primul fără litere; după 80 de mutări, mai puține litere. Mutări: cuvant xyz, arunc l, pas.",
+            make: || Box::new(brand_util::B(banane::Banane::new())),
+        },
+        Playable {
+            id: "turnuri_litere",
+            title: "Turnuri de Litere (cuvinte încrucișate cu litere suprapuse)",
+            category: "Familie",
+            rules: "Variantă originală: tablă 6×6 cu stive de până la 3 litere, mâna de 7 litere ascunsă. pune L@r,c (o literă, pe celulă goală sau peste stivă, cu altă literă); toate șirurile de ≥2 celule prin ea trebuie să fie cuvinte din dicționar. Scor: suma înălțimilor cuvintelor. pas. Informație ascunsă: mâna. Mutări: pune L@r,c, pas.",
+            make: || Box::new(brand_util::B(turnuri_litere::TurnuriLitere::new())),
+        },
+        Playable {
+            id: "lanturi",
+            title: "Lanțuri Hoteliere (fuziuni și acțiuni pe o tablă mică)",
+            category: "Familie",
+            rules: "Variantă originală: tablă 5×6, 3 lanțuri A, B, C, piață de 4 plăcuțe. pune b3 (fără vecini: izolată; lângă izolate: fond A; lângă lanț: îl crește; între două: fuziune, lanțul mic dispare cu bonus), apoi cumperi până la 3 acțiuni (compro A, gata). La final se vând acțiunile și se dau bonusuri. Câștigă banii mai mulți. Mutări: pune b3, fond A, compro A, gata.",
+            make: || Box::new(brand_util::B(lanturi::Lanturi::new())),
+        },
+        Playable {
+            id: "bambuzeria",
+            title: "Bambuzeria (grădinar, panda și obiective de bambus)",
+            category: "Familie",
+            rules: "Variantă originală: grădină 5×5 în trei culori. O acțiune pe tură: gradinar c3 (crește parcela și vecinii de aceeași culoare), panda c3 (mănâncă un segment), ploaie c3 (+1; maxim 2). Obiectivele (3 deschise) se completează automat. Primul la 20 de puncte câștigă; după 60 de acțiuni, scorul mai mare. Mutări: gradinar c3, panda c3, ploaie c3.",
+            make: || Box::new(brand_util::B(bambuzeria::Bambuzeria::new())),
+        },
+        // B2-reg-end
     ]
 }
 

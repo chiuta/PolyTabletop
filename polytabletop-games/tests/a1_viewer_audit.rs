@@ -294,6 +294,46 @@ const NO_HIDDEN: &[&str] = &[
     "capturetheflag",
 ];
 
+/// B2 (jocuri de familie, variante originale): informație publică sau simetrică (mâini deschise, zaruri/pachete publice).
+const NO_HIDDEN_B2: &[&str] = &[
+    "ambuteiaj",
+    "banchiza",
+    "balans",
+    "pietre_puzzle",
+    "firul",
+    "genial",
+    "pelerin",
+    "morcovi",
+    "rapide",
+    "vapor",
+    "lumina",
+    "zgarie_nori",
+    "turnuri_piatra",
+    "templele",
+    "caravana",
+    "poteca",
+    "evadare",
+    "cetate_intrigi",
+    "menajerie",
+    "tinut_zane",
+    "postalioni",
+    "cazanul",
+    "santier",
+    "marele_bazar",
+    "curierii_vraji",
+    "detectiv",
+    "tinuturi_negociate",
+    "peisaj",
+    "cariera",
+    "salariu",
+    "plapuma",
+    "pisici",
+    "triunghiuri",
+    "banane",
+    "lanturi",
+    "bambuzeria",
+];
+
 #[test]
 fn every_playable_id_is_classified() {
     let mut unclassified = Vec::new();
@@ -302,7 +342,7 @@ fn every_playable_id_is_classified() {
         let n = [
             HOTSEAT_SAFE.contains(&p.id),
             SOLO_GOD.contains(&p.id),
-            NO_HIDDEN.contains(&p.id),
+            NO_HIDDEN.contains(&p.id) || NO_HIDDEN_B2.contains(&p.id),
         ]
         .iter()
         .filter(|b| **b)
@@ -325,7 +365,11 @@ fn every_playable_id_is_classified() {
 #[test]
 fn lists_have_no_stale_or_duplicate_ids() {
     let ids: BTreeSet<&str> = playable().iter().map(|p| p.id).collect();
-    for (name, l) in [("SOLO_GOD", SOLO_GOD), ("NO_HIDDEN", NO_HIDDEN)] {
+    for (name, l) in [
+        ("SOLO_GOD", SOLO_GOD),
+        ("NO_HIDDEN", NO_HIDDEN),
+        ("NO_HIDDEN_B2", NO_HIDDEN_B2),
+    ] {
         let set: BTreeSet<&str> = l.iter().copied().collect();
         assert_eq!(set.len(), l.len(), "{name} has duplicates");
         for i in l {

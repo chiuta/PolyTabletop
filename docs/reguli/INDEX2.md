@@ -1,6 +1,6 @@
-# Reguli detaliate: jocurile 121–450 (partea a doua din `polytabletop list`)
+# Reguli detaliate: jocurile 121–490 (partea a doua din `polytabletop list`)
 
-Pagini de reguli în română pentru jocurile 121–450, în ordinea din `polytabletop list`. Primele 120 de jocuri sunt în [INDEX.md](INDEX.md).
+Pagini de reguli în română pentru jocurile 121–490, în ordinea din `polytabletop list`. Primele 120 de jocuri sunt în [INDEX.md](INDEX.md).
 
 Observații comune:
 
@@ -307,38 +307,78 @@ Observații comune:
 | 413 | [`tali`](tali.md) | Knucklebones (Tali) |  | nu | — |
 | 414 | [`crag`](crag.md) | Crag |  | nu | — |
 | 415 | [`bobing`](bobing.md) | Bo Bing (Pua Tiong Chiu) |  | nu | — |
-| 416 | [`hnefatafl`](hnefatafl.md) | Hnefatafl |  | nu | — |
-| 417 | [`brandubh`](brandubh.md) | Brandubh |  | nu | — |
-| 418 | [`pente`](pente.md) | Pente |  | nu | — |
-| 419 | [`havannah`](havannah.md) | Havannah |  | nu | — |
-| 420 | [`chinese_checkers`](chinese_checkers.md) | Table chinezească (Chinese Checkers) |  | nu | — |
-| 421 | [`goose`](goose.md) | Jocul gâștei (Game of the Goose) |  | nu | — |
-| 422 | [`keno`](keno.md) | Keno |  | nu | — |
-| 423 | [`sichuan_mahjong`](sichuan_mahjong.md) | Mahjong Sichuan |  | da | — |
-| 424 | [`long_nard`](long_nard.md) | Long Nard (Narde) |  | nu | — |
-| 425 | [`shove_ha_penny`](shove_ha_penny.md) | Shove ha'penny |  | nu | — |
-| 426 | [`rithmomachia`](rithmomachia.md) | Rithmomachia |  | nu | — |
-| 427 | [`pong_hau_kiki`](pong_hau_kiki.md) | Pong hau k'i |  | nu | — |
-| 428 | [`patolli`](patolli.md) | Patolli |  | nu | — |
-| 429 | [`duodecim_scripta`](duodecim_scripta.md) | Duodecim scripta |  | nu | — |
-| 430 | [`jigsaw`](jigsaw.md) | Puzzle cu piese (Jigsaw) |  | nu | — |
-| 431 | [`guobiao`](guobiao.md) | Mahjong oficial chinez (Guobiao) |  | da | — |
-| 432 | [`boggle`](boggle.md) | Boggle |  | nu | — |
-| 433 | [`kings`](kings.md) | Kings (Ring of Fire) |  | nu | — |
-| 434 | [`celebrity`](celebrity.md) | Celebrity (Fishbowl) |  | da | — |
-| 435 | [`pin_the_tail`](pin_the_tail.md) | Prinde coada măgarului |  | nu | — |
-| 436 | [`war`](war.md) | Război (War) |  | nu | — |
-| 437 | [`tressette`](tressette.md) | Tressette (Italia) |  | da | — |
-| 438 | [`piquet`](piquet.md) | Piquet (Franța) |  | da | — |
-| 439 | [`batak`](batak.md) | Batak (Turcia) |  | da | — |
-| 440 | [`yaniv`](yaniv.md) | Yaniv (Israel) |  | da | — |
-| 441 | [`ascunselea`](ascunselea.md) | Ascunselea (Hide-and-seek) |  | da | — |
-| 442 | [`de_a_prinselea`](de_a_prinselea.md) | De-a prinselea (Tag) |  | nu | — |
-| 443 | [`elasticul`](elasticul.md) | Elasticul |  | nu | — |
-| 444 | [`oina`](oina.md) | Oina |  | nu | — |
-| 445 | [`loto_imagini`](loto_imagini.md) | Loto cu imagini (Picture lotto) |  | nu | — |
-| 446 | [`bau_cua`](bau_cua.md) | Bầu cua (dovleac, crab, pește) |  | nu | — |
-| 447 | [`yacht`](yacht.md) | Yacht |  | nu | — |
-| 448 | [`chicago`](chicago.md) | Chicago (zaruri) |  | nu | — |
-| 449 | [`zara`](zara.md) | Zara (joc) |  | nu | — |
-| 450 | [`daldos`](daldos.md) | Daldøs |  | nu | — |
+| 416 | [`ambuteiaj`](ambuteiaj.md) | Ambuteiaj (duel de mașini pe tablă 6×6) |  | nu | — |
+| 417 | [`banchiza`](banchiza.md) | Banchiza (pinguini pe sloiuri hexagonale) |  | nu | — |
+| 418 | [`balans`](balans.md) | Balansul Pietrelor (greutăți pe o grindă) |  | nu | — |
+| 419 | [`pietre_puzzle`](pietre_puzzle.md) | Piese de Mozaic (puzzle cu forme în doi) |  | nu | — |
+| 420 | [`firul`](firul.md) | Firul Luminii (plăci cu drumuri pe tablă 6×6) |  | nu | — |
+| 421 | [`genial`](genial.md) | Mozaicul Priceput (domino hexagonal în șase culori) |  | nu | — |
+| 422 | [`pelerin`](pelerin.md) | Drumul Pelerinului (călătorie cu popasuri pe o potecă) |  | nu | — |
+| 423 | [`morcovi`](morcovi.md) | Cursa Morcovilor (cursă cu resursă de energie) |  | nu | — |
+| 424 | [`rapide`](rapide.md) | Rapidele (canoe pe râu spre cascadă) |  | nu | — |
+| 425 | [`vapor`](vapor.md) | Vaporul de pe Râu (cursă cu viteză și cărbune) |  | nu | — |
+| 426 | [`lumina`](lumina.md) | Lumina Pădurii (copaci cu umbre pe tablă hexagonală) |  | nu | — |
+| 427 | [`zgarie_nori`](zgarie_nori.md) | Cartierul Înalt (majorități de zgârie-nori) |  | nu | — |
+| 428 | [`turnuri_piatra`](turnuri_piatra.md) | Turnuri de Piatră (cavaleri pe castele în creștere) |  | nu | — |
+| 429 | [`templele`](templele.md) | Templele din Junglă (explorare și temple pe grilă 5×5) |  | nu | — |
+| 430 | [`caravana`](caravana.md) | Caravana de Mirodenii (negoț între doi neguțători) |  | nu | — |
+| 431 | [`poteca`](poteca.md) | Poteca Pietrelor (cinci poteci de culori) |  | nu | — |
+| 432 | [`evadare`](evadare.md) | Evadarea din Temniță (pirați care fug printr-un tunel) |  | nu | — |
+| 433 | [`cetate_intrigi`](cetate_intrigi.md) | Intrigile Cetății (alegere de roluri și construcție de cartiere) |  | nu | — |
+| 434 | [`menajerie`](menajerie.md) | Menajeria (cărucioare cu animale și țarcuri) |  | nu | — |
+| 435 | [`tinut_zane`](tinut_zane.md) | Ținutul Zânelor (călătorie cu cărți de transport) |  | nu | — |
+| 436 | [`postalioni`](postalioni.md) | Poștalionii (rute de livrare între orașe) |  | nu | — |
+| 437 | [`cazanul`](cazanul.md) | Cazanul Vrăjit (pariu cu pungi de ingrediente) |  | nu | — |
+| 438 | [`santier`](santier.md) | Șantierul Piramidei (pietre pe corăbii spre șantiere) |  | nu | — |
+| 439 | [`marele_bazar`](marele_bazar.md) | Marele Bazar (neguțători pe o grilă de locații) |  | nu | — |
+| 440 | [`curierii_vraji`](curierii_vraji.md) | Curierii Vrăjitoarelor (roluri curajoase sau fricoase) |  | nu | — |
+| 441 | [`vamesul`](vamesul.md) | Vameșul din Poartă (bluf cu geanta de negustor) |  | da | — |
+| 442 | [`agenti`](agenti.md) | Agenții Tăcuți (agenți pe o stradă cu valori secrete) |  | da | — |
+| 443 | [`tablou`](tablou.md) | Schița Ascunsă (indicii dintr-un tablou) |  | da | — |
+| 444 | [`detectiv`](detectiv.md) | Orașul Detectivilor (urmărirea suspecților pe hartă) |  | nu | — |
+| 445 | [`tinuturi_negociate`](tinuturi_negociate.md) | Ținuturi Negociate (prețul tău, alegerea mea) |  | nu | — |
+| 446 | [`peisaj`](peisaj.md) | Peisaj Liniștit (plăcuțe hexagonale cu margini de teren) |  | nu | — |
+| 447 | [`cariera`](cariera.md) | Cariera Visată (formula succesului și zarul) |  | nu | — |
+| 448 | [`salariu`](salariu.md) | Ziua de Salariu (cursă de buget pe trei luni) |  | nu | — |
+| 449 | [`plapuma`](plapuma.md) | Plapuma (petice, timp și nasturi) |  | nu | — |
+| 450 | [`pisici`](pisici.md) | Pisicile din Barcă (pisici-poliomino pe barcă) |  | nu | — |
+| 451 | [`triunghiuri`](triunghiuri.md) | Triunghiurile Numerotate (domino triunghiular) |  | nu | — |
+| 452 | [`banane`](banane.md) | Banane-Cuvinte (cursă de cuvinte cu literele din mână) |  | nu | — |
+| 453 | [`turnuri_litere`](turnuri_litere.md) | Turnuri de Litere (cuvinte încrucișate cu litere suprapuse) |  | da | — |
+| 454 | [`lanturi`](lanturi.md) | Lanțuri Hoteliere (fuziuni și acțiuni pe o tablă mică) |  | nu | — |
+| 455 | [`bambuzeria`](bambuzeria.md) | Bambuzeria (grădinar, panda și obiective de bambus) |  | nu | — |
+| 456 | [`hnefatafl`](hnefatafl.md) | Hnefatafl |  | nu | — |
+| 457 | [`brandubh`](brandubh.md) | Brandubh |  | nu | — |
+| 458 | [`pente`](pente.md) | Pente |  | nu | — |
+| 459 | [`havannah`](havannah.md) | Havannah |  | nu | — |
+| 460 | [`chinese_checkers`](chinese_checkers.md) | Table chinezească (Chinese Checkers) |  | nu | — |
+| 461 | [`goose`](goose.md) | Jocul gâștei (Game of the Goose) |  | nu | — |
+| 462 | [`keno`](keno.md) | Keno |  | nu | — |
+| 463 | [`sichuan_mahjong`](sichuan_mahjong.md) | Mahjong Sichuan |  | da | — |
+| 464 | [`long_nard`](long_nard.md) | Long Nard (Narde) |  | nu | — |
+| 465 | [`shove_ha_penny`](shove_ha_penny.md) | Shove ha'penny |  | nu | — |
+| 466 | [`rithmomachia`](rithmomachia.md) | Rithmomachia |  | nu | — |
+| 467 | [`pong_hau_kiki`](pong_hau_kiki.md) | Pong hau k'i |  | nu | — |
+| 468 | [`patolli`](patolli.md) | Patolli |  | nu | — |
+| 469 | [`duodecim_scripta`](duodecim_scripta.md) | Duodecim scripta |  | nu | — |
+| 470 | [`jigsaw`](jigsaw.md) | Puzzle cu piese (Jigsaw) |  | nu | — |
+| 471 | [`guobiao`](guobiao.md) | Mahjong oficial chinez (Guobiao) |  | da | — |
+| 472 | [`boggle`](boggle.md) | Boggle |  | nu | — |
+| 473 | [`kings`](kings.md) | Kings (Ring of Fire) |  | nu | — |
+| 474 | [`celebrity`](celebrity.md) | Celebrity (Fishbowl) |  | da | — |
+| 475 | [`pin_the_tail`](pin_the_tail.md) | Prinde coada măgarului |  | nu | — |
+| 476 | [`war`](war.md) | Război (War) |  | nu | — |
+| 477 | [`tressette`](tressette.md) | Tressette (Italia) |  | da | — |
+| 478 | [`piquet`](piquet.md) | Piquet (Franța) |  | da | — |
+| 479 | [`batak`](batak.md) | Batak (Turcia) |  | da | — |
+| 480 | [`yaniv`](yaniv.md) | Yaniv (Israel) |  | da | — |
+| 481 | [`ascunselea`](ascunselea.md) | Ascunselea (Hide-and-seek) |  | da | — |
+| 482 | [`de_a_prinselea`](de_a_prinselea.md) | De-a prinselea (Tag) |  | nu | — |
+| 483 | [`elasticul`](elasticul.md) | Elasticul |  | nu | — |
+| 484 | [`oina`](oina.md) | Oina |  | nu | — |
+| 485 | [`loto_imagini`](loto_imagini.md) | Loto cu imagini (Picture lotto) |  | nu | — |
+| 486 | [`bau_cua`](bau_cua.md) | Bầu cua (dovleac, crab, pește) |  | nu | — |
+| 487 | [`yacht`](yacht.md) | Yacht |  | nu | — |
+| 488 | [`chicago`](chicago.md) | Chicago (zaruri) |  | nu | — |
+| 489 | [`zara`](zara.md) | Zara (joc) |  | nu | — |
+| 490 | [`daldos`](daldos.md) | Daldøs |  | nu | — |

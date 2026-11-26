@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (454)
+## Implementat (494)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -346,6 +346,46 @@
 | Sanma (mahjong în trei) | Clasic | Japonia | implementat |
 | Pare sau impare (Odds and evens) | Clasic | Global | implementat |
 | Hypergammon | Clasic | — | implementat |
+| Takenoko | Familie | Franța | implementat |
+| Patchwork | Familie | Germania | implementat |
+| Rush Hour | Familie | SUA | implementat |
+| Pay Day | Familie | SUA | implementat |
+| Careers | Familie | SUA | implementat |
+| Bananagrams | Familie | SUA | implementat |
+| Upwords | Familie | SUA | implementat |
+| Acquire | Familie | SUA | implementat |
+| Triominos | Familie | SUA | implementat |
+| Thurn und Taxis | Familie | Germania | implementat |
+| Zooloretto | Familie | Germania | implementat |
+| Elfenland | Familie | Germania | implementat |
+| Citadels | Familie | Franța | implementat |
+| Jaipur | Familie | Franța | implementat |
+| Tokaido | Familie | Franța | implementat |
+| The Sheriff of Nottingham | Familie | SUA | implementat |
+| The Quacks of Quedlinburg | Familie | Germania | implementat |
+| Photosynthesis | Familie | Canada | implementat |
+| Tsuro | Familie | SUA | implementat |
+| Tikal | Familie | Germania | implementat |
+| Torres | Familie | Germania | implementat |
+| Niagara | Familie | Germania | implementat |
+| Manhattan | Familie | Germania | implementat |
+| Mississippi Queen | Familie | Germania | implementat |
+| Heimlich & Co. | Familie | Germania | implementat |
+| Hare and Tortoise | Familie | Germania | implementat |
+| Keltis | Familie | Germania | implementat |
+| Ingenious (Einfach Genial) | Familie | Germania | implementat |
+| Hey, That's My Fish! | Familie | Germania | implementat |
+| Ubongo | Familie | Germania | implementat |
+| Cartagena | Familie | Germania | implementat |
+| Villa Paletti | Familie | Germania | implementat |
+| Pictures | Familie | Germania | implementat |
+| MicroMacro: Crime City | Familie | Germania | implementat |
+| Dorfromantik: The Board Game | Familie | Germania | implementat |
+| Isle of Skye | Familie | Germania | implementat |
+| Broom Service | Familie | Germania | implementat |
+| Istanbul | Familie | Germania | implementat |
+| Imhotep | Familie | Germania | implementat |
+| Isle of Cats | Familie | SUA | implementat |
 | Charades | Party | Franța | implementat |
 | Scattergories | Party | SUA | implementat |
 | Boggle | Party | SUA | implementat |
@@ -466,7 +506,7 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Variantă proprie (474)
+## Variantă proprie (434)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -510,46 +550,6 @@
 | Mille Bornes | Familie | Franța | planificat (variantă proprie) |
 | Camel Up | Familie | Germania | planificat (variantă proprie) |
 | Colt Express | Familie | Franța | planificat (variantă proprie) |
-| Takenoko | Familie | Franța | planificat (variantă proprie) |
-| Patchwork | Familie | Germania | planificat (variantă proprie) |
-| Rush Hour | Familie | SUA | planificat (variantă proprie) |
-| Pay Day | Familie | SUA | planificat (variantă proprie) |
-| Careers | Familie | SUA | planificat (variantă proprie) |
-| Bananagrams | Familie | SUA | planificat (variantă proprie) |
-| Upwords | Familie | SUA | planificat (variantă proprie) |
-| Acquire | Familie | SUA | planificat (variantă proprie) |
-| Triominos | Familie | SUA | planificat (variantă proprie) |
-| Thurn und Taxis | Familie | Germania | planificat (variantă proprie) |
-| Zooloretto | Familie | Germania | planificat (variantă proprie) |
-| Elfenland | Familie | Germania | planificat (variantă proprie) |
-| Citadels | Familie | Franța | planificat (variantă proprie) |
-| Jaipur | Familie | Franța | planificat (variantă proprie) |
-| Tokaido | Familie | Franța | planificat (variantă proprie) |
-| The Sheriff of Nottingham | Familie | SUA | planificat (variantă proprie) |
-| The Quacks of Quedlinburg | Familie | Germania | planificat (variantă proprie) |
-| Photosynthesis | Familie | Canada | planificat (variantă proprie) |
-| Tsuro | Familie | SUA | planificat (variantă proprie) |
-| Tikal | Familie | Germania | planificat (variantă proprie) |
-| Torres | Familie | Germania | planificat (variantă proprie) |
-| Niagara | Familie | Germania | planificat (variantă proprie) |
-| Manhattan | Familie | Germania | planificat (variantă proprie) |
-| Mississippi Queen | Familie | Germania | planificat (variantă proprie) |
-| Heimlich & Co. | Familie | Germania | planificat (variantă proprie) |
-| Hare and Tortoise | Familie | Germania | planificat (variantă proprie) |
-| Keltis | Familie | Germania | planificat (variantă proprie) |
-| Ingenious (Einfach Genial) | Familie | Germania | planificat (variantă proprie) |
-| Hey, That's My Fish! | Familie | Germania | planificat (variantă proprie) |
-| Ubongo | Familie | Germania | planificat (variantă proprie) |
-| Cartagena | Familie | Germania | planificat (variantă proprie) |
-| Villa Paletti | Familie | Germania | planificat (variantă proprie) |
-| Pictures | Familie | Germania | planificat (variantă proprie) |
-| MicroMacro: Crime City | Familie | Germania | planificat (variantă proprie) |
-| Dorfromantik: The Board Game | Familie | Germania | planificat (variantă proprie) |
-| Isle of Skye | Familie | Germania | planificat (variantă proprie) |
-| Broom Service | Familie | Germania | planificat (variantă proprie) |
-| Istanbul | Familie | Germania | planificat (variantă proprie) |
-| Imhotep | Familie | Germania | planificat (variantă proprie) |
-| Isle of Cats | Familie | SUA | planificat (variantă proprie) |
 | Calico | Familie | SUA | planificat (variantă proprie) |
 | Parks | Familie | SUA | planificat (variantă proprie) |
 | Bärenpark | Familie | Germania | planificat (variantă proprie) |
