@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (172)
+## Implementat (241)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -18,6 +18,7 @@
 | Poker | Cărți | SUA | implementat |
 | Remi (Rummy) | Cărți | Global | implementat |
 | Domino | Clasic | China | implementat |
+| Dungeons & Dragons | Rol (RPG) | SUA | implementat |
 | Catan | Strategie | Germania | implementat |
 | Magic: The Gathering | TCG | SUA | implementat |
 | Pokémon TCG | TCG | Japonia | implementat |
@@ -45,6 +46,8 @@
 | Mancala | Abstract | Africa / Orientul Mijlociu | implementat |
 | Carrom | Clasic | India | implementat |
 | Șerpi și scări | Copii | India | implementat |
+| Call of Cthulhu | Rol (RPG) | SUA | implementat |
+| Pathfinder | Rol (RPG) | SUA | implementat |
 | Cards Against Humanity | Party | SUA | implementat |
 | Activity | Party | Austria | implementat |
 | Taboo | Party | SUA | implementat |
@@ -81,6 +84,16 @@
 | Star Wars: X-Wing | Miniaturi | SUA | implementat |
 | Flesh and Blood | TCG | SUA | implementat |
 | Disney Lorcana | TCG | Germania | implementat |
+| Vampire: The Masquerade | Rol (RPG) | SUA | implementat |
+| Das Schwarze Auge (The Dark Eye) | Rol (RPG) | Germania | implementat |
+| Shadowrun | Rol (RPG) | SUA | implementat |
+| Warhammer Fantasy Roleplay | Rol (RPG) | Marea Britanie | implementat |
+| Sword World RPG | Rol (RPG) | Japonia | implementat |
+| Blades in the Dark | Rol (RPG) | SUA | implementat |
+| Mörk Borg | Rol (RPG) | Suedia | implementat |
+| Cyberpunk RED | Rol (RPG) | SUA | implementat |
+| Tormenta | Rol (RPG) | Brazilia | implementat |
+| Starfinder | Rol (RPG) | SUA | implementat |
 | Hanafuda | Cărți | Japonia | implementat |
 | Dobble (Spot It!) | Party | Franța | implementat |
 | Memory | Copii | Germania | implementat |
@@ -95,6 +108,7 @@
 | Lines of Action | Abstract | SUA | implementat |
 | Nim | Abstract | China / Europa | implementat |
 | Moara (Țintar, Nine Men's Morris) | Abstract | Antic | implementat |
+| Twister | Party | SUA | implementat |
 | Caylus | Strategie | Franța | implementat |
 | Terra Mystica | Strategie | Germania | implementat |
 | Skull | Party | Franța | implementat |
@@ -116,6 +130,9 @@
 | Blood Bowl | Miniaturi | Marea Britanie | implementat |
 | Infinity | Miniaturi | Spania | implementat |
 | Bolt Action | Miniaturi | Marea Britanie | implementat |
+| Drakar och Demoner | Rol (RPG) | Suedia | implementat |
+| The Witcher TRPG | Rol (RPG) | Polonia | implementat |
+| InSANe | Rol (RPG) | Japonia | implementat |
 | Truco | Cărți | America Latină (Argentina, Uruguay) | implementat |
 | Lotería | Clasic | America Latină (Mexic) | implementat |
 | Canasta | Cărți | America Latină | implementat |
@@ -175,64 +192,66 @@
 | Barbut | Zaruri | — | implementat |
 | Alias | Party | — | implementat |
 | Cameleonul | Party | — | implementat |
+| Campionii Distracției | Familie | — | implementat |
+| Turistico | Familie | — | implementat |
 | Cassino | Cărți | — | implementat |
 | Go Fish (Pescuit) | Cărți | — | implementat |
 | Poker de zaruri | Zaruri | — | implementat |
+| Oware | Abstract | Ghana / Africa de Vest | implementat |
+| Bao | Abstract | Tanzania / Africa de Est | implementat |
+| Seega | Abstract | Egipt | implementat |
+| Yote | Abstract | Senegal / Africa de Vest | implementat |
+| Hus | Abstract | Namibia | implementat |
+| Tâb | Clasic | Egipt / Orientul Mijlociu | implementat |
+| Senet | Clasic | Egiptul antic | implementat |
+| Whot! | Cărți | Nigeria | implementat |
+| Chkobba | Cărți | Tunisia | implementat |
+| Ronda | Cărți | Maroc / Spania | implementat |
+| Sholo Guti (Șaisprezece soldați) | Abstract | Bangladesh / India | implementat |
+| Aadu Puli Attam (Oi și tigri) | Abstract | India | implementat |
+| Mangala (mancala turcească) | Abstract | Turcia | implementat |
+| Dama (dame turcești) | Abstract | Turcia / Orientul Mijlociu | implementat |
+| Okey | Clasic | Turcia | implementat |
+| Riichi Mahjong | Clasic | Japonia | implementat |
+| Sic Bo | Zaruri | China | implementat |
+| Ashta Chamma | Clasic | India | implementat |
+| Daifugo (Daihinmin) | Cărți | Japonia | implementat |
+| Tiến lên | Cărți | Vietnam | implementat |
+| Big Two (Pusoy dos) | Cărți | China / Filipine | implementat |
+| Tong-its | Cărți | Filipine | implementat |
+| Pasur | Cărți | Iran | implementat |
+| Hokm | Cărți | Iran | implementat |
+| Piști | Cărți | Turcia | implementat |
+| Court Piece (Rang, Mendikot) | Cărți | India | implementat |
+| Call Break | Cărți | Nepal / India | implementat |
+| Pinochle | Cărți | SUA | implementat |
+| Gin Rummy | Cărți | SUA | implementat |
+| Crazy Eights | Cărți | SUA | implementat |
+| Pitch (Setback) | Cărți | SUA | implementat |
+| Bid Whist | Cărți | SUA | implementat |
+| All Fours | Cărți | Trinidad și Tobago / Caraibe | implementat |
+| Conquián | Cărți | Mexic | implementat |
+| Chicken Foot (domino) | Clasic | SUA / Caraibe | implementat |
+| Bunco | Zaruri | SUA | implementat |
+| Farkle (10 000) | Zaruri | SUA | implementat |
+| Liar's Dice (Cacho, Dudo, Perudo) | Zaruri | America Latină | implementat |
+| Crokinole | Familie | Canada | implementat |
+| Chinchón | Cărți | Spania / America Latină | implementat |
+| Burako (Buraco) | Cărți | Argentina / Uruguay / Brazilia | implementat |
+| Escoba (Escoba de 15) | Cărți | Argentina / Uruguay | implementat |
+| Cuarenta | Cărți | Ecuador | implementat |
+| Generala | Zaruri | Argentina / Uruguay | implementat |
+| Parqués | Familie | Colombia | implementat |
+| Five Hundred (500) | Cărți | SUA / Australia | implementat |
+| Pontoon | Cărți | Australia / Marea Britanie | implementat |
+| Two-up | Clasic | Australia | implementat |
+| Crown and Anchor | Zaruri | Marea Britanie / Oceania | implementat |
+| Mu Torere | Abstract | Noua Zeelandă (maori) | implementat |
 
-## Tradițional (263)
+## Tradițional (213)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Oware | Abstract | Ghana / Africa de Vest | planificat (domeniu public) |
-| Bao | Abstract | Tanzania / Africa de Est | planificat (domeniu public) |
-| Seega | Abstract | Egipt | planificat (domeniu public) |
-| Yote | Abstract | Senegal / Africa de Vest | planificat (domeniu public) |
-| Hus | Abstract | Namibia | planificat (domeniu public) |
-| Tâb | Clasic | Egipt / Orientul Mijlociu | planificat (domeniu public) |
-| Senet | Clasic | Egiptul antic | planificat (domeniu public) |
-| Whot! | Cărți | Nigeria | planificat (domeniu public) |
-| Chkobba | Cărți | Tunisia | planificat (domeniu public) |
-| Ronda | Cărți | Maroc / Spania | planificat (domeniu public) |
-| Sholo Guti (Șaisprezece soldați) | Abstract | Bangladesh / India | planificat (domeniu public) |
-| Aadu Puli Attam (Oi și tigri) | Abstract | India | planificat (domeniu public) |
-| Mangala (mancala turcească) | Abstract | Turcia | planificat (domeniu public) |
-| Dama (dame turcești) | Abstract | Turcia / Orientul Mijlociu | planificat (domeniu public) |
-| Okey | Clasic | Turcia | planificat (domeniu public) |
-| Riichi Mahjong | Clasic | Japonia | planificat (domeniu public) |
-| Sic Bo | Zaruri | China | planificat (domeniu public) |
-| Ashta Chamma | Clasic | India | planificat (domeniu public) |
-| Daifugo (Daihinmin) | Cărți | Japonia | planificat (domeniu public) |
-| Tiến lên | Cărți | Vietnam | planificat (domeniu public) |
-| Big Two (Pusoy dos) | Cărți | China / Filipine | planificat (domeniu public) |
-| Tong-its | Cărți | Filipine | planificat (domeniu public) |
-| Pasur | Cărți | Iran | planificat (domeniu public) |
-| Hokm | Cărți | Iran | planificat (domeniu public) |
-| Piști | Cărți | Turcia | planificat (domeniu public) |
-| Court Piece (Rang, Mendikot) | Cărți | India | planificat (domeniu public) |
-| Call Break | Cărți | Nepal / India | planificat (domeniu public) |
-| Pinochle | Cărți | SUA | planificat (domeniu public) |
-| Gin Rummy | Cărți | SUA | planificat (domeniu public) |
-| Crazy Eights | Cărți | SUA | planificat (domeniu public) |
-| Pitch (Setback) | Cărți | SUA | planificat (domeniu public) |
-| Bid Whist | Cărți | SUA | planificat (domeniu public) |
-| All Fours | Cărți | Trinidad și Tobago / Caraibe | planificat (domeniu public) |
-| Conquián | Cărți | Mexic | planificat (domeniu public) |
-| Chicken Foot (domino) | Clasic | SUA / Caraibe | planificat (domeniu public) |
-| Bunco | Zaruri | SUA | planificat (domeniu public) |
-| Farkle (10 000) | Zaruri | SUA | planificat (domeniu public) |
-| Liar's Dice (Cacho, Dudo, Perudo) | Zaruri | America Latină | planificat (domeniu public) |
-| Crokinole | Familie | Canada | planificat (domeniu public) |
-| Chinchón | Cărți | Spania / America Latină | planificat (domeniu public) |
-| Burako (Buraco) | Cărți | Argentina / Uruguay / Brazilia | planificat (domeniu public) |
-| Escoba (Escoba de 15) | Cărți | Argentina / Uruguay | planificat (domeniu public) |
-| Cuarenta | Cărți | Ecuador | planificat (domeniu public) |
-| Generala | Zaruri | Argentina / Uruguay | planificat (domeniu public) |
-| Parqués | Familie | Colombia | planificat (domeniu public) |
-| Five Hundred (500) | Cărți | SUA / Australia | planificat (domeniu public) |
-| Pontoon | Cărți | Australia / Marea Britanie | planificat (domeniu public) |
-| Two-up | Clasic | Australia | planificat (domeniu public) |
-| Crown and Anchor | Zaruri | Marea Britanie / Oceania | planificat (domeniu public) |
-| Mu Torere | Abstract | Noua Zeelandă (maori) | planificat (domeniu public) |
 | Tic-tac-toe (X și 0) | Abstract | Antic | planificat (domeniu public) |
 | Dame internaționale (10x10) | Abstract | Franța / Olanda | planificat (domeniu public) |
 | Dame rusești (Shashki) | Abstract | Rusia | planificat (domeniu public) |
@@ -447,13 +466,10 @@
 | Howzat! (dice cricket) | Zaruri | Marea Britanie | planificat (domeniu public) |
 | Bar dice | Zaruri | Global | planificat (domeniu public) |
 
-## Variantă proprie (477)
+## Variantă proprie (474)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Twister | Party | SUA | planificat (variantă proprie) |
-| Campionii Distracției | Familie | — | planificat (variantă proprie) |
-| Turistico | Familie | — | planificat (variantă proprie) |
 | Blokus | Abstract | Franța | planificat (variantă proprie) |
 | Chess960 (Fischer Random) | Abstract | SUA | planificat (variantă proprie) |
 | Abalone | Abstract | Franța | planificat (variantă proprie) |
@@ -929,26 +945,10 @@
 | Roll for It! | Zaruri | SUA | planificat (variantă proprie) |
 | Blueprints | Zaruri | SUA | planificat (variantă proprie) |
 
-## Toolkit (288)
+## Toolkit (272)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Dungeons & Dragons | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Call of Cthulhu | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Pathfinder | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Vampire: The Masquerade | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Das Schwarze Auge (The Dark Eye) | Rol (RPG) | Germania | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Shadowrun | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warhammer Fantasy Roleplay | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Sword World RPG | Rol (RPG) | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Blades in the Dark | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mörk Borg | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Cyberpunk RED | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Tormenta | Rol (RPG) | Brazilia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Starfinder | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Drakar och Demoner | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| The Witcher TRPG | Rol (RPG) | Polonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| InSANe | Rol (RPG) | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
 | Traveller | Rol (RPG) | Marea Britanie / SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
 | GURPS | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
 | RuneQuest | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |

@@ -6,16 +6,22 @@
 //! used for our own games: we use the generic names ("Reversi",
 //! "Patru în linie", …).
 
+pub mod aadupuli;
 pub mod amazoane;
 pub mod apus;
 pub mod arhipelag;
 pub mod artificii;
+pub mod ashtachamma;
+pub mod aventura;
+pub mod aventura_pachete;
 pub mod ayo;
 pub mod backgammon;
 pub mod baloot;
+pub mod bao;
 pub mod barbut;
 pub mod battleship;
 pub mod belote;
+pub mod bigtwo;
 pub mod bile;
 pub mod bingo;
 pub mod blackjack;
@@ -23,6 +29,7 @@ pub mod bresla;
 pub mod bridge;
 pub mod briscola;
 pub mod bufet;
+pub mod callbreak;
 pub mod canasta;
 pub mod capcana;
 pub mod cards;
@@ -47,6 +54,7 @@ pub mod connect4;
 pub mod consiliul;
 pub mod coridor;
 pub mod coroana;
+pub mod courtpiece;
 pub mod cribbage;
 pub mod cripta;
 pub mod cristale;
@@ -55,8 +63,11 @@ pub mod cunoastere;
 pub mod cunoastere_bank;
 pub mod cupe;
 pub mod curieri;
+pub mod cursa_probelor;
 pub mod cuvantunic;
 pub mod cuvantunic_date;
+pub mod daifugo;
+pub mod dama;
 pub mod dara;
 pub mod dictionar;
 pub mod dictionar_date;
@@ -85,18 +96,23 @@ pub mod gura_date;
 pub mod hanafuda;
 pub mod hasami;
 pub mod hex;
+pub mod hokm;
 pub mod hotar;
 pub mod hruba;
+pub mod hus;
 pub mod hwatu;
 pub mod i18n;
+pub mod impletitura;
 pub mod impostor;
 pub mod impostor_date;
 pub mod inimi;
 pub mod insula;
+pub mod itinerar;
 pub mod izolare;
 pub mod janggi;
 pub mod karuta;
 pub mod konane;
+pub mod linegraph;
 pub mod linii;
 pub mod litere;
 pub mod ludo;
@@ -106,6 +122,8 @@ pub mod magistrale;
 pub mod mahjong;
 pub mod makruk;
 pub mod mancala;
+pub mod mancala4;
+pub mod mangala;
 pub mod mastermind;
 pub mod memory;
 pub mod miniaturi;
@@ -116,17 +134,22 @@ pub mod mosii;
 pub mod mozaic;
 pub mod nave;
 pub mod nim;
+pub mod okey;
 pub mod oprite;
 pub mod oprite_date;
 pub mod orasel;
 pub mod ordine;
+pub mod oware;
+pub mod p2_util;
 pub mod pachisi;
 pub mod pai_gow;
 pub mod pallanguzhi;
+pub mod pasur;
 pub mod patru;
 pub mod patrula;
 pub mod pescuit;
 pub mod pica;
+pub mod pisti;
 pub mod placute;
 pub mod poieni;
 pub mod poker;
@@ -142,8 +165,10 @@ pub mod reactii;
 pub mod reverdire;
 pub mod reversi;
 pub mod rezervatia;
+pub mod riichi;
 pub mod roade;
 pub mod roata;
+pub mod ronda;
 pub mod rotire;
 pub mod rummy;
 pub mod salina;
@@ -151,8 +176,12 @@ pub mod santinela;
 pub mod schita;
 pub mod schita_date;
 pub mod scopa;
+pub mod seega;
+pub mod senet;
 pub mod septica;
 pub mod shogi;
+pub mod shologuti;
+pub mod sicbo;
 pub mod sideral;
 pub mod sixtysix;
 pub mod skat;
@@ -165,6 +194,7 @@ pub mod strapungere;
 pub mod sugoroku;
 pub mod sungka;
 pub mod surakarta;
+pub mod tab;
 pub mod tablanet;
 pub mod taramuri;
 pub mod tarneeb;
@@ -175,8 +205,10 @@ pub mod tcg_evo;
 pub mod tcg_lant;
 pub mod tcg_zone;
 pub mod teen_patti;
+pub mod tienlen;
 pub mod tigri;
 pub mod tinuturi;
+pub mod tongits;
 pub mod treicai;
 pub mod treicai_date;
 pub mod treizeci1;
@@ -192,11 +224,41 @@ pub mod w4_ghici;
 pub mod w5_util;
 pub mod w7_util;
 pub mod whist;
+pub mod whot;
 pub mod xiangqi;
+pub mod yote;
 pub mod yut;
 pub mod zarpoker;
 pub mod zaruri5;
 pub mod zidurile;
+// --- P4 (jocuri tradiționale din America Latină / Oceania) ---
+pub mod ancora;
+pub mod baraja_es;
+pub mod burako;
+pub mod chinchon;
+pub mod cuarenta;
+pub mod escoba;
+pub mod fivehundred;
+pub mod generala;
+pub mod mutorere;
+pub mod parques;
+pub mod pontoon;
+pub mod twoup;
+
+// Valul P3
+pub mod all_fours;
+pub mod bid_whist;
+pub mod bunco;
+pub mod chicken_foot;
+pub mod conquian;
+pub mod crazy_eights;
+pub mod crokinole;
+pub mod farkle;
+pub mod gin_rummy;
+pub mod liars_dice;
+pub mod p3_comun;
+pub mod pinochle;
+pub mod pitch;
 
 use polytabletop_core::GameObj;
 
@@ -248,6 +310,21 @@ pub struct Playable {
 
 /// Games whose `render` honours `set_viewer` (hot-seat shows only the mover's private info).
 pub const HOTSEAT_SAFE: &[&str] = &[
+    "burako",
+    "chinchon",
+    "cuarenta",
+    "escoba",
+    "fivehundred",
+    "pontoon",
+    "pinochle",
+    "gin_rummy",
+    "crazy_eights",
+    "pitch",
+    "bid_whist",
+    "all_fours",
+    "conquian",
+    "chicken_foot",
+    "liars_dice",
     "litere",
     "curieri",
     "fitil",
@@ -306,6 +383,16 @@ pub const HOTSEAT_SAFE: &[&str] = &[
     "66",
     "doudizhu",
     "teenpatti",
+    "riichi",
+    "daifugo",
+    "tienlen",
+    "bigtwo",
+    "tongits",
+    "pasur",
+    "hokm",
+    "pisti",
+    "courtpiece",
+    "callbreak",
     "paigow",
     "ganjifa",
     "hanafuda",
@@ -331,6 +418,10 @@ pub const HOTSEAT_SAFE: &[&str] = &[
     "expeditii",
     "artificii",
     "bufet",
+    "whot",
+    "chkobba",
+    "ronda",
+    "okey",
 ];
 
 pub fn playable() -> Vec<Playable> {
@@ -644,6 +735,90 @@ pub fn playable() -> Vec<Playable> {
             make: || Box::new(teen_patti::TeenPatti::new()),
         },
         Playable {
+            id: "riichi",
+            title: "Riichi Mahjong (2 jucători)",
+            category: "Clasic",
+            rules: "Mahjong japonez pentru doi: 136 de piese (1m–9m, 1p–9p, 1s–9s, 1z–7z = vânturi și dragoni), 13 piese, 4 mâini (Est 1–2, Sud 1–2), 25 000 de puncte. Tura: trage, apoi arunci (5m), riichi 5m, tsumo, ankan 5m, kakan 5m (după careu: trage-moarta); pe aruncarea adversarului: ron, pon, kan, chi 4m 6m sau pas. Mână = 4 seturi + pereche (sau 7 perechi / 13 orfani) cu cel puțin un yaku; furiten, dora/ura-dora, fu și han până la yakuman. Zidul e ascuns. Fără piese roșii.",
+            make: || Box::new(riichi::Riichi::new()),
+        },
+        Playable {
+            id: "sicbo",
+            title: "Sic Bo",
+            category: "Zaruri",
+            rules: "Trei zaruri; duel contra „casei” cu 100 de jetoane, 12 runde (ordinea de pariere alternează). Pariuri (plăți X:1): mic 1, mare 1 (pierd la triplu), cifra N 1/2/3, dublu N 10, triplu N 180, oricare-triplu 30, suma S (4 și 17: 60 … 9–12: 6), pereche a-b 5. Cel mult 6 pariuri pe rundă, mize 1/5/10/25. Mutări: mic:5, cifra:3:5, suma:9:5, pereche:1-2:5, fin, arunc, urmatoarea. Câștigă cine are mai multe jetoane.",
+            make: || Box::new(sicbo::SicBo::new()),
+        },
+        Playable {
+            id: "ashtachamma",
+            title: "Ashta Chamma",
+            category: "Familie",
+            rules: "Tablă 5×5, 4 piese pe jucător, 4 cauri (1–4; zero în sus = 8; 4 și 8 dau încă o aruncare). Piesele merg în sens trigonometric pe inelul exterior (16 pătrate) și intră în inelul interior și în centru doar după o captură; centrul se atinge exact. Pătrate sigure (X): mijloace de latură, colțuri, centru; două piese ale aceluiași jucător formează un bloc. Captura dă încă o aruncare. Câștigă cine aduce toate piesele în centru. Mutări: arunc, 7 sau 7* (piesa de pe pătratul 7 al căii; * = a capturat), pas.",
+            make: || Box::new(ashtachamma::AshtaChamma::new()),
+        },
+        Playable {
+            id: "daifugo",
+            title: "Daifugo (Daihinmin)",
+            category: "Cărți",
+            rules: "54 de cărți (cu 2 jokeri), 27 fiecare, 5 runde. Ordine 3…K, A, 2, joker. Joci un grup de același rang (33, 777), adversarul același număr de cărți mai mari sau pas; după pas conduce cine a jucat ultimul. Joker singur (X) sau wild (5X). 4 cărți = revoluție (ordinea se inversează), orice grup cu 8 oprește jocul (conduci din nou). Câștigi runda când rămâi fără cărți; perdantul îți dă cele mai bune 2 cărți, tu dai 2 înapoi (da 4 5). Mutări: 3, 77, JJJ, 55X, X, pas, da 4 5.",
+            make: || Box::new(daifugo::Daifugo::new()),
+        },
+        Playable {
+            id: "tienlen",
+            title: "Tiến lên",
+            category: "Cărți",
+            rules: "52 de cărți, 13 fiecare (restul ascuns). Rang 3…A, 2; culoare ♠ < ♣ < ♦ < ♥. Combinații: carte, pereche, treime, careu, scară (3+, fără 2), 3+ perechi consecutive; aceeași formă și mai mare, sau pas. Tăieri pe 2: careu sau 3 perechi consecutive pe un 2, careu sau 4 perechi consecutive pe o pereche de 2; 4 perechi consecutive taie și careul. Victorie instantanee: patru de 2, șase perechi, scară 3…A. Primul la 3 mâini. Mutări: 3s, 9h 9d, 5c 6d 7h, pas.",
+            make: || Box::new(tienlen::TienLen::new()),
+        },
+        Playable {
+            id: "bigtwo",
+            title: "Big Two (Pusoy dos)",
+            category: "Cărți",
+            rules: "52 de cărți, 13 fiecare (restul ascuns). Rang 3…A, 2; culoare ♦ < ♣ < ♥ < ♠. Carte, pereche, treime sau mână de 5: scară < culoare < full < careu+1 < scară de culoare. Dai aceeași formă mai mare ori pas; cine are cea mai mică carte începe cu ea. Mâna se termină la golirea cărților: perdantul primește cărțile rămase ca penalizare (dublu de la 10 cărți); la 30 de puncte pierde meciul (cel mult 8 mâini). Mutări: 3d, 9h 9s, 3d 4c 5h 6s 7d, pas.",
+            make: || Box::new(bigtwo::BigTwo::new()),
+        },
+        Playable {
+            id: "tongits",
+            title: "Tong-its",
+            category: "Cărți",
+            rules: "52 de cărți, 12 fiecare (dealerul 13 și începe fără să tragă). Tura: trage din stoc sau ia aruncata dacă o folosești imediat (ia 5d 5h 5c / ia sapaw 2), apoi pune seturi sau scări (pune 3h 4h 5h), adaugă la orice combinație (sapaw 6h 2) și aruncă (arunca Kd). Mână goală = Tongits, 3 p.; cheama (cu o combinație pusă) → adversarul renunt (1 p.) sau lupta: mai puține puncte în mână câștigă (egalitate: cel care a luptat; dacă pierde cel care a chemat, adversarul ia 2 p.); stoc epuizat: mai puține puncte. Primul la 6 p.",
+            make: || Box::new(tongits::Tongits::new()),
+        },
+        Playable {
+            id: "pasur",
+            title: "Pasur",
+            category: "Cărți",
+            rules: "52 de cărți, 4 pe masă și 4 în mână (se dau din nou câte 4). Un număr (A=1…10) capturează orice grupuri de cărți de pe masă cu suma 11 împreună cu el; Valetul ia tot în afară de Dame și Regi; Dama ia o Damă, Regele un Rege. Sur (masa golită, nu cu Valet) 5 p. Puncte: cele mai multe cărți 3, ≥7 trefle 7, 10♦ 3, 2♣ 2, Ași 1, Valeți 1. Joc până la 62. Mutări: 7h (pui), 5s x 2c 4d 6h (capturezi), imparte.",
+            make: || Box::new(pasur::Pasur::new()),
+        },
+        Playable {
+            id: "hokm",
+            title: "Hokm",
+            category: "Cărți",
+            rules: "52 de cărți, câte 13 (restul ascuns). Hakem vede mai întâi 5 cărți și alege atuul (hokm h); conduce prima levată. Răspunzi la culoare; atuul bate tot. 7 din 13 levate = 1 p., 13–0 = 2 p., hakem cu zero levate = 3 p.; hakem rămâne dacă câștigă. Primul la 7 puncte. Mutări: hokm h (c/d/h/s), 10h, As.",
+            make: || Box::new(hokm::Hokm::new()),
+        },
+        Playable {
+            id: "pisti",
+            title: "Piști",
+            category: "Cărți",
+            rules: "52 de cărți: 4 pe masă (3 cu fața în jos), 4 în mână. Cartea ta ia toată grămada dacă are același rang ca cea de deasupra sau e Valet. Piști (grămadă de o carte luată cu același rang) 10 p., Valet peste Valet 20 p. Puncte: Ași și Valeți 1, 2♣ 2, 10♦ 3, cele mai multe cărți 3. Se joacă până la 101. Mutări: 7h, Js, imparte.",
+            make: || Box::new(pisti::Pisti::new()),
+        },
+        Playable {
+            id: "courtpiece",
+            title: "Court Piece (Rang, Mendikot)",
+            category: "Cărți",
+            rules: "52 de cărți, câte 26. Cine nu e dealer vede primele 5 cărți și alege atuul (rang h), apoi se împarte restul și el conduce. Răspunzi la culoare; atuul bate tot. Mâna o câștigă cine ia mai multe zeci (mendi): 1 p.; toate 4 zecile (Mendikot) 2 p.; toate levatele (Court) 3 p.; la 2–2 decid levatele. Primul la 5 puncte. Mutări: rang h, 10h, As.",
+            make: || Box::new(courtpiece::CourtPiece::new()),
+        },
+        Playable {
+            id: "callbreak",
+            title: "Call Break",
+            category: "Cărți",
+            rules: "52 de cărți, câte 13 (restul ascuns); pica e mereu atu. Cine nu e dealer licitează primul (licit 4) numărul de levate și conduce. Răspunzi la culoare și, dacă poți, cu o carte mai mare; fără culoare tai cu pică. Scor: licitația + 0,1 pe levată în plus, sau − licitația dacă ai luat mai puțin. 5 mâini, scorul total mai mare câștigă. Mutări: licit 4, 10h, As.",
+            make: || Box::new(callbreak::CallBreak::new()),
+        },
+        Playable {
             id: "ganjifa",
             title: "Ganjifa (levate)",
             category: "Cărți",
@@ -684,6 +859,13 @@ pub fn playable() -> Vec<Playable> {
             category: "Zaruri",
             rules: "Joc original, 32 de câmpuri: arunci două zaruri (automat), cumperi terenuri și gări (cumpar / las), încasezi chirii (grup complet = chirie dublă, case: construiesc 3), taxe, evenimente Noroc și închisoare (platesc 50 sau dublă); dublă = încă o aruncare. Faliment = pierdere; după 1500 de mutări câștigă averea mai mare. Fără licitații și ipoteci.",
             make: || Box::new(mosii::Mosii::new()),
+        },
+        Playable {
+            id: "itinerar",
+            title: "Itinerar (turism pe tablă, rezervi destinații)",
+            category: "Zaruri",
+            rules: "Joc original, 28 de câmpuri (7 regiuni × 3 destinații + aeroporturi, tombolă, vamă, bac, hotel de lux, taxă de turist): arunc, apoi mut (zarurile 2d6 sunt automate); pe o destinație liberă: rezerv (taxa de intrare) sau las; pe una ocupată plătești taxa de cazare. La final: construiesc N (cazare, 3 niveluri), rezerv N (la distanță, preț ×1,5, o dată pe tură), zbor (între aeroporturi, 60) sau gata. Colecție completă de regiune = taxe ×2; dublă = încă o aruncare, a treia dublă = vamă (pierzi tura); lux (nivel gratuit la Hotelul de lux). Faliment = eliminare; după 40 de runde câștigă averea mai mare. Informație publică.",
+            make: || Box::new(itinerar::Itinerar::new()),
         },
         Playable {
             id: "magistrale",
@@ -784,6 +966,13 @@ pub fn playable() -> Vec<Playable> {
             make: || Box::new(orasel::Orasel::new()),
         },
         Playable {
+            id: "cursa_probelor",
+            title: "Cursa probelor (joc de familie cu mini-probe, 2–4 jucători)",
+            category: "Familie",
+            rules: "Joc de familie propriu: pistă circulară de 30 de câmpuri și zar d6 (zar). Fiecare câmp declanșează o mini-probă: N numărare (raspuns 1|2|3), M memorie scurtă (gata, apoi literele A–D pe rând), D duel de zaruri (duel 2), R pariu de risc (arunc / opresc: până la 3 zaruri, un 1 pierde, țintă 9), L logică/aritmetică generată procedural (raspuns 1|2|3), O odihnă (a doua șansă). Începi cu jucatori 2|3|4; ceilalți sunt roboți (Easy–Expert; răspund doar din ce vezi și tu, cu zgomot). Primul cu 5 medalii câștigă; după 3 ture, cele mai multe medalii; egalitate la vârf = remiză. Mutări automate: rezolv, robot.",
+            make: || Box::new(cursa_probelor::CursaProbelor::new()),
+        },
+        Playable {
             id: "capcana",
             title: "Capcana (variantă originală)",
             category: "Party",
@@ -810,6 +999,111 @@ pub fn playable() -> Vec<Playable> {
             category: "Abstract",
             rules: "2 × 6 gropi, 4 semințe în fiecare; semănat trigonometric cu semănat în lanț (ultima într-o groapă ocupată = continui) și groapa de start sărită. Captură: ultima sămânță într-o groapă goală proprie ia groapa opusă (fără sămânța ultimă). Dacă adversarul nu mai are semințe, ești obligat să-l hrănești; dacă nu poți, jocul se termină. Mutări: 1–6.",
             make: || Box::new(ayo::Ayo::new()),
+        },
+        Playable {
+            id: "oware",
+            title: "Oware (Ghana)",
+            category: "Abstract",
+            rules: "2 × 6 gropi, 4 semințe în fiecare; semănat trigonometric (groapa de start e sărită la 12+ semințe), fără lanț. Captură: dacă ultima sămânță cade într-o groapă adversă ajunsă la 2 sau 3 semințe, le iei și continui înapoi cât timp grupele au 2 sau 3; mutarea care ar goli complet partea adversă nu capturează (grand slam). Dacă adversarul nu are semințe, trebuie să-l hrănești. Câștigă primul cu 25. Mutări: 1–6.",
+            make: || Box::new(oware::Oware::new()),
+        },
+        Playable {
+            id: "bao",
+            title: "Bao (Bao la Kiswahili)",
+            category: "Abstract",
+            rules: "Tablă 4 × 8, două rânduri pe jucător, 22 de semințe în rezervă și nyumba cu 6. Namua: captura e obligatorie (pui o sămânță într-o groapă din față, iei groapa opusă și o semeni de la capătul rândului); altfel pui o sămânță și semeni sensul ales. Mtaji: muți dintr-o groapă cu ≥ 2 semințe; captură din prima aterizare obligatorie. Câștigi golind rândul din față al adversarului. Mutări: 3r, 3l (sens), b3l (rândul din spate).",
+            make: || Box::new(bao::Bao::new()),
+        },
+        Playable {
+            id: "seega",
+            title: "Seega",
+            category: "Abstract",
+            rules: "Tablă 5 × 5, 12 piese pe jucător. Plasare: două piese pe tură, fără centru; apoi mută cine a plasat ultima, un pas ortogonal. Captură custodială a unui șir de piese adverse între piesa mutată și o piesă proprie; cine capturează mută din nou. Blocaj: adversarul scoate o piesă proprie. Mutări: b2 (plasare), b2-b3, scoate-b2.",
+            make: || Box::new(seega::Seega::new()),
+        },
+        Playable {
+            id: "yote",
+            title: "Yote",
+            category: "Abstract",
+            rules: "Tablă 5 × 6, 12 piese pe jucător, inițial în mână. La rând: pui o piesă, muți un pas ortogonal sau sari peste o piesă adversă (o captezi și mai scoți încă una la alegere; săritura se poate lanțui). Câștigă cine rămâne singur cu piese. Mutări: c3, c3-c4, c3xc5+a1, c3xc5+m, opreste.",
+            make: || Box::new(yote::Yote::new()),
+        },
+        Playable {
+            id: "hus",
+            title: "Hus (Namibia)",
+            category: "Abstract",
+            rules: "Mancala 4 × 8, 2 semințe în fiecare groapă. Muți dintr-o groapă proprie cu ≥ 2 semințe; ultima sămânță într-o groapă ocupată: din rândul din față cu groapa opusă ocupată captezi coloana adversă (față + spate) și o semeni mai departe; altfel continui lanțul. Pierde cine nu mai are nicio groapă cu ≥ 2. Mutări: 3 (față), b3 (spate).",
+            make: || Box::new(hus::Hus::new()),
+        },
+        Playable {
+            id: "tab",
+            title: "Tâb (Egipt)",
+            category: "Clasic",
+            rules: "Cursă cu 4 bețe-zaruri pe tablă 4 × 7 (variantă simplificată): 7 piese pe jucător; intri cu 1; 1, 4 și 6 dau aruncare în plus; drum în zigzag pe cele 4 rânduri; aterizarea pe o piesă adversă (în afara rândului ei de plecare) o captură. Câștigă primul care scoate toate piesele. Mutări: arunca, intra-a1, a1-a3, a1-iese, pas.",
+            make: || Box::new(tab::Tab::new()),
+        },
+        Playable {
+            id: "senet",
+            title: "Senet",
+            category: "Clasic",
+            rules: "Cursă egipteană pe 30 de pătrate (reconstituirea lui Kendall), 5 piese pe jucător, 4 bețe (1–4, zero = 5; 1, 4, 5 dau aruncare în plus). Schimbi locul cu o piesă adversă neprotejată; nu treci de 26; 27 (apa) te trimite pe 15; ieșire din 26 cu 5, din 28 cu 3, din 29 cu 2, din 30 cu 1. Mutări: arunca, 7-9, 28-iese, pas.",
+            make: || Box::new(senet::Senet::new()),
+        },
+        Playable {
+            id: "whot",
+            title: "Whot (cărți nigeriene)",
+            category: "Cărți",
+            rules: "Pachet de 54 de cărți (forme o t x p s, plus 5 Whot), 6 în mână. Joci aceeași formă sau același număr; Whot cere o formă. 1 și 8: mai joci o dată; 14: adversarul trage o carte; 2: trage 2, 5: trage 3 (se pot înlănțui). Câștigi golindu-ți mâna. Informație ascunsă: vezi mâna Jucătorului 1. Mutări: o5, t14, w:s, trage, pas.",
+            make: || Box::new(whot::Whot::new()),
+        },
+        Playable {
+            id: "chkobba",
+            title: "Chkobba (Tunisia)",
+            category: "Cărți",
+            rules: "Pachet de 40 de cărți (1–7, damă, valet, rege), 3 în mână, 4 pe masă. Iei o carte de aceeași valoare, altfel un grup cu aceeași sumă; golești masa = chkobba (nu la ultima carte). Punctaj: carte, denari, bermila (cei mai mulți de 7, apoi de 6), haya (7 de denari), chkobba; meci până la 11. Informație ascunsă: vezi mâna Jucătorului 1. Mutări: 7d, 7d:3c+4b, imparte, urmatoarea.",
+            make: || Box::new(scopa::Scopa::chkobba()),
+        },
+        Playable {
+            id: "ronda",
+            title: "Ronda (Maroc / Spania)",
+            category: "Cărți",
+            rules: "Pachet spaniol de 40 de cărți, 4 pe masă, 3 în mână. Joci o carte: dacă pe masă e același rang, iei toate cărțile acelui rang și apoi, în șir, rangurile următoare prezente. Puncte: ronda (pereche în mână) 1, trio 5, missa (masă golită) 1, peste 20 de cărți 1; meci până la 12. Informație ascunsă: vezi mâna Jucătorului 1. Mutări: 5o, Rb, imparte, urmatoarea.",
+            make: || Box::new(ronda::Ronda::new()),
+        },
+        Playable {
+            id: "shologuti",
+            title: "Sholo Guti (Șaisprezece soldați)",
+            category: "Abstract",
+            rules: "16 piese pe jucător pe o tablă de 37 de puncte (grilă 5 × 5 cu diagonale plus două triunghiuri), rândul din mijloc gol. Mută un pas pe un punct liber vecin sau sare peste o piesă adversă (captură obligatorie, lanț opțional). Câștigă cine capturează tot sau blochează adversarul. Mutări: c2-c3, c1xc3, opreste.",
+            make: || Box::new(shologuti::SholoGuti::new()),
+        },
+        Playable {
+            id: "aadupuli",
+            title: "Aadu Puli Attam (Oi și tigri)",
+            category: "Abstract",
+            rules: "3 tigri (Jucătorul 2) contra a 15 oi (Jucătorul 1) pe o tablă de 23 de puncte în formă de triunghi. Oile se plasează pe rând, apoi se mută un pas; tigrii se mută sau sar peste o oaie (captură, lanț opțional). Tigrii câștigă cu 5 oi capturate; oile câștigă imobilizându-i. Mutări: b3, b3-b4, vxb2, opreste.",
+            make: || Box::new(aadupuli::AaduPuli::new()),
+        },
+        Playable {
+            id: "mangala",
+            title: "Mangala (mancala turcească)",
+            category: "Abstract",
+            rules: "2 × 6 gropi, 4 semințe, câte un depozit. Prima sămânță rămâne în groapa de start. Ultima în depozit: mai muți; ultima într-o groapă adversă ajunsă la număr par: o iei; ultima într-o groapă proprie goală: iei groapa opusă. Câștigă depozitul mai mare. Mutări: 1–6.",
+            make: || Box::new(mangala::Mangala::new()),
+        },
+        Playable {
+            id: "dama",
+            title: "Dama (dame turcești)",
+            category: "Abstract",
+            rules: "8 × 8, 16 piese pe jucător pe rândurile 2–3. Piesele merg înainte sau lateral, capturează ortogonal; dama zboară pe orice distanță. Captura e obligatorie, cu cele mai multe piese; piesele luate se scot la finalul secvenței. Mutări: a3-a4, a3xa5xc5.",
+            make: || Box::new(dama::Dama::new()),
+        },
+        Playable {
+            id: "okey",
+            title: "Okey (2 jucători)",
+            category: "Clasic",
+            rules: "106 plăci (4 culori × 1–13 × 2 + 2 okey false), indicator și joker. 15/14 plăci; tragi din teanc (trage) sau iei ultima aruncată (ia), apoi arunci (ata-r5). Câștigi închizând 14 plăci în serii (≥ 3 consecutive, aceeași culoare) și grupe (3–4 cu același număr și culori diferite): bitir-r5. Informație ascunsă: vezi mâna Jucătorului 1.",
+            make: || Box::new(okey::Okey::new()),
         },
         Playable {
             id: "battleship",
@@ -1125,6 +1419,118 @@ pub fn playable() -> Vec<Playable> {
             category: "Cooperativ",
             rules: "Variantă originală: tu ești mediumul (J1), AI-ul este fantoma (J2) care îți trimite „viziuni” de câte 3 simboluri (viziune N). Patru etape: portretul, camera, obiectul (6 candidați cu câte 5 simboluri, ghic N sau asteapt; max 10 viziuni) și scena finală (3 candidați, o singură ghicire). Ghicirea se verifică într-o mutare forțată (verific). Victorie = „Câștigă Jucătorul 1”; eșec = remiză. Informație ascunsă: nu vezi soluția, nici mâna fantomei.",
             make: || Box::new(farul::Farul::new()),
+        },
+        Playable {
+            id: "turnul_zorilor",
+            title: "Turnul Zorilor Frânte (aventură cooperativă, fantasy eroic)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d20 + modificator ≥ prag. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("turnul_zorilor")),
+        },
+        Playable {
+            id: "arhiva_abisala",
+            title: "Arhiva Abisală (aventură cooperativă, groază cosmică de investigator)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d100 sub abilitate. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("arhiva_abisala")),
+        },
+        Playable {
+            id: "ruinele_cartografilor",
+            title: "Ruinele Cartografilor (aventură cooperativă, expediție în junglă)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d20 cu grade de succes. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("ruinele_cartografilor")),
+        },
+        Playable {
+            id: "noapte_de_catifea",
+            title: "Noapte de Catifea (aventură cooperativă, urban fantasy cu vampiri)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: grămadă de d10. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("noapte_de_catifea")),
+        },
+        Playable {
+            id: "padurea_sticlei",
+            title: "Pădurea Ochilor de Sticlă (aventură cooperativă, fantasy de basm sumbru)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: 3d20 față de trei atribute. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("padurea_sticlei")),
+        },
+        Playable {
+            id: "neon_si_rune",
+            title: "Neon și Rune (aventură cooperativă, cyber-urban cu magie)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: grămadă de d6 cu lovituri. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("neon_si_rune")),
+        },
+        Playable {
+            id: "targul_ciumat",
+            title: "Târgul Ciumat (aventură cooperativă, fantasy sumbru)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d100 cu grade de succes. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("targul_ciumat")),
+        },
+        Playable {
+            id: "insula_celor_doua_luni",
+            title: "Insula celor Două Luni (aventură cooperativă, fantasy clasic)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: 2d6 + rating față de țintă. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("insula_celor_doua_luni")),
+        },
+        Playable {
+            id: "hotii_din_ceata",
+            title: "Hoții din Ceață (aventură cooperativă, jaf într-un oraș cu ceață)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: cel mai mare d6. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("hotii_din_ceata")),
+        },
+        Playable {
+            id: "crucea_de_cenusa",
+            title: "Crucea de Cenușă (aventură cooperativă, apocalipsă sumbră)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d20 față de prag fix. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("crucea_de_cenusa")),
+        },
+        Playable {
+            id: "strada_de_otel",
+            title: "Strada de Oțel (aventură cooperativă, cyberpunk de cartier)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d10 exploziv. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("strada_de_otel")),
+        },
+        Playable {
+            id: "tinutul_furtunilor",
+            title: "Ținutul Furtunilor Vii (aventură cooperativă, fantasy colorat)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d20 + modificator ≥ prag. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("tinutul_furtunilor")),
+        },
+        Playable {
+            id: "epava_din_inelul_sapte",
+            title: "Epava din Inelul Șapte (aventură cooperativă, operă spațială)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d20 + modificator ≥ prag. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("epava_din_inelul_sapte")),
+        },
+        Playable {
+            id: "fiordul_gheatii_negre",
+            title: "Fiordul Gheții Negre (aventură cooperativă, fantasy nordic)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d20 sub abilitate. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("fiordul_gheatii_negre")),
+        },
+        Playable {
+            id: "mlastina_strigoilor",
+            title: "Mlaștina Strigoilor (aventură cooperativă, vânătoare de monștri)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d10 exploziv. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("mlastina_strigoilor")),
+        },
+        Playable {
+            id: "satul_lanternelor",
+            title: "Satul Lanternelor Stinse (aventură cooperativă, groază de sat cu spirite)",
+            category: "Cooperativ",
+            rules: "Mecanica de test: d100 sub abilitate. Variantă originală de aventură cooperativă: voi doi (J1 și J2, AI-ul poate fi partenerul) contra Maestrului-AI care nu trișează, pe 7–8 scene într-un graf mic (explorare, test, luptă, odihnă, stăpân final). Începeți cu alege N (arhetip). Apoi eroii se alternează: ir N, atac N, parez, special [N], bea N, cauta, incearca, odihna, cedez. Zarurile sunt mutări forțate publice (zaruri, eveniment, maestrul); după un zar ratat poți face refac (costă o unitate din resursă) sau accept. Victorie (stăpânul învins) = „Câștigă Jucătorul 1”; eroi doborâți sau timp epuizat = remiză. Încheierea e mutare forțată (sfârșit).",
+            make: || Box::new(aventura::Aventura::new("satul_lanternelor")),
         },
         Playable {
             id: "cenusii",
@@ -1531,6 +1937,175 @@ pub fn playable() -> Vec<Playable> {
             category: "Abstract",
             rules: "Tablă 14×14, 2 jucători, fiecare cu 21 de poliomino (1-5 pătrate, notate a-u). Prima piesă acoperă pătratul de start (e5 pentru J1, j10 pentru J2); următoarele trebuie să atingă o piesă proprie prin colț și niciodată pe latură (piesele adverse se pot atinge). Cine nu poate pune trece; la două treceri la rând jocul se termină și câștigă cine are mai puține pătrate în piesele nefolosite. Mutări: k3@e5 (piesa k, orientarea 3, colțul stânga-sus al dreptunghiului piesei la e5), pas.",
             make: || Box::new(poliedre::Poliedre::new()),
+        },
+        Playable {
+            id: "impletitura",
+            title: "Împletitura (echilibru pe covor cu cercuri colorate)",
+            category: "Party",
+            rules: "Covor de 4 rânduri (a–d) × 6 coloane (1–6) cu cercuri în 4 culori (Roșu, Albastru, Verde, Galben; câte 6, după seed), 2 jucători, fiecare cu 4 membre (ms, md, ps, pd) care încep în afara covorului. Tura începe cu rotița (gira), care dă un membru și o culoare; muți membrul pe un cerc liber de acea culoare (b3) la distanță cel mult 3 (Chebyshev) de celelalte membre ale tale de pe covor; un cerc nu poate avea două membre; poți rămâne pe cercul curent dacă are culoarea dată. Fără cerc valid, singura mutare este cad: cazi și pierzi; ultimul rămas câștigă (remiză după 300 de mutări fără cădere). Fără informație ascunsă; AI: Easy aleator, Normal păstrează flexibilitatea, Hard/Expert îți blochează cercurile. Mutări: gira, b3, cad.",
+            make: || Box::new(impletitura::Impletitura::new()),
+        },
+        Playable {
+            id: "pinochle",
+            title: "Pinochle",
+            category: "Cărți",
+            rules: "48 de cărți (două de fiecare 9–A pe 4 culori), 12 fiecare, 2 jucători, primul în stoc. Se joacă 24 de levate; cât timp stocul nu e gol nu ești obligat să urmezi culoarea, după aceea trebuie să urmezi și să învingi când poți. Câștigătorul unei levate poate anunța o combinație (pereche, familie, pinochle, cuplu etc.) care conține cel puțin o carte nouă; la sfârșit se numără A, 10, K din levate. Primul la 1000. Fără schimbul lui 9 de atu. Mutări: 9h, anunt <combinatie>, fara, urmatoarea.",
+            make: || Box::new(pinochle::Pinochle::new()),
+        },
+        Playable {
+            id: "gin_rummy",
+            title: "Gin Rummy",
+            category: "Cărți",
+            rules: "52 de cărți, 10 fiecare. La rând: iei din talon (talon) sau stoc (stoc), apoi arunci (dis X). Cu deadwood de cel mult 10 poți bate (bat X) sau da gin (gin X, 0 deadwood); adversarul poate adăuga cărți la combinațiile tale (adauga X la N). Se punctează diferența de deadwood, undercut pentru apărător; până la 100. Fără big gin. Mutări: talon, pas, stoc, dis 9h, bat 9h, gin 9h, adauga 5h la 1, gata, arata, urmatoarea.",
+            make: || Box::new(gin_rummy::GinRummy::new()),
+        },
+        Playable {
+            id: "crazy_eights",
+            title: "Crazy Eights (Optarii)",
+            category: "Cărți",
+            rules: "52 de cărți, 7 fiecare. Joci o carte de aceeași culoare sau valoare cu cea de deasupra; optarul (8) se joacă oricând și alege culoarea (8h:s). Dacă nu poți, tragi (trage) și poți juca ori pasa. Cine rămâne fără cărți ia punctele din mâna adversarului (8 = 50, figuri = 10, A = 1); până la 100. Mutări: 7h, 8h:s, trage, pas, urmatoarea.",
+            make: || Box::new(crazy_eights::CrazyEights::new()),
+        },
+        Playable {
+            id: "pitch",
+            title: "Pitch (Setback)",
+            category: "Cărți",
+            rules: "52 de cărți, 6 fiecare, 2 jucători. Licitezi 2–4 (licit N) sau pas; licitatorul conduce, iar culoarea primei cărți devine atu. Răspunzi la culoare sau tai cu atu. Patru puncte: High, Low, Jack, Game; licitatorul care nu atinge contractul pierde cât a licitat. Primul la 11. Mutări: pas, licit 3, 9h, urmatoarea.",
+            make: || Box::new(pitch::Pitch::new()),
+        },
+        Playable {
+            id: "bid_whist",
+            title: "Bid Whist (2 jucători)",
+            category: "Cărți",
+            rules: "Adaptare pentru doi jucători: 54 de cărți (cu doi jokeri), 12 fiecare și un kitty de 6. Licitezi 3–6 (licit N) sau pas; câștigătorul ia kitty-ul și aruncă 6 cărți, apoi alege Uptown (A mare), Downtown (A mic) sau Fără atu. Punctele: levate peste 6 (sau contractul), dublu la fără atu; primul la ±7. Mutări: pas, licit 4, dis 9h, sus h, jos h, fara sus, fara jos, 9h, reimparte, urmatoarea.",
+            make: || Box::new(bid_whist::BidWhist::new()),
+        },
+        Playable {
+            id: "all_fours",
+            title: "All Fours",
+            category: "Cărți",
+            rules: "52 de cărți, 6 fiecare, o carte de atu întoarsă (valet = 3 puncte dealerului). Non-dealerul cere (cer) sau joacă (joc); dealerul dă un punct (dau) sau schimbă (schimb, apoi imparte, aruncări dis X). Patru puncte: High, Low, Jack, Game; primul la 14. Mutări: cer, joc, dau, schimb, imparte, dis 9h, 9h, urmatoarea.",
+            make: || Box::new(all_fours::AllFours::new()),
+        },
+        Playable {
+            id: "conquian",
+            title: "Conquián",
+            category: "Cărți",
+            rules: "Pachet spaniol de 40 de cărți (A–7, S, C, R; patru culori), 2 jucători, 10 cărți. Tragi din stoc (stoc) sau iei cartea de sus a talonului (ia ...) doar ca s-o legi imediat într-o combinație (set de 3–4 sau serie de cel puțin 3 din aceeași culoare); apoi cobori combinații (pune ...), lipești cărți (adauga X la N) și arunci (descarta X). Cine rămâne fără cărți în mână câștigă mâna și un punct; primul la 3. Mutări: stoc, ia ..., pune ..., adauga 5o la 1, descarta 5o, pas, urmatoarea.",
+            make: || Box::new(conquian::Conquian::new()),
+        },
+        Playable {
+            id: "chicken_foot",
+            title: "Chicken Foot (domino)",
+            category: "Clasic",
+            rules: "Set dublu-12, 15 piese fiecare, 13 runde (de la dublu-12 la dublu-0). Se pornește de la dublul de rundă; un dublu trebuie acoperit (pui piesa pe el) înainte de a continua. Runda se termină când cineva rămâne fără piese sau la blocaj; fiecare adaugă la scor punctele pieselor rămase în mână. După 13 runde câștigă cel mai mic total. Mutări: 5-7@2, trage, pas, urmatoarea.",
+            make: || Box::new(chicken_foot::ChickenFoot::new()),
+        },
+        Playable {
+            id: "bunco",
+            title: "Cele șase ținte (zaruri)",
+            category: "Clasic",
+            rules: "Joc de zaruri după Bunco (nume comercial): 6 runde, în runda N ținta e N. Arunci 3 zaruri cât timp ai puncte: fiecare zar egal cu ținta = 1 punct, trei egale cu ținta = 21 (bunco, încheie runda), trei la fel altfel = 5. Runda se încheie la 21 de puncte; după 6 runde câștigă cine a luat mai multe runde. Mutări: arunc.",
+            make: || Box::new(bunco::Bunco::new()),
+        },
+        Playable {
+            id: "farkle",
+            title: "Zece mii de puncte (zaruri)",
+            category: "Clasic",
+            rules: "Joc de zaruri după Farkle / 10 000 (nume comercial): arunci 6 zaruri, păstrezi combinații care punctează (1 = 100, 5 = 50, trei la fel, serii, perechi), apoi arunci din nou sau bancrezi. Fără combinație pierzi tot ce ai strâns în tură. Cu 0 puncte în total banca doar de la 500 în tură; țintă 10 000 cu rundă finală. Mutări: arunc, pastrez 1 5, banca, farkle.",
+            make: || Box::new(farkle::Farkle::new()),
+        },
+        Playable {
+            id: "liars_dice",
+            title: "Zarurile mincinosului",
+            category: "Clasic",
+            rules: "Variantă Perudo/Dudo/Cacho: fiecare are 5 zaruri ascunse sub pahar. Licitezi cantitatea unei fețe pentru toate zarurile de pe masă (aștii sunt jokeri), mereu mai sus, sau spui dudo; cine greșește pierde un zar. Ultimul cu zaruri câștigă. Fără calza și fără palifico. Mutări: 3x4, dudo, arata.",
+            make: || Box::new(liars_dice::LiarsDice::new()),
+        },
+        Playable {
+            id: "crokinole",
+            title: "Crokinole",
+            category: "Familie",
+            rules: "Joc de dexteritate pe tablă rotundă, modelat ca simulare deterministă cu zgomot din seed: alegi poziția, unghiul și puterea tragerii (x-1 u6 p3), apoi lasi discul. Trebuie să lovești un disc adversar dacă există. 12 discuri pe jucător; inelele valorează 5, 10 și 15, gaura centrală 20. Câștigătorul rundei ia diferența de puncte; primul la 100 (cel mult 6 runde). Mutări: x-1 u6 p3, lasa.",
+            make: || Box::new(crokinole::Crokinole::new()),
+        },
+        // --- P4 ---
+        Playable {
+            id: "chinchon",
+            title: "Chinchón (Spania)",
+            category: "Cărți",
+            rules: "Baraja spaniolă de 40 de cărți (o c e b; 1–7, 10, 11, 12), 7 cărți fiecare. Tragi din stoc sau talon și arunci; combinații: seturi și secvențe (7 nu se leagă de 10). Închizi cu cel puțin 6 cărți potrivite și cel mult 5 puncte libere (−10 dacă toate 7 se potrivesc; chinchón = 1–7 din aceeași culoare câștigă jocul); cine ajunge la 100 pierde. Informație ascunsă: vezi doar mâna Jucătorului 1. Mutări: stoc, talon, 5o, inchide-5o, urmatoarea.",
+            make: || Box::new(chinchon::Chinchon::new()),
+        },
+        Playable {
+            id: "burako",
+            title: "Burako (Buraco)",
+            category: "Cărți",
+            rules: "106 cărți (2 pachete + 2 jokeri), 11 în mână și un muerto de 11. Tragi din stoc (mazo) sau iei tot pozo, lași jos scări (≥3 consecutive, aceeași culoare) și piernas (≥3 de același rang), cel mult un comodin (joker sau 2) per combinație, apoi arunci. Canastă = 7+ cărți: pură 200, impură 100; închizi cu muertoul luat și o canastă (+100). Meci până la 1500 sau 4 mâini. Informație ascunsă: vezi doar mâna Jucătorului 1. Mutări: mazo, pozo, esc:4h+5h+6h, set:7h+7c+Jk, +1:8h, descarta 5h, muerto, urmatoarea.",
+            make: || Box::new(burako::Burako::new()),
+        },
+        Playable {
+            id: "escoba",
+            title: "Escoba (Escoba de 15)",
+            category: "Cărți",
+            rules: "Baraja spaniolă de 40 de cărți (valori 1–7, 10=8, 11=9, 12=10), 3 în mână și 4 pe masă. Joci o carte și poți lua cărți de pe masă care, adunate cu ea, dau 15; golești masa = escoba (1 punct, nu la ultima carte). Punctaj la capăt de mână: cartas, oros, siete de velo (7o), setenta și escobe; primul la 21. Informație ascunsă: vezi doar mâna Jucătorului 1. Mutări: 7o, 7o:4c+4e, imparte, urmatoarea.",
+            make: || Box::new(escoba::Escoba::new()),
+        },
+        Playable {
+            id: "cuarenta",
+            title: "Cuarenta (Ecuador)",
+            category: "Cărți",
+            rules: "Baraja spaniolă de 40 de cărți, câte 5 în mână, masa începe goală. Joci o carte și poți lua: o carte de același rang (potrivire) sau cărți 1–7 cu aceeași sumă (adunare), plus secvența ascendentă care urmează. Caída 2, limpia 2, ronda 4 puncte; la capăt de mână puncte după numărul de cărți luate; primul la 40. Informație ascunsă: vezi doar mâna Jucătorului 1. Mutări: 5o, 5o:5c, 6o:2c+4e, imparte, urmatoarea.",
+            make: || Box::new(cuarenta::Cuarenta::new()),
+        },
+        Playable {
+            id: "generala",
+            title: "Generala (zaruri)",
+            category: "Zaruri",
+            rules: "5 zaruri, până la 3 aruncări pe tură, 10 categorii: unu…sase (suma zarurilor), escalera 20, full 30, poker 40, generala 50. Servida (din prima aruncare) +5 la escalera/full/poker; generala servida câștigă jocul pe loc. Categoriile nepotrivite se taie (0). 10 ture pe jucător, câștigă totalul mai mare. Mutări: arunc, tine 3 3 5, tine -, scor escalera.",
+            make: || Box::new(generala::Generala::new()),
+        },
+        Playable {
+            id: "parques",
+            title: "Parqués (Colombia)",
+            category: "Zaruri",
+            rules: "Pistă de 68 de pătrate, 4 piese pe jucător, două zaruri. Din cárcel ieși doar cu pereche (toate piesele deodată); pereche = încă o aruncare, trei perechi = o piesă direct în corona. Captura (obligatorie) trimite piesa adversă în cárcel, pe pătratele sigure nu se capturează; corona se atinge exact. Primul cu 4 piese în corona câștigă. Mutări: 12:5 (piesa de la progresul 12 avansează 5), sale, pasa.",
+            make: || Box::new(parques::Parques::new()),
+        },
+        Playable {
+            id: "fivehundred",
+            title: "Five Hundred (500, doi jucători)",
+            category: "Cărți",
+            rules: "500 pentru 2 jucători: 43 de cărți (cu joker), 10 în mână, 5 grămezi de câte 2 (jos + sus) și un kitty de 3. Licitezi 6–10 levate cu atu sau fără atu (fără misere); contractantul ia kitty-ul și aruncă 3 cărți. Levate de 4 cărți (câte una din mână și una cu fața în sus); jokerul și valeții (bower) sunt atuurile cele mai mari. Contract reușit = valoarea lui, eșuat = −valoarea; adversarul ia 10 pe levată; 500 / −500. Informație ascunsă. Mutări: licit 7h, licit 8nt, pas, descarta As, 10h, Jk:h, urmatoarea.",
+            make: || Box::new(fivehundred::FiveHundred::new()),
+        },
+        Playable {
+            id: "pontoon",
+            title: "Pontoon",
+            category: "Cărți",
+            rules: "Banca (rolul alternează la fiecare mână) contra jucătorului: Pontoon (as + carte de 10) > Five Card Trick (5 cărți ≤ 21) > 21 > cât mai aproape de 21; egalitatea o câștigă banca. Jucătorul: carte (twist), cumpar (carte ascunsă, miza +10, doar înainte de carte), stai (de la 15); banca stă de la 17. Pontoon și Five Card Trick plătesc dublu. 20 de mâini cu miza 10, câștigă cine are mai multe jetoane. Informație ascunsă. Mutări: carte, cumpar, stai, decontare.",
+            make: || Box::new(pontoon::Pontoon::new()),
+        },
+        Playable {
+            id: "twoup",
+            title: "Two-up (Australia)",
+            category: "Zaruri",
+            rules: "Spinnerul mizează pe stemă (5, 10 sau 20 de jetoane); celălalt acoperă. Două monede: cap-cap = spinnerul câștigă și continuă; pajura-pajura = pierde și rolul trece; cap-pajura (odds) = se aruncă din nou, cinci odds la rând = spinnerul pierde. 24 de mize, start 50 de jetoane; câștigă cine are mai multe. Mutări: miza 5, miza 10, miza 20, arunc.",
+            make: || Box::new(twoup::TwoUp::new()),
+        },
+        Playable {
+            id: "ancora",
+            title: "Ancora și coroana",
+            category: "Zaruri",
+            rules: "Trei zaruri cu simboluri (coroana, ancora, inima, romb, trefla, pica) — joc britanic tradițional «Crown and Anchor». Mizezi 5, 10 sau 20 pe unul sau mai multe simboluri; pentru fiecare zar cu simbolul tău primești miza înapoi plus câștig (1:1, 2:1, 3:1), altfel pierzi miza. 12 runde împotriva băncii, câștigă cine are mai multe jetoane. Mutări: pun ancora 10, gata, arunc.",
+            make: || Box::new(ancora::Ancora::new()),
+        },
+        Playable {
+            id: "mutorere",
+            title: "Mu Torere (Noua Zeelandă)",
+            category: "Abstract",
+            rules: "8 puncte pe cerc (kewai 1–8) și centrul (0); fiecare are 4 piese pe puncte vecine, centrul gol. Muți o piesă pe un punct vecin gol; în centru intri doar cu o piesă vecină cu o piesă adversă. Pierde cine nu mai poate muta; remiză la a treia repetare sau după 200 de mutări. Mutări: 3-4 (de pe 3 pe 4), 4-0 (în centru), 0-6 (din centru).",
+            make: || Box::new(mutorere::MuTorere::new()),
         },
     ]
 }

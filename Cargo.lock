@@ -1728,6 +1728,7 @@ dependencies = [
  "eframe",
  "polytabletop-core",
  "polytabletop-games",
+ "read-fonts",
 ]
 
 [[package]]

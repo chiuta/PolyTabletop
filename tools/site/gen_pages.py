@@ -1,5 +1,5 @@
 #!/usr/bin/env python3 -I
-"""Generează paginile individuale docs/jocuri/<id>.html (171) + docs/jocuri/index.html, docs/sitemap.xml, docs/robots.txt și docs/sw.js.
+"""Generează paginile individuale docs/jocuri/<id>.html (N) + docs/jocuri/index.html, docs/sitemap.xml, docs/robots.txt și docs/sw.js.
 Doar biblioteca standard. Rulare din rădăcina depozitului:  python3 -I tools/site/gen_pages.py [--docs DIR]
 Media (docs/media/<id>/...) se decid după existența fișierelor la rulare: regenerați paginile după ce apar capturile."""
 import re, json, glob, os, sys, struct, html as H
@@ -19,7 +19,7 @@ src = open(f'{root}/polytabletop-games/src/lib.rs', encoding='utf8').read()
 hot = set(re.findall(r'"([^"]+)"', re.search(r'pub const HOTSEAT_SAFE: &\[&str\] = &\[(.*?)\];', src, re.S).group(1)))
 src = src[src.index('pub fn playable()'):]
 games = re.findall(r'id: "([^"]+)",\s*title: "([^"]*)",\s*category: "([^"]*)"', src)
-assert len(games) == 171
+assert len(games) >= 240, len(games)
 au = open(f'{root}/polytabletop-games/tests/a1_viewer_audit.rs', encoding='utf8').read()
 def arr(name):
     return set(re.findall(r'"([^"]+)"', re.search(r'const %s: &\[&str\] = &\[(.*?)\];' % name, au, re.S).group(1)))
@@ -135,6 +135,9 @@ dialog.lb::backdrop{background:#000}
 .lb-p{left:.5rem}.lb-n{right:.5rem}
 @media(forced-colors:active){.lb-b{border-color:ButtonText}}
 '''
+STYLE = re.sub(r'/\*.*?\*/', '', STYLE, flags=re.S)   # minificare CSS (paginile de joc trebuie să rămână sub 60 KB)
+STYLE = re.sub(r'\s*([{};,>])\s*', r'\1', STYLE)
+STYLE = re.sub(r';\}', '}', STYLE).replace('\n', ' ').strip()
 shell = open(f'{root}/tools/site/page_template.html', encoding='utf8').read()
 
 def J(o):
@@ -153,9 +156,13 @@ def render(main, page_js, title, desc, path, d, extra_keys=(), ld=''):
     T = subset(main + shell, extra_keys)
     out = shell
     page_js = '\n'.join(l.strip() for l in page_js.split('\n') if l.strip() and not l.strip().startswith('//'))
+    page_js = re.sub(r'([;{,])\n', r'\1', page_js)
     for k, v in (('@@TITLE@@', esc(title)), ('@@DESC@@', esc(desc)), ('@@URL@@', f'{SITE}/{path}'), ('@@HREFLANG@@', hreflang(path)),
                  ('@@LD@@', ld), ('@@STYLE@@', STYLE), ('@@MAIN@@', main), ('@@T@@', J(T)), ('@@D@@', J(d)), ('@@PAGE_JS@@', page_js)):
         out = out.replace(k, v)
+    # comprimare: fără linii noi între etichete în afara <script>/<style>/<pre>
+    parts = re.split(r'(<script.*?</script>|<style.*?</style>|<pre.*?</pre>)', out, flags=re.S)
+    out = ''.join(x if x.startswith(('<script', '<style', '<pre')) else re.sub(r'>\n+<', '><', x) for x in parts)
     return out
 
 LB_JS = open(f'{root}/tools/site/lightbox.js', encoding='utf8').read().replace('/*TEST_HOOK*/', os.environ.get('PT_LB_TEST', ''))
@@ -346,7 +353,7 @@ main = f'''<nav class="bc" aria-label="Breadcrumb" data-ia="pg_bc"><ol>
 </ol></nav>
 <section class="pg-top" style="border-top:0">
 <h1 class="pg-h1" data-i="ls_h">All game pages</h1>
-<p id="ls-p">{UI['en']['ls_p'].format(t=171)}</p>
+<p id="ls-p">{UI['en']['ls_p'].format(t=len(games))}</p>
 <div class="filters"><label for="q" data-i="pg_search">Search games</label><input type="search" id="q" autocomplete="off"></div>
 <div class="chips" id="chips" role="group" aria-label="Category" data-ia="pg_cats_nav"></div>
 <p class="count" id="count" role="status" aria-live="polite"></p>
@@ -360,7 +367,7 @@ document.querySelector("#q").addEventListener("input",()=>{if(window.__draw)wind
 '''
 # gtAll: titluri în toate limbile pentru căutare
 LJS = LJS.replace('window.pageApply=function(l,t,u){', 'window.pageApply=function(l,t,u){\n  u.gtAll=id=>{const g=D.GT[id];return LANGS.map(x=>g[x]||g.en).join(" ")};', 1)
-html = render(main, LJS, UI['en']['ls_title'], UI['en']['ls_p'].format(t=171), 'jocuri/index.html', dl, extra_keys=[f'cat_{k}' for k in dl['CK']] + ['ls_title', 'ls_p', 'pg_all_cats', 'pg_none', 'pg_count'])
+html = render(main, LJS, UI['en']['ls_title'], UI['en']['ls_p'].format(t=len(games)), 'jocuri/index.html', dl, extra_keys=[f'cat_{k}' for k in dl['CK']] + ['ls_title', 'ls_p', 'pg_all_cats', 'pg_none', 'pg_count'])
 open(f'{docs}/jocuri/index.html', 'w', encoding='utf8').write(html)
 
 # ---------- sitemap

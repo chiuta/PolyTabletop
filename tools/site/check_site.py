@@ -1,5 +1,5 @@
 #!/usr/bin/env python3 -I
-"""Verificări pentru docs/: HTML parsabil, JSON-uri, chei i18n în 8 limbi, linkuri relative, 9x100 rânduri + 12 topuri pe categorii (exact 100 fiecare), 171 pagini.
+"""Verificări pentru docs/: HTML parsabil, JSON-uri, chei i18n în 8 limbi, linkuri relative, 9x100 rânduri + 12 topuri pe categorii (exact 100 fiecare), o pagină pe joc jucabil.
 Rulare din rădăcina depozitului: python3 -I tools/site/check_site.py"""
 import os, re, json, sys, glob
 from html.parser import HTMLParser
@@ -71,7 +71,9 @@ for k, v in cl.items():
     print('top', k, 'jucabile', sum(1 for x in v if x['s'] in ('play', 'var')), 'din', len(v))
 n_pages = len(glob.glob(f'{docs}/jocuri/*.html')) - 1
 print('pagini de joc', n_pages)
-if n_pages != 171: err.append('nu sunt 171 de pagini')
+import re as _re
+_n_play = len(_re.findall(r'id: "[^"]+",\s*title:', open(f'{root}/polytabletop-games/src/lib.rs', encoding='utf8').read().split('pub fn playable()', 1)[1]))
+if n_pages != _n_play or n_pages < 240: err.append(f'pagini {n_pages} != jocuri jucabile {_n_play}')
 sizes = [os.path.getsize(f) for f in glob.glob(f'{docs}/jocuri/*.html') if not f.endswith('index.html')]
 print('dimensiune index', os.path.getsize(f'{docs}/index.html'), 'pagini max', max(sizes))
 if max(sizes) > 60000: err.append('pagină > 60 KB')

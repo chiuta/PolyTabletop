@@ -25,6 +25,8 @@ struct Opts {
     max_moves: usize,
     /// timp maxim pentru simularea partidei AI contra AI (apoi se captează ce există)
     sim_budget: Duration,
+    /// `--light`: captură cu tema luminoasă
+    light: bool,
 }
 
 fn arg<'a>(argv: &'a [String], key: &str) -> Option<&'a str> {
@@ -56,6 +58,7 @@ fn parse(argv: &[String]) -> Result<Option<Opts>, String> {
         delay: Duration::from_millis(num("--delay-ms", 200)? as u64),
         max_moves: num("--max-moves", 400)?,
         sim_budget: Duration::from_secs(num("--sim-secs", 45)? as u64),
+        light: argv.iter().any(|a| a == "--light"),
     }))
 }
 
@@ -89,7 +92,10 @@ pub fn maybe_run(argv: &[String]) -> Option<eframe::Result<()>> {
     Some(eframe::run_native(
         crate::APP_NAME,
         opts,
-        Box::new(move |_cc| Ok(Box::new(Cap::new(o)))),
+        Box::new(move |cc| {
+            crate::theme::install_fonts(&cc.egui_ctx);
+            Ok(Box::new(Cap::new(o)))
+        }),
     ))
 }
 
@@ -131,6 +137,7 @@ struct Cap {
 impl Cap {
     fn new(o: Opts) -> Self {
         let mut app = App::new();
+        app.dark = !o.light;
         let (tx, rx) = channel();
         let mut error = String::new();
         let mut snaps = Vec::new();

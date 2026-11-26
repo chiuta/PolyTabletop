@@ -62,6 +62,7 @@ Fiecare joc jucabil are exact una dintre cele trei stări de mai jos. Testul `po
 | sugoroku | NO_HIDDEN | informație perfectă sau publică |
 | chaupar | NO_HIDDEN | informație perfectă sau publică |
 | mosii | NO_HIDDEN | informație perfectă sau publică |
+| itinerar | NO_HIDDEN | informație perfectă sau publică |
 | mozaic | NO_HIDDEN | informație perfectă sau publică |
 | faianta | NO_HIDDEN | informație perfectă sau publică |
 | orasel | NO_HIDDEN | informație perfectă sau publică |
@@ -76,6 +77,7 @@ Fiecare joc jucabil are exact una dintre cele trei stări de mai jos. Testul `po
 | zaruri5 | NO_HIDDEN | informație perfectă sau publică |
 | turnul | NO_HIDDEN | informație perfectă sau publică |
 | cunoastere | NO_HIDDEN | întrebarea o pune calculatorul; răspunsul corect nu e afișat nimănui înainte de verificare |
+| cursa_probelor | NO_HIDDEN | întrebările sunt generate de calculator și afișate tuturor; verdictul și zarurile sunt mutări forțate; secvența de memorie e ascunsă la fel pentru toți |
 | zidurile | NO_HIDDEN | informație perfectă sau publică |
 | prajituri | NO_HIDDEN | cartea trasă e publică; ordinea pachetului e simetrică |
 | patrula | NO_HIDDEN | informație publică (zaruri, hartă deschisă) |
@@ -85,6 +87,22 @@ Fiecare joc jucabil are exact una dintre cele trei stări de mai jos. Testul `po
 | focare | NO_HIDDEN | cooperativ: ambele mâini sunt afișate (partenerul AI e deschis) |
 | strajile | NO_HIDDEN | cooperativ: ambele mâini afișate |
 | cenusii | NO_HIDDEN | cooperativ, fără mână privată; doar ordinea pachetului e ascunsă |
+| turnul_zorilor | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| arhiva_abisala | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| ruinele_cartografilor | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| noapte_de_catifea | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| padurea_sticlei | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| neon_si_rune | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| targul_ciumat | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| insula_celor_doua_luni | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| hotii_din_ceata | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| crucea_de_cenusa | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| strada_de_otel | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| tinutul_furtunilor | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| epava_din_inelul_sapte | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| fiordul_gheatii_negre | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| mlastina_strigoilor | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
+| satul_lanternelor | NO_HIDDEN | aventură cooperativă (motorul `aventura`): zaruri, dușmani și resurse publice |
 | cripta | NO_HIDDEN | cooperativ: cărțile ambilor eroi afișate |
 | apus | NO_HIDDEN | informație perfectă sau publică |
 | fulger | NO_HIDDEN | informație perfectă sau publică |
@@ -115,6 +133,7 @@ Fiecare joc jucabil are exact una dintre cele trei stări de mai jos. Testul `po
 | patru | NO_HIDDEN | informație perfectă sau publică |
 | cupe | NO_HIDDEN | informație perfectă sau publică |
 | poliedre | NO_HIDDEN | informație perfectă sau publică |
+| impletitura | NO_HIDDEN | informație perfectă sau publică |
 
 Jocurile deja din `HOTSEAT_SAFE` înainte de a1 (cărți, TCG etc.) nu sunt repetate aici; testul `z4_hotseat_viewer` din `z4_qa.rs` le verifică.
 

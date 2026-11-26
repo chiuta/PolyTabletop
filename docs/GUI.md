@@ -16,7 +16,8 @@ cargo run --release -p polytabletop-gui -- --selftest # verificări fără ecran
 * alegerea cine joacă: Jucătorul 1, Jucătorul 2 sau ambii („la masă”);
 * „la masă” cu informație ascunsă (jocurile din `HOTSEAT_SAFE`): după fiecare mutare apare un ecran de predare, iar sugestia e blocată până când jucătorul la mutare preia ecranul; pentru jocurile care ar scurge informația, sugestia e dezactivată;
 * salvare și încărcare de jurnal (text); jurnalul se poate relua doar pentru jocurile deterministe, altfel e doar export text;
-* temă clară sau întunecată.
+* temă „Fără Frontiere” clară sau întunecată, cu fonturi încorporate (Cormorant Garamond, Lora, JetBrains Mono, DejaVu Sans pentru simboluri), fără rețea la rulare; limba se păstrează în `gui.conf`;
+* cărți de joc (pachet francez, italian, spaniol, tarot), zaruri și dominouri desenate vectorial (`cards.rs`, `cards_ui.rs`) pentru jocurile de cărți, zaruri și domino recunoscute; textul `render()` rămâne vizibil dedesubt, iar jocurile nerecunoscute păstrează butoanele text.
 
 ## Organizarea codului
 
@@ -27,6 +28,10 @@ cargo run --release -p polytabletop-gui -- --selftest # verificări fără ecran
 | `board.rs` | recunoașterea tablei din `render` (`kind_of`), celule, legături |
 | `compose.rs` | compunerea mutărilor din click-uri |
 | `draw.rs` | desenarea (Painter), teme |
+| `theme.rs` | tema „Fără Frontiere” (paletă clară/întunecată) și fonturile încorporate |
+| `cards.rs`, `cards_ui.rs` | cărți, zaruri și dominouri desenate vectorial; parserul de jetoane din `render()`; integrarea în sesiune |
+| `settings.rs`, `gui_i18n.rs` | setări persistente (limba) și traducerile interfeței (8 limbi) |
+| `markers.rs` | marcatorii din `render()` după care se decupează tablele |
 | `session.rs` | logică fără UI: jurnal, replay, convenția „la masă”, permisiuni de sugestie |
 | `journal.rs` | formatul de jurnal (cu sumă de control a stării) |
 | `selftest.rs` | verificări headless (`--selftest`) |

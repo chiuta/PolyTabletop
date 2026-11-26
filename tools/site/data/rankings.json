@@ -102,8 +102,8 @@
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 14,
@@ -326,16 +326,16 @@
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 42,
 "n": "Pathfinder",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "ruinele_cartografilor"
 },
 {
 "r": 43,
@@ -638,80 +638,80 @@
 "n": "Vampire: The Masquerade",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "noapte_de_catifea"
 },
 {
 "r": 81,
 "n": "Das Schwarze Auge (The Dark Eye)",
 "c": "rpg",
 "x": "Germania",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "padurea_sticlei"
 },
 {
 "r": 82,
 "n": "Shadowrun",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "neon_si_rune"
 },
 {
 "r": 83,
 "n": "Warhammer Fantasy Roleplay",
 "c": "rpg",
 "x": "Marea Britanie",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "targul_ciumat"
 },
 {
 "r": 84,
 "n": "Sword World RPG",
 "c": "rpg",
 "x": "Japonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "insula_celor_doua_luni"
 },
 {
 "r": 85,
 "n": "Blades in the Dark",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "hotii_din_ceata"
 },
 {
 "r": 86,
 "n": "Mörk Borg",
 "c": "rpg",
 "x": "Suedia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "crucea_de_cenusa"
 },
 {
 "r": 87,
 "n": "Cyberpunk RED",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "strada_de_otel"
 },
 {
 "r": 88,
 "n": "Tormenta",
 "c": "rpg",
 "x": "Brazilia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "tinutul_furtunilor"
 },
 {
 "r": 89,
 "n": "Starfinder",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "epava_din_inelul_sapte"
 },
 {
 "r": 90,
@@ -798,8 +798,8 @@
 "n": "Twister",
 "c": "party",
 "x": "SUA",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "impletitura"
 }
 ],
 "europe": [
@@ -1056,8 +1056,8 @@
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 33,
@@ -1088,24 +1088,24 @@
 "n": "Das Schwarze Auge (DSA)",
 "c": "rpg",
 "x": "Germania",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "padurea_sticlei"
 },
 {
 "r": 37,
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 38,
 "n": "Pathfinder",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "ruinele_cartografilor"
 },
 {
 "r": 39,
@@ -1536,56 +1536,56 @@
 "n": "Warhammer Fantasy Roleplay",
 "c": "rpg",
 "x": "Marea Britanie",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "targul_ciumat"
 },
 {
 "r": 93,
 "n": "Drakar och Demoner",
 "c": "rpg",
 "x": "Suedia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "fiordul_gheatii_negre"
 },
 {
 "r": 94,
 "n": "Vampire: The Masquerade",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "noapte_de_catifea"
 },
 {
 "r": 95,
 "n": "Shadowrun",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "neon_si_rune"
 },
 {
 "r": 96,
 "n": "Mörk Borg",
 "c": "rpg",
 "x": "Suedia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "crucea_de_cenusa"
 },
 {
 "r": 97,
 "n": "Cyberpunk RED",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "strada_de_otel"
 },
 {
 "r": 98,
 "n": "The Witcher TRPG",
 "c": "rpg",
 "x": "Polonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "mlastina_strigoilor"
 },
 {
 "r": 99,
@@ -1634,8 +1634,8 @@
 "n": "Oware",
 "c": "abstract",
 "x": "Ghana / Africa de Vest",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "oware"
 },
 {
 "r": 5,
@@ -1674,8 +1674,8 @@
 "n": "Bao",
 "c": "abstract",
 "x": "Tanzania / Africa de Est",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "bao"
 },
 {
 "r": 10,
@@ -1706,8 +1706,8 @@
 "n": "Whot!",
 "c": "cards",
 "x": "Nigeria / Ghana",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "whot"
 },
 {
 "r": 14,
@@ -1738,16 +1738,16 @@
 "n": "Chkobba",
 "c": "cards",
 "x": "Tunisia / Algeria",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "chkobba"
 },
 {
 "r": 18,
 "n": "Ronda",
 "c": "cards",
 "x": "Maroc",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "ronda"
 },
 {
 "r": 19,
@@ -1810,40 +1810,40 @@
 "n": "Seega",
 "c": "abstract",
 "x": "Egipt",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "seega"
 },
 {
 "r": 27,
 "n": "Yote",
 "c": "abstract",
 "x": "Senegal / Africa de Vest",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "yote"
 },
 {
 "r": 28,
 "n": "Tâb",
 "c": "classic",
 "x": "Egipt / Africa de Nord",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "tab"
 },
 {
 "r": 29,
 "n": "Hus",
 "c": "abstract",
 "x": "Namibia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "hus"
 },
 {
 "r": 30,
 "n": "Dama (dame turcești)",
 "c": "abstract",
 "x": "Africa de Est / Africa de Nord",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "dama"
 },
 {
 "r": 31,
@@ -2082,8 +2082,8 @@
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "Africa de Sud",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 61,
@@ -2122,16 +2122,16 @@
 "n": "Pathfinder",
 "c": "rpg",
 "x": "Africa de Sud",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "ruinele_cartografilor"
 },
 {
 "r": 66,
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "Africa de Sud",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 67,
@@ -2338,8 +2338,8 @@
 "n": "Senet",
 "c": "classic",
 "x": "Egipt",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "senet"
 },
 {
 "r": 93,
@@ -2796,32 +2796,32 @@
 "n": "Sword World RPG",
 "c": "rpg",
 "x": "Japonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "insula_celor_doua_luni"
 },
 {
 "r": 50,
 "n": "InSANe",
 "c": "rpg",
 "x": "Japonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "satul_lanternelor"
 },
 {
 "r": 51,
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "Japonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 52,
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "Asia de Est",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 53,
@@ -2852,136 +2852,136 @@
 "n": "Sholo Guti (Șaisprezece soldați)",
 "c": "abstract",
 "x": "Bangladesh / India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "shologuti"
 },
 {
 "r": 57,
 "n": "Aadu Puli Attam (Oi și tigri)",
 "c": "abstract",
 "x": "India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "aadupuli"
 },
 {
 "r": 58,
 "n": "Mangala (mancala turcească)",
 "c": "abstract",
 "x": "Turcia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "mangala"
 },
 {
 "r": 59,
 "n": "Dama (dame turcești)",
 "c": "abstract",
 "x": "Turcia / Orientul Mijlociu",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "dama"
 },
 {
 "r": 60,
 "n": "Okey",
 "c": "classic",
 "x": "Turcia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "okey"
 },
 {
 "r": 61,
 "n": "Riichi Mahjong",
 "c": "classic",
 "x": "Japonia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "riichi"
 },
 {
 "r": 62,
 "n": "Sic Bo",
 "c": "classic",
 "x": "China",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "sicbo"
 },
 {
 "r": 63,
 "n": "Ashta Chamma",
 "c": "classic",
 "x": "India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "ashtachamma"
 },
 {
 "r": 64,
 "n": "Daifugo (Daihinmin)",
 "c": "cards",
 "x": "Japonia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "daifugo"
 },
 {
 "r": 65,
 "n": "Tiến lên",
 "c": "cards",
 "x": "Vietnam",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "tienlen"
 },
 {
 "r": 66,
 "n": "Big Two (Pusoy dos)",
 "c": "cards",
 "x": "China / Filipine",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "bigtwo"
 },
 {
 "r": 67,
 "n": "Tong-its",
 "c": "cards",
 "x": "Filipine",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "tongits"
 },
 {
 "r": 68,
 "n": "Pasur",
 "c": "cards",
 "x": "Iran",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pasur"
 },
 {
 "r": 69,
 "n": "Hokm",
 "c": "cards",
 "x": "Iran",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "hokm"
 },
 {
 "r": 70,
 "n": "Piști",
 "c": "cards",
 "x": "Turcia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pisti"
 },
 {
 "r": 71,
 "n": "Court Piece (Rang, Mendikot)",
 "c": "cards",
 "x": "India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "courtpiece"
 },
 {
 "r": 72,
 "n": "Call Break",
 "c": "cards",
 "x": "Nepal / India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "callbreak"
 },
 {
 "r": 73,
@@ -3246,8 +3246,8 @@
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "SUA / Canada",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 6,
@@ -3422,8 +3422,8 @@
 "n": "Gin Rummy",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "gin_rummy"
 },
 {
 "r": 28,
@@ -3438,8 +3438,8 @@
 "n": "Pinochle",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pinochle"
 },
 {
 "r": 30,
@@ -3510,8 +3510,8 @@
 "n": "Conquián",
 "c": "cards",
 "x": "Mexic",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "conquian"
 },
 {
 "r": 39,
@@ -3526,80 +3526,80 @@
 "n": "Crazy Eights",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "crazy_eights"
 },
 {
 "r": 41,
 "n": "Pitch (Setback)",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pitch"
 },
 {
 "r": 42,
 "n": "Bid Whist",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "bid_whist"
 },
 {
 "r": 43,
 "n": "Bunco",
 "c": "classic",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "bunco"
 },
 {
 "r": 44,
 "n": "Farkle (10 000)",
 "c": "classic",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "farkle"
 },
 {
 "r": 45,
 "n": "Liar's Dice (Cacho, Dudo, Perudo)",
 "c": "classic",
 "x": "SUA / Mexic",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "liars_dice"
 },
 {
 "r": 46,
 "n": "Crokinole",
 "c": "family",
 "x": "Canada",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "crokinole"
 },
 {
 "r": 47,
 "n": "All Fours",
 "c": "cards",
 "x": "Trinidad și Tobago / Caraibe",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "all_fours"
 },
 {
 "r": 48,
 "n": "Chicken Foot (domino)",
 "c": "classic",
 "x": "SUA / Caraibe",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "chicken_foot"
 },
 {
 "r": 49,
 "n": "Oware",
 "c": "abstract",
 "x": "Caraibe",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "oware"
 },
 {
 "r": 50,
@@ -3622,56 +3622,56 @@
 "n": "Pathfinder",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "ruinele_cartografilor"
 },
 {
 "r": 53,
 "n": "Vampire: The Masquerade",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "noapte_de_catifea"
 },
 {
 "r": 54,
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 55,
 "n": "Cyberpunk RED",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "strada_de_otel"
 },
 {
 "r": 56,
 "n": "Shadowrun",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "neon_si_rune"
 },
 {
 "r": 57,
 "n": "Blades in the Dark",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "hotii_din_ceata"
 },
 {
 "r": 58,
 "n": "Starfinder",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "epava_din_inelul_sapte"
 },
 {
 "r": 59,
@@ -3894,8 +3894,8 @@
 "n": "Twister",
 "c": "party",
 "x": "SUA",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "impletitura"
 },
 {
 "r": 87,
@@ -4072,8 +4072,8 @@
 "n": "Parqués",
 "c": "family",
 "x": "Colombia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "parques"
 },
 {
 "r": 9,
@@ -4088,48 +4088,48 @@
 "n": "Burako (Buraco)",
 "c": "cards",
 "x": "Argentina / Uruguay / Brazilia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "burako"
 },
 {
 "r": 11,
 "n": "Chinchón",
 "c": "cards",
 "x": "Argentina / Uruguay",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "chinchon"
 },
 {
 "r": 12,
 "n": "Escoba (Escoba de 15)",
 "c": "cards",
 "x": "Argentina / Uruguay",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "escoba"
 },
 {
 "r": 13,
 "n": "Generala",
 "c": "classic",
 "x": "Argentina / Uruguay",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "generala"
 },
 {
 "r": 14,
 "n": "Cuarenta",
 "c": "cards",
 "x": "Ecuador",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "cuarenta"
 },
 {
 "r": 15,
 "n": "Liar's Dice (Cacho, Dudo, Perudo)",
 "c": "classic",
 "x": "Bolivia / Peru / Chile",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "liars_dice"
 },
 {
 "r": 16,
@@ -4240,16 +4240,16 @@
 "n": "Tormenta",
 "c": "rpg",
 "x": "Brazilia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "tinutul_furtunilor"
 },
 {
 "r": 30,
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "Brazilia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 31,
@@ -4600,24 +4600,24 @@
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "Brazilia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 75,
 "n": "Pathfinder",
 "c": "rpg",
 "x": "Brazilia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "ruinele_cartografilor"
 },
 {
 "r": 76,
 "n": "Vampire: The Masquerade",
 "c": "rpg",
 "x": "Brazilia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "noapte_de_catifea"
 },
 {
 "r": 77,
@@ -4850,8 +4850,8 @@
 "n": "Two-up",
 "c": "classic",
 "x": "Australia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "twoup"
 },
 {
 "r": 6,
@@ -4866,8 +4866,8 @@
 "n": "Five Hundred (500)",
 "c": "cards",
 "x": "Australia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "fivehundred"
 },
 {
 "r": 8,
@@ -5026,32 +5026,32 @@
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "Australia / Noua Zeelandă",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 28,
 "n": "Pathfinder",
 "c": "rpg",
 "x": "Australia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "ruinele_cartografilor"
 },
 {
 "r": 29,
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "Australia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 30,
 "n": "Mu Torere",
 "c": "abstract",
 "x": "Noua Zeelandă",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "mutorere"
 },
 {
 "r": 31,
@@ -5074,16 +5074,16 @@
 "n": "Crown and Anchor",
 "c": "classic",
 "x": "Australia / Noua Zeelandă",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "ancora"
 },
 {
 "r": 34,
 "n": "Pontoon",
 "c": "cards",
 "x": "Australia / Noua Zeelandă",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pontoon"
 },
 {
 "r": 35,
@@ -5490,8 +5490,8 @@
 "n": "Twister",
 "c": "party",
 "x": "Australia",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "impletitura"
 },
 {
 "r": 86,
@@ -5530,8 +5530,8 @@
 "n": "Vampire: The Masquerade",
 "c": "rpg",
 "x": "Australia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "noapte_de_catifea"
 },
 {
 "r": 91,
@@ -5708,8 +5708,8 @@
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "America de Nord",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 13,
@@ -5892,48 +5892,48 @@
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "Japonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 36,
 "n": "Sword World RPG",
 "c": "rpg",
 "x": "Japonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "insula_celor_doua_luni"
 },
 {
 "r": 37,
 "n": "InSANe",
 "c": "rpg",
 "x": "Japonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "satul_lanternelor"
 },
 {
 "r": 38,
 "n": "Tormenta",
 "c": "rpg",
 "x": "America Latină (Brazilia)",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "tinutul_furtunilor"
 },
 {
 "r": 39,
 "n": "Pathfinder",
 "c": "rpg",
 "x": "America de Nord",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "ruinele_cartografilor"
 },
 {
 "r": 40,
 "n": "Vampire: The Masquerade",
 "c": "rpg",
 "x": "America de Nord",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "noapte_de_catifea"
 },
 {
 "r": 41,
@@ -6348,8 +6348,8 @@
 "n": "Twister",
 "c": "party",
 "x": "America de Nord",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "impletitura"
 },
 {
 "r": 93,
@@ -6582,8 +6582,8 @@
 "n": "Campionii Distracției",
 "c": "family",
 "x": "Menționat printre cele mai cumpărate",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "cursa_probelor"
 },
 {
 "r": 22,
@@ -6718,8 +6718,8 @@
 "n": "Turistico",
 "c": "family",
 "x": "Monopoly cu geografia României",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "itinerar"
 },
 {
 "r": 39,
@@ -6774,8 +6774,8 @@
 "n": "Twister",
 "c": "party",
 "x": "Joc de petrecere",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "impletitura"
 },
 {
 "r": 46,
@@ -6806,32 +6806,32 @@
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "Jocul de rol de bază în comunități",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 50,
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "Sesiuni în pub-uri de gaming",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 51,
 "n": "Pathfinder",
 "c": "rpg",
 "x": "Comunități de rol",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "ruinele_cartografilor"
 },
 {
 "r": 52,
 "n": "Vampire: The Masquerade",
 "c": "rpg",
 "x": "Comunități de rol",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "noapte_de_catifea"
 },
 {
 "r": 53,
@@ -6878,32 +6878,32 @@
 "n": "Cyberpunk RED",
 "c": "rpg",
 "x": "Comunități de rol",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "strada_de_otel"
 },
 {
 "r": 59,
 "n": "The Witcher TRPG",
 "c": "rpg",
 "x": "Comunități de rol",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "mlastina_strigoilor"
 },
 {
 "r": 60,
 "n": "Warhammer Fantasy Roleplay",
 "c": "rpg",
 "x": "Comunități de rol",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "targul_ciumat"
 },
 {
 "r": 61,
 "n": "Shadowrun",
 "c": "rpg",
 "x": "Comunități de rol",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "neon_si_rune"
 },
 {
 "r": 62,
@@ -7418,8 +7418,8 @@
 "n": "Oware",
 "c": "abstract",
 "x": "Ghana / Africa de Vest",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "oware"
 },
 {
 "r": 26,
@@ -7442,8 +7442,8 @@
 "n": "Dama (dame turcești)",
 "c": "abstract",
 "x": "Turcia / Orientul Mijlociu",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "dama"
 },
 {
 "r": 29,
@@ -7506,8 +7506,8 @@
 "n": "Bao",
 "c": "abstract",
 "x": "Tanzania / Africa de Est",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "bao"
 },
 {
 "r": 37,
@@ -7546,8 +7546,8 @@
 "n": "Mangala (mancala turcească)",
 "c": "abstract",
 "x": "Turcia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "mangala"
 },
 {
 "r": 42,
@@ -7762,24 +7762,24 @@
 "n": "Seega",
 "c": "abstract",
 "x": "Egipt",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "seega"
 },
 {
 "r": 69,
 "n": "Yote",
 "c": "abstract",
 "x": "Senegal / Africa de Vest",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "yote"
 },
 {
 "r": 70,
 "n": "Hus",
 "c": "abstract",
 "x": "Namibia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "hus"
 },
 {
 "r": 71,
@@ -7882,8 +7882,8 @@
 "n": "Mu Torere",
 "c": "abstract",
 "x": "Noua Zeelandă (maori)",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "mutorere"
 },
 {
 "r": 84,
@@ -7898,16 +7898,16 @@
 "n": "Sholo Guti (Șaisprezece soldați)",
 "c": "abstract",
 "x": "Bangladesh / India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "shologuti"
 },
 {
 "r": 86,
 "n": "Aadu Puli Attam (Oi și tigri)",
 "c": "abstract",
 "x": "India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "aadupuli"
 },
 {
 "r": 87,
@@ -8092,8 +8092,8 @@
 "n": "Riichi Mahjong",
 "c": "classic",
 "x": "Japonia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "riichi"
 },
 {
 "r": 10,
@@ -8172,8 +8172,8 @@
 "n": "Okey",
 "c": "classic",
 "x": "Turcia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "okey"
 },
 {
 "r": 20,
@@ -8188,8 +8188,8 @@
 "n": "Chicken Foot (domino)",
 "c": "classic",
 "x": "SUA / Caraibe",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "chicken_foot"
 },
 {
 "r": 22,
@@ -8220,8 +8220,8 @@
 "n": "Senet",
 "c": "classic",
 "x": "Egiptul antic",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "senet"
 },
 {
 "r": 26,
@@ -8396,8 +8396,8 @@
 "n": "Tâb",
 "c": "classic",
 "x": "Egipt / Orientul Mijlociu",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "tab"
 },
 {
 "r": 48,
@@ -8492,16 +8492,16 @@
 "n": "Ashta Chamma",
 "c": "classic",
 "x": "India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "ashtachamma"
 },
 {
 "r": 60,
 "n": "Two-up",
 "c": "classic",
 "x": "Australia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "twoup"
 },
 {
 "r": 61,
@@ -9078,16 +9078,16 @@
 "n": "Crokinole",
 "c": "family",
 "x": "Canada",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "crokinole"
 },
 {
 "r": 33,
 "n": "Parqués",
 "c": "family",
 "x": "Colombia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "parques"
 },
 {
 "r": 34,
@@ -9422,16 +9422,16 @@
 "n": "Campionii Distracției",
 "c": "family",
 "x": "—",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "cursa_probelor"
 },
 {
 "r": 76,
 "n": "Turistico",
 "c": "family",
 "x": "—",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "itinerar"
 },
 {
 "r": 77,
@@ -10530,8 +10530,8 @@
 "n": "Twister",
 "c": "party",
 "x": "SUA",
-"s": "brand",
-"g": ""
+"s": "var",
+"g": "impletitura"
 },
 {
 "r": 14,
@@ -12102,8 +12102,8 @@
 "n": "Gin Rummy",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "gin_rummy"
 },
 {
 "r": 10,
@@ -12190,8 +12190,8 @@
 "n": "Big Two (Pusoy dos)",
 "c": "cards",
 "x": "China / Filipine",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "bigtwo"
 },
 {
 "r": 21,
@@ -12206,16 +12206,16 @@
 "n": "Pinochle",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pinochle"
 },
 {
 "r": 23,
 "n": "Crazy Eights",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "crazy_eights"
 },
 {
 "r": 24,
@@ -12246,8 +12246,8 @@
 "n": "Tiến lên",
 "c": "cards",
 "x": "Vietnam",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "tienlen"
 },
 {
 "r": 28,
@@ -12406,16 +12406,16 @@
 "n": "Hokm",
 "c": "cards",
 "x": "Iran",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "hokm"
 },
 {
 "r": 48,
 "n": "Pasur",
 "c": "cards",
 "x": "Iran",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pasur"
 },
 {
 "r": 49,
@@ -12678,144 +12678,144 @@
 "n": "Whot!",
 "c": "cards",
 "x": "Nigeria",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "whot"
 },
 {
 "r": 82,
 "n": "Chkobba",
 "c": "cards",
 "x": "Tunisia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "chkobba"
 },
 {
 "r": 83,
 "n": "Ronda",
 "c": "cards",
 "x": "Maroc / Spania",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "ronda"
 },
 {
 "r": 84,
 "n": "Daifugo (Daihinmin)",
 "c": "cards",
 "x": "Japonia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "daifugo"
 },
 {
 "r": 85,
 "n": "Tong-its",
 "c": "cards",
 "x": "Filipine",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "tongits"
 },
 {
 "r": 86,
 "n": "Piști",
 "c": "cards",
 "x": "Turcia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pisti"
 },
 {
 "r": 87,
 "n": "Court Piece (Rang, Mendikot)",
 "c": "cards",
 "x": "India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "courtpiece"
 },
 {
 "r": 88,
 "n": "Call Break",
 "c": "cards",
 "x": "Nepal / India",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "callbreak"
 },
 {
 "r": 89,
 "n": "Pitch (Setback)",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pitch"
 },
 {
 "r": 90,
 "n": "Bid Whist",
 "c": "cards",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "bid_whist"
 },
 {
 "r": 91,
 "n": "All Fours",
 "c": "cards",
 "x": "Trinidad și Tobago / Caraibe",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "all_fours"
 },
 {
 "r": 92,
 "n": "Conquián",
 "c": "cards",
 "x": "Mexic",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "conquian"
 },
 {
 "r": 93,
 "n": "Chinchón",
 "c": "cards",
 "x": "Spania / America Latină",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "chinchon"
 },
 {
 "r": 94,
 "n": "Burako (Buraco)",
 "c": "cards",
 "x": "Argentina / Uruguay / Brazilia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "burako"
 },
 {
 "r": 95,
 "n": "Escoba (Escoba de 15)",
 "c": "cards",
 "x": "Argentina / Uruguay",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "escoba"
 },
 {
 "r": 96,
 "n": "Cuarenta",
 "c": "cards",
 "x": "Ecuador",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "cuarenta"
 },
 {
 "r": 97,
 "n": "Five Hundred (500)",
 "c": "cards",
 "x": "SUA / Australia",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "fivehundred"
 },
 {
 "r": 98,
 "n": "Pontoon",
 "c": "cards",
 "x": "Australia / Marea Britanie",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "pontoon"
 },
 {
 "r": 99,
@@ -12840,56 +12840,56 @@
 "n": "Dungeons & Dragons",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "turnul_zorilor"
 },
 {
 "r": 2,
 "n": "Pathfinder",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "ruinele_cartografilor"
 },
 {
 "r": 3,
 "n": "Call of Cthulhu",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "arhiva_abisala"
 },
 {
 "r": 4,
 "n": "Vampire: The Masquerade",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "noapte_de_catifea"
 },
 {
 "r": 5,
 "n": "Shadowrun",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "neon_si_rune"
 },
 {
 "r": 6,
 "n": "Das Schwarze Auge (The Dark Eye)",
 "c": "rpg",
 "x": "Germania",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "padurea_sticlei"
 },
 {
 "r": 7,
 "n": "Warhammer Fantasy Roleplay",
 "c": "rpg",
 "x": "Marea Britanie",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "targul_ciumat"
 },
 {
 "r": 8,
@@ -12912,16 +12912,16 @@
 "n": "Cyberpunk RED",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "strada_de_otel"
 },
 {
 "r": 11,
 "n": "Starfinder",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "epava_din_inelul_sapte"
 },
 {
 "r": 12,
@@ -12944,8 +12944,8 @@
 "n": "Sword World RPG",
 "c": "rpg",
 "x": "Japonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "insula_celor_doua_luni"
 },
 {
 "r": 15,
@@ -12968,8 +12968,8 @@
 "n": "Blades in the Dark",
 "c": "rpg",
 "x": "SUA",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "hotii_din_ceata"
 },
 {
 "r": 18,
@@ -12984,8 +12984,8 @@
 "n": "Mörk Borg",
 "c": "rpg",
 "x": "Suedia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "crucea_de_cenusa"
 },
 {
 "r": 20,
@@ -13016,16 +13016,16 @@
 "n": "Tormenta",
 "c": "rpg",
 "x": "Brazilia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "tinutul_furtunilor"
 },
 {
 "r": 24,
 "n": "Drakar och Demoner",
 "c": "rpg",
 "x": "Suedia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "fiordul_gheatii_negre"
 },
 {
 "r": 25,
@@ -13080,8 +13080,8 @@
 "n": "The Witcher TRPG",
 "c": "rpg",
 "x": "Polonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "mlastina_strigoilor"
 },
 {
 "r": 32,
@@ -13632,8 +13632,8 @@
 "n": "InSANe",
 "c": "rpg",
 "x": "Japonia",
-"s": "kit",
-"g": ""
+"s": "var",
+"g": "satul_lanternelor"
 }
 ],
 "minis": [
@@ -16072,16 +16072,16 @@
 "n": "Liar's Dice (Cacho, Dudo, Perudo)",
 "c": "dice",
 "x": "America Latină",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "liars_dice"
 },
 {
 "r": 5,
 "n": "Farkle (10 000)",
 "c": "dice",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "farkle"
 },
 {
 "r": 6,
@@ -16120,8 +16120,8 @@
 "n": "Sic Bo",
 "c": "dice",
 "x": "China",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "sicbo"
 },
 {
 "r": 11,
@@ -16136,16 +16136,16 @@
 "n": "Bunco",
 "c": "dice",
 "x": "SUA",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "bunco"
 },
 {
 "r": 13,
 "n": "Generala",
 "c": "dice",
 "x": "Argentina / Uruguay",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "generala"
 },
 {
 "r": 14,
@@ -16264,8 +16264,8 @@
 "n": "Crown and Anchor",
 "c": "dice",
 "x": "Marea Britanie / Oceania",
-"s": "plan",
-"g": ""
+"s": "play",
+"g": "ancora"
 },
 {
 "r": 29,

@@ -2,17 +2,17 @@
 
 # **PolyTabletop**
 
-Version: 0.9.1 · Last updated: 2026-11-26
+Version: 0.9.2 · Last updated: 2026-11-26
 
 ## Ce este
 
-PolyTabletop este o colecție clean-room de jocuri de masă scrisă în Rust: 171 de jocuri jucabile contra calculatorului, în terminal sau în fereastră grafică, plus modul „la masă” (hot-seat) și joc în rețea pentru doi oameni. Clasice abstracte, jocuri de cărți și de zaruri, variante originale ale mecanicilor moderne cu nume proprii, jocuri cooperative cu partener AI, jocuri cu roluri ascunse în care roboții completează masa, jocuri de petrecere și de cuvinte, motoare de miniaturi și de cărți colecționabile cu cărți originale. Motorul și jocurile nu au dependențe externe; doar interfața grafică (`polytabletop-gui`) folosește `eframe`/egui. Catalogul urmărește 1200 de jocuri-țintă.
+PolyTabletop este o colecție clean-room de jocuri de masă scrisă în Rust: 240 de jocuri jucabile contra calculatorului, în terminal sau în fereastră grafică, plus modul „la masă” (hot-seat) și joc în rețea pentru doi oameni. Clasice abstracte, jocuri de cărți și de zaruri, variante originale ale mecanicilor moderne cu nume proprii, jocuri cooperative cu partener AI, jocuri cu roluri ascunse în care roboții completează masa, jocuri de petrecere și de cuvinte, motoare de miniaturi și de cărți colecționabile cu cărți originale. Motorul și jocurile nu au dependențe externe; doar interfața grafică (`polytabletop-gui`) folosește `eframe`/egui. Catalogul urmărește 1200 de jocuri-țintă.
 
 Pagina de prezentare: <https://polytabletop.chiuta.ro>. Ghid scurt de instalare: [docs/INSTALL.ro.md](docs/INSTALL.ro.md) ([English](docs/INSTALL.en.md) · [Français](docs/INSTALL.fr.md) · [Italiano](docs/INSTALL.it.md) · [Español](docs/INSTALL.es.md) · [Português](docs/INSTALL.pt.md) · [Deutsch](docs/INSTALL.de.md) · [Magyar](docs/INSTALL.hu.md)).
 
 ## Folosire
 
-- Listă și catalog: `polytabletop list` arată cele 171 de jocuri jucabile cu regulile pe scurt; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` arată starea celor 1200 de intrări din catalog.
+- Listă și catalog: `polytabletop list` arată cele 240 de jocuri jucabile cu regulile pe scurt; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` arată starea celor 1200 de intrări din catalog.
 - Joc: `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. `--you one` (implicit) te face Jucătorul 1, `two` Jucătorul 2, `both` este „la masă”, la o singură tastatură, iar `none` lasă calculatorul să joace ambele părți. `--seed N` face reproductibile împărțirea cărților și zarurile; `--record FIȘIER` salvează o transcriere.
 - În joc: scrii mutarea exact cum o listează `?` (de exemplu `e2e4`, `c3xe5`, `d6`), `?` = mutări legale, `hint` = sugestia AI-ului, `q` = ieșire.
 - AI contra AI: `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (vezi [docs/ARENA.md](docs/ARENA.md)).
@@ -33,29 +33,29 @@ cargo build --release
 
 ## Jocuri
 
-Se pot juca acum 171 de jocuri, în terminal și în interfața grafică; catalogul are 1200 de intrări (`polytabletop catalog` se încheie cu: implementate 172, jocuri tradiționale planificate 263, variante proprii planificate 477, toolkit generic 288). Cele 288 de intrări toolkit sunt cele 100 de sisteme de jocuri de rol, deservite de crate-ul generic `polytabletop-rpg` (zaruri, fișe, teste de abilitate, generator de dungeon, simulator de bătălii, jurnal), plus cele 93 de titluri de miniaturi și 95 de cărți colecționabile care nu sunt încă în program, toate fără regulile vreunui editor. Fiecare dintre cele douăsprezece categorii din catalog are exact 100 de intrări distincte. Categoriile și numărul de jocuri, din `polytabletop-games/src/lib.rs`:
+Se pot juca acum 240 de jocuri, în terminal și în interfața grafică; catalogul are 1200 de intrări (`polytabletop catalog` se încheie cu: implementate 239, jocuri tradiționale planificate 214, variante proprii planificate 475, toolkit generic 272). Cele 272 de intrări toolkit sunt cele 84 de sisteme de jocuri de rol (celelalte 16 sunt aventuri jucabile), deservite de crate-ul generic `polytabletop-rpg` (zaruri, fișe, teste de abilitate, generator de dungeon, simulator de bătălii, jurnal), plus cele 93 de titluri de miniaturi și 95 de cărți colecționabile care nu sunt încă în program, toate fără regulile vreunui editor. Fiecare dintre cele douăsprezece categorii din catalog are exact 100 de intrări distincte. Categoriile și numărul de jocuri, din `polytabletop-games/src/lib.rs`:
 
 | Categorie | Jocuri | Exemple (id-uri) |
 |---|---|---|
-| Cărți | 45 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda` |
-| Abstract | 40 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane` |
+| Cărți | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
+| Abstract | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
 | Strategie | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, plus variante originale ale unor jocuri moderne |
-| Party | 16 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Zaruri | 11 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut` |
-| Clasic | 9 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo` |
-| Familie | 7 | `orasel`, `roata`, `turnul`, `zidurile` |
+| Cooperativ | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
+| Party | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
+| Zaruri | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
+| Clasic | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
+| Familie | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
 | Miniaturi | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Cooperativ | 6 | `artificii`, `focare`, `strajile`, `cripta` |
 | Cărți colecționabile (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
 | Deducție | 1 | `conac` |
 | Cuvinte | 1 | `litere` |
-| **Total** | **171** | |
+| **Total** | **240** | |
 
-477 de intrări din catalog sunt planificate ca variante originale cu titluri proprii (de exemplu Twister, Campionii Distracției, Turistico), iar 263 ca jocuri tradiționale cu reguli publice. Regulile pe scurt ale fiecărui joc sunt în [docs/JOCURI.md](docs/JOCURI.md), catalogul generat în [docs/CATALOG.md](docs/CATALOG.md). În interfața grafică, 36 de jocuri au tablă desenată cu mutări prin click (șah, dame, reversi, patru în linie, gomoku, go, moara, xiangqi, shogi, table, ludo și pachisi, hex, familia mancala și altele); celelalte jocuri apar în text, cu mutările legale ca butoane.
+475 de intrări din catalog sunt planificate ca variante originale cu titluri proprii (de exemplu Twister, Campionii Distracției, Turistico), iar 214 ca jocuri tradiționale cu reguli publice. Regulile pe scurt ale fiecărui joc sunt în [docs/JOCURI.md](docs/JOCURI.md), catalogul generat în [docs/CATALOG.md](docs/CATALOG.md). În interfața grafică, 36 de jocuri au tablă desenată cu mutări prin click (șah, dame, reversi, patru în linie, gomoku, go, moara, xiangqi, shogi, table, ludo și pachisi, hex, familia mancala și altele); celelalte jocuri apar în text, cu mutările legale ca butoane.
 
 ## Limbi
 
-PolyTabletop vorbește 8 limbi: English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. Interfețele în linie de comandă și grafică sunt traduse în toate 8. Limba se alege prin `--lang xx`, apoi `POLYTABLETOP_LANG`, apoi `LANG` din sistem, altfel română. Titlurile și regulile tuturor celor 171 de jocuri sunt traduse în cele 8 limbi (`polytabletop-games/data/i18n/`, cu revenire la textul românesc dacă lipsește o intrare); textul din interiorul jocurilor (cărți, bănci de conținut, replici) este încă în română. Notația mutărilor (`e2e4`, `c3-d4`) nu se schimbă niciodată. Detalii: [docs/I18N.md](docs/I18N.md).
+PolyTabletop vorbește 8 limbi: English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. Interfețele în linie de comandă și grafică sunt traduse în toate 8. Limba se alege prin `--lang xx`, apoi `POLYTABLETOP_LANG`, apoi `LANG` din sistem, altfel română. Titlurile și regulile tuturor celor 240 de jocuri sunt traduse în cele 8 limbi (`polytabletop-games/data/i18n/`, cu revenire la textul românesc dacă lipsește o intrare); textul din interiorul jocurilor (cărți, bănci de conținut, replici) este încă în română. Notația mutărilor (`e2e4`, `c3-d4`) nu se schimbă niciodată. Detalii: [docs/I18N.md](docs/I18N.md).
 
 ## AI
 
@@ -70,7 +70,7 @@ PolyTabletop vorbește 8 limbi: English, Română, Français, Italiano, Español
 
 ## Pagini de reguli
 
-Fiecare joc jucabil are o pagină cu scopul, pregătirea, structura turei, sintaxa mutărilor, regulile speciale, punctajul, sfârșitul jocului, note despre AI și diferențele față de regulile tradiționale: [docs/reguli/INDEX.md](docs/reguli/INDEX.md) (jocurile 1–86) și [docs/reguli/INDEX2.md](docs/reguli/INDEX2.md) (jocurile 87–171). Paginile sunt în română.
+Fiecare joc jucabil are o pagină cu scopul, pregătirea, structura turei, sintaxa mutărilor, regulile speciale, punctajul, sfârșitul jocului, note despre AI și diferențele față de regulile tradiționale: [docs/reguli/INDEX.md](docs/reguli/INDEX.md) (jocurile 1–120) și [docs/reguli/INDEX2.md](docs/reguli/INDEX2.md) (jocurile 121–240). Paginile sunt în română.
 
 ## Arhitectură
 

@@ -5,7 +5,7 @@
 | Crate | Rol |
 |---|---|
 | `polytabletop-core` | trait-ul tipat `Game`, trait-ul obiect-sigur `GameObj` (mutări ca text), `Player`, `Outcome`, `AiStyle`, `rng` (generator propriu) și `ai` (alpha-beta, alpha-beta cu timp, MCTS/UCT). Fără dependențe externe. |
-| `polytabletop-games` | toate jocurile (un modul pe joc), `playable()` (lista jocurilor jucabile), `HOTSEAT_SAFE`, `Kind`/`E` și catalogul generat `catalog.rs` (1200 de intrări, câte 100 în fiecare dintre cele 12 categorii; 171 de jocuri jucabile). Fără dependențe externe. |
+| `polytabletop-games` | toate jocurile (un modul pe joc), `playable()` (lista jocurilor jucabile), `HOTSEAT_SAFE`, `Kind`/`E` și catalogul generat `catalog.rs` (1200 de intrări, câte 100 în fiecare dintre cele 12 categorii; 240 de jocuri jucabile). Fără dependențe externe. |
 | `polytabletop` | interfața în linie de comandă: `polytabletop list`, `polytabletop catalog`, `polytabletop play`. |
 | `polytabletop-gui` | interfața grafică egui/eframe (singurul crate cu dependențe externe); în afara build-ului implicit. |
 | `polytabletop-rpg` | trusă generică pentru jocuri de rol (zaruri, fișe, teste, dungeon); vezi `polytabletop-rpg/README.md`. |

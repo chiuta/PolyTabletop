@@ -2,17 +2,17 @@
 
 # **PolyTabletop**
 
-Version: 0.9.1 · Last updated: 2026-11-26
+Version: 0.9.2 · Last updated: 2026-11-26
 
 ## Mi ez?
 
-A PolyTabletop Rustban írt, clean-room táblás és asztali játékgyűjtemény: 171 játék játszható a számítógép ellen, terminálban vagy grafikus ablakban, emellett van hot-seat mód egy gépen és hálózati játék két embernek. Vannak absztrakt klasszikusok, kártya- és kockajátékok, modern mechanizmusok eredeti, saját nevű változatai, kooperatív játékok MI-társsal, rejtett szerepű játékok, ahol robotok töltik be az asztal többi helyét, társasági és szójátékok, valamint figura- és gyűjthető kártyás játékmotorok eredeti kártyákkal. A motornak és a játékoknak nincs külső függősége; csak a grafikus felület (`polytabletop-gui`) használja az `eframe`/egui könyvtárat. A katalógus 1200 célként kitűzött játékot tart nyilván.
+A PolyTabletop Rustban írt, clean-room táblás és asztali játékgyűjtemény: 240 játék játszható a számítógép ellen, terminálban vagy grafikus ablakban, emellett van hot-seat mód egy gépen és hálózati játék két embernek. Vannak absztrakt klasszikusok, kártya- és kockajátékok, modern mechanizmusok eredeti, saját nevű változatai, kooperatív játékok MI-társsal, rejtett szerepű játékok, ahol robotok töltik be az asztal többi helyét, társasági és szójátékok, valamint figura- és gyűjthető kártyás játékmotorok eredeti kártyákkal. A motornak és a játékoknak nincs külső függősége; csak a grafikus felület (`polytabletop-gui`) használja az `eframe`/egui könyvtárat. A katalógus 1200 célként kitűzött játékot tart nyilván.
 
 Bemutatóoldal: <https://polytabletop.chiuta.ro>. Rövid telepítési útmutató: [docs/INSTALL.hu.md](docs/INSTALL.hu.md) ([English](docs/INSTALL.en.md) · [Română](docs/INSTALL.ro.md) · [Français](docs/INSTALL.fr.md) · [Italiano](docs/INSTALL.it.md) · [Español](docs/INSTALL.es.md) · [Português](docs/INSTALL.pt.md) · [Deutsch](docs/INSTALL.de.md)).
 
 ## Használat
 
-- Lista és katalógus: a `polytabletop list` kiírja a 171 játszható játékot röviden a szabályaikkal; a `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` a katalógus mind a 1200 bejegyzésének állapotát mutatja.
+- Lista és katalógus: a `polytabletop list` kiírja a 240 játszható játékot röviden a szabályaikkal; a `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` a katalógus mind a 1200 bejegyzésének állapotát mutatja.
 - Játék: `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. A `--you one` (alapértelmezett) az 1. játékossá tesz, a `two` a 2.-á, a `both` hot-seat mód egyetlen billentyűzeten, a `none` pedig a gépre bízza mindkét oldalt. A `--seed N` reprodukálhatóvá teszi a laposztást és a kockadobásokat; a `--record FÁJL` jegyzőkönyvet ment.
 - Játék közben: a lépést pontosan úgy írd be, ahogy a `?` kilistázza (például `e2e4`, `c3xe5`, `d6`), `?` = szabályos lépések, `hint` = az MI javaslata, `q` = kilépés.
 - MI az MI ellen: `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (lásd [docs/ARENA.md](docs/ARENA.md)).
@@ -33,29 +33,29 @@ cargo build --release
 
 ## Játékok
 
-Jelenleg 171 játék játszható, terminálban és a grafikus felületen is; a katalógusnak 1200 bejegyzése van (a `polytabletop catalog` kimenete így zárul: megvalósítva 172, tervezett hagyományos játék 263, tervezett saját változat 477, általános eszköztár 288). A 288 eszköztár-bejegyzés a 100 szerepjátékrendszer, amelyeket az általános `polytabletop-rpg` crate szolgál ki (kockák, karakterlapok, képességpróbák, kazamata-generátor, csataszimulátor, napló), valamint a programban még nem szereplő 93 miniatűr- és 95 gyűjthetőkártya-cím, mind bármely kiadó szabályai nélkül. A katalógus tizenkét kategóriájának mindegyike pontosan 100 különböző bejegyzést tartalmaz. A kategóriák és a játékok száma a `polytabletop-games/src/lib.rs` alapján:
+Jelenleg 240 játék játszható, terminálban és a grafikus felületen is; a katalógusnak 1200 bejegyzése van (a `polytabletop catalog` kimenete így zárul: megvalósítva 239, tervezett hagyományos játék 214, tervezett saját változat 475, általános eszköztár 272). A 272 eszköztár-bejegyzés a 84 szerepjátékrendszer (a másik 16 játszható kaland), amelyeket az általános `polytabletop-rpg` crate szolgál ki (kockák, karakterlapok, képességpróbák, kazamata-generátor, csataszimulátor, napló), valamint a programban még nem szereplő 93 miniatűr- és 95 gyűjthetőkártya-cím, mind bármely kiadó szabályai nélkül. A katalógus tizenkét kategóriájának mindegyike pontosan 100 különböző bejegyzést tartalmaz. A kategóriák és a játékok száma a `polytabletop-games/src/lib.rs` alapján:
 
 | Kategória | Játékok | Példák (azonosítók) |
 |---|---|---|
-| Kártya | 45 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda` |
-| Absztrakt | 40 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane` |
+| Kártya | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
+| Absztrakt | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
 | Stratégia | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, valamint modern játékok eredeti változatai |
-| Társasági (party) | 16 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Kocka | 11 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut` |
-| Klasszikus | 9 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo` |
-| Családi | 7 | `orasel`, `roata`, `turnul`, `zidurile` |
+| Kooperatív | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
+| Társasági (party) | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
+| Kocka | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
+| Klasszikus | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
+| Családi | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
 | Miniatúrák | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Kooperatív | 6 | `artificii`, `focare`, `strajile`, `cripta` |
 | Gyűjthető kártyák (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
 | Következtetés | 1 | `conac` |
 | Szójáték | 1 | `litere` |
-| **Összesen** | **171** | |
+| **Összesen** | **240** | |
 
-A katalógus 477 bejegyzése saját címmel ellátott eredeti változatként van tervezve (például Twister, Campionii Distracției, Turistico), 263 pedig nyilvános szabályú hagyományos játékként. Minden játék rövid szabályai a [docs/JOCURI.md](docs/JOCURI.md) fájlban, a generált katalógus a [docs/CATALOG.md](docs/CATALOG.md) fájlban található. A grafikus felületen 36 játéknak van megrajzolt táblája kattintással tehető lépésekkel (sakk, dáma, reversi, négy egy sorban, gomoku, go, malom, xiangqi, shogi, backgammon, ludo és pachisi, hex, a mancala család és továbbiak); a többi játék szövegként jelenik meg, a szabályos lépések gombokként.
+A katalógus 475 bejegyzése saját címmel ellátott eredeti változatként van tervezve (például Twister, Campionii Distracției, Turistico), 214 pedig nyilvános szabályú hagyományos játékként. Minden játék rövid szabályai a [docs/JOCURI.md](docs/JOCURI.md) fájlban, a generált katalógus a [docs/CATALOG.md](docs/CATALOG.md) fájlban található. A grafikus felületen 36 játéknak van megrajzolt táblája kattintással tehető lépésekkel (sakk, dáma, reversi, négy egy sorban, gomoku, go, malom, xiangqi, shogi, backgammon, ludo és pachisi, hex, a mancala család és továbbiak); a többi játék szövegként jelenik meg, a szabályos lépések gombokként.
 
 ## Nyelvek
 
-A PolyTabletop 8 nyelven szól: English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. A parancssori és a grafikus felület mind a 8 nyelvre le van fordítva. A nyelvet a `--lang xx` választja ki, utána a `POLYTABLETOP_LANG`, majd a rendszer `LANG` értéke, különben a román. Mind a 171 játék címe és szabálya le van fordítva a 8 nyelvre (`polytabletop-games/data/i18n/`, román tartalék szöveggel, ha egy bejegyzés hiányzik); a játékokon belüli szöveg (kártyák, tartalombankok, üzenetek) még román. A lépésjelölés (`e2e4`, `c3-d4`) soha nem változik. Részletek: [docs/I18N.md](docs/I18N.md).
+A PolyTabletop 8 nyelven szól: English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. A parancssori és a grafikus felület mind a 8 nyelvre le van fordítva. A nyelvet a `--lang xx` választja ki, utána a `POLYTABLETOP_LANG`, majd a rendszer `LANG` értéke, különben a román. Mind a 240 játék címe és szabálya le van fordítva a 8 nyelvre (`polytabletop-games/data/i18n/`, román tartalék szöveggel, ha egy bejegyzés hiányzik); a játékokon belüli szöveg (kártyák, tartalombankok, üzenetek) még román. A lépésjelölés (`e2e4`, `c3-d4`) soha nem változik. Részletek: [docs/I18N.md](docs/I18N.md).
 
 ## Mesterséges intelligencia
 
@@ -70,7 +70,7 @@ A `polytabletop host ID` a 7878-as porton (vagy a `--port P` szerinti porton) v�
 
 ## Szabályoldalak
 
-Minden játszható játéknak van oldala a céllal, az előkészítéssel, a kör felépítésével, a lépések szintaxisával, a különleges szabályokkal, a pontozással, a játék végével, az MI-re vonatkozó megjegyzésekkel és a hagyományos szabályoktól való eltérésekkel: [docs/reguli/INDEX.md](docs/reguli/INDEX.md) (1–86. játék) és [docs/reguli/INDEX2.md](docs/reguli/INDEX2.md) (87–171. játék). Az oldalak románul vannak.
+Minden játszható játéknak van oldala a céllal, az előkészítéssel, a kör felépítésével, a lépések szintaxisával, a különleges szabályokkal, a pontozással, a játék végével, az MI-re vonatkozó megjegyzésekkel és a hagyományos szabályoktól való eltérésekkel: [docs/reguli/INDEX.md](docs/reguli/INDEX.md) (1–120. játék) és [docs/reguli/INDEX2.md](docs/reguli/INDEX2.md) (121–240. játék). Az oldalak románul vannak.
 
 ## Felépítés
 

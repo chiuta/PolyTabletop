@@ -2,17 +2,17 @@
 
 # **PolyTabletop**
 
-Version: 0.9.1 · Last updated: 2026-11-26
+Version: 0.9.2 · Last updated: 2026-11-26
 
 ## De quoi s'agit-il
 
-PolyTabletop est une collection clean-room de jeux de société écrite en Rust : 171 jeux jouables contre l'ordinateur, dans le terminal ou dans une fenêtre graphique, avec en plus le mode « à deux sur le même poste » (hot-seat) et le jeu en réseau à deux. On y trouve des classiques abstraits, des jeux de cartes et de dés, des variantes originales de mécaniques modernes sous des noms propres, des jeux coopératifs avec un partenaire IA, des jeux à rôles cachés où des robots complètent la table, des jeux d'ambiance et de mots, ainsi que des moteurs de figurines et de cartes à collectionner avec des cartes originales. Le moteur et les jeux n'ont aucune dépendance externe ; seule l'interface graphique (`polytabletop-gui`) utilise `eframe`/egui. Le catalogue suit 1200 jeux cibles.
+PolyTabletop est une collection clean-room de jeux de société écrite en Rust : 240 jeux jouables contre l'ordinateur, dans le terminal ou dans une fenêtre graphique, avec en plus le mode « à deux sur le même poste » (hot-seat) et le jeu en réseau à deux. On y trouve des classiques abstraits, des jeux de cartes et de dés, des variantes originales de mécaniques modernes sous des noms propres, des jeux coopératifs avec un partenaire IA, des jeux à rôles cachés où des robots complètent la table, des jeux d'ambiance et de mots, ainsi que des moteurs de figurines et de cartes à collectionner avec des cartes originales. Le moteur et les jeux n'ont aucune dépendance externe ; seule l'interface graphique (`polytabletop-gui`) utilise `eframe`/egui. Le catalogue suit 1200 jeux cibles.
 
 Page de présentation : <https://polytabletop.chiuta.ro>. Guide d'installation court : [docs/INSTALL.fr.md](docs/INSTALL.fr.md) ([English](docs/INSTALL.en.md) · [Română](docs/INSTALL.ro.md) · [Italiano](docs/INSTALL.it.md) · [Español](docs/INSTALL.es.md) · [Português](docs/INSTALL.pt.md) · [Deutsch](docs/INSTALL.de.md) · [Magyar](docs/INSTALL.hu.md)).
 
 ## Utilisation
 
-- Liste et catalogue : `polytabletop list` affiche les 171 jeux jouables avec leurs règles en bref ; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` donne l'état des 1200 entrées du catalogue.
+- Liste et catalogue : `polytabletop list` affiche les 240 jeux jouables avec leurs règles en bref ; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` donne l'état des 1200 entrées du catalogue.
 - Jouer : `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. `--you one` (par défaut) vous fait Joueur 1, `two` Joueur 2, `both` est le mode hot-seat sur un seul clavier, `none` laisse l'ordinateur jouer les deux camps. `--seed N` rend la distribution des cartes et les dés reproductibles ; `--record FICHIER` enregistre une transcription.
 - En partie : saisissez le coup exactement comme `?` le liste (par exemple `e2e4`, `c3xe5`, `d6`), `?` = coups légaux, `hint` = suggestion de l'IA, `q` = quitter.
 - IA contre IA : `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (voir [docs/ARENA.md](docs/ARENA.md)).
@@ -33,29 +33,29 @@ cargo build --release
 
 ## Jeux
 
-171 jeux sont jouables dès maintenant, dans le terminal et dans l'interface graphique ; le catalogue compte 1200 entrées (`polytabletop catalog` se termine par : implémentées 172, jeux traditionnels prévus 263, variantes propres prévues 477, boîte à outils générique 288). Les 288 entrées « boîte à outils » sont les 100 systèmes de jeu de rôle, servis par le crate générique `polytabletop-rpg` (dés, fiches, tests de compétence, générateur de donjon, simulateur de batailles, journal), plus les 93 titres de figurines et 95 de cartes à collectionner pas encore dans le programme, tous sans les règles d'aucun éditeur. Chacune des douze catégories du catalogue compte exactement 100 entrées distinctes. Catégories et nombre de jeux, d'après `polytabletop-games/src/lib.rs` :
+240 jeux sont jouables dès maintenant, dans le terminal et dans l'interface graphique ; le catalogue compte 1200 entrées (`polytabletop catalog` se termine par : implémentées 239, jeux traditionnels prévus 214, variantes propres prévues 475, boîte à outils générique 272). Les 272 entrées « boîte à outils » sont les 84 systèmes de jeu de rôle (les 16 autres sont des aventures jouables), servis par le crate générique `polytabletop-rpg` (dés, fiches, tests de compétence, générateur de donjon, simulateur de batailles, journal), plus les 93 titres de figurines et 95 de cartes à collectionner pas encore dans le programme, tous sans les règles d'aucun éditeur. Chacune des douze catégories du catalogue compte exactement 100 entrées distinctes. Catégories et nombre de jeux, d'après `polytabletop-games/src/lib.rs` :
 
 | Catégorie | Jeux | Exemples (identifiants) |
 |---|---|---|
-| Cartes | 45 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda` |
-| Abstrait | 40 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane` |
+| Cartes | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
+| Abstrait | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
 | Stratégie | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, ainsi que des variantes originales de jeux modernes |
-| Ambiance (party) | 16 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Dés | 11 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut` |
-| Classique | 9 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo` |
-| Famille | 7 | `orasel`, `roata`, `turnul`, `zidurile` |
+| Coopératif | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
+| Ambiance (party) | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
+| Dés | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
+| Classique | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
+| Famille | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
 | Figurines | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Coopératif | 6 | `artificii`, `focare`, `strajile`, `cripta` |
 | Cartes à collectionner (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
 | Déduction | 1 | `conac` |
 | Mots | 1 | `litere` |
-| **Total** | **171** | |
+| **Total** | **240** | |
 
-477 entrées du catalogue sont prévues comme variantes originales sous leur propre titre (par exemple Twister, Campionii Distracției, Turistico) et 263 comme jeux traditionnels aux règles publiques. Les règles abrégées de chaque jeu figurent dans [docs/JOCURI.md](docs/JOCURI.md), le catalogue généré dans [docs/CATALOG.md](docs/CATALOG.md). Dans l'interface graphique, 36 jeux ont un plateau dessiné avec des coups au clic (échecs, dames, reversi, puissance quatre, gomoku, go, moulin, xiangqi, shogi, backgammon, ludo et pachisi, hex, la famille mancala et d'autres) ; les autres jeux s'affichent en texte, leurs coups légaux étant proposés comme boutons.
+475 entrées du catalogue sont prévues comme variantes originales sous leur propre titre (par exemple Twister, Campionii Distracției, Turistico) et 214 comme jeux traditionnels aux règles publiques. Les règles abrégées de chaque jeu figurent dans [docs/JOCURI.md](docs/JOCURI.md), le catalogue généré dans [docs/CATALOG.md](docs/CATALOG.md). Dans l'interface graphique, 36 jeux ont un plateau dessiné avec des coups au clic (échecs, dames, reversi, puissance quatre, gomoku, go, moulin, xiangqi, shogi, backgammon, ludo et pachisi, hex, la famille mancala et d'autres) ; les autres jeux s'affichent en texte, leurs coups légaux étant proposés comme boutons.
 
 ## Langues
 
-PolyTabletop parle 8 langues : English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. Les interfaces en ligne de commande et graphique sont traduites dans les 8. La langue est choisie par `--lang xx`, puis `POLYTABLETOP_LANG`, puis le `LANG` du système, sinon le roumain. Les titres et les règles des 171 jeux sont traduits dans les 8 langues (`polytabletop-games/data/i18n/`, avec repli sur le texte roumain si une entrée manque) ; le texte à l'intérieur des jeux (cartes, banques de contenu, invites) est encore en roumain. La notation des coups (`e2e4`, `c3-d4`) ne change jamais. Détails : [docs/I18N.md](docs/I18N.md).
+PolyTabletop parle 8 langues : English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. Les interfaces en ligne de commande et graphique sont traduites dans les 8. La langue est choisie par `--lang xx`, puis `POLYTABLETOP_LANG`, puis le `LANG` du système, sinon le roumain. Les titres et les règles des 240 jeux sont traduits dans les 8 langues (`polytabletop-games/data/i18n/`, avec repli sur le texte roumain si une entrée manque) ; le texte à l'intérieur des jeux (cartes, banques de contenu, invites) est encore en roumain. La notation des coups (`e2e4`, `c3-d4`) ne change jamais. Détails : [docs/I18N.md](docs/I18N.md).
 
 ## IA
 
@@ -70,7 +70,7 @@ PolyTabletop parle 8 langues : English, Română, Français, Italiano, Español,
 
 ## Pages de règles
 
-Chaque jeu jouable a une page avec le but, la mise en place, le déroulement d'un tour, la syntaxe des coups, les règles spéciales, le décompte des points, la fin de partie, des notes sur l'IA et les différences avec les règles traditionnelles : [docs/reguli/INDEX.md](docs/reguli/INDEX.md) (jeux 1 à 86) et [docs/reguli/INDEX2.md](docs/reguli/INDEX2.md) (jeux 87 à 171). Les pages sont en roumain.
+Chaque jeu jouable a une page avec le but, la mise en place, le déroulement d'un tour, la syntaxe des coups, les règles spéciales, le décompte des points, la fin de partie, des notes sur l'IA et les différences avec les règles traditionnelles : [docs/reguli/INDEX.md](docs/reguli/INDEX.md) (jeux 1 à 120) et [docs/reguli/INDEX2.md](docs/reguli/INDEX2.md) (jeux 121 à 240). Les pages sont en roumain.
 
 ## Architecture
 

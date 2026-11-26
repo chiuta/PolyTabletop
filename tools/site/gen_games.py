@@ -93,7 +93,8 @@ for gid, ro, cat in games:
         if t[lg] != t['en']:
             d[lg] = t[lg]
     out.append(d)
-assert len(out) == 171, len(out)
+N_GAMES = len(out)
+assert N_GAMES >= 240, N_GAMES
 js = json.dumps(out, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 tpl = open(f'{root}/tools/site/template.html', encoding='utf8').read()
 assert '/*GAMES_JSON*/[]' in tpl
@@ -123,5 +124,6 @@ note = '<p class="mut" data-i18n="idx_media"></p>' if has_media else ''
 html = (tpl.replace('<!--RK_CAT_TABS-->', ctabs).replace('<!--RK_CAT_PANELS-->', cpanels).replace('/*GAMES_JSON*/[]', js).replace('<!--HERO_SVG-->', hero_svg())
         .replace('/*RANK_JSON*/{}', J(RANK)).replace('/*ORI_JSON*/{}', J(ori['origins'])).replace('/*OBS_JSON*/{}', J(ori['notes']))
         .replace('/*TX_JSON*/{}', J(TX)).replace('/*RANK_JS*/', rkjs).replace('<!--MEDIA_NOTE-->', note))
+html = html.replace('__N__', str(N_GAMES))
 open(f'{root}/docs/index.html', 'w', encoding='utf8').write(html)
 print('jocuri', len(out), 'titluri din TSV', fromtsv, 'dimensiune', len(html.encode('utf8')), 'media', has_media)

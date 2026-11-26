@@ -11,6 +11,8 @@
 
 mod board;
 mod capture;
+mod cards;
+mod cards_ui;
 mod compose;
 mod draw;
 mod gui_i18n;
@@ -20,6 +22,7 @@ mod menu;
 mod selftest;
 mod session;
 mod settings;
+mod theme;
 
 use board::{hit, kind_of, last_cells, layout, Board};
 use compose::Click;
@@ -453,6 +456,7 @@ impl App {
         let kind = parsed.as_ref().map(|b| b.kind);
 
         let mut chosen: Option<String> = None;
+        let mut cards_handle = false;
         let mut undo = false;
         if let Some(b) = &parsed {
             let th = Theme { dark: self.dark };
@@ -499,11 +503,35 @@ impl App {
                 ui.label(egui::RichText::new(line).monospace());
             }
         } else {
+            // cărți / zaruri / domino desenate (doar când jetoanele sunt recunoscute sigur)
+            let view = cards_ui::analyze(id, &render, &legal);
+            let drawn = view.is_some();
+            let handles = view.as_ref().is_some_and(|v| v.handles_actions());
             egui::ScrollArea::vertical()
-                .max_height((ui.available_height() - 220.0).max(120.0))
+                .max_height(
+                    (ui.available_height()
+                        - if handles {
+                            130.0
+                        } else if drawn {
+                            200.0
+                        } else {
+                            220.0
+                        })
+                    .max(120.0),
+                )
                 .show(ui, |ui| {
-                    ui.label(egui::RichText::new(&render).monospace().size(16.0));
+                    if let Some(v) = &view {
+                        if let Some(m) = cards_ui::show(ui, v, my_turn && over.is_none()) {
+                            chosen = Some(m);
+                        }
+                    }
+                    ui.label(egui::RichText::new(&render).monospace().size(if drawn {
+                        13.0
+                    } else {
+                        16.0
+                    }));
                 });
+            cards_handle = view.is_some_and(|v| v.handles_actions());
         }
 
         match over {
@@ -544,6 +572,8 @@ impl App {
                                 }
                             });
                         }
+                    } else if cards_handle {
+                        // mutările sunt desenate ca cărți / zaruri
                     } else if legal.len() == 1 {
                         if let Some(m) = Self::big_buttons(ui, &legal, tr("forced")) {
                             chosen = Some(m);
@@ -566,7 +596,7 @@ impl App {
                         self.hint();
                     }
                 });
-                if parsed.is_none() && legal.len() > 6 && legal.len() <= 60 {
+                if parsed.is_none() && !cards_handle && legal.len() > 6 && legal.len() <= 60 {
                     ui.separator();
                     ui.label(tr("legal_moves"));
                     ui.horizontal_wrapped(|ui| {
@@ -613,15 +643,14 @@ impl eframe::App for App {
                 .send_viewport_cmd(egui::ViewportCommand::Title(t.clone()));
             self.title = t;
         }
-        ui.ctx().set_visuals(if self.dark {
-            egui::Visuals::dark()
-        } else {
-            egui::Visuals::light()
-        });
+        theme::apply(ui.ctx(), self.dark);
         egui::Panel::top("menubar").show(ui, |ui| self.menu_bar(ui));
         egui::Panel::left("games").show(ui, |ui| self.left_panel(ui));
         egui::Panel::right("log").show(ui, |ui| self.right_panel(ui));
-        egui::CentralPanel::default().show(ui, |ui| self.center(ui));
+        let center = egui::Frame::central_panel(ui.style()).fill(theme::palette(self.dark).bg);
+        egui::CentralPanel::default()
+            .frame(center)
+            .show(ui, |ui| self.center(ui));
     }
 }
 
@@ -656,6 +685,9 @@ fn main() -> eframe::Result<()> {
     eframe::run_native(
         APP_NAME,
         eframe::NativeOptions::default(),
-        Box::new(|_cc| Ok(Box::new(App::new()))),
+        Box::new(|cc| {
+            theme::install_fonts(&cc.egui_ctx);
+            Ok(Box::new(App::new()))
+        }),
     )
 }

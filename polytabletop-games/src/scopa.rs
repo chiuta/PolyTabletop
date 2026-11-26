@@ -17,6 +17,13 @@
 //!   culoare lipsă = 0) și 1 punct pe scopa. Meciul se joacă până la 11 puncte
 //!   (la egalitate peste 11 se mai joacă o rundă).
 //!
+//! **Chkobba** (Tunisia / Algeria) folosește același motor (`Rules::Chkobba`): aceleași
+//! capturi, aceeași golire a mesei și același pachet de 40 de cărți (1–7, 8 = damă,
+//! 9 = valet, 10 = rege); diferă punctajul rundei: *bermila* (cele mai multe de 7; la
+//! egalitate 2–2, cele mai multe de 6; dacă și acelea sunt egale, nimeni) ia locul
+//! primierei, iar *haya* (7 de denari = settebello) valorează tot un punct. Un punct și
+//! pentru *chkobba* (golirea mesei, nu la ultima carte a rundei).
+//!
 //! Informație ascunsă: vezi `cards52.rs`. Cărțile dintr-o nouă împărțire se dau
 //! într-o mutare separată, deci `evaluate` nu vede viitorul. Nu se aplică regula
 //! de re-împărțire pentru trei sau mai mulți regi pe masă.
@@ -89,8 +96,16 @@ enum Phase {
     RoundOver,
 }
 
+/// Varianta jucată cu acest motor.
+#[derive(Clone, Copy, PartialEq, Eq, Debug)]
+pub enum Rules {
+    Scopa,
+    Chkobba,
+}
+
 #[derive(Clone)]
 pub struct Scopa {
+    rules: Rules,
     rng: Rng,
     viewer: Viewer,
     stock: Vec<u8>,
@@ -119,7 +134,17 @@ impl Scopa {
     }
 
     pub fn with_seed(seed: u64) -> Self {
+        Self::with_rules(seed, Rules::Scopa)
+    }
+
+    /// Chkobba (Tunisia), seed din ceas.
+    pub fn chkobba() -> Self {
+        Self::with_rules(Rng::from_clock().next_u64(), Rules::Chkobba)
+    }
+
+    pub fn with_rules(seed: u64, rules: Rules) -> Self {
         let mut g = Scopa {
+            rules,
             rng: Rng::new(seed),
             viewer: Viewer::Fixed(Player::One),
             stock: Vec::new(),
@@ -223,9 +248,23 @@ impl Scopa {
                 row[2] = 1;
             }
         }
-        let pr = [primiera(&self.piles[0]), primiera(&self.piles[1])];
-        if pr[0] != pr[1] {
-            r[usize::from(pr[1] > pr[0])][3] = 1;
+        if self.rules == Rules::Chkobba {
+            let cnt = |p: usize, v: u8| self.piles[p].iter().filter(|&&c| value(c) == v).count();
+            let (s0, s1) = (cnt(0, 7), cnt(1, 7));
+            let winner = if s0 != s1 {
+                Some(usize::from(s1 > s0))
+            } else {
+                let (x0, x1) = (cnt(0, 6), cnt(1, 6));
+                (x0 != x1).then(|| usize::from(x1 > x0))
+            };
+            if let Some(w) = winner {
+                r[w][3] = 1;
+            }
+        } else {
+            let pr = [primiera(&self.piles[0]), primiera(&self.piles[1])];
+            if pr[0] != pr[1] {
+                r[usize::from(pr[1] > pr[0])][3] = 1;
+            }
         }
         r[0][4] = self.scopas[0];
         r[1][4] = self.scopas[1];
@@ -359,7 +398,12 @@ impl Game for Scopa {
         s += (den(me) - den(o)) * 12;
         let sb = |q: usize| i32::from(self.piles[q].contains(&SETTEBELLO));
         s += (sb(me) - sb(o)) * 70;
-        s += (primiera(&self.piles[me]) as i32 - primiera(&self.piles[o]) as i32) * 2;
+        if self.rules == Rules::Chkobba {
+            let sev = |q: usize| self.piles[q].iter().filter(|&&c| value(c) == 7).count() as i32;
+            s += (sev(me) - sev(o)) * 25;
+        } else {
+            s += (primiera(&self.piles[me]) as i32 - primiera(&self.piles[o]) as i32) * 2;
+        }
         // cartea rămasă pe masă poate fi luată de adversar
         let sum: i32 = self.table.iter().map(|&c| value(c) as i32).sum();
         let exposed = if self.phase == Phase::Play && self.side != p {
@@ -384,8 +428,14 @@ impl Game for Scopa {
     fn render(&self) -> String {
         let mut s = String::new();
         s.push_str(&format!(
-            "Scopa — meci până la {TARGET}: J1 {} – J2 {}\n",
-            self.score[0], self.score[1]
+            "{} — meci până la {TARGET}: J1 {} – J2 {}\n",
+            if self.rules == Rules::Chkobba {
+                "Chkobba"
+            } else {
+                "Scopa"
+            },
+            self.score[0],
+            self.score[1]
         ));
         let mut t = self.table.clone();
         t.sort_unstable();
@@ -429,12 +479,27 @@ impl Game for Scopa {
             if self.phase == Phase::RoundOver {
                 for (i, x) in r.iter().enumerate() {
                     s.push_str(&format!(
-                        "Runda: J{} — carte {}, denari {}, settebello {}, primiera {}, scope {}\n",
+                        "Runda: J{} — carte {}, denari {}, {} {}, {} {}, {} {}\n",
                         i + 1,
                         x[0],
                         x[1],
+                        if self.rules == Rules::Chkobba {
+                            "haya"
+                        } else {
+                            "settebello"
+                        },
                         x[2],
+                        if self.rules == Rules::Chkobba {
+                            "bermila"
+                        } else {
+                            "primiera"
+                        },
                         x[3],
+                        if self.rules == Rules::Chkobba {
+                            "chkobba"
+                        } else {
+                            "scope"
+                        },
                         x[4]
                     ));
                 }
@@ -617,6 +682,45 @@ mod tests {
         g.piles[1] = (0..9).map(|i| bb(1 + i % 10)).collect();
         let r2 = g.round_points();
         assert_eq!(r2[0][0] + r2[1][0], 0);
+    }
+
+    #[test]
+    fn chkobba_bermila_counts_sevens_then_sixes() {
+        let mut g = Scopa::with_rules(1, Rules::Chkobba);
+        g.piles[0] = vec![d(7), cc(7), ss(7)];
+        g.piles[1] = vec![bb(7), d(1)];
+        let r = g.round_points();
+        assert_eq!(r[0][3], 1);
+        assert_eq!(r[1][3], 0);
+        // 2–2 la șapte: decid șasele
+        g.piles[0] = vec![d(7), cc(7), d(6), cc(6), ss(6)];
+        g.piles[1] = vec![ss(7), bb(7), bb(6)];
+        let r = g.round_points();
+        assert_eq!(r[0][3], 1);
+        // egal și la șase: nimeni
+        g.piles[0] = vec![d(7), cc(7), d(6)];
+        g.piles[1] = vec![ss(7), bb(7), bb(6)];
+        let r = g.round_points();
+        assert_eq!(r[0][3] + r[1][3], 0);
+        // haya = 7 de denari
+        assert_eq!(r[0][2], 1);
+    }
+
+    #[test]
+    fn chkobba_matches_finish_and_render_names_it() {
+        for seed in 1..=8u64 {
+            let mut g = Scopa::with_rules(seed, Rules::Chkobba);
+            assert!(Game::render(&g).starts_with("Chkobba"));
+            let mut rng = Rng::new(seed ^ 0x33);
+            let mut n = 0;
+            while g.outcome().is_none() {
+                let m = g.legal_moves();
+                assert!(!m.is_empty());
+                g.apply(&m[rng.below(m.len())]);
+                n += 1;
+                assert!(n < 20000);
+            }
+        }
     }
 
     #[test]
