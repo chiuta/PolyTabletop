@@ -2,7 +2,7 @@
 
 Categorie: Familie. Doi jucători (Jucătorul 1 contra Jucătorului 2 sau calculatorului). Pornire: `polytabletop play portret --seed 1`. Sursa implementării: `polytabletop-games/src/portret.rs`.
 
-> Rezumat din `polytabletop list`: Variantă originală: 24 de personaje inventate cu 14 trăsături. Întrebi (intreb ochelari), adversarul răspunde corect prin mutare forțată (raspund da/nu); ghicești (ghicesc Matei) și apoi verdict corect/gresit. Ghicit greșit = pierzi.
+> Rezumat din `polytabletop list`: Variantă originală: 24 de personaje inventate cu 14 trăsături. Întrebi (intreb ochelari), adversarul răspunde corect prin mutare forțată (raspund da/nu); ghicești (ghicesc Matei), iar adversarul dă verdictul printr-o mutare forțată (verdict corect / verdict gresit). Ghicit greșit = pierzi.
 
 ## Scop
 

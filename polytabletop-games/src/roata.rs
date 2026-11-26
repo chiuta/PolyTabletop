@@ -4,7 +4,8 @@
 //!   salariu mare) și **Ucenicie** (plecare rapidă, salariu mic). Drumul se unește, are o a
 //!   doua bifurcație (**Afacere** riscantă sau **Salariu stabil**) și se termină la Pensie.
 //! * Roata (1–6) este rotită automat și afișată în `render()`; mutarea este `avansez` (cu
-//!   alegerea ramurii: `avansez stanga` / `avansez dreapta` când drumul se desparte pe parcurs).
+//!   alegerea ramurii: `avansez facultate` / `avansez ucenicie`, apoi `avansez afacere` /
+//!   `avansez salariu`, când drumul se desparte pe parcurs).
 //!   Pe pătratele **Casă** poți cumpăra casa (`... cumpar` / `... nu`), dacă ai banii.
 //! * Efectele de salariu (**Plată**, **Angajare**) și taxele de școlarizare se aplică de câte ori
 //!   treci peste ele; celelalte (cheltuieli, premii, copii, casă) doar când te oprești pe ele.
@@ -445,6 +446,60 @@ mod tests {
             }
         }
         assert_eq!(b.iter().filter(|n| n.kind == Kind::Retire).count(), 1);
+    }
+
+    #[test]
+    fn rules_text_uses_real_move_labels() {
+        let rules = crate::playable()
+            .into_iter()
+            .find(|p| p.id == "roata")
+            .unwrap()
+            .rules;
+        // Etichetele din text (după `avansez `) trebuie să fie cele reale.
+        let in_rules: std::collections::BTreeSet<&str> = rules
+            .split(|c: char| !(c.is_alphanumeric() || c == ' '))
+            .filter_map(|s| s.trim().strip_prefix("avansez "))
+            .collect();
+        let mut seen = std::collections::BTreeSet::new();
+        for seed in 1..=40u64 {
+            let mut g = Roata::with_seed(seed);
+            while g.outcome().is_none() {
+                let m = polytabletop_core::GameObj::legal_moves(&g);
+                for t in &m {
+                    for w in t.split_whitespace().skip(1) {
+                        seen.insert(w.to_string());
+                    }
+                }
+                let pick = m
+                    .iter()
+                    .find(|t| t.contains("cumpar"))
+                    .unwrap_or(&m[(seed as usize) % m.len()])
+                    .clone();
+                polytabletop_core::GameObj::play(&mut g, &pick).unwrap();
+            }
+        }
+        // Pătratul Casă, cu bani: apare și `cumpar`.
+        let mut h = Roata::with_seed(1);
+        let house = h.board.iter().position(|n| n.kind == Kind::House).unwrap();
+        h.pos[0] = house - 1;
+        h.roll = 1;
+        h.money[0] = 100;
+        for t in polytabletop_core::GameObj::legal_moves(&h) {
+            for w in t.split_whitespace().skip(1) {
+                seen.insert(w.to_string());
+            }
+        }
+        for w in ["facultate", "ucenicie", "afacere", "salariu", "cumpar"] {
+            assert!(
+                seen.contains(w),
+                "eticheta {w} nu apare în mutări: {seen:?}"
+            );
+            assert!(in_rules.contains(w), "{w} lipsește din rules: {in_rules:?}");
+        }
+        assert!(!rules.contains("stanga") && !rules.contains("dreapta"));
+        for w in &in_rules {
+            assert!(seen.contains(*w), "token inexistent: {w}");
+        }
     }
 
     #[test]

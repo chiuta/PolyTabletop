@@ -1,7 +1,7 @@
 #!/usr/bin/env python3 -I
 """Generează objectul JSON cu jocurile și îl încorporează în docs/index.html (din template.html).
 Rulare: python3 -I tools/site/gen_games.py   (din rădăcina depozitului)"""
-import re, json, glob, os
+import re, json, glob, os, sys
 root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 src = open(f'{root}/polytabletop-games/src/lib.rs', encoding='utf8').read()
 src = src[src.index('pub fn playable()'):]
@@ -97,5 +97,22 @@ assert len(out) == 171, len(out)
 js = json.dumps(out, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 tpl = open(f'{root}/tools/site/template.html', encoding='utf8').read()
 assert '/*GAMES_JSON*/[]' in tpl
-open(f'{root}/docs/index.html', 'w', encoding='utf8').write(tpl.replace('/*GAMES_JSON*/[]', js).replace('<!--HERO_SVG-->', hero_svg()))
-print('jocuri', len(out), 'titluri din TSV', fromtsv)
+sys.path.insert(0, f'{root}/tools/site')
+import ui_i18n
+def J(o):
+    return json.dumps(o, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+rk = json.load(open(f'{root}/tools/site/data/rankings.json', encoding='utf8'))
+ori = json.load(open(f'{root}/tools/site/data/origins.json', encoding='utf8'))
+RANK = {lid: [[x['r'], x['n'], x['c'], x['x'], x['s'], x['g']] for x in L] for lid, L in rk['lists'].items()}
+for L in RANK.values():
+    assert len(L) == 100
+PREF = ('cat_rpg', 'cat_kids', 'nav_rank', 'rk_', 'th_', 'st_', 'stl_', 'idx_media')
+TX = {l: {k: v for k, v in d.items() if k.startswith(PREF)} for l, d in ui_i18n.UI.items()}
+rkjs = open(f'{root}/tools/site/rank.js', encoding='utf8').read()
+has_media = bool(glob.glob(f'{root}/docs/media/*/*.png') or glob.glob(f'{root}/docs/media/*/*.mp4'))
+note = '<p class="mut" data-i18n="idx_media"></p>' if has_media else ''
+html = (tpl.replace('/*GAMES_JSON*/[]', js).replace('<!--HERO_SVG-->', hero_svg())
+        .replace('/*RANK_JSON*/{}', J(RANK)).replace('/*ORI_JSON*/{}', J(ori['origins'])).replace('/*OBS_JSON*/{}', J(ori['notes']))
+        .replace('/*TX_JSON*/{}', J(TX)).replace('/*RANK_JS*/', rkjs).replace('<!--MEDIA_NOTE-->', note))
+open(f'{root}/docs/index.html', 'w', encoding='utf8').write(html)
+print('jocuri', len(out), 'titluri din TSV', fromtsv, 'dimensiune', len(html.encode('utf8')), 'media', has_media)

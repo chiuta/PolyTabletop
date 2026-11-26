@@ -1,8 +1,8 @@
 # Catalogul (generat)
 
-171 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
+201 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (152)
+## Implementat (182)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -91,6 +91,10 @@
 | Candy Land | Copii | SUA | implementat |
 | Gomoku | Abstract | Japonia / China | implementat |
 | Reversi / Othello | Abstract | Marea Britanie | implementat |
+| Hex | Abstract | Danemarca / SUA | implementat |
+| Game of the Amazons (Amazoane) | Abstract | Argentina | implementat |
+| Lines of Action | Abstract | SUA | implementat |
+| Nim | Abstract | China / Europa | implementat |
 | Moara (Nine Men's Morris) | Abstract | Antic | implementat |
 | Mensch ärgere dich nicht / Ludo | Familie | Germania | implementat |
 | Caylus | Strategie | Franța | implementat |
@@ -138,6 +142,19 @@
 | Ganjifa | Cărți | India | implementat |
 | Chaupar | Clasic | India | implementat |
 | Dara | Abstract | Nigeria | implementat |
+| Fanorona | Abstract | Madagascar | implementat |
+| Bagh-Chal | Abstract | Nepal | implementat |
+| Surakarta | Abstract | Indonezia | implementat |
+| Hasami Shogi | Abstract | Japonia | implementat |
+| Coloane (dame în turnuri) | Abstract | Original | implementat |
+| Bile pe hexagoane | Abstract | Original | implementat |
+| Patru atribute | Abstract | Original | implementat |
+| Cupe încuibate | Abstract | Original | implementat |
+| Poliedre (duo) | Abstract | Original | implementat |
+| Konane | Abstract | Hawaii | implementat |
+| Coridor | Abstract | Original | implementat |
+| Drum de pietre | Abstract | Original | implementat |
+| Trei-pierde | Abstract | Original | implementat |
 | Morabaraba | Abstract | Africa de Sud | implementat |
 | Ayo (Ayoayo) | Abstract | Nigeria | implementat |
 | Trix | Cărți | Orientul Mijlociu | implementat |
@@ -146,8 +163,18 @@
 | Bingo | Clasic | America de Nord / Oceania | implementat |
 | Cribbage | Cărți | America de Nord | implementat |
 | Euchre | Cărți | America de Nord | implementat |
+| Hearts | Cărți | America de Nord / Europa | implementat |
+| Spades | Cărți | America de Nord | implementat |
+| Oh Hell | Cărți | Europa / America de Nord | implementat |
+| Whist | Cărți | Europa | implementat |
+| Puncte și căsuțe | Abstract | Global | implementat |
+| Străpungere | Abstract | Global | implementat |
+| Izolare | Abstract | Global | implementat |
+| Rotire în cinci | Abstract | Global | implementat |
 | Nu te supăra, frate (Ludo) | Familie | — | implementat |
 | Septica | Cărți | — | implementat |
+| Popa prostul | Cărți | — | implementat |
+| Treizeci și unu (31) | Cărți | — | implementat |
 | Macao | Cărți | — | implementat |
 | Tablanet | Cărți | — | implementat |
 | Șase-zeci și șase (66) | Cărți | — | implementat |
@@ -158,6 +185,9 @@
 | Cameleonul | Party | — | implementat |
 | Bătălia navală | Clasic | — | implementat |
 | Cine e? (Guess Who?) | Copii | — | implementat |
+| Cassino | Cărți | — | implementat |
+| Go Fish (Pescuit) | Cărți | — | implementat |
+| Poker de zaruri | Zaruri | — | implementat |
 
 ## Tradițional (0)
 

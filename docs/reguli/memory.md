@@ -1,4 +1,4 @@
-# Memory (perechi) (`memory`)
+# Perechi (joc de memorie) (`memory`)
 
 Categorie: Clasic. Doi jucători (Jucătorul 1 contra Jucătorului 2 sau calculatorului). Pornire: `polytabletop play memory --seed 1`. Sursa implementării: `polytabletop-games/src/memory.rs`.
 

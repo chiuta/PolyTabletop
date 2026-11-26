@@ -2,7 +2,7 @@
 
 # **PolyTabletop**
 
-Version: 0.9.0 · Last updated: 2026-11-26
+Version: 0.9.1 · Last updated: 2026-11-26
 
 ## Qué es
 
@@ -113,7 +113,7 @@ Se agradecen las contribuciones dentro de las reglas clean-room: véase [CONTRIB
 
 ## Licencia
 
-Declarada en `Cargo.toml` como `MIT OR Apache-2.0`. Copyright (c) 2026 Alexandru-Ionuț Chiuță (Alexio).
+Declarada en `Cargo.toml` como `MIT OR Apache-2.0`; textos completos en [LICENSE-MIT](LICENSE-MIT) y [LICENSE-APACHE](LICENSE-APACHE). Copyright (c) 2026 Alexandru-Ionuț Chiuță (Alexio).
 
 ## Créditos
 

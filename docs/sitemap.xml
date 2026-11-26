@@ -13,4 +13,2240 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/?lang=hu"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/"/>
   </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/index.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/index.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/index.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/index.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/index.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/index.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/index.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/index.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/index.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/index.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/chess.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/chess.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/chess.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/chess.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/chess.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/chess.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/chess.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/chess.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/chess.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/chess.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/draughts.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/draughts.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/draughts.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/draughts.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/draughts.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/draughts.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/draughts.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/draughts.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/draughts.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/draughts.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/reversi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/reversi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/reversi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/reversi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/reversi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/reversi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/reversi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/reversi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/reversi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/reversi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/connect4.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/connect4.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/connect4.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/connect4.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/connect4.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/connect4.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/connect4.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/connect4.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/connect4.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/connect4.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/gomoku.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/gomoku.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/gomoku.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/gomoku.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/gomoku.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/gomoku.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/gomoku.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/gomoku.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/gomoku.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/gomoku.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/hex.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/hex.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/hex.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/hex.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/hex.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/hex.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/hex.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/hex.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/hex.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/hex.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/amazoane.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/amazoane.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/amazoane.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/amazoane.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/amazoane.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/amazoane.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/amazoane.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/amazoane.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/amazoane.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/amazoane.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/linii.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/linii.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/linii.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/linii.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/linii.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/linii.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/linii.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/linii.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/linii.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/linii.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/nim.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/nim.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/nim.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/nim.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/nim.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/nim.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/nim.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/nim.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/nim.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/nim.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/morris.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/morris.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/morris.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/morris.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/morris.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/morris.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/morris.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/morris.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/morris.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/morris.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/mancala.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/mancala.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/mancala.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/mancala.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/mancala.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/mancala.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/mancala.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/mancala.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/mancala.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/mancala.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/go.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/go.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/go.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/go.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/go.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/go.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/go.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/go.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/go.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/go.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/xiangqi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/xiangqi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/xiangqi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/xiangqi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/xiangqi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/xiangqi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/xiangqi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/xiangqi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/xiangqi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/xiangqi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/shogi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/shogi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/shogi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/shogi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/shogi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/shogi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/shogi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/shogi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/shogi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/shogi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/dara.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/dara.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/dara.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/dara.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/dara.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/dara.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/dara.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/dara.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/dara.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/dara.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/morabaraba.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/morabaraba.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/morabaraba.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/morabaraba.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/morabaraba.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/morabaraba.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/morabaraba.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/morabaraba.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/morabaraba.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/morabaraba.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/sungka.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/sungka.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/sungka.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/sungka.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/sungka.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/sungka.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/sungka.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/sungka.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/sungka.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/sungka.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/makruk.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/makruk.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/makruk.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/makruk.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/makruk.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/makruk.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/makruk.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/makruk.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/makruk.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/makruk.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/janggi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/janggi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/janggi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/janggi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/janggi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/janggi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/janggi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/janggi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/janggi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/janggi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/popa.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/popa.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/popa.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/popa.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/popa.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/popa.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/popa.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/popa.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/popa.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/popa.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/pescuit.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/pescuit.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/pescuit.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/pescuit.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/pescuit.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/pescuit.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/pescuit.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/pescuit.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/pescuit.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/pescuit.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/treizeci1.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/treizeci1.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/treizeci1.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/treizeci1.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/treizeci1.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/treizeci1.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/treizeci1.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/treizeci1.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/treizeci1.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/treizeci1.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/casino.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/casino.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/casino.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/casino.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/casino.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/casino.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/casino.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/casino.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/casino.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/casino.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/zarpoker.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/zarpoker.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/zarpoker.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/zarpoker.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/zarpoker.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/zarpoker.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/zarpoker.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/zarpoker.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/zarpoker.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/zarpoker.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/septica.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/septica.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/septica.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/septica.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/septica.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/septica.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/septica.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/septica.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/septica.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/septica.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/macao.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/macao.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/macao.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/macao.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/macao.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/macao.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/macao.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/macao.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/macao.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/macao.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/domino.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/domino.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/domino.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/domino.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/domino.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/domino.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/domino.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/domino.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/domino.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/domino.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/backgammon.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/backgammon.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/backgammon.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/backgammon.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/backgammon.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/backgammon.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/backgammon.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/backgammon.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/backgammon.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/backgammon.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/ludo.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/ludo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/ludo.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/ludo.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/ludo.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/ludo.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/ludo.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/ludo.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/ludo.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/ludo.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/snakes.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/snakes.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/snakes.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/snakes.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/snakes.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/snakes.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/snakes.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/snakes.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/snakes.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/snakes.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/barbut.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/barbut.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/barbut.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/barbut.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/barbut.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/barbut.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/barbut.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/barbut.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/barbut.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/barbut.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/66.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/66.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/66.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/66.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/66.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/66.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/66.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/66.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/66.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/66.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/blackjack.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/blackjack.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/blackjack.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/blackjack.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/blackjack.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/blackjack.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/blackjack.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/blackjack.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/blackjack.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/blackjack.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/rummy.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/rummy.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/rummy.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/rummy.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/rummy.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/rummy.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/rummy.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/rummy.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/rummy.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/rummy.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/poker.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/poker.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/poker.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/poker.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/poker.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/poker.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/poker.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/poker.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/poker.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/poker.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tcg.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tcg.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tcg.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tcg.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tcg.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tcg.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tcg.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tcg.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tcg.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tcg.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/miniaturi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/miniaturi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/miniaturi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/miniaturi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/miniaturi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/miniaturi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/miniaturi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/miniaturi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/miniaturi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/miniaturi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/mahjong.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/mahjong.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/mahjong.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/mahjong.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/mahjong.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/mahjong.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/mahjong.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/mahjong.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/mahjong.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/mahjong.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/hanafuda.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/hanafuda.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/hanafuda.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/hanafuda.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/hanafuda.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/hanafuda.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/hanafuda.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/hanafuda.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/hanafuda.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/hanafuda.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/hwatu.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/hwatu.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/hwatu.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/hwatu.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/hwatu.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/hwatu.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/hwatu.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/hwatu.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/hwatu.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/hwatu.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/karuta.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/karuta.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/karuta.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/karuta.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/karuta.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/karuta.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/karuta.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/karuta.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/karuta.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/karuta.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/doudizhu.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/doudizhu.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/doudizhu.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/doudizhu.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/doudizhu.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/doudizhu.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/doudizhu.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/doudizhu.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/doudizhu.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/doudizhu.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/paigow.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/paigow.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/paigow.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/paigow.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/paigow.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/paigow.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/paigow.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/paigow.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/paigow.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/paigow.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/teenpatti.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/teenpatti.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/teenpatti.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/teenpatti.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/teenpatti.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/teenpatti.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/teenpatti.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/teenpatti.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/teenpatti.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/teenpatti.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/ganjifa.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/ganjifa.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/ganjifa.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/ganjifa.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/ganjifa.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/ganjifa.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/ganjifa.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/ganjifa.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/ganjifa.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/ganjifa.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/yut.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/yut.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/yut.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/yut.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/yut.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/yut.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/yut.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/yut.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/yut.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/yut.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/sugoroku.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/sugoroku.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/sugoroku.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/sugoroku.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/sugoroku.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/sugoroku.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/sugoroku.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/sugoroku.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/sugoroku.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/sugoroku.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/chaupar.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/chaupar.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/chaupar.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/chaupar.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/chaupar.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/chaupar.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/chaupar.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/chaupar.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/chaupar.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/chaupar.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/culori.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/culori.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/culori.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/culori.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/culori.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/culori.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/culori.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/culori.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/culori.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/culori.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/mosii.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/mosii.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/mosii.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/mosii.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/mosii.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/mosii.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/mosii.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/mosii.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/mosii.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/mosii.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/magistrale.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/magistrale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/magistrale.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/magistrale.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/magistrale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/magistrale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/magistrale.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/magistrale.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/magistrale.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/magistrale.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/conac.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/conac.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/conac.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/conac.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/conac.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/conac.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/conac.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/conac.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/conac.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/conac.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/insula.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/insula.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/insula.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/insula.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/insula.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/insula.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/insula.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/insula.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/insula.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/insula.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/mozaic.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/mozaic.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/mozaic.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/mozaic.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/mozaic.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/mozaic.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/mozaic.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/mozaic.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/mozaic.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/mozaic.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/litere.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/litere.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/litere.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/litere.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/litere.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/litere.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/litere.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/litere.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/litere.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/litere.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/faianta.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/faianta.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/faianta.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/faianta.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/faianta.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/faianta.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/faianta.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/faianta.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/faianta.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/faianta.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/bresla.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/bresla.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/bresla.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/bresla.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/bresla.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/bresla.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/bresla.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/bresla.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/bresla.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/bresla.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/cristale.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/cristale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/cristale.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/cristale.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/cristale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/cristale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/cristale.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/cristale.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/cristale.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/cristale.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/curieri.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/curieri.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/curieri.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/curieri.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/curieri.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/curieri.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/curieri.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/curieri.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/curieri.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/curieri.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/fitil.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/fitil.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/fitil.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/fitil.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/fitil.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/fitil.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/fitil.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/fitil.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/fitil.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/fitil.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/bufet.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/bufet.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/bufet.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/bufet.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/bufet.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/bufet.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/bufet.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/bufet.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/bufet.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/bufet.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/expeditii.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/expeditii.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/expeditii.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/expeditii.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/expeditii.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/expeditii.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/expeditii.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/expeditii.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/expeditii.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/expeditii.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/artificii.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/artificii.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/artificii.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/artificii.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/artificii.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/artificii.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/artificii.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/artificii.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/artificii.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/artificii.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/orasel.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/orasel.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/orasel.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/orasel.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/orasel.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/orasel.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/orasel.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/orasel.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/orasel.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/orasel.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/capcana.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/capcana.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/capcana.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/capcana.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/capcana.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/capcana.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/capcana.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/capcana.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/capcana.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/capcana.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/congkak.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/congkak.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/congkak.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/congkak.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/congkak.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/congkak.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/congkak.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/congkak.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/congkak.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/congkak.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/pallanguzhi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/ayo.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/ayo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/ayo.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/ayo.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/ayo.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/ayo.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/ayo.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/ayo.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/ayo.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/ayo.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/battleship.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/battleship.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/battleship.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/battleship.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/battleship.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/battleship.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/battleship.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/battleship.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/battleship.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/battleship.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/mastermind.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/mastermind.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/mastermind.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/mastermind.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/mastermind.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/mastermind.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/mastermind.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/mastermind.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/mastermind.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/mastermind.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/memory.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/memory.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/memory.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/memory.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/memory.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/memory.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/memory.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/memory.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/memory.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/memory.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/bingo.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/bingo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/bingo.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/bingo.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/bingo.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/bingo.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/bingo.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/bingo.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/bingo.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/bingo.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/loteria.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/loteria.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/loteria.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/loteria.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/loteria.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/loteria.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/loteria.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/loteria.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/loteria.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/loteria.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/pachisi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/pachisi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/pachisi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/pachisi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/pachisi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/pachisi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/pachisi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/pachisi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/pachisi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/pachisi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/carrom.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/carrom.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/carrom.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/carrom.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/carrom.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/carrom.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/carrom.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/carrom.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/carrom.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/carrom.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/arhipelag.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/arhipelag.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/arhipelag.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/arhipelag.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/arhipelag.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/arhipelag.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/arhipelag.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/arhipelag.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/arhipelag.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/arhipelag.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/roata.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/roata.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/roata.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/roata.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/roata.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/roata.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/roata.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/roata.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/roata.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/roata.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/zaruri5.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/zaruri5.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/zaruri5.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/zaruri5.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/zaruri5.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/zaruri5.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/zaruri5.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/zaruri5.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/zaruri5.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/zaruri5.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/placute.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/placute.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/placute.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/placute.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/placute.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/placute.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/placute.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/placute.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/placute.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/placute.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/turnul.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/turnul.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/turnul.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/turnul.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/turnul.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/turnul.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/turnul.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/turnul.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/turnul.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/turnul.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/cunoastere.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/cunoastere.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/cunoastere.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/cunoastere.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/cunoastere.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/cunoastere.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/cunoastere.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/cunoastere.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/cunoastere.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/cunoastere.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/ceata.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/ceata.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/ceata.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/ceata.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/ceata.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/ceata.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/ceata.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/ceata.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/ceata.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/ceata.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/umbra.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/umbra.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/umbra.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/umbra.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/umbra.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/umbra.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/umbra.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/umbra.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/umbra.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/umbra.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/zidurile.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/zidurile.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/zidurile.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/zidurile.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/zidurile.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/zidurile.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/zidurile.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/zidurile.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/zidurile.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/zidurile.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/prajituri.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/prajituri.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/prajituri.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/prajituri.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/prajituri.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/prajituri.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/prajituri.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/prajituri.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/prajituri.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/prajituri.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/portret.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/portret.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/portret.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/portret.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/portret.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/portret.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/portret.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/portret.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/portret.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/portret.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/briscola.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/briscola.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/briscola.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/briscola.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/briscola.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/briscola.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/briscola.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/briscola.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/briscola.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/briscola.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/scopa.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/scopa.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/scopa.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/scopa.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/scopa.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/scopa.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/scopa.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/scopa.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/scopa.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/scopa.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/durak.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/durak.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/durak.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/durak.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/durak.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/durak.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/durak.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/durak.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/durak.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/durak.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/belote.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/belote.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/belote.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/belote.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/belote.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/belote.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/belote.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/belote.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/belote.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/belote.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/skat.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/skat.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/skat.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/skat.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/skat.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/skat.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/skat.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/skat.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/skat.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/skat.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tarot.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tarot.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tarot.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tarot.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tarot.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tarot.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tarot.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tarot.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tarot.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tarot.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/cribbage.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/cribbage.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/cribbage.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/cribbage.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/cribbage.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/cribbage.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/cribbage.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/cribbage.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/cribbage.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/cribbage.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/euchre.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/euchre.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/euchre.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/euchre.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/euchre.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/euchre.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/euchre.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/euchre.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/euchre.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/euchre.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/inimi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/inimi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/inimi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/inimi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/inimi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/inimi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/inimi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/inimi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/inimi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/inimi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/pica.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/pica.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/pica.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/pica.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/pica.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/pica.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/pica.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/pica.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/pica.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/pica.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/prinde.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/prinde.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/prinde.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/prinde.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/prinde.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/prinde.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/prinde.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/prinde.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/prinde.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/prinde.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/whist.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/whist.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/whist.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/whist.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/whist.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/whist.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/whist.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/whist.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/whist.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/whist.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tarneeb.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tarneeb.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tarneeb.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tarneeb.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tarneeb.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tarneeb.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tarneeb.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tarneeb.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tarneeb.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tarneeb.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/baloot.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/baloot.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/baloot.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/baloot.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/baloot.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/baloot.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/baloot.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/baloot.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/baloot.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/baloot.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tablanet.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tablanet.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tablanet.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tablanet.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tablanet.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tablanet.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tablanet.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tablanet.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tablanet.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tablanet.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/truco.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/truco.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/truco.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/truco.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/truco.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/truco.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/truco.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/truco.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/truco.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/truco.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/trix.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/trix.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/trix.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/trix.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/trix.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/trix.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/trix.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/trix.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/trix.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/trix.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/bridge.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/bridge.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/bridge.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/bridge.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/bridge.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/bridge.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/bridge.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/bridge.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/bridge.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/bridge.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/canasta.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/canasta.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/canasta.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/canasta.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/canasta.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/canasta.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/canasta.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/canasta.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/canasta.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/canasta.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/nave.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/nave.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/nave.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/nave.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/nave.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/nave.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/nave.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/nave.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/nave.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/nave.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/patrula.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/patrula.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/patrula.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/patrula.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/patrula.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/patrula.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/patrula.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/patrula.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/patrula.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/patrula.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/reactii.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/reactii.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/reactii.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/reactii.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/reactii.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/reactii.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/reactii.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/reactii.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/reactii.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/reactii.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/ordine.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/ordine.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/ordine.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/ordine.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/ordine.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/ordine.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/ordine.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/ordine.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/ordine.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/ordine.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/gridiron.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/gridiron.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/gridiron.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/gridiron.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/gridiron.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/gridiron.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/gridiron.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/gridiron.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/gridiron.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/gridiron.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/focare.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/focare.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/focare.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/focare.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/focare.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/focare.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/focare.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/focare.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/focare.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/focare.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/strajile.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/strajile.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/strajile.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/strajile.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/strajile.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/strajile.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/strajile.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/strajile.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/strajile.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/strajile.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/farul.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/farul.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/farul.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/farul.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/farul.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/farul.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/farul.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/farul.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/farul.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/farul.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/cenusii.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/cenusii.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/cenusii.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/cenusii.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/cenusii.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/cenusii.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/cenusii.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/cenusii.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/cenusii.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/cenusii.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/cripta.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/cripta.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/cripta.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/cripta.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/cripta.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/cripta.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/cripta.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/cripta.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/cripta.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/cripta.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/lupii.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/lupii.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/lupii.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/lupii.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/lupii.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/lupii.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/lupii.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/lupii.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/lupii.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/lupii.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/santinela.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/santinela.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/santinela.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/santinela.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/santinela.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/santinela.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/santinela.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/santinela.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/santinela.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/santinela.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/consiliul.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/consiliul.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/consiliul.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/consiliul.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/consiliul.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/consiliul.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/consiliul.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/consiliul.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/consiliul.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/consiliul.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/valea.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/valea.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/valea.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/valea.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/valea.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/valea.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/valea.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/valea.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/valea.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/valea.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/hruba.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/hruba.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/hruba.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/hruba.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/hruba.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/hruba.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/hruba.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/hruba.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/hruba.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/hruba.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/apus.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/apus.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/apus.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/apus.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/apus.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/apus.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/apus.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/apus.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/apus.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/apus.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/fulger.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/fulger.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/fulger.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/fulger.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/fulger.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/fulger.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/fulger.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/fulger.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/fulger.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/fulger.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/roade.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/roade.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/roade.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/roade.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/roade.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/roade.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/roade.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/roade.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/roade.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/roade.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tcg_evo.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tcg_evo.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tcg_evo.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tcg_evo.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tcg_evo.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tcg_evo.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tcg_evo.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tcg_evo.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tcg_evo.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tcg_evo.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tcg_zone.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tcg_zone.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tcg_zone.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tcg_zone.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tcg_zone.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tcg_zone.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tcg_zone.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tcg_zone.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tcg_zone.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tcg_zone.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tcg_lant.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tcg_lant.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tcg_lant.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tcg_lant.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tcg_lant.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tcg_lant.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tcg_lant.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tcg_lant.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tcg_lant.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tcg_lant.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tcg_cerneala.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/spionii.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/spionii.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/spionii.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/spionii.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/spionii.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/spionii.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/spionii.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/spionii.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/spionii.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/spionii.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/povestitor.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/povestitor.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/povestitor.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/povestitor.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/povestitor.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/povestitor.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/povestitor.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/povestitor.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/povestitor.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/povestitor.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/gura.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/gura.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/gura.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/gura.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/gura.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/gura.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/gura.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/gura.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/gura.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/gura.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/treicai.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/treicai.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/treicai.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/treicai.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/treicai.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/treicai.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/treicai.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/treicai.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/treicai.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/treicai.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/oprite.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/oprite.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/oprite.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/oprite.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/oprite.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/oprite.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/oprite.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/oprite.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/oprite.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/oprite.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/schita.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/schita.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/schita.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/schita.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/schita.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/schita.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/schita.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/schita.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/schita.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/schita.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/dictionar.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/dictionar.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/dictionar.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/dictionar.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/dictionar.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/dictionar.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/dictionar.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/dictionar.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/dictionar.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/dictionar.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/impostor.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/impostor.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/impostor.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/impostor.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/impostor.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/impostor.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/impostor.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/impostor.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/impostor.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/impostor.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/cuvantunic.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/cuvantunic.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/cuvantunic.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/cuvantunic.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/cuvantunic.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/cuvantunic.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/cuvantunic.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/cuvantunic.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/cuvantunic.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/cuvantunic.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/mosia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/mosia.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/mosia.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/mosia.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/mosia.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/mosia.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/mosia.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/mosia.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/mosia.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/mosia.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/gospodaria.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/gospodaria.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/gospodaria.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/gospodaria.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/gospodaria.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/gospodaria.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/gospodaria.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/gospodaria.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/gospodaria.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/gospodaria.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/cetatuia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/cetatuia.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/cetatuia.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/cetatuia.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/cetatuia.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/cetatuia.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/cetatuia.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/cetatuia.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/cetatuia.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/cetatuia.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/taramuri.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/taramuri.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/taramuri.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/taramuri.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/taramuri.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/taramuri.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/taramuri.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/taramuri.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/taramuri.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/taramuri.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/furnale.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/furnale.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/furnale.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/furnale.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/furnale.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/furnale.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/furnale.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/furnale.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/furnale.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/furnale.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/reverdire.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/reverdire.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/reverdire.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/reverdire.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/reverdire.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/reverdire.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/reverdire.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/reverdire.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/reverdire.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/reverdire.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/salina.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/salina.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/salina.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/salina.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/salina.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/salina.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/salina.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/salina.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/salina.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/salina.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/catun.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/catun.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/catun.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/catun.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/catun.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/catun.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/catun.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/catun.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/catun.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/catun.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/solzi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/solzi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/solzi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/solzi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/solzi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/solzi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/solzi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/solzi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/solzi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/solzi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/poieni.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/poieni.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/poieni.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/poieni.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/poieni.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/poieni.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/poieni.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/poieni.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/poieni.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/poieni.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/epoci.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/epoci.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/epoci.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/epoci.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/epoci.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/epoci.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/epoci.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/epoci.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/epoci.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/epoci.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tinuturi.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tinuturi.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tinuturi.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tinuturi.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tinuturi.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tinuturi.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tinuturi.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tinuturi.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tinuturi.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tinuturi.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/rezervatia.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/rezervatia.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/rezervatia.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/rezervatia.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/rezervatia.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/rezervatia.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/rezervatia.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/rezervatia.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/rezervatia.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/rezervatia.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/hotar.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/hotar.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/hotar.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/hotar.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/hotar.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/hotar.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/hotar.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/hotar.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/hotar.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/hotar.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/codru.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/codru.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/codru.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/codru.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/codru.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/codru.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/codru.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/codru.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/codru.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/codru.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/sideral.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/sideral.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/sideral.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/sideral.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/sideral.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/sideral.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/sideral.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/sideral.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/sideral.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/sideral.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/ceasornic.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/ceasornic.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/ceasornic.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/ceasornic.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/ceasornic.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/ceasornic.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/ceasornic.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/ceasornic.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/ceasornic.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/ceasornic.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/coroana.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/coroana.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/coroana.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/coroana.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/coroana.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/coroana.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/coroana.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/coroana.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/coroana.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/coroana.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/coridor.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/coridor.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/coridor.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/coridor.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/coridor.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/coridor.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/coridor.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/coridor.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/coridor.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/coridor.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/drum.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/drum.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/drum.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/drum.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/drum.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/drum.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/drum.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/drum.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/drum.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/drum.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tripierd.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tripierd.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tripierd.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tripierd.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tripierd.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tripierd.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tripierd.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tripierd.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tripierd.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tripierd.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/konane.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/konane.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/konane.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/konane.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/konane.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/konane.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/konane.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/konane.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/konane.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/konane.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/fanorona.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/fanorona.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/fanorona.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/fanorona.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/fanorona.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/fanorona.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/fanorona.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/fanorona.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/fanorona.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/fanorona.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/tigri.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/tigri.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/tigri.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/tigri.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/tigri.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/tigri.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/tigri.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/tigri.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/tigri.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/tigri.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/surakarta.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/surakarta.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/surakarta.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/surakarta.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/surakarta.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/surakarta.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/surakarta.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/surakarta.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/surakarta.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/surakarta.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/hasami.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/hasami.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/hasami.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/hasami.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/hasami.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/hasami.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/hasami.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/hasami.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/hasami.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/hasami.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/puncte.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/puncte.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/puncte.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/puncte.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/puncte.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/puncte.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/puncte.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/puncte.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/puncte.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/puncte.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/strapungere.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/strapungere.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/strapungere.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/strapungere.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/strapungere.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/strapungere.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/strapungere.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/strapungere.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/strapungere.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/strapungere.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/izolare.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/izolare.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/izolare.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/izolare.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/izolare.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/izolare.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/izolare.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/izolare.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/izolare.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/izolare.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/rotire.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/rotire.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/rotire.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/rotire.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/rotire.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/rotire.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/rotire.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/rotire.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/rotire.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/rotire.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/coloane.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/coloane.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/coloane.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/coloane.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/coloane.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/coloane.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/coloane.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/coloane.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/coloane.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/coloane.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/bile.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/bile.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/bile.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/bile.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/bile.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/bile.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/bile.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/bile.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/bile.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/bile.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/patru.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/patru.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/patru.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/patru.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/patru.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/patru.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/patru.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/patru.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/patru.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/patru.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/cupe.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/cupe.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/cupe.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/cupe.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/cupe.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/cupe.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/cupe.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/cupe.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/cupe.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/cupe.html"/>
+  </url>
+  <url>
+    <loc>https://polytabletop.chiuta.ro/jocuri/poliedre.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/jocuri/poliedre.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/jocuri/poliedre.html?lang=ro"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/jocuri/poliedre.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/jocuri/poliedre.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/jocuri/poliedre.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/jocuri/poliedre.html?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/jocuri/poliedre.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/jocuri/poliedre.html?lang=hu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/jocuri/poliedre.html"/>
+  </url>
 </urlset>

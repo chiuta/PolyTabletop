@@ -20,12 +20,9 @@ pub const VOCAB: &[(&str, &str)] = &[
     ("roti", "două cercuri jos, ca niște roți"),
     (
         "patru_picioare",
-        "patru liniuțe sub corp, ca niște doua_picioare",
+        "patru liniuțe sub corp, ca patru picioare",
     ),
-    (
-        "doua_picioare",
-        "două liniuțe sub corp, ca niște doua_picioare",
-    ),
+    ("doua_picioare", "două liniuțe sub corp, ca două picioare"),
     ("aripi", "două aripi desfăcute în lături"),
     ("coada", "o coadă lungă în spate"),
     ("urechi_ascutite", "două urechi ascuțite sus"),

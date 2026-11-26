@@ -10,7 +10,7 @@ cargo run --release -p polytabletop-gui -- --selftest # verificări fără ecran
 ## Ce oferă
 
 * meniu pe categorii, cu căutare (ex. `sah`, `carti`);
-* tablă desenată pentru 16 jocuri abstracte (Șah, Dame, Reversi, Patru în linie, Gomoku, Go, Moara, Xiangqi, Makruk, Janggi, Dara, Morabaraba și familia Mancala: `mancala`, `sungka`, `ayo`, `pallanguzhi`), cu mutări prin click; celelalte jocuri se afișează ca text, cu mutările legale ca butoane și câmp de scris mutarea (buton „Mută”);
+* tablă desenată pentru 36 de jocuri (Șah, Dame, Reversi, Patru în linie, Gomoku, Go, Moara, Xiangqi, Makruk, Janggi, Dara, Morabaraba, Shogi, Table, Nu te supăra frate, Pachisi, Hex, Amazoane, Linii de acțiune, Konane, Fanorona, Tigri și capre, Surakarta, Hasami Shogi, Puncte și căsuțe, Străpungere, Izolare, Rotire în cinci, Coridor, Drum de pietre, Trei-pierde, Nim și familia Mancala: `mancala`, `sungka`, `ayo`, `pallanguzhi`; lista completă în `kind_of`, `board.rs`), cu mutări prin click; celelalte jocuri se afișează ca text, cu mutările legale ca butoane și câmp de scris mutarea (buton „Mută”);
 * mutări speciale sau forțate ca butoane mari; mutările în mai mulți pași (ex. salturi la dame) se compun prin click, cu „Termină aici” și „Anulează selecția”;
 * butonul „Sugestie” (AI-ul calculează pe o copie cu privitorul pus pe cel la mutare, deci nu folosește informația adversarului) și „Joc nou”;
 * alegerea cine joacă: Jucătorul 1, Jucătorul 2 sau ambii („la masă”);

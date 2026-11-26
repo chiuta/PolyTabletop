@@ -1,6 +1,6 @@
 //! Magistrale — joc original de conectat orașe cu cărți de vagon (2 jucători).
 //!
-//! Harta (19 orașe, 38 de rute), pachetul, biletele de destinație și textele
+//! Harta (19 orașe, 42 de rute: 38 de bază + 4 suplimentare), pachetul, biletele de destinație și textele
 //! sunt ale noastre; mecanica „aduni cărți de aceeași culoare și ocupi rute” e
 //! generică.
 //!

@@ -81,4 +81,25 @@ mod tests {
         }
         assert!(VOCAB.len() >= 80);
     }
+
+    #[test]
+    fn no_unsubstituted_placeholder_in_hints() {
+        for (k, text) in VOCAB {
+            assert!(
+                !text.contains('_') && !text.contains('{') && !text.contains('}'),
+                "indiciu cu placeholder: {k} -> {text}"
+            );
+        }
+        for it in items() {
+            for h in &it.hints {
+                for t in &h.texts {
+                    assert!(
+                        !t.contains('_') && !t.contains('{') && !t.contains('}'),
+                        "{}: indiciu cu placeholder: {t}",
+                        it.word
+                    );
+                }
+            }
+        }
+    }
 }

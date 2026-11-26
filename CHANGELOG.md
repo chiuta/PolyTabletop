@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.9.1
+- Help/`rules` texts aligned with the code (no gameplay changes): pachisi (cowrie table: none open = 25, 1 = 10, 5 = 5; graces 6/10/25), roata (real branch labels `avansez facultate|ucenicie|afacere|salariu`), reverdire (forced move `generatie`), fanorona (every prefix of a capture chain is a separate move; the chosen move ends the turn), tcg_cerneala (`pesca` is a forced move every turn; P1 draws no card on the first turn), tinuturi (24 tiles drawn from the set of 48), portret (`verdict corect` / `verdict gresit` given by the opponent). Titles/rules in all 8 languages and `docs/reguli/*.md` updated.
+- magistrale: module header now says 42 routes (38 + 4 extra), like the code and tests.
+- schita: fixed the unsubstituted placeholder in the hints for `patru_picioare` / `doua_picioare`; new test rejects `_`, `{`, `}` in any hint text.
+- New tests: pachisi rules vs cowry table, roata rules vs real move labels, reverdire/fanorona/tcg_cerneala/tinuturi/portret rules vs moves.
+
 ## v0.9
 - Project renamed from MASA to PolyTabletop; 171 playable games (201 catalog entries).
 - Interface in 8 languages (en ro fr it es pt de hu) for the CLI and the GUI: `--lang`, `POLYTABLETOP_LANG`; READMEs and install guides in all 8.

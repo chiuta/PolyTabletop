@@ -2,6 +2,7 @@
 
 use crate::gui_i18n::{lookup, tr, trf, Lang, APP_NAME};
 use crate::journal::{fnv, Journal};
+use crate::markers;
 use polytabletop_core::{GameObj, Player};
 use polytabletop_games::{Playable, HOTSEAT_SAFE};
 
@@ -169,7 +170,7 @@ pub fn footer_for(kind: crate::board::Kind, render: &str) -> Vec<String> {
             let lines: Vec<&str> = render.lines().collect();
             let from = lines
                 .iter()
-                .position(|l| l.starts_with("Bară"))
+                .position(|l| l.starts_with(markers::BACKGAMMON_BAR))
                 .map(|i| i + 1)
                 .unwrap_or(lines.len());
             lines[from..]
@@ -180,7 +181,7 @@ pub fn footer_for(kind: crate::board::Kind, render: &str) -> Vec<String> {
         }
         Kind::Puncte => render
             .lines()
-            .filter(|l| l.starts_with("Căsuțe"))
+            .filter(|l| l.starts_with(markers::PUNCTE_BOXES))
             .map(str::to_string)
             .collect(),
         Kind::Nim => render
@@ -197,8 +198,8 @@ pub fn footer_for(kind: crate::board::Kind, render: &str) -> Vec<String> {
             .map(str::trim)
             .filter(|l| {
                 !l.is_empty()
-                    && !l.starts_with("Pista")
-                    && !l.starts_with("X/O =")
+                    && !l.starts_with(markers::RACE_TRACK)
+                    && !l.starts_with(markers::RACE_LEGEND)
                     && !l.chars().next().is_some_and(|c| c.is_ascii_digit())
             })
             .map(str::to_string)
@@ -212,7 +213,7 @@ pub fn footer_pits(render: &str) -> Vec<String> {
     let lines: Vec<&str> = render.lines().collect();
     let from = lines
         .iter()
-        .position(|l| l.trim_start().starts_with("Jucător 1"))
+        .position(|l| l.trim_start().starts_with(markers::PITS_P1))
         .map(|i| i + 1)
         .unwrap_or(lines.len());
     lines[from..]
@@ -252,7 +253,10 @@ pub fn replay(games: &[Playable], j: &Journal) -> Result<Replayed, String> {
         .position(|g| g.id == j.game_id)
         .ok_or_else(|| trf("unknown_game", &[&j.game_id]))?;
     if !j.replay {
-        return Err(trf("not_det", &[games[idx].title]));
+        return Err(trf(
+            "not_det",
+            &[crate::gui_i18n::game_title(games[idx].id, games[idx].title)],
+        ));
     }
     let mut game = (games[idx].make)();
     let mut log = Vec::new();

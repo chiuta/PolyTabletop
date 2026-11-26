@@ -12,13 +12,13 @@ Pachet pregătit de 30 de cărți (J1 „Pădurea Cântătoare”, J2 „Muntele
 
 ## Desfășurarea unei ture
 
-`pesca` (forțat; J1 nu pescuiește în prima tură), apoi, în orice ordine: `cerneala N` (o dată pe tură, o carte „cu cerneală” din mână se pune întoarsă în călimară; fiecare carte de acolo dă 1 cerneală pe tură), `joaca N [țintă]` (plătești costul în cerneală; personajele intră „uscându-se”), `misiune P` (personajul se înclină și aduce faimă egală cu valoarea lui), `provocare P e Q` (personajul tău pregătit atacă un personaj ÎNCLINAT al adversarului), `fin`. La începutul turei tale totul se pregătește și cerneala se reînnoiește.
+`pesca` (mutare forțată la începutul fiecărei ture; în prima tură J1 o scrie tot, dar nu trage nicio carte), apoi, în orice ordine: `cerneala N` (o dată pe tură, o carte „cu cerneală” din mână se pune întoarsă în călimară; fiecare carte de acolo dă 1 cerneală pe tură), `joaca N [țintă]` (plătești costul în cerneală; personajele intră „uscându-se”), `misiune P` (personajul se înclină și aduce faimă egală cu valoarea lui), `provocare P e Q` (personajul tău pregătit atacă un personaj ÎNCLINAT al adversarului), `fin`. La începutul turei tale totul se pregătește și cerneala se reînnoiește.
 
 ## Sintaxa mutărilor
 
 Se scrie exact textul din lista `?` (majusculele și spațiile nu contează; vezi `docs/JOCURI.md`). Mutări folosite de această implementare:
 
-* `pesca` — tragi o carte (forțat)
+* `pesca` — tragi o carte (forțat, la începutul fiecărei ture; în prima tură J1 nu trage nicio carte)
 * `cerneala 3` — pui cartea 3 în călimară
 * `joaca 1` — joci cartea 1 (cu țintă opțională `e2`/`m1`)
 * `misiune m1` — trimiți personajul m1 în misiune
@@ -31,7 +31,7 @@ Tastezi `?` pentru lista mutărilor legale, `hint` pentru sugestia AI-ului, `q` 
 
 Pornind cu `polytabletop play tcg_cerneala --seed 1` (tu ești Jucătorul 1), mutările de mai jos sunt acceptate la rând, în această ordine:
 
-1. `pesca` — mutarea forțată `pesca` (J1 nu trage carte în prima tură).
+1. `pesca` — mutarea forțată `pesca` (în prima tură J1 o scrie, dar nu trage nicio carte).
 2. `cerneala 3` — pui Vrăjitoarea Lacului în călimară (1 cerneală pe tură).
 3. `joaca 1` — joci Poetul Rătăcitor (cost 1).
 

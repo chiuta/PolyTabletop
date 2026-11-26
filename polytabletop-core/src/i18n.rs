@@ -97,12 +97,12 @@ pub fn lang() -> Lang {
 /// Unsupported locales (`C`, `POSIX`, `fi_FI`) are skipped.
 pub fn detect_from(
     flag: Option<&str>,
-    masa_lang: Option<&str>,
+    env_lang: Option<&str>,
     lc_all: Option<&str>,
     lc_messages: Option<&str>,
     lang_var: Option<&str>,
 ) -> Lang {
-    [flag, masa_lang, lc_all, lc_messages, lang_var]
+    [flag, env_lang, lc_all, lc_messages, lang_var]
         .into_iter()
         .flatten()
         .find_map(Lang::from_code)

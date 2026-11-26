@@ -550,3 +550,43 @@ cat.Zaruri	es	Dados
 cat.Zaruri	pt	Dados
 cat.Zaruri	de	Würfel
 cat.Zaruri	hu	Kockák
+ai_level	en	AI level:
+ai_level	ro	Nivel AI:
+ai_level	fr	Niveau IA :
+ai_level	it	Livello IA:
+ai_level	es	Nivel de la IA:
+ai_level	pt	Nível da IA:
+ai_level	de	KI-Stufe:
+ai_level	hu	MI szint:
+level_easy	en	Easy
+level_easy	ro	Ușor
+level_easy	fr	Facile
+level_easy	it	Facile
+level_easy	es	Fácil
+level_easy	pt	Fácil
+level_easy	de	Leicht
+level_easy	hu	Könnyű
+level_normal	en	Normal
+level_normal	ro	Normal
+level_normal	fr	Normal
+level_normal	it	Normale
+level_normal	es	Normal
+level_normal	pt	Normal
+level_normal	de	Normal
+level_normal	hu	Normál
+level_hard	en	Hard
+level_hard	ro	Greu
+level_hard	fr	Difficile
+level_hard	it	Difficile
+level_hard	es	Difícil
+level_hard	pt	Difícil
+level_hard	de	Schwer
+level_hard	hu	Nehéz
+level_expert	en	Expert
+level_expert	ro	Expert
+level_expert	fr	Expert
+level_expert	it	Esperto
+level_expert	es	Experto
+level_expert	pt	Especialista
+level_expert	de	Experte
+level_expert	hu	Szakértő

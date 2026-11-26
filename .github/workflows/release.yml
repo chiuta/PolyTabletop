@@ -22,7 +22,7 @@ jobs:
           - { os: macos-15-intel,   target: x86_64-apple-darwin,       name: macos-x86_64 }
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: dtolnay/rust-toolchain@stable
         with:
           targets: ${{ matrix.target }}

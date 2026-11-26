@@ -2,7 +2,7 @@
 
 # **PolyTabletop**
 
-Version: 0.9.0 · Last updated: 2026-11-26
+Version: 0.9.1 · Last updated: 2026-11-26
 
 ## Mi ez?
 
@@ -113,7 +113,7 @@ A közreműködést szívesen fogadjuk a clean-room szabályok keretében: lásd
 
 ## Licenc
 
-A `Cargo.toml`-ban `MIT OR Apache-2.0` néven deklarálva. Copyright (c) 2026 Alexandru-Ionuț Chiuță (Alexio).
+A `Cargo.toml`-ban `MIT OR Apache-2.0` néven deklarálva; a teljes szövegek: [LICENSE-MIT](LICENSE-MIT) és [LICENSE-APACHE](LICENSE-APACHE). Copyright (c) 2026 Alexandru-Ionuț Chiuță (Alexio).
 
 ## Készítők
 

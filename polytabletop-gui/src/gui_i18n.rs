@@ -143,13 +143,36 @@ pub fn category_title(cat: &str) -> String {
     tr_opt(&format!("cat.{cat}")).unwrap_or(cat).to_string()
 }
 
-/// Cârlig: titlul jocului în limba curentă (deocamdată doar rezerva).
-pub fn game_title<'a>(_id: &str, fallback: &'a str) -> &'a str {
-    fallback
+impl Lang {
+    /// Aceeași limbă în tabelele din `polytabletop-core` / `polytabletop-games`
+    /// (enum-uri separate, aceleași coduri).
+    pub fn core(self) -> polytabletop_core::i18n::Lang {
+        polytabletop_core::i18n::Lang::from_code(self.code())
+            .unwrap_or(polytabletop_core::i18n::Lang::Ro)
+    }
 }
 
-/// Limba inițială: `--lang CODE` / `--lang=CODE`, apoi `POLYTABLETOP_LANG`, apoi `LANG`/`LC_ALL`, apoi ro.
+/// Titlul jocului în limba curentă (rezervă: titlul dat, adică româna).
+pub fn game_title<'a>(id: &str, fallback: &'a str) -> &'a str {
+    game_title_in(id, fallback, lang())
+}
+
+pub fn game_title_in<'a>(id: &str, fallback: &'a str, l: Lang) -> &'a str {
+    polytabletop_games::i18n::title(id, l.core()).unwrap_or(fallback)
+}
+
+/// Regulile jocului în limba curentă (rezervă: textul dat, adică româna).
+pub fn game_rules<'a>(id: &str, fallback: &'a str) -> &'a str {
+    polytabletop_games::i18n::rules(id, lang().core()).unwrap_or(fallback)
+}
+
+/// Limba inițială: `--lang CODE` / `--lang=CODE`, apoi `POLYTABLETOP_LANG`, apoi limba
+/// salvată în `gui.conf`, apoi `LC_ALL`/`LANG`, apoi ro.
 pub fn detect(args: &[String]) -> Lang {
+    detect_with(args, crate::settings::load_lang)
+}
+
+pub fn detect_with(args: &[String], saved: impl Fn() -> Option<Lang>) -> Lang {
     let from_args = args.iter().enumerate().find_map(|(i, a)| {
         if a == "--lang" {
             args.get(i + 1).and_then(|v| Lang::parse(v))
@@ -160,6 +183,7 @@ pub fn detect(args: &[String]) -> Lang {
     let env = |k: &str| std::env::var(k).ok().and_then(|v| Lang::parse(&v));
     from_args
         .or_else(|| env("POLYTABLETOP_LANG"))
+        .or_else(saved)
         .or_else(|| env("LC_ALL"))
         .or_else(|| env("LANG"))
         .unwrap_or(Lang::Ro)
@@ -260,6 +284,11 @@ mod tests {
         assert_eq!(Lang::parse("xx"), None);
         let a = |s: &[&str]| s.iter().map(|x| x.to_string()).collect::<Vec<_>>();
         assert_eq!(detect(&a(&["m", "--lang", "de"])), Lang::De);
+        // limba salvată bate LANG, dar nu --lang
+        assert_eq!(
+            detect_with(&a(&["m", "--lang", "de"]), || Some(Lang::Fr)),
+            Lang::De
+        );
         assert_eq!(detect(&a(&["m", "--lang=fr"])), Lang::Fr);
     }
 }

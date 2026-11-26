@@ -1,6 +1,6 @@
 # Jocurile jucabile
 
-Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (141 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
+Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (171 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
 
 Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferență între majuscule/minuscule, spațiile se ignoră); `?` listează mutările legale, `hint` cere sugestia AI-ului, `q` iese.
 
@@ -11,6 +11,10 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Reversi](#reversi) (`reversi`)
 - [Patru în linie](#connect4) (`connect4`)
 - [Gomoku (15×15)](#gomoku) (`gomoku`)
+- [Hex (11×11)](#hex) (`hex`)
+- [Amazoane (10×10)](#amazoane) (`amazoane`)
+- [Linii de acțiune (8×8)](#linii) (`linii`)
+- [Nim cu grămezi](#nim) (`nim`)
 - [Moara (Țintar)](#morris) (`morris`)
 - [Mancala (Kalah)](#mancala) (`mancala`)
 - [Go (9×9)](#go) (`go`)
@@ -21,6 +25,11 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Sungka (Filipine)](#sungka) (`sungka`)
 - [Makruk (șah thailandez)](#makruk) (`makruk`)
 - [Janggi (șah coreean)](#janggi) (`janggi`)
+- [Popa prostul](#popa) (`popa`)
+- [Pescuit (Go Fish)](#pescuit) (`pescuit`)
+- [Treizeci și unu (31)](#treizeci1) (`treizeci1`)
+- [Cassino (capturi)](#casino) (`casino`)
+- [Poker de zaruri](#zarpoker) (`zarpoker`)
 - [Septica](#septica) (`septica`)
 - [Macao](#macao) (`macao`)
 - [Domino (dublu-6)](#domino) (`domino`)
@@ -66,8 +75,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Pallanguzhi (Tamil Nadu)](#pallanguzhi) (`pallanguzhi`)
 - [Ayo (Ayoayo, Yoruba)](#ayo) (`ayo`)
 - [Bătălia navală (10×10)](#battleship) (`battleship`)
-- [Mastermind (cu schimb de roluri)](#mastermind) (`mastermind`)
-- [Memory (perechi)](#memory) (`memory`)
+- [Spargerea codului (cu schimb de roluri)](#mastermind) (`mastermind`)
+- [Perechi (joc de memorie)](#memory) (`memory`)
 - [Bingo (75 de bile)](#bingo) (`bingo`)
 - [Lotería (imagini)](#loteria) (`loteria`)
 - [Pachisi (cursă cu cauri)](#pachisi) (`pachisi`)
@@ -91,6 +100,10 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Tarot francez (78 de cărți, 2 jucători)](#tarot) (`tarot`)
 - [Cribbage](#cribbage) (`cribbage`)
 - [Euchre (2 jucători)](#euchre) (`euchre`)
+- [Inimi (evitarea punctelor, 2 jucători)](#inimi) (`inimi`)
+- [Pică (licitație și atu pică, 2 jucători)](#pica) (`pica`)
+- [Prinde (licitație exactă, 2 jucători)](#prinde) (`prinde`)
+- [Whist (2 jucători)](#whist) (`whist`)
 - [Tarneeb (2 jucători)](#tarneeb) (`tarneeb`)
 - [Baloot (2 jucători)](#baloot) (`baloot`)
 - [Tablanet](#tablanet) (`tablanet`)
@@ -147,6 +160,23 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Coroana Siderală (4X compact, variantă originală)](#sideral) (`sideral`)
 - [Ceasornicul din Valea Ceții (deducție cu povestitor, masa = roboți)](#ceasornic) (`ceasornic`)
 - [Drumul spre Coroană (aventură pe inele, om contra roboți)](#coroana) (`coroana`)
+- [Coridor (cursă de pioni cu ziduri)](#coridor) (`coridor`)
+- [Drum de pietre (5×5, stive)](#drum) (`drum`)
+- [Trei-pierde (hexagonal)](#tripierd) (`tripierd`)
+- [Konane (dame hawaiiene)](#konane) (`konane`)
+- [Fanorona (Madagascar)](#fanorona) (`fanorona`)
+- [Tigri și capre (Nepal)](#tigri) (`tigri`)
+- [Surakarta (Java)](#surakarta) (`surakarta`)
+- [Hasami Shogi (Japonia)](#hasami) (`hasami`)
+- [Puncte și căsuțe (5×5)](#puncte) (`puncte`)
+- [Străpungere (8×8)](#strapungere) (`strapungere`)
+- [Izolare (7×7)](#izolare) (`izolare`)
+- [Rotire în cinci (6×6)](#rotire) (`rotire`)
+- [Coloane (dame în turnuri)](#coloane) (`coloane`)
+- [Bile pe hexagoane (5 pe latură)](#bile) (`bile`)
+- [Patru atribute (piesa dată)](#patru) (`patru`)
+- [Cupe încuibate (4×4)](#cupe) (`cupe`)
+- [Poliedre (duo, 14×14)](#poliedre) (`poliedre`)
 
 <a id="chess"></a>
 ## Șah
@@ -243,6 +273,82 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - Sintaxă din regulile jocului: h8 (coloane a–o, rânduri 1–15).
 - Exemple legale la început: `h8`
 - La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hex"></a>
+## Hex (11×11)
+
+- **Id:** `hex`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hex` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- X unește sus și jos, O unește stânga și dreapta printr-un lanț de hexagoane vecine; nu există remiză, X începe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: f6 (coloane a–k, rânduri 1–11).
+- Exemple legale la început: `a1`, `b1`
+- La început sunt 121 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="amazoane"></a>
+## Amazoane (10×10)
+
+- **Id:** `amazoane`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play amazoane` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Patru amazoane pe parte; muți una ca o regină de șah, apoi tragi o săgeată (tot ca o regină) care blochează pătratul; pierde cine nu mai poate muta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d1-d5/d8 (de la–la/săgeată).
+- Exemple legale la început: `d1-c1/b1`, `d1-c1/a1`
+- La început sunt 2176 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="linii"></a>
+## Linii de acțiune (8×8)
+
+- **Id:** `linii`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play linii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Muți o piesă pe linie atâtea pătrate câte piese sunt pe acea linie; poți sări piese proprii, nu ale adversarului, și captezi aterizând pe una; câștigă cine își unește toate piesele într-un grup (remiză după 300 de mutări).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: b1-b3, b1xd3.
+- Exemple legale la început: `b1-h1`, `b1-b3`
+- La început sunt 36 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="nim"></a>
+## Nim cu grămezi
+
+- **Id:** `nim`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play nim` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Patru grămezi (3, 4, 5, 6 bețe); iei oricâte bețe dintr-o singură grămadă; cine ia ultimul băț câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: b3 (litera grămezii + număr).
+- Exemple legale la început: `a1`, `a2`
+- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="morris"></a>
 ## Moara (Țintar)
@@ -449,6 +555,114 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - Exemple legale la început: `a0a1`, `a0a2`
 - La început sunt 32 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
+<a id="popa"></a>
+## Popa prostul
+
+- **Id:** `popa`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play popa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Old Maid românesc: 51 de cărți (fără Dama de treflă), perechile se aruncă automat.
+- Tragi pe rând o carte din mâna adversarului, la alegere după poziție; cine rămâne cu popa (Dama nepereche) pierde.
+- Informație ascunsă: vezi doar mâna ta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trage 3, sfarsit.
+- Exemple legale la început: `trage`, `1`
+- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pescuit"></a>
+## Pescuit (Go Fish)
+
+- **Id:** `pescuit`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pescuit` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 52 de cărți, 7 în mână.
+- Ceri o valoare pe care o ai (cer 7); adversarul răspunde forțat da (îți dă toate cărțile) sau pescuieste (tragi din stoc; dacă prinzi valoarea cerută mai ceri).
+- Patru la fel formează un set; cele mai multe seturi câștigă.
+- Informație ascunsă: vezi doar mâna ta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: cer K, da, pescuieste.
+- Exemple legale la început: `cer`, `2`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="treizeci1"></a>
+## Treizeci și unu (31)
+
+- **Id:** `treizeci1`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play treizeci1` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 3 cărți în mână, A=11, figuri=10; valoarea = suma celei mai bune culori (trei la fel = 30).
+- Tragi (trage) sau iei din aruncate (ia), apoi arunci (arunca 5h), sau bați (bat): adversarul mai are o tură, apoi cea mai mică mână pierde o viață (bătătorul singur cel mai mic: două). 31 = adversarul pierde o viață. 3 vieți.
+- Informație ascunsă: vezi doar mâna ta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trage, ia, bat, arunca Kd, sfarsit.
+- Exemple legale la început: `trage`, `ia`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="casino"></a>
+## Cassino (capturi)
+
+- **Id:** `casino`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play casino` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 52 de cărți, 4 pe masă, 4 în mână.
+- Lași o carte (5h) sau capturezi (5h x 2c 3d): grupuri de cărți identice sau cu suma egală cu a ta (A=1, J/Q/K doar identice).
+- Puncte pe împărțire: cărți 3, pici 1, 10♦ 2, 2♠ 1, ași 1, mături 1; se joacă până la 11.
+- Fără construiri.
+- Informație ascunsă: vezi doar mâna ta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `6c`, `6c`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zarpoker"></a>
+## Poker de zaruri
+
+- **Id:** `zarpoker`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play zarpoker` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: 7 runde, 5 zaruri, până la 3 aruncări (arunc; tine 3 3 5 sau tine -; fin).
+- Mâini de poker: cinci la fel > careu > full > scară > trei > două perechi > pereche > nimic.
+- Mâna terminată a primului jucător rămâne acoperită până termină al doilea; cine are mâna mai bună ia punctul rundei.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
 <a id="septica"></a>
 ## Septica
 
@@ -467,7 +681,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 9h, 7s, pas.
-- Exemple legale la început: `9d`, `7d`
+- Exemple legale la început: `7d`, `Jh`
 - La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="macao"></a>
@@ -489,8 +703,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 9h, trage, sar, pas.
-- Exemple legale la început: `7d:h`, `7d:d`
-- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `5s`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="domino"></a>
 ## Domino (dublu-6)
@@ -511,7 +725,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 3-4:S, 3-4:D, pesc, pas.
-- Exemple legale la început: `3-3`
+- Exemple legale la început: `6-6`
 - La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="backgammon"></a>
@@ -520,7 +734,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `backgammon`
 - **Categorie:** Zaruri
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** nu (informație completă; zarurile/amestecul nu se consideră ascunse)
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play backgammon` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -532,8 +746,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 13/7, bar/22, 3/off.
-- Exemple legale la început: `6/3`, `8/5`
-- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `8/3`, `13/8`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="ludo"></a>
 ## Nu te supăra, frate (Ludo)
@@ -541,7 +755,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `ludo`
 - **Categorie:** Zaruri
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** nu (informație completă; zarurile/amestecul nu se consideră ascunse)
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play ludo` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -612,7 +826,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 9h, Qs, 10d, Ac, Qh+ (anunț), schimb, inchide, urmatoarea.
-- Exemple legale la început: `Jh`, `9c`
+- Exemple legale la început: `Jd`, `9c`
 - La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="blackjack"></a>
@@ -761,7 +975,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 3b, 3a:3c, intoarce, ia 3c, koi-koi, shobu.
-- Exemple legale la început: `1a`, `1d`
+- Exemple legale la început: `1b`, `3d`
 - La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="hwatu"></a>
@@ -785,8 +999,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `1d`, `3d:3a`
-- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `1b`, `3c`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="karuta"></a>
 ## Karuta (recitare vs AI, proverbe)
@@ -831,8 +1045,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 5, 55, 555+3, 34567, 5555, XY, pas.
-- Exemple legale la început: `4`, `44`
-- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `3`, `4`
+- La început sunt 22 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="paigow"></a>
 ## Pai Gow (domino chinezesc)
@@ -894,7 +1108,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: TM, S10, R1, CV.
-- Exemple legale la început: `T2`, `TV`
+- Exemple legale la început: `T2`, `T5`
 - La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="yut"></a>
@@ -980,8 +1194,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: r5, gsari, vplus2, joker:a, trage, pas.
-- Exemple legale la început: `joker4:r`, `joker4:v`
-- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `rsari`, `r6`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="mosii"></a>
 ## Moșii (afaceri imobiliare cu zaruri)
@@ -1010,7 +1224,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `magistrale`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play magistrale` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1032,7 +1246,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `conac`
 - **Categorie:** Deducție
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play conac` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1054,7 +1268,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `insula`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play insula` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1076,7 +1290,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `mozaic`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play mozaic` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1098,7 +1312,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `litere`
 - **Categorie:** Cuvinte
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play litere` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1109,8 +1323,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: casa@h8> (orizontal), casa@h8v (vertical), ca(s)a@h8> (blank între paranteze), schimb (toată mâna), pas. Primul cuvânt acoperă h8. Informație ascunsă: vezi doar mâna ta.
-- Exemple legale la început: `al@g8>`, `as@g8>`
-- La început sunt 80 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `bem@f8>`, `bem@g8>`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="faianta"></a>
 ## Faianța (variantă originală)
@@ -1118,7 +1332,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `faianta`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play faianta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1130,7 +1344,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 - Sintaxă din regulile jocului: f3 T 2, c O p, decontare.
 - Exemple legale la început: `f1`, `T`
-- La început sunt 342 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- La început sunt 306 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="bresla"></a>
 ## Bresla (variantă originală)
@@ -1138,7 +1352,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `bresla`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play bresla` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1160,7 +1374,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `cristale`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play cristale` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1183,7 +1397,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `curieri`
 - **Categorie:** Cărți
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play curieri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1195,8 +1409,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `iscoada:2`, `iscoada:3`
-- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `judecator`, `strajer`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="fitil"></a>
 ## Fitil (variantă originală)
@@ -1204,7 +1418,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `fitil`
 - **Categorie:** Cărți
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play fitil` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1218,7 +1432,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 - Sintaxă din regulile jocului: vezi lista `?`
 - Exemple legale la început: `trag`, `juc`
-- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="bufet"></a>
 ## Bufet (variantă originală)
@@ -1238,8 +1452,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `alege`, `mici`
-- La început sunt 14 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `alege`, `salata`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="expeditii"></a>
 ## Expediții
@@ -1260,7 +1474,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `juc`, `B3`
+- Exemple legale la început: `juc`, `B10`
 - La început sunt 32 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="artificii"></a>
@@ -1283,7 +1497,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 - Sintaxă din regulile jocului: vezi lista `?`
 - Exemple legale la început: `juc`, `1`
-- La început sunt 22 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- La început sunt 26 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="orasel"></a>
 ## Orășel (variantă originală)
@@ -1311,7 +1525,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `capcana`
 - **Categorie:** Party
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** nu
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play capcana` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1417,7 +1631,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - La început sunt 121 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="mastermind"></a>
-## Mastermind (cu schimb de roluri)
+## Spargerea codului (cu schimb de roluri)
 
 - **Id:** `mastermind`
 - **Categorie:** Clasic
@@ -1439,7 +1653,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - La început sunt 1296 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="memory"></a>
-## Memory (perechi)
+## Perechi (joc de memorie)
 
 - **Id:** `memory`
 - **Categorie:** Clasic
@@ -1508,12 +1722,12 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `pachisi`
 - **Categorie:** Zaruri
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** nu (informație completă; zarurile/amestecul nu se consideră ascunse)
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play pachisi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
 
-- 6 cauri: 1 deschis = 10, 2 = 2, 3 = 3, 4 = 4, 5 = 25, 6 = 6, niciunul = 12; 6, 10, 12 și 25 sunt grațioase (încă o aruncare și poți scoate o piesă din bază).
+- 6 cauri: niciunul deschis = 25, 1 deschis = 10, 2 = 2, 3 = 3, 4 = 4, 5 = 5, 6 = 6; 6, 10 și 25 sunt grațioase (încă o aruncare și poți scoate o piesă din bază).
 - Pistă de 48 de pătrate, castele sigure din 6 în 6, două piese proprii = bloc, aterizarea pe o piesă singură o captură (+ aruncare).
 - Ținta exactă de pe pistă; din culoarul de acasă orice aruncare ≥ distanța.
 
@@ -1549,7 +1763,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `arhipelag`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play arhipelag` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1570,7 +1784,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `roata`
 - **Categorie:** Familie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play roata` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1581,7 +1795,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
-- Sintaxă din regulile jocului: avansez, avansez stanga, avansez cumpar.
+- Sintaxă din regulile jocului: avansez, avansez facultate, avansez ucenicie, avansez afacere, avansez salariu, avansez cumpar.
 - Exemple legale la început: `avansez`, `facultate`
 - La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
@@ -1627,8 +1841,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `pune`, `g4`
-- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `pune`, `a4`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="turnul"></a>
 ## Turnul Șovăitor (turn de blocuri)
@@ -1689,8 +1903,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: e4-e5, e4xe5 (atac), apoi mutarea forțată bataie. Săpătorul dezamorsează minele, Iscoada bate Mareșalul. 100 de mutări fără bătălie = remiză.
-- Exemple legale la început: `a4-a5`, `b4-b5`
-- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `b4-b5`, `e4-e5`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="umbra"></a>
 ## Umbra Urbei (urmărire cu bilete)
@@ -1719,7 +1933,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `zidurile`
 - **Categorie:** Familie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play zidurile` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1732,7 +1946,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 - Sintaxă din regulile jocului: vezi lista `?`
 - Exemple legale la început: `mete`, `N2`
-- La început sunt 144 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- La început sunt 72 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="prajituri"></a>
 ## Drumul Prăjiturilor (cursă de culori)
@@ -1740,7 +1954,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `prajituri`
 - **Categorie:** Familie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play prajituri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -1767,7 +1981,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Reguli pe scurt**
 
 - Variantă originală: 24 de personaje inventate cu 14 trăsături.
-- Întrebi (intreb ochelari), adversarul răspunde corect prin mutare forțată (raspund da/nu); ghicești (ghicesc Matei) și apoi verdict corect/gresit.
+- Întrebi (intreb ochelari), adversarul răspunde corect prin mutare forțată (raspund da/nu); ghicești (ghicesc Matei), iar adversarul dă verdictul printr-o mutare forțată (verdict corect / verdict gresit).
 - Ghicit greșit = pierzi.
 
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
@@ -1795,7 +2009,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: Ad, 3s, Rb, 7c.
-- Exemple legale la început: `5c`, `Cc`
+- Exemple legale la început: `7d`, `Cd`
 - La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="scopa"></a>
@@ -1818,7 +2032,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 7d, 7d:3c+4b, 7d:7s, imparte, urmatoarea.
-- Exemple legale la început: `2b:2c`, `1s`
+- Exemple legale la început: `7b:7d`, `Cc`
 - La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="durak"></a>
@@ -1842,7 +2056,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 6h, 9h>6h (bate 6h cu 9h), iau, gata, umple.
-- Exemple legale la început: `10d`, `Kc`
+- Exemple legale la început: `Kd`, `Ah`
 - La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="belote"></a>
@@ -1934,7 +2148,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: d 5h 6s, taie, 5h, go, numara, imparte.
-- Exemple legale la început: `d`, `9d`
+- Exemple legale la început: `d`, `3d`
 - La început sunt 45 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="euchre"></a>
@@ -1958,6 +2172,98 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - Sintaxă din regulile jocului: pas, up, nume h, dis 9h, Jh, imparte.
 - Exemple legale la început: `pas`, `up`
 - La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="inimi"></a>
+## Inimi (evitarea punctelor, 2 jucători)
+
+- **Id:** `inimi`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play inimi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 13 cărți fiecăruia din 52 (restul nevăzut).
+- Răspunzi obligatoriu la culoare, ia cartea cea mai mare din culoarea condusă.
+- Fiecare inimă = 1 punct, Dama de pică = 13; nu conduci inimă până nu s-a jucat una.
+- La 40 de puncte pierde cine are mai multe.
+- Informație ascunsă: vezi doar mâna ta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: imparte, 7c, Qs, 10h.
+- Exemple legale la început: `8d`, `5d`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pica"></a>
+## Pică (licitație și atu pică, 2 jucători)
+
+- **Id:** `pica`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pica` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 13 cărți fiecăruia din 52; atu = pica.
+- Licitezi câte levate iei (licit 1…13) sau licit 0 = nil.
+- Reușit: 10×licitație + 1 pe levată în plus (bag; 10 bag-uri = −100), picat: −10×licitație; nil ±50.
+- Nu conduci pică până nu s-a jucat una.
+- Până la 150 sau 12 mâini.
+- Informație ascunsă: vezi doar mâna ta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: imparte, licit 4, As, 7h.
+- Exemple legale la început: `licit`, `0`
+- La început sunt 28 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="prinde"></a>
+## Prinde (licitație exactă, 2 jucători)
+
+- **Id:** `prinde`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play prinde` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 13 runde cu mâini de 1…7…1 cărți; o carte întoarsă dă atuul.
+- Spui câte levate iei (licit N); dealerul nu poate aduce suma licitațiilor la numărul de levate.
+- Exact = 10 + licitația, altfel 0.
+- Culoare obligatorie, atu bate tot.
+- Informație ascunsă: vezi doar mâna ta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: imparte, licit 2, Kd, 4s.
+- Exemple legale la început: `licit`, `0`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="whist"></a>
+## Whist (2 jucători)
+
+- **Id:** `whist`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play whist` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 13 cărți fiecăruia din 52; ultima carte a dealerului se arată și dă atuul.
+- Culoare obligatorie, atu bate tot.
+- Cine ia peste 6 levate primește câte un punct pentru fiecare levată peste a șasea; jocul se încheie la 5 puncte (fără onoruri).
+- Informație ascunsă: vezi doar mâna ta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: imparte, Ah, 9c.
+- Exemple legale la început: `9h`, `2h`
+- La început sunt 13 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="tarneeb"></a>
 ## Tarneeb (2 jucători)
@@ -2020,8 +2326,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 7h, 7h x 3c 4d, imparte.
-- Exemple legale la început: `4h`, `Qd`
-- La început sunt 14 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `9h`, `x`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="truco"></a>
 ## Truco (Argentina)
@@ -2041,7 +2347,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: 7e, truco, envido, quiero, noquiero, cuenta, mazo, reparte.
-- Exemple legale la început: `1e`, `12b`
+- Exemple legale la început: `3c`, `10c`
 - La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="trix"></a>
@@ -2220,7 +2526,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `focare`
 - **Categorie:** Cooperativ
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play focare` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2236,7 +2542,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 - Sintaxă din regulile jocului: vezi lista `?`
 - Exemple legale la început: `mers`, `bora`
-- La început sunt 60 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- La început sunt 15 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="strajile"></a>
 ## Străjile Codrului (cooperativ de apărare, cărți de putere)
@@ -2244,7 +2550,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `strajile`
 - **Categorie:** Cooperativ
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play strajile` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2268,7 +2574,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `farul`
 - **Categorie:** Cooperativ
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play farul` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2358,7 +2664,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `santinela`
 - **Categorie:** Party
 - **Jucători:** tu + roboți (restul mesei e simulat); `--you both` nu are sens pentru toți
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play santinela` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2369,8 +2675,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: echipa 1 3, da, nu, succes, sabotaj, tinta 4, masa.
-- Exemple legale la început: `da`, `nu`
-- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `echipa`, `1`
+- La început sunt 30 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="consiliul"></a>
 ## Sfatul Negustorilor (alegeri și legi, roluri ascunse)
@@ -2378,7 +2684,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `consiliul`
 - **Categorie:** Party
 - **Jucători:** tu + roboți (restul mesei e simulat); `--you both` nu are sens pentru toți
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play consiliul` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2390,8 +2696,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: cancelar 3, da, nu, arunca M, promulga P, executa 4, masa.
-- Exemple legale la început: `da`, `nu`
-- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `cancelar`, `2`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="valea"></a>
 ## Valea Uscată (duel western, roluri ascunse)
@@ -2399,7 +2705,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `valea`
 - **Categorie:** Cărți
 - **Jucători:** tu + roboți (restul mesei e simulat); `--you both` nu are sens pentru toți
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play valea` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2412,8 +2718,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: foc 3, leac, salon, mitraliera, pusca, panica 2, incheie, scarta foc, ocolire, accept, masa.
-- Exemple legale la început: `accept`, `ocolire`
-- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `incheie`, `foc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="hruba"></a>
 ## Hoinari prin Hrubă (monștri și comori, masa = roboți)
@@ -2421,7 +2727,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `hruba`
 - **Categorie:** Cărți
 - **Jucători:** tu + roboți (restul mesei e simulat); `--you both` nu are sens pentru toți
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play hruba` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2443,7 +2749,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `apus`
 - **Categorie:** Strategie
 - **Jucători:** tu + roboți (restul mesei e simulat); `--you both` nu are sens pentru toți
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play apus` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2466,7 +2772,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `fulger`
 - **Categorie:** Party
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play fulger` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2479,7 +2785,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: numele simbolului (ex. luna, stea), cronometru.
-- Exemple legale la început: `clopot`, `dop`
+- Exemple legale la început: `ancora`, `dop`
 - La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="roade"></a>
@@ -2488,7 +2794,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `roade`
 - **Categorie:** Cărți
 - **Jucători:** tu + roboți (restul mesei e simulat); `--you both` nu are sens pentru toți
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play roade` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2526,8 +2832,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `activ`, `3`
-- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `activ`, `1`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="tcg_zone"></a>
 ## Cărți colecționabile: monștri în zone și capcane (Hotarele Ceții)
@@ -2589,8 +2895,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Reguli pe scurt**
 
 - Set original de 42 de cărți (personaje, acțiuni); pachete pregătite de 30 (J1 Pădurea Cântătoare, J2 Muntele de Fier), 7 cărți în mână; primul la 15 faimă câștigă.
-- Tură: pesca (forțat;
-- J1 nu în prima tură), cerneala N (o carte cu cerneală pe tură în călimară = 1 cerneală pe tură), joaca N [e2|m1] (personajele se usucă o tură), misiune P (aduce faimă), provocare P e Q (doar contra personajelor ÎNCLINATE), fin.
+- Tură: pesca (mutare forțată la începutul fiecărei ture; în prima tură J1 o scrie tot, dar nu trage nicio carte), cerneala N (o carte cu cerneală pe tură în călimară = 1 cerneală pe tură), joaca N [e2|m1] (personajele se usucă o tură), misiune P (aduce faimă), provocare P e Q (doar contra personajelor ÎNCLINATE), fin.
 - Cuvinte-cheie: Elan, Gardian, Zburător, Provocator, Rezistență.
 - Daunele rămân până la eliminare.
 - Informație ascunsă: vezi doar mâna J1.
@@ -2607,7 +2912,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `spionii`
 - **Categorie:** Party
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play spionii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2621,7 +2926,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `ghici`, `cont`
+- Exemple legale la început: `ghici`, `ceas`
 - La început sunt 50 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="povestitor"></a>
@@ -2768,7 +3073,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `indiciu`, `tropical`
+- Exemple legale la început: `indiciu`, `rosie`
 - La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="cuvantunic"></a>
@@ -2798,7 +3103,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `mosia`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play mosia` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2821,7 +3126,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `gospodaria`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play gospodaria` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2856,8 +3161,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `pune`, `ferma`
-- La început sunt 31 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `pune`, `piata`
+- La început sunt 33 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="taramuri"></a>
 ## Tărâmuri (transformarea terenului și piste de ritual)
@@ -2865,7 +3170,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `taramuri`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play taramuri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2878,7 +3183,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `inicial`, `a3`
+- Exemple legale la început: `inicial`, `d1`
 - La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="furnale"></a>
@@ -2900,7 +3205,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 - Sintaxă din regulile jocului: vezi lista `?`
 - Exemple legale la început: `fabrica`, `0`
-- La început sunt 71 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- La început sunt 74 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="reverdire"></a>
 ## Reverdire (variantă originală)
@@ -2908,13 +3213,13 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `reverdire`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** nu
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play reverdire` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
 
 - Motor de resurse și proiecte de cărți: ridici Umiditatea, Aerul și Lacurile (RR).
-- O generație: Cercetare (compra N, 3 L; gata), acțiuni una pe tură (joc N, vinde N, pompa, irigare, plantare, asezare, conv sem, conv caldura, pas; apoi pune c3), producție.
+- O generație începe cu mutarea forțată generatie, apoi Cercetare (compra N, 3 L; gata), acțiuni una pe tură (joc N, vinde N, pompa, irigare, plantare, asezare, conv sem, conv caldura, pas; apoi pune c3), producție.
 - Cărămizile plătesc proiectele B, Cristalele pe cele S.
 - Scor: RR + PV + arbori + orașe.
 - Informație ascunsă: mâna, oferta și pachetul.
@@ -2931,7 +3236,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `salina`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play salina` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2944,7 +3249,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 - Sintaxă din regulile jocului: vezi lista `?`
 - Exemple legale la început: `agent`, `1`
-- La început sunt 235 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- La început sunt 226 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="catun"></a>
 ## Cătun (variantă originală)
@@ -2952,7 +3257,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `catun`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play catun` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2965,7 +3270,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 - Sintaxă din regulile jocului: vezi lista `?`
 - Exemple legale la început: `lucru`, `a`
-- La început sunt 27 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- La început sunt 31 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="solzi"></a>
 ## Solzi (variantă originală)
@@ -2973,7 +3278,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `solzi`
 - **Categorie:** Cărți
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play solzi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -2986,8 +3291,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `joc`, `4`
-- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 19 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="poieni"></a>
 ## Poieni (variantă originală)
@@ -2995,7 +3300,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `poieni`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play poieni` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -3017,7 +3322,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `epoci`
 - **Categorie:** Cărți
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play epoci` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -3039,12 +3344,12 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `tinuturi`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play tinuturi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
 
-- Domino de teritorii cu coroane, 2 jucători: regat 9×9 cu castel în e5, încape în 7×7. 24 de piese-domino (generate de noi) în rânduri de câte 4: proprietarul piesei cu numărul mic joacă primul.
+- Domino de teritorii cu coroane, 2 jucători: regat 9×9 cu castel în e5, încape în 7×7. 24 de piese-domino trase din setul nostru de 48 (generate de noi) în rânduri de câte 4: proprietarul piesei cu numărul mic joacă primul.
 - Tura: pune e6-e7 (prima jumătate pe e6) lipit de castel sau de același teritoriu, apoi alege 2 din rândul următor; descarta doar dacă nu ai nicio așezare.
 - Primul rând: alege N (J1, J2, J2, J1); revelare dezvăluie rândul.
 - Scor: regiune = pătrate × coroane, +5 fără aruncări, +10 castel central.
@@ -3061,7 +3366,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `rezervatia`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play rezervatia` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -3075,8 +3380,8 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 **Mutări** (din `?` pe un joc nou, `legal_moves`)
 
 - Sintaxă din regulile jocului: vezi lista `?`
-- Exemple legale la început: `animal`, `5`
-- La început sunt 52 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- Exemple legale la început: `construieste`, `padure`
+- La început sunt 49 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="hotar"></a>
 ## Hotarul (variantă originală)
@@ -3084,7 +3389,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `hotar`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** nu
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play hotar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -3106,7 +3411,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `codru`
 - **Categorie:** Strategie
 - **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
 - **Pornire:** `polytabletop play codru` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -3153,7 +3458,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - **Id:** `ceasornic`
 - **Categorie:** Party
 - **Jucători:** tu + roboți (restul mesei e simulat); `--you both` nu are sens pentru toți
-- **Informație ascunsă:** da (stare aleatoare); în „la masă” afișajul poate arăta informația Jucătorului 1
+- **Informație ascunsă:** nu
 - **Pornire:** `polytabletop play ceasornic` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
 
 **Reguli pe scurt**
@@ -3169,7 +3474,7 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 
 - Sintaxă din regulile jocului: ghicesc 3 7, otravesc 3, ocrotesc 3, ucid 3, declar, mint veghea, cer 4, vanez 5, treci, nominez 6, pas, da, nu, masa.
 - Exemple legale la început: `mint`, `ghicitoarea`
-- La început sunt 29 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+- La început sunt 33 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="coroana"></a>
 ## Drumul spre Coroană (aventură pe inele, om contra roboți)
@@ -3194,4 +3499,376 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - Sintaxă din regulile jocului: zar, bea, leac, urc, urc plata, urc cheie, urc lupta, intru, mantin, masa.
 - Exemple legale la început: `alege`, `haiducul`
 - La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="coridor"></a>
+## Coridor (cursă de pioni cu ziduri)
+
+- **Id:** `coridor`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play coridor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 9×9;
+- J1 (X) pornește din e1 și ajunge pe rândul 9, J2 (O) din e9 spre rândul 1.
+- Pe rând: un pas ortogonal (se sare peste pionul adversar vecin, în diagonală dacă în spate e zid/margine) SAU un zid (10 de jucător, lung cât două pătrate) care nu se suprapune, nu se încrucișează și nu închide complet calea nimănui.
+- Remiză la 200 de semi-mutări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: e2 (pion), d4h (zid orizontal peste d4–e4), d4v (zid vertical la dreapta lui d4–d5).
+- Exemple legale la început: `e2`, `f1`
+- La început sunt 131 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="drum"></a>
+## Drum de pietre (5×5, stive)
+
+- **Id:** `drum`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play drum` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 21 de pietre plate și o căpetenie de jucător.
+- Prima mutare: pui o piatră plată a adversarului.
+- Apoi: pui o piatră pe un pătrat gol (c3 plată, sc3 zid, cc3 căpetenie) sau muți o stivă proprie: iei de sus 1–5 pietre și le lași pe o linie (+ sus, - jos, < stânga, > dreapta), cel puțin una pe pătrat; ex. c3> sau 3c3>21.
+- Zidul și căpetenia blochează stivele; doar căpetenia lăsată singură pe zid îl turtește.
+- Câștigă drumul (lanț de pietre plate/căpetenii proprii între margini opuse); la tablă plină, rezervă goală sau 150 de semi-mutări câștigă cine are mai multe pietre plate la vârf.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `a1`, `b1`
+- La început sunt 25 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tripierd"></a>
+## Trei-pierde (hexagonal)
+
+- **Id:** `tripierd`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tripierd` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă hexagonală cu latura 5 (61 de celule, rânduri a–i).
+- Pe rând pui o piesă pe o celulă goală: patru (sau mai multe) în linie câștigă, exact trei în linie (fără patru) pierde; tabla plină = remiză.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: e5 (litera = rândul, cifra = poziția în rând).
+- Exemple legale la început: `e5`, `d4`
+- La început sunt 61 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="konane"></a>
+## Konane (dame hawaiiene)
+
+- **Id:** `konane`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play konane` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 8×8 plină în șah (negrul = J1 pe a1, c1, …).
+- Deschidere: J1 ridică d4, e5, a1 sau h8 (remove d4), J2 ridică o piesă proprie vecină cu golul.
+- Apoi sari ortogonal peste o piesă adversă într-un pătrat gol (o scoți), poți continua în aceeași direcție.
+- Cine nu mai poate muta pierde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: remove d4, c3-e3, c3-g3 (salt dublu).
+- Exemple legale la început: `remove`, `d4`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fanorona"></a>
+## Fanorona (Madagascar)
+
+- **Id:** `fanorona`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fanorona` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 5×9 de puncte (diagonale doar pe punctele pare), 22 piese pe jucător.
+- Mutare cu un pas pe un punct liber; dacă pasul continuă spre o piesă adversă o captură pe ea și șirul din spatele ei (abordare, a), iar dacă te îndepărtezi de o piesă adversă o captură la fel (retragere, w).
+- Captura e obligatorie; după ea aceeași piesă poate continua (opțional) cu alte capturi, fără să repete direcția și fără să revină pe un punct deja ocupat în tură.
+- Câștigi scoțând toate piesele adverse; remiză după 40 de semi-mutări fără captură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: e2-e3, c3-d3a, c3-d3w, c3-d3a-d4w-e5a (lanț; fiecare prefix al unui lanț apare în listă ca mutare separată, iar mutarea aleasă încheie tura: așa alegi unde te oprești).
+- Exemple legale la început: `d2-e3a`, `e2-e3a`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tigri"></a>
+## Tigri și capre (Nepal)
+
+- **Id:** `tigri`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tigri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 5×5 de puncte (diagonale pe punctele pare).
+- Tu ești caprele (20, în mână) și muți primul; calculatorul are 4 tigri în colțuri.
+- Caprele se plasează pe rând pe puncte libere, apoi se mută cu un pas.
+- Tigrii se mută cu un pas sau sar peste o capră vecină pe punctul liber de după ea, capturând-o (neobligatoriu).
+- Tigrii câștigă cu 5 capre capturate; caprele câștigă imobilizând toți tigrii; remiză după 100 de semi-mutări fără captură în faza de mutare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: c3 (plasare), a1-b2 (pas), a1xc1 (săritură cu captură).
+- Exemple legale la început: `b1`, `c1`
+- La început sunt 21 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="surakarta"></a>
+## Surakarta (Java)
+
+- **Id:** `surakarta`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play surakarta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 6×6, 12 piese pe jucător.
+- Mutare simplă pe un punct vecin liber (și diagonal).
+- Captura: piesa aleargă pe unul din cele două circuite (liniile 2 și 5 = mic; 3 și 4 = mare, legate prin arcuri în colțuri), în oricare sens, peste puncte libere, trece prin cel puțin un arc și ia prima piesă întâlnită dacă e a adversarului; propriile piese blochează, iar locul de plecare contează ca liber.
+- Câștigi scoțând toate piesele adverse; remiză după 60 de semi-mutări fără captură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: b2-b3 (pas), a2xb6 (captură).
+- Exemple legale la început: `a2-a3`, `a2-b3`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hasami"></a>
+## Hasami Shogi (Japonia)
+
+- **Id:** `hasami`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hasami` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 9×9, 9 piese pe jucător pe rândul din spate.
+- Piesele se mută ca turnul (fără sărituri).
+- Captură prin încadrare: un șir de piese adverse consecutive, pe rând sau coloană, aflat între piesa mutată și o altă piesă a ta, este scos; poți intra liber între două piese adverse.
+- Câștigi lăsând adversarul cu cel mult o piesă sau blocat; remiză după 100 de semi-mutări fără captură (colțurile nu au regulă specială).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a1-a5 (fișiere a–i, rânduri 1–9).
+- Exemple legale la început: `a1-a2`, `a1-a3`
+- La început sunt 63 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="puncte"></a>
+## Puncte și căsuțe (5×5)
+
+- **Id:** `puncte`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play puncte` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Rețea de 6×6 puncte (5×5 căsuțe).
+- Pe rând tragi o linie între două puncte vecine; cine închide a patra latură a unei căsuțe o câștigă și mută din nou (o linie poate închide două căsuțe).
+- Când s-au tras toate cele 60 de linii, câștigă cine are mai multe căsuțe (25, deci fără remiză).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: oa1 (linie orizontală, de la punctul a1 spre dreapta), va1 (linie verticală, de la punctul a1 în sus); coloane a–f, rânduri 1–6.
+- Exemple legale la început: `oa1`, `ob1`
+- La început sunt 60 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="strapungere"></a>
+## Străpungere (8×8)
+
+- **Id:** `strapungere`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play strapungere` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare jucător are 16 piese pe primele două rânduri.
+- O piesă înaintează un pas drept pe un pătrat gol sau un pas în diagonală pe un pătrat gol ori ocupat de adversar (captură); înainte nu se capturează.
+- Câștigă cine ajunge primul pe rândul de capăt al adversarului sau cine capturează toate piesele adverse; cine nu mai are nicio mutare pierde.
+- J1 (X) urcă, J2 (O) coboară.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: b2-b3, b2-c3, b2xc3.
+- Exemple legale la început: `a2-a3`, `a2-b3`
+- La început sunt 22 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="izolare"></a>
+## Izolare (7×7)
+
+- **Id:** `izolare`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play izolare` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare jucător are un pion (X la d1, O la d7).
+- O tură: muți pionul ca regina la șah (orice distanță în linie dreaptă sau diagonală, doar peste pătrate libere), apoi scoți definitiv de pe tablă un pătrat liber (nu cel cu pionul adversarului).
+- Cine nu mai poate muta la începutul turei pierde; nu există remiză.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d1-d3/e5 (de la, la, pătratul scos).
+- Exemple legale la început: `d1-d4/c6`, `d1-d4/d6`
+- La început sunt 799 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="rotire"></a>
+## Rotire în cinci (6×6)
+
+- **Id:** `rotire`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play rotire` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 6×6 din patru cadrane 3×3 (1 stânga-sus, 2 dreapta-sus, 3 stânga-jos, 4 dreapta-jos).
+- O tură: pui o bilă pe un pătrat gol, apoi rotești un cadran cu un sfert de tură (d = în sensul acelor de ceasornic, s = invers).
+- Cinci bile în linie (orizontal, vertical, diagonal) după rotire câștigă; dacă ambii jucători au cinci deodată sau tabla se umple fără cinci, e remiză.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: c3/1d (bila pe c3, cadranul 1 spre dreapta).
+- Exemple legale la început: `c3/1d`, `c3/1s`
+- La început sunt 288 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="coloane"></a>
+## Coloane (dame în turnuri)
+
+- **Id:** `coloane`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play coloane` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 7×7 pe pătratele închise, 11 piese pe jucător.
+- Soldatul merge un pas în diagonală înainte, ofițerul (soldat ajuns pe ultimul rând) în toate diagonalele.
+- Captura e obligatorie: sari peste o coloană adversă vecină pe un pătrat liber și iei doar piesa ei de sus, care ajunge sub coloana ta; săriturile se înlănțuie, o coloană nu poate fi sărită de două ori, promovarea încheie tura.
+- Coloana e condusă de piesa de sus.
+- Pierde cine nu mai poate muta; remiză după 80 de semi-mutări fără captură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: c3-d4 (pas), c3xe5xg3 (salturi).
+- Exemple legale la început: `a3-b4`, `c3-d4`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bile"></a>
+## Bile pe hexagoane (5 pe latură)
+
+- **Id:** `bile`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bile` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă hexagonală cu 61 de celule, 14 bile pe jucător.
+- Muți 1-3 bile proprii vecine pe aceeași linie cu un pas: pe lungime (poți împinge 1 sau 2 bile adverse dacă ai mai multe bile decât ele și locul de dincolo e liber sau în afara tablei) ori lateral (toate destinațiile libere).
+- Bilele împinse în afară sunt capturate; câștigă cine scoate 6; remiză după 120 de semi-mutări fără captură.
+- Celule: rândul a (jos) – i (sus) și coloana 1-9.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: e5>ne (o bilă), c3-c5>se (grup, de la prima la ultima bilă); direcții ne, e, se, sw, w, nw.
+- Exemple legale la început: `c3>ne`, `c3>w`
+- La început sunt 68 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="patru"></a>
+## Patru atribute (piesa dată)
+
+- **Id:** `patru`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play patru` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 16 piese distincte cu patru însușiri binare (culoare, înălțime, formă, vârf), tablă 4×4.
+- În tura ta pui pe tablă piesa primită de la adversar, apoi alegi una dintre cele rămase și i-o dai lui; prima tură doar dă o piesă.
+- Câștigă cine completează un rând, o coloană sau o diagonală de patru piese cu o însușire comună; tabla plină = remiză.
+- Piesele se numesc 0-9, a-f (biții = însușirile).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: >5 (prima tură), c3>7 (pui pe c3, dai piesa 7), c3 (mutare câștigătoare sau ultima).
+- Exemple legale la început: `>0`, `>1`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cupe"></a>
+## Cupe încuibate (4×4)
+
+- **Id:** `cupe`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cupe` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 4×4; fiecare jucător are 3 stive de câte 4 cupe (mărimi 1-4) încuibate, se ia doar cea de sus.
+- Pui o cupă din rezervă pe o celulă goală sau peste una mai mică, sau muți o cupă proprie vizibilă pe una goală ori mai mică.
+- Din rezervă poți acoperi o cupă adversă doar dacă face parte dintr-un șir de trei piese adverse vizibile pe o linie.
+- Câștigă patru cupe vizibile pe o linie; dacă ridici o cupă și descoperi șirul de patru al adversarului, el câștigă.
+- Remiză după 50 de semi-mutări fără punere din rezervă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 3@b2 (din rezervă, mărimea 3), b2-c3 (mutare pe tablă).
+- Exemple legale la început: `4@a1`, `4@b1`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="poliedre"></a>
+## Poliedre (duo, 14×14)
+
+- **Id:** `poliedre`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play poliedre` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 14×14, 2 jucători, fiecare cu 21 de poliomino (1-5 pătrate, notate a-u).
+- Prima piesă acoperă pătratul de start (e5 pentru J1, j10 pentru J2); următoarele trebuie să atingă o piesă proprie prin colț și niciodată pe latură (piesele adverse se pot atinge).
+- Cine nu poate pune trece; la două treceri la rând jocul se termină și câștigă cine are mai puține pătrate în piesele nefolosite.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: k3@e5 (piesa k, orientarea 3, colțul stânga-sus al dreptunghiului piesei la e5), pas.
+- Exemple legale la început: `a1@e5`, `b1@d5`
+- La început sunt 414 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 

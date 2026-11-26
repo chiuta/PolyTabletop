@@ -1,0 +1,996 @@
+{
+"langs": [
+"en",
+"ro",
+"fr",
+"it",
+"es",
+"pt",
+"de",
+"hu"
+],
+"origins": {
+"Africa": [
+"Africa",
+"Africa",
+"Afrique",
+"Africa",
+"África",
+"África",
+"Afrika",
+"Afrika"
+],
+"Africa de Sud": [
+"South Africa",
+"Africa de Sud",
+"Afrique du Sud",
+"Sudafrica",
+"Sudáfrica",
+"África do Sul",
+"Südafrika",
+"Dél-Afrika"
+],
+"America Latină": [
+"Latin America",
+"America Latină",
+"Amérique latine",
+"America Latina",
+"América Latina",
+"América Latina",
+"Lateinamerika",
+"Latin-Amerika"
+],
+"America Latină (Argentina, Uruguay)": [
+"Latin America (Argentina, Uruguay)",
+"America Latină (Argentina, Uruguay)",
+"Amérique latine (Argentine, Uruguay)",
+"America Latina (Argentina, Uruguay)",
+"América Latina (Argentina, Uruguay)",
+"América Latina (Argentina, Uruguai)",
+"Lateinamerika (Argentinien, Uruguay)",
+"Latin-Amerika (Argentína, Uruguay)"
+],
+"America Latină (Brazilia)": [
+"Latin America (Brazil)",
+"America Latină (Brazilia)",
+"Amérique latine (Brésil)",
+"America Latina (Brasile)",
+"América Latina (Brasil)",
+"América Latina (Brasil)",
+"Lateinamerika (Brasilien)",
+"Latin-Amerika (Brazília)"
+],
+"America Latină (Mexic)": [
+"Latin America (Mexico)",
+"America Latină (Mexic)",
+"Amérique latine (Mexique)",
+"America Latina (Messico)",
+"América Latina (México)",
+"América Latina (México)",
+"Lateinamerika (Mexiko)",
+"Latin-Amerika (Mexikó)"
+],
+"America de Nord": [
+"North America",
+"America de Nord",
+"Amérique du Nord",
+"Nord America",
+"América del Norte",
+"América do Norte",
+"Nordamerika",
+"Észak-Amerika"
+],
+"Antic": [
+"Ancient",
+"Antic",
+"Antiquité",
+"Antico",
+"Antiguo",
+"Antigo",
+"Antike",
+"Ókori"
+],
+"Arabia Saudită": [
+"Saudi Arabia",
+"Arabia Saudită",
+"Arabie saoudite",
+"Arabia Saudita",
+"Arabia Saudí",
+"Arábia Saudita",
+"Saudi-Arabien",
+"Szaúd-Arábia"
+],
+"Asia": [
+"Asia",
+"Asia",
+"Asie",
+"Asia",
+"Asia",
+"Ásia",
+"Asien",
+"Ázsia"
+],
+"Asia de Est": [
+"East Asia",
+"Asia de Est",
+"Asie de l'Est",
+"Asia orientale",
+"Asia oriental",
+"Ásia Oriental",
+"Ostasien",
+"Kelet-Ázsia"
+],
+"Asia de Sud": [
+"South Asia",
+"Asia de Sud",
+"Asie du Sud",
+"Asia meridionale",
+"Asia meridional",
+"Sul da Ásia",
+"Südasien",
+"Dél-Ázsia"
+],
+"Australia": [
+"Australia",
+"Australia",
+"Australie",
+"Australia",
+"Australia",
+"Austrália",
+"Australien",
+"Ausztrália"
+],
+"Austria": [
+"Austria",
+"Austria",
+"Autriche",
+"Austria",
+"Austria",
+"Áustria",
+"Österreich",
+"Ausztria"
+],
+"Brazilia": [
+"Brazil",
+"Brazilia",
+"Brésil",
+"Brasile",
+"Brasil",
+"Brasil",
+"Brasilien",
+"Brazília"
+],
+"Bulgaria": [
+"Bulgaria",
+"Bulgaria",
+"Bulgarie",
+"Bulgaria",
+"Bulgaria",
+"Bulgária",
+"Bulgarien",
+"Bulgária"
+],
+"Canada": [
+"Canada",
+"Canada",
+"Canada",
+"Canada",
+"Canadá",
+"Canadá",
+"Kanada",
+"Kanada"
+],
+"Caraibe": [
+"Caribbean",
+"Caraibe",
+"Caraïbes",
+"Caraibi",
+"Caribe",
+"Caribe",
+"Karibik",
+"Karib-térség"
+],
+"Cehia": [
+"Czechia",
+"Cehia",
+"Tchéquie",
+"Cechia",
+"Chequia",
+"Chéquia",
+"Tschechien",
+"Csehország"
+],
+"China": [
+"China",
+"China",
+"Chine",
+"Cina",
+"China",
+"China",
+"China",
+"Kína"
+],
+"Coreea": [
+"Korea",
+"Coreea",
+"Corée",
+"Corea",
+"Corea",
+"Coreia",
+"Korea",
+"Korea"
+],
+"Filipine": [
+"Philippines",
+"Filipine",
+"Philippines",
+"Filippine",
+"Filipinas",
+"Filipinas",
+"Philippinen",
+"Fülöp-szigetek"
+],
+"Franța": [
+"France",
+"Franța",
+"France",
+"Francia",
+"Francia",
+"França",
+"Frankreich",
+"Franciaország"
+],
+"Germania": [
+"Germany",
+"Germania",
+"Allemagne",
+"Germania",
+"Alemania",
+"Alemanha",
+"Deutschland",
+"Németország"
+],
+"Global": [
+"Worldwide",
+"Global",
+"Mondial",
+"Globale",
+"Mundial",
+"Global",
+"Weltweit",
+"Világszerte"
+],
+"India": [
+"India",
+"India",
+"Inde",
+"India",
+"India",
+"Índia",
+"Indien",
+"India"
+],
+"Indonezia": [
+"Indonesia",
+"Indonezia",
+"Indonésie",
+"Indonesia",
+"Indonesia",
+"Indonésia",
+"Indonesien",
+"Indonézia"
+],
+"Israel": [
+"Israel",
+"Israel",
+"Israël",
+"Israele",
+"Israel",
+"Israel",
+"Israel",
+"Izrael"
+],
+"Italia": [
+"Italy",
+"Italia",
+"Italie",
+"Italia",
+"Italia",
+"Itália",
+"Italien",
+"Olaszország"
+],
+"Japonia": [
+"Japan",
+"Japonia",
+"Japon",
+"Giappone",
+"Japón",
+"Japão",
+"Japan",
+"Japán"
+],
+"Malaezia": [
+"Malaysia",
+"Malaezia",
+"Malaisie",
+"Malesia",
+"Malasia",
+"Malásia",
+"Malaysia",
+"Malajzia"
+],
+"Marea Britanie": [
+"United Kingdom",
+"Marea Britanie",
+"Royaume-Uni",
+"Regno Unito",
+"Reino Unido",
+"Reino Unido",
+"Vereinigtes Königreich",
+"Egyesült Királyság"
+],
+"Nigeria": [
+"Nigeria",
+"Nigeria",
+"Nigéria",
+"Nigeria",
+"Nigeria",
+"Nigéria",
+"Nigeria",
+"Nigéria"
+],
+"Oceania": [
+"Oceania",
+"Oceania",
+"Océanie",
+"Oceania",
+"Oceanía",
+"Oceania",
+"Ozeanien",
+"Óceánia"
+],
+"Olanda": [
+"Netherlands",
+"Olanda",
+"Pays-Bas",
+"Paesi Bassi",
+"Países Bajos",
+"Países Baixos",
+"Niederlande",
+"Hollandia"
+],
+"Orientul Mijlociu": [
+"Middle East",
+"Orientul Mijlociu",
+"Moyen-Orient",
+"Medio Oriente",
+"Oriente Medio",
+"Médio Oriente",
+"Naher Osten",
+"Közel-Kelet"
+],
+"Polonia": [
+"Poland",
+"Polonia",
+"Pologne",
+"Polonia",
+"Polonia",
+"Polónia",
+"Polen",
+"Lengyelország"
+],
+"Rusia": [
+"Russia",
+"Rusia",
+"Russie",
+"Russia",
+"Rusia",
+"Rússia",
+"Russland",
+"Oroszország"
+],
+"Rusia (URSS)": [
+"Russia (USSR)",
+"Rusia (URSS)",
+"Russie (URSS)",
+"Russia (URSS)",
+"Rusia (URSS)",
+"Rússia (URSS)",
+"Russland (UdSSR)",
+"Oroszország (Szovjetunió)"
+],
+"SUA": [
+"USA",
+"SUA",
+"États-Unis",
+"USA",
+"EE. UU.",
+"EUA",
+"USA",
+"USA"
+],
+"Spania": [
+"Spain",
+"Spania",
+"Espagne",
+"Spagna",
+"España",
+"Espanha",
+"Spanien",
+"Spanyolország"
+],
+"Suedia": [
+"Sweden",
+"Suedia",
+"Suède",
+"Svezia",
+"Suecia",
+"Suécia",
+"Schweden",
+"Svédország"
+],
+"Thailanda": [
+"Thailand",
+"Thailanda",
+"Thaïlande",
+"Thailandia",
+"Tailandia",
+"Tailândia",
+"Thailand",
+"Thaiföld"
+],
+"Vietnam": [
+"Vietnam",
+"Vietnam",
+"Viêt Nam",
+"Vietnam",
+"Vietnam",
+"Vietname",
+"Vietnam",
+"Vietnam"
+]
+},
+"notes": {
+"Hobby modern": [
+"Modern hobby",
+"Hobby modern",
+"Loisir moderne",
+"Hobby moderno",
+"Afición moderna",
+"Hobby moderno",
+"Modernes Hobby",
+"Modern hobbi"
+],
+"Comunități de rol": [
+"Role-playing communities",
+"Comunități de rol",
+"Communautés de jeu de rôle",
+"Comunità di giochi di ruolo",
+"Comunidades de rol",
+"Comunidades de RPG",
+"Rollenspiel-Communities",
+"Szerepjátékos közösségek"
+],
+"Joc modern de familie": [
+"Modern family game",
+"Joc modern de familie",
+"Jeu familial moderne",
+"Gioco familiare moderno",
+"Juego familiar moderno",
+"Jogo familiar moderno",
+"Modernes Familienspiel",
+"Modern családi játék"
+],
+"Joc de petrecere": [
+"Party game",
+"Joc de petrecere",
+"Jeu d'ambiance",
+"Gioco da festa",
+"Juego de fiesta",
+"Jogo de festa",
+"Partyspiel",
+"Partijáték"
+],
+"Clasic de familie": [
+"Family classic",
+"Clasic de familie",
+"Classique familial",
+"Classico di famiglia",
+"Clásico familiar",
+"Clássico de família",
+"Familienklassiker",
+"Családi klasszikus"
+],
+"Joc pentru copii": [
+"Children's game",
+"Joc pentru copii",
+"Jeu pour enfants",
+"Gioco per bambini",
+"Juego infantil",
+"Jogo infantil",
+"Kinderspiel",
+"Gyerekjáték"
+],
+"Joc de cărți tradițional românesc": [
+"Traditional Romanian card game",
+"Joc de cărți tradițional românesc",
+"Jeu de cartes traditionnel roumain",
+"Gioco di carte tradizionale rumeno",
+"Juego de cartas tradicional rumano",
+"Jogo de cartas tradicional romeno",
+"Traditionelles rumänisches Kartenspiel",
+"Hagyományos román kártyajáték"
+],
+"Menționat printre cele mai cumpărate": [
+"Listed among the best sellers",
+"Menționat printre cele mai cumpărate",
+"Cité parmi les plus vendus",
+"Citato tra i più venduti",
+"Citado entre los más vendidos",
+"Citado entre os mais vendidos",
+"Unter den Bestsellern genannt",
+"A legkeresettebbek között említik"
+],
+"Comunități în orașele mari": [
+"Communities in the big cities",
+"Comunități în orașele mari",
+"Communautés dans les grandes villes",
+"Comunità nelle grandi città",
+"Comunidades en las grandes ciudades",
+"Comunidades nas grandes cidades",
+"Communities in den Großstädten",
+"Közösségek a nagyvárosokban"
+],
+"Joc social de deducție": [
+"Social deduction game",
+"Joc social de deducție",
+"Jeu de déduction sociale",
+"Gioco di deduzione sociale",
+"Juego de deducción social",
+"Jogo de dedução social",
+"Soziales Deduktionsspiel",
+"Társas kikövetkeztetős játék"
+],
+"Comunitate mică": [
+"Small community",
+"Comunitate mică",
+"Petite communauté",
+"Piccola comunità",
+"Comunidad pequeña",
+"Pequena comunidade",
+"Kleine Community",
+"Kis közösség"
+],
+"Joc pentru copii și familie": [
+"Game for children and families",
+"Joc pentru copii și familie",
+"Jeu pour enfants et familles",
+"Gioco per bambini e famiglie",
+"Juego para niños y familias",
+"Jogo para crianças e famílias",
+"Spiel für Kinder und Familien",
+"Játék gyerekeknek és családoknak"
+],
+"Joc pentru doi": [
+"Two-player game",
+"Joc pentru doi",
+"Jeu à deux",
+"Gioco per due",
+"Juego para dos",
+"Jogo para dois",
+"Spiel für zwei",
+"Kétszemélyes játék"
+],
+"Colecționari": [
+"Collectors",
+"Colecționari",
+"Collectionneurs",
+"Collezionisti",
+"Coleccionistas",
+"Colecionadores",
+"Sammler",
+"Gyűjtők"
+],
+"Joc modern de cărți": [
+"Modern card game",
+"Joc modern de cărți",
+"Jeu de cartes moderne",
+"Gioco di carte moderno",
+"Juego de cartas moderno",
+"Jogo de cartas moderno",
+"Modernes Kartenspiel",
+"Modern kártyajáték"
+],
+"Cel mai jucat în familie și în cercuri de prieteni": [
+"The most played in families and among friends",
+"Cel mai jucat în familie și în cercuri de prieteni",
+"Le plus joué en famille et entre amis",
+"Il più giocato in famiglia e tra amici",
+"El más jugado en familia y entre amigos",
+"O mais jogado em família e entre amigos",
+"Am meisten gespielt in Familie und Freundeskreis",
+"A leggyakrabban játszott család és barátok körében"
+],
+"Pe cărți sau pe piese (Rummikub)": [
+"With cards or with tiles (Rummikub)",
+"Pe cărți sau pe piese (Rummikub)",
+"Aux cartes ou aux tuiles (Rummikub)",
+"Con le carte o con le tessere (Rummikub)",
+"Con cartas o con fichas (Rummikub)",
+"Com cartas ou com peças (Rummikub)",
+"Mit Karten oder Steinen (Rummikub)",
+"Kártyával vagy lapkákkal (Rummikub)"
+],
+"Cluburi, școli, turnee": [
+"Clubs, schools, tournaments",
+"Cluburi, școli, turnee",
+"Clubs, écoles, tournois",
+"Circoli, scuole, tornei",
+"Clubes, escuelas, torneos",
+"Clubes, escolas, torneios",
+"Vereine, Schulen, Turniere",
+"Klubok, iskolák, versenyek"
+],
+"Primul joc de masă al multor copii": [
+"Many children's first board game",
+"Primul joc de masă al multor copii",
+"Le premier jeu de société de nombreux enfants",
+"Il primo gioco da tavolo di molti bambini",
+"El primer juego de mesa de muchos niños",
+"O primeiro jogo de tabuleiro de muitas crianças",
+"Das erste Brettspiel vieler Kinder",
+"Sok gyerek első társasjátéka"
+],
+"Remi pe piese": [
+"Rummy with tiles",
+"Remi pe piese",
+"Rami avec des tuiles",
+"Ramino con le tessere",
+"Rummy con fichas",
+"Rummy com peças",
+"Rommé mit Steinen",
+"Römi lapkákkal"
+],
+"Inclusiv ediții locale": [
+"Including local editions",
+"Inclusiv ediții locale",
+"Y compris des éditions locales",
+"Comprese le edizioni locali",
+"Incluidas ediciones locales",
+"Incluindo edições locais",
+"Auch mit lokalen Ausgaben",
+"Helyi kiadásokkal együtt"
+],
+"Joc de cărți, mai ales în Transilvania": [
+"Card game, especially in Transylvania",
+"Joc de cărți, mai ales în Transilvania",
+"Jeu de cartes, surtout en Transylvanie",
+"Gioco di carte, soprattutto in Transilvania",
+"Juego de cartas, sobre todo en Transilvania",
+"Jogo de cartas, sobretudo na Transilvânia",
+"Kartenspiel, vor allem in Siebenbürgen",
+"Kártyajáték, főleg Erdélyben"
+],
+"Variantă în română": [
+"Romanian-language edition",
+"Variantă în română",
+"Version en roumain",
+"Versione in rumeno",
+"Versión en rumano",
+"Versão em romeno",
+"Rumänische Ausgabe",
+"Román nyelvű változat"
+],
+"Foarte vândut în familie": [
+"Big seller among families",
+"Foarte vândut în familie",
+"Très vendu auprès des familles",
+"Molto venduto tra le famiglie",
+"Muy vendido entre las familias",
+"Muito vendido entre as famílias",
+"Von Familien sehr oft gekauft",
+"Családok körében nagyon keresett"
+],
+"Jucat între prieteni": [
+"Played among friends",
+"Jucat între prieteni",
+"Joué entre amis",
+"Giocato tra amici",
+"Se juega entre amigos",
+"Jogado entre amigos",
+"Unter Freunden gespielt",
+"Barátok között játsszák"
+],
+"Joc de cărți popular": [
+"Popular card game",
+"Joc de cărți popular",
+"Jeu de cartes populaire",
+"Gioco di carte popolare",
+"Juego de cartas popular",
+"Jogo de cartas popular",
+"Beliebtes Kartenspiel",
+"Népszerű kártyajáték"
+],
+"Joc cu zaruri": [
+"Dice game",
+"Joc cu zaruri",
+"Jeu de dés",
+"Gioco di dadi",
+"Juego de dados",
+"Jogo de dados",
+"Würfelspiel",
+"Kockajáték"
+],
+"Joc tradițional pe tablă": [
+"Traditional board game",
+"Joc tradițional pe tablă",
+"Jeu de plateau traditionnel",
+"Gioco da tavolo tradizionale",
+"Juego de tablero tradicional",
+"Jogo de tabuleiro tradicional",
+"Traditionelles Brettspiel",
+"Hagyományos táblás játék"
+],
+"Joc de petrecere în română": [
+"Party game in Romanian",
+"Joc de petrecere în română",
+"Jeu d'ambiance en roumain",
+"Gioco da festa in rumeno",
+"Juego de fiesta en rumano",
+"Jogo de festa em romeno",
+"Partyspiel auf Rumänisch",
+"Román nyelvű partijáték"
+],
+"Poarta de intrare în jocurile moderne": [
+"Gateway to modern games",
+"Poarta de intrare în jocurile moderne",
+"Porte d'entrée vers les jeux modernes",
+"Porta d'ingresso ai giochi moderni",
+"Puerta de entrada a los juegos modernos",
+"Porta de entrada para os jogos modernos",
+"Einstieg in moderne Spiele",
+"Belépő a modern játékok világába"
+],
+"Joc rapid de cărți": [
+"Quick card game",
+"Joc rapid de cărți",
+"Jeu de cartes rapide",
+"Gioco di carte veloce",
+"Juego de cartas rápido",
+"Jogo de cartas rápido",
+"Schnelles Kartenspiel",
+"Gyors kártyajáték"
+],
+"Clasic de strategie": [
+"Strategy classic",
+"Clasic de strategie",
+"Classique de stratégie",
+"Classico di strategia",
+"Clásico de estrategia",
+"Clássico de estratégia",
+"Strategieklassiker",
+"Stratégiai klasszikus"
+],
+"Joc cooperativ": [
+"Cooperative game",
+"Joc cooperativ",
+"Jeu coopératif",
+"Gioco cooperativo",
+"Juego cooperativo",
+"Jogo cooperativo",
+"Kooperatives Spiel",
+"Együttműködős játék"
+],
+"Joc modern": [
+"Modern game",
+"Joc modern",
+"Jeu moderne",
+"Gioco moderno",
+"Juego moderno",
+"Jogo moderno",
+"Modernes Spiel",
+"Modern játék"
+],
+"Joc de petrecere pentru adulți": [
+"Party game for adults",
+"Joc de petrecere pentru adulți",
+"Jeu d'ambiance pour adultes",
+"Gioco da festa per adulti",
+"Juego de fiesta para adultos",
+"Jogo de festa para adultos",
+"Partyspiel für Erwachsene",
+"Partijáték felnőtteknek"
+],
+"Culturi generale": [
+"General knowledge",
+"Culturi generale",
+"Culture générale",
+"Cultura generale",
+"Cultura general",
+"Cultura geral",
+"Allgemeinwissen",
+"Általános műveltség"
+],
+"Monopoly cu geografia României": [
+"Monopoly-style game with Romanian geography",
+"Monopoly cu geografia României",
+"Jeu de type Monopoly avec la géographie de la Roumanie",
+"Gioco tipo Monopoly con la geografia della Romania",
+"Juego tipo Monopoly con la geografía de Rumanía",
+"Jogo tipo Monopoly com a geografia da Roménia",
+"Monopoly-Variante mit der Geografie Rumäniens",
+"Monopoly-típusú játék Románia földrajzával"
+],
+"Joc de logică": [
+"Logic game",
+"Joc de logică",
+"Jeu de logique",
+"Gioco di logica",
+"Juego de lógica",
+"Jogo de lógica",
+"Logikspiel",
+"Logikai játék"
+],
+"Joc cu hârtie sau pe tablă": [
+"Paper or board game",
+"Joc cu hârtie sau pe tablă",
+"Jeu sur papier ou sur plateau",
+"Gioco su carta o su tavola",
+"Juego de papel o de tablero",
+"Jogo de papel ou de tabuleiro",
+"Papier- oder Brettspiel",
+"Papíron vagy táblán játszott játék"
+],
+"Joc de deducție": [
+"Deduction game",
+"Joc de deducție",
+"Jeu de déduction",
+"Gioco di deduzione",
+"Juego de deducción",
+"Jogo de dedução",
+"Deduktionsspiel",
+"Kikövetkeztetős játék"
+],
+"Desen pe echipe": [
+"Team drawing",
+"Desen pe echipe",
+"Dessin par équipes",
+"Disegno a squadre",
+"Dibujo por equipos",
+"Desenho em equipas",
+"Zeichnen im Team",
+"Csapatrajzolás"
+],
+"Joc de cuvinte": [
+"Word game",
+"Joc de cuvinte",
+"Jeu de mots",
+"Gioco di parole",
+"Juego de palabras",
+"Jogo de palavras",
+"Wortspiel",
+"Szójáték"
+],
+"Jocul de rol de bază în comunități": [
+"The core role-playing game in communities",
+"Jocul de rol de bază în comunități",
+"Le jeu de rôle de référence des communautés",
+"Il gioco di ruolo di riferimento nelle comunità",
+"El juego de rol de referencia en las comunidades",
+"O jogo de RPG de referência nas comunidades",
+"Das Rollenspiel schlechthin in den Communities",
+"A közösségek alapvető szerepjátéka"
+],
+"Sesiuni în pub-uri de gaming": [
+"Sessions in gaming pubs",
+"Sesiuni în pub-uri de gaming",
+"Sessions dans les pubs de jeux",
+"Sessioni nei pub dedicati ai giochi",
+"Sesiones en pubs de juegos",
+"Sessões em pubs de jogos",
+"Spielrunden in Gaming-Pubs",
+"Játékestek játékpubokban"
+],
+"Popular printre copii și colecționari": [
+"Popular with children and collectors",
+"Popular printre copii și colecționari",
+"Populaire auprès des enfants et des collectionneurs",
+"Popolare tra bambini e collezionisti",
+"Popular entre niños y coleccionistas",
+"Popular entre crianças e colecionadores",
+"Beliebt bei Kindern und Sammlern",
+"Népszerű gyerekek és gyűjtők körében"
+],
+"Joc cooperativ de cărți": [
+"Cooperative card game",
+"Joc cooperativ de cărți",
+"Jeu de cartes coopératif",
+"Gioco di carte cooperativo",
+"Juego de cartas cooperativo",
+"Jogo de cartas cooperativo",
+"Kooperatives Kartenspiel",
+"Együttműködős kártyajáték"
+],
+"Joc cooperativ de cuvinte": [
+"Cooperative word game",
+"Joc cooperativ de cuvinte",
+"Jeu de mots coopératif",
+"Gioco di parole cooperativo",
+"Juego de palabras cooperativo",
+"Jogo de palavras cooperativo",
+"Kooperatives Wortspiel",
+"Együttműködős szójáték"
+],
+"Joc de blufuri": [
+"Bluffing game",
+"Joc de blufuri",
+"Jeu de bluff",
+"Gioco di bluff",
+"Juego de faroleo",
+"Jogo de bluff",
+"Bluffspiel",
+"Blöffölős játék"
+],
+"Joc de cărți umoristic": [
+"Humorous card game",
+"Joc de cărți umoristic",
+"Jeu de cartes humoristique",
+"Gioco di carte umoristico",
+"Juego de cartas humorístico",
+"Jogo de cartas humorístico",
+"Humorvolles Kartenspiel",
+"Humoros kártyajáték"
+],
+"Joc de cărți western": [
+"Western card game",
+"Joc de cărți western",
+"Jeu de cartes western",
+"Gioco di carte western",
+"Juego de cartas del Oeste",
+"Jogo de cartas western",
+"Western-Kartenspiel",
+"Western kártyajáték"
+],
+"Joc de aventură": [
+"Adventure game",
+"Joc de aventură",
+"Jeu d'aventure",
+"Gioco di avventura",
+"Juego de aventuras",
+"Jogo de aventura",
+"Abenteuerspiel",
+"Kalandjáték"
+],
+"Joc cooperativ cu miniaturi": [
+"Cooperative miniatures game",
+"Joc cooperativ cu miniaturi",
+"Jeu coopératif avec figurines",
+"Gioco cooperativo con miniature",
+"Juego cooperativo con miniaturas",
+"Jogo cooperativo com miniaturas",
+"Kooperatives Miniaturenspiel",
+"Együttműködős miniatűrjáték"
+],
+"Joc cooperativ de deducție": [
+"Cooperative deduction game",
+"Joc cooperativ de deducție",
+"Jeu de déduction coopératif",
+"Gioco di deduzione cooperativo",
+"Juego de deducción cooperativo",
+"Jogo de dedução cooperativo",
+"Kooperatives Deduktionsspiel",
+"Együttműködős kikövetkeztetős játék"
+],
+"Joc de strategie ușor": [
+"Light strategy game",
+"Joc de strategie ușor",
+"Jeu de stratégie léger",
+"Gioco di strategia leggero",
+"Juego de estrategia ligero",
+"Jogo de estratégia leve",
+"Leichtes Strategiespiel",
+"Könnyű stratégiai játék"
+]
+}
+}

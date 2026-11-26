@@ -1,5 +1,6 @@
 //! Parsarea textului din `render()` în structuri de tablă + geometrie (hit-test).
 
+use crate::markers;
 use eframe::egui::{Pos2, Rect, Vec2};
 
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
@@ -338,7 +339,7 @@ fn parse_pits(render: &str) -> Option<Board> {
     let lines: Vec<&str> = render.lines().collect();
     let h = lines
         .iter()
-        .position(|l| l.trim_start().starts_with("Jucător 2"))?;
+        .position(|l| l.trim_start().starts_with(markers::PITS_P2))?;
     let top = pit_nums(lines.get(h + 1)?);
     let bot = pit_nums(lines.get(h + 2)?);
     if top.len() < 3 || top.len() != bot.len() {
@@ -397,7 +398,7 @@ pub const SHOGI_HAND: [char; 7] = ['R', 'B', 'G', 'S', 'N', 'L', 'P'];
 
 fn hand_counts(line: &str) -> [i32; 7] {
     let mut out = [0; 7];
-    let after = line.split("mână:").nth(1).unwrap_or("");
+    let after = line.split(markers::SHOGI_HAND).nth(1).unwrap_or("");
     for t in after.split_whitespace() {
         let mut ch = t.chars();
         let Some(p) = ch.next() else { continue };
@@ -418,8 +419,12 @@ fn hand_counts(line: &str) -> [i32; 7] {
 /// dispare pentru cel la mutare, vezi [`Board::with_mover`]). `num` = 1 pentru piesă promovată.
 fn parse_shogi(render: &str) -> Option<Board> {
     let lines: Vec<Vec<char>> = render.lines().map(|l| l.chars().collect()).collect();
-    let gote = render.lines().find(|l| l.starts_with("gote"))?;
-    let sente = render.lines().find(|l| l.starts_with("sente"))?;
+    let gote = render
+        .lines()
+        .find(|l| l.starts_with(markers::SHOGI_GOTE))?;
+    let sente = render
+        .lines()
+        .find(|l| l.starts_with(markers::SHOGI_SENTE))?;
     let hi = lines.iter().position(|l| {
         let t: String = l.iter().collect();
         t.split_whitespace().collect::<Vec<_>>() == ["9", "8", "7", "6", "5", "4", "3", "2", "1"]
@@ -533,16 +538,18 @@ fn parse_backgammon(render: &str) -> Option<Board> {
             .collect();
         d.parse().ok()
     };
-    let st = lines.iter().find(|l| l.starts_with("Bară"))?;
+    let st = lines
+        .iter()
+        .find(|l| l.starts_with(markers::BACKGAMMON_BAR))?;
     let (sc_i, _) = st.char_indices().find(|(_, c)| *c == 'S')?;
     let (bar_s, off_s) = st.split_at(sc_i);
     let bar = [kv("X=", bar_s)?, kv("O=", bar_s)?];
     let off = [kv("X=", off_s)?, kv("O=", off_s)?];
     let dice = lines
         .iter()
-        .find(|l| l.contains("Rămase"))
+        .find(|l| l.contains(markers::BACKGAMMON_DICE_LEFT))
         .map(|l| {
-            let tail = l.split("Rămase").nth(1).unwrap_or("");
+            let tail = l.split(markers::BACKGAMMON_DICE_LEFT).nth(1).unwrap_or("");
             tail.split(|c: char| !c.is_ascii_digit())
                 .filter_map(|t| t.parse::<u8>().ok())
                 .collect::<Vec<_>>()
@@ -659,14 +666,14 @@ fn parse_race(kind: Kind, render: &str) -> Option<Board> {
     let mut cells = Vec::new();
     let mut seen = 0;
     for l in render.lines() {
-        if !l.contains("bază") || !(l.contains("(X)") || l.contains("(O)")) {
+        if !l.contains(markers::RACE_BASE) || !(l.contains("(X)") || l.contains("(O)")) {
             continue;
         }
         let pl = if l.contains("(X)") { 0usize } else { 1 };
         let ch = if pl == 0 { 'X' } else { 'O' };
-        let base = num_after(l, "bază")?;
-        let done = num_after(l, "terminate")
-            .or_else(|| num_after(l, "acasă"))
+        let base = num_after(l, markers::RACE_BASE)?;
+        let done = num_after(l, markers::RACE_DONE[0])
+            .or_else(|| num_after(l, markers::RACE_DONE[1]))
             .unwrap_or(0);
         let inner = l
             .split('[')
@@ -697,14 +704,14 @@ fn parse_race(kind: Kind, render: &str) -> Option<Board> {
     }
     let roll_line = render
         .lines()
-        .find(|l| l.contains("Zar:") || l.contains("a aruncat"));
+        .find(|l| l.contains(markers::RACE_DICE[0]) || l.contains(markers::RACE_DICE[1]));
     let roll = roll_line.and_then(|l| {
         num_after(
             l,
-            if l.contains("Zar:") {
-                "Zar:"
+            if l.contains(markers::RACE_DICE[0]) {
+                markers::RACE_DICE[0]
             } else {
-                "a aruncat"
+                markers::RACE_DICE[1]
             },
         )
     });
@@ -994,7 +1001,7 @@ fn parse_coridor(render: &str) -> Option<Board> {
     }
     let left = render
         .lines()
-        .find(|l| l.starts_with("Ziduri"))
+        .find(|l| l.starts_with(markers::CORRIDOR_WALLS))
         .map(|l| {
             let d = digits_in(l);
             [
@@ -1014,22 +1021,108 @@ fn parse_coridor(render: &str) -> Option<Board> {
     })
 }
 
-/// Drum: fiecare rând = etichetă + cinci stive (șiruri fără spații, de jos în sus).
+/// Lățimea fixă a unei celule Drum în `render()` (`{:<8}`): o stivă de 8+ piese
+/// depășește lățimea și se lipește de celula următoare.
+const DRUM_CELL_W: usize = 8;
+
+/// Împarte corpul unui rând Drum (după etichetă) în exact 5 stive. Cazul obișnuit:
+/// 5 jetoane separate prin spații. Dacă jetoanele sunt lipite (stivă ≥ 8 piese),
+/// se folosește rigla coloanelor: o celulă mai scurtă de 8 este urmată de exact
+/// `8 - lungime` spații, deci ultima celulă a fiecărui jeton rezultă din spațiile
+/// de după el; restul jetonului sunt celule lungi (≥ 8), deja lipite.
+fn drum_split_row(body: &str) -> Option<Vec<String>> {
+    // (jeton, spații după el)
+    let mut toks: Vec<(&str, usize)> = Vec::new();
+    let b = body.as_bytes();
+    let mut i = 0;
+    while i < b.len() {
+        if b[i] == b' ' {
+            i += 1;
+            continue;
+        }
+        let s = i;
+        while i < b.len() && b[i] != b' ' {
+            i += 1;
+        }
+        let e = i;
+        while i < b.len() && b[i] == b' ' {
+            i += 1;
+        }
+        toks.push((&body[s..e], i - e));
+    }
+    if toks.len() == 5 && toks.iter().all(|(t, _)| t.len() < DRUM_CELL_W) {
+        return Some(toks.iter().map(|(t, _)| t.to_string()).collect());
+    }
+    // fiecare jeton = prefix de celule lungi + o celulă finală de lungime 8-k (1..=7),
+    // sau (ultimul jeton, fără spații după) = restul de celule.
+    let n_tok = toks.len();
+    let mut parts: Vec<Vec<String>> = Vec::new();
+    for (ti, (t, k)) in toks.iter().enumerate() {
+        let last_open = ti + 1 == n_tok && *k == 0;
+        let fin = if last_open || !(1..DRUM_CELL_W).contains(k) {
+            None
+        } else {
+            Some(DRUM_CELL_W - k)
+        };
+        match fin {
+            Some(f) if f <= t.len() => {
+                let (pre, last) = t.split_at(t.len() - f);
+                let mut v = Vec::new();
+                if !pre.is_empty() {
+                    if pre.len() < DRUM_CELL_W {
+                        return None;
+                    }
+                    v.push(pre.to_string());
+                }
+                v.push(last.to_string());
+                parts.push(v);
+            }
+            Some(_) => return None,
+            None => parts.push(vec![t.to_string()]),
+        }
+    }
+    let mut cells: Vec<String> = parts.concat();
+    // un prefix ≥ 16 poate ascunde mai multe celule lungi lipite; completăm până la 5
+    // sfărâmând cel mai lung prefix în celule de 8 (înălțimea totală rămâne corectă)
+    while cells.len() < 5 {
+        let (i, _) = cells
+            .iter()
+            .enumerate()
+            .max_by_key(|(_, c)| c.len())
+            .filter(|(_, c)| c.len() >= 2 * DRUM_CELL_W)?;
+        let c = cells.remove(i);
+        let (a, b2) = c.split_at(DRUM_CELL_W);
+        cells.insert(i, b2.to_string());
+        cells.insert(i, a.to_string());
+    }
+    if cells.len() == 5 {
+        Some(cells)
+    } else {
+        None
+    }
+}
+
+/// Drum: fiecare rând = etichetă + cinci stive (șiruri fără spații, de jos în sus;
+/// vezi [`drum_split_row`] pentru stivele înalte, lipite).
 fn parse_drum(render: &str) -> Option<Board> {
     let mut cells = Vec::new();
     let mut stacks = Vec::new();
     let mut seen = 0;
     for l in render.lines() {
-        let mut it = l.split_whitespace();
-        let Some(Ok(label)) = it.next().map(|t| t.parse::<usize>()) else {
+        let Some((lab, body)) = l.split_once(' ') else {
             continue;
         };
-        let toks: Vec<&str> = it.collect();
-        if !(1..=5).contains(&label) || toks.len() != 5 {
+        let Ok(label) = lab.parse::<usize>() else {
+            continue;
+        };
+        if !(1..=5).contains(&label) {
             continue;
         }
+        let Some(toks) = drum_split_row(body) else {
+            continue;
+        };
         for (x, t) in toks.iter().enumerate() {
-            let st = if *t == "." { "" } else { *t };
+            let st = if t == "." { "" } else { t.as_str() };
             cells.push(Cell {
                 name: format!("{}{}", letter(x), label),
                 col: x,
@@ -1734,5 +1827,70 @@ mod tests {
             .with_mover(g.to_move());
         // toate în bază: nume cu prefix, nimic apăsabil
         assert!((0..b.cells.len()).all(|i| !b.clickable(i)));
+    }
+
+    /// Randările Drum cu stive de 8+ piese (celulele depășesc lățimea de 8 și se lipesc).
+    #[test]
+    fn drum_tall_stacks_glued() {
+        let r = "5 .       .       .       .       .       \n\
+                 4 .       xoxoxoxox.       .       .       \n\
+                 3 oooooooo.       .       x       .       \n\
+                 2 .       .       .       .       xxxxxxxxxxxxxxxxxx\n\
+                 1 o       .       .       .       xo      \n\
+                   a       b       c       d       e\n";
+        let b = parse(Kind::Drum, r).expect("parse drum");
+        let Extra::Stacks(s) = &b.extra else { panic!() };
+        assert_eq!(b.cells.len(), 25);
+        let at = |n: &str| s[b.find(n).unwrap()].clone();
+        assert_eq!(at("b4"), "xoxoxoxox");
+        assert_eq!(at("c4"), "");
+        assert_eq!(at("a3"), "oooooooo");
+        assert_eq!(at("b3"), "");
+        assert_eq!(at("d3"), "x");
+        assert_eq!(at("e2").len(), 18);
+        assert_eq!(at("e1"), "xo");
+        // acelasi lucru fără spații la capăt de rând
+        let r2: String = r.lines().map(|l| format!("{}\n", l.trim_end())).collect();
+        assert!(parse(Kind::Drum, &r2).is_some());
+    }
+
+    /// Regresie flake `--selftest` („drum: parsare eșuată”, ~1/10 la partide aleatoare):
+    /// cauza: `render()` umple fiecare celulă la 8 caractere (`{:<8}`), deci o stivă de 9+ piese
+    /// se lipește de vecina ei, iar vechiul parser (exact 5 jetoane separate prin spații) eșua.
+    /// Seed-urile 3 (ply 89), 9, 10, 18, 43, 51, 55, 59 picau cu vechiul parser (8 din 60). Verificăm la fiecare ply: 25 celule, iar
+    /// piesele din stive = piesele x/o din text.
+    #[test]
+    fn drum_random_games_always_parse() {
+        use polytabletop_core::rng::Rng;
+        let p = playable().into_iter().find(|p| p.id == "drum").unwrap();
+        let mut tallest = 0;
+        for seed in [3u64, 9, 10, 18, 43, 51, 55, 59, 1, 2, 4, 5, 6, 7, 8, 11, 12] {
+            let mut g = (p.make)();
+            let mut rng = Rng::new(seed);
+            let mut n = 0;
+            while g.outcome().is_none() && n < 200 {
+                let render = g.render();
+                let b = parse(Kind::Drum, &render)
+                    .unwrap_or_else(|| panic!("seed {seed} ply {n}: parsare eșuată\n{render}"));
+                assert_eq!(b.cells.len(), 25);
+                let Extra::Stacks(s) = &b.extra else { panic!() };
+                let in_text: usize = render
+                    .lines()
+                    .filter(|l| l.starts_with(|c: char| c.is_ascii_digit()))
+                    .map(|l| l[2..].chars().filter(|c| "xoXO@#".contains(*c)).count())
+                    .sum();
+                assert_eq!(
+                    s.iter().map(|x| x.len()).sum::<usize>(),
+                    in_text,
+                    "seed {seed}"
+                );
+                tallest = tallest.max(s.iter().map(|x| x.len()).max().unwrap_or(0));
+                let legal = g.legal_moves();
+                let m = legal[rng.below(legal.len())].clone();
+                g.play(&m).unwrap();
+                n += 1;
+            }
+        }
+        assert!(tallest >= 8, "testul nu a atins stive înalte ({tallest})");
     }
 }

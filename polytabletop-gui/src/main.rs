@@ -10,20 +10,24 @@
 //! * `--selftest`: verificări headless.
 
 mod board;
+mod capture;
 mod compose;
 mod draw;
 mod gui_i18n;
 mod journal;
+mod markers;
 mod menu;
 mod selftest;
 mod session;
+mod settings;
 
 use board::{hit, kind_of, last_cells, layout, Board};
 use compose::Click;
 use draw::Theme;
 use eframe::egui;
-use gui_i18n::{category_title, game_title, tr, trf, Lang, APP_NAME};
+use gui_i18n::{category_title, game_rules, game_title, tr, trf, Lang, APP_NAME};
 use journal::Journal;
+use polytabletop_core::ai::Level;
 use polytabletop_core::{rng::Rng, GameObj, Outcome, Player};
 use polytabletop_games::{playable, Playable};
 use session::{who, History};
@@ -49,6 +53,8 @@ struct App {
     /// stări dinaintea mutărilor omului, pentru „Anulează mutarea”
     history: History,
     title: String,
+    /// nivelul AI (doar în sesiune)
+    level: polytabletop_core::ai::Level,
 }
 
 impl App {
@@ -74,6 +80,7 @@ impl App {
             handover: None,
             history: History::default(),
             title: String::new(),
+            level: polytabletop_core::ai::level(),
         };
         a.apply_viewer();
         a.path = a.default_path();
@@ -258,6 +265,25 @@ impl App {
                     for l in Lang::ALL {
                         if ui.selectable_label(l == cur, l.native()).clicked() {
                             gui_i18n::set_lang(l);
+                            settings::save_lang(l);
+                        }
+                    }
+                });
+            ui.separator();
+            ui.label(tr("ai_level"));
+            let name = |l: Level| match l {
+                Level::Easy => tr("level_easy"),
+                Level::Normal => tr("level_normal"),
+                Level::Hard => tr("level_hard"),
+                Level::Expert => tr("level_expert"),
+            };
+            egui::ComboBox::from_id_salt("level")
+                .selected_text(name(self.level))
+                .show_ui(ui, |ui| {
+                    for l in [Level::Easy, Level::Normal, Level::Hard, Level::Expert] {
+                        if ui.selectable_label(l == self.level, name(l)).clicked() {
+                            self.level = l;
+                            polytabletop_core::ai::set_level(l);
                         }
                     }
                 });
@@ -400,7 +426,7 @@ impl App {
     fn center(&mut self, ui: &mut egui::Ui) {
         let (id, title, rules) = {
             let p = &self.games[self.sel];
-            (p.id, game_title(p.id, p.title), p.rules)
+            (p.id, game_title(p.id, p.title), game_rules(p.id, p.rules))
         };
         ui.heading(title);
         ui.label(rules);
@@ -623,6 +649,9 @@ fn main() -> eframe::Result<()> {
                 std::process::exit(1);
             }
         }
+    }
+    if let Some(r) = capture::maybe_run(&argv) {
+        return r;
     }
     eframe::run_native(
         APP_NAME,

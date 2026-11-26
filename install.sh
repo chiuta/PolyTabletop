@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install MASA from a GitHub release. Usage: install.sh [version-tag] ; env: PREFIX (default ~/.local), REPO.
+# Install PolyTabletop from a GitHub release. Usage: install.sh [version-tag] ; env: PREFIX (default ~/.local), REPO.
 set -euo pipefail
 REPO="${REPO:-chiuta/PolyTabletop}"
 PREFIX="${PREFIX:-$HOME/.local}"

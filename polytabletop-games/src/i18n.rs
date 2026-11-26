@@ -115,4 +115,55 @@ mod tests {
             }
         }
     }
+    #[test]
+    fn move_tokens_are_kept_in_every_language() {
+        let need: &[(&str, &[&str])] = &[
+            ("pachisi", &["intră", "= 25", "= 10", "6, 10"]),
+            (
+                "roata",
+                &[
+                    "avansez facultate",
+                    "avansez ucenicie",
+                    "avansez afacere",
+                    "avansez salariu",
+                    "avansez cumpar",
+                ],
+            ),
+            ("reverdire", &["generatie", "compra N", "pune c3"]),
+            ("fanorona", &["c3-d3a-d4w-e5a", "e2-e3"]),
+            (
+                "tcg_cerneala",
+                &[
+                    "pesca",
+                    "cerneala N",
+                    "joaca N",
+                    "misiune P",
+                    "provocare P e Q",
+                    "fin",
+                ],
+            ),
+            (
+                "tinuturi",
+                &["24", "48", "pune e6-e7", "alege N", "descarta"],
+            ),
+            (
+                "portret",
+                &[
+                    "intreb ochelari",
+                    "raspund da/nu",
+                    "ghicesc Matei",
+                    "verdict corect / verdict gresit",
+                ],
+            ),
+        ];
+        for (id, toks) in need {
+            for l in Lang::ALL {
+                let r = rules(id, l).unwrap();
+                for t in *toks {
+                    // `raspund da/nu` apare în toate limbile ca atare; restul la fel.
+                    assert!(r.contains(t), "{id} {:?}: lipsește «{t}» în: {r}", l);
+                }
+            }
+        }
+    }
 }

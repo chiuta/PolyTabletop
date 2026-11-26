@@ -1,4 +1,4 @@
-//! Memory (perechi), 2 jucători, 24 de cărți = 12 perechi (simbolurile A–L),
+//! Perechi (joc de memorie), 2 jucători, 24 de cărți = 12 perechi (simbolurile A–L),
 //! așezate în 6 coloane (a–f) × 4 rânduri (1–4).
 //!
 //! * O tură = două întoarceri, fiecare o mutare separată (`b3`, apoi `e1`).

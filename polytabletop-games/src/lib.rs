@@ -820,14 +820,14 @@ pub fn playable() -> Vec<Playable> {
         },
         Playable {
             id: "mastermind",
-            title: "Mastermind (cu schimb de roluri)",
+            title: "Spargerea codului (cu schimb de roluri)",
             category: "Clasic",
             rules: "Cod de 4 cifre 1–6 (repetiții permise), cel mult 10 încercări; răspuns N = poziție exactă, A = culoare corectă pe altă poziție. Runda 1: spargi codul ascuns al AI-ului. Runda 2: îți alegi un cod (cod:1234) și AI-ul îl sparge. Câștigă cine a avut nevoie de mai puține încercări (nespart = 11). Mutări: 1234, cod:1234, confirm.",
             make: || Box::new(mastermind::Mastermind::new()),
         },
         Playable {
             id: "memory",
-            title: "Memory (perechi)",
+            title: "Perechi (joc de memorie)",
             category: "Clasic",
             rules: "24 de cărți (12 perechi A–L), 6 coloane × 4 rânduri. O tură = două întoarceri (mutări separate): pereche = punct și mută din nou, altfel cărțile se întorc și mută adversarul. AI-ul are memorie limitată (memorează 70% din cărțile văzute, uită cu timpul). Mutări: a1–f4.",
             make: || Box::new(memory::Memory::new()),
@@ -850,7 +850,7 @@ pub fn playable() -> Vec<Playable> {
             id: "pachisi",
             title: "Pachisi (cursă cu cauri)",
             category: "Zaruri",
-            rules: "6 cauri: 1 deschis = 10, 2 = 2, 3 = 3, 4 = 4, 5 = 25, 6 = 6, niciunul = 12; 6, 10, 12 și 25 sunt grațioase (încă o aruncare și poți scoate o piesă din bază). Pistă de 48 de pătrate, castele sigure din 6 în 6, două piese proprii = bloc, aterizarea pe o piesă singură o captură (+ aruncare). Ținta exactă de pe pistă; din culoarul de acasă orice aruncare ≥ distanța. Mutări: intră, sau progresul piesei (ex. 12).",
+            rules: "6 cauri: niciunul deschis = 25, 1 deschis = 10, 2 = 2, 3 = 3, 4 = 4, 5 = 5, 6 = 6; 6, 10 și 25 sunt grațioase (încă o aruncare și poți scoate o piesă din bază). Pistă de 48 de pătrate, castele sigure din 6 în 6, două piese proprii = bloc, aterizarea pe o piesă singură o captură (+ aruncare). Ținta exactă de pe pistă; din culoarul de acasă orice aruncare ≥ distanța. Mutări: intră, sau progresul piesei (ex. 12).",
             make: || Box::new(pachisi::Pachisi::new()),
         },
         Playable {
@@ -871,7 +871,7 @@ pub fn playable() -> Vec<Playable> {
             id: "roata",
             title: "Roata Destinului (parcurs de viață)",
             category: "Familie",
-            rules: "Variantă originală: roata (1–6) e afișată; mutarea avansez alege ramura la bifurcații (facultate/ucenicie, afacere/salariu) și, pe pătratul Casă, cumpar/nu. Plată la fiecare trecere, copii și casă valorează la final. Scor = bani + 30 casă + 8 per copil. Mutări: avansez, avansez stanga, avansez cumpar.",
+            rules: "Variantă originală: roata (1–6) e afișată; mutarea avansez alege ramura la bifurcații (facultate/ucenicie, afacere/salariu) și, pe pătratul Casă, cumpar/nu. Plată la fiecare trecere, copii și casă valorează la final. Scor = bani + 30 casă + 8 per copil. Mutări: avansez, avansez facultate, avansez ucenicie, avansez afacere, avansez salariu, avansez cumpar.",
             make: || Box::new(roata::Roata::new()),
         },
         Playable {
@@ -934,7 +934,7 @@ pub fn playable() -> Vec<Playable> {
             id: "portret",
             title: "Portretul Misterios (ghicește personajul)",
             category: "Familie",
-            rules: "Variantă originală: 24 de personaje inventate cu 14 trăsături. Întrebi (intreb ochelari), adversarul răspunde corect prin mutare forțată (raspund da/nu); ghicești (ghicesc Matei) și apoi verdict corect/gresit. Ghicit greșit = pierzi.",
+            rules: "Variantă originală: 24 de personaje inventate cu 14 trăsături. Întrebi (intreb ochelari), adversarul răspunde corect prin mutare forțată (raspund da/nu); ghicești (ghicesc Matei), iar adversarul dă verdictul printr-o mutare forțată (verdict corect / verdict gresit). Ghicit greșit = pierzi.",
             make: || Box::new(portret::Portret::new()),
         },
         Playable {
@@ -1221,7 +1221,7 @@ pub fn playable() -> Vec<Playable> {
             id: "tcg_cerneala",
             title: "Cărți colecționabile: cerneală, misiuni și provocări (Povestiri din Cerneală)",
             category: "TCG",
-            rules: "Set original de 42 de cărți (personaje, acțiuni); pachete pregătite de 30 (J1 Pădurea Cântătoare, J2 Muntele de Fier), 7 cărți în mână; primul la 15 faimă câștigă. Tură: pesca (forțat; J1 nu în prima tură), cerneala N (o carte cu cerneală pe tură în călimară = 1 cerneală pe tură), joaca N [e2|m1] (personajele se usucă o tură), misiune P (aduce faimă), provocare P e Q (doar contra personajelor ÎNCLINATE), fin. Cuvinte-cheie: Elan, Gardian, Zburător, Provocator, Rezistență. Daunele rămân până la eliminare. Informație ascunsă: vezi doar mâna J1.",
+            rules: "Set original de 42 de cărți (personaje, acțiuni); pachete pregătite de 30 (J1 Pădurea Cântătoare, J2 Muntele de Fier), 7 cărți în mână; primul la 15 faimă câștigă. Tură: pesca (mutare forțată la începutul fiecărei ture; în prima tură J1 o scrie tot, dar nu trage nicio carte), cerneala N (o carte cu cerneală pe tură în călimară = 1 cerneală pe tură), joaca N [e2|m1] (personajele se usucă o tură), misiune P (aduce faimă), provocare P e Q (doar contra personajelor ÎNCLINATE), fin. Cuvinte-cheie: Elan, Gardian, Zburător, Provocator, Rezistență. Daunele rămân până la eliminare. Informație ascunsă: vezi doar mâna J1.",
             make: || Box::new(tcg_cerneala::TcgCerneala::new()),
         },
         Playable {
@@ -1326,7 +1326,7 @@ pub fn playable() -> Vec<Playable> {
             id: "reverdire",
             title: "Reverdire (variantă originală)",
             category: "Strategie",
-            rules: "Motor de resurse și proiecte de cărți: ridici Umiditatea, Aerul și Lacurile (RR). O generație: Cercetare (compra N, 3 L; gata), acțiuni una pe tură (joc N, vinde N, pompa, irigare, plantare, asezare, conv sem, conv caldura, pas; apoi pune c3), producție. Cărămizile plătesc proiectele B, Cristalele pe cele S. Scor: RR + PV + arbori + orașe. Informație ascunsă: mâna, oferta și pachetul.",
+            rules: "Motor de resurse și proiecte de cărți: ridici Umiditatea, Aerul și Lacurile (RR). O generație începe cu mutarea forțată generatie, apoi Cercetare (compra N, 3 L; gata), acțiuni una pe tură (joc N, vinde N, pompa, irigare, plantare, asezare, conv sem, conv caldura, pas; apoi pune c3), producție. Cărămizile plătesc proiectele B, Cristalele pe cele S. Scor: RR + PV + arbori + orașe. Informație ascunsă: mâna, oferta și pachetul.",
             make: || Box::new(reverdire::Reverdire::new()),
         },
         Playable {
@@ -1368,7 +1368,7 @@ pub fn playable() -> Vec<Playable> {
             id: "tinuturi",
             title: "Ținuturi (variantă originală)",
             category: "Strategie",
-            rules: "Domino de teritorii cu coroane, 2 jucători: regat 9×9 cu castel în e5, încape în 7×7. 24 de piese-domino (generate de noi) în rânduri de câte 4: proprietarul piesei cu numărul mic joacă primul. Tura: pune e6-e7 (prima jumătate pe e6) lipit de castel sau de același teritoriu, apoi alege 2 din rândul următor; descarta doar dacă nu ai nicio așezare. Primul rând: alege N (J1, J2, J2, J1); revelare dezvăluie rândul. Scor: regiune = pătrate × coroane, +5 fără aruncări, +10 castel central.",
+            rules: "Domino de teritorii cu coroane, 2 jucători: regat 9×9 cu castel în e5, încape în 7×7. 24 de piese-domino trase din setul nostru de 48 (generate de noi) în rânduri de câte 4: proprietarul piesei cu numărul mic joacă primul. Tura: pune e6-e7 (prima jumătate pe e6) lipit de castel sau de același teritoriu, apoi alege 2 din rândul următor; descarta doar dacă nu ai nicio așezare. Primul rând: alege N (J1, J2, J2, J1); revelare dezvăluie rândul. Scor: regiune = pătrate × coroane, +5 fără aruncări, +10 castel central.",
             make: || Box::new(tinuturi::Tinuturi::new()),
         },
         Playable {
@@ -1445,7 +1445,7 @@ pub fn playable() -> Vec<Playable> {
             id: "fanorona",
             title: "Fanorona (Madagascar)",
             category: "Abstract",
-            rules: "Tablă 5×9 de puncte (diagonale doar pe punctele pare), 22 piese pe jucător. Mutare cu un pas pe un punct liber; dacă pasul continuă spre o piesă adversă o captură pe ea și șirul din spatele ei (abordare, a), iar dacă te îndepărtezi de o piesă adversă o captură la fel (retragere, w). Captura e obligatorie; după ea aceeași piesă poate continua (opțional) cu alte capturi, fără să repete direcția și fără să revină pe un punct deja ocupat în tură. Câștigi scoțând toate piesele adverse; remiză după 40 de semi-mutări fără captură. Mutări: e2-e3, c3-d3a, c3-d3w, c3-d3a-d4w-e5a (lanț; tot ce apare în listă e o tură completă).",
+            rules: "Tablă 5×9 de puncte (diagonale doar pe punctele pare), 22 piese pe jucător. Mutare cu un pas pe un punct liber; dacă pasul continuă spre o piesă adversă o captură pe ea și șirul din spatele ei (abordare, a), iar dacă te îndepărtezi de o piesă adversă o captură la fel (retragere, w). Captura e obligatorie; după ea aceeași piesă poate continua (opțional) cu alte capturi, fără să repete direcția și fără să revină pe un punct deja ocupat în tură. Câștigi scoțând toate piesele adverse; remiză după 40 de semi-mutări fără captură. Mutări: e2-e3, c3-d3a, c3-d3w, c3-d3a-d4w-e5a (lanț; fiecare prefix al unui lanț apare în listă ca mutare separată, iar mutarea aleasă încheie tura: așa alegi unde te oprești).",
             make: || Box::new(fanorona::Fanorona::new()),
         },
         Playable {

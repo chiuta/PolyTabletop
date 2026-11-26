@@ -414,6 +414,23 @@ mod tests {
     }
 
     #[test]
+    fn rules_text_matches_cowry_table() {
+        let r = crate::playable()
+            .into_iter()
+            .find(|p| p.id == "pachisi")
+            .unwrap()
+            .rules;
+        assert!(
+            r.contains("niciunul deschis = 25, 1 deschis = 10, 2 = 2, 3 = 3, 4 = 4, 5 = 5, 6 = 6"),
+            "{r}"
+        );
+        assert!(r.contains("6, 10 și 25 sunt grațioase"), "{r}");
+        for k in 0..=6usize {
+            assert!(is_grace(cowry_value(k)) == matches!(cowry_value(k), 6 | 10 | 25));
+        }
+    }
+
+    #[test]
     fn entering_requires_a_grace_throw() {
         let g = custom([0, 0, 0, 0], [0; 4], Player::One, 3);
         assert!(g.moves().is_empty());

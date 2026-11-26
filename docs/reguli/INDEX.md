@@ -82,8 +82,8 @@ Observații comune:
 | 67 | [`pallanguzhi`](pallanguzhi.md) | Pallanguzhi (Tamil Nadu) | Abstract | nu | alpha-beta |
 | 68 | [`ayo`](ayo.md) | Ayo (Ayoayo, Yoruba) | Abstract | nu | alpha-beta |
 | 69 | [`battleship`](battleship.md) | Bătălia navală (10×10) | Clasic | da | alpha-beta |
-| 70 | [`mastermind`](mastermind.md) | Mastermind (cu schimb de roluri) | Clasic | da | alpha-beta |
-| 71 | [`memory`](memory.md) | Memory (perechi) | Clasic | nu | alpha-beta |
+| 70 | [`mastermind`](mastermind.md) | Spargerea codului (cu schimb de roluri) | Clasic | da | alpha-beta |
+| 71 | [`memory`](memory.md) | Perechi (joc de memorie) | Clasic | nu | alpha-beta |
 | 72 | [`bingo`](bingo.md) | Bingo (75 de bile) | Clasic | da | alpha-beta |
 | 73 | [`loteria`](loteria.md) | Lotería (imagini) | Clasic | da | alpha-beta |
 | 74 | [`pachisi`](pachisi.md) | Pachisi (cursă cu cauri) | Zaruri | nu | alpha-beta |

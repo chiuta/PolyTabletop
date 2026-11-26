@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generează docs/JOCURI.md din binarul `polytabletop` construit.
 
-Folosire:  python3 -I tools/gen_docs.py [--bin CALE_MASA] [--out docs/JOCURI.md]
+Folosire:  python3 -I tools/gen_docs.py [--bin CALE_POLYTABLETOP] [--out docs/JOCURI.md]
 Binarul implicit: $POLYTABLETOP_BIN, apoi target/release/polytabletop.
 """
 import os

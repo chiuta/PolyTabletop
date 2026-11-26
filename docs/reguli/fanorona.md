@@ -21,7 +21,7 @@ Se scrie exact textul din lista `?` (majusculele și spațiile nu contează; vez
 * `e2-e3` — un pas simplu (fără captură)
 * `c3-d3a` — pas spre d3 cu captură prin abordare
 * `c3-d3w` — pas spre d3 cu captură prin retragere
-* `c3-d3a-d4w-e5a` — lanț de capturi; tot ce apare în lista `?` este o tură completă
+* `c3-d3a-d4w-e5a` — lanț de capturi; fiecare prefix al lanțului apare în lista `?` ca mutare separată, iar mutarea aleasă încheie tura (așa alegi unde te oprești)
 
 Tastezi `?` pentru lista mutărilor legale, `hint` pentru sugestia AI-ului, `q` pentru ieșire.
 

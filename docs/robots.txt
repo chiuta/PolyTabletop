@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# Paginile jocurilor: /jocuri/<id>.html; capturile și clipurile sunt în /media/<id>/ (nu sunt puse în cache de service worker).
 Sitemap: https://polytabletop.chiuta.ro/sitemap.xml

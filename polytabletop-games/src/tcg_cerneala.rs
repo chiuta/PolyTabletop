@@ -5,7 +5,8 @@
 //! * Pachet pregătit de 30 de cărți (J1 „Pădurea Cântătoare”, J2 „Muntele de
 //!   Fier”), 7 cărți în mână. Câștigă primul care ajunge la 15 puncte de
 //!   **faimă** (sau adversarul rămâne fără pachet la pescuire).
-//! * Tura: `pesca` (forțat; J1 nu pescuiește în prima tură), apoi, în orice
+//! * Tura: `pesca` (mutare forțată la începutul fiecărei ture; în prima tură J1 o
+//!   scrie tot, dar nu trage nicio carte), apoi, în orice
 //!   ordine: `cerneala N` (o dată pe tură, o carte „cu cerneală” din mână se
 //!   pune întoarsă în călimară: fiecare carte de-acolo dă 1 cerneală pe tură),
 //!   `joaca N [țintă]` (plătești costul în cerneală; personajele intră „uscându-se”),

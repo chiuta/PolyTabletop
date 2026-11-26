@@ -13,7 +13,7 @@ jobs:
     # Label verified in GitHub's changelog of 2026-09-17 (Ubuntu 26 GA): ubuntu-26.04 / ubuntu-26.04-arm.
     runs-on: ubuntu-26.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: dtolnay/rust-toolchain@stable   # newest stable
         with:
           components: rustfmt, clippy
@@ -25,7 +25,7 @@ jobs:
   gui:
     runs-on: ubuntu-26.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: dtolnay/rust-toolchain@stable
         with:
           components: clippy

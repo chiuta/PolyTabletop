@@ -1,4 +1,4 @@
-# Mastermind (cu schimb de roluri) (`mastermind`)
+# Spargerea codului (cu schimb de roluri) (`mastermind`)
 
 Categorie: Clasic. Doi jucători (Jucătorul 1 contra Jucătorului 2 sau calculatorului). Pornire: `polytabletop play mastermind --seed 1`. Sursa implementării: `polytabletop-games/src/mastermind.rs`.
 

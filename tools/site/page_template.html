@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>@@TITLE@@</title>
+<meta name="description" content="@@DESC@@">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#10151c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="@@URL@@">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="icon" href="../icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="../icon-192.png">
+<link rel="manifest" href="../manifest.webmanifest">
+@@HREFLANG@@
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PolyTabletop">
+<meta property="og:title" content="@@TITLE@@">
+<meta property="og:description" content="@@DESC@@">
+<meta property="og:url" content="@@URL@@">
+<meta property="og:image" content="https://polytabletop.chiuta.ro/icon-512.png">
+<meta name="twitter:card" content="summary">
+@@LD@@
+<style>
+@@STYLE@@
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i="pg_skip">Skip to content</a>
+<header class="top">
+<div class="wrap bar">
+<a class="brand" href="../index.html" data-lk>Poly<span>Tabletop</span></a>
+<nav aria-label="Main navigation" data-ia="pg_main_nav"><ul>
+<li><a href="../index.html#games" data-lk data-i="pg_games">Games</a></li>
+<li><a href="../index.html#rankings-world" data-lk data-i="nav_rank">Rankings</a></li>
+<li><a href="index.html" data-lk data-i="nav_pages">All game pages</a></li>
+</ul></nav>
+<div class="tools">
+<label for="lang" class="mut" style="position:absolute;left:-9999px" data-i="pg_lang">Language</label>
+<select id="lang" aria-label="Language" data-ia="pg_lang">
+<option value="en">English</option><option value="ro">Română</option><option value="fr">Français</option><option value="it">Italiano</option><option value="es">Español</option><option value="pt">Português</option><option value="de">Deutsch</option><option value="hu">Magyar</option>
+</select>
+<button type="button" id="theme" class="btn-icon" aria-label="Toggle light/dark theme" data-ia="pg_theme" title="Light / dark"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 2a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+</div>
+</div>
+</header>
+<main id="main">
+<div class="wrap">
+@@MAIN@@
+</div>
+</main>
+<footer>
+<div class="wrap row">
+<span data-i="pg_foot">© 2026 Alexio · Fără Frontiere · trade-free</span>
+<span><a href="https://github.com/chiuta/PolyTabletop" rel="noopener">github.com/chiuta/PolyTabletop</a></span>
+</div>
+</footer>
+<script>
+"use strict";
+const LANGS=["en","ro","fr","it","es","pt","de","hu"];
+const T=@@T@@;
+const D=@@D@@;
+(function(){
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const fmt=(s,o)=>s.replace(/\{(\w+)\}/g,(m,k)=>o[k]==null?m:o[k]);
+let lang="en";
+function pick(){
+  const q=new URLSearchParams(location.search).get("lang");
+  if(q&&LANGS.includes(q.toLowerCase()))return q.toLowerCase();
+  const s=store.get("pt-lang");if(s&&LANGS.includes(s))return s;
+  for(const n of (navigator.languages||[navigator.language||""])){const c=String(n).slice(0,2).toLowerCase();if(LANGS.includes(c))return c}
+  return "en";
+}
+const gt=id=>{const g=D.GT[id];return g?(g[lang]||g.en):id};
+function args(e){
+  if(!e.dataset.a)return {};
+  const o=JSON.parse(e.dataset.a);
+  for(const k in o){if(typeof o[k]==="string"&&o[k][0]==="@")o[k]=gt(o[k].slice(1));else if(typeof o[k]==="string"&&o[k].slice(0,4)==="cat_")o[k]=T[lang][o[k]]}
+  return o;
+}
+function apply(l,persist){
+  lang=l;const t=T[l];
+  document.documentElement.lang=l;
+  $$("[data-i]").forEach(e=>{const v=t[e.dataset.i];if(v!=null)e.textContent=fmt(v,args(e))});
+  $$("[data-ia]").forEach(e=>{const v=t[e.dataset.ia];if(v)e.setAttribute("aria-label",v)});
+  $$("[data-ialt]").forEach(e=>{const v=t[e.dataset.ialt];if(v)e.setAttribute("alt",fmt(v,args(e)))});
+  $$("[data-gt]").forEach(e=>{e.textContent=gt(e.dataset.gt)});
+  $$("[data-ru]").forEach(e=>{e.textContent=D.RU[l]||D.RU.en});
+  $$("a[data-lk]").forEach(a=>{const h=a.getAttribute("href"),p=h.split("#"),b=p[0].split("?")[0];a.href=b+"?lang="+l+(p[1]?"#"+p[1]:"")});
+  $("#lang").value=l;
+  if(window.pageApply)window.pageApply(l,t,{$,$$,norm,fmt,gt});
+  if(persist){store.set("pt-lang",l);const u=new URL(location.href);u.searchParams.set("lang",l);history.replaceState(null,"",u)}
+}
+$("#lang").addEventListener("change",e=>apply(e.target.value,true));
+const root=document.documentElement,tb=$("#theme");
+const st=store.get("pt-theme");if(st==="light"||st==="dark")root.dataset.theme=st;
+tb.addEventListener("click",()=>{
+  const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme=dark?"light":"dark";store.set("pt-theme",root.dataset.theme);
+});
+$$(".cp").forEach(b=>b.addEventListener("click",()=>{
+  const txt=b.parentNode.querySelector("code").textContent;
+  const done=()=>{b.textContent=T[lang].pg_copied;setTimeout(()=>{b.textContent=T[lang].pg_copy},1500)};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(done,()=>{});
+}));
+@@PAGE_JS@@
+apply(pick(),false);
+if("serviceWorker" in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("../sw.js").catch(()=>{}));
+})();
+</script>
+</body>
+</html>
