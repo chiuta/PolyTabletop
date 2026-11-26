@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (574)
+## Implementat (614)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -426,6 +426,46 @@
 | Istanbul | Familie | Germania | implementat |
 | Imhotep | Familie | Germania | implementat |
 | Isle of Cats | Familie | SUA | implementat |
+| Calico | Familie | SUA | implementat |
+| Parks | Familie | SUA | implementat |
+| Bärenpark | Familie | Germania | implementat |
+| Welcome To... | Familie | SUA | implementat |
+| Karuba | Familie | Germania | implementat |
+| Kahuna | Familie | Germania | implementat |
+| Between Two Cities | Familie | SUA | implementat |
+| Cartographers | Familie | SUA | implementat |
+| Draftosaurus | Familie | Franța | implementat |
+| Century: Spice Road | Familie | Franța | implementat |
+| Kingdom Builder | Familie | SUA | implementat |
+| Queendomino | Familie | Franța | implementat |
+| Hanamikoji | Familie | Japonia | implementat |
+| Splendor Duel | Familie | Franța | implementat |
+| Tiny Towns | Familie | SUA | implementat |
+| Nmbr 9 | Familie | Germania | implementat |
+| Gizmos | Familie | Australia | implementat |
+| Azul: Summer Pavilion | Familie | Germania | implementat |
+| Ticket to Ride: New York | Familie | SUA | implementat |
+| My City | Familie | Germania | implementat |
+| Dutch Blitz | Familie | SUA | implementat |
+| Kodama: The Tree Spirits | Familie | SUA | implementat |
+| Fresco | Familie | Germania | implementat |
+| Cubirds | Familie | Taiwan | implementat |
+| Carcassonne: Hunters and Gatherers | Familie | Germania | implementat |
+| Lanterns: The Harvest Festival | Familie | SUA | implementat |
+| Century: Golem Edition | Familie | SUA | implementat |
+| Reef | Familie | SUA | implementat |
+| Port Royal | Familie | Austria | implementat |
+| Rivals for Catan | Familie | Germania | implementat |
+| Ticket to Ride: Europe | Familie | SUA | implementat |
+| Agricola: All Creatures Big and Small | Familie | Germania | implementat |
+| Flamme Rouge | Familie | Danemarca | implementat |
+| Heat: Pedal to the Metal | Familie | Danemarca | implementat |
+| Power Grid | Strategie | Germania | implementat |
+| Axis & Allies | Strategie | SUA | implementat |
+| Diplomacy | Strategie | SUA | implementat |
+| Great Western Trail | Strategie | Elveția | implementat |
+| Gaia Project | Strategie | Cehia | implementat |
+| Concordia | Strategie | Germania | implementat |
 | Charades | Party | Franța | implementat |
 | Scattergories | Party | SUA | implementat |
 | Articulate! | Party | Marea Britanie | implementat |
@@ -586,50 +626,10 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Variantă proprie (354)
+## Variantă proprie (314)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Calico | Familie | SUA | planificat (variantă proprie) |
-| Parks | Familie | SUA | planificat (variantă proprie) |
-| Bärenpark | Familie | Germania | planificat (variantă proprie) |
-| Welcome To... | Familie | SUA | planificat (variantă proprie) |
-| Karuba | Familie | Germania | planificat (variantă proprie) |
-| Kahuna | Familie | Germania | planificat (variantă proprie) |
-| Between Two Cities | Familie | SUA | planificat (variantă proprie) |
-| Cartographers | Familie | SUA | planificat (variantă proprie) |
-| Draftosaurus | Familie | Franța | planificat (variantă proprie) |
-| Century: Spice Road | Familie | Franța | planificat (variantă proprie) |
-| Kingdom Builder | Familie | SUA | planificat (variantă proprie) |
-| Queendomino | Familie | Franța | planificat (variantă proprie) |
-| Hanamikoji | Familie | Japonia | planificat (variantă proprie) |
-| Splendor Duel | Familie | Franța | planificat (variantă proprie) |
-| Tiny Towns | Familie | SUA | planificat (variantă proprie) |
-| Nmbr 9 | Familie | Germania | planificat (variantă proprie) |
-| Gizmos | Familie | Australia | planificat (variantă proprie) |
-| Azul: Summer Pavilion | Familie | Germania | planificat (variantă proprie) |
-| Ticket to Ride: New York | Familie | SUA | planificat (variantă proprie) |
-| My City | Familie | Germania | planificat (variantă proprie) |
-| Dutch Blitz | Familie | SUA | planificat (variantă proprie) |
-| Kodama: The Tree Spirits | Familie | SUA | planificat (variantă proprie) |
-| Fresco | Familie | Germania | planificat (variantă proprie) |
-| Cubirds | Familie | Taiwan | planificat (variantă proprie) |
-| Carcassonne: Hunters and Gatherers | Familie | Germania | planificat (variantă proprie) |
-| Lanterns: The Harvest Festival | Familie | SUA | planificat (variantă proprie) |
-| Century: Golem Edition | Familie | SUA | planificat (variantă proprie) |
-| Reef | Familie | SUA | planificat (variantă proprie) |
-| Port Royal | Familie | Austria | planificat (variantă proprie) |
-| Rivals for Catan | Familie | Germania | planificat (variantă proprie) |
-| Ticket to Ride: Europe | Familie | SUA | planificat (variantă proprie) |
-| Agricola: All Creatures Big and Small | Familie | Germania | planificat (variantă proprie) |
-| Flamme Rouge | Familie | Danemarca | planificat (variantă proprie) |
-| Heat: Pedal to the Metal | Familie | Danemarca | planificat (variantă proprie) |
-| Power Grid | Strategie | Germania | planificat (variantă proprie) |
-| Axis & Allies | Strategie | SUA | planificat (variantă proprie) |
-| Diplomacy | Strategie | SUA | planificat (variantă proprie) |
-| Great Western Trail | Strategie | Elveția | planificat (variantă proprie) |
-| Gaia Project | Strategie | Cehia | planificat (variantă proprie) |
-| Concordia | Strategie | Germania | planificat (variantă proprie) |
 | Race for the Galaxy | Strategie | SUA | planificat (variantă proprie) |
 | Through the Ages | Strategie | Cehia | planificat (variantă proprie) |
 | Twilight Struggle | Strategie | SUA | planificat (variantă proprie) |

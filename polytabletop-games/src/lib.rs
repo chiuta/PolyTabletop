@@ -163,6 +163,11 @@ pub mod bile;
 pub mod biliard;
 pub mod bingo;
 pub mod blackjack;
+pub mod brand_grid;
+pub mod brand_market;
+pub mod brand_race;
+pub mod brand_rail;
+pub mod brand_war;
 pub mod bresla;
 pub mod bridge;
 pub mod briscola;
@@ -176,6 +181,7 @@ pub mod cards;
 pub mod cards52;
 pub mod cardsb_util;
 pub mod carrom;
+pub mod carti_cascada;
 pub mod casino;
 pub mod catalog;
 pub mod catun;
@@ -221,7 +227,9 @@ pub mod daifugo;
 pub mod dama;
 pub mod dame10;
 pub mod dara;
+pub mod darurile_serii;
 pub mod deadmansdice;
+pub mod debarcader;
 pub mod dicebaseball;
 pub mod dictionar;
 pub mod dictionar_date;
@@ -279,6 +287,7 @@ pub mod impostor;
 pub mod impostor_date;
 pub mod inimi;
 pub mod insula;
+pub mod insule_punti;
 pub mod ispy;
 pub mod itinerar;
 pub mod izolare;
@@ -340,6 +349,7 @@ pub mod pachisi;
 pub mod pai_gow;
 pub mod pallanguzhi;
 pub mod parimpar;
+pub mod pasari_sarma;
 pub mod passedix;
 pub mod pasur;
 pub mod patru;
@@ -352,11 +362,13 @@ pub mod pica;
 pub mod pisti;
 pub mod pit;
 pub mod placute;
+pub mod planete_verzi;
 pub mod poieni;
 pub mod poker;
 pub mod poliedre;
 pub mod popa;
 pub mod portret;
+pub mod poteca_turmelor;
 pub mod povestitor;
 pub mod povestitor_date;
 pub mod prajituri;
@@ -368,6 +380,7 @@ pub mod q2_util;
 pub mod q4_secret;
 pub mod q4_util;
 pub mod reactii;
+pub mod reteaua_luminii;
 pub mod reverdire;
 pub mod reversi;
 pub mod rezervatia;
@@ -423,6 +436,7 @@ pub mod tablanet;
 pub mod tabula;
 pub mod tangram;
 pub mod taramuri;
+pub mod targul_marii;
 pub mod tarneeb;
 pub mod tarock;
 pub mod tarot;
@@ -775,6 +789,7 @@ pub const HOTSEAT_SAFE: &[&str] = &[
     "reguli_schimbatoare",
     "palat_intrigi",
     // B6-hs-end
+    "darurile_serii",
     "burako",
     "chinchon",
     "cuarenta",
@@ -4365,6 +4380,286 @@ fn playable_base() -> Vec<Playable> {
             make: || Box::new(brand_util::B(palat_intrigi::Palat::new())),
         },
         // B6-reg-end
+        Playable {
+            id: "plapuma_cal",
+            title: "Plapuma cu Petice (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×4 cu piese de 4 feluri (A, B, C, D), luate pe rând din oferta comună de 3 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Piesa merge în orice celulă liberă. Scor: grupuri de cel puțin 3 piese la fel: 2 p/piesă; vecini diferiți: 1 p/pereche.",
+            make: || crate::brand_grid::make("plapuma_cal"),
+        },
+        Playable {
+            id: "poteci_munte",
+            title: "Poteci de Munte (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×4 cu piese de 4 feluri (A, B, C, D), luate pe rând din oferta comună de 3 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Se zidește din margine spre interior: lângă marginea tablei sau lângă o piesă a ta. Scor: rând sau coloană cu toate felurile: 4 p; vecini la fel: 1 p/pereche.",
+            make: || crate::brand_grid::make("poteci_munte"),
+        },
+        Playable {
+            id: "poiana_ursului",
+            title: "Poiana Ursului (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 5×4 cu piese de 3 feluri (A, B, C), luate pe rând din oferta comună de 3 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Dacă ai o celulă liberă lângă o piesă a ta, trebuie să așezi acolo. Scor: grupuri de cel puțin 2 piese la fel: 1 p/piesă; rând sau coloană dintr-un singur fel: 5 p.",
+            make: || crate::brand_grid::make("poiana_ursului"),
+        },
+        Playable {
+            id: "strada_case",
+            title: "Strada Noilor Case (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 5×4 cu piese de 5 feluri (A, B, C, D, E), luate pe rând din oferta comună de 4 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Piesa merge în orice celulă liberă. Scor: seturi complete: 6 p/set; diagonale la fel: 1 p/pereche.",
+            make: || crate::brand_grid::make("strada_case"),
+        },
+        Playable {
+            id: "exploratori",
+            title: "Exploratorii Templului (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×4 cu piese de 4 feluri (A, B, C, D), luate pe rând din oferta comună de 3 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Se zidește din margine spre interior: lângă marginea tablei sau lângă o piesă a ta. Scor: patru colțuri la fel: 8 p; vecini la fel: 1 p/pereche; mai multe piese decât adversarul la un fel: 3 p/fel.",
+            make: || crate::brand_grid::make("exploratori"),
+        },
+        Playable {
+            id: "orasul_comun",
+            title: "Orașul Comun (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×4 cu piese de 3 feluri (A, B, C), luate pe rând din oferta comună de 4 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Piesa merge în orice celulă liberă. Scor: mai multe piese decât adversarul la un fel: 4 p/fel; grupuri de cel puțin 2 piese la fel: 1 p/piesă.",
+            make: || crate::brand_grid::make("orasul_comun"),
+        },
+        Playable {
+            id: "atlas_pierdut",
+            title: "Atlasul Pierdut (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 5×5 cu piese de 4 feluri (A, B, C, D), luate pe rând din oferta comună de 3 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Piesa merge în orice celulă liberă. Scor: rând sau coloană dintr-un singur fel: 6 p; seturi complete: 3 p/set; vecini diferiți: 1 p/pereche.",
+            make: || crate::brand_grid::make("atlas_pierdut"),
+        },
+        Playable {
+            id: "parc_dino",
+            title: "Parcul Dinozaurilor (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×3 cu piese de 6 feluri (A, B, C, D, E), luate pe rând din oferta comună de 4 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Piesa merge în orice celulă liberă. Scor: rând sau coloană cu toate felurile: 5 p; mai multe piese decât adversarul la un fel: 2 p/fel; vecini la fel: 1 p/pereche.",
+            make: || crate::brand_grid::make("parc_dino"),
+        },
+        Playable {
+            id: "asezari_noi",
+            title: "Așezările Noi (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 5×5 cu piese de 4 feluri (A, B, C, D), luate pe rând din oferta comună de 3 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Dacă ai o celulă liberă lângă o piesă a ta, trebuie să așezi acolo. Scor: grupuri de cel puțin 4 piese la fel: 2 p/piesă; piese A pe margine: 1 p/piesă.",
+            make: || crate::brand_grid::make("asezari_noi"),
+        },
+        Playable {
+            id: "curtea_reginei",
+            title: "Curtea Reginei (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 5×5 cu piese de 5 feluri (A, B, C, D, E), luate pe rând din oferta comună de 4 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Dacă ai o celulă liberă lângă o piesă a ta, trebuie să așezi acolo. Scor: grupuri de cel puțin 2 piese la fel: 1 p/piesă; piesele A: +2 p fiecare; patru colțuri la fel: 5 p.",
+            make: || crate::brand_grid::make("curtea_reginei"),
+        },
+        Playable {
+            id: "sat_mic",
+            title: "Satul Mic (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×4 cu piese de 5 feluri (A, B, C, D, E), luate pe rând din oferta comună de 5 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Piesa merge în orice celulă liberă. Scor: grupuri de cel puțin 3 piese la fel: 3 p/piesă; seturi complete: 4 p/set.",
+            make: || crate::brand_grid::make("sat_mic"),
+        },
+        Playable {
+            id: "turnul_cifrelor",
+            title: "Turnul Cifrelor (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×5 cu piese de 5 feluri (A, B, C, D, E), luate pe rând din oferta comună de 3 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Se zidește din margine spre interior: lângă marginea tablei sau lângă o piesă a ta. Scor: diagonale la fel: 2 p/pereche; rând sau coloană dintr-un singur fel: 6 p; vecini diferiți: 1 p/pereche.",
+            make: || crate::brand_grid::make("turnul_cifrelor"),
+        },
+        Playable {
+            id: "pavilion_vesel",
+            title: "Pavilionul Vesel (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 5×4 cu piese de 5 feluri (A, B, C, D, E), luate pe rând din oferta comună de 5 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Piesa merge în orice celulă liberă. Scor: rând sau coloană cu toate felurile: 3 p; vecini la fel: 1 p/pereche; mai multe piese decât adversarul la un fel: 2 p/fel.",
+            make: || crate::brand_grid::make("pavilion_vesel"),
+        },
+        Playable {
+            id: "oras_straturi",
+            title: "Orașul în Straturi (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×4 cu piese de 4 feluri (A, B, C, D), luate pe rând din oferta comună de 4 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Piesa merge în orice celulă liberă. Scor: grupuri de cel puțin 2 piese la fel: 1 p/piesă; rând sau coloană cu toate felurile: 3 p; mai multe piese decât adversarul la un fel: 2 p/fel.",
+            make: || crate::brand_grid::make("oras_straturi"),
+        },
+        Playable {
+            id: "padurea_spiridusilor",
+            title: "Pădurea Spiridușilor (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×5 cu piese de 4 feluri (A, B, C, D), luate pe rând din oferta comună de 3 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Dacă ai o celulă liberă lângă o piesă a ta, trebuie să așezi acolo. Scor: vecini diferiți: 2 p/pereche; diagonale la fel: 1 p/pereche.",
+            make: || crate::brand_grid::make("padurea_spiridusilor"),
+        },
+        Playable {
+            id: "pictura_manastire",
+            title: "Pictura Mănăstirii (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 5×4 cu piese de 4 feluri (A, B, C, D), luate pe rând din oferta comună de 4 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Se zidește din margine spre interior: lângă marginea tablei sau lângă o piesă a ta. Scor: seturi complete: 5 p/set; rând sau coloană dintr-un singur fel: 4 p; piesele A: +1 p fiecare.",
+            make: || crate::brand_grid::make("pictura_manastire"),
+        },
+        Playable {
+            id: "vanatorii_campie",
+            title: "Vânătorii de Câmpie (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 5×4 cu piese de 4 feluri (A, B, C, D), luate pe rând din oferta comună de 4 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Dacă ai o celulă liberă lângă o piesă a ta, trebuie să așezi acolo. Scor: grupuri de cel puțin 3 piese la fel: 2 p/piesă; mai multe piese decât adversarul la un fel: 3 p/fel; piesele A: +1 p fiecare.",
+            make: || crate::brand_grid::make("vanatorii_campie"),
+        },
+        Playable {
+            id: "gradina_corali",
+            title: "Grădina de Corali (puzzle de plăci)",
+            category: "Familie",
+            rules: "Fiecare își umple propria tablă 4×4 cu piese de 3 feluri (A, B, C), luate pe rând din oferta comună de 3 piese. Mutare: «număr_ofertă celulă», ex. «1 b3». Piesa merge în orice celulă liberă. Scor: grupuri de cel puțin 3 piese la fel: 3 p/piesă; vecini la fel: 1 p/pereche; piese A pe margine: 1 p/piesă.",
+            make: || crate::brand_grid::make("gradina_corali"),
+        },
+        Playable {
+            id: "duel_giuvaeruri",
+            title: "Duelul Giuvaerelor (motor de resurse)",
+            category: "Familie",
+            rules: "Strângi resurse (R, V, A, G) și cumperi cărți din oferta de 4; cărțile au cost și puncte. Câștigă cine are primul 14 puncte (runda se încheie egal; la egalitate, mai puține cărți). Cel mult 10 resurse în mână. Mutări: «cumpar i», «las x» (arunci o resursă dacă nu poți altceva). «ia rva»: trei resurse de feluri diferite. Unele cărți dau o reducere permanentă la un fel de resursă.",
+            make: || crate::brand_market::make("duel_giuvaeruri"),
+        },
+        Playable {
+            id: "atelier_mecanisme",
+            title: "Atelierul de Mecanisme (motor de resurse)",
+            category: "Familie",
+            rules: "Strângi resurse (R, V, A, G) și cumperi cărți din oferta de 4; cărțile au cost și puncte. Câștigă cine are primul 12 puncte (runda se încheie egal; la egalitate, mai puține cărți). Cel mult 8 resurse în mână. Mutări: «cumpar i», «las x» (arunci o resursă dacă nu poți altceva). «ia1 x»: o resursă aleasă plus una la sorți. Unele cărți dau o reducere permanentă la un fel de resursă.",
+            make: || crate::brand_market::make("atelier_mecanisme"),
+        },
+        Playable {
+            id: "caravana_aromelor",
+            title: "Caravana Aromelor (motor de resurse)",
+            category: "Familie",
+            rules: "Strângi resurse (R, V, A, G) și cumperi cărți din oferta de 5; cărțile au cost și puncte. Câștigă cine are primul 16 puncte (runda se încheie egal; la egalitate, mai puține cărți). Cel mult 10 resurse în mână. Mutări: «cumpar i», «las x» (arunci o resursă dacă nu poți altceva). «ia2 x»: două resurse la fel (sau «ia1 x» dacă ai doar un loc). Cărțile dau doar puncte. «schimb x»: 2 resurse x devin 1 din tipul următor.",
+            make: || crate::brand_market::make("caravana_aromelor"),
+        },
+        Playable {
+            id: "golemii_atelier",
+            title: "Golemii din Atelier (motor de resurse)",
+            category: "Familie",
+            rules: "Strângi resurse (R, V, A, G, N) și cumperi cărți din oferta de 5; cărțile au cost și puncte. Câștigă cine are primul 18 puncte (runda se încheie egal; la egalitate, mai puține cărți). Cel mult 12 resurse în mână. Mutări: «cumpar i», «las x» (arunci o resursă dacă nu poți altceva). «ia2 x»: două resurse la fel (sau «ia1 x» dacă ai doar un loc). Cărțile dau doar puncte. «schimb x»: 2 resurse x devin 1 din tipul următor.",
+            make: || crate::brand_market::make("golemii_atelier"),
+        },
+        Playable {
+            id: "lampioane_lac",
+            title: "Lampioane pe Lac (motor de resurse)",
+            category: "Familie",
+            rules: "Strângi resurse (R, V, A, G) și cumperi cărți din oferta de 4; cărțile au cost și puncte. Câștigă cine are primul 13 puncte (runda se încheie egal; la egalitate, mai puține cărți). Cel mult 9 resurse în mână. Mutări: «cumpar i», «las x» (arunci o resursă dacă nu poți altceva). «ia1 x»: o resursă aleasă plus una la sorți. Cărțile dau doar puncte. «schimb x»: 2 resurse x devin 1 din tipul următor.",
+            make: || crate::brand_market::make("lampioane_lac"),
+        },
+        Playable {
+            id: "rivalii_colonizarii",
+            title: "Rivalii Colonizării (motor de resurse)",
+            category: "Familie",
+            rules: "Strângi resurse (R, V, A, G, N) și cumperi cărți din oferta de 4; cărțile au cost și puncte. Câștigă cine are primul 12 puncte (runda se încheie egal; la egalitate, mai puține cărți). Cel mult 10 resurse în mână. Mutări: «cumpar i», «las x» (arunci o resursă dacă nu poți altceva). «ia rva»: trei resurse de feluri diferite. Unele cărți dau venit: la fiecare mutare primești resursa respectivă.",
+            make: || crate::brand_market::make("rivalii_colonizarii"),
+        },
+        Playable {
+            id: "ferma_animalelor",
+            title: "Ferma Animalelor (motor de resurse)",
+            category: "Familie",
+            rules: "Strângi resurse (R, V, A, G) și cumperi cărți din oferta de 4; cărțile au cost și puncte. Câștigă cine are primul 14 puncte (runda se încheie egal; la egalitate, mai puține cărți). Cel mult 10 resurse în mână. Mutări: «cumpar i», «las x» (arunci o resursă dacă nu poți altceva). «ia2 x»: două resurse la fel (sau «ia1 x» dacă ai doar un loc). Unele cărți dau venit: la fiecare mutare primești resursa respectivă.",
+            make: || crate::brand_market::make("ferma_animalelor"),
+        },
+        Playable {
+            id: "linii_urbane",
+            title: "Linii Urbane (rute feroviare)",
+            category: "Familie",
+            rules: "Hartă mică de 9 orașe și 15 rute. Strângi cărți colorate (r, v, a, g, n; J = joker) și ocupi rute plătind atâtea cărți cât e lungimea, de culoarea rutei (rutele «*» acceptă orice culoare). Fiecare are 3 bilete publice (oraș-oraș): conectate = bonus, neconectate = pierdere. Mutări: «ocup n» (ruta n), «trag i» (cartea vizibilă i plus una oarbă), «trag oarba» (două oarbe). Sfârșit când cineva rămâne cu 2 trenuri sau mai puține; punctele rutelor cresc cu lungimea.",
+            make: || crate::brand_rail::make("linii_urbane"),
+        },
+        Playable {
+            id: "cai_continentale",
+            title: "Căi Ferate Continentale (rute feroviare)",
+            category: "Familie",
+            rules: "Hartă mare de 14 orașe și 24 de rute. Strângi cărți colorate (r, v, a, g, n; J = joker) și ocupi rute plătind atâtea cărți cât e lungimea, de culoarea rutei (rutele «*» acceptă orice culoare). Fiecare are 3 bilete publice: conectate = bonus, neconectate = pierdere. Mutări: «ocup n», «trag i» (cartea vizibilă i plus una oarbă), «trag oarba». Ai 24 de trenuri; sfârșit când cineva rămâne cu 2 sau mai puține. Scor pe rute după lungime.",
+            make: || crate::brand_rail::make("cai_continentale"),
+        },
+        Playable {
+            id: "peloton",
+            title: "Pelotonul (cursă cu cărți)",
+            category: "Familie",
+            rules: "Cursă pe 44 de trepte; fiecare are doi alergători: sprinterul (s: viteze 2–9, explozive) și rulorul (r: 3–7, regulat), fiecare cu 3 cărți deschise. Joci o carte și avansezi atâtea trepte; dacă te oprești imediat în spatele cuiva primești +1 (aspirație); dacă ajungi singur în față cu o carte ≥ 5, adaugi oboseală (mai multe cărți de 2 în pachet). Primul care trece linia câștigă. Mutare: «s1» (sprinter, cartea 1), «r2» (rulor, cartea 2).",
+            make: || crate::brand_race::make("peloton"),
+        },
+        Playable {
+            id: "cursa_motoare",
+            title: "Cursa Motoarelor (cursă cu cărți)",
+            category: "Familie",
+            rules: "Cursă cu un bolid pe 40 de trepte și 4 curbe (la 8, 17, 26, 34). Ai 3 cărți deschise de viteză 1–5. Joci o carte («c1») sau o joci cu supraturare («c1+»: +2 viteză, +1 căldură). Dacă treci o curbă cu viteza peste 4, primești căldură egală cu depășirea; o carte de 1–2 fără supraturare răcește cu 1. La 6 căldură motorul cedează și pierzi. Aspirație: +1 dacă te oprești imediat în spatele adversarului. Primul la linie câștigă.",
+            make: || crate::brand_race::make("cursa_motoare"),
+        },
+        Playable {
+            id: "fronturi_mari",
+            title: "Fronturile Mari (război pe hartă)",
+            category: "Strategie",
+            rules: "Hartă de 12 teritorii (grilă 3×4) cu valori 1–3; fiecare are 3 teritorii-casă și 6 neutre. La începutul turei primești unități egal cu jumătate din venit (suma valorilor teritoriilor tale, minim 1) și le plasezi într-un teritoriu al tău («pun n»); apoi până la 3 mutări «mut a b toti|unu» către un vecin (la cel inamic sau neutru e atac: pierderi egale, atacatorul câștigă dacă are mai multe unități) și «gata». Câștigi luând capitala adversarului (teritoriul 2 sau 11); după 60 de ture decide scorul.",
+            make: || crate::brand_war::make("fronturi_mari"),
+        },
+        Playable {
+            id: "tratat_fragil",
+            title: "Tratatul Fragil (război pe hartă)",
+            category: "Strategie",
+            rules: "Aceeași hartă de 12 teritorii, dar fiecare e un centru și unitățile sunt armate de forță 1. La început primești armate până egalezi numărul centrelor tale (max 3) și le pui într-un teritoriu-casă («pun n»). Până la 3 mutări «mut a b unu»: o armată trece într-un vecin; forța ei = 1 + sprijinul (câte teritorii vecine țintei, ale tale, au ≥2 armate); apărătorul are forța lui + sprijin. Atacatorul ocupă dacă are strict mai multă forță; la egalitate se întoarce. Câștigi cu 7 teritorii din 12; «gata» încheie tura.",
+            make: || crate::brand_war::make("tratat_fragil"),
+        },
+        Playable {
+            id: "darurile_serii",
+            title: "Darurile Serii (duel cu cărți ascunse)",
+            category: "Familie",
+            rules: "Șase daruri (valori 2,2,3,3,5,6), câte o carte pentru fiecare punct de valoare. În fiecare rundă faci o dată fiecare acțiune: «ascund c» (1 carte ascunsă, numărată la final), «arunc a b» (2 cărți ies din joc), «ofer a b c» (arăți 3: adversarul ia una cu «ia c», tu păstrezi două), «impart a b + c d» (două perechi: adversarul alege «pereche 1|2»). La final fiecare dar merge la cine are mai multe cărți la el. Câștigi cu 11 puncte sau 4 daruri; după 6 runde decide scorul. Informație ascunsă (HOTSEAT_SAFE).",
+            make: || Box::new(darurile_serii::Darurile::new()),
+        },
+        Playable {
+            id: "insule_punti",
+            title: "Insulele Punților (poduri între insule)",
+            category: "Familie",
+            rules: "Douăsprezece insule legate prin 16 rute. Ai 3 cărți deschise (fiecare e o insulă). Pe rând joci o carte: «pun a b» (pod pe ruta a-b care atinge insula cărții), «tai a b» (tai un pod al adversarului pe o rută care atinge insula cărții) sau «descarc a» (schimbi cartea). La mutările 12, 24 și 36 se numără: insula e a celui cu mai multe poduri la ea (marcajul rămâne la egalitate), fiecare insulă marcată = 1 punct; apoi podurile se retrag. Câștigă cine are mai multe puncte.",
+            make: || Box::new(insule_punti::Punti::new()),
+        },
+        Playable {
+            id: "pasari_sarma",
+            title: "Păsări pe Sârmă (colectare de culori)",
+            category: "Familie",
+            rules: "Pe o sârmă comună stau păsări de 5 culori (r, v, a, g, n). Ai o mână deschisă de 5 cărți. La rând așezi o pasăre la capătul stâng sau drept («st r», «dr v»). Dacă la acel capăt se formează un șir de cel puțin 2 păsări la fel, le iei pe toate în colecție. Apoi tragi o carte la întâmplare (pachet de 40). La final, fiecare culoare colectată valorează 1+2+…+n puncte pentru n păsări. Câștigă cine are mai multe puncte.",
+            make: || Box::new(pasari_sarma::Pasari::new()),
+        },
+        Playable {
+            id: "carti_cascada",
+            title: "Cărți în Cascadă (cursă de cărți)",
+            category: "Familie",
+            rules: "Fiecare are un pachet de 40 de cărți (4 culori × 1..10), trase la întâmplare, și 3 «posturi» deschise. Pe masă sunt cel mult 4 stive comune (una pe culoare) care cresc 1, 2, 3…10. Mutări: «joc i» (postul i pe o stivă: 1 deschide o stivă, altă carte trebuie să urmeze exact vârful stivei de aceeași culoare; în loc apare o carte nouă) sau «schimb i» (schimbi postul cu o carte nouă din pachet). Cine își golește pachetul și posturile câștigă; după 400 de mutări decid cărțile jucate minus cele rămase.",
+            make: || Box::new(carti_cascada::Cascada::new()),
+        },
+        Playable {
+            id: "debarcader",
+            title: "Debarcaderul Norocos (risc la port)",
+            category: "Familie",
+            rules: "Joc de risc la un port. La rând tragi bărci una câte una («trag»): fiecare are un pavilion (4 feluri) și o încărcătură de 1–3 monede. Dacă apare al doilea pavilion de același fel în tura asta, barca se scufundă: pierzi tot ce ai tras și tura se termină. După cel puțin o barcă poți să te oprești («opresc») și să încasezi încărcăturile plus 1 monedă pe dulgher angajat. La începutul turei, cu 6 monede, poți angaja un dulgher («angajez»: +1 influență). Câștigă primul cu 4 influențe.",
+            make: || Box::new(debarcader::Debarcader::new()),
+        },
+        Playable {
+            id: "reteaua_luminii",
+            title: "Rețeaua Luminii (economie energetică)",
+            category: "Strategie",
+            rules: "Duel economic: 8 orașe pe un inel, 4 centrale la vânzare, combustibil la preț variabil. Faci o acțiune pe rând: «centrala i» (cumperi o centrală, ai cel mult 2), «combustibil c|p» (cărbune/petrol; energia verde nu are nevoie), «oras k» (conectezi orașul: 5 + costul legăturii cu rețeaua ta, +4 dacă îl are adversarul), «produc» (arzi combustibil, alimentezi orașe și încasezi 4 + 3 pe oraș) sau «pas». Primul cu 7 orașe declanșează sfârșitul; câștigă cine alimentează mai multe orașe, apoi cine are mai mulți bani.",
+            make: || Box::new(reteaua_luminii::Retea::new()),
+        },
+        Playable {
+            id: "poteca_turmelor",
+            title: "Poteca Turmelor (drum cu vite)",
+            category: "Strategie",
+            rules: "Doi crescători duc vite spre depozitul de la capătul potecii (12 trepte). O acțiune pe rând: «merg n» (1–3 trepte; dacă aterizezi pe treapta adversarului îi plătești 1 monedă), «iau r» (cumperi o vită din rasa r = 1..4 cu 2 monede, doar pe treptele-piață 3, 6, 9) sau «lucrez» (+2 monede). La depozit livrezi automat: 3 puncte pentru fiecare rasă diferită + 1 pentru fiecare vită, +3 monede, și te întorci la start. După 3 livrări câștigă cine are mai multe puncte.",
+            make: || Box::new(poteca_turmelor::Poteca::new()),
+        },
+        Playable {
+            id: "planete_verzi",
+            title: "Planetele Verzi (terraformare)",
+            category: "Strategie",
+            rules: "Doi coloniști terraformează 8 planete de 7 tipuri (inel de tipuri 0..6); fiecare are un tip-casă (0 și 4). «colonizez k» costă 1 + distanța pe inel dintre tipul planetei și tipul-casă, minus nivelul tău de terraformare (minim 1), minereu și 2 credite; prima planetă e liberă oriunde, următoarele trebuie să fie vecine cu una a ta. «cercetez» (3 cunoștințe) urcă nivelul (max 3); «transform»: 2 minereu → 1 credit; «colectez»: +2 minereu, +1 credit. După 14 mutări fiecare câștigă cine are mai multe puncte.",
+            make: || Box::new(planete_verzi::Planete::new()),
+        },
+        Playable {
+            id: "targul_marii",
+            title: "Târgul Mării (comerț pe mare)",
+            category: "Strategie",
+            rules: "Negustori în 8 porturi pe un inel; portul i produce marfa i mod 4 (preț 1,2,3,4). Fiecare are 4 cărți de acțiune: «fondez k» (casă într-un port liber, vecin cu una a ta; prima oriunde; costă 2 monede, prima e gratis), «produc» (fiecare casă dă o marfă, max 6), «vand» (vinzi toate mărfurile; prețul × casele tale de acel fel) și «recuperez» (cărțile jucate revin în mână, +1 monedă). Când un jucător are 6 case, runda finală se încheie: 3 puncte/casă, +1 pe fel de marfă, +1 la 3 monede.",
+            make: || Box::new(targul_marii::Targ::new()),
+        },
     ]
 }
 
