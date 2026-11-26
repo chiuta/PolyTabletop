@@ -1,0 +1,39 @@
+name: ci
+on:
+  push:
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+  CARGO_INCREMENTAL: "0"
+  CARGO_PROFILE_RELEASE_LTO: "false"   # LTO off in CI: faster builds
+
+jobs:
+  check:
+    # Label verified in GitHub's changelog of 2026-09-17 (Ubuntu 26 GA): ubuntu-26.04 / ubuntu-26.04-arm.
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable   # newest stable
+        with:
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo fmt --all -- --check
+      - run: cargo clippy --release --all-targets -- -D warnings   # default-members
+      - run: cargo test --release                                   # default-members
+
+  gui:
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+      - uses: Swatinem/rust-cache@v2
+      - name: System libraries for eframe (x11/wayland)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libxkbcommon-dev libwayland-dev libx11-dev libxcursor-dev libxrandr-dev libxi-dev libgl1-mesa-dev
+      - run: cargo build --release -p polytabletop-gui
+      - run: cargo run --release -p polytabletop-gui -- --selftest   # headless self-test

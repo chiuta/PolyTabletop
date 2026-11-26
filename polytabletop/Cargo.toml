@@ -1,0 +1,15 @@
+[package]
+name = "polytabletop"
+description = "PolyTabletop: table-top games, clean-room, in Rust"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+polytabletop-core = { path = "../polytabletop-core" }
+polytabletop-games = { path = "../polytabletop-games" }
+
+[lib]
+name = "polytabletop_net"
+path = "src/lib.rs"

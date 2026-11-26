@@ -1,0 +1,17 @@
+# Generic narrative-dice system: ability/proficiency pools, advantages and threats (original data).
+[system]
+id = "star-narrative"
+name = "Narrative stars"
+kind = "narrative"
+preset = "narrative-pool"
+attributes = ["Brawn", "Agility", "Intellect", "Cunning", "Willpower", "Presence"]
+attr_method = "spread"
+attr_points = 12
+attr_min = 1
+attr_max = 4
+skills = ["Piloting", "Gunnery", "Computers", "Deception", "Coordination", "Medicine", "Negotiation", "Vigilance"]
+skill_points = 6
+skill_step = 1
+skill_cap = 3
+skill_picks = 4
+resources = ["Wounds:10", "Strain:10", "Fortune:1"]

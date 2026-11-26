@@ -1,0 +1,10 @@
+[package]
+name = "polytabletop-gui"
+version = "0.2.0"
+edition = "2021"
+description = "Interfață grafică (egui) pentru PolyTabletop"
+
+[dependencies]
+polytabletop-core = { path = "../polytabletop-core" }
+polytabletop-games = { path = "../polytabletop-games" }
+eframe = { version = "0.37", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }

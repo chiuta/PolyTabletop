@@ -1,0 +1,169 @@
+# Generic generator tables with rarity weights (original content).
+[rarity]
+common = 60
+uncommon = 25
+rare = 10
+epic = 4
+legendary = 1
+
+[spell.spark]
+name = "Spark"
+school = "Evocation"
+level = 1
+rarity = "common"
+effect = "A bright dart deals 1d6 damage at range."
+
+[spell.mend]
+name = "Mending Breath"
+school = "Restoration"
+level = 1
+rarity = "common"
+effect = "Restores 1d6 health to a touched ally."
+
+[spell.fog]
+name = "Veil of Fog"
+school = "Illusion"
+level = 2
+rarity = "uncommon"
+effect = "A thick fog obscures a 10 m radius for ten minutes."
+
+[spell.chain]
+name = "Chain Lightning"
+school = "Evocation"
+level = 4
+rarity = "rare"
+effect = "A bolt leaps between up to four foes, 3d6 damage each."
+
+[spell.stasis]
+name = "Stasis Bubble"
+school = "Abjuration"
+level = 5
+rarity = "epic"
+effect = "A target is frozen in time for three rounds."
+
+[spell.unwrite]
+name = "Unwrite"
+school = "Transmutation"
+level = 7
+rarity = "legendary"
+effect = "Erases one event of the last hour from the world."
+
+[ability.charge]
+name = "Rushing Charge"
+kind = "martial"
+rarity = "common"
+effect = "Move twice and strike with a bonus on the first hit."
+
+[ability.parry]
+name = "Riposte"
+kind = "martial"
+rarity = "uncommon"
+effect = "After a parry, answer with a free attack."
+
+[ability.tongue]
+name = "Silver Tongue"
+kind = "social"
+rarity = "uncommon"
+effect = "Reroll one failed persuasion check per scene."
+
+[ability.sense]
+name = "Danger Sense"
+kind = "survival"
+rarity = "rare"
+effect = "Never surprised; allies nearby gain a bonus to initiative."
+
+[ability.second]
+name = "Second Wind"
+kind = "survival"
+rarity = "common"
+effect = "Once per rest, recover a third of maximum health."
+
+[ability.rift]
+name = "Step Through"
+kind = "arcane"
+rarity = "epic"
+effect = "Teleport to any spot you can see, once per scene."
+
+[gear.dagger]
+name = "dagger"
+slot = "weapon"
+rarity = "common"
+value = 20
+
+[gear.longsword]
+name = "longsword"
+slot = "weapon"
+rarity = "common"
+value = 80
+
+[gear.bow]
+name = "hunting bow"
+slot = "weapon"
+rarity = "common"
+value = 60
+
+[gear.cloak]
+name = "traveling cloak"
+slot = "worn"
+rarity = "common"
+value = 30
+
+[gear.mail]
+name = "mail shirt"
+slot = "armor"
+rarity = "uncommon"
+value = 200
+
+[gear.ring]
+name = "signet ring"
+slot = "worn"
+rarity = "uncommon"
+value = 120
+
+[gear.staff]
+name = "ash staff"
+slot = "weapon"
+rarity = "common"
+value = 40
+
+[affix.keen]
+name = "Keen"
+position = "prefix"
+rarity = "uncommon"
+bonus = "+1 to hit"
+mult = 3
+
+[affix.sturdy]
+name = "Sturdy"
+position = "prefix"
+rarity = "common"
+bonus = "+1 durability"
+mult = 2
+
+[affix.flaming]
+name = "Flaming"
+position = "prefix"
+rarity = "rare"
+bonus = "+1d6 fire damage"
+mult = 6
+
+[affix.whispers]
+name = "of Whispers"
+position = "suffix"
+rarity = "rare"
+bonus = "+2 to stealth"
+mult = 5
+
+[affix.wardens]
+name = "of the Warden"
+position = "suffix"
+rarity = "epic"
+bonus = "+2 defense, resist one damage type"
+mult = 12
+
+[affix.dawn]
+name = "of Dawn"
+position = "suffix"
+rarity = "legendary"
+bonus = "sheds light, bane of undead"
+mult = 30

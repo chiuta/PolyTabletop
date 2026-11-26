@@ -1,0 +1,552 @@
+games	en	Games
+games	ro	Jocuri
+games	fr	Jeux
+games	it	Giochi
+games	es	Juegos
+games	pt	Jogos
+games	de	Spiele
+games	hu	Játékok
+search_hint	en	search… (e.g. chess, cards)
+search_hint	ro	caută… (ex. sah, carti)
+search_hint	fr	chercher… (ex. échecs, cartes)
+search_hint	it	cerca… (es. scacchi, carte)
+search_hint	es	buscar… (p. ej. ajedrez, cartas)
+search_hint	pt	pesquisar… (ex. xadrez, cartas)
+search_hint	de	suchen… (z. B. Schach, Karten)
+search_hint	hu	keresés… (pl. sakk, kártya)
+no_games	en	No games found.
+no_games	ro	Niciun joc găsit.
+no_games	fr	Aucun jeu trouvé.
+no_games	it	Nessun gioco trovato.
+no_games	es	No se ha encontrado ningún juego.
+no_games	pt	Nenhum jogo encontrado.
+no_games	de	Keine Spiele gefunden.
+no_games	hu	Nincs találat.
+play_as	en	You play as:
+play_as	ro	Tu joci cu:
+play_as	fr	Tu joues avec :
+play_as	it	Giochi come:
+play_as	es	Juegas como:
+play_as	pt	Tu jogas como:
+play_as	de	Du spielst als:
+play_as	hu	Te ezzel játszol:
+player1	en	Player 1
+player1	ro	Jucător 1
+player1	fr	Joueur 1
+player1	it	Giocatore 1
+player1	es	Jugador 1
+player1	pt	Jogador 1
+player1	de	Spieler 1
+player1	hu	1. játékos
+player2	en	Player 2
+player2	ro	Jucător 2
+player2	fr	Joueur 2
+player2	it	Giocatore 2
+player2	es	Jugador 2
+player2	pt	Jogador 2
+player2	de	Spieler 2
+player2	hu	2. játékos
+both_hotseat	en	Both (hot-seat)
+both_hotseat	ro	Ambele (la masă)
+both_hotseat	fr	Les deux (à la table)
+both_hotseat	it	Entrambi (allo stesso tavolo)
+both_hotseat	es	Ambos (en la misma mesa)
+both_hotseat	pt	Ambos (à mesa)
+both_hotseat	de	Beide (am selben Tisch)
+both_hotseat	hu	Mindkettő (asztalnál)
+new_game	en	New game
+new_game	ro	Joc nou
+new_game	fr	Nouvelle partie
+new_game	it	Nuova partita
+new_game	es	Partida nueva
+new_game	pt	Novo jogo
+new_game	de	Neues Spiel
+new_game	hu	Új játék
+theme	en	Theme:
+theme	ro	Temă:
+theme	fr	Thème :
+theme	it	Tema:
+theme	es	Tema:
+theme	pt	Tema:
+theme	de	Design:
+theme	hu	Téma:
+light	en	Light
+light	ro	Clar
+light	fr	Clair
+light	it	Chiaro
+light	es	Claro
+light	pt	Claro
+light	de	Hell
+light	hu	Világos
+dark	en	Dark
+dark	ro	Întunecat
+dark	fr	Sombre
+dark	it	Scuro
+dark	es	Oscuro
+dark	pt	Escuro
+dark	de	Dunkel
+dark	hu	Sötét
+language	en	Language:
+language	ro	Limbă:
+language	fr	Langue :
+language	it	Lingua:
+language	es	Idioma:
+language	pt	Idioma:
+language	de	Sprache:
+language	hu	Nyelv:
+moves	en	Moves
+moves	ro	Mutări
+moves	fr	Coups
+moves	it	Mosse
+moves	es	Jugadas
+moves	pt	Jogadas
+moves	de	Züge
+moves	hu	Lépések
+journal	en	Journal
+journal	ro	Jurnal
+journal	fr	Journal
+journal	it	Registro
+journal	es	Registro
+journal	pt	Registo
+journal	de	Protokoll
+journal	hu	Napló
+save	en	Save
+save	ro	Salvează
+save	fr	Enregistrer
+save	it	Salva
+save	es	Guardar
+save	pt	Guardar
+save	de	Speichern
+save	hu	Mentés
+load	en	Load
+load	ro	Încarcă
+load	fr	Charger
+load	it	Carica
+load	es	Cargar
+load	pt	Carregar
+load	de	Laden
+load	hu	Betöltés
+cpu_tag	en	computer
+cpu_tag	ro	calculator
+cpu_tag	fr	ordinateur
+cpu_tag	it	computer
+cpu_tag	es	ordenador
+cpu_tag	pt	computador
+cpu_tag	de	Computer
+cpu_tag	hu	gép
+undone	en	Move undone
+undone	ro	Mutare anulată
+undone	fr	Coup annulé
+undone	it	Mossa annullata
+undone	es	Jugada deshecha
+undone	pt	Jogada anulada
+undone	de	Zug zurückgenommen
+undone	hu	Lépés visszavonva
+saved	en	Saved to {0} ({1} moves){2}
+saved	ro	Salvat în {0} ({1} mutări){2}
+saved	fr	Enregistré dans {0} ({1} coups){2}
+saved	it	Salvato in {0} ({1} mosse){2}
+saved	es	Guardado en {0} ({1} jugadas){2}
+saved	pt	Guardado em {0} ({1} jogadas){2}
+saved	de	Gespeichert in {0} ({1} Züge){2}
+saved	hu	Mentve: {0} ({1} lépés){2}
+saved_text_only	en	 – text export only (non-deterministic game)
+saved_text_only	ro	 – doar export text (joc nedeterminist)
+saved_text_only	fr	 – export texte uniquement (jeu non déterministe)
+saved_text_only	it	 – solo esportazione di testo (gioco non deterministico)
+saved_text_only	es	 – solo exportación de texto (juego no determinista)
+saved_text_only	pt	 – apenas exportação de texto (jogo não determinístico)
+saved_text_only	de	 – nur Textexport (nicht deterministisches Spiel)
+saved_text_only	hu	 – csak szöveges export (nem determinisztikus játék)
+err_write	en	cannot write {0}: {1}
+err_write	ro	nu pot scrie {0}: {1}
+err_write	fr	impossible d'écrire {0} : {1}
+err_write	it	impossibile scrivere {0}: {1}
+err_write	es	no se puede escribir {0}: {1}
+err_write	pt	não é possível escrever {0}: {1}
+err_write	de	{0} kann nicht geschrieben werden: {1}
+err_write	hu	nem sikerült írni: {0}: {1}
+err_read	en	cannot read {0}: {1}
+err_read	ro	nu pot citi {0}: {1}
+err_read	fr	impossible de lire {0} : {1}
+err_read	it	impossibile leggere {0}: {1}
+err_read	es	no se puede leer {0}: {1}
+err_read	pt	não é possível ler {0}: {1}
+err_read	de	{0} kann nicht gelesen werden: {1}
+err_read	hu	nem sikerült olvasni: {0}: {1}
+loaded	en	Loaded: {0} moves replayed
+loaded	ro	Încărcat: {0} mutări reluate
+loaded	fr	Chargé : {0} coups rejoués
+loaded	it	Caricato: {0} mosse rigiocate
+loaded	es	Cargado: {0} jugadas repetidas
+loaded	pt	Carregado: {0} jogadas repetidas
+loaded	de	Geladen: {0} Züge wiederholt
+loaded	hu	Betöltve: {0} lépés lejátszva
+hint_locked	en	The hint is blocked until the player to move takes the screen.
+hint_locked	ro	Sugestia e blocată până când jucătorul la mutare preia ecranul.
+hint_locked	fr	L'indice est bloqué tant que le joueur au trait n'a pas repris l'écran.
+hint_locked	it	Il suggerimento è bloccato finché il giocatore di turno non prende lo schermo.
+hint_locked	es	La pista está bloqueada hasta que el jugador al que le toca tome la pantalla.
+hint_locked	pt	A sugestão está bloqueada até o jogador da vez assumir o ecrã.
+hint_locked	de	Der Tipp ist gesperrt, bis der Spieler am Zug den Bildschirm übernimmt.
+hint_locked	hu	A tipp le van tiltva, amíg a soron lévő játékos át nem veszi a képernyőt.
+hint_unavailable	en	Hint unavailable in hot-seat mode: this game does not hide private information, and the hint would use the full state.
+hint_unavailable	ro	Sugestie indisponibilă în modul „la masă”: acest joc nu ascunde informația privată, iar sugestia ar folosi starea completă.
+hint_unavailable	fr	Indice indisponible en mode « à la table » : ce jeu ne cache pas l'information privée et l'indice utiliserait l'état complet.
+hint_unavailable	it	Suggerimento non disponibile in modalità «allo stesso tavolo»: questo gioco non nasconde le informazioni private e il suggerimento userebbe lo stato completo.
+hint_unavailable	es	Pista no disponible en el modo «en la misma mesa»: este juego no oculta la información privada y la pista usaría el estado completo.
+hint_unavailable	pt	Sugestão indisponível no modo «à mesa»: este jogo não esconde a informação privada e a sugestão usaria o estado completo.
+hint_unavailable	de	Tipp im Modus „am selben Tisch“ nicht verfügbar: Dieses Spiel verbirgt private Informationen nicht, und der Tipp würde den vollständigen Zustand nutzen.
+hint_unavailable	hu	A tipp asztalnál módban nem érhető el: ez a játék nem rejti el a privát információt, és a tipp a teljes állapotot használná.
+handover_title	en	Hand the screen to {0}
+handover_title	ro	Predați ecranul către {0}
+handover_title	fr	Passez l'écran à {0}
+handover_title	it	Passate lo schermo a {0}
+handover_title	es	Pasen la pantalla a {0}
+handover_title	pt	Passem o ecrã a {0}
+handover_title	de	Gebt den Bildschirm an {0} weiter
+handover_title	hu	Adják át a képernyőt: {0}
+handover_body	en	The hand and private information stay hidden until the player to move presses the button.
+handover_body	ro	Mâna și informația privată sunt ascunse până când jucătorul la mutare apasă butonul.
+handover_body	fr	La main et les informations privées restent cachées jusqu'à ce que le joueur au trait appuie sur le bouton.
+handover_body	it	La mano e le informazioni private restano nascoste finché il giocatore di turno non preme il pulsante.
+handover_body	es	La mano y la información privada permanecen ocultas hasta que el jugador al que le toca pulse el botón.
+handover_body	pt	A mão e a informação privada ficam escondidas até o jogador da vez premir o botão.
+handover_body	de	Die Hand und private Informationen bleiben verborgen, bis der Spieler am Zug die Schaltfläche drückt.
+handover_body	hu	A kéz és a privát információ rejtve marad, amíg a soron lévő játékos meg nem nyomja a gombot.
+handover_btn	en	I am {0} – show my hand
+handover_btn	ro	Sunt {0} – arată mâna
+handover_btn	fr	Je suis {0} – montrer ma main
+handover_btn	it	Sono {0} – mostra la mano
+handover_btn	es	Soy {0}: mostrar mi mano
+handover_btn	pt	Sou {0} – mostrar a mão
+handover_btn	de	Ich bin {0} – Hand zeigen
+handover_btn	hu	Én vagyok {0} – mutasd a kezem
+warn_leak	en	Warning: this game does not hide private information in hot-seat mode; the display may show Player 1's hand. The hint is disabled.
+warn_leak	ro	Atenție: acest joc nu ascunde informația privată în modul „la masă”; afișajul poate arăta mâna Jucătorului 1. Sugestia este dezactivată.
+warn_leak	fr	Attention : ce jeu ne cache pas l'information privée en mode « à la table » ; l'affichage peut montrer la main du joueur 1. L'indice est désactivé.
+warn_leak	it	Attenzione: questo gioco non nasconde le informazioni private in modalità «allo stesso tavolo»; lo schermo può mostrare la mano del giocatore 1. Il suggerimento è disattivato.
+warn_leak	es	Atención: este juego no oculta la información privada en el modo «en la misma mesa»; la pantalla puede mostrar la mano del jugador 1. La pista está desactivada.
+warn_leak	pt	Atenção: este jogo não esconde a informação privada no modo «à mesa»; o ecrã pode mostrar a mão do jogador 1. A sugestão está desativada.
+warn_leak	de	Achtung: Dieses Spiel verbirgt private Informationen im Modus „am selben Tisch“ nicht; die Anzeige kann die Hand von Spieler 1 zeigen. Der Tipp ist deaktiviert.
+warn_leak	hu	Figyelem: ez a játék asztalnál módban nem rejti el a privát információt; a kijelző megmutathatja az 1. játékos kezét. A tipp ki van kapcsolva.
+wins	en	{0} wins!
+wins	ro	Câștigă {0}!
+wins	fr	{0} gagne !
+wins	it	Vince {0}!
+wins	es	¡Gana {0}!
+wins	pt	{0} ganha!
+wins	de	{0} gewinnt!
+wins	hu	{0} nyer!
+draw	en	Draw.
+draw	ro	Remiză.
+draw	fr	Match nul.
+draw	it	Patta.
+draw	es	Tablas.
+draw	pt	Empate.
+draw	de	Unentschieden.
+draw	hu	Döntetlen.
+to_move	en	To move: {0}
+to_move	ro	La mutare: {0}
+to_move	fr	Au trait : {0}
+to_move	it	Tocca a: {0}
+to_move	es	Mueve: {0}
+to_move	pt	Vez de: {0}
+to_move	de	Am Zug: {0}
+to_move	hu	Soron: {0}
+choose_move	en	Choose the move:
+choose_move	ro	Alege mutarea:
+choose_move	fr	Choisissez le coup :
+choose_move	it	Scegli la mossa:
+choose_move	es	Elige la jugada:
+choose_move	pt	Escolhe a jogada:
+choose_move	de	Zug wählen:
+choose_move	hu	Válassz lépést:
+selection	en	Selection: {0}
+selection	ro	Selecție: {0}
+selection	fr	Sélection : {0}
+selection	it	Selezione: {0}
+selection	es	Selección: {0}
+selection	pt	Seleção: {0}
+selection	de	Auswahl: {0}
+selection	hu	Kijelölés: {0}
+end_here	en	Finish here ({0})
+end_here	ro	Termină aici ({0})
+end_here	fr	Terminer ici ({0})
+end_here	it	Termina qui ({0})
+end_here	es	Terminar aquí ({0})
+end_here	pt	Terminar aqui ({0})
+end_here	de	Hier beenden ({0})
+end_here	hu	Itt befejez ({0})
+cancel_sel	en	Cancel selection
+cancel_sel	ro	Anulează selecția
+cancel_sel	fr	Annuler la sélection
+cancel_sel	it	Annulla la selezione
+cancel_sel	es	Cancelar la selección
+cancel_sel	pt	Cancelar a seleção
+cancel_sel	de	Auswahl aufheben
+cancel_sel	hu	Kijelölés törlése
+forced	en	Forced move:
+forced	ro	Mutare forțată:
+forced	fr	Coup forcé :
+forced	it	Mossa obbligata:
+forced	es	Jugada forzada:
+forced	pt	Jogada forçada:
+forced	de	Erzwungener Zug:
+forced	hu	Kötelező lépés:
+choose	en	Choose:
+choose	ro	Alege:
+choose	fr	Choisissez :
+choose	it	Scegli:
+choose	es	Elige:
+choose	pt	Escolhe:
+choose	de	Wähle:
+choose	hu	Válassz:
+play	en	Play
+play	ro	Mută
+play	fr	Jouer
+play	it	Muovi
+play	es	Mover
+play	pt	Jogar
+play	de	Ziehen
+play	hu	Lép
+hint	en	Hint
+hint	ro	Sugestie
+hint	fr	Indice
+hint	it	Suggerimento
+hint	es	Pista
+hint	pt	Sugestão
+hint	de	Tipp
+hint	hu	Tipp
+legal_moves	en	Legal moves (click):
+legal_moves	ro	Mutări legale (click):
+legal_moves	fr	Coups légaux (clic) :
+legal_moves	it	Mosse legali (clic):
+legal_moves	es	Jugadas legales (clic):
+legal_moves	pt	Jogadas legais (clique):
+legal_moves	de	Erlaubte Züge (Klick):
+legal_moves	hu	Szabályos lépések (kattints):
+undo	en	Undo move
+undo	ro	Anulează mutarea
+undo	fr	Annuler le coup
+undo	it	Annulla la mossa
+undo	es	Deshacer jugada
+undo	pt	Anular jogada
+undo	de	Zug zurücknehmen
+undo	hu	Lépés visszavonása
+undo_tip	en	Returns to the state before your last move
+undo_tip	ro	Revine la starea dinaintea ultimei tale mutări
+undo_tip	fr	Revient à l'état précédant votre dernier coup
+undo_tip	it	Torna allo stato precedente alla tua ultima mossa
+undo_tip	es	Vuelve al estado anterior a tu última jugada
+undo_tip	pt	Volta ao estado anterior à tua última jogada
+undo_tip	de	Kehrt zum Zustand vor deinem letzten Zug zurück
+undo_tip	hu	Visszatér a legutóbbi lépésed előtti állapotba
+seed_err	en	--seed expects an unsigned integer.
+seed_err	ro	--seed așteaptă un număr întreg fără semn.
+seed_err	fr	--seed attend un entier non signé.
+seed_err	it	--seed richiede un numero intero senza segno.
+seed_err	es	--seed espera un número entero sin signo.
+seed_err	pt	--seed espera um número inteiro sem sinal.
+seed_err	de	--seed erwartet eine vorzeichenlose ganze Zahl.
+seed_err	hu	A --seed előjel nélküli egész számot vár.
+unknown_game	en	unknown game: «{0}»
+unknown_game	ro	joc necunoscut: «{0}»
+unknown_game	fr	jeu inconnu : « {0} »
+unknown_game	it	gioco sconosciuto: «{0}»
+unknown_game	es	juego desconocido: «{0}»
+unknown_game	pt	jogo desconhecido: «{0}»
+unknown_game	de	unbekanntes Spiel: „{0}“
+unknown_game	hu	ismeretlen játék: „{0}”
+not_det	en	«{0}» is not deterministic (shuffled cards/dice): the journal is a text export only and cannot be replayed
+not_det	ro	«{0}» nu este determinist (cărți/zaruri amestecate): jurnalul este doar export text, nu se poate relua
+not_det	fr	« {0} » n'est pas déterministe (cartes/dés mélangés) : le journal n'est qu'un export texte et ne peut pas être rejoué
+not_det	it	«{0}» non è deterministico (carte/dadi mescolati): il registro è solo un'esportazione di testo e non può essere rigiocato
+not_det	es	«{0}» no es determinista (cartas/dados barajados): el registro es solo una exportación de texto y no se puede repetir
+not_det	pt	«{0}» não é determinístico (cartas/dados misturados): o registo é apenas uma exportação de texto e não pode ser repetido
+not_det	de	„{0}“ ist nicht deterministisch (gemischte Karten/Würfel): Das Protokoll ist nur ein Textexport und kann nicht wiederholt werden
+not_det	hu	„{0}” nem determinisztikus (kevert kártyák/kockák): a napló csak szöveges export, nem játszható le újra
+replay_rejected	en	move {0} («{1}») rejected during replay: {2}
+replay_rejected	ro	mutarea {0} («{1}») respinsă la reluare: {2}
+replay_rejected	fr	coup {0} (« {1} ») rejeté lors de la relecture : {2}
+replay_rejected	it	mossa {0} («{1}») rifiutata durante la ripetizione: {2}
+replay_rejected	es	la jugada {0} («{1}») fue rechazada al repetir: {2}
+replay_rejected	pt	a jogada {0} («{1}») foi rejeitada na repetição: {2}
+replay_rejected	de	Zug {0} („{1}“) bei der Wiederholung abgelehnt: {2}
+replay_rejected	hu	a(z) {0}. lépést („{1}”) elutasította a lejátszás: {2}
+replay_mismatch	en	the replayed position does not match the saved one (game with hidden state)
+replay_mismatch	ro	poziția reluată nu coincide cu cea salvată (joc cu stare ascunsă)
+replay_mismatch	fr	la position rejouée ne correspond pas à celle enregistrée (jeu à état caché)
+replay_mismatch	it	la posizione rigiocata non coincide con quella salvata (gioco con stato nascosto)
+replay_mismatch	es	la posición repetida no coincide con la guardada (juego con estado oculto)
+replay_mismatch	pt	a posição repetida não coincide com a guardada (jogo com estado oculto)
+replay_mismatch	de	die wiederholte Stellung stimmt nicht mit der gespeicherten überein (Spiel mit verborgenem Zustand)
+replay_mismatch	hu	a lejátszott állás nem egyezik a mentettel (rejtett állapotú játék)
+j_bad_magic	en	not a journal file (header missing)
+j_bad_magic	ro	nu este un jurnal PolyTabletop (antet lipsă)
+j_bad_magic	fr	ce n'est pas un journal valide (en-tête manquant)
+j_bad_magic	it	non è un registro valido (intestazione mancante)
+j_bad_magic	es	no es un registro válido (falta la cabecera)
+j_bad_magic	pt	não é um registo válido (cabeçalho em falta)
+j_bad_magic	de	kein gültiges Protokoll (Kopfzeile fehlt)
+j_bad_magic	hu	nem érvényes napló (hiányzik a fejléc)
+j_incomplete	en	incomplete journal (the «mutari:» section is missing)
+j_incomplete	ro	jurnal incomplet (lipsește secțiunea «mutari:»)
+j_incomplete	fr	journal incomplet (la section « mutari: » est absente)
+j_incomplete	it	registro incompleto (manca la sezione «mutari:»)
+j_incomplete	es	registro incompleto (falta la sección «mutari:»)
+j_incomplete	pt	registo incompleto (falta a secção «mutari:»)
+j_incomplete	de	unvollständiges Protokoll (Abschnitt „mutari:“ fehlt)
+j_incomplete	hu	hiányos napló (hiányzik a „mutari:” szakasz)
+j_bad_check	en	invalid checksum
+j_bad_check	ro	verificare invalidă
+j_bad_check	fr	somme de contrôle invalide
+j_bad_check	it	checksum non valido
+j_bad_check	es	suma de verificación no válida
+j_bad_check	pt	soma de verificação inválida
+j_bad_check	de	ungültige Prüfsumme
+j_bad_check	hu	érvénytelen ellenőrző összeg
+j_missing_game	en	«joc:» is missing
+j_missing_game	ro	lipsește «joc:»
+j_missing_game	fr	« joc: » est absent
+j_missing_game	it	manca «joc:»
+j_missing_game	es	falta «joc:»
+j_missing_game	pt	falta «joc:»
+j_missing_game	de	„joc:“ fehlt
+j_missing_game	hu	hiányzik a „joc:”
+borne_off	en	off
+borne_off	ro	scoase
+borne_off	fr	sorties
+borne_off	it	uscite
+borne_off	es	fuera
+borne_off	pt	retiradas
+borne_off	de	draußen
+borne_off	hu	kint
+die	en	die
+die	ro	zar
+die	fr	dé
+die	it	dado
+die	es	dado
+die	pt	dado
+die	de	Würfel
+die	hu	kocka
+roll	en	roll
+roll	ro	aruncare
+roll	fr	lancer
+roll	it	lancio
+roll	es	tirada
+roll	pt	lançamento
+roll	de	Wurf
+roll	hu	dobás
+cat.Abstract	en	Abstract
+cat.Abstract	ro	Abstract
+cat.Abstract	fr	Abstraits
+cat.Abstract	it	Astratti
+cat.Abstract	es	Abstractos
+cat.Abstract	pt	Abstratos
+cat.Abstract	de	Abstrakt
+cat.Abstract	hu	Absztrakt
+cat.Clasic	en	Classic
+cat.Clasic	ro	Clasic
+cat.Clasic	fr	Classiques
+cat.Clasic	it	Classici
+cat.Clasic	es	Clásicos
+cat.Clasic	pt	Clássicos
+cat.Clasic	de	Klassiker
+cat.Clasic	hu	Klasszikus
+cat.Cooperativ	en	Cooperative
+cat.Cooperativ	ro	Cooperativ
+cat.Cooperativ	fr	Coopératifs
+cat.Cooperativ	it	Cooperativi
+cat.Cooperativ	es	Cooperativos
+cat.Cooperativ	pt	Cooperativos
+cat.Cooperativ	de	Kooperativ
+cat.Cooperativ	hu	Kooperatív
+cat.Copii	en	Children
+cat.Copii	ro	Copii
+cat.Copii	fr	Enfants
+cat.Copii	it	Bambini
+cat.Copii	es	Infantiles
+cat.Copii	pt	Crianças
+cat.Copii	de	Kinder
+cat.Copii	hu	Gyerekeknek
+cat.Cuvinte	en	Word games
+cat.Cuvinte	ro	Cuvinte
+cat.Cuvinte	fr	Jeux de mots
+cat.Cuvinte	it	Giochi di parole
+cat.Cuvinte	es	Palabras
+cat.Cuvinte	pt	Palavras
+cat.Cuvinte	de	Wortspiele
+cat.Cuvinte	hu	Szójátékok
+cat.Cărți	en	Cards
+cat.Cărți	ro	Cărți
+cat.Cărți	fr	Cartes
+cat.Cărți	it	Carte
+cat.Cărți	es	Cartas
+cat.Cărți	pt	Cartas
+cat.Cărți	de	Karten
+cat.Cărți	hu	Kártyák
+cat.Deducție	en	Deduction
+cat.Deducție	ro	Deducție
+cat.Deducție	fr	Déduction
+cat.Deducție	it	Deduzione
+cat.Deducție	es	Deducción
+cat.Deducție	pt	Dedução
+cat.Deducție	de	Deduktion
+cat.Deducție	hu	Következtetés
+cat.Familie	en	Family
+cat.Familie	ro	Familie
+cat.Familie	fr	Famille
+cat.Familie	it	Famiglia
+cat.Familie	es	Familiares
+cat.Familie	pt	Família
+cat.Familie	de	Familie
+cat.Familie	hu	Családi
+cat.Miniaturi	en	Miniatures
+cat.Miniaturi	ro	Miniaturi
+cat.Miniaturi	fr	Figurines
+cat.Miniaturi	it	Miniature
+cat.Miniaturi	es	Miniaturas
+cat.Miniaturi	pt	Miniaturas
+cat.Miniaturi	de	Miniaturen
+cat.Miniaturi	hu	Miniatúrák
+cat.Party	en	Party
+cat.Party	ro	Party
+cat.Party	fr	Soirée
+cat.Party	it	Party
+cat.Party	es	Fiesta
+cat.Party	pt	Festa
+cat.Party	de	Party
+cat.Party	hu	Társasági
+cat.Rol (RPG)	en	Role-playing (RPG)
+cat.Rol (RPG)	ro	Rol (RPG)
+cat.Rol (RPG)	fr	Jeu de rôle (RPG)
+cat.Rol (RPG)	it	Gioco di ruolo (GdR)
+cat.Rol (RPG)	es	Rol (RPG)
+cat.Rol (RPG)	pt	Representação (RPG)
+cat.Rol (RPG)	de	Rollenspiel (RPG)
+cat.Rol (RPG)	hu	Szerepjáték (RPG)
+cat.Strategie	en	Strategy
+cat.Strategie	ro	Strategie
+cat.Strategie	fr	Stratégie
+cat.Strategie	it	Strategia
+cat.Strategie	es	Estrategia
+cat.Strategie	pt	Estratégia
+cat.Strategie	de	Strategie
+cat.Strategie	hu	Stratégia
+cat.TCG	en	TCG
+cat.TCG	ro	TCG
+cat.TCG	fr	TCG
+cat.TCG	it	TCG
+cat.TCG	es	TCG
+cat.TCG	pt	TCG
+cat.TCG	de	TCG
+cat.TCG	hu	TCG
+cat.Zaruri	en	Dice
+cat.Zaruri	ro	Zaruri
+cat.Zaruri	fr	Dés
+cat.Zaruri	it	Dadi
+cat.Zaruri	es	Dados
+cat.Zaruri	pt	Dados
+cat.Zaruri	de	Würfel
+cat.Zaruri	hu	Kockák

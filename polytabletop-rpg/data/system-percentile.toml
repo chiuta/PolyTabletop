@@ -1,0 +1,18 @@
+# Generic roll-under d100 skill system (original data).
+[system]
+id = "percentile"
+name = "Percentile skills"
+kind = "roll-under"
+preset = "d100-under"
+attributes = ["Might", "Agility", "Resolve", "Wits", "Presence", "Fortitude"]
+attr_method = "roll"
+attr_roll = "3d6"
+attr_mult = 5
+skills = ["Climb:20", "Persuade:15", "Spot:25", "Sneak:20", "Lore:10", "Brawl:25", "Shoot:20", "Mend:10", "Drive:20"]
+skill_points = 200
+skill_step = 5
+skill_cap = 75
+skill_picks = 0
+resources = ["Health:2d6+@Fortitude", "Nerve:@Resolve"]
+res_attr_offset = 0
+res_attr_div = 10

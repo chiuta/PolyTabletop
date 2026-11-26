@@ -1,0 +1,10 @@
+[package]
+name = "polytabletop-games"
+description = "PolyTabletop game implementations (clean-room) and the catalog of all target games"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+polytabletop-core = { path = "../polytabletop-core" }

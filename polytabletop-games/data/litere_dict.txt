@@ -1,0 +1,283 @@
+# Dicționar mic românesc pentru jocul „Litere” (scris de mână pentru PolyTabletop).
+# Cuvinte uzuale: substantive (singular/plural), verbe (infinitiv și forme frecvente),
+# adjective, adverbe, pronume, numerale. Diacriticele se elimină la încărcare
+# (ă â → a, î → i, ș → s, ț → t). Liniile care încep cu # sunt comentarii.
+# Un cuvânt sau mai multe, separate prin spații sau linii noi.
+
+# --- cuvinte scurte și gramaticale ---
+a ai al am ar as au ba ca ce ci da de el ea eu fi fii iar in il la le li lui ma mi ne ni nu o ori pe pa sa se si sa te ti tu un va vi ei ele noi voi ati iti imi mie tie sie
+acel acea acei acele acest aceasta acesta aceste acestea acestui aceia aceea acolo acum adica aici ala alta alte altele altfel altul alti altii altor ambele ambii amandoi amandoua anume apoi asa asemenea astazi astfel atat atata atunci avea azi
+cand care cat cate catre chiar cind cum cumva deci desi deja doar dupa decat dintre dintr din fara fiind fiecare fie incat intre intr insa iara mai mult multa multe multi nici nimic nimeni niciun niciodata nicaieri oare oricat oricare oricum orice oriunde parca pana poate prea prin pentru pana peste printre sau spre sub sunt sus tot toata toate toti totul totusi vreo vreun vreme
+eram erai era eram erati erau fost fiu fiind fiti fiu sunt esti este suntem sunteti
+am ai are avem aveti au aveam aveai avea aveau avut avand
+voi vei va vom veti vor
+eu tu el ea noi voi ei ele
+meu mea mei mele tau ta tai tale sau sa sai sale nostru noastra nostri noastre vostru voastra vostri voastre lor
+unu unul una doi doua trei patru cinci sase sapte opt noua zece unsprezece doisprezece treisprezece paisprezece cincisprezece douazeci treizeci patruzeci cincizeci saizeci saptezeci optzeci nouazeci suta sute mie mii milion milioane prim primul prima intai doilea treilea
+
+# --- natură, animale, plante ---
+apa ape apele apei rau rauri raul raului fluviu fluvii lac lacuri lacul mare mari marea marii ocean oceane mlastina mlastini balta balti izvor izvoare cascada cascade rapa rape vale vai valea dealul deal dealuri munte munti muntele muntilor varf varfuri pisc piscuri pestera pesteri padure paduri padurea poiana poieni camp campuri campie campii livada livezi gradina gradini parc parcuri ses plai insula insule tarm tarmuri plaja plaje nisip piatra pietre stanca stanci pamant pamantul sol soluri lut argila noroi praf cenusa
+soare soarele luna luni stea stele cer ceruri nor nori ploaie ploi ninsoare zapada gheata ghete ger vant vanturi furtuna furtuni tunet tunete fulger fulgere ceata roua bruma curcubeu cald calda frig rece racoare vara iarna toamna primavara anotimp anotimpuri
+copac copaci arbore arbori ram ramuri creanga crengi frunza frunze floare flori mugur muguri radacina radacini tulpina scoarta lemn lemne iarba ierburi mus muschi ciuperca ciuperci fag fagi stejar stejari brad brazi molid molizi plop plopi salcie salcii tei teiul ulm ulmi artar artari cires ciresi visin visini mar meri par peri prun pruni nuc nuci gutui piersic caisi caisa caise strugure struguri vita vite poama poame
+trandafir trandafiri lalea lalele crin crini narcisa viorea viorele ghiocel ghiocei floarea margareta margarete mac maci albastrele busuioc menta lavanda
+caine caini pisica pisici cal cai vaca vaci bou boi oaie oi berbec berbeci capra capre porc porci gaina gaini cocos cocosi rata rate gasca gaste curcan curcani iepure iepuri soarece soareci sobolan
+lup lupi urs ursi vulpe vulpi cerb cerbi caprioara caprioare mistret mistreti ras rasi pisoi veverita veverite arici aricii lebada lebede barza berze
+pasare pasari vrabie vrabii randunica randunici cioara cioare corb corbi vultur vulturi uliu uliu bufnita bufnite privighetoare ciocarlie cuc cucuri porumbel porumbei
+pește pesti peste crap crapi stiuca stiuci somn somni
+albina albine viespe furnica furnici fluture fluturi musca muste tantar tantari greier greieri gandac gandaci paianjen paianjeni melc melci broasca broaste sarpe serpi soparla soparle
+leu lei tigru tigri elefant elefanti girafa girafe maimuta maimute zebra zebre delfin delfini balena balene
+
+# --- corp, familie, oameni ---
+corp corpuri cap capete cap par parul ochi ochiul ochii nas nasuri gura guri dinte dinti limba limbi ureche urechi frunte fruntea obraz obraji barbie gat gatul umar umeri brat brate mana maini deget degete unghie unghii piept pieptul spate spatele burta pantece picior picioare genunchi talpa tălpi talpi piele piei os oase inima inimi plaman plamani sange creier creieri vena vene muschi nerv nervi
+om oameni barbat barbati femeie femei copil copii baiat baieti fata fete bebelus bebelusi tanar tineri batran batrani adult adulti
+mama mame tata tati parinte parinti frate frati sora surori bunic bunici bunica bunicul matusa matusi unchi unchiul nepot nepoti nepoata verisor verisori sot soti sotie sotii fiu fii fiica fiice socru socri ginere nora
+prieten prieteni prietena prietene vecin vecini vecina coleg colegi colega dusman dusmani
+nume nume prenume numele nasul nasi
+
+# --- casă, obiecte, haine, mâncare ---
+casa case locuinta locuinte bloc blocuri apartament apartamente camera camere sala sali bucatarie bucatarii baie bai dormitor dormitoare hol holuri balcon balcoane terasa terase pod poduri pivnita pivnite scara scari usa usi fereastra ferestre geam geamuri perete pereti tavan tavane podea podele acoperis acoperisuri horn hornuri curte curti poarta porti gard garduri
+masa mese scaun scaune fotoliu fotolii canapea canapele pat paturi dulap dulapuri raft rafturi sertar sertare oglinda oglinzi covor covoare perna perne patura paturi perdea perdele lampa lampi veioza lustra
+cana cani pahar pahare farfurie farfurii lingura linguri furculita furculite cutit cutite tigaie tigai oala oale ceainic ceainice sticla sticle borcan borcane cos cosuri sac saci punga pungi cutie cutii
+cheie chei lacat lacate ciocan ciocane cui cuie surub suruburi clesti fierastrau fierastraie topor topoare lopata lopeti furca sapa sape caruta carute roata roti sfoara franghie franghii
+carte carti caiet caiete creion creioane pix pixuri hartie hartii foaie foi plic plicuri tablou tablouri ceas ceasuri ceasul telefon telefoane televizor televizoare radio calculator calculatoare tastatura mouse ecran ecrane
+haina haine palarie palarii caciula caciuli esarfa esarfe manusa manusi camasa camasi bluza bluze fusta fuste pantalon pantaloni rochie rochii palton paltoane geaca geci costum costume sosete ciorap ciorapi pantof pantofi bocanc bocanci cizma cizme sandala sandale curea curele cravata cravate ochelari
+paine paini franzela covrig covrigi cozonac cozonaci placinta placinte tort torturi prajitura prajituri biscuit biscuiti cu zahar sare piper ulei otet faina oua ou lapte branza branzeturi unt smantana iaurt cascaval
+carne carnuri friptura fripturi mici carnat carnati cirnat sunca slanina ciorba ciorbe supa supe mamaliga sarma sarmale fasole mazare cartof cartofi rosie rosii ardei ceapa ceapa usturoi morcov morcovi varza spanac salata castravete castraveti dovleac dovleci vinete vanata patrunjel marar
+fruct fructe mar mere para pere banana banane portocala portocale lamaie lamai capsuna capsuni zmeura afina afine mure ananas cirese piersica piersici
+cafea ceai ceaiuri suc sucuri vin vinuri bere apa lapte tuica palinca
+mic dejun dejunuri pranz pranzuri cina cini masa gustare gustari
+
+# --- locuri, oraș, călătorie ---
+oras orase sat sate comuna comune judet judete tara tari capitala capitale strada strazi drum drumuri cale cai potecă poteca poteci pod poduri piata piete magazin magazine pravalie pravalii supermarket restaurant restaurante cafenea cafenele hotel hoteluri scoala scoli liceu licee universitate universitati facultate facultati spital spitale farmacie farmacii biserica biserici manastire manastiri muzeu muzee teatru teatre cinema cinematograf biblioteca biblioteci banca banci posta poste primarie primarii gara gari aeroport aeroporturi port porturi statie statii
+masina masini automobil automobile tren trenuri autobuz autobuze tramvai tramvaie metrou bicicleta biciclete motocicleta avion avioane elicopter nava nave vapor vapoare barca barci vagon vagoane roata roti bilet bilete calatorie calatorii calator calatori turist turisti bagaj bagaje valiza valize harta harti busola
+nord sud est vest rasarit apus stanga dreapta sus jos aproape departe inainte inapoi langa intre deasupra dedesubt inauntru afara
+# --- timp ---
+timp ora ore minut minute secunda secunde zi zile ziua ziua dimineata dimineti seara seri noapte nopti amiaza saptamana saptamani luna luni an ani anul secol secole epoca epoci vreme clipa clipe moment momente data date azi ieri maine poimaine alaltaieri
+luni marti miercuri joi vineri sambata duminica
+ianuarie februarie martie aprilie mai iunie iulie august septembrie octombrie noiembrie decembrie
+# --- școală, muncă, societate ---
+elev elevi eleva eleve student studenti profesor profesori profesoara invatator invatatori invatatoare director directori lectie lectii tema teme examen examene nota note clasa clase curs cursuri test teste manual manuale
+munca munci lucru lucruri loc locuri job meserie meserii angajat angajati sef sefi muncitor muncitori fermier fermieri medic medici doctor doctori asistenta asistente inginer ingineri avocat avocati judecator judecatori politist politisti pompier pompieri soldat soldati ofiter ofiteri pilot piloti sofer soferi bucatar bucatari ospatar ospatari frizer frizeri croitor croitori cizmar cizmari tamplar tamplari zidar zidari faur fauri pescar pescari vanator vanatori pastor pastori artist artisti pictor pictori actor actori cantaret cantareti muzician muzicieni scriitor scriitori poet poeti jurnalist jurnalisti fotograf fotografi
+banii bani leu lei ban pret preturi salariu salarii plata plati datorie datorii credit credite
+lege legi drept drepturi dreptate stat state guvern guverne ministru ministri presedinte presedinti vot voturi alegeri partid partide
+razboi razboaie pace armata armate lupta lupte victorie victorii infrangere
+
+# --- abstract, sentimente, idei ---
+viata vieti moarte morti suflet suflete minte minti gand ganduri idee idei vis vise vise somn somnuri amintire amintiri memorie dor dorinta dorinte speranta sperante frica frici teama bucurie bucurii tristete tristeti suparare suparari mania furie iubire iubiri dragoste ura rusine mandrie rabdare curaj curajul puterea putere puteri forta forte slabiciune sanatate boala boli durere dureri oboseala foame sete
+adevar adevaruri minciuna minciuni secret secrete poveste povesti basm basme legenda legende istorie istorii cantec cantece melodie melodii muzica joc jocuri sport sporturi minge mingi echipa echipe meci meciuri
+cuvant cuvinte litera litere propozitie propozitii fraza fraze text texte limba limbi vorba vorbe glas voci sunet sunete zgomot zgomote tacere liniste strigat
+intrebare intrebari raspuns raspunsuri problema probleme solutie solutii motiv motive cauza cauze efect efecte scop scopuri plan planuri proiect proiecte pas pasi cale metoda metode regula reguli exemplu exemple parte parti intreg intregul jumatate jumatati numar numere cifra cifre suma sume
+culoare culori alb alba albi albe negru neagra negri negre rosu rosie rosii rosii galben galbena verde verzi albastru albastra albastri albastre maro mov roz gri portocaliu violet
+forma forme cerc cercuri patrat patrate triunghi triunghiuri linie linii punct puncte colt colturi margine margini mijloc centru centre
+fel feluri tip tipuri fel soi soiuri grup grupuri multime multimi sir siruri rand randuri
+lume lumi univers planeta planete pamant galaxie galaxii stea stele cosmos
+lumina lumini umbra umbre foc focuri flacara flacari fum fumuri caldura gaz gaze energie energii curent curenti electricitate
+om oameni neam neamuri popor popoare natiune natiuni traditie traditii obicei obiceiuri datina sarbatoare sarbatori craciun pasti revelion
+
+# --- verbe (infinitiv, participiu, gerunziu, prezent/imperfect frecvente) ---
+a fi
+merge merg mergi mergem mergeti mers mergand mergea mergeau
+veni vin vii vine venim veniti vin venit venind venea veneau
+duce duc duci duce ducem duceti dus ducand ducea
+aduce aduc aduci aduce aducem aduceti adus aducand aducea
+lua iau iei ia luam luati iau luat luand lua luam
+da dau dai da dam dati dau dat dand dadea
+spune spun spui spune spunem spuneti spus spunand spunea spuneau
+zice zic zici zice zicem ziceti zis zicand zicea
+vorbi vorbesc vorbesti vorbeste vorbim vorbiti vorbit vorbind vorbea vorbeau
+auzi aud auzi aude auzim auziti auzit auzind auzea
+vedea vad vezi vede vedem vedeti vazut vazand vedea vedeau
+privi privesc privesti priveste privim priviti privit privind privea
+gasi gasesc gasesti gaseste gasim gasiti gasit gasind gasea
+cauta caut cauti cauta cautam cautati cautat cautand cauta
+pune pun pui pune punem puneti pus punand punea puneau
+tine tin tii tine tinem tineti tinut tinand tinea
+lasa las lasi lasa lasam lasati lasat lasand lasa
+sta stau stai sta stam stati stat stand statea
+sedea stau
+sti stiu stii stie stim stiti stiut stiind stia stiau
+putea pot poti poate putem puteti putut putand putea puteau
+vrea vreau vrei vrea vrem vreti vrut vrand voia voiau
+trebui trebuie trebuia trebuit
+face fac faci face facem faceti facut facand facea faceau
+lucra lucrez lucrezi lucreaza lucram lucrati lucrat lucrand lucra
+munci muncesc muncesti munceste muncim munciti muncit muncind
+citi citesc citesti citeste citim cititi citit citind citea citeau
+scrie scriu scrii scrie scriem scrieti scris scriind scria scriau
+invata invat inveti invata invatam invatati invatat invatand invata
+juca joc joci joaca jucam jucati jucat jucand juca jucau
+canta cant canti canta cantam cantati cantat cantand canta
+dansa dansez dansezi danseaza dansam dansat
+mananca mananc mananci mananca mancam mancati mancat mancand manca
+bea beau bei bea bem beti baut band bea beau
+dormi dorm dormi doarme dormim dormiti dormit dormind dormea
+visa visez visezi visea visat visand
+trai traiesc traiesti traieste traim traiti trait traind traia
+muri mor mori moare murim muriti murit murind murea
+naste nasc nasti naste nastem nascut nascand
+creste cresc cresti creste crestem crescut crescand crestea
+iubi iubesc iubesti iubeste iubim iubiti iubit iubind iubea iubeau
+uri urasc urasti uraste urim uriti urit urind
+placea place placut placand placea
+ajuta ajut ajuti ajuta ajutam ajutati ajutat ajutand ajuta
+intreba intreb intrebi intreaba intrebam intrebat intrebari
+raspunde raspund raspunzi raspunde raspundem raspuns raspunzand
+striga strig strigi striga strigam strigat strigand
+chema chem chemi cheama chemam chemat chemand
+numi numesc numesti numeste numim numit numind
+astepta astept astepti asteapta asteptam asteptat asteptand
+cumpara cumpar cumperi cumpara cumparam cumparat cumparand
+vinde vand vinzi vinde vindem vandut vanzand
+plati platesc platesti plateste platim platit platind
+costa costa costat costand
+deschide deschid deschizi deschide deschidem deschis deschizand
+inchide inchid inchizi inchide inchidem inchis inchizand
+intra intru intri intra intram intrat intrand
+iesi ies iesi iese iesim iesit iesind
+urca urc urci urca urcam urcat urcand
+cobori cobor cobori coboara coboram coborat coborand
+alerga alerg alergi alearga alergam alergat alergand
+sari sar sari sare sarim sarit sarind
+merge
+zbura zbor zbori zboara zburam zburat zburand
+inota inot inoti inota inotam inotat inotand
+cadea cad cazi cade cadem cazut cazand cadea
+ridica ridic ridici ridica ridicam ridicat ridicand
+tragea trag tragi trage tragem tras tragand
+impinge imping impingi impinge impins impingand
+arunca arunc arunci arunca aruncam aruncat aruncand
+prinde prind prinzi prinde prindem prins prinzand
+rupe rup rupi rupe rupem rupt rupand
+taia tai tai taie taiem taiat taind
+sparge sparg spargi sparge spargem spart spargand
+construi construiesc construiesti construieste construim construit construind
+lipi lipesc lipeste lipit
+spala spal speli spala spalam spalat spalind
+curata curat cureti curata curatam curatat curatand
+gati gatesc gatesti gateste gatim gatit gatind
+coace coc coci coace coacem copt coptand
+fierbe fierb fierbi fierbe fiert fierband
+prajeste prajesc prajit
+topi topesc topeste topit
+umple umplu umpli umple umplem umplut umplând
+goli golesc golit
+deschis inchis
+cunoaste cunosc cunosti cunoaste cunoastem cunoscut cunoscand
+intelege inteleg intelegi intelege intelegem inteles intelegand
+crede cred crezi crede credem crezut crezand
+gandi gandesc gandesti gandeste gandim gandit gandind
+simti simt simti simte simtim simtit simtind
+dori doresc doresti doreste dorim dorit dorind
+spera sper speri spera speram sperat sperand
+ierta iert ierti iarta iertam iertat iertand
+rade rad razi rade razand ras
+plange plang plangi plange plans plangand
+zambi zambesc zambeste zambit zambind
+suferi sufar suferi sufera suferit
+reusi reusesc reuseste reusit
+greşi gresesc gresesti greseste gresit gresind
+incepe incep incepi incepe incepem inceput incepand
+termina termin termini termina terminam terminat terminand
+continua continui continua continuat
+opri opresc opresti opreste oprim opriti oprit oprind
+pleca plec pleci pleaca plecam plecat plecand
+ramane raman ramai ramane ramanem ramas ramanand
+reveni revin revii revine revenit
+gasi
+pierde pierd pierzi pierde pierdem pierdut pierzand
+castiga castig castigi castiga castigam castigat castigand
+folosi folosesc folosesti foloseste folosim folosit folosind
+arata arat arati arata aratam aratat aratand
+ascunde ascund ascunzi ascunde ascuns ascunzand
+alege aleg alegi alege alegem ales alegand
+schimba schimb schimbi schimba schimbam schimbat schimband
+misca misc misti misca miscat miscand
+tremura tremur tremuri tremura tremurat
+adormi adorm adormit
+trezi trezesc trezeste trezit
+imbraca imbrac imbraci imbraca imbracat
+purta port porti poarta purtat purtand
+lega leg legi leaga legat legand
+desena desenez desenezi deseneaza desenat
+picta pictez pictezi picteaza pictat
+vizita vizitez vizitezi viziteaza vizitat
+calatori calatoresc calatorit
+trimite trimit trimiti trimite trimis trimitand
+primi primesc primesti primeste primim primit primind
+cere cer ceri cere cerem cerut cerand
+oferi ofer oferi ofera oferit
+invita invit inviti invita invitat
+saluta salut saluti saluta salutat
+multumi multumesc multumit
+ruga rog rogi roaga rugat rugand
+promite promit promiti promite promis
+mintii mint minti minte mintit
+adauga adaug adaugi adauga adaugat
+scoate scot scoti scoate scos scotand
+baga bag bagi baga bagat
+verifica verific verifici verifica verificat
+masura masor masori masoara masurat
+numara numar numeri numara numarat
+socoti socot socoti socoteste socotit
+calcula calculez calculeaza calculat
+gandire
+
+# --- adjective și adverbe (masculin/feminin/plural) ---
+bun buna buni bune rau rea rai rele frumos frumoasa frumosi frumoase urat urata urati urate mare mari mic mica mici mici micute mare
+nou noua noi noi vechi veche vechi batran batrana tanar tanara tineri tinere
+lung lunga lungi lungi scurt scurta scurti scurte inalt inalta inalti inalte jos joasa josi joase lat larga latii largi ingust ingusta inguste gros groasa grosi groase subtire subtiri
+greu grea grei grele usor usoara usori usoare tare tari moale moi dur dura duri dure
+cald calda calzi calde rece reci friguros fierbinte umed umeda umezi umede uscat uscata uscati uscate
+curat curata curati curate murdar murdara murdari murdare plin plina plini pline gol goala goi goale deschis deschisa inchis inchisa
+rapid rapida rapizi rapide repede incet lent lenta lenti lente puternic puternica puternici puternice slab slaba slabi slabe
+sanatos sanatoasa bolnav bolnava bolnavi bolnave obosit obosita obositi obosite odihnit
+fericit fericita fericiti fericite trist trista tristi triste vesel vesela veseli vesele suparat suparata
+inteligent inteligenta destept desteapta prost proasta prosti proaste istet istetă istete
+cuminte cuminti harnic harnica harnici harnice lenes lenesa lenesi
+bogat bogata bogati bogate sarac saraca saraci sarace
+important importanta importanti importante necesar necesara necesari
+mult multa multi multe putin putina putini putine tot toata toti toate
+intreg intreaga intregi intregi
+liber libera liberi libere
+singur singura singuri singure
+adevarat adevarata adevarati adevarate fals falsa falsi false
+posibil posibila posibili imposibil imposibila
+simplu simpla simpli simple greu dificil dificila dificili usor
+dulce dulci amar amara amari amare acru acra acri acre sarat sarata sarati sarate gustos gustoasa
+luminos luminoasa luminosi intunecat intunecata intunecosi
+tacut tacuta tacuti tacute zgomotos zgomotoasa
+rotund rotunda rotunzi rotunde patrat ascutit ascutita ascutiti
+drept dreapta drepti drepte stang stanga stangi stangi
+primul prima primii primele ultim ultima ultimi ultime
+fiecare oricare cativa cateva catorva
+bine rau mai prea foarte tare deloc destul destule asa astfel poate sigur desigur
+mereu intotdeauna uneori adesea des rar niciodata acum atunci apoi inca deja inainte dupa curand tarziu devreme
+aici acolo undeva oriunde nicaieri
+repede incet
+poate
+cumva
+bravo salut buna ziua multumesc scuze pardon
+nu da
+
+# --- substantive diverse (a doua serie) ---
+adresa adrese ac ace aer aeruri afis afise agenda agende alee alei amenda anunt anunturi aparat aparate arbore arma arme armura arta arte atelier ateliere atentie autor autori autoritate avantaj avantaje
+bagheta baghete balanta baterie baterii bec becuri bila bile bloc boaba boabe bomba bombe borna bornă botez brosura brosuri bucata bucati bucla bucle buget bugete buletin butoi butoaie buton butoane
+cabana cabane cablu cabluri cadou cadouri cadru cadre calcul calcule cal calendar calendare camera cana canal canale capac capace capat capete caracter caractere carnet carnete casca casti castel castele catalog cataloage catedra cauza celula celule cerinta cerinte cerc cerere cereri certificat certificate chip chipuri cheltuiala cheltuieli chitara chitare ciocolata cifru cifre cinstea circ circuit circuite clopot clopote club cluburi cod coduri colectie colectii colet colete comanda comenzi comert comunitate concurs concursuri conditie conditii conferinta contract contracte control corabie corabii cor coruri costum cufar cufere cupa cupe cuptor cuptoare curs
+dans dansuri dantela decor decoruri deget degetar delta dezvoltare diagrama diagrame diamant diamante diploma diplome disc discuri discurs discursuri dispozitiv distanta distante doc dosar dosare drag drapel drapele dres dulce
+ecou efort eforturi element elemente emisiune examinare expozitie expozitii extrema
+fabrica fabrici factura facturi fapt fapte familie familii fantana fantani farfurioara fasie fata favor felinar felinare ferma ferme festival fier fiola fir fire fiola fisa fise figura figuri film filme finala fir fitil flaut flaute fluier fluiere fotografie fotografii fragment frectie front frunte fruntarie fum functie functii fundal fundatie
+galerie galerii gard gaura gauri gazda gazde gel gest gesturi gheata ghid ghiduri glob globuri glorie grad grade grafic grafice grajd grajduri grau grauntele greutate greutati grija griji grindina grup guma guri gust gusturi
+hamac hanorac harta hartie hotar hotare hrana hrana huma
+icoana icoane idol imagine imagini impact imprimanta indiciu indicii industrie informatie informatii initiala instrument instrumente interes interese interval intrare intrari invitatie inventie
+jaluzea jar jgheab joc joaca jucarie jucarii jumatate jurnal jurnale
+labirint lac lada lazi lant lanturi lance lapovita laptop larma lege legatura legaturi lentila lentile lift liman limita limite lingurita lista liste litru litri locatie lovitura lovituri lumanare lumanari lupa lupe
+magie magnet maiou maestru maestri maniera manual margele marfa marfuri marime marimi martor martori masca masti masina material materiale matrice maxim medalie medalii mediu medii melodie mesaj mesaje metal metale metru metri mica microfon miere miez miezul minus minut mireasa mirosuri mister model modele moda moment monedă moneda monede monument monumente morman motor motoare motiv munte mustata
+nava necaz necazuri nivel niveluri nod noduri norma norme nota nucleu
+obicei obiect obiecte observatie ocazie ocazii ochi oferta oferte oficiu ograda oglinda ordine ordin ornament ou oval oxigen
+pacat pachet pachete pagina pagini palat palate palma palme panza panze pantof parola parole particula pasaj pasaje pasiune pasiuni pat pata pete patrie pauza pauze pavaj pedala pelicula pene pensie pensii perete perioada perioade permis persoana persoane pestera piatra picatura picaturi pictura picturi piele pilot pin pisica plapuma plasa plase plata platou plic plimbare plimbari pliant plus pod poezie poezii polita polite polen pompa pompe popas portret portrete portofel portofele posibilitate prag praguri prajina prajini praf prelungire premiu premii prezent prezente pretext pricina pricini principiu principii program programe proba probe produs produse profit prognoza proiector promotie propozitie protest proverb proverbe prune pulover pulovere pulpa punte punti pupitru
+rama rame raport rapoarte rasa rase raza raze reactie realitate reclama recolta recolte record recorduri refren regina regine regim registru relatie relatii remediu rest resturi retea retele reteta retete revista reviste rezerva rezultat rezultate rima ring risc riscuri ritm ritmuri rob rol roluri roman romane rosu rugina rucsac rucsacuri ruina ruine rulment rupere
+sabie sabii saculet sala salon saloane salt salturi salvare sanatate sanie sanii sarcina sarcini scara scena scene schema scheme schita scoica scoici scop scrisoare scrisori scris scufita sector sectiune semafor semn semne semnal semnale sens sensuri serie serii serviciu servicii sezon sezoane sfat sfaturi sfarsit sfera sfere sfoara siguranta silueta simbol simboluri sirena sistem sisteme sit situatie situatii soare soba sobe sofa solutie somn spatiu spatii special spectacol spectacole spirala spirit sportiv spuma stare stari statie statuie statui stil stiluri stiinta stiinte stindard stofa stofe strat straturi strop stropi structura structuri stup stupi succes succese suflu sugestie suma super supa surpriza surprize suvenir
+tabara tabere tabel tabele tabla table taiere talent talente tambur tamburi tanc tarie taur tauri tavan tehnica tehnici tema tempo temperatura tendinta termen termeni teren terenuri test text textura titlu titluri toaleta toamna tobă toba tobe tonul topor torta tort tractor tractoare trafic traseu trasee trasura trebuinta tribunal trofeu trofee trunchi trunchiuri tub tuburi tunel tunele turn turnuri
+umbrela umbrele unealta unelte unitate unitati uniforma uniforme uz usor
+vacanta vacante valoare valori val valuri vapoare varsta varste varianta variante vas vase vedere vederi veac vecini vehicul vehicule verb verbe versuri vers vesta vesti veste viata viitor vioara viori virus visator vizita vitrina vitrine vitamina vitamine viteza viteze vocabular voce volum volume vot voturi
+zar zaruri zarzavat zbor zboruri zid ziduri zimbet zimbete zodie zona zone zumzet

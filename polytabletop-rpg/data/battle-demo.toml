@@ -1,0 +1,41 @@
+# Demo battle: two small armies, original generic units.
+[battle]
+a = "Garda Văii"
+b = "Hoarda Dealului"
+rounds = 25
+
+[unit.pike]
+side = "a"
+name = "Suliceri"
+count = 60
+attack = 4
+defense = 5
+morale = 7
+
+[unit.bows]
+side = "a"
+name = "Arcași"
+count = 40
+attack = 4
+defense = 2
+morale = 5
+ranged = true
+terrain = "forest"
+
+[unit.raiders]
+side = "b"
+name = "Răzeși"
+count = 90
+attack = 5
+defense = 3
+morale = 6
+terrain = "hills"
+
+[unit.slingers]
+side = "b"
+name = "Praștiași"
+count = 30
+attack = 3
+defense = 2
+morale = 4
+ranged = true

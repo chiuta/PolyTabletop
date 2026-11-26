@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = ["polytabletop-core", "polytabletop-games", "polytabletop", "polytabletop-gui", "polytabletop-rpg"]
+default-members = ["polytabletop-core", "polytabletop-games", "polytabletop", "polytabletop-rpg"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Alexio <alexio@trom.tf>"]
+
+[profile.test]
+opt-level = 2
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

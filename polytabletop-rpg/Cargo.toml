@@ -1,0 +1,14 @@
+[package]
+name = "polytabletop-rpg"
+description = "PolyTabletop-RPG: generic, rules-agnostic tabletop role-playing toolkit (dice, sheets, checks, tables, dungeons, data, journal) and CLI"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+polytabletop-core = { path = "../polytabletop-core" }
+
+[[bin]]
+name = "polytabletop-rpg"
+path = "src/main.rs"

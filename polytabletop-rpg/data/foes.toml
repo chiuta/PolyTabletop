@@ -1,0 +1,24 @@
+# Generic foe list for the encounter builder: cr = challenge rating.
+[foe.rat]
+name = "Giant rat"
+cr = 0.25
+
+[foe.bandit]
+name = "Bandit"
+cr = 0.5
+
+[foe.wolf]
+name = "Wolf"
+cr = 1
+
+[foe.ogre]
+name = "Ogre"
+cr = 3
+
+[foe.wraith]
+name = "Wraith"
+cr = 5
+
+[foe.drake]
+name = "Young drake"
+cr = 7

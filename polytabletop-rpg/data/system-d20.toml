@@ -1,0 +1,18 @@
+# Generic d20 + modifier vs difficulty system (original data).
+[system]
+id = "d20-heroic"
+name = "Heroic d20"
+kind = "d20"
+preset = "d20-dc"
+attributes = ["Vigor", "Grace", "Hardiness", "Intellect", "Insight", "Charm"]
+attr_method = "roll"
+attr_roll = "4d6kh3"
+attr_mult = 1
+skills = ["Athletics", "Stealth", "Arcana", "Healing", "Survival", "Diplomacy", "Perception", "Craft"]
+skill_points = 8
+skill_step = 1
+skill_cap = 4
+skill_picks = 5
+resources = ["Hit points:1d8+@Hardiness", "Luck:2"]
+res_attr_offset = 10
+res_attr_div = 2

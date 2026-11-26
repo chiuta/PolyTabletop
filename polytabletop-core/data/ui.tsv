@@ -1,0 +1,185 @@
+# UI strings: key<TAB>lang<TAB>text   (\n = newline, \t = tab, \\ = backslash; {name} = placeholder)
+cli.usage_head	en	{app} — table-top games, clean-room, in Rust\n\nUsage:
+cli.usage_head	ro	{app} — jocuri de masă, clean-room, în Rust\n\nFolosire:
+cli.usage_head	fr	{app} — jeux de société, clean-room, en Rust\n\nUtilisation :
+cli.usage_head	it	{app} — giochi da tavolo, clean-room, in Rust\n\nUso:
+cli.usage_head	es	{app} — juegos de mesa, clean-room, en Rust\n\nUso:
+cli.usage_head	pt	{app} — jogos de tabuleiro, clean-room, em Rust\n\nUso:
+cli.usage_head	de	{app} — Brettspiele, Clean-Room, in Rust\n\nAufruf:
+cli.usage_head	hu	{app} — társasjátékok, clean-room módszerrel, Rustban\n\nHasználat:
+cli.usage_tail	en	  polytabletop langs                     (list of languages)\n  polytabletop --lang CODE <command>     (interface language)
+cli.usage_tail	ro	  polytabletop langs                     (lista limbilor)\n  polytabletop --lang COD <comandă>      (limba interfeței)
+cli.usage_tail	fr	  polytabletop langs                     (liste des langues)\n  polytabletop --lang CODE <commande>    (langue de l'interface)
+cli.usage_tail	it	  polytabletop langs                     (elenco delle lingue)\n  polytabletop --lang CODICE <comando>   (lingua dell'interfaccia)
+cli.usage_tail	es	  polytabletop langs                     (lista de idiomas)\n  polytabletop --lang CÓDIGO <comando>   (idioma de la interfaz)
+cli.usage_tail	pt	  polytabletop langs                     (lista de idiomas)\n  polytabletop --lang CÓDIGO <comando>   (idioma da interface)
+cli.usage_tail	de	  polytabletop langs                     (Liste der Sprachen)\n  polytabletop --lang CODE <Befehl>      (Sprache der Oberfläche)
+cli.usage_tail	hu	  polytabletop langs                     (nyelvek listája)\n  polytabletop --lang KÓD <parancs>      (a felület nyelve)
+cli.unknown_game	en	Unknown game: {id}. Try `polytabletop list`.
+cli.unknown_game	ro	Joc necunoscut: {id}. Încearcă `polytabletop list`.
+cli.unknown_game	fr	Jeu inconnu : {id}. Essayez `polytabletop list`.
+cli.unknown_game	it	Gioco sconosciuto: {id}. Prova `polytabletop list`.
+cli.unknown_game	es	Juego desconocido: {id}. Prueba `polytabletop list`.
+cli.unknown_game	pt	Jogo desconhecido: {id}. Experimente `polytabletop list`.
+cli.unknown_game	de	Unbekanntes Spiel: {id}. Versuche `polytabletop list`.
+cli.unknown_game	hu	Ismeretlen játék: {id}. Próbáld a `polytabletop list` parancsot.
+cli.unknown_lang	en	Unknown language: {code}. Available: {list}.
+cli.unknown_lang	ro	Limbă necunoscută: {code}. Disponibile: {list}.
+cli.unknown_lang	fr	Langue inconnue : {code}. Disponibles : {list}.
+cli.unknown_lang	it	Lingua sconosciuta: {code}. Disponibili: {list}.
+cli.unknown_lang	es	Idioma desconocido: {code}. Disponibles: {list}.
+cli.unknown_lang	pt	Idioma desconhecido: {code}. Disponíveis: {list}.
+cli.unknown_lang	de	Unbekannte Sprache: {code}. Verfügbar: {list}.
+cli.unknown_lang	hu	Ismeretlen nyelv: {code}. Elérhető: {list}.
+cli.lang_missing	en	--lang expects a language code. Available: {list}.
+cli.lang_missing	ro	--lang așteaptă un cod de limbă. Disponibile: {list}.
+cli.lang_missing	fr	--lang attend un code de langue. Disponibles : {list}.
+cli.lang_missing	it	--lang richiede un codice lingua. Disponibili: {list}.
+cli.lang_missing	es	--lang espera un código de idioma. Disponibles: {list}.
+cli.lang_missing	pt	--lang espera um código de idioma. Disponíveis: {list}.
+cli.lang_missing	de	--lang erwartet einen Sprachcode. Verfügbar: {list}.
+cli.lang_missing	hu	A --lang nyelvkódot vár. Elérhető: {list}.
+cli.langs_header	en	Available languages (current: {cur}):
+cli.langs_header	ro	Limbi disponibile (curentă: {cur}):
+cli.langs_header	fr	Langues disponibles (actuelle : {cur}) :
+cli.langs_header	it	Lingue disponibili (corrente: {cur}):
+cli.langs_header	es	Idiomas disponibles (actual: {cur}):
+cli.langs_header	pt	Idiomas disponíveis (atual: {cur}):
+cli.langs_header	de	Verfügbare Sprachen (aktuell: {cur}):
+cli.langs_header	hu	Elérhető nyelvek (jelenlegi: {cur}):
+cli.catalog_total	en	\nTotal {total}: implemented {impl}, traditional {trad}, own variants {own}, toolkit {toolkit}
+cli.catalog_total	ro	\nTotal {total}: implementate {impl}, tradiționale {trad}, variante proprii {own}, toolkit {toolkit}
+cli.catalog_total	fr	\nTotal {total} : implémentés {impl}, traditionnels {trad}, variantes propres {own}, toolkit {toolkit}
+cli.catalog_total	it	\nTotale {total}: implementati {impl}, tradizionali {trad}, varianti proprie {own}, toolkit {toolkit}
+cli.catalog_total	es	\nTotal {total}: implementados {impl}, tradicionales {trad}, variantes propias {own}, toolkit {toolkit}
+cli.catalog_total	pt	\nTotal {total}: implementados {impl}, tradicionais {trad}, variantes próprias {own}, toolkit {toolkit}
+cli.catalog_total	de	\nGesamt {total}: implementiert {impl}, traditionell {trad}, eigene Varianten {own}, Toolkit {toolkit}
+cli.catalog_total	hu	\nÖsszesen {total}: megvalósítva {impl}, hagyományos {trad}, saját változat {own}, eszköztár {toolkit}
+kind.implemented	en	implemented
+kind.implemented	ro	implementat
+kind.implemented	fr	implémenté
+kind.implemented	it	implementato
+kind.implemented	es	implementado
+kind.implemented	pt	implementado
+kind.implemented	de	implementiert
+kind.implemented	hu	megvalósítva
+kind.traditional	en	planned (public domain)
+kind.traditional	ro	planificat (domeniu public)
+kind.traditional	fr	prévu (domaine public)
+kind.traditional	it	pianificato (pubblico dominio)
+kind.traditional	es	planificado (dominio público)
+kind.traditional	pt	planeado (domínio público)
+kind.traditional	de	geplant (gemeinfrei)
+kind.traditional	hu	tervezett (közkincs)
+kind.branded	en	planned (own variant)
+kind.branded	ro	planificat (variantă proprie)
+kind.branded	fr	prévu (variante propre)
+kind.branded	it	pianificato (variante propria)
+kind.branded	es	planificado (variante propia)
+kind.branded	pt	planeado (variante própria)
+kind.branded	de	geplant (eigene Variante)
+kind.branded	hu	tervezett (saját változat)
+kind.toolkit	en	generic toolkit (RPG: see polytabletop-rpg; TCG/miniatures: planned)
+kind.toolkit	ro	toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat)
+kind.toolkit	fr	toolkit générique (JdR : voir polytabletop-rpg ; JCC/figurines : prévu)
+kind.toolkit	it	toolkit generico (GdR: vedi polytabletop-rpg; TCG/miniature: pianificato)
+kind.toolkit	es	toolkit genérico (rol: véase polytabletop-rpg; TCG/miniaturas: planificado)
+kind.toolkit	pt	toolkit genérico (RPG: veja polytabletop-rpg; TCG/miniaturas: planeado)
+kind.toolkit	de	generisches Toolkit (Rollenspiel: siehe polytabletop-rpg; Sammelkarten/Miniaturen: geplant)
+kind.toolkit	hu	általános eszköztár (szerepjáték: lásd polytabletop-rpg; gyűjtögetős kártya/miniatűr: tervezett)
+play.hotseat_warn	en	Warning: this game does not hide private information in hot-seat mode; the display may show Player 1's hand/information.
+play.hotseat_warn	ro	Atenție: acest joc nu ascunde informația privată în modul „la masă”; afișajul poate arăta mâna/informația Jucătorului 1.
+play.hotseat_warn	fr	Attention : ce jeu ne cache pas l'information privée en mode « à la table » ; l'affichage peut montrer la main/les informations du Joueur 1.
+play.hotseat_warn	it	Attenzione: questo gioco non nasconde le informazioni private nella modalità «al tavolo»; la schermata può mostrare la mano/le informazioni del Giocatore 1.
+play.hotseat_warn	es	Atención: este juego no oculta la información privada en el modo «en la mesa»; la pantalla puede mostrar la mano/información del Jugador 1.
+play.hotseat_warn	pt	Atenção: este jogo não esconde a informação privada no modo «à mesa»; o ecrã pode mostrar a mão/informação do Jogador 1.
+play.hotseat_warn	de	Achtung: Dieses Spiel verbirgt private Informationen im Modus „am Tisch“ nicht; die Anzeige kann die Hand/Informationen von Spieler 1 zeigen.
+play.hotseat_warn	hu	Figyelem: ez a játék „asztalnál” módban nem rejti el a privát információt; a kijelző mutathatja az 1. játékos kezét/adatait.
+play.seed_bad	en	--seed expects an unsigned integer.
+play.seed_bad	ro	--seed așteaptă un număr întreg fără semn.
+play.seed_bad	fr	--seed attend un entier non signé.
+play.seed_bad	it	--seed richiede un numero intero senza segno.
+play.seed_bad	es	--seed espera un número entero sin signo.
+play.seed_bad	pt	--seed espera um número inteiro sem sinal.
+play.seed_bad	de	--seed erwartet eine vorzeichenlose ganze Zahl.
+play.seed_bad	hu	A --seed előjel nélküli egész számot vár.
+play.win1	en	Player 1 wins.
+play.win1	ro	Câștigă Jucătorul 1.
+play.win1	fr	Le Joueur 1 gagne.
+play.win1	it	Vince il Giocatore 1.
+play.win1	es	Gana el Jugador 1.
+play.win1	pt	Vence o Jogador 1.
+play.win1	de	Spieler 1 gewinnt.
+play.win1	hu	Az 1. játékos nyer.
+play.win2	en	Player 2 wins.
+play.win2	ro	Câștigă Jucătorul 2.
+play.win2	fr	Le Joueur 2 gagne.
+play.win2	it	Vince il Giocatore 2.
+play.win2	es	Gana el Jugador 2.
+play.win2	pt	Vence o Jogador 2.
+play.win2	de	Spieler 2 gewinnt.
+play.win2	hu	A 2. játékos nyer.
+play.you_win	en	You win!
+play.you_win	ro	Ai câștigat!
+play.you_win	fr	Vous avez gagné !
+play.you_win	it	Hai vinto!
+play.you_win	es	¡Has ganado!
+play.you_win	pt	Ganhaste!
+play.you_win	de	Du hast gewonnen!
+play.you_win	hu	Nyertél!
+play.draw	en	Draw.
+play.draw	ro	Remiză.
+play.draw	fr	Match nul.
+play.draw	it	Patta.
+play.draw	es	Tablas.
+play.draw	pt	Empate.
+play.draw	de	Remis.
+play.draw	hu	Döntetlen.
+play.prompt	en	Player {n} > 
+play.prompt	ro	Jucător {n} > 
+play.prompt	fr	Joueur {n} > 
+play.prompt	it	Giocatore {n} > 
+play.prompt	es	Jugador {n} > 
+play.prompt	pt	Jogador {n} > 
+play.prompt	de	Spieler {n} > 
+play.prompt	hu	{n}. játékos > 
+play.moves	en	Moves: {list}
+play.moves	ro	Mutări: {list}
+play.moves	fr	Coups : {list}
+play.moves	it	Mosse: {list}
+play.moves	es	Movimientos: {list}
+play.moves	pt	Jogadas: {list}
+play.moves	de	Züge: {list}
+play.moves	hu	Lépések: {list}
+play.hint_unavailable	en	Hint unavailable: the game does not hide private information in hot-seat mode.
+play.hint_unavailable	ro	Sugestie indisponibilă: jocul nu ascunde informația privată la masă.
+play.hint_unavailable	fr	Suggestion indisponible : le jeu ne cache pas l'information privée à la table.
+play.hint_unavailable	it	Suggerimento non disponibile: il gioco non nasconde le informazioni private al tavolo.
+play.hint_unavailable	es	Sugerencia no disponible: el juego no oculta la información privada en la mesa.
+play.hint_unavailable	pt	Sugestão indisponível: o jogo não esconde a informação privada à mesa.
+play.hint_unavailable	de	Tipp nicht verfügbar: Das Spiel verbirgt private Informationen am Tisch nicht.
+play.hint_unavailable	hu	A tipp nem érhető el: a játék asztalnál nem rejti el a privát információt.
+play.hint	en	Hint: {m}
+play.hint	ro	Sugestie: {m}
+play.hint	fr	Suggestion : {m}
+play.hint	it	Suggerimento: {m}
+play.hint	es	Sugerencia: {m}
+play.hint	pt	Sugestão: {m}
+play.hint	de	Tipp: {m}
+play.hint	hu	Tipp: {m}
+play.no_move	en	No move.
+play.no_move	ro	Nicio mutare.
+play.no_move	fr	Aucun coup.
+play.no_move	it	Nessuna mossa.
+play.no_move	es	Ningún movimiento.
+play.no_move	pt	Nenhuma jogada.
+play.no_move	de	Kein Zug.
+play.no_move	hu	Nincs lépés.
+play.ai_plays	en	Player {n} (computer) plays: {m}
+play.ai_plays	ro	Jucător {n} (calculator) joacă: {m}
+play.ai_plays	fr	Joueur {n} (ordinateur) joue : {m}
+play.ai_plays	it	Giocatore {n} (computer) gioca: {m}
+play.ai_plays	es	Jugador {n} (ordenador) juega: {m}
+play.ai_plays	pt	Jogador {n} (computador) joga: {m}
+play.ai_plays	de	Spieler {n} (Computer) spielt: {m}
+play.ai_plays	hu	{n}. játékos (számítógép) lép: {m}

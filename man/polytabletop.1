@@ -1,0 +1,45 @@
+.TH PolyTabletop 1 "2026" "polytabletop 0.9" "Jocuri de masa"
+.SH NAME
+polytabletop \- table-top games (171 clean-room games) in the terminal
+.SH SYNOPSIS
+.B polytabletop list
+.br
+.B polytabletop catalog
+.RB [ \-\-kind " implemented|traditional|branded|toolkit]"
+.br
+.B polytabletop play
+.I ID
+.RB [ \-\-you " one|two|both|none]" 
+.RB [ \-\-seed " N]"
+.SH DESCRIPTION
+PolyTabletop is a clean-room Rust implementation of table-top games. The computer plays the other seats.
+.SH COMMANDS
+.TP
+.B list
+Print the id, title and rules summary of every playable game.
+.TP
+.B catalog
+Print the whole target catalog with the status of each entry; \fB\-\-kind\fR filters by status.
+.TP
+.B play ID
+Play game ID. You are Player 1 unless \fB\-\-you\fR says otherwise.
+.SH OPTIONS
+.TP
+.BI \-\-you " one|two|both|none"
+Which seat(s) are human. \fBboth\fR is hot-seat; \fBnone\fR watches the AI play itself.
+.TP
+.BI \-\-seed " N"
+Make deals, dice and AI choices reproducible.
+.SH IN-GAME COMMANDS
+Type a move (for example \fBe2e4\fR, \fBc3xe5\fR, \fBd6\fR). \fB?\fR lists legal moves, \fBhint\fR asks the AI for a suggestion, \fBq\fR quits.
+.SH ENVIRONMENT
+.TP
+.B POLYTABLETOP_AI_MS
+Time budget in milliseconds for the search AI.
+.SH FILES
+Completions: completions/polytabletop.bash, completions/_polytabletop, completions/polytabletop.fish.
+.SH SEE ALSO
+.BR polytabletop-gui (1),
+.BR polytabletop-rpg (1)
+.SH LICENSE
+MIT OR Apache-2.0.

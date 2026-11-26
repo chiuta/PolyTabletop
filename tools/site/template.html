@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PolyTabletop — table games without borders</title>
+<meta name="description" content="171 playable table games in one Rust program: chess, go, cards, dice and more. Clean-room, an AI that doesn't cheat, 8 languages, no external dependencies in the engine.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#10151c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://polytabletop.chiuta.ro/">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="alternate" hreflang="x-default" href="https://polytabletop.chiuta.ro/">
+<link rel="alternate" hreflang="en" href="https://polytabletop.chiuta.ro/?lang=en">
+<link rel="alternate" hreflang="ro" href="https://polytabletop.chiuta.ro/?lang=ro">
+<link rel="alternate" hreflang="fr" href="https://polytabletop.chiuta.ro/?lang=fr">
+<link rel="alternate" hreflang="it" href="https://polytabletop.chiuta.ro/?lang=it">
+<link rel="alternate" hreflang="es" href="https://polytabletop.chiuta.ro/?lang=es">
+<link rel="alternate" hreflang="pt" href="https://polytabletop.chiuta.ro/?lang=pt">
+<link rel="alternate" hreflang="de" href="https://polytabletop.chiuta.ro/?lang=de">
+<link rel="alternate" hreflang="hu" href="https://polytabletop.chiuta.ro/?lang=hu">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PolyTabletop">
+<meta property="og:title" content="PolyTabletop — table games without borders">
+<meta property="og:description" content="171 playable table games, clean-room, in Rust, 8 languages.">
+<meta property="og:url" content="https://polytabletop.chiuta.ro/">
+<meta property="og:image" content="https://polytabletop.chiuta.ro/icon-512.png">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--bg:#f5f3ee;--surf:#fff;--surf2:#ebe8e0;--tx:#1b2230;--mut:#4a5565;--acc:#0a6a57;--onacc:#fff;--line:#d6d2c8;--code:#eef0f2;--focus:#0b57d0;
+--sq1:#e9dfc8;--sq2:#8aa38f;--frame:#1b2230;--pcl:#fbf8f0;--pcd:#1f2a38;--pcs:#1f2a38;--go:#e0b968;--goline:#6b4f1d;--stb:#151a22;--stw:#fbfaf6;--hx1:#0a6a57;--hx2:#c7892b;--hx3:#3b5b8c;--wood:#9a6b3a;--pit:#6b4623;--s0:#f2e7c9;--s1:#d9503f;--s2:#3b8fb5;--die:#fbf8f0;--pip:#1b2230;--card:#fbf8f0;--ink:#b3342a;--ink2:#1b2230}
+html[data-theme=dark]{--bg:#10151c;--surf:#19212b;--surf2:#222c38;--tx:#e8edf3;--mut:#a9b4c2;--acc:#5ee0c1;--onacc:#07201a;--line:#2c3745;--code:#0b0f14;--focus:#8ab4f8;
+--sq1:#c9bd9f;--sq2:#4d6b58;--frame:#0b0f14;--go:#c79b47;--goline:#4a3510;--wood:#7d5530;--pit:#52361b;--hx1:#2aa88c;--hx2:#d79a3d;--hx3:#5a82bd}
+@media (prefers-color-scheme:dark){html:not([data-theme=light]){--bg:#10151c;--surf:#19212b;--surf2:#222c38;--tx:#e8edf3;--mut:#a9b4c2;--acc:#5ee0c1;--onacc:#07201a;--line:#2c3745;--code:#0b0f14;--focus:#8ab4f8;
+--sq1:#c9bd9f;--sq2:#4d6b58;--frame:#0b0f14;--go:#c79b47;--goline:#4a3510;--wood:#7d5530;--pit:#52361b;--hx1:#2aa88c;--hx2:#d79a3d;--hx3:#5a82bd}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font:1rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--acc);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:.5rem;top:-4rem;background:var(--acc);color:var(--onacc);padding:.6rem 1rem;border-radius:8px;z-index:20;font-weight:600}
+.skip:focus{top:.5rem}
+@media(min-width:760px){header.top{position:sticky}}
+.wrap{width:min(1100px,100% - 2rem);margin-inline:auto}
+header.top{position:static;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .9rem;padding:.55rem 0}
+.brand{font-weight:800;font-size:1.15rem;color:var(--tx);text-decoration:none;letter-spacing:.2px;margin-right:auto}
+.brand span{color:var(--acc)}
+nav ul{display:flex;flex-wrap:wrap;gap:.1rem .2rem;list-style:none;margin:0;padding:0}
+nav a{display:inline-block;padding:.45rem .6rem;color:var(--tx);text-decoration:none;border-radius:8px;min-height:44px;line-height:1.7}
+nav a:hover{background:var(--surf2)}
+.tools{display:flex;gap:.5rem;align-items:center}
+select,input[type=search],button{font:inherit;color:var(--tx)}
+select,.btn-icon{min-height:44px;background:var(--surf);border:1px solid var(--line);border-radius:8px;padding:.3rem .6rem}
+.btn-icon{cursor:pointer;min-width:44px;font-size:1.1rem;line-height:1}
+.btn-icon:hover,select:hover{border-color:var(--acc)}
+h1,h2,h3{line-height:1.2;margin:0 0 .6rem}
+h2{font-size:clamp(1.5rem,3vw,2rem)}
+h3{font-size:1.1rem}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+section p{max-width:70ch}
+.hero{padding:2.5rem 0 3rem;border-top:0;display:grid;gap:2rem;align-items:center}
+@media(min-width:880px){.hero{grid-template-columns:1.05fr 1fr}}
+.eyebrow{color:var(--acc);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;margin:0 0 .5rem}
+.hero h1{font-size:clamp(2.4rem,7vw,4rem);letter-spacing:-.02em;margin-bottom:.3rem}
+.tag{font-size:clamp(1.25rem,3vw,1.7rem);font-weight:650;margin:0 0 1rem}
+.lead{font-size:1.1rem;color:var(--mut);margin:0 0 1.4rem}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1.6rem}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:.5rem 1.2rem;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--acc)}
+.btn.pri{background:var(--acc);color:var(--onacc)}
+.btn.sec{color:var(--acc);background:transparent}
+.btn:hover{filter:brightness(1.08)}
+.stats{display:flex;flex-wrap:wrap;gap:.8rem 2rem;list-style:none;margin:0;padding:0}
+.stats b{display:block;font-size:2rem;line-height:1.1;color:var(--acc)}
+.stats span{color:var(--mut);font-size:.9rem}
+.hero>*{min-width:0}
+.hero-art{width:100%;height:auto;max-width:560px;justify-self:center}
+.hero-art .frame{fill:var(--frame)}.sq1{fill:var(--sq1)}.sq2{fill:var(--sq2)}
+.pc-l{fill:var(--pcl);stroke:var(--pcs);stroke-width:1.6}.pc-d{fill:var(--pcd);stroke:var(--pcl);stroke-width:1.2}
+.goboard{fill:var(--go)}.goline{stroke:var(--goline);stroke-width:1.4;fill:none}
+.st-b{fill:var(--stb);stroke:#000;stroke-width:.6}.st-w{fill:var(--stw);stroke:#555;stroke-width:.8}
+.hx1{fill:var(--hx1)}.hx2{fill:var(--hx2)}.hx3{fill:var(--hx3)}
+.hero-art polygon{stroke:var(--bg);stroke-width:3;stroke-linejoin:round}
+.wood{fill:var(--wood)}.pit{fill:var(--pit)}.seed0{fill:var(--s0)}.seed1{fill:var(--s1)}.seed2{fill:var(--s2)}
+.die{fill:var(--die);stroke:#2a2f3a;stroke-width:1.5}.pip{fill:var(--pip)}
+.card{fill:var(--card);stroke:#2a2f3a;stroke-width:1.5}.ink{fill:var(--ink)}
+.hero-art g[transform*="translate(430"] .ink,.hero-art g[transform*="translate(510"] .ink{fill:var(--ink)}
+.hero-art g[transform*="translate(470 345"] .ink{fill:var(--ink2)}
+@media (prefers-reduced-motion:no-preference){.hero-art{animation:float 7s ease-in-out infinite}}
+@keyframes float{50%{transform:translateY(-6px)}}
+.cards{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));margin-top:1.5rem}
+.card-b{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem}
+.card-b p{margin:0;color:var(--mut)}
+.card-b h3{color:var(--tx)}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0}
+.filters label{display:block;font-weight:600;width:100%}
+input[type=search]{width:100%;max-width:26rem;min-height:46px;padding:.4rem .8rem;border:1px solid var(--line);background:var(--surf);border-radius:10px}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .8rem}
+.chip{min-height:40px;padding:.2rem .8rem;border:1px solid var(--line);background:var(--surf);border-radius:999px;cursor:pointer}
+.chip:hover{border-color:var(--acc)}
+.chip[aria-pressed=true]{background:var(--acc);color:var(--onacc);border-color:var(--acc);font-weight:700}
+.count{color:var(--mut);margin:.2rem 0 .8rem}
+#glist{list-style:none;margin:0;padding:0;display:grid;gap:.6rem;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr))}
+#glist li{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:.65rem .8rem;display:flex;flex-direction:column;gap:.15rem}
+#glist .n{font-weight:650}
+#glist .k{font-size:.82rem;color:var(--mut)}
+#glist code{font-size:.82rem;word-break:break-all}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+code{background:var(--code);padding:.1em .35em;border-radius:5px;font-size:.92em}
+pre{background:var(--code);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;overflow-x:auto;margin:.4rem 0 1rem;line-height:1.45;font-size:.9rem}
+pre code{background:none;padding:0}
+.codebox{position:relative}
+.codebox .cp{position:absolute;top:.5rem;right:.5rem;min-height:36px;padding:.1rem .7rem;font-size:.85rem;border:1px solid var(--line);background:var(--surf);border-radius:8px;cursor:pointer}
+.codebox pre{padding-right:5.5rem}
+.two{display:grid;gap:1.5rem}
+.two>*{min-width:0}
+pre{max-width:100%}
+@media(min-width:880px){.two{grid-template-columns:1fr 1fr}}
+.demo pre{display:inline-block;max-width:100%}
+.mut{color:var(--mut)}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--mut);font-size:.95rem}
+footer .row{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+@media(forced-colors:active){.chip[aria-pressed=true]{outline:2px solid Highlight}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<header class="top">
+<div class="wrap bar">
+<a class="brand" href="#top">Poly<span>Tabletop</span></a>
+<nav aria-label="Main" data-i18n-aria="nav_aria"><ul>
+<li><a href="#what" data-i18n="nav_what">What it is</a></li>
+<li><a href="#games" data-i18n="nav_games">Games</a></li>
+<li><a href="#modes" data-i18n="nav_modes">Ways to play</a></li>
+<li><a href="#install" data-i18n="nav_install">Install</a></li>
+<li><a href="#clean" data-i18n="nav_clean">Clean-room</a></li>
+<li><a href="#free" data-i18n="nav_free">Fără Frontiere</a></li>
+</ul></nav>
+<div class="tools">
+<label for="lang" class="mut" style="position:absolute;left:-9999px" data-i18n="lang_label">Language</label>
+<select id="lang" aria-label="Language" data-i18n-aria="lang_label">
+<option value="en">English</option><option value="ro">Română</option><option value="fr">Français</option><option value="it">Italiano</option><option value="es">Español</option><option value="pt">Português</option><option value="de">Deutsch</option><option value="hu">Magyar</option>
+</select>
+<button type="button" id="theme" class="btn-icon" aria-label="Toggle light/dark theme" data-i18n-aria="theme" title="Light / dark"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 2a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+</div>
+</div>
+</header>
+<main id="main">
+<div class="wrap">
+<section class="hero" id="top">
+<div>
+<p class="eyebrow" data-i18n="eyebrow">Open source · Rust · works offline</p>
+<h1>PolyTabletop</h1>
+<p class="tag" data-i18n="tagline">Table games without borders.</p>
+<p class="lead" data-i18n="lead">171 playable games from around the world in one small program.</p>
+<div class="cta">
+<a class="btn pri" href="#install" data-i18n="cta_install">Install</a>
+<a class="btn sec" href="https://github.com/chiuta/PolyTabletop" rel="noopener" data-i18n="cta_gh">View on GitHub</a>
+</div>
+<ul class="stats">
+<li><b>171</b><span data-i18n="st_games">playable games</span></li>
+<li><b>8</b><span data-i18n="st_langs">languages</span></li>
+<li><b>0</b><span data-i18n="st_deps">external dependencies in the engine</span></li>
+</ul>
+</div>
+<!--HERO_SVG-->
+</section>
+
+<section id="what" aria-labelledby="what-h">
+<h2 id="what-h" data-i18n="what_h">What is PolyTabletop?</h2>
+<p data-i18n="what_p1"></p>
+<p data-i18n="what_p2"></p>
+<div class="cards">
+<div class="card-b"><h3 data-i18n="f1t"></h3><p data-i18n="f1d"></p></div>
+<div class="card-b"><h3 data-i18n="f2t"></h3><p data-i18n="f2d"></p></div>
+<div class="card-b"><h3 data-i18n="f3t"></h3><p data-i18n="f3d"></p></div>
+<div class="card-b"><h3 data-i18n="f4t"></h3><p data-i18n="f4d"></p></div>
+<div class="card-b"><h3 data-i18n="f5t"></h3><p data-i18n="f5d"></p></div>
+</div>
+</section>
+
+<section id="games" aria-labelledby="games-h">
+<h2 id="games-h" data-i18n="games_h">The games</h2>
+<p id="games-p"></p>
+<div class="filters">
+<label for="q" data-i18n="search_l">Search games</label>
+<input type="search" id="q" autocomplete="off" placeholder="…" data-i18n-ph="search_ph">
+</div>
+<div class="chips" id="chips" role="group" aria-label="Category" data-i18n-aria="cat_l"></div>
+<p class="count" id="count" role="status" aria-live="polite"></p>
+<ul id="glist"><li>171 games — enable JavaScript to browse and filter the list.</li></ul>
+</section>
+
+<section id="modes" aria-labelledby="modes-h">
+<h2 id="modes-h" data-i18n="modes_h">Ways to play</h2>
+<div class="cards">
+<div class="card-b"><h3 data-i18n="m1t"></h3><p data-i18n="m1d"></p></div>
+<div class="card-b"><h3 data-i18n="m2t"></h3><p data-i18n="m2d"></p></div>
+<div class="card-b"><h3 data-i18n="m3t"></h3><p data-i18n="m3d"></p></div>
+<div class="card-b"><h3 data-i18n="m4t"></h3><p data-i18n="m4d"></p></div>
+<div class="card-b"><h3 data-i18n="m5t"></h3><p data-i18n="m5d"></p></div>
+<div class="card-b"><h3 data-i18n="m6t"></h3><p data-i18n="m6d"></p></div>
+<div class="card-b"><h3 data-i18n="m7t"></h3><p data-i18n="m7d"></p></div>
+</div>
+<div class="demo" style="margin-top:2rem">
+<h3 data-i18n="demo_h">A real session</h3>
+<p data-i18n="demo_p"></p>
+<pre aria-label="Connect Four board" data-i18n-aria="demo_aria"><code>$ polytabletop play connect4 --you both --seed 1
+&gt; 4 3 4 3 4 3 4
+
+  | . . . . . . . |
+  | . . . . . . . |
+  | . . . X . . . |
+  | . . O X . . . |
+  | . . O X . . . |
+  | . . O X . . . |
+  +---------------+
+    1 2 3 4 5 6 7</code></pre>
+<p class="mut" data-i18n="demo_cap"></p>
+</div>
+</section>
+
+<section id="install" aria-labelledby="install-h">
+<h2 id="install-h" data-i18n="inst_h">Install</h2>
+<p data-i18n="inst_p"></p>
+<div class="two">
+<div>
+<h3 data-i18n="inst_a">Prebuilt release</h3>
+<div class="codebox"><pre><code>curl -fsSL https://raw.githubusercontent.com/chiuta/PolyTabletop/main/install.sh | bash</code></pre><button type="button" class="cp" data-i18n="copy">Copy</button></div>
+<p class="mut" data-i18n="inst_a_d"></p>
+<h3 data-i18n="inst_b">From source</h3>
+<div class="codebox"><pre><code>git clone https://github.com/chiuta/PolyTabletop
+cd PolyTabletop
+cargo build --release
+./target/release/polytabletop list</code></pre><button type="button" class="cp" data-i18n="copy">Copy</button></div>
+<p class="mut" data-i18n="inst_b_d"></p>
+</div>
+<div>
+<h3>Docker</h3>
+<div class="codebox"><pre><code>docker build -t polytabletop .
+docker run --rm -it polytabletop play chess</code></pre><button type="button" class="cp" data-i18n="copy">Copy</button></div>
+<p class="mut" data-i18n="inst_c_d"></p>
+<h3 data-i18n="inst_first">First game</h3>
+<div class="codebox"><pre><code>polytabletop list
+polytabletop play chess
+polytabletop --lang fr play go --level hard
+polytabletop host chess        # polytabletop join 192.168.1.20:7878</code></pre><button type="button" class="cp" data-i18n="copy">Copy</button></div>
+<p class="mut" data-i18n="inst_first_d"></p>
+<p><a id="guide" href="https://github.com/chiuta/PolyTabletop/blob/main/docs/INSTALL.en.md" rel="noopener" data-i18n="guide">Full installation guide</a></p>
+</div>
+</div>
+</section>
+
+<section id="clean" aria-labelledby="clean-h">
+<h2 id="clean-h" data-i18n="clean_h">Clean-room, public rules</h2>
+<p data-i18n="clean_p1"></p>
+<p data-i18n="clean_p2"></p>
+<h3 data-i18n="lic_h">License and trademarks</h3>
+<p data-i18n="lic_p"></p>
+</section>
+
+<section id="free" aria-labelledby="free-h">
+<h2 id="free-h">Fără Frontiere</h2>
+<p data-i18n="free_p1"></p>
+<p data-i18n="free_p2"></p>
+<p><span data-i18n="contact_l">Contact</span>: <a href="mailto:alexio@trom.tf">alexio@trom.tf</a> · <a href="https://github.com/chiuta/PolyTabletop" rel="noopener" data-i18n="src_l">Source code and issues</a></p>
+</section>
+</div>
+</main>
+<footer>
+<div class="wrap row">
+<span data-i18n="foot">© 2026 Alexio · Fără Frontiere · trade-free</span>
+<span><a href="https://github.com/chiuta/PolyTabletop" rel="noopener">github.com/chiuta/PolyTabletop</a></span>
+</div>
+</footer>
+<script>
+"use strict";
+const GAMES=/*GAMES_JSON*/[];
+const LANGS=["en","ro","fr","it","es","pt","de","hu"];
+const CATK=["abstract","cards","strategy","party","dice","classic","family","minis","coop","tcg","deduction","words"];
+const T={
+en:{title:"PolyTabletop — table games without borders",desc:"171 playable table games in one Rust program: chess, go, cards, dice and more. Clean-room, an AI that doesn't cheat, 8 languages, no external dependencies in the engine.",skip:"Skip to content",nav_aria:"Main navigation",nav_what:"What it is",nav_games:"Games",nav_modes:"Ways to play",nav_install:"Install",nav_clean:"Clean-room",nav_free:"Fără Frontiere",lang_label:"Language",theme:"Toggle light/dark theme",
+eyebrow:"Open source · Rust · works offline",tagline:"Table games without borders.",lead:"171 playable games from around the world — chess, go, cards, dice, deduction, cooperative adventures — in one small program for your terminal, a window or your local network.",cta_install:"Install",cta_gh:"View on GitHub",st_games:"playable games",st_langs:"languages",st_deps:"external dependencies in the engine",
+what_h:"What is PolyTabletop?",what_p1:"PolyTabletop (formerly MASA) is a collection of table games written from scratch in Rust: classic abstract games, traditional games from every continent, card and dice games, party and deduction games, cooperative adventures and small strategy games with original rules.",what_p2:"It is one program with one rule engine: the same game can be played in the terminal, in a graphical window, against the computer, with a friend at the same keyboard or over the network.",
+f1t:"Games without borders",f1d:"Games from Asia, Africa, the Americas and Europe sit side by side, with rules available in eight languages.",f2t:"An AI that doesn't cheat",f2d:"The computer sees only what a human player would see: your hidden cards stay hidden and the dice are rolled fairly.",f3t:"Clean-room",f3d:"Written from public rules and original ideas, without copying code, artwork or names that belong to anyone.",f4t:"Eight languages",f4d:"Interface and game titles in English, Romanian, French, Italian, Spanish, Portuguese, German and Hungarian.",f5t:"Rust, no external dependencies",f5d:"The engine relies only on Rust's standard library: nothing to download at run time and no installer to run.",
+games_h:"The games",games_p:"{t} games, each with complete rules in the program. Search by name (in any language) or filter by category. Each card shows the command that starts the game.",search_l:"Search games",search_ph:"e.g. chess, go, rummy…",cat_l:"Category",cat_all:"All",
+cat_abstract:"Abstract",cat_cards:"Cards",cat_strategy:"Strategy",cat_party:"Party",cat_dice:"Dice",cat_classic:"Classic",cat_family:"Family",cat_minis:"Miniatures",cat_coop:"Cooperative",cat_tcg:"Collectible cards",cat_deduction:"Deduction",cat_words:"Words",count:"{n} of {t} games",none:"No game matches your search.",
+modes_h:"Ways to play",m1t:"Terminal (CLI)",m1d:"Type moves such as e2e4, enter ? for the legal moves or hint for a suggestion. Works over SSH, in a tiny window, anywhere.",m2t:"Graphical window (egui)",m2d:"An optional desktop interface built with egui: click to move, with the same rules and the same AI.",m3t:"Network: host and join",m3d:"One machine runs host chess, the other connects with join ADDRESS:PORT. Play together on the same local network.",m4t:"Arena and benchmark",m4d:"Pit the AI against itself (arena), measure speed (bench) or rank time budgets by Elo (ladder).",m5t:"Four difficulty levels",m5d:"--level easy, normal, hard or expert sets how long and how deeply the AI thinks.",m6t:"Replay and export",m6d:"Save a game, replay it step by step and export it as PGN, text or JSON; PGN files can be imported back.",m7t:"Deterministic seed",m7d:"--seed N makes deals and dice reproducible: the same number gives the same game, handy for puzzles, tests and fair duels.",
+demo_h:"A real session",demo_p:"Connect Four with both seats at one keyboard (--you both) and a fixed seed. The board is real program output, trimmed to the final position.",demo_aria:"Final Connect Four board: Player 1 has four in a column",demo_cap:"Seven moves typed (4 3 4 3 4 3 4): Player 1 wins with four in a column.",
+inst_h:"Install",inst_p:"Choose what suits you. There is no installer and no external library to set up.",inst_a:"Prebuilt release (Linux, macOS)",inst_a_d:"Downloads the release for your platform, verifies its SHA-256 and puts polytabletop (and the short alias ptt) in ~/.local/bin. On Windows, download the .zip from the Releases page.",inst_b:"From source with cargo",inst_b_d:"Needs the current stable Rust toolchain. Optional graphical interface: cargo run --release -p polytabletop-gui.",inst_c_d:"The command-line version, on an Ubuntu 26.04 image.",inst_first:"First game",inst_first_d:"In play: type a move, ? for legal moves, hint for a suggestion, q to quit.",guide:"Full installation guide",copy:"Copy",copied:"Copied",
+clean_h:"Clean-room, public rules",clean_p1:"Every game is implemented from publicly known rules or from original designs, with no code, artwork, text or sound taken from commercial products. The program uses no brand names, no protected characters and no copied imagery; where a game is an original variant, it says so.",clean_p2:"Traditional games belong to everyone: PolyTabletop only adds careful code and rules texts of its own.",lic_h:"License and trademarks",lic_p:"Source code under the MIT or Apache-2.0 license, at your choice. Names of traditional games are used descriptively; should any of them be a trademark, it is used only to identify public rules. PolyTabletop is not affiliated with or endorsed by any publisher.",
+free_p1:"PolyTabletop belongs to Fără Frontiere (“without borders”), the author's series of trade-free applications: offline, no accounts, no advertising, no tracking, free to use and to share.",free_p2:"Created by Alexio (Alexandru-Ionuț Chiuță), Romanian science-fiction author and long-time volunteer of the trade-free movement.",contact_l:"Contact",src_l:"Source code and issues",foot:"© 2026 Alexio · Fără Frontiere · trade-free"},
+ro:{title:"PolyTabletop — jocuri de societate fără frontiere",desc:"171 de jocuri de societate jucabile într-un singur program Rust: șah, go, cărți, zaruri și multe altele. Clean-room, AI care nu trișează, 8 limbi, fără dependențe externe în motor.",skip:"Sari la conținut",nav_aria:"Navigare principală",nav_what:"Ce este",nav_games:"Jocurile",nav_modes:"Moduri de joc",nav_install:"Instalare",nav_clean:"Clean-room",nav_free:"Fără Frontiere",lang_label:"Limba",theme:"Comută tema luminoasă/întunecată",
+eyebrow:"Cod deschis · Rust · funcționează offline",tagline:"Jocuri de societate fără frontiere.",lead:"171 de jocuri jucabile din toată lumea — șah, go, cărți, zaruri, deducție, aventuri cooperative — într-un program mic, pentru terminal, fereastră sau rețeaua locală.",cta_install:"Instalează",cta_gh:"Vezi pe GitHub",st_games:"jocuri jucabile",st_langs:"limbi",st_deps:"dependențe externe în motor",
+what_h:"Ce este PolyTabletop?",what_p1:"PolyTabletop (fosta MASA) este o colecție de jocuri de societate scrise de la zero în Rust: jocuri abstracte clasice, jocuri tradiționale de pe toate continentele, jocuri de cărți și de zaruri, jocuri de petrecere și de deducție, aventuri cooperative și mici jocuri de strategie cu reguli originale.",what_p2:"Este un singur program cu un singur motor de reguli: același joc se poate juca în terminal, într-o fereastră grafică, contra calculatorului, cu un prieten la aceeași tastatură sau în rețea.",
+f1t:"Jocuri fără frontiere",f1d:"Jocuri din Asia, Africa, Americi și Europa, unele lângă altele, cu regulile disponibile în opt limbi.",f2t:"AI care nu trișează",f2d:"Calculatorul vede doar ce ar vedea și un jucător uman: cărțile tale ascunse rămân ascunse, iar zarurile se aruncă corect.",f3t:"Clean-room",f3d:"Scris pornind de la reguli publice și idei originale, fără a copia cod, grafică sau nume care aparțin altcuiva.",f4t:"Opt limbi",f4d:"Interfață și titluri de jocuri în engleză, română, franceză, italiană, spaniolă, portugheză, germană și maghiară.",f5t:"Rust, fără dependențe externe",f5d:"Motorul se bazează doar pe biblioteca standard Rust: nimic de descărcat la rulare și niciun program de instalare.",
+games_h:"Jocurile",games_p:"{t} de jocuri, fiecare cu regulile complete în program. Caută după nume (în orice limbă) sau filtrează pe categorii. Fiecare card arată comanda care pornește jocul.",search_l:"Caută jocuri",search_ph:"ex. șah, go, remi…",cat_l:"Categorie",cat_all:"Toate",
+cat_abstract:"Abstracte",cat_cards:"Cărți",cat_strategy:"Strategie",cat_party:"Petrecere",cat_dice:"Zaruri",cat_classic:"Clasice",cat_family:"Familie",cat_minis:"Miniaturi",cat_coop:"Cooperative",cat_tcg:"Cărți colecționabile",cat_deduction:"Deducție",cat_words:"Cuvinte",count:"{n} din {t} jocuri",none:"Niciun joc nu corespunde căutării.",
+modes_h:"Moduri de joc",m1t:"Terminal (CLI)",m1d:"Scrii mutările, de exemplu e2e4, ? pentru mutările legale sau hint pentru o sugestie. Merge prin SSH, într-o fereastră mică, oriunde.",m2t:"Fereastră grafică (egui)",m2d:"O interfață desktop opțională, construită cu egui: mutări prin clic, cu aceleași reguli și același AI.",m3t:"Rețea: host și join",m3d:"Un calculator rulează host chess, celălalt se conectează cu join ADRESĂ:PORT. Jucați împreună în aceeași rețea locală.",m4t:"Arenă și benchmark",m4d:"Pune AI-ul să joace cu el însuși (arena), măsoară viteza (bench) sau ordonează bugetele de timp după Elo (ladder).",m5t:"Patru niveluri de dificultate",m5d:"--level easy, normal, hard sau expert stabilește cât și cât de adânc gândește AI-ul.",m6t:"Reluare și export",m6d:"Salvezi o partidă, o reiei pas cu pas și o exporți în PGN, text sau JSON; fișierele PGN pot fi importate înapoi.",m7t:"Seed determinist",m7d:"--seed N face împărțirea cărților și zarurile reproductibile: același număr, aceeași partidă — util pentru probleme, teste și dueluri corecte.",
+demo_h:"O sesiune reală",demo_p:"Patru în linie, ambele locuri la aceeași tastatură (--you both), cu seed fix. Tabla este ieșirea reală a programului, tăiată la poziția finală.",demo_aria:"Tabla finală de Patru în linie: Jucătorul 1 are patru în coloană",demo_cap:"Șapte mutări tastate (4 3 4 3 4 3 4): Jucătorul 1 câștigă cu patru în coloană.",
+inst_h:"Instalare",inst_p:"Alege ce ți se potrivește. Nu există program de instalare și nu trebuie configurată nicio bibliotecă externă.",inst_a:"Versiune gata compilată (Linux, macOS)",inst_a_d:"Descarcă versiunea pentru platforma ta, verifică SHA-256 și pune polytabletop (și aliasul scurt ptt) în ~/.local/bin. Pe Windows, descarcă arhiva .zip din pagina Releases.",inst_b:"Din surse, cu cargo",inst_b_d:"Necesită lanțul de unelte Rust stabil curent. Interfața grafică (opțională): cargo run --release -p polytabletop-gui.",inst_c_d:"Versiunea în linie de comandă, pe o imagine Ubuntu 26.04.",inst_first:"Primul joc",inst_first_d:"În joc: scrie o mutare, ? pentru mutările legale, hint pentru o sugestie, q pentru ieșire.",guide:"Ghidul complet de instalare",copy:"Copiază",copied:"Copiat",
+clean_h:"Clean-room, reguli publice",clean_p1:"Fiecare joc este implementat pornind de la reguli cunoscute public sau de la concepte originale, fără cod, grafică, text sau sunet luate din produse comerciale. Programul nu folosește nume de mărci, personaje protejate sau imagini copiate; unde un joc este o variantă originală, o spune.",clean_p2:"Jocurile tradiționale aparțin tuturor: PolyTabletop adaugă doar cod îngrijit și texte proprii ale regulilor.",lic_h:"Licență și mărci",lic_p:"Codul sursă este sub licența MIT sau Apache-2.0, la alegerea ta. Denumirile jocurilor tradiționale sunt folosite descriptiv; dacă vreuna este marcă înregistrată, ea servește doar la identificarea regulilor publice. PolyTabletop nu este afiliat cu și nu este susținut de vreun editor.",
+free_p1:"PolyTabletop face parte din Fără Frontiere, seria de aplicații trade-free a autorului: offline, fără conturi, fără reclame, fără urmărire, libere de folosit și de dat mai departe.",free_p2:"Creat de Alexio (Alexandru-Ionuț Chiuță), autor român de science fiction și voluntar de lungă durată al mișcării trade-free.",contact_l:"Contact",src_l:"Cod sursă și probleme",foot:"© 2026 Alexio · Fără Frontiere · trade-free"},
+fr:{title:"PolyTabletop — jeux de société sans frontières",desc:"171 jeux de société jouables dans un seul programme Rust : échecs, go, cartes, dés et bien plus. Clean-room, une IA qui ne triche pas, 8 langues, aucune dépendance externe dans le moteur.",skip:"Aller au contenu",nav_aria:"Navigation principale",nav_what:"Présentation",nav_games:"Les jeux",nav_modes:"Façons de jouer",nav_install:"Installation",nav_clean:"Clean-room",nav_free:"Fără Frontiere",lang_label:"Langue",theme:"Basculer entre thème clair et sombre",
+eyebrow:"Libre · Rust · fonctionne hors ligne",tagline:"Jeux de société sans frontières.",lead:"171 jeux jouables venus du monde entier — échecs, go, cartes, dés, déduction, aventures coopératives — dans un petit programme pour votre terminal, une fenêtre ou votre réseau local.",cta_install:"Installer",cta_gh:"Voir sur GitHub",st_games:"jeux jouables",st_langs:"langues",st_deps:"dépendances externes dans le moteur",
+what_h:"Qu'est-ce que PolyTabletop ?",what_p1:"PolyTabletop (anciennement MASA) est une collection de jeux de société écrite de zéro en Rust : jeux abstraits classiques, jeux traditionnels de tous les continents, jeux de cartes et de dés, jeux d'ambiance et de déduction, aventures coopératives et petits jeux de stratégie aux règles originales.",what_p2:"C'est un seul programme avec un seul moteur de règles : le même jeu se joue dans le terminal, dans une fenêtre graphique, contre l'ordinateur, à deux sur le même clavier ou en réseau.",
+f1t:"Des jeux sans frontières",f1d:"Des jeux d'Asie, d'Afrique, des Amériques et d'Europe côte à côte, avec les règles en huit langues.",f2t:"Une IA qui ne triche pas",f2d:"L'ordinateur ne voit que ce que verrait un joueur humain : vos cartes cachées restent cachées et les dés sont lancés équitablement.",f3t:"Clean-room",f3d:"Écrit à partir de règles publiques et d'idées originales, sans copier de code, d'illustrations ni de noms appartenant à quelqu'un.",f4t:"Huit langues",f4d:"Interface et titres des jeux en anglais, roumain, français, italien, espagnol, portugais, allemand et hongrois.",f5t:"Rust, sans dépendances externes",f5d:"Le moteur n'utilise que la bibliothèque standard de Rust : rien à télécharger à l'exécution, aucun installateur à lancer.",
+games_h:"Les jeux",games_p:"{t} jeux, chacun avec ses règles complètes dans le programme. Cherchez par nom (dans n'importe quelle langue) ou filtrez par catégorie. Chaque fiche indique la commande qui lance le jeu.",search_l:"Rechercher un jeu",search_ph:"p. ex. échecs, go, rami…",cat_l:"Catégorie",cat_all:"Tous",
+cat_abstract:"Abstraits",cat_cards:"Cartes",cat_strategy:"Stratégie",cat_party:"Ambiance",cat_dice:"Dés",cat_classic:"Classiques",cat_family:"Famille",cat_minis:"Figurines",cat_coop:"Coopératifs",cat_tcg:"Cartes à collectionner",cat_deduction:"Déduction",cat_words:"Mots",count:"{n} jeux sur {t}",none:"Aucun jeu ne correspond à votre recherche.",
+modes_h:"Façons de jouer",m1t:"Terminal (CLI)",m1d:"Saisissez vos coups, par exemple e2e4, ? pour les coups légaux ou hint pour une suggestion. Fonctionne par SSH, dans une toute petite fenêtre, partout.",m2t:"Fenêtre graphique (egui)",m2d:"Une interface de bureau facultative, construite avec egui : on joue au clic, avec les mêmes règles et la même IA.",m3t:"Réseau : host et join",m3d:"Une machine lance host chess, l'autre se connecte avec join ADRESSE:PORT. Jouez ensemble sur le même réseau local.",m4t:"Arène et benchmark",m4d:"Faites jouer l'IA contre elle-même (arena), mesurez la vitesse (bench) ou classez les budgets de temps par Elo (ladder).",m5t:"Quatre niveaux de difficulté",m5d:"--level easy, normal, hard ou expert règle la durée et la profondeur de réflexion de l'IA.",m6t:"Rejouer et exporter",m6d:"Enregistrez une partie, rejouez-la coup par coup et exportez-la en PGN, texte ou JSON ; les fichiers PGN peuvent être réimportés.",m7t:"Graine déterministe",m7d:"--seed N rend les distributions et les dés reproductibles : le même nombre donne la même partie, pratique pour les problèmes, les tests et les duels équitables.",
+demo_h:"Une vraie session",demo_p:"Puissance 4 avec les deux places devant le même clavier (--you both) et une graine fixe. Le plateau est la vraie sortie du programme, réduite à la position finale.",demo_aria:"Plateau final de Puissance 4 : le joueur 1 a quatre pions alignés en colonne",demo_cap:"Sept coups saisis (4 3 4 3 4 3 4) : le joueur 1 gagne avec quatre pions alignés en colonne.",
+inst_h:"Installation",inst_p:"Choisissez ce qui vous convient. Pas d'installateur, aucune bibliothèque externe à configurer.",inst_a:"Version précompilée (Linux, macOS)",inst_a_d:"Télécharge la version pour votre plateforme, vérifie son SHA-256 et place polytabletop (et l'alias court ptt) dans ~/.local/bin. Sous Windows, téléchargez l'archive .zip depuis la page Releases.",inst_b:"Depuis les sources, avec cargo",inst_b_d:"Nécessite la chaîne d'outils Rust stable actuelle. Interface graphique facultative : cargo run --release -p polytabletop-gui.",inst_c_d:"La version en ligne de commande, sur une image Ubuntu 26.04.",inst_first:"Première partie",inst_first_d:"Dans le jeu : saisissez un coup, ? pour les coups légaux, hint pour une suggestion, q pour quitter.",guide:"Guide d'installation complet",copy:"Copier",copied:"Copié",
+clean_h:"Clean-room, règles publiques",clean_p1:"Chaque jeu est implémenté à partir de règles connues publiquement ou de conceptions originales, sans code, illustration, texte ni son tirés de produits commerciaux. Le programme n'utilise ni noms de marques, ni personnages protégés, ni images copiées ; quand un jeu est une variante originale, il le dit.",clean_p2:"Les jeux traditionnels appartiennent à tout le monde : PolyTabletop n'ajoute que du code soigné et ses propres textes de règles.",lic_h:"Licence et marques",lic_p:"Code source sous licence MIT ou Apache-2.0, au choix. Les noms des jeux traditionnels sont employés de façon descriptive ; si l'un d'eux est une marque, il ne sert qu'à identifier des règles publiques. PolyTabletop n'est affilié à aucun éditeur et n'est soutenu par aucun.",
+free_p1:"PolyTabletop fait partie de Fără Frontiere (« sans frontières »), la série d'applications trade-free de l'auteur : hors ligne, sans compte, sans publicité, sans pistage, libres d'usage et de partage.",free_p2:"Créé par Alexio (Alexandru-Ionuț Chiuță), auteur roumain de science-fiction et bénévole de longue date du mouvement trade-free.",contact_l:"Contact",src_l:"Code source et tickets",foot:"© 2026 Alexio · Fără Frontiere · trade-free"},
+it:{title:"PolyTabletop — giochi da tavolo senza frontiere",desc:"171 giochi da tavolo giocabili in un unico programma Rust: scacchi, go, carte, dadi e molto altro. Clean-room, un'IA che non bara, 8 lingue, nessuna dipendenza esterna nel motore.",skip:"Vai al contenuto",nav_aria:"Navigazione principale",nav_what:"Cos'è",nav_games:"I giochi",nav_modes:"Modi di giocare",nav_install:"Installazione",nav_clean:"Clean-room",nav_free:"Fără Frontiere",lang_label:"Lingua",theme:"Passa dal tema chiaro a quello scuro",
+eyebrow:"Open source · Rust · funziona offline",tagline:"Giochi da tavolo senza frontiere.",lead:"171 giochi giocabili da tutto il mondo — scacchi, go, carte, dadi, deduzione, avventure cooperative — in un piccolo programma per il terminale, una finestra o la rete locale.",cta_install:"Installa",cta_gh:"Vedi su GitHub",st_games:"giochi giocabili",st_langs:"lingue",st_deps:"dipendenze esterne nel motore",
+what_h:"Cos'è PolyTabletop?",what_p1:"PolyTabletop (già MASA) è una raccolta di giochi da tavolo scritti da zero in Rust: classici giochi astratti, giochi tradizionali di ogni continente, giochi di carte e di dadi, giochi di società e di deduzione, avventure cooperative e piccoli giochi di strategia con regole originali.",what_p2:"È un unico programma con un unico motore di regole: lo stesso gioco si può giocare nel terminale, in una finestra grafica, contro il computer, in due alla stessa tastiera o in rete.",
+f1t:"Giochi senza frontiere",f1d:"Giochi di Asia, Africa, Americhe ed Europa fianco a fianco, con le regole in otto lingue.",f2t:"Un'IA che non bara",f2d:"Il computer vede solo ciò che vedrebbe un giocatore umano: le tue carte nascoste restano nascoste e i dadi sono tirati in modo equo.",f3t:"Clean-room",f3d:"Scritto a partire da regole pubbliche e idee originali, senza copiare codice, grafica o nomi che appartengono ad altri.",f4t:"Otto lingue",f4d:"Interfaccia e titoli dei giochi in inglese, rumeno, francese, italiano, spagnolo, portoghese, tedesco e ungherese.",f5t:"Rust, senza dipendenze esterne",f5d:"Il motore usa solo la libreria standard di Rust: niente da scaricare durante l'esecuzione e nessun programma di installazione.",
+games_h:"I giochi",games_p:"{t} giochi, ciascuno con le regole complete nel programma. Cerca per nome (in qualsiasi lingua) o filtra per categoria. Ogni scheda mostra il comando che avvia il gioco.",search_l:"Cerca giochi",search_ph:"es. scacchi, go, ramino…",cat_l:"Categoria",cat_all:"Tutti",
+cat_abstract:"Astratti",cat_cards:"Carte",cat_strategy:"Strategia",cat_party:"Party",cat_dice:"Dadi",cat_classic:"Classici",cat_family:"Famiglia",cat_minis:"Miniature",cat_coop:"Cooperativi",cat_tcg:"Carte collezionabili",cat_deduction:"Deduzione",cat_words:"Parole",count:"{n} giochi su {t}",none:"Nessun gioco corrisponde alla ricerca.",
+modes_h:"Modi di giocare",m1t:"Terminale (CLI)",m1d:"Scrivi le mosse, per esempio e2e4, ? per le mosse legali o hint per un suggerimento. Funziona via SSH, in una finestra minuscola, ovunque.",m2t:"Finestra grafica (egui)",m2d:"Un'interfaccia desktop facoltativa, costruita con egui: si muove con un clic, con le stesse regole e la stessa IA.",m3t:"Rete: host e join",m3d:"Un computer avvia host chess, l'altro si collega con join INDIRIZZO:PORTA. Giocate insieme sulla stessa rete locale.",m4t:"Arena e benchmark",m4d:"Fai giocare l'IA contro se stessa (arena), misura la velocità (bench) o classifica i budget di tempo con l'Elo (ladder).",m5t:"Quattro livelli di difficoltà",m5d:"--level easy, normal, hard o expert stabilisce quanto e con quale profondità ragiona l'IA.",m6t:"Replay ed esportazione",m6d:"Salva una partita, rivedila mossa per mossa ed esportala in PGN, testo o JSON; i file PGN si possono reimportare.",m7t:"Seme deterministico",m7d:"--seed N rende riproducibili distribuzione delle carte e dadi: lo stesso numero dà la stessa partita, utile per problemi, test e duelli equi.",
+demo_h:"Una sessione reale",demo_p:"Forza 4 con entrambi i posti alla stessa tastiera (--you both) e un seme fisso. La scacchiera è l'output reale del programma, ridotto alla posizione finale.",demo_aria:"Posizione finale di Forza 4: il giocatore 1 ha quattro in colonna",demo_cap:"Sette mosse digitate (4 3 4 3 4 3 4): il giocatore 1 vince con quattro in colonna.",
+inst_h:"Installazione",inst_p:"Scegli ciò che fa per te. Nessun programma di installazione e nessuna libreria esterna da configurare.",inst_a:"Versione precompilata (Linux, macOS)",inst_a_d:"Scarica la versione per la tua piattaforma, verifica lo SHA-256 e mette polytabletop (e l'alias breve ptt) in ~/.local/bin. Su Windows scarica lo .zip dalla pagina Releases.",inst_b:"Dai sorgenti, con cargo",inst_b_d:"Richiede la toolchain Rust stabile corrente. Interfaccia grafica facoltativa: cargo run --release -p polytabletop-gui.",inst_c_d:"La versione a riga di comando, su un'immagine Ubuntu 26.04.",inst_first:"Prima partita",inst_first_d:"Nel gioco: scrivi una mossa, ? per le mosse legali, hint per un suggerimento, q per uscire.",guide:"Guida completa all'installazione",copy:"Copia",copied:"Copiato",
+clean_h:"Clean-room, regole pubbliche",clean_p1:"Ogni gioco è implementato a partire da regole di pubblico dominio o da progetti originali, senza codice, grafica, testi o suoni presi da prodotti commerciali. Il programma non usa nomi di marchi, personaggi protetti o immagini copiate; quando un gioco è una variante originale, lo dichiara.",clean_p2:"I giochi tradizionali appartengono a tutti: PolyTabletop aggiunge solo codice curato e testi di regole propri.",lic_h:"Licenza e marchi",lic_p:"Codice sorgente con licenza MIT o Apache-2.0, a scelta. I nomi dei giochi tradizionali sono usati in modo descrittivo; se uno di essi fosse un marchio, serve solo a identificare regole pubbliche. PolyTabletop non è affiliato né approvato da alcun editore.",
+free_p1:"PolyTabletop fa parte di Fără Frontiere (« senza frontiere »), la serie di applicazioni trade-free dell'autore: offline, senza account, senza pubblicità, senza tracciamento, libere da usare e condividere.",free_p2:"Creato da Alexio (Alexandru-Ionuț Chiuță), autore rumeno di fantascienza e volontario di lunga data del movimento trade-free.",contact_l:"Contatto",src_l:"Codice sorgente e segnalazioni",foot:"© 2026 Alexio · Fără Frontiere · trade-free"},
+es:{title:"PolyTabletop — juegos de mesa sin fronteras",desc:"171 juegos de mesa jugables en un único programa Rust: ajedrez, go, cartas, dados y mucho más. Clean-room, una IA que no hace trampas, 8 idiomas, sin dependencias externas en el motor.",skip:"Saltar al contenido",nav_aria:"Navegación principal",nav_what:"Qué es",nav_games:"Los juegos",nav_modes:"Formas de jugar",nav_install:"Instalación",nav_clean:"Clean-room",nav_free:"Fără Frontiere",lang_label:"Idioma",theme:"Cambiar entre tema claro y oscuro",
+eyebrow:"Código abierto · Rust · funciona sin conexión",tagline:"Juegos de mesa sin fronteras.",lead:"171 juegos jugables de todo el mundo — ajedrez, go, cartas, dados, deducción, aventuras cooperativas — en un programa pequeño para tu terminal, una ventana o tu red local.",cta_install:"Instalar",cta_gh:"Ver en GitHub",st_games:"juegos jugables",st_langs:"idiomas",st_deps:"dependencias externas en el motor",
+what_h:"¿Qué es PolyTabletop?",what_p1:"PolyTabletop (antes MASA) es una colección de juegos de mesa escrita desde cero en Rust: juegos abstractos clásicos, juegos tradicionales de todos los continentes, juegos de cartas y de dados, juegos de fiesta y de deducción, aventuras cooperativas y pequeños juegos de estrategia con reglas originales.",what_p2:"Es un único programa con un único motor de reglas: el mismo juego se puede jugar en la terminal, en una ventana gráfica, contra el ordenador, con un amigo en el mismo teclado o en red.",
+f1t:"Juegos sin fronteras",f1d:"Juegos de Asia, África, América y Europa, uno junto a otro, con las reglas en ocho idiomas.",f2t:"Una IA que no hace trampas",f2d:"El ordenador solo ve lo que vería un jugador humano: tus cartas ocultas siguen ocultas y los dados se lanzan con honestidad.",f3t:"Clean-room",f3d:"Escrito a partir de reglas públicas e ideas originales, sin copiar código, ilustraciones ni nombres que pertenezcan a otros.",f4t:"Ocho idiomas",f4d:"Interfaz y títulos de los juegos en inglés, rumano, francés, italiano, español, portugués, alemán y húngaro.",f5t:"Rust, sin dependencias externas",f5d:"El motor usa solo la biblioteca estándar de Rust: nada que descargar al ejecutar y ningún instalador.",
+games_h:"Los juegos",games_p:"{t} juegos, cada uno con sus reglas completas en el programa. Busca por nombre (en cualquier idioma) o filtra por categoría. Cada ficha muestra el comando que inicia el juego.",search_l:"Buscar juegos",search_ph:"p. ej. ajedrez, go, rummy…",cat_l:"Categoría",cat_all:"Todos",
+cat_abstract:"Abstractos",cat_cards:"Cartas",cat_strategy:"Estrategia",cat_party:"Fiesta",cat_dice:"Dados",cat_classic:"Clásicos",cat_family:"Familiares",cat_minis:"Miniaturas",cat_coop:"Cooperativos",cat_tcg:"Cartas coleccionables",cat_deduction:"Deducción",cat_words:"Palabras",count:"{n} de {t} juegos",none:"Ningún juego coincide con la búsqueda.",
+modes_h:"Formas de jugar",m1t:"Terminal (CLI)",m1d:"Escribe las jugadas, por ejemplo e2e4, ? para ver las legales o hint para una sugerencia. Funciona por SSH, en una ventana diminuta, en cualquier sitio.",m2t:"Ventana gráfica (egui)",m2d:"Una interfaz de escritorio opcional, hecha con egui: se mueve con un clic, con las mismas reglas y la misma IA.",m3t:"Red: host y join",m3d:"Un equipo ejecuta host chess y el otro se conecta con join DIRECCIÓN:PUERTO. Jugad juntos en la misma red local.",m4t:"Arena y benchmark",m4d:"Enfrenta la IA consigo misma (arena), mide la velocidad (bench) o clasifica presupuestos de tiempo por Elo (ladder).",m5t:"Cuatro niveles de dificultad",m5d:"--level easy, normal, hard o expert define cuánto y con qué profundidad piensa la IA.",m6t:"Repetición y exportación",m6d:"Guarda una partida, reprodúcela paso a paso y expórtala a PGN, texto o JSON; los archivos PGN se pueden volver a importar.",m7t:"Semilla determinista",m7d:"--seed N hace reproducibles el reparto de cartas y los dados: el mismo número da la misma partida, útil para problemas, pruebas y duelos justos.",
+demo_h:"Una sesión real",demo_p:"Conecta 4 con los dos asientos en el mismo teclado (--you both) y una semilla fija. El tablero es la salida real del programa, recortada a la posición final.",demo_aria:"Tablero final de Conecta 4: el jugador 1 tiene cuatro en columna",demo_cap:"Siete jugadas escritas (4 3 4 3 4 3 4): el jugador 1 gana con cuatro en columna.",
+inst_h:"Instalación",inst_p:"Elige lo que más te convenga. No hay instalador ni bibliotecas externas que configurar.",inst_a:"Versión precompilada (Linux, macOS)",inst_a_d:"Descarga la versión para tu plataforma, verifica su SHA-256 y deja polytabletop (y el alias corto ptt) en ~/.local/bin. En Windows, descarga el .zip de la página Releases.",inst_b:"Desde el código fuente, con cargo",inst_b_d:"Requiere la cadena de herramientas estable actual de Rust. Interfaz gráfica opcional: cargo run --release -p polytabletop-gui.",inst_c_d:"La versión de línea de comandos, sobre una imagen Ubuntu 26.04.",inst_first:"Primera partida",inst_first_d:"En el juego: escribe una jugada, ? para las legales, hint para una sugerencia, q para salir.",guide:"Guía de instalación completa",copy:"Copiar",copied:"Copiado",
+clean_h:"Clean-room, reglas públicas",clean_p1:"Cada juego se implementa a partir de reglas conocidas públicamente o de diseños originales, sin código, ilustraciones, textos ni sonidos tomados de productos comerciales. El programa no usa nombres de marcas, personajes protegidos ni imágenes copiadas; cuando un juego es una variante original, lo indica.",clean_p2:"Los juegos tradicionales son de todos: PolyTabletop solo añade código cuidado y textos de reglas propios.",lic_h:"Licencia y marcas",lic_p:"Código fuente bajo licencia MIT o Apache-2.0, a tu elección. Los nombres de los juegos tradicionales se usan de forma descriptiva; si alguno fuese una marca, solo sirve para identificar reglas públicas. PolyTabletop no está afiliado a ninguna editorial ni cuenta con su aval.",
+free_p1:"PolyTabletop forma parte de Fără Frontiere («sin fronteras»), la serie de aplicaciones trade-free del autor: sin conexión, sin cuentas, sin publicidad, sin rastreo, libres de usar y compartir.",free_p2:"Creado por Alexio (Alexandru-Ionuț Chiuță), autor rumano de ciencia ficción y voluntario desde hace años del movimiento trade-free.",contact_l:"Contacto",src_l:"Código fuente e incidencias",foot:"© 2026 Alexio · Fără Frontiere · trade-free"},
+pt:{title:"PolyTabletop — jogos de tabuleiro sem fronteiras",desc:"171 jogos de tabuleiro jogáveis num único programa Rust: xadrez, go, cartas, dados e muito mais. Clean-room, uma IA que não faz batota, 8 idiomas, sem dependências externas no motor.",skip:"Saltar para o conteúdo",nav_aria:"Navegação principal",nav_what:"O que é",nav_games:"Os jogos",nav_modes:"Formas de jogar",nav_install:"Instalação",nav_clean:"Clean-room",nav_free:"Fără Frontiere",lang_label:"Idioma",theme:"Alternar entre tema claro e escuro",
+eyebrow:"Código aberto · Rust · funciona offline",tagline:"Jogos de tabuleiro sem fronteiras.",lead:"171 jogos jogáveis de todo o mundo — xadrez, go, cartas, dados, dedução, aventuras cooperativas — num programa pequeno para o terminal, uma janela ou a rede local.",cta_install:"Instalar",cta_gh:"Ver no GitHub",st_games:"jogos jogáveis",st_langs:"idiomas",st_deps:"dependências externas no motor",
+what_h:"O que é o PolyTabletop?",what_p1:"O PolyTabletop (antigo MASA) é uma coleção de jogos de tabuleiro escrita de raiz em Rust: jogos abstratos clássicos, jogos tradicionais de todos os continentes, jogos de cartas e de dados, jogos de festa e de dedução, aventuras cooperativas e pequenos jogos de estratégia com regras originais.",what_p2:"É um único programa com um único motor de regras: o mesmo jogo pode ser jogado no terminal, numa janela gráfica, contra o computador, com um amigo no mesmo teclado ou em rede.",
+f1t:"Jogos sem fronteiras",f1d:"Jogos da Ásia, de África, das Américas e da Europa lado a lado, com as regras em oito idiomas.",f2t:"Uma IA que não faz batota",f2d:"O computador vê apenas o que um jogador humano veria: as suas cartas escondidas continuam escondidas e os dados são lançados com justiça.",f3t:"Clean-room",f3d:"Escrito a partir de regras públicas e ideias originais, sem copiar código, ilustrações ou nomes que pertençam a outros.",f4t:"Oito idiomas",f4d:"Interface e títulos dos jogos em inglês, romeno, francês, italiano, espanhol, português, alemão e húngaro.",f5t:"Rust, sem dependências externas",f5d:"O motor usa apenas a biblioteca padrão do Rust: nada a descarregar em execução e nenhum instalador.",
+games_h:"Os jogos",games_p:"{t} jogos, cada um com as regras completas no programa. Pesquise por nome (em qualquer idioma) ou filtre por categoria. Cada ficha mostra o comando que inicia o jogo.",search_l:"Pesquisar jogos",search_ph:"ex.: xadrez, go, rummy…",cat_l:"Categoria",cat_all:"Todos",
+cat_abstract:"Abstratos",cat_cards:"Cartas",cat_strategy:"Estratégia",cat_party:"Festa",cat_dice:"Dados",cat_classic:"Clássicos",cat_family:"Família",cat_minis:"Miniaturas",cat_coop:"Cooperativos",cat_tcg:"Cartas colecionáveis",cat_deduction:"Dedução",cat_words:"Palavras",count:"{n} de {t} jogos",none:"Nenhum jogo corresponde à pesquisa.",
+modes_h:"Formas de jogar",m1t:"Terminal (CLI)",m1d:"Escreva as jogadas, por exemplo e2e4, ? para as jogadas legais ou hint para uma sugestão. Funciona por SSH, numa janela minúscula, em qualquer lugar.",m2t:"Janela gráfica (egui)",m2d:"Uma interface de ambiente de trabalho opcional, feita com egui: joga-se com um clique, com as mesmas regras e a mesma IA.",m3t:"Rede: host e join",m3d:"Um computador executa host chess e o outro liga-se com join ENDEREÇO:PORTA. Joguem juntos na mesma rede local.",m4t:"Arena e benchmark",m4d:"Ponha a IA a jogar contra si própria (arena), meça a velocidade (bench) ou classifique orçamentos de tempo por Elo (ladder).",m5t:"Quatro níveis de dificuldade",m5d:"--level easy, normal, hard ou expert define quanto e com que profundidade a IA pensa.",m6t:"Repetição e exportação",m6d:"Guarde uma partida, reveja-a passo a passo e exporte-a para PGN, texto ou JSON; os ficheiros PGN podem ser importados de volta.",m7t:"Semente determinista",m7d:"--seed N torna reprodutíveis a distribuição das cartas e os dados: o mesmo número dá a mesma partida, útil para problemas, testes e duelos justos.",
+demo_h:"Uma sessão real",demo_p:"Quatro em Linha com os dois lugares no mesmo teclado (--you both) e uma semente fixa. O tabuleiro é a saída real do programa, reduzida à posição final.",demo_aria:"Tabuleiro final de Quatro em Linha: o jogador 1 tem quatro em coluna",demo_cap:"Sete jogadas escritas (4 3 4 3 4 3 4): o jogador 1 ganha com quatro em coluna.",
+inst_h:"Instalação",inst_p:"Escolha o que lhe convém. Não há instalador nem bibliotecas externas para configurar.",inst_a:"Versão pré-compilada (Linux, macOS)",inst_a_d:"Descarrega a versão para a sua plataforma, verifica o SHA-256 e coloca o polytabletop (e o alias curto ptt) em ~/.local/bin. No Windows, descarregue o .zip da página Releases.",inst_b:"A partir do código-fonte, com cargo",inst_b_d:"Requer a cadeia de ferramentas Rust estável atual. Interface gráfica opcional: cargo run --release -p polytabletop-gui.",inst_c_d:"A versão de linha de comandos, numa imagem Ubuntu 26.04.",inst_first:"Primeiro jogo",inst_first_d:"No jogo: escreva uma jogada, ? para as legais, hint para uma sugestão, q para sair.",guide:"Guia de instalação completo",copy:"Copiar",copied:"Copiado",
+clean_h:"Clean-room, regras públicas",clean_p1:"Cada jogo é implementado a partir de regras publicamente conhecidas ou de conceções originais, sem código, ilustrações, textos ou sons retirados de produtos comerciais. O programa não usa nomes de marcas, personagens protegidas nem imagens copiadas; quando um jogo é uma variante original, di-lo.",clean_p2:"Os jogos tradicionais pertencem a todos: o PolyTabletop apenas acrescenta código cuidado e textos de regras próprios.",lic_h:"Licença e marcas",lic_p:"Código-fonte sob licença MIT ou Apache-2.0, à sua escolha. Os nomes dos jogos tradicionais são usados de forma descritiva; se algum for marca registada, serve apenas para identificar regras públicas. O PolyTabletop não é afiliado nem apoiado por qualquer editora.",
+free_p1:"O PolyTabletop faz parte da Fără Frontiere («sem fronteiras»), a série de aplicações trade-free do autor: offline, sem contas, sem publicidade, sem rastreio, livres de usar e partilhar.",free_p2:"Criado por Alexio (Alexandru-Ionuț Chiuță), autor romeno de ficção científica e voluntário de longa data do movimento trade-free.",contact_l:"Contacto",src_l:"Código-fonte e problemas",foot:"© 2026 Alexio · Fără Frontiere · trade-free"},
+de:{title:"PolyTabletop — Brettspiele ohne Grenzen",desc:"171 spielbare Brett- und Kartenspiele in einem einzigen Rust-Programm: Schach, Go, Karten, Würfel und mehr. Clean-room, eine KI, die nicht schummelt, 8 Sprachen, keine externen Abhängigkeiten im Kern.",skip:"Zum Inhalt springen",nav_aria:"Hauptnavigation",nav_what:"Was ist das?",nav_games:"Die Spiele",nav_modes:"Spielweisen",nav_install:"Installation",nav_clean:"Clean-room",nav_free:"Fără Frontiere",lang_label:"Sprache",theme:"Zwischen hellem und dunklem Design wechseln",
+eyebrow:"Open Source · Rust · funktioniert offline",tagline:"Brettspiele ohne Grenzen.",lead:"171 spielbare Spiele aus aller Welt — Schach, Go, Karten, Würfel, Deduktion, kooperative Abenteuer — in einem kleinen Programm für Terminal, Fenster oder lokales Netzwerk.",cta_install:"Installieren",cta_gh:"Auf GitHub ansehen",st_games:"spielbare Spiele",st_langs:"Sprachen",st_deps:"externe Abhängigkeiten im Kern",
+what_h:"Was ist PolyTabletop?",what_p1:"PolyTabletop (früher MASA) ist eine von Grund auf in Rust geschriebene Sammlung von Gesellschaftsspielen: klassische abstrakte Spiele, traditionelle Spiele aus allen Erdteilen, Karten- und Würfelspiele, Party- und Deduktionsspiele, kooperative Abenteuer und kleine Strategiespiele mit eigenen Regeln.",what_p2:"Es ist ein Programm mit einem Regelwerk-Kern: Dasselbe Spiel lässt sich im Terminal, in einem grafischen Fenster, gegen den Computer, zu zweit an einer Tastatur oder im Netzwerk spielen.",
+f1t:"Spiele ohne Grenzen",f1d:"Spiele aus Asien, Afrika, Amerika und Europa Seite an Seite, mit Regeln in acht Sprachen.",f2t:"Eine KI, die nicht schummelt",f2d:"Der Computer sieht nur, was auch ein menschlicher Spieler sähe: Deine verdeckten Karten bleiben verdeckt, und die Würfel fallen fair.",f3t:"Clean-room",f3d:"Aus öffentlichen Regeln und eigenen Ideen entstanden, ohne Code, Grafiken oder Namen zu kopieren, die jemand anderem gehören.",f4t:"Acht Sprachen",f4d:"Oberfläche und Spieltitel auf Englisch, Rumänisch, Französisch, Italienisch, Spanisch, Portugiesisch, Deutsch und Ungarisch.",f5t:"Rust, ohne externe Abhängigkeiten",f5d:"Der Kern nutzt nur die Standardbibliothek von Rust: nichts nachzuladen, kein Installationsprogramm nötig.",
+games_h:"Die Spiele",games_p:"{t} Spiele, jedes mit vollständigen Regeln im Programm. Suche nach dem Namen (in jeder Sprache) oder filtere nach Kategorie. Jede Karte zeigt den Befehl, der das Spiel startet.",search_l:"Spiele suchen",search_ph:"z. B. Schach, Go, Rommé…",cat_l:"Kategorie",cat_all:"Alle",
+cat_abstract:"Abstrakt",cat_cards:"Karten",cat_strategy:"Strategie",cat_party:"Party",cat_dice:"Würfel",cat_classic:"Klassiker",cat_family:"Familie",cat_minis:"Miniaturen",cat_coop:"Kooperativ",cat_tcg:"Sammelkarten",cat_deduction:"Deduktion",cat_words:"Wörter",count:"{n} von {t} Spielen",none:"Kein Spiel passt zu deiner Suche.",
+modes_h:"Spielweisen",m1t:"Terminal (CLI)",m1d:"Gib Züge wie e2e4 ein, ? zeigt die erlaubten Züge, hint einen Vorschlag. Läuft über SSH, in einem winzigen Fenster, überall.",m2t:"Grafisches Fenster (egui)",m2d:"Eine optionale Desktop-Oberfläche auf Basis von egui: Ziehen per Klick, mit denselben Regeln und derselben KI.",m3t:"Netzwerk: host und join",m3d:"Ein Rechner startet host chess, der andere verbindet sich mit join ADRESSE:PORT. Spielt gemeinsam im selben lokalen Netz.",m4t:"Arena und Benchmark",m4d:"Lass die KI gegen sich selbst antreten (arena), miss die Geschwindigkeit (bench) oder ordne Zeitbudgets per Elo (ladder).",m5t:"Vier Schwierigkeitsstufen",m5d:"--level easy, normal, hard oder expert legt fest, wie lange und wie tief die KI nachdenkt.",m6t:"Wiedergabe und Export",m6d:"Speichere eine Partie, spiele sie Zug für Zug nach und exportiere sie als PGN, Text oder JSON; PGN-Dateien lassen sich wieder importieren.",m7t:"Deterministischer Seed",m7d:"--seed N macht Kartengeben und Würfel reproduzierbar: dieselbe Zahl, dieselbe Partie — praktisch für Aufgaben, Tests und faire Duelle.",
+demo_h:"Eine echte Sitzung",demo_p:"Vier gewinnt mit beiden Plätzen an einer Tastatur (--you both) und festem Seed. Das Brett ist die echte Programmausgabe, gekürzt auf die Endstellung.",demo_aria:"Endstellung von Vier gewinnt: Spieler 1 hat vier in einer Spalte",demo_cap:"Sieben eingegebene Züge (4 3 4 3 4 3 4): Spieler 1 gewinnt mit vier in einer Spalte.",
+inst_h:"Installation",inst_p:"Wähle, was zu dir passt. Es gibt kein Installationsprogramm und keine externen Bibliotheken einzurichten.",inst_a:"Fertige Version (Linux, macOS)",inst_a_d:"Lädt die Version für deine Plattform herunter, prüft die SHA-256-Summe und legt polytabletop (und den Kurzalias ptt) in ~/.local/bin ab. Unter Windows lädst du das .zip von der Releases-Seite.",inst_b:"Aus dem Quelltext mit cargo",inst_b_d:"Benötigt die aktuelle stabile Rust-Toolchain. Optionale grafische Oberfläche: cargo run --release -p polytabletop-gui.",inst_c_d:"Die Kommandozeilenversion auf einem Ubuntu-26.04-Image.",inst_first:"Erstes Spiel",inst_first_d:"Im Spiel: Zug eingeben, ? für erlaubte Züge, hint für einen Vorschlag, q zum Beenden.",guide:"Vollständige Installationsanleitung",copy:"Kopieren",copied:"Kopiert",
+clean_h:"Clean-room, öffentliche Regeln",clean_p1:"Jedes Spiel wird nach öffentlich bekannten Regeln oder eigenen Entwürfen umgesetzt, ohne Code, Grafiken, Texte oder Klänge aus kommerziellen Produkten. Das Programm verwendet keine Markennamen, geschützten Figuren oder kopierten Bilder; wo ein Spiel eine eigene Variante ist, steht das dabei.",clean_p2:"Traditionelle Spiele gehören allen: PolyTabletop fügt nur sorgfältigen Code und eigene Regeltexte hinzu.",lic_h:"Lizenz und Marken",lic_p:"Quelltext unter der MIT- oder der Apache-2.0-Lizenz, nach Wahl. Namen traditioneller Spiele werden beschreibend verwendet; sollte einer davon eine Marke sein, dient er nur dazu, öffentliche Regeln zu bezeichnen. PolyTabletop steht in keiner Verbindung zu einem Verlag und wird von keinem unterstützt.",
+free_p1:"PolyTabletop gehört zu Fără Frontiere („ohne Grenzen“), der Reihe trade-freier Anwendungen des Autors: offline, ohne Konten, ohne Werbung, ohne Tracking, frei nutz- und weitergebbar.",free_p2:"Entwickelt von Alexio (Alexandru-Ionuț Chiuță), rumänischer Science-Fiction-Autor und langjähriger Freiwilliger der Trade-free-Bewegung.",contact_l:"Kontakt",src_l:"Quelltext und Fehlermeldungen",foot:"© 2026 Alexio · Fără Frontiere · trade-free"},
+hu:{title:"PolyTabletop — társasjátékok határok nélkül",desc:"171 játszható társasjáték egyetlen Rust programban: sakk, go, kártya, kocka és még sok más. Clean-room, nem csaló MI, 8 nyelv, külső függőségek nélküli motor.",skip:"Ugrás a tartalomra",nav_aria:"Főmenü",nav_what:"Mi ez?",nav_games:"A játékok",nav_modes:"Játékmódok",nav_install:"Telepítés",nav_clean:"Clean-room",nav_free:"Fără Frontiere",lang_label:"Nyelv",theme:"Világos és sötét téma váltása",
+eyebrow:"Nyílt forráskód · Rust · offline is működik",tagline:"Társasjátékok határok nélkül.",lead:"171 játszható játék a világ minden tájáról — sakk, go, kártya, kocka, nyomozás, együttműködős kalandok — egyetlen kis programban, terminálban, ablakban vagy a helyi hálózaton.",cta_install:"Telepítés",cta_gh:"Megnyitás GitHubon",st_games:"játszható játék",st_langs:"nyelv",st_deps:"külső függőség a motorban",
+what_h:"Mi az a PolyTabletop?",what_p1:"A PolyTabletop (korábbi nevén MASA) Rustban, a nulláról megírt társasjáték-gyűjtemény: klasszikus absztrakt játékok, hagyományos játékok minden kontinensről, kártya- és kockajátékok, parti- és nyomozójátékok, együttműködős kalandok és kis stratégiai játékok saját szabályokkal.",what_p2:"Egyetlen program, egyetlen szabálymotorral: ugyanaz a játék játszható terminálban, grafikus ablakban, a számítógép ellen, egy barátoddal ugyanannál a billentyűzetnél vagy hálózaton.",
+f1t:"Játékok határok nélkül",f1d:"Ázsiai, afrikai, amerikai és európai játékok egymás mellett, a szabályokkal nyolc nyelven.",f2t:"Nem csaló MI",f2d:"A gép csak azt látja, amit egy emberi játékos is látna: a rejtett lapjaid rejtve maradnak, a kockadobás pedig tisztességes.",f3t:"Clean-room",f3d:"Nyilvános szabályokból és saját ötletekből készült, anélkül, hogy bárki kódját, grafikáját vagy nevét lemásolnánk.",f4t:"Nyolc nyelv",f4d:"A felület és a játékcímek angolul, románul, franciául, olaszul, spanyolul, portugálul, németül és magyarul.",f5t:"Rust, külső függőségek nélkül",f5d:"A motor csak a Rust szabványos könyvtárára épül: futás közben nincs mit letölteni, telepítőre sincs szükség.",
+games_h:"A játékok",games_p:"{t} játék, mindegyik teljes szabályokkal a programban. Keress név szerint (bármely nyelven), vagy szűrj kategória szerint. Minden kártya megmutatja a játékot indító parancsot.",search_l:"Játékok keresése",search_ph:"pl. sakk, go, römi…",cat_l:"Kategória",cat_all:"Mind",
+cat_abstract:"Absztrakt",cat_cards:"Kártya",cat_strategy:"Stratégia",cat_party:"Parti",cat_dice:"Kocka",cat_classic:"Klasszikus",cat_family:"Családi",cat_minis:"Miniatűr",cat_coop:"Együttműködős",cat_tcg:"Gyűjthető kártya",cat_deduction:"Nyomozós",cat_words:"Szavak",count:"{n} / {t} játék",none:"Nincs a keresésnek megfelelő játék.",
+modes_h:"Játékmódok",m1t:"Terminál (CLI)",m1d:"Írd be a lépéseket, például e2e4; a ? a szabályos lépéseket, a hint javaslatot mutat. SSH-n át, apró ablakban, bárhol működik.",m2t:"Grafikus ablak (egui)",m2d:"Opcionális asztali felület egui-val: kattintással lépsz, ugyanazokkal a szabályokkal és ugyanazzal az MI-vel.",m3t:"Hálózat: host és join",m3d:"Az egyik gép a host chess parancsot futtatja, a másik a join CÍM:PORT paranccsal csatlakozik. Játsszatok együtt ugyanazon a helyi hálózaton.",m4t:"Aréna és benchmark",m4d:"Játszass az MI-vel önmaga ellen (arena), mérd a sebességet (bench), vagy rangsorold az időkereteket Elo szerint (ladder).",m5t:"Négy nehézségi szint",m5d:"A --level easy, normal, hard vagy expert beállítja, mennyi ideig és milyen mélyen gondolkodik az MI.",m6t:"Visszajátszás és exportálás",m6d:"Mentsd el a játszmát, játszd vissza lépésenként, és exportáld PGN-be, szövegbe vagy JSON-ba; a PGN-fájlok vissza is importálhatók.",m7t:"Determinisztikus mag (seed)",m7d:"A --seed N megismételhetővé teszi a laposztást és a kockadobásokat: ugyanaz a szám ugyanazt a játszmát adja — hasznos feladványokhoz, teszteléshez és tisztességes párbajokhoz.",
+demo_h:"Egy valódi munkamenet",demo_p:"Négy egy sorban, mindkét hely ugyanannál a billentyűzetnél (--you both), rögzített maggal. A tábla a program valódi kimenete, a végállásra rövidítve.",demo_aria:"A Négy egy sorban végállása: az 1. játékosnak négy korongja van egy oszlopban",demo_cap:"Hét beírt lépés (4 3 4 3 4 3 4): az 1. játékos négy korongot rak egy oszlopba, és nyer.",
+inst_h:"Telepítés",inst_p:"Válaszd, ami neked megfelel. Nincs telepítő, és külső könyvtárat sem kell beállítani.",inst_a:"Előre fordított kiadás (Linux, macOS)",inst_a_d:"Letölti a platformodnak megfelelő kiadást, ellenőrzi az SHA-256 összegét, és a polytabletop programot (meg a rövid ptt álnevet) a ~/.local/bin mappába teszi. Windowson töltsd le a .zip fájlt a Releases oldalról.",inst_b:"Forrásból, cargóval",inst_b_d:"A Rust aktuális stabil eszközkészletét igényli. Opcionális grafikus felület: cargo run --release -p polytabletop-gui.",inst_c_d:"A parancssoros változat egy Ubuntu 26.04 képfájlon.",inst_first:"Az első játék",inst_first_d:"Játék közben: írj be egy lépést, ? a szabályos lépésekhez, hint javaslathoz, q a kilépéshez.",guide:"Teljes telepítési útmutató",copy:"Másolás",copied:"Másolva",
+clean_h:"Clean-room, nyilvános szabályok",clean_p1:"Minden játék nyilvánosan ismert szabályokból vagy saját tervekből készült, kereskedelmi termékekből átvett kód, grafika, szöveg vagy hang nélkül. A program nem használ márkaneveket, védett karaktereket vagy másolt képeket; ahol egy játék saját változat, ezt jelzi.",clean_p2:"A hagyományos játékok mindenkié: a PolyTabletop csak gondos kódot és saját szabályszövegeket ad hozzá.",lic_h:"Licenc és védjegyek",lic_p:"A forráskód MIT vagy Apache-2.0 licenc alatt áll, tetszés szerint. A hagyományos játékok nevét leíró módon használjuk; ha valamelyik védjegy lenne, csak a nyilvános szabályok azonosítására szolgál. A PolyTabletop nem áll kapcsolatban egyetlen kiadóval sem, és egyik sem támogatja.",
+free_p1:"A PolyTabletop a Fără Frontiere („határok nélkül”) része, a szerző trade-free alkalmazássorozatáé: offline, fiókok, reklámok és követés nélkül, szabadon használható és megosztható.",free_p2:"Készítette Alexio (Alexandru-Ionuț Chiuță), román sci-fi szerző, a trade-free mozgalom régi önkéntese.",contact_l:"Kapcsolat",src_l:"Forráskód és hibajelentések",foot:"© 2026 Alexio · Fără Frontiere · trade-free"}
+};
+(function(){
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+let lang="en",cat="all";
+function pick(){
+  const q=new URLSearchParams(location.search).get("lang");
+  if(q&&LANGS.includes(q.toLowerCase()))return q.toLowerCase();
+  const s=store.get("pt-lang");if(s&&LANGS.includes(s))return s;
+  for(const n of (navigator.languages||[navigator.language||""])){const c=String(n).slice(0,2).toLowerCase();if(LANGS.includes(c))return c}
+  return "en";
+}
+const fmt=(s,o)=>s.replace(/\{(\w+)\}/g,(m,k)=>o[k]);
+function gname(g){return g[lang]||g.en}
+function renderChips(){
+  const box=$("#chips");box.textContent="";
+  [["all",T[lang].cat_all]].concat(CATK.map(k=>[k,T[lang]["cat_"+k]])).forEach(([k,l])=>{
+    const b=document.createElement("button");b.type="button";b.className="chip";b.textContent=l;b.dataset.k=k;b.setAttribute("aria-pressed",String(k===cat));
+    b.addEventListener("click",()=>{cat=k;$$(".chip").forEach(c=>c.setAttribute("aria-pressed",String(c.dataset.k===cat)));renderList()});
+    box.appendChild(b);
+  });
+}
+function renderList(){
+  const q=norm($("#q").value.trim()),ul=$("#glist");ul.textContent="";let n=0;
+  const frag=document.createDocumentFragment();
+  for(const g of GAMES){
+    if(cat!=="all"&&g.c!==cat)continue;
+    if(q){const hay=norm([g.i,g.en,g.ro||"",g.fr||"",g.it||"",g.es||"",g.pt||"",g.de||"",g.hu||""].join(" "));if(!hay.includes(q))continue}
+    n++;
+    const li=document.createElement("li");
+    const a=document.createElement("span");a.className="n";a.textContent=gname(g);
+    const k=document.createElement("span");k.className="k";k.textContent=T[lang]["cat_"+g.c];
+    const c=document.createElement("code");c.textContent="polytabletop play "+g.i;
+    li.append(a,k,c);frag.appendChild(li);
+  }
+  if(!n){const li=document.createElement("li");li.textContent=T[lang].none;frag.appendChild(li)}
+  ul.appendChild(frag);
+  $("#count").textContent=fmt(T[lang].count,{n:n,t:GAMES.length});
+}
+function apply(l,persist){
+  lang=l;const t=T[l];
+  document.documentElement.lang=l;document.title=t.title;
+  $('meta[name=description]').content=t.desc;$('meta[property="og:title"]').content=t.title;$('meta[property="og:description"]').content=t.desc;
+  $$("[data-i18n]").forEach(e=>{const v=t[e.dataset.i18n];if(v!=null)e.textContent=v});
+  $$("[data-i18n-aria]").forEach(e=>{const v=t[e.dataset.i18nAria];if(v)e.setAttribute("aria-label",v)});
+  $$("[data-i18n-ph]").forEach(e=>{const v=t[e.dataset.i18nPh];if(v)e.placeholder=v});
+  $("#games-p").textContent=fmt(t.games_p,{t:GAMES.length});
+  $("#guide").href="https://github.com/chiuta/PolyTabletop/blob/main/docs/INSTALL."+l+".md";
+  $("#lang").value=l;
+  renderChips();renderList();
+  if(persist){store.set("pt-lang",l);const u=new URL(location.href);u.searchParams.set("lang",l);history.replaceState(null,"",u)}
+}
+$("#lang").addEventListener("change",e=>apply(e.target.value,true));
+$("#q").addEventListener("input",renderList);
+// tema
+const root=document.documentElement,tb=$("#theme");
+const st=store.get("pt-theme");if(st==="light"||st==="dark")root.dataset.theme=st;
+tb.addEventListener("click",()=>{
+  const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme=dark?"light":"dark";store.set("pt-theme",root.dataset.theme);
+});
+// copiere
+$$(".cp").forEach(b=>b.addEventListener("click",()=>{
+  const txt=b.parentNode.querySelector("code").textContent;
+  const done=()=>{const o=T[lang].copy;b.textContent=T[lang].copied;setTimeout(()=>{b.textContent=T[lang].copy},1500)};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(done,()=>{});
+}));
+apply(pick(),false);
+if("serviceWorker" in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+})();
+</script>
+</body>
+</html>

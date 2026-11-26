@@ -1,0 +1,17 @@
+# Generic dice-pool system: attribute + skill dice, successes count (original data).
+[system]
+id = "grit-pool"
+name = "Grit dice pool"
+kind = "dice-pool"
+preset = "d10-pool-cancel"
+attributes = ["Strength", "Dexterity", "Stamina", "Wits", "Composure", "Charisma"]
+attr_method = "spread"
+attr_points = 9
+attr_min = 1
+attr_max = 5
+skills = ["Brawl", "Firearms", "Stealth", "Investigation", "Streetwise", "Medicine", "Persuasion"]
+skill_points = 10
+skill_step = 1
+skill_cap = 4
+skill_picks = 0
+resources = ["Health:5", "Willpower:3"]
