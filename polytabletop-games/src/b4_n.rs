@@ -1,3 +1,11 @@
+#![allow(
+    clippy::needless_range_loop,
+    clippy::manual_is_multiple_of,
+    clippy::unnecessary_map_or,
+    clippy::collapsible_if,
+    clippy::too_many_arguments,
+    clippy::type_complexity
+)]
 //! Motor „rețea de rute” (lista B4): muchii cu cost, orașe cu cerere. Moduri:
 //! `a` = rute comune (poți livra și pe muchiile rivalului contra unei taxe de 1),
 //! `b` = doar rutele proprii, fiecare livrare crește venitul permanent,

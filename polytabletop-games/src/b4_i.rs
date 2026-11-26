@@ -1,3 +1,11 @@
+#![allow(
+    clippy::needless_range_loop,
+    clippy::manual_is_multiple_of,
+    clippy::unnecessary_map_or,
+    clippy::collapsible_if,
+    clippy::too_many_arguments,
+    clippy::type_complexity
+)]
 //! Motor „influență pe hartă” (lista B4): puncte de influență pe noduri, control prin diferență
 //! ≥ stabilitate, punctaj periodic pe o bară comună (tragere de funie). Informație perfectă.
 use crate::brand_util::*;

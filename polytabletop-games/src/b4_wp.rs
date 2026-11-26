@@ -1,3 +1,11 @@
+#![allow(
+    clippy::needless_range_loop,
+    clippy::manual_is_multiple_of,
+    clippy::unnecessary_map_or,
+    clippy::collapsible_if,
+    clippy::too_many_arguments,
+    clippy::type_complexity
+)]
 //! Motor „plasare de lucrători” (lista B4): spații cu cost/câștig, doi jucători, runde fixe.
 //! Informație perfectă, fără hazard după pregătire: AI alpha-beta cu adâncime fixă.
 use crate::brand_util::*;

@@ -1,3 +1,11 @@
+#![allow(
+    clippy::needless_range_loop,
+    clippy::manual_is_multiple_of,
+    clippy::unnecessary_map_or,
+    clippy::collapsible_if,
+    clippy::too_many_arguments,
+    clippy::type_complexity
+)]
 //! Lanțul de Bufete — duel economic în 8 runde (variantă originală, inspirată de genul „lanț de
 //! restaurante”). Fiecare rundă: J1 apoi J2 aleg `pret p stoc k [rec]`; cei 6 clienți aleg cel mai
 //! bun preț efectiv (preț − reclamă); fiecare unitate vândută aduce prețul. Stocul costă 1/unitate.
