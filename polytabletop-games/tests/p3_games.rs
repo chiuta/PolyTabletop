@@ -22,6 +22,9 @@ use polytabletop_games::pinochle::Pinochle;
 use polytabletop_games::pitch::Pitch;
 use std::time::Instant;
 
+/// Nivelul AI și bugetul de timp sunt globale per proces: testele care le ating rulează pe rând.
+static AI_LOCK: std::sync::Mutex<()> = std::sync::Mutex::new(());
+
 type Maker = fn(u64) -> Box<dyn GameObj>;
 
 fn makers() -> Vec<(&'static str, Maker)> {
@@ -43,6 +46,7 @@ fn makers() -> Vec<(&'static str, Maker)> {
 
 #[test]
 fn every_move_listed_is_playable_and_unique() {
+    let _ai = AI_LOCK.lock().unwrap_or_else(|e| e.into_inner());
     for (name, mk) in makers() {
         let mut g = mk(3);
         let mut rng = Rng::new(5);
@@ -67,6 +71,7 @@ fn every_move_listed_is_playable_and_unique() {
 
 #[test]
 fn random_games_finish() {
+    let _ai = AI_LOCK.lock().unwrap_or_else(|e| e.into_inner());
     for (name, mk) in makers() {
         for seed in 1..=3u64 {
             let mut g = mk(seed);
@@ -88,6 +93,7 @@ fn random_games_finish() {
 
 #[test]
 fn deterministic_for_a_seed() {
+    let _ai = AI_LOCK.lock().unwrap_or_else(|e| e.into_inner());
     for (name, mk) in makers() {
         let (mut a, mut b) = (mk(11), mk(11));
         let mut r1 = Rng::new(2);
@@ -144,6 +150,7 @@ fn invariance_concrete<G: Honest + Clone + 'static>(name: &str, mk: fn(u64) -> G
 
 #[test]
 fn ai_ignores_hidden_information() {
+    let _ai = AI_LOCK.lock().unwrap_or_else(|e| e.into_inner());
     invariance_concrete("pinochle", Pinochle::with_seed);
     invariance_concrete("gin_rummy", GinRummy::with_seed);
     invariance_concrete("crazy_eights", CrazyEights::with_seed);
@@ -156,6 +163,7 @@ fn ai_ignores_hidden_information() {
 
 #[test]
 fn ai_ignores_future_dice_and_noise() {
+    let _ai = AI_LOCK.lock().unwrap_or_else(|e| e.into_inner());
     ai::set_level(ai::Level::Normal);
     // Liar's Dice: zarurile adversarului
     for seed in 1..=6u64 {
@@ -227,6 +235,7 @@ fn ai_ignores_future_dice_and_noise() {
 
 #[test]
 fn hot_seat_viewer_never_shows_the_other_hand() {
+    let _ai = AI_LOCK.lock().unwrap_or_else(|e| e.into_inner());
     for (name, mk) in makers() {
         if matches!(name, "bunco" | "farkle" | "crokinole") {
             continue;
@@ -308,6 +317,7 @@ fn ai_vs_random(name: &str, mk: Maker, seeds: u64) -> (u32, u32, u128) {
 
 #[test]
 fn ai_beats_random_on_card_and_dice_games() {
+    let _ai = AI_LOCK.lock().unwrap_or_else(|e| e.into_inner());
     ai::set_level(ai::Level::Normal);
     for (name, mk, seeds) in [
         ("pinochle", makers()[0].1, 4u64),
@@ -330,6 +340,7 @@ fn ai_beats_random_on_card_and_dice_games() {
 
 #[test]
 fn crokinole_ai_plays_a_round_and_is_not_worse_than_random() {
+    let _ai = AI_LOCK.lock().unwrap_or_else(|e| e.into_inner());
     ai::set_level(ai::Level::Easy);
     let (w, l, worst) = ai_vs_random("crokinole", makers()[11].1, 2);
     println!("crokinole: AI {w} - {l} aleator; cea mai lentă mutare {worst} ms");
