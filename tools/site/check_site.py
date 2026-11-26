@@ -1,5 +1,5 @@
 #!/usr/bin/env python3 -I
-"""Verificări pentru docs/: HTML parsabil, JSON-uri, chei i18n în 8 limbi, linkuri relative, 9x100 rânduri, 171 pagini.
+"""Verificări pentru docs/: HTML parsabil, JSON-uri, chei i18n în 8 limbi, linkuri relative, 9x100 rânduri + 12 topuri pe categorii (exact 100 fiecare), 171 pagini.
 Rulare din rădăcina depozitului: python3 -I tools/site/check_site.py"""
 import os, re, json, sys, glob
 from html.parser import HTMLParser
@@ -55,6 +55,20 @@ rk = json.load(open(f'{root}/tools/site/data/rankings.json', encoding='utf8'))['
 rows = {k: len(v) for k, v in rk.items()}
 print('rânduri clasamente', rows)
 assert all(v == 100 for v in rows.values()) and len(rows) == 9
+cl = json.load(open(f'{root}/tools/site/data/rankings.json', encoding='utf8'))['cat_lists']
+cnt = {}
+for m in re.finditer(r'category: "([^"]*)"', open(f'{root}/polytabletop-games/src/catalog.rs', encoding='utf8').read()):
+    cnt[m.group(1)] = cnt.get(m.group(1), 0) + 1
+print('topuri pe categorii', {k: len(v) for k, v in cl.items()})
+allc = [x['n'] for v in cl.values() for x in v]
+if len(cl) != 12 or sum(len(v) for v in cl.values()) != sum(cnt.values()) or any(len(v) != 100 for v in cl.values()):
+    err.append('topurile pe categorii nu au exact 100 de intrări / nu acoperă catalogul')
+if len(set(allc)) != len(allc) or set(cnt.values()) != {100}:
+    err.append('dubluri între topurile pe categorii sau catalog cu categorii ≠ 100')
+for k, v in cl.items():
+    if [x['r'] for x in v] != list(range(1, 101)): err.append(f'rang neconsecutiv în topul {k}')
+for k, v in cl.items():
+    print('top', k, 'jucabile', sum(1 for x in v if x['s'] in ('play', 'var')), 'din', len(v))
 n_pages = len(glob.glob(f'{docs}/jocuri/*.html')) - 1
 print('pagini de joc', n_pages)
 if n_pages != 171: err.append('nu sunt 171 de pagini')

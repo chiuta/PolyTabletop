@@ -6,13 +6,13 @@ Version: 0.9.1 · Last updated: 2026-11-26
 
 ## Was ist das?
 
-PolyTabletop ist eine Clean-Room-Sammlung von Brett- und Tischspielen, geschrieben in Rust: 171 spielbare Spiele gegen den Computer, im Terminal oder in einem grafischen Fenster, dazu der Hot-Seat-Modus am selben Rechner und Netzwerkspiel für zwei Personen. Es gibt abstrakte Klassiker, Karten- und Würfelspiele, originale Varianten moderner Mechaniken unter eigenen Namen, kooperative Spiele mit KI-Partner, Spiele mit verdeckten Rollen, bei denen Roboter den Rest des Tisches besetzen, Party- und Wortspiele sowie Engines für Miniaturen und Sammelkartenspiele mit originalen Karten. Die Engine und die Spiele haben keine externen Abhängigkeiten; nur die grafische Oberfläche (`polytabletop-gui`) nutzt `eframe`/egui. Der Katalog führt 251 Zielspiele.
+PolyTabletop ist eine Clean-Room-Sammlung von Brett- und Tischspielen, geschrieben in Rust: 171 spielbare Spiele gegen den Computer, im Terminal oder in einem grafischen Fenster, dazu der Hot-Seat-Modus am selben Rechner und Netzwerkspiel für zwei Personen. Es gibt abstrakte Klassiker, Karten- und Würfelspiele, originale Varianten moderner Mechaniken unter eigenen Namen, kooperative Spiele mit KI-Partner, Spiele mit verdeckten Rollen, bei denen Roboter den Rest des Tisches besetzen, Party- und Wortspiele sowie Engines für Miniaturen und Sammelkartenspiele mit originalen Karten. Die Engine und die Spiele haben keine externen Abhängigkeiten; nur die grafische Oberfläche (`polytabletop-gui`) nutzt `eframe`/egui. Der Katalog führt 1200 Zielspiele.
 
 Vorstellungsseite: <https://polytabletop.chiuta.ro>. Kurzanleitung zur Installation: [docs/INSTALL.de.md](docs/INSTALL.de.md) ([English](docs/INSTALL.en.md) · [Română](docs/INSTALL.ro.md) · [Français](docs/INSTALL.fr.md) · [Italiano](docs/INSTALL.it.md) · [Español](docs/INSTALL.es.md) · [Português](docs/INSTALL.pt.md) · [Magyar](docs/INSTALL.hu.md)).
 
 ## Benutzung
 
-- Liste und Katalog: `polytabletop list` zeigt die 171 spielbaren Spiele mit kurzen Regeln; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` zeigt den Stand aller 251 Katalogeinträge.
+- Liste und Katalog: `polytabletop list` zeigt die 171 spielbaren Spiele mit kurzen Regeln; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` zeigt den Stand aller 1200 Katalogeinträge.
 - Spielen: `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. `--you one` (Standard) macht dich zu Spieler 1, `two` zu Spieler 2, `both` ist Hot-Seat an einer Tastatur, `none` lässt den Computer beide Seiten spielen. `--seed N` macht Kartenverteilung und Würfel reproduzierbar; `--record DATEI` speichert ein Protokoll.
 - Im Spiel: den Zug genau so eingeben, wie `?` ihn auflistet (zum Beispiel `e2e4`, `c3xe5`, `d6`), `?` = legale Züge, `hint` = Vorschlag der KI, `q` = beenden.
 - KI gegen KI: `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (siehe [docs/ARENA.md](docs/ARENA.md)).
@@ -33,7 +33,7 @@ cargo build --release
 
 ## Spiele
 
-171 Spiele sind jetzt spielbar, im Terminal und in der grafischen Oberfläche; der Katalog hat 251 Einträge (`polytabletop catalog` endet mit: implementiert 182, traditionelle Spiele geplant 50, eigene Varianten geplant 3, generisches Toolkit 16). Die 16 Toolkit-Einträge sind Rollenspielsysteme, bedient vom generischen Crate `polytabletop-rpg` (Würfel, Charakterbögen, Fertigkeitsproben, Dungeon-Generator, Schlachtsimulator, Journal), ohne die Regeln irgendeines Verlags. Kategorien und Anzahl der Spiele, aus `polytabletop-games/src/lib.rs`:
+171 Spiele sind jetzt spielbar, im Terminal und in der grafischen Oberfläche; der Katalog hat 1200 Einträge (`polytabletop catalog` endet mit: implementiert 172, traditionelle Spiele geplant 263, eigene Varianten geplant 477, generisches Toolkit 288). Die 288 Toolkit-Einträge sind die 100 Rollenspielsysteme, bedient vom generischen Crate `polytabletop-rpg` (Würfel, Charakterbögen, Fertigkeitsproben, Dungeon-Generator, Schlachtsimulator, Journal), dazu die 93 Miniaturen- und 95 Sammelkartentitel, die noch nicht im Programm sind, alle ohne die Regeln irgendeines Verlags. Jede der zwölf Katalogkategorien hat genau 100 verschiedene Einträge. Kategorien und Anzahl der Spiele, aus `polytabletop-games/src/lib.rs`:
 
 | Kategorie | Spiele | Beispiele (IDs) |
 |---|---|---|
@@ -51,7 +51,7 @@ cargo build --release
 | Wörter | 1 | `litere` |
 | **Gesamt** | **171** | |
 
-Drei Katalogeinträge bleiben als originale Varianten geplant (Twister, Campionii Distracției, Turistico). Die Kurzregeln jedes Spiels stehen in [docs/JOCURI.md](docs/JOCURI.md), der erzeugte Katalog in [docs/CATALOG.md](docs/CATALOG.md). In der grafischen Oberfläche haben 36 Spiele ein gezeichnetes Brett mit Zügen per Klick (Schach, Dame, Reversi, Vier gewinnt, Gomoku, Go, Mühle, Xiangqi, Shogi, Backgammon, Ludo und Pachisi, Hex, die Mancala-Familie und weitere); die übrigen Spiele erscheinen als Text, ihre legalen Züge als Schaltflächen.
+477 Katalogeinträge sind als originale Varianten mit eigenem Titel geplant (zum Beispiel Twister, Campionii Distracției, Turistico) und 263 als traditionelle Spiele mit öffentlichen Regeln. Die Kurzregeln jedes Spiels stehen in [docs/JOCURI.md](docs/JOCURI.md), der erzeugte Katalog in [docs/CATALOG.md](docs/CATALOG.md). In der grafischen Oberfläche haben 36 Spiele ein gezeichnetes Brett mit Zügen per Klick (Schach, Dame, Reversi, Vier gewinnt, Gomoku, Go, Mühle, Xiangqi, Shogi, Backgammon, Ludo und Pachisi, Hex, die Mancala-Familie und weitere); die übrigen Spiele erscheinen als Text, ihre legalen Züge als Schaltflächen.
 
 ## Sprachen
 

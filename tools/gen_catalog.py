@@ -8,10 +8,12 @@ import re, sys, pathlib
 root = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(root / "tools" / "data"))
 import data_world as d, data_rest as r, data_cont as cc
+import data_cat100 as c100  # generat de tools/data/build_cat100.py: 12 topuri x 100 pe categorii
 
 rows = [(n, c, o) for L in (d.LUME, d.EUROPA, r.ALTE) for n, c, o in L]
 rows += [(n, c, "") for n, c, _ in r.ROMANIA]
 rows += list(cc.NEW)  # jocuri tradiționale regionale (topuri pe continente), toate `plan`
+rows += list(c100.NEW)  # intrări noi din topurile pe categorii (câte 100 / categorie)
 
 def key(n):
     return re.sub(r"\(.*?\)", "", n).strip().lower()
@@ -29,6 +31,14 @@ IMPL = {'blood on the clocktower': 'ceasornic', 'talisman': 'coroana', 'root': '
         "moara": "morris", "țintar": "morris", "mancala": "mancala", "go": "go", "connect four": "connect4", "xiangqi": "xiangqi", "shogi": "shogi"}
 IMPL.update({'coloane': 'coloane', 'bile pe hexagoane': 'bile', 'patru atribute': 'patru', 'cupe încuibate': 'cupe', 'poliedre': 'poliedre'})
 TRAD |= {key(n) for n, _, _ in cc.NEW}
+TRAD |= set(c100.TRAD_NEW)
+# dubluri unificate (păstrăm o singură intrare canonică), mutări de categorie (ex. Yahtzee -> Zaruri) și nume afișate canonice
+for k in c100.DROP:
+    order.remove(k); del seen[k]
+for k, c in c100.OVERRIDE.items():
+    seen[k][1] = c
+for k, n in c100.RENAME.items():
+    seen[k][0] = n
 TOOLKIT = {"Rol (RPG)", "Miniaturi", "TCG"}
 KIND = {"impl": "Implemented", "trad": "Traditional", "brand": "Branded", "toolkit": "Toolkit"}
 

@@ -829,6 +829,346 @@
 "Venezuela",
 "Venezuela",
 "Venezuela"
+],
+"Danemarca": [
+"Denmark",
+"Danemarca",
+"Danemark",
+"Danimarca",
+"Dinamarca",
+"Dinamarca",
+"Dänemark",
+"Dánia"
+],
+"Egiptul antic": [
+"Ancient Egypt",
+"Egiptul antic",
+"Égypte antique",
+"Antico Egitto",
+"Antiguo Egipto",
+"Egito Antigo",
+"Altes Ägypten",
+"Ókori Egyiptom"
+],
+"Europa": [
+"Europe",
+"Europa",
+"Europe",
+"Europa",
+"Europa",
+"Europa",
+"Europa",
+"Európa"
+],
+"Noua Zeelandă (maori)": [
+"New Zealand (Maori)",
+"Noua Zeelandă (maori)",
+"Nouvelle-Zélande (maori)",
+"Nuova Zelanda (maori)",
+"Nueva Zelanda (maorí)",
+"Nova Zelândia (maori)",
+"Neuseeland (Māori)",
+"Új-Zéland (maori)"
+],
+"Original": [
+"Original",
+"Original",
+"Original",
+"Originale",
+"Original",
+"Original",
+"Original",
+"Eredeti"
+],
+"America de Sud": [
+"South America",
+"America de Sud",
+"Amérique du Sud",
+"Sud America",
+"Sudamérica",
+"América do Sul",
+"Südamerika",
+"Dél-Amerika"
+],
+"Belgia": [
+"Belgium",
+"Belgia",
+"Belgique",
+"Belgio",
+"Bélgica",
+"Bélgica",
+"Belgien",
+"Belgium"
+],
+"Birmania": [
+"Myanmar",
+"Birmania",
+"Birmanie",
+"Birmania",
+"Birmania",
+"Birmânia",
+"Myanmar",
+"Mianmar"
+],
+"Caucaz": [
+"Caucasus",
+"Caucaz",
+"Caucase",
+"Caucaso",
+"Cáucaso",
+"Cáucaso",
+"Kaukasus",
+"Kaukázus"
+],
+"Coreea de Sud": [
+"South Korea",
+"Coreea de Sud",
+"Corée du Sud",
+"Corea del Sud",
+"Corea del Sur",
+"Coreia do Sul",
+"Südkorea",
+"Dél-Korea"
+],
+"Cuba": [
+"Cuba",
+"Cuba",
+"Cuba",
+"Cuba",
+"Cuba",
+"Cuba",
+"Kuba",
+"Kuba"
+],
+"Elveția": [
+"Switzerland",
+"Elveția",
+"Suisse",
+"Svizzera",
+"Suiza",
+"Suíça",
+"Schweiz",
+"Svájc"
+],
+"Etiopia": [
+"Ethiopia",
+"Etiopia",
+"Éthiopie",
+"Etiopia",
+"Etiopía",
+"Etiópia",
+"Äthiopien",
+"Etiópia"
+],
+"Europa medievală": [
+"Medieval Europe",
+"Europa medievală",
+"Europe médiévale",
+"Europa medievale",
+"Europa medieval",
+"Europa medieval",
+"Mittelalterliches Europa",
+"Középkori Európa"
+],
+"Finlanda": [
+"Finland",
+"Finlanda",
+"Finlande",
+"Finlandia",
+"Finlandia",
+"Finlândia",
+"Finnland",
+"Finnország"
+],
+"Grecia": [
+"Greece",
+"Grecia",
+"Grèce",
+"Grecia",
+"Grecia",
+"Grécia",
+"Griechenland",
+"Görögország"
+],
+"Grecia antică": [
+"Ancient Greece",
+"Grecia antică",
+"Grèce antique",
+"Grecia antica",
+"Grecia antigua",
+"Grécia antiga",
+"Antikes Griechenland",
+"Ókori Görögország"
+],
+"Hong Kong": [
+"Hong Kong",
+"Hong Kong",
+"Hong Kong",
+"Hong Kong",
+"Hong Kong",
+"Hong Kong",
+"Hongkong",
+"Hongkong"
+],
+"Irlanda": [
+"Ireland",
+"Irlanda",
+"Irlande",
+"Irlanda",
+"Irlanda",
+"Irlanda",
+"Irland",
+"Írország"
+],
+"Kazahstan": [
+"Kazakhstan",
+"Kazahstan",
+"Kazakhstan",
+"Kazakistan",
+"Kazajistán",
+"Cazaquistão",
+"Kasachstan",
+"Kazahsztán"
+],
+"Kârgâzstan": [
+"Kyrgyzstan",
+"Kârgâzstan",
+"Kirghizistan",
+"Kirghizistan",
+"Kirguistán",
+"Quirguistão",
+"Kirgisistan",
+"Kirgizisztán"
+],
+"Laponia": [
+"Lapland",
+"Laponia",
+"Laponie",
+"Lapponia",
+"Laponia",
+"Lapónia",
+"Lappland",
+"Lappföld"
+],
+"Mesopotamia": [
+"Mesopotamia",
+"Mesopotamia",
+"Mésopotamie",
+"Mesopotamia",
+"Mesopotamia",
+"Mesopotâmia",
+"Mesopotamien",
+"Mezopotámia"
+],
+"Norvegia": [
+"Norway",
+"Norvegia",
+"Norvège",
+"Norvegia",
+"Noruega",
+"Noruega",
+"Norwegen",
+"Norvégia"
+],
+"Persia": [
+"Persia",
+"Persia",
+"Perse",
+"Persia",
+"Persia",
+"Pérsia",
+"Persien",
+"Perzsia"
+],
+"Portugalia": [
+"Portugal",
+"Portugalia",
+"Portugal",
+"Portogallo",
+"Portugal",
+"Portugal",
+"Portugal",
+"Portugália"
+],
+"Roma antică": [
+"Ancient Rome",
+"Roma antică",
+"Rome antique",
+"Roma antica",
+"Roma antigua",
+"Roma antiga",
+"Antikes Rom",
+"Ókori Róma"
+],
+"România": [
+"Romania",
+"România",
+"Roumanie",
+"Romania",
+"Rumanía",
+"Roménia",
+"Rumänien",
+"Románia"
+],
+"Scandinavia": [
+"Scandinavia",
+"Scandinavia",
+"Scandinavie",
+"Scandinavia",
+"Escandinavia",
+"Escandinávia",
+"Skandinavien",
+"Skandinávia"
+],
+"Slovacia": [
+"Slovakia",
+"Slovacia",
+"Slovaquie",
+"Slovacchia",
+"Eslovaquia",
+"Eslováquia",
+"Slowakei",
+"Szlovákia"
+],
+"Slovenia": [
+"Slovenia",
+"Slovenia",
+"Slovénie",
+"Slovenia",
+"Eslovenia",
+"Eslovénia",
+"Slowenien",
+"Szlovénia"
+],
+"Taiwan": [
+"Taiwan",
+"Taiwan",
+"Taïwan",
+"Taiwan",
+"Taiwán",
+"Taiwan",
+"Taiwan",
+"Tajvan"
+],
+"Uganda": [
+"Uganda",
+"Uganda",
+"Ouganda",
+"Uganda",
+"Uganda",
+"Uganda",
+"Uganda",
+"Uganda"
+],
+"Ungaria": [
+"Hungary",
+"Ungaria",
+"Hongrie",
+"Ungheria",
+"Hungría",
+"Hungria",
+"Ungarn",
+"Magyarország"
 ]
 },
 "notes": {

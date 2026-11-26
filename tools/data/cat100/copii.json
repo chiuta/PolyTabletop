@@ -1,0 +1,1655 @@
+{
+ "category": "Copii",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Șerpi și scări",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Candy Land",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Memory",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Guess Who? (Cine e?)",
+   "existing": true
+  },
+  {
+   "r": 5,
+   "name": "Piatră, hârtie, foarfece",
+   "existing": false,
+   "origin": "China",
+   "year": 1600,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Piatră, hârtie, foarfece",
+   "public_rules": true,
+   "notes_ro": "Joc de mână universal cu trei gesturi, folosit și la tras la sorți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rock_paper_scissors",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 6,
+   "name": "Ascunselea (Hide-and-seek)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Ascunselea",
+   "public_rules": true,
+   "notes_ro": "Un copil numără, ceilalți se ascund; cel găsit primul preia rolul.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hide-and-seek",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 7,
+   "name": "X și 0 (Tic-tac-toe)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "X și 0",
+   "public_rules": true,
+   "notes_ro": "Doi jucători pun X și 0 pe grila 3x3, câștigă cine aliniază trei.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tic-tac-toe",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 8,
+   "name": "Operation",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1965,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Doctorul Ciudat",
+   "public_rules": false,
+   "notes_ro": "Dexteritate: scoți piese din corpul pacientului fără a atinge marginile; mecanism electric și temă de marcă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Operation_(game)"
+   ]
+  },
+  {
+   "r": 9,
+   "name": "Hungry Hungry Hippos",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1978,
+   "ctx": [
+    "namerica",
+    "europe",
+    "oceania"
+   ],
+   "own_title_ro": "Hipopotamii flămânzi",
+   "public_rules": false,
+   "notes_ro": "Fiecare copil acționează un hipopotam și adună cât mai multe bile; joc de reflexe cu mecanism propriu.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hungry_Hungry_Hippos"
+   ]
+  },
+  {
+   "r": 10,
+   "name": "Sorry!",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1934,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Iartă-mă!",
+   "public_rules": true,
+   "notes_ro": "Cursă cu pioni în stil Ludo, cu pachet de cărți și mutări de trimis înapoi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sorry!_(game)"
+   ]
+  },
+  {
+   "r": 11,
+   "name": "Trouble",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1965,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Pe locuri!",
+   "public_rules": true,
+   "notes_ro": "Variantă de Ludo cu zarul închis într-o bulă care se apasă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trouble_(board_game)"
+   ]
+  },
+  {
+   "r": 12,
+   "name": "Mouse Trap",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1963,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Capcana pentru șoareci",
+   "public_rules": false,
+   "notes_ro": "Capcană construită în timpul partidei, pe principiul mecanismelor în lanț.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mouse_Trap_(game)"
+   ]
+  },
+  {
+   "r": 13,
+   "name": "KerPlunk",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1967,
+   "ctx": [
+    "europe",
+    "namerica",
+    "oceania"
+   ],
+   "own_title_ro": "Plouă cu bile",
+   "public_rules": false,
+   "notes_ro": "Scoți bețișoare dintr-un tub fără să cadă bilele de deasupra; dexteritate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/KerPlunk"
+   ]
+  },
+  {
+   "r": 14,
+   "name": "Hi Ho! Cherry-O",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1960,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Culesul cireșelor",
+   "public_rules": true,
+   "notes_ro": "Cursă de numărat: strângi cireșele de pe pomi cu ajutorul unui rotitor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hi_Ho!_Cherry-O"
+   ]
+  },
+  {
+   "r": 15,
+   "name": "Don't Break the Ice",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1968,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Nu sparge gheața",
+   "public_rules": false,
+   "notes_ro": "Lovești blocuri de gheață din plastic cu un ciocan, fără să cadă ursulețul.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Don%27t_Break_the_Ice"
+   ]
+  },
+  {
+   "r": 16,
+   "name": "Șotron (Hopscotch)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Șotron",
+   "public_rules": true,
+   "notes_ro": "Se sare pe pătrate desenate pe jos, în ordinea numerelor, fără a călca liniile.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hopscotch",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 17,
+   "name": "Baba-oarba (Blind man's buff)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Baba-oarba",
+   "public_rules": true,
+   "notes_ro": "Un copil cu ochii legați îi prinde pe ceilalți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Blind_man%27s_buff",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 18,
+   "name": "Scaunele muzicale",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Scaunele muzicale",
+   "public_rules": true,
+   "notes_ro": "Cât cântă muzica se merge în jurul scaunelor; la oprire cine rămâne fără loc iese.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Musical_chairs",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 19,
+   "name": "Simon zice (Simon says)",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Simon zice",
+   "public_rules": true,
+   "notes_ro": "Se execută doar comenzile precedate de formula „Simon zice”.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Simon_says",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 20,
+   "name": "Bile (Marbles)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Bile",
+   "public_rules": true,
+   "notes_ro": "Se lovesc bilele adversarilor dintr-un cerc sau pe o traiectorie; joc străvechi de stradă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marbles",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 21,
+   "name": "Sărit coarda (Jump rope)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Sărit coarda",
+   "public_rules": true,
+   "notes_ro": "Sărituri peste o coardă învârtită, solo sau în grup (inclusiv Double Dutch).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jump_rope",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 22,
+   "name": "De-a prinselea (Tag)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "De-a prinselea",
+   "public_rules": true,
+   "notes_ro": "Unul din copii îi urmărește pe ceilalți; cel atins devine următorul urmăritor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tag_(game)",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 23,
+   "name": "Duck Duck Goose",
+   "existing": false,
+   "origin": "SUA",
+   "year": null,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Rățușca și gâscă",
+   "public_rules": true,
+   "notes_ro": "Copiii stau în cerc, unul merge pe lângă ei și îi atinge pe rând; la „gâscă” începe o fugă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Duck,_duck,_goose",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 24,
+   "name": "Cinci pietricele (Jacks / Knucklebones)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Cinci pietricele",
+   "public_rules": true,
+   "notes_ro": "Pietricele aruncate și prinse pe dosul palmei sau ridicate între aruncări.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jacks_(game)",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 25,
+   "name": "Mikado (Pick-up sticks)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Mikado",
+   "public_rules": true,
+   "notes_ro": "Se scot bețișoare dintr-o grămadă fără a mișca pe celelalte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pick-up_sticks",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 26,
+   "name": "Spânzurătoarea (Hangman)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Spânzurătoarea",
+   "public_rules": true,
+   "notes_ro": "Se ghicește un cuvânt literă cu literă, cu număr limitat de greșeli.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hangman_(game)",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 27,
+   "name": "Loopin' Louie",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1992,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Avionul năzdrăvan",
+   "public_rules": false,
+   "notes_ro": "Un avion rotitor trebuie ferit cu pârghii; joc de reflexe, Kinderspiel des Jahres 1994.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Obstgarten (Orchard)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1986,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Livada",
+   "public_rules": true,
+   "notes_ro": "Joc cooperativ: culegeți fructele înainte ca corbul să ajungă la capătul traseului.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 29,
+   "name": "Zicke Zacke Hühnerkacke (Chicken Cha Cha Cha)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1997,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Cocoșul dansator",
+   "public_rules": false,
+   "notes_ro": "Memorie și cursă pe cifre; Kinderspiel des Jahres 1998.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 30,
+   "name": "Cine e? (Guess Who?)",
+   "existing": true
+  },
+  {
+   "r": 31,
+   "name": "Halli Galli",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1990,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Clopoțelul",
+   "public_rules": true,
+   "notes_ro": "Cărți cu fructe; cine vede cinci fructe identice apasă primul clopoțelul.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Halli_Galli"
+   ]
+  },
+  {
+   "r": 32,
+   "name": "Sleeping Queens",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2005,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Reginele adormite",
+   "public_rules": true,
+   "notes_ro": "Joc de cărți ușor în care trezești regine cu ajutorul regilor și al calculelor simple.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sleeping_Queens"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Ice Cool",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Pinguinii pe gheață",
+   "public_rules": false,
+   "notes_ro": "Pinguini aruncați prin școală cu bobârnace; Kinderspiel des Jahres 2017.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "Rhino Hero",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Rinocerul eroic",
+   "public_rules": true,
+   "notes_ro": "Se construiește un bloc din cărți de joc, iar rinocerul urcă tot mai sus.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rhino_Hero",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Animal Upon Animal (Tier auf Tier)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2005,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Animale în echilibru",
+   "public_rules": true,
+   "notes_ro": "Se așază animale de lemn pe broasca țestoasă fără să cadă turnul.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Animal_Upon_Animal",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "Gulo Gulo",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2003,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Pofticiosul de ouă",
+   "public_rules": true,
+   "notes_ro": "Cu un șobolan de plastic furi ouă din cuib fără să se audă clopoțelul.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 37,
+   "name": "Outfoxed!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Prinde vulpea",
+   "public_rules": false,
+   "notes_ro": "Cooperativ de deducție: găsiți vulpea hoață după indicii.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 38,
+   "name": "Zingo",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Zingo",
+   "public_rules": false,
+   "notes_ro": "Bingo cu imagini și un distribuitor de plăcuțe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zingo"
+   ]
+  },
+  {
+   "r": 39,
+   "name": "Simon",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1978,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Simon",
+   "public_rules": false,
+   "notes_ro": "Joc electronic de memorie cu secvențe de lumini și sunete.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Simon_(game)"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "Buckaroo!",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1970,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Măgărușul cu bagaje",
+   "public_rules": false,
+   "notes_ro": "Încarci obiecte pe un măgar din plastic până când acesta dă din picioare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Buckaroo!"
+   ]
+  },
+  {
+   "r": 41,
+   "name": "Pop-Up Pirate",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 1975,
+   "ctx": [
+    "asia",
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Pirat în butoi",
+   "public_rules": false,
+   "notes_ro": "Înfigi săbii într-un butoi; la locul greșit piratul sare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pop-up_pirate"
+   ]
+  },
+  {
+   "r": 42,
+   "name": "Perfection",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1973,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Perfecțiune",
+   "public_rules": false,
+   "notes_ro": "Montezi forme în matriță înainte să expire cronometrul.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Perfection_(game)"
+   ]
+  },
+  {
+   "r": 43,
+   "name": "Lotti Karotti",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2004,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Iepurașul ghiduș",
+   "public_rules": false,
+   "notes_ro": "Cursă cu iepuri pe o pistă cu un morcov rotitor care ascunde găuri.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 44,
+   "name": "Jungle Speed",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1997,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Viteza junglei",
+   "public_rules": false,
+   "notes_ro": "Cărți cu simboluri; la potrivire se prinde primul totemul.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jungle_Speed"
+   ]
+  },
+  {
+   "r": 45,
+   "name": "Bamboleo",
+   "existing": false,
+   "origin": "Spania",
+   "year": 1995,
+   "ctx": [
+    "europe",
+    "samerica"
+   ],
+   "own_title_ro": "Echilibru",
+   "public_rules": false,
+   "notes_ro": "Se pun piese pe un disc în echilibru fără să cadă.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 46,
+   "name": "Cooties",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1949,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Omida colorată",
+   "public_rules": true,
+   "notes_ro": "Se asamblează o omidă din piese, în ordinea indicată de zar.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooties_(game)"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Don't Wake Daddy",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1992,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Nu-l trezi pe tati",
+   "public_rules": false,
+   "notes_ro": "Cobori pe furiș spre frigider fără să trezești tatăl adormit.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "Catan Junior",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Insula piraților",
+   "public_rules": false,
+   "notes_ro": "Variantă simplificată de Catan cu pirați.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame",
+    "https://en.wikipedia.org/wiki/Catan"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "My First Carcassonne",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2009,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Primul meu Carcassonne",
+   "public_rules": false,
+   "notes_ro": "Variantă simplă a lui Carcassonne pentru cei mici.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 50,
+   "name": "Dragomino",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2020,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Dragomino",
+   "public_rules": false,
+   "notes_ro": "Dominouri cu teren și dragoni, derivat din Kingdomino; Kinderspiel des Jahres 2021.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 51,
+   "name": "Zombie Kidz Evolution",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Copiii contra zombilor",
+   "public_rules": false,
+   "notes_ro": "Cooperativ cu cărți și zaruri în care copiii salvează școala de zombi.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 52,
+   "name": "The Magic Labyrinth",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2009,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Labirintul magic",
+   "public_rules": false,
+   "notes_ro": "Memorie cu pereți invizibili magnetici; Kinderspiel des Jahres 2009.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "The Enchanted Tower",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Turnul vrăjit",
+   "public_rules": false,
+   "notes_ro": "Cooperativ: copiii caută obiecte magice în turn; Kinderspiel des Jahres 2013.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Spooky Stairs",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2004,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Scările bântuite",
+   "public_rules": false,
+   "notes_ro": "Cursă pe scări cu pioni-fantomă; Kinderspiel des Jahres 2004.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "Das kleine Gespenst",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2005,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Fantomița",
+   "public_rules": false,
+   "notes_ro": "Joc după romanul lui Preußler; Kinderspiel des Jahres 2005.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Viva Topo!",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2003,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Hai, șoricelule!",
+   "public_rules": false,
+   "notes_ro": "Șoricei fug de pisică printr-un labirint; Kinderspiel des Jahres 2003.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Geister, Geister, Schatzsuchmeister",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2014,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Fantomele și comoara",
+   "public_rules": false,
+   "notes_ro": "Joc de memorie cu fantome ce păzesc comori; Kinderspiel des Jahres 2014.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "Da ist der Wurm drin (Worm Up)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2011,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Viermele din măr",
+   "public_rules": false,
+   "notes_ro": "Cursă cu un vierme care iese din mere; Kinderspiel des Jahres 2011.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Schnappt Hubi!",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2011,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Prindeți-l pe Hubi",
+   "public_rules": false,
+   "notes_ro": "Cooperativ: fantoma Hubi trebuie prinsă înainte de zori; Kinderspiel des Jahres 2012.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Spinderella",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2015,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Păianjenul Spinderella",
+   "public_rules": false,
+   "notes_ro": "Păianjen magnetic în joc de dexteritate; Kinderspiel des Jahres 2015.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "My First Stone Age",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Prima mea epocă a pietrei",
+   "public_rules": false,
+   "notes_ro": "Versiune pentru copii a lui Stone Age; Kinderspiel des Jahres 2016.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Speedy Roll",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2020,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Zaruri rapide",
+   "public_rules": false,
+   "notes_ro": "Joc de zaruri și cursă; Kinderspiel des Jahres 2020.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Funkelschatz",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2018,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Comoara scânteietoare",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2018.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "Tal der Wikinger (Valley of the Vikings)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2019,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Valea vikingilor",
+   "public_rules": false,
+   "notes_ro": "Cooperativ cu corabie vikingă; Kinderspiel des Jahres 2019.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Zauberberg (Magic Mountain)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2022,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Muntele vrăjit",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2022.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "Mysterium Kids",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2023,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Misterul comorii",
+   "public_rules": false,
+   "notes_ro": "Cooperativ de deducție după Mysterium; Kinderspiel des Jahres 2023.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Die magischen Schlüssel (Magic Keys)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2022,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Cheile magice",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2024.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Top the Cake",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2025,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Tortul perfect",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2025.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "Die Insel der Mookies",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2026,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Insula Mookies",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2026 (listat pe Wikipedia).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Noah's Park",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1996,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Parcul lui Noe",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 1996, joc cu animale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Galloping Pigs",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1992,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Porci în galop",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 1992, cursă cu porci.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "Karambolage",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1995,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Karambolaj",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 1995.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Klondike",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2001,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Căutătorii de aur",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2001.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "Maskenball der Käfer",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2002,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Balul gândacilor",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2002.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Der schwarze Pirat",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2006,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Piratul negru",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2006.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Beppo der Bock",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2007,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Țapul Beppo",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2007.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "Wer war's? (Whoowasit?)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2007,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Cine a fost?",
+   "public_rules": false,
+   "notes_ro": "Deducție vizuală; Kinderspiel des Jahres 2008.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres",
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Diego Drachenzahn",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2010,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Dragonul Diego",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2010.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Gute Freunde",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1989,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Prieteni buni",
+   "public_rules": false,
+   "notes_ro": "Primul Kinderspiel des Jahres (1989).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "Corsaro",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1991,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Corsarul",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 1991, joc cu pirați.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Leinen Los!",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1997,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Larg cu pânzele!",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 1997.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Kayanak",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1999,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Kayanak",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 1999.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "Arbos",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2000,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Arbos",
+   "public_rules": false,
+   "notes_ro": "Kinderspiel des Jahres 2000.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "Château Roquefort",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2007,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Castelul de brânză",
+   "public_rules": false,
+   "notes_ro": "Joc de memorie cu șoareci și brânză.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "Coconuts (Coco Crazy)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Nuci de cocos",
+   "public_rules": false,
+   "notes_ro": "Aruncat nuci de cocos spre maimuțe, dexteritate.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "Monza",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2000,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Monza",
+   "public_rules": false,
+   "notes_ro": "Joc de curse de mașini pentru copii.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "Ribbit (Schildkrötenrennen)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2004,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Broaștele în cursă",
+   "public_rules": false,
+   "notes_ro": "Cursă de broaște pentru copii.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame",
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 88,
+   "name": "Leo muss zum Friseur",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2016,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Leo la frizer",
+   "public_rules": false,
+   "notes_ro": "Joc de coafuri ale leilor pentru copii.",
+   "sources": [
+    "https://boardgamegeek.com/childrensgames/browse/boardgame",
+    "https://en.wikipedia.org/wiki/Kinderspiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 89,
+   "name": "Capra (Leapfrog)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Capra",
+   "public_rules": true,
+   "notes_ro": "Un copil se ghemuiește, ceilalți sar peste el sprijinindu-se cu mâinile.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Leapfrog",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 90,
+   "name": "Elasticul (Chinese jump rope)",
+   "existing": false,
+   "origin": "China",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Elasticul",
+   "public_rules": true,
+   "notes_ro": "Sărituri și figuri peste un elastic întins între gleznele a doi copii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chinese_jump_rope",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 91,
+   "name": "Statuile (Statues)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Statuile",
+   "public_rules": true,
+   "notes_ro": "La oprirea muzicii toți rămân nemișcați; cine se mișcă iese.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 92,
+   "name": "Capture the Flag",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Fura steagul",
+   "public_rules": true,
+   "notes_ro": "Două echipe încearcă să captureze steagul adversarilor fără a fi atinse.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Capture_the_flag",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 93,
+   "name": "Kick the Can",
+   "existing": false,
+   "origin": "SUA",
+   "year": null,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Lovește cutia",
+   "public_rules": true,
+   "notes_ro": "Ascunselea combinată cu lovitul unei cutii care eliberează prizonierii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kick_the_can",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 94,
+   "name": "I Spy (Ghicește ce văd)",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": null,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Ghicește ce văd",
+   "public_rules": true,
+   "notes_ro": "Un jucător alege un obiect și dă prima literă; ceilalți ghicesc.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/I_spy",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 95,
+   "name": "Telefonul fără fir (Chinese whispers)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Telefonul fără fir",
+   "public_rules": true,
+   "notes_ro": "Un mesaj șoptit din om în om se deformează pe drum.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chinese_whispers",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 96,
+   "name": "Jocul lui Kim (Kim's Game)",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": null,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Jocul lui Kim",
+   "public_rules": true,
+   "notes_ro": "Se memorează obiecte de pe o tavă, apoi unul este scos; ce lipsește?",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kim%27s_Game",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 97,
+   "name": "Oina",
+   "existing": false,
+   "origin": "România",
+   "year": 1300,
+   "ctx": [
+    "romania"
+   ],
+   "own_title_ro": "Oina",
+   "public_rules": true,
+   "notes_ro": "Sport-joc tradițional românesc cu minge și bâtă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Oina"
+   ]
+  },
+  {
+   "r": 98,
+   "name": "Conkers",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": null,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Conkers",
+   "public_rules": true,
+   "notes_ro": "Copiii lovesc pe rând castane agățate de sfoară până se sparge una.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Conkers",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 99,
+   "name": "Jocuri cu ață (Cat's cradle)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Jocuri cu ață",
+   "public_rules": true,
+   "notes_ro": "Figuri de ață trecute între mâinile a doi copii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cat%27s_cradle",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  },
+  {
+   "r": 100,
+   "name": "Mingea (Dodgeball)",
+   "existing": false,
+   "origin": "Global",
+   "year": null,
+   "ctx": [
+    "namerica",
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Mingea la ținte",
+   "public_rules": true,
+   "notes_ro": "Echipele aruncă mingi pentru a-i elimina pe adversari.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dodgeball",
+    "https://en.wikipedia.org/wiki/List_of_children%27s_games"
+   ]
+  }
+ ]
+}

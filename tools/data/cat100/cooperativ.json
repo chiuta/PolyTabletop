@@ -1,0 +1,1646 @@
+{
+ "category": "Cooperativ",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Pandemic",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Gloomhaven",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Spirit Island",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Hanabi",
+   "existing": true
+  },
+  {
+   "r": 5,
+   "name": "The Crew: The Quest for Planet Nine",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Echipajul: expediția spre planeta a noua",
+   "public_rules": true,
+   "notes_ro": "Joc de levate cooperativ cu misiuni progresive, comunicare limitată.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 6,
+   "name": "Just One",
+   "existing": true
+  },
+  {
+   "r": 7,
+   "name": "Mysterium",
+   "existing": true
+  },
+  {
+   "r": 8,
+   "name": "Zombicide",
+   "existing": true
+  },
+  {
+   "r": 9,
+   "name": "Forbidden Island",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Insula interzisă",
+   "public_rules": true,
+   "notes_ro": "Echipă care recuperează comori înainte ca insula să se scufunde.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 10,
+   "name": "Arkham Horror: The Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Cărțile Conacului Negru",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți cooperativ cu campanii narative, bazat pe universul Lovecraft.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 11,
+   "name": "Forbidden Desert",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Deșertul interzis",
+   "public_rules": true,
+   "notes_ro": "Supraviețuire cooperativă pentru recuperarea unei mașini zburătoare într-o furtună de nisip.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 12,
+   "name": "The Mind",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Mintea",
+   "public_rules": true,
+   "notes_ro": "Jucătorii joacă cărți în ordine crescătoare fără să comunice.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 13,
+   "name": "Pandemic Legacy: Season 1",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Focare: moștenirea",
+   "public_rules": false,
+   "notes_ro": "Campanie legacy cooperativă; depinde de componente și povestire modificabile.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 14,
+   "name": "Eldritch Horror",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Ororile străvechi",
+   "public_rules": false,
+   "notes_ro": "Joc cooperativ global de investigație lovecraftiană.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games",
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 15,
+   "name": "Sky Team",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2023,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Echipa din cabină",
+   "public_rules": true,
+   "notes_ro": "Doi piloți cooperează la aterizarea unui avion cu zaruri și comunicare limitată.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 16,
+   "name": "Marvel Champions: The Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Campionii orașului",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți cooperativ cu eroi Marvel (licență).",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 17,
+   "name": "Gloomhaven: Jaws of the Lion",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2020,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Colții cavernei",
+   "public_rules": false,
+   "notes_ro": "Versiune de intrare în universul Gloomhaven cu campanie.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 18,
+   "name": "Mansions of Madness (ediția a 2-a)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Conacele nebuniei",
+   "public_rules": false,
+   "notes_ro": "Investigație cooperativă cu aplicație ghid, univers Lovecraft.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games",
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 19,
+   "name": "Mice and Mystics",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Șoareci și mistere",
+   "public_rules": false,
+   "notes_ro": "Aventură cooperativă narativă cu șoareci eroi în castel.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 20,
+   "name": "Horrified",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Monștrii clasici",
+   "public_rules": false,
+   "notes_ro": "Cooperare împotriva monștrilor clasici Universal.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 21,
+   "name": "Aeon's End",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Sfârșitul eonilor",
+   "public_rules": true,
+   "notes_ro": "Deckbuilding cooperativ cu pachete de cumpărare și fără amestecare.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games",
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 22,
+   "name": "Magic Maze",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2017,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Labirintul magic",
+   "public_rules": true,
+   "notes_ro": "Cooperare în timp real, fără vorbit, într-un centru comercial.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 23,
+   "name": "Sentinels of the Multiverse",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Santinelele",
+   "public_rules": false,
+   "notes_ro": "Supereroi cooperativi contra unui răufăcător, cu pachete de cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game",
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 24,
+   "name": "Robinson Crusoe: Adventures on the Cursed Island",
+   "existing": false,
+   "origin": "Polonia",
+   "year": 2012,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Naufragiații",
+   "public_rules": false,
+   "notes_ro": "Supraviețuire cooperativă pe o insulă cu scenarii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Robinson_Crusoe:_Adventures_on_the_Cursed_Island",
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 25,
+   "name": "Exit: The Game",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Evadarea",
+   "public_rules": false,
+   "notes_ro": "Serie de camere de evadare de unică folosință pe masă.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 26,
+   "name": "Unlock!",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2017,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Descuiat!",
+   "public_rules": false,
+   "notes_ro": "Escape room cu cărți și aplicație.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 27,
+   "name": "Flash Point: Fire Rescue",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Pompierii",
+   "public_rules": true,
+   "notes_ro": "Pompieri cooperativi salvează victime dintr-o clădire în flăcări.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flash_Point:_Fire_Rescue",
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Castle Panic",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Panică în castel",
+   "public_rules": true,
+   "notes_ro": "Apărarea cooperativă a unui castel de monștri.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games",
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 29,
+   "name": "The Lord of the Rings: The Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Cărțile Pământului de Mijloc",
+   "public_rules": false,
+   "notes_ro": "Joc LCG cooperativ cu scenarii în Pământul de Mijloc.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 30,
+   "name": "Frosthaven",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2022,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Ținutul înghețat",
+   "public_rules": false,
+   "notes_ro": "Succesorul Gloomhaven cu campanie vastă și avanposturi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 31,
+   "name": "Sherlock Holmes Consulting Detective",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1982,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Detectivul consultant",
+   "public_rules": false,
+   "notes_ro": "Jocul-pionier de anchetă cooperativă cu carte de cazuri.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games",
+    "https://en.wikipedia.org/wiki/Sherlock_Holmes:_Consulting_Detective_(gamebook)"
+   ]
+  },
+  {
+   "r": 32,
+   "name": "Space Alert",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2008,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Alertă spațială",
+   "public_rules": true,
+   "notes_ro": "Echipaj cooperativ pe o navă, cu o coloană sonoră de 10 minute.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Space_Alert",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Burgle Bros.",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Hoții din seif",
+   "public_rules": true,
+   "notes_ro": "Jaf cooperativ într-un seif cu etaje.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Burgle_Bros",
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "The Grizzled",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2015,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Soldații din tranșee",
+   "public_rules": false,
+   "notes_ro": "Cooperare tematică în Primul Război Mondial cu comunicare limitată.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Chronicles of Crime",
+   "existing": false,
+   "origin": "Polonia",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Cronici criminale",
+   "public_rules": false,
+   "notes_ro": "Anchetă cooperativă cu cărți și aplicație (realitate augmentată).",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "Ghost Stories",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2008,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Povești cu stafii",
+   "public_rules": false,
+   "notes_ro": "Preoți taoiști apără un sat de stafii.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 37,
+   "name": "One Deck Dungeon",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Temnița dintr-un pachet",
+   "public_rules": true,
+   "notes_ro": "Explorare cooperativă de temniță cu zaruri.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 38,
+   "name": "Defenders of the Wild",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Apărătorii sălbăticiei",
+   "public_rules": false,
+   "notes_ro": "Cooperare ecologică cu animale protectoare.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 39,
+   "name": "Too Many Bones",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2017,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Prea multe oase",
+   "public_rules": false,
+   "notes_ro": "Aventură cooperativă cu zaruri, campanie și dezvoltare de personaje.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games",
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "Legendary: A Marvel Deck Building Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Legendar: deckbuilding eroic",
+   "public_rules": false,
+   "notes_ro": "Deckbuilding cooperativ contra unui răufăcător.",
+   "sources": [
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 41,
+   "name": "Harry Potter: Hogwarts Battle",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Bătălia școlii de magie",
+   "public_rules": false,
+   "notes_ro": "Deckbuilding cooperativ cu licență Harry Potter.",
+   "sources": [
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 42,
+   "name": "Dead of Winter: A Cross Roads Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Mort în iarnă",
+   "public_rules": false,
+   "notes_ro": "Supraviețuire în apocalipsa zombi, cu posibil trădător.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dead_of_Winter:_A_Cross_Roads_Game",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 43,
+   "name": "Sleeping Gods",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2021,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Zeii adormiți",
+   "public_rules": false,
+   "notes_ro": "Campanie narativă cooperativă pe mări necunoscute.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 44,
+   "name": "Forgotten Waters",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2020,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Ape uitate",
+   "public_rules": false,
+   "notes_ro": "Aventură de pirați cooperativă cu aplicație narativă.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 45,
+   "name": "Mechs vs. Minions",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Roboții contra servitorilor",
+   "public_rules": false,
+   "notes_ro": "Campanie cooperativă cu programare simultană, bazată pe League of Legends.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mechs_vs._Minions",
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 46,
+   "name": "The 7th Continent",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2017,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Al șaptelea continent",
+   "public_rules": false,
+   "notes_ro": "Explorare cooperativă bazată pe cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_7th_Continent",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Freedom: The Underground Railroad",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Calea ferată subterană",
+   "public_rules": false,
+   "notes_ro": "Cooperare tematică despre eliberarea sclavilor în SUA.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Freedom:_The_Underground_Railroad",
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "Return to Dark Tower",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2022,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Întoarcere la Turnul întunecat",
+   "public_rules": false,
+   "notes_ro": "Cooperare cu turn electronic și campanii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Return_to_Dark_Tower",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "Arkham Horror (ediția a 3-a)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Orașul Arkham",
+   "public_rules": false,
+   "notes_ro": "Investigație cooperativă lovecraftiană cu scenarii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arkham_Horror",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 50,
+   "name": "Shadows over Camelot",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2005,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Umbre peste Camelot",
+   "public_rules": true,
+   "notes_ro": "Cavaleri cooperativi cu posibil trădător în Camelot.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shadows_over_Camelot",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 51,
+   "name": "Lord of the Rings (Knizia)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2000,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Frăția inelului",
+   "public_rules": true,
+   "notes_ro": "Joc cooperativ clasic al lui Reiner Knizia cu hobbiți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lord_of_the_Rings_(board_game)",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 52,
+   "name": "Daybreak",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2023,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Zorii planetei",
+   "public_rules": false,
+   "notes_ro": "Cooperare climatică a unor puteri mondiale.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "Paleo",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2020,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Epoca de piatră",
+   "public_rules": false,
+   "notes_ro": "Cooperare în epoca de piatră pentru supraviețuirea tribului.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Atlantis Rising",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Atlantida în prăbușire",
+   "public_rules": false,
+   "notes_ro": "Constructori cooperativi salvează o insulă scufundată.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "The Captain Is Dead",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Căpitanul a murit",
+   "public_rules": false,
+   "notes_ro": "Echipaj cooperativ pe navă contra invadatorilor, cu roluri.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Stuffed Fables",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Poveștile jucăriilor",
+   "public_rules": false,
+   "notes_ro": "Aventură cooperativă pentru familii cu jucării de pluș.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Vagrantsong",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2022,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Cântec de vagabond",
+   "public_rules": false,
+   "notes_ro": "Aventură cooperativă gotică cu miniaturi.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "Champions of Hara",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2022,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Campionii din Hara",
+   "public_rules": false,
+   "notes_ro": "Aventură cooperativă fantasy cu zaruri.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Roll Player Adventures",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2021,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Aventurile jucătorilor de zaruri",
+   "public_rules": false,
+   "notes_ro": "Campanie cooperativă derivată din Roll Player.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Resident Evil 2: The Board Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Orașul bântuit",
+   "public_rules": false,
+   "notes_ro": "Cooperare în universul jocului video Resident Evil.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Black Orchestra",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Orchestra neagră",
+   "public_rules": false,
+   "notes_ro": "Complot cooperativ de asasinare a unui dictator istoric.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Endangered",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Specii pe cale de dispariție",
+   "public_rules": false,
+   "notes_ro": "Cooperare pentru protejarea faunei sălbatice.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "XCOM: The Board Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Apărarea Pământului",
+   "public_rules": false,
+   "notes_ro": "Cooperare în timp real cu aplicație, bazată pe jocul XCOM.",
+   "sources": [
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "The Dresden Files Cooperative Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Cărțile vrăjitorului",
+   "public_rules": false,
+   "notes_ro": "Cooperare în universul Dresden Files.",
+   "sources": [
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Star Trek: Panic",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Panică pe navă",
+   "public_rules": false,
+   "notes_ro": "Cooperare cu licență Star Trek.",
+   "sources": [
+    "https://boardgamequest.com/top-10-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "5-Minute Dungeon",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2017,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Temnița de cinci minute",
+   "public_rules": true,
+   "notes_ro": "Cooperare în timp real cu cărți și zaruri.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Pandemic: The Cure",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Focare: Leacul",
+   "public_rules": true,
+   "notes_ro": "Versiune cu zaruri a Pandemic, cooperativă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pandemic_(board_game)"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Pandemic Legacy: Season 2",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2017,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Focare: moștenirea a doua",
+   "public_rules": false,
+   "notes_ro": "Continuarea campaniei legacy.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pandemic_(board_game)"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "Forbidden Sky",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Cerul interzis",
+   "public_rules": true,
+   "notes_ro": "Cooperare pentru construirea unui circuit electric.",
+   "sources": [
+    "https://coopboardgames.com/rankings/top-40-cooperative-board-games"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Legends of Andor",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Legendele din Andor",
+   "public_rules": false,
+   "notes_ro": "Aventură cooperativă fantasy cu scenarii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Castle Ravenloft Board Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Castelul Corbilor",
+   "public_rules": false,
+   "notes_ro": "Cooperare în stil D&D pe plăci.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "Betrayal at House on the Hill",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2004,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Trădare la casa de pe deal",
+   "public_rules": false,
+   "notes_ro": "Explorare a unei case bântuite, cu trădător.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Betrayal_at_House_on_the_Hill",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Battlestar Galactica: The Board Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2008,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Flota în pericol",
+   "public_rules": false,
+   "notes_ro": "Cooperare cu trădători, bazată pe serialul TV.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battlestar_Galactica:_The_Board_Game",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "Nemesis",
+   "existing": false,
+   "origin": "Polonia",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Nemesis: coșmar în spațiu",
+   "public_rules": false,
+   "notes_ro": "Supraviețuire cooperativă/semi pe navă cu extratereștri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Final Girl",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2021,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Ultima supraviețuitoare",
+   "public_rules": false,
+   "notes_ro": "Jucător solo sau cooperativ într-un film de groază slasher.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Cthulhu: Death May Die",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Cthulhu: moartea nu moare",
+   "public_rules": false,
+   "notes_ro": "Cooperare cu miniaturi în universul lovecraftian.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "Elder Sign",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Semnul vechi",
+   "public_rules": false,
+   "notes_ro": "Joc cu zaruri cooperativ într-un muzeu bântuit.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Massive Darkness 2",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2020,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Întuneric profund",
+   "public_rules": false,
+   "notes_ro": "Dungeon crawler cooperativ cu miniaturi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Sub Terra",
+   "existing": false,
+   "origin": "Polonia",
+   "year": 2017,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Sub pământ",
+   "public_rules": false,
+   "notes_ro": "Cooperare în peșteri subterane.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "Escape: The Curse of the Temple",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Blestemul templului",
+   "public_rules": true,
+   "notes_ro": "Cooperare în timp real cu zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Letter Jam",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Litere în joc",
+   "public_rules": true,
+   "notes_ro": "Cooperare cu litere pentru formarea cuvintelor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Concept",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2013,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Concept",
+   "public_rules": true,
+   "notes_ro": "Cooperare prin ghicit de cuvinte cu pictograme.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "The Game",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2015,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Jocul",
+   "public_rules": true,
+   "notes_ro": "Cooperare cu cărți pentru șiruri ascendente/descendente.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "Deckscape",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2017,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Deckscape",
+   "public_rules": false,
+   "notes_ro": "Escape room cu cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "Detective: A Modern Crime Board Game",
+   "existing": false,
+   "origin": "Polonia",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Detectiv modern",
+   "public_rules": false,
+   "notes_ro": "Anchetă cooperativă cu baze de date.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "Bandido",
+   "existing": false,
+   "origin": "Elveția",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Bandido",
+   "public_rules": true,
+   "notes_ro": "Cooperare cu cărți pentru blocarea evadării.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "HeroQuest",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1989,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Căutarea eroilor",
+   "public_rules": false,
+   "notes_ro": "Dungeon crawl clasic cu jucători cooperativi contra Zargon.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/HeroQuest",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 88,
+   "name": "Pathfinder Adventure Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Aventurile Pathfinder",
+   "public_rules": false,
+   "notes_ro": "Cooperare cu cărți și campanii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 89,
+   "name": "This War of Mine: The Board Game",
+   "existing": false,
+   "origin": "Polonia",
+   "year": 2017,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Războiul meu",
+   "public_rules": false,
+   "notes_ro": "Supraviețuire cooperativă în război, bazată pe jocul video.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 90,
+   "name": "TIME Stories",
+   "existing": false,
+   "origin": "Belgia",
+   "year": 2015,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Povești în timp",
+   "public_rules": false,
+   "notes_ro": "Aventură cooperativă narativă cu cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 91,
+   "name": "Escape Room: The Game",
+   "existing": false,
+   "origin": "Olanda",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Camera de evadare",
+   "public_rules": false,
+   "notes_ro": "Cooperare cu DVD/aplicație.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 92,
+   "name": "Hoot Owl Hoot!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Bufnița zorilor",
+   "public_rules": true,
+   "notes_ro": "Cooperare simplă pentru copii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 93,
+   "name": "Outfoxed!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Hoțul vulpe",
+   "public_rules": true,
+   "notes_ro": "Cooperare pentru copii, găsirea hoțului.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 94,
+   "name": "Race to the Treasure!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Cursa spre comoară",
+   "public_rules": true,
+   "notes_ro": "Cooperare pentru copii, construirea unui drum.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 95,
+   "name": "Zombie Kidz Evolution",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Copiii și zombii",
+   "public_rules": true,
+   "notes_ro": "Cooperare pentru copii cu laborator.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 96,
+   "name": "Warhammer Quest",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1995,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Căutarea din Warhammer",
+   "public_rules": false,
+   "notes_ro": "Dungeon crawl cooperativ în universul Warhammer.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warhammer_Quest",
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 97,
+   "name": "Tainted Grail: The Fall of Avalon",
+   "existing": false,
+   "origin": "Polonia",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Prăbușirea Avalonului",
+   "public_rules": false,
+   "notes_ro": "Campanie cooperativă narativă cu cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 98,
+   "name": "Aliens: Another Glorious Day in the Corps",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2020,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Încă o zi glorioasă",
+   "public_rules": false,
+   "notes_ro": "Cooperare cu licență Aliens.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 99,
+   "name": "The Lord of the Rings: Journeys in Middle-earth",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Călătorii în Pământul de Mijloc",
+   "public_rules": false,
+   "notes_ro": "Aventură cooperativă cu aplicație, miniaturi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  },
+  {
+   "r": 100,
+   "name": "Hellboy: The Board Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Hellboy: jocul",
+   "public_rules": false,
+   "notes_ro": "Cooperare cu miniaturi în universul Hellboy.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cooperative_board_game"
+   ]
+  }
+ ]
+}

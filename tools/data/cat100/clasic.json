@@ -1,0 +1,1343 @@
+{
+ "category": "Clasic",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Table (Backgammon)",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Mahjong",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Domino",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Battleship (Bătălia navală)",
+   "existing": true
+  },
+  {
+   "r": 5,
+   "name": "Bingo",
+   "existing": true
+  },
+  {
+   "r": 6,
+   "existing": false,
+   "name": "Tic-tac-toe",
+   "origin": "Antichitate / global",
+   "year": -1300,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "X și 0",
+   "public_rules": true,
+   "notes_ro": "Joc cu grilă 3x3, cel mai răspândit joc cu creionul și hârtia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tic-tac-toe"
+   ]
+  },
+  {
+   "r": 7,
+   "existing": false,
+   "name": "Roulette",
+   "origin": "Franța",
+   "year": 1796,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Ruletă",
+   "public_rules": true,
+   "notes_ro": "Joc de cazinou cu roată și bilă; reguli publice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Roulette"
+   ]
+  },
+  {
+   "r": 8,
+   "name": "Carrom",
+   "existing": true
+  },
+  {
+   "r": 9,
+   "existing": false,
+   "name": "Sorry!",
+   "origin": "Marea Britanie",
+   "year": 1934,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Scuze!",
+   "public_rules": true,
+   "notes_ro": "Joc de cursă cu cărți de mutare și trimitere înapoi a pionilor adversi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sorry!_(game)"
+   ]
+  },
+  {
+   "r": 10,
+   "existing": false,
+   "name": "Chinese Checkers",
+   "origin": "Germania",
+   "year": 1892,
+   "ctx": [
+    "global",
+    "asia"
+   ],
+   "own_title_ro": "Dame stelate",
+   "public_rules": true,
+   "notes_ro": "Joc de salt pe tablă în formă de stea pentru 2-6 jucători.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chinese_checkers"
+   ]
+  },
+  {
+   "r": 11,
+   "name": "Riichi Mahjong",
+   "existing": true
+  },
+  {
+   "r": 12,
+   "existing": false,
+   "name": "Halma",
+   "origin": "SUA / Marea Britanie",
+   "year": 1883,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Halma",
+   "public_rules": true,
+   "notes_ro": "Strămoșul damelor chinezești, joc de traversare a tablei.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Halma"
+   ]
+  },
+  {
+   "r": 13,
+   "existing": false,
+   "name": "Hangman",
+   "origin": "Marea Britanie",
+   "year": 1894,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Spânzurătoarea",
+   "public_rules": true,
+   "notes_ro": "Joc de ghicit litere cu creionul și hârtia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hangman_(game)"
+   ]
+  },
+  {
+   "r": 14,
+   "existing": false,
+   "name": "Peg solitaire",
+   "origin": "Franța",
+   "year": 1697,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Solitar cu pioni",
+   "public_rules": true,
+   "notes_ro": "Puzzle tradițional cu pioni care sar peste alții pe tablă cu găuri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Peg_solitaire"
+   ]
+  },
+  {
+   "r": 15,
+   "existing": false,
+   "name": "Tombola",
+   "origin": "Italia",
+   "year": 1734,
+   "ctx": [
+    "europe",
+    "romania"
+   ],
+   "own_title_ro": "Tombolă",
+   "public_rules": true,
+   "notes_ro": "Joc de loto cu cartonașe numerotate, popular la sărbători.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tombola"
+   ]
+  },
+  {
+   "r": 16,
+   "name": "Lotería",
+   "existing": true
+  },
+  {
+   "r": 17,
+   "existing": false,
+   "name": "Mouse Trap",
+   "origin": "SUA",
+   "year": 1963,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Capcana pentru șoareci",
+   "public_rules": true,
+   "notes_ro": "Joc de familie în care se construiește pas cu pas o capcană.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mouse_Trap_(game)"
+   ]
+  },
+  {
+   "r": 18,
+   "existing": false,
+   "name": "Sequence",
+   "origin": "SUA",
+   "year": 1982,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Șir de cinci",
+   "public_rules": true,
+   "notes_ro": "Joc de cărți și tablă în care se formează șiruri de cinci jetoane.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sequence_(game)"
+   ]
+  },
+  {
+   "r": 19,
+   "existing": false,
+   "name": "Table football",
+   "origin": "Europa",
+   "year": 1921,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Fotbal de masă",
+   "public_rules": true,
+   "notes_ro": "Fotbal de masă cu tije rotative, popular în baruri și cluburi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Table_football"
+   ]
+  },
+  {
+   "r": 20,
+   "existing": false,
+   "name": "Air hockey",
+   "origin": "SUA",
+   "year": 1969,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Hochei cu pernă de aer",
+   "public_rules": true,
+   "notes_ro": "Joc de masă cu disc plutind pe pernă de aer.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Air_hockey"
+   ]
+  },
+  {
+   "r": 21,
+   "existing": false,
+   "name": "Pick-up sticks",
+   "origin": "Antichitate / global",
+   "year": null,
+   "ctx": [
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Bețișoare (Mikado)",
+   "public_rules": true,
+   "notes_ro": "Joc de îndemânare cu bețișoare ridicate fără a mișca celelalte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pick-up_sticks"
+   ]
+  },
+  {
+   "r": 22,
+   "existing": false,
+   "name": "Marbles",
+   "origin": "Antichitate / global",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Bile (Mărgele)",
+   "public_rules": true,
+   "notes_ro": "Joc tradițional cu bile lovite pe sol sau în cerc.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marbles"
+   ]
+  },
+  {
+   "r": 23,
+   "existing": false,
+   "name": "Trouble",
+   "origin": "SUA",
+   "year": 1965,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Necaz",
+   "public_rules": true,
+   "notes_ro": "Joc de cursă cu zar în cupolă transparentă, tip Ludo.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trouble_(board_game)"
+   ]
+  },
+  {
+   "r": 24,
+   "existing": false,
+   "name": "Game of the Goose",
+   "origin": "Italia",
+   "year": 1580,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Jocul gâștei",
+   "public_rules": true,
+   "notes_ro": "Joc de cursă pe spirală cu pași speciali, strămoș al jocurilor cu zar.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Game_of_the_Goose"
+   ]
+  },
+  {
+   "r": 25,
+   "existing": false,
+   "name": "Hong Kong Mahjong",
+   "origin": "China (Hong Kong)",
+   "year": 1900,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Mahjong Hong Kong",
+   "public_rules": true,
+   "notes_ro": "Variantă cantoneză de mahjong cu scor simplu.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahjong"
+   ]
+  },
+  {
+   "r": 26,
+   "name": "Okey",
+   "existing": true
+  },
+  {
+   "r": 27,
+   "existing": false,
+   "name": "Mexican Train",
+   "origin": "SUA / Mexic",
+   "year": 1990,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Trenul mexican",
+   "public_rules": true,
+   "notes_ro": "Variantă de domino cu trenuri de plăci pornind de la un dublu.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dominoes"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Chicken Foot (domino)",
+   "existing": true
+  },
+  {
+   "r": 29,
+   "existing": false,
+   "name": "Shuffleboard (table)",
+   "origin": "Marea Britanie",
+   "year": 1500,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Shuffleboard de masă",
+   "public_rules": true,
+   "notes_ro": "Joc în care discuri sau greutăți sunt împinse pe o masă lungă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shuffleboard"
+   ]
+  },
+  {
+   "r": 30,
+   "existing": false,
+   "name": "Pachinko",
+   "origin": "Japonia",
+   "year": 1920,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Pachinko",
+   "public_rules": true,
+   "notes_ro": "Joc de arcadă japonez cu bile de oțel, între pinball și jocuri de noroc.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pachinko"
+   ]
+  },
+  {
+   "r": 31,
+   "existing": false,
+   "name": "Tavli (Plakoto, Portes, Fevga)",
+   "origin": "Grecia",
+   "year": null,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Tavli",
+   "public_rules": true,
+   "notes_ro": "Trio de jocuri de table greco-turcești jucate pe aceeași tablă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tavli"
+   ]
+  },
+  {
+   "r": 32,
+   "name": "Senet",
+   "existing": true
+  },
+  {
+   "r": 33,
+   "existing": false,
+   "name": "Royal Game of Ur",
+   "origin": "Mesopotamia",
+   "year": -2600,
+   "ctx": [
+    "asia",
+    "europe"
+   ],
+   "own_title_ro": "Jocul regal din Ur",
+   "public_rules": true,
+   "notes_ro": "Joc de cursă din Mesopotamia, reconstruit după tăblițe cuneiforme.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Royal_Game_of_Ur"
+   ]
+  },
+  {
+   "r": 34,
+   "existing": false,
+   "name": "Hnefatafl (Tafl)",
+   "origin": "Scandinavia",
+   "year": 400,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Tafl",
+   "public_rules": true,
+   "notes_ro": "Familie vikingă de jocuri asimetrice de asediu a regelui.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tafl_games"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Pai gow",
+   "existing": true
+  },
+  {
+   "r": 36,
+   "name": "Sugoroku",
+   "existing": true
+  },
+  {
+   "r": 37,
+   "name": "Yut (Yunnori)",
+   "existing": true
+  },
+  {
+   "r": 38,
+   "name": "Chaupar",
+   "existing": true
+  },
+  {
+   "r": 39,
+   "existing": false,
+   "name": "Keno",
+   "origin": "China",
+   "year": -200,
+   "ctx": [
+    "asia",
+    "namerica"
+   ],
+   "own_title_ro": "Keno",
+   "public_rules": true,
+   "notes_ro": "Loterie cu 80 de numere, din care se aleg și se extrag câteva.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Keno"
+   ]
+  },
+  {
+   "r": 40,
+   "existing": false,
+   "name": "Upwords",
+   "origin": "SUA",
+   "year": 1981,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Cuvinte în înălțime",
+   "public_rules": true,
+   "notes_ro": "Joc de cuvinte unde literele se pot suprapune pe tablă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Upwords"
+   ]
+  },
+  {
+   "r": 41,
+   "existing": false,
+   "name": "Careers",
+   "origin": "SUA",
+   "year": 1955,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cariere",
+   "public_rules": true,
+   "notes_ro": "Joc în care se urmărește un obiectiv de faimă, bani și fericire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Careers_(board_game)"
+   ]
+  },
+  {
+   "r": 42,
+   "existing": false,
+   "name": "Payday",
+   "origin": "SUA",
+   "year": 1974,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Ziua salariului",
+   "public_rules": true,
+   "notes_ro": "Joc despre administrarea banilor pe parcursul unei luni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pay_Day_(board_game)"
+   ]
+  },
+  {
+   "r": 43,
+   "existing": false,
+   "name": "Aggravation",
+   "origin": "SUA",
+   "year": 1962,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Agravare",
+   "public_rules": true,
+   "notes_ro": "Joc de cursă cu zaruri și bile pe tablă pătrată.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Aggravation_(board_game)"
+   ]
+  },
+  {
+   "r": 44,
+   "existing": false,
+   "name": "Malefiz",
+   "origin": "Germania",
+   "year": 1960,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Blocadă",
+   "public_rules": true,
+   "notes_ro": "Joc de cursă cu blocuri așezate pe traseul adversarilor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Malefiz"
+   ]
+  },
+  {
+   "r": 45,
+   "existing": false,
+   "name": "Fia-med-knuff",
+   "origin": "Suedia",
+   "year": 1896,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Fia cu lovitură",
+   "public_rules": true,
+   "notes_ro": "Variantă suedeză de Ludo cu tablă în cruce.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ludo"
+   ]
+  },
+  {
+   "r": 46,
+   "existing": false,
+   "name": "Dog (Brändi Dog)",
+   "origin": "Elveția",
+   "year": 1930,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Dog",
+   "public_rules": true,
+   "notes_ro": "Joc în echipe cu cărți și pioni, derivat din Ludo.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ludo"
+   ]
+  },
+  {
+   "r": 47,
+   "existing": false,
+   "name": "Uckers",
+   "origin": "Marea Britanie (Royal Navy)",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Uckers",
+   "public_rules": true,
+   "notes_ro": "Variantă de Ludo jucată în marina britanică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uckers"
+   ]
+  },
+  {
+   "r": 48,
+   "existing": false,
+   "name": "Feixingqi (Flying chess)",
+   "origin": "China",
+   "year": 1950,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Șah zburător",
+   "public_rules": true,
+   "notes_ro": "Variantă chinezească de Ludo cu avioane drept pioni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Aeroplane_chess"
+   ]
+  },
+  {
+   "r": 49,
+   "existing": false,
+   "name": "American Mah Jongg",
+   "origin": "SUA",
+   "year": 1920,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Mahjong american",
+   "public_rules": true,
+   "notes_ro": "Variantă americană cu jokeri și carduri anuale de combinații.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahjong"
+   ]
+  },
+  {
+   "r": 50,
+   "existing": false,
+   "name": "Taiwanese Mahjong",
+   "origin": "Taiwan",
+   "year": 1900,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Mahjong taiwanez",
+   "public_rules": true,
+   "notes_ro": "Variantă cu 16 plăci în mână.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahjong"
+   ]
+  },
+  {
+   "r": 51,
+   "existing": false,
+   "name": "Sichuan Mahjong",
+   "origin": "China (Sichuan)",
+   "year": 1900,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Mahjong Sichuan",
+   "public_rules": true,
+   "notes_ro": "Variantă fără figuri, cu declarare a unei culori.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahjong"
+   ]
+  },
+  {
+   "r": 52,
+   "existing": false,
+   "name": "Mahjong solitaire",
+   "origin": "SUA",
+   "year": 1981,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Mahjong solitar",
+   "public_rules": true,
+   "notes_ro": "Joc de împerechere a plăcilor din formă piramidală.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mahjong_solitaire"
+   ]
+  },
+  {
+   "r": 53,
+   "existing": false,
+   "name": "Tien Gow",
+   "origin": "China",
+   "year": 1200,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Tien Gow",
+   "public_rules": true,
+   "notes_ro": "Joc de domino chinezesc cu 32 de plăci.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tien_Gow"
+   ]
+  },
+  {
+   "r": 54,
+   "existing": false,
+   "name": "Dominó cubano (doble nueve)",
+   "origin": "Cuba",
+   "year": 1900,
+   "ctx": [
+    "samerica",
+    "namerica"
+   ],
+   "own_title_ro": "Domino cubanez",
+   "public_rules": true,
+   "notes_ro": "Variantă de domino cu plăci până la dublu-nouă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dominoes"
+   ]
+  },
+  {
+   "r": 55,
+   "existing": false,
+   "name": "Muggins (All Fives)",
+   "origin": "SUA / Marea Britanie",
+   "year": 1900,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Muggins",
+   "public_rules": true,
+   "notes_ro": "Domino cu punctarea sumelor multiplu de cinci la capete.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Muggins_(domino_game)"
+   ]
+  },
+  {
+   "r": 56,
+   "existing": false,
+   "name": "Texas 42",
+   "origin": "SUA (Texas)",
+   "year": 1887,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Texas 42",
+   "public_rules": true,
+   "notes_ro": "Joc de domino cu licitație, asemănător jocurilor de cărți cu levate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/42_(game)"
+   ]
+  },
+  {
+   "r": 57,
+   "existing": false,
+   "name": "Matador (domino)",
+   "origin": "Europa",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Matador",
+   "public_rules": true,
+   "notes_ro": "Domino unde plăcile se potrivesc dacă suma face șapte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dominoes"
+   ]
+  },
+  {
+   "r": 58,
+   "existing": false,
+   "name": "Draw dominoes",
+   "origin": "China / global",
+   "year": 1100,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Domino cu extragere",
+   "public_rules": true,
+   "notes_ro": "Domino de bază cu pioche din plăcile rămase.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dominoes"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Bătălia navală",
+   "existing": true
+  },
+  {
+   "r": 60,
+   "name": "Tâb",
+   "existing": true
+  },
+  {
+   "r": 61,
+   "existing": false,
+   "name": "Long Nard (Narde)",
+   "origin": "Persia / Caucaz",
+   "year": 300,
+   "ctx": [
+    "asia",
+    "europe"
+   ],
+   "own_title_ro": "Nardi",
+   "public_rules": true,
+   "notes_ro": "Variantă de table cu piese în același sens.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nard_(game)"
+   ]
+  },
+  {
+   "r": 62,
+   "existing": false,
+   "name": "Acey-deucey",
+   "origin": "SUA",
+   "year": 1900,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Acey-deucey",
+   "public_rules": true,
+   "notes_ro": "Variantă de table cu așezare liberă a pieselor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Acey-deucey"
+   ]
+  },
+  {
+   "r": 63,
+   "existing": false,
+   "name": "Trictrac",
+   "origin": "Franța",
+   "year": 1500,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Trictrac",
+   "public_rules": true,
+   "notes_ro": "Joc francez de table cu reguli de punctare complexe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tric-trac"
+   ]
+  },
+  {
+   "r": 64,
+   "existing": false,
+   "name": "Jacquet",
+   "origin": "Franța",
+   "year": 1500,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Jacquet",
+   "public_rules": true,
+   "notes_ro": "Variantă franceză de table cu piese avansând într-un sens.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jacquet"
+   ]
+  },
+  {
+   "r": 65,
+   "existing": false,
+   "name": "Subbuteo",
+   "origin": "Marea Britanie",
+   "year": 1947,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Fotbal cu figurine",
+   "public_rules": false,
+   "notes_ro": "Fotbal cu figurine lovite cu degetul; marca este protejată, dar principiul este generic.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Subbuteo"
+   ]
+  },
+  {
+   "r": 66,
+   "existing": false,
+   "name": "Tiddlywinks",
+   "origin": "Marea Britanie",
+   "year": 1888,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Tiddlywinks",
+   "public_rules": true,
+   "notes_ro": "Joc de îndemânare cu jetoane azvârlite într-un pahar.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tiddlywinks"
+   ]
+  },
+  {
+   "r": 67,
+   "existing": false,
+   "name": "Knucklebones (Jacks)",
+   "origin": "Antichitate / global",
+   "year": null,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Cinci pietre",
+   "public_rules": true,
+   "notes_ro": "Joc cu pietricele sau oase aruncate și prinse.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jacks_(game)"
+   ]
+  },
+  {
+   "r": 68,
+   "existing": false,
+   "name": "Bagatelle",
+   "origin": "Franța",
+   "year": 1700,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Bagatelă",
+   "public_rules": true,
+   "notes_ro": "Joc de masă cu bile și cuie, precursor al pinball-ului.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bagatelle_(cue_sports)"
+   ]
+  },
+  {
+   "r": 69,
+   "existing": false,
+   "name": "Shove ha'penny",
+   "origin": "Marea Britanie",
+   "year": 1500,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Împinge moneda",
+   "public_rules": true,
+   "notes_ro": "Joc de cârciumă cu monede împinse pe o scândură.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shove_ha'penny"
+   ]
+  },
+  {
+   "r": 70,
+   "existing": false,
+   "name": "Bar billiards",
+   "origin": "Marea Britanie",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Biliard de bar",
+   "public_rules": true,
+   "notes_ro": "Biliard mic cu cuie în loc de buzunare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bar_billiards"
+   ]
+  },
+  {
+   "r": 71,
+   "existing": false,
+   "name": "Table skittles",
+   "origin": "Marea Britanie",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Popice de masă",
+   "public_rules": true,
+   "notes_ro": "Popice de masă cu bilă legată de un stâlp.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Table_skittles"
+   ]
+  },
+  {
+   "r": 72,
+   "existing": false,
+   "name": "Fan-Tan",
+   "origin": "China",
+   "year": 1800,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Fan-Tan",
+   "public_rules": true,
+   "notes_ro": "Joc de noroc în care se ghicește restul împărțirii boabelor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fan-tan"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Sic Bo",
+   "existing": true
+  },
+  {
+   "r": 74,
+   "name": "Ashta Chamma",
+   "existing": true
+  },
+  {
+   "r": 75,
+   "name": "Liar's Dice (Cacho, Dudo, Perudo)",
+   "existing": true
+  },
+  {
+   "r": 76,
+   "name": "Generala",
+   "existing": true
+  },
+  {
+   "r": 77,
+   "name": "Farkle (10 000)",
+   "existing": true
+  },
+  {
+   "r": 78,
+   "name": "Bunco",
+   "existing": true
+  },
+  {
+   "r": 79,
+   "name": "Two-up",
+   "existing": true
+  },
+  {
+   "r": 80,
+   "name": "Crown and Anchor",
+   "existing": true
+  },
+  {
+   "r": 81,
+   "name": "Barbut",
+   "existing": true
+  },
+  {
+   "r": 82,
+   "existing": false,
+   "name": "Fox and Geese",
+   "origin": "Europa",
+   "year": 1300,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Vulpea și gâștele",
+   "public_rules": true,
+   "notes_ro": "Joc asimetric unde vulpea prinde gâște pe tablă în cruce.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fox_and_geese"
+   ]
+  },
+  {
+   "r": 83,
+   "existing": false,
+   "name": "Alquerque",
+   "origin": "Orientul Mijlociu",
+   "year": -1400,
+   "ctx": [
+    "asia",
+    "europe"
+   ],
+   "own_title_ro": "Alquerque",
+   "public_rules": true,
+   "notes_ro": "Strămoș al damelor, cu capturi prin salt pe tablă 5x5.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alquerque"
+   ]
+  },
+  {
+   "r": 84,
+   "existing": false,
+   "name": "Latrunculi",
+   "origin": "Roma antică",
+   "year": -100,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Latrunculi",
+   "public_rules": true,
+   "notes_ro": "Joc roman de captură prin încercuire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ludus_latrunculorum"
+   ]
+  },
+  {
+   "r": 85,
+   "existing": false,
+   "name": "Rithmomachia",
+   "origin": "Europa medievală",
+   "year": 1030,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Ritmomahia",
+   "public_rules": true,
+   "notes_ro": "Joc matematic medieval de captură, cu piese numerotate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rithmomachia"
+   ]
+  },
+  {
+   "r": 86,
+   "existing": false,
+   "name": "Tabula",
+   "origin": "Roma antică",
+   "year": 100,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Tabula",
+   "public_rules": true,
+   "notes_ro": "Strămoș al tablelor, cu 15 piese și trei zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tabula_(game)"
+   ]
+  },
+  {
+   "r": 87,
+   "existing": false,
+   "name": "Mehen",
+   "origin": "Egiptul antic",
+   "year": -3000,
+   "ctx": [
+    "africa"
+   ],
+   "own_title_ro": "Mehen",
+   "public_rules": true,
+   "notes_ro": "Joc de cursă egiptean pe tablă în spirală de șarpe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mehen_(game)"
+   ]
+  },
+  {
+   "r": 88,
+   "existing": false,
+   "name": "Hounds and Jackals (58 Holes)",
+   "origin": "Egiptul antic",
+   "year": -2000,
+   "ctx": [
+    "africa"
+   ],
+   "own_title_ro": "Câini și șacali",
+   "public_rules": true,
+   "notes_ro": "Joc de cursă egiptean cu 58 de găuri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hounds_and_Jackals"
+   ]
+  },
+  {
+   "r": 89,
+   "existing": false,
+   "name": "Camelot",
+   "origin": "SUA / Marea Britanie",
+   "year": 1930,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Camelot",
+   "public_rules": true,
+   "notes_ro": "Joc de mutări pe tablă în formă de cruce.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Camelot_(board_game)"
+   ]
+  },
+  {
+   "r": 90,
+   "existing": false,
+   "name": "Salta",
+   "origin": "Franța",
+   "year": 1899,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Salta",
+   "public_rules": true,
+   "notes_ro": "Joc de tablă cu mutări de salt, derivat din dame și șah.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Salta_(game)"
+   ]
+  },
+  {
+   "r": 91,
+   "existing": false,
+   "name": "Pong hau k'i",
+   "origin": "China",
+   "year": null,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Pong hau k'i",
+   "public_rules": true,
+   "notes_ro": "Joc minimal de blocare pe un grafic cu cinci puncte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pong_hau_k%27i"
+   ]
+  },
+  {
+   "r": 92,
+   "existing": false,
+   "name": "Pai Sho",
+   "origin": "China / Avatar",
+   "year": null,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Pai Sho",
+   "public_rules": false,
+   "notes_ro": "Joc de tablă popularizat de un serial TV, cu reguli reconstruite de fani.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pai_Sho"
+   ]
+  },
+  {
+   "r": 93,
+   "existing": false,
+   "name": "Jeu des petits chevaux",
+   "origin": "Franța",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Calul mic",
+   "public_rules": true,
+   "notes_ro": "Variantă franceză de Ludo cu cai drept pioni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ludo"
+   ]
+  },
+  {
+   "r": 94,
+   "existing": false,
+   "name": "Toc (jeu)",
+   "origin": "Franța",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Toc",
+   "public_rules": true,
+   "notes_ro": "Joc francez de cărți și pioni în echipe, înrudit cu Dog.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ludo"
+   ]
+  },
+  {
+   "r": 95,
+   "existing": false,
+   "name": "Cờ cá ngựa",
+   "origin": "Vietnam",
+   "year": 1950,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Cursa cailor vietnamezi",
+   "public_rules": true,
+   "notes_ro": "Variantă vietnameză de Ludo cu tablă în cruce.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/C%E1%BB%9D_c%C3%A1_ng%E1%BB%B1a"
+   ]
+  },
+  {
+   "r": 96,
+   "existing": false,
+   "name": "Moultezim",
+   "origin": "Grecia / Turcia",
+   "year": null,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Multezim",
+   "public_rules": true,
+   "notes_ro": "Variantă de table cu piese puse pe aceleași puncte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fevga"
+   ]
+  },
+  {
+   "r": 97,
+   "existing": false,
+   "name": "Gul bara",
+   "origin": "Orientul Mijlociu",
+   "year": null,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Gul bara",
+   "public_rules": true,
+   "notes_ro": "Variantă de table din Iran și Afganistan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gul_bara"
+   ]
+  },
+  {
+   "r": 98,
+   "existing": false,
+   "name": "Chaturaji",
+   "origin": "India",
+   "year": 600,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Chaturaji",
+   "public_rules": true,
+   "notes_ro": "Variantă de șah pentru patru jucători cu zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chaturaji"
+   ]
+  },
+  {
+   "r": 99,
+   "existing": false,
+   "name": "Patolli",
+   "origin": "Aztecii (Mexic)",
+   "year": -200,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Patolli",
+   "public_rules": true,
+   "notes_ro": "Joc aztec de cursă pe tablă în cruce, cu pariuri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Patolli"
+   ]
+  },
+  {
+   "r": 100,
+   "existing": false,
+   "name": "Cờ gánh",
+   "origin": "Vietnam",
+   "year": null,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Gânduri de tablă",
+   "public_rules": true,
+   "notes_ro": "Joc vietnamez de captură prin flancare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/C%E1%BB%9D_g%C3%A1nh"
+   ]
+  }
+ ]
+}

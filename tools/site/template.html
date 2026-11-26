@@ -133,6 +133,8 @@ footer .row{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-b
 .rk-tabs [role=tab]{min-height:44px;padding:.3rem 1rem;border:1px solid var(--line);border-bottom:0;background:var(--surf);border-radius:10px 10px 0 0;cursor:pointer;font-weight:600}
 .rk-tabs [role=tab]:hover{border-color:var(--acc)}
 .rk-tabs [role=tab][aria-selected=true]{background:var(--acc);color:var(--onacc);border-color:var(--acc)}
+.rk-filters [hidden]{display:none}
+.rk-gl{font-weight:700;margin:1rem 0 0}
 .rk-filters{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:end;margin:.4rem 0 .6rem}
 .rk-filters div{display:flex;flex-direction:column;gap:.2rem}
 .rk-filters label{font-weight:600}
@@ -224,7 +226,8 @@ select option{color:#1b2230;background:#fff}
 <section id="rankings" aria-labelledby="rk-h">
 <h2 id="rk-h" data-i18n="rk_h">Rankings</h2>
 <p data-i18n="rk_intro"></p>
-<div class="rk-tabs" role="tablist" id="rk-tabs" aria-label="Rankings" data-i18n-aria="rk_tabs">
+<p class="rk-gl" id="rk-g-reg" data-i18n="rk_g_reg">By region</p>
+<div class="rk-tabs" role="tablist" id="rk-tabs" aria-labelledby="rk-g-reg">
 <button type="button" role="tab" id="rankings-world" aria-controls="rkp-world" aria-selected="true" data-lid="world" data-i18n="rk_t_world">World</button>
 <button type="button" role="tab" id="rankings-europe" aria-controls="rkp-europe" aria-selected="false" tabindex="-1" data-lid="europe" data-i18n="rk_t_europe">Europe</button>
 <button type="button" role="tab" id="rankings-africa" aria-controls="rkp-africa" aria-selected="false" tabindex="-1" data-lid="africa" data-i18n="rk_t_africa">Africa</button>
@@ -235,8 +238,12 @@ select option{color:#1b2230;background:#fff}
 <button type="button" role="tab" id="rankings-other" aria-controls="rkp-other" aria-selected="false" tabindex="-1" data-lid="other" data-i18n="rk_t_other">Other continents</button>
 <button type="button" role="tab" id="rankings-romania" aria-controls="rkp-romania" aria-selected="false" tabindex="-1" data-lid="romania" data-i18n="rk_t_romania">Romania</button>
 </div>
+<p class="rk-gl" id="rk-g-cat" data-i18n="rk_g_cat">By category (world)</p>
+<div class="rk-tabs" role="tablist" id="rk-ctabs" aria-labelledby="rk-g-cat">
+<!--RK_CAT_TABS-->
+</div>
 <div class="rk-filters">
-<div><label for="rk-cat" data-i18n="rk_cat_f">Filter by category</label><select id="rk-cat"></select></div>
+<div id="rk-catbox"><label for="rk-cat" data-i18n="rk_cat_f">Filter by category</label><select id="rk-cat"></select></div>
 <div><label for="rk-q" data-i18n="rk_q_f">Search in this list</label><input type="search" id="rk-q" autocomplete="off"></div>
 </div>
 <p class="count" id="rk-count" role="status" aria-live="polite"></p>
@@ -249,6 +256,7 @@ select option{color:#1b2230;background:#fff}
 <div id="rkp-oceania" role="tabpanel" aria-labelledby="rankings-oceania" tabindex="0" hidden></div>
 <div id="rkp-other" role="tabpanel" aria-labelledby="rankings-other" tabindex="0" hidden></div>
 <div id="rkp-romania" role="tabpanel" aria-labelledby="rankings-romania" tabindex="0" hidden></div>
+<!--RK_CAT_PANELS-->
 <noscript><p>The rankings need JavaScript. The list of game pages works without it: <a href="jocuri/index.html">jocuri/index.html</a></p></noscript>
 <h3 data-i18n="rk_legend" style="margin-top:1.5rem">What the badges mean</h3>
 <ul class="leg" id="rk-legend"></ul>

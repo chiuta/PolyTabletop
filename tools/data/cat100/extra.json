@@ -1,0 +1,810 @@
+{
+ "Clasic": [
+  {
+   "name": "Tangram",
+   "origin": "China",
+   "year": 1800,
+   "own_title_ro": "Tangram",
+   "public_rules": true,
+   "notes_ro": "Puzzle cu șapte piese geometrice care se aranjează în siluete; regulile sunt de domeniu public.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Turnurile din Hanoi (Tower of Hanoi)",
+   "origin": "Franța",
+   "year": 1883,
+   "own_title_ro": "Turnurile din Hanoi (Tower of Hanoi)",
+   "public_rules": true,
+   "notes_ro": "Puzzle cu discuri de mărimi diferite mutate între trei tije; inventat de Édouard Lucas.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Jocul de 15 (15 puzzle)",
+   "origin": "SUA",
+   "year": 1874,
+   "own_title_ro": "Jocul de 15 (15 puzzle)",
+   "public_rules": true,
+   "notes_ro": "Puzzle cu 15 plăcuțe glisante pe un câmp de 4x4; reguli de domeniu public.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Sjoelen",
+   "origin": "Țările de Jos",
+   "year": null,
+   "own_title_ro": "Sjoelen",
+   "public_rules": true,
+   "notes_ro": "Joc olandez de masă în care discuri de lemn se împing într-un cadru cu patru porți numerotate.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Duodecim scripta",
+   "origin": "Roma antică",
+   "year": null,
+   "own_title_ro": "Duodecim scripta",
+   "public_rules": true,
+   "notes_ro": "Joc roman cu zaruri, strămoș al tablelor; reconstituirea regulilor este publică.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Petteia",
+   "origin": "Grecia antică",
+   "year": null,
+   "own_title_ro": "Petteia",
+   "public_rules": true,
+   "notes_ro": "Joc grecesc antic de captură pe tablă, cunoscut din surse clasice; reguli reconstituite.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Dreidel",
+   "origin": "Orientul Mijlociu / Europa",
+   "year": null,
+   "own_title_ro": "Dreidel",
+   "public_rules": true,
+   "notes_ro": "Joc evreiesc cu titirez cu patru fețe, jucat de Hanuka pe nuci sau monede.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Cuvinte încrucișate (Crossword)",
+   "origin": "SUA",
+   "year": 1913,
+   "own_title_ro": "Cuvinte încrucișate (Crossword)",
+   "public_rules": true,
+   "notes_ro": "Joc de cuvinte pe grilă, în creion și hârtie; format public.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Sudoku",
+   "origin": "Japonia / SUA",
+   "year": 1979,
+   "own_title_ro": "Sudoku",
+   "public_rules": true,
+   "notes_ro": "Completarea unei grile 9x9 cu cifre fără repetiții pe rând, coloană și careu.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Nonogram (Picross)",
+   "origin": "Japonia",
+   "year": 1987,
+   "own_title_ro": "Nonogram (Picross)",
+   "public_rules": true,
+   "notes_ro": "Puzzle în care indiciile numerice pe rânduri și coloane dezvăluie o imagine.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Puzzle cu piese (Jigsaw)",
+   "origin": "Marea Britanie",
+   "year": 1760,
+   "own_title_ro": "Puzzle cu piese (Jigsaw)",
+   "public_rules": true,
+   "notes_ro": "Imagine tăiată în piese care se reasamblează; inventat de John Spilsbury.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Rubik's Cube",
+   "origin": "Ungaria",
+   "year": 1974,
+   "own_title_ro": "Cub magic",
+   "public_rules": false,
+   "notes_ro": "Puzzle tridimensional cu fețe rotative; numele este marcă, mecanica este liberă.",
+   "sources": [],
+   "trad": false
+  },
+  {
+   "name": "Morra (Mora)",
+   "origin": "Italia",
+   "year": null,
+   "own_title_ro": "Morra (Mora)",
+   "public_rules": true,
+   "notes_ro": "Joc antic cu mâna: doi jucători arată degete și ghicesc suma.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Narde scurtă (Short Nardy)",
+   "origin": "Persia / Rusia",
+   "year": null,
+   "own_title_ro": "Narde scurtă (Short Nardy)",
+   "public_rules": true,
+   "notes_ro": "Variantă rusă a tablelor în care piesele pornesc de pe un singur colț.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Tenis de masă (Ping-pong)",
+   "origin": "Marea Britanie",
+   "year": 1880,
+   "own_title_ro": "Tenis de masă (Ping-pong)",
+   "public_rules": true,
+   "notes_ro": "Joc cu paletă și minge ușoară pe o masă împărțită de o fileu.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Biliard (Billiards)",
+   "origin": "Franța",
+   "year": 1400,
+   "own_title_ro": "Biliard (Billiards)",
+   "public_rules": true,
+   "notes_ro": "Joc cu tac și bile pe o masă acoperită cu postav; familie largă de variante.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Snooker",
+   "origin": "India (Marea Britanie)",
+   "year": 1875,
+   "own_title_ro": "Snooker",
+   "public_rules": true,
+   "notes_ro": "Variantă de biliard cu bile roșii și colorate, jucată pe masă mare.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Flipper (Pinball)",
+   "origin": "SUA",
+   "year": 1931,
+   "own_title_ro": "Flipper",
+   "public_rules": false,
+   "notes_ro": "Aparat de masă în care o bilă se ține în joc cu palete; mecanica este liberă.",
+   "sources": [],
+   "trad": false
+  },
+  {
+   "name": "Chinese Official Mahjong (Guobiao)",
+   "origin": "China",
+   "year": 1998,
+   "own_title_ro": "Chinese Official Mahjong (Guobiao)",
+   "public_rules": true,
+   "notes_ro": "Regulament oficial chinezesc de mahjong cu 81 de combinații punctate.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Sanma (mahjong în trei)",
+   "origin": "Japonia",
+   "year": null,
+   "own_title_ro": "Sanma (mahjong în trei)",
+   "public_rules": true,
+   "notes_ro": "Variantă de mahjong pentru trei jucători, cu setul redus.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Pare sau impare (Odds and evens)",
+   "origin": "Global",
+   "year": null,
+   "own_title_ro": "Pare sau impare (Odds and evens)",
+   "public_rules": true,
+   "notes_ro": "Joc de mână în care doi jucători arată degete, iar suma decide câștigătorul.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Hypergammon",
+   "origin": "—",
+   "year": 1991,
+   "own_title_ro": "Hypergammon",
+   "public_rules": true,
+   "notes_ro": "Variantă de table cu doar trei piese pe jucător, jucată rapid.",
+   "sources": [],
+   "trad": true
+  }
+ ],
+ "Familie": [
+  {
+   "name": "Kingdom Builder",
+   "origin": "SUA",
+   "year": 2011,
+   "own_title_ro": "Constructorii de ținuturi",
+   "public_rules": false,
+   "notes_ro": "Jucătorii își extind așezările după cărți de teren; scorul vine din obiective comune.",
+   "sources": []
+  },
+  {
+   "name": "Queendomino",
+   "origin": "Franța",
+   "year": 2017,
+   "own_title_ro": "Domino cu regină",
+   "public_rules": false,
+   "notes_ro": "Continuarea Kingdomino cu turnuri, cavaleri și o regină.",
+   "sources": []
+  },
+  {
+   "name": "Hanamikoji",
+   "origin": "Japonia",
+   "year": 2013,
+   "own_title_ro": "Gheișele",
+   "public_rules": false,
+   "notes_ro": "Duel pentru două persoane în care cărți cu obiecte câștigă favoarea gheișelor.",
+   "sources": []
+  },
+  {
+   "name": "Splendor Duel",
+   "origin": "Franța",
+   "year": 2022,
+   "own_title_ro": "Nestemate în duel",
+   "public_rules": false,
+   "notes_ro": "Variantă de Splendor pentru doi, cu tablă de jetoane.",
+   "sources": []
+  },
+  {
+   "name": "Tiny Towns",
+   "origin": "SUA",
+   "year": 2019,
+   "own_title_ro": "Orășele mici",
+   "public_rules": false,
+   "notes_ro": "Resurse alese de adversar se așază pe o grilă 4x4 pentru a forma clădiri.",
+   "sources": []
+  },
+  {
+   "name": "Nmbr 9",
+   "origin": "Germania",
+   "year": 2017,
+   "own_title_ro": "Nouă etaje",
+   "public_rules": false,
+   "notes_ro": "Plăci cu cifre se așază pe etaje; scorul crește cu înălțimea.",
+   "sources": []
+  },
+  {
+   "name": "Gizmos",
+   "origin": "Australia",
+   "year": 2018,
+   "own_title_ro": "Mecanisme",
+   "public_rules": false,
+   "notes_ro": "Construiești un motor de combinații din cărți de mărgele colorate.",
+   "sources": []
+  },
+  {
+   "name": "Azul: Summer Pavilion",
+   "origin": "Germania",
+   "year": 2019,
+   "own_title_ro": "Faianță de vară",
+   "public_rules": false,
+   "notes_ro": "Continuare a jocului Azul cu plăci colorate pe tablă stelată.",
+   "sources": []
+  },
+  {
+   "name": "Ticket to Ride: New York",
+   "origin": "SUA",
+   "year": 2018,
+   "own_title_ro": "Magistrale în oraș",
+   "public_rules": false,
+   "notes_ro": "Variantă rapidă a jocului de trasee, cu taxiuri pe harta orașului.",
+   "sources": []
+  },
+  {
+   "name": "My City",
+   "origin": "Germania",
+   "year": 2020,
+   "own_title_ro": "Orașul meu",
+   "public_rules": false,
+   "notes_ro": "Joc legacy cu plăci de oraș care evoluează în timpul campaniei.",
+   "sources": []
+  },
+  {
+   "name": "Dutch Blitz",
+   "origin": "SUA",
+   "year": 1973,
+   "own_title_ro": "Fulger olandez",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți în timp real: grămezi comune și viteză pe masă.",
+   "sources": []
+  },
+  {
+   "name": "Kodama: The Tree Spirits",
+   "origin": "SUA",
+   "year": 2016,
+   "own_title_ro": "Spiritele copacilor",
+   "public_rules": false,
+   "notes_ro": "Cărți așezate pe un copac pentru a forma ramuri după reguli de scor.",
+   "sources": []
+  },
+  {
+   "name": "Fresco",
+   "origin": "Germania",
+   "year": 2010,
+   "own_title_ro": "Frescă",
+   "public_rules": false,
+   "notes_ro": "Restaurarea unei fresce; planifici acțiuni pe cadrane.",
+   "sources": []
+  },
+  {
+   "name": "Cubirds",
+   "origin": "Taiwan",
+   "year": 2022,
+   "own_title_ro": "Păsări-cub",
+   "public_rules": false,
+   "notes_ro": "Cărți cu păsări colectate în rânduri; combini culori ca să faci seturi.",
+   "sources": []
+  },
+  {
+   "name": "Carcassonne: Hunters and Gatherers",
+   "origin": "Germania",
+   "year": 2002,
+   "own_title_ro": "Vânători și culegători",
+   "public_rules": false,
+   "notes_ro": "Variantă preistorică a lui Carcassonne cu pescuit și vânătoare.",
+   "sources": []
+  },
+  {
+   "name": "Lanterns: The Harvest Festival",
+   "origin": "SUA",
+   "year": 2015,
+   "own_title_ro": "Lampioane",
+   "public_rules": false,
+   "notes_ro": "Plăci cu lacuri și lampioane colorate pe care le colectezi în seturi.",
+   "sources": []
+  },
+  {
+   "name": "Century: Golem Edition",
+   "origin": "SUA",
+   "year": 2017,
+   "own_title_ro": "Golemi",
+   "public_rules": false,
+   "notes_ro": "Joc de colectare cu cristale și cărți pentru a face golemi.",
+   "sources": []
+  },
+  {
+   "name": "Reef",
+   "origin": "SUA",
+   "year": 2018,
+   "own_title_ro": "Recif",
+   "public_rules": false,
+   "notes_ro": "Joc abstract pentru doi cu coral stivuit pe tablă.",
+   "sources": []
+  },
+  {
+   "name": "Port Royal",
+   "origin": "Austria",
+   "year": 2014,
+   "own_title_ro": "Port regal",
+   "public_rules": false,
+   "notes_ro": "Joc cu cărți de port în care îți asumi riscuri pentru a atrage mai multe mărfuri.",
+   "sources": []
+  },
+  {
+   "name": "Rivals for Catan",
+   "origin": "Germania",
+   "year": 2010,
+   "own_title_ro": "Rivalii insulei",
+   "public_rules": false,
+   "notes_ro": "Variantă pentru doi a lui Catan cu cărți.",
+   "sources": []
+  },
+  {
+   "name": "Ticket to Ride: Europe",
+   "origin": "SUA",
+   "year": 2005,
+   "own_title_ro": "Magistrale europene",
+   "public_rules": false,
+   "notes_ro": "Variantă cu hartă a Europei și gări.",
+   "sources": []
+  },
+  {
+   "name": "Agricola: All Creatures Big and Small",
+   "origin": "Germania",
+   "year": 2012,
+   "own_title_ro": "Ferma animalelor",
+   "public_rules": false,
+   "notes_ro": "Variantă a lui Agricola pentru doi, cu accent pe animale.",
+   "sources": []
+  },
+  {
+   "name": "Flamme Rouge",
+   "origin": "Danemarca",
+   "year": 2016,
+   "own_title_ro": "Flacăra roșie",
+   "public_rules": false,
+   "notes_ro": "Joc de ciclism cu pachete de cărți care reprezintă energia fiecărui alergător.",
+   "sources": []
+  },
+  {
+   "name": "Heat: Pedal to the Metal",
+   "origin": "Danemarca",
+   "year": 2022,
+   "own_title_ro": "Căldură pe pistă",
+   "public_rules": false,
+   "notes_ro": "Joc de curse de mașini cu gestionarea căldurii motorului.",
+   "sources": []
+  }
+ ],
+ "Abstract": [
+  {
+   "name": "Quarto",
+   "origin": "Elveția",
+   "year": 1991,
+   "own_title_ro": "Patru atribute în rând",
+   "public_rules": false,
+   "notes_ro": "Fiecare jucător alege piesa pe care o așază adversarul; câștigă cine completează o linie cu un atribut comun.",
+   "sources": []
+  },
+  {
+   "name": "Pylos",
+   "origin": "SUA",
+   "year": 1993,
+   "own_title_ro": "Piramida de bile",
+   "public_rules": false,
+   "notes_ro": "Piramidă de bile care se construiește, cu reguli de recuperare a bilelor.",
+   "sources": []
+  },
+  {
+   "name": "Quixo",
+   "origin": "Franța",
+   "year": 1995,
+   "own_title_ro": "Cuburi mutate",
+   "public_rules": false,
+   "notes_ro": "Cuburi împinse la marginea unui grid 5x5 pentru a forma o linie.",
+   "sources": []
+  },
+  {
+   "name": "Kamisado",
+   "origin": "Marea Britanie",
+   "year": 2008,
+   "own_title_ro": "Turnuri colorate",
+   "public_rules": false,
+   "notes_ro": "Mutări determinate de culoarea câmpului în care a ajuns adversarul.",
+   "sources": []
+  }
+ ],
+ "Strategie": [
+  {
+   "name": "The Castles of Mad King Ludwig",
+   "origin": "SUA",
+   "year": 2014,
+   "own_title_ro": "Castelele regelui nebun",
+   "public_rules": false,
+   "notes_ro": "Construiești camere într-un castel și le vinzi regelui.",
+   "sources": []
+  },
+  {
+   "name": "Lisboa",
+   "origin": "Portugalia",
+   "year": 2017,
+   "own_title_ro": "Reconstrucția Lisabonei",
+   "public_rules": false,
+   "notes_ro": "Joc complex de reconstrucție a orașului după cutremurul din 1755.",
+   "sources": []
+  }
+ ],
+ "Party": [
+  {
+   "name": "Codenames: Duet",
+   "origin": "Cehia",
+   "year": 2017,
+   "own_title_ro": "Spionii în doi",
+   "public_rules": false,
+   "notes_ro": "Variantă cooperativă pentru doi a jocului Codenames.",
+   "sources": []
+  },
+  {
+   "name": "A Fake Artist Goes to New York",
+   "origin": "Japonia",
+   "year": 2012,
+   "own_title_ro": "Falsul artist",
+   "public_rules": false,
+   "notes_ro": "Jucătorii desenează pe rând o imagine comună, iar unul nu știe tema.",
+   "sources": []
+  },
+  {
+   "name": "Ultimate Werewolf",
+   "origin": "SUA",
+   "year": 2008,
+   "own_title_ro": "Lupul cel mare",
+   "public_rules": false,
+   "notes_ro": "Variantă de Werewolf cu roluri speciale și moderator.",
+   "sources": []
+  },
+  {
+   "name": "Hitster",
+   "origin": "Țările de Jos",
+   "year": 2022,
+   "own_title_ro": "Muzică în ordine",
+   "public_rules": false,
+   "notes_ro": "Joc muzical în care așezi melodii pe axa timpului după anul apariției.",
+   "sources": []
+  },
+  {
+   "name": "Pub quiz",
+   "origin": "Marea Britanie",
+   "year": null,
+   "own_title_ro": "Pub quiz",
+   "public_rules": true,
+   "notes_ro": "Format de întrebări de cultură generală pe echipe, ținut în baruri.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Ghicește melodia (Name That Tune)",
+   "origin": "SUA",
+   "year": 1950,
+   "own_title_ro": "Ghicește melodia (Name That Tune)",
+   "public_rules": true,
+   "notes_ro": "Format de concurs în care participanții recunosc melodii după câteva note.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Sticla (Spin the bottle)",
+   "origin": "SUA",
+   "year": null,
+   "own_title_ro": "Sticla (Spin the bottle)",
+   "public_rules": true,
+   "notes_ro": "Joc de petrecere în care o sticlă rotită alege participantul.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Vânătoarea de comori (Treasure hunt)",
+   "origin": "Marea Britanie",
+   "year": null,
+   "own_title_ro": "Vânătoarea de comori (Treasure hunt)",
+   "public_rules": true,
+   "notes_ro": "Joc de petrecere cu indicii care duc la o comoară ascunsă.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "One Night Ultimate Vampire",
+   "origin": "SUA",
+   "year": 2016,
+   "own_title_ro": "O noapte cu vampirii",
+   "public_rules": false,
+   "notes_ro": "Variantă dintr-o singură noapte a jocurilor cu roluri ascunse.",
+   "sources": []
+  }
+ ],
+ "Cooperativ": [
+  {
+   "name": "Pandemic Legacy: Season 0",
+   "origin": "SUA",
+   "year": 2020,
+   "own_title_ro": "Focare, sezonul zero",
+   "public_rules": false,
+   "notes_ro": "Joc legacy cooperativ, preistoria seriei Pandemic Legacy, pe fundal de Război Rece.",
+   "sources": []
+  },
+  {
+   "name": "Mage Knight Board Game",
+   "origin": "Cehia",
+   "year": 2011,
+   "own_title_ro": "Cavalerul mag",
+   "public_rules": false,
+   "notes_ro": "Joc de aventură cu pachet propriu pentru fiecare jucător, solo sau cooperativ.",
+   "sources": []
+  },
+  {
+   "name": "Pandemic: Fall of Rome",
+   "origin": "SUA",
+   "year": 2018,
+   "own_title_ro": "Căderea Romei",
+   "public_rules": false,
+   "notes_ro": "Variantă cooperativă a lui Pandemic cu triburi barbare.",
+   "sources": []
+  },
+  {
+   "name": "Oathsworn: Into the Deepwood",
+   "origin": "Marea Britanie",
+   "year": 2021,
+   "own_title_ro": "Jurământ în pădure",
+   "public_rules": false,
+   "notes_ro": "Joc cooperativ de campanie cu miniaturi și poveste în capitole.",
+   "sources": []
+  }
+ ],
+ "Cărți": [
+  {
+   "name": "6 nimmt! (Take 5)",
+   "origin": "Germania",
+   "year": 1994,
+   "own_title_ro": "Șase-pierde",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți în care eviți să iei rândul al șaselea; cărțile se așază în patru rânduri.",
+   "sources": []
+  },
+  {
+   "name": "Baccarat (Punto banco)",
+   "origin": "Franța / Italia",
+   "year": null,
+   "own_title_ro": "Baccarat (Punto banco)",
+   "public_rules": true,
+   "notes_ro": "Joc de cazino cu cărți în care se pariază pe mâna jucătorului sau a băncii.",
+   "sources": [],
+   "trad": true
+  }
+ ],
+ "TCG": [
+  {
+   "name": "Shadowverse: Evolve",
+   "origin": "Japonia",
+   "year": 2020,
+   "own_title_ro": "Univers de umbre",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți colecționabile bazat pe jocul digital omonim.",
+   "sources": []
+  },
+  {
+   "name": "hololive OFFICIAL CARD GAME",
+   "origin": "Japonia",
+   "year": 2023,
+   "own_title_ro": "Scena virtuală",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți colecționabile cu personaje VTuber.",
+   "sources": []
+  },
+  {
+   "name": "WIXOSS",
+   "origin": "Japonia",
+   "year": 2013,
+   "own_title_ro": "Vrăjitoare ale cărților",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți colecționabile cu cărți de tip Lrig.",
+   "sources": []
+  },
+  {
+   "name": "Altered TCG",
+   "origin": "Franța",
+   "year": 2021,
+   "own_title_ro": "Muzele cărților",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți colecționabile cu eroi și zone de explorare.",
+   "sources": []
+  },
+  {
+   "name": "Mitos y Leyendas",
+   "origin": "Chile",
+   "year": 2000,
+   "own_title_ro": "Mituri și legende",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți colecționabile latino-american cu figuri mitologice.",
+   "sources": []
+  },
+  {
+   "name": "Dragon Ball Super Card Game Fusion World",
+   "origin": "Japonia",
+   "year": 2024,
+   "own_title_ro": "Fuziune de lumi",
+   "public_rules": false,
+   "notes_ro": "Linie nouă de cărți colecționabile Dragon Ball.",
+   "sources": []
+  }
+ ],
+ "Copii": [
+  {
+   "name": "Snap",
+   "origin": "Marea Britanie",
+   "year": null,
+   "own_title_ro": "Snap",
+   "public_rules": true,
+   "notes_ro": "Joc de cărți pentru copii în care strigi „Snap!” când două cărți se potrivesc.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Slapjack",
+   "origin": "SUA",
+   "year": null,
+   "own_title_ro": "Slapjack",
+   "public_rules": true,
+   "notes_ro": "Joc de cărți pentru copii în care lovești valeții de pe masă.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Crocodile Dentist",
+   "origin": "Marea Britanie",
+   "year": null,
+   "own_title_ro": "Dentistul crocodil",
+   "public_rules": false,
+   "notes_ro": "Joc cu dinți de crocodil pe care îi apeși fără să declanșezi mușcătura.",
+   "sources": []
+  },
+  {
+   "name": "Pictureka!",
+   "origin": "SUA",
+   "year": 2005,
+   "own_title_ro": "Găsește imaginea",
+   "public_rules": false,
+   "notes_ro": "Joc cu plăci cu imagini în care cauți obiecte comune.",
+   "sources": []
+  },
+  {
+   "name": "Loto cu imagini (Picture lotto)",
+   "origin": "Europa",
+   "year": null,
+   "own_title_ro": "Loto cu imagini (Picture lotto)",
+   "public_rules": true,
+   "notes_ro": "Joc pentru copii cu cartonașe ilustrate, ca la loto.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Ants in the Pants",
+   "origin": "SUA",
+   "year": 1968,
+   "own_title_ro": "Furnici în pantaloni",
+   "public_rules": false,
+   "notes_ro": "Joc cu furnici de plastic ce se aruncă într-un recipient.",
+   "sources": []
+  },
+  {
+   "name": "Elefun",
+   "origin": "SUA",
+   "year": 1976,
+   "own_title_ro": "Elefantul cu fluturi",
+   "public_rules": false,
+   "notes_ro": "Joc cu fluturi aruncați de un elefant și prinși cu o plasă.",
+   "sources": []
+  }
+ ],
+ "Zaruri": [
+  {
+   "name": "Roll for It!",
+   "origin": "SUA",
+   "year": 2008,
+   "own_title_ro": "Zaruri pentru cărți",
+   "public_rules": false,
+   "notes_ro": "Joc rapid în care zarurile se potrivesc pe cărți.",
+   "sources": []
+  },
+  {
+   "name": "Blueprints",
+   "origin": "SUA",
+   "year": 2013,
+   "own_title_ro": "Planuri din zaruri",
+   "public_rules": false,
+   "notes_ro": "Zaruri alese pentru a construi clădiri pe teren.",
+   "sources": []
+  },
+  {
+   "name": "Howzat! (dice cricket)",
+   "origin": "Marea Britanie",
+   "year": null,
+   "own_title_ro": "Howzat! (dice cricket)",
+   "public_rules": true,
+   "notes_ro": "Joc de cricket cu zaruri pentru două persoane.",
+   "sources": [],
+   "trad": true
+  },
+  {
+   "name": "Bar dice",
+   "origin": "Global",
+   "year": null,
+   "own_title_ro": "Bar dice",
+   "public_rules": true,
+   "notes_ro": "Joc de zaruri de bar cu cinci zaruri și combinații câștigătoare.",
+   "sources": [],
+   "trad": true
+  }
+ ]
+}

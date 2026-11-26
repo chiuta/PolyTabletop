@@ -1,0 +1,1719 @@
+{
+ "category": "Zaruri",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Yahtzee",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1956,
+   "ctx": [
+    "global",
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Zaruri în cinci (Yahtzee-like)",
+   "public_rules": true,
+   "notes_ro": "Cinci zaruri, trei aruncări pe tură, completarea unei fișe cu combinații; cel mai vândut joc de zaruri din lume.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yahtzee",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ],
+   "moved_from": true
+  },
+  {
+   "r": 2,
+   "name": "Craps",
+   "existing": false,
+   "origin": "SUA (din Hazard)",
+   "year": 1800,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Craps (Zaruri de cazino)",
+   "public_rules": true,
+   "notes_ro": "Pariuri pe aruncarea a două zaruri la masa de cazino; regulile sunt standard și publice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Craps",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 3,
+   "name": "Poker de zaruri",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Liar's Dice (Cacho, Dudo, Perudo)",
+   "existing": false,
+   "origin": "America de Sud / Europa",
+   "year": 1800,
+   "ctx": [
+    "global",
+    "samerica",
+    "europe"
+   ],
+   "own_title_ro": "Zarul mincinosului",
+   "public_rules": true,
+   "notes_ro": "Joc de bluf cu zaruri ascunse sub pahar; mai multe variante regionale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Liar's_dice",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ],
+   "moved_from": true
+  },
+  {
+   "r": 5,
+   "name": "Farkle (10 000)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1900,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Zece mii",
+   "public_rules": true,
+   "notes_ro": "Joc de risc 'încă o aruncare' cu șase zaruri, până la 10 000 de puncte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Farkle",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ],
+   "moved_from": true
+  },
+  {
+   "r": 6,
+   "name": "King of Tokyo",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "global",
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Regele orașului (monștri cu zaruri)",
+   "public_rules": false,
+   "notes_ro": "Monștri uriași se luptă cu zaruri în stil Yahtzee; mecanica e generică, dar tema și cărțile sunt protejate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/King_of_Tokyo"
+   ]
+  },
+  {
+   "r": 7,
+   "name": "Qwixx",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Cinci rânduri colorate",
+   "public_rules": true,
+   "notes_ro": "Zaruri colorate partajate, bifare în rânduri crescătoare/descrescătoare, pe fișă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Qwixx"
+   ]
+  },
+  {
+   "r": 8,
+   "name": "Ganz schön clever (That's Pretty Clever)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Foarte isteț (zaruri și fișe)",
+   "public_rules": true,
+   "notes_ro": "Joc roll-and-write cu zaruri colorate și zone cu bonusuri înlănțuite.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ganz_schön_clever"
+   ]
+  },
+  {
+   "r": 9,
+   "name": "Can't Stop",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1980,
+   "ctx": [
+    "global",
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Nu te opri",
+   "public_rules": true,
+   "notes_ro": "Sid Sackson: se aruncă patru zaruri, se grupează în perechi pe coloane 2–12, cu risc.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Can't_Stop_(board_game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 10,
+   "name": "Sic Bo",
+   "existing": false,
+   "origin": "China",
+   "year": 1800,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Sic Bo (trei zaruri)",
+   "public_rules": true,
+   "notes_ro": "Joc chinezesc de cazino cu trei zaruri și pariuri pe sume/combinații.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sic_bo",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ],
+   "moved_from": true
+  },
+  {
+   "r": 11,
+   "name": "Zombie Dice",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Zaruri cu zombi",
+   "public_rules": false,
+   "notes_ro": "Joc de risc cu 13 zaruri personalizate (creiere, pași, focuri); tema și zarurile speciale sunt protejate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zombie_Dice",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 12,
+   "name": "Bunco",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1855,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Bunco",
+   "public_rules": true,
+   "notes_ro": "Joc de petrecere în echipe, cu trei zaruri, pe mese și runde.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bunco",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ],
+   "moved_from": true
+  },
+  {
+   "r": 13,
+   "name": "Generala",
+   "existing": false,
+   "origin": "Argentina",
+   "year": 1900,
+   "ctx": [
+    "samerica"
+   ],
+   "own_title_ro": "Generala",
+   "public_rules": true,
+   "notes_ro": "Variantă sud-americană de Yahtzee, cu 'servida' și 'generala'.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Generala",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ],
+   "moved_from": true
+  },
+  {
+   "r": 14,
+   "name": "Yatzy",
+   "existing": false,
+   "origin": "Suedia/Scandinavia",
+   "year": 1920,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Yatzy",
+   "public_rules": true,
+   "notes_ro": "Predecesorul scandinav al Yahtzee, cu cinci zaruri și 15 categorii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yatzy",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 15,
+   "name": "Roll for the Galaxy",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "global",
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Zaruri pentru galaxie",
+   "public_rules": false,
+   "notes_ro": "Versiune cu zaruri a lui Race for the Galaxy; plăcile și simbolurile sunt protejate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Roll_for_the_Galaxy",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 16,
+   "name": "Kingsburg",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2007,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Orașul regelui",
+   "public_rules": false,
+   "notes_ro": "Plasare de muncitori prin zaruri, cu consilieri regali; conținut proprietar.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kingsburg"
+   ]
+  },
+  {
+   "r": 17,
+   "name": "Shut the Box",
+   "existing": false,
+   "origin": "Franța/Anglia",
+   "year": 1100,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Închide cutia",
+   "public_rules": true,
+   "notes_ro": "Joc de tavernă normand: se aruncă două zaruri și se coboară clapete numerotate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shut_the_box",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 18,
+   "name": "Catan: The Dice Game (Catan Dice Game)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2007,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Zaruri pe insulă",
+   "public_rules": false,
+   "notes_ro": "Variantă cu zaruri a lui Catan; imagistica tematică este proprietară.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Catan_Dice_Game",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 19,
+   "name": "Heckmeck am Bratwurmeck (Pickomino)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2005,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Pui de vierme (zaruri și plăcuțe)",
+   "public_rules": true,
+   "notes_ro": "Reiner Knizia: se aruncă opt zaruri pentru a lua plăcuțe numerotate; regulile sunt simple.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Heckmeck_am_Bratwurmeck"
+   ]
+  },
+  {
+   "r": 20,
+   "name": "Barbut",
+   "existing": false,
+   "origin": "SUA/Franța",
+   "year": 1800,
+   "ctx": [
+    "romania",
+    "europe"
+   ],
+   "own_title_ro": "Barbut",
+   "public_rules": true,
+   "notes_ro": "Joc de zaruri la bani, cu mize, popular și în România.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Barbudi"
+   ],
+   "moved_from": true
+  },
+  {
+   "r": 21,
+   "name": "Chinchirorin",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 1600,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Chinchirorin",
+   "public_rules": true,
+   "notes_ro": "Joc japonez de pariuri cu trei zaruri aruncate într-un bol.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chinchirorin"
+   ]
+  },
+  {
+   "r": 22,
+   "name": "Chō-han (Chō-han bakuchi)",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 1600,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Chō-han",
+   "public_rules": true,
+   "notes_ro": "Pariuri pe par/impar la două zaruri, în tradiția yakuza.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chō-han",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 23,
+   "name": "Bầu cua cá cọp",
+   "existing": false,
+   "origin": "Vietnam",
+   "year": 1800,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Bầu cua (dovleac, crab, pește)",
+   "public_rules": true,
+   "notes_ro": "Joc vietnamez de Tet cu trei zaruri cu simboluri de animale/legume.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bầu_cua_cá_cọp",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 24,
+   "name": "Mexico (Mäxchen, Mia)",
+   "existing": false,
+   "origin": "Europa/Mexic",
+   "year": 1900,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Mexic (zar bluf)",
+   "public_rules": true,
+   "notes_ro": "Bluf cu două zaruri sub cupă, cu clasament al combinațiilor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mia_(game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 25,
+   "name": "Pig",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1940,
+   "ctx": [
+    "global",
+    "namerica"
+   ],
+   "own_title_ro": "Porcul",
+   "public_rules": true,
+   "notes_ro": "Joc de 'încă o aruncare' cu un zar: 1 pierde punctele turei.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pig_(dice_game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 26,
+   "name": "Left Center Right (LCR)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1990,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Stânga-centru-dreapta",
+   "public_rules": true,
+   "notes_ro": "Joc de noroc cu zaruri speciale și jetoane transmise.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Left%20Center%20Right"
+   ]
+  },
+  {
+   "r": 27,
+   "name": "Hazard",
+   "existing": false,
+   "origin": "Anglia/Orient",
+   "year": 1100,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Hazard",
+   "public_rules": true,
+   "notes_ro": "Strămoșul craps-ului, cu 'main' și 'chance'.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hazard_(game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Crown and Anchor",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1800,
+   "ctx": [
+    "europe",
+    "oceania"
+   ],
+   "own_title_ro": "Coroană și ancoră",
+   "public_rules": true,
+   "notes_ro": "Joc marinăresc cu trei zaruri cu simboluri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Crown_and_Anchor",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ],
+   "moved_from": true
+  },
+  {
+   "r": 29,
+   "name": "Two-up",
+   "existing": false,
+   "origin": "Australia",
+   "year": 1800,
+   "ctx": [
+    "oceania"
+   ],
+   "own_title_ro": "Două sus (Two-up)",
+   "public_rules": true,
+   "notes_ro": "Aruncarea a două monede, nu zaruri; apropiat ca joc de noroc tradițional. Notă: la limită.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Two-up"
+   ],
+   "moved_from": true
+  },
+  {
+   "r": 30,
+   "name": "Chuck-a-luck",
+   "existing": false,
+   "origin": "SUA/Anglia",
+   "year": 1800,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Aruncă-n noroc",
+   "public_rules": true,
+   "notes_ro": "Pariuri pe trei zaruri într-o colivie rotativă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chuck-a-luck",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 31,
+   "name": "Ship, Captain, and Crew",
+   "existing": false,
+   "origin": "SUA/Marea Britanie",
+   "year": 1900,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Căpitan, vas și echipaj",
+   "public_rules": true,
+   "notes_ro": "Se caută 6-5-4 în cinci zaruri, apoi se adună restul.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ship,_captain,_and_crew",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 32,
+   "name": "Balut",
+   "existing": false,
+   "origin": "Filipine",
+   "year": 1950,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Balut",
+   "public_rules": true,
+   "notes_ro": "Variantă filipineză de Yahtzee cu cinci zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Balut_(dice_game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Yacht",
+   "existing": false,
+   "origin": "Asia/Anglia",
+   "year": 1900,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Iaht",
+   "public_rules": true,
+   "notes_ro": "Strămoșul Yahtzee; cinci zaruri și categorii fixe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yacht_(dice_game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "Schocken",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Șocken",
+   "public_rules": true,
+   "notes_ro": "Joc de bar german cu trei zaruri, pierzătorul primește jetoane.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Schocken"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Cee-lo",
+   "existing": false,
+   "origin": "China/SUA",
+   "year": 1900,
+   "ctx": [
+    "asia",
+    "namerica"
+   ],
+   "own_title_ro": "Si-wu-liu (Cee-lo)",
+   "public_rules": true,
+   "notes_ro": "Trei zaruri, câștigă 4-5-6; popular în Asia și SUA.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cee-lo",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "Bang! The Dice Game",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Zaruri la Vest Sălbatic",
+   "public_rules": false,
+   "notes_ro": "Versiune cu zaruri a lui Bang!, cu roluri secrete; tema e protejată.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bang!_(card_game)"
+   ]
+  },
+  {
+   "r": 37,
+   "name": "Dice Forge",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Forjă de zaruri",
+   "public_rules": false,
+   "notes_ro": "Construiește-ți zarurile modulare cu fețe noi; piesele sunt proprietare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dice_Forge"
+   ]
+  },
+  {
+   "r": 38,
+   "name": "Dice Throne",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Tronul zarurilor",
+   "public_rules": false,
+   "notes_ro": "Duel cu zaruri și cărți de eroi asimetrici.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dice_Throne",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 39,
+   "name": "Quarriors!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Zaruri-războinici",
+   "public_rules": false,
+   "notes_ro": "Primul joc de 'dice-building'; zaruri personalizate și cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Quarriors!",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "Dice Masters",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Stăpânii zarurilor",
+   "public_rules": false,
+   "notes_ro": "Joc colecționabil cu zaruri-personaje (Marvel, DC).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dice_Masters",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 41,
+   "name": "Escape: The Curse of the Temple",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Evadare din templu",
+   "public_rules": false,
+   "notes_ro": "Cooperativ în timp real cu zaruri, pe un timer sonor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Escape:_The_Curse_of_the_Temple"
+   ]
+  },
+  {
+   "r": 42,
+   "name": "Doppelt so clever (Twice as Clever)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2019,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "De două ori isteț",
+   "public_rules": true,
+   "notes_ro": "Continuarea roll-and-write cu zaruri colorate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ganz_schön_clever"
+   ]
+  },
+  {
+   "r": 43,
+   "name": "Clever hoch drei (Clever Cubed)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2021,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Isteț la cub",
+   "public_rules": true,
+   "notes_ro": "A treia ediție a seriei Clever, cu zaruri și fișe noi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ganz_schön_clever"
+   ]
+  },
+  {
+   "r": 44,
+   "name": "Qwinto",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2015,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Qwinto",
+   "public_rules": true,
+   "notes_ro": "Roll-and-write de la creatorul Qwixx, cu trei zaruri.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Qwinto"
+   ]
+  },
+  {
+   "r": 45,
+   "name": "Noch mal! (Encore!)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Încă o dată!",
+   "public_rules": true,
+   "notes_ro": "Zaruri colorate și numere pe grilă colorată.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Noch%20mal%21"
+   ]
+  },
+  {
+   "r": 46,
+   "name": "Las Vegas",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Las Vegas (zaruri și bani)",
+   "public_rules": true,
+   "notes_ro": "Zaruri plasate pe cazinouri pentru bani.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Las_Vegas_(board_game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Elder Sign",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Semnul vechilor",
+   "public_rules": false,
+   "notes_ro": "Cooperativ cu zaruri în lumea Cthulhu; conținut tematic protejat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Elder_Sign_(game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "Alien Frontiers",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Frontiere extraterestre",
+   "public_rules": false,
+   "notes_ro": "Plasare de zaruri-nave pe stații orbitale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alien_Frontiers"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "Roll Through the Ages",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2008,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Civilizație cu zaruri",
+   "public_rules": true,
+   "notes_ro": "Construiește o civilizație simplificată cu zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Roll_Through_the_Ages"
+   ]
+  },
+  {
+   "r": 50,
+   "name": "Pandemic: The Cure",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Leacul",
+   "public_rules": false,
+   "notes_ro": "Versiune cu zaruri, cooperativă, a lui Pandemic.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pandemic_(board_game)"
+   ]
+  },
+  {
+   "r": 51,
+   "name": "Martian Dice",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Zaruri marțiene",
+   "public_rules": false,
+   "notes_ro": "Joc de risc cu zaruri personalizate (extratereștri, vaci, tancuri).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Martian_Dice"
+   ]
+  },
+  {
+   "r": 52,
+   "name": "Cthulhu Dice",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Zaruri Cthulhu",
+   "public_rules": false,
+   "notes_ro": "Joc rapid cu zar unic (Steve Jackson Games).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cthulhu_Dice",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "King of New York",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "global",
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Regele din New York",
+   "public_rules": false,
+   "notes_ro": "Continuare a lui King of Tokyo, pe harta New York.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/King_of_Tokyo"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Dungeon Roll",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Temniță cu zaruri",
+   "public_rules": false,
+   "notes_ro": "Solo/coop, dungeon-crawling cu zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dungeon_Roll"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "Dice Town",
+   "existing": false,
+   "origin": "Franța/Germania",
+   "year": 2003,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Orașul zarurilor",
+   "public_rules": false,
+   "notes_ro": "Pe tema Vestului Sălbatic, cu zaruri și cărți.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Dice%20Town"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Dice City",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Orașul de zaruri",
+   "public_rules": false,
+   "notes_ro": "Construcția unui oraș cu zaruri și cărți.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Dice%20City"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Dice Hospital",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Spitalul de zaruri",
+   "public_rules": false,
+   "notes_ro": "Construiește și administrează un spital cu zaruri.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Dice%20Hospital"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "Dice Settlers",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2020,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Coloniști cu zaruri",
+   "public_rules": false,
+   "notes_ro": "Joc de dezvoltare cu zaruri și hartă personală.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Dice%20Settlers"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Roll Player",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Creează-ți eroul cu zaruri",
+   "public_rules": false,
+   "notes_ro": "Construcția unui erou de rol prin zaruri și cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Roll_Player",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Space Base",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Baza spațială",
+   "public_rules": false,
+   "notes_ro": "Joc de dezvoltare cu zaruri și cărți.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Space%20Base"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Troyes",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2010,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Troyes (zaruri și cetate)",
+   "public_rules": false,
+   "notes_ro": "Joc strategic cu zaruri pe timp medieval.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Troyes_(board_game)"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Yspahan",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2006,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Ispahan",
+   "public_rules": false,
+   "notes_ro": "Zaruri alese prin 'draft' într-un oraș comercial persan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yspahan"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Sagrada",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2017,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Vitralii cu zaruri",
+   "public_rules": false,
+   "notes_ro": "Puzzle cu zaruri colorate și cartele de vitralii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sagrada_(board_game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "Railroad Ink",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Linii ferate cu zaruri",
+   "public_rules": true,
+   "notes_ro": "Roll-and-write cu zaruri-rețea; regulile sunt simple.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Railroad%20Ink"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Cosmic Wimpout",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1975,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cosmic Wimpout",
+   "public_rules": true,
+   "notes_ro": "Variantă de Farkle cu zaruri speciale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cosmic_Wimpout",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "Tenzi",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2000,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Zece zaruri (Tenzi)",
+   "public_rules": true,
+   "notes_ro": "Joc de viteză cu zece zaruri.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Tenzi"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Boggle",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1972,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Litere pe zaruri",
+   "public_rules": true,
+   "notes_ro": "Zaruri cu litere, pentru formarea de cuvinte (la limită).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boggle",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Pass the Pigs",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1977,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Porcii zburători",
+   "public_rules": false,
+   "notes_ro": "Se aruncă doi porci de plastic; apropiat de zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pass_the_Pigs",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "Beetle",
+   "existing": false,
+   "origin": "Anglia",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Gândacul",
+   "public_rules": true,
+   "notes_ro": "Se completează un gândac desenat după numărul aruncat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Beetle_(game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Knucklebones (Tali)",
+   "existing": false,
+   "origin": "Grecia/Roma antică",
+   "year": -3000,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Ghiocuri (Tali)",
+   "public_rules": true,
+   "notes_ro": "Jocuri cu astragale, strămoșul zarurilor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Knucklebones"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Chicago (zaruri)",
+   "existing": false,
+   "origin": "Europa",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Chicago",
+   "public_rules": true,
+   "notes_ro": "Ținte de la 2 la 12 în ordine.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Chicago"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "Passe-dix",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1500,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Passe-dix",
+   "public_rules": true,
+   "notes_ro": "Trei zaruri, câștigă suma peste 10.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Passe-dix",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Over and Under Seven",
+   "existing": false,
+   "origin": "Anglia",
+   "year": 1800,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Peste/sub șapte",
+   "public_rules": true,
+   "notes_ro": "Două zaruri, pariuri pe sume sub sau peste 7.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Over%20and%20Under%20Seven"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "Chowka Bara",
+   "existing": false,
+   "origin": "India",
+   "year": 1500,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Chowka Bara",
+   "public_rules": true,
+   "notes_ro": "Joc indian de cursă cu cauri.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Chowka%20Bara"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Ligretto Dice",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2013,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Zaruri Ligretto",
+   "public_rules": true,
+   "notes_ro": "Joc de viteză cu zaruri colorate.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Ligretto%20Dice"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Fuse",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Fitilul",
+   "public_rules": false,
+   "notes_ro": "Cooperativ în timp real cu zaruri-bombe.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Fuse"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "Nations: The Dice Game",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 2020,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Națiuni cu zaruri",
+   "public_rules": false,
+   "notes_ro": "Joc de civilizație cu zaruri.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Nations%3A%20The%20Dice%20Game"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Cubitos",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2020,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Cubitos",
+   "public_rules": false,
+   "notes_ro": "Cursă cu zaruri și pachet-building.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Cubitos"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Deep Sea Adventure",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2014,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Aventură adâncă",
+   "public_rules": false,
+   "notes_ro": "Scufundare cu zaruri și oxigen comun.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Deep%20Sea%20Adventure"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "Alea Iacta Est",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2009,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Zarurile au fost aruncate",
+   "public_rules": false,
+   "notes_ro": "Strategic cu zaruri, pe fundal roman.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Alea%20Iacta%20Est"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Kismet",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1930,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Kismet",
+   "public_rules": true,
+   "notes_ro": "Variantă a Yahtzee cu cinci zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kismet_(game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Crag",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1900,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Crag (zaruri)",
+   "public_rules": true,
+   "notes_ro": "Joc de zaruri american asemănător cu Yahtzee.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Crag_(dice_game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "Toss Up!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1990,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Aruncă sus!",
+   "public_rules": true,
+   "notes_ro": "Zaruri cu fețe colorate, joc de risc.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Toss%20Up%21"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "Greed (joc de zaruri)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1990,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Lăcomia",
+   "public_rules": true,
+   "notes_ro": "Variantă de Farkle.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Greed"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "Zara (joc)",
+   "existing": false,
+   "origin": "Italia",
+   "year": 1200,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Zara",
+   "public_rules": true,
+   "notes_ro": "Joc medieval italian de aruncat zaruri.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Zara"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "Dice Baseball",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1900,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Baseball cu zaruri",
+   "public_rules": true,
+   "notes_ro": "Simulare a baseball-ului cu zaruri.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Dice%20Baseball"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "Beat That!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Întrece-mă",
+   "public_rules": true,
+   "notes_ro": "Joc de petrecere cu zaruri, cu provocări.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Beat%20That%21"
+   ]
+  },
+  {
+   "r": 88,
+   "name": "Rolling America",
+   "existing": false,
+   "origin": "Japonia/SUA",
+   "year": 2016,
+   "ctx": [
+    "asia",
+    "namerica"
+   ],
+   "own_title_ro": "America rulată",
+   "public_rules": true,
+   "notes_ro": "Roll-and-write de harta SUA, cu zaruri.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Rolling%20America"
+   ]
+  },
+  {
+   "r": 89,
+   "name": "Dungeon Fighter",
+   "existing": false,
+   "origin": "Spania",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Luptător de temniță",
+   "public_rules": false,
+   "notes_ro": "Joc cooperativ cu aruncări fizice.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Dungeon%20Fighter"
+   ]
+  },
+  {
+   "r": 90,
+   "name": "Skunk",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1900,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Sconcsul",
+   "public_rules": true,
+   "notes_ro": "Variantă a Pig, cu două zaruri.",
+   "sources": [
+    "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=Skunk"
+   ]
+  },
+  {
+   "r": 91,
+   "name": "Petals Around the Rose",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1970,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Petale în jurul trandafirului",
+   "public_rules": true,
+   "notes_ro": "Puzzle logic cu zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petals_Around_the_Rose",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 92,
+   "name": "Perquackey",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1970,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Perquackey",
+   "public_rules": true,
+   "notes_ro": "Joc de cuvinte cu zaruri-litere.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Perquackey",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 93,
+   "name": "Dragon Dice",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1995,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Zaruri-dragon",
+   "public_rules": false,
+   "notes_ro": "Joc colecționabil cu zaruri și armate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dragon_Dice",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 94,
+   "name": "Button Men",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Oameni-nasture",
+   "public_rules": false,
+   "notes_ro": "Duel cu zaruri personalizate pe 'butoane'.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Button_Men",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 95,
+   "name": "Dead Man's Dice",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Zarul mortului",
+   "public_rules": true,
+   "notes_ro": "Variantă piratească de joc cu zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Liar's_dice",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 96,
+   "name": "Beer die",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2000,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Zar la bere",
+   "public_rules": true,
+   "notes_ro": "Joc de petrecere cu zar și pahare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Beer_die",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 97,
+   "name": "Bo Bing (Pua Tiong Chiu)",
+   "existing": false,
+   "origin": "China/Taiwan",
+   "year": 1600,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Bo Bing",
+   "public_rules": true,
+   "notes_ro": "Joc de zaruri taiwanez din Festivalul Lunii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bo_Bing",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 98,
+   "name": "Daldøs",
+   "existing": false,
+   "origin": "Norvegia",
+   "year": 1700,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Daldøs",
+   "public_rules": true,
+   "notes_ro": "Joc norvegian cu zaruri și tablă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Daldøs",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 99,
+   "name": "Drop Dead",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1900,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cade moartea",
+   "public_rules": true,
+   "notes_ro": "Cinci zaruri, scor până la 2 sau 5.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Drop_dead_(game)",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  },
+  {
+   "r": 100,
+   "name": "To Court the King",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2001,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Curtea regelui",
+   "public_rules": false,
+   "notes_ro": "Joc de zaruri cu cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/To_Court_the_King",
+    "https://en.wikipedia.org/wiki/List_of_dice_games"
+   ]
+  }
+ ]
+}

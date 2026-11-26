@@ -7219,6 +7219,9632 @@
 }
 ]
 },
+"cat_lists": {
+"abstract": [
+{
+"r": 1,
+"n": "Șah",
+"c": "abstract",
+"x": "India",
+"s": "play",
+"g": "chess"
+},
+{
+"r": 2,
+"n": "Go (weiqi, baduk)",
+"c": "abstract",
+"x": "China",
+"s": "play",
+"g": "go"
+},
+{
+"r": 3,
+"n": "Dame",
+"c": "abstract",
+"x": "Antic",
+"s": "play",
+"g": "draughts"
+},
+{
+"r": 4,
+"n": "Xiangqi (șah chinezesc)",
+"c": "abstract",
+"x": "China",
+"s": "play",
+"g": "xiangqi"
+},
+{
+"r": 5,
+"n": "Shogi",
+"c": "abstract",
+"x": "Japonia",
+"s": "play",
+"g": "shogi"
+},
+{
+"r": 6,
+"n": "Mancala",
+"c": "abstract",
+"x": "Africa / Orientul Mijlociu",
+"s": "play",
+"g": "mancala"
+},
+{
+"r": 7,
+"n": "Tic-tac-toe (X și 0)",
+"c": "abstract",
+"x": "Antic",
+"s": "plan",
+"g": ""
+},
+{
+"r": 8,
+"n": "Connect Four",
+"c": "abstract",
+"x": "SUA",
+"s": "play",
+"g": "connect4"
+},
+{
+"r": 9,
+"n": "Reversi / Othello",
+"c": "abstract",
+"x": "Marea Britanie",
+"s": "play",
+"g": "reversi"
+},
+{
+"r": 10,
+"n": "Gomoku",
+"c": "abstract",
+"x": "Japonia / China",
+"s": "play",
+"g": "gomoku"
+},
+{
+"r": 11,
+"n": "Mastermind",
+"c": "abstract",
+"x": "Israel / Marea Britanie",
+"s": "play",
+"g": "mastermind"
+},
+{
+"r": 12,
+"n": "Moara (Țintar, Nine Men's Morris)",
+"c": "abstract",
+"x": "Antic",
+"s": "play",
+"g": "morris"
+},
+{
+"r": 13,
+"n": "Blokus",
+"c": "abstract",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 14,
+"n": "Chess960 (Fischer Random)",
+"c": "abstract",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 15,
+"n": "Dame internaționale (10x10)",
+"c": "abstract",
+"x": "Franța / Olanda",
+"s": "plan",
+"g": ""
+},
+{
+"r": 16,
+"n": "Dame rusești (Shashki)",
+"c": "abstract",
+"x": "Rusia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 17,
+"n": "Hex",
+"c": "abstract",
+"x": "Danemarca / SUA",
+"s": "var",
+"g": "hex"
+},
+{
+"r": 18,
+"n": "Janggi",
+"c": "abstract",
+"x": "Coreea",
+"s": "play",
+"g": "janggi"
+},
+{
+"r": 19,
+"n": "Makruk",
+"c": "abstract",
+"x": "Thailanda",
+"s": "play",
+"g": "makruk"
+},
+{
+"r": 20,
+"n": "Abalone",
+"c": "abstract",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 21,
+"n": "Hive",
+"c": "abstract",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 22,
+"n": "Santorini",
+"c": "abstract",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 23,
+"n": "Coridor",
+"c": "abstract",
+"x": "Original",
+"s": "var",
+"g": "coridor"
+},
+{
+"r": 24,
+"n": "Nim",
+"c": "abstract",
+"x": "China / Europa",
+"s": "var",
+"g": "nim"
+},
+{
+"r": 25,
+"n": "Oware",
+"c": "abstract",
+"x": "Ghana / Africa de Vest",
+"s": "plan",
+"g": ""
+},
+{
+"r": 26,
+"n": "Kalah",
+"c": "abstract",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 27,
+"n": "Dame braziliene (Damas)",
+"c": "abstract",
+"x": "Brazilia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 28,
+"n": "Dama (dame turcești)",
+"c": "abstract",
+"x": "Turcia / Orientul Mijlociu",
+"s": "plan",
+"g": ""
+},
+{
+"r": 29,
+"n": "Hnefatafl",
+"c": "abstract",
+"x": "Scandinavia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 30,
+"n": "Onitama",
+"c": "abstract",
+"x": "Japonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 31,
+"n": "Pentago",
+"c": "abstract",
+"x": "Suedia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 32,
+"n": "YINSH",
+"c": "abstract",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 33,
+"n": "Jocul Regal din Ur",
+"c": "abstract",
+"x": "Mesopotamia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 34,
+"n": "Bagh-Chal",
+"c": "abstract",
+"x": "Nepal",
+"s": "play",
+"g": "tigri"
+},
+{
+"r": 35,
+"n": "Fanorona",
+"c": "abstract",
+"x": "Madagascar",
+"s": "play",
+"g": "fanorona"
+},
+{
+"r": 36,
+"n": "Bao",
+"c": "abstract",
+"x": "Tanzania / Africa de Est",
+"s": "plan",
+"g": ""
+},
+{
+"r": 37,
+"n": "Toguz Kumalak",
+"c": "abstract",
+"x": "Kazahstan / Kârgâzstan",
+"s": "plan",
+"g": ""
+},
+{
+"r": 38,
+"n": "Congkak",
+"c": "abstract",
+"x": "Malaezia / Indonezia",
+"s": "play",
+"g": "congkak"
+},
+{
+"r": 39,
+"n": "Sungka",
+"c": "abstract",
+"x": "Filipine",
+"s": "play",
+"g": "sungka"
+},
+{
+"r": 40,
+"n": "Pallanguzhi",
+"c": "abstract",
+"x": "India",
+"s": "play",
+"g": "pallanguzhi"
+},
+{
+"r": 41,
+"n": "Mangala (mancala turcească)",
+"c": "abstract",
+"x": "Turcia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 42,
+"n": "Ayo (Ayoayo)",
+"c": "abstract",
+"x": "Nigeria",
+"s": "play",
+"g": "ayo"
+},
+{
+"r": 43,
+"n": "Dara",
+"c": "abstract",
+"x": "Nigeria",
+"s": "play",
+"g": "dara"
+},
+{
+"r": 44,
+"n": "Shatranj",
+"c": "abstract",
+"x": "Persia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 45,
+"n": "Chaturanga",
+"c": "abstract",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 46,
+"n": "Renju",
+"c": "abstract",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 47,
+"n": "Pente",
+"c": "abstract",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 48,
+"n": "Connect6",
+"c": "abstract",
+"x": "Taiwan",
+"s": "brand",
+"g": ""
+},
+{
+"r": 49,
+"n": "Puncte și căsuțe",
+"c": "abstract",
+"x": "Global",
+"s": "var",
+"g": "puncte"
+},
+{
+"r": 50,
+"n": "Game of the Amazons (Amazoane)",
+"c": "abstract",
+"x": "Argentina",
+"s": "var",
+"g": "amazoane"
+},
+{
+"r": 51,
+"n": "Lines of Action",
+"c": "abstract",
+"x": "SUA",
+"s": "var",
+"g": "linii"
+},
+{
+"r": 52,
+"n": "Ultimate Tic-Tac-Toe",
+"c": "abstract",
+"x": "Global",
+"s": "brand",
+"g": ""
+},
+{
+"r": 53,
+"n": "Tak",
+"c": "abstract",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 54,
+"n": "GIPF",
+"c": "abstract",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 55,
+"n": "DVONN",
+"c": "abstract",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 56,
+"n": "TZAAR",
+"c": "abstract",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 57,
+"n": "ZÈRTZ",
+"c": "abstract",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 58,
+"n": "Crazyhouse",
+"c": "abstract",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 59,
+"n": "Sittuyin",
+"c": "abstract",
+"x": "Birmania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 60,
+"n": "Chu Shogi",
+"c": "abstract",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 61,
+"n": "Dōbutsu Shōgi",
+"c": "abstract",
+"x": "Japonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 62,
+"n": "Alquerque",
+"c": "abstract",
+"x": "Orientul Mijlociu / Spania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 63,
+"n": "Tablut",
+"c": "abstract",
+"x": "Laponia / Suedia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 64,
+"n": "Brandubh",
+"c": "abstract",
+"x": "Irlanda",
+"s": "plan",
+"g": ""
+},
+{
+"r": 65,
+"n": "Surakarta",
+"c": "abstract",
+"x": "Indonezia",
+"s": "play",
+"g": "surakarta"
+},
+{
+"r": 66,
+"n": "Hasami Shogi",
+"c": "abstract",
+"x": "Japonia",
+"s": "play",
+"g": "hasami"
+},
+{
+"r": 67,
+"n": "Konane",
+"c": "abstract",
+"x": "Hawaii",
+"s": "var",
+"g": "konane"
+},
+{
+"r": 68,
+"n": "Seega",
+"c": "abstract",
+"x": "Egipt",
+"s": "plan",
+"g": ""
+},
+{
+"r": 69,
+"n": "Yote",
+"c": "abstract",
+"x": "Senegal / Africa de Vest",
+"s": "plan",
+"g": ""
+},
+{
+"r": 70,
+"n": "Hus",
+"c": "abstract",
+"x": "Namibia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 71,
+"n": "Omweso",
+"c": "abstract",
+"x": "Uganda",
+"s": "plan",
+"g": ""
+},
+{
+"r": 72,
+"n": "Gebeta",
+"c": "abstract",
+"x": "Etiopia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 73,
+"n": "Ô ăn quan",
+"c": "abstract",
+"x": "Vietnam",
+"s": "plan",
+"g": ""
+},
+{
+"r": 74,
+"n": "Ludus latrunculorum",
+"c": "abstract",
+"x": "Roma antică",
+"s": "plan",
+"g": ""
+},
+{
+"r": 75,
+"n": "Lasca",
+"c": "abstract",
+"x": "Germania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 76,
+"n": "Havannah",
+"c": "abstract",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 77,
+"n": "TwixT",
+"c": "abstract",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 78,
+"n": "Sprouts",
+"c": "abstract",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 79,
+"n": "Arimaa",
+"c": "abstract",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 80,
+"n": "Breakthrough",
+"c": "abstract",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 81,
+"n": "Ataxx",
+"c": "abstract",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 82,
+"n": "Jungle (Dou Shou Qi)",
+"c": "abstract",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 83,
+"n": "Mu Torere",
+"c": "abstract",
+"x": "Noua Zeelandă (maori)",
+"s": "plan",
+"g": ""
+},
+{
+"r": 84,
+"n": "Morabaraba",
+"c": "abstract",
+"x": "Africa de Sud",
+"s": "play",
+"g": "morabaraba"
+},
+{
+"r": 85,
+"n": "Sholo Guti (Șaisprezece soldați)",
+"c": "abstract",
+"x": "Bangladesh / India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 86,
+"n": "Aadu Puli Attam (Oi și tigri)",
+"c": "abstract",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 87,
+"n": "Străpungere",
+"c": "abstract",
+"x": "Global",
+"s": "var",
+"g": "strapungere"
+},
+{
+"r": 88,
+"n": "Izolare",
+"c": "abstract",
+"x": "Global",
+"s": "var",
+"g": "izolare"
+},
+{
+"r": 89,
+"n": "Rotire în cinci",
+"c": "abstract",
+"x": "Global",
+"s": "var",
+"g": "rotire"
+},
+{
+"r": 90,
+"n": "Coloane (dame în turnuri)",
+"c": "abstract",
+"x": "Original",
+"s": "var",
+"g": "coloane"
+},
+{
+"r": 91,
+"n": "Bile pe hexagoane",
+"c": "abstract",
+"x": "Original",
+"s": "var",
+"g": "bile"
+},
+{
+"r": 92,
+"n": "Patru atribute",
+"c": "abstract",
+"x": "Original",
+"s": "var",
+"g": "patru"
+},
+{
+"r": 93,
+"n": "Cupe încuibate",
+"c": "abstract",
+"x": "Original",
+"s": "var",
+"g": "cupe"
+},
+{
+"r": 94,
+"n": "Poliedre (duo)",
+"c": "abstract",
+"x": "Original",
+"s": "var",
+"g": "poliedre"
+},
+{
+"r": 95,
+"n": "Drum de pietre",
+"c": "abstract",
+"x": "Original",
+"s": "var",
+"g": "drum"
+},
+{
+"r": 96,
+"n": "Trei-pierde",
+"c": "abstract",
+"x": "Original",
+"s": "var",
+"g": "tripierd"
+},
+{
+"r": 97,
+"n": "Quarto",
+"c": "abstract",
+"x": "Elveția",
+"s": "brand",
+"g": ""
+},
+{
+"r": 98,
+"n": "Pylos",
+"c": "abstract",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 99,
+"n": "Quixo",
+"c": "abstract",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 100,
+"n": "Kamisado",
+"c": "abstract",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+}
+],
+"classic": [
+{
+"r": 1,
+"n": "Table (Backgammon)",
+"c": "classic",
+"x": "Orientul Mijlociu",
+"s": "play",
+"g": "backgammon"
+},
+{
+"r": 2,
+"n": "Mahjong",
+"c": "classic",
+"x": "China",
+"s": "play",
+"g": "mahjong"
+},
+{
+"r": 3,
+"n": "Domino",
+"c": "classic",
+"x": "China",
+"s": "play",
+"g": "domino"
+},
+{
+"r": 4,
+"n": "Battleship (Bătălia navală)",
+"c": "classic",
+"x": "SUA",
+"s": "play",
+"g": "battleship"
+},
+{
+"r": 5,
+"n": "Bingo",
+"c": "classic",
+"x": "America de Nord / Oceania",
+"s": "play",
+"g": "bingo"
+},
+{
+"r": 6,
+"n": "Roulette",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 7,
+"n": "Carrom",
+"c": "classic",
+"x": "India",
+"s": "play",
+"g": "carrom"
+},
+{
+"r": 8,
+"n": "Chinese Checkers (Table chinezească, Sternhalma)",
+"c": "classic",
+"x": "Germania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 9,
+"n": "Riichi Mahjong",
+"c": "classic",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 10,
+"n": "Halma",
+"c": "classic",
+"x": "SUA / Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 11,
+"n": "Peg solitaire",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 12,
+"n": "Tombola",
+"c": "classic",
+"x": "Italia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 13,
+"n": "Lotería",
+"c": "classic",
+"x": "America Latină (Mexic)",
+"s": "play",
+"g": "loteria"
+},
+{
+"r": 14,
+"n": "Table football",
+"c": "classic",
+"x": "Europa",
+"s": "plan",
+"g": ""
+},
+{
+"r": 15,
+"n": "Air hockey",
+"c": "classic",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 16,
+"n": "Marbles",
+"c": "classic",
+"x": "Antic / Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 17,
+"n": "Game of the Goose",
+"c": "classic",
+"x": "Italia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 18,
+"n": "Hong Kong Mahjong",
+"c": "classic",
+"x": "Hong Kong",
+"s": "plan",
+"g": ""
+},
+{
+"r": 19,
+"n": "Okey",
+"c": "classic",
+"x": "Turcia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 20,
+"n": "Mexican Train",
+"c": "classic",
+"x": "SUA / Mexic",
+"s": "brand",
+"g": ""
+},
+{
+"r": 21,
+"n": "Chicken Foot (domino)",
+"c": "classic",
+"x": "SUA / Caraibe",
+"s": "plan",
+"g": ""
+},
+{
+"r": 22,
+"n": "Shuffleboard (table)",
+"c": "classic",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 23,
+"n": "Pachinko",
+"c": "classic",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 24,
+"n": "Tavli (Plakoto, Portes, Fevga)",
+"c": "classic",
+"x": "Grecia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 25,
+"n": "Senet",
+"c": "classic",
+"x": "Egiptul antic",
+"s": "plan",
+"g": ""
+},
+{
+"r": 26,
+"n": "Royal Game of Ur",
+"c": "classic",
+"x": "Mesopotamia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 27,
+"n": "Pai gow",
+"c": "classic",
+"x": "China",
+"s": "play",
+"g": "paigow"
+},
+{
+"r": 28,
+"n": "Sugoroku",
+"c": "classic",
+"x": "Japonia",
+"s": "play",
+"g": "sugoroku"
+},
+{
+"r": 29,
+"n": "Yut (Yunnori)",
+"c": "classic",
+"x": "Coreea",
+"s": "play",
+"g": "yut"
+},
+{
+"r": 30,
+"n": "Chaupar",
+"c": "classic",
+"x": "India",
+"s": "play",
+"g": "chaupar"
+},
+{
+"r": 31,
+"n": "Keno",
+"c": "classic",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 32,
+"n": "Aggravation",
+"c": "classic",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 33,
+"n": "Malefiz",
+"c": "classic",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 34,
+"n": "Fia-med-knuff",
+"c": "classic",
+"x": "Suedia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 35,
+"n": "Dog (Brändi Dog)",
+"c": "classic",
+"x": "Elveția",
+"s": "plan",
+"g": ""
+},
+{
+"r": 36,
+"n": "Uckers",
+"c": "classic",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 37,
+"n": "Feixingqi (Flying chess)",
+"c": "classic",
+"x": "China",
+"s": "brand",
+"g": ""
+},
+{
+"r": 38,
+"n": "American Mah Jongg",
+"c": "classic",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 39,
+"n": "Taiwanese Mahjong",
+"c": "classic",
+"x": "Taiwan",
+"s": "plan",
+"g": ""
+},
+{
+"r": 40,
+"n": "Sichuan Mahjong",
+"c": "classic",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 41,
+"n": "Mahjong solitaire",
+"c": "classic",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 42,
+"n": "Tien Gow",
+"c": "classic",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 43,
+"n": "Dominó cubano (doble nueve)",
+"c": "classic",
+"x": "Cuba",
+"s": "plan",
+"g": ""
+},
+{
+"r": 44,
+"n": "Muggins (All Fives)",
+"c": "classic",
+"x": "SUA / Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 45,
+"n": "Texas 42",
+"c": "classic",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 46,
+"n": "Matador (domino)",
+"c": "classic",
+"x": "Europa",
+"s": "plan",
+"g": ""
+},
+{
+"r": 47,
+"n": "Tâb",
+"c": "classic",
+"x": "Egipt / Orientul Mijlociu",
+"s": "plan",
+"g": ""
+},
+{
+"r": 48,
+"n": "Long Nard (Narde)",
+"c": "classic",
+"x": "Persia / Caucaz",
+"s": "plan",
+"g": ""
+},
+{
+"r": 49,
+"n": "Acey-deucey",
+"c": "classic",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 50,
+"n": "Trictrac",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 51,
+"n": "Jacquet",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 52,
+"n": "Subbuteo",
+"c": "classic",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 53,
+"n": "Tiddlywinks",
+"c": "classic",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 54,
+"n": "Bagatelle",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 55,
+"n": "Shove ha'penny",
+"c": "classic",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 56,
+"n": "Bar billiards",
+"c": "classic",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 57,
+"n": "Table skittles",
+"c": "classic",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 58,
+"n": "Fan-Tan",
+"c": "classic",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 59,
+"n": "Ashta Chamma",
+"c": "classic",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 60,
+"n": "Two-up",
+"c": "classic",
+"x": "Australia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 61,
+"n": "Fox and Geese",
+"c": "classic",
+"x": "Europa",
+"s": "plan",
+"g": ""
+},
+{
+"r": 62,
+"n": "Latrunculi",
+"c": "classic",
+"x": "Roma antică",
+"s": "plan",
+"g": ""
+},
+{
+"r": 63,
+"n": "Rithmomachia",
+"c": "classic",
+"x": "Europa medievală",
+"s": "plan",
+"g": ""
+},
+{
+"r": 64,
+"n": "Tabula",
+"c": "classic",
+"x": "Roma antică",
+"s": "plan",
+"g": ""
+},
+{
+"r": 65,
+"n": "Mehen",
+"c": "classic",
+"x": "Egiptul antic",
+"s": "plan",
+"g": ""
+},
+{
+"r": 66,
+"n": "Hounds and Jackals (58 Holes)",
+"c": "classic",
+"x": "Egiptul antic",
+"s": "plan",
+"g": ""
+},
+{
+"r": 67,
+"n": "Camelot",
+"c": "classic",
+"x": "SUA / Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 68,
+"n": "Salta",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 69,
+"n": "Pong hau k'i",
+"c": "classic",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 70,
+"n": "Pai Sho",
+"c": "classic",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 71,
+"n": "Jeu des petits chevaux",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 72,
+"n": "Toc (jeu)",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 73,
+"n": "Cờ cá ngựa",
+"c": "classic",
+"x": "Vietnam",
+"s": "brand",
+"g": ""
+},
+{
+"r": 74,
+"n": "Moultezim",
+"c": "classic",
+"x": "Grecia / Turcia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 75,
+"n": "Gul bara",
+"c": "classic",
+"x": "Orientul Mijlociu",
+"s": "plan",
+"g": ""
+},
+{
+"r": 76,
+"n": "Chaturaji",
+"c": "classic",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 77,
+"n": "Patolli",
+"c": "classic",
+"x": "Mexic",
+"s": "plan",
+"g": ""
+},
+{
+"r": 78,
+"n": "Cờ gánh",
+"c": "classic",
+"x": "Vietnam",
+"s": "plan",
+"g": ""
+},
+{
+"r": 79,
+"n": "Tangram",
+"c": "classic",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 80,
+"n": "Turnurile din Hanoi (Tower of Hanoi)",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 81,
+"n": "Jocul de 15 (15 puzzle)",
+"c": "classic",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 82,
+"n": "Sjoelen",
+"c": "classic",
+"x": "Olanda",
+"s": "plan",
+"g": ""
+},
+{
+"r": 83,
+"n": "Duodecim scripta",
+"c": "classic",
+"x": "Roma antică",
+"s": "plan",
+"g": ""
+},
+{
+"r": 84,
+"n": "Petteia",
+"c": "classic",
+"x": "Grecia antică",
+"s": "plan",
+"g": ""
+},
+{
+"r": 85,
+"n": "Dreidel",
+"c": "classic",
+"x": "Orientul Mijlociu / Europa",
+"s": "plan",
+"g": ""
+},
+{
+"r": 86,
+"n": "Cuvinte încrucișate (Crossword)",
+"c": "classic",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 87,
+"n": "Sudoku",
+"c": "classic",
+"x": "Japonia / SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 88,
+"n": "Nonogram (Picross)",
+"c": "classic",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 89,
+"n": "Puzzle cu piese (Jigsaw)",
+"c": "classic",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 90,
+"n": "Rubik's Cube",
+"c": "classic",
+"x": "Ungaria",
+"s": "brand",
+"g": ""
+},
+{
+"r": 91,
+"n": "Morra (Mora)",
+"c": "classic",
+"x": "Italia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 92,
+"n": "Narde scurtă (Short Nardy)",
+"c": "classic",
+"x": "Persia / Rusia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 93,
+"n": "Tenis de masă (Ping-pong)",
+"c": "classic",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 94,
+"n": "Biliard (Billiards)",
+"c": "classic",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 95,
+"n": "Snooker",
+"c": "classic",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 96,
+"n": "Flipper (Pinball)",
+"c": "classic",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 97,
+"n": "Chinese Official Mahjong (Guobiao)",
+"c": "classic",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 98,
+"n": "Sanma (mahjong în trei)",
+"c": "classic",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 99,
+"n": "Pare sau impare (Odds and evens)",
+"c": "classic",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 100,
+"n": "Hypergammon",
+"c": "classic",
+"x": "—",
+"s": "plan",
+"g": ""
+}
+],
+"family": [
+{
+"r": 1,
+"n": "Monopoly",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "mosii"
+},
+{
+"r": 2,
+"n": "Scrabble",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "litere"
+},
+{
+"r": 3,
+"n": "Ludo / Parcheesi",
+"c": "family",
+"x": "India",
+"s": "play",
+"g": "pachisi"
+},
+{
+"r": 4,
+"n": "Cluedo (Clue)",
+"c": "family",
+"x": "Marea Britanie",
+"s": "var",
+"g": "conac"
+},
+{
+"r": 5,
+"n": "Game of Life",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "roata"
+},
+{
+"r": 6,
+"n": "Ticket to Ride",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "magistrale"
+},
+{
+"r": 7,
+"n": "Carcassonne",
+"c": "family",
+"x": "Germania",
+"s": "var",
+"g": "mozaic"
+},
+{
+"r": 8,
+"n": "Rummikub",
+"c": "family",
+"x": "Israel",
+"s": "var",
+"g": "placute"
+},
+{
+"r": 9,
+"n": "Jenga",
+"c": "family",
+"x": "Marea Britanie",
+"s": "var",
+"g": "turnul"
+},
+{
+"r": 10,
+"n": "Nu te supăra, frate (Ludo, Mensch ärgere dich nicht)",
+"c": "family",
+"x": "—",
+"s": "play",
+"g": "ludo"
+},
+{
+"r": 11,
+"n": "Sorry!",
+"c": "family",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 12,
+"n": "Scotland Yard",
+"c": "family",
+"x": "Germania",
+"s": "var",
+"g": "umbra"
+},
+{
+"r": 13,
+"n": "Kingdomino",
+"c": "family",
+"x": "Franța",
+"s": "var",
+"g": "tinuturi"
+},
+{
+"r": 14,
+"n": "Qwirkle",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 15,
+"n": "Machi Koro",
+"c": "family",
+"x": "Japonia",
+"s": "var",
+"g": "orasel"
+},
+{
+"r": 16,
+"n": "Labirintul nebun (Das verrückte Labyrinth)",
+"c": "family",
+"x": "Germania",
+"s": "var",
+"g": "zidurile"
+},
+{
+"r": 17,
+"n": "Alhambra",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 18,
+"n": "Sequence",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 19,
+"n": "Mille Bornes",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 20,
+"n": "Cascadia",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "poieni"
+},
+{
+"r": 21,
+"n": "Camel Up",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 22,
+"n": "Colt Express",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 23,
+"n": "Takenoko",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 24,
+"n": "Patchwork",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 25,
+"n": "Rush Hour",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 26,
+"n": "Pay Day",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 27,
+"n": "Careers",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 28,
+"n": "Bananagrams",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 29,
+"n": "Upwords",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 30,
+"n": "Acquire",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 31,
+"n": "Triominos",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 32,
+"n": "Crokinole",
+"c": "family",
+"x": "Canada",
+"s": "plan",
+"g": ""
+},
+{
+"r": 33,
+"n": "Parqués",
+"c": "family",
+"x": "Colombia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 34,
+"n": "Thurn und Taxis",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 35,
+"n": "Zooloretto",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 36,
+"n": "Elfenland",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 37,
+"n": "Citadels",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 38,
+"n": "Jaipur",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 39,
+"n": "Tokaido",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 40,
+"n": "The Sheriff of Nottingham",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 41,
+"n": "The Quacks of Quedlinburg",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 42,
+"n": "Photosynthesis",
+"c": "family",
+"x": "Canada",
+"s": "brand",
+"g": ""
+},
+{
+"r": 43,
+"n": "Tsuro",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 44,
+"n": "Tikal",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 45,
+"n": "Torres",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 46,
+"n": "Niagara",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 47,
+"n": "Manhattan",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 48,
+"n": "Mississippi Queen",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 49,
+"n": "Heimlich & Co.",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 50,
+"n": "Hare and Tortoise",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 51,
+"n": "Keltis",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 52,
+"n": "Ingenious (Einfach Genial)",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 53,
+"n": "Hey, That's My Fish!",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 54,
+"n": "Ubongo",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 55,
+"n": "Cartagena",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 56,
+"n": "Villa Paletti",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 57,
+"n": "Pictures",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 58,
+"n": "MicroMacro: Crime City",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 59,
+"n": "Dorfromantik: The Board Game",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 60,
+"n": "Isle of Skye",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 61,
+"n": "Broom Service",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 62,
+"n": "Istanbul",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 63,
+"n": "Imhotep",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 64,
+"n": "Isle of Cats",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 65,
+"n": "Calico",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 66,
+"n": "Parks",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 67,
+"n": "Bärenpark",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 68,
+"n": "Welcome To...",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 69,
+"n": "Karuba",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 70,
+"n": "Kahuna",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 71,
+"n": "Between Two Cities",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 72,
+"n": "Cartographers",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 73,
+"n": "Draftosaurus",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 74,
+"n": "Century: Spice Road",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 75,
+"n": "Campionii Distracției",
+"c": "family",
+"x": "—",
+"s": "brand",
+"g": ""
+},
+{
+"r": 76,
+"n": "Turistico",
+"c": "family",
+"x": "—",
+"s": "brand",
+"g": ""
+},
+{
+"r": 77,
+"n": "Kingdom Builder",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 78,
+"n": "Queendomino",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 79,
+"n": "Hanamikoji",
+"c": "family",
+"x": "Japonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 80,
+"n": "Splendor Duel",
+"c": "family",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 81,
+"n": "Tiny Towns",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 82,
+"n": "Nmbr 9",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 83,
+"n": "Gizmos",
+"c": "family",
+"x": "Australia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 84,
+"n": "Azul: Summer Pavilion",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 85,
+"n": "Ticket to Ride: New York",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 86,
+"n": "My City",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 87,
+"n": "Dutch Blitz",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 88,
+"n": "Kodama: The Tree Spirits",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 89,
+"n": "Fresco",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 90,
+"n": "Cubirds",
+"c": "family",
+"x": "Taiwan",
+"s": "brand",
+"g": ""
+},
+{
+"r": 91,
+"n": "Carcassonne: Hunters and Gatherers",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 92,
+"n": "Lanterns: The Harvest Festival",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 93,
+"n": "Century: Golem Edition",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 94,
+"n": "Reef",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 95,
+"n": "Port Royal",
+"c": "family",
+"x": "Austria",
+"s": "brand",
+"g": ""
+},
+{
+"r": 96,
+"n": "Rivals for Catan",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 97,
+"n": "Ticket to Ride: Europe",
+"c": "family",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 98,
+"n": "Agricola: All Creatures Big and Small",
+"c": "family",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 99,
+"n": "Flamme Rouge",
+"c": "family",
+"x": "Danemarca",
+"s": "brand",
+"g": ""
+},
+{
+"r": 100,
+"n": "Heat: Pedal to the Metal",
+"c": "family",
+"x": "Danemarca",
+"s": "brand",
+"g": ""
+}
+],
+"strategy": [
+{
+"r": 1,
+"n": "Catan",
+"c": "strategy",
+"x": "Germania",
+"s": "var",
+"g": "insula"
+},
+{
+"r": 2,
+"n": "Risk",
+"c": "strategy",
+"x": "Franța",
+"s": "var",
+"g": "arhipelag"
+},
+{
+"r": 3,
+"n": "Terraforming Mars",
+"c": "strategy",
+"x": "Suedia",
+"s": "var",
+"g": "reverdire"
+},
+{
+"r": 4,
+"n": "Dominion",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "bresla"
+},
+{
+"r": 5,
+"n": "Wingspan",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "solzi"
+},
+{
+"r": 6,
+"n": "7 Wonders",
+"c": "strategy",
+"x": "Franța",
+"s": "var",
+"g": "epoci"
+},
+{
+"r": 7,
+"n": "Azul",
+"c": "strategy",
+"x": "Germania",
+"s": "var",
+"g": "faianta"
+},
+{
+"r": 8,
+"n": "Splendor",
+"c": "strategy",
+"x": "Franța",
+"s": "var",
+"g": "cristale"
+},
+{
+"r": 9,
+"n": "Stratego",
+"c": "strategy",
+"x": "Olanda",
+"s": "var",
+"g": "ceata"
+},
+{
+"r": 10,
+"n": "Twilight Imperium",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "sideral"
+},
+{
+"r": 11,
+"n": "Scythe",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "hotar"
+},
+{
+"r": 12,
+"n": "Puerto Rico",
+"c": "strategy",
+"x": "Germania",
+"s": "var",
+"g": "mosia"
+},
+{
+"r": 13,
+"n": "Agricola",
+"c": "strategy",
+"x": "Germania",
+"s": "var",
+"g": "gospodaria"
+},
+{
+"r": 14,
+"n": "Brass: Birmingham",
+"c": "strategy",
+"x": "Marea Britanie",
+"s": "var",
+"g": "furnale"
+},
+{
+"r": 15,
+"n": "Ark Nova",
+"c": "strategy",
+"x": "Germania",
+"s": "var",
+"g": "rezervatia"
+},
+{
+"r": 16,
+"n": "Terra Mystica",
+"c": "strategy",
+"x": "Germania",
+"s": "var",
+"g": "taramuri"
+},
+{
+"r": 17,
+"n": "Dune: Imperium",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "salina"
+},
+{
+"r": 18,
+"n": "Power Grid",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 19,
+"n": "Axis & Allies",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 20,
+"n": "Small World",
+"c": "strategy",
+"x": "Franța",
+"s": "var",
+"g": "apus"
+},
+{
+"r": 21,
+"n": "Caylus",
+"c": "strategy",
+"x": "Franța",
+"s": "var",
+"g": "cetatuia"
+},
+{
+"r": 22,
+"n": "Root",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "codru"
+},
+{
+"r": 23,
+"n": "Everdell",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "catun"
+},
+{
+"r": 24,
+"n": "Diplomacy",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 25,
+"n": "Talisman",
+"c": "strategy",
+"x": "Marea Britanie",
+"s": "var",
+"g": "coroana"
+},
+{
+"r": 26,
+"n": "Great Western Trail",
+"c": "strategy",
+"x": "Elveția",
+"s": "brand",
+"g": ""
+},
+{
+"r": 27,
+"n": "Gaia Project",
+"c": "strategy",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 28,
+"n": "Concordia",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 29,
+"n": "Race for the Galaxy",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 30,
+"n": "Through the Ages",
+"c": "strategy",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 31,
+"n": "Twilight Struggle",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 32,
+"n": "Lords of Waterdeep",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 33,
+"n": "Viticulture",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 34,
+"n": "The Castles of Burgundy",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 35,
+"n": "Le Havre",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 36,
+"n": "Orléans",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 37,
+"n": "Tzolk'in: The Mayan Calendar",
+"c": "strategy",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 38,
+"n": "Cosmic Encounter",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 39,
+"n": "Civilization (Tresham)",
+"c": "strategy",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 40,
+"n": "Memoir '44",
+"c": "strategy",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 41,
+"n": "Stone Age",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 42,
+"n": "Age of Steam",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 43,
+"n": "Eclipse",
+"c": "strategy",
+"x": "Finlanda",
+"s": "brand",
+"g": ""
+},
+{
+"r": 44,
+"n": "Star Realms",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 45,
+"n": "Clank!",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 46,
+"n": "Lost Ruins of Arnak",
+"c": "strategy",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 47,
+"n": "Caverna: The Cave Farmers",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 48,
+"n": "A Feast for Odin",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 49,
+"n": "Food Chain Magnate",
+"c": "strategy",
+"x": "Olanda",
+"s": "brand",
+"g": ""
+},
+{
+"r": 50,
+"n": "War of the Ring",
+"c": "strategy",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 51,
+"n": "Brass: Lancashire",
+"c": "strategy",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 52,
+"n": "Barrage",
+"c": "strategy",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 53,
+"n": "Underwater Cities",
+"c": "strategy",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 54,
+"n": "Paths of Glory",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 55,
+"n": "Command & Colors: Ancients",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 56,
+"n": "Kemet",
+"c": "strategy",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 57,
+"n": "Tigris & Euphrates",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 58,
+"n": "Hansa Teutonica",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 59,
+"n": "Navegador",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 60,
+"n": "Goa",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 61,
+"n": "Imperial",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 62,
+"n": "Imperial Settlers",
+"c": "strategy",
+"x": "Polonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 63,
+"n": "Raiders of the North Sea",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 64,
+"n": "Architects of the West Kingdom",
+"c": "strategy",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 65,
+"n": "Paladins of the West Kingdom",
+"c": "strategy",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 66,
+"n": "The Quest for El Dorado",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 67,
+"n": "The Voyages of Marco Polo",
+"c": "strategy",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 68,
+"n": "Teotihuacan: City of Gods",
+"c": "strategy",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 69,
+"n": "Oracle of Delphi",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 70,
+"n": "Trajan",
+"c": "strategy",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 71,
+"n": "Ora et Labora",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 72,
+"n": "Notre Dame",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 73,
+"n": "Cyclades",
+"c": "strategy",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 74,
+"n": "Dominant Species",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 75,
+"n": "Tapestry",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 76,
+"n": "Nations",
+"c": "strategy",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 77,
+"n": "Res Arcana",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 78,
+"n": "Advanced Civilization",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 79,
+"n": "Here I Stand",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 80,
+"n": "Hannibal: Rome vs. Carthage",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 81,
+"n": "Labyrinth: The War on Terror",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 82,
+"n": "Pax Pamir (Second Edition)",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 83,
+"n": "Anno 1800",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 84,
+"n": "Mombasa",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 85,
+"n": "Ra",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 86,
+"n": "The Princes of Florence",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 87,
+"n": "Taj Mahal",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 88,
+"n": "Wallenstein",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 89,
+"n": "Shogun",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 90,
+"n": "Struggle of Empires",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 91,
+"n": "Sidereal Confluence",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 92,
+"n": "Age of Empires III: The Age of Discovery",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 93,
+"n": "Clash of Cultures",
+"c": "strategy",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 94,
+"n": "Sekigahara: The Unification of Japan",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 95,
+"n": "Ascension: Chronicle of the Godslayer",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 96,
+"n": "Thunderstone",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 97,
+"n": "Anachrony",
+"c": "strategy",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 98,
+"n": "Lorenzo il Magnifico",
+"c": "strategy",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 99,
+"n": "The Castles of Mad King Ludwig",
+"c": "strategy",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 100,
+"n": "Lisboa",
+"c": "strategy",
+"x": "Portugalia",
+"s": "brand",
+"g": ""
+}
+],
+"party": [
+{
+"r": 1,
+"n": "Codenames",
+"c": "party",
+"x": "Cehia",
+"s": "var",
+"g": "spionii"
+},
+{
+"r": 2,
+"n": "Trivial Pursuit",
+"c": "party",
+"x": "Canada",
+"s": "var",
+"g": "cunoastere"
+},
+{
+"r": 3,
+"n": "Cards Against Humanity",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "gura"
+},
+{
+"r": 4,
+"n": "Dixit",
+"c": "party",
+"x": "Franța",
+"s": "var",
+"g": "povestitor"
+},
+{
+"r": 5,
+"n": "Pictionary",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "schita"
+},
+{
+"r": 6,
+"n": "Werewolf / Mafia (Vârcolacii, Les Loups-Garous)",
+"c": "party",
+"x": "Rusia (URSS)",
+"s": "var",
+"g": "lupii"
+},
+{
+"r": 7,
+"n": "Taboo",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "oprite"
+},
+{
+"r": 8,
+"n": "Activity",
+"c": "party",
+"x": "Austria",
+"s": "var",
+"g": "treicai"
+},
+{
+"r": 9,
+"n": "Dobble (Spot It!)",
+"c": "party",
+"x": "Franța",
+"s": "var",
+"g": "fulger"
+},
+{
+"r": 10,
+"n": "The Resistance: Avalon",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "santinela"
+},
+{
+"r": 11,
+"n": "Charades",
+"c": "party",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 12,
+"n": "Scattergories",
+"c": "party",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 13,
+"n": "Twister",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 14,
+"n": "Cranium",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 15,
+"n": "Blood on the Clocktower",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "ceasornic"
+},
+{
+"r": 16,
+"n": "Secret Hitler",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "consiliul"
+},
+{
+"r": 17,
+"n": "Apples to Apples",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 18,
+"n": "Telestrations",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 19,
+"n": "Time's Up!",
+"c": "party",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 20,
+"n": "Wavelength",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 21,
+"n": "Skull",
+"c": "party",
+"x": "Franța",
+"s": "var",
+"g": "capcana"
+},
+{
+"r": 22,
+"n": "Cameleonul",
+"c": "party",
+"x": "—",
+"s": "var",
+"g": "impostor"
+},
+{
+"r": 23,
+"n": "Alias",
+"c": "party",
+"x": "—",
+"s": "var",
+"g": "dictionar"
+},
+{
+"r": 24,
+"n": "Decrypto",
+"c": "party",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 25,
+"n": "One Night Ultimate Werewolf",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 26,
+"n": "Spyfall",
+"c": "party",
+"x": "Rusia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 27,
+"n": "Articulate!",
+"c": "party",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 28,
+"n": "Balderdash",
+"c": "party",
+"x": "Canada",
+"s": "brand",
+"g": ""
+},
+{
+"r": 29,
+"n": "Concept",
+"c": "party",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 30,
+"n": "Jungle Speed",
+"c": "party",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 31,
+"n": "Boggle",
+"c": "party",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 32,
+"n": "Coup",
+"c": "party",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 33,
+"n": "Wits & Wagers",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 34,
+"n": "Hedbanz",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 35,
+"n": "Heads Up!",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 36,
+"n": "Catch Phrase",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 37,
+"n": "Geistesblitz (Ghost Blitz)",
+"c": "party",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 38,
+"n": "Hues and Cues",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 39,
+"n": "Anomia",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 40,
+"n": "Sheriff of Nottingham",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 41,
+"n": "Cortex Challenge",
+"c": "party",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 42,
+"n": "Superfight",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 43,
+"n": "What Do You Meme?",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 44,
+"n": "Joking Hazard",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 45,
+"n": "Two Rooms and a Boom",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 46,
+"n": "Rock Paper Scissors (Piatră, foarfecă, hârtie)",
+"c": "party",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 47,
+"n": "Chinese Whispers (Telefonul fără fir)",
+"c": "party",
+"x": "—",
+"s": "plan",
+"g": ""
+},
+{
+"r": 48,
+"n": "Truth or Dare (Adevăr sau provocare)",
+"c": "party",
+"x": "—",
+"s": "plan",
+"g": ""
+},
+{
+"r": 49,
+"n": "Twenty Questions (Douăzeci de întrebări)",
+"c": "party",
+"x": "—",
+"s": "plan",
+"g": ""
+},
+{
+"r": 50,
+"n": "Never Have I Ever",
+"c": "party",
+"x": "—",
+"s": "plan",
+"g": ""
+},
+{
+"r": 51,
+"n": "Beer Pong",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 52,
+"n": "Kings (Ring of Fire)",
+"c": "party",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 53,
+"n": "Flip Cup",
+"c": "party",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 54,
+"n": "Would You Rather",
+"c": "party",
+"x": "—",
+"s": "plan",
+"g": ""
+},
+{
+"r": 55,
+"n": "Fluxx",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 56,
+"n": "Taco Cat Goat Cheese Pizza",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 57,
+"n": "Say Anything",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 58,
+"n": "Werewords",
+"c": "party",
+"x": "Coreea de Sud",
+"s": "brand",
+"g": ""
+},
+{
+"r": 59,
+"n": "Insider",
+"c": "party",
+"x": "Japonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 60,
+"n": "Cash 'n Guns",
+"c": "party",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 61,
+"n": "Pictomania",
+"c": "party",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 62,
+"n": "Rory's Story Cubes",
+"c": "party",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 63,
+"n": "Black Stories",
+"c": "party",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 64,
+"n": "Monikers",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 65,
+"n": "Poetry for Neanderthals",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 66,
+"n": "Deception: Murder in Hong Kong",
+"c": "party",
+"x": "Hong Kong",
+"s": "brand",
+"g": ""
+},
+{
+"r": 67,
+"n": "Mascarade",
+"c": "party",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 68,
+"n": "Cockroach Poker",
+"c": "party",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 69,
+"n": "Ligretto",
+"c": "party",
+"x": "Elveția",
+"s": "plan",
+"g": ""
+},
+{
+"r": 70,
+"n": "Pit",
+"c": "party",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 71,
+"n": "Spoons",
+"c": "party",
+"x": "—",
+"s": "plan",
+"g": ""
+},
+{
+"r": 72,
+"n": "Celebrity (Fishbowl)",
+"c": "party",
+"x": "—",
+"s": "plan",
+"g": ""
+},
+{
+"r": 73,
+"n": "Outburst",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 74,
+"n": "Smart10",
+"c": "party",
+"x": "Belgia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 75,
+"n": "Tapple",
+"c": "party",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 76,
+"n": "Mad Gab",
+"c": "party",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 77,
+"n": "Loaded Questions",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 78,
+"n": "Quelf",
+"c": "party",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 79,
+"n": "Bezzerwizzer",
+"c": "party",
+"x": "Olanda",
+"s": "brand",
+"g": ""
+},
+{
+"r": 80,
+"n": "Gestures",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 81,
+"n": "Rapidough",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 82,
+"n": "Pie Face",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 83,
+"n": "Fibbage",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 84,
+"n": "Jackbox Party Pack",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 85,
+"n": "Zip Zap Zop",
+"c": "party",
+"x": "—",
+"s": "plan",
+"g": ""
+},
+{
+"r": 86,
+"n": "Sardines",
+"c": "party",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 87,
+"n": "Wink Murder",
+"c": "party",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 88,
+"n": "How to Host a Murder",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 89,
+"n": "Pass the Parcel",
+"c": "party",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 90,
+"n": "Pin the Tail on the Donkey",
+"c": "party",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 91,
+"n": "Dingbats (Rebus)",
+"c": "party",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 92,
+"n": "Codenames: Duet",
+"c": "party",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 93,
+"n": "A Fake Artist Goes to New York",
+"c": "party",
+"x": "Japonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 94,
+"n": "Ultimate Werewolf",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 95,
+"n": "Hitster",
+"c": "party",
+"x": "Olanda",
+"s": "brand",
+"g": ""
+},
+{
+"r": 96,
+"n": "Pub quiz",
+"c": "party",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 97,
+"n": "Ghicește melodia (Name That Tune)",
+"c": "party",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 98,
+"n": "Sticla (Spin the bottle)",
+"c": "party",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 99,
+"n": "Vânătoarea de comori (Treasure hunt)",
+"c": "party",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 100,
+"n": "One Night Ultimate Vampire",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+}
+],
+"coop": [
+{
+"r": 1,
+"n": "Pandemic",
+"c": "coop",
+"x": "SUA",
+"s": "var",
+"g": "focare"
+},
+{
+"r": 2,
+"n": "Gloomhaven",
+"c": "coop",
+"x": "SUA",
+"s": "var",
+"g": "cripta"
+},
+{
+"r": 3,
+"n": "Spirit Island",
+"c": "coop",
+"x": "SUA",
+"s": "var",
+"g": "strajile"
+},
+{
+"r": 4,
+"n": "Hanabi",
+"c": "coop",
+"x": "Franța",
+"s": "var",
+"g": "artificii"
+},
+{
+"r": 5,
+"n": "The Crew: The Quest for Planet Nine",
+"c": "coop",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 6,
+"n": "Just One",
+"c": "coop",
+"x": "Franța",
+"s": "var",
+"g": "cuvantunic"
+},
+{
+"r": 7,
+"n": "Mysterium",
+"c": "coop",
+"x": "Franța",
+"s": "var",
+"g": "farul"
+},
+{
+"r": 8,
+"n": "Zombicide",
+"c": "coop",
+"x": "Franța",
+"s": "var",
+"g": "cenusii"
+},
+{
+"r": 9,
+"n": "Forbidden Island",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 10,
+"n": "Arkham Horror: The Card Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 11,
+"n": "Forbidden Desert",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 12,
+"n": "The Mind",
+"c": "coop",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 13,
+"n": "Pandemic Legacy: Season 1",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 14,
+"n": "Eldritch Horror",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 15,
+"n": "Sky Team",
+"c": "coop",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 16,
+"n": "Marvel Champions: The Card Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 17,
+"n": "Gloomhaven: Jaws of the Lion",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 18,
+"n": "Mansions of Madness (ediția a 2-a)",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 19,
+"n": "Mice and Mystics",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 20,
+"n": "Horrified",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 21,
+"n": "Aeon's End",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 22,
+"n": "Magic Maze",
+"c": "coop",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 23,
+"n": "Sentinels of the Multiverse",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 24,
+"n": "Robinson Crusoe: Adventures on the Cursed Island",
+"c": "coop",
+"x": "Polonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 25,
+"n": "Exit: The Game",
+"c": "coop",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 26,
+"n": "Unlock!",
+"c": "coop",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 27,
+"n": "Flash Point: Fire Rescue",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 28,
+"n": "Castle Panic",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 29,
+"n": "The Lord of the Rings: The Card Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 30,
+"n": "Frosthaven",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 31,
+"n": "Sherlock Holmes Consulting Detective",
+"c": "coop",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 32,
+"n": "Space Alert",
+"c": "coop",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 33,
+"n": "Burgle Bros.",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 34,
+"n": "The Grizzled",
+"c": "coop",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 35,
+"n": "Chronicles of Crime",
+"c": "coop",
+"x": "Polonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 36,
+"n": "Ghost Stories",
+"c": "coop",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 37,
+"n": "One Deck Dungeon",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 38,
+"n": "Defenders of the Wild",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 39,
+"n": "Too Many Bones",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 40,
+"n": "Legendary: A Marvel Deck Building Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 41,
+"n": "Harry Potter: Hogwarts Battle",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 42,
+"n": "Dead of Winter: A Cross Roads Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 43,
+"n": "Sleeping Gods",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 44,
+"n": "Forgotten Waters",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 45,
+"n": "Mechs vs. Minions",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 46,
+"n": "The 7th Continent",
+"c": "coop",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 47,
+"n": "Freedom: The Underground Railroad",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 48,
+"n": "Return to Dark Tower",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 49,
+"n": "Arkham Horror (ediția a 3-a)",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 50,
+"n": "Shadows over Camelot",
+"c": "coop",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 51,
+"n": "Lord of the Rings (Knizia)",
+"c": "coop",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 52,
+"n": "Daybreak",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 53,
+"n": "Paleo",
+"c": "coop",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 54,
+"n": "Atlantis Rising",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 55,
+"n": "The Captain Is Dead",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 56,
+"n": "Stuffed Fables",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 57,
+"n": "Vagrantsong",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 58,
+"n": "Champions of Hara",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 59,
+"n": "Roll Player Adventures",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 60,
+"n": "Resident Evil 2: The Board Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 61,
+"n": "Black Orchestra",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 62,
+"n": "Endangered",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 63,
+"n": "XCOM: The Board Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 64,
+"n": "The Dresden Files Cooperative Card Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 65,
+"n": "Star Trek: Panic",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 66,
+"n": "5-Minute Dungeon",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 67,
+"n": "Pandemic Legacy: Season 2",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 68,
+"n": "Forbidden Sky",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 69,
+"n": "Legends of Andor",
+"c": "coop",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 70,
+"n": "Castle Ravenloft Board Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 71,
+"n": "Betrayal at House on the Hill",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 72,
+"n": "Battlestar Galactica: The Board Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 73,
+"n": "Nemesis",
+"c": "coop",
+"x": "Polonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 74,
+"n": "Final Girl",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 75,
+"n": "Cthulhu: Death May Die",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 76,
+"n": "Elder Sign",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 77,
+"n": "Massive Darkness 2",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 78,
+"n": "Sub Terra",
+"c": "coop",
+"x": "Polonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 79,
+"n": "Escape: The Curse of the Temple",
+"c": "coop",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 80,
+"n": "Letter Jam",
+"c": "coop",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 81,
+"n": "The Game",
+"c": "coop",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 82,
+"n": "Deckscape",
+"c": "coop",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 83,
+"n": "Detective: A Modern Crime Board Game",
+"c": "coop",
+"x": "Polonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 84,
+"n": "Bandido",
+"c": "coop",
+"x": "Elveția",
+"s": "brand",
+"g": ""
+},
+{
+"r": 85,
+"n": "HeroQuest",
+"c": "coop",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 86,
+"n": "Pathfinder Adventure Card Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 87,
+"n": "This War of Mine: The Board Game",
+"c": "coop",
+"x": "Polonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 88,
+"n": "TIME Stories",
+"c": "coop",
+"x": "Belgia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 89,
+"n": "Escape Room: The Game",
+"c": "coop",
+"x": "Olanda",
+"s": "brand",
+"g": ""
+},
+{
+"r": 90,
+"n": "Hoot Owl Hoot!",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 91,
+"n": "Race to the Treasure!",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 92,
+"n": "Warhammer Quest",
+"c": "coop",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 93,
+"n": "Tainted Grail: The Fall of Avalon",
+"c": "coop",
+"x": "Polonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 94,
+"n": "Aliens: Another Glorious Day in the Corps",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 95,
+"n": "The Lord of the Rings: Journeys in Middle-earth",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 96,
+"n": "Hellboy: The Board Game",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 97,
+"n": "Pandemic Legacy: Season 0",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 98,
+"n": "Mage Knight Board Game",
+"c": "coop",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 99,
+"n": "Pandemic: Fall of Rome",
+"c": "coop",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 100,
+"n": "Oathsworn: Into the Deepwood",
+"c": "coop",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+}
+],
+"cards": [
+{
+"r": 1,
+"n": "Poker",
+"c": "cards",
+"x": "SUA",
+"s": "play",
+"g": "poker"
+},
+{
+"r": 2,
+"n": "Uno",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "culori"
+},
+{
+"r": 3,
+"n": "Blackjack (21)",
+"c": "cards",
+"x": "—",
+"s": "play",
+"g": "blackjack"
+},
+{
+"r": 4,
+"n": "Bridge",
+"c": "cards",
+"x": "Marea Britanie / SUA",
+"s": "play",
+"g": "bridge"
+},
+{
+"r": 5,
+"n": "Remi (Rummy)",
+"c": "cards",
+"x": "Global",
+"s": "play",
+"g": "rummy"
+},
+{
+"r": 6,
+"n": "Solitaire (Klondike)",
+"c": "cards",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 7,
+"n": "Hearts",
+"c": "cards",
+"x": "America de Nord / Europa",
+"s": "var",
+"g": "inimi"
+},
+{
+"r": 8,
+"n": "Spades",
+"c": "cards",
+"x": "America de Nord",
+"s": "var",
+"g": "pica"
+},
+{
+"r": 9,
+"n": "Gin Rummy",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 10,
+"n": "Whist",
+"c": "cards",
+"x": "Europa",
+"s": "var",
+"g": "whist"
+},
+{
+"r": 11,
+"n": "Cribbage",
+"c": "cards",
+"x": "America de Nord",
+"s": "play",
+"g": "cribbage"
+},
+{
+"r": 12,
+"n": "Canasta",
+"c": "cards",
+"x": "America Latină",
+"s": "play",
+"g": "canasta"
+},
+{
+"r": 13,
+"n": "Durak",
+"c": "cards",
+"x": "Rusia",
+"s": "play",
+"g": "durak"
+},
+{
+"r": 14,
+"n": "Belote",
+"c": "cards",
+"x": "Franța",
+"s": "play",
+"g": "belote"
+},
+{
+"r": 15,
+"n": "Skat",
+"c": "cards",
+"x": "Germania",
+"s": "play",
+"g": "skat"
+},
+{
+"r": 16,
+"n": "Tarot",
+"c": "cards",
+"x": "Franța / Italia",
+"s": "play",
+"g": "tarot"
+},
+{
+"r": 17,
+"n": "Teen Patti",
+"c": "cards",
+"x": "India",
+"s": "play",
+"g": "teenpatti"
+},
+{
+"r": 18,
+"n": "Dou dizhu",
+"c": "cards",
+"x": "China",
+"s": "play",
+"g": "doudizhu"
+},
+{
+"r": 19,
+"n": "Hanafuda",
+"c": "cards",
+"x": "Japonia",
+"s": "play",
+"g": "hanafuda"
+},
+{
+"r": 20,
+"n": "Big Two (Pusoy dos)",
+"c": "cards",
+"x": "China / Filipine",
+"s": "plan",
+"g": ""
+},
+{
+"r": 21,
+"n": "Euchre",
+"c": "cards",
+"x": "America de Nord",
+"s": "play",
+"g": "euchre"
+},
+{
+"r": 22,
+"n": "Pinochle",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 23,
+"n": "Crazy Eights",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 24,
+"n": "Go Fish (Pescuit)",
+"c": "cards",
+"x": "—",
+"s": "var",
+"g": "pescuit"
+},
+{
+"r": 25,
+"n": "War (Război / Bătălia)",
+"c": "cards",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 26,
+"n": "Old Maid (Bătrâna fată)",
+"c": "cards",
+"x": "Europa / Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 27,
+"n": "Tiến lên",
+"c": "cards",
+"x": "Vietnam",
+"s": "plan",
+"g": ""
+},
+{
+"r": 28,
+"n": "Scopa",
+"c": "cards",
+"x": "Italia",
+"s": "play",
+"g": "scopa"
+},
+{
+"r": 29,
+"n": "Briscola",
+"c": "cards",
+"x": "Italia",
+"s": "play",
+"g": "briscola"
+},
+{
+"r": 30,
+"n": "Truco",
+"c": "cards",
+"x": "America Latină (Argentina, Uruguay)",
+"s": "play",
+"g": "truco"
+},
+{
+"r": 31,
+"n": "Septica",
+"c": "cards",
+"x": "—",
+"s": "play",
+"g": "septica"
+},
+{
+"r": 32,
+"n": "Popa prostul",
+"c": "cards",
+"x": "—",
+"s": "var",
+"g": "popa"
+},
+{
+"r": 33,
+"n": "Macao",
+"c": "cards",
+"x": "—",
+"s": "play",
+"g": "macao"
+},
+{
+"r": 34,
+"n": "Hwatu (Go-Stop)",
+"c": "cards",
+"x": "Coreea",
+"s": "play",
+"g": "hwatu"
+},
+{
+"r": 35,
+"n": "Exploding Kittens",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "fitil"
+},
+{
+"r": 36,
+"n": "Love Letter",
+"c": "cards",
+"x": "Japonia",
+"s": "var",
+"g": "curieri"
+},
+{
+"r": 37,
+"n": "Sushi Go!",
+"c": "cards",
+"x": "Australia",
+"s": "var",
+"g": "bufet"
+},
+{
+"r": 38,
+"n": "Bang!",
+"c": "cards",
+"x": "Italia",
+"s": "var",
+"g": "valea"
+},
+{
+"r": 39,
+"n": "Munchkin",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "hruba"
+},
+{
+"r": 40,
+"n": "Bohnanza",
+"c": "cards",
+"x": "Germania",
+"s": "var",
+"g": "roade"
+},
+{
+"r": 41,
+"n": "Lost Cities",
+"c": "cards",
+"x": "Germania",
+"s": "var",
+"g": "expeditii"
+},
+{
+"r": 42,
+"n": "Karuta",
+"c": "cards",
+"x": "Japonia",
+"s": "play",
+"g": "karuta"
+},
+{
+"r": 43,
+"n": "Ganjifa",
+"c": "cards",
+"x": "India",
+"s": "play",
+"g": "ganjifa"
+},
+{
+"r": 44,
+"n": "Trix",
+"c": "cards",
+"x": "Orientul Mijlociu",
+"s": "play",
+"g": "trix"
+},
+{
+"r": 45,
+"n": "Tarneeb",
+"c": "cards",
+"x": "Orientul Mijlociu",
+"s": "play",
+"g": "tarneeb"
+},
+{
+"r": 46,
+"n": "Baloot",
+"c": "cards",
+"x": "Arabia Saudită",
+"s": "play",
+"g": "baloot"
+},
+{
+"r": 47,
+"n": "Hokm",
+"c": "cards",
+"x": "Iran",
+"s": "plan",
+"g": ""
+},
+{
+"r": 48,
+"n": "Pasur",
+"c": "cards",
+"x": "Iran",
+"s": "plan",
+"g": ""
+},
+{
+"r": 49,
+"n": "Oh Hell",
+"c": "cards",
+"x": "Europa / America de Nord",
+"s": "var",
+"g": "prinde"
+},
+{
+"r": 50,
+"n": "Doppelkopf",
+"c": "cards",
+"x": "Germania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 51,
+"n": "Schafkopf",
+"c": "cards",
+"x": "Germania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 52,
+"n": "Sheepshead",
+"c": "cards",
+"x": "SUA / Germania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 53,
+"n": "Jass (Schieber)",
+"c": "cards",
+"x": "Elveția",
+"s": "plan",
+"g": ""
+},
+{
+"r": 54,
+"n": "Tressette",
+"c": "cards",
+"x": "Italia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 55,
+"n": "Mus",
+"c": "cards",
+"x": "Spania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 56,
+"n": "Tarock (Tarok)",
+"c": "cards",
+"x": "Austria / Slovenia / Ungaria",
+"s": "plan",
+"g": ""
+},
+{
+"r": 57,
+"n": "Mau-Mau",
+"c": "cards",
+"x": "Germania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 58,
+"n": "Mariáš",
+"c": "cards",
+"x": "Cehia / Slovacia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 59,
+"n": "Manille",
+"c": "cards",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 60,
+"n": "Piquet",
+"c": "cards",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 61,
+"n": "Bézique",
+"c": "cards",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 62,
+"n": "Ombre (L'Hombre)",
+"c": "cards",
+"x": "Spania / Europa",
+"s": "plan",
+"g": ""
+},
+{
+"r": 63,
+"n": "Preferans",
+"c": "cards",
+"x": "Rusia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 64,
+"n": "Tysiąc (Tysiacha, o mie)",
+"c": "cards",
+"x": "Polonia / Rusia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 65,
+"n": "Klaverjas",
+"c": "cards",
+"x": "Olanda",
+"s": "plan",
+"g": ""
+},
+{
+"r": 66,
+"n": "Batak",
+"c": "cards",
+"x": "Turcia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 67,
+"n": "Sheng ji (Tractor)",
+"c": "cards",
+"x": "China",
+"s": "brand",
+"g": ""
+},
+{
+"r": 68,
+"n": "Twenty-Nine (29)",
+"c": "cards",
+"x": "India / Pakistan / Asia de Sud",
+"s": "plan",
+"g": ""
+},
+{
+"r": 69,
+"n": "Sevens (Fan Tan)",
+"c": "cards",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 70,
+"n": "Three Card Brag",
+"c": "cards",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 71,
+"n": "Sette e mezzo",
+"c": "cards",
+"x": "Italia / Spania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 72,
+"n": "Sueca",
+"c": "cards",
+"x": "Portugalia / Brazilia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 73,
+"n": "Yaniv",
+"c": "cards",
+"x": "Israel",
+"s": "plan",
+"g": ""
+},
+{
+"r": 74,
+"n": "Tute",
+"c": "cards",
+"x": "Spania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 75,
+"n": "Skitgubbe",
+"c": "cards",
+"x": "Suedia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 76,
+"n": "Ulti",
+"c": "cards",
+"x": "Ungaria",
+"s": "plan",
+"g": ""
+},
+{
+"r": 77,
+"n": "Treizeci și unu (31)",
+"c": "cards",
+"x": "—",
+"s": "var",
+"g": "treizeci1"
+},
+{
+"r": 78,
+"n": "Tablanet",
+"c": "cards",
+"x": "—",
+"s": "play",
+"g": "tablanet"
+},
+{
+"r": 79,
+"n": "Șase-zeci și șase (Santase, 66)",
+"c": "cards",
+"x": "—",
+"s": "play",
+"g": "66"
+},
+{
+"r": 80,
+"n": "Cassino",
+"c": "cards",
+"x": "—",
+"s": "var",
+"g": "casino"
+},
+{
+"r": 81,
+"n": "Whot!",
+"c": "cards",
+"x": "Nigeria",
+"s": "plan",
+"g": ""
+},
+{
+"r": 82,
+"n": "Chkobba",
+"c": "cards",
+"x": "Tunisia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 83,
+"n": "Ronda",
+"c": "cards",
+"x": "Maroc / Spania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 84,
+"n": "Daifugo (Daihinmin)",
+"c": "cards",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 85,
+"n": "Tong-its",
+"c": "cards",
+"x": "Filipine",
+"s": "plan",
+"g": ""
+},
+{
+"r": 86,
+"n": "Piști",
+"c": "cards",
+"x": "Turcia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 87,
+"n": "Court Piece (Rang, Mendikot)",
+"c": "cards",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 88,
+"n": "Call Break",
+"c": "cards",
+"x": "Nepal / India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 89,
+"n": "Pitch (Setback)",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 90,
+"n": "Bid Whist",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 91,
+"n": "All Fours",
+"c": "cards",
+"x": "Trinidad și Tobago / Caraibe",
+"s": "plan",
+"g": ""
+},
+{
+"r": 92,
+"n": "Conquián",
+"c": "cards",
+"x": "Mexic",
+"s": "plan",
+"g": ""
+},
+{
+"r": 93,
+"n": "Chinchón",
+"c": "cards",
+"x": "Spania / America Latină",
+"s": "plan",
+"g": ""
+},
+{
+"r": 94,
+"n": "Burako (Buraco)",
+"c": "cards",
+"x": "Argentina / Uruguay / Brazilia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 95,
+"n": "Escoba (Escoba de 15)",
+"c": "cards",
+"x": "Argentina / Uruguay",
+"s": "plan",
+"g": ""
+},
+{
+"r": 96,
+"n": "Cuarenta",
+"c": "cards",
+"x": "Ecuador",
+"s": "plan",
+"g": ""
+},
+{
+"r": 97,
+"n": "Five Hundred (500)",
+"c": "cards",
+"x": "SUA / Australia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 98,
+"n": "Pontoon",
+"c": "cards",
+"x": "Australia / Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 99,
+"n": "6 nimmt! (Take 5)",
+"c": "cards",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 100,
+"n": "Baccarat (Punto banco)",
+"c": "cards",
+"x": "Franța / Italia",
+"s": "plan",
+"g": ""
+}
+],
+"rpg": [
+{
+"r": 1,
+"n": "Dungeons & Dragons",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 2,
+"n": "Pathfinder",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 3,
+"n": "Call of Cthulhu",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 4,
+"n": "Vampire: The Masquerade",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 5,
+"n": "Shadowrun",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 6,
+"n": "Das Schwarze Auge (The Dark Eye)",
+"c": "rpg",
+"x": "Germania",
+"s": "kit",
+"g": ""
+},
+{
+"r": 7,
+"n": "Warhammer Fantasy Roleplay",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 8,
+"n": "Traveller",
+"c": "rpg",
+"x": "Marea Britanie / SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 9,
+"n": "GURPS",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 10,
+"n": "Cyberpunk RED",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 11,
+"n": "Starfinder",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 12,
+"n": "RuneQuest",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 13,
+"n": "Savage Worlds",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 14,
+"n": "Sword World RPG",
+"c": "rpg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 15,
+"n": "Fate Core",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 16,
+"n": "Apocalypse World",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 17,
+"n": "Blades in the Dark",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 18,
+"n": "Dungeon World",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 19,
+"n": "Mörk Borg",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 20,
+"n": "Old School Essentials",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 21,
+"n": "Dungeon Crawl Classics",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 22,
+"n": "Mothership",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 23,
+"n": "Tormenta",
+"c": "rpg",
+"x": "Brazilia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 24,
+"n": "Drakar och Demoner",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 25,
+"n": "Shadowdark RPG",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 26,
+"n": "Mutant: Year Zero",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 27,
+"n": "Legend of the Five Rings RPG",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 28,
+"n": "Mage: The Ascension",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 29,
+"n": "Werewolf: The Apocalypse",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 30,
+"n": "Star Wars Roleplaying Game (West End Games)",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 31,
+"n": "The Witcher TRPG",
+"c": "rpg",
+"x": "Polonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 32,
+"n": "Cypher System",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 33,
+"n": "Numenera",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 34,
+"n": "Tales from the Loop",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 35,
+"n": "Symbaroum",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 36,
+"n": "Kult",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 37,
+"n": "Forbidden Lands",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 38,
+"n": "Alien RPG",
+"c": "rpg",
+"x": "Suedia / SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 39,
+"n": "Deadlands",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 40,
+"n": "Earthdawn",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 41,
+"n": "Paranoia",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 42,
+"n": "Fiasco",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 43,
+"n": "Burning Wheel",
+"c": "rpg",
+"x": "Canada",
+"s": "kit",
+"g": ""
+},
+{
+"r": 44,
+"n": "Tunnels & Trolls",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 45,
+"n": "Chivalry & Sorcery",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 46,
+"n": "Rolemaster",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 47,
+"n": "Hero System",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 48,
+"n": "Mutants & Masterminds",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 49,
+"n": "Pendragon",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 50,
+"n": "7th Sea",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 51,
+"n": "Exalted",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 52,
+"n": "Star Trek Adventures",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 53,
+"n": "Dark Heresy",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 54,
+"n": "Scum and Villainy",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 55,
+"n": "Band of Blades",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 56,
+"n": "Monsterhearts",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 57,
+"n": "Masks: A New Generation",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 58,
+"n": "Kids on Bikes",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 59,
+"n": "Ironsworn",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 60,
+"n": "Ten Candles",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 61,
+"n": "Dread",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 62,
+"n": "Microscope",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 63,
+"n": "Torchbearer",
+"c": "rpg",
+"x": "Canada",
+"s": "kit",
+"g": ""
+},
+{
+"r": 64,
+"n": "13th Age",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 65,
+"n": "Degenesis",
+"c": "rpg",
+"x": "Germania",
+"s": "kit",
+"g": ""
+},
+{
+"r": 66,
+"n": "Splittermond",
+"c": "rpg",
+"x": "Germania",
+"s": "kit",
+"g": ""
+},
+{
+"r": 67,
+"n": "Midgard",
+"c": "rpg",
+"x": "Germania",
+"s": "kit",
+"g": ""
+},
+{
+"r": 68,
+"n": "Neuroshima",
+"c": "rpg",
+"x": "Polonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 69,
+"n": "3D&T",
+"c": "rpg",
+"x": "Brazilia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 70,
+"n": "Old Dragon",
+"c": "rpg",
+"x": "Brazilia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 71,
+"n": "Les Ombres d'Esteren",
+"c": "rpg",
+"x": "Franța",
+"s": "kit",
+"g": ""
+},
+{
+"r": 72,
+"n": "Rêve de Dragon",
+"c": "rpg",
+"x": "Franța",
+"s": "kit",
+"g": ""
+},
+{
+"r": 73,
+"n": "In Nomine Satanis / Magna Veritas",
+"c": "rpg",
+"x": "Franța",
+"s": "kit",
+"g": ""
+},
+{
+"r": 74,
+"n": "Aquelarre",
+"c": "rpg",
+"x": "Spania",
+"s": "kit",
+"g": ""
+},
+{
+"r": 75,
+"n": "Dračí doupě",
+"c": "rpg",
+"x": "Cehia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 76,
+"n": "Nechronica",
+"c": "rpg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 77,
+"n": "Shinobigami",
+"c": "rpg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 78,
+"n": "Ryuutama",
+"c": "rpg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 79,
+"n": "Gamma World",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 80,
+"n": "Mythras",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 81,
+"n": "Spire: The City Must Fall",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 82,
+"n": "Heart: The City Beneath",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 83,
+"n": "Stars Without Number",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 84,
+"n": "The Black Hack",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 85,
+"n": "Troika!",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 86,
+"n": "Trail of Cthulhu",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 87,
+"n": "Lady Blackbird",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 88,
+"n": "Dogs in the Vineyard",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 89,
+"n": "Labyrinth Lord",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 90,
+"n": "Swords & Wizardry",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 91,
+"n": "Lamentations of the Flame Princess",
+"c": "rpg",
+"x": "Finlanda",
+"s": "kit",
+"g": ""
+},
+{
+"r": 92,
+"n": "Knave",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 93,
+"n": "Cairn",
+"c": "rpg",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 94,
+"n": "Into the Odd",
+"c": "rpg",
+"x": "Noua Zeelandă",
+"s": "kit",
+"g": ""
+},
+{
+"r": 95,
+"n": "Basic Fantasy RPG",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 96,
+"n": "Delta Green",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 97,
+"n": "Eon",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 98,
+"n": "Coriolis: The Third Horizon",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 99,
+"n": "Vaesen",
+"c": "rpg",
+"x": "Suedia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 100,
+"n": "InSANe",
+"c": "rpg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+}
+],
+"minis": [
+{
+"r": 1,
+"n": "Warhammer 40,000",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 2,
+"n": "Warhammer: Age of Sigmar",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 3,
+"n": "Bolt Action",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "var",
+"g": "ordine"
+},
+{
+"r": 4,
+"n": "Kings of War",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 5,
+"n": "Flames of War",
+"c": "minis",
+"x": "Noua Zeelandă",
+"s": "kit",
+"g": ""
+},
+{
+"r": 6,
+"n": "Star Wars: X-Wing",
+"c": "minis",
+"x": "SUA",
+"s": "var",
+"g": "nave"
+},
+{
+"r": 7,
+"n": "Blood Bowl",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "var",
+"g": "gridiron"
+},
+{
+"r": 8,
+"n": "Warhammer: Kill Team",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "var",
+"g": "patrula"
+},
+{
+"r": 9,
+"n": "Infinity",
+"c": "minis",
+"x": "Spania",
+"s": "var",
+"g": "reactii"
+},
+{
+"r": 10,
+"n": "Warhammer: The Old World",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 11,
+"n": "Star Wars: Legion",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 12,
+"n": "Necromunda",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 13,
+"n": "Warhammer Fantasy Battle",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 14,
+"n": "Middle-earth Strategy Battle Game",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 15,
+"n": "Warhammer: The Horus Heresy",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 16,
+"n": "Marvel Crisis Protocol",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 17,
+"n": "Saga",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 18,
+"n": "One Page Rules (Grimdark Future / Age of Fantasy)",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 19,
+"n": "Mordheim",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 20,
+"n": "Warmachine",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 21,
+"n": "Malifaux",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 22,
+"n": "BattleTech",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 23,
+"n": "Black Powder",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 24,
+"n": "Warhammer Underworlds",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 25,
+"n": "Warcry",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 26,
+"n": "Star Wars: Armada",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 27,
+"n": "Team Yankee",
+"c": "minis",
+"x": "Noua Zeelandă",
+"s": "kit",
+"g": ""
+},
+{
+"r": 28,
+"n": "Chain of Command",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 29,
+"n": "Frostgrave",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 30,
+"n": "Gaslands",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 31,
+"n": "Hail Caesar",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 32,
+"n": "Field of Glory",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 33,
+"n": "Star Wars: Shatterpoint",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 34,
+"n": "Legions Imperialis",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 35,
+"n": "Adeptus Titanicus",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 36,
+"n": "Battlefleet Gothic",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 37,
+"n": "Song of Blades and Heroes",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 38,
+"n": "Stargrave",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 39,
+"n": "Epic Armageddon",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 40,
+"n": "HeroClix",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 41,
+"n": "Wings of Glory",
+"c": "minis",
+"x": "Italia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 42,
+"n": "Dust Tactics",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 43,
+"n": "Dropzone Commander",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 44,
+"n": "A Song of Ice and Fire: Tabletop Miniatures Game",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 45,
+"n": "Conquest: The Last Argument of Kings",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 46,
+"n": "Warpath",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 47,
+"n": "Deadzone",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 48,
+"n": "Dreadball",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 49,
+"n": "Lion Rampant",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 50,
+"n": "Dragon Rampant",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 51,
+"n": "Blood Red Skies",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 52,
+"n": "Cruel Seas",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 53,
+"n": "Black Seas",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 54,
+"n": "Sails of Glory",
+"c": "minis",
+"x": "Spania",
+"s": "kit",
+"g": ""
+},
+{
+"r": 55,
+"n": "Victory at Sea",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 56,
+"n": "Dystopian Wars",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 57,
+"n": "Firestorm Armada",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 58,
+"n": "Full Thrust",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 59,
+"n": "Star Fleet Battles",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 60,
+"n": "Dropfleet Commander",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 61,
+"n": "Star Trek: Attack Wing",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 62,
+"n": "Batman Miniature Game",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 63,
+"n": "Guild Ball",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 64,
+"n": "Wrath of Kings",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 65,
+"n": "Hordes",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 66,
+"n": "Mage Knight",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 67,
+"n": "Axis & Allies Miniatures",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 68,
+"n": "Dungeons & Dragons Miniatures",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 69,
+"n": "HeroScape",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 70,
+"n": "Confrontation",
+"c": "minis",
+"x": "Franța",
+"s": "kit",
+"g": ""
+},
+{
+"r": 71,
+"n": "Rangers of Shadow Deep",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 72,
+"n": "Muskets & Tomahawks",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 73,
+"n": "Sharp Practice",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 74,
+"n": "Lasalle",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 75,
+"n": "Pike & Shotte",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 76,
+"n": "Force on Force",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 77,
+"n": "A Fistful of Lead",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 78,
+"n": "Dead Man's Hand",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 79,
+"n": "Pulp Alley",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 80,
+"n": "Bushido",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 81,
+"n": "Ronin",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 82,
+"n": "Oathmark",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 83,
+"n": "Konflikt '47",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 84,
+"n": "Impetus",
+"c": "minis",
+"x": "Italia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 85,
+"n": "De Bellis Antiquitatis (DBA)",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 86,
+"n": "De Bellis Multitudinis (DBM)",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 87,
+"n": "L'Art de la Guerre",
+"c": "minis",
+"x": "Franța",
+"s": "kit",
+"g": ""
+},
+{
+"r": 88,
+"n": "To the Strongest!",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 89,
+"n": "Swordpoint",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 90,
+"n": "Warmaster",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 91,
+"n": "Volley & Bayonet",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 92,
+"n": "Fire and Fury",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 93,
+"n": "Heavy Gear",
+"c": "minis",
+"x": "Canada",
+"s": "kit",
+"g": ""
+},
+{
+"r": 94,
+"n": "Aeronautica Imperialis",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 95,
+"n": "Check Your 6!",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 96,
+"n": "Five Parsecs From Home",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 97,
+"n": "Project Pandora",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+},
+{
+"r": 98,
+"n": "Mythic Battles: Pantheon",
+"c": "minis",
+"x": "Franța",
+"s": "kit",
+"g": ""
+},
+{
+"r": 99,
+"n": "Star Wars: Imperial Assault",
+"c": "minis",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 100,
+"n": "Space Hulk",
+"c": "minis",
+"x": "Marea Britanie",
+"s": "kit",
+"g": ""
+}
+],
+"tcg": [
+{
+"r": 1,
+"n": "Magic: The Gathering",
+"c": "tcg",
+"x": "SUA",
+"s": "var",
+"g": "tcg"
+},
+{
+"r": 2,
+"n": "Pokémon TCG",
+"c": "tcg",
+"x": "Japonia",
+"s": "var",
+"g": "tcg_evo"
+},
+{
+"r": 3,
+"n": "Yu-Gi-Oh! TCG",
+"c": "tcg",
+"x": "Japonia",
+"s": "var",
+"g": "tcg_zone"
+},
+{
+"r": 4,
+"n": "One Piece Card Game",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 5,
+"n": "Disney Lorcana",
+"c": "tcg",
+"x": "Germania",
+"s": "var",
+"g": "tcg_cerneala"
+},
+{
+"r": 6,
+"n": "Digimon Card Game",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 7,
+"n": "Dragon Ball Super Card Game",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 8,
+"n": "Flesh and Blood",
+"c": "tcg",
+"x": "SUA",
+"s": "var",
+"g": "tcg_lant"
+},
+{
+"r": 9,
+"n": "Weiß Schwarz",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 10,
+"n": "Cardfight!! Vanguard",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 11,
+"n": "Star Wars: Unlimited",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 12,
+"n": "Duel Masters",
+"c": "tcg",
+"x": "SUA / Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 13,
+"n": "Final Fantasy Trading Card Game",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 14,
+"n": "Battle Spirits",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 15,
+"n": "Android: Netrunner",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 16,
+"n": "KeyForge",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 17,
+"n": "Legend of the Five Rings (CCG)",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 18,
+"n": "Star Wars: Destiny",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 19,
+"n": "Force of Will",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 20,
+"n": "Grand Archive",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 21,
+"n": "Sorcery: Contested Realm",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 22,
+"n": "Gundam Card Game",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 23,
+"n": "Union Arena",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 24,
+"n": "MetaZoo",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 25,
+"n": "Vampire: The Eternal Struggle",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 26,
+"n": "Star Trek Customizable Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 27,
+"n": "Star Wars Customizable Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 28,
+"n": "Middle-earth Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 29,
+"n": "Shadowfist",
+"c": "tcg",
+"x": "Hong Kong / SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 30,
+"n": "Spellfire",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 31,
+"n": "Illuminati: New World Order",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 32,
+"n": "Call of Cthulhu: The Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 33,
+"n": "A Game of Thrones: The Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 34,
+"n": "Warhammer: Invasion",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 35,
+"n": "Warhammer 40,000: Conquest",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 36,
+"n": "Magi-Nation Duel",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 37,
+"n": "Dragon Ball Z Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 38,
+"n": "Naruto Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 39,
+"n": "Bleach Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 40,
+"n": "Future Card Buddyfight",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 41,
+"n": "Z/X Zillions of Enemy X",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 42,
+"n": "Yu-Gi-Oh! Rush Duel",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 43,
+"n": "Kaijudo: Clash of the Duel Masters",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 44,
+"n": "Chaotic",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 45,
+"n": "Redakai",
+"c": "tcg",
+"x": "Canada / SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 46,
+"n": "Universal Fighting System",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 47,
+"n": "Vs. System",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 48,
+"n": "The Wheel of Time Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 49,
+"n": "BattleTech Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 50,
+"n": "Babylon 5 Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 51,
+"n": "Harry Potter Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 52,
+"n": "The Lord of the Rings Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 53,
+"n": "Warlord: Saga of the Storm",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 54,
+"n": "Blue Moon",
+"c": "tcg",
+"x": "Germania",
+"s": "kit",
+"g": ""
+},
+{
+"r": 55,
+"n": "Ashes: Rise of the Phoenixborn",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 56,
+"n": "Hero Realms",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 57,
+"n": "Riftbound: League of Legends Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 58,
+"n": "Doomtown",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 59,
+"n": "Netrunner (1996)",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 60,
+"n": "OverPower",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 61,
+"n": "Hecatomb",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 62,
+"n": "Guardians",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 63,
+"n": "Rage",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 64,
+"n": "Dune (CCG)",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 65,
+"n": "Doomtrooper",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 66,
+"n": "On the Edge",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 67,
+"n": "Galactic Empires",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 68,
+"n": "The X-Files Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 69,
+"n": "Shadowrun: The Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 70,
+"n": "Aliens vs. Predator Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 71,
+"n": "7th Sea CCG",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 72,
+"n": "Mythos CCG",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 73,
+"n": "Legend of the Burning Sands",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 74,
+"n": "Tomb Raider CCG",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 75,
+"n": "Xena: Warrior Princess CCG",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 76,
+"n": "Hercules: The Legendary Journeys CCG",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 77,
+"n": "Young Jedi Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 78,
+"n": "Sailor Moon Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 79,
+"n": "The Terminator CCG",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 80,
+"n": "Digi-Battle Card Game",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 81,
+"n": "X-Men Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 82,
+"n": "Buffy the Vampire Slayer CCG",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 83,
+"n": "Jedi Knights Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 84,
+"n": "Star Wars Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 85,
+"n": "Warhammer 40,000 Collectible Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 86,
+"n": "The Simpsons Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 87,
+"n": "SpongeBob SquarePants Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 88,
+"n": "Neopets Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 89,
+"n": "G.I. Joe Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 90,
+"n": "Teenage Mutant Ninja Turtles Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 91,
+"n": "WoW Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 92,
+"n": "YuYu Hakusho Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 93,
+"n": "Avatar: The Last Airbender Trading Card Game",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 94,
+"n": "Vampire: The Masquerade – Rivals",
+"c": "tcg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 95,
+"n": "Shadowverse: Evolve",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 96,
+"n": "hololive OFFICIAL CARD GAME",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 97,
+"n": "WIXOSS",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 98,
+"n": "Altered TCG",
+"c": "tcg",
+"x": "Franța",
+"s": "kit",
+"g": ""
+},
+{
+"r": 99,
+"n": "Mitos y Leyendas",
+"c": "tcg",
+"x": "Chile",
+"s": "kit",
+"g": ""
+},
+{
+"r": 100,
+"n": "Dragon Ball Super Card Game Fusion World",
+"c": "tcg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+}
+],
+"kids": [
+{
+"r": 1,
+"n": "Șerpi și scări",
+"c": "kids",
+"x": "India",
+"s": "play",
+"g": "snakes"
+},
+{
+"r": 2,
+"n": "Candy Land",
+"c": "kids",
+"x": "SUA",
+"s": "var",
+"g": "prajituri"
+},
+{
+"r": 3,
+"n": "Memory",
+"c": "kids",
+"x": "Germania",
+"s": "play",
+"g": "memory"
+},
+{
+"r": 4,
+"n": "Guess Who? (Cine e?)",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "var",
+"g": "portret"
+},
+{
+"r": 5,
+"n": "Piatră, hârtie, foarfece",
+"c": "kids",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 6,
+"n": "Ascunselea (Hide-and-seek)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 7,
+"n": "Operation",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 8,
+"n": "Hungry Hungry Hippos",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 9,
+"n": "Trouble",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 10,
+"n": "Mouse Trap",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 11,
+"n": "KerPlunk",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 12,
+"n": "Hi Ho! Cherry-O",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 13,
+"n": "Don't Break the Ice",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 14,
+"n": "Șotron (Hopscotch)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 15,
+"n": "Baba-oarba (Blind man's buff)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 16,
+"n": "Scaunele muzicale",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 17,
+"n": "Simon zice (Simon says)",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 18,
+"n": "Sărit coarda (Jump rope)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 19,
+"n": "De-a prinselea (Tag)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 20,
+"n": "Duck Duck Goose",
+"c": "kids",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 21,
+"n": "Cinci pietricele (Jacks / Knucklebones)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 22,
+"n": "Mikado (Pick-up sticks)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 23,
+"n": "Spânzurătoarea (Hangman)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 24,
+"n": "Loopin' Louie",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 25,
+"n": "Obstgarten (Orchard)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 26,
+"n": "Zicke Zacke Hühnerkacke (Chicken Cha Cha Cha)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 27,
+"n": "Halli Galli",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 28,
+"n": "Sleeping Queens",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 29,
+"n": "Ice Cool",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 30,
+"n": "Rhino Hero",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 31,
+"n": "Animal Upon Animal (Tier auf Tier)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 32,
+"n": "Gulo Gulo",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 33,
+"n": "Outfoxed!",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 34,
+"n": "Zingo",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 35,
+"n": "Simon",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 36,
+"n": "Buckaroo!",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 37,
+"n": "Pop-Up Pirate",
+"c": "kids",
+"x": "Japonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 38,
+"n": "Perfection",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 39,
+"n": "Lotti Karotti",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 40,
+"n": "Bamboleo",
+"c": "kids",
+"x": "Spania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 41,
+"n": "Cooties",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 42,
+"n": "Don't Wake Daddy",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 43,
+"n": "Catan Junior",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 44,
+"n": "My First Carcassonne",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 45,
+"n": "Dragomino",
+"c": "kids",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 46,
+"n": "Zombie Kidz Evolution",
+"c": "kids",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 47,
+"n": "The Magic Labyrinth",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 48,
+"n": "The Enchanted Tower",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 49,
+"n": "Spooky Stairs",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 50,
+"n": "Das kleine Gespenst",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 51,
+"n": "Viva Topo!",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 52,
+"n": "Geister, Geister, Schatzsuchmeister",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 53,
+"n": "Da ist der Wurm drin (Worm Up)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 54,
+"n": "Schnappt Hubi!",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 55,
+"n": "Spinderella",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 56,
+"n": "My First Stone Age",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 57,
+"n": "Speedy Roll",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 58,
+"n": "Funkelschatz",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 59,
+"n": "Tal der Wikinger (Valley of the Vikings)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 60,
+"n": "Zauberberg (Magic Mountain)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 61,
+"n": "Mysterium Kids",
+"c": "kids",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 62,
+"n": "Die magischen Schlüssel (Magic Keys)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 63,
+"n": "Top the Cake",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 64,
+"n": "Die Insel der Mookies",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 65,
+"n": "Noah's Park",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 66,
+"n": "Galloping Pigs",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 67,
+"n": "Karambolage",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 68,
+"n": "Maskenball der Käfer",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 69,
+"n": "Der schwarze Pirat",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 70,
+"n": "Beppo der Bock",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 71,
+"n": "Wer war's? (Whoowasit?)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 72,
+"n": "Diego Drachenzahn",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 73,
+"n": "Gute Freunde",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 74,
+"n": "Corsaro",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 75,
+"n": "Leinen Los!",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 76,
+"n": "Kayanak",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 77,
+"n": "Arbos",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 78,
+"n": "Château Roquefort",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 79,
+"n": "Coconuts (Coco Crazy)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 80,
+"n": "Monza",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 81,
+"n": "Ribbit (Schildkrötenrennen)",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 82,
+"n": "Leo muss zum Friseur",
+"c": "kids",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 83,
+"n": "Capra (Leapfrog)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 84,
+"n": "Elasticul (Chinese jump rope)",
+"c": "kids",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 85,
+"n": "Statuile (Statues)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 86,
+"n": "Capture the Flag",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 87,
+"n": "Kick the Can",
+"c": "kids",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 88,
+"n": "I Spy (Ghicește ce văd)",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 89,
+"n": "Jocul lui Kim (Kim's Game)",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 90,
+"n": "Oina",
+"c": "kids",
+"x": "România",
+"s": "plan",
+"g": ""
+},
+{
+"r": 91,
+"n": "Conkers",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 92,
+"n": "Jocuri cu ață (Cat's cradle)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 93,
+"n": "Mingea (Dodgeball)",
+"c": "kids",
+"x": "Global",
+"s": "plan",
+"g": ""
+},
+{
+"r": 94,
+"n": "Snap",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 95,
+"n": "Slapjack",
+"c": "kids",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 96,
+"n": "Crocodile Dentist",
+"c": "kids",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 97,
+"n": "Pictureka!",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 98,
+"n": "Loto cu imagini (Picture lotto)",
+"c": "kids",
+"x": "Europa",
+"s": "plan",
+"g": ""
+},
+{
+"r": 99,
+"n": "Ants in the Pants",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 100,
+"n": "Elefun",
+"c": "kids",
+"x": "SUA",
+"s": "brand",
+"g": ""
+}
+],
+"dice": [
+{
+"r": 1,
+"n": "Yahtzee",
+"c": "dice",
+"x": "SUA",
+"s": "var",
+"g": "zaruri5"
+},
+{
+"r": 2,
+"n": "Craps",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 3,
+"n": "Poker de zaruri",
+"c": "dice",
+"x": "—",
+"s": "var",
+"g": "zarpoker"
+},
+{
+"r": 4,
+"n": "Liar's Dice (Cacho, Dudo, Perudo)",
+"c": "dice",
+"x": "America Latină",
+"s": "plan",
+"g": ""
+},
+{
+"r": 5,
+"n": "Farkle (10 000)",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 6,
+"n": "King of Tokyo",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 7,
+"n": "Qwixx",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 8,
+"n": "Ganz schön clever (That's Pretty Clever)",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 9,
+"n": "Can't Stop",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 10,
+"n": "Sic Bo",
+"c": "dice",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 11,
+"n": "Zombie Dice",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 12,
+"n": "Bunco",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 13,
+"n": "Generala",
+"c": "dice",
+"x": "Argentina / Uruguay",
+"s": "plan",
+"g": ""
+},
+{
+"r": 14,
+"n": "Yatzy",
+"c": "dice",
+"x": "Suedia / Scandinavia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 15,
+"n": "Roll for the Galaxy",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 16,
+"n": "Kingsburg",
+"c": "dice",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 17,
+"n": "Shut the Box",
+"c": "dice",
+"x": "Franța / Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 18,
+"n": "Catan: The Dice Game (Catan Dice Game)",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 19,
+"n": "Heckmeck am Bratwurmeck (Pickomino)",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 20,
+"n": "Barbut",
+"c": "dice",
+"x": "—",
+"s": "play",
+"g": "barbut"
+},
+{
+"r": 21,
+"n": "Chinchirorin",
+"c": "dice",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 22,
+"n": "Chō-han (Chō-han bakuchi)",
+"c": "dice",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 23,
+"n": "Bầu cua cá cọp",
+"c": "dice",
+"x": "Vietnam",
+"s": "plan",
+"g": ""
+},
+{
+"r": 24,
+"n": "Mexico (Mäxchen, Mia)",
+"c": "dice",
+"x": "Europa / Mexic",
+"s": "plan",
+"g": ""
+},
+{
+"r": 25,
+"n": "Pig",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 26,
+"n": "Left Center Right (LCR)",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 27,
+"n": "Hazard",
+"c": "dice",
+"x": "Marea Britanie / Orientul Mijlociu",
+"s": "plan",
+"g": ""
+},
+{
+"r": 28,
+"n": "Crown and Anchor",
+"c": "dice",
+"x": "Marea Britanie / Oceania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 29,
+"n": "Chuck-a-luck",
+"c": "dice",
+"x": "SUA / Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 30,
+"n": "Ship, Captain, and Crew",
+"c": "dice",
+"x": "SUA / Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 31,
+"n": "Balut",
+"c": "dice",
+"x": "Filipine",
+"s": "plan",
+"g": ""
+},
+{
+"r": 32,
+"n": "Yacht",
+"c": "dice",
+"x": "Asia / Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 33,
+"n": "Schocken",
+"c": "dice",
+"x": "Germania",
+"s": "plan",
+"g": ""
+},
+{
+"r": 34,
+"n": "Cee-lo",
+"c": "dice",
+"x": "China / SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 35,
+"n": "Bang! The Dice Game",
+"c": "dice",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 36,
+"n": "Dice Forge",
+"c": "dice",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 37,
+"n": "Dice Throne",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 38,
+"n": "Quarriors!",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 39,
+"n": "Dice Masters",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 40,
+"n": "Doppelt so clever (Twice as Clever)",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 41,
+"n": "Clever hoch drei (Clever Cubed)",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 42,
+"n": "Qwinto",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 43,
+"n": "Noch mal! (Encore!)",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 44,
+"n": "Las Vegas",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 45,
+"n": "Alien Frontiers",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 46,
+"n": "Roll Through the Ages",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 47,
+"n": "Pandemic: The Cure",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 48,
+"n": "Martian Dice",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 49,
+"n": "Cthulhu Dice",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 50,
+"n": "King of New York",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 51,
+"n": "Dungeon Roll",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 52,
+"n": "Dice Town",
+"c": "dice",
+"x": "Franța / Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 53,
+"n": "Dice City",
+"c": "dice",
+"x": "Cehia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 54,
+"n": "Dice Hospital",
+"c": "dice",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 55,
+"n": "Dice Settlers",
+"c": "dice",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 56,
+"n": "Roll Player",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 57,
+"n": "Space Base",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 58,
+"n": "Troyes",
+"c": "dice",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 59,
+"n": "Yspahan",
+"c": "dice",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 60,
+"n": "Sagrada",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 61,
+"n": "Railroad Ink",
+"c": "dice",
+"x": "Italia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 62,
+"n": "Cosmic Wimpout",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 63,
+"n": "Tenzi",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 64,
+"n": "Pass the Pigs",
+"c": "dice",
+"x": "Marea Britanie",
+"s": "brand",
+"g": ""
+},
+{
+"r": 65,
+"n": "Beetle",
+"c": "dice",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 66,
+"n": "Knucklebones (Tali)",
+"c": "dice",
+"x": "Grecia / Roma antică",
+"s": "plan",
+"g": ""
+},
+{
+"r": 67,
+"n": "Chicago (zaruri)",
+"c": "dice",
+"x": "Europa",
+"s": "plan",
+"g": ""
+},
+{
+"r": 68,
+"n": "Passe-dix",
+"c": "dice",
+"x": "Franța",
+"s": "plan",
+"g": ""
+},
+{
+"r": 69,
+"n": "Over and Under Seven",
+"c": "dice",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 70,
+"n": "Chowka Bara",
+"c": "dice",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 71,
+"n": "Ligretto Dice",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 72,
+"n": "Fuse",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 73,
+"n": "Nations: The Dice Game",
+"c": "dice",
+"x": "Suedia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 74,
+"n": "Cubitos",
+"c": "dice",
+"x": "Franța",
+"s": "brand",
+"g": ""
+},
+{
+"r": 75,
+"n": "Deep Sea Adventure",
+"c": "dice",
+"x": "Japonia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 76,
+"n": "Alea Iacta Est",
+"c": "dice",
+"x": "Germania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 77,
+"n": "Kismet",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 78,
+"n": "Crag",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 79,
+"n": "Toss Up!",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 80,
+"n": "Greed (joc de zaruri)",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 81,
+"n": "Zara (joc)",
+"c": "dice",
+"x": "Italia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 82,
+"n": "Dice Baseball",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 83,
+"n": "Beat That!",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 84,
+"n": "Rolling America",
+"c": "dice",
+"x": "Japonia / SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 85,
+"n": "Dungeon Fighter",
+"c": "dice",
+"x": "Spania",
+"s": "brand",
+"g": ""
+},
+{
+"r": 86,
+"n": "Skunk",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 87,
+"n": "Petals Around the Rose",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 88,
+"n": "Perquackey",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 89,
+"n": "Dragon Dice",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 90,
+"n": "Button Men",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 91,
+"n": "Dead Man's Dice",
+"c": "dice",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 92,
+"n": "Beer die",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 93,
+"n": "Bo Bing (Pua Tiong Chiu)",
+"c": "dice",
+"x": "China / Taiwan",
+"s": "plan",
+"g": ""
+},
+{
+"r": 94,
+"n": "Daldøs",
+"c": "dice",
+"x": "Norvegia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 95,
+"n": "Drop Dead",
+"c": "dice",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 96,
+"n": "To Court the King",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 97,
+"n": "Roll for It!",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 98,
+"n": "Blueprints",
+"c": "dice",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 99,
+"n": "Howzat! (dice cricket)",
+"c": "dice",
+"x": "Marea Britanie",
+"s": "plan",
+"g": ""
+},
+{
+"r": 100,
+"n": "Bar dice",
+"c": "dice",
+"x": "Global",
+"s": "plan",
+"g": ""
+}
+]
+},
 "notes_ro": [
 "Cum să citești topurile",
 "Nu există un clasament oficial unic. Locurile sunt estimări editoriale, combinate din vânzări, număr de jucători, prezență în comunități și topuri publice.",
@@ -7231,6 +16857,7 @@
 "Topurile pentru Africa, America de Sud și Oceania sunt, ca cel pentru România, mai puțin sigure decât celelalte: există puține statistici publice despre jocurile de masă din aceste regiuni, iar ultimele locuri sunt jocuri internaționale ordonate după prezența lor pe piețele regionale (Africa de Sud, Brazilia, Australia).",
 "Jocurile tradiționale regionale care nu sunt încă implementate (de exemplu Oware, Bao, Escoba, Burako, Two-up) au fost adăugate în catalog cu starea „planificat”; au reguli publice și nu au nume de marcă.",
 "Antarctica nu are top: nu are populație permanentă și nici o tradiție proprie de jocuri; stațiile de cercetare joacă jocurile aduse din țările de origine, care apar deja în celelalte topuri.",
-"Toate topurile (lume, Europa, cele cinci continente, alte continente, România) sunt estimări editoriale, nu o clasificare oficială."
+"Topurile pe categorii (câte unul pentru fiecare categorie din catalog: Abstract, Clasic, Familie, Strategie, Party, Cooperativ, Cărți, Rol (RPG), Miniaturi, TCG, Copii, Zaruri) sunt topuri mondiale de câte 100 de jocuri. Ordinea este cea din cercetare (estimare editorială după popularitate și răspândire); un joc apare într-o singură categorie, iar locurile rămase libere după eliminarea dublurilor au fost completate la coadă cu următoarele jocuri reale. Jocurile cu reguli publice sunt marcate „planificat” în catalog; denumirile de marcă primesc în program titluri proprii.",
+"Toate topurile (pe regiuni și pe categorii) sunt estimări editoriale, nu o clasificare oficială."
 ]
 }

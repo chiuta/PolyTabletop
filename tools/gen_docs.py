@@ -83,18 +83,18 @@ LABELS = [
 ]
 
 
+KIND_LABEL = {"Implemented": "implementat", "Traditional": "planificat (domeniu public)", "Branded": "planificat (variantă proprie)",
+              "Toolkit": "toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat)"}
+KIND_GROUP = {"Implemented": "Implementat", "Traditional": "Tradițional", "Branded": "Variantă proprie", "Toolkit": "Toolkit"}
+
+
 def gen_catalog():
+    """Citește direct polytabletop-games/src/catalog.rs (sursa de adevăr; nu depinde de lățimea coloanelor din `polytabletop catalog`)."""
     groups = {k: [] for _, k in LABELS}
-    for line in run(["catalog"]).splitlines():
-        if not line.strip() or line.startswith("Total"):
-            continue
-        m = re.search(r" (implementat|planificat \(|toolkit generic)", line[58:])
-        cut = 58 + m.start()
-        name, cat, origin, rest = line[:44].strip(), line[45:57].strip(), line[58:cut].strip(), line[cut:].strip()
-        for lab, k in LABELS:
-            if rest.startswith(lab):
-                groups[k].append((name, cat, origin, rest))
-                break
+    src = open(os.path.join(ROOT, "polytabletop-games/src/catalog.rs"), encoding="utf-8").read()
+    for m in re.finditer(r'name:\s*"((?:[^"\\]|\\.)*)",\s*category:\s*"([^"]*)",\s*origin:\s*"([^"]*)",\s*kind:\s*Kind::(\w+),', src):
+        name = m.group(1).replace('\\"', '"')
+        groups[KIND_GROUP[m.group(4)]].append((name, m.group(2), m.group(3), KIND_LABEL[m.group(4)]))
     total = sum(len(v) for v in groups.values())
     out = ["# Catalogul (generat)\n",
            f"{total} de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; "

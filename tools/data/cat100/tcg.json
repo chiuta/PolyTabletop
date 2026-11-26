@@ -1,0 +1,1692 @@
+{
+ "category": "TCG",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Magic: The Gathering",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Pokémon TCG",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Yu-Gi-Oh! TCG",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "One Piece Card Game",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2022,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Cartea Piraților",
+   "public_rules": false,
+   "notes_ro": "TCG Bandai bazat pe manga One Piece, în expansiune globală rapidă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/One_Piece_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 5,
+   "name": "Disney Lorcana",
+   "existing": true
+  },
+  {
+   "r": 6,
+   "name": "Digimon Card Game",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2020,
+   "ctx": [
+    "asia",
+    "global",
+    "europe"
+   ],
+   "own_title_ro": "Duelul Digitalilor",
+   "public_rules": false,
+   "notes_ro": "TCG Bandai cu evoluție și memorie partajată, bazat pe franciza Digimon.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Digimon_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 7,
+   "name": "Dragon Ball Super Card Game",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2017,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Cartea Luptătorilor Cosmici",
+   "public_rules": false,
+   "notes_ro": "TCG Bandai cu leader și energie, popular în Japonia și Occident.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dragon_Ball_Super_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 8,
+   "name": "Flesh and Blood",
+   "existing": true
+  },
+  {
+   "r": 9,
+   "name": "Weiß Schwarz",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2008,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Alb și Negru",
+   "public_rules": false,
+   "notes_ro": "TCG Bushiroad cu seturi licențiate din anime, jocuri și idoli.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wei%C3%9F_Schwarz",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 10,
+   "name": "Cardfight!! Vanguard",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2011,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Duelul Avangardei",
+   "public_rules": false,
+   "notes_ro": "TCG Bushiroad cu mecanici de ride și unități pe două rânduri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cardfight!!_Vanguard",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 11,
+   "name": "Star Wars: Unlimited",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2024,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Războiul Stelelor Nelimitat",
+   "public_rules": false,
+   "notes_ro": "TCG Fantasy Flight cu baze și lideri, lansat în 2024.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Wars:_Unlimited",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 12,
+   "name": "Duel Masters",
+   "existing": false,
+   "origin": "SUA/Japonia",
+   "year": 2002,
+   "ctx": [
+    "asia",
+    "namerica"
+   ],
+   "own_title_ro": "Stăpânii Duelului",
+   "public_rules": false,
+   "notes_ro": "TCG creat de Wizards, mare succes în Japonia, cu mana din cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Duel_Masters_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 13,
+   "name": "Final Fantasy Trading Card Game",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2016,
+   "ctx": [
+    "asia",
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Fantezia Finală de Cărți",
+   "public_rules": false,
+   "notes_ro": "TCG Square Enix cu cristale și personaje din seria Final Fantasy.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Final_Fantasy_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 14,
+   "name": "Battle Spirits",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2008,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Spirite de Luptă",
+   "public_rules": false,
+   "notes_ro": "TCG Bandai din Japonia cu reflexe și cost de zeci de spirite.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battle_Spirits",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 15,
+   "name": "Android: Netrunner",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Alergătorul din Rețea",
+   "public_rules": false,
+   "notes_ro": "LCG asimetric corporații contra hackeri, urmaș al Netrunner din 1996.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Android:_Netrunner",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 16,
+   "name": "KeyForge",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Forja Cheilor",
+   "public_rules": false,
+   "notes_ro": "Joc unic cu pachete generate algoritmic, fără construirea pachetului.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/KeyForge",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 17,
+   "name": "Legend of the Five Rings (CCG)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1995,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Legenda celor Cinci Inele",
+   "public_rules": false,
+   "notes_ro": "CCG fantasy cu tematică asiatică, clanuri și multiple căi de victorie.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Legend_of_the_Five_Rings:_The_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 18,
+   "name": "Marvel Champions: The Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Campionii Marvel",
+   "public_rules": false,
+   "notes_ro": "LCG cooperativ cu eroi Marvel și pachete de aspecte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel_Champions:_The_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 19,
+   "name": "Arkham Horror: The Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Groaza din Arkham",
+   "public_rules": false,
+   "notes_ro": "LCG cooperativ cu campanii narative Lovecraft.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arkham_Horror:_The_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 20,
+   "name": "The Lord of the Rings: The Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Stăpânul Inelelor: Jocul de Cărți",
+   "public_rules": false,
+   "notes_ro": "LCG cooperativ cu scenarii Tolkien.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 21,
+   "name": "Star Wars: Destiny",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Destinul Stelelor",
+   "public_rules": false,
+   "notes_ro": "Joc colecționabil cu cărți și zaruri, încheiat în 2020.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Wars:_Destiny",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 22,
+   "name": "Force of Will",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2012,
+   "ctx": [
+    "asia",
+    "namerica"
+   ],
+   "own_title_ro": "Forța Voinței",
+   "public_rules": false,
+   "notes_ro": "TCG fantasy cu zone de magician și cristale de magie.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Force_of_Will_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 23,
+   "name": "Grand Archive",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2021,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Marele Arhiv",
+   "public_rules": false,
+   "notes_ro": "TCG fantasy modern cu campioni și memorie.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Grand_Archive_TCG",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 24,
+   "name": "Sorcery: Contested Realm",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2023,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Vrăjitoria: Tărâm Disputat",
+   "public_rules": false,
+   "notes_ro": "TCG cu hartă, avatar și artă ilustrată distinctă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sorcery:_Contested_Realm",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 25,
+   "name": "Gundam Card Game",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2025,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Cartea Gundam",
+   "public_rules": false,
+   "notes_ro": "TCG Bandai bazat pe franciza Gundam, lansat în 2025.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gundam_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 26,
+   "name": "Union Arena",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2024,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Arena Uniunii",
+   "public_rules": false,
+   "notes_ro": "TCG Bandai cu seturi din multiple anime-uri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Union_Arena",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 27,
+   "name": "MetaZoo",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2021,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cripto-Zoo",
+   "public_rules": false,
+   "notes_ro": "TCG cu cripte și creaturi din folclor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/MetaZoo",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Vampire: The Eternal Struggle",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1994,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Lupta Eternă a Vampirilor",
+   "public_rules": false,
+   "notes_ro": "CCG din lumea Vampire cu intrigi între clanuri, fost Jyhad.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vampire:_The_Eternal_Struggle",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 29,
+   "name": "Star Trek Customizable Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1994,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Jocul Star Trek",
+   "public_rules": false,
+   "notes_ro": "CCG Decipher cu nave, misiuni și echipaje.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Trek_Customizable_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 30,
+   "name": "Star Wars Customizable Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1995,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Războiul Stelelor CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Decipher din 1995, cu părți luminoase și întunecate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Wars_Customizable_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 31,
+   "name": "Middle-earth Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1995,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Pământul de Mijloc CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Iron Crown Enterprises bazat pe Tolkien.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Middle-earth_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 32,
+   "name": "Shadowfist",
+   "existing": false,
+   "origin": "Hong Kong/SUA",
+   "year": 1995,
+   "ctx": [
+    "namerica",
+    "asia"
+   ],
+   "own_title_ro": "Pumnul Umbrei",
+   "public_rules": false,
+   "notes_ro": "CCG inspirat din filmele de arte marțiale din Hong Kong.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shadowfist",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Spellfire",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1994,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Focul Vrăjii",
+   "public_rules": false,
+   "notes_ro": "CCG TSR din Forgotten Realms.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Spellfire_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "Illuminati: New World Order",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1994,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Iluminații: Noua Ordine",
+   "public_rules": false,
+   "notes_ro": "CCG Steve Jackson cu conspirații și grupuri de putere.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Illuminati:_New_World_Order",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Call of Cthulhu: The Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2008,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Chemarea lui Cthulhu",
+   "public_rules": false,
+   "notes_ro": "LCG cu facțiuni din mitul Cthulhu.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Call_of_Cthulhu:_The_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "A Game of Thrones: The Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2002,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Urzeala Tronurilor: Jocul de Cărți",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți bazat pe Cântec de gheață și foc, cu intrigi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/A_Game_of_Thrones:_The_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 37,
+   "name": "Warhammer: Invasion",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Invazia Warhammer",
+   "public_rules": false,
+   "notes_ro": "LCG Fantasy Flight cu patru zone de cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warhammer:_Invasion",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 38,
+   "name": "Warhammer 40,000: Conquest",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Cucerirea 40k",
+   "public_rules": false,
+   "notes_ro": "LCG dedicat universului Warhammer 40,000.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warhammer_40,000:_Conquest",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 39,
+   "name": "Magi-Nation Duel",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Duelul Magi-Nation",
+   "public_rules": false,
+   "notes_ro": "CCG pentru tineri din universul Magi-Nation.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Magi-Nation_Duel",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "Dragon Ball Z Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2000,
+   "ctx": [
+    "namerica",
+    "asia"
+   ],
+   "own_title_ro": "Dragon Ball Z CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Score cu personajele Dragon Ball Z.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dragon_Ball_Z_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 41,
+   "name": "Naruto Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "namerica",
+    "asia"
+   ],
+   "own_title_ro": "Naruto CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Bandai bazat pe manga Naruto.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Naruto_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 42,
+   "name": "Bleach Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Bleach TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Score Entertainment bazat pe manga Bleach.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bleach_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 43,
+   "name": "Future Card Buddyfight",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2014,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Duelul Prietenilor",
+   "public_rules": false,
+   "notes_ro": "TCG Bushiroad cu monstru partener și zonă de zid.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Future_Card_Buddyfight",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 44,
+   "name": "Z/X Zillions of Enemy X",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2011,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Z/X",
+   "public_rules": false,
+   "notes_ro": "TCG Broccoli cu personaje feminine și nivel de evoluție.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Z%2FX_Zillions_of_Enemy_X",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 45,
+   "name": "Yu-Gi-Oh! Rush Duel",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2020,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Duelul Grăbit",
+   "public_rules": true,
+   "notes_ro": "Variantă simplificată Yu-Gi-Oh! pentru începători.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yu-Gi-Oh!_Rush_Duel",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 46,
+   "name": "Kaijudo: Clash of the Duel Masters",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Kaijudo",
+   "public_rules": false,
+   "notes_ro": "Variantă Wizards bazată pe Duel Masters.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kaijudo",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Chaotic",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2007,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Haotic",
+   "public_rules": false,
+   "notes_ro": "TCG pentru copii asociat serialului Chaotic.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chaotic_(trading_card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "Redakai",
+   "existing": false,
+   "origin": "Canada/SUA",
+   "year": 2012,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Redakai",
+   "public_rules": false,
+   "notes_ro": "TCG asociat serialului Redakai, bazat pe cărți X-Drive.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Redakai",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "Universal Fighting System",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2003,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Sistemul Luptei Universale",
+   "public_rules": false,
+   "notes_ro": "CCG de luptă Score cu personaje de jocuri și benzi desenate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Universal_Fighting_System",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 50,
+   "name": "Vs. System",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2004,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Sistemul Vs",
+   "public_rules": false,
+   "notes_ro": "CCG Upper Deck cu eroi Marvel și DC.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vs._System",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 51,
+   "name": "The Wheel of Time Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Roata Timpului CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Precedence bazat pe seria de romane Robert Jordan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wheel_of_Time_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 52,
+   "name": "BattleTech Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1996,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Lupta Mecha CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Wizards din universul BattleTech.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/BattleTech_(collectible_card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "Babylon 5 Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1997,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Babylon 5 CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Precedence pe baza serialului Babylon 5.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Babylon_5_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Harry Potter Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2001,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Harry Potter TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Wizards pe baza francizei Harry Potter.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Harry_Potter_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "The Lord of the Rings Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2001,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Stăpânul Inelelor TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Decipher cu mecanici de comunitate și umbre.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lord_of_the_Rings_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Warlord: Saga of the Storm",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2001,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Războinicul",
+   "public_rules": false,
+   "notes_ro": "CCG Alderac cu mecanici de regi și facțiuni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warlord:_Saga_of_the_Storm_CCG",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Blue Moon",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2004,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Luna Albastră",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți de Reiner Knizia cu pachete fixe pe facțiuni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Blue_Moon_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "Ashes: Rise of the Phoenixborn",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Cenușa",
+   "public_rules": false,
+   "notes_ro": "Joc de duel cu cărți și zaruri, rezervă extinsă fixă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ashes_Reborn",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Star Realms",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Tărâmuri Stelare",
+   "public_rules": false,
+   "notes_ro": "Deckbuilding spațial rapid de duel, cu cărți proprii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Realms",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Ascension: Chronicle of the Godslayer",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Ascensiune",
+   "public_rules": false,
+   "notes_ro": "Deckbuilding de fantezie, popular și pe mobil.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ascension_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Hero Realms",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Tărâmul Eroilor",
+   "public_rules": false,
+   "notes_ro": "Deckbuilding fantasy cu zone de campioni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hero_Realms",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Legendary: A Marvel Deck Building Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Legendar: Eroi și Răufăcători",
+   "public_rules": false,
+   "notes_ro": "Deckbuilding cooperativ cu eroi Marvel.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Legendary:_A_Marvel_Deck_Building_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Riftbound: League of Legends Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2025,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Faliile",
+   "public_rules": false,
+   "notes_ro": "TCG Riot Games lansat în 2025.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Riftbound",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "Doomtown",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1998,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Orașul Osândit",
+   "public_rules": false,
+   "notes_ro": "CCG western cu poker integrat în duelurile dintre bande.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Doomtown_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Netrunner (1996)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1996,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Alergătorul din Rețea 1996",
+   "public_rules": false,
+   "notes_ro": "CCG Wizards al lui Richard Garfield, precursor al Android: Netrunner.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Netrunner",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "OverPower",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1995,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Superputerea",
+   "public_rules": false,
+   "notes_ro": "CCG Fleer cu super-eroi Marvel.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/OverPower",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Hecatomb",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1998,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Hecatomba",
+   "public_rules": false,
+   "notes_ro": "CCG Wizards cu necromanți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hecatomb_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Guardians",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1995,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Gardienii",
+   "public_rules": false,
+   "notes_ro": "CCG Wizards cu teme fantastice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Guardians_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "Rage",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1995,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Furia",
+   "public_rules": false,
+   "notes_ro": "CCG White Wolf cu vârcolaci.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rage_(collectible_card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Dune (CCG)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1997,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Dune CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Five Rings pe baza romanului Dune.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dune_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Doomtrooper",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1994,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Soldatul Osândei",
+   "public_rules": false,
+   "notes_ro": "CCG Target Games cu univers science-fantasy Mutant Chronicles.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Doomtrooper",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "On the Edge",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1994,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "La Margine",
+   "public_rules": false,
+   "notes_ro": "CCG Atlas Games cu lume de umor întunecat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/On_the_Edge_(game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Galactic Empires",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1994,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Imperii Galactice",
+   "public_rules": false,
+   "notes_ro": "CCG science-fiction timpuriu cu nave spațiale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Galactic_Empires",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "The X-Files Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1996,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Dosarele X CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Wizards pe baza serialului X-Files.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_X-Files_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Shadowrun: The Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1997,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Alergătorul în Umbre TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Fleer pe baza universului Shadowrun.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shadowrun:_The_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Aliens vs. Predator Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1997,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Extratereștrii contra Prădătorii CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Precedence cu seria Alien și Predator.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Aliens_vs._Predator_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "7th Sea CCG",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "A Șaptea Mare CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Alderac cu pirați și corăbii într-o lume fantastică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/7th_Sea_(collectible_card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Mythos CCG",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1996,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Mitul CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Chaosium bazat pe universul Cthulhu.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mythos_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Legend of the Burning Sands",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Legenda Nisipurilor Arzătoare",
+   "public_rules": false,
+   "notes_ro": "CCG Alderac din universul L5R.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Legend_of_the_Burning_Sands",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "Tomb Raider CCG",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Tomb Raider CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Precedence cu eroina Lara Croft.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tomb_Raider_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Xena: Warrior Princess CCG",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1998,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Xena CCG",
+   "public_rules": false,
+   "notes_ro": "CCG pe baza serialului Xena.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Xena:_Warrior_Princess_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Hercules: The Legendary Journeys CCG",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1998,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Hercule CCG",
+   "public_rules": false,
+   "notes_ro": "CCG pe baza serialului Hercules.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hercules:_The_Legendary_Journeys_(card_game)",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "Young Jedi Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Tânărul Jedi CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Decipher pentru copii cu Star Wars.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Young_Jedi_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "Sailor Moon Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica",
+    "asia"
+   ],
+   "own_title_ro": "Sailor Moon CCG",
+   "public_rules": false,
+   "notes_ro": "CCG după seria Sailor Moon.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sailor_Moon_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "The Terminator CCG",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2000,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Terminator CCG",
+   "public_rules": false,
+   "notes_ro": "CCG după filmele Terminator.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Terminator_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "Digi-Battle Card Game",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 1999,
+   "ctx": [
+    "asia",
+    "namerica"
+   ],
+   "own_title_ro": "Duelul Digitalilor 1999",
+   "public_rules": false,
+   "notes_ro": "Primul joc de cărți Digimon, cu cărți numerotate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Digi-Battle",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "X-Men Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2000,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "X-Men TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Wizards cu mutanți Marvel.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/X-Men_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 88,
+   "name": "Buffy the Vampire Slayer CCG",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2002,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Buffy CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Score după serialul Buffy.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Buffy_the_Vampire_Slayer_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 89,
+   "name": "Jedi Knights Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2001,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cavalerii Jedi TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Decipher cu Star Wars.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jedi_Knights_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 90,
+   "name": "Star Wars Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2005,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Războiul Stelelor TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Wizards cu Star Wars, 2005.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Wars_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 91,
+   "name": "Warhammer 40,000 Collectible Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2001,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Warhammer 40k CCG",
+   "public_rules": false,
+   "notes_ro": "CCG Sabertooth Games.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warhammer_40,000_Collectible_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 92,
+   "name": "The Simpsons Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2003,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Simpsonii TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Wizards cu Familia Simpson.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Simpsons_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 93,
+   "name": "SpongeBob SquarePants Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2005,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Bob Burete TCG",
+   "public_rules": false,
+   "notes_ro": "TCG pentru copii după SpongeBob.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/SpongeBob_Squarepants_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 94,
+   "name": "Neopets Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2003,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Neopets TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Wizards legat de site-ul Neopets.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Neopets_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 95,
+   "name": "G.I. Joe Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2005,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "G.I. Joe TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Wizards cu G.I. Joe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/G.I._Joe_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 96,
+   "name": "Teenage Mutant Ninja Turtles Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2003,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Țestoasele Ninja TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Score cu Țestoasele Ninja.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 97,
+   "name": "WoW Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "World of Warcraft TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Upper Deck cu World of Warcraft, cu obiecte de loot.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/World_of_Warcraft_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 98,
+   "name": "YuYu Hakusho Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2003,
+   "ctx": [
+    "namerica",
+    "asia"
+   ],
+   "own_title_ro": "YuYu Hakusho TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Score după anime YuYu Hakusho.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/YuYu_Hakusho_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 99,
+   "name": "Avatar: The Last Airbender Trading Card Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Avatar TCG",
+   "public_rules": false,
+   "notes_ro": "TCG Wizards după serialul Avatar.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender_Trading_Card_Game",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  },
+  {
+   "r": 100,
+   "name": "Vampire: The Masquerade – Rivals",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2021,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Rivalii din Masquerade",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți colecționabil după Vampire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vampire:_The_Masquerade_%E2%80%93_Rivals",
+    "https://en.wikipedia.org/wiki/Collectible_card_game"
+   ]
+  }
+ ]
+}

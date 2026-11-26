@@ -6,13 +6,13 @@ Version: 0.9.1 · Last updated: 2026-11-26
 
 ## What it is
 
-PolyTabletop is a clean-room collection of table-top games written in Rust: 171 playable games against the computer, in the terminal or in a graphical window, plus hot-seat and two-player network play. Abstract classics, card and dice games, original variants of modern mechanics under names of their own, cooperative games with an AI partner, hidden-role games where bots fill the rest of the table, party and word games, miniatures and collectible-card engines with original cards. The engine and the games have no external dependencies; only the graphical interface (`polytabletop-gui`) uses `eframe`/egui. The catalog tracks 251 target games.
+PolyTabletop is a clean-room collection of table-top games written in Rust: 171 playable games against the computer, in the terminal or in a graphical window, plus hot-seat and two-player network play. Abstract classics, card and dice games, original variants of modern mechanics under names of their own, cooperative games with an AI partner, hidden-role games where bots fill the rest of the table, party and word games, miniatures and collectible-card engines with original cards. The engine and the games have no external dependencies; only the graphical interface (`polytabletop-gui`) uses `eframe`/egui. The catalog tracks 1200 target games.
 
 Presentation page: <https://polytabletop.chiuta.ro>. Short install guide in your language: [docs/INSTALL.en.md](docs/INSTALL.en.md) ([Română](docs/INSTALL.ro.md) · [Français](docs/INSTALL.fr.md) · [Italiano](docs/INSTALL.it.md) · [Español](docs/INSTALL.es.md) · [Português](docs/INSTALL.pt.md) · [Deutsch](docs/INSTALL.de.md) · [Magyar](docs/INSTALL.hu.md)).
 
 ## Use
 
-- List and catalog: `polytabletop list` shows the 171 playable games with their rules in short; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` shows the status of all 251 catalog entries.
+- List and catalog: `polytabletop list` shows the 171 playable games with their rules in short; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` shows the status of all 1200 catalog entries.
 - Play: `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. `--you one` (default) makes you Player 1, `two` Player 2, `both` is hot-seat at one keyboard, `none` lets the computer play both sides. `--seed N` makes deals and dice reproducible; `--record FILE` saves a transcript.
 - In a game: type the move exactly as `?` lists it (for example `e2e4`, `c3xe5`, `d6`), `?` = legal moves, `hint` = the AI's suggestion, `q` = quit.
 - AI against AI: `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (see [docs/ARENA.md](docs/ARENA.md)).
@@ -33,7 +33,7 @@ cargo build --release
 
 ## Games
 
-171 games can be played now, in the terminal and in the graphical interface; the catalog has 251 entries (`polytabletop catalog` ends with: implemented 182, traditional games planned 50, own variants planned 3, generic toolkit 16). The 16 toolkit entries are role-playing systems, served by the generic `polytabletop-rpg` crate (dice, sheets, ability checks, dungeon generator, battle simulator, journal) without any publisher's rules. Categories and counts, from `polytabletop-games/src/lib.rs`:
+171 games can be played now, in the terminal and in the graphical interface; the catalog has 1200 entries (`polytabletop catalog` ends with: implemented 172, traditional games planned 263, own variants planned 477, generic toolkit 288). The 288 toolkit entries are the 100 role-playing systems, served by the generic `polytabletop-rpg` crate (dice, sheets, ability checks, dungeon generator, battle simulator, journal), plus the 93 miniatures and 95 collectible-card titles not yet in the program, all without any publisher's rules. Each of the twelve catalog categories has exactly 100 distinct entries. Categories and counts, from `polytabletop-games/src/lib.rs`:
 
 | Category | Games | Examples (ids) |
 |---|---|---|
@@ -51,7 +51,7 @@ cargo build --release
 | Words | 1 | `litere` |
 | **Total** | **171** | |
 
-Three catalog entries remain planned as original variants (Twister, Campionii Distracției, Turistico). Short rules for every game are in [docs/JOCURI.md](docs/JOCURI.md), the generated catalog in [docs/CATALOG.md](docs/CATALOG.md). In the graphical interface, 36 games have a drawn board with clickable moves (chess, draughts, reversi, four in a row, gomoku, go, morris, xiangqi, shogi, backgammon, ludo and pachisi, hex, the mancala family and more); the other games are shown as text with their legal moves as buttons.
+477 catalog entries are planned as original variants under their own titles (for example Twister, Campionii Distracției, Turistico) and 263 as traditional games with public rules. Short rules for every game are in [docs/JOCURI.md](docs/JOCURI.md), the generated catalog in [docs/CATALOG.md](docs/CATALOG.md). In the graphical interface, 36 games have a drawn board with clickable moves (chess, draughts, reversi, four in a row, gomoku, go, morris, xiangqi, shogi, backgammon, ludo and pachisi, hex, the mancala family and more); the other games are shown as text with their legal moves as buttons.
 
 ## Languages
 

@@ -1,0 +1,1396 @@
+{
+ "category": "Familie",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Monopoly",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Scrabble",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Ludo / Parcheesi",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Cluedo (Clue)",
+   "existing": true
+  },
+  {
+   "r": 5,
+   "name": "Game of Life",
+   "existing": true
+  },
+  {
+   "r": 6,
+   "name": "Ticket to Ride",
+   "existing": true
+  },
+  {
+   "r": 7,
+   "name": "Carcassonne",
+   "existing": true
+  },
+  {
+   "r": 8,
+   "name": "Yahtzee",
+   "existing": true
+  },
+  {
+   "r": 9,
+   "name": "Mensch ärgere dich nicht",
+   "existing": true
+  },
+  {
+   "r": 10,
+   "name": "Rummikub",
+   "existing": true
+  },
+  {
+   "r": 11,
+   "name": "Jenga",
+   "existing": true
+  },
+  {
+   "r": 12,
+   "name": "Mensch ärgere dich nicht / Ludo",
+   "existing": true
+  },
+  {
+   "r": 13,
+   "name": "Ludo",
+   "existing": true
+  },
+  {
+   "r": 14,
+   "name": "Nu te supăra, frate (Ludo)",
+   "existing": true
+  },
+  {
+   "r": 15,
+   "name": "Sorry!",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1934,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Scuze!",
+   "public_rules": false,
+   "notes_ro": "Joc de cursă cu cărți și piese care se pot trimite înapoi la start",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sorry!_(game)"
+   ]
+  },
+  {
+   "r": 16,
+   "name": "Trouble",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1965,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Bulă-n-bulă",
+   "public_rules": true,
+   "notes_ro": "Variantă de Ludo cu zar într-o bulă de plastic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trouble_(board_game)"
+   ]
+  },
+  {
+   "r": 17,
+   "name": "Scotland Yard",
+   "existing": true
+  },
+  {
+   "r": 18,
+   "name": "Kingdomino",
+   "existing": true
+  },
+  {
+   "r": 19,
+   "name": "Boggle",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1972,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Cuvinte-n grilă",
+   "public_rules": true,
+   "notes_ro": "Găsirea de cuvinte într-o grilă de litere agitate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boggle"
+   ]
+  },
+  {
+   "r": 20,
+   "name": "Chinese Checkers (Sternhalma)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1892,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Dame chinezești",
+   "public_rules": true,
+   "notes_ro": "Cursă de piese pe tablă în formă de stea cu salturi",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chinese_checkers"
+   ]
+  },
+  {
+   "r": 21,
+   "name": "Blokus",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2000,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Blocuri",
+   "public_rules": false,
+   "notes_ro": "Plasarea de poliomino-uri colorate care se ating doar în colțuri",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Blokus"
+   ]
+  },
+  {
+   "r": 22,
+   "name": "Qwirkle",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Qwirkle",
+   "public_rules": false,
+   "notes_ro": "Plăcuțe cu forme și culori potrivite pe linii; Spiel des Jahres 2011",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Qwirkle",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 23,
+   "name": "Operation",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1965,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Doctorul",
+   "public_rules": false,
+   "notes_ro": "Extragerea de piese dintr-un pacient fără a atinge marginile",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Operation_(game)"
+   ]
+  },
+  {
+   "r": 24,
+   "name": "Mouse Trap",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1963,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Capcana pentru șoareci",
+   "public_rules": false,
+   "notes_ro": "Construirea unei capcane mecanice în timpul jocului",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mouse_Trap_(game)"
+   ]
+  },
+  {
+   "r": 25,
+   "name": "Machi Koro",
+   "existing": true
+  },
+  {
+   "r": 26,
+   "name": "Labirintul nebun (Das verrückte Labyrinth)",
+   "existing": true
+  },
+  {
+   "r": 27,
+   "name": "Alhambra",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2003,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Alhambra",
+   "public_rules": false,
+   "notes_ro": "Construcția unui palat din plăcuțe cumpărate cu monede de valute diferite",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alhambra_(board_game)",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Cranium",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1998,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Cranium",
+   "public_rules": false,
+   "notes_ro": "Joc de petrecere cu patru tipuri de activități creative",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cranium_(board_game)"
+   ]
+  },
+  {
+   "r": 29,
+   "name": "Sequence",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1982,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Secvența",
+   "public_rules": false,
+   "notes_ro": "Plasare de jetoane pe un tablou după cărți de joc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sequence_(game)"
+   ]
+  },
+  {
+   "r": 30,
+   "name": "Mille Bornes",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1954,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Mii de borne",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți de cursă cu hazarduri și remedii",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mille_Bornes"
+   ]
+  },
+  {
+   "r": 31,
+   "name": "Cascadia",
+   "existing": true
+  },
+  {
+   "r": 32,
+   "name": "Camel Up",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Cursa Cămilelor",
+   "public_rules": false,
+   "notes_ro": "Pariuri pe o cursă de cămile care se urcă una peste alta; Spiel des Jahres 2014",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Camel_Up",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Colt Express",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Expres de Vest",
+   "public_rules": false,
+   "notes_ro": "Programarea acțiunilor unor tâlhari într-un tren; Spiel des Jahres 2015",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Colt_Express",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "King of Tokyo",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Regele Orașului",
+   "public_rules": false,
+   "notes_ro": "Monștri care se luptă cu zaruri pentru controlul unui oraș",
+   "sources": [
+    "https://en.wikipedia.org/wiki/King_of_Tokyo"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Takenoko",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Bambuseraie",
+   "public_rules": false,
+   "notes_ro": "Cultivarea bambusului și hrănirea unui panda gurmand",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Takenoko"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "Patchwork",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Plapuma",
+   "public_rules": false,
+   "notes_ro": "Joc pentru doi de asamblare a unei plapume din piese tip tetromino",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Patchwork_(board_game)"
+   ]
+  },
+  {
+   "r": 37,
+   "name": "Sagrada",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2017,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Vitraliul",
+   "public_rules": false,
+   "notes_ro": "Draft de zaruri pentru construcția unui vitraliu cu restricții de culoare și valoare",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sagrada_(game)"
+   ]
+  },
+  {
+   "r": 38,
+   "name": "Rush Hour",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1996,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Ora de vârf",
+   "public_rules": false,
+   "notes_ro": "Puzzle cu mașini glisante pentru scoaterea mașinii roșii din ambuteiaj",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rush_Hour_(board_game)"
+   ]
+  },
+  {
+   "r": 39,
+   "name": "Qwixx",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Bifează-n rând",
+   "public_rules": false,
+   "notes_ro": "Joc de zaruri cu bifare de numere pe rânduri colorate",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Qwixx"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "Can't Stop",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1980,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Nu te opri",
+   "public_rules": true,
+   "notes_ro": "Joc de zaruri de tip push-your-luck cu trei coloane de urcat",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Can%27t_Stop_(board_game)"
+   ]
+  },
+  {
+   "r": 41,
+   "name": "Pay Day",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1975,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Ziua salariului",
+   "public_rules": false,
+   "notes_ro": "Gestionarea banilor și a facturilor pe parcursul unei luni",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pay_Day_(game)"
+   ]
+  },
+  {
+   "r": 42,
+   "name": "Careers",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1955,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Carierele",
+   "public_rules": false,
+   "notes_ro": "Fiecare jucător își alege propria formulă a succesului",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Careers_(board_game)"
+   ]
+  },
+  {
+   "r": 43,
+   "name": "Bananagrams",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Cuvinte-banană",
+   "public_rules": true,
+   "notes_ro": "Construcția rapidă de grile de cuvinte din litere",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bananagrams"
+   ]
+  },
+  {
+   "r": 44,
+   "name": "Upwords",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1981,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cuvinte în turn",
+   "public_rules": true,
+   "notes_ro": "Cuvinte cu litere suprapuse pe mai multe niveluri",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Upwords"
+   ]
+  },
+  {
+   "r": 45,
+   "name": "Scattergories",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1988,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Cuvinte pe literă",
+   "public_rules": true,
+   "notes_ro": "Găsirea de cuvinte unice pe categorii începând cu o literă",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Scattergories"
+   ]
+  },
+  {
+   "r": 46,
+   "name": "Acquire",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1964,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Fuziuni",
+   "public_rules": false,
+   "notes_ro": "Construirea și fuzionarea de lanțuri hoteliere și acțiuni",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Acquire"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Triominos",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1965,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Triominouri",
+   "public_rules": true,
+   "notes_ro": "Domino cu plăcuțe triunghiulare",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Triominoes"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "Mexican Train",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1990,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Trenul mexican",
+   "public_rules": true,
+   "notes_ro": "Variantă de domino cu trenuri personale",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mexican_Train"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "Crokinole",
+   "existing": true
+  },
+  {
+   "r": 50,
+   "name": "Parqués",
+   "existing": true
+  },
+  {
+   "r": 51,
+   "name": "Thurn und Taxis",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2006,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Poșta imperială",
+   "public_rules": false,
+   "notes_ro": "Rețele de rute poștale create cu cărți; Spiel des Jahres 2006",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Thurn_and_Taxis_(board_game)",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 52,
+   "name": "Zooloretto",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2007,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Grădina Zoologică",
+   "public_rules": false,
+   "notes_ro": "Colectarea de animale în grădină zoologică; Spiel des Jahres 2007",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zooloretto",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "Elfenland",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1998,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Țara Elfilor",
+   "public_rules": false,
+   "notes_ro": "Călătorie între orașe cu mijloace de transport fantastice; Spiel des Jahres 1998",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Elfenland",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Stone Age",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2008,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Epoca Pietrei",
+   "public_rules": false,
+   "notes_ro": "Plasarea de muncitori pentru resurse în preistorie",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Stone_Age_(board_game)"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "Citadels",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2000,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Cetăți",
+   "public_rules": false,
+   "notes_ro": "Selecția secretă a rolurilor pentru construcția unui oraș",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Citadels_(card_game)"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Jaipur",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2009,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Jaipur",
+   "public_rules": false,
+   "notes_ro": "Duel de negoț cu mărfuri și cămile",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jaipur_(card_game)"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Tokaido",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2012,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Drumul Tokaido",
+   "public_rules": false,
+   "notes_ro": "Călătorie contemplativă de-a lungul unui drum japonez",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tokaido_(board_game)"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "The Sheriff of Nottingham",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Șeriful negociator",
+   "public_rules": false,
+   "notes_ro": "Bluf și negociere la poarta orașului cu mărfuri ascunse în pungă",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sheriff_of_Nottingham_(board_game)"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "The Quacks of Quedlinburg",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2018,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Șarlatanii",
+   "public_rules": false,
+   "notes_ro": "Preparare de poțiuni trăgând jetoane dintr-o pungă; Kennerspiel des Jahres 2018",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Quacks_of_Quedlinburg",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Photosynthesis",
+   "existing": false,
+   "origin": "Canada",
+   "year": 2017,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Fotosinteza",
+   "public_rules": false,
+   "notes_ro": "Copaci care cresc și își fac umbră într-o pădure abstractă",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Photosynthesis_(board_game)"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Tsuro",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2004,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Drumuri",
+   "public_rules": false,
+   "notes_ro": "Plăcuțe cu drumuri pe care piesele jucătorilor sunt împinse din tablă",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tsuro_(game)"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Tikal",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1999,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Tikal",
+   "public_rules": false,
+   "notes_ro": "Explorare și excavare de temple în junglă; Spiel des Jahres 1999",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tikal_(board_game)",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Torres",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1999,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Turnurile",
+   "public_rules": false,
+   "notes_ro": "Construcția de turnuri de cavaleri pe un tablă cu etaje; Spiel des Jahres 2000",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Torres_(board_game)",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "Niagara",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2004,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Cascada",
+   "public_rules": false,
+   "notes_ro": "Colectarea de pietre prețioase din bărci pe un râu rotativ; Spiel des Jahres 2005",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Niagara_(board_game)",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Manhattan",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1994,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Zgârie-nori",
+   "public_rules": false,
+   "notes_ro": "Construcția de blocuri turn într-un oraș; Spiel des Jahres 1994",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manhattan_(board_game)",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "Mississippi Queen",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1997,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Regina Mississippi",
+   "public_rules": false,
+   "notes_ro": "Cursă cu vapoare cu zbaturi pe un fluviu; Spiel des Jahres 1997",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mississippi_Queen_(board_game)",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Heimlich & Co.",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1986,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Agenți secreți",
+   "public_rules": false,
+   "notes_ro": "Mutarea agenților cu identitate ascunsă pe o tablă cu culori; Spiel des Jahres 1986",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Heimlich_%26_Co.",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Hare and Tortoise",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1979,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Iepurele și broasca",
+   "public_rules": false,
+   "notes_ro": "Cursă cu morcovi și decizii de pariu; primul Spiel des Jahres (1979)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hare_and_Tortoise",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "Keltis",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2008,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Drumul celților",
+   "public_rules": false,
+   "notes_ro": "Mișcarea pe drumuri cu cărți colorate; Spiel des Jahres 2008",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Keltis",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Ingenious (Einfach Genial)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2004,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Genial",
+   "public_rules": false,
+   "notes_ro": "Plasarea de dominouri hexagonale cu simboluri pentru scor",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ingenious_(board_game)"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Hey, That's My Fish!",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2003,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Hei, e peștele meu!",
+   "public_rules": false,
+   "notes_ro": "Pinguini pe gheață care colectează pești pe plăcuțe hexagonale",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hey,_That%27s_My_Fish!"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "Ubongo",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2003,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Puzzle de piese",
+   "public_rules": false,
+   "notes_ro": "Cursa de piese geometrice pentru a umple un contur",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ubongo"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Cartagena",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2000,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Evadarea din Cartagena",
+   "public_rules": false,
+   "notes_ro": "Evadarea piraților printr-un tunel cu cărți de simboluri",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cartagena_(board_game)"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "Villa Paletti",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2001,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Vila în echilibru",
+   "public_rules": false,
+   "notes_ro": "Construirea unei vile din coloane care trebuie mutate fără prăbușire",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Villa_Paletti",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Heckmeck am Bratwurmeck (Pickomino)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2005,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Viermele gurmand",
+   "public_rules": false,
+   "notes_ro": "Joc de zaruri în care găinile iau plăcuțe-vierme (Pickomino)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Heckmeck_am_Bratwurmeck"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Pictures",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2020,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Imagini vii",
+   "public_rules": false,
+   "notes_ro": "Recrearea de fotografii cu obiecte; Spiel des Jahres 2020",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pictures_(card_game)",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "MicroMacro: Crime City",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2020,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Micro-crimă în oraș",
+   "public_rules": false,
+   "notes_ro": "Rezolvarea de crime căutând indicii pe o hartă gigantică; Spiel des Jahres 2021",
+   "sources": [
+    "https://en.wikipedia.org/wiki/MicroMacro:_Crime_City",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Dorfromantik: The Board Game",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2022,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Satul romantic",
+   "public_rules": false,
+   "notes_ro": "Plasare de plăcuțe de peisaj cu misiuni; Spiel des Jahres 2023",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dorfromantik:_The_Board_Game",
+    "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Isle of Skye",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2015,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Insula Skye",
+   "public_rules": false,
+   "notes_ro": "Licitații pentru plăcuțe de peisaj la scară scoțiană",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Isle_of_Skye:_From_Chieftain_to_King"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "Broom Service",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2015,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Vrăjitoare curier",
+   "public_rules": false,
+   "notes_ro": "Vrăjitoare livrează poțiuni, cu reguli de risc la roluri",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Broom_Service"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Istanbul",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2014,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Bazarul",
+   "public_rules": false,
+   "notes_ro": "Un negustor cu asistenți se mișcă între piețe într-un bazar",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Istanbul_(board_game)"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Imhotep",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2016,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Piramida",
+   "public_rules": false,
+   "notes_ro": "Transportul pietrelor de construcție pe Nil",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Imhotep_(board_game)"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "Lords of Waterdeep",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Domnii din Apă-Adâncă",
+   "public_rules": false,
+   "notes_ro": "Plasare de muncitori și misiuni într-un oraș fantastic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lords_of_Waterdeep"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "Taj Mahal",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2000,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Palatul din Agra",
+   "public_rules": false,
+   "notes_ro": "Licitație pentru cărți de acțiune și control de regiuni",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Taj_Mahal_(board_game)"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "Ra",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1999,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Zeul Soare",
+   "public_rules": false,
+   "notes_ro": "Licitație pentru plăcuțe în stil egiptean",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ra_(board_game)"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "Yspahan",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2006,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Yspahan",
+   "public_rules": false,
+   "notes_ro": "Zaruri și caravane în piața din Persia",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yspahan"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "Isle of Cats",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Insula Pisicilor",
+   "public_rules": false,
+   "notes_ro": "Draft de cărți și amplasare de pisici pe o barcă",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Isle_of_Cats"
+   ]
+  },
+  {
+   "r": 88,
+   "name": "Calico",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2020,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Plapuma cu pisici",
+   "public_rules": false,
+   "notes_ro": "Coaserea unei plapume cu modele și pisici cu preferințe",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Calico_(board_game)"
+   ]
+  },
+  {
+   "r": 89,
+   "name": "Parks",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Parcurile Naționale",
+   "public_rules": false,
+   "notes_ro": "Drumeții în parcuri naționale cu piese pentru resurse",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Parks_(board_game)"
+   ]
+  },
+  {
+   "r": 90,
+   "name": "Bärenpark",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2017,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Parcul urșilor",
+   "public_rules": false,
+   "notes_ro": "Construcția unui parc de urși cu polimino-uri",
+   "sources": [
+    "https://en.wikipedia.org/wiki/B%C3%A4renpark"
+   ]
+  },
+  {
+   "r": 91,
+   "name": "Welcome To...",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Bun venit în cartier",
+   "public_rules": false,
+   "notes_ro": "Roll-and-write de construcție de cartier din anii 50",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Welcome_To..."
+   ]
+  },
+  {
+   "r": 92,
+   "name": "Karuba",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2015,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Expediția Karuba",
+   "public_rules": false,
+   "notes_ro": "Cursă de aventurieri spre temple",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karuba"
+   ]
+  },
+  {
+   "r": 93,
+   "name": "Kahuna",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1998,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Insulele Kahuna",
+   "public_rules": false,
+   "notes_ro": "Joc pentru doi de control al insulelor cu poduri",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kahuna_(board_game)"
+   ]
+  },
+  {
+   "r": 94,
+   "name": "Between Two Cities",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Între două orașe",
+   "public_rules": false,
+   "notes_ro": "Draft cooperativ-competitiv de construcție de orașe",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Between_Two_Cities"
+   ]
+  },
+  {
+   "r": 95,
+   "name": "Cartographers",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Cartografii",
+   "public_rules": false,
+   "notes_ro": "Roll-and-write cu cărți pentru cartografierea unui ținut",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cartographers_(board_game)"
+   ]
+  },
+  {
+   "r": 96,
+   "name": "Railroad Ink",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2018,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Cerneala Căilor Ferate",
+   "public_rules": false,
+   "notes_ro": "Roll-and-write cu zaruri de drumuri",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Railroad_Ink"
+   ]
+  },
+  {
+   "r": 97,
+   "name": "Draftosaurus",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2019,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Dinozaurii",
+   "public_rules": false,
+   "notes_ro": "Draft de dinozauri pentru un parc",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Draftosaurus"
+   ]
+  },
+  {
+   "r": 98,
+   "name": "Century: Spice Road",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2017,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Drumul condimentelor",
+   "public_rules": false,
+   "notes_ro": "Cărți și cuburi de condimente într-un negoț",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Century:_Spice_Road"
+   ]
+  },
+  {
+   "r": 99,
+   "name": "Campionii Distracției",
+   "existing": true
+  },
+  {
+   "r": 100,
+   "name": "Turistico",
+   "existing": true
+  }
+ ]
+}

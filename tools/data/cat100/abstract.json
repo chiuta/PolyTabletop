@@ -1,0 +1,1055 @@
+{
+ "category": "Abstract",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Șah",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Go (weiqi, baduk)",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Dame",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Xiangqi (șah chinezesc)",
+   "existing": true
+  },
+  {
+   "r": 5,
+   "name": "Shogi",
+   "existing": true
+  },
+  {
+   "r": 6,
+   "name": "Mancala",
+   "existing": true
+  },
+  {
+   "r": 7,
+   "name": "Tic-tac-toe (X și 0)",
+   "existing": false,
+   "origin": "Antic",
+   "year": -1300,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Tic-tac-toe (X și 0)",
+   "public_rules": true,
+   "notes_ro": "Aliniezi trei semne pe 3x3; cel mai cunoscut joc abstract.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tic-tac-toe"
+   ]
+  },
+  {
+   "r": 8,
+   "name": "Connect Four",
+   "existing": true
+  },
+  {
+   "r": 9,
+   "name": "Reversi / Othello",
+   "existing": true
+  },
+  {
+   "r": 10,
+   "name": "Gomoku",
+   "existing": true
+  },
+  {
+   "r": 11,
+   "name": "Mastermind",
+   "existing": true
+  },
+  {
+   "r": 12,
+   "name": "Moara (Nine Men's Morris)",
+   "existing": true
+  },
+  {
+   "r": 13,
+   "name": "Blokus",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2000,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Poliomino în colțuri",
+   "public_rules": true,
+   "notes_ro": "Plasezi poliomino-uri colorate care se ating doar în colțuri; 2-4 jucători.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Blokus"
+   ]
+  },
+  {
+   "r": 14,
+   "name": "Chess960 (Fischer Random)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1996,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Chess960 (Fischer Random)",
+   "public_rules": true,
+   "notes_ro": "Șah cu poziția de start amestecată din 960 de posibilități.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chess960"
+   ]
+  },
+  {
+   "r": 15,
+   "name": "Dame internaționale (10x10)",
+   "existing": false,
+   "origin": "Franța / Olanda",
+   "year": 1723,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Dame internaționale (10x10)",
+   "public_rules": true,
+   "notes_ro": "Varianta dames pe 10x10 cu capturi obligatorii, jucată în competiții mondiale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/International_draughts"
+   ]
+  },
+  {
+   "r": 16,
+   "name": "Dame rusești (Shashki)",
+   "existing": false,
+   "origin": "Rusia",
+   "year": 1700,
+   "ctx": [
+    "europe",
+    "asia"
+   ],
+   "own_title_ro": "Dame rusești (Shashki)",
+   "public_rules": true,
+   "notes_ro": "Varianta rusă pe 8x8 cu dame zburătoare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Russian_draughts"
+   ]
+  },
+  {
+   "r": 17,
+   "name": "Table chinezească (Chinese Checkers)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1892,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Table chinezească (Chinese Checkers)",
+   "public_rules": true,
+   "notes_ro": "Joc de sărituri cu stea hexagonală, de la 2 la 6 jucători.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chinese_checkers"
+   ]
+  },
+  {
+   "r": 18,
+   "name": "Halma",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1883,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Halma",
+   "public_rules": true,
+   "notes_ro": "Strămoșul Chinese Checkers: deplasezi piesele în colțul opus prin sărituri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Halma"
+   ]
+  },
+  {
+   "r": 19,
+   "name": "Hex",
+   "existing": true
+  },
+  {
+   "r": 20,
+   "name": "Janggi",
+   "existing": true
+  },
+  {
+   "r": 21,
+   "name": "Makruk",
+   "existing": true
+  },
+  {
+   "r": 22,
+   "name": "Abalone",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1987,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Bile împinse",
+   "public_rules": true,
+   "notes_ro": "Împingi bilele adversarului de pe tabla hexagonală; clasic modern francez.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Abalone_(board_game)"
+   ]
+  },
+  {
+   "r": 23,
+   "name": "Hive",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2001,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Roiul",
+   "public_rules": false,
+   "notes_ro": "Joc de plăci hexagonale cu insecte-piese, fără tablă; regulile pieselor sunt simple, dar numele/temele sunt mărci.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hive_(game)"
+   ]
+  },
+  {
+   "r": 24,
+   "name": "Santorini",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2004,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Insula cu turnuri",
+   "public_rules": true,
+   "notes_ro": "Construiești turnuri pe o grilă 5x5 și urci primul pe nivelul trei; mecanica e abstractă și generică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Santorini_(board_game)"
+   ]
+  },
+  {
+   "r": 25,
+   "name": "Coridor",
+   "existing": true
+  },
+  {
+   "r": 26,
+   "name": "Nim",
+   "existing": true
+  },
+  {
+   "r": 27,
+   "name": "Oware",
+   "existing": true
+  },
+  {
+   "r": 28,
+   "name": "Kalah",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1940,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Kalah",
+   "public_rules": true,
+   "notes_ro": "Mancala modernă de semănare cu două rânduri de gropi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kalah"
+   ]
+  },
+  {
+   "r": 29,
+   "name": "Dame braziliene (Damas)",
+   "existing": false,
+   "origin": "Brazilia",
+   "year": 1900,
+   "ctx": [
+    "samerica"
+   ],
+   "own_title_ro": "Dame braziliene (Damas)",
+   "public_rules": true,
+   "notes_ro": "International draughts pe 8x8, standard în Brazilia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Brazilian_draughts"
+   ]
+  },
+  {
+   "r": 30,
+   "name": "Dama (dame turcești)",
+   "existing": true
+  },
+  {
+   "r": 31,
+   "name": "Hnefatafl",
+   "existing": false,
+   "origin": "Scandinavia",
+   "year": 400,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Hnefatafl",
+   "public_rules": true,
+   "notes_ro": "Familia tafl; regele înconjurat de apărători încearcă să scape din colțuri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tafl_games"
+   ]
+  },
+  {
+   "r": 32,
+   "name": "Onitama",
+   "existing": false,
+   "origin": "Japonia / Canada",
+   "year": 2014,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Duelul cărților",
+   "public_rules": true,
+   "notes_ro": "Duel pe tablă 5x5 cu cărți de mișcare partajate; mecanica e generică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Onitama"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Pentago",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 2005,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Cinci cu rotire",
+   "public_rules": true,
+   "notes_ro": "Aliniezi cinci bile, rotind câte un cadran 3x3 după fiecare mutare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pentago"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "YINSH",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2003,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Inele și discuri",
+   "public_rules": true,
+   "notes_ro": "Joc GIPF cu inele și discuri bicolore; cinci în linie scot un inel.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/YINSH",
+    "https://en.wikipedia.org/wiki/GIPF_Project"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Jocul Regal din Ur",
+   "existing": false,
+   "origin": "Mesopotamia",
+   "year": -2600,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Jocul Regal din Ur",
+   "public_rules": true,
+   "notes_ro": "Joc de cursă sumerian reconstruit pe baza tăbliței lui Finkel.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Royal_Game_of_Ur"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "Bagh-Chal",
+   "existing": true
+  },
+  {
+   "r": 37,
+   "name": "Fanorona",
+   "existing": true
+  },
+  {
+   "r": 38,
+   "name": "Bao",
+   "existing": true
+  },
+  {
+   "r": 39,
+   "name": "Toguz Kumalak",
+   "existing": false,
+   "origin": "Kazahstan / Kârgâzstan",
+   "year": 1200,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Toguz Kumalak",
+   "public_rules": true,
+   "notes_ro": "Mancala nomadă cu nouă gropi pe rând.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Toguz_korgool"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "Congkak",
+   "existing": true
+  },
+  {
+   "r": 41,
+   "name": "Sungka",
+   "existing": true
+  },
+  {
+   "r": 42,
+   "name": "Pallanguzhi",
+   "existing": true
+  },
+  {
+   "r": 43,
+   "name": "Mangala (mancala turcească)",
+   "existing": true
+  },
+  {
+   "r": 44,
+   "name": "Ayo (Ayoayo)",
+   "existing": true
+  },
+  {
+   "r": 45,
+   "name": "Dara",
+   "existing": true
+  },
+  {
+   "r": 46,
+   "name": "Shatranj",
+   "existing": false,
+   "origin": "Persia",
+   "year": 600,
+   "ctx": [
+    "asia",
+    "europe"
+   ],
+   "own_title_ro": "Shatranj",
+   "public_rules": true,
+   "notes_ro": "Strămoșul medieval al șahului, cu piese mai slabe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shatranj"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Chaturanga",
+   "existing": false,
+   "origin": "India",
+   "year": 500,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Chaturanga",
+   "public_rules": true,
+   "notes_ro": "Forma veche indiană a șahului cu patru arme.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chaturanga"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "Renju",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 1900,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Renju",
+   "public_rules": true,
+   "notes_ro": "Gomoku cu restricții pentru negru.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Renju"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "Pente",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1977,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Pente",
+   "public_rules": true,
+   "notes_ro": "Aliniezi cinci piese sau capturezi cinci perechi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pente"
+   ]
+  },
+  {
+   "r": 50,
+   "name": "Connect6",
+   "existing": false,
+   "origin": "Taiwan",
+   "year": 2003,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Connect6",
+   "public_rules": true,
+   "notes_ro": "Aliniezi șase piese; după prima mutare se pun câte două.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Connect6"
+   ]
+  },
+  {
+   "r": 51,
+   "name": "Țintar (Moara)",
+   "existing": true
+  },
+  {
+   "r": 52,
+   "name": "Puncte și căsuțe",
+   "existing": true
+  },
+  {
+   "r": 53,
+   "name": "Game of the Amazons (Amazoane)",
+   "existing": true
+  },
+  {
+   "r": 54,
+   "name": "Lines of Action",
+   "existing": true
+  },
+  {
+   "r": 55,
+   "name": "Ultimate Tic-Tac-Toe",
+   "existing": false,
+   "origin": "Global",
+   "year": 2010,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Ultimate Tic-Tac-Toe",
+   "public_rules": true,
+   "notes_ro": "Nouă tablă 3x3 într-una mare, unde mutarea decide tabla următoare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ultimate_tic-tac-toe"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Tak",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Drum de stive",
+   "public_rules": true,
+   "notes_ro": "Joc cu stive și drum, inspirat de Kingkiller Chronicle și devenit standard comunitar.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tak_(game)"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "GIPF",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1997,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Împingere hexagonală",
+   "public_rules": true,
+   "notes_ro": "Primul joc al proiectului GIPF; împingi piese pe tablă hexagonală.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/GIPF",
+    "https://en.wikipedia.org/wiki/GIPF_Project"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "DVONN",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2001,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Stivuire și conectare",
+   "public_rules": true,
+   "notes_ro": "Joc GIPF de stivuire și conectare la piesele DVONN.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/DVONN",
+    "https://en.wikipedia.org/wiki/GIPF_Project"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "TZAAR",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2007,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Trei rânduri de stive",
+   "public_rules": true,
+   "notes_ro": "Joc GIPF cu trei tipuri de piese care capturează prin stivuire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/TZAAR",
+    "https://en.wikipedia.org/wiki/GIPF_Project"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "ZÈRTZ",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1999,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Bile și inele",
+   "public_rules": true,
+   "notes_ro": "Joc GIPF cu bile albe, gri și negre pe tablă de inele care se rup.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/ZÈRTZ",
+    "https://en.wikipedia.org/wiki/GIPF_Project"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Crazyhouse",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1960,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Crazyhouse",
+   "public_rules": true,
+   "notes_ro": "Șah cu piese capturate care reintră în joc ca ale tale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Crazyhouse"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Sittuyin",
+   "existing": false,
+   "origin": "Birmania",
+   "year": 1500,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Sittuyin",
+   "public_rules": true,
+   "notes_ro": "Șah birman cu aranjare inițială a pieselor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sittuyin"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Chu Shogi",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 1300,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Chu Shogi",
+   "public_rules": true,
+   "notes_ro": "Shogi mare pe 12x12 cu promovări multiple.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chu_shogi"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "Dōbutsu Shōgi",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2008,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Dōbutsu Shōgi",
+   "public_rules": true,
+   "notes_ro": "Mini-shogi 3x4 cu animale pentru începători.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dōbutsu_shōgi"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Alquerque",
+   "existing": false,
+   "origin": "Orientul Mijlociu / Spania",
+   "year": 1000,
+   "ctx": [
+    "europe",
+    "asia"
+   ],
+   "own_title_ro": "Alquerque",
+   "public_rules": true,
+   "notes_ro": "Strămoș medieval al damelor, cu captură prin săritură.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alquerque"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "Tablut",
+   "existing": false,
+   "origin": "Laponia / Suedia",
+   "year": 1732,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Tablut",
+   "public_rules": true,
+   "notes_ro": "Varianta tafl pe 9x9 documentată de Linnaeus în 1732.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tafl_games"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Brandubh",
+   "existing": false,
+   "origin": "Irlanda",
+   "year": 900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Brandubh",
+   "public_rules": true,
+   "notes_ro": "Varianta irlandeză tafl pe tablă 7x7.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Brandubh"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Surakarta",
+   "existing": true
+  },
+  {
+   "r": 69,
+   "name": "Hasami Shogi",
+   "existing": true
+  },
+  {
+   "r": 70,
+   "name": "Konane",
+   "existing": true
+  },
+  {
+   "r": 71,
+   "name": "Seega",
+   "existing": true
+  },
+  {
+   "r": 72,
+   "name": "Yote",
+   "existing": true
+  },
+  {
+   "r": 73,
+   "name": "Hus",
+   "existing": true
+  },
+  {
+   "r": 74,
+   "name": "Omweso",
+   "existing": false,
+   "origin": "Uganda",
+   "year": 1500,
+   "ctx": [
+    "africa"
+   ],
+   "own_title_ro": "Omweso",
+   "public_rules": true,
+   "notes_ro": "Mancala din Buganda, joc regal.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Omweso"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Gebeta",
+   "existing": false,
+   "origin": "Etiopia",
+   "year": 1000,
+   "ctx": [
+    "africa"
+   ],
+   "own_title_ro": "Gebeta",
+   "public_rules": true,
+   "notes_ro": "Mancala etiopiană.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gebeta"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Ô ăn quan",
+   "existing": false,
+   "origin": "Vietnam",
+   "year": 1500,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Ô ăn quan",
+   "public_rules": true,
+   "notes_ro": "Mancala vietnameză cu două semicercuri mari.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ô_ăn_quan"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "Ludus latrunculorum",
+   "existing": false,
+   "origin": "Roma Antică",
+   "year": 0,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Ludus latrunculorum",
+   "public_rules": true,
+   "notes_ro": "Joc roman de captură prin încercuire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ludus_latrunculorum"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Lasca",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1911,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Lasca",
+   "public_rules": true,
+   "notes_ro": "Dame cu piese care se stivuiesc în coloane la capturare, inventat de Emanuel Lasker.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lasca"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Havannah",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1979,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Havannah",
+   "public_rules": true,
+   "notes_ro": "Conectezi o ramură, un inel sau o furcă pe tablă hexagonală.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Havannah"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "TwixT",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1962,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "TwixT",
+   "public_rules": true,
+   "notes_ro": "Conectezi două margini cu cuie și punți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/TwixT"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Sprouts",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1967,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Sprouts",
+   "public_rules": true,
+   "notes_ro": "Joc de hârtie și creion cu puncte și curbe, topologic.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sprouts_(game)"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Arimaa",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2002,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Animale de șah",
+   "public_rules": true,
+   "notes_ro": "Joc creat să fie greu pentru computere, cu piese de șah.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Arimaa"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "Breakthrough",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2000,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Breakthrough",
+   "public_rules": true,
+   "notes_ro": "Primul care ajunge pe rândul celălalt câștigă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Breakthrough_(board_game)"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "Ataxx",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1990,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Ataxx",
+   "public_rules": true,
+   "notes_ro": "Joc de infectare: clonezi sau sari și transformi vecinii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ataxx"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "Jungle (Dou Shou Qi)",
+   "existing": false,
+   "origin": "China",
+   "year": 1900,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Jungle (Dou Shou Qi)",
+   "public_rules": true,
+   "notes_ro": "Joc chinez cu animale cu rang și capcane.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jungle_(board_game)"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "Qwirkle",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Plăci cu forme",
+   "public_rules": false,
+   "notes_ro": "Joc de plăci cu forme și culori, aliniezi după atribut; marca este protejată.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Qwirkle"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "Mu Torere",
+   "existing": true
+  },
+  {
+   "r": 88,
+   "name": "Morabaraba",
+   "existing": true
+  },
+  {
+   "r": 89,
+   "name": "Sholo Guti (Șaisprezece soldați)",
+   "existing": true
+  },
+  {
+   "r": 90,
+   "name": "Aadu Puli Attam (Oi și tigri)",
+   "existing": true
+  },
+  {
+   "r": 91,
+   "name": "Străpungere",
+   "existing": true
+  },
+  {
+   "r": 92,
+   "name": "Izolare",
+   "existing": true
+  },
+  {
+   "r": 93,
+   "name": "Rotire în cinci",
+   "existing": true
+  },
+  {
+   "r": 94,
+   "name": "Coloane (dame în turnuri)",
+   "existing": true
+  },
+  {
+   "r": 95,
+   "name": "Bile pe hexagoane",
+   "existing": true
+  },
+  {
+   "r": 96,
+   "name": "Patru atribute",
+   "existing": true
+  },
+  {
+   "r": 97,
+   "name": "Cupe încuibate",
+   "existing": true
+  },
+  {
+   "r": 98,
+   "name": "Poliedre (duo)",
+   "existing": true
+  },
+  {
+   "r": 99,
+   "name": "Drum de pietre",
+   "existing": true
+  },
+  {
+   "r": 100,
+   "name": "Trei-pierde",
+   "existing": true
+  }
+ ]
+}

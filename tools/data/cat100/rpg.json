@@ -1,0 +1,1551 @@
+{
+ "category": "Rol (RPG)",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Dungeons & Dragons",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Pathfinder",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Call of Cthulhu",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Vampire: The Masquerade",
+   "existing": true
+  },
+  {
+   "r": 5,
+   "name": "Shadowrun",
+   "existing": true
+  },
+  {
+   "r": 6,
+   "name": "Das Schwarze Auge (The Dark Eye)",
+   "existing": true
+  },
+  {
+   "r": 7,
+   "name": "Warhammer Fantasy Roleplay",
+   "existing": true
+  },
+  {
+   "r": 8,
+   "name": "Traveller",
+   "existing": false,
+   "origin": "Marea Britanie / SUA",
+   "year": 1977,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Călătorul Stelar",
+   "public_rules": true,
+   "notes_ro": "SF clasic cu creare de personaje prin zaruri și comerț interstelar.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Traveller_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 9,
+   "name": "GURPS",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1986,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Sistem Universal cu Zaruri",
+   "public_rules": true,
+   "notes_ro": "Sistem generic cu 3d6 și puncte de caracter, folosit în orice gen.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/GURPS",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 10,
+   "name": "Cyberpunk RED",
+   "existing": true
+  },
+  {
+   "r": 11,
+   "name": "Starfinder",
+   "existing": true
+  },
+  {
+   "r": 12,
+   "name": "RuneQuest",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1978,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Calea Runelor",
+   "public_rules": true,
+   "notes_ro": "Sistem percentil cu abilități, strămoșul familiei BRP/Mythras.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/RuneQuest",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 13,
+   "name": "Savage Worlds",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2003,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Lumi Sălbatice",
+   "public_rules": true,
+   "notes_ro": "Sistem rapid generic cu zaruri variabile și cărți de inițiativă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Savage_Worlds",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 14,
+   "name": "Sword World RPG",
+   "existing": true
+  },
+  {
+   "r": 15,
+   "name": "Fate Core",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Destin Fundamental",
+   "public_rules": true,
+   "notes_ro": "Sistem narativ cu aspecte și zaruri Fudge, sub licență deschisă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fate_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 16,
+   "name": "Apocalypse World",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Lumea Apocalipsei",
+   "public_rules": true,
+   "notes_ro": "Originea familiei Powered by the Apocalypse, cu mișcări și 2d6.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Apocalypse_World",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 17,
+   "name": "Blades in the Dark",
+   "existing": true
+  },
+  {
+   "r": 18,
+   "name": "Dungeon World",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Lumea Temnițelor",
+   "public_rules": true,
+   "notes_ro": "Fantasy PbtA inspirat din D&D clasic, cu 2d6 și mișcări.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dungeon_World",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 19,
+   "name": "Mörk Borg",
+   "existing": true
+  },
+  {
+   "r": 20,
+   "name": "Old School Essentials",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2019,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Esențialele Școlii Vechi",
+   "public_rules": true,
+   "notes_ro": "Reeditare clară a regulilor D&D Basic/Expert.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Old-School_Essentials",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 21,
+   "name": "Dungeon Crawl Classics",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Coridoare Clasice de Temnițe",
+   "public_rules": true,
+   "notes_ro": "OSR cu zaruri neobișnuite (d3-d30) și magie haotică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dungeon_Crawl_Classics",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 22,
+   "name": "Mothership",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Nava-Mamă",
+   "public_rules": true,
+   "notes_ro": "Horror SF cu d100 și stres, inspirat de Alien.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mothership_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 23,
+   "name": "Tormenta",
+   "existing": true
+  },
+  {
+   "r": 24,
+   "name": "Drakar och Demoner",
+   "existing": true
+  },
+  {
+   "r": 25,
+   "name": "Shadowdark RPG",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2023,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Umbră Întunecată",
+   "public_rules": true,
+   "notes_ro": "OSR modern cu torțe în timp real și d20.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shadowdark_RPG",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 26,
+   "name": "Mutant: Year Zero",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Mutant: Anul Zero",
+   "public_rules": true,
+   "notes_ro": "Supraviețuire post-apocaliptică cu motorul Year Zero (d6 grupate).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mutant:_Year_Zero",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 27,
+   "name": "Legend of the Five Rings",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1997,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Legenda Celor Cinci Inele",
+   "public_rules": false,
+   "notes_ro": "Fantasy samurai legat de lumea Rokugan, regulă roll-and-keep.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Legend_of_the_Five_Rings_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Mage: The Ascension",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1993,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Magul Înălțat",
+   "public_rules": false,
+   "notes_ro": "Joc World of Darkness despre magi și paradigme.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mage:_The_Ascension",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 29,
+   "name": "Werewolf: The Apocalypse",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1992,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Vârcolacul Apocaliptic",
+   "public_rules": false,
+   "notes_ro": "Joc World of Darkness cu vârcolaci eco-militanți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Werewolf:_The_Apocalypse",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 30,
+   "name": "Star Wars Roleplaying Game (West End Games)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1987,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Războiul Stelar pe Zaruri",
+   "public_rules": false,
+   "notes_ro": "Sistem d6 pentru Star Wars, dependent de lore licențiat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Wars:_The_Roleplaying_Game",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 31,
+   "name": "The Witcher TRPG",
+   "existing": true
+  },
+  {
+   "r": 32,
+   "name": "Cypher System",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Sistemul Cifrului",
+   "public_rules": true,
+   "notes_ro": "Sistem d20 cu efort, folosit de Numenera și altele.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cypher_System",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Numenera",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Numerarium",
+   "public_rules": false,
+   "notes_ro": "Science-fantasy la un miliard de ani în viitor, dependent de lumea Ninth World.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Numenera",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "Tales from the Loop",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Povești din Buclă",
+   "public_rules": false,
+   "notes_ro": "RPG bazat pe arta lui Simon Stålenhag, motor Year Zero.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tales_from_the_Loop_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Symbaroum",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 2014,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Simbarum",
+   "public_rules": false,
+   "notes_ro": "Dark fantasy cu pădurea Davokar, d20 cu praguri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Symbaroum",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "Kult",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 1991,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Cultul Iluziei",
+   "public_rules": false,
+   "notes_ro": "Horror gnostic despre iluzia realității.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kult_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 37,
+   "name": "Forbidden Lands",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Ținuturile Interzise",
+   "public_rules": false,
+   "notes_ro": "Explorare sandbox cu motorul Year Zero.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Forbidden_Lands",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 38,
+   "name": "Alien RPG",
+   "existing": false,
+   "origin": "Suedia / SUA",
+   "year": 2019,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Străinul în Hău",
+   "public_rules": false,
+   "notes_ro": "Horror SF licențiat Alien cu motorul Year Zero.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alien_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 39,
+   "name": "Deadlands",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1996,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Ținuturile Morților",
+   "public_rules": true,
+   "notes_ro": "Western cu groază, cărți de poker și jetoane.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Deadlands",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "Earthdawn",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1993,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Zorii Pământului",
+   "public_rules": false,
+   "notes_ro": "Fantasy cu magie și Horrori, legat de lumea Barsaive.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Earthdawn",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 41,
+   "name": "Paranoia",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1984,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Paranoia Computerului",
+   "public_rules": true,
+   "notes_ro": "Comedie distopică cu Computerul Prieten.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Paranoia_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 42,
+   "name": "Fiasco",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Fiasco Total",
+   "public_rules": true,
+   "notes_ro": "Joc fără MJ despre planuri eșuate, în stil Coen.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fiasco_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 43,
+   "name": "Burning Wheel",
+   "existing": false,
+   "origin": "Canada",
+   "year": 2002,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Roata Arzătoare",
+   "public_rules": true,
+   "notes_ro": "Fantasy cu credințe, instincte și mize ridicate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Burning_Wheel",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 44,
+   "name": "Tunnels & Trolls",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1975,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Tuneluri și Trolli",
+   "public_rules": true,
+   "notes_ro": "Alternativă timpurie la D&D cu d6 și solo-aventuri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tunnels_%26_Trolls",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 45,
+   "name": "Chivalry & Sorcery",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1977,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cavalerism și Vrăjitorie",
+   "public_rules": true,
+   "notes_ro": "Fantasy medieval realist din 1977.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chivalry_%26_Sorcery",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 46,
+   "name": "Rolemaster",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1980,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Maestrul Rolurilor",
+   "public_rules": true,
+   "notes_ro": "Sistem percentil cu tabele de critice detaliate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rolemaster",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Hero System",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1981,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Sistemul Eroilor",
+   "public_rules": true,
+   "notes_ro": "Sistem generic de puncte, pornit de la Champions.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hero_System",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "Mutants & Masterminds",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2002,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Mutanți și Genii",
+   "public_rules": true,
+   "notes_ro": "Supereroi pe motor d20 cu puncte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mutants_%26_Masterminds",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "Pendragon",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1985,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Regele Arthur",
+   "public_rules": false,
+   "notes_ro": "Jocul cavalerilor Mesei Rotunde, cu trăsături și pasiuni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pendragon_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 50,
+   "name": "7th Sea",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Marea a Șaptea",
+   "public_rules": false,
+   "notes_ro": "Aventură swashbuckling în lume pseudo-europeană.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/7th_Sea_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 51,
+   "name": "Exalted",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2001,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cei Înălțați",
+   "public_rules": false,
+   "notes_ro": "Fantasy eroic mitic cu putere supranaturală.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Exalted_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 52,
+   "name": "Star Trek Adventures",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Aventuri Stelare",
+   "public_rules": false,
+   "notes_ro": "Sistem 2d20 licențiat Star Trek.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Trek_Adventures",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "Dark Heresy",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2008,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Erezie Întunecată",
+   "public_rules": false,
+   "notes_ro": "RPG Warhammer 40,000, dependent de lore.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dark_Heresy",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Scum and Villainy",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Hoți și Ticăloși",
+   "public_rules": true,
+   "notes_ro": "Space opera Forged in the Dark.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Scum_and_Villainy",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "Band of Blades",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Banda Lamelor",
+   "public_rules": true,
+   "notes_ro": "Forged in the Dark cu campanie militară de supraviețuire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Band_of_Blades",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Monsterhearts",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Inimi de Monștri",
+   "public_rules": true,
+   "notes_ro": "PbtA despre adolescenți monștri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Monsterhearts",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Masks: A New Generation",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Măști: O Nouă Generație",
+   "public_rules": true,
+   "notes_ro": "PbtA cu adolescenți supereroi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Masks:_A_New_Generation",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "Kids on Bikes",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Copii pe Biciclete",
+   "public_rules": true,
+   "notes_ro": "Joc narativ de aventură de cartier, în stil Stranger Things.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kids_on_Bikes",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Ironsworn",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Jurământ de Fier",
+   "public_rules": true,
+   "notes_ro": "Fantasy solo/co-op cu mișcări și licență liberă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ironsworn",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Ten Candles",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Zece Lumânări",
+   "public_rules": true,
+   "notes_ro": "Horror tragic jucat la lumina lumânărilor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ten_Candles",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Dread",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2005,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Teroarea Turnului",
+   "public_rules": true,
+   "notes_ro": "Horror cu turn Jenga în loc de zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dread_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Microscope",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Microscop",
+   "public_rules": true,
+   "notes_ro": "Joc fără MJ pentru construirea unor istorii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Microscope_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Torchbearer",
+   "existing": false,
+   "origin": "Canada",
+   "year": 2013,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Purtătorul Torței",
+   "public_rules": true,
+   "notes_ro": "Explorare de temnițe punitivă, derivat Burning Wheel.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Torchbearer_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "13th Age",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Epoca a 13-a",
+   "public_rules": true,
+   "notes_ro": "d20 modern cu ierarhii și amintiri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/13th_Age",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Degenesis",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2005,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Degenesis",
+   "public_rules": false,
+   "notes_ro": "Post-apocalipsă europeană cu culturi și clanuri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Degenesis",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "Splittermond",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Lună Despicată",
+   "public_rules": false,
+   "notes_ro": "Fantasy german cu mecanică modernă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Splittermond",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Midgard",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1981,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Miðgarðr",
+   "public_rules": false,
+   "notes_ro": "Fantasy german clasic.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Midgard_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Neuroshima",
+   "existing": false,
+   "origin": "Polonia",
+   "year": 2002,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Neurosima",
+   "public_rules": false,
+   "notes_ro": "Post-apocalipsă poloneză cu hexuri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Neuroshima",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "3D&T",
+   "existing": false,
+   "origin": "Brazilia",
+   "year": 1994,
+   "ctx": [
+    "samerica"
+   ],
+   "own_title_ro": "Trei D și Titani",
+   "public_rules": true,
+   "notes_ro": "RPG brazilian cu inspirație anime.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/3D%26T",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Old Dragon",
+   "existing": false,
+   "origin": "Brazilia",
+   "year": 2010,
+   "ctx": [
+    "samerica"
+   ],
+   "own_title_ro": "Dragonul Vechi",
+   "public_rules": true,
+   "notes_ro": "OSR brazilian bazat pe D&D clasic.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Old_Dragon_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Les Ombres d'Esteren",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2005,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Umbrele din Esteren",
+   "public_rules": false,
+   "notes_ro": "Dark fantasy gotic celtic cu sistem francez.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Les_Ombres_d%27Esteren",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "Rêve de Dragon",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1985,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Visul Dragonului",
+   "public_rules": false,
+   "notes_ro": "Joc francez cu vise și reverii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/R%C3%AAve_de_Dragon",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "In Nomine Satanis / Magna Veritas",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1989,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "În Numele Satanei",
+   "public_rules": false,
+   "notes_ro": "Comedie dark despre îngeri și demoni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/In_Nomine_Satanis/Magna_Veritas",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "Aquelarre",
+   "existing": false,
+   "origin": "Spania",
+   "year": 1990,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Aquelarre",
+   "public_rules": false,
+   "notes_ro": "Fantasy medieval iberic cu magie.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Aquelarre_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Dračí doupě",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 1990,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Bârlogul Dragonului",
+   "public_rules": true,
+   "notes_ro": "RPG ceh inspirat de D&D.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dra%C4%8D%C3%AD_doup%C4%9B",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Nechronica",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2009,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Necronica",
+   "public_rules": false,
+   "notes_ro": "RPG japonez post-apocaliptic cu păpuși moarte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nechronica",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "Shinobigami",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2005,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Zeul Ninja",
+   "public_rules": false,
+   "notes_ro": "Joc cu ninja și secrete.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shinobigami",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Ryuutama",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2007,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Ryuutama",
+   "public_rules": true,
+   "notes_ro": "Fantasy călător cu ton liniștit.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ryuutama",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Gamma World",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1978,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Lumea Gamma",
+   "public_rules": false,
+   "notes_ro": "Post-apocalipsă cu mutanți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gamma_World",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "Mythras",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2008,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Mitras",
+   "public_rules": true,
+   "notes_ro": "Evoluție a RuneQuest cu licență deschisă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mythras",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Spire: The City Must Fall",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2019,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Turnul: Orașul Trebuie să Cadă",
+   "public_rules": false,
+   "notes_ro": "Joc despre rebeliune a elfilor negri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Spire:_The_City_Must_Fall",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Heart: The City Beneath",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2021,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Inima: Orașul de Dedesubt",
+   "public_rules": false,
+   "notes_ro": "Joc de explorare într-un oraș subteran.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Heart:_The_City_Beneath",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "Stars Without Number",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Stele fără Număr",
+   "public_rules": true,
+   "notes_ro": "OSR SF cu sandbox spațial.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Stars_Without_Number",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "The Black Hack",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2016,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Hacul Negru",
+   "public_rules": true,
+   "notes_ro": "OSR minimalist cu d20 roll-under.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Black_Hack",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "Troika!",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2019,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Troica!",
+   "public_rules": true,
+   "notes_ro": "OSR bizar cu fantezie psihedelică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Troika!",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "Trail of Cthulhu",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2008,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Urmele lui Cthulhu",
+   "public_rules": true,
+   "notes_ro": "Investigații GUMSHOE cu horror.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trail_of_Cthulhu",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "Lady Blackbird",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Doamna Mierlă",
+   "public_rules": true,
+   "notes_ro": "One-shot indie cu pirați aerieni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lady_Blackbird",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 88,
+   "name": "Dogs in the Vineyard",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2004,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Câinii din Vie",
+   "public_rules": true,
+   "notes_ro": "Western cu judecători mormoni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dogs_in_the_Vineyard",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 89,
+   "name": "Labyrinth Lord",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2007,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Stăpânul Labirintului",
+   "public_rules": true,
+   "notes_ro": "Clona OSR a D&D Basic/Expert.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Labyrinth_Lord",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 90,
+   "name": "Swords & Wizardry",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2008,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Săbii și Vrăjitori",
+   "public_rules": true,
+   "notes_ro": "Clona OSR a D&D original.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Swords_%26_Wizardry",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 91,
+   "name": "Lamentations of the Flame Princess",
+   "existing": false,
+   "origin": "Finlanda",
+   "year": 2008,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Plângerile Prințesei Flăcării",
+   "public_rules": true,
+   "notes_ro": "OSR horror weird fantasy.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lamentations_of_the_Flame_Princess",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 92,
+   "name": "Knave",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2018,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Cavalerul Șmecher",
+   "public_rules": true,
+   "notes_ro": "OSR minimalist cu numere aleatoare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Knave_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 93,
+   "name": "Cairn",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2022,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Piramida de Piatră",
+   "public_rules": true,
+   "notes_ro": "OSR minimalist bazat pe Into the Odd.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cairn_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 94,
+   "name": "Into the Odd",
+   "existing": false,
+   "origin": "Noua Zeelandă",
+   "year": 2014,
+   "ctx": [
+    "oceania",
+    "europe"
+   ],
+   "own_title_ro": "În Ciudățenie",
+   "public_rules": true,
+   "notes_ro": "OSR cu combatere fără zaruri de atac.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Into_the_Odd",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 95,
+   "name": "Basic Fantasy RPG",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Fantezie de Bază",
+   "public_rules": true,
+   "notes_ro": "Clona D&D gratuită.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Basic_Fantasy_Role-Playing_Game",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 96,
+   "name": "Delta Green",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1996,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Verde Delta",
+   "public_rules": false,
+   "notes_ro": "Horror conspirativ modern.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Delta_Green_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 97,
+   "name": "Eon",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 1996,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Eon",
+   "public_rules": false,
+   "notes_ro": "Fantasy suedez cu lume proprie.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eon_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 98,
+   "name": "Coriolis: The Third Horizon",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 2016,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Coriolis: Al Treilea Orizont",
+   "public_rules": false,
+   "notes_ro": "SF arab cu motor Year Zero.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coriolis:_The_Third_Horizon",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 99,
+   "name": "Vaesen",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 2021,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Văsen",
+   "public_rules": false,
+   "notes_ro": "RPG nordic cu monștri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vaesen_(role-playing_game)",
+    "https://en.wikipedia.org/wiki/List_of_role-playing_games"
+   ]
+  },
+  {
+   "r": 100,
+   "name": "InSANe",
+   "existing": true
+  }
+ ]
+}

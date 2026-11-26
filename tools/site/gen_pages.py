@@ -42,6 +42,11 @@ for lid, L in rk.items():
     for x in L:
         if x['g']:
             pos.setdefault(x['g'], []).append((lid, x['r'], x['n'], x['s']))
+# topurile pe categorii: id „c-<categorie>”
+for ck_, L in json.load(open(f'{root}/tools/site/data/rankings.json', encoding='utf8'))['cat_lists'].items():
+    for x in L:
+        if x['g']:
+            pos.setdefault(x['g'], []).append(('c-' + ck_, x['r'], x['n'], x['s']))
 G = {}
 for gid, ro, cat in games:
     titles, rules = {}, {}
@@ -258,10 +263,10 @@ for gid, _, cat in games:
     # clasamente
     P = pos.get(gid, [])
     if P:
-        rows = ''.join(f'<tr><td><a href="../index.html#rankings-{lid}" data-lk data-i="{LNAME[lid]}"></a></td><td class="r">{r}</td><td>{esc(n)}</td></tr>' for lid, r, n, s in P)
+        rows = ''.join(f'<tr><td><a href="../index.html#rankings-{lid}" data-lk' + (f' data-i="{LNAME[lid]}"></a>' if lid in LNAME else f'><span data-i="cat_l"></span>: <span data-i="cat_{lid[2:]}"></span></a>') + f'</td><td class=r>{r}</td><td>{esc(n)}</td></tr>' for lid, r, n, s in P)
         kinds = {s for *_, s in P}
         kind = ('<p class="mut" data-i="pg_kind_play"></p>' if 'play' in kinds else '') + ('<p class="mut" data-i="pg_kind_var"></p>' if 'var' in kinds else '')
-        rank = f'<p data-i="pg_rank_p"></p>\n<div class="tbl-wrap pg-tbl" role="region" tabindex="0" aria-label="Rankings" data-ia="pg_rank_cap"><table><caption data-i="pg_rank_cap"></caption><thead><tr><th scope="col" data-i="pg_rank_list"></th><th scope="col" data-i="pg_rank_place"></th><th scope="col" data-i="pg_rank_entry"></th></tr></thead><tbody>{rows}</tbody></table></div>\n{kind}'
+        rank = f'<p data-i="pg_rank_p"></p>\n<div class="tbl-wrap pg-tbl" role="region" tabindex="0" data-ia="pg_rank_cap"><table><caption data-i="pg_rank_cap"></caption><thead><tr><th scope="col" data-i="pg_rank_list"></th><th scope="col" data-i="pg_rank_place"></th><th scope="col" data-i="pg_rank_entry"></th></tr></thead><tbody>{rows}</tbody></table></div>\n{kind}'
     else:
         rank = '<p data-i="pg_rank_none"></p>'
     # prev/next

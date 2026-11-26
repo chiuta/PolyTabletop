@@ -1,0 +1,1705 @@
+{
+ "category": "Miniaturi",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Warhammer 40,000",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Warhammer: Age of Sigmar",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Bolt Action",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Kings of War",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2010,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Regii Războiului",
+   "public_rules": false,
+   "notes_ro": "Wargame fantasy de masă al Mantic Games, cu reguli gratuite online și armate de regimente.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kings_of_War"
+   ]
+  },
+  {
+   "r": 5,
+   "name": "Flames of War",
+   "existing": false,
+   "origin": "Noua Zeelandă",
+   "year": 2002,
+   "ctx": [
+    "global",
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Flăcările Războiului",
+   "public_rules": true,
+   "notes_ro": "Wargame WWII la scara 15 mm, foarte popular în turnee.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flames_of_War"
+   ]
+  },
+  {
+   "r": 6,
+   "name": "Star Wars: X-Wing",
+   "existing": true
+  },
+  {
+   "r": 7,
+   "name": "Blood Bowl",
+   "existing": true
+  },
+  {
+   "r": 8,
+   "name": "Warhammer: Kill Team",
+   "existing": true
+  },
+  {
+   "r": 9,
+   "name": "Infinity",
+   "existing": true
+  },
+  {
+   "r": 10,
+   "name": "Warhammer: The Old World",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2024,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Lumea Veche",
+   "public_rules": false,
+   "notes_ro": "Relansarea Games Workshop a jocului de bătălii fantasy cu regimente.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warhammer_Fantasy_Battle"
+   ]
+  },
+  {
+   "r": 11,
+   "name": "Star Wars: Legion",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Legiunea Galactică",
+   "public_rules": false,
+   "notes_ro": "Wargame de miniaturi 35 mm în universul Star Wars (Atomic Mass Games).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Wars:_Legion"
+   ]
+  },
+  {
+   "r": 12,
+   "name": "Necromunda",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1995,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Orașul-Stup",
+   "public_rules": false,
+   "notes_ro": "Skirmish de bande în subteranele unui oraș-stup SF.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Necromunda"
+   ]
+  },
+  {
+   "r": 13,
+   "name": "Warhammer Fantasy Battle",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1983,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Bătălii Fantastice",
+   "public_rules": false,
+   "notes_ro": "Clasicul wargame fantasy cu regimente, precursorul lui Age of Sigmar.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warhammer_Fantasy_Battle"
+   ]
+  },
+  {
+   "r": 14,
+   "name": "Middle-earth Strategy Battle Game",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2001,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Bătălia din Ținuturile de Mijloc",
+   "public_rules": false,
+   "notes_ro": "Wargame în universul Tolkien (fost Lord of the Rings SBG).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_Strategy_Battle_Game"
+   ]
+  },
+  {
+   "r": 15,
+   "name": "Warhammer: The Horus Heresy",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Războiul Fraților",
+   "public_rules": false,
+   "notes_ro": "Wargame SF la scară mare în perioada Ereziei lui Horus.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warhammer_40,000"
+   ]
+  },
+  {
+   "r": 16,
+   "name": "Marvel Crisis Protocol",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Protocol de Criză",
+   "public_rules": false,
+   "notes_ro": "Skirmish cu supereroi Marvel cu mecanici de aruncare și combo.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marvel:_Crisis_Protocol"
+   ]
+  },
+  {
+   "r": 17,
+   "name": "Saga",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Saga",
+   "public_rules": true,
+   "notes_ro": "Skirmish istoric cu zaruri speciale de bătălie (epoca Vikingilor/Evul Mediu), de Studio Tomahawk.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 18,
+   "name": "One Page Rules (Grimdark Future / Age of Fantasy)",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2018,
+   "ctx": [
+    "global",
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Reguli pe o Pagină",
+   "public_rules": true,
+   "notes_ro": "Familie de reguli gratuite, minimaliste, SF și fantasy, cu liste de armate libere.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 19,
+   "name": "Mordheim",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1999,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Orașul Damnaților",
+   "public_rules": false,
+   "notes_ro": "Skirmish de bande într-un oraș ruinat fantasy.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mordheim"
+   ]
+  },
+  {
+   "r": 20,
+   "name": "Warmachine",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2003,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Mașina de Război",
+   "public_rules": false,
+   "notes_ro": "Wargame steampunk cu warjack-uri și warcastere (Privateer Press).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warmachine"
+   ]
+  },
+  {
+   "r": 21,
+   "name": "Malifaux",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Malifaux",
+   "public_rules": false,
+   "notes_ro": "Skirmish gotic-western cu pachet de cărți în loc de zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Malifaux"
+   ]
+  },
+  {
+   "r": 22,
+   "name": "BattleTech",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1984,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Roboții de Luptă",
+   "public_rules": false,
+   "notes_ro": "Joc tactic cu mecha uriași, bazat pe hexagoane, cu roluri de campanie.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/BattleTech"
+   ]
+  },
+  {
+   "r": 23,
+   "name": "Black Powder",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2009,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Praf de Pușcă",
+   "public_rules": true,
+   "notes_ro": "Reguli generale pentru epoca prafului de pușcă (Napoleonian, ACW etc.).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 24,
+   "name": "Warhammer Underworlds",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Lumile Subterane",
+   "public_rules": false,
+   "notes_ro": "Skirmish de arenă cu cărți de strategie și zaruri personalizate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warhammer_Underworlds"
+   ]
+  },
+  {
+   "r": 25,
+   "name": "Warcry",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2019,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Strigăt de Luptă",
+   "public_rules": false,
+   "notes_ro": "Skirmish rapid de bande de război în Lumile Muritoare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 26,
+   "name": "Star Wars: Armada",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Armada Galactică",
+   "public_rules": false,
+   "notes_ro": "Joc de flote în universul Star Wars (FFG, apoi AMG).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Wars:_Armada"
+   ]
+  },
+  {
+   "r": 27,
+   "name": "Team Yankee",
+   "existing": false,
+   "origin": "Noua Zeelandă",
+   "year": 2015,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Echipa Yankee",
+   "public_rules": true,
+   "notes_ro": "Wargame Războiul Rece 1985 la 15 mm, bazat pe romanul lui Harold Coyle.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Team_Yankee"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Chain of Command",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Lanț de Comandă",
+   "public_rules": true,
+   "notes_ro": "Reguli WWII la nivel de pluton cu mecanica Patrol Phase și Command Dice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 29,
+   "name": "Frostgrave",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2015,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Gerul Cetății",
+   "public_rules": true,
+   "notes_ro": "Skirmish fantasy cu vrăjitori și bande în ruine înghețate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Frostgrave"
+   ]
+  },
+  {
+   "r": 30,
+   "name": "Gaslands",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Țara Gazului",
+   "public_rules": true,
+   "notes_ro": "Luptă de mașinuțe Hot Wheels post-apocaliptice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gaslands"
+   ]
+  },
+  {
+   "r": 31,
+   "name": "Hail Caesar",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Ave Caesar",
+   "public_rules": true,
+   "notes_ro": "Reguli de bătălii antice și medievale (Warlord Games).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 32,
+   "name": "Field of Glory",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2008,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Câmp de Glorie",
+   "public_rules": true,
+   "notes_ro": "Reguli pentru epoca antică și medievală, popular în turnee.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Star Wars: Shatterpoint",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2023,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Punct de Rupere",
+   "public_rules": false,
+   "notes_ro": "Skirmish în universul Star Wars cu zaruri și strategie de echipă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "Legions Imperialis",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2023,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Legiuni Imperiale",
+   "public_rules": false,
+   "notes_ro": "Joc la scară mică (6 mm) pentru bătălii masive ale Ereziei lui Horus.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Adeptus Titanicus",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Titanii Mecanici",
+   "public_rules": false,
+   "notes_ro": "Joc de bătălii între Titani gigantici în universul Warhammer 40,000.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "Battlefleet Gothic",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1999,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Flota Gotică",
+   "public_rules": false,
+   "notes_ro": "Joc de bătălii navale spațiale în universul Warhammer 40,000.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battlefleet_Gothic"
+   ]
+  },
+  {
+   "r": 37,
+   "name": "Song of Blades and Heroes",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2007,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Cântec de Săbii și Eroi",
+   "public_rules": true,
+   "notes_ro": "Skirmish fantasy rapid cu reguli simple, de Ganesha Games.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Song_of_Blades_and_Heroes"
+   ]
+  },
+  {
+   "r": 38,
+   "name": "Stargrave",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2021,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Gardă Stelară",
+   "public_rules": true,
+   "notes_ro": "Skirmish SF de echipaj de mercenari (Joseph McCullough).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 39,
+   "name": "Epic Armageddon",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2003,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Epic Armageddon",
+   "public_rules": false,
+   "notes_ro": "Wargame 6 mm Warhammer 40,000 cu armate întregi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "HeroClix",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2002,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "HeroClix",
+   "public_rules": false,
+   "notes_ro": "Joc colecționabil de miniaturi cu talere rotative pentru statistici.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/HeroClix"
+   ]
+  },
+  {
+   "r": 41,
+   "name": "Wings of Glory",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Aripi de Glorie",
+   "public_rules": false,
+   "notes_ro": "Joc aerian de luptă WWI/WWII cu cărți de manevră.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wings_of_War"
+   ]
+  },
+  {
+   "r": 42,
+   "name": "Dust Tactics",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Tactica Prafului",
+   "public_rules": false,
+   "notes_ro": "Joc de miniaturi WWII alternativ cu roboți de luptă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dust_Tactics"
+   ]
+  },
+  {
+   "r": 43,
+   "name": "Dropzone Commander",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Comandant de Aterizare",
+   "public_rules": false,
+   "notes_ro": "Wargame SF cu transporturi de aterizare la 10 mm.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 44,
+   "name": "A Song of Ice and Fire: Tabletop Miniatures Game",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2018,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Cântec de Gheață și Foc",
+   "public_rules": false,
+   "notes_ro": "Wargame de regimente în universul Urzeala Tronurilor (CMON).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 45,
+   "name": "Conquest: The Last Argument of Kings",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Ultimul Argument",
+   "public_rules": false,
+   "notes_ro": "Wargame fantasy de regimente al Para Bellum.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 46,
+   "name": "Warpath",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Calea Războiului",
+   "public_rules": false,
+   "notes_ro": "Wargame SF al Mantic Games cu reguli gratuite.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Deadzone",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Zona Moartă",
+   "public_rules": false,
+   "notes_ro": "Skirmish SF rapid, cu Mantic Games, într-un spațiu restrâns.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "Dreadball",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Sportul Terorii",
+   "public_rules": false,
+   "notes_ro": "Sport futurist cu miniaturi, de la Mantic Games.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "Lion Rampant",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Leul Săritor",
+   "public_rules": true,
+   "notes_ro": "Reguli medievale simple pentru bătălii cu 6 unități (Daniel Mersey).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 50,
+   "name": "Dragon Rampant",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Dragonul Săritor",
+   "public_rules": true,
+   "notes_ro": "Versiunea fantasy a lui Lion Rampant.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 51,
+   "name": "Blood Red Skies",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Cerul Roșu de Sânge",
+   "public_rules": true,
+   "notes_ro": "Luptă aeriană WWII cu avioane de scară 1/200.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 52,
+   "name": "Cruel Seas",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Mări Crude",
+   "public_rules": true,
+   "notes_ro": "Luptă navală cu ambarcațiuni mici din WWII.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "Black Seas",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Mările Negre",
+   "public_rules": true,
+   "notes_ro": "Luptă navală cu nave cu pânze (era napoleoniană).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Sails of Glory",
+   "existing": false,
+   "origin": "Spania",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Pânzele Gloriei",
+   "public_rules": false,
+   "notes_ro": "Joc de bătălii navale napoleoniene cu manevre pe cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "Victory at Sea",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2006,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Victorie pe Mare",
+   "public_rules": true,
+   "notes_ro": "Reguli pentru bătălii navale WWII.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Dystopian Wars",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2010,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Războaie Distopice",
+   "public_rules": false,
+   "notes_ro": "Wargame steampunk cu flote și armate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Firestorm Armada",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2009,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Armada Furtunii de Foc",
+   "public_rules": false,
+   "notes_ro": "Wargame spațial cu flote de nave.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "Full Thrust",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1992,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Împingere Totală",
+   "public_rules": true,
+   "notes_ro": "Reguli de luptă spațială cu scări de flote, populare în comunitate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Star Fleet Battles",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1979,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Bătăliile Flotei Stelare",
+   "public_rules": false,
+   "notes_ro": "Joc tactic de nave în universul Star Trek.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Fleet_Battles"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Dropfleet Commander",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Comandant de Flotă",
+   "public_rules": false,
+   "notes_ro": "Joc de flote orbitale în universul Dropzone.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Star Trek: Attack Wing",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Aripă de Atac",
+   "public_rules": false,
+   "notes_ro": "Joc de nave Star Trek cu sistem derivat din X-Wing.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Batman Miniature Game",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Jocul Liliacului",
+   "public_rules": false,
+   "notes_ro": "Skirmish Batman cu bande de personaje.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Guild Ball",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2015,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Mingea Breslei",
+   "public_rules": false,
+   "notes_ro": "Sport fantasy cu echipe de miniaturi (Steamforged Games).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "Wrath of Kings",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Mânia Regilor",
+   "public_rules": false,
+   "notes_ro": "Skirmish fantasy cu facțiuni și zaruri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Hordes",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Hoardele",
+   "public_rules": false,
+   "notes_ro": "Wargame fantasy al Privateer Press, companion al Warmachine.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "Mage Knight",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2000,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Cavalerul Magic",
+   "public_rules": false,
+   "notes_ro": "Joc colecționabil cu miniaturi pre-vopsite.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mage_Knight"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Axis & Allies Miniatures",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2005,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Axa și Aliații",
+   "public_rules": false,
+   "notes_ro": "Joc cu miniaturi pre-vopsite în WWII.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Dungeons & Dragons Miniatures",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2003,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Miniaturi D&D",
+   "public_rules": false,
+   "notes_ro": "Joc de miniaturi bazat pe regulile D&D.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "HeroScape",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2004,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "HeroScape",
+   "public_rules": false,
+   "notes_ro": "Joc de teren modular cu miniaturi și hărți 3D.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/HeroScape"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Confrontation",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2000,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Confruntare",
+   "public_rules": false,
+   "notes_ro": "Joc fantasy al Rackham cu eroi și monștri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Rangers of Shadow Deep",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2019,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Rangerii din Adâncul Umbrelor",
+   "public_rules": true,
+   "notes_ro": "Skirmish solitar sau cooperativ fantasy.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "Muskets & Tomahawks",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2015,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Muschete și Tomahawk-uri",
+   "public_rules": true,
+   "notes_ro": "Skirmish din Războiul Francez și Indian.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Sharp Practice",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2008,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Practică Ascuțită",
+   "public_rules": true,
+   "notes_ro": "Reguli pentru skirmish din epoca napoleoniană și ACW.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "Lasalle",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Lasalle",
+   "public_rules": true,
+   "notes_ro": "Reguli napoleoniene de Sam Mustafa.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Pike & Shotte",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Lance și Muschete",
+   "public_rules": true,
+   "notes_ro": "Reguli pentru epoca Războiului de 30 de Ani și ECW.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Force on Force",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Forță contra Forță",
+   "public_rules": true,
+   "notes_ro": "Reguli moderne asimetrice pentru conflicte contemporane.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "A Fistful of Lead",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2007,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Un Pumn de Plumb",
+   "public_rules": true,
+   "notes_ro": "Skirmish Vest Sălbatic cu reguli simple.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Dead Man's Hand",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Mâna Morților",
+   "public_rules": true,
+   "notes_ro": "Skirmish Western cu cărți de joc.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Pulp Alley",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Aleea Pulp",
+   "public_rules": true,
+   "notes_ro": "Skirmish pulp cu bande și intrigi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "Bushido",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Bushido",
+   "public_rules": false,
+   "notes_ro": "Skirmish de samurai și monștri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Ronin",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Ronin",
+   "public_rules": true,
+   "notes_ro": "Skirmish japonez de samurai (Osprey).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Oathmark",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2021,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Jurământ de Război",
+   "public_rules": true,
+   "notes_ro": "Fantasy de regimente (Joseph McCullough).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "Konflikt '47",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Conflict '47",
+   "public_rules": false,
+   "notes_ro": "WWII alternativ cu tehnologie avansată.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "Impetus",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2006,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Impetus",
+   "public_rules": true,
+   "notes_ro": "Reguli antice și medievale cu elemente de tactică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "De Bellis Antiquitatis (DBA)",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1990,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Despre Războaiele Antice",
+   "public_rules": true,
+   "notes_ro": "Reguli rapide de război antic la scară mică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "De Bellis Multitudinis (DBM)",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1993,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Despre Mulțimile Războinice",
+   "public_rules": true,
+   "notes_ro": "Reguli detaliate de lupte antice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "L'Art de la Guerre",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2008,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Arta Războiului",
+   "public_rules": true,
+   "notes_ro": "Reguli franceze pentru epoca antică și medievală.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 88,
+   "name": "To the Strongest!",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Celui mai Puternic",
+   "public_rules": true,
+   "notes_ro": "Reguli antice cu grila și cărți de joc.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 89,
+   "name": "Swordpoint",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Vârf de Sabie",
+   "public_rules": true,
+   "notes_ro": "Reguli medievale de Gripping Beast.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 90,
+   "name": "Warmaster",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2000,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Maestrul Războiului",
+   "public_rules": false,
+   "notes_ro": "Wargame fantasy la scară mică de Games Workshop.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Warmaster"
+   ]
+  },
+  {
+   "r": 91,
+   "name": "Volley & Bayonet",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1994,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Salvă și Baionetă",
+   "public_rules": true,
+   "notes_ro": "Reguli napoleoniene la scară mare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 92,
+   "name": "Fire and Fury",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1990,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Foc și Furie",
+   "public_rules": true,
+   "notes_ro": "Reguli populare pentru Războiul Civil American.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 93,
+   "name": "Heavy Gear",
+   "existing": false,
+   "origin": "Canada",
+   "year": 1989,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Roboții Grei",
+   "public_rules": false,
+   "notes_ro": "Joc SF mecha cu roboți (Dream Pod 9).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 94,
+   "name": "Aeronautica Imperialis",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2021,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Aeronautica Imperială",
+   "public_rules": false,
+   "notes_ro": "Luptă aeriană în universul Warhammer 40,000.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 95,
+   "name": "Check Your 6!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1997,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Verifică-ți Spatele",
+   "public_rules": true,
+   "notes_ro": "Luptă aeriană WWII cu reguli rapide.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 96,
+   "name": "Five Parsecs From Home",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2021,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Cinci Parseci de Casă",
+   "public_rules": true,
+   "notes_ro": "Skirmish SF solitar de bandă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 97,
+   "name": "Project Pandora",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Proiectul Pandora",
+   "public_rules": false,
+   "notes_ro": "Skirmish SF pe o planetă îndepărtată (Mantic).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 98,
+   "name": "Mythic Battles: Pantheon",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Bătălii Mitice",
+   "public_rules": false,
+   "notes_ro": "Joc cooperativ/competitiv cu zei și mituri grecești.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 99,
+   "name": "Star Wars: Imperial Assault",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Asaltul Imperial",
+   "public_rules": false,
+   "notes_ro": "Joc de miniaturi cooperative în Star Wars.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_miniature_wargames"
+   ]
+  },
+  {
+   "r": 100,
+   "name": "Space Hulk",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1989,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Epava Spațială",
+   "public_rules": false,
+   "notes_ro": "Joc de luptă în coridoare strâmte în universul Warhammer 40,000.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Space_Hulk"
+   ]
+  }
+ ]
+}

@@ -38,7 +38,7 @@ for i, (sheet, lid, L) in enumerate(dc.LISTS):
         ws.cell(n + 1, 1, n); ws.cell(n + 1, 2, joc); ws.cell(n + 1, 3, cat[k]); ws.cell(n + 1, 4, extra)
     assert len(L) == 100, (sheet, len(L))
 # ordine: Lume, Europa, continentele noi, Alte continente, România, Note
-order = ['Lume', 'Europa'] + SHEETS + ['Alte continente', 'România', 'Note']
+order = ['Lume', 'Europa'] + SHEETS + ['Alte continente', 'România'] + [s for s in wb.sheetnames if s.startswith('Top ')] + ['Note']
 wb._sheets = [wb[s] for s in order]
 # foaia Note
 nt = wb['Note']
@@ -50,10 +50,11 @@ NEW_NOTES = [
     'Antarctica nu are top: nu are populație permanentă și nici o tradiție proprie de jocuri; stațiile de cercetare joacă jocurile aduse din țările de origine, care apar deja în celelalte topuri.',
 ]
 rows = [r[0].value for r in nt.iter_rows() if r[0].value]
-rows = [r for r in rows if r not in NEW_NOTES and not r.startswith('Toate ')]
-rows.append('Toate topurile (lume, Europa, cele cinci continente, alte continente, România) sunt estimări editoriale, nu o clasificare oficială.')
+rows = [r for r in rows if r not in NEW_NOTES and not r.startswith('Toate ') and not r.startswith('Topurile pe categorii')]
+cat_notes = [r for r in [r[0].value for r in nt.iter_rows() if r[0].value] if r.startswith('Topurile pe categorii')]
+rows.append('Toate topurile (pe regiuni și pe categorii) sunt estimări editoriale, nu o clasificare oficială.')
 # păstrează titlul + notele vechi; adaugă cele noi
-final = rows[:-1] + NEW_NOTES + rows[-1:]
+final = rows[:-1] + NEW_NOTES + cat_notes + rows[-1:]
 for r in nt.iter_rows():
     for c in r:
         c.value = None

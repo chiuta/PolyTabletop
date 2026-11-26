@@ -106,12 +106,21 @@ ori = json.load(open(f'{root}/tools/site/data/origins.json', encoding='utf8'))
 RANK = {lid: [[x['r'], x['n'], x['c'], x['x'], x['s'], x['g']] for x in L] for lid, L in rk['lists'].items()}
 for L in RANK.values():
     assert len(L) == 100
+# topuri pe categorii: id-ul listei este „c-<categorie>”; fiecare are exact 100 de intrări distincte
+CATIDS = ['abstract', 'classic', 'family', 'strategy', 'party', 'coop', 'cards', 'rpg', 'minis', 'tcg', 'kids', 'dice']
+assert set(rk['cat_lists']) == set(CATIDS)
+for k in CATIDS:
+    L = rk['cat_lists'][k]
+    assert len(L) == 100 and len({x['n'] for x in L}) == 100
+    RANK['c-' + k] = [[x['r'], x['n'], x['c'], x['x'], x['s'], x['g']] for x in L]
+ctabs = '\n'.join(f'<button type="button" role="tab" id="rankings-c-{k}" aria-controls="rkp-c-{k}" aria-selected="false" tabindex="{0 if i == 0 else -1}" data-lid="c-{k}" data-i18n="cat_{k}">{k}</button>' for i, k in enumerate(CATIDS))
+cpanels = '\n'.join(f'<div id="rkp-c-{k}" role="tabpanel" aria-labelledby="rankings-c-{k}" tabindex="0" hidden></div>' for k in CATIDS)
 PREF = ('cat_rpg', 'cat_kids', 'nav_rank', 'rk_', 'th_', 'st_', 'stl_', 'idx_media')
 TX = {l: {k: v for k, v in d.items() if k.startswith(PREF)} for l, d in ui_i18n.UI.items()}
 rkjs = open(f'{root}/tools/site/rank.js', encoding='utf8').read()
 has_media = bool(glob.glob(f'{root}/docs/media/*/*.png') or glob.glob(f'{root}/docs/media/*/*.mp4'))
 note = '<p class="mut" data-i18n="idx_media"></p>' if has_media else ''
-html = (tpl.replace('/*GAMES_JSON*/[]', js).replace('<!--HERO_SVG-->', hero_svg())
+html = (tpl.replace('<!--RK_CAT_TABS-->', ctabs).replace('<!--RK_CAT_PANELS-->', cpanels).replace('/*GAMES_JSON*/[]', js).replace('<!--HERO_SVG-->', hero_svg())
         .replace('/*RANK_JSON*/{}', J(RANK)).replace('/*ORI_JSON*/{}', J(ori['origins'])).replace('/*OBS_JSON*/{}', J(ori['notes']))
         .replace('/*TX_JSON*/{}', J(TX)).replace('/*RANK_JS*/', rkjs).replace('<!--MEDIA_NOTE-->', note))
 open(f'{root}/docs/index.html', 'w', encoding='utf8').write(html)

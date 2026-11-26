@@ -1,0 +1,1541 @@
+{
+ "category": "Strategie",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Catan",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Risk",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Terraforming Mars",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Dominion",
+   "existing": true
+  },
+  {
+   "r": 5,
+   "name": "Wingspan",
+   "existing": true
+  },
+  {
+   "r": 6,
+   "name": "7 Wonders",
+   "existing": true
+  },
+  {
+   "r": 7,
+   "name": "Azul",
+   "existing": true
+  },
+  {
+   "r": 8,
+   "name": "Splendor",
+   "existing": true
+  },
+  {
+   "r": 9,
+   "name": "Stratego",
+   "existing": true
+  },
+  {
+   "r": 10,
+   "name": "Twilight Imperium",
+   "existing": true
+  },
+  {
+   "r": 11,
+   "name": "Scythe",
+   "existing": true
+  },
+  {
+   "r": 12,
+   "name": "Puerto Rico",
+   "existing": true
+  },
+  {
+   "r": 13,
+   "name": "Agricola",
+   "existing": true
+  },
+  {
+   "r": 14,
+   "name": "Brass: Birmingham",
+   "existing": true
+  },
+  {
+   "r": 15,
+   "name": "Ark Nova",
+   "existing": true
+  },
+  {
+   "r": 16,
+   "name": "Terra Mystica",
+   "existing": true
+  },
+  {
+   "r": 17,
+   "name": "Dune: Imperium",
+   "existing": true
+  },
+  {
+   "r": 18,
+   "name": "Power Grid",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2004,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Rețeaua de Curent",
+   "public_rules": true,
+   "notes_ro": "Licitații pentru centrale electrice și extinderea rețelei pe hartă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Power_Grid",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 19,
+   "name": "Axis & Allies",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1981,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Axa și Aliații",
+   "public_rules": false,
+   "notes_ro": "Wargame global despre al Doilea Război Mondial cu hartă și piese de unități.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Axis_%26_Allies",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 20,
+   "name": "Small World",
+   "existing": true
+  },
+  {
+   "r": 21,
+   "name": "Caylus",
+   "existing": true
+  },
+  {
+   "r": 22,
+   "name": "Root",
+   "existing": true
+  },
+  {
+   "r": 23,
+   "name": "Everdell",
+   "existing": true
+  },
+  {
+   "r": 24,
+   "name": "Diplomacy",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1959,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Diplomația",
+   "public_rules": true,
+   "notes_ro": "Wargame de negociere în Europa anului 1901 cu mutări simultane.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Diplomacy_(game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 25,
+   "name": "Talisman",
+   "existing": true
+  },
+  {
+   "r": 26,
+   "name": "Great Western Trail",
+   "existing": false,
+   "origin": "Elveția",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Drumul Cirezilor",
+   "public_rules": false,
+   "notes_ro": "Deck-building și gestionarea turmelor pe drumul vitelor spre Kansas City.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Western_Trail_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 27,
+   "name": "Gaia Project",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Proiectul Gaia",
+   "public_rules": false,
+   "notes_ro": "Succesorul spațial al lui Terra Mystica, cu rase asimetrice și terraformare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gaia_Project",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Concordia",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Concordia",
+   "public_rules": true,
+   "notes_ro": "Joc de comerț în Imperiul Roman condus de o pachetă de cărți de acțiune.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Concordia_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 29,
+   "name": "Race for the Galaxy",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2007,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Cursa pentru Galaxie",
+   "public_rules": false,
+   "notes_ro": "Construirea unui imperiu galactic prin cărți și alegerea simultană a fazelor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Race_for_the_Galaxy",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 30,
+   "name": "Through the Ages",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2006,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Prin Veacuri",
+   "public_rules": true,
+   "notes_ro": "Joc de cărți de civilizație cu administrarea populației, științei și armatei.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Through_the_Ages:_A_Story_of_Civilization",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 31,
+   "name": "Twilight Struggle",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2005,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Lupta din Amurg",
+   "public_rules": true,
+   "notes_ro": "Joc pentru doi despre Războiul Rece condus de cărți de eveniment.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Twilight_Struggle",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 32,
+   "name": "Lords of Waterdeep",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2012,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Stăpânii Cetății",
+   "public_rules": false,
+   "notes_ro": "Worker placement cu misiuni, într-un decor Dungeons & Dragons.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lords_of_Waterdeep",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Viticulture",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Viticultura",
+   "public_rules": false,
+   "notes_ro": "Worker placement despre administrarea unei podgorii în Toscana.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Viticulture",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "The Castles of Burgundy",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Castelele Burgundiei",
+   "public_rules": true,
+   "notes_ro": "Joc cu zaruri și plăci hexagonale pentru construirea unui domeniu medieval.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Castles_of_Burgundy",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Le Havre",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2008,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Portul Mare",
+   "public_rules": true,
+   "notes_ro": "Joc de economie și construcții într-un port din secolul XVI.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Le_Havre_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "Orléans",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Orléans",
+   "public_rules": true,
+   "notes_ro": "Bag-building cu pioni de muncitori și comerț pe hărți medievale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Orléans_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 37,
+   "name": "Tzolk'in: The Mayan Calendar",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Calendarul Mayaș",
+   "public_rules": true,
+   "notes_ro": "Worker placement cu roți dințate care rotesc muncitorii în timp.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tzolk'in:_The_Mayan_Calendar",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 38,
+   "name": "Cosmic Encounter",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1977,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Întâlnire Cosmică",
+   "public_rules": false,
+   "notes_ro": "Joc de alianțe și conflicte cu puteri extraterestre asimetrice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cosmic_Encounter",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 39,
+   "name": "Civilization (Tresham)",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1980,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Civilizație",
+   "public_rules": true,
+   "notes_ro": "Joc clasic de civilizații cu comerț, cărți de marfă și calamități.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Civilization_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "Memoir '44",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2004,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Memorial '44",
+   "public_rules": false,
+   "notes_ro": "Wargame ușor despre bătălii din al Doilea Război Mondial pe hartă hexagonală.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Memoir_%2744",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 41,
+   "name": "Stone Age",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2008,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Epoca Pietrei",
+   "public_rules": true,
+   "notes_ro": "Worker placement ușor cu zaruri despre un trib preistoric.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Stone_Age_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 42,
+   "name": "Age of Steam",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2002,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Epoca Aburului",
+   "public_rules": true,
+   "notes_ro": "Construirea căilor ferate și livrarea mărfurilor, cu licitații pentru ordinea jucătorilor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Age_of_Steam",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 43,
+   "name": "Eclipse",
+   "existing": false,
+   "origin": "Finlanda",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Eclipsa",
+   "public_rules": false,
+   "notes_ro": "4X spațial cu explorare, tehnologii și designuri de nave.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Eclipse_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 44,
+   "name": "Star Realms",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Tărâmuri Stelare",
+   "public_rules": false,
+   "notes_ro": "Deck-building rapid pentru doi, cu nave și baze spațiale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Star_Realms",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 45,
+   "name": "Clank!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Zdrang!",
+   "public_rules": false,
+   "notes_ro": "Deck-building în care jucătorii pătrund într-o peșteră păzită de un dragon.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Clank!",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 46,
+   "name": "Lost Ruins of Arnak",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2020,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Ruinele Pierdute",
+   "public_rules": false,
+   "notes_ro": "Deck-building cu worker placement și explorarea unei insule misterioase.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lost_Ruins_of_Arnak",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Caverna: The Cave Farmers",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Caverna",
+   "public_rules": false,
+   "notes_ro": "Joc de fermieri și mineri într-o peșteră, evoluție din Agricola.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Caverna:_The_Cave_Farmers",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "A Feast for Odin",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Ospățul lui Odin",
+   "public_rules": false,
+   "notes_ro": "Worker placement cu puzzle de aranjare a plăcilor într-un tărâm viking.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/A_Feast_for_Odin",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "Food Chain Magnate",
+   "existing": false,
+   "origin": "Țările de Jos",
+   "year": 2015,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Magnatul Fast-Food",
+   "public_rules": true,
+   "notes_ro": "Joc economic dur despre lanțuri de restaurante într-un oraș.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Food_Chain_Magnate",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 50,
+   "name": "War of the Ring",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2004,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Războiul Inelului",
+   "public_rules": false,
+   "notes_ro": "Joc de strategie pe hartă bazat pe Stăpânul Inelelor, dependent de licență.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/War_of_the_Ring_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 51,
+   "name": "Brass: Lancashire",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2007,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Furnale: Lancashire",
+   "public_rules": true,
+   "notes_ro": "Revoluția industrială în Lancashire, cu rețele și industrii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Brass_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 52,
+   "name": "Barrage",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2019,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Stăvilar",
+   "public_rules": false,
+   "notes_ro": "Worker placement despre barajele și apa din Alpii Europeni.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Barrage_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "Underwater Cities",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Orașe Subacvatice",
+   "public_rules": false,
+   "notes_ro": "Joc de cărți și acțiuni pentru construirea orașelor sub ocean.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Underwater_Cities",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Paths of Glory",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Căile Gloriei",
+   "public_rules": true,
+   "notes_ro": "Wargame pentru doi despre Primul Război Mondial condus de cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Paths_of_Glory_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "Command & Colors: Ancients",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Comandă și Culori: Antichitate",
+   "public_rules": true,
+   "notes_ro": "Wargame de bătălii antice cu cărți de comandă și blocuri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Commands_%26_Colors:_Ancients",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Kemet",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Kemet",
+   "public_rules": false,
+   "notes_ro": "Joc de conflict în Egiptul antic cu piese și cărți de putere.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kemet_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Tigris & Euphrates",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1997,
+   "ctx": [
+    "europe",
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Tigru și Eufrat",
+   "public_rules": true,
+   "notes_ro": "Joc de conflicte între dinastii cu plăci pe harta Mesopotamiei.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tigris_and_Euphrates_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "Hansa Teutonica",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2009,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Hansa Teutonica",
+   "public_rules": true,
+   "notes_ro": "Joc de comerț al Ligii Hanseatice cu blocarea rutelor pe hartă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hansa_Teutonica",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Navegador",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2010,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Navigatorul",
+   "public_rules": true,
+   "notes_ro": "Joc despre explorările portugheze cu acțiuni de la comercianți și nave.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Navegador",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Goa",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2004,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Goa",
+   "public_rules": true,
+   "notes_ro": "Joc de licitații pentru plăci și comerțul cu mirodenii în India.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goa_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Imperial",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2006,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Imperial",
+   "public_rules": true,
+   "notes_ro": "Joc de acțiuni și investiții pe harta Europei din 1900.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Imperial_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Imperial Settlers",
+   "existing": false,
+   "origin": "Polonia",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Coloniștii Imperiului",
+   "public_rules": false,
+   "notes_ro": "Construirea de civilizații prin cărți asimetrice și blocuri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Imperial_Settlers",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Raiders of the North Sea",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2015,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Tâlharii Mării Nordului",
+   "public_rules": false,
+   "notes_ro": "Worker placement cu raiduri vikinge pentru pradă și faimă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Raiders_of_the_North_Sea",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "Architects of the West Kingdom",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Arhitecții Regatului de Vest",
+   "public_rules": false,
+   "notes_ro": "Worker placement despre construirea catedralei și a monumentelor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Architects_of_the_West_Kingdom",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Paladins of the West Kingdom",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2019,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Paladinii Regatului de Vest",
+   "public_rules": false,
+   "notes_ro": "Worker placement cu dublă utilizare a muncitorilor și risc de corupție.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Paladins_of_the_West_Kingdom",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "The Quest for El Dorado",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Căutarea El Dorado",
+   "public_rules": false,
+   "notes_ro": "Deck-building de cursă pe hărți modulare din junglă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Quest_for_El_Dorado",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "The Voyages of Marco Polo",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2015,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Călătoriile lui Marco Polo",
+   "public_rules": false,
+   "notes_ro": "Joc cu zaruri și worker placement pe Drumul Mătăsii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Voyages_of_Marco_Polo",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Teotihuacan: City of Gods",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Teotihuacan",
+   "public_rules": false,
+   "notes_ro": "Joc de worker placement cu zaruri și construirea piramidei.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Teotihuacan:_City_of_Gods",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "Oracle of Delphi",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Oracolul din Delfi",
+   "public_rules": false,
+   "notes_ro": "Joc de zaruri și misiuni de sarcini ale lui Hercule.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Oracle_of_Delphi_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Trajan",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Traian",
+   "public_rules": true,
+   "notes_ro": "Joc cu mecanism de mancala pentru alegerea acțiunilor în Roma antică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trajan_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Ora et Labora",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2011,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Ora et Labora",
+   "public_rules": true,
+   "notes_ro": "Joc de economie monastică cu roată de producție, de Uwe Rosenberg.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ora_et_Labora",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "Troyes",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2010,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Troyes",
+   "public_rules": true,
+   "notes_ro": "Joc de zaruri și construcție într-un oraș medieval francez.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Troyes_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Notre Dame",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2007,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Notre-Dame",
+   "public_rules": true,
+   "notes_ro": "Joc de cărți și drafting despre dezvoltarea unui cartier medieval al Parisului.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Notre_Dame_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "Cyclades",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2009,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Ciclade",
+   "public_rules": false,
+   "notes_ro": "Joc de licitații și conflicte în mitologia greacă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cyclades",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Dominant Species",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Specia Dominantă",
+   "public_rules": true,
+   "notes_ro": "Joc de evoluție și competiție ecologică în epoca glaciară.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dominant_Species",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Tapestry",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Tapiserie",
+   "public_rules": false,
+   "notes_ro": "Joc de civilizație cu progres pe patru piste.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tapestry_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "Nations",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Națiuni",
+   "public_rules": false,
+   "notes_ro": "Joc de civilizații cu cărți, derivat din Through the Ages.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nations_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Res Arcana",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Res Arcana",
+   "public_rules": false,
+   "notes_ro": "Joc compact de cărți cu magie și artefacte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Res_Arcana",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Advanced Civilization",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1991,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Civilizație Avansată",
+   "public_rules": true,
+   "notes_ro": "Extensia lungă a lui Civilization cu progres tehnologic și avansarea în credit.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Advanced_Civilization",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "Here I Stand",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Iată Unde Stau",
+   "public_rules": false,
+   "notes_ro": "Wargame despre Reforma protestantă, cu șase puteri asimetrice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Here_I_Stand_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Hannibal: Rome vs. Carthage",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1996,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Hannibal",
+   "public_rules": true,
+   "notes_ro": "Wargame al celui de-al doilea Război Punic condus de cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hannibal:_Rome_vs._Carthage",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Labyrinth: The War on Terror",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Labirint: Războiul împotriva terorii",
+   "public_rules": false,
+   "notes_ro": "Joc condus de cărți pentru doi despre conflictul post-2001.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Labyrinth:_The_War_on_Terror",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "Pax Pamir (Second Edition)",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Pax Pamir",
+   "public_rules": false,
+   "notes_ro": "Joc despre Marele Joc din Afganistan al secolului XIX, condus de cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pax_Pamir",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "Anno 1800",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2019,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Anno 1800",
+   "public_rules": false,
+   "notes_ro": "Joc de dezvoltare bazat pe seria de jocuri video Anno.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Anno_1800_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "Mombasa",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2015,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Mombasa",
+   "public_rules": false,
+   "notes_ro": "Joc de companii comerciale cu deck-building în Africa colonială.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mombasa_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "Ra",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1999,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Ra",
+   "public_rules": true,
+   "notes_ro": "Joc de licitații pentru plăci în Egiptul antic, de Reiner Knizia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ra_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "The Princes of Florence",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2000,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Prinții Florenței",
+   "public_rules": true,
+   "notes_ro": "Joc de licitații pentru artă și clădiri în Italia renascentistă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Princes_of_Florence",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 88,
+   "name": "Taj Mahal",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2000,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Taj Mahal",
+   "public_rules": true,
+   "notes_ro": "Joc de licitații și majorități în India, de Reiner Knizia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Taj_Mahal_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 89,
+   "name": "Tikal",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1999,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Tikal",
+   "public_rules": true,
+   "notes_ro": "Explorare cu puncte de acțiune în junglă și descoperirea templelor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tikal_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 90,
+   "name": "Wallenstein",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2002,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Wallenstein",
+   "public_rules": true,
+   "notes_ro": "Planificarea acțiunilor și bătălii cu cuburi trase dintr-un turn, în Războiul de Treizeci de Ani.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wallenstein_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 91,
+   "name": "Shogun",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2006,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Shogun",
+   "public_rules": false,
+   "notes_ro": "Joc de bătălii în Japonia feudală cu un turn de bătălie.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shogun_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 92,
+   "name": "Struggle of Empires",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2004,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Lupta Imperiilor",
+   "public_rules": true,
+   "notes_ro": "Joc despre războaiele europene ale secolului XVIII.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Struggle_of_Empires",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 93,
+   "name": "Sidereal Confluence",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2017,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Confluența Siderală",
+   "public_rules": false,
+   "notes_ro": "Joc de comerț și negociere între rase extraterestre.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sidereal_Confluence",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 94,
+   "name": "Age of Empires III: The Age of Discovery",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2007,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Epoca Descoperirilor",
+   "public_rules": false,
+   "notes_ro": "Joc despre colonizare cu cărți, inspirat de jocul video.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Age_of_Empires_III:_The_Age_of_Discovery",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 95,
+   "name": "Clash of Cultures",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2012,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Ciocnirea Culturilor",
+   "public_rules": false,
+   "notes_ro": "Joc de civilizații cu extindere, tehnologii și conflicte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Clash_of_Cultures",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 96,
+   "name": "Sekigahara: The Unification of Japan",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2011,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Sekigahara",
+   "public_rules": true,
+   "notes_ro": "Wargame cu blocuri despre bătălia decisivă din Japonia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sekigahara:_The_Unification_of_Japan",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 97,
+   "name": "Ascension: Chronicle of the Godslayer",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Înălțare",
+   "public_rules": false,
+   "notes_ro": "Primul mare deck-building cu un rând central de cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ascension_(card_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 98,
+   "name": "Thunderstone",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Piatra Tunetului",
+   "public_rules": false,
+   "notes_ro": "Deck-building cu explorarea unui labirint și combaterea monștrilor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Thunderstone_(card_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 99,
+   "name": "Anachrony",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2017,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Anacronia",
+   "public_rules": false,
+   "notes_ro": "Worker placement cu călătorii în timp și catastrofe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Anachrony",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  },
+  {
+   "r": 100,
+   "name": "Lorenzo il Magnifico",
+   "existing": false,
+   "origin": "Italia",
+   "year": 2016,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Lorenzo Magnificul",
+   "public_rules": false,
+   "notes_ro": "Worker placement cu zaruri în Florența renascentistă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lorenzo_il_Magnifico_(board_game)",
+    "https://boardgamegeek.com/strategygames/browse"
+   ]
+  }
+ ]
+}

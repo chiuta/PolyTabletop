@@ -1,0 +1,1530 @@
+{
+ "category": "Party",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Codenames",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Trivial Pursuit",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Cards Against Humanity",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Dixit",
+   "existing": true
+  },
+  {
+   "r": 5,
+   "name": "Pictionary",
+   "existing": true
+  },
+  {
+   "r": 6,
+   "name": "Werewolf / Mafia",
+   "existing": true
+  },
+  {
+   "r": 7,
+   "name": "Taboo",
+   "existing": true
+  },
+  {
+   "r": 8,
+   "name": "Activity",
+   "existing": true
+  },
+  {
+   "r": 9,
+   "name": "Dobble (Spot It!)",
+   "existing": true
+  },
+  {
+   "r": 10,
+   "name": "The Resistance: Avalon",
+   "existing": true
+  },
+  {
+   "r": 11,
+   "name": "Charades",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1700,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Mima",
+   "public_rules": true,
+   "notes_ro": "Joc tradițional de mimă a cuvintelor fără a vorbi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Charades",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 12,
+   "name": "Scattergories",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1988,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Scattergories",
+   "public_rules": true,
+   "notes_ro": "Liste tematice pe litera trasă; puncte pentru răspunsuri unice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Scattergories",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 13,
+   "name": "Twister",
+   "existing": true
+  },
+  {
+   "r": 14,
+   "name": "Cranium",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1998,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Cranium",
+   "public_rules": false,
+   "notes_ro": "Echipe, provocări mixte: mimă, desen, cuvinte, trivia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cranium_(board_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 15,
+   "name": "Blood on the Clocktower",
+   "existing": true
+  },
+  {
+   "r": 16,
+   "name": "Secret Hitler",
+   "existing": true
+  },
+  {
+   "r": 17,
+   "name": "Apples to Apples",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1999,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Mere la mere",
+   "public_rules": true,
+   "notes_ro": "Judecătorul alege cartea-răspuns cea mai potrivită.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Apples_to_Apples",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 18,
+   "name": "Telestrations",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Telestrații",
+   "public_rules": true,
+   "notes_ro": "Telefon fără fir desenat și descris pe rând.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Telestrations",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 19,
+   "name": "Time's Up!",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1999,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Timpul s-a scurs",
+   "public_rules": true,
+   "notes_ro": "Trei runde cu aceleași cărți: descrie, un cuvânt, mimă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Time%27s_Up!_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 20,
+   "name": "Wavelength",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2019,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Lungime de undă",
+   "public_rules": true,
+   "notes_ro": "Echipa ghicește poziția pe un cadran între două extreme.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wavelength_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 21,
+   "name": "Skull",
+   "existing": true
+  },
+  {
+   "r": 22,
+   "name": "Les Loups-Garous de Thiercelieux",
+   "existing": true
+  },
+  {
+   "r": 23,
+   "name": "Cameleonul",
+   "existing": true
+  },
+  {
+   "r": 24,
+   "name": "Alias",
+   "existing": true
+  },
+  {
+   "r": 25,
+   "name": "Decrypto",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Decripto",
+   "public_rules": true,
+   "notes_ro": "Echipele transmit coduri prin indicii și interceptează codul rival.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Decrypto_(board_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 26,
+   "name": "One Night Ultimate Werewolf",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "O noapte, lupi",
+   "public_rules": true,
+   "notes_ro": "Variantă de deducție socială dintr-o singură noapte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/One_Night_Ultimate_Werewolf",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 27,
+   "name": "Spyfall",
+   "existing": false,
+   "origin": "Rusia",
+   "year": 2014,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Spionul din locație",
+   "public_rules": true,
+   "notes_ro": "Deduci locația secretă sau spionul printre jucători.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Spyfall_(card_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 28,
+   "name": "Articulate!",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1992,
+   "ctx": [
+    "europe",
+    "oceania"
+   ],
+   "own_title_ro": "Articulate",
+   "public_rules": true,
+   "notes_ro": "Descrie cuvinte cât mai repede, pe categorii.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Articulate!",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 29,
+   "name": "Balderdash",
+   "existing": false,
+   "origin": "Canada",
+   "year": 1984,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Pălăvrăgeală",
+   "public_rules": true,
+   "notes_ro": "Inventezi definiții false pentru cuvinte rare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Balderdash",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 30,
+   "name": "Concept",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Concept",
+   "public_rules": true,
+   "notes_ro": "Ghicești cuvinte prin combinarea de pictograme.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Concept_(board_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 31,
+   "name": "Jungle Speed",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1991,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Viteza junglei",
+   "public_rules": true,
+   "notes_ro": "Prinzi totemul când simbolurile se potrivesc.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jungle_Speed",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 32,
+   "name": "Boggle",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1972,
+   "ctx": [
+    "namerica",
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Boggle",
+   "public_rules": true,
+   "notes_ro": "Cuvinte găsite într-o grilă de litere în timp limitat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Boggle",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 33,
+   "name": "Coup",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2012,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Lovitura de stat",
+   "public_rules": true,
+   "notes_ro": "Bluf și eliminare cu influențe ascunse.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coup_(card_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 34,
+   "name": "The Mind",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2018,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Mintea",
+   "public_rules": true,
+   "notes_ro": "Cărți jucate în ordine crescătoare fără comunicare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Mind_(card_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 35,
+   "name": "Wits & Wagers",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2005,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Răspunsuri și mize",
+   "public_rules": true,
+   "notes_ro": "Trivia numerică cu pariuri pe răspunsurile celorlalți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wits_%26_Wagers",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 36,
+   "name": "Hedbanz",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1987,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Banderola",
+   "public_rules": true,
+   "notes_ro": "Ghicești ce card porți pe frunte prin întrebări da/nu.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hedbanz",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 37,
+   "name": "Heads Up!",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cap sus!",
+   "public_rules": true,
+   "notes_ro": "Ghicești cuvinte arătate pe frunte pe baza indiciilor.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Heads_Up!_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 38,
+   "name": "Catch Phrase",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1994,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Prinde fraza",
+   "public_rules": true,
+   "notes_ro": "Descrii cuvinte; ceasul trece de la o echipă la alta.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Catch_Phrase_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 39,
+   "name": "Bananagrams",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2006,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Bananagrams",
+   "public_rules": true,
+   "notes_ro": "Construiești rapid grila personală de cuvinte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bananagrams",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 40,
+   "name": "Geistesblitz (Ghost Blitz)",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2010,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Fulgerul fantomei",
+   "public_rules": true,
+   "notes_ro": "Prinzi obiectul potrivit din cinci figurine.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Geistesblitz",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 41,
+   "name": "Halli Galli",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1990,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Halli Galli",
+   "public_rules": true,
+   "notes_ro": "Suni clopoțelul când fructele totalizează cinci.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Halli_Galli",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 42,
+   "name": "Werewolf (langren sha)",
+   "existing": true
+  },
+  {
+   "r": 43,
+   "name": "Hues and Cues",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2020,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Nuanțe și indicii",
+   "public_rules": true,
+   "notes_ro": "Indici culoarea dintr-o grilă cu un singur cuvânt.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hues_and_Cues",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 44,
+   "name": "Anomia",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Anomia",
+   "public_rules": true,
+   "notes_ro": "Duel rapid de a găsi exemple din categoria simbolului.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Anomia_(card_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 45,
+   "name": "Sheriff of Nottingham",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Șeriful",
+   "public_rules": true,
+   "notes_ro": "Bluf la declararea mărfurilor la poartă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sheriff_of_Nottingham_(board_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 46,
+   "name": "Cortex Challenge",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2009,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Cortex",
+   "public_rules": true,
+   "notes_ro": "Mini-probe de minte și îndemânare pe cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cortex_Challenge",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 47,
+   "name": "Superfight",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Superluptă",
+   "public_rules": false,
+   "notes_ro": "Compui personaje absurde și le aperi într-o dezbatere.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Superfight",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 48,
+   "name": "What Do You Meme?",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Ce meme?",
+   "public_rules": false,
+   "notes_ro": "Potrivești legende amuzante cu imagini meme.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/What_Do_You_Meme%3F",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 49,
+   "name": "Joking Hazard",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2016,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Glumă periculoasă",
+   "public_rules": false,
+   "notes_ro": "Completezi benzi desenate cu cărți umoristice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Joking_Hazard",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 50,
+   "name": "Two Rooms and a Boom",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Două camere și o bubuitură",
+   "public_rules": false,
+   "notes_ro": "Două echipe în camere separate; salvează sau protejează președintele.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Two_Rooms_and_a_Boom",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 51,
+   "name": "Rock Paper Scissors (Piatră, foarfecă, hârtie)",
+   "existing": false,
+   "origin": "China",
+   "year": 1600,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Piatră, foarfecă, hârtie",
+   "public_rules": true,
+   "notes_ro": "Joc de mână cu trei gesturi ciclice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rock_paper_scissors",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 52,
+   "name": "Chinese Whispers (Telefonul fără fir)",
+   "existing": false,
+   "origin": "—",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Telefonul fără fir",
+   "public_rules": true,
+   "notes_ro": "Mesaj șoptit din om în om, deformat la final.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chinese_whispers",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "Truth or Dare (Adevăr sau provocare)",
+   "existing": false,
+   "origin": "—",
+   "year": null,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Adevăr sau provocare",
+   "public_rules": true,
+   "notes_ro": "Alegi între o confesiune sinceră și o provocare.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Truth_or_dare",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Twenty Questions (Douăzeci de întrebări)",
+   "existing": false,
+   "origin": "—",
+   "year": 1800,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Douăzeci de întrebări",
+   "public_rules": true,
+   "notes_ro": "Ghicești obiectul gândit cu maxim 20 de întrebări da/nu.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Twenty_questions",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "Musical Chairs (Scaunele muzicale)",
+   "existing": false,
+   "origin": "—",
+   "year": 1800,
+   "ctx": [
+    "global",
+    "romania"
+   ],
+   "own_title_ro": "Scaunele muzicale",
+   "public_rules": true,
+   "notes_ro": "Cineva rămâne fără scaun când muzica se oprește.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Musical_chairs",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Simon Says (Simon zice)",
+   "existing": false,
+   "origin": "—",
+   "year": null,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Simon zice",
+   "public_rules": true,
+   "notes_ro": "Execuți doar comenzile precedate de formula magică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Simon_says",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Never Have I Ever",
+   "existing": false,
+   "origin": "—",
+   "year": null,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Eu n-am făcut niciodată",
+   "public_rules": true,
+   "notes_ro": "Mărturisiri pe rând; pierde cine a făcut lucrul spus.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Never_have_I_ever",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "Beer Pong",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1950,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Pong cu pahare",
+   "public_rules": true,
+   "notes_ro": "Arunci mingea în paharele adversarului.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Beer_pong",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Kings (Ring of Fire)",
+   "existing": false,
+   "origin": "SUA",
+   "year": null,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Regii",
+   "public_rules": true,
+   "notes_ro": "Joc cu cărți unde fiecare valoare are o regulă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kings_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Flip Cup",
+   "existing": false,
+   "origin": "SUA",
+   "year": null,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Răstoarnă paharul",
+   "public_rules": true,
+   "notes_ro": "Ștafetă de răsturnat paharul cu o lovitură.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flip_cup",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Would You Rather",
+   "existing": false,
+   "origin": "—",
+   "year": null,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Ai prefera",
+   "public_rules": true,
+   "notes_ro": "Alegi între două variante dificile și îți justifici alegerea.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Would_you_rather",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Hungry Hungry Hippos",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1978,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Hipopotamii flămânzi",
+   "public_rules": true,
+   "notes_ro": "Hipopotami mecanici adună bile rapid.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hungry_Hungry_Hippos",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Fluxx",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1997,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Fluxx",
+   "public_rules": true,
+   "notes_ro": "Regulile se schimbă cu fiecare carte jucată.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fluxx",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "Taco Cat Goat Cheese Pizza",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2009,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Taco, pisică, capră",
+   "public_rules": true,
+   "notes_ro": "Spui cuvintele în ordine și lovești mâna la potrivire.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Taco_Cat_Goat_Cheese_Pizza",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Say Anything",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2008,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Spune orice",
+   "public_rules": true,
+   "notes_ro": "Pariezi pe răspunsul preferat de liderul rundei.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Say_Anything_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "Werewords",
+   "existing": false,
+   "origin": "Coreea de Sud",
+   "year": 2016,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Cuvinte-lup",
+   "public_rules": true,
+   "notes_ro": "Ghicești cuvântul secret cu întrebări în timp limitat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Werewords",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Insider",
+   "existing": false,
+   "origin": "Japonia",
+   "year": 2016,
+   "ctx": [
+    "asia",
+    "global"
+   ],
+   "own_title_ro": "Insider",
+   "public_rules": true,
+   "notes_ro": "Ghicitori colective cu un trișor ascuns.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Insider_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Cash 'n Guns",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2005,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Bani și arme",
+   "public_rules": true,
+   "notes_ro": "Ținti cu pistoale de burete și împarți prada.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cash_%27n_Guns",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "Pictomania",
+   "existing": false,
+   "origin": "Cehia",
+   "year": 2011,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Pictomania",
+   "public_rules": true,
+   "notes_ro": "Desene rapide pentru ghicit simultan.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pictomania",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Rory's Story Cubes",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2005,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Zaruri de povești",
+   "public_rules": true,
+   "notes_ro": "Zaruri cu imagini pentru povești improvizate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rory%27s_Story_Cubes",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Black Stories",
+   "existing": false,
+   "origin": "Germania",
+   "year": 2004,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Povești negre",
+   "public_rules": false,
+   "notes_ro": "Ghicești misterul macabru prin întrebări da/nu.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Black_Stories",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "Monikers",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Porecle",
+   "public_rules": false,
+   "notes_ro": "Trei runde cu aceleași nume celebre: descrie, un cuvânt, mimă.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Monikers_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Poetry for Neanderthals",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2010,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Poezie pentru neanderthali",
+   "public_rules": true,
+   "notes_ro": "Descrii cuvinte folosind doar cuvinte monosilabice.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Poetry_for_Neanderthals",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "Deception: Murder in Hong Kong",
+   "existing": false,
+   "origin": "Hong Kong",
+   "year": 2014,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Deducție: Crimă în Hong Kong",
+   "public_rules": true,
+   "notes_ro": "Anchetator vs. criminal într-o crimă mascată.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Deception:_Murder_in_Hong_Kong",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Mascarade",
+   "existing": false,
+   "origin": "Franța",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Mascarada",
+   "public_rules": true,
+   "notes_ro": "Schimburi de identitate cu roluri ascunse.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mascarade_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Cockroach Poker",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1998,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Poker de gândaci",
+   "public_rules": true,
+   "notes_ro": "Dai cărți cu bluf: spune adevărul sau minte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cockroach_Poker",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "Ligretto",
+   "existing": false,
+   "origin": "Elveția",
+   "year": 1988,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Ligretto",
+   "public_rules": true,
+   "notes_ro": "Cărți jucate în paralel într-un ritm nebun.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ligretto",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Pit",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1903,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Pit",
+   "public_rules": true,
+   "notes_ro": "Tranzacții frenetice pentru adunarea unei mărfi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pit_(card_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Spoons",
+   "existing": false,
+   "origin": "—",
+   "year": null,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Linguri",
+   "public_rules": true,
+   "notes_ro": "Aduni patru cărți și iei lingura repede.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Spoons_(card_game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 80,
+   "name": "Celebrity (Fishbowl)",
+   "existing": false,
+   "origin": "—",
+   "year": null,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Celebrități",
+   "public_rules": true,
+   "notes_ro": "Ghicești nume în trei runde cu reguli diferite.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Celebrity_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 81,
+   "name": "Outburst",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1986,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Izbucnire",
+   "public_rules": true,
+   "notes_ro": "Listezi răspunsuri la un subiect, cu timp limitat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Outburst_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 82,
+   "name": "Smart10",
+   "existing": false,
+   "origin": "Belgia",
+   "year": 2013,
+   "ctx": [
+    "europe",
+    "global"
+   ],
+   "own_title_ro": "Smart10",
+   "public_rules": true,
+   "notes_ro": "Alegi zece răspunsuri la întrebări dificile.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Smart10",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 83,
+   "name": "Tapple",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2008,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Tapple",
+   "public_rules": true,
+   "notes_ro": "Spui cuvinte din categorie fără litera consumată.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tapple",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 84,
+   "name": "Mad Gab",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1990,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Mad Gab",
+   "public_rules": true,
+   "notes_ro": "Descifrezi expresii scrise fonetic.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mad_Gab",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 85,
+   "name": "Loaded Questions",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1997,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Întrebări încărcate",
+   "public_rules": true,
+   "notes_ro": "Ghicești care jucător a dat fiecare răspuns.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Loaded_Questions",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 86,
+   "name": "Pass the Pigs",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1977,
+   "ctx": [
+    "europe",
+    "namerica"
+   ],
+   "own_title_ro": "Porcii în aer",
+   "public_rules": true,
+   "notes_ro": "Dai cu porcușori ca zaruri în căutare de puncte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pass_the_Pigs",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 87,
+   "name": "Quelf",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 2004,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Quelf",
+   "public_rules": true,
+   "notes_ro": "Jocuri-gaguri absurde de petrecere.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Quelf",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 88,
+   "name": "Bezzerwizzer",
+   "existing": false,
+   "origin": "Olanda",
+   "year": 2004,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Bezzerwizzer",
+   "public_rules": true,
+   "notes_ro": "Trivia pe categorii cu mize individuale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bezzerwizzer",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 89,
+   "name": "Gestures",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2003,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Gesturi",
+   "public_rules": true,
+   "notes_ro": "Mima pe echipe într-un ritm alert.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gestures_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 90,
+   "name": "Rapidough",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2013,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Plastilină rapidă",
+   "public_rules": true,
+   "notes_ro": "Modelezi cuvinte din plastilină pentru ghicit.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rapidough",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 91,
+   "name": "Pie Face",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2015,
+   "ctx": [
+    "namerica",
+    "europe"
+   ],
+   "own_title_ro": "Tort în față",
+   "public_rules": true,
+   "notes_ro": "Arunci cu frișcă în fața celuilalt la risc.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pie_Face",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 92,
+   "name": "Fibbage",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Fibbage",
+   "public_rules": false,
+   "notes_ro": "Inventezi minciuni plauzibile la fapte reale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fibbage",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 93,
+   "name": "Jackbox Party Pack",
+   "existing": false,
+   "origin": "SUA",
+   "year": 2014,
+   "ctx": [
+    "namerica",
+    "global"
+   ],
+   "own_title_ro": "Pachetul Jackbox",
+   "public_rules": false,
+   "notes_ro": "Mini-jocuri de petrecere jucate pe telefoane.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jackbox_Games",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 94,
+   "name": "Zip Zap Zop",
+   "existing": false,
+   "origin": "—",
+   "year": null,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Zip Zap Zop",
+   "public_rules": true,
+   "notes_ro": "Joc de atenție și ritm în cerc.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zip_zap_zop",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 95,
+   "name": "Sardines",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Sardinele",
+   "public_rules": true,
+   "notes_ro": "Un singur ascuns, iar ceilalți se ascund împreună cu el.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sardines_(game)",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 96,
+   "name": "Wink Murder",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": null,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Ucigașul clipește",
+   "public_rules": true,
+   "notes_ro": "Ucigașul ascuns elimină cu clipiri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wink_murder",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 97,
+   "name": "How to Host a Murder",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1985,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Cum să găzduiești o crimă",
+   "public_rules": true,
+   "notes_ro": "Joc de rol de mister pentru petreceri.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/How_to_Host_a_Murder",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 98,
+   "name": "Pass the Parcel",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": null,
+   "ctx": [
+    "europe",
+    "oceania"
+   ],
+   "own_title_ro": "Pachetul trece",
+   "public_rules": true,
+   "notes_ro": "Pachet cu straturi trecut la muzică.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pass_the_parcel",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 99,
+   "name": "Pin the Tail on the Donkey",
+   "existing": false,
+   "origin": "SUA",
+   "year": 1900,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Pune coada măgarului",
+   "public_rules": true,
+   "notes_ro": "Lipești coada cu ochii legați.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pin_the_tail_on_the_donkey",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  },
+  {
+   "r": 100,
+   "name": "Dingbats (Rebus)",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1980,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Rebusuri",
+   "public_rules": true,
+   "notes_ro": "Descifrezi expresii din litere și imagini aranjate vizual.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rebus",
+    "https://en.wikipedia.org/wiki/Party_game"
+   ]
+  }
+ ]
+}

@@ -6,13 +6,13 @@ Version: 0.9.1 · Last updated: 2026-11-26
 
 ## Ce este
 
-PolyTabletop este o colecție clean-room de jocuri de masă scrisă în Rust: 171 de jocuri jucabile contra calculatorului, în terminal sau în fereastră grafică, plus modul „la masă” (hot-seat) și joc în rețea pentru doi oameni. Clasice abstracte, jocuri de cărți și de zaruri, variante originale ale mecanicilor moderne cu nume proprii, jocuri cooperative cu partener AI, jocuri cu roluri ascunse în care roboții completează masa, jocuri de petrecere și de cuvinte, motoare de miniaturi și de cărți colecționabile cu cărți originale. Motorul și jocurile nu au dependențe externe; doar interfața grafică (`polytabletop-gui`) folosește `eframe`/egui. Catalogul urmărește 251 de jocuri-țintă.
+PolyTabletop este o colecție clean-room de jocuri de masă scrisă în Rust: 171 de jocuri jucabile contra calculatorului, în terminal sau în fereastră grafică, plus modul „la masă” (hot-seat) și joc în rețea pentru doi oameni. Clasice abstracte, jocuri de cărți și de zaruri, variante originale ale mecanicilor moderne cu nume proprii, jocuri cooperative cu partener AI, jocuri cu roluri ascunse în care roboții completează masa, jocuri de petrecere și de cuvinte, motoare de miniaturi și de cărți colecționabile cu cărți originale. Motorul și jocurile nu au dependențe externe; doar interfața grafică (`polytabletop-gui`) folosește `eframe`/egui. Catalogul urmărește 1200 de jocuri-țintă.
 
 Pagina de prezentare: <https://polytabletop.chiuta.ro>. Ghid scurt de instalare: [docs/INSTALL.ro.md](docs/INSTALL.ro.md) ([English](docs/INSTALL.en.md) · [Français](docs/INSTALL.fr.md) · [Italiano](docs/INSTALL.it.md) · [Español](docs/INSTALL.es.md) · [Português](docs/INSTALL.pt.md) · [Deutsch](docs/INSTALL.de.md) · [Magyar](docs/INSTALL.hu.md)).
 
 ## Folosire
 
-- Listă și catalog: `polytabletop list` arată cele 171 de jocuri jucabile cu regulile pe scurt; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` arată starea celor 251 de intrări din catalog.
+- Listă și catalog: `polytabletop list` arată cele 171 de jocuri jucabile cu regulile pe scurt; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` arată starea celor 1200 de intrări din catalog.
 - Joc: `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. `--you one` (implicit) te face Jucătorul 1, `two` Jucătorul 2, `both` este „la masă”, la o singură tastatură, iar `none` lasă calculatorul să joace ambele părți. `--seed N` face reproductibile împărțirea cărților și zarurile; `--record FIȘIER` salvează o transcriere.
 - În joc: scrii mutarea exact cum o listează `?` (de exemplu `e2e4`, `c3xe5`, `d6`), `?` = mutări legale, `hint` = sugestia AI-ului, `q` = ieșire.
 - AI contra AI: `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (vezi [docs/ARENA.md](docs/ARENA.md)).
@@ -33,7 +33,7 @@ cargo build --release
 
 ## Jocuri
 
-Se pot juca acum 171 de jocuri, în terminal și în interfața grafică; catalogul are 251 de intrări (`polytabletop catalog` se încheie cu: implementate 182, jocuri tradiționale planificate 50, variante proprii planificate 3, toolkit generic 16). Cele 16 intrări toolkit sunt sisteme de jocuri de rol, deservite de crate-ul generic `polytabletop-rpg` (zaruri, fișe, teste de abilitate, generator de dungeon, simulator de bătălii, jurnal), fără regulile vreunui editor. Categoriile și numărul de jocuri, din `polytabletop-games/src/lib.rs`:
+Se pot juca acum 171 de jocuri, în terminal și în interfața grafică; catalogul are 1200 de intrări (`polytabletop catalog` se încheie cu: implementate 172, jocuri tradiționale planificate 263, variante proprii planificate 477, toolkit generic 288). Cele 288 de intrări toolkit sunt cele 100 de sisteme de jocuri de rol, deservite de crate-ul generic `polytabletop-rpg` (zaruri, fișe, teste de abilitate, generator de dungeon, simulator de bătălii, jurnal), plus cele 93 de titluri de miniaturi și 95 de cărți colecționabile care nu sunt încă în program, toate fără regulile vreunui editor. Fiecare dintre cele douăsprezece categorii din catalog are exact 100 de intrări distincte. Categoriile și numărul de jocuri, din `polytabletop-games/src/lib.rs`:
 
 | Categorie | Jocuri | Exemple (id-uri) |
 |---|---|---|
@@ -51,7 +51,7 @@ Se pot juca acum 171 de jocuri, în terminal și în interfața grafică; catalo
 | Cuvinte | 1 | `litere` |
 | **Total** | **171** | |
 
-Trei intrări din catalog rămân planificate ca variante originale (Twister, Campionii Distracției, Turistico). Regulile pe scurt ale fiecărui joc sunt în [docs/JOCURI.md](docs/JOCURI.md), catalogul generat în [docs/CATALOG.md](docs/CATALOG.md). În interfața grafică, 36 de jocuri au tablă desenată cu mutări prin click (șah, dame, reversi, patru în linie, gomoku, go, moara, xiangqi, shogi, table, ludo și pachisi, hex, familia mancala și altele); celelalte jocuri apar în text, cu mutările legale ca butoane.
+477 de intrări din catalog sunt planificate ca variante originale cu titluri proprii (de exemplu Twister, Campionii Distracției, Turistico), iar 263 ca jocuri tradiționale cu reguli publice. Regulile pe scurt ale fiecărui joc sunt în [docs/JOCURI.md](docs/JOCURI.md), catalogul generat în [docs/CATALOG.md](docs/CATALOG.md). În interfața grafică, 36 de jocuri au tablă desenată cu mutări prin click (șah, dame, reversi, patru în linie, gomoku, go, moara, xiangqi, shogi, table, ludo și pachisi, hex, familia mancala și altele); celelalte jocuri apar în text, cu mutările legale ca butoane.
 
 ## Limbi
 

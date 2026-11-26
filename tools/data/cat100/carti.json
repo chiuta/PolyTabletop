@@ -1,0 +1,866 @@
+{
+ "category": "Cărți",
+ "ranking": [
+  {
+   "r": 1,
+   "name": "Poker",
+   "existing": true
+  },
+  {
+   "r": 2,
+   "name": "Uno",
+   "existing": true
+  },
+  {
+   "r": 3,
+   "name": "Blackjack (21)",
+   "existing": true
+  },
+  {
+   "r": 4,
+   "name": "Bridge",
+   "existing": true
+  },
+  {
+   "r": 5,
+   "name": "Remi (Rummy)",
+   "existing": true
+  },
+  {
+   "r": 6,
+   "name": "Solitaire (Klondike)",
+   "existing": false,
+   "origin": "Global",
+   "year": 1850,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Pasiență Klondike",
+   "public_rules": true,
+   "notes_ro": "Cel mai cunoscut joc de răbdare cu un singur jucător, cu 52 de cărți și șapte coloane.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Klondike_(solitaire)",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 7,
+   "name": "Hearts",
+   "existing": true
+  },
+  {
+   "r": 8,
+   "name": "Spades",
+   "existing": true
+  },
+  {
+   "r": 9,
+   "name": "Gin Rummy",
+   "existing": true
+  },
+  {
+   "r": 10,
+   "name": "Whist",
+   "existing": true
+  },
+  {
+   "r": 11,
+   "name": "Cribbage",
+   "existing": true
+  },
+  {
+   "r": 12,
+   "name": "Canasta",
+   "existing": true
+  },
+  {
+   "r": 13,
+   "name": "Durak",
+   "existing": true
+  },
+  {
+   "r": 14,
+   "name": "Belote",
+   "existing": true
+  },
+  {
+   "r": 15,
+   "name": "Skat",
+   "existing": true
+  },
+  {
+   "r": 16,
+   "name": "Tarot",
+   "existing": true
+  },
+  {
+   "r": 17,
+   "name": "Teen Patti",
+   "existing": true
+  },
+  {
+   "r": 18,
+   "name": "Dou dizhu",
+   "existing": true
+  },
+  {
+   "r": 19,
+   "name": "Hanafuda",
+   "existing": true
+  },
+  {
+   "r": 20,
+   "name": "Big Two (Pusoy dos)",
+   "existing": true
+  },
+  {
+   "r": 21,
+   "name": "Euchre",
+   "existing": true
+  },
+  {
+   "r": 22,
+   "name": "Pinochle",
+   "existing": true
+  },
+  {
+   "r": 23,
+   "name": "Crazy Eights",
+   "existing": true
+  },
+  {
+   "r": 24,
+   "name": "Go Fish (Pescuit)",
+   "existing": true
+  },
+  {
+   "r": 25,
+   "name": "War (Război / Bătălia)",
+   "existing": false,
+   "origin": "Global",
+   "year": 1800,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Război",
+   "public_rules": true,
+   "notes_ro": "Joc pentru copii bazat pe noroc: cartea mai mare câștigă levata.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battle_(card_game)",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 26,
+   "name": "Old Maid (Bătrâna fată)",
+   "existing": false,
+   "origin": "Europa / Global",
+   "year": 1800,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Bătrâna fată",
+   "public_rules": true,
+   "notes_ro": "Joc de perechi pentru copii, în care pierde cine rămâne cu ultima carte rămasă singură.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Old_Maid",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 27,
+   "name": "Rummy (13 cărți)",
+   "existing": true
+  },
+  {
+   "r": 28,
+   "name": "Tiến lên",
+   "existing": true
+  },
+  {
+   "r": 29,
+   "name": "Scopa",
+   "existing": true
+  },
+  {
+   "r": 30,
+   "name": "Briscola",
+   "existing": true
+  },
+  {
+   "r": 31,
+   "name": "Truco",
+   "existing": true
+  },
+  {
+   "r": 32,
+   "name": "Santase (66)",
+   "existing": true
+  },
+  {
+   "r": 33,
+   "name": "Septica",
+   "existing": true
+  },
+  {
+   "r": 34,
+   "name": "Popa prostul",
+   "existing": true
+  },
+  {
+   "r": 35,
+   "name": "Macao",
+   "existing": true
+  },
+  {
+   "r": 36,
+   "name": "Hwatu (Go-Stop)",
+   "existing": true
+  },
+  {
+   "r": 37,
+   "name": "Exploding Kittens",
+   "existing": true
+  },
+  {
+   "r": 38,
+   "name": "Love Letter",
+   "existing": true
+  },
+  {
+   "r": 39,
+   "name": "Sushi Go!",
+   "existing": true
+  },
+  {
+   "r": 40,
+   "name": "Bang!",
+   "existing": true
+  },
+  {
+   "r": 41,
+   "name": "Munchkin",
+   "existing": true
+  },
+  {
+   "r": 42,
+   "name": "Bohnanza",
+   "existing": true
+  },
+  {
+   "r": 43,
+   "name": "Lost Cities",
+   "existing": true
+  },
+  {
+   "r": 44,
+   "name": "Karuta",
+   "existing": true
+  },
+  {
+   "r": 45,
+   "name": "Ganjifa",
+   "existing": true
+  },
+  {
+   "r": 46,
+   "name": "Trix",
+   "existing": true
+  },
+  {
+   "r": 47,
+   "name": "Tarneeb",
+   "existing": true
+  },
+  {
+   "r": 48,
+   "name": "Baloot",
+   "existing": true
+  },
+  {
+   "r": 49,
+   "name": "Hokm",
+   "existing": true
+  },
+  {
+   "r": 50,
+   "name": "Pasur",
+   "existing": true
+  },
+  {
+   "r": 51,
+   "name": "Oh Hell",
+   "existing": true
+  },
+  {
+   "r": 52,
+   "name": "Doppelkopf",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Doppelkopf",
+   "public_rules": true,
+   "notes_ro": "Joc german de levată în patru cu 48 de cărți, cu echipe secrete (Re și Kontra).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Doppelkopf",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 53,
+   "name": "Schafkopf",
+   "existing": false,
+   "origin": "Germania (Bavaria)",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Schafkopf",
+   "public_rules": true,
+   "notes_ro": "Joc bavarez de levată pentru patru jucători, cu atuuri fixe (Ober, Unter, cupe).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Schafkopf",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 54,
+   "name": "Sheepshead",
+   "existing": false,
+   "origin": "SUA (Wisconsin) / Germania",
+   "year": 1840,
+   "ctx": [
+    "namerica"
+   ],
+   "own_title_ro": "Sheepshead (Oaia)",
+   "public_rules": true,
+   "notes_ro": "Varianta americană a lui Schafkopf, populară în Midwest, cu 32 de cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sheepshead_(card_game)",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 55,
+   "name": "Jass (Schieber)",
+   "existing": false,
+   "origin": "Elveția",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Jass",
+   "public_rules": true,
+   "notes_ro": "Jocul național de cărți al Elveției, cu atu și anunțuri; Schieber este varianta în echipe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jass",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 56,
+   "name": "Tressette",
+   "existing": false,
+   "origin": "Italia",
+   "year": 1700,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Tressette (Trei-șapte)",
+   "public_rules": true,
+   "notes_ro": "Joc italian de levată fără atu, cu pachet de 40 de cărți, în doi sau în patru.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tressette",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 57,
+   "name": "Mus",
+   "existing": false,
+   "origin": "Spania (Țara Bascilor)",
+   "year": 1700,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Mus",
+   "public_rules": true,
+   "notes_ro": "Joc spaniol cu pachet de 40 de cărți, în echipe, cu semnale și bluf.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mus_(card_game)",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 58,
+   "name": "Tarock (Tarok)",
+   "existing": false,
+   "origin": "Austria / Slovenia / Ungaria",
+   "year": 1500,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Tarock",
+   "public_rules": true,
+   "notes_ro": "Familie central-europeană de jocuri cu atuuri, jucate cu pachet de tarot (54 de cărți).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tarot_card_games",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 59,
+   "name": "Mau-Mau",
+   "existing": false,
+   "origin": "Germania",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Mau-Mau",
+   "public_rules": true,
+   "notes_ro": "Joc german de eliminare a cărților, asemănător cu Crazy Eights, rudă a lui Uno.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mau_Mau_(card_game)",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 60,
+   "name": "Mariáš",
+   "existing": false,
+   "origin": "Cehia / Slovacia",
+   "year": 1700,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Mariáš",
+   "public_rules": true,
+   "notes_ro": "Joc ceh și slovac cu 32 de cărți, în trei, cu licitație și contracte.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mariáš",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 61,
+   "name": "Manille",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Manille",
+   "public_rules": true,
+   "notes_ro": "Joc francez de levată în patru, cu ierarhie proprie (manille și manillon).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Manille",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 62,
+   "name": "Piquet",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1500,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Piquet",
+   "public_rules": true,
+   "notes_ro": "Joc francez vechi pentru doi jucători cu 32 de cărți, cu declarații și levate.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Piquet",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 63,
+   "name": "Bézique",
+   "existing": false,
+   "origin": "Franța",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Bézique",
+   "public_rules": true,
+   "notes_ro": "Joc francez pentru doi, cu pachet dublu, ancestor al lui Pinochle.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bezique",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 64,
+   "name": "Ombre (L'Hombre)",
+   "existing": false,
+   "origin": "Spania / Europa",
+   "year": 1600,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Ombre (Omul)",
+   "public_rules": true,
+   "notes_ro": "Strămoșul jocurilor de levată cu licitație, în trei jucători, secolele XVII-XVIII.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/L%27Hombre",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 65,
+   "name": "Preferans",
+   "existing": false,
+   "origin": "Rusia",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Preferans",
+   "public_rules": true,
+   "notes_ro": "Joc rusesc de licitație și levată cu 32 de cărți, foarte popular în Rusia.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Préférence",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 66,
+   "name": "Tysiąc (Tysiacha, o mie)",
+   "existing": false,
+   "origin": "Polonia / Rusia",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Mia (o mie)",
+   "public_rules": true,
+   "notes_ro": "Joc de levată cu licitație și scor țintă de 1000 de puncte, cu atu schimbător.",
+   "sources": [
+    "https://www.pagat.com/marriage/1000.html"
+   ]
+  },
+  {
+   "r": 67,
+   "name": "Klaverjas",
+   "existing": false,
+   "origin": "Țările de Jos",
+   "year": 1900,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Klaverjas",
+   "public_rules": true,
+   "notes_ro": "Variantă olandeză a lui Klaberjass, cu licitație și anunțuri, foarte populară în cluburi.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Klaberjass",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 68,
+   "name": "Batak",
+   "existing": false,
+   "origin": "Turcia",
+   "year": 1900,
+   "ctx": [
+    "asia",
+    "europe"
+   ],
+   "own_title_ro": "Batak",
+   "public_rules": true,
+   "notes_ro": "Joc turcesc asemănător cu Spades, cu licitație și atu fix (pică).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Batak_(card_game)",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 69,
+   "name": "Sheng ji (Tractor)",
+   "existing": false,
+   "origin": "China",
+   "year": 1980,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Shengji (Urcarea)",
+   "public_rules": true,
+   "notes_ro": "Joc chinezesc în echipe, cu pachete duble și urcare în nivel, popular online (Tractor).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sheng_ji",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 70,
+   "name": "Twenty-Nine (29)",
+   "existing": false,
+   "origin": "India / Pakistan / Asia de Sud",
+   "year": 1900,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Douăzeci și nouă (29)",
+   "public_rules": true,
+   "notes_ro": "Joc de levată cu licitație și valori neobișnuite (valeți și nouări) cu 32 de cărți.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Twenty-nine_(card_game)",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 71,
+   "name": "Sevens (Fan Tan)",
+   "existing": false,
+   "origin": "Global",
+   "year": 1800,
+   "ctx": [
+    "global"
+   ],
+   "own_title_ro": "Șapte (Fan-tan)",
+   "public_rules": true,
+   "notes_ro": "Joc în care cărțile se așază în serii de la 7 în sus și în jos, câștigă cine se golește primul.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sevens_(card_game)",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 72,
+   "name": "Three Card Brag",
+   "existing": false,
+   "origin": "Marea Britanie",
+   "year": 1500,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Brag cu trei cărți",
+   "public_rules": true,
+   "notes_ro": "Joc britanic de pariuri cu trei cărți, strămoș al pokerului.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Three_card_brag",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 73,
+   "name": "Sette e mezzo",
+   "existing": false,
+   "origin": "Italia / Spania",
+   "year": 1600,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Șapte și jumătate",
+   "public_rules": true,
+   "notes_ro": "Joc italian asemănător cu Blackjack: se ajunge la 7,5 puncte fără a depăși.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sette_e_mezzo",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 74,
+   "name": "Sueca",
+   "existing": false,
+   "origin": "Portugalia / Brazilia",
+   "year": 1900,
+   "ctx": [
+    "europe",
+    "samerica"
+   ],
+   "own_title_ro": "Sueca",
+   "public_rules": true,
+   "notes_ro": "Joc portughez în patru, în echipe, cu pachet de 40 de cărți, fără licitație.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sueca",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 75,
+   "name": "Yaniv",
+   "existing": false,
+   "origin": "Israel",
+   "year": 1980,
+   "ctx": [
+    "asia"
+   ],
+   "own_title_ro": "Yaniv",
+   "public_rules": true,
+   "notes_ro": "Joc israelian de rummy rapid: câștigă cine are suma cea mai mică și strigă \"Yaniv\".",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yaniv_(card_game)",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 76,
+   "name": "Tute",
+   "existing": false,
+   "origin": "Spania",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Tute",
+   "public_rules": true,
+   "notes_ro": "Joc spaniol de levată cu 40 de cărți, cu cântări (cantes) pentru perechi rege-cal.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tute",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 77,
+   "name": "Skitgubbe",
+   "existing": false,
+   "origin": "Suedia",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Skitgubbe",
+   "public_rules": true,
+   "notes_ro": "Joc scandinav de eliminare cu două faze (levate, apoi lepădare), în care pierde \"Skitgubben\".",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Skitgubbe",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 78,
+   "name": "Ulti",
+   "existing": false,
+   "origin": "Ungaria",
+   "year": 1800,
+   "ctx": [
+    "europe"
+   ],
+   "own_title_ro": "Ulti",
+   "public_rules": true,
+   "notes_ro": "Joc maghiar cu licitații multiple și contracte (ulti, passz, betli) cu cărți ungurești.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ulti",
+    "https://en.wikipedia.org/wiki/List_of_card_games"
+   ]
+  },
+  {
+   "r": 79,
+   "name": "Treizeci și unu (31)",
+   "existing": true
+  },
+  {
+   "r": 80,
+   "name": "Tablanet",
+   "existing": true
+  },
+  {
+   "r": 81,
+   "name": "Șase-zeci și șase (66)",
+   "existing": true
+  },
+  {
+   "r": 82,
+   "name": "Cassino",
+   "existing": true
+  },
+  {
+   "r": 83,
+   "name": "Whot!",
+   "existing": true
+  },
+  {
+   "r": 84,
+   "name": "Chkobba",
+   "existing": true
+  },
+  {
+   "r": 85,
+   "name": "Ronda",
+   "existing": true
+  },
+  {
+   "r": 86,
+   "name": "Daifugo (Daihinmin)",
+   "existing": true
+  },
+  {
+   "r": 87,
+   "name": "Tong-its",
+   "existing": true
+  },
+  {
+   "r": 88,
+   "name": "Piști",
+   "existing": true
+  },
+  {
+   "r": 89,
+   "name": "Court Piece (Rang, Mendikot)",
+   "existing": true
+  },
+  {
+   "r": 90,
+   "name": "Call Break",
+   "existing": true
+  },
+  {
+   "r": 91,
+   "name": "Pitch (Setback)",
+   "existing": true
+  },
+  {
+   "r": 92,
+   "name": "Bid Whist",
+   "existing": true
+  },
+  {
+   "r": 93,
+   "name": "All Fours",
+   "existing": true
+  },
+  {
+   "r": 94,
+   "name": "Conquián",
+   "existing": true
+  },
+  {
+   "r": 95,
+   "name": "Chinchón",
+   "existing": true
+  },
+  {
+   "r": 96,
+   "name": "Burako (Buraco)",
+   "existing": true
+  },
+  {
+   "r": 97,
+   "name": "Escoba (Escoba de 15)",
+   "existing": true
+  },
+  {
+   "r": 98,
+   "name": "Cuarenta",
+   "existing": true
+  },
+  {
+   "r": 99,
+   "name": "Five Hundred (500)",
+   "existing": true
+  },
+  {
+   "r": 100,
+   "name": "Pontoon",
+   "existing": true
+  }
+ ]
+}
