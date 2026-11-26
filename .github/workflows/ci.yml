@@ -25,7 +25,7 @@ jobs:
         run: |
           set -o pipefail
           cargo test --release --no-fail-fast 2>&1 | tee /tmp/test.log || rc=$?
-          grep -E "^test .* FAILED|panicked at|^---- .* stdout" /tmp/test.log | head -20 | while read -r l; do echo "::error::$l"; done
+          grep -E "^test .* FAILED|panicked at|^---- .* stdout" /tmp/test.log | head -20 | while read -r l; do echo "::error::$l"; done || true
           exit ${rc:-0}
 
   gui:
