@@ -90,4 +90,7 @@ jobs:
           tag="${{ github.event.inputs.tag }}"
           if [ -z "$tag" ] && [ "${GITHUB_REF_TYPE}" = "tag" ]; then tag="${GITHUB_REF_NAME}"; fi
           if [ -z "$tag" ]; then tag="v$(cat VERSION)"; fi
-          gh release create "$tag" dist/* --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "PolyTabletop $tag" --generate-notes
+          if ! gh release create "$tag" dist/* --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "PolyTabletop $tag" --generate-notes 2> err.txt; then
+            echo "::error::release failed: $(tr '\n' ' ' < err.txt | head -c 900)"
+            exit 1
+          fi
