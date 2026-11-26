@@ -1,6 +1,6 @@
 # Jocurile jucabile
 
-Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (240 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
+Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (450 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
 
 Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferență între majuscule/minuscule, spațiile se ignoră); `?` listează mutările legale, `hint` cere sugestia AI-ului, `q` iese.
 
@@ -246,6 +246,216 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Two-up (Australia)](#twoup) (`twoup`)
 - [Ancora și coroana](#ancora) (`ancora`)
 - [Mu Torere (Noua Zeelandă)](#mutorere) (`mutorere`)
+- [X și 0 (Tic-tac-toe)](#tictactoe) (`tictactoe`)
+- [Jocul regal din Ur](#ur) (`ur`)
+- [Crazyhouse (șah cu reintroducere)](#crazyhouse) (`crazyhouse`)
+- [Omweso](#omweso) (`omweso`)
+- [TwixT](#twixt) (`twixt`)
+- [Halma](#halma) (`halma`)
+- [Mahjong Hong Kong (minimum 3 fan)](#mahjong_hk) (`mahjong_hk`)
+- [Fia-med-knuff](#fia) (`fia`)
+- [Tien Gow (Cer și nouă)](#tiengow) (`tiengow`)
+- [Acey-deucey](#aceydeucey) (`aceydeucey`)
+- [Bar billiards](#barbilliards) (`barbilliards`)
+- [Tabula](#tabula) (`tabula`)
+- [Jeu des petits chevaux](#petitschevaux) (`petitschevaux`)
+- [Cờ gánh](#coganh) (`coganh`)
+- [Petteia](#petteia) (`petteia`)
+- [Morra (Mora)](#morra) (`morra`)
+- [Sanma (mahjong în trei, adaptat la doi)](#sanma) (`sanma`)
+- [Flip Cup](#flipcup) (`flipcup`)
+- [Mad Gab](#madgab) (`madgab`)
+- [Pub quiz](#pubquiz) (`pubquiz`)
+- [Old Maid (Bătrâna fată)](#oldmaid) (`oldmaid`)
+- [Mus](#mus) (`mus`)
+- [Bézique](#bezique) (`bezique`)
+- [Twenty-Nine (29)](#twentynine) (`twentynine`)
+- [Tute](#tute) (`tute`)
+- [Șotron (Hopscotch)](#sotron) (`sotron`)
+- [Duck Duck Goose](#duckduckgoose) (`duckduckgoose`)
+- [Statuile (Statues)](#statuile) (`statuile`)
+- [Conkers](#conkers) (`conkers`)
+- [Craps](#craps) (`craps`)
+- [Mexico (Mäxchen, Mia)](#mexico) (`mexico`)
+- [Schocken](#schocken) (`schocken`)
+- [Passe-dix](#passedix) (`passedix`)
+- [Dice Baseball](#dicebaseball) (`dicebaseball`)
+- [Drop Dead](#dropdead) (`dropdead`)
+- [Dame internaționale (10×10)](#dame10) (`dame10`)
+- [Toguz Kumalak (Kazahstan)](#toguz) (`toguz`)
+- [Sittuyin (șahul birman)](#sittuyin) (`sittuyin`)
+- [Gebeta (Etiopia)](#gebeta) (`gebeta`)
+- [Sprouts (Conway–Paterson)](#sprouts) (`sprouts`)
+- [Peg solitaire (duel)](#pegsol) (`pegsol`)
+- [Shuffleboard de masă](#shuffleboard) (`shuffleboard`)
+- [Yatzy (Scandinavia)](#yatzy) (`yatzy`)
+- [Cee-lo (zaruri de stradă)](#ceelo) (`ceelo`)
+- [Peste și sub șapte (Over and Under Seven)](#oversevens) (`oversevens`)
+- [Skunk (zaruri)](#skunk) (`skunk`)
+- [Hazard (strămoșul craps-ului)](#hazard) (`hazard`)
+- [Crichet cu zaruri (Howzat!)](#howzat) (`howzat`)
+- [Dreidel](#dreidel) (`dreidel`)
+- [Pare sau impare](#parimpar) (`parimpar`)
+- [Mehen (Egiptul antic)](#mehen) (`mehen`)
+- [Cinci pietricele](#cinci_pietricele) (`cinci_pietricele`)
+- [Jocuri cu ață (leagănul pisicii)](#jocuri_ata) (`jocuri_ata`)
+- [Table skittles (popice de masă)](#skittles) (`skittles`)
+- [Doppelkopf (2 jucători)](#doppelkopf) (`doppelkopf`)
+- [Tarock (2 jucători)](#tarock) (`tarock`)
+- [Șapte (Sevens)](#sevens) (`sevens`)
+- [Skitgubbe](#skitgubbe) (`skitgubbe`)
+- [Ombre (L'Hombre)](#ombre) (`ombre`)
+- [Dominó cubano (doble nueve)](#domino9) (`domino9`)
+- [Narde scurtă (Short Nardy)](#narde) (`narde`)
+- [Dog (curse cu cărți)](#dog) (`dog`)
+- [Toc (jeu)](#toc) (`toc`)
+- [Trictrac (simplificat)](#trictrac) (`trictrac`)
+- [Tangram (duel pe grilă)](#tangram) (`tangram`)
+- [Zip Zap Zop](#zipzapzop) (`zipzapzop`)
+- [Ai prefera…](#wouldyourather) (`wouldyourather`)
+- [Telefonul fără fir](#chinesewhispers) (`chinesewhispers`)
+- [Ghicește melodia](#namethattune) (`namethattune`)
+- [Baba-oarba](#babaoarba) (`babaoarba`)
+- [Capture the Flag](#capturetheflag) (`capturetheflag`)
+- [Închide cutia (Shut the Box)](#shut_box) (`shut_box`)
+- [Zarul norocos (Chuck-a-luck)](#chuck) (`chuck`)
+- [Zaruri de bar (Bar dice)](#bar_dice) (`bar_dice`)
+- [Zaruri cosmice (după Cosmic Wimpout)](#cosmic) (`cosmic`)
+- [Tombola (Italia)](#tombola) (`tombola`)
+- [Pachinko (Japonia)](#pachinko) (`pachinko`)
+- [Fan-Tan (China)](#fan_tan) (`fan_tan`)
+- [Turnurile din Hanoi (Tower of Hanoi)](#hanoi) (`hanoi`)
+- [Tenis de masă (Ping-pong)](#pingpong) (`pingpong`)
+- [Hounds and Jackals (58 de găuri)](#hounds) (`hounds`)
+- [Ataxx (7×7)](#ataxx) (`ataxx`)
+- [Shatranj (Persia)](#shatranj) (`shatranj`)
+- [Dame rusești (Shashki)](#shashki) (`shashki`)
+- [Ô ăn quan (Vietnam)](#o_an_quan) (`o_an_quan`)
+- [Hypergammon](#hypergammon) (`hypergammon`)
+- [Jacquet (Franța)](#jacquet) (`jacquet`)
+- [Moultezim (Grecia / Turcia)](#moultezim) (`moultezim`)
+- [Chu Shogi (12×12)](#chu_shogi) (`chu_shogi`)
+- [Chowka Bara](#chowka_bara) (`chowka_bara`)
+- [Uckers](#uckers) (`uckers`)
+- [Mau-Mau](#mau_mau) (`mau_mau`)
+- [Muggins (All Fives)](#muggins) (`muggins`)
+- [Schafkopf (2 jucători)](#schafkopf) (`schafkopf`)
+- [Preferans (2 jucători)](#preferans) (`preferans`)
+- [Ulti (2 jucători)](#ulti) (`ulti`)
+- [Three Card Brag](#brag) (`brag`)
+- [Cuvinte încrucișate](#crossword) (`crossword`)
+- [Perquackey](#perquackey) (`perquackey`)
+- [Ligretto](#ligretto) (`ligretto`)
+- [Truth or Dare (Adevăr sau provocare)](#truth_dare) (`truth_dare`)
+- [Sticla (Spin the bottle)](#sticla) (`sticla`)
+- [Sardines](#sardines) (`sardines`)
+- [Scaunele muzicale](#scaune_muzicale) (`scaune_muzicale`)
+- [Mikado (Pick-up sticks)](#mikado) (`mikado`)
+- [Kick the Can](#kick_can) (`kick_can`)
+- [Mingea (Dodgeball)](#mingea) (`mingea`)
+- [Kalah](#kalah) (`kalah`)
+- [Vulpea și gâștele (Fox and Geese)](#foxgeese) (`foxgeese`)
+- [Alquerque](#alquerque) (`alquerque`)
+- [Jungle (Dou Shou Qi)](#jungle) (`jungle`)
+- [Chaturanga (India)](#chaturanga) (`chaturanga`)
+- [Camelot](#camelot) (`camelot`)
+- [Fotbal de masă pe ture (Table football)](#fotbalmasa) (`fotbalmasa`)
+- [Tiddlywinks (pe ture)](#tiddlywinks) (`tiddlywinks`)
+- [Jocul de 15 (cursă)](#joc15) (`joc15`)
+- [Sudoku duel](#sudoku) (`sudoku`)
+- [Biliard francez (carambol)](#biliard) (`biliard`)
+- [Tavli (Portes, Plakoto, Fevga)](#tavli) (`tavli`)
+- [Gul bara (Golful Persic)](#gulbara) (`gulbara`)
+- [Chinchirorin (zaruri în bol)](#chinchirorin) (`chinchirorin`)
+- [Ship, Captain and Crew](#shipcrew) (`shipcrew`)
+- [Gândacul (Beetle)](#beetle) (`beetle`)
+- [Zaruri colorate (Kismet)](#kismet) (`kismet`)
+- [Dead Man's Dice (zarurile piratului)](#deadmansdice) (`deadmansdice`)
+- [Snap](#snap) (`snap`)
+- [Simon zice](#simon) (`simon`)
+- [Sette e mezzo (șapte și jumătate)](#settemezzo) (`settemezzo`)
+- [Baccarat (Punto Banco)](#baccarat) (`baccarat`)
+- [Spânzurătoarea (Hangman)](#hangman) (`hangman`)
+- [Douăzeci de întrebări](#douazeci) (`douazeci`)
+- [Ghicește ce văd (I Spy)](#ispy) (`ispy`)
+- [Vânătoarea de comori](#comori) (`comori`)
+- [Mima (Charades)](#mima) (`mima`)
+- [Crima cu ochiade (Wink Murder)](#crima) (`crima`)
+- [Sheepshead](#sheepshead) (`sheepshead`)
+- [Tysiąc](#tysiac) (`tysiac`)
+- [Mariáš](#mariash) (`mariash`)
+- [Texas 42](#texas42) (`texas42`)
+- [Pit](#pit) (`pit`)
+- [American Mah Jongg](#mahjong_am) (`mahjong_am`)
+- [Dame braziliene (Damas)](#damas) (`damas`)
+- [Renju](#renju) (`renju`)
+- [Tablut](#tablut) (`tablut`)
+- [Lasca](#lasca) (`lasca`)
+- [Ruletă (Roulette)](#ruleta) (`ruleta`)
+- [Bile (par sau impar)](#marbles) (`marbles`)
+- [Mahjong taiwanez](#mahjong_tw) (`mahjong_tw`)
+- [Matador (domino)](#matador) (`matador`)
+- [Bagatelle](#bagatelle) (`bagatelle`)
+- [Latrunculi](#latrunculi) (`latrunculi`)
+- [Salta](#salta) (`salta`)
+- [Chaturaji](#chaturaji) (`chaturaji`)
+- [Sjoelen](#sjoelen) (`sjoelen`)
+- [Nonogram (Picross), duel](#nonogram) (`nonogram`)
+- [Snooker](#snooker) (`snooker`)
+- [Scattergories](#scattergories) (`scattergories`)
+- [Eu niciodată](#nhie) (`nhie`)
+- [Spoons (lingurile)](#spoons) (`spoons`)
+- [Treci pachetul (Pass the Parcel)](#parcel) (`parcel`)
+- [Solitaire (Klondike), duel](#klondike) (`klondike`)
+- [Jass (Schieber)](#jass) (`jass`)
+- [Manille](#manille) (`manille`)
+- [Klaverjas](#klaverjas) (`klaverjas`)
+- [Sueca](#sueca) (`sueca`)
+- [Piatră, hârtie, foarfece](#rps) (`rps`)
+- [Sărit coarda (Jump rope)](#coarda) (`coarda`)
+- [Capra (Leapfrog)](#capra) (`capra`)
+- [Jocul lui Kim (Kim's Game)](#kim) (`kim`)
+- [Slapjack](#slapjack) (`slapjack`)
+- [Chō-han (Chō-han bakuchi)](#chohan) (`chohan`)
+- [Balut](#balut) (`balut`)
+- [Knucklebones (Tali)](#tali) (`tali`)
+- [Crag](#crag) (`crag`)
+- [Bo Bing (Pua Tiong Chiu)](#bobing) (`bobing`)
+- [Hnefatafl](#hnefatafl) (`hnefatafl`)
+- [Brandubh](#brandubh) (`brandubh`)
+- [Pente](#pente) (`pente`)
+- [Havannah](#havannah) (`havannah`)
+- [Table chinezească (Chinese Checkers)](#chinese_checkers) (`chinese_checkers`)
+- [Jocul gâștei (Game of the Goose)](#goose) (`goose`)
+- [Keno](#keno) (`keno`)
+- [Mahjong Sichuan](#sichuan_mahjong) (`sichuan_mahjong`)
+- [Long Nard (Narde)](#long_nard) (`long_nard`)
+- [Shove ha'penny](#shove_ha_penny) (`shove_ha_penny`)
+- [Rithmomachia](#rithmomachia) (`rithmomachia`)
+- [Pong hau k'i](#pong_hau_kiki) (`pong_hau_kiki`)
+- [Patolli](#patolli) (`patolli`)
+- [Duodecim scripta](#duodecim_scripta) (`duodecim_scripta`)
+- [Puzzle cu piese (Jigsaw)](#jigsaw) (`jigsaw`)
+- [Mahjong oficial chinez (Guobiao)](#guobiao) (`guobiao`)
+- [Boggle](#boggle) (`boggle`)
+- [Kings (Ring of Fire)](#kings) (`kings`)
+- [Celebrity (Fishbowl)](#celebrity) (`celebrity`)
+- [Prinde coada măgarului](#pin_the_tail) (`pin_the_tail`)
+- [Război (War)](#war) (`war`)
+- [Tressette (Italia)](#tressette) (`tressette`)
+- [Piquet (Franța)](#piquet) (`piquet`)
+- [Batak (Turcia)](#batak) (`batak`)
+- [Yaniv (Israel)](#yaniv) (`yaniv`)
+- [Ascunselea (Hide-and-seek)](#ascunselea) (`ascunselea`)
+- [De-a prinselea (Tag)](#de_a_prinselea) (`de_a_prinselea`)
+- [Elasticul](#elasticul) (`elasticul`)
+- [Oina](#oina) (`oina`)
+- [Loto cu imagini (Picture lotto)](#loto_imagini) (`loto_imagini`)
+- [Bầu cua (dovleac, crab, pește)](#bau_cua) (`bau_cua`)
+- [Yacht](#yacht) (`yacht`)
+- [Chicago (zaruri)](#chicago) (`chicago`)
+- [Zara (joc)](#zara) (`zara`)
+- [Daldøs](#daldos) (`daldos`)
 
 <a id="chess"></a>
 ## Șah
@@ -5486,4 +5696,4346 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - Sintaxă din regulile jocului: 3-4 (de pe 3 pe 4), 4-0 (în centru), 0-6 (din centru).
 - Exemple legale la început: `1-0`, `4-0`
 - La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tictactoe"></a>
+## X și 0 (Tic-tac-toe)
+
+- **Id:** `tictactoe`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tictactoe` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 3×3; jucătorii pun pe rând X și 0.
+- Trei la rând (linie, coloană sau diagonală) câștigă; tabla plină fără linie e remiză.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a1…c3.
+- Exemple legale la început: `a1`, `b1`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ur"></a>
+## Jocul regal din Ur
+
+- **Id:** `ur`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ur` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă mesopotamiană, 7 piese pe jucător pe un drum de 14 pătrate; patru zaruri binare (0–4), ieșire cu număr exact, pe pătratele comune capturezi, rozeta centrală e sigură, rozetele dau o nouă aruncare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, 0-3 (de-la), pas.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="crazyhouse"></a>
+## Crazyhouse (șah cu reintroducere)
+
+- **Id:** `crazyhouse`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play crazyhouse` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Șah în care piesele capturate trec în rezerva ta și pot fi introduse pe orice câmp liber în loc de mutare (pionii nu pe prima/ultima linie); o piesă promovată capturată revine pion.
+- Reguli complete de șah; remiză prin repetiție triplă sau după 200 de mutări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: e2e4, e7e8q, N@f3.
+- Exemple legale la început: `a2a3`, `a2a4`
+- La început sunt 20 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="omweso"></a>
+## Omweso
+
+- **Id:** `omweso`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play omweso` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Mancala din Uganda: 4×8 gropi, două rânduri fiecare, câte 2 semințe (64).
+- Alegi o groapă cu cel puțin 2 semințe și semeni în sens trigonometric prin cele 16 gropi ale tale; dacă ultima sămânță cade într-o groapă nevidă din rândul interior, cu ambele gropi adverse din coloană nevide, le capturezi; altfel continui să semeni (releu).
+- Pierzi când nu mai ai nicio groapă cu 2 semințe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: i1…i8 (rândul interior), o1…o8 (exterior).
+- Exemple legale la început: `i1`, `i2`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="twixt"></a>
+## TwixT
+
+- **Id:** `twixt`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play twixt` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de conectare pe tabla 24×24: J1 leagă marginea de sus de cea de jos, J2 pe cea din stânga de cea din dreapta; nu poți pune cuie pe marginile adversarului sau în colțuri.
+- Cuiele aflate la mutare de cal se leagă automat dacă puntea nu taie alta.
+- Câștigă cine închide primul lanțul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: e12 (coloana a–x, rândul 1–24; rândul 24 e sus).
+- Exemple legale la început: `b1`, `c1`
+- La început sunt 528 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="halma"></a>
+## Halma
+
+- **Id:** `halma`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play halma` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Halma pe 16×16 pentru doi: 19 piese fiecare în colțuri opuse.
+- Muți un pas (și pe diagonală) sau un lanț de sărituri peste piese vecine; nu se captează nimic.
+- Câștigă primul care aduce toate cele 19 piese în tabăra adversă; după 150 de mutări pe jucător, cine are mai multe acolo.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: b2d4 (de la, la).
+- Exemple legale la început: `c1e3`, `d1f3`
+- La început sunt 40 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mahjong_hk"></a>
+## Mahjong Hong Kong (minimum 3 fan)
+
+- **Id:** `mahjong_hk`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mahjong_hk` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Mahjong în stil Hong Kong pentru 2 jucători, 136 de piese fără flori; o mână câștigă doar cu cel puțin 3 fan (tragere proprie 1, închisă 1, toate secvențele 1, toate pungurile 3, o culoare + onoruri 3, culoare pură 6, doar onoruri 10, pung de dragon/vânt propriu/vântul rundei câte 1).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trage, d5m, mahjong, kong5m, trage-moarta, pung, kong, chi2m3m, pas.
+- Exemple legale la început: `trage`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fia"></a>
+## Fia-med-knuff
+
+- **Id:** `fia`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fia` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Ludo suedez: 4 piese fiecare, pistă de 48 de câmpuri. 1 sau 6 intră o piesă; 6 dă încă o aruncare; aterizând pe o piesă adversă o trimiți acasă.
+- Finalul cere aruncare exactă; câștigă primul cu toate cele patru acasă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: intra sau numărul progresului piesei (ex. 12).
+- Exemple legale la început: `intra`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tiengow"></a>
+## Tien Gow (Cer și nouă)
+
+- **Id:** `tiengow`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play tiengow` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc cantonez de levate cu 32 de piese de domino, adaptat pentru doi: 8 piese fiecare.
+- Conduci cu o piesă sau o pereche; celălalt bate cu o piesă mai mare de aceeași culoare (civil/militar) sau o pereche mai mare de același tip, ori aruncă cu fața în jos.
+- Ultima levată câștigă mâna; primul la 10 puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 66, 66+66, d64 (d = aruncare ascunsă).
+- Exemple legale la început: `66`, `11`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="aceydeucey"></a>
+## Acey-deucey
+
+- **Id:** `aceydeucey`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play aceydeucey` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă americană de table: toate cele 15 piese pornesc din afara tablei și intră în casa adversarului; zarul 1+2 (acey-deucey) se joacă, apoi alegi orice dublă și mai arunci; dublele dau patru mutări.
+- Scoaterea e exactă când toate sunt acasă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ent-3, 5-9, 20-off, dublet 4.
+- Exemple legale la început: `ent-3`, `ent-5`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="barbilliards"></a>
+## Bar billiards
+
+- **Id:** `barbilliards`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play barbilliards` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Masa de crâșmă cu găuri și popici, simulată pe lovituri, pentru doi: găurile valorează 10, 20, 30, 50, 100, 200; bila roșie dublează punctele.
+- O vizită continuă cât timp loviturile punctează; ratarea o încheie (punctele rămân); un fault (popică doborâtă) o încheie și anulează punctele vizitei; popica neagră anulează tot scorul. 8 vizite fiecare; lovitura se hotărăște la pasul forțat lovitura.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 10 alba, 100 rosie, lovitura, stop.
+- Exemple legale la început: `10`, `alba`
+- La început sunt 24 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tabula"></a>
+## Tabula
+
+- **Id:** `tabula`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tabula` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Strămoșul roman al tablelor: 15 piese fiecare pornesc din afara tablei, 3 zaruri, iar ambii jucători merg în același sens pe cele 24 de puncte.
+- Intri, muți, apoi scoți exact; câștigă cine scoate primul toate piesele.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ent-3, 5-9, 20-off.
+- Exemple legale la început: `ent-3`, `ent-5`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="petitschevaux"></a>
+## Jeu des petits chevaux
+
+- **Id:** `petitschevaux`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play petitschevaux` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Ludo francez cu cai: 4 cai fiecare, pistă de 56 de câmpuri și 6 câmpuri de final.
+- Un 6 scoate un cal din grajd și dă încă o aruncare; câmpul tău de start e sigur; aterizând pe un cal adversar îl trimiți înapoi; sosirea cere aruncare exactă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: intra sau numărul progresului calului (ex. 12).
+- Exemple legale la început: `intra`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="coganh"></a>
+## Cờ gánh
+
+- **Id:** `coganh`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play coganh` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc vietnamez de capturi pe tabla 5×5 cu diagonale; 8 piese fiecare.
+- Muți un pas pe o linie către un punct liber.
+- Capturile schimbă culoarea pieselor: gánh (piesa mutată încadrează o piesă adversă pe o linie) și vây (un grup advers fără niciun punct liber în jur).
+- Câștigi lăsând adversarul fără piese sau mutări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a1b2 (de la, la).
+- Exemple legale la început: `a1b2`, `b1b2`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="petteia"></a>
+## Petteia
+
+- **Id:** `petteia`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play petteia` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Reconstituire a jocului grecesc antic pe 8×8: 16 piese fiecare, orice piesă merge ca un turn; o piesă e capturată când mutarea ta o prinde între două ale tale pe un rând sau o coloană (mai multe capturi într-o mutare).
+- Pierzi cu o singură piesă sau fără mutări; după 60 de mutări fără captură câștigă cine are mai multe piese.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a2a4 (de la, la).
+- Exemple legale la început: `a2a3`, `a2a4`
+- La început sunt 32 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="morra"></a>
+## Morra (Mora)
+
+- **Id:** `morra`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play morra` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc italian cu degete: ambii arată pe ascuns 1–5 degete și strigă suma presupusă; dacă exact unul ghicește, ia un punct, altfel runda se reia.
+- Alegerea e simultană (ascunsă până la dezvăluire); primul la 7.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 3/7 (3 degete, suma presupusă 7), dezvaluie.
+- Exemple legale la început: `1/2`, `1/3`
+- La început sunt 25 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sanma"></a>
+## Sanma (mahjong în trei, adaptat la doi)
+
+- **Id:** `sanma`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sanma` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Mahjong riichi cu schimbările sanma: 108 piese (fără 2m–8m), fără chi, piesele Nord pot fi declarate kita (dora bonus, tragere de înlocuire), indicatorul de dora face cerc 1m↔9m.
+- Riichi, ron, tsumo, furiten și punctaj ca la riichi.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trage, 5m, riichi 5p, tsumo, ankan, kakan, kita, trage-moarta, ron, pon, kan, pas, urmatoarea.
+- Exemple legale la început: `trage`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="flipcup"></a>
+## Flip Cup
+
+- **Id:** `flipcup`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play flipcup` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel de relee de petrecere, fără băutură: două echipe de câte 5 trebuie să termine fiecare 5 răsturnări de pahar.
+- Alegi repede (55% reușită, costă 2 timp) sau atent (80%, costă 3); la ratare se repetă, timpul se pierde.
+- Joacă echipa cu ceasul mai mic; câștigă echipa care termină cele 5 răsturnări cu cel mai mic timp.
+- Rezultatul se hotărăște la pasul forțat rastoarna.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: repede, atent, rastoarna.
+- Exemple legale la început: `repede`, `atent`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="madgab"></a>
+## Mad Gab
+
+- **Id:** `madgab`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play madgab` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Puzzle fonetic cu cuvinte, în română, pentru doi: un șir de silabe fără sens sună, citit repede cu voce tare, ca o expresie obișnuită.
+- Alegi expresia corectă dintre 4 (ghici 1…ghici 4), eventual după ajutor (se vede primul cuvânt, puncte mai puține).
+- Corect = 2 puncte (1 cu ajutor); greșit = celălalt are o singură încercare pentru 1 punct. 8 runde; verific la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ghici N, ajutor, verific.
+- Exemple legale la început: `ghici`, `1`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pubquiz"></a>
+## Pub quiz
+
+- **Id:** `pubquiz`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pubquiz` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Seară de întrebări pentru două echipe: 4 runde de câte 5 întrebări cu 4 variante, o altă categorie în fiecare rundă; un răspuns corect = 1 punct.
+- Înaintea fiecărei runde o echipă poate juca jokerul (o dată pe meci; dublează punctele rundei) sau refuza.
+- Răspunsurile rămân secrete până la verific; scor egal = remiză.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joker, fara joker, raspund a…raspund d, verific.
+- Exemple legale la început: `joker`, `fara`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="oldmaid"></a>
+## Old Maid (Bătrâna fată)
+
+- **Id:** `oldmaid`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play oldmaid` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Bătrâna fată pentru doi: pachet de 52 de cărți din care lipsește o damă, deci o damă rămâne fără pereche.
+- Se aruncă perechile de aceeași valoare; apoi tragi pe nevăzute din mâna celuilalt (trag N = a N-a carte) și arunci perechile.
+- Când rămâne o carte, cine o ține (dama) pierde.
+- Mâini ascunse; rezultatul apare la pasul final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trag N, final.
+- Exemple legale la început: `trag`, `1`
+- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mus"></a>
+## Mus
+
+- **Id:** `mus`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mus` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc spaniol cu 40 de cărți, adaptat pentru doi: 4 cărți fiecare; 3 valorează ca regii, 2 ca asul.
+- Mus opțional (arunci și tragi), apoi patru licitații: grande, chica, pares, juego; paso sau envido (miza 2), celălalt răspunde quiero / no quiero.
+- Primul la 20.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mus, corto, descarta 0101, reparte, declara, paso, envido, quiero, no quiero, dezvaluie.
+- Exemple legale la început: `mus`, `corto`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bezique"></a>
+## Bézique
+
+- **Id:** `bezique`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play bezique` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc francez pentru doi cu levate și figuri, pachet de 64 de cărți (7–A dublu), 8 cărți fiecare, atu întors.
+- Cât timp mai e pachet, câștigătorul levatei poate declara o figură (căsătorie 20/40, secvență 250, careu 40–100, bézique 40, dublu bézique 500; dix = schimbi 7 de atu pentru 10), apoi ambii trag; după aceea răspunzi la culoare și bați.
+- Brisques (ași și zeci) și ultima levată dau 10.
+- Primul la 1000 (cel mult 4 mâini).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: Qs, mariaj s, secventa, patru K, bezic, dublubezic, dix, fara, trag.
+- Exemple legale la început: `Qh`, `Ah`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="twentynine"></a>
+## Twenty-Nine (29)
+
+- **Id:** `twentynine`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play twentynine` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc sud-asiatic de levate cu licitație, adaptat pentru doi: 32 de cărți, 8 fiecare; valet 3, nouă 2, as 1, zece 1 puncte.
+- Licitezi 10–20 de puncte, câștigătorul alege atuul și celălalt conduce; răspunzi la culoare dacă poți.
+- Contractul făcut = 1 punct de meci; primul la 5.
+- Mâini ascunse.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: licitez 12, pas, atu s, Jh.
+- Exemple legale la început: `licitez`, `10`
+- La început sunt 22 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tute"></a>
+## Tute
+
+- **Id:** `tute`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play tute` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc spaniol de levate cu 40 de cărți pentru doi (o mână): 6 cărți fiecare, atu întors.
+- Cât timp mai e pachet joci orice carte; apoi trebuie să răspunzi la culoare și să bați dacă poți.
+- Câștigătorul poate anunța canto (rege+cal: 20, la atu 40), cambio (schimbi 7-ul de atu) sau tute (patru regi sau patru cai: câștigi pe loc).
+- Ultima levată 10.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 3o, 12b, canto e, cambio, tute, trag.
+- Exemple legale la început: `2c`, `10c`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sotron"></a>
+## Șotron (Hopscotch)
+
+- **Id:** `sotron`
+- **Categorie:** Familie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sotron` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de copii pentru doi: cursă pe pătratele 1–10.
+- La tura ta arunci piatra: prudent (țintești pătratul următor: 80% reușită, +1) sau indraznet (peste un pătrat: 50%, +2; la ratare cazi un pătrat înapoi).
+- Câștigă primul care duce piatra la 10 și se întoarce.
+- Aruncarea se hotărăște la pasul forțat sar.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: prudent, indraznet, sar.
+- Exemple legale la început: `prudent`, `indraznet`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="duckduckgoose"></a>
+## Duck Duck Goose
+
+- **Id:** `duckduckgoose`
+- **Categorie:** Familie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play duckduckgoose` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de cerc pentru copii, ca duel de risc pentru doi: în fiecare rundă un jucător atinge, celălalt e gâsca.
+- Cel care atinge alege câte rațe spune (1–5): cu cât mai multe, cu atât are șanse mai mici să fie prins și mai multe puncte dacă scapă.
+- Cursa se hotărăște la pasul forțat fuga; 10 runde, câștigă cine are mai multe puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: rate 1…rate 5, fuga.
+- Exemple legale la început: `rate`, `1`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="statuile"></a>
+## Statuile (Statues)
+
+- **Id:** `statuile`
+- **Categorie:** Familie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play statuile` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de înghețat pentru copii, pentru doi: fiecare alergător trebuie să ajungă la linia 12; la rundele impare aleargă J1, la cele pare J2.
+- Alergătorul alege în ascuns 1–3 pași, cel care strigă alege în ascuns când strigă stop (1–3); dacă face mai mulți pași decât a strigat, e prins în mișcare și se întoarce la start.
+- Dezvăluirea e pasul forțat dezvaluie; primul la 12 câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 1, 2, 3, dezvaluie.
+- Exemple legale la început: `1`, `2`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="conkers"></a>
+## Conkers
+
+- **Id:** `conkers`
+- **Categorie:** Familie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play conkers` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc britanic de curte pentru doi: fiecare castană are 6 puncte de rezistență.
+- La tura ta alegi usor (70% reușită, 1 pagubă) sau tare (45% reușită, 2 pagube; la ratare sfoara se poate încurca și pierzi 1).
+- Prima castană ajunsă la 0 se sparge și pierde; după 60 de lovituri câștigă castana mai întreagă.
+- Rezultatul se hotărăște la pasul forțat lovitura.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: usor, tare, lovitura.
+- Exemple legale la început: `usor`, `tare`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="craps"></a>
+## Craps
+
+- **Id:** `craps`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play craps` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel la masa de zaruri pentru doi: shooterul alege miza (5, 10, 20) și pariul, pass sau dont (don't pass); celălalt acoperă pariul opus.
+- Come-out: 7 sau 11 câștigă pass; 2, 3, 12 = craps (don't pass câștigă la 2 și 3, la 12 miza se anulează); orice alt total devine punct, se aruncă până apare punctul (pass) sau 7 (don't pass). 16 runde, start 100 de jetoane, câștigă cine are mai multe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pass 10, dont 5, arunc.
+- Exemple legale la început: `pass`, `5`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mexico"></a>
+## Mexico (Mäxchen, Mia)
+
+- **Id:** `mexico`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mexico` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de bluf cu două zaruri și cupă: arunci ascuns și anunți o valoare strict mai mare decât ultimul anunț (31 cea mai mică … dublele … 21 «Mexico» cea mai mare).
+- Următorul crede (și aruncă) sau contestă: mincinosul pierde o viață, contestatarul greșit tot una (la Mexico două).
+- Câte 5 vieți.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, anunt 65, cred, contest, dezvaluie.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="schocken"></a>
+## Schocken
+
+- **Id:** `schocken`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play schocken` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc german cu trei zaruri și 13 jetoane: până la trei aruncări pe rundă (păstrezi zarurile alese); clasament Schock Out (1-1-1) > Schock (1-1-x) > General > Straße > obișnuită (cel mai mare zar întâi).
+- Cine pierde runda ia jetoane după valoarea mâinii câștigătoare; o repriză se termină când cineva ține toate cele 13 și o pierde; două reprize pierdute pierd meciul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, stop, re 13 (re-arunci zarurile 1 și 3), decontare.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="passedix"></a>
+## Passe-dix
+
+- **Id:** `passedix`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play passedix` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc francez cu trei zaruri pentru doi: banca (alternativ) alege miza (5, 10, 20) și partea, passe (total 11–18) sau manque (3–10); celălalt acoperă partea opusă; tripletele se re-aruncă. 20 de runde, start 100 de jetoane, câștigă cine are mai multe.
+- Aruncarea e pasul forțat arunc.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: passe 10, manque 5, arunc.
+- Exemple legale la început: `passe`, `5`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="dicebaseball"></a>
+## Dice Baseball
+
+- **Id:** `dicebaseball`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play dicebaseball` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Baseball cu două zaruri pentru doi, fără decizii: 9 reprize, J1 bate apoi J2 până la trei outuri; reprize suplimentare (cel mult 12) la egalitate.
+- Totalul fiecărei aruncări e un rezultat: 2 aruncare ratată, 3 triplu, 4 dublu, 5 walk, 6 fly out, 7 ground out, 8 simplu, 9 strike out, 10 minge afară (se reia), 11 dublă eliminare, 12 home run.
+- Alergătorii avansează la lovituri; trecerea de baza a treia înscrie.
+- Mutare: arunc.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="dropdead"></a>
+## Drop Dead
+
+- **Id:** `dropdead`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play dropdead` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc cu cinci zaruri și risc pentru doi, fără decizii: la tura ta arunci toate zarurile rămase; dacă nu apare niciun 2 sau 5, adaugi totalul la scor; altfel nu punctezi, iar zarurile cu 2 și 5 «cad».
+- Tura se termină când au căzut toate cele cinci zaruri. 5 ture fiecare, câștigă scorul mai mare.
+- Mutare: arunc.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="dame10"></a>
+## Dame internaționale (10×10)
+
+- **Id:** `dame10`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play dame10` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 10×10, 20 de piese pe jucător.
+- Piesele simple mută un pas în diagonală înainte și capturează înainte și înapoi; damele zboară pe orice distanță.
+- Captura e obligatorie, cu cele mai multe piese; piesele luate se scot la final.
+- O piesă devine damă doar dacă își încheie mutarea pe ultimul rând.
+- Remiză după 50 de plie doar cu dame sau 400 în total.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: c4-d5, c4xe6xg8.
+- Exemple legale la început: `b4-c5`, `b4-a5`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="toguz"></a>
+## Toguz Kumalak (Kazahstan)
+
+- **Id:** `toguz`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play toguz` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 2 × 9 gropi cu câte 9 bile și un depozit (kazan) pentru fiecare.
+- Iei toate bilele dintr-o groapă proprie: prima rămâne, restul se seamănă câte una în sens trigonometric (o singură bilă trece mai departe).
+- Dacă ultima bilă face o groapă a adversarului pară, o iei; dacă o face 3 (nu groapa 9, una per jucător, nu cu același număr ca a adversarului), groapa devine tuzdyk: orice bilă semănată acolo ajunge în depozitul tău.
+- Primul la 82 câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 1–9.
+- Exemple legale la început: `1`, `2`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sittuyin"></a>
+## Sittuyin (șahul birman)
+
+- **Id:** `sittuyin`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sittuyin` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 8×8; cei 8 pioni sunt deja pe a3 b3 c3 d4 e4 f3 g3 h3 / a6 b6 c6 d5 e5 f6 g6 h6.
+- Întâi fiecare își așază regele, generalul, 2 elefanți, 2 cai și 2 bărci în jumătatea proprie (K@e1).
+- Apoi se mută: general = un pas în diagonală, elefant = un pas în diagonală sau înainte, cal ca în șah, barcă = turn; un pion aflat pe o diagonală mare în jumătatea adversă poate deveni general (d5=G) dacă nu mai ai.
+- Mat câștigă; patul e interzis.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: K@e1, e3-e4, e4xd5, d5=G.
+- Exemple legale la început: `K@a1`, `K@b1`
+- La început sunt 120 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="gebeta"></a>
+## Gebeta (Etiopia)
+
+- **Id:** `gebeta`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play gebeta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 2 × 6 gropi cu câte 4 semințe, câte un depozit.
+- Iei toate semințele dintr-o groapă proprie și le semeni în sens trigonometric.
+- Dacă ultima cade într-o groapă ocupată, ridici tot ce e acolo și continui (lanț).
+- Dacă cade într-o groapă goală a ta și cea opusă are semințe, iei semințele opuse plus a ta.
+- Când o parte rămâne goală jocul se termină și fiecare își ia semințele de pe partea lui; câștigă cine are mai multe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 1–6.
+- Exemple legale la început: `1`, `2`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sprouts"></a>
+## Sprouts (Conway–Paterson)
+
+- **Id:** `sprouts`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sprouts` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc topologic, 4 puncte la start.
+- La rândul tău unești două puncte (sau un punct cu el însuși, printr-o buclă) cu o curbă care nu taie nimic, apoi pui un punct nou pe curbă.
+- Din fiecare punct pleacă cel mult 3 curbe.
+- Cine nu mai poate muta pierde.
+- Poziția e dată combinatoriu (regiuni și frontiere); mutări: a-b (puncte), a-a pentru buclă, cu .1/.2 când există mai multe variante.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `1-1.1`, `1-1.2`
+- La început sunt 22 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pegsol"></a>
+## Peg solitaire (duel)
+
+- **Id:** `pegsol`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pegsol` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tabla engleză cu 33 de găuri, 32 de bile, centrul liber.
+- O mutare: o bilă sare ortogonal peste o vecină într-o gaură liberă și bila sărită se scoate.
+- Duel: fiecare joacă propria tablă identică, pe rând; cine rămâne fără mutări iese din joc.
+- La final câștigă cine are mai puține bile (egal: ultima bilă în centru).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d2-d4.
+- Exemple legale la început: `d2-d4`, `b4-d4`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="shuffleboard"></a>
+## Shuffleboard de masă
+
+- **Id:** `shuffleboard`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play shuffleboard` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Alunecă pucuri pe un traseu de 96 de unități: zonele 60 (1 p), 70 (2), 80 (3), 90–95 (4, agățat); de la 96 cad.
+- Câte 4 pucuri pe rundă, pe rând.
+- Alegi forța (tir 60), apoi «lansez»: pucul ajunge la ±5 de țintă; pucurile lovite transmit mișcarea.
+- Scorează doar jucătorul cu pucul cel mai departe, cu pucurile lui aflate dincolo de cel mai bun al adversarului.
+- Primul la 15.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: tir 30…100, lansez.
+- Exemple legale la început: `tir`, `30`
+- La început sunt 30 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="yatzy"></a>
+## Yatzy (Scandinavia)
+
+- **Id:** `yatzy`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play yatzy` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 5 zaruri, 3 aruncări pe tură, 15 categorii: unu…sase (bonus 50 dacă suma ≥ 63), pereche, două perechi, trei/patru la fel, scara mică 1-5 (15), scara mare 2-6 (20), casă, șansă, yatzy (50).
+- Aruncarea e mutare separată; ții zaruri (tine 3 3 5) sau scrii într-o categorie.
+- Câștigă totalul cel mai mare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, tine 3 3 5, scor pereche.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ceelo"></a>
+## Cee-lo (zaruri de stradă)
+
+- **Id:** `ceelo`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ceelo` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Trei zaruri. 4-5-6 sau trei egale câștigă pe loc; 1-2-3 pierde pe loc; o pereche plus un zar diferit dă acel zar ca punct; orice altceva se rearuncă.
+- Pariorul alege miza (5/10/20); bancherul aruncă până iese un rezultat, apoi pariorul; punctul mai mare câștigă, egal = remiză.
+- Banca trece când bancherul pierde. 16 mâini, 50 de jetoane.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pariez 10, arunc.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="oversevens"></a>
+## Peste și sub șapte (Over and Under Seven)
+
+- **Id:** `oversevens`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play oversevens` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pariorul alege «sub» (2–6), «peste» (8–12), plătite 1:1, sau «sapte» (exact 7), plătit 4:1, cu miza 5/10/20; banca (celălalt jucător) aruncă două zaruri («arunc»).
+- Banca se schimbă la fiecare mână. 20 de mâini, 50 de jetoane; câștigă cine are mai multe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sub 5, peste 10, sapte 5, arunc.
+- Exemple legale la început: `sub`, `5`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="skunk"></a>
+## Skunk (zaruri)
+
+- **Id:** `skunk`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play skunk` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de zaruri «împinge-ți norocul», 5 runde.
+- În tură arunci două zaruri cât vrei (arunc) sau te oprești (opresc).
+- Fără 1: adaugi suma la tură.
+- Un singur 1 (skunk): pierzi punctele turei.
+- Doi de 1: pierzi tot totalul.
+- Confirmi skunk-ul cu ok.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hazard"></a>
+## Hazard (strămoșul craps-ului)
+
+- **Id:** `hazard`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hazard` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Aruncătorul strigă un main 5–9 și o miză.
+- Prima aruncare cu două zaruri: main = nick (câștigă); 2 sau 3 = pierde; 11 și 12 depind de main (5/9: ambele pierd; 6/8: 11 pierde, 12 nick; 7: 11 nick, 12 pierde); orice altceva devine chance.
+- Apoi se aruncă până iese chance (câștigă) sau main (pierde).
+- Zarurile trec după trei pierderi la rând. 100 de jetoane, 20 de mâini.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: main 7 10, arunc.
+- Exemple legale la început: `main`, `5`
+- La început sunt 45 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="howzat"></a>
+## Crichet cu zaruri (Howzat!)
+
+- **Id:** `howzat`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play howzat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cricket cu zaruri pentru doi: 2 reprize de 30 de mingi și 5 wicket-uri;
+- J1 bate primul, J2 urmărește.
+- La fiecare minge bătătorul alege «lovesc» (atac) sau «apar» (apărare), apoi aruncătorul dă «arunc»: atac 1–2 out, 3=1, 4=2, 5=4, 6=6 runs; apărare 1 out, 2–3=0, 4–5=1, 6=2 runs.
+- Câștigă cine are mai multe runs.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lovesc, apar, arunc.
+- Exemple legale la început: `lovesc`, `apar`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="dreidel"></a>
+## Dreidel
+
+- **Id:** `dreidel`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play dreidel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de noroc cu titirezul.
+- Fiecare începe cu 10 jetoane și pune 1 în pot (din nou când potul are 0–1 jetoane).
+- Pe rând se învârte («invart»): nun = nimic, gimel = iei tot potul, hei = iei jumătate, shin = pui 1.
+- Cine nu mai poate plăti pierde; după 300 de învârtiri câștigă cine are mai multe jetoane.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `invart`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="parimpar"></a>
+## Pare sau impare
+
+- **Id:** `parimpar`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play parimpar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- J1 este «impar», J2 este «par».
+- La fiecare rundă fiecare alege în secret 1–5 degete (n1…n5), apoi se arată (arat).
+- Suma impară dă runda lui J1, cea pară lui J2.
+- Primul la 5 runde câștigă.
+- Alegerea ta rămâne ascunsă până la arătare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `n1`, `n2`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mehen"></a>
+## Mehen (Egiptul antic)
+
+- **Id:** `mehen`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mehen` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Reconstrucție.
+- Un traseu-șarpe de 18 pătrate (coada 0, capul 17), 3 piese fiecare.
+- Se aruncă patru bețe (0–4 fețe luminoase, 0 = 6; aruncările 1, 4 și 6 dau încă o aruncare).
+- O piesă intră pe coadă doar cu 1, merge spre cap și se întoarce pe același traseu (35 de pași), apoi iese acasă.
+- Aterizezi pe adversar = îl trimiți afară; pe piesa ta nu poți ateriza.
+- Câștigă primul cu toate 3 piesele acasă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, intra, m1/m2/m3, pas.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cinci_pietricele"></a>
+## Cinci pietricele
+
+- **Id:** `cinci_pietricele`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cinci_pietricele` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Jocul copiilor cu cinci pietricele, cu norocul în locul îndemânării. 5 etape (uni, doi, trei, patru, tot).
+- În tură alegi «calm» (70 %, +1 etapă) sau «iute» (45 %, +2 etape), apoi «incerc».
+- O reușită te lasă să continui; o greșeală dă rândul.
+- Primul care termină etapa 5 câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `calm`, `iute`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="jocuri_ata"></a>
+## Jocuri cu ață (leagănul pisicii)
+
+- **Id:** `jocuri_ata`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play jocuri_ata` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Doi jucători își pasează figuri de ață în ordinea clasică: leagăn → patul soldatului → lumânări → ieslea → diamante → ochi de pisică → pește în farfurie → ceas → leagăn.
+- Alegi «atent» (85 %, 1 punct) sau «rapid» (60 %, 2 puncte), apoi «preiau».
+- Ața încurcată costă 1 punct și revine la leagăn; închiderea ciclului dă 3 puncte bonus.
+- Primul la 12 câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `atent`, `rapid`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="skittles"></a>
+## Table skittles (popice de masă)
+
+- **Id:** `skittles`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play skittles` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Popice de masă cu norocul în locul îndemânării: 9 popice într-o grilă 3×3.
+- La fiecare aruncare țintești o coloană (stanga/mijloc/dreapta), apoi «lansez»; popicele din coloana țintă cad cu 60 %, vecine 25 %, opuse 8 %.
+- O tură are 3 aruncări; fiecare popică 1 punct (cea din mijloc 2); toate nouă = 5 bonus. 6 ture fiecare; câștigă cine are mai multe puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `stanga`, `mijloc`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="doppelkopf"></a>
+## Doppelkopf (2 jucători)
+
+- **Id:** `doppelkopf`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play doppelkopf` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Adaptare pentru doi a jocului normal: 48 de cărți (9 10 J Q K A ×4 culori ×2), câte 24.
+- Atuuri de la mare la mic: 10♥ (Dulle), Q♣ Q♠ Q♥ Q♦, J♣ J♠ J♥ J♦, A♦ 10♦ K♦ 9♦; culorile ♣ ♠ ♥ au ordinea A 10 K 9.
+- Respecți culoarea sau atuul; din două cărți egale câștigă prima (a doua 10♥ o bate pe prima).
+- Peste 120 din 240 de ochi câștigă mâna; primul la 2 mâini.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: Qc, 10h, Ad, imparte (c=♣ s=♠ h=♥ d=♦).
+- Exemple legale la început: `Ah`, `Kh`
+- La început sunt 19 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tarock"></a>
+## Tarock (2 jucători)
+
+- **Id:** `tarock`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play tarock` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Adaptare pentru doi, fără licitație. 54 de cărți: 22 de tarocuri (t1 … t21 și Škis) + 4 culori × 8; câte 18, 18 rămân nefolosite.
+- Respecți culoarea, altfel ești obligat să joci un tarok; tarokul bate orice carte de culoare, tarokul mai mare câștigă. Škis (skis) se joacă oricând, nu câștigă niciodată și rămâne al celui care l-a jucat.
+- Puncte: K 5, Q 4, C 3, J 2, restul culorilor 1; tarocurile I, XXI, Škis 5, celelalte 1; ultima levată câștigată cu I dă +10.
+- Primul la 2 mâini.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: t7, skis, Kh, 10s, 1d, imparte.
+- Exemple legale la început: `Jd`, `1d`
+- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sevens"></a>
+## Șapte (Sevens)
+
+- **Id:** `sevens`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sevens` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Șapte în doi: câte 26 de cărți.
+- Un 7 deschide culoarea la mijloc; apoi construiești în sus și în jos, cu o carte din aceeași culoare lipită de șir.
+- Dacă nu poți juca, treci.
+- Câștigă cine rămâne primul fără cărți.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: cartea (ex. 7h) sau pas. Mâini ascunse.
+- Exemple legale la început: `7h`, `7d`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="skitgubbe"></a>
+## Skitgubbe
+
+- **Id:** `skitgubbe`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play skitgubbe` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc suedez de descărcare în două faze.
+- Faza 1: cu pachet, joci o carte, adversarul trebuie să o bată cu una mai mare din aceeași culoare sau ia grămada; completezi la trei cărți.
+- Faza 2: se joacă mâinile rămase, fără pachet; cine rămâne ultimul cu cărți e Skitgubbe (pierzătorul).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: cartea, ridic (ia grămada), risc (riști o carte din pachet). Mâini și pachet ascunse.
+- Exemple legale la început: `3d`, `Qs`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ombre"></a>
+## Ombre (L'Hombre)
+
+- **Id:** `ombre`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play ombre` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Ombre în doi cu pachetul spaniol de 40 de cărți: câte 9 cărți.
+- Licitezi (entrada) sau treci;
+- Ombre alege atuul, poate arunca și trage cărți, apoi se joacă 9 levate.
+- Matadorii (atuurile cele mai mari) bat restul.
+- Ombre câștigă dacă ia mai multe levate decât adversarul.
+- Primul la 8 puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: entrada, pas, atu <culoare>, scap <cărți>, gata, cartea, imparte. Mâini ascunse.
+- Exemple legale la început: `entrada`, `pas`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="domino9"></a>
+## Dominó cubano (doble nueve)
+
+- **Id:** `domino9`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play domino9` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Set dublu-nouă de 55 de piese; câte 10, 35 în rezervă.
+- Pui o piesă care se potrivește la un capăt (începe cel cu cel mai mare dublu); dacă nu ai piesă, tragi până poți, iar cu rezerva goală treci.
+- Câștigă cine rămâne primul fără piese; la blocaj, cine are mai puține puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: piesa cu capătul (ex. 5-7 stanga), trage, pas. Mâini și rezervă ascunse.
+- Exemple legale la început: `1-9:S`, `1-9:D`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="narde"></a>
+## Narde scurtă (Short Nardy)
+
+- **Id:** `narde`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play narde` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Narde scurtă (rudă cu table): câte 15 piese, două zaruri (la dublă se joacă de patru ori), aduci toate piesele acasă și le scoți primul.
+- Implementarea folosește motorul de table cu regulile standard.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, apoi mutările pe puncte.
+- Exemple legale la început: `8/3`, `13/8`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="dog"></a>
+## Dog (curse cu cărți)
+
+- **Id:** `dog`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play dog` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă pe inel cu cărți pentru doi: inel de 64 de câmpuri, 4 piese, 110 cărți.
+- A sau K scot o piesă; cărțile mută piese după valoare (A = 1 sau 11, 4 = înainte sau înapoi, 7 = șapte pași de câte 1, J = schimb cu o piesă a adversarului, joker = orice carte).
+- Aterizând exact pe adversar îl trimiți înapoi; piesa de pe start e protejată.
+- Câștigă cine aduce primul toate cele 4 piese în casă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: K:intra, 5:p2, 4:p1-, 7:p1, J:p1<>o2, pas. Mâini ascunse.
+- Exemple legale la început: `A:intra`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="toc"></a>
+## Toc (jeu)
+
+- **Id:** `toc`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play toc` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă franceză cu cărți și popice pentru doi: inel de 80 de câmpuri, 4 piese, 54 de cărți.
+- A sau K scot o piesă; cărțile mută după valoare; 4 merge numai înapoi; 7 = șapte pași de câte 1; valetul mută 11 sau schimbă; jokerul mută 15 sau scoate o piesă.
+- Aterizând exact pe adversar îl trimiți înapoi; piesa de pe start e protejată.
+- Câștigă cine aduce primul toate cele 4 piese în casă.
+- Mâini ascunse.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `jk:intra`, `K:intra`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="trictrac"></a>
+## Trictrac (simplificat)
+
+- **Id:** `trictrac`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play trictrac` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Trictrac simplificat: 24 de puncte, câte 15 piese stivuite pe punctul de start, două zaruri, fără lovire.
+- Scoți piese doar când toate sunt în ultimul sfert.
+- Punctaj în găuri la sfârșitul turei: dublă +2, trei puncte din ultimul sfert cu 2+ piese +4, fiecare piesă scoasă +1.
+- Primul la 15 găuri câștigă.
+- Sistemul real de găuri (jan-uri, battre à vrai) nu e implementat.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, zar:punct (ex. 4:1).
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tangram"></a>
+## Tangram (duel pe grilă)
+
+- **Id:** `tangram`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tangram` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel Tangram simplificat pe grilă 6×6: fiecare jucător are 7 piese (2 triunghiuri mici = 1 pătrățel, triunghi mediu = domino, pătrat = 2×2, paralelogram = S de 4, 2 triunghiuri mari = L de 3).
+- Puneți alternativ câte o piesă (orice rotire sau oglindire), fără suprapunere; cine nu mai poate pune nicio piesă pierde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: piesă+orientare@colț (ex. q1@c3). Nu e puzzle-ul cu siluete.
+- Exemple legale la început: `a1@a1`, `a1@b1`
+- La început sunt 401 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zipzapzop"></a>
+## Zip Zap Zop
+
+- **Id:** `zipzapzop`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play zipzapzop` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de numărat: numărați pe rând de la 1 la 30; spuneți zip la multiplii de 3, zap la multiplii de 5, zop la multiplii de 15.
+- Un cuvânt greșit pierde.
+- Fiecare are 2 pas-uri (numărul rămâne adversarului).
+- Câștigă cine spune corect 30.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: numărul, zip, zap, zop, pas.
+- Exemple legale la început: `1`, `zip`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="wouldyourather"></a>
+## Ai prefera…
+
+- **Id:** `wouldyourather`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play wouldyourather` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Șase dileme.
+- La fiecare, fiecare alege în secret răspunsul propriu (a sau b) și ghicește răspunsul celuilalt: mutări aa, ab, ba, bb (prima literă = răspunsul tău, a doua = ghicitul tău), apoi arat.
+- Fiecare ghicit corect = 1 punct; mai multe puncte câștigă.
+- Alegeri ascunse.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `aa`, `ab`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chinesewhispers"></a>
+## Telefonul fără fir
+
+- **Id:** `chinesewhispers`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play chinesewhispers` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Versiune în duel pentru doi: trimițătorul vede un mesaj de 4 cifre și îl lasă (las) sau strică o cifră cu ±1 (strica 2+).
+- Receptorul vede mesajul ajuns și suma de control (suma cifrelor originale mod 10) și arată cifra stricată (restaur 1–4) sau zice restaur 0.
+- Restaurarea corectă aduce punct receptorului, altfel trimițătorului. 6 runde, rolurile alternează.
+- Originalul e ascuns.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `las`, `strica`
+- La început sunt 17 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="namethattune"></a>
+## Ghicește melodia
+
+- **Id:** `namethattune`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play namethattune` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Șase melodii din domeniul public date ca nume de note.
+- Licitezi de câte note ai nevoie (ofer N); adversarul coboară oferta sau cere dovada (ghicesc).
+- Cel mai mic licitator aude doar N note și alege titlul dintre 4 variante (o1–o4), apoi arat.
+- Corect: +1 pentru el, greșit: +1 pentru celălalt.
+- Mai multe puncte câștigă.
+- Titlul corect rămâne ascuns până la arat.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `ofer`, `1`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="babaoarba"></a>
+## Baba-oarba
+
+- **Id:** `babaoarba`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play babaoarba` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel asimetric pe tablă 7×7: J1 e baba cu ochii legați, J2 fugarul.
+- Baba mută (n, s, e, v, ne…, sta) sau încearcă să prindă o căsuță vecină (prind c4, apoi arat).
+- După fiecare rundă aude un indiciu: cald (fugarul e la cel mult 2 căsuțe) sau rece.
+- Fugarul face un pas.
+- Baba câștigă prinzând fugarul; fugarul câștigă rezistând 30 de runde.
+- Poziția fugarului e ascunsă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `sta`, `prind`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="capturetheflag"></a>
+## Capture the Flag
+
+- **Id:** `capturetheflag`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play capturetheflag` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 9×7, jumătate de teritoriu fiecare (coloana e e neutră).
+- Câte 3 alergători; un pas ortogonal pe mutare (b2-b3).
+- Un alergător care intră în teritoriul inamic lângă un apărător, sau un intrus lângă piesa ta în teritoriul tău, e atins și stă 3 mutări în închisoare.
+- Ajungi la steagul inamic și îl aduci în teritoriul tău ca să câștigi; purtătorul atins pierde steagul. 160 de mutări: remiză.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `b2-c2`, `b2-a2`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="shut_box"></a>
+## Închide cutia (Shut the Box)
+
+- **Id:** `shut_box`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play shut_box` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Plăcuțe 1–9; arunci (arunc) două zaruri (unul, dacă 7–9 sunt închise) și închizi plăcuțe cu suma egală (inchid 1+2+6).
+- Când nu mai poți, tura se încheie cu suma plăcuțelor deschise.
+- Cutie închisă = victorie pe loc; 5 runde, cel mai mic total câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chuck"></a>
+## Zarul norocos (Chuck-a-luck)
+
+- **Id:** `chuck`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chuck` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Alegi un număr 1–6 și miza 5/10/20 (pariez 3 10), apoi arunci trei zaruri (arunc): fiecare zar egal cu numărul tău plătește miza 1:1, altfel pierzi miza. 12 ture fiecare, 100 de jetoane; câștigă cine are mai multe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `pariez`, `1`
+- La început sunt 54 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bar_dice"></a>
+## Zaruri de bar (Bar dice)
+
+- **Id:** `bar_dice`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bar_dice` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cinci zaruri, cel mult 3 aruncări (arunc); după fiecare păstrezi cel puțin un zar (tin 6 5).
+- Ai nevoie de Vas (6), Căpitan (5) și Echipaj (4); celelalte două zaruri sunt încărcătura (suma lor, 2–12), altfel 0.
+- Încărcătura mai mare ia runda; primul la 4 runde (sau cele mai multe din 9).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cosmic"></a>
+## Zaruri cosmice (după Cosmic Wimpout)
+
+- **Id:** `cosmic`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cosmic` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cinci zaruri cu fețele 2, 3, 4, 5, 10 și Soare (S, joker în triplete).
+- Arunci (arunc), păstrezi zarurile care punctează integral (tin 10 5): 10 = 100, 5 = 50, trei la fel = 100 × fața (trei de 10 = 1000).
+- Apoi continui sau banca; fără zaruri care punctează pierzi punctele turei.
+- Primul la 2000.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tombola"></a>
+## Tombola (Italia)
+
+- **Id:** `tombola`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tombola` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare alege 1–3 cartele de 3×9 (cartele 2, câte 1 punct); numerele din 1–90 se extrag (extrag) și se bifează automat.
+- Primul rând cu 2/3/4/5 numere ia ambo (2), terno (3), quaterna (4), cinquina (6); tombola (cartelă completă) ia 15 și încheie jocul.
+- Mai multe puncte câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `cartele`, `1`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pachinko"></a>
+## Pachinko (Japonia)
+
+- **Id:** `pachinko`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pachinko` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 20 de bile fiecare.
+- Lansezi o bilă din coloana 1–9 (lansez 5), apoi cade: coboară prin 8 rânduri de cuie și ajunge într-un buzunar (plătește 3 2 1 2 6 2 1 2 3 bile).
+- Coloanele impare ajung doar în buzunare impare, cele pare în buzunare pare. 15 lansări fiecare; mai multe bile câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `lansez`, `1`
+- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fan_tan"></a>
+## Fan-Tan (China)
+
+- **Id:** `fan_tan`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fan_tan` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Banca acoperă un morman de mărgele; pariezi pe «fan» 1–4 (restul la 4, 0 = 4) cu miza 5/10/20 (pun 3 10), apoi descopar.
+- Pariul ghicit plătește 3:1 minus 5% comision, altfel pierzi miza. 10 runde, 100 de jetoane; câștigă cine are mai multe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `pun`, `1`
+- La început sunt 36 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hanoi"></a>
+## Turnurile din Hanoi (Tower of Hanoi)
+
+- **Id:** `hanoi`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hanoi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă: fiecare are propriul turn cu 5 discuri pe tija a și îl mută pe tija c (a-c = discul de sus de pe a trece pe c), niciodată un disc mare peste unul mic.
+- Mutați pe rând; câștigă cine termină cu mai puține mutări (minim 31; egal = remiză).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `a-b`, `a-c`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pingpong"></a>
+## Tenis de masă (Ping-pong)
+
+- **Id:** `pingpong`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pingpong` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Un set la 11 (diferență 2).
+- Cine lovește alege zona (st, ct, dr) și forța (sigur, atac, smash): ct-atac; apoi schimb rezolvă lovitura.
+- Forța mare = mai multe mingi ratate, dar mai greu de returnat; adversarul pierde 25% pentru fiecare zonă dintre poziția lui și minge.
+- Serviciul trece la 2 puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `st-sigur`, `st-atac`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hounds"></a>
+## Hounds and Jackals (58 de găuri)
+
+- **Id:** `hounds`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hounds` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Reconstrucție modernă (regulile originale s-au pierdut). 5 piese pe jucător; 4 bețe dau 1–5 (arunc).
+- Intri pe gaura 1 doar cu 1 (intra) și arunci iar.
+- Piesa înaintează (p12); scurtături 6→20, 8→10, 20→6, 10→8; nu sari peste piesă proprie de pe 10/15/20/25.
+- Gaura 30 exact; ieși (iese) cu 1 sau 5 după ce toate au intrat.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ataxx"></a>
+## Ataxx (7×7)
+
+- **Id:** `ataxx`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ataxx` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Două piese în colțuri opuse.
+- La mutare clonezi o piesă pe o groapă liberă la distanță 1 (a1-b2) sau o sari la distanță 2 (a1-c3); toate piesele adverse vecine cu destinația devin ale tale.
+- Fără mutări: pas.
+- Câștigă cine are mai multe piese când tabla se umple sau nimeni nu mai poate muta.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `a1-b1`, `a1-c1`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="shatranj"></a>
+## Shatranj (Persia)
+
+- **Id:** `shatranj`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play shatranj` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Strămoșul șahului: ferz (un pas pe diagonală), alfil (sare exact 2 pe diagonală), cal, turn, rege; pionul avansează cu un pas și se promovează în ferz; fără rocadă.
+- Câștigi prin mat, pat sau rege gol (cu excepția contra-capturii).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: e2e3, b1c3.
+- Exemple legale la început: `b1c3`, `b1a3`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="shashki"></a>
+## Dame rusești (Shashki)
+
+- **Id:** `shashki`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play shashki` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 8×8: piesele simple mută înainte, dar captură și înapoi; dama zboară pe diagonală și capturează de la distanță.
+- Captura e obligatorie, salturile continuă; piesa care atinge ultimul rând în captură devine damă și continuă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: c3-d4, c3xe5xg7. Pierde cine nu mai poate muta.
+- Exemple legale la început: `a3-b4`, `c3-d4`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="o_an_quan"></a>
+## Ô ăn quan (Vietnam)
+
+- **Id:** `o_an_quan`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play o_an_quan` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Inel de 12 gropi: 5 mici pe latură (5 pietre) și două quan cu mandarin (10 puncte).
+- Alegi o groapă proprie și sensul (3+ = orar, 3- = antiorar), semeni pietrele; următoarea plină se ia și se continuă; după o groapă goală, groapa plină următoare se capturează.
+- Rândul gol: pune5.
+- Câștigă cine adună mai multe puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `1+`, `1-`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hypergammon"></a>
+## Hypergammon
+
+- **Id:** `hypergammon`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hypergammon` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Table cu doar trei piese pe jucător, câte una pe punctele 24, 23 și 22; restul regulilor ca la table: lovire, bară, bear-off, dubla se joacă de patru ori.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 24/20, bar/22, 3/off. Primul care scoate cele 3 piese câștigă.
+- Exemple legale la început: `22/17`, `23/18`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="jacquet"></a>
+## Jacquet (Franța)
+
+- **Id:** `jacquet`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play jacquet` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 15 piese pe jucător plecând din punctul 1 în colțuri opuse, ambii mută în același sens pe 24 de puncte; fără lovire, un punct ocupat de adversar e blocat.
+- Prima piesă mutată (poștașul) trebuie să ajungă în ultimul sfert înainte să se miște altele.
+- Zaruri automate, dubla de patru ori.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 1>5, 22>off. Primul care scoate toate piesele câștigă.
+- Exemple legale la început: `1>6`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="moultezim"></a>
+## Moultezim (Grecia / Turcia)
+
+- **Id:** `moultezim`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play moultezim` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă de table fără lovire: 15 piese pe jucător pornesc din colțuri opuse și merg în același sens pe 24 de puncte; un punct ocupat de adversar e blocat.
+- O piesă trebuie dusă dincolo de punctul de plecare al adversarului (13) înainte de a muta a doua.
+- Bear-off doar din ultimul sfert.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 1>5, 22>off. Primul care scoate toate piesele câștigă.
+- Exemple legale la început: `1>6`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chu_shogi"></a>
+## Chu Shogi (12×12)
+
+- **Id:** `chu_shogi`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chu_shogi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Șahul japonez mare pe tablă 12×12 cu 46 de piese pe parte (Leu, Regină, Tigru, Elefant ebriu, Căpcăun etc.).
+- Mutări scrise ca traseu: g6-g7, leul poate face doi pași (g6-g7-g8), iar `+` promovează la intrarea în zona adversă.
+- Captura prințului sau a regelui câștigă (versiune simplificată, fără regula de repetare).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `b1-b2`, `c1-d2`
+- La început sunt 31 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chowka_bara"></a>
+## Chowka Bara
+
+- **Id:** `chowka_bara`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chowka_bara` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de cursă indian pe tablă 5×5 cu patru piese pe jucător și patru scoici ca zaruri (4 și 8 dau o tură în plus).
+- O piesă intră în joc doar cu 4 sau 8; piesele fac un tur pe marginea tablei, apoi intră în spirala interioară până la centru.
+- Capturezi piese adverse pe pătratele neprotejate; câștigă cine aduce toate piesele în centru.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="uckers"></a>
+## Uckers
+
+- **Id:** `uckers`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play uckers` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Ludo marinăresc britanic: patru piese pe jucător, un singur zar, piesele ies doar cu 6 și fac un tur de 48 de pătrate, apoi urcă pe coloana de casă.
+- Două piese proprii pe același pătrat formează un bloc (spate-în-spate) care nu poate fi capturat.
+- Un 6 sau o captură dă o aruncare în plus; câștigă cine ajunge primul cu toate piesele acasă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `intră`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mau_mau"></a>
+## Mau-Mau
+
+- **Id:** `mau_mau`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mau_mau` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc german de eliminare a cărților cu pachet de 32: 5 cărți fiecare; pui o carte de aceeași culoare sau valoare cu cea de deasupra. 7 = adversarul trage 2 (se pot însuma), 8 = adversarul sare, valetul = joker (alegi culoarea).
+- Cine rămâne fără cărți ia punctele cărților adversarului; primul la 60 câștigă.
+- Mâna adversarului este ascunsă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `Jh:h`, `Jh:d`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="muggins"></a>
+## Muggins (All Fives)
+
+- **Id:** `muggins`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play muggins` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Domino cu punctaj la capete: pui o piesă la un capăt al șirului (`3-4:S` sau `:D`); dacă suma capetelor deschise e multiplu de 5 marchezi acea sumă.
+- Dacă nu ai piesă potrivită tragi (`pesc`) sau pasezi.
+- Cine rămâne fără piese ia în plus punctele adversarului rotunjite la 5; primul la 61 câștigă.
+- Piesele adversarului sunt ascunse.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `6-6`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="schafkopf"></a>
+## Schafkopf (2 jucători)
+
+- **Id:** `schafkopf`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play schafkopf` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc bavarez de levate cu 32 de cărți, adaptat pentru doi: 8 cărți fiecare (restul nu se joacă).
+- Licitezi un contract (`licit wenz` sau `licit solo-c`): atuul este format din Obere (Q), Untere (J) și culoarea aleasă; la wenz doar valeții.
+- A 11, 10 = 10, K 4, Q 3, J 2; declarantul are nevoie de 61 din 120 de puncte.
+- Meci de 6 mâini; mâna adversarului este ascunsă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `licit`, `wenz`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="preferans"></a>
+## Preferans (2 jucători)
+
+- **Id:** `preferans`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play preferans` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc rusesc de levate cu 32 de cărți, adaptat pentru doi: 10 cărți fiecare și un talon de 2.
+- Licitezi numărul de levate și atuul (`licit 6h`, `licit 7nt`; ordinea s < c < d < h < fără atu).
+- Declarantul ia talonul (`talon`), aruncă 2 cărți (`pune 7h 8c`) și joacă; trebuie să răspunzi la culoare, iar fără culoare tai cu atu.
+- Reușit = +2·(nivel−5), ratat = minus pe fiecare levată lipsă. 6 mâini; mâna adversarului este ascunsă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `licit`, `7s`
+- La început sunt 41 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ulti"></a>
+## Ulti (2 jucători)
+
+- **Id:** `ulti`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play ulti` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc maghiar de levate cu 32 de cărți, adaptat pentru doi: 10 cărți fiecare și un talon de 2.
+- Contracte: `licit parti-h` (cel puțin 46 de puncte, atuul cupă) sau `licit ulti-h` (parti plus ultima levată câștigată cu 7 de atu).
+- Aș și 10 valorează 10, ultima levată 10 (90 în total).
+- Parti: ±1; ulti anunțat: ±4 în plus. 6 mâini; mâna adversarului este ascunsă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `licit`, `parti-c`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="brag"></a>
+## Three Card Brag
+
+- **Id:** `brag`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play brag` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pocher englezesc cu 3 cărți pentru doi: ante 1 fisă, 3 cărți ascunse fiecare.
+- Ierarhie: trio (A-A-A cel mai mare), culoare-secvență, secvență, culoare, pereche, carte mare.
+- La rând: `ridic` (miza +1, până la 5), `vad` (egalezi și arăți cărțile; la egalitate pierde cine cere arătarea) sau `fold`. 10 mâini cu 30 de fise; mâna adversarului este ascunsă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `ridic`, `vad`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="crossword"></a>
+## Cuvinte încrucișate
+
+- **Id:** `crossword`
+- **Categorie:** Cuvinte
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play crossword` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel pe un careu generat la fiecare partidă (6–9 cuvinte românești care se încrucișează).
+- Alegi un cuvânt și propui soluția: `3o:casa` (număr, o = orizontal / v = vertical).
+- Corect = puncte egale cu lungimea și rămâi la rând; greșit = −1 și rândul trece.
+- La final câștigă scorul mai mare.
+- Definițiile și categoria sunt vizibile; litere se dezvăluie la încrucișări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `1v:veverita`, `1v:crocodil`
+- La început sunt 121 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="perquackey"></a>
+## Perquackey
+
+- **Id:** `perquackey`
+- **Categorie:** Cuvinte
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play perquackey` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de cuvinte cu 15 zaruri-litere, pe ture pentru doi.
+- Zarurile se aruncă la începutul fiecărei runde (`arunc`); apoi pe rând propui un cuvânt de cel puțin 3 litere format din zaruri (`cuv casa`, fiecare zar o dată, un cuvânt doar o dată pe rundă) sau `pas`.
+- Două `pas` la rând încheie runda.
+- Punctaj: lungimea minus 2. 3 runde; scorul mai mare câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ligretto"></a>
+## Ligretto
+
+- **Id:** `ligretto`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ligretto` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Jocul de cărți rapid, pe ture pentru doi.
+- Fiecare are o stivă Ligretto de 10 cărți, 3 rânduri și o mână de 27; pe masă se construiesc grămezi ascendente pe culoare de la 1 la 10.
+- Tura: câte mutări vrei (`l-c2`, `w-r1`, `r2-c1`, `l-cn` pentru un 1 nou), apoi `da` întoarce 3 cărți din mână.
+- Pe rânduri pui cu 1 mai mic și altă culoare.
+- Câștigă cine golește Ligretto; altfel punctele (cărți puse − 2× cărți rămase).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `da`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="truth_dare"></a>
+## Truth or Dare (Adevăr sau provocare)
+
+- **Id:** `truth_dare`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play truth_dare` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de petrecere pentru doi, familial.
+- În 12 ture, jucătorul la rând alege `adevar` sau `provocare` (sau `refuz`, −1 punct); jocul arată întrebarea sau provocarea, el o execută, iar celălalt este judecător: `ok` (performer +1 la adevăr / +2 la provocare, judecător +1) sau `nu` (performer −1).
+- Scorul mai mare câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `adevar`, `provocare`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sticla"></a>
+## Sticla (Spin the bottle)
+
+- **Id:** `sticla`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sticla` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de petrecere familial cu sticla învârtită.
+- Șase locuri în cerc (J1: 1, 3, 5;
+- J2: 2, 4, 6).
+- Învârtitorul rotește sticla (`invart`), apoi alege dificultatea probei `nivel 1`, `nivel 2` sau `nivel 3`; proprietarul locului arătat spune `fac` sau `refuz` (−1).
+- Cine încearcă reușește cu 90% / 60% / 30% și primește atâtea puncte cât nivelul, altfel −1 (`incerc`). 8 ture; scorul mai mare câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `invart`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sardines"></a>
+## Sardines
+
+- **Id:** `sardines`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sardines` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Ascunsul inversat, două runde cu roluri schimbate, într-o casă cu 9 camere (grilă 3×3).
+- Ascunsul alege în secret camera (`ascund N`); căutătorul pornește din camera 1 și face câte un pas (`ir N`), apoi `asculta` arată dacă l-a găsit sau un indiciu public (respirații aproape / liniște).
+- Camerele încă posibile sunt marcate cu «?».
+- Ascunsul poate sta (`sta`) sau se poate muta (`ma N`).
+- Ascunsul primește atâtea puncte câți pași a făcut căutătorul (13 dacă nu e găsit în 10).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `ascund`, `2`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scaune_muzicale"></a>
+## Scaunele muzicale
+
+- **Id:** `scaune_muzicale`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play scaune_muzicale` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Doi dansatori pe un cerc de 8 locuri, cu un singur scaun marcat # în fiecare rundă.
+- Pe rând faci un pas de 1, 2 sau 3 locuri (`pas1`, `pas2`, `pas3`; nu aterizezi pe adversar, nu poți sta pe loc).
+- După fiecare mutare `asculta` poate opri muzica (1 șansă din 5): cine stă atunci pe scaun ia punctul rundei.
+- Primul la 3 puncte câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `pas1`, `pas2`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mikado"></a>
+## Mikado (Pick-up sticks)
+
+- **Id:** `mikado`
+- **Categorie:** Familie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mikado` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Un morman de 21 de bețișoare (Mikado 20, Mandarini 10, Bonzi 5, Samurai 3, Kuli 2).
+- Ridici bețișorul `ia N`: dacă nu are altele deasupra reușești sigur și continui; dacă este acoperit riști (`incerc`: șanse 50% pentru un bețișor acoperit, 25% pentru două …), iar la eșec pierzi rândul. `pas` încheie rândul după ce ai ridicat ceva.
+- Când mormanul e gol câștigă cine are mai multe puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `ia`, `1`
+- La început sunt 42 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="kick_can"></a>
+## Kick the Can
+
+- **Id:** `kick_can`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play kick_can` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de ascuns și prins pe un teren 7×7.
+- J1 este Căutătorul (S), J2 conduce trei ascunși (1–3); cutia O stă în centru (d4).
+- Fiecare face două pași pe tură în 8 direcții (`ne`, `s`…; ascunșii `h2 ne`).
+- Căutătorul prinde un ascuns călcând pe el; un ascuns liber care pășește pe cutie îi eliberează pe toți prinșii.
+- Căutătorul câștigă când toți 3 sunt prinși; ascunșii câștigă dacă rezistă 20 de ture.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `n`, `ne`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mingea"></a>
+## Mingea (Dodgeball)
+
+- **Id:** `mingea`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mingea` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Două echipe de câte 4 jucători pe 7 coloane.
+- Pe rând muți un jucător într-o coloană vecină liberă (`3>4`) sau arunci spre o coloană adversă (`arunc 4`).
+- Mingea nu cade exact unde ai țintit: `zbor` hotărăște la întâmplare coloana (50% ținta, 20% fiecare vecină, 5% la două coloane).
+- Cine e în coloana de aterizare iese.
+- Câștigă echipa care rămâne cu jucători.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `2>1`, `3>4`
+- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="kalah"></a>
+## Kalah
+
+- **Id:** `kalah`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play kalah` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Kalah 6×4: semănat antiorar (sari peste magazia adversarului); ultima sămânță în magazia ta = mutare în plus; într-o groapă proprie goală cu opusa nevidă capturezi opusa.
+- Când o parte rămâne goală, restul merge în magazia celeilalte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 1–6 (gropile tale).
+- Exemple legale la început: `1`, `2`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="foxgeese"></a>
+## Vulpea și gâștele (Fox and Geese)
+
+- **Id:** `foxgeese`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play foxgeese` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă în cruce cu 33 de găuri.
+- J1 = vulpea (d4), J2 = 13 gâște.
+- Vulpea mută ortogonal sau sare peste o gâscă (d4xd6xf6); gâștele mută doar înainte/lateral.
+- Gâștele câștigă blocând vulpea; vulpea câștigă dacă rămân sub 6 gâște.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d4-d5, d4xd6.
+- Exemple legale la început: `d4-e4`, `d4-c4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="alquerque"></a>
+## Alquerque
+
+- **Id:** `alquerque`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play alquerque` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 5×5 cu diagonale prin punctele pare, 12 piese pe jucător.
+- Pas pe o linie; captura (salt peste o piesă adversă pe loc liber) e obligatorie și se înlănțuie.
+- Câștigă cine captează toate piesele sau blochează adversarul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: b3-c3, a3xc3xe3.
+- Exemple legale la început: `b2-c3`, `c2-c3`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="jungle"></a>
+## Jungle (Dou Shou Qi)
+
+- **Id:** `jungle`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play jungle` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 7×9, 8 animale pe jucător (șobolan 1 … elefant 8).
+- Pas ortogonal; capturezi rang egal sau mai mic (șobolanul poate lua elefantul); doar șobolanul intră în apă; leul și tigrul sar lacul; în capcana adversă rangul e 0.
+- Câștigi intrând în bârlogul adversarului sau capturând tot.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a1-a2, c3xc4.
+- Exemple legale la început: `a1-b1`, `a1-a2`
+- La început sunt 24 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chaturanga"></a>
+## Chaturanga (India)
+
+- **Id:** `chaturanga`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chaturanga` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Strămoșul șahului: raja, mantri (pas diagonal), gaja (sare 2 pe diagonală), ashva (cal), ratha (car), padati (pion, promovează în mantri).
+- Fără rocadă și pas dublu.
+- Mat = pierdere, pat = remiză, raja rămas singur = pierdere.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: e2e3, c1e3.
+- Exemple legale la început: `b1c3`, `b1a3`
+- La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="camelot"></a>
+## Camelot
+
+- **Id:** `camelot`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play camelot` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 160 de pătrate cu castele. 10 pioni + 4 cavaleri.
+- Pas în 8 direcții, canter (sari peste o piesă proprie), salt (capturezi, obligatoriu); cavalerul poate încărca (canter + salturi).
+- Câștigi cu două piese în castelul adversarului sau prin capturare/blocare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d6-d7, e7xe9, f6-f8xf10.
+- Exemple legale la început: `c6-b5`, `c6-c5`
+- La început sunt 112 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fotbalmasa"></a>
+## Fotbal de masă pe ture (Table football)
+
+- **Id:** `fotbalmasa`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fotbalmasa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 8 bare, fiecare acoperă 2 din 5 culoare.
+- O tură = muți o bară (atac 3) sau, cu mingea, trimiți pe un culoar acoperit de bara ta (trimit 2): mingea se oprește la prima bară care acoperă culoarul (pasă sau interceptare); gol dacă trece pe culoarele 2–4.
+- Primul la 5.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `portar`, `1`
+- La început sunt 28 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tiddlywinks"></a>
+## Tiddlywinks (pe ture)
+
+- **Id:** `tiddlywinks`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tiddlywinks` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Masă 11×7, 4 winks pe jucător, găleata în f4.
+- Muți un wink liber cu până la 3 câmpuri (c4-d4); aterizarea pe un wink îl acoperă (îl blochează), în găleată îl scoate (3 puncte).
+- Scor: 3 × potted + winks adverse acoperite.
+- Se termină când cineva nu mai are winks libere sau după 80 de mutări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `a2-a1`, `a2-b1`
+- La început sunt 92 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="joc15"></a>
+## Jocul de 15 (cursă)
+
+- **Id:** `joc15`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play joc15` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare jucător are propria tablă 4×4, amestecată identic.
+- Pe rând, mutați o piesă lângă locul gol pe tabla voastră (ex. 7); câștigă primul care aduce piesele în ordinea 1–15.
+- După 300 de mutări câștigă cel mai apropiat de ordine.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `6`, `15`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sudoku"></a>
+## Sudoku duel
+
+- **Id:** `sudoku`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sudoku` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Grilă cu soluție unică.
+- Pe rând alegeți celulă și cifră fără conflict (r3c4=5): corect = +1 (+2 pentru fiecare rând/coloană/pătrat completat), greșit = −1 și cifra se elimină din acea celulă.
+- Câștigă cine are mai multe puncte când grila e plină.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `r1c1=4`, `r1c1=6`
+- La început sunt 136 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="biliard"></a>
+## Biliard francez (carambol)
+
+- **Id:** `biliard`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play biliard` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 3 bile, masă fără buzunare.
+- Lovești bila ta (albă J1, galbenă J2) cu unghi și forță (u45f2 = 45°, forța 2); dacă atinge ambele bile marchezi și mai joci.
+- Primul la 10 puncte; fizică deterministă fără efect.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `u0f1`, `u0f2`
+- La început sunt 540 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tavli"></a>
+## Tavli (Portes, Plakoto, Fevga)
+
+- **Id:** `tavli`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tavli` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tabla greacă: J1 alege varianta (portes, plakoto sau fevga).
+- Portes = backgammon cu lovire, Plakoto = imobilizezi piesa adversă singură, Fevga = ambii în același sens, fără lovire și cu regula zidului.
+- Zaruri automate; 15 piese; scoți piesele când toate sunt acasă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 24/18, bar/20, 6/off.
+- Exemple legale la început: `portes`, `plakoto`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="gulbara"></a>
+## Gul bara (Golful Persic)
+
+- **Id:** `gulbara`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play gulbara` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă de table fără lovituri: 15 piese pe jucător, colțuri opuse, același sens de mers; un punct ocupat de adversar e blocat.
+- Dublurile dau 4 mutări (apoi 4 cu fiecare număr până la 6, după primele 3 aruncări).
+- Scoți piesele când toate sunt acasă; primul care termină câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 24/18, 6/off.
+- Exemple legale la început: `24/19`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chinchirorin"></a>
+## Chinchirorin (zaruri în bol)
+
+- **Id:** `chinchirorin`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chinchirorin` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Trei zaruri; oya (banca) și ko alternează.
+- Ko pariază 1–3 (pariez 2), apoi se aruncă (arunc, până la 3 încercări): Pinzoro 1-1-1 = 5×, Arashi (triplet) 3×, Shigoro 4-5-6 2×, punct = zarul singur dintr-o pereche; 1-2-3 pierde 2×. 12 runde sau până la faliment.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="shipcrew"></a>
+## Ship, Captain and Crew
+
+- **Id:** `shipcrew`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play shipcrew` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 5 zaruri, 3 aruncări pe tură: ai nevoie, în ordine, de 6 (ship), 5 (captain), 4 (crew); celelalte două zaruri sunt încărcătura (scorul turei).
+- După o aruncare reușită: pastrez sau rearunc. 5 ture pe jucător; câștigă suma cea mai mare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, pastrez, rearunc.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="beetle"></a>
+## Gândacul (Beetle)
+
+- **Id:** `beetle`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play beetle` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Arunci pe rând un zar: 1 corp, 2 cap, 3 picior (6), 4 antenă (2), 5 ochi (2), 6 coadă.
+- Corpul primul; capul, picioarele și coada cer corpul; antenele și ochii cer capul.
+- Primul gândac complet (13 piese) câștigă.
+- Mutare: arunc.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="kismet"></a>
+## Zaruri colorate (Kismet)
+
+- **Id:** `kismet`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play kismet` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 15 ture; până la 3 aruncări cu 5 zaruri (tine 3 3 5), apoi scor într-o categorie: unu…sase (bonus 35/55/75), 2perechi (aceeași culoare), 3la-fel, scara (30), culoare (35), casa (+15), casa-culoare (+20), 4la-fel (+25), sansa, kismet (+50).
+- Zaruri impare = roșii, pare = albastre.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="deadmansdice"></a>
+## Dead Man's Dice (zarurile piratului)
+
+- **Id:** `deadmansdice`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play deadmansdice` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare are 2 zaruri și zarul Jolly Roger.
+- Aruncate, zarurile se așază într-o grămadă dacă sunt egale cu cel de sus, cu 1 mai mari sau dau 7 împreună; jefuiești zarul de sus al adversarului dacă se potrivește.
+- Runda: suma grămezii (JR deasupra dublează, JR neasezat −7).
+- Primul la 100.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, arunc-jr, jefuiesc.
+- Exemple legale la început: `arunc`, `arunc-jr`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="snap"></a>
+## Snap
+
+- **Id:** `snap`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play snap` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pachet de 52 împărțit în două; pe rând întorci (intorc) câte o carte în mijloc.
+- Când ultimele două cărți au aceeași valoare, cine e la mutare poate striga snap și ia grămada; un snap fals costă o carte.
+- Cine rămâne fără cărți pierde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `intorc`, `snap`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="simon"></a>
+## Simon zice
+
+- **Id:** `simon`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play simon` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Simon dă o poruncă (simon-zice sari sau ordin sari); celălalt o execută (execut sari) doar dacă a zis „Simon zice”, altfel stă (stau).
+- Răspuns corect = punct pentru cel care ascultă, greșit = punct pentru Simon. 12 runde, rolurile alternează.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `simon-zice`, `sari`
+- La început sunt 24 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="settemezzo"></a>
+## Sette e mezzo (șapte și jumătate)
+
+- **Id:** `settemezzo`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play settemezzo` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pachet italian de 40 de cărți: figurile (8, 9, 10) valorează ½, restul valoarea lor.
+- Te apropii de 7½ fără să treci.
+- Prima carte e ascunsă; carta = tragi, stau = rămâi.
+- Ko pariază 1–3, banca câștigă la egalitate; 7½ natural (două cărți) plătește dublu. 12 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `carta`, `stau`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="baccarat"></a>
+## Baccarat (Punto Banco)
+
+- **Id:** `baccarat`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play baccarat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Punto Banco: parieți pe punto, banco (comision 5%) sau egal (8:1) cu 1–3 unități (punto 2); cărțile se trag după tabelul fix.
+- Totalul = suma mod 10; 8–9 = natural. 20 de coupe; cine are mai multe jetoane câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: punto N, banco N, egal N, impart.
+- Exemple legale la început: `punto`, `1`
+- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hangman"></a>
+## Spânzurătoarea (Hangman)
+
+- **Id:** `hangman`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play hangman` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cine pune alege în secret un cuvânt din listă (cuvant casa); celălalt ghicește litere (litera a) sau cuvântul (ghicesc casa). 7 greșeli = pierdută.
+- Reușită = 1 + (7 − greșeli) puncte.
+- Două runde cu roluri inversate; cine are mai multe puncte câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `cuvant`, `casa`
+- La început sunt 120 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="douazeci"></a>
+## Douăzeci de întrebări
+
+- **Id:** `douazeci`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play douazeci` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cine gândește alege un obiect din listă (obiect caine); celălalt pune întrebări da/nu numerotate (intreb 7) sau încearcă un răspuns (este caine); maxim 20 între întrebări și încercări.
+- Cost = câte folosește (eșec = 21).
+- Două runde cu roluri inversate; costul total mai mic câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `obiect`, `caine`
+- La început sunt 86 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ispy"></a>
+## Ghicește ce văd (I Spy)
+
+- **Id:** `ispy`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play ispy` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cine vede alege un obiect din cameră (vad masa) și spune litera lui; celălalt ghicește (este masa) sau cere indicii (indiciu culoare / loc / marime).
+- Maxim 6 încercări (eșec = 7).
+- Două runde cu roluri inversate; costul total mai mic câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `vad`, `lampa`
+- La început sunt 72 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="comori"></a>
+## Vânătoarea de comori
+
+- **Id:** `comori`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play comori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pe o grilă 8×8, cine ascunde alege celula (ascund d5); celălalt sapă (sap c3) și primește indiciul cald/rece după distanța Manhattan. 12 săpături (eșec = 13).
+- Două runde cu roluri inversate; costul total mai mic câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `ascund`, `a1`
+- La început sunt 128 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mima"></a>
+## Mima (Charades)
+
+- **Id:** `mima`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mima` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Adaptare fără mimă fizică: cine mimează alege un cuvânt (mimez delfin) și dă indicii pe rând (gest categorie / silabe / prima-litera / ultima-litera / lungime); celălalt ghicește (ghicesc delfin) sau cere mai-multe.
+- Cost = indicii + greșeli (eșec = 8).
+- Două runde; costul mai mic câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `mimez`, `elefant`
+- La început sunt 64 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="crima"></a>
+## Crima cu ochiade (Wink Murder)
+
+- **Id:** `crima`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play crima` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Zece suspecți în cerc.
+- J1 = ucigașul (sunt 4), face cu ochiul și un suspect moare (clipesc 7);
+- J2 = detectivul primește un martor (4 suspecți, unul e ucigașul) și acuză (acuz 3) sau așteaptă (astept).
+- Acuzație corectă = detectivul câștigă; 3 greșeli sau 2 suspecți rămași = ucigașul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `sunt`, `1`
+- La început sunt 20 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sheepshead"></a>
+## Sheepshead
+
+- **Id:** `sheepshead`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sheepshead` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Levate cu 32 de cărți și atuuri fixe (Q, J, caro); adaptare pentru doi, cu blind și cărți îngropate.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: iau, pas, ingrop 7c, apoi cartea jucată (ex. Qc).
+- Exemple legale la început: `iau`, `pas`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tysiac"></a>
+## Tysiąc
+
+- **Id:** `tysiac`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play tysiac` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tysiąc (o mie) pentru doi: licitație 100–300, hlášky/mariaje și două musiks; primul la 1000 sau 6 mâini.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: licitez 110, pas, musik 1, las 9h, apoi cartea (ex. Ah) sau Kh marjas.
+- Exemple legale la început: `licitez`, `100`
+- La început sunt 43 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mariash"></a>
+## Mariáš
+
+- **Id:** `mariash`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mariash` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Mariáš ceh pentru doi: forhont, talon de două cărți, atu, hlášky 20/40, ultima levată +10; 6 mâini.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: las 7g (două cărți), atu inimi, apoi cartea (ex. Ag) sau Kg hlaska.
+- Exemple legale la început: `las`, `Ai`
+- La început sunt 24 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="texas42"></a>
+## Texas 42
+
+- **Id:** `texas42`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play texas42` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Levate cu domino pentru doi: licitație 30–42, atu, 42 de puncte; primul la 4 semne.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: licitez 32, pas, atu 5, apoi piesa (ex. 6-4).
+- Exemple legale la început: `licitez`, `40`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pit"></a>
+## Pit
+
+- **Id:** `pit`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pit` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Schimburi ascunse de cărți între doi jucători; corner = toate cele 6 cărți ale unei mărfi.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ofer grau 2, dau ovaz, schimb.
+- Exemple legale la început: `ofer`, `grau`
+- La început sunt 24 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mahjong_am"></a>
+## American Mah Jongg
+
+- **Id:** `mahjong_am`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mahjong_am` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Mah jongg simplificat pentru doi: 152 de piese cu jokeri, pung-uri expuse, 4 seturi + pereche sau șapte perechi.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc 5k, pung, pas, mahjong.
+- Exemple legale la început: `arunc`, `5k`
+- La început sunt 24 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="damas"></a>
+## Dame braziliene (Damas)
+
+- **Id:** `damas`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play damas` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Dame internaționale pe 8×8: piesele simple mută înainte și capturează în toate direcțiile, damele zboară, captura este obligatorie și trebuie să fie cea mai mare.
+- Remiză după 20 de mutări pe parte fără captură sau mutare de piesă simplă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: c3-d4, captură c3xe5xg7.
+- Exemple legale la început: `a3-b4`, `c3-b4`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="renju"></a>
+## Renju
+
+- **Id:** `renju`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play renju` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Gomoku pe 15×15 cu restricții pentru Negru (J1): linia lungă (6+), dublu-patru și dublu-trei deschis sunt interzise;
+- Negru câștigă cu exact cinci, Alb cu cinci sau mai multe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: h8 (coloane a–o, rânduri 1–15).
+- Exemple legale la început: `h8`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tablut"></a>
+## Tablut
+
+- **Id:** `tablut`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tablut` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Hnefatafl lapon pe 9×9: 16 atacatori (J1, primul) contra 8 apărători și un rege.
+- Toate piesele mută ca turnul; captură în clește; regele scapă pe orice pătrat de margine, atacatorii îl capturează pe patru laturi.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: e1-e3.
+- Exemple legale la început: `d1-d2`, `d1-d3`
+- La început sunt 80 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lasca"></a>
+## Lasca
+
+- **Id:** `lasca`
+- **Categorie:** Abstract
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play lasca` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Dama lui Emanuel Lasker pe 7×7: piesa capturată trece la baza coloanei tale, se ia doar piesa de deasupra; ofițerii mută și capturează în toate direcțiile; captura e obligatorie.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a1-b2, a1xc3xe5.
+- Exemple legale la început: `a3-b4`, `c3-b4`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ruleta"></a>
+## Ruletă (Roulette)
+
+- **Id:** `ruleta`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ruleta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Ruletă europeană (0–36) pentru doi: 100 de jetoane fiecare, 12 învârtiri, un singur pariu pe învârtire (5, 10 sau 20).
+- Număr plin 35:1, roșu/negru, par/impar, mic/mare 1:1, duzine și coloane 2:1.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: rosu 10, plin 17 5, duz2 20, invart.
+- Exemple legale la început: `plin`, `0`
+- La început sunt 405 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="marbles"></a>
+## Bile (par sau impar)
+
+- **Id:** `marbles`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play marbles` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc antic de ghicit: cel care ține ascunde 1–5 bile, celălalt ghicește par sau impar; ghicești bine = iei atâtea bile, rău = le dai. 10 bile fiecare, 12 runde, rolurile alternează.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ascund 3, par, impar, arat.
+- Exemple legale la început: `ascund`, `1`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mahjong_tw"></a>
+## Mahjong taiwanez
+
+- **Id:** `mahjong_tw`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mahjong_tw` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Mahjong taiwanez pentru doi: 144 de piese cu 8 flori, mâini de 16 piese, câștigi cu 5 seturi și o pereche; florile se înlocuiesc din zidul mort și valorează tai.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
+- Exemple legale la început: `trage`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="matador"></a>
+## Matador (domino)
+
+- **Id:** `matador`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play matador` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Domino în care jumătățile se pun cu suma 7 față de capăt (1+6, 2+5, 3+4); matadorii 0-0, 1-6, 2-5, 3-4 se pun oriunde. 7 piese fiecare, tragi dacă nu poți, câștigă cine termină primul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 6-1@s=1, trag, pas.
+- Exemple legale la început: `1-0`, `3-0`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bagatelle"></a>
+## Bagatelle
+
+- **Id:** `bagatelle`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bagatelle` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Masă înclinată cu cuie și 9 căsuțe: alegi culoarul de lansare (1–5) și puterea (1–3), apoi lași bila să curgă; loviturile tari merg mai drept, dar pot sări peste masă.
+- Nouă bile fiecare; câștigă cine are mai multe puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: tir 3 2, lansez.
+- Exemple legale la început: `tir`, `1`
+- La început sunt 45 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="latrunculi"></a>
+## Latrunculi
+
+- **Id:** `latrunculi`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play latrunculi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc roman de masă, reconstituire modernă pe 8×8: 16 piese fiecare, toate mută ca turnul, captură în clește de către piesa mutată; câștigi lăsând adversarul cu o piesă sau fără mutări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a2-a5.
+- Exemple legale la început: `a2-a3`, `a2-a4`
+- La început sunt 32 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="salta"></a>
+## Salta
+
+- **Id:** `salta`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play salta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Jocul lui Büttgenbach (1899) pe 10×10: fără capturi; duci toate cele 15 piese pe pătratele de start ale adversarului.
+- Pași diagonali (în orice direcție) sau salturi peste o piesă adversă înainte; săritura e obligatorie.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a1-b2, c3xe5.
+- Exemple legale la început: `a3-b4`, `c3-b4`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chaturaji"></a>
+## Chaturaji
+
+- **Id:** `chaturaji`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chaturaji` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Șahul indian cu patru armate, adaptat pentru doi (fiecare conduce două armate aliate).
+- Arunci două zaruri, fiecare joacă un tip de piesă: 1/5 pion sau rege, 2 barcă, 3 cal, 4/6 elefant.
+- Capturezi ambii regi adverși.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, a2a3, pas.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sjoelen"></a>
+## Sjoelen
+
+- **Id:** `sjoelen`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sjoelen` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Șuflecatul olandez: 30 de discuri, 3 runde, le împingi în patru porți numerotate (2, 3, 4, 1); doar discurile ratate se aruncă din nou.
+- Fiecare serie completă de patru porți valorează 20 de puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: stanga, centru, dreapta, atent, arunc.
+- Exemple legale la început: `stanga`, `centru`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="nonogram"></a>
+## Nonogram (Picross), duel
+
+- **Id:** `nonogram`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play nonogram` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Doi jucători rezolvă aceeași imagine ascunsă 8×8 după indiciile rândurilor și coloanelor: revendici o căsuță necunoscută ca plină (a1) sau goală (a1x); apoi verific o dezvăluie.
+- Corect +1, greșit −2.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a1, a1x, verific.
+- Exemple legale la început: `a1`, `a1x`
+- La început sunt 128 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="snooker"></a>
+## Snooker
+
+- **Id:** `snooker`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play snooker` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Snooker simplificat, o singură frame, cu fizică 2D a bilelor: bagi o roșie, apoi o culoare, alternativ; faulturile dau adversarului minimum 4.
+- Lovitură: bila:buzunar:forța, de ex. r4:ne:2 (buzunare sv, nv, se, ne, ms, mn; forța 1–3).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `r1:sv:1`, `r1:sv:2`
+- La început sunt 270 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scattergories"></a>
+## Scattergories
+
+- **Id:** `scattergories`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play scattergories` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de cuvinte pentru doi: 3 runde, fiecare cu o literă și 4 categorii (animal, mâncare, țară, obiect).
+- Amândoi aleg în secret un cuvânt din listă; cuvintele identice dau 0, cele unice 1–3 (cu cât mai rar, cu atât mai mult).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: caine, pas, arat.
+- Exemple legale la început: `albina`, `arici`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="nhie"></a>
+## Eu niciodată
+
+- **Id:** `nhie`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play nhie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de petrecere pentru doi, cu 5 degete fiecare și un profil ascuns de lucruri făcute.
+- Spui o afirmație pe care n-ai făcut-o; celălalt răspunde sincer și coboară un deget dacă a făcut-o.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: eu-niciodata-5, raspund.
+- Exemple legale la început: `eu-niciodata-1`, `eu-niciodata-2`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="spoons"></a>
+## Spoons (lingurile)
+
+- **Id:** `spoons`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play spoons` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de petrecere cu cărți pentru doi, cu o singură lingură: tragi o carte, arunci una, strângi patru la fel și iei lingura; cine pierde primește o literă din SPOONS. 12 runde, câștigă cine are mai puține litere.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: iau, dau K, lingura, mai-departe.
+- Exemple legale la început: `iau`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="parcel"></a>
+## Treci pachetul (Pass the Parcel)
+
+- **Id:** `parcel`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play parcel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de petrecere cu 8 straturi: pasezi pachetul (gratis) sau îl păstrezi (costă 1); apoi muzica se poate opri (15% plus 10% la fiecare acțiune) și cel care ține pachetul desface stratul și ia premiul (−3 până la 5).
+- Câștigă cine are mai multe puncte după 8 straturi.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pasez, pastrez, muzica.
+- Exemple legale la început: `pasez`, `pastrez`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="klondike"></a>
+## Solitaire (Klondike), duel
+
+- **Id:** `klondike`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play klondike` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Klondike clasic (tragere de câte o carte), ca duel: fiecare are propria amestecare și face câte o mutare; câștigă primul care duce toate cele 52 de cărți pe fundații.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d, w>f, w>3, 3>f, 3>5:2.
+- Exemple legale la început: `d`, `1>7:1`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="jass"></a>
+## Jass (Schieber)
+
+- **Id:** `jass`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play jass` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Jass elvețian pentru doi, pachet de 36 de cărți, 9 cărți fiecare, 4 mâini: cel care conduce alege atuul (atu h) sau îl dă mai departe (schiebe).
+- Valetul de atu 20, noua 14, asul 11; ultima levată +5, match +100.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atu c, schiebe, 10h, Js.
+- Exemple legale la început: `atu`, `h`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="manille"></a>
+## Manille
+
+- **Id:** `manille`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play manille` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Manille franceză pentru doi, 32 de cărți, 8 fiecare, o carte întoarsă dă atuul, 4 mâini.
+- Ordine 10 > A > K > Q > J > 9 > 8 > 7, puncte 5-4-3-2-1; răspunzi la culoare și, dacă poți, mai sus, altfel tai.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 10h, As, 7c.
+- Exemple legale la început: `8h`, `9h`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="klaverjas"></a>
+## Klaverjas
+
+- **Id:** `klaverjas`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play klaverjas` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Klaverjas olandez (Amsterdam) pentru doi, 32 de cărți, 8 fiecare, o carte întoarsă dă atuul, 4 mâini.
+- Valetul de atu 20, noua 14; ordine simplă A > 10 > K > Q > J; ultima levată +10, pit +100.
+- Răspunzi la culoare, bați atuul dacă poți.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: Jh, 10s, Ac.
+- Exemple legale la început: `8h`, `9h`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sueca"></a>
+## Sueca
+
+- **Id:** `sueca`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sueca` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Sueca portugheză pentru doi, pachet de 40 de cărți (fără 8, 9, 10), 10 fiecare, o carte întoarsă dă atuul, 4 mâini.
+- Ordine A > 7 > K > J > Q > 6 > 5 > 4 > 3 > 2, puncte A 11, 7 10, K 4, J 3, Q 2; răspunzi la culoare dacă poți.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: Ah, 7s, Qc.
+- Exemple legale la început: `5h`, `6h`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="rps"></a>
+## Piatră, hârtie, foarfece
+
+- **Id:** `rps`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play rps` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Piatra sparge foarfeca, foarfeca taie hârtia, hârtia acoperă piatra.
+- Amândoi aleg în secret, apoi arată; primul la 5 runde câștigate (maximum 15 runde, egalitățile se reiau).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: piatra, hartie, foarfeca, arat.
+- Exemple legale la început: `piatra`, `hartie`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="coarda"></a>
+## Sărit coarda (Jump rope)
+
+- **Id:** `coarda`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play coarda` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 8 runde, jucătorii alternează sărind și învârtind.
+- Cel care învârte alege viteza (lent, mediu, rapid); săritorul alege trucuri (simplu 1, incrucisat 3, dublu 5, triplu 9 puncte) apoi sar, sau opresc ca să bage șirul; o greșeală îl pierde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mediu, dublu, sar, opresc.
+- Exemple legale la început: `simplu`, `incrucisat`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="capra"></a>
+## Capra (Leapfrog)
+
+- **Id:** `capra`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play capra` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă pe un șir de 10 căsuțe: 3 săritori fiecare, care merg spre partea opusă.
+- Faci un pas pe căsuța vecină liberă sau sari peste un săritor alăturat pe căsuța liberă din spatele lui; câștigă primul cu toți cei trei pe ultimele căsuțe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 3-4, 2-4, pas.
+- Exemple legale la început: `2-4`, `3-4`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="kim"></a>
+## Jocul lui Kim (Kim's Game)
+
+- **Id:** `kim`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play kim` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de memorie, 5 runde cu tăvi de 6 până la 14 obiecte: privești tava (acopera), un obiect e scos în secret (scot), apoi ghicești după nume care lipsește; ghicit = 1 punct, greșit = rândul trece.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: acopera, scot, cheie, verific.
+- Exemple legale la început: `acopera`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="slapjack"></a>
+## Slapjack
+
+- **Id:** `slapjack`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play slapjack` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc de reflexe cu cărți adaptat pe ture: întorci cartea de sus pe teanc; când apare un valet celălalt poate da cu palma (65% reușită, altfel teancul îl ia cel care a întors valetul).
+- Palma pe altceva costă o carte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc, palma, rezolv.
+- Exemple legale la început: `joc`, `palma`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chohan"></a>
+## Chō-han (Chō-han bakuchi)
+
+- **Id:** `chohan`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chohan` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pariu japonez cu zaruri: două zaruri sub un pahar, pariezi cho (pară) sau han (impară) cu 5, 10 sau 20 de jetoane; celălalt primește partea opusă. 10 runde, 100 de jetoane fiecare, chemătorul alternează.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: cho 10, han 5, agit.
+- Exemple legale la început: `cho`, `5`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="balut"></a>
+## Balut
+
+- **Id:** `balut`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play balut` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc filipinez cu zaruri: 5 zaruri, până la 3 aruncări pe tură, 7 categorii completate o dată (patru, cinci, sase, scara 50, casa, sansa, balut 30). 7 ture fiecare; câștigă cine are mai multe puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, tine 6 6, tine -, scor sase.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tali"></a>
+## Knucklebones (Tali)
+
+- **Id:** `tali`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tali` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Oscioarele antice: patru astragale cu fețele 1, 3, 4, 6;
+- Venus (toate diferite) bate orice, Canis (patru de 1) pierde în fața oricărei alte aruncări, altfel contează suma. 10 runde, 20 de jetoane fiecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: miza 2, arunc.
+- Exemple legale la început: `miza`, `1`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="crag"></a>
+## Crag
+
+- **Id:** `crag`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play crag` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc american cu 3 zaruri și 13 categorii, 13 ture fiecare: arunci, poți rearunca orice zaruri o dată, apoi scrii o categorie liberă (unu..sase, trei-la-fel 25, treisprezece 26, scări 20, crag 50).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, tine 6 6, tine -, scor crag.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bobing"></a>
+## Bo Bing (Pua Tiong Chiu)
+
+- **Id:** `bobing`
+- **Categorie:** Zaruri
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bobing` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Joc cu zaruri de Festivalul Lunii din Xiamen: șase zaruri într-un castron, premii (63 de prăjituri de lună) după combinație: Zhuangyuan cea mai bună, apoi Duitang, Sanhong, Sijin, Erju, Yixiu (după numărul de 4).
+- Fiecare categorie are rezervă limitată; câștigă cine are mai multe puncte după 12 aruncări fiecare.
+- Mutare: arunc.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hnefatafl"></a>
+## Hnefatafl
+
+- **Id:** `hnefatafl`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hnefatafl` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Hnefatafl 11×11 (varianta Copenhaga): atacatorii (J1) mută primii și vor să prindă regele apărătorilor (J2); regele câștigă ajungând într-un colț.
+- Piesele mută ca turnul, capturează prin încadrare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d1-d4.
+- Exemple legale la început: `d1-d2`, `d1-d3`
+- La început sunt 116 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="brandubh"></a>
+## Brandubh
+
+- **Id:** `brandubh`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play brandubh` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Brandubh 7×7 (Irlanda): 8 atacatori contra 4 apărători și rege; regele câștigă ajungând într-un colț sau pe tron cu apărare liberă, e capturat prin încadrare.
+- Piesele mută ca turnul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d1-d4.
+- Exemple legale la început: `d1-c1`, `d1-b1`
+- La început sunt 40 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pente"></a>
+## Pente
+
+- **Id:** `pente`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pente` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pente (SUA) pe tabla 19×19: aliniezi 5 pietre sau capturezi 5 perechi (încadrezi exact două pietre adverse).
+- Prima mutare a lui J1 trebuie să fie în centru, iar a doua piatră a lui J1 la cel puțin 3 intersecții de centru.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: k10.
+- Exemple legale la început: `k10`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="havannah"></a>
+## Havannah
+
+- **Id:** `havannah`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play havannah` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Havannah (Marea Britanie) pe tabla hexagonală cu latura 8: câștigi cu un inel, un pod (legi două colțuri) sau o furcă (legi trei laturi).
+- Poți folosi «swap» după prima mutare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: h8, swap.
+- Exemple legale la început: `h1`, `i1`
+- La început sunt 169 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chinese_checkers"></a>
+## Table chinezească (Chinese Checkers)
+
+- **Id:** `chinese_checkers`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chinese_checkers` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă stelată cu 121 de găuri, 10 piese pe jucător: pas pe o gaură vecină sau salturi înlănțuite peste piese; câștigi umplând triunghiul opus.
+- După 300 de mutări se compară progresul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d4-e5 (fără traseul sărit).
+- Exemple legale la început: `c1-e5`, `c1-e7`
+- La început sunt 14 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="goose"></a>
+## Jocul gâștei (Game of the Goose)
+
+- **Id:** `goose`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play goose` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cărare de 63 de căsuțe, două zaruri: gâște (mai mergi o dată), pod, han, fântână, labirint, închisoare, moarte; ajungi exact pe 63.
+- Fântâna și închisoarea costă 3 ture.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, astept.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="keno"></a>
+## Keno
+
+- **Id:** `keno`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play keno` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare alege 5 numere din 80, apoi se extrag 20; plata (a noastră): 2 nimeriri = 1, 3 = 3, 4 = 20, 5 = 400 de puncte. 5 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: n17, random, extrag.
+- Exemple legale la început: `n1`, `n2`
+- La început sunt 77 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sichuan_mahjong"></a>
+## Mahjong Sichuan
+
+- **Id:** `sichuan_mahjong`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sichuan_mahjong` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Mahjong Sichuan pentru 2 jucători: 108 piese (fără onoruri), fiecare declară o culoare lipsă (lipsa m|s|p) și o aruncă întâi; fără chi, doar pung, kong și câștig; jocul se oprește la primul câștig.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lipsa m, trage, d5m, pung, kong, mahjong, pas.
+- Exemple legale la început: `lipsa`, `m`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="long_nard"></a>
+## Long Nard (Narde)
+
+- **Id:** `long_nard`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play long_nard` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Narde lungi: 15 piese pe jucător, 24 de puncte pe un singur cerc, fără lovire (punct blocat de adversar), o singură piesă din cap pe tură; câștigă cine scoate primul cele 15 piese.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 13/17, 24/off.
+- Exemple legale la început: `1/4`, `1/6`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="shove_ha_penny"></a>
+## Shove ha'penny
+
+- **Id:** `shove_ha_penny`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play shove_ha_penny` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Împingi 5 monede pe o tablă cu 9 paturi; un pat se închide după 3 monede; câștigi când ai închis toate cele 9 paturi.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: p4, f7 (țintă + tip), apoi lansez.
+- Exemple legale la început: `p1`, `f1`
+- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="rithmomachia"></a>
+## Rithmomachia
+
+- **Id:** `rithmomachia`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play rithmomachia` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Rithmomachia (varianta simplificată): 8×16, piese rotunde, triunghiuri și pătrate cu valori; capturi prin întâlnire, asalt și asediu; câștigi cu 8 capturi sau prinzând regele-piramidă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a3-a5, a3xa5.
+- Exemple legale la început: `a3-b4`, `b3-a4`
+- La început sunt 14 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pong_hau_kiki"></a>
+## Pong hau k'i
+
+- **Id:** `pong_hau_kiki`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pong_hau_kiki` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pong hau k'i (China): 5 puncte, 2 piese pe jucător; muți pe un punct vecin liber; câștigi blocând adversarul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 1-3.
+- Exemple legale la început: `1-3`, `2-3`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="patolli"></a>
+## Patolli
+
+- **Id:** `patolli`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play patolli` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Patolli (reconstituire): cale în cruce de 52 de pătrate, 6 piese pe jucător, 5 boabe (numărul fețelor marcate = pași); scoți piesele exact la sfârșit.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: piesa 0, piesa 17.
+- Exemple legale la început: `piesa`, `0`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="duodecim_scripta"></a>
+## Duodecim scripta
+
+- **Id:** `duodecim_scripta`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play duodecim_scripta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duodecim scripta (reconstituire modernă): 36 de puncte pe o singură cale, 15 piese pe jucător, 3 zaruri cu pași separați; un punct cu două piese e blocat; piesele singure lovite se întorc pe bară.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: bar/3, 13/17, 36/off.
+- Exemple legale la început: `bar/3`, `bar/5`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="jigsaw"></a>
+## Puzzle cu piese (Jigsaw)
+
+- **Id:** `jigsaw`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play jigsaw` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Puzzle 4×4 în întrecere: pe rând așezi o piesă care se potrivește cu vecinele (margini plate pe cadru); punctele = 1 + vecinii îmbinați, ultima piesă +3.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: p7r2c3.
+- Exemple legale la început: `p0r1c1`, `p3r1c4`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="guobiao"></a>
+## Mahjong oficial chinez (Guobiao)
+
+- **Id:** `guobiao`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play guobiao` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Mahjong Guobiao pentru 2 jucători: 144 de piese cu flori; mâna câștigătoare are cel puțin 8 puncte (subset documentat al combinațiilor oficiale) plus florile.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
+- Exemple legale la început: `trage`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="boggle"></a>
+## Boggle
+
+- **Id:** `boggle`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play boggle` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Boggle: tablă 4×4 de litere; pe rând scrii câte un cuvânt de cel puțin 3 litere format din cuburi vecine, valid în dicționar și încă negăsit; punctele cresc cu lungimea.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: casa, pas.
+- Exemple legale la început: `pas`, `alti`
+- La început sunt 36 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="kings"></a>
+## Kings (Ring of Fire)
+
+- **Id:** `kings`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play kings` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Kings fără alcool: tragi pe rând cărți cu reguli pe rang; înghițiturile sunt jetoane de penalizare; al patrulea rege te face să iei tot paharul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trag, scut, atac.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="celebrity"></a>
+## Celebrity (Fishbowl)
+
+- **Id:** `celebrity`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play celebrity` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Celebrity: vas cu 12 nume, trei runde (descrii, mimezi, un singur cuvânt); coechipierul simulat ghicește; câștigă cine ghicește mai multe.
+- Numele de sus se vede doar de cel care îl dă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: dau, sar, ghicesc.
+- Exemple legale la început: `dau`, `sar`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pin_the_tail"></a>
+## Prinde coada măgarului
+
+- **Id:** `pin_the_tail`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pin_the_tail` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pe un câmp 7×5 alegi o țintă, te învârți (eroare aleatoare) și prinzi coada: 5 puncte exact, 3, 2, 1 după distanță; 5 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: c3, apoi invart.
+- Exemple legale la început: `a1`, `b1`
+- La început sunt 35 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="war"></a>
+## Război (War)
+
+- **Id:** `war`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play war` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Război: fiecare întoarce cartea de sus, cea mai mare ia ambele; la egalitate «război» (cărți acoperite și una descoperită).
+- Câștigă cine ia toate cărțile (limită de mutări, apoi mai multe cărți).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc.
+- Exemple legale la început: `joc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tressette"></a>
+## Tressette (Italia)
+
+- **Id:** `tressette`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play tressette` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tressette (40 de cărți italiene, 2 jucători): obligatoriu să răspunzi la culoare, ordinea 3 2 A R C F 7 6 5 4, fără atu; puncte A 1, 3/2/R/C/F ⅓; ultima levată +1.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 3d, Rs, Cc.
+- Exemple legale la început: `4d`, `Cd`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="piquet"></a>
+## Piquet (Franța)
+
+- **Id:** `piquet`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play piquet` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Piquet (32 de cărți): schimb de cărți, declarații (punct, secvențe, seturi) și 12 levate; variantă proprie de punctare a jocului.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: d7h, gata, Ah, urmatoarea.
+- Exemple legale la început: `d9h`, `d8h`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="batak"></a>
+## Batak (Turcia)
+
+- **Id:** `batak`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play batak` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Batak adaptat la 2 jucători (13 cărți fiecare): licitezi levatele, alegi atu (pică implicit), cine licitează trebuie să facă cel puțin cât a promis.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: 6, pas, atu h, Ah.
+- Exemple legale la început: `5`, `6`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="yaniv"></a>
+## Yaniv (Israel)
+
+- **Id:** `yaniv`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play yaniv` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Yaniv: arunci o carte, un set sau o secvență, apoi tragi din stoc sau talon; strigi «yaniv» cu cel mult 7 puncte în mână; dacă adversarul are mai puțin sau egal ești «asaf».
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: yaniv, 5h,5s-stoc, 5h-ia:7c.
+- Exemple legale la început: `6c-stoc`, `6c-ia:Js`
+- La început sunt 22 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ascunselea"></a>
+## Ascunselea (Hide-and-seek)
+
+- **Id:** `ascunselea`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play ascunselea` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Ascunselea pe o curte 3×3, 4 runde: ascunzătorul alege în secret o ascunzătoare, căutătorul are 3 încercări cu indiciu cald/rece; mai repede = mai multe puncte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ascunde b2, cauta b2.
+- Exemple legale la început: `ascunde`, `a1`
+- La început sunt 18 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="de_a_prinselea"></a>
+## De-a prinselea (Tag)
+
+- **Id:** `de_a_prinselea`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play de_a_prinselea` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Urmărire pe un câmp 7×7: prinzătorul care ajunge adiacent schimbă rolurile (și stă o mutare); cel care nu e prinzător la sfârșitul rundei primește 1 punct; 15 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: n, s, e, v, ne, nv, se, sv, stai.
+- Exemple legale la început: `stai`, `s`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="elasticul"></a>
+## Elasticul
+
+- **Id:** `elasticul`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play elasticul` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Elasticul urcă în 7 niveluri; la fiecare nivel alegi salt ușor sau greu (șanse și puncte diferite), apoi sari; cine greșește e eliminat.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: usor, greu, sari.
+- Exemple legale la început: `usor`, `greu`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="oina"></a>
+## Oina
+
+- **Id:** `oina`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play oina` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Oina stilizată: 6 reprize cu 3 arși; bătăușul alege lovitura, apărătorul poziția, apoi se aruncă; mingea prinsă în zona aleasă arde bătăușul, altfel aleargă și marchează 1/2/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: usoara, medie, puternica, aproape, mijloc, departe, arunca.
+- Exemple legale la început: `usoara`, `medie`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="loto_imagini"></a>
+## Loto cu imagini (Picture lotto)
+
+- **Id:** `loto_imagini`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play loto_imagini` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cartonașe 3×3 cu imagini din 24; tragi pe rând din sac, acoperi imaginea de pe cartonaș sau o lași; primul cu cartonașul plin strigă loto.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trage, acopera, pas.
+- Exemple legale la început: `trage`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bau_cua"></a>
+## Bầu cua (dovleac, crab, pește)
+
+- **Id:** `bau_cua`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bau_cua` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Bầu cua: trei zaruri cu cerb, dovleac, cocoș, pește, crab, creveți; parierul pune mize pe simboluri, bancherul aruncă; plată 1:1 per zar. 12 runde cu roluri alternante.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: cerb 5, peste 10, gata, arunc.
+- Exemple legale la început: `cerb`, `5`
+- La început sunt 25 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="yacht"></a>
+## Yacht
+
+- **Id:** `yacht`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play yacht` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Yacht: 12 runde, până la 3 aruncări cu 5 zaruri, scrii scorul în 12 categorii (fiecare o dată); yacht = cinci egale = 50.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, tine 3 3 5, scor casa.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chicago"></a>
+## Chicago (zaruri)
+
+- **Id:** `chicago`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chicago` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Chicago: 11 runde cu ținta 2…12; aruncând două zaruri cu suma egală cu ținta iei atâtea puncte; opțional păstrezi un zar și rearunci.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, tin 1, tin 2, gata, rearunc.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zara"></a>
+## Zara (joc)
+
+- **Id:** `zara`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play zara` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Zara (reconstituire): fiecare strigă un număr 4–17, se aruncă 3 zaruri; cine a strigat suma ia atâtea puncte; 10 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: n13, arunc.
+- Exemple legale la început: `n4`, `n5`
+- La început sunt 14 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="daldos"></a>
+## Daldøs
+
+- **Id:** `daldos`
+- **Categorie:** ?
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play daldos` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Daldøs (reconstituire): tablă-barcă cu 3 rânduri, 12 piese, două zaruri cu 4 fețe; un 1 «dalează» o piesă, apoi piesele parcurg circuitul și scot piesele adverse.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: dal, h5+3.
+- Exemple legale la început: `dal`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 

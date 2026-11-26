@@ -357,9 +357,13 @@ fn check_determinism(id: &'static str, make: fn() -> Box<dyn GameObj>) -> Vec<St
     if matches!(
         id,
         "chess"
+            | "crazyhouse"
+            | "halma"
+            | "twixt"
             | "connect4"
             | "draughts"
             | "gomoku"
+            | "renju"
             | "janggi"
             | "makruk"
             | "morris"
@@ -386,6 +390,19 @@ fn check_determinism(id: &'static str, make: fn() -> Box<dyn GameObj>) -> Vec<St
             | "cupe"
             | "poliedre"
             | "rotire"
+            | "alquerque"
+            | "camelot"
+            | "chaturanga"
+            | "foxgeese"
+            | "latrunculi"
+            | "jungle"
+            | "fotbalmasa"
+            | "tiddlywinks"
+            | "pente"
+            | "hnefatafl"
+            | "brandubh"
+            | "chinese_checkers"
+            | "rithmomachia"
     ) {
         return fails;
     }

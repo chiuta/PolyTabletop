@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (241)
+## Implementat (454)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -247,224 +247,224 @@
 | Two-up | Clasic | Australia | implementat |
 | Crown and Anchor | Zaruri | Marea Britanie / Oceania | implementat |
 | Mu Torere | Abstract | Noua Zeelandă (maori) | implementat |
+| Tic-tac-toe (X și 0) | Abstract | Antic | implementat |
+| Dame internaționale (10x10) | Abstract | Franța / Olanda | implementat |
+| Dame rusești (Shashki) | Abstract | Rusia | implementat |
+| Kalah | Abstract | SUA | implementat |
+| Dame braziliene (Damas) | Abstract | Brazilia | implementat |
+| Hnefatafl | Abstract | Scandinavia | implementat |
+| Jocul Regal din Ur | Abstract | Mesopotamia | implementat |
+| Toguz Kumalak | Abstract | Kazahstan / Kârgâzstan | implementat |
+| Shatranj | Abstract | Persia | implementat |
+| Chaturanga | Abstract | India | implementat |
+| Renju | Abstract | Japonia | implementat |
+| Pente | Abstract | SUA | implementat |
+| Crazyhouse | Abstract | SUA | implementat |
+| Sittuyin | Abstract | Birmania | implementat |
+| Chu Shogi | Abstract | Japonia | implementat |
+| Alquerque | Abstract | Orientul Mijlociu / Spania | implementat |
+| Tablut | Abstract | Laponia / Suedia | implementat |
+| Brandubh | Abstract | Irlanda | implementat |
+| Omweso | Abstract | Uganda | implementat |
+| Gebeta | Abstract | Etiopia | implementat |
+| Ô ăn quan | Abstract | Vietnam | implementat |
+| Ludus latrunculorum | Abstract | Roma antică | implementat |
+| Lasca | Abstract | Germania | implementat |
+| Havannah | Abstract | Marea Britanie | implementat |
+| TwixT | Abstract | SUA | implementat |
+| Sprouts | Abstract | Marea Britanie | implementat |
+| Ataxx | Abstract | SUA | implementat |
+| Jungle (Dou Shou Qi) | Abstract | China | implementat |
+| Roulette | Clasic | Franța | implementat |
+| Chinese Checkers (Table chinezească, Sternhalma) | Clasic | Germania | implementat |
+| Halma | Clasic | SUA / Marea Britanie | implementat |
+| Peg solitaire | Clasic | Franța | implementat |
+| Tombola | Clasic | Italia | implementat |
+| Table football | Clasic | Europa | implementat |
+| Marbles | Clasic | Antic / Global | implementat |
+| Game of the Goose | Clasic | Italia | implementat |
+| Hong Kong Mahjong | Clasic | Hong Kong | implementat |
+| Shuffleboard (table) | Clasic | Marea Britanie | implementat |
+| Pachinko | Clasic | Japonia | implementat |
+| Tavli (Plakoto, Portes, Fevga) | Clasic | Grecia | implementat |
+| Royal Game of Ur | Clasic | Mesopotamia | implementat |
+| Keno | Clasic | China | implementat |
+| Fia-med-knuff | Clasic | Suedia | implementat |
+| Dog (Brändi Dog) | Clasic | Elveția | implementat |
+| Uckers | Clasic | Marea Britanie | implementat |
+| American Mah Jongg | Clasic | SUA | implementat |
+| Taiwanese Mahjong | Clasic | Taiwan | implementat |
+| Sichuan Mahjong | Clasic | China | implementat |
+| Tien Gow | Clasic | China | implementat |
+| Dominó cubano (doble nueve) | Clasic | Cuba | implementat |
+| Muggins (All Fives) | Clasic | SUA / Marea Britanie | implementat |
+| Texas 42 | Clasic | SUA | implementat |
+| Matador (domino) | Clasic | Europa | implementat |
+| Long Nard (Narde) | Clasic | Persia / Caucaz | implementat |
+| Acey-deucey | Clasic | SUA | implementat |
+| Trictrac | Clasic | Franța | implementat |
+| Jacquet | Clasic | Franța | implementat |
+| Tiddlywinks | Clasic | Marea Britanie | implementat |
+| Bagatelle | Clasic | Franța | implementat |
+| Shove ha'penny | Clasic | Marea Britanie | implementat |
+| Bar billiards | Clasic | Marea Britanie | implementat |
+| Table skittles | Clasic | Marea Britanie | implementat |
+| Fan-Tan | Clasic | China | implementat |
+| Fox and Geese | Clasic | Europa | implementat |
+| Latrunculi | Clasic | Roma antică | implementat |
+| Rithmomachia | Clasic | Europa medievală | implementat |
+| Tabula | Clasic | Roma antică | implementat |
+| Mehen | Clasic | Egiptul antic | implementat |
+| Hounds and Jackals (58 Holes) | Clasic | Egiptul antic | implementat |
+| Camelot | Clasic | SUA / Marea Britanie | implementat |
+| Salta | Clasic | Franța | implementat |
+| Pong hau k'i | Clasic | China | implementat |
+| Jeu des petits chevaux | Clasic | Franța | implementat |
+| Toc (jeu) | Clasic | Franța | implementat |
+| Moultezim | Clasic | Grecia / Turcia | implementat |
+| Gul bara | Clasic | Orientul Mijlociu | implementat |
+| Chaturaji | Clasic | India | implementat |
+| Patolli | Clasic | Mexic | implementat |
+| Cờ gánh | Clasic | Vietnam | implementat |
+| Tangram | Clasic | China | implementat |
+| Turnurile din Hanoi (Tower of Hanoi) | Clasic | Franța | implementat |
+| Jocul de 15 (15 puzzle) | Clasic | SUA | implementat |
+| Sjoelen | Clasic | Olanda | implementat |
+| Duodecim scripta | Clasic | Roma antică | implementat |
+| Petteia | Clasic | Grecia antică | implementat |
+| Dreidel | Clasic | Orientul Mijlociu / Europa | implementat |
+| Cuvinte încrucișate (Crossword) | Clasic | SUA | implementat |
+| Sudoku | Clasic | Japonia / SUA | implementat |
+| Nonogram (Picross) | Clasic | Japonia | implementat |
+| Puzzle cu piese (Jigsaw) | Clasic | Marea Britanie | implementat |
+| Morra (Mora) | Clasic | Italia | implementat |
+| Narde scurtă (Short Nardy) | Clasic | Persia / Rusia | implementat |
+| Tenis de masă (Ping-pong) | Clasic | Marea Britanie | implementat |
+| Biliard (Billiards) | Clasic | Franța | implementat |
+| Snooker | Clasic | India | implementat |
+| Chinese Official Mahjong (Guobiao) | Clasic | China | implementat |
+| Sanma (mahjong în trei) | Clasic | Japonia | implementat |
+| Pare sau impare (Odds and evens) | Clasic | Global | implementat |
+| Hypergammon | Clasic | — | implementat |
+| Charades | Party | Franța | implementat |
+| Scattergories | Party | SUA | implementat |
+| Boggle | Party | SUA | implementat |
+| Rock Paper Scissors (Piatră, foarfecă, hârtie) | Party | China | implementat |
+| Chinese Whispers (Telefonul fără fir) | Party | — | implementat |
+| Truth or Dare (Adevăr sau provocare) | Party | — | implementat |
+| Twenty Questions (Douăzeci de întrebări) | Party | — | implementat |
+| Never Have I Ever | Party | — | implementat |
+| Kings (Ring of Fire) | Party | SUA | implementat |
+| Flip Cup | Party | SUA | implementat |
+| Would You Rather | Party | — | implementat |
+| Ligretto | Party | Elveția | implementat |
+| Pit | Party | SUA | implementat |
+| Spoons | Party | — | implementat |
+| Celebrity (Fishbowl) | Party | — | implementat |
+| Mad Gab | Party | SUA | implementat |
+| Zip Zap Zop | Party | — | implementat |
+| Sardines | Party | Marea Britanie | implementat |
+| Wink Murder | Party | Marea Britanie | implementat |
+| Pass the Parcel | Party | Marea Britanie | implementat |
+| Pin the Tail on the Donkey | Party | SUA | implementat |
+| Pub quiz | Party | Marea Britanie | implementat |
+| Ghicește melodia (Name That Tune) | Party | SUA | implementat |
+| Sticla (Spin the bottle) | Party | SUA | implementat |
+| Vânătoarea de comori (Treasure hunt) | Party | Marea Britanie | implementat |
+| Solitaire (Klondike) | Cărți | Global | implementat |
+| War (Război / Bătălia) | Cărți | Global | implementat |
+| Old Maid (Bătrâna fată) | Cărți | Europa / Global | implementat |
+| Doppelkopf | Cărți | Germania | implementat |
+| Schafkopf | Cărți | Germania | implementat |
+| Sheepshead | Cărți | SUA / Germania | implementat |
+| Jass (Schieber) | Cărți | Elveția | implementat |
+| Tressette | Cărți | Italia | implementat |
+| Mus | Cărți | Spania | implementat |
+| Tarock (Tarok) | Cărți | Austria / Slovenia / Ungaria | implementat |
+| Mau-Mau | Cărți | Germania | implementat |
+| Mariáš | Cărți | Cehia / Slovacia | implementat |
+| Manille | Cărți | Franța | implementat |
+| Piquet | Cărți | Franța | implementat |
+| Bézique | Cărți | Franța | implementat |
+| Ombre (L'Hombre) | Cărți | Spania / Europa | implementat |
+| Preferans | Cărți | Rusia | implementat |
+| Tysiąc (Tysiacha, o mie) | Cărți | Polonia / Rusia | implementat |
+| Klaverjas | Cărți | Olanda | implementat |
+| Batak | Cărți | Turcia | implementat |
+| Twenty-Nine (29) | Cărți | India / Pakistan / Asia de Sud | implementat |
+| Sevens (Fan Tan) | Cărți | Global | implementat |
+| Three Card Brag | Cărți | Marea Britanie | implementat |
+| Sette e mezzo | Cărți | Italia / Spania | implementat |
+| Sueca | Cărți | Portugalia / Brazilia | implementat |
+| Yaniv | Cărți | Israel | implementat |
+| Tute | Cărți | Spania | implementat |
+| Skitgubbe | Cărți | Suedia | implementat |
+| Ulti | Cărți | Ungaria | implementat |
+| Baccarat (Punto banco) | Cărți | Franța / Italia | implementat |
+| Piatră, hârtie, foarfece | Copii | China | implementat |
+| Ascunselea (Hide-and-seek) | Copii | Global | implementat |
+| Șotron (Hopscotch) | Copii | Global | implementat |
+| Baba-oarba (Blind man's buff) | Copii | Global | implementat |
+| Scaunele muzicale | Copii | Marea Britanie | implementat |
+| Simon zice (Simon says) | Copii | Marea Britanie | implementat |
+| Sărit coarda (Jump rope) | Copii | Global | implementat |
+| De-a prinselea (Tag) | Copii | Global | implementat |
+| Duck Duck Goose | Copii | SUA | implementat |
+| Cinci pietricele (Jacks / Knucklebones) | Copii | Global | implementat |
+| Mikado (Pick-up sticks) | Copii | Global | implementat |
+| Spânzurătoarea (Hangman) | Copii | Global | implementat |
+| Capra (Leapfrog) | Copii | Global | implementat |
+| Elasticul (Chinese jump rope) | Copii | China | implementat |
+| Statuile (Statues) | Copii | Global | implementat |
+| Capture the Flag | Copii | Global | implementat |
+| Kick the Can | Copii | SUA | implementat |
+| I Spy (Ghicește ce văd) | Copii | Marea Britanie | implementat |
+| Jocul lui Kim (Kim's Game) | Copii | Marea Britanie | implementat |
+| Oina | Copii | România | implementat |
+| Conkers | Copii | Marea Britanie | implementat |
+| Jocuri cu ață (Cat's cradle) | Copii | Global | implementat |
+| Mingea (Dodgeball) | Copii | Global | implementat |
+| Snap | Copii | Marea Britanie | implementat |
+| Slapjack | Copii | SUA | implementat |
+| Loto cu imagini (Picture lotto) | Copii | Europa | implementat |
+| Craps | Zaruri | SUA | implementat |
+| Yatzy | Zaruri | Suedia / Scandinavia | implementat |
+| Shut the Box | Zaruri | Franța / Marea Britanie | implementat |
+| Chinchirorin | Zaruri | Japonia | implementat |
+| Chō-han (Chō-han bakuchi) | Zaruri | Japonia | implementat |
+| Bầu cua cá cọp | Zaruri | Vietnam | implementat |
+| Mexico (Mäxchen, Mia) | Zaruri | Europa / Mexic | implementat |
+| Hazard | Zaruri | Marea Britanie / Orientul Mijlociu | implementat |
+| Chuck-a-luck | Zaruri | SUA / Marea Britanie | implementat |
+| Ship, Captain, and Crew | Zaruri | SUA / Marea Britanie | implementat |
+| Balut | Zaruri | Filipine | implementat |
+| Yacht | Zaruri | Asia / Marea Britanie | implementat |
+| Schocken | Zaruri | Germania | implementat |
+| Cee-lo | Zaruri | China / SUA | implementat |
+| Cosmic Wimpout | Zaruri | SUA | implementat |
+| Beetle | Zaruri | Marea Britanie | implementat |
+| Knucklebones (Tali) | Zaruri | Grecia / Roma antică | implementat |
+| Chicago (zaruri) | Zaruri | Europa | implementat |
+| Passe-dix | Zaruri | Franța | implementat |
+| Over and Under Seven | Zaruri | Marea Britanie | implementat |
+| Chowka Bara | Zaruri | India | implementat |
+| Kismet | Zaruri | SUA | implementat |
+| Crag | Zaruri | SUA | implementat |
+| Zara (joc) | Zaruri | Italia | implementat |
+| Dice Baseball | Zaruri | SUA | implementat |
+| Skunk | Zaruri | SUA | implementat |
+| Perquackey | Zaruri | SUA | implementat |
+| Dead Man's Dice | Zaruri | Marea Britanie | implementat |
+| Bo Bing (Pua Tiong Chiu) | Zaruri | China / Taiwan | implementat |
+| Daldøs | Zaruri | Norvegia | implementat |
+| Drop Dead | Zaruri | SUA | implementat |
+| Howzat! (dice cricket) | Zaruri | Marea Britanie | implementat |
+| Bar dice | Zaruri | Global | implementat |
 
-## Tradițional (213)
+## Tradițional (0)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Tic-tac-toe (X și 0) | Abstract | Antic | planificat (domeniu public) |
-| Dame internaționale (10x10) | Abstract | Franța / Olanda | planificat (domeniu public) |
-| Dame rusești (Shashki) | Abstract | Rusia | planificat (domeniu public) |
-| Kalah | Abstract | SUA | planificat (domeniu public) |
-| Dame braziliene (Damas) | Abstract | Brazilia | planificat (domeniu public) |
-| Hnefatafl | Abstract | Scandinavia | planificat (domeniu public) |
-| Jocul Regal din Ur | Abstract | Mesopotamia | planificat (domeniu public) |
-| Toguz Kumalak | Abstract | Kazahstan / Kârgâzstan | planificat (domeniu public) |
-| Shatranj | Abstract | Persia | planificat (domeniu public) |
-| Chaturanga | Abstract | India | planificat (domeniu public) |
-| Renju | Abstract | Japonia | planificat (domeniu public) |
-| Pente | Abstract | SUA | planificat (domeniu public) |
-| Crazyhouse | Abstract | SUA | planificat (domeniu public) |
-| Sittuyin | Abstract | Birmania | planificat (domeniu public) |
-| Chu Shogi | Abstract | Japonia | planificat (domeniu public) |
-| Alquerque | Abstract | Orientul Mijlociu / Spania | planificat (domeniu public) |
-| Tablut | Abstract | Laponia / Suedia | planificat (domeniu public) |
-| Brandubh | Abstract | Irlanda | planificat (domeniu public) |
-| Omweso | Abstract | Uganda | planificat (domeniu public) |
-| Gebeta | Abstract | Etiopia | planificat (domeniu public) |
-| Ô ăn quan | Abstract | Vietnam | planificat (domeniu public) |
-| Ludus latrunculorum | Abstract | Roma antică | planificat (domeniu public) |
-| Lasca | Abstract | Germania | planificat (domeniu public) |
-| Havannah | Abstract | Marea Britanie | planificat (domeniu public) |
-| TwixT | Abstract | SUA | planificat (domeniu public) |
-| Sprouts | Abstract | Marea Britanie | planificat (domeniu public) |
-| Ataxx | Abstract | SUA | planificat (domeniu public) |
-| Jungle (Dou Shou Qi) | Abstract | China | planificat (domeniu public) |
-| Roulette | Clasic | Franța | planificat (domeniu public) |
-| Chinese Checkers (Table chinezească, Sternhalma) | Clasic | Germania | planificat (domeniu public) |
-| Halma | Clasic | SUA / Marea Britanie | planificat (domeniu public) |
-| Peg solitaire | Clasic | Franța | planificat (domeniu public) |
-| Tombola | Clasic | Italia | planificat (domeniu public) |
-| Table football | Clasic | Europa | planificat (domeniu public) |
-| Marbles | Clasic | Antic / Global | planificat (domeniu public) |
-| Game of the Goose | Clasic | Italia | planificat (domeniu public) |
-| Hong Kong Mahjong | Clasic | Hong Kong | planificat (domeniu public) |
-| Shuffleboard (table) | Clasic | Marea Britanie | planificat (domeniu public) |
-| Pachinko | Clasic | Japonia | planificat (domeniu public) |
-| Tavli (Plakoto, Portes, Fevga) | Clasic | Grecia | planificat (domeniu public) |
-| Royal Game of Ur | Clasic | Mesopotamia | planificat (domeniu public) |
-| Keno | Clasic | China | planificat (domeniu public) |
-| Fia-med-knuff | Clasic | Suedia | planificat (domeniu public) |
-| Dog (Brändi Dog) | Clasic | Elveția | planificat (domeniu public) |
-| Uckers | Clasic | Marea Britanie | planificat (domeniu public) |
-| American Mah Jongg | Clasic | SUA | planificat (domeniu public) |
-| Taiwanese Mahjong | Clasic | Taiwan | planificat (domeniu public) |
-| Sichuan Mahjong | Clasic | China | planificat (domeniu public) |
-| Tien Gow | Clasic | China | planificat (domeniu public) |
-| Dominó cubano (doble nueve) | Clasic | Cuba | planificat (domeniu public) |
-| Muggins (All Fives) | Clasic | SUA / Marea Britanie | planificat (domeniu public) |
-| Texas 42 | Clasic | SUA | planificat (domeniu public) |
-| Matador (domino) | Clasic | Europa | planificat (domeniu public) |
-| Long Nard (Narde) | Clasic | Persia / Caucaz | planificat (domeniu public) |
-| Acey-deucey | Clasic | SUA | planificat (domeniu public) |
-| Trictrac | Clasic | Franța | planificat (domeniu public) |
-| Jacquet | Clasic | Franța | planificat (domeniu public) |
-| Tiddlywinks | Clasic | Marea Britanie | planificat (domeniu public) |
-| Bagatelle | Clasic | Franța | planificat (domeniu public) |
-| Shove ha'penny | Clasic | Marea Britanie | planificat (domeniu public) |
-| Bar billiards | Clasic | Marea Britanie | planificat (domeniu public) |
-| Table skittles | Clasic | Marea Britanie | planificat (domeniu public) |
-| Fan-Tan | Clasic | China | planificat (domeniu public) |
-| Fox and Geese | Clasic | Europa | planificat (domeniu public) |
-| Latrunculi | Clasic | Roma antică | planificat (domeniu public) |
-| Rithmomachia | Clasic | Europa medievală | planificat (domeniu public) |
-| Tabula | Clasic | Roma antică | planificat (domeniu public) |
-| Mehen | Clasic | Egiptul antic | planificat (domeniu public) |
-| Hounds and Jackals (58 Holes) | Clasic | Egiptul antic | planificat (domeniu public) |
-| Camelot | Clasic | SUA / Marea Britanie | planificat (domeniu public) |
-| Salta | Clasic | Franța | planificat (domeniu public) |
-| Pong hau k'i | Clasic | China | planificat (domeniu public) |
-| Jeu des petits chevaux | Clasic | Franța | planificat (domeniu public) |
-| Toc (jeu) | Clasic | Franța | planificat (domeniu public) |
-| Moultezim | Clasic | Grecia / Turcia | planificat (domeniu public) |
-| Gul bara | Clasic | Orientul Mijlociu | planificat (domeniu public) |
-| Chaturaji | Clasic | India | planificat (domeniu public) |
-| Patolli | Clasic | Mexic | planificat (domeniu public) |
-| Cờ gánh | Clasic | Vietnam | planificat (domeniu public) |
-| Tangram | Clasic | China | planificat (domeniu public) |
-| Turnurile din Hanoi (Tower of Hanoi) | Clasic | Franța | planificat (domeniu public) |
-| Jocul de 15 (15 puzzle) | Clasic | SUA | planificat (domeniu public) |
-| Sjoelen | Clasic | Olanda | planificat (domeniu public) |
-| Duodecim scripta | Clasic | Roma antică | planificat (domeniu public) |
-| Petteia | Clasic | Grecia antică | planificat (domeniu public) |
-| Dreidel | Clasic | Orientul Mijlociu / Europa | planificat (domeniu public) |
-| Cuvinte încrucișate (Crossword) | Clasic | SUA | planificat (domeniu public) |
-| Sudoku | Clasic | Japonia / SUA | planificat (domeniu public) |
-| Nonogram (Picross) | Clasic | Japonia | planificat (domeniu public) |
-| Puzzle cu piese (Jigsaw) | Clasic | Marea Britanie | planificat (domeniu public) |
-| Morra (Mora) | Clasic | Italia | planificat (domeniu public) |
-| Narde scurtă (Short Nardy) | Clasic | Persia / Rusia | planificat (domeniu public) |
-| Tenis de masă (Ping-pong) | Clasic | Marea Britanie | planificat (domeniu public) |
-| Biliard (Billiards) | Clasic | Franța | planificat (domeniu public) |
-| Snooker | Clasic | India | planificat (domeniu public) |
-| Chinese Official Mahjong (Guobiao) | Clasic | China | planificat (domeniu public) |
-| Sanma (mahjong în trei) | Clasic | Japonia | planificat (domeniu public) |
-| Pare sau impare (Odds and evens) | Clasic | Global | planificat (domeniu public) |
-| Hypergammon | Clasic | — | planificat (domeniu public) |
-| Charades | Party | Franța | planificat (domeniu public) |
-| Scattergories | Party | SUA | planificat (domeniu public) |
-| Boggle | Party | SUA | planificat (domeniu public) |
-| Rock Paper Scissors (Piatră, foarfecă, hârtie) | Party | China | planificat (domeniu public) |
-| Chinese Whispers (Telefonul fără fir) | Party | — | planificat (domeniu public) |
-| Truth or Dare (Adevăr sau provocare) | Party | — | planificat (domeniu public) |
-| Twenty Questions (Douăzeci de întrebări) | Party | — | planificat (domeniu public) |
-| Never Have I Ever | Party | — | planificat (domeniu public) |
-| Kings (Ring of Fire) | Party | SUA | planificat (domeniu public) |
-| Flip Cup | Party | SUA | planificat (domeniu public) |
-| Would You Rather | Party | — | planificat (domeniu public) |
-| Ligretto | Party | Elveția | planificat (domeniu public) |
-| Pit | Party | SUA | planificat (domeniu public) |
-| Spoons | Party | — | planificat (domeniu public) |
-| Celebrity (Fishbowl) | Party | — | planificat (domeniu public) |
-| Mad Gab | Party | SUA | planificat (domeniu public) |
-| Zip Zap Zop | Party | — | planificat (domeniu public) |
-| Sardines | Party | Marea Britanie | planificat (domeniu public) |
-| Wink Murder | Party | Marea Britanie | planificat (domeniu public) |
-| Pass the Parcel | Party | Marea Britanie | planificat (domeniu public) |
-| Pin the Tail on the Donkey | Party | SUA | planificat (domeniu public) |
-| Pub quiz | Party | Marea Britanie | planificat (domeniu public) |
-| Ghicește melodia (Name That Tune) | Party | SUA | planificat (domeniu public) |
-| Sticla (Spin the bottle) | Party | SUA | planificat (domeniu public) |
-| Vânătoarea de comori (Treasure hunt) | Party | Marea Britanie | planificat (domeniu public) |
-| Solitaire (Klondike) | Cărți | Global | planificat (domeniu public) |
-| War (Război / Bătălia) | Cărți | Global | planificat (domeniu public) |
-| Old Maid (Bătrâna fată) | Cărți | Europa / Global | planificat (domeniu public) |
-| Doppelkopf | Cărți | Germania | planificat (domeniu public) |
-| Schafkopf | Cărți | Germania | planificat (domeniu public) |
-| Sheepshead | Cărți | SUA / Germania | planificat (domeniu public) |
-| Jass (Schieber) | Cărți | Elveția | planificat (domeniu public) |
-| Tressette | Cărți | Italia | planificat (domeniu public) |
-| Mus | Cărți | Spania | planificat (domeniu public) |
-| Tarock (Tarok) | Cărți | Austria / Slovenia / Ungaria | planificat (domeniu public) |
-| Mau-Mau | Cărți | Germania | planificat (domeniu public) |
-| Mariáš | Cărți | Cehia / Slovacia | planificat (domeniu public) |
-| Manille | Cărți | Franța | planificat (domeniu public) |
-| Piquet | Cărți | Franța | planificat (domeniu public) |
-| Bézique | Cărți | Franța | planificat (domeniu public) |
-| Ombre (L'Hombre) | Cărți | Spania / Europa | planificat (domeniu public) |
-| Preferans | Cărți | Rusia | planificat (domeniu public) |
-| Tysiąc (Tysiacha, o mie) | Cărți | Polonia / Rusia | planificat (domeniu public) |
-| Klaverjas | Cărți | Olanda | planificat (domeniu public) |
-| Batak | Cărți | Turcia | planificat (domeniu public) |
-| Twenty-Nine (29) | Cărți | India / Pakistan / Asia de Sud | planificat (domeniu public) |
-| Sevens (Fan Tan) | Cărți | Global | planificat (domeniu public) |
-| Three Card Brag | Cărți | Marea Britanie | planificat (domeniu public) |
-| Sette e mezzo | Cărți | Italia / Spania | planificat (domeniu public) |
-| Sueca | Cărți | Portugalia / Brazilia | planificat (domeniu public) |
-| Yaniv | Cărți | Israel | planificat (domeniu public) |
-| Tute | Cărți | Spania | planificat (domeniu public) |
-| Skitgubbe | Cărți | Suedia | planificat (domeniu public) |
-| Ulti | Cărți | Ungaria | planificat (domeniu public) |
-| Baccarat (Punto banco) | Cărți | Franța / Italia | planificat (domeniu public) |
-| Piatră, hârtie, foarfece | Copii | China | planificat (domeniu public) |
-| Ascunselea (Hide-and-seek) | Copii | Global | planificat (domeniu public) |
-| Șotron (Hopscotch) | Copii | Global | planificat (domeniu public) |
-| Baba-oarba (Blind man's buff) | Copii | Global | planificat (domeniu public) |
-| Scaunele muzicale | Copii | Marea Britanie | planificat (domeniu public) |
-| Simon zice (Simon says) | Copii | Marea Britanie | planificat (domeniu public) |
-| Sărit coarda (Jump rope) | Copii | Global | planificat (domeniu public) |
-| De-a prinselea (Tag) | Copii | Global | planificat (domeniu public) |
-| Duck Duck Goose | Copii | SUA | planificat (domeniu public) |
-| Cinci pietricele (Jacks / Knucklebones) | Copii | Global | planificat (domeniu public) |
-| Mikado (Pick-up sticks) | Copii | Global | planificat (domeniu public) |
-| Spânzurătoarea (Hangman) | Copii | Global | planificat (domeniu public) |
-| Capra (Leapfrog) | Copii | Global | planificat (domeniu public) |
-| Elasticul (Chinese jump rope) | Copii | China | planificat (domeniu public) |
-| Statuile (Statues) | Copii | Global | planificat (domeniu public) |
-| Capture the Flag | Copii | Global | planificat (domeniu public) |
-| Kick the Can | Copii | SUA | planificat (domeniu public) |
-| I Spy (Ghicește ce văd) | Copii | Marea Britanie | planificat (domeniu public) |
-| Jocul lui Kim (Kim's Game) | Copii | Marea Britanie | planificat (domeniu public) |
-| Oina | Copii | România | planificat (domeniu public) |
-| Conkers | Copii | Marea Britanie | planificat (domeniu public) |
-| Jocuri cu ață (Cat's cradle) | Copii | Global | planificat (domeniu public) |
-| Mingea (Dodgeball) | Copii | Global | planificat (domeniu public) |
-| Snap | Copii | Marea Britanie | planificat (domeniu public) |
-| Slapjack | Copii | SUA | planificat (domeniu public) |
-| Loto cu imagini (Picture lotto) | Copii | Europa | planificat (domeniu public) |
-| Craps | Zaruri | SUA | planificat (domeniu public) |
-| Yatzy | Zaruri | Suedia / Scandinavia | planificat (domeniu public) |
-| Shut the Box | Zaruri | Franța / Marea Britanie | planificat (domeniu public) |
-| Chinchirorin | Zaruri | Japonia | planificat (domeniu public) |
-| Chō-han (Chō-han bakuchi) | Zaruri | Japonia | planificat (domeniu public) |
-| Bầu cua cá cọp | Zaruri | Vietnam | planificat (domeniu public) |
-| Mexico (Mäxchen, Mia) | Zaruri | Europa / Mexic | planificat (domeniu public) |
-| Hazard | Zaruri | Marea Britanie / Orientul Mijlociu | planificat (domeniu public) |
-| Chuck-a-luck | Zaruri | SUA / Marea Britanie | planificat (domeniu public) |
-| Ship, Captain, and Crew | Zaruri | SUA / Marea Britanie | planificat (domeniu public) |
-| Balut | Zaruri | Filipine | planificat (domeniu public) |
-| Yacht | Zaruri | Asia / Marea Britanie | planificat (domeniu public) |
-| Schocken | Zaruri | Germania | planificat (domeniu public) |
-| Cee-lo | Zaruri | China / SUA | planificat (domeniu public) |
-| Cosmic Wimpout | Zaruri | SUA | planificat (domeniu public) |
-| Beetle | Zaruri | Marea Britanie | planificat (domeniu public) |
-| Knucklebones (Tali) | Zaruri | Grecia / Roma antică | planificat (domeniu public) |
-| Chicago (zaruri) | Zaruri | Europa | planificat (domeniu public) |
-| Passe-dix | Zaruri | Franța | planificat (domeniu public) |
-| Over and Under Seven | Zaruri | Marea Britanie | planificat (domeniu public) |
-| Chowka Bara | Zaruri | India | planificat (domeniu public) |
-| Kismet | Zaruri | SUA | planificat (domeniu public) |
-| Crag | Zaruri | SUA | planificat (domeniu public) |
-| Zara (joc) | Zaruri | Italia | planificat (domeniu public) |
-| Dice Baseball | Zaruri | SUA | planificat (domeniu public) |
-| Skunk | Zaruri | SUA | planificat (domeniu public) |
-| Perquackey | Zaruri | SUA | planificat (domeniu public) |
-| Dead Man's Dice | Zaruri | Marea Britanie | planificat (domeniu public) |
-| Bo Bing (Pua Tiong Chiu) | Zaruri | China / Taiwan | planificat (domeniu public) |
-| Daldøs | Zaruri | Norvegia | planificat (domeniu public) |
-| Drop Dead | Zaruri | SUA | planificat (domeniu public) |
-| Howzat! (dice cricket) | Zaruri | Marea Britanie | planificat (domeniu public) |
-| Bar dice | Zaruri | Global | planificat (domeniu public) |
 
 ## Variantă proprie (474)
 

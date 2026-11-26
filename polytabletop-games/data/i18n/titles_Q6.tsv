@@ -1,0 +1,281 @@
+# Q6: Hnefatafl … Daldøs (Val 17); regulile în limbile fr/it/es/de/hu/pt revin la română (fallback)
+hnefatafl	en	Hnefatafl	Hnefatafl 11x11 (Copenhagen variant): attackers (P1) move first and try to capture the defenders' king; the king wins by reaching a corner. Pieces move like rooks and capture by sandwiching. Moves: d1-d4.
+hnefatafl	ro	Hnefatafl	Hnefatafl 11×11 (varianta Copenhaga): atacatorii (J1) mută primii și vor să prindă regele apărătorilor (J2); regele câștigă ajungând într-un colț. Piesele mută ca turnul, capturează prin încadrare. Mutări: d1-d4.
+hnefatafl	fr	Hnefatafl	
+hnefatafl	it	Hnefatafl	
+hnefatafl	es	Hnefatafl	
+hnefatafl	de	Hnefatafl	
+hnefatafl	hu	Hnefatafl	
+hnefatafl	pt	Hnefatafl	
+brandubh	en	Brandubh	Brandubh 7x7 (Ireland): 8 attackers against 4 defenders and a king; the king wins by reaching a corner, and is captured by sandwiching. Pieces move like rooks. Moves: d1-d4.
+brandubh	ro	Brandubh	Brandubh 7×7 (Irlanda): 8 atacatori contra 4 apărători și rege; regele câștigă ajungând într-un colț sau pe tron cu apărare liberă, e capturat prin încadrare. Piesele mută ca turnul. Mutări: d1-d4.
+brandubh	fr	Brandubh	
+brandubh	it	Brandubh	
+brandubh	es	Brandubh	
+brandubh	de	Brandubh	
+brandubh	hu	Brandubh	
+brandubh	pt	Brandubh	
+pente	en	Pente	Pente (USA) on a 19x19 board: make five in a row or capture five pairs (flank exactly two enemy stones). Player 1's first move must be at the center and their second stone at least 3 points away. Moves: k10.
+pente	ro	Pente	Pente (SUA) pe tabla 19×19: aliniezi 5 pietre sau capturezi 5 perechi (încadrezi exact două pietre adverse). Prima mutare a lui J1 trebuie să fie în centru, iar a doua piatră a lui J1 la cel puțin 3 intersecții de centru. Mutări: k10.
+pente	fr	Pente	
+pente	it	Pente	
+pente	es	Pente	
+pente	de	Pente	
+pente	hu	Pente	
+pente	pt	Pente	
+havannah	en	Havannah	Havannah (UK) on a hexagonal board of side 8: win with a ring, a bridge (two corners) or a fork (three sides). The pie rule «swap» is available after the first move. Moves: h8, swap.
+havannah	ro	Havannah	Havannah (Marea Britanie) pe tabla hexagonală cu latura 8: câștigi cu un inel, un pod (legi două colțuri) sau o furcă (legi trei laturi). Poți folosi «swap» după prima mutare. Mutări: h8, swap.
+havannah	fr	Havannah	
+havannah	it	Havannah	
+havannah	es	Havannah	
+havannah	de	Havannah	
+havannah	hu	Havannah	
+havannah	pt	Havannah	
+chinese_checkers	en	Chinese Checkers (Sternhalma)	Star board with 121 holes, 10 pieces each: step to a neighbouring hole or chain jumps over pieces; fill the opposite triangle to win. After 300 moves progress is compared. Moves: d4-e5 (without the jump route).
+chinese_checkers	ro	Table chinezească (Chinese Checkers)	Tablă stelată cu 121 de găuri, 10 piese pe jucător: pas pe o gaură vecină sau salturi înlănțuite peste piese; câștigi umplând triunghiul opus. După 300 de mutări se compară progresul. Mutări: d4-e5 (fără traseul sărit).
+chinese_checkers	fr	Dames chinoises	
+chinese_checkers	it	Dama cinese	
+chinese_checkers	es	Damas chinas	
+chinese_checkers	de	Chinese Checkers (Sternhalma)	
+chinese_checkers	hu	Kínai dáma	
+chinese_checkers	pt	Damas chinesas	
+goose	en	Game of the Goose	Race along 63 spaces with two dice: geese (move again), bridge, inn, well, maze, prison, death; reach 63 exactly. Well and prison cost 3 turns. Moves: arunc, astept.
+goose	ro	Jocul gâștei (Game of the Goose)	Cărare de 63 de căsuțe, două zaruri: gâște (mai mergi o dată), pod, han, fântână, labirint, închisoare, moarte; ajungi exact pe 63. Fântâna și închisoarea costă 3 ture. Mutări: arunc, astept.
+goose	fr	Game of the Goose	
+goose	it	Game of the Goose	
+goose	es	Game of the Goose	
+goose	de	Game of the Goose	
+goose	hu	Game of the Goose	
+goose	pt	Game of the Goose	
+keno	en	Keno	Each picks 5 numbers out of 80, then 20 are drawn; payout (our own): 2 hits = 1, 3 = 3, 4 = 20, 5 = 400 points. 5 rounds. Moves: n17, random, extrag.
+keno	ro	Keno	Fiecare alege 5 numere din 80, apoi se extrag 20; plata (a noastră): 2 nimeriri = 1, 3 = 3, 4 = 20, 5 = 400 de puncte. 5 runde. Mutări: n17, random, extrag.
+keno	fr	Keno	
+keno	it	Keno	
+keno	es	Keno	
+keno	de	Keno	
+keno	hu	Keno	
+keno	pt	Keno	
+sichuan_mahjong	en	Sichuan Mahjong	Sichuan Mahjong for 2 players: 108 tiles (no honors), each declares a missing suit (lipsa m|s|p) and discards it first; no chow, only pung, kong and win; play stops at the first win. Moves: lipsa m, trage, d5m, pung, kong, mahjong, pas.
+sichuan_mahjong	ro	Mahjong Sichuan	Mahjong Sichuan pentru 2 jucători: 108 piese (fără onoruri), fiecare declară o culoare lipsă (lipsa m|s|p) și o aruncă întâi; fără chi, doar pung, kong și câștig; jocul se oprește la primul câștig. Mutări: lipsa m, trage, d5m, pung, kong, mahjong, pas.
+sichuan_mahjong	fr	Mahjong du Sichuan	
+sichuan_mahjong	it	Mahjong del Sichuan	
+sichuan_mahjong	es	Mahjong de Sichuan	
+sichuan_mahjong	de	Sichuan-Mahjong	
+sichuan_mahjong	hu	Szecsuani madzsong	
+sichuan_mahjong	pt	Mahjong de Sichuan	
+long_nard	en	Long Nard (Narde)	Long Nard (Long Backgammon): 15 checkers each on a single 24-point circuit, no hitting (points held by the opponent are blocked), one checker from the head per turn; first to bear off 15 wins. Moves: 13/17, 24/off.
+long_nard	ro	Long Nard (Narde)	Narde lungi: 15 piese pe jucător, 24 de puncte pe un singur cerc, fără lovire (punct blocat de adversar), o singură piesă din cap pe tură; câștigă cine scoate primul cele 15 piese. Mutări: 13/17, 24/off.
+long_nard	fr	Long Nard (Narde)	
+long_nard	it	Long Nard (Narde)	
+long_nard	es	Long Nard (Narde)	
+long_nard	de	Long Nard (Narde)	
+long_nard	hu	Long Nard (Narde)	
+long_nard	pt	Long Nard (Narde)	
+shove_ha_penny	en	Shove ha'penny	Shove 5 coins along a board with 9 beds; a bed is claimed after 3 coins; close all 9 beds to win. Moves: p4, f7 (target + kind), then lansez.
+shove_ha_penny	ro	Shove ha'penny	Împingi 5 monede pe o tablă cu 9 paturi; un pat se închide după 3 monede; câștigi când ai închis toate cele 9 paturi. Mutări: p4, f7 (țintă + tip), apoi lansez.
+shove_ha_penny	fr	Shove ha'penny	
+shove_ha_penny	it	Shove ha'penny	
+shove_ha_penny	es	Shove ha'penny	
+shove_ha_penny	de	Shove ha'penny	
+shove_ha_penny	hu	Shove ha'penny	
+shove_ha_penny	pt	Shove ha'penny	
+rithmomachia	en	Rithmomachia	Rithmomachia (simplified variant): 8x16 board, round, triangle and square pieces with values; captures by meeting, assault and siege; win with 8 captures or by taking the pyramid king. Moves: a3-a5, a3xa5.
+rithmomachia	ro	Rithmomachia	Rithmomachia (varianta simplificată): 8×16, piese rotunde, triunghiuri și pătrate cu valori; capturi prin întâlnire, asalt și asediu; câștigi cu 8 capturi sau prinzând regele-piramidă. Mutări: a3-a5, a3xa5.
+rithmomachia	fr	Rithmomachia	
+rithmomachia	it	Rithmomachia	
+rithmomachia	es	Rithmomachia	
+rithmomachia	de	Rithmomachia	
+rithmomachia	hu	Rithmomachia	
+rithmomachia	pt	Rithmomachia	
+pong_hau_kiki	en	Pong hau k'i	Pong hau k'i (China): 5 points, 2 pieces each; step to a neighbouring empty point; win by blocking your opponent. Moves: 1-3.
+pong_hau_kiki	ro	Pong hau k'i	Pong hau k'i (China): 5 puncte, 2 piese pe jucător; muți pe un punct vecin liber; câștigi blocând adversarul. Mutări: 1-3.
+pong_hau_kiki	fr	Pong hau k'i	
+pong_hau_kiki	it	Pong hau k'i	
+pong_hau_kiki	es	Pong hau k'i	
+pong_hau_kiki	de	Pong hau k'i	
+pong_hau_kiki	hu	Pong hau k'i	
+pong_hau_kiki	pt	Pong hau k'i	
+patolli	en	Patolli	Patolli (reconstruction): 52-square cross-shaped track, 6 pieces each, 5 beans (marked faces = steps); bear off exactly at the end. Moves: piesa 0, piesa 17.
+patolli	ro	Patolli	Patolli (reconstituire): cale în cruce de 52 de pătrate, 6 piese pe jucător, 5 boabe (numărul fețelor marcate = pași); scoți piesele exact la sfârșit. Mutări: piesa 0, piesa 17.
+patolli	fr	Patolli	
+patolli	it	Patolli	
+patolli	es	Patolli	
+patolli	de	Patolli	
+patolli	hu	Patolli	
+patolli	pt	Patolli	
+duodecim_scripta	en	Duodecim scripta	Duodecim scripta (modern reconstruction): 36 points on a single track, 15 checkers each, 3 dice with separate steps; a point with two checkers is blocked; a lone checker that is hit returns to the bar. Moves: bar/3, 13/17, 36/off.
+duodecim_scripta	ro	Duodecim scripta	Duodecim scripta (reconstituire modernă): 36 de puncte pe o singură cale, 15 piese pe jucător, 3 zaruri cu pași separați; un punct cu două piese e blocat; piesele singure lovite se întorc pe bară. Mutări: bar/3, 13/17, 36/off.
+duodecim_scripta	fr	Duodecim scripta	
+duodecim_scripta	it	Duodecim scripta	
+duodecim_scripta	es	Duodecim scripta	
+duodecim_scripta	de	Duodecim scripta	
+duodecim_scripta	hu	Duodecim scripta	
+duodecim_scripta	pt	Duodecim scripta	
+jigsaw	en	Jigsaw puzzle	4x4 jigsaw race: in turn place one piece that fits its neighbours (flat edges on the frame); points = 1 + joined neighbours, last piece +3. Moves: p7r2c3.
+jigsaw	ro	Puzzle cu piese (Jigsaw)	Puzzle 4×4 în întrecere: pe rând așezi o piesă care se potrivește cu vecinele (margini plate pe cadru); punctele = 1 + vecinii îmbinați, ultima piesă +3. Mutări: p7r2c3.
+jigsaw	fr	Puzzle (jigsaw)	
+jigsaw	it	Puzzle (jigsaw)	
+jigsaw	es	Rompecabezas (jigsaw)	
+jigsaw	de	Puzzle (Jigsaw)	
+jigsaw	hu	Kirakó (jigsaw)	
+jigsaw	pt	Quebra-cabeça (jigsaw)	
+guobiao	en	Chinese Official Mahjong (Guobiao)	Guobiao Mahjong for 2 players: 144 tiles with flowers; a winning hand needs at least 8 points (documented subset of the official patterns) plus flowers. Moves: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
+guobiao	ro	Mahjong oficial chinez (Guobiao)	Mahjong Guobiao pentru 2 jucători: 144 de piese cu flori; mâna câștigătoare are cel puțin 8 puncte (subset documentat al combinațiilor oficiale) plus florile. Mutări: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
+guobiao	fr	Mahjong officiel chinois (Guobiao)	
+guobiao	it	Mahjong ufficiale cinese (Guobiao)	
+guobiao	es	Mahjong oficial chino (Guobiao)	
+guobiao	de	Chinesisches Offizielles Mahjong (Guobiao)	
+guobiao	hu	Kínai hivatalos madzsong (Guobiao)	
+guobiao	pt	Mahjong oficial chinês (Guobiao)	
+boggle	en	Boggle	Boggle: 4x4 letter grid; in turn write one word of at least 3 letters formed from adjacent cubes, valid and not yet found; points grow with length. Moves: casa, pas.
+boggle	ro	Boggle	Boggle: tablă 4×4 de litere; pe rând scrii câte un cuvânt de cel puțin 3 litere format din cuburi vecine, valid în dicționar și încă negăsit; punctele cresc cu lungimea. Mutări: casa, pas.
+boggle	fr	Boggle	
+boggle	it	Boggle	
+boggle	es	Boggle	
+boggle	de	Boggle	
+boggle	hu	Boggle	
+boggle	pt	Boggle	
+kings	en	Kings (Ring of Fire)	Kings without alcohol: draw cards in turn, each rank has a rule; sips are penalty tokens; the fourth king makes you take the whole cup. Moves: trag, scut, atac.
+kings	ro	Kings (Ring of Fire)	Kings fără alcool: tragi pe rând cărți cu reguli pe rang; înghițiturile sunt jetoane de penalizare; al patrulea rege te face să iei tot paharul. Mutări: trag, scut, atac.
+kings	fr	Kings (Ring of Fire)	
+kings	it	Kings (Ring of Fire)	
+kings	es	Kings (Ring of Fire)	
+kings	de	Kings (Ring of Fire)	
+kings	hu	Kings (Ring of Fire)	
+kings	pt	Kings (Ring of Fire)	
+celebrity	en	Celebrity (Fishbowl)	Celebrity: a bowl of 12 names, three rounds (describe, act, one word); a simulated teammate guesses; most guesses win. The top name is only shown to the giver. Moves: dau, sar, ghicesc.
+celebrity	ro	Celebrity (Fishbowl)	Celebrity: vas cu 12 nume, trei runde (descrii, mimezi, un singur cuvânt); coechipierul simulat ghicește; câștigă cine ghicește mai multe. Numele de sus se vede doar de cel care îl dă. Mutări: dau, sar, ghicesc.
+celebrity	fr	Célébrités (Fishbowl)	
+celebrity	it	Celebrity (Fishbowl)	
+celebrity	es	Celebrity (Fishbowl)	
+celebrity	de	Celebrity (Fishbowl)	
+celebrity	hu	Celebrity (Fishbowl)	
+celebrity	pt	Celebrity (Fishbowl)	
+pin_the_tail	en	Pin the Tail on the Donkey	On a 7x5 field pick a target, get spun (random error) and pin the tail: 5 points exact, 3, 2, 1 by distance; 5 rounds. Moves: c3, then invart.
+pin_the_tail	ro	Prinde coada măgarului	Pe un câmp 7×5 alegi o țintă, te învârți (eroare aleatoare) și prinzi coada: 5 puncte exact, 3, 2, 1 după distanță; 5 runde. Mutări: c3, apoi invart.
+pin_the_tail	fr	Colle la queue de l'âne	
+pin_the_tail	it	Attacca la coda all'asino	
+pin_the_tail	es	Ponle la cola al burro	
+pin_the_tail	de	Schwanz an den Esel heften	
+pin_the_tail	hu	Tűzd fel a szamár farkát	
+pin_the_tail	pt	Prenda o rabo no burro	
+war	en	War	War: each flips the top card, the higher takes both; ties start a war (cards face down plus one up). Win by taking every card (move cap, then most cards). Moves: joc.
+war	ro	Război (War)	Război: fiecare întoarce cartea de sus, cea mai mare ia ambele; la egalitate «război» (cărți acoperite și una descoperită). Câștigă cine ia toate cărțile (limită de mutări, apoi mai multe cărți). Mutări: joc.
+war	fr	La Bataille	
+war	it	Guerra	
+war	es	La Guerra	
+war	de	Krieg (Kartenspiel)	
+war	hu	Háború (kártyajáték)	
+war	pt	Guerra (jogo de cartas)	
+tressette	en	Tressette	Tressette (Italian 40-card deck, 2 players): follow suit, rank order 3 2 A K Q J 7 6 5 4, no trump; points A 1, 3/2/K/Q/J 1/3; last trick +1. Moves: 3d, Rs, Cc.
+tressette	ro	Tressette (Italia)	Tressette (40 de cărți italiene, 2 jucători): obligatoriu să răspunzi la culoare, ordinea 3 2 A R C F 7 6 5 4, fără atu; puncte A 1, 3/2/R/C/F ⅓; ultima levată +1. Mutări: 3d, Rs, Cc.
+tressette	fr	Tressette	
+tressette	it	Tressette	
+tressette	es	Tresillo (Tressette)	
+tressette	de	Tressette	
+tressette	hu	Tressette	
+tressette	pt	Tressette	
+piquet	en	Piquet	Piquet (32 cards): exchange, declarations (point, sequences, sets) and 12 tricks; our own trick-scoring variant. Moves: d7h, gata, Ah, urmatoarea.
+piquet	ro	Piquet (Franța)	Piquet (32 de cărți): schimb de cărți, declarații (punct, secvențe, seturi) și 12 levate; variantă proprie de punctare a jocului. Mutări: d7h, gata, Ah, urmatoarea.
+piquet	fr	Piquet	
+piquet	it	Picchetto	
+piquet	es	Piquet	
+piquet	de	Piquet	
+piquet	hu	Piquet	
+piquet	pt	Piquet	
+batak	en	Batak	Batak adapted for 2 players (13 cards each): bid tricks, pick trump, the bidder must take at least the bid. Moves: 6, pas, atu h, Ah.
+batak	ro	Batak (Turcia)	Batak adaptat la 2 jucători (13 cărți fiecare): licitezi levatele, alegi atu (pică implicit), cine licitează trebuie să facă cel puțin cât a promis. Mutări: 6, pas, atu h, Ah.
+batak	fr	Batak	
+batak	it	Batak	
+batak	es	Batak	
+batak	de	Batak	
+batak	hu	Batak	
+batak	pt	Batak	
+yaniv	en	Yaniv	Yaniv: discard a card, set or run, then draw from the stock or the discard pile; call «yaniv» with at most 7 points in hand; if the opponent has less or equal you are caught (assaf). Moves: yaniv, 5h,5s-stoc, 5h-ia:7c.
+yaniv	ro	Yaniv (Israel)	Yaniv: arunci o carte, un set sau o secvență, apoi tragi din stoc sau talon; strigi «yaniv» cu cel mult 7 puncte în mână; dacă adversarul are mai puțin sau egal ești «asaf». Mutări: yaniv, 5h,5s-stoc, 5h-ia:7c.
+yaniv	fr	Yaniv	
+yaniv	it	Yaniv	
+yaniv	es	Yaniv	
+yaniv	de	Yaniv	
+yaniv	hu	Yaniv	
+yaniv	pt	Yaniv	
+ascunselea	en	Hide-and-seek	Hide-and-seek on a 3x3 yard, 4 rounds: the hider secretly picks a spot, the seeker has 3 tries with warm/cold hints; faster means more points. Moves: ascunde b2, cauta b2.
+ascunselea	ro	Ascunselea (Hide-and-seek)	Ascunselea pe o curte 3×3, 4 runde: ascunzătorul alege în secret o ascunzătoare, căutătorul are 3 încercări cu indiciu cald/rece; mai repede = mai multe puncte. Mutări: ascunde b2, cauta b2.
+ascunselea	fr	Cache-cache	
+ascunselea	it	Nascondino	
+ascunselea	es	Escondite	
+ascunselea	de	Verstecken	
+ascunselea	hu	Bújócska	
+ascunselea	pt	Esconde-esconde	
+de_a_prinselea	en	Tag	Chase on a 7x7 field: a chaser who ends adjacent swaps roles (and waits one move); whoever is not chasing at the end of a round scores 1; 15 rounds. Moves: n, s, e, v, ne, nv, se, sv, stai.
+de_a_prinselea	ro	De-a prinselea (Tag)	Urmărire pe un câmp 7×7: prinzătorul care ajunge adiacent schimbă rolurile (și stă o mutare); cel care nu e prinzător la sfârșitul rundei primește 1 punct; 15 runde. Mutări: n, s, e, v, ne, nv, se, sv, stai.
+de_a_prinselea	fr	Chat perché	
+de_a_prinselea	it	Acchiapparella	
+de_a_prinselea	es	Pilla-pilla	
+de_a_prinselea	de	Fangen	
+de_a_prinselea	hu	Fogócska	
+de_a_prinselea	pt	Pega-pega	
+elasticul	en	Chinese jump rope	The rope rises through 7 levels; at each level pick an easy or hard jump (different odds and points), then jump; a miss eliminates you. Moves: usor, greu, sari.
+elasticul	ro	Elasticul	Elasticul urcă în 7 niveluri; la fiecare nivel alegi salt ușor sau greu (șanse și puncte diferite), apoi sari; cine greșește e eliminat. Mutări: usor, greu, sari.
+elasticul	fr	Corde élastique	
+elasticul	it	Elastico	
+elasticul	es	Comba elástica	
+elasticul	de	Gummitwist	
+elasticul	hu	Gumizás	
+elasticul	pt	Elástico	
+oina	en	Oină	Stylised oina: 6 innings of 3 outs; the batter picks a strike, the fielder a position, then it resolves; a ball caught in the chosen zone burns the batter, otherwise he runs and scores 1/2/4. Moves: usoara, medie, puternica, aproape, mijloc, departe, arunca.
+oina	ro	Oina	Oina stilizată: 6 reprize cu 3 arși; bătăușul alege lovitura, apărătorul poziția, apoi se aruncă; mingea prinsă în zona aleasă arde bătăușul, altfel aleargă și marchează 1/2/4. Mutări: usoara, medie, puternica, aproape, mijloc, departe, arunca.
+oina	fr	Oină	
+oina	it	Oina	
+oina	es	Oina	
+oina	de	Oina	
+oina	hu	Oina	
+oina	pt	Oina	
+loto_imagini	en	Picture lotto	Picture lotto with 3x3 cards from 24 pictures; draw in turn from the bag, cover the matching picture or pass; first full card calls lotto. Moves: trage, acopera, pas.
+loto_imagini	ro	Loto cu imagini (Picture lotto)	Cartonașe 3×3 cu imagini din 24; tragi pe rând din sac, acoperi imaginea de pe cartonaș sau o lași; primul cu cartonașul plin strigă loto. Mutări: trage, acopera, pas.
+loto_imagini	fr	Loto d'images	
+loto_imagini	it	Tombola con immagini	
+loto_imagini	es	Lotería de imágenes	
+loto_imagini	de	Bildlotto	
+loto_imagini	hu	Képes lottó	
+loto_imagini	pt	Loto de imagens	
+bau_cua	en	Bầu cua cá cọp	Bầu cua: three dice with deer, gourd, rooster, fish, crab, shrimp; the bettor stakes symbols, the banker rolls; 1:1 per matching die. 12 rounds with alternating roles. Moves: cerb 5, peste 10, gata, arunc.
+bau_cua	ro	Bầu cua (dovleac, crab, pește)	Bầu cua: trei zaruri cu cerb, dovleac, cocoș, pește, crab, creveți; parierul pune mize pe simboluri, bancherul aruncă; plată 1:1 per zar. 12 runde cu roluri alternante. Mutări: cerb 5, peste 10, gata, arunc.
+bau_cua	fr	Bầu cua cá cọp	
+bau_cua	it	Bầu cua cá cọp	
+bau_cua	es	Bầu cua cá cọp	
+bau_cua	de	Bầu cua cá cọp	
+bau_cua	hu	Bầu cua cá cọp	
+bau_cua	pt	Bầu cua cá cọp	
+yacht	en	Yacht	Yacht: 12 rounds, up to 3 rolls of 5 dice, score into 12 categories (each once); yacht = five of a kind = 50. Moves: arunc, tine 3 3 5, scor casa.
+yacht	ro	Yacht	Yacht: 12 runde, până la 3 aruncări cu 5 zaruri, scrii scorul în 12 categorii (fiecare o dată); yacht = cinci egale = 50. Mutări: arunc, tine 3 3 5, scor casa.
+yacht	fr	Yacht	
+yacht	it	Yacht	
+yacht	es	Yacht	
+yacht	de	Yacht	
+yacht	hu	Yacht	
+yacht	pt	Yacht	
+chicago	en	Chicago (dice)	Chicago: 11 rounds with target 2…12; roll two dice summing to the target to score that many points; optionally keep a die and re-roll the other. Moves: arunc, tin 1, tin 2, gata, rearunc.
+chicago	ro	Chicago (zaruri)	Chicago: 11 runde cu ținta 2…12; aruncând două zaruri cu suma egală cu ținta iei atâtea puncte; opțional păstrezi un zar și rearunci. Mutări: arunc, tin 1, tin 2, gata, rearunc.
+chicago	fr	Chicago (dés)	
+chicago	it	Chicago (dadi)	
+chicago	es	Chicago (dados)	
+chicago	de	Chicago (Würfel)	
+chicago	hu	Chicago (kocka)	
+chicago	pt	Chicago (dados)	
+zara	en	Zara (game)	Zara (reconstruction): each calls a number 4-17, three dice are rolled; whoever called the sum scores that many points; 10 rounds. Moves: n13, arunc.
+zara	ro	Zara (joc)	Zara (reconstituire): fiecare strigă un număr 4–17, se aruncă 3 zaruri; cine a strigat suma ia atâtea puncte; 10 runde. Mutări: n13, arunc.
+zara	fr	Zara (jeu)	
+zara	it	Zara (gioco)	
+zara	es	Zara (juego)	
+zara	de	Zara (Würfelspiel)	
+zara	hu	Zara (kockajáték)	
+zara	pt	Zara (jogo)	
+daldos	en	Daldøs	Daldøs (reconstruction): boat-shaped board with 3 rows, 12 pieces, two 4-sided dice; a 1 «dals» a piece, then pieces run the circuit and remove enemy pieces. Moves: dal, h5+3.
+daldos	ro	Daldøs	Daldøs (reconstituire): tablă-barcă cu 3 rânduri, 12 piese, două zaruri cu 4 fețe; un 1 «dalează» o piesă, apoi piesele parcurg circuitul și scot piesele adverse. Mutări: dal, h5+3.
+daldos	fr	Daldøs	
+daldos	it	Daldøs	
+daldos	es	Daldøs	
+daldos	de	Daldøs	
+daldos	hu	Daldøs	
+daldos	pt	Daldøs	
