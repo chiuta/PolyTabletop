@@ -1,6 +1,6 @@
-# Reguli detaliate: jocurile 121–490 (partea a doua din `polytabletop list`)
+# Reguli detaliate: jocurile 121–530 (partea a doua din `polytabletop list`)
 
-Pagini de reguli în română pentru jocurile 121–490, în ordinea din `polytabletop list`. Primele 120 de jocuri sunt în [INDEX.md](INDEX.md).
+Pagini de reguli în română pentru jocurile 121–530, în ordinea din `polytabletop list`. Primele 120 de jocuri sunt în [INDEX.md](INDEX.md).
 
 Observații comune:
 
@@ -382,3 +382,43 @@ Observații comune:
 | 488 | [`chicago`](chicago.md) | Chicago (zaruri) |  | nu | — |
 | 489 | [`zara`](zara.md) | Zara (joc) |  | nu | — |
 | 490 | [`daldos`](daldos.md) | Daldøs |  | nu | — |
+| 491 | [`colturi`](colturi.md) | Colțuri (poliomino 10×10) |  | nu | — |
+| 492 | [`sah960`](sah960.md) | Șah cu start amestecat (fără rocadă) |  | nu | — |
+| 493 | [`impingere`](impingere.md) | Împingere pe pătrate (7×7) |  | nu | — |
+| 494 | [`roiul`](roiul.md) | Roiul (insecte pe masă) |  | nu | — |
+| 495 | [`terase`](terase.md) | Terase (construcție 5×5) |  | nu | — |
+| 496 | [`cartimut`](cartimut.md) | Mutări din cărți (5×5) |  | nu | — |
+| 497 | [`sferturi`](sferturi.md) | Sferturi (rotire 6×6) |  | nu | — |
+| 498 | [`inele`](inele.md) | Inele și semne (hex) |  | nu | — |
+| 499 | [`sase`](sase.md) | Șase în linie (13×13) |  | nu | — |
+| 500 | [`morpiuri9`](morpiuri9.md) | Morpion în nouă (9×9) |  | nu | — |
+| 501 | [`drumul_stivelor`](drumul_stivelor.md) | Drumul stivelor (5×5) |  | nu | — |
+| 502 | [`margine`](margine.md) | De la margine (hex 37) |  | nu | — |
+| 503 | [`izvoare`](izvoare.md) | Izvoare (stive conectate 7×7) |  | nu | — |
+| 504 | [`trei_tipuri`](trei_tipuri.md) | Trei tipuri (stive 6×6) |  | nu | — |
+| 505 | [`bilinele`](bilinele.md) | Bile și inele (hex 37) |  | nu | — |
+| 506 | [`animale`](animale.md) | Animale (mini-șah 3×4) |  | nu | — |
+| 507 | [`iepuri`](iepuri.md) | Iepurii și Elefantul (8×8) |  | nu | — |
+| 508 | [`asalt`](asalt.md) | Asalt (pioni 7×7) |  | nu | — |
+| 509 | [`dar4`](dar4.md) | Piesa dăruită (4×4) |  | nu | — |
+| 510 | [`piramida`](piramida.md) | Piramida (bile pe 4 niveluri) |  | nu | — |
+| 511 | [`cuburi`](cuburi.md) | Cuburi glisante (5×5) |  | nu | — |
+| 512 | [`culori_pas`](culori_pas.md) | Culori în șir (turnuri 8×8) |  | nu | — |
+| 513 | [`hochei_masa`](hochei_masa.md) | Hochei pe masă (ture) |  | nu | — |
+| 514 | [`trenuri`](trenuri.md) | Trenuri de domino (2 jucători) |  | da | — |
+| 515 | [`marmure`](marmure.md) | Marmure (curse cu scurtătură) |  | nu | — |
+| 516 | [`blocaje`](blocaje.md) | Blocaje (curse cu blocuri) |  | nu | — |
+| 517 | [`zbor`](zbor.md) | Zbor (curse cu salturi) |  | nu | — |
+| 518 | [`perechi_duel`](perechi_duel.md) | Perechi în piramidă (duel) |  | nu | — |
+| 519 | [`discuri`](discuri.md) | Discuri (fotbal pe ture) |  | nu | — |
+| 520 | [`armonia`](armonia.md) | Armonia florilor (7×7) |  | nu | — |
+| 521 | [`cai_de_curse`](cai_de_curse.md) | Cai de curse (traseu 40) |  | nu | — |
+| 522 | [`cub2`](cub2.md) | Cub 2×2: duel |  | nu | — |
+| 523 | [`flipper_duel`](flipper_duel.md) | Flipper (duel de scor) |  | nu | — |
+| 524 | [`scuze`](scuze.md) | Pardon (curse cu cărți) |  | nu | — |
+| 525 | [`forme6`](forme6.md) | Forme și culori (plăcuțe) |  | da | — |
+| 526 | [`palate`](palate.md) | Palate (orașul cu monede) |  | da | — |
+| 527 | [`sir5`](sir5.md) | Șir de cinci (cărți și jetoane) |  | da | — |
+| 528 | [`kilometri`](kilometri.md) | Kilometri (cursă cu cărți) |  | da | — |
+| 529 | [`camile`](camile.md) | Cursa cămilelor (pariuri) |  | nu | — |
+| 530 | [`tren_jaf`](tren_jaf.md) | Jaful din tren (programe) |  | da | — |

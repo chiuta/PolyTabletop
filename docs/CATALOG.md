@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (494)
+## Implementat (534)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -248,20 +248,36 @@
 | Crown and Anchor | Zaruri | Marea Britanie / Oceania | implementat |
 | Mu Torere | Abstract | Noua Zeelandă (maori) | implementat |
 | Tic-tac-toe (X și 0) | Abstract | Antic | implementat |
+| Blokus | Abstract | Franța | implementat |
+| Chess960 (Fischer Random) | Abstract | SUA | implementat |
 | Dame internaționale (10x10) | Abstract | Franța / Olanda | implementat |
 | Dame rusești (Shashki) | Abstract | Rusia | implementat |
+| Abalone | Abstract | Franța | implementat |
+| Hive | Abstract | Marea Britanie | implementat |
+| Santorini | Abstract | Marea Britanie | implementat |
 | Kalah | Abstract | SUA | implementat |
 | Dame braziliene (Damas) | Abstract | Brazilia | implementat |
 | Hnefatafl | Abstract | Scandinavia | implementat |
+| Onitama | Abstract | Japonia | implementat |
+| Pentago | Abstract | Suedia | implementat |
+| YINSH | Abstract | Germania | implementat |
 | Jocul Regal din Ur | Abstract | Mesopotamia | implementat |
 | Toguz Kumalak | Abstract | Kazahstan / Kârgâzstan | implementat |
 | Shatranj | Abstract | Persia | implementat |
 | Chaturanga | Abstract | India | implementat |
 | Renju | Abstract | Japonia | implementat |
 | Pente | Abstract | SUA | implementat |
+| Connect6 | Abstract | Taiwan | implementat |
+| Ultimate Tic-Tac-Toe | Abstract | Global | implementat |
+| Tak | Abstract | SUA | implementat |
+| GIPF | Abstract | Germania | implementat |
+| DVONN | Abstract | Germania | implementat |
+| TZAAR | Abstract | Germania | implementat |
+| ZÈRTZ | Abstract | Germania | implementat |
 | Crazyhouse | Abstract | SUA | implementat |
 | Sittuyin | Abstract | Birmania | implementat |
 | Chu Shogi | Abstract | Japonia | implementat |
+| Dōbutsu Shōgi | Abstract | Japonia | implementat |
 | Alquerque | Abstract | Orientul Mijlociu / Spania | implementat |
 | Tablut | Abstract | Laponia / Suedia | implementat |
 | Brandubh | Abstract | Irlanda | implementat |
@@ -273,28 +289,40 @@
 | Havannah | Abstract | Marea Britanie | implementat |
 | TwixT | Abstract | SUA | implementat |
 | Sprouts | Abstract | Marea Britanie | implementat |
+| Arimaa | Abstract | SUA | implementat |
+| Breakthrough | Abstract | SUA | implementat |
 | Ataxx | Abstract | SUA | implementat |
 | Jungle (Dou Shou Qi) | Abstract | China | implementat |
+| Quarto | Abstract | Elveția | implementat |
+| Pylos | Abstract | SUA | implementat |
+| Quixo | Abstract | Franța | implementat |
+| Kamisado | Abstract | Marea Britanie | implementat |
 | Roulette | Clasic | Franța | implementat |
 | Chinese Checkers (Table chinezească, Sternhalma) | Clasic | Germania | implementat |
 | Halma | Clasic | SUA / Marea Britanie | implementat |
 | Peg solitaire | Clasic | Franța | implementat |
 | Tombola | Clasic | Italia | implementat |
 | Table football | Clasic | Europa | implementat |
+| Air hockey | Clasic | SUA | implementat |
 | Marbles | Clasic | Antic / Global | implementat |
 | Game of the Goose | Clasic | Italia | implementat |
 | Hong Kong Mahjong | Clasic | Hong Kong | implementat |
+| Mexican Train | Clasic | SUA / Mexic | implementat |
 | Shuffleboard (table) | Clasic | Marea Britanie | implementat |
 | Pachinko | Clasic | Japonia | implementat |
 | Tavli (Plakoto, Portes, Fevga) | Clasic | Grecia | implementat |
 | Royal Game of Ur | Clasic | Mesopotamia | implementat |
 | Keno | Clasic | China | implementat |
+| Aggravation | Clasic | SUA | implementat |
+| Malefiz | Clasic | Germania | implementat |
 | Fia-med-knuff | Clasic | Suedia | implementat |
 | Dog (Brändi Dog) | Clasic | Elveția | implementat |
 | Uckers | Clasic | Marea Britanie | implementat |
+| Feixingqi (Flying chess) | Clasic | China | implementat |
 | American Mah Jongg | Clasic | SUA | implementat |
 | Taiwanese Mahjong | Clasic | Taiwan | implementat |
 | Sichuan Mahjong | Clasic | China | implementat |
+| Mahjong solitaire | Clasic | SUA | implementat |
 | Tien Gow | Clasic | China | implementat |
 | Dominó cubano (doble nueve) | Clasic | Cuba | implementat |
 | Muggins (All Fives) | Clasic | SUA / Marea Britanie | implementat |
@@ -304,6 +332,7 @@
 | Acey-deucey | Clasic | SUA | implementat |
 | Trictrac | Clasic | Franța | implementat |
 | Jacquet | Clasic | Franța | implementat |
+| Subbuteo | Clasic | Marea Britanie | implementat |
 | Tiddlywinks | Clasic | Marea Britanie | implementat |
 | Bagatelle | Clasic | Franța | implementat |
 | Shove ha'penny | Clasic | Marea Britanie | implementat |
@@ -319,8 +348,10 @@
 | Camelot | Clasic | SUA / Marea Britanie | implementat |
 | Salta | Clasic | Franța | implementat |
 | Pong hau k'i | Clasic | China | implementat |
+| Pai Sho | Clasic | SUA | implementat |
 | Jeu des petits chevaux | Clasic | Franța | implementat |
 | Toc (jeu) | Clasic | Franța | implementat |
+| Cờ cá ngựa | Clasic | Vietnam | implementat |
 | Moultezim | Clasic | Grecia / Turcia | implementat |
 | Gul bara | Clasic | Orientul Mijlociu | implementat |
 | Chaturaji | Clasic | India | implementat |
@@ -337,15 +368,24 @@
 | Sudoku | Clasic | Japonia / SUA | implementat |
 | Nonogram (Picross) | Clasic | Japonia | implementat |
 | Puzzle cu piese (Jigsaw) | Clasic | Marea Britanie | implementat |
+| Rubik's Cube | Clasic | Ungaria | implementat |
 | Morra (Mora) | Clasic | Italia | implementat |
 | Narde scurtă (Short Nardy) | Clasic | Persia / Rusia | implementat |
 | Tenis de masă (Ping-pong) | Clasic | Marea Britanie | implementat |
 | Biliard (Billiards) | Clasic | Franța | implementat |
 | Snooker | Clasic | India | implementat |
+| Flipper (Pinball) | Clasic | SUA | implementat |
 | Chinese Official Mahjong (Guobiao) | Clasic | China | implementat |
 | Sanma (mahjong în trei) | Clasic | Japonia | implementat |
 | Pare sau impare (Odds and evens) | Clasic | Global | implementat |
 | Hypergammon | Clasic | — | implementat |
+| Sorry! | Familie | Marea Britanie | implementat |
+| Qwirkle | Familie | SUA | implementat |
+| Alhambra | Familie | Germania | implementat |
+| Sequence | Familie | SUA | implementat |
+| Mille Bornes | Familie | Franța | implementat |
+| Camel Up | Familie | Germania | implementat |
+| Colt Express | Familie | Franța | implementat |
 | Takenoko | Familie | Franța | implementat |
 | Patchwork | Familie | Germania | implementat |
 | Rush Hour | Familie | SUA | implementat |
@@ -506,50 +546,10 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Variantă proprie (434)
+## Variantă proprie (394)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Blokus | Abstract | Franța | planificat (variantă proprie) |
-| Chess960 (Fischer Random) | Abstract | SUA | planificat (variantă proprie) |
-| Abalone | Abstract | Franța | planificat (variantă proprie) |
-| Hive | Abstract | Marea Britanie | planificat (variantă proprie) |
-| Santorini | Abstract | Marea Britanie | planificat (variantă proprie) |
-| Onitama | Abstract | Japonia | planificat (variantă proprie) |
-| Pentago | Abstract | Suedia | planificat (variantă proprie) |
-| YINSH | Abstract | Germania | planificat (variantă proprie) |
-| Connect6 | Abstract | Taiwan | planificat (variantă proprie) |
-| Ultimate Tic-Tac-Toe | Abstract | Global | planificat (variantă proprie) |
-| Tak | Abstract | SUA | planificat (variantă proprie) |
-| GIPF | Abstract | Germania | planificat (variantă proprie) |
-| DVONN | Abstract | Germania | planificat (variantă proprie) |
-| TZAAR | Abstract | Germania | planificat (variantă proprie) |
-| ZÈRTZ | Abstract | Germania | planificat (variantă proprie) |
-| Dōbutsu Shōgi | Abstract | Japonia | planificat (variantă proprie) |
-| Arimaa | Abstract | SUA | planificat (variantă proprie) |
-| Breakthrough | Abstract | SUA | planificat (variantă proprie) |
-| Quarto | Abstract | Elveția | planificat (variantă proprie) |
-| Pylos | Abstract | SUA | planificat (variantă proprie) |
-| Quixo | Abstract | Franța | planificat (variantă proprie) |
-| Kamisado | Abstract | Marea Britanie | planificat (variantă proprie) |
-| Air hockey | Clasic | SUA | planificat (variantă proprie) |
-| Mexican Train | Clasic | SUA / Mexic | planificat (variantă proprie) |
-| Aggravation | Clasic | SUA | planificat (variantă proprie) |
-| Malefiz | Clasic | Germania | planificat (variantă proprie) |
-| Feixingqi (Flying chess) | Clasic | China | planificat (variantă proprie) |
-| Mahjong solitaire | Clasic | SUA | planificat (variantă proprie) |
-| Subbuteo | Clasic | Marea Britanie | planificat (variantă proprie) |
-| Pai Sho | Clasic | SUA | planificat (variantă proprie) |
-| Cờ cá ngựa | Clasic | Vietnam | planificat (variantă proprie) |
-| Rubik's Cube | Clasic | Ungaria | planificat (variantă proprie) |
-| Flipper (Pinball) | Clasic | SUA | planificat (variantă proprie) |
-| Sorry! | Familie | Marea Britanie | planificat (variantă proprie) |
-| Qwirkle | Familie | SUA | planificat (variantă proprie) |
-| Alhambra | Familie | Germania | planificat (variantă proprie) |
-| Sequence | Familie | SUA | planificat (variantă proprie) |
-| Mille Bornes | Familie | Franța | planificat (variantă proprie) |
-| Camel Up | Familie | Germania | planificat (variantă proprie) |
-| Colt Express | Familie | Franța | planificat (variantă proprie) |
 | Calico | Familie | SUA | planificat (variantă proprie) |
 | Parks | Familie | SUA | planificat (variantă proprie) |
 | Bärenpark | Familie | Germania | planificat (variantă proprie) |

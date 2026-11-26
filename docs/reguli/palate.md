@@ -1,0 +1,5 @@
+# Palate (orașul cu monede) (`palate`)
+
+Categorie: Familie. Doi jucători (Jucătorul 1 contra Jucătorului 2 sau calculatorului). Variantă proprie, inspirată de tipul de joc „Alhambra”. Pornire: `polytabletop play palate --seed 1`. Sursa implementării: `polytabletop-games/src/palate.rs`.
+
+> Reguli: Pachetul de monede are patru culori (a–d), valori 1–9, de două ori. Piața arată 4 cărți de monedă și 4 clădiri, fiecare sub o culoare cu un preț. O tură: `iau 2` (iei din piață cartea de pe locul 2) sau `cumpar b` (cumperi clădirea de sub culoarea b plătind cu cărțile tale de culoarea b; plata e cea mai mică sumă ≥ preț; plata exactă dă încă o tură), apoi `pune x,y` (clădirea intră în orașul tău, lipită pe latură de o clădire proprie; coordonate −2…2, castelul pe 0,0). 6 tipuri de clădiri a câte 6, cu valorile 1–6. La final: pentru fiecare tip, cine are mai multe clădiri ia 3×valoarea tipului (la egalitate jumătate), plus 1 punct pe clădire. Câștigă scorul mai mare. Vezi doar cărțile tale. Mutări: iau 2, cumpar b, pune 1,0.

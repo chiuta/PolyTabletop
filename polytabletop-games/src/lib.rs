@@ -9,39 +9,76 @@
 // B2-mods-begin
 pub mod agenti;
 pub mod ambuteiaj;
+pub mod animale;
+pub mod armonia;
+pub mod asalt;
+pub mod b1_race;
+pub mod b1_reg;
+pub mod b1_util;
 pub mod balans;
 pub mod bambuzeria;
 pub mod banane;
 pub mod banchiza;
+pub mod bilinele;
 pub mod brand_util;
+pub mod camile;
 pub mod caravana;
 pub mod cariera;
+pub mod cartimut;
 pub mod cazanul;
 pub mod cetate_intrigi;
+pub mod colturi;
+pub mod cub2;
+pub mod cuburi;
+pub mod culori_pas;
 pub mod curierii_vraji;
+pub mod dar4;
 pub mod detectiv;
+pub mod discuri;
+pub mod drumul_stivelor;
 pub mod evadare;
 pub mod firul;
+pub mod flipper_duel;
+pub mod forme6;
 pub mod genial;
+pub mod hochei_masa;
+pub mod iepuri;
+pub mod impingere;
+pub mod inele;
+pub mod izvoare;
+pub mod kilometri;
 pub mod lanturi;
 pub mod lumina;
 pub mod marele_bazar;
+pub mod margine;
 pub mod menajerie;
 pub mod morcovi;
+pub mod morpiuri9;
+pub mod palate;
 pub mod peisaj;
 pub mod pelerin;
+pub mod perechi_duel;
 pub mod pietre_puzzle;
+pub mod piramida;
 pub mod pisici;
 pub mod plapuma;
 pub mod postalioni;
 pub mod poteca;
 pub mod rapide;
+pub mod roiul;
 pub mod salariu;
 pub mod santier;
+pub mod sase;
+pub mod sferturi;
+pub mod sir5;
 pub mod tablou;
 pub mod templele;
+pub mod terase;
 pub mod tinut_zane;
 pub mod tinuturi_negociate;
+pub mod trei_tipuri;
+pub mod tren_jaf;
+pub mod trenuri;
 pub mod triunghiuri;
 pub mod turnuri_litere;
 pub mod turnuri_piatra;
@@ -580,6 +617,12 @@ pub struct Playable {
 
 /// Games whose `render` honours `set_viewer` (hot-seat shows only the mover's private info).
 pub const HOTSEAT_SAFE: &[&str] = &[
+    "trenuri",
+    "forme6",
+    "sir5",
+    "kilometri",
+    "palate",
+    "tren_jaf",
     "rps",
     "morra",
     "mexico",
@@ -3968,6 +4011,7 @@ fn playable_base() -> Vec<Playable> {
 pub fn playable() -> Vec<Playable> {
     let mut v = playable_base();
     v.extend(q6_reg::list());
+    v.extend(b1_reg::playables());
     v
 }
 

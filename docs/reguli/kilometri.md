@@ -1,0 +1,5 @@
+# Kilometri (cursă cu cărți) (`kilometri`)
+
+Categorie: Familie. Doi jucători (Jucătorul 1 contra Jucătorului 2 sau calculatorului). Variantă proprie, inspirată de tipul de joc „Mille Bornes”. Pornire: `polytabletop play kilometri --seed 1`. Sursa implementării: `polytabletop-games/src/kilometri.rs`.
+
+> Reguli: Fiecare ține 6 cărți ascunse și trage una la începutul turei. Scop: primul cu exact 1000 km (sau cine are mai mulți la epuizarea pachetului). Ca să mergi ai nevoie de „verde”; piedicile (stop, pană, gol, accident) se pun pe adversar când el rulează; el joacă remediul potrivit (roata, benzina, reparația) apoi iar „verde”. „Limita” îl restrânge la cărți de 25 și 50 până joacă „liber”. Imunitățile (prioritate, rezervă, tanc, asigurare) opresc piedicile viitoare. Cărțile de 200 km se joacă de cel mult două ori; nu depăși 1000. O tură: joci o carte sau arunci una (`d 25`). Vezi doar mâna ta. Mutări: 50, 200, stop, limita, pana, gol, accident, verde, liber, roata, benzina, reparatie, prior, rez, tanc, asig, d 25.

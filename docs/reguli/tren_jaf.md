@@ -1,0 +1,5 @@
+# Jaful din tren (programe) (`tren_jaf`)
+
+Categorie: Familie. Doi jucători (Jucătorul 1 contra Jucătorului 2 sau calculatorului). Variantă proprie, inspirată de tipul de joc „Colt Express”. Pornire: `polytabletop play tren_jaf --seed 1`. Sursa implementării: `polytabletop-games/src/tren_jaf.rs`.
+
+> Reguli: Trenul are 4 vagoane (1–4), fiecare cu interior și acoperiș și pungi de bani. Cei doi bandiți pornesc înăuntru (J1 în vagonul 4, J2 în 3). Patru runde; în fiecare, fiecare își alege în secret un program de 3 acțiuni (J1 întâi; J2 nu vede programul lui J1): `s` un vagon spre stânga, `d` spre dreapta, `u` urcă pe acoperiș sau coboară, `t` trage în celălalt bandit dacă e pe același nivel și vagon (pe acoperiș: orice vagon de pe acoperiș), `j` ia cea mai mare pungă de pe nivelul și din vagonul tău. Acțiunile se joacă pe rând: prima a lui J1, prima a lui J2, a doua a lui J1 etc. Cine e împușcat pierde pe loc cea mai mare pungă; fiecare are 4 gloanțe. La final câștigă cine are mai mulți bani. Mutări: programul de 3 litere, ex. ddj, utj.

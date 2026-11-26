@@ -143,6 +143,42 @@ impl Chess {
         c
     }
 
+    /// Șah cu poziție de start amestecată (variantă proprie): rândul din spate e ales din
+    /// cele 960 de aranjamente (nebunii pe culori diferite, regele între ture), simetric
+    /// pentru ambele culori; fără rocadă. Poziția e aleasă determinist din `seed`.
+    #[allow(clippy::needless_range_loop)]
+    pub fn chess960(seed: u64) -> Self {
+        let mut rng = polytabletop_core::rng::Rng::new(seed);
+        let mut back = [0i8; 8];
+        let mut free: Vec<usize> = (0..8).collect();
+        let dark = [0usize, 2, 4, 6];
+        let light = [1usize, 3, 5, 7];
+        let a = dark[rng.below(4)];
+        let b2 = light[rng.below(4)];
+        back[a] = B;
+        back[b2] = B;
+        free.retain(|&i| i != a && i != b2);
+        let q = free.remove(rng.below(free.len()));
+        back[q] = Q;
+        for _ in 0..2 {
+            let n = free.remove(rng.below(free.len()));
+            back[n] = N;
+        }
+        back[free[0]] = R;
+        back[free[1]] = K;
+        back[free[2]] = R;
+        let mut c = Chess::new();
+        for f in 0..8 {
+            c.b[f] = back[f];
+            c.b[56 + f] = -back[f];
+        }
+        c.castle = [false; 4];
+        c.hist.clear();
+        let k = c.key();
+        c.hist.push(k);
+        c
+    }
+
     pub fn with_depth(mut self, d: u32) -> Self {
         self.depth = d;
         self.timed = false;

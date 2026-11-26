@@ -9,7 +9,7 @@ use std::collections::HashMap;
 use std::sync::OnceLock;
 
 /// Embedded files, in override order (later files override earlier ones).
-const FILES: [&str; 15] = [
+const FILES: [&str; 16] = [
     include_str!("../data/i18n/titles_00.tsv"),
     include_str!("../data/i18n/titles_01.tsv"),
     include_str!("../data/i18n/titles_02.tsv"),
@@ -25,6 +25,7 @@ const FILES: [&str; 15] = [
     include_str!("../data/i18n/titles_Q5.tsv"),
     include_str!("../data/i18n/titles_Q6.tsv"),
     include_str!("../data/i18n/titles_B2.tsv"),
+    include_str!("../data/i18n/titles_B1.tsv"),
 ];
 
 type Entry = (&'static str, &'static str);
