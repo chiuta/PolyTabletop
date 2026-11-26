@@ -135,6 +135,52 @@ pub mod vamesul;
 pub mod vapor;
 pub mod zgarie_nori;
 // B2-mods-end
+// B5-mods-begin
+pub mod auc5;
+pub mod cadranul_ascuns;
+pub mod calatoria_oracolului;
+pub mod campia_cetei;
+pub mod carari_civilizatie;
+pub mod cartierele_catedralei;
+pub mod castel_rasarit;
+pub mod castelul_capricios;
+pub mod cetati_ascensiune;
+pub mod cod_indicii;
+pub mod companii_coasta;
+pub mod cronica_natiunilor;
+pub mod cvartet_istet;
+pub mod deck5;
+pub mod duelul_cartilor;
+pub mod econ5;
+pub mod elefanti_alpi;
+pub mod epoca_coloniilor;
+pub mod esente_arcane;
+pub mod forum_imperial;
+pub mod graf5;
+pub mod imperii_lupta;
+pub mod insule_zeii;
+pub mod lant_dominatie;
+pub mod magnificul_mecena;
+pub mod manastirea_harnica;
+pub mod marea_disputa;
+pub mod mecenatul_mesterilor;
+pub mod misterul_locatiei;
+pub mod noaptea_lupilor;
+pub mod orasul_fabricilor;
+pub mod pacea_caravane;
+pub mod palatul_majoritati;
+pub mod paradox_temporal;
+pub mod pestera_monstrilor;
+pub mod portul_reconstruit;
+pub mod potrivirea_cuvintelor;
+pub mod reteaua_umbrelor;
+pub mod schimb_stelar;
+pub mod senior_cetati;
+pub mod soarele_licitat;
+pub mod telefon_desenat;
+pub mod tesatura_epocilor;
+pub mod trei_runde5;
+// B5-mods-end
 pub mod aadupuli;
 pub mod aceydeucey;
 pub mod alquerque;
@@ -686,6 +732,17 @@ pub const HOTSEAT_SAFE: &[&str] = &[
     "kilometri",
     "palate",
     "tren_jaf",
+    // B5-hs-begin
+    "duelul_cartilor",
+    "pestera_monstrilor",
+    "potrivirea_cuvintelor",
+    "telefon_desenat",
+    "trei_runde5",
+    "cadranul_ascuns",
+    "cod_indicii",
+    "noaptea_lupilor",
+    "misterul_locatiei",
+    // B5-hs-end
     "rps",
     "morra",
     "mexico",
@@ -4660,6 +4717,288 @@ fn playable_base() -> Vec<Playable> {
             rules: "Negustori în 8 porturi pe un inel; portul i produce marfa i mod 4 (preț 1,2,3,4). Fiecare are 4 cărți de acțiune: «fondez k» (casă într-un port liber, vecin cu una a ta; prima oriunde; costă 2 monede, prima e gratis), «produc» (fiecare casă dă o marfă, max 6), «vand» (vinzi toate mărfurile; prețul × casele tale de acel fel) și «recuperez» (cărțile jucate revin în mână, +1 monedă). Când un jucător are 6 case, runda finală se încheie: 3 puncte/casă, +1 pe fel de marfă, +1 la 3 monede.",
             make: || Box::new(targul_marii::Targ::new()),
         },
+        // B5-reg-begin
+        Playable {
+            id: "insule_zeii",
+            title: "Insulele Zeilor (cucerire de arhipelag)",
+            category: "Strategie",
+            rules: "Variantă originală: Cucerești un arhipelag de 14 insule în două grupuri unite prin punți; insulele-cheie sunt marcate „cheie”. Cine ține trei insule-cheie la sfârșitul turei sale câștigă; altfel, după 8 runde decide valoarea teritoriilor. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(insule_zeii::new())),
+        },
+        Playable {
+            id: "lant_dominatie",
+            title: "Lanțul Dominației (specii pe un inel de teritorii)",
+            category: "Strategie",
+            rules: "Variantă originală: Un inel de 12 ținuturi cu coarde. La fiecare a doua rundă se face o punctare: fiecare jucător primește valoarea teritoriilor lui. La final, punctele adunate plus valoarea teritoriilor. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(lant_dominatie::new())),
+        },
+        Playable {
+            id: "elefanti_alpi",
+            title: "Elefanți peste Alpi (campanie asimetrică spre capitală)",
+            category: "Strategie",
+            rules: "Variantă originală: Tablă 5×3. J1 pornește din colțul de sus cu trei ținuturi, J2 are doar capitala (colțul opus) cu 9 legiuni. Cine ocupă capitala adversarului câștigă imediat; după 12 runde decid punctele. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(elefanti_alpi::new())),
+        },
+        Playable {
+            id: "reteaua_umbrelor",
+            title: "Rețeaua Umbrelor (control de noduri cu spițe)",
+            category: "Strategie",
+            rules: "Variantă originală: Un butuc central și patru spițe de câte trei ținuturi, legate la capete. J1 pornește în butuc, J2 are mai multe ținuturi dar mai puțin centrale. Câștigă valoarea teritoriilor după 8 runde. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(reteaua_umbrelor::new())),
+        },
+        Playable {
+            id: "pacea_caravane",
+            title: "Pacea Caravanelor (loialități cumpărate cu aur)",
+            category: "Strategie",
+            rules: "Variantă originală: Un inel de 12 ținuturi. Pe lângă luptă, poți cumpăra un ținut vecin cu aur (cump b, costă 2×garnizoana + 2 + valoarea). La fiecare a treia rundă se punctează teritoriile. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(pacea_caravane::new())),
+        },
+        Playable {
+            id: "epoca_coloniilor",
+            title: "Epoca Coloniilor (explorare și coloniști pe insule)",
+            category: "Strategie",
+            rules: "Variantă originală: Două grupuri de insule unite prin punți; fiecare cucerire aduce 2 aur de pradă. Câștigă valoarea teritoriilor după 8 runde. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(epoca_coloniilor::new())),
+        },
+        Playable {
+            id: "imperii_lupta",
+            title: "Lupta Imperiilor (regimente pe o hartă 4×4)",
+            category: "Strategie",
+            rules: "Variantă originală: O hartă 4×4 cu fortărețe (+1 pentru apărător). Șase runde de câte trei acțiuni; câștigă valoarea teritoriilor. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(imperii_lupta::new())),
+        },
+        Playable {
+            id: "senior_cetati",
+            title: "Seniorul Cetăților (cavaleri și fortărețe)",
+            category: "Strategie",
+            rules: "Variantă originală: Tablă 5×3, fortărețele dau +2 apărătorului. La fiecare a treia rundă se punctează teritoriile; câștigă totalul. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(senior_cetati::new())),
+        },
+        Playable {
+            id: "castel_rasarit",
+            title: "Castelul Răsăritului (asaltul capitalei)",
+            category: "Strategie",
+            rules: "Variantă originală: Tablă 4×4; capitalele sunt colțurile opuse. Cine ocupă capitala adversarului câștigă; după 12 runde decide valoarea teritoriilor. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(castel_rasarit::new())),
+        },
+        Playable {
+            id: "campia_cetei",
+            title: "Câmpia Ceții (două tabere, un singur castel)",
+            category: "Strategie",
+            rules: "Variantă originală: Un inel cu coarde și fortărețe puternice (+2). Cine pune mâna pe tabăra opusă câștigă; altfel, valoarea teritoriilor după 10 runde. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(campia_cetei::new())),
+        },
+        Playable {
+            id: "marea_disputa",
+            title: "Marea Dispută (adepți și puncte-cheie)",
+            category: "Strategie",
+            rules: "Variantă originală: Un inel de 16 ținuturi; patru sunt „cheie”. Poți și să convingi (cump b) un ținut vecin. Cine ține trei puncte-cheie la sfârșitul turei sale câștigă. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(marea_disputa::new())),
+        },
+        Playable {
+            id: "cetati_ascensiune",
+            title: "Cetăți în Ascensiune (colonii pe grilă)",
+            category: "Strategie",
+            rules: "Variantă originală: Tablă 4×4 cu venit care crește pe măsură ce ocupi teritorii (1 aur + valoarea ocupată). Câștigă valoarea teritoriilor după 8 runde. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(cetati_ascensiune::new())),
+        },
+        Playable {
+            id: "carari_civilizatie",
+            title: "Cărări de Civilizație (triburi pe insule)",
+            category: "Strategie",
+            rules: "Variantă originală: Două arhipelaguri de 8 ținuturi. La fiecare a cincea rundă se punctează teritoriile; câștigă totalul. Mutări: lev a, mut a>b:n, cump b (unde e permis), fin.",
+            make: || Box::new(brand_util::B(carari_civilizatie::new())),
+        },
+        Playable {
+            id: "calatoria_oracolului",
+            title: "Călătoria Oracolului (daruri, drumuri și conversii)",
+            category: "Strategie",
+            rules: "Variantă originală: Șapte runde: câte trei muncitori pe locuri libere (câmp, pădure, carieră, templu…); conversii limitate și bonus de set (+2 pentru fiecare set complet). Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(calatoria_oracolului::new())),
+        },
+        Playable {
+            id: "forum_imperial",
+            title: "Forumul Imperial (rondel de acțiuni)",
+            category: "Strategie",
+            rules: "Variantă originală: Rondel de 12 locuri: alegi un loc la 1–3 pași în față de marcajul tău. 3 cărți în piață; întreținere 1 grâu pe rundă (−1 punct dacă lipsește). Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(forum_imperial::new())),
+        },
+        Playable {
+            id: "manastirea_harnica",
+            title: "Mănăstirea Harnică (lanțuri de producție)",
+            category: "Strategie",
+            rules: "Variantă originală: Opt runde, doi muncitori. Cărțile din piață sunt clădiri cu venit permanent; la final, 3 vitralii = 1 punct. Întreținere de pâine. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(manastirea_harnica::new())),
+        },
+        Playable {
+            id: "cartierele_catedralei",
+            title: "Cartierele Catedralei (întreținere și influență)",
+            category: "Strategie",
+            rules: "Variantă originală: Nouă runde; întreținerea de 2 hrană pe rundă costă 2 puncte pe unitate lipsă. Cine are mai multă influență la final primește +6. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(cartierele_catedralei::new())),
+        },
+        Playable {
+            id: "tesatura_epocilor",
+            title: "Țesătura Epocilor (progres în cinci epoci)",
+            category: "Strategie",
+            rules: "Variantă originală: Cinci epoci scurte cu piață de 4 cărți și un singur schimb pe rundă; +2 pentru fiecare set complet de resurse. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(tesatura_epocilor::new())),
+        },
+        Playable {
+            id: "cronica_natiunilor",
+            title: "Cronica Națiunilor (cărți de progres și hrană)",
+            category: "Strategie",
+            rules: "Variantă originală: Opt runde, doi muncitori; 2 hrană pe rundă, 2 cărți din ultima resursă = 1 punct la final. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(cronica_natiunilor::new())),
+        },
+        Playable {
+            id: "esente_arcane",
+            title: "Esențe Arcane (artefacte și transmutări)",
+            category: "Strategie",
+            rules: "Variantă originală: Șase runde; trei transmutări pe rundă între esențe, bonus de set și +6 pentru majoritatea în aur. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(esente_arcane::new())),
+        },
+        Playable {
+            id: "orasul_fabricilor",
+            title: "Orașul Fabricilor (industrie și mărfuri)",
+            category: "Strategie",
+            rules: "Variantă originală: Opt runde, trei muncitori; piață de clădiri industriale, întreținere de pâine, 3 mărfuri = 1 punct. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(orasul_fabricilor::new())),
+        },
+        Playable {
+            id: "companii_coasta",
+            title: "Companiile de pe Coastă (rondel comercial)",
+            category: "Strategie",
+            rules: "Variantă originală: Rondel comercial de 12 locuri; cine are mai multă cafea la final primește +6, plus +2 pe set complet. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(companii_coasta::new())),
+        },
+        Playable {
+            id: "schimb_stelar",
+            title: "Schimb Stelar (comerț între civilizații)",
+            category: "Strategie",
+            rules: "Variantă originală: Șapte runde; patru tipuri de conversii (maxim trei pe rundă), bonus de set și +6 pentru majoritatea în date. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(schimb_stelar::new())),
+        },
+        Playable {
+            id: "magnificul_mecena",
+            title: "Magnificul Mecena (cărți de patronaj)",
+            category: "Strategie",
+            rules: "Variantă originală: Șase runde, trei muncitori; cărți de patronaj cu venit și puncte; +6 pentru cea mai mare faimă. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(magnificul_mecena::new())),
+        },
+        Playable {
+            id: "paradox_temporal",
+            title: "Paradoxul Temporal (rondel cu întreținere)",
+            category: "Strategie",
+            rules: "Variantă originală: Rondel de 12 locuri cu întreținere de 2 hrană; 3 cristale = 1 punct; o conversie pe rundă. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(paradox_temporal::new())),
+        },
+        Playable {
+            id: "portul_reconstruit",
+            title: "Portul Reconstruit (clădiri și corăbii)",
+            category: "Strategie",
+            rules: "Variantă originală: Opt runde, doi muncitori; piață de 4 clădiri, întreținere de grâu, +6 pentru mai mult grâu la final, +2 pe set. Mutări: pon s, cumpar j, conv i, pas, ronda.",
+            make: || Box::new(brand_util::B(portul_reconstruit::new())),
+        },
+        Playable {
+            id: "soarele_licitat",
+            title: "Soarele Licitat (licitații de pachete)",
+            category: "Strategie",
+            rules: "Variantă originală: În fiecare rundă se trag 4 loturi licitate împreună ca un singur pachet (ofer n / pas, câte +1..+3). Scor: valoarea pe fel, +4 pentru trei din același fel, −2 pentru fiecare fel lipsă. Mutări: ofer n, pas, prec a,b,c, ia l, nu, trag.",
+            make: || Box::new(brand_util::B(soarele_licitat::new())),
+        },
+        Playable {
+            id: "mecenatul_mesterilor",
+            title: "Mecenatul Meșterilor (licitații cu varietate)",
+            category: "Strategie",
+            rules: "Variantă originală: În fiecare rundă se licitează pe rând 3 loturi. Scor: pătratul numărului de feluri diferite plus jumătate din valori. Mutări: ofer n, pas, prec a,b,c, ia l, nu, trag.",
+            make: || Box::new(brand_util::B(mecenatul_mesterilor::new())),
+        },
+        Playable {
+            id: "palatul_majoritati",
+            title: "Palatul cu Majorități (licitații pentru regiuni)",
+            category: "Strategie",
+            rules: "Variantă originală: Șapte runde de câte 3 loturi licitate. Scor: +6 pentru majoritatea fiecărui fel, +2 la egalitate, plus o treime din valori. Mutări: ofer n, pas, prec a,b,c, ia l, nu, trag.",
+            make: || Box::new(brand_util::B(palatul_majoritati::new())),
+        },
+        Playable {
+            id: "castelul_capricios",
+            title: "Castelul Capricios (constructorul fixează prețurile)",
+            category: "Strategie",
+            rules: "Variantă originală: Constructorul-șef (alternează) fixează prețurile 1/2/3 ale celor 3 camere (prec a,b,c); celălalt alege primul (ia l / nu) și plătește constructorului; apoi constructorul poate lua una din rămase plătind banca. Scor: pătratul numărului de camere pe fel plus jumătate din valori. Mutări: ofer n, pas, prec a,b,c, ia l, nu, trag.",
+            make: || Box::new(brand_util::B(castelul_capricios::new())),
+        },
+        Playable {
+            id: "duelul_cartilor",
+            title: "Duelul Cărților (pachet care crește)",
+            category: "Strategie",
+            rules: "Variantă originală: Un singur rând central de 5 cărți (eroi și monștri). Joc (toată mâna), apoi cumpar j cu rune, lupt j cu forță, fixa pentru ucenicul mistic. Câștigă primul la 28 de puncte sau cine are mai multe după 15 ture. Mutări: joc, cumpar j, lupt j, fixa, fin, trag. Informație ascunsă: vezi doar secretele tale.",
+            make: || Box::new(brand_util::B(duelul_cartilor::new())),
+        },
+        Playable {
+            id: "pestera_monstrilor",
+            title: "Peștera Monștrilor (sat, lumină și întuneric)",
+            category: "Strategie",
+            rules: "Variantă originală: Trei locuri de sat (eroi) și trei de peșteră (monștri). Monștrii au „întuneric”: forța scade cu lumina lipsă. Comenzi: joc, cumpar j, lupt j, fixa, fin. 28 de puncte sau 15 ture. Mutări: joc, cumpar j, lupt j, fixa, fin, trag. Informație ascunsă: vezi doar secretele tale.",
+            make: || Box::new(brand_util::B(pestera_monstrilor::new())),
+        },
+        Playable {
+            id: "cvartet_istet",
+            title: "Cvartetul Isteț (probe în patru feluri)",
+            category: "Party",
+            rules: "Variantă originală: Cursă pe 24 de pătrate cu probe de patru feluri: alegi felul și riscul (incerc c r); reușita o decide mutarea forțată tira; îndemânarea crește cu fiecare reușită. Mutări: incerc c r, tira.",
+            make: || Box::new(brand_util::B(cvartet_istet::new())),
+        },
+        Playable {
+            id: "potrivirea_cuvintelor",
+            title: "Potrivirea Cuvintelor (arbitru cu gusturi ascunse)",
+            category: "Party",
+            rules: "Variantă originală: Zece runde: o însușire cerută, fiecare joacă o carte-substantiv cu fața în jos (da i); arbitrul (motorul) are gusturi ascunse pe care le poți deduce din istoricul public. Mutări: da i, trag, judeca. Informație ascunsă: vezi doar secretele tale.",
+            make: || Box::new(brand_util::B(potrivirea_cuvintelor::new())),
+        },
+        Playable {
+            id: "telefon_desenat",
+            title: "Telefonul Desenat (schițe parțiale și momeli)",
+            category: "Party",
+            rules: "Variantă originală: Desenatorul alege două însușiri ale obiectului secret și le arată sincer (schita) sau cu o momeală (momeala, doar 2 pe partidă); ghicitorul alege dintre patru candidați (ghic k). Mutări: schita a,b, momeala a,b, ghic k, trag, verifica. Informație ascunsă: vezi doar secretele tale.",
+            make: || Box::new(brand_util::B(telefon_desenat::new())),
+        },
+        Playable {
+            id: "trei_runde5",
+            title: "Cuvinte în Trei Runde (aceleași cărți, indicii tot mai sărace)",
+            category: "Party",
+            rules: "Variantă originală: Aceleași șase cărți secrete în trei runde: indicii cu două însușiri, cu una, apoi doar un bit; ghicitorul are două încercări și își amintește cărțile deja dezvăluite. Mutări: indiciu a,b, gest b, ghic w, trag, verifica. Informație ascunsă: vezi doar secretele tale.",
+            make: || Box::new(brand_util::B(trei_runde5::new())),
+        },
+        Playable {
+            id: "cadranul_ascuns",
+            title: "Cadranul Ascuns (aceeași scală, percepții diferite)",
+            category: "Party",
+            rules: "Variantă originală: Pe o scală 0–20 dătătorul își vede ținta și alege un cuvânt-indiciu; fiecare are o înclinație ascunsă care schimbă ce înseamnă cuvântul; ghicitorul pune cadranul (ghic p). Mutări: indiciu w, ghic p, trag, verifica. Informație ascunsă: vezi doar secretele tale.",
+            make: || Box::new(brand_util::B(cadranul_ascuns::new())),
+        },
+        Playable {
+            id: "cod_indicii",
+            title: "Codul din Indicii (mesaje cifrate și interceptare)",
+            category: "Party",
+            rules: "Variantă originală: Patru cuvinte-cheie secrete, un cod din trei cifre; dai trei indicii, decodorul automat trebuie să le înțeleagă, iar adversarul încearcă să intercepteze codul (ghic x,y,z). Mutări: indicii a,b,c, ghic x,y,z, trag, verifica. Informație ascunsă: vezi doar secretele tale.",
+            make: || Box::new(brand_util::B(cod_indicii::new())),
+        },
+        Playable {
+            id: "noaptea_lupilor",
+            title: "Noaptea Lupilor (roluri ascunse într-o noapte)",
+            category: "Party",
+            rules: "Variantă originală: Șase roluri (lup, văzător, hoț, doi săteni, tăbăcar), unul pentru fiecare jucător, trei pe masă; o noapte cu acțiuni secrete, apoi votul; trei mâini. Mutări: vad adv, vad 2,3, fur, pas, somn, zori, voteaza, iert, verifica. Informație ascunsă: vezi doar secretele tale.",
+            make: || Box::new(brand_util::B(noaptea_lupilor::new())),
+        },
+        Playable {
+            id: "misterul_locatiei",
+            title: "Misterul Locației (cine nu știe unde e?)",
+            category: "Party",
+            rules: "Variantă originală: Patru runde: spionul (unul sau doi) nu știe locația; șase întrebări despre însușiri, apoi fiecare acuză, ghicește locul sau trece. Mutări: intreb a, da, nu, acuz, loc k, pas, trag, verifica. Informație ascunsă: vezi doar secretele tale.",
+            make: || Box::new(brand_util::B(misterul_locatiei::new())),
+        },
+        // B5-reg-end
     ]
 }
 

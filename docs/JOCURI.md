@@ -1,6 +1,6 @@
 # Jocurile jucabile
 
-Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (610 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
+Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (650 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
 
 Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferență între majuscule/minuscule, spațiile se ignoră); `?` listează mutările legale, `hint` cere sugestia AI-ului, `q` iese.
 
@@ -541,6 +541,46 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Poteca Turmelor (drum cu vite)](#poteca_turmelor) (`poteca_turmelor`)
 - [Planetele Verzi (terraformare)](#planete_verzi) (`planete_verzi`)
 - [Târgul Mării (comerț pe mare)](#targul_marii) (`targul_marii`)
+- [Insulele Zeilor (cucerire de arhipelag)](#insule_zeii) (`insule_zeii`)
+- [Lanțul Dominației (specii pe un inel de teritorii)](#lant_dominatie) (`lant_dominatie`)
+- [Elefanți peste Alpi (campanie asimetrică spre capitală)](#elefanti_alpi) (`elefanti_alpi`)
+- [Rețeaua Umbrelor (control de noduri cu spițe)](#reteaua_umbrelor) (`reteaua_umbrelor`)
+- [Pacea Caravanelor (loialități cumpărate cu aur)](#pacea_caravane) (`pacea_caravane`)
+- [Epoca Coloniilor (explorare și coloniști pe insule)](#epoca_coloniilor) (`epoca_coloniilor`)
+- [Lupta Imperiilor (regimente pe o hartă 4×4)](#imperii_lupta) (`imperii_lupta`)
+- [Seniorul Cetăților (cavaleri și fortărețe)](#senior_cetati) (`senior_cetati`)
+- [Castelul Răsăritului (asaltul capitalei)](#castel_rasarit) (`castel_rasarit`)
+- [Câmpia Ceții (două tabere, un singur castel)](#campia_cetei) (`campia_cetei`)
+- [Marea Dispută (adepți și puncte-cheie)](#marea_disputa) (`marea_disputa`)
+- [Cetăți în Ascensiune (colonii pe grilă)](#cetati_ascensiune) (`cetati_ascensiune`)
+- [Cărări de Civilizație (triburi pe insule)](#carari_civilizatie) (`carari_civilizatie`)
+- [Călătoria Oracolului (daruri, drumuri și conversii)](#calatoria_oracolului) (`calatoria_oracolului`)
+- [Forumul Imperial (rondel de acțiuni)](#forum_imperial) (`forum_imperial`)
+- [Mănăstirea Harnică (lanțuri de producție)](#manastirea_harnica) (`manastirea_harnica`)
+- [Cartierele Catedralei (întreținere și influență)](#cartierele_catedralei) (`cartierele_catedralei`)
+- [Țesătura Epocilor (progres în cinci epoci)](#tesatura_epocilor) (`tesatura_epocilor`)
+- [Cronica Națiunilor (cărți de progres și hrană)](#cronica_natiunilor) (`cronica_natiunilor`)
+- [Esențe Arcane (artefacte și transmutări)](#esente_arcane) (`esente_arcane`)
+- [Orașul Fabricilor (industrie și mărfuri)](#orasul_fabricilor) (`orasul_fabricilor`)
+- [Companiile de pe Coastă (rondel comercial)](#companii_coasta) (`companii_coasta`)
+- [Schimb Stelar (comerț între civilizații)](#schimb_stelar) (`schimb_stelar`)
+- [Magnificul Mecena (cărți de patronaj)](#magnificul_mecena) (`magnificul_mecena`)
+- [Paradoxul Temporal (rondel cu întreținere)](#paradox_temporal) (`paradox_temporal`)
+- [Portul Reconstruit (clădiri și corăbii)](#portul_reconstruit) (`portul_reconstruit`)
+- [Soarele Licitat (licitații de pachete)](#soarele_licitat) (`soarele_licitat`)
+- [Mecenatul Meșterilor (licitații cu varietate)](#mecenatul_mesterilor) (`mecenatul_mesterilor`)
+- [Palatul cu Majorități (licitații pentru regiuni)](#palatul_majoritati) (`palatul_majoritati`)
+- [Castelul Capricios (constructorul fixează prețurile)](#castelul_capricios) (`castelul_capricios`)
+- [Duelul Cărților (pachet care crește)](#duelul_cartilor) (`duelul_cartilor`)
+- [Peștera Monștrilor (sat, lumină și întuneric)](#pestera_monstrilor) (`pestera_monstrilor`)
+- [Cvartetul Isteț (probe în patru feluri)](#cvartet_istet) (`cvartet_istet`)
+- [Potrivirea Cuvintelor (arbitru cu gusturi ascunse)](#potrivirea_cuvintelor) (`potrivirea_cuvintelor`)
+- [Telefonul Desenat (schițe parțiale și momeli)](#telefon_desenat) (`telefon_desenat`)
+- [Cuvinte în Trei Runde (aceleași cărți, indicii tot mai sărace)](#trei_runde5) (`trei_runde5`)
+- [Cadranul Ascuns (aceeași scală, percepții diferite)](#cadranul_ascuns) (`cadranul_ascuns`)
+- [Codul din Indicii (mesaje cifrate și interceptare)](#cod_indicii) (`cod_indicii`)
+- [Noaptea Lupilor (roluri ascunse într-o noapte)](#noaptea_lupilor) (`noaptea_lupilor`)
+- [Misterul Locației (cine nu știe unde e?)](#misterul_locatiei) (`misterul_locatiei`)
 - [Hnefatafl](#hnefatafl) (`hnefatafl`)
 - [Brandubh](#brandubh) (`brandubh`)
 - [Pente](#pente) (`pente`)
@@ -12061,6 +12101,795 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - Sintaxă din regulile jocului: vezi lista `?`
 - Exemple legale la început: `fondez`, `1`
 - La început sunt 16 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="insule_zeii"></a>
+## Insulele Zeilor (cucerire de arhipelag)
+
+- **Id:** `insule_zeii`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play insule_zeii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Cucerești un arhipelag de 14 insule în două grupuri unite prin punți; insulele-cheie sunt marcate „cheie”.
+- Cine ține trei insule-cheie la sfârșitul turei sale câștigă; altfel, după 8 runde decide valoarea teritoriilor.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 39 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lant_dominatie"></a>
+## Lanțul Dominației (specii pe un inel de teritorii)
+
+- **Id:** `lant_dominatie`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play lant_dominatie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Un inel de 12 ținuturi cu coarde.
+- La fiecare a doua rundă se face o punctare: fiecare jucător primește valoarea teritoriilor lui.
+- La final, punctele adunate plus valoarea teritoriilor.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 29 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="elefanti_alpi"></a>
+## Elefanți peste Alpi (campanie asimetrică spre capitală)
+
+- **Id:** `elefanti_alpi`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play elefanti_alpi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Tablă 5×3.
+- J1 pornește din colțul de sus cu trei ținuturi, J2 are doar capitala (colțul opus) cu 9 legiuni.
+- Cine ocupă capitala adversarului câștigă imediat; după 12 runde decid punctele.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 27 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="reteaua_umbrelor"></a>
+## Rețeaua Umbrelor (control de noduri cu spițe)
+
+- **Id:** `reteaua_umbrelor`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play reteaua_umbrelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Un butuc central și patru spițe de câte trei ținuturi, legate la capete.
+- J1 pornește în butuc, J2 are mai multe ținuturi dar mai puțin centrale.
+- Câștigă valoarea teritoriilor după 8 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 31 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pacea_caravane"></a>
+## Pacea Caravanelor (loialități cumpărate cu aur)
+
+- **Id:** `pacea_caravane`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pacea_caravane` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Un inel de 12 ținuturi.
+- Pe lângă luptă, poți cumpăra un ținut vecin cu aur (cump b, costă 2×garnizoana + 2 + valoarea).
+- La fiecare a treia rundă se punctează teritoriile.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 13 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="epoca_coloniilor"></a>
+## Epoca Coloniilor (explorare și coloniști pe insule)
+
+- **Id:** `epoca_coloniilor`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play epoca_coloniilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Două grupuri de insule unite prin punți; fiecare cucerire aduce 2 aur de pradă.
+- Câștigă valoarea teritoriilor după 8 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 39 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="imperii_lupta"></a>
+## Lupta Imperiilor (regimente pe o hartă 4×4)
+
+- **Id:** `imperii_lupta`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play imperii_lupta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: O hartă 4×4 cu fortărețe (+1 pentru apărător).
+- Șase runde de câte trei acțiuni; câștigă valoarea teritoriilor.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 39 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="senior_cetati"></a>
+## Seniorul Cetăților (cavaleri și fortărețe)
+
+- **Id:** `senior_cetati`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play senior_cetati` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Tablă 5×3, fortărețele dau +2 apărătorului.
+- La fiecare a treia rundă se punctează teritoriile; câștigă totalul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 27 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="castel_rasarit"></a>
+## Castelul Răsăritului (asaltul capitalei)
+
+- **Id:** `castel_rasarit`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play castel_rasarit` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Tablă 4×4; capitalele sunt colțurile opuse.
+- Cine ocupă capitala adversarului câștigă; după 12 runde decide valoarea teritoriilor.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 27 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="campia_cetei"></a>
+## Câmpia Ceții (două tabere, un singur castel)
+
+- **Id:** `campia_cetei`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play campia_cetei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Un inel cu coarde și fortărețe puternice (+2).
+- Cine pune mâna pe tabăra opusă câștigă; altfel, valoarea teritoriilor după 10 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 31 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="marea_disputa"></a>
+## Marea Dispută (adepți și puncte-cheie)
+
+- **Id:** `marea_disputa`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play marea_disputa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Un inel de 16 ținuturi; patru sunt „cheie”.
+- Poți și să convingi (cump b) un ținut vecin.
+- Cine ține trei puncte-cheie la sfârșitul turei sale câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 31 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cetati_ascensiune"></a>
+## Cetăți în Ascensiune (colonii pe grilă)
+
+- **Id:** `cetati_ascensiune`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cetati_ascensiune` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Tablă 4×4 cu venit care crește pe măsură ce ocupi teritorii (1 aur + valoarea ocupată).
+- Câștigă valoarea teritoriilor după 8 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 27 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="carari_civilizatie"></a>
+## Cărări de Civilizație (triburi pe insule)
+
+- **Id:** `carari_civilizatie`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play carari_civilizatie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Două arhipelaguri de 8 ținuturi.
+- La fiecare a cincea rundă se punctează teritoriile; câștigă totalul.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lev a, mut a>b:n, cump b (unde e permis), fin.
+- Exemple legale la început: `fin`, `lev`
+- La început sunt 39 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="calatoria_oracolului"></a>
+## Călătoria Oracolului (daruri, drumuri și conversii)
+
+- **Id:** `calatoria_oracolului`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play calatoria_oracolului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Șapte runde: câte trei muncitori pe locuri libere (câmp, pădure, carieră, templu…); conversii limitate și bonus de set (+2 pentru fiecare set complet).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 23 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="forum_imperial"></a>
+## Forumul Imperial (rondel de acțiuni)
+
+- **Id:** `forum_imperial`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play forum_imperial` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Rondel de 12 locuri: alegi un loc la 1–3 pași în față de marcajul tău. 3 cărți în piață; întreținere 1 grâu pe rundă (−1 punct dacă lipsește).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 13 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="manastirea_harnica"></a>
+## Mănăstirea Harnică (lanțuri de producție)
+
+- **Id:** `manastirea_harnica`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play manastirea_harnica` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Opt runde, doi muncitori.
+- Cărțile din piață sunt clădiri cu venit permanent; la final, 3 vitralii = 1 punct.
+- Întreținere de pâine.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 29 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cartierele_catedralei"></a>
+## Cartierele Catedralei (întreținere și influență)
+
+- **Id:** `cartierele_catedralei`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cartierele_catedralei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Nouă runde; întreținerea de 2 hrană pe rundă costă 2 puncte pe unitate lipsă.
+- Cine are mai multă influență la final primește +6.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 23 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tesatura_epocilor"></a>
+## Țesătura Epocilor (progres în cinci epoci)
+
+- **Id:** `tesatura_epocilor`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tesatura_epocilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Cinci epoci scurte cu piață de 4 cărți și un singur schimb pe rundă; +2 pentru fiecare set complet de resurse.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 31 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cronica_natiunilor"></a>
+## Cronica Națiunilor (cărți de progres și hrană)
+
+- **Id:** `cronica_natiunilor`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cronica_natiunilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Opt runde, doi muncitori; 2 hrană pe rundă, 2 cărți din ultima resursă = 1 punct la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 25 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="esente_arcane"></a>
+## Esențe Arcane (artefacte și transmutări)
+
+- **Id:** `esente_arcane`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play esente_arcane` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Șase runde; trei transmutări pe rundă între esențe, bonus de set și +6 pentru majoritatea în aur.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 29 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="orasul_fabricilor"></a>
+## Orașul Fabricilor (industrie și mărfuri)
+
+- **Id:** `orasul_fabricilor`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play orasul_fabricilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Opt runde, trei muncitori; piață de clădiri industriale, întreținere de pâine, 3 mărfuri = 1 punct.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 29 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="companii_coasta"></a>
+## Companiile de pe Coastă (rondel comercial)
+
+- **Id:** `companii_coasta`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play companii_coasta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Rondel comercial de 12 locuri; cine are mai multă cafea la final primește +6, plus +2 pe set complet.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 13 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="schimb_stelar"></a>
+## Schimb Stelar (comerț între civilizații)
+
+- **Id:** `schimb_stelar`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play schimb_stelar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Șapte runde; patru tipuri de conversii (maxim trei pe rundă), bonus de set și +6 pentru majoritatea în date.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 23 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="magnificul_mecena"></a>
+## Magnificul Mecena (cărți de patronaj)
+
+- **Id:** `magnificul_mecena`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play magnificul_mecena` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Șase runde, trei muncitori; cărți de patronaj cu venit și puncte; +6 pentru cea mai mare faimă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 25 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="paradox_temporal"></a>
+## Paradoxul Temporal (rondel cu întreținere)
+
+- **Id:** `paradox_temporal`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play paradox_temporal` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Rondel de 12 locuri cu întreținere de 2 hrană; 3 cristale = 1 punct; o conversie pe rundă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 17 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="portul_reconstruit"></a>
+## Portul Reconstruit (clădiri și corăbii)
+
+- **Id:** `portul_reconstruit`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play portul_reconstruit` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Opt runde, doi muncitori; piață de 4 clădiri, întreținere de grâu, +6 pentru mai mult grâu la final, +2 pe set.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pon s, cumpar j, conv i, pas, ronda.
+- Exemple legale la început: `pas`, `pon`
+- La început sunt 25 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="soarele_licitat"></a>
+## Soarele Licitat (licitații de pachete)
+
+- **Id:** `soarele_licitat`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play soarele_licitat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: În fiecare rundă se trag 4 loturi licitate împreună ca un singur pachet (ofer n / pas, câte +1..+3).
+- Scor: valoarea pe fel, +4 pentru trei din același fel, −2 pentru fiecare fel lipsă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ofer n, pas, prec a,b,c, ia l, nu, trag.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mecenatul_mesterilor"></a>
+## Mecenatul Meșterilor (licitații cu varietate)
+
+- **Id:** `mecenatul_mesterilor`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mecenatul_mesterilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: În fiecare rundă se licitează pe rând 3 loturi.
+- Scor: pătratul numărului de feluri diferite plus jumătate din valori.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ofer n, pas, prec a,b,c, ia l, nu, trag.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="palatul_majoritati"></a>
+## Palatul cu Majorități (licitații pentru regiuni)
+
+- **Id:** `palatul_majoritati`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play palatul_majoritati` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Șapte runde de câte 3 loturi licitate.
+- Scor: +6 pentru majoritatea fiecărui fel, +2 la egalitate, plus o treime din valori.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ofer n, pas, prec a,b,c, ia l, nu, trag.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="castelul_capricios"></a>
+## Castelul Capricios (constructorul fixează prețurile)
+
+- **Id:** `castelul_capricios`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play castelul_capricios` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Constructorul-șef (alternează) fixează prețurile 1/2/3 ale celor 3 camere (prec a,b,c); celălalt alege primul (ia l / nu) și plătește constructorului; apoi constructorul poate lua una din rămase plătind banca.
+- Scor: pătratul numărului de camere pe fel plus jumătate din valori.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ofer n, pas, prec a,b,c, ia l, nu, trag.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="duelul_cartilor"></a>
+## Duelul Cărților (pachet care crește)
+
+- **Id:** `duelul_cartilor`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play duelul_cartilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Un singur rând central de 5 cărți (eroi și monștri).
+- Joc (toată mâna), apoi cumpar j cu rune, lupt j cu forță, fixa pentru ucenicul mistic.
+- Câștigă primul la 28 de puncte sau cine are mai multe după 15 ture.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc, cumpar j, lupt j, fixa, fin, trag. Informație ascunsă: vezi doar secretele tale.
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pestera_monstrilor"></a>
+## Peștera Monștrilor (sat, lumină și întuneric)
+
+- **Id:** `pestera_monstrilor`
+- **Categorie:** Strategie
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pestera_monstrilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Trei locuri de sat (eroi) și trei de peșteră (monștri).
+- Monștrii au „întuneric”: forța scade cu lumina lipsă.
+- Comenzi: joc, cumpar j, lupt j, fixa, fin. 28 de puncte sau 15 ture.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc, cumpar j, lupt j, fixa, fin, trag. Informație ascunsă: vezi doar secretele tale.
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cvartet_istet"></a>
+## Cvartetul Isteț (probe în patru feluri)
+
+- **Id:** `cvartet_istet`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cvartet_istet` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Cursă pe 24 de pătrate cu probe de patru feluri: alegi felul și riscul (incerc c r); reușita o decide mutarea forțată tira; îndemânarea crește cu fiecare reușită.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: incerc c r, tira.
+- Exemple legale la început: `incerc`, `0`
+- La început sunt 36 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="potrivirea_cuvintelor"></a>
+## Potrivirea Cuvintelor (arbitru cu gusturi ascunse)
+
+- **Id:** `potrivirea_cuvintelor`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play potrivirea_cuvintelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Zece runde: o însușire cerută, fiecare joacă o carte-substantiv cu fața în jos (da i); arbitrul (motorul) are gusturi ascunse pe care le poți deduce din istoricul public.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: da i, trag, judeca. Informație ascunsă: vezi doar secretele tale.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="telefon_desenat"></a>
+## Telefonul Desenat (schițe parțiale și momeli)
+
+- **Id:** `telefon_desenat`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play telefon_desenat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Desenatorul alege două însușiri ale obiectului secret și le arată sincer (schita) sau cu o momeală (momeala, doar 2 pe partidă); ghicitorul alege dintre patru candidați (ghic k).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: schita a,b, momeala a,b, ghic k, trag, verifica. Informație ascunsă: vezi doar secretele tale.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="trei_runde5"></a>
+## Cuvinte în Trei Runde (aceleași cărți, indicii tot mai sărace)
+
+- **Id:** `trei_runde5`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play trei_runde5` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Aceleași șase cărți secrete în trei runde: indicii cu două însușiri, cu una, apoi doar un bit; ghicitorul are două încercări și își amintește cărțile deja dezvăluite.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: indiciu a,b, gest b, ghic w, trag, verifica. Informație ascunsă: vezi doar secretele tale.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cadranul_ascuns"></a>
+## Cadranul Ascuns (aceeași scală, percepții diferite)
+
+- **Id:** `cadranul_ascuns`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cadranul_ascuns` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Pe o scală 0–20 dătătorul își vede ținta și alege un cuvânt-indiciu; fiecare are o înclinație ascunsă care schimbă ce înseamnă cuvântul; ghicitorul pune cadranul (ghic p).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: indiciu w, ghic p, trag, verifica. Informație ascunsă: vezi doar secretele tale.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cod_indicii"></a>
+## Codul din Indicii (mesaje cifrate și interceptare)
+
+- **Id:** `cod_indicii`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cod_indicii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Patru cuvinte-cheie secrete, un cod din trei cifre; dai trei indicii, decodorul automat trebuie să le înțeleagă, iar adversarul încearcă să intercepteze codul (ghic x,y,z).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: indicii a,b,c, ghic x,y,z, trag, verifica. Informație ascunsă: vezi doar secretele tale.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="noaptea_lupilor"></a>
+## Noaptea Lupilor (roluri ascunse într-o noapte)
+
+- **Id:** `noaptea_lupilor`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play noaptea_lupilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Șase roluri (lup, văzător, hoț, doi săteni, tăbăcar), unul pentru fiecare jucător, trei pe masă; o noapte cu acțiuni secrete, apoi votul; trei mâini.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vad adv, vad 2,3, fur, pas, somn, zori, voteaza, iert, verifica. Informație ascunsă: vezi doar secretele tale.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="misterul_locatiei"></a>
+## Misterul Locației (cine nu știe unde e?)
+
+- **Id:** `misterul_locatiei`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play misterul_locatiei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: Patru runde: spionul (unul sau doi) nu știe locația; șase întrebări despre însușiri, apoi fiecare acuză, ghicește locul sau trece.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: intreb a, da, nu, acuz, loc k, pas, trag, verifica. Informație ascunsă: vezi doar secretele tale.
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="hnefatafl"></a>
 ## Hnefatafl

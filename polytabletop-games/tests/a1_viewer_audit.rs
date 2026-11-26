@@ -368,6 +368,41 @@ const NO_HIDDEN: &[&str] = &[
     "capturetheflag",
 ];
 
+/// B5 (jocuri comerciale, variante originale): informație publică (fără mâini ascunse; loturile/piața se văd).
+const NO_HIDDEN_B5: &[&str] = &[
+    "insule_zeii",
+    "lant_dominatie",
+    "elefanti_alpi",
+    "reteaua_umbrelor",
+    "pacea_caravane",
+    "epoca_coloniilor",
+    "imperii_lupta",
+    "senior_cetati",
+    "castel_rasarit",
+    "campia_cetei",
+    "marea_disputa",
+    "cetati_ascensiune",
+    "carari_civilizatie",
+    "calatoria_oracolului",
+    "forum_imperial",
+    "manastirea_harnica",
+    "cartierele_catedralei",
+    "tesatura_epocilor",
+    "cronica_natiunilor",
+    "esente_arcane",
+    "orasul_fabricilor",
+    "companii_coasta",
+    "schimb_stelar",
+    "magnificul_mecena",
+    "paradox_temporal",
+    "portul_reconstruit",
+    "soarele_licitat",
+    "mecenatul_mesterilor",
+    "palatul_majoritati",
+    "castelul_capricios",
+    "cvartet_istet",
+];
+
 /// B2 (jocuri de familie, variante originale): informație publică sau simetrică (mâini deschise, zaruri/pachete publice).
 const NO_HIDDEN_B2: &[&str] = &[
     "ambuteiaj",
@@ -434,6 +469,7 @@ fn every_playable_id_is_classified() {
             SOLO_GOD.contains(&p.id),
             NO_HIDDEN.contains(&p.id)
                 || NO_HIDDEN_B2.contains(&p.id)
+                || NO_HIDDEN_B5.contains(&p.id)
                 || NO_HIDDEN_B6.contains(&p.id),
         ]
         .iter()
@@ -462,6 +498,7 @@ fn lists_have_no_stale_or_duplicate_ids() {
         ("NO_HIDDEN", NO_HIDDEN),
         ("NO_HIDDEN_B2", NO_HIDDEN_B2),
         ("NO_HIDDEN_B6", NO_HIDDEN_B6),
+        ("NO_HIDDEN_B5", NO_HIDDEN_B5),
     ] {
         let set: BTreeSet<&str> = l.iter().copied().collect();
         assert_eq!(set.len(), l.len(), "{name} has duplicates");

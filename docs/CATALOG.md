@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (614)
+## Implementat (654)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -466,8 +466,48 @@
 | Great Western Trail | Strategie | Elveția | implementat |
 | Gaia Project | Strategie | Cehia | implementat |
 | Concordia | Strategie | Germania | implementat |
+| Oracle of Delphi | Strategie | Germania | implementat |
+| Trajan | Strategie | Italia | implementat |
+| Ora et Labora | Strategie | Germania | implementat |
+| Notre Dame | Strategie | Germania | implementat |
+| Cyclades | Strategie | Franța | implementat |
+| Dominant Species | Strategie | SUA | implementat |
+| Tapestry | Strategie | SUA | implementat |
+| Nations | Strategie | Cehia | implementat |
+| Res Arcana | Strategie | SUA | implementat |
+| Advanced Civilization | Strategie | SUA | implementat |
+| Here I Stand | Strategie | SUA | implementat |
+| Hannibal: Rome vs. Carthage | Strategie | SUA | implementat |
+| Labyrinth: The War on Terror | Strategie | SUA | implementat |
+| Pax Pamir (Second Edition) | Strategie | SUA | implementat |
+| Anno 1800 | Strategie | Germania | implementat |
+| Mombasa | Strategie | Germania | implementat |
+| Ra | Strategie | Germania | implementat |
+| The Princes of Florence | Strategie | Germania | implementat |
+| Taj Mahal | Strategie | Germania | implementat |
+| Wallenstein | Strategie | Germania | implementat |
+| Shogun | Strategie | Germania | implementat |
+| Struggle of Empires | Strategie | SUA | implementat |
+| Sidereal Confluence | Strategie | SUA | implementat |
+| Age of Empires III: The Age of Discovery | Strategie | SUA | implementat |
+| Clash of Cultures | Strategie | Germania | implementat |
+| Sekigahara: The Unification of Japan | Strategie | SUA | implementat |
+| Ascension: Chronicle of the Godslayer | Strategie | SUA | implementat |
+| Thunderstone | Strategie | SUA | implementat |
+| Anachrony | Strategie | Cehia | implementat |
+| Lorenzo il Magnifico | Strategie | Italia | implementat |
+| The Castles of Mad King Ludwig | Strategie | SUA | implementat |
+| Lisboa | Strategie | Portugalia | implementat |
 | Charades | Party | Franța | implementat |
 | Scattergories | Party | SUA | implementat |
+| Cranium | Party | SUA | implementat |
+| Apples to Apples | Party | SUA | implementat |
+| Telestrations | Party | SUA | implementat |
+| Time's Up! | Party | Franța | implementat |
+| Wavelength | Party | SUA | implementat |
+| Decrypto | Party | Franța | implementat |
+| One Night Ultimate Werewolf | Party | SUA | implementat |
+| Spyfall | Party | Rusia | implementat |
 | Articulate! | Party | Marea Britanie | implementat |
 | Balderdash | Party | Canada | implementat |
 | Concept | Party | Franța | implementat |
@@ -626,7 +666,7 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Variantă proprie (314)
+## Variantă proprie (274)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -670,46 +710,6 @@
 | The Quest for El Dorado | Strategie | Germania | planificat (variantă proprie) |
 | The Voyages of Marco Polo | Strategie | Italia | planificat (variantă proprie) |
 | Teotihuacan: City of Gods | Strategie | Italia | planificat (variantă proprie) |
-| Oracle of Delphi | Strategie | Germania | planificat (variantă proprie) |
-| Trajan | Strategie | Italia | planificat (variantă proprie) |
-| Ora et Labora | Strategie | Germania | planificat (variantă proprie) |
-| Notre Dame | Strategie | Germania | planificat (variantă proprie) |
-| Cyclades | Strategie | Franța | planificat (variantă proprie) |
-| Dominant Species | Strategie | SUA | planificat (variantă proprie) |
-| Tapestry | Strategie | SUA | planificat (variantă proprie) |
-| Nations | Strategie | Cehia | planificat (variantă proprie) |
-| Res Arcana | Strategie | SUA | planificat (variantă proprie) |
-| Advanced Civilization | Strategie | SUA | planificat (variantă proprie) |
-| Here I Stand | Strategie | SUA | planificat (variantă proprie) |
-| Hannibal: Rome vs. Carthage | Strategie | SUA | planificat (variantă proprie) |
-| Labyrinth: The War on Terror | Strategie | SUA | planificat (variantă proprie) |
-| Pax Pamir (Second Edition) | Strategie | SUA | planificat (variantă proprie) |
-| Anno 1800 | Strategie | Germania | planificat (variantă proprie) |
-| Mombasa | Strategie | Germania | planificat (variantă proprie) |
-| Ra | Strategie | Germania | planificat (variantă proprie) |
-| The Princes of Florence | Strategie | Germania | planificat (variantă proprie) |
-| Taj Mahal | Strategie | Germania | planificat (variantă proprie) |
-| Wallenstein | Strategie | Germania | planificat (variantă proprie) |
-| Shogun | Strategie | Germania | planificat (variantă proprie) |
-| Struggle of Empires | Strategie | SUA | planificat (variantă proprie) |
-| Sidereal Confluence | Strategie | SUA | planificat (variantă proprie) |
-| Age of Empires III: The Age of Discovery | Strategie | SUA | planificat (variantă proprie) |
-| Clash of Cultures | Strategie | Germania | planificat (variantă proprie) |
-| Sekigahara: The Unification of Japan | Strategie | SUA | planificat (variantă proprie) |
-| Ascension: Chronicle of the Godslayer | Strategie | SUA | planificat (variantă proprie) |
-| Thunderstone | Strategie | SUA | planificat (variantă proprie) |
-| Anachrony | Strategie | Cehia | planificat (variantă proprie) |
-| Lorenzo il Magnifico | Strategie | Italia | planificat (variantă proprie) |
-| The Castles of Mad King Ludwig | Strategie | SUA | planificat (variantă proprie) |
-| Lisboa | Strategie | Portugalia | planificat (variantă proprie) |
-| Cranium | Party | SUA | planificat (variantă proprie) |
-| Apples to Apples | Party | SUA | planificat (variantă proprie) |
-| Telestrations | Party | SUA | planificat (variantă proprie) |
-| Time's Up! | Party | Franța | planificat (variantă proprie) |
-| Wavelength | Party | SUA | planificat (variantă proprie) |
-| Decrypto | Party | Franța | planificat (variantă proprie) |
-| One Night Ultimate Werewolf | Party | SUA | planificat (variantă proprie) |
-| Spyfall | Party | Rusia | planificat (variantă proprie) |
 | Rapidough | Party | SUA | planificat (variantă proprie) |
 | Pie Face | Party | SUA | planificat (variantă proprie) |
 | Fibbage | Party | SUA | planificat (variantă proprie) |
