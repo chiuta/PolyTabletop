@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+- Site: nine top-100 lists instead of four (added Africa, Asia, North America, South America, Oceania; Antarctica has no list, noted in 8 languages). Regional rankings are editorial estimates.
+- Catalog: 50 new traditional regional games with public rules, status `planned` (Oware, Bao, Seega, Yote, Hus, Tâb, Senet, Whot!, Chkobba, Ronda, Sholo Guti, Okey, Mangala, Riichi Mahjong, Daifugo, Pasur, Hokm, Pinochle, Gin Rummy, Conquián, Crokinole, Burako, Escoba, Cuarenta, Generala, Parqués, Two-up, Mu Torere and others); catalog now 251 entries (171 playable, unchanged).
+
 ## v0.9.1
 - Help/`rules` texts aligned with the code (no gameplay changes): pachisi (cowrie table: none open = 25, 1 = 10, 5 = 5; graces 6/10/25), roata (real branch labels `avansez facultate|ucenicie|afacere|salariu`), reverdire (forced move `generatie`), fanorona (every prefix of a capture chain is a separate move; the chosen move ends the turn), tcg_cerneala (`pesca` is a forced move every turn; P1 draws no card on the first turn), tinuturi (24 tiles drawn from the set of 48), portret (`verdict corect` / `verdict gresit` given by the opponent). Titles/rules in all 8 languages and `docs/reguli/*.md` updated.
 - magistrale: module header now says 42 routes (38 + 4 extra), like the code and tests.
@@ -7,7 +11,7 @@
 - New tests: pachisi rules vs cowry table, roata rules vs real move labels, reverdire/fanorona/tcg_cerneala/tinuturi/portret rules vs moves.
 
 ## v0.9
-- Project renamed from MASA to PolyTabletop; 171 playable games (201 catalog entries).
+- 171 playable games (201 catalog entries).
 - Interface in 8 languages (en ro fr it es pt de hu) for the CLI and the GUI: `--lang`, `POLYTABLETOP_LANG`; READMEs and install guides in all 8.
 - AI levels `--level easy|normal|hard|expert` (`POLYTABLETOP_LEVEL`).
 - `polytabletop arena`, `bench`, `ladder` (AI against AI); `host` / `join` for two-player network play; `--record`, `replay`, `export` (pgn for chess, text, json) and `import-pgn`.

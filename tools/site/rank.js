@@ -1,5 +1,5 @@
 // ---- Clasamente (injectat în index.html de gen_games.py)
-const LIDS=["world","europe","other","romania"],RKC=["classic","abstract","family","strategy","party","coop","cards","rpg","minis","tcg","kids"];
+const LIDS=["world","europe","africa","asia","namerica","samerica","oceania","other","romania"],RKC=["classic","abstract","family","strategy","party","coop","cards","rpg","minis","tcg","kids"];
 const STI={play:"●",var:"◆",kit:"▲",brand:"✕",plan:"◇"};
 const GM={};GAMES.forEach(g=>GM[g.i]=g);
 let rkTab="world",rkCat="all",rkQ="";
@@ -25,7 +25,7 @@ function renderPanel(lid){
   wrap.setAttribute("aria-label",fmt(t.rk_cap,{list:t["rk_t_"+lid]})+" — "+t.rk_scroll);
   const tb=document.createElement("table"),cp=document.createElement("caption");cp.textContent=fmt(t.rk_cap,{list:t["rk_t_"+lid]});tb.appendChild(cp);
   const th=document.createElement("thead"),hr=document.createElement("tr");
-  [t.th_place,t.th_game,t.th_cat,lid==="romania"?t.th_obs:lid==="other"?t.th_where:t.th_origin,t.th_status,t.th_page].forEach(h=>{const c=document.createElement("th");c.scope="col";c.textContent=h;hr.appendChild(c)});
+  [t.th_place,t.th_game,t.th_cat,lid==="romania"?t.th_obs:lid==="world"||lid==="europe"?t.th_origin:t.th_where,t.th_status,t.th_page].forEach(h=>{const c=document.createElement("th");c.scope="col";c.textContent=h;hr.appendChild(c)});
   th.appendChild(hr);tb.appendChild(th);
   const tbd=document.createElement("tbody");
   rows.forEach(r=>{
@@ -50,9 +50,9 @@ function renderRank(){
   sel.value=rkCat;
   LIDS.forEach(renderPanel);rkCount();
   const lg=$("#rk-legend");lg.textContent="";
-  ["play","var","kit","brand"].forEach(s=>{const li=document.createElement("li"),sp=document.createElement("span");sp.className="t";sp.textContent=t["stl_"+s];li.append(badge(s,t),sp);lg.appendChild(li)});
+  ["play","var","kit","plan","brand"].forEach(s=>{const li=document.createElement("li"),sp=document.createElement("span");sp.className="t";sp.textContent=t["stl_"+s];li.append(badge(s,t),sp);lg.appendChild(li)});
   const nl=$("#rk-notes");nl.textContent="";
-  [1,2,3,4,5,6].forEach(n=>{const li=document.createElement("li");li.textContent=t["rk_n"+n];nl.appendChild(li)});
+  [1,2,3,4,5,6,7,8,9,10].forEach(n=>{const li=document.createElement("li");li.textContent=t["rk_n"+n];nl.appendChild(li)});
 }
 function selectTab(id,focus){
   rkTab=id;
@@ -65,9 +65,9 @@ $$("#rk-tabs [role=tab]").forEach(b=>{
   b.addEventListener("click",()=>selectTab(b.dataset.lid,false));
   b.addEventListener("keydown",e=>{
     const i=LIDS.indexOf(b.dataset.lid);let j=-1;
-    if(e.key==="ArrowRight")j=(i+1)%4;else if(e.key==="ArrowLeft")j=(i+3)%4;else if(e.key==="Home")j=0;else if(e.key==="End")j=3;
+    if(e.key==="ArrowRight")j=(i+1)%LIDS.length;else if(e.key==="ArrowLeft")j=(i+LIDS.length-1)%LIDS.length;else if(e.key==="Home")j=0;else if(e.key==="End")j=LIDS.length-1;
     if(j>=0){e.preventDefault();selectTab(LIDS[j],true)}
   });
 });
-function hashTab(){const m=/^#rankings-(world|europe|other|romania)$/.exec(location.hash);if(m){selectTab(m[1],false)}}
+function hashTab(){const m=new RegExp("^#rankings-("+LIDS.join("|")+")$").exec(location.hash);if(m){selectTab(m[1],false)}}
 addEventListener("hashchange",hashTab);hashTab();

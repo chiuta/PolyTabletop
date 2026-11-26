@@ -1604,6 +1604,4016 @@
 "g": "tcg_cerneala"
 }
 ],
+"africa": [
+{
+"r": 1,
+"n": "Șah",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "chess"
+},
+{
+"r": 2,
+"n": "Dame",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "draughts"
+},
+{
+"r": 3,
+"n": "Domino",
+"c": "classic",
+"x": "Africa de Vest / Africa Centrală",
+"s": "play",
+"g": "domino"
+},
+{
+"r": 4,
+"n": "Oware",
+"c": "abstract",
+"x": "Ghana / Africa de Vest",
+"s": "plan",
+"g": ""
+},
+{
+"r": 5,
+"n": "Ludo",
+"c": "family",
+"x": "Nigeria / Africa de Vest",
+"s": "play",
+"g": "ludo"
+},
+{
+"r": 6,
+"n": "Mancala",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "mancala"
+},
+{
+"r": 7,
+"n": "Scrabble",
+"c": "family",
+"x": "Nigeria / Kenya",
+"s": "var",
+"g": "litere"
+},
+{
+"r": 8,
+"n": "Monopoly",
+"c": "family",
+"x": "Africa de Sud / Nigeria",
+"s": "var",
+"g": "mosii"
+},
+{
+"r": 9,
+"n": "Bao",
+"c": "abstract",
+"x": "Tanzania / Africa de Est",
+"s": "plan",
+"g": ""
+},
+{
+"r": 10,
+"n": "Table (Backgammon)",
+"c": "classic",
+"x": "Egipt / Africa de Nord",
+"s": "play",
+"g": "backgammon"
+},
+{
+"r": 11,
+"n": "Remi (Rummy)",
+"c": "cards",
+"x": "Africa de Nord",
+"s": "play",
+"g": "rummy"
+},
+{
+"r": 12,
+"n": "Ayo (Ayoayo)",
+"c": "abstract",
+"x": "Nigeria",
+"s": "play",
+"g": "ayo"
+},
+{
+"r": 13,
+"n": "Whot!",
+"c": "cards",
+"x": "Nigeria / Ghana",
+"s": "plan",
+"g": ""
+},
+{
+"r": 14,
+"n": "Șerpi și scări",
+"c": "kids",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "snakes"
+},
+{
+"r": 15,
+"n": "Poker",
+"c": "cards",
+"x": "Africa de Sud / Africa de Est",
+"s": "play",
+"g": "poker"
+},
+{
+"r": 16,
+"n": "Trix",
+"c": "cards",
+"x": "Egipt / Sudan",
+"s": "play",
+"g": "trix"
+},
+{
+"r": 17,
+"n": "Chkobba",
+"c": "cards",
+"x": "Tunisia / Algeria",
+"s": "plan",
+"g": ""
+},
+{
+"r": 18,
+"n": "Ronda",
+"c": "cards",
+"x": "Maroc",
+"s": "plan",
+"g": ""
+},
+{
+"r": 19,
+"n": "Belote",
+"c": "cards",
+"x": "Africa de Nord / Africa de Vest",
+"s": "play",
+"g": "belote"
+},
+{
+"r": 20,
+"n": "Uno",
+"c": "cards",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "culori"
+},
+{
+"r": 21,
+"n": "Carrom",
+"c": "classic",
+"x": "Africa de Est / Africa de Sud",
+"s": "play",
+"g": "carrom"
+},
+{
+"r": 22,
+"n": "Blackjack",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "play",
+"g": "blackjack"
+},
+{
+"r": 23,
+"n": "Dara",
+"c": "abstract",
+"x": "Nigeria / Africa de Vest",
+"s": "play",
+"g": "dara"
+},
+{
+"r": 24,
+"n": "Morabaraba",
+"c": "abstract",
+"x": "Africa de Sud",
+"s": "play",
+"g": "morabaraba"
+},
+{
+"r": 25,
+"n": "Fanorona",
+"c": "abstract",
+"x": "Madagascar",
+"s": "play",
+"g": "fanorona"
+},
+{
+"r": 26,
+"n": "Seega",
+"c": "abstract",
+"x": "Egipt",
+"s": "plan",
+"g": ""
+},
+{
+"r": 27,
+"n": "Yote",
+"c": "abstract",
+"x": "Senegal / Africa de Vest",
+"s": "plan",
+"g": ""
+},
+{
+"r": 28,
+"n": "Tâb",
+"c": "classic",
+"x": "Egipt / Africa de Nord",
+"s": "plan",
+"g": ""
+},
+{
+"r": 29,
+"n": "Hus",
+"c": "abstract",
+"x": "Namibia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 30,
+"n": "Dama (dame turcești)",
+"c": "abstract",
+"x": "Africa de Est / Africa de Nord",
+"s": "plan",
+"g": ""
+},
+{
+"r": 31,
+"n": "Bingo",
+"c": "classic",
+"x": "Africa de Sud",
+"s": "play",
+"g": "bingo"
+},
+{
+"r": 32,
+"n": "Whist",
+"c": "cards",
+"x": "Africa de Sud / Africa de Est",
+"s": "var",
+"g": "whist"
+},
+{
+"r": 33,
+"n": "Bridge",
+"c": "cards",
+"x": "Egipt / Africa de Sud",
+"s": "play",
+"g": "bridge"
+},
+{
+"r": 34,
+"n": "Spades",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "var",
+"g": "pica"
+},
+{
+"r": 35,
+"n": "Connect Four",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "connect4"
+},
+{
+"r": 36,
+"n": "Battleship",
+"c": "classic",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "battleship"
+},
+{
+"r": 37,
+"n": "Cluedo (Clue)",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "conac"
+},
+{
+"r": 38,
+"n": "Trivial Pursuit",
+"c": "party",
+"x": "Africa de Sud",
+"s": "var",
+"g": "cunoastere"
+},
+{
+"r": 39,
+"n": "Pictionary",
+"c": "party",
+"x": "Africa de Sud",
+"s": "var",
+"g": "schita"
+},
+{
+"r": 40,
+"n": "Jenga",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "turnul"
+},
+{
+"r": 41,
+"n": "Rummikub",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "placute"
+},
+{
+"r": 42,
+"n": "Yahtzee",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "zaruri5"
+},
+{
+"r": 43,
+"n": "Taboo",
+"c": "party",
+"x": "Africa de Sud",
+"s": "var",
+"g": "oprite"
+},
+{
+"r": 44,
+"n": "Cards Against Humanity",
+"c": "party",
+"x": "Africa de Sud",
+"s": "var",
+"g": "gura"
+},
+{
+"r": 45,
+"n": "Tarneeb",
+"c": "cards",
+"x": "Egipt / Africa de Nord",
+"s": "play",
+"g": "tarneeb"
+},
+{
+"r": 46,
+"n": "Baloot",
+"c": "cards",
+"x": "Africa de Nord",
+"s": "play",
+"g": "baloot"
+},
+{
+"r": 47,
+"n": "Teen Patti",
+"c": "cards",
+"x": "Africa de Est / Africa de Sud",
+"s": "play",
+"g": "teenpatti"
+},
+{
+"r": 48,
+"n": "Hearts",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "var",
+"g": "inimi"
+},
+{
+"r": 49,
+"n": "Canasta",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "play",
+"g": "canasta"
+},
+{
+"r": 50,
+"n": "Catan",
+"c": "strategy",
+"x": "Africa de Sud",
+"s": "var",
+"g": "insula"
+},
+{
+"r": 51,
+"n": "Carcassonne",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "mozaic"
+},
+{
+"r": 52,
+"n": "Ticket to Ride",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "magistrale"
+},
+{
+"r": 53,
+"n": "Game of Life",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "roata"
+},
+{
+"r": 54,
+"n": "Risk",
+"c": "strategy",
+"x": "Africa de Sud",
+"s": "var",
+"g": "arhipelag"
+},
+{
+"r": 55,
+"n": "Activity",
+"c": "party",
+"x": "Africa de Sud",
+"s": "var",
+"g": "treicai"
+},
+{
+"r": 56,
+"n": "Mastermind",
+"c": "abstract",
+"x": "Africa de Sud",
+"s": "play",
+"g": "mastermind"
+},
+{
+"r": 57,
+"n": "Memory",
+"c": "kids",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "memory"
+},
+{
+"r": 58,
+"n": "Guess Who? (Cine e?)",
+"c": "kids",
+"x": "Africa de Sud",
+"s": "var",
+"g": "portret"
+},
+{
+"r": 59,
+"n": "Candy Land",
+"c": "kids",
+"x": "Africa de Sud",
+"s": "var",
+"g": "prajituri"
+},
+{
+"r": 60,
+"n": "Dungeons & Dragons",
+"c": "rpg",
+"x": "Africa de Sud",
+"s": "kit",
+"g": ""
+},
+{
+"r": 61,
+"n": "Pokémon TCG",
+"c": "tcg",
+"x": "Africa de Sud",
+"s": "var",
+"g": "tcg_evo"
+},
+{
+"r": 62,
+"n": "Magic: The Gathering",
+"c": "tcg",
+"x": "Africa de Sud",
+"s": "var",
+"g": "tcg"
+},
+{
+"r": 63,
+"n": "Yu-Gi-Oh! TCG",
+"c": "tcg",
+"x": "Africa de Sud",
+"s": "var",
+"g": "tcg_zone"
+},
+{
+"r": 64,
+"n": "Warhammer 40,000",
+"c": "minis",
+"x": "Africa de Sud",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 65,
+"n": "Pathfinder",
+"c": "rpg",
+"x": "Africa de Sud",
+"s": "kit",
+"g": ""
+},
+{
+"r": 66,
+"n": "Call of Cthulhu",
+"c": "rpg",
+"x": "Africa de Sud",
+"s": "kit",
+"g": ""
+},
+{
+"r": 67,
+"n": "Mahjong",
+"c": "classic",
+"x": "Africa de Sud",
+"s": "play",
+"g": "mahjong"
+},
+{
+"r": 68,
+"n": "Go (weiqi, baduk)",
+"c": "abstract",
+"x": "Africa de Sud",
+"s": "play",
+"g": "go"
+},
+{
+"r": 69,
+"n": "Xiangqi (șah chinezesc)",
+"c": "abstract",
+"x": "Africa de Sud",
+"s": "play",
+"g": "xiangqi"
+},
+{
+"r": 70,
+"n": "Werewolf / Mafia",
+"c": "party",
+"x": "Africa de Sud / Nigeria",
+"s": "var",
+"g": "lupii"
+},
+{
+"r": 71,
+"n": "Codenames",
+"c": "party",
+"x": "Africa de Sud",
+"s": "var",
+"g": "spionii"
+},
+{
+"r": 72,
+"n": "Pandemic",
+"c": "coop",
+"x": "Africa de Sud",
+"s": "var",
+"g": "focare"
+},
+{
+"r": 73,
+"n": "Dixit",
+"c": "party",
+"x": "Africa de Sud",
+"s": "var",
+"g": "povestitor"
+},
+{
+"r": 74,
+"n": "Azul",
+"c": "strategy",
+"x": "Africa de Sud",
+"s": "var",
+"g": "faianta"
+},
+{
+"r": 75,
+"n": "Splendor",
+"c": "strategy",
+"x": "Africa de Sud",
+"s": "var",
+"g": "cristale"
+},
+{
+"r": 76,
+"n": "Wingspan",
+"c": "strategy",
+"x": "Africa de Sud",
+"s": "var",
+"g": "solzi"
+},
+{
+"r": 77,
+"n": "7 Wonders",
+"c": "strategy",
+"x": "Africa de Sud",
+"s": "var",
+"g": "epoci"
+},
+{
+"r": 78,
+"n": "Exploding Kittens",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "var",
+"g": "fitil"
+},
+{
+"r": 79,
+"n": "Love Letter",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "var",
+"g": "curieri"
+},
+{
+"r": 80,
+"n": "Sushi Go!",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "var",
+"g": "bufet"
+},
+{
+"r": 81,
+"n": "Kingdomino",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "tinuturi"
+},
+{
+"r": 82,
+"n": "Bang!",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "var",
+"g": "valea"
+},
+{
+"r": 83,
+"n": "Munchkin",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "var",
+"g": "hruba"
+},
+{
+"r": 84,
+"n": "Dobble (Spot It!)",
+"c": "party",
+"x": "Africa de Sud",
+"s": "var",
+"g": "fulger"
+},
+{
+"r": 85,
+"n": "Scotland Yard",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "umbra"
+},
+{
+"r": 86,
+"n": "Labirintul nebun (Das verrückte Labyrinth)",
+"c": "family",
+"x": "Africa de Sud",
+"s": "var",
+"g": "zidurile"
+},
+{
+"r": 87,
+"n": "Hex",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "hex"
+},
+{
+"r": 88,
+"n": "Gomoku",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "gomoku"
+},
+{
+"r": 89,
+"n": "Reversi / Othello",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "reversi"
+},
+{
+"r": 90,
+"n": "Moara (Nine Men's Morris)",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "morris"
+},
+{
+"r": 91,
+"n": "Nim",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "nim"
+},
+{
+"r": 92,
+"n": "Senet",
+"c": "classic",
+"x": "Egipt",
+"s": "plan",
+"g": ""
+},
+{
+"r": 93,
+"n": "Stratego",
+"c": "strategy",
+"x": "Africa de Sud",
+"s": "var",
+"g": "ceata"
+},
+{
+"r": 94,
+"n": "Small World",
+"c": "strategy",
+"x": "Africa de Sud",
+"s": "var",
+"g": "apus"
+},
+{
+"r": 95,
+"n": "Skull",
+"c": "party",
+"x": "Africa de Sud",
+"s": "var",
+"g": "capcana"
+},
+{
+"r": 96,
+"n": "Lost Cities",
+"c": "cards",
+"x": "Africa de Sud",
+"s": "var",
+"g": "expeditii"
+},
+{
+"r": 97,
+"n": "Hanabi",
+"c": "coop",
+"x": "Africa de Sud",
+"s": "var",
+"g": "artificii"
+},
+{
+"r": 98,
+"n": "Just One",
+"c": "coop",
+"x": "Africa de Sud",
+"s": "var",
+"g": "cuvantunic"
+},
+{
+"r": 99,
+"n": "Terraforming Mars",
+"c": "strategy",
+"x": "Africa de Sud",
+"s": "var",
+"g": "reverdire"
+},
+{
+"r": 100,
+"n": "Gloomhaven",
+"c": "coop",
+"x": "Africa de Sud",
+"s": "var",
+"g": "cripta"
+}
+],
+"asia": [
+{
+"r": 1,
+"n": "Șah",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "chess"
+},
+{
+"r": 2,
+"n": "Mahjong",
+"c": "classic",
+"x": "China / Asia de Est",
+"s": "play",
+"g": "mahjong"
+},
+{
+"r": 3,
+"n": "Go (weiqi, baduk)",
+"c": "abstract",
+"x": "China / Japonia / Coreea",
+"s": "play",
+"g": "go"
+},
+{
+"r": 4,
+"n": "Xiangqi (șah chinezesc)",
+"c": "abstract",
+"x": "China / Vietnam",
+"s": "play",
+"g": "xiangqi"
+},
+{
+"r": 5,
+"n": "Ludo",
+"c": "family",
+"x": "India / Asia de Sud",
+"s": "play",
+"g": "ludo"
+},
+{
+"r": 6,
+"n": "Carrom",
+"c": "classic",
+"x": "India / Pakistan",
+"s": "play",
+"g": "carrom"
+},
+{
+"r": 7,
+"n": "Șerpi și scări",
+"c": "kids",
+"x": "India",
+"s": "play",
+"g": "snakes"
+},
+{
+"r": 8,
+"n": "Shogi",
+"c": "abstract",
+"x": "Japonia",
+"s": "play",
+"g": "shogi"
+},
+{
+"r": 9,
+"n": "Table (Backgammon)",
+"c": "classic",
+"x": "Turcia / Iran / Orientul Mijlociu",
+"s": "play",
+"g": "backgammon"
+},
+{
+"r": 10,
+"n": "Domino",
+"c": "classic",
+"x": "Asia de Sud-Est / Orientul Mijlociu",
+"s": "play",
+"g": "domino"
+},
+{
+"r": 11,
+"n": "Rummy (13 cărți)",
+"c": "cards",
+"x": "India / Pakistan",
+"s": "play",
+"g": "rummy"
+},
+{
+"r": 12,
+"n": "Teen Patti",
+"c": "cards",
+"x": "India / Asia de Sud",
+"s": "play",
+"g": "teenpatti"
+},
+{
+"r": 13,
+"n": "Poker",
+"c": "cards",
+"x": "Asia de Est / Asia de Sud-Est",
+"s": "play",
+"g": "poker"
+},
+{
+"r": 14,
+"n": "Dou dizhu",
+"c": "cards",
+"x": "China",
+"s": "play",
+"g": "doudizhu"
+},
+{
+"r": 15,
+"n": "Pokémon TCG",
+"c": "tcg",
+"x": "Japonia / Asia de Est",
+"s": "var",
+"g": "tcg_evo"
+},
+{
+"r": 16,
+"n": "Yu-Gi-Oh! TCG",
+"c": "tcg",
+"x": "Japonia",
+"s": "var",
+"g": "tcg_zone"
+},
+{
+"r": 17,
+"n": "Monopoly",
+"c": "family",
+"x": "Asia de Est / Asia de Sud-Est",
+"s": "var",
+"g": "mosii"
+},
+{
+"r": 18,
+"n": "Uno",
+"c": "cards",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "culori"
+},
+{
+"r": 19,
+"n": "Scrabble",
+"c": "family",
+"x": "India / Singapore / Malaezia",
+"s": "var",
+"g": "litere"
+},
+{
+"r": 20,
+"n": "Dame",
+"c": "abstract",
+"x": "Asia Centrală / Turcia",
+"s": "play",
+"g": "draughts"
+},
+{
+"r": 21,
+"n": "Baloot",
+"c": "cards",
+"x": "Arabia Saudită",
+"s": "play",
+"g": "baloot"
+},
+{
+"r": 22,
+"n": "Tarneeb",
+"c": "cards",
+"x": "Orientul Mijlociu",
+"s": "play",
+"g": "tarneeb"
+},
+{
+"r": 23,
+"n": "Trix",
+"c": "cards",
+"x": "Orientul Mijlociu",
+"s": "play",
+"g": "trix"
+},
+{
+"r": 24,
+"n": "Hanafuda",
+"c": "cards",
+"x": "Japonia",
+"s": "play",
+"g": "hanafuda"
+},
+{
+"r": 25,
+"n": "Karuta",
+"c": "cards",
+"x": "Japonia",
+"s": "play",
+"g": "karuta"
+},
+{
+"r": 26,
+"n": "Sugoroku",
+"c": "classic",
+"x": "Japonia",
+"s": "play",
+"g": "sugoroku"
+},
+{
+"r": 27,
+"n": "Hwatu (Go-Stop)",
+"c": "cards",
+"x": "Coreea",
+"s": "play",
+"g": "hwatu"
+},
+{
+"r": 28,
+"n": "Janggi",
+"c": "abstract",
+"x": "Coreea",
+"s": "play",
+"g": "janggi"
+},
+{
+"r": 29,
+"n": "Yut (Yunnori)",
+"c": "classic",
+"x": "Coreea",
+"s": "play",
+"g": "yut"
+},
+{
+"r": 30,
+"n": "Makruk",
+"c": "abstract",
+"x": "Thailanda",
+"s": "play",
+"g": "makruk"
+},
+{
+"r": 31,
+"n": "Sungka",
+"c": "abstract",
+"x": "Filipine",
+"s": "play",
+"g": "sungka"
+},
+{
+"r": 32,
+"n": "Congkak",
+"c": "abstract",
+"x": "Malaezia / Indonezia",
+"s": "play",
+"g": "congkak"
+},
+{
+"r": 33,
+"n": "Pallanguzhi",
+"c": "abstract",
+"x": "India",
+"s": "play",
+"g": "pallanguzhi"
+},
+{
+"r": 34,
+"n": "Ganjifa",
+"c": "cards",
+"x": "India",
+"s": "play",
+"g": "ganjifa"
+},
+{
+"r": 35,
+"n": "Chaupar",
+"c": "classic",
+"x": "India",
+"s": "play",
+"g": "chaupar"
+},
+{
+"r": 36,
+"n": "Ludo / Parcheesi",
+"c": "family",
+"x": "India",
+"s": "play",
+"g": "pachisi"
+},
+{
+"r": 37,
+"n": "Pai gow",
+"c": "classic",
+"x": "China",
+"s": "play",
+"g": "paigow"
+},
+{
+"r": 38,
+"n": "Gomoku",
+"c": "abstract",
+"x": "Japonia / China / Coreea",
+"s": "play",
+"g": "gomoku"
+},
+{
+"r": 39,
+"n": "Reversi / Othello",
+"c": "abstract",
+"x": "Japonia",
+"s": "play",
+"g": "reversi"
+},
+{
+"r": 40,
+"n": "Hasami Shogi",
+"c": "abstract",
+"x": "Japonia",
+"s": "play",
+"g": "hasami"
+},
+{
+"r": 41,
+"n": "Bagh-Chal",
+"c": "abstract",
+"x": "Nepal",
+"s": "play",
+"g": "tigri"
+},
+{
+"r": 42,
+"n": "Surakarta",
+"c": "abstract",
+"x": "Indonezia",
+"s": "play",
+"g": "surakarta"
+},
+{
+"r": 43,
+"n": "Werewolf (langren sha)",
+"c": "party",
+"x": "China",
+"s": "var",
+"g": "lupii"
+},
+{
+"r": 44,
+"n": "Splendor",
+"c": "strategy",
+"x": "Asia de Est",
+"s": "var",
+"g": "cristale"
+},
+{
+"r": 45,
+"n": "Codenames",
+"c": "party",
+"x": "Asia de Est",
+"s": "var",
+"g": "spionii"
+},
+{
+"r": 46,
+"n": "Machi Koro",
+"c": "family",
+"x": "Japonia",
+"s": "var",
+"g": "orasel"
+},
+{
+"r": 47,
+"n": "Love Letter",
+"c": "cards",
+"x": "Japonia",
+"s": "var",
+"g": "curieri"
+},
+{
+"r": 48,
+"n": "Azul",
+"c": "strategy",
+"x": "Asia de Est",
+"s": "var",
+"g": "faianta"
+},
+{
+"r": 49,
+"n": "Sword World RPG",
+"c": "rpg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 50,
+"n": "InSANe",
+"c": "rpg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 51,
+"n": "Call of Cthulhu",
+"c": "rpg",
+"x": "Japonia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 52,
+"n": "Dungeons & Dragons",
+"c": "rpg",
+"x": "Asia de Est",
+"s": "kit",
+"g": ""
+},
+{
+"r": 53,
+"n": "Magic: The Gathering",
+"c": "tcg",
+"x": "Japonia / Asia de Est",
+"s": "var",
+"g": "tcg"
+},
+{
+"r": 54,
+"n": "Catan",
+"c": "strategy",
+"x": "Asia de Est",
+"s": "var",
+"g": "insula"
+},
+{
+"r": 55,
+"n": "Ticket to Ride",
+"c": "family",
+"x": "Asia de Est",
+"s": "var",
+"g": "magistrale"
+},
+{
+"r": 56,
+"n": "Sholo Guti (Șaisprezece soldați)",
+"c": "abstract",
+"x": "Bangladesh / India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 57,
+"n": "Aadu Puli Attam (Oi și tigri)",
+"c": "abstract",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 58,
+"n": "Mangala (mancala turcească)",
+"c": "abstract",
+"x": "Turcia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 59,
+"n": "Dama (dame turcești)",
+"c": "abstract",
+"x": "Turcia / Orientul Mijlociu",
+"s": "plan",
+"g": ""
+},
+{
+"r": 60,
+"n": "Okey",
+"c": "classic",
+"x": "Turcia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 61,
+"n": "Riichi Mahjong",
+"c": "classic",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 62,
+"n": "Sic Bo",
+"c": "classic",
+"x": "China",
+"s": "plan",
+"g": ""
+},
+{
+"r": 63,
+"n": "Ashta Chamma",
+"c": "classic",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 64,
+"n": "Daifugo (Daihinmin)",
+"c": "cards",
+"x": "Japonia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 65,
+"n": "Tiến lên",
+"c": "cards",
+"x": "Vietnam",
+"s": "plan",
+"g": ""
+},
+{
+"r": 66,
+"n": "Big Two (Pusoy dos)",
+"c": "cards",
+"x": "China / Filipine",
+"s": "plan",
+"g": ""
+},
+{
+"r": 67,
+"n": "Tong-its",
+"c": "cards",
+"x": "Filipine",
+"s": "plan",
+"g": ""
+},
+{
+"r": 68,
+"n": "Pasur",
+"c": "cards",
+"x": "Iran",
+"s": "plan",
+"g": ""
+},
+{
+"r": 69,
+"n": "Hokm",
+"c": "cards",
+"x": "Iran",
+"s": "plan",
+"g": ""
+},
+{
+"r": 70,
+"n": "Piști",
+"c": "cards",
+"x": "Turcia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 71,
+"n": "Court Piece (Rang, Mendikot)",
+"c": "cards",
+"x": "India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 72,
+"n": "Call Break",
+"c": "cards",
+"x": "Nepal / India",
+"s": "plan",
+"g": ""
+},
+{
+"r": 73,
+"n": "Blackjack",
+"c": "cards",
+"x": "Asia de Est",
+"s": "play",
+"g": "blackjack"
+},
+{
+"r": 74,
+"n": "Bingo",
+"c": "classic",
+"x": "Filipine / Asia de Sud-Est",
+"s": "play",
+"g": "bingo"
+},
+{
+"r": 75,
+"n": "Pandemic",
+"c": "coop",
+"x": "Asia de Est",
+"s": "var",
+"g": "focare"
+},
+{
+"r": 76,
+"n": "Cluedo (Clue)",
+"c": "family",
+"x": "Asia de Est",
+"s": "var",
+"g": "conac"
+},
+{
+"r": 77,
+"n": "Pictionary",
+"c": "party",
+"x": "Asia de Est",
+"s": "var",
+"g": "schita"
+},
+{
+"r": 78,
+"n": "Trivial Pursuit",
+"c": "party",
+"x": "Asia de Est",
+"s": "var",
+"g": "cunoastere"
+},
+{
+"r": 79,
+"n": "Jenga",
+"c": "family",
+"x": "Asia de Est",
+"s": "var",
+"g": "turnul"
+},
+{
+"r": 80,
+"n": "Connect Four",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "connect4"
+},
+{
+"r": 81,
+"n": "Battleship",
+"c": "classic",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "battleship"
+},
+{
+"r": 82,
+"n": "Mancala",
+"c": "abstract",
+"x": "Asia de Sud-Est",
+"s": "play",
+"g": "mancala"
+},
+{
+"r": 83,
+"n": "Fanorona",
+"c": "abstract",
+"x": "Asia de Sud",
+"s": "play",
+"g": "fanorona"
+},
+{
+"r": 84,
+"n": "Durak",
+"c": "cards",
+"x": "Asia Centrală",
+"s": "play",
+"g": "durak"
+},
+{
+"r": 85,
+"n": "Bang!",
+"c": "cards",
+"x": "Asia de Est",
+"s": "var",
+"g": "valea"
+},
+{
+"r": 86,
+"n": "Exploding Kittens",
+"c": "cards",
+"x": "Asia de Est",
+"s": "var",
+"g": "fitil"
+},
+{
+"r": 87,
+"n": "Dixit",
+"c": "party",
+"x": "Asia de Est",
+"s": "var",
+"g": "povestitor"
+},
+{
+"r": 88,
+"n": "Kingdomino",
+"c": "family",
+"x": "Asia de Est",
+"s": "var",
+"g": "tinuturi"
+},
+{
+"r": 89,
+"n": "Wingspan",
+"c": "strategy",
+"x": "Asia de Est",
+"s": "var",
+"g": "solzi"
+},
+{
+"r": 90,
+"n": "7 Wonders",
+"c": "strategy",
+"x": "Asia de Est",
+"s": "var",
+"g": "epoci"
+},
+{
+"r": 91,
+"n": "Sushi Go!",
+"c": "cards",
+"x": "Asia de Est",
+"s": "var",
+"g": "bufet"
+},
+{
+"r": 92,
+"n": "Dobble (Spot It!)",
+"c": "party",
+"x": "Asia de Est",
+"s": "var",
+"g": "fulger"
+},
+{
+"r": 93,
+"n": "Warhammer 40,000",
+"c": "minis",
+"x": "Asia de Est",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 94,
+"n": "Star Wars: X-Wing",
+"c": "minis",
+"x": "Asia de Est",
+"s": "var",
+"g": "nave"
+},
+{
+"r": 95,
+"n": "Disney Lorcana",
+"c": "tcg",
+"x": "Asia de Est",
+"s": "var",
+"g": "tcg_cerneala"
+},
+{
+"r": 96,
+"n": "Flesh and Blood",
+"c": "tcg",
+"x": "Asia de Est",
+"s": "var",
+"g": "tcg_lant"
+},
+{
+"r": 97,
+"n": "Rummikub",
+"c": "family",
+"x": "Israel",
+"s": "var",
+"g": "placute"
+},
+{
+"r": 98,
+"n": "Mastermind",
+"c": "abstract",
+"x": "Israel",
+"s": "play",
+"g": "mastermind"
+},
+{
+"r": 99,
+"n": "Stratego",
+"c": "strategy",
+"x": "Asia de Est",
+"s": "var",
+"g": "ceata"
+},
+{
+"r": 100,
+"n": "Skull",
+"c": "party",
+"x": "Asia de Est",
+"s": "var",
+"g": "capcana"
+}
+],
+"namerica": [
+{
+"r": 1,
+"n": "Monopoly",
+"c": "family",
+"x": "SUA / Canada",
+"s": "var",
+"g": "mosii"
+},
+{
+"r": 2,
+"n": "Scrabble",
+"c": "family",
+"x": "SUA / Canada",
+"s": "var",
+"g": "litere"
+},
+{
+"r": 3,
+"n": "Poker",
+"c": "cards",
+"x": "SUA",
+"s": "play",
+"g": "poker"
+},
+{
+"r": 4,
+"n": "Uno",
+"c": "cards",
+"x": "SUA / Canada / Mexic",
+"s": "var",
+"g": "culori"
+},
+{
+"r": 5,
+"n": "Dungeons & Dragons",
+"c": "rpg",
+"x": "SUA / Canada",
+"s": "kit",
+"g": ""
+},
+{
+"r": 6,
+"n": "Magic: The Gathering",
+"c": "tcg",
+"x": "SUA",
+"s": "var",
+"g": "tcg"
+},
+{
+"r": 7,
+"n": "Pokémon TCG",
+"c": "tcg",
+"x": "SUA / Canada",
+"s": "var",
+"g": "tcg_evo"
+},
+{
+"r": 8,
+"n": "Șah",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "chess"
+},
+{
+"r": 9,
+"n": "Domino",
+"c": "classic",
+"x": "Mexic / Caraibe",
+"s": "play",
+"g": "domino"
+},
+{
+"r": 10,
+"n": "Bingo",
+"c": "classic",
+"x": "SUA / Canada",
+"s": "play",
+"g": "bingo"
+},
+{
+"r": 11,
+"n": "Catan",
+"c": "strategy",
+"x": "SUA / Canada",
+"s": "var",
+"g": "insula"
+},
+{
+"r": 12,
+"n": "Yahtzee",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "zaruri5"
+},
+{
+"r": 13,
+"n": "Game of Life",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "roata"
+},
+{
+"r": 14,
+"n": "Risk",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "arhipelag"
+},
+{
+"r": 15,
+"n": "Ticket to Ride",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "magistrale"
+},
+{
+"r": 16,
+"n": "Cluedo (Clue)",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "conac"
+},
+{
+"r": 17,
+"n": "Trivial Pursuit",
+"c": "party",
+"x": "Canada / SUA",
+"s": "var",
+"g": "cunoastere"
+},
+{
+"r": 18,
+"n": "Battleship",
+"c": "classic",
+"x": "SUA",
+"s": "play",
+"g": "battleship"
+},
+{
+"r": 19,
+"n": "Connect Four",
+"c": "abstract",
+"x": "SUA",
+"s": "play",
+"g": "connect4"
+},
+{
+"r": 20,
+"n": "Dame",
+"c": "abstract",
+"x": "SUA / Canada",
+"s": "play",
+"g": "draughts"
+},
+{
+"r": 21,
+"n": "Cribbage",
+"c": "cards",
+"x": "SUA / Canada",
+"s": "play",
+"g": "cribbage"
+},
+{
+"r": 22,
+"n": "Euchre",
+"c": "cards",
+"x": "SUA / Canada",
+"s": "play",
+"g": "euchre"
+},
+{
+"r": 23,
+"n": "Spades",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "pica"
+},
+{
+"r": 24,
+"n": "Hearts",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "inimi"
+},
+{
+"r": 25,
+"n": "Bridge",
+"c": "cards",
+"x": "SUA / Canada",
+"s": "play",
+"g": "bridge"
+},
+{
+"r": 26,
+"n": "Blackjack",
+"c": "cards",
+"x": "SUA",
+"s": "play",
+"g": "blackjack"
+},
+{
+"r": 27,
+"n": "Gin Rummy",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 28,
+"n": "Remi (Rummy)",
+"c": "cards",
+"x": "SUA",
+"s": "play",
+"g": "rummy"
+},
+{
+"r": 29,
+"n": "Pinochle",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 30,
+"n": "Cards Against Humanity",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "gura"
+},
+{
+"r": 31,
+"n": "Pictionary",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "schita"
+},
+{
+"r": 32,
+"n": "Taboo",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "oprite"
+},
+{
+"r": 33,
+"n": "Jenga",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "turnul"
+},
+{
+"r": 34,
+"n": "Pandemic",
+"c": "coop",
+"x": "SUA",
+"s": "var",
+"g": "focare"
+},
+{
+"r": 35,
+"n": "Codenames",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "spionii"
+},
+{
+"r": 36,
+"n": "Exploding Kittens",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "fitil"
+},
+{
+"r": 37,
+"n": "Lotería",
+"c": "classic",
+"x": "Mexic",
+"s": "play",
+"g": "loteria"
+},
+{
+"r": 38,
+"n": "Conquián",
+"c": "cards",
+"x": "Mexic",
+"s": "plan",
+"g": ""
+},
+{
+"r": 39,
+"n": "Table (Backgammon)",
+"c": "classic",
+"x": "SUA",
+"s": "play",
+"g": "backgammon"
+},
+{
+"r": 40,
+"n": "Crazy Eights",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 41,
+"n": "Pitch (Setback)",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 42,
+"n": "Bid Whist",
+"c": "cards",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 43,
+"n": "Bunco",
+"c": "classic",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 44,
+"n": "Farkle (10 000)",
+"c": "classic",
+"x": "SUA",
+"s": "plan",
+"g": ""
+},
+{
+"r": 45,
+"n": "Liar's Dice (Cacho, Dudo, Perudo)",
+"c": "classic",
+"x": "SUA / Mexic",
+"s": "plan",
+"g": ""
+},
+{
+"r": 46,
+"n": "Crokinole",
+"c": "family",
+"x": "Canada",
+"s": "plan",
+"g": ""
+},
+{
+"r": 47,
+"n": "All Fours",
+"c": "cards",
+"x": "Trinidad și Tobago / Caraibe",
+"s": "plan",
+"g": ""
+},
+{
+"r": 48,
+"n": "Chicken Foot (domino)",
+"c": "classic",
+"x": "SUA / Caraibe",
+"s": "plan",
+"g": ""
+},
+{
+"r": 49,
+"n": "Oware",
+"c": "abstract",
+"x": "Caraibe",
+"s": "plan",
+"g": ""
+},
+{
+"r": 50,
+"n": "Ludo",
+"c": "family",
+"x": "Caraibe",
+"s": "play",
+"g": "ludo"
+},
+{
+"r": 51,
+"n": "Șerpi și scări",
+"c": "kids",
+"x": "Caraibe",
+"s": "play",
+"g": "snakes"
+},
+{
+"r": 52,
+"n": "Pathfinder",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 53,
+"n": "Vampire: The Masquerade",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 54,
+"n": "Call of Cthulhu",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 55,
+"n": "Cyberpunk RED",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 56,
+"n": "Shadowrun",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 57,
+"n": "Blades in the Dark",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 58,
+"n": "Starfinder",
+"c": "rpg",
+"x": "SUA",
+"s": "kit",
+"g": ""
+},
+{
+"r": 59,
+"n": "Warhammer 40,000",
+"c": "minis",
+"x": "SUA / Canada",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 60,
+"n": "Warhammer: Age of Sigmar",
+"c": "minis",
+"x": "SUA / Canada",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 61,
+"n": "Star Wars: X-Wing",
+"c": "minis",
+"x": "SUA",
+"s": "var",
+"g": "nave"
+},
+{
+"r": 62,
+"n": "Yu-Gi-Oh! TCG",
+"c": "tcg",
+"x": "SUA",
+"s": "var",
+"g": "tcg_zone"
+},
+{
+"r": 63,
+"n": "Disney Lorcana",
+"c": "tcg",
+"x": "SUA",
+"s": "var",
+"g": "tcg_cerneala"
+},
+{
+"r": 64,
+"n": "Flesh and Blood",
+"c": "tcg",
+"x": "SUA",
+"s": "var",
+"g": "tcg_lant"
+},
+{
+"r": 65,
+"n": "Gloomhaven",
+"c": "coop",
+"x": "SUA",
+"s": "var",
+"g": "cripta"
+},
+{
+"r": 66,
+"n": "Root",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "codru"
+},
+{
+"r": 67,
+"n": "Scythe",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "hotar"
+},
+{
+"r": 68,
+"n": "Terraforming Mars",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "reverdire"
+},
+{
+"r": 69,
+"n": "Wingspan",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "solzi"
+},
+{
+"r": 70,
+"n": "Everdell",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "catun"
+},
+{
+"r": 71,
+"n": "Cascadia",
+"c": "family",
+"x": "SUA / Canada",
+"s": "var",
+"g": "poieni"
+},
+{
+"r": 72,
+"n": "Spirit Island",
+"c": "coop",
+"x": "SUA",
+"s": "var",
+"g": "strajile"
+},
+{
+"r": 73,
+"n": "Dominion",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "bresla"
+},
+{
+"r": 74,
+"n": "Azul",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "faianta"
+},
+{
+"r": 75,
+"n": "Carcassonne",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "mozaic"
+},
+{
+"r": 76,
+"n": "Splendor",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "cristale"
+},
+{
+"r": 77,
+"n": "Dune: Imperium",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "salina"
+},
+{
+"r": 78,
+"n": "Twilight Imperium",
+"c": "strategy",
+"x": "SUA",
+"s": "var",
+"g": "sideral"
+},
+{
+"r": 79,
+"n": "Blood on the Clocktower",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "ceasornic"
+},
+{
+"r": 80,
+"n": "Secret Hitler",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "consiliul"
+},
+{
+"r": 81,
+"n": "The Resistance: Avalon",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "santinela"
+},
+{
+"r": 82,
+"n": "Munchkin",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "hruba"
+},
+{
+"r": 83,
+"n": "Bang!",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "valea"
+},
+{
+"r": 84,
+"n": "Candy Land",
+"c": "kids",
+"x": "SUA",
+"s": "var",
+"g": "prajituri"
+},
+{
+"r": 85,
+"n": "Guess Who? (Cine e?)",
+"c": "kids",
+"x": "SUA",
+"s": "var",
+"g": "portret"
+},
+{
+"r": 86,
+"n": "Twister",
+"c": "party",
+"x": "SUA",
+"s": "brand",
+"g": ""
+},
+{
+"r": 87,
+"n": "Mastermind",
+"c": "abstract",
+"x": "SUA",
+"s": "play",
+"g": "mastermind"
+},
+{
+"r": 88,
+"n": "Scotland Yard",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "umbra"
+},
+{
+"r": 89,
+"n": "Rummikub",
+"c": "family",
+"x": "SUA",
+"s": "var",
+"g": "placute"
+},
+{
+"r": 90,
+"n": "Dobble (Spot It!)",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "fulger"
+},
+{
+"r": 91,
+"n": "Sushi Go!",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "bufet"
+},
+{
+"r": 92,
+"n": "Love Letter",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "curieri"
+},
+{
+"r": 93,
+"n": "Mahjong",
+"c": "classic",
+"x": "SUA",
+"s": "play",
+"g": "mahjong"
+},
+{
+"r": 94,
+"n": "Go (weiqi, baduk)",
+"c": "abstract",
+"x": "SUA",
+"s": "play",
+"g": "go"
+},
+{
+"r": 95,
+"n": "Hex",
+"c": "abstract",
+"x": "SUA",
+"s": "var",
+"g": "hex"
+},
+{
+"r": 96,
+"n": "Oh Hell",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "prinde"
+},
+{
+"r": 97,
+"n": "Whist",
+"c": "cards",
+"x": "SUA",
+"s": "var",
+"g": "whist"
+},
+{
+"r": 98,
+"n": "Canasta",
+"c": "cards",
+"x": "SUA",
+"s": "play",
+"g": "canasta"
+},
+{
+"r": 99,
+"n": "Werewolf / Mafia",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "lupii"
+},
+{
+"r": 100,
+"n": "Dixit",
+"c": "party",
+"x": "SUA",
+"s": "var",
+"g": "povestitor"
+}
+],
+"samerica": [
+{
+"r": 1,
+"n": "Truco",
+"c": "cards",
+"x": "Argentina / Uruguay / Brazilia",
+"s": "play",
+"g": "truco"
+},
+{
+"r": 2,
+"n": "Șah",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "chess"
+},
+{
+"r": 3,
+"n": "Domino",
+"c": "classic",
+"x": "Venezuela / Colombia",
+"s": "play",
+"g": "domino"
+},
+{
+"r": 4,
+"n": "Dame",
+"c": "abstract",
+"x": "Brazilia / Argentina",
+"s": "play",
+"g": "draughts"
+},
+{
+"r": 5,
+"n": "Uno",
+"c": "cards",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "culori"
+},
+{
+"r": 6,
+"n": "Monopoly",
+"c": "family",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "mosii"
+},
+{
+"r": 7,
+"n": "Ludo",
+"c": "family",
+"x": "Brazilia",
+"s": "play",
+"g": "ludo"
+},
+{
+"r": 8,
+"n": "Parqués",
+"c": "family",
+"x": "Colombia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 9,
+"n": "Poker",
+"c": "cards",
+"x": "Brazilia / Argentina",
+"s": "play",
+"g": "poker"
+},
+{
+"r": 10,
+"n": "Burako (Buraco)",
+"c": "cards",
+"x": "Argentina / Uruguay / Brazilia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 11,
+"n": "Chinchón",
+"c": "cards",
+"x": "Argentina / Uruguay",
+"s": "plan",
+"g": ""
+},
+{
+"r": 12,
+"n": "Escoba (Escoba de 15)",
+"c": "cards",
+"x": "Argentina / Uruguay",
+"s": "plan",
+"g": ""
+},
+{
+"r": 13,
+"n": "Generala",
+"c": "classic",
+"x": "Argentina / Uruguay",
+"s": "plan",
+"g": ""
+},
+{
+"r": 14,
+"n": "Cuarenta",
+"c": "cards",
+"x": "Ecuador",
+"s": "plan",
+"g": ""
+},
+{
+"r": 15,
+"n": "Liar's Dice (Cacho, Dudo, Perudo)",
+"c": "classic",
+"x": "Bolivia / Peru / Chile",
+"s": "plan",
+"g": ""
+},
+{
+"r": 16,
+"n": "Canasta",
+"c": "cards",
+"x": "Uruguay / Argentina",
+"s": "play",
+"g": "canasta"
+},
+{
+"r": 17,
+"n": "Bingo",
+"c": "classic",
+"x": "Brazilia / Argentina",
+"s": "play",
+"g": "bingo"
+},
+{
+"r": 18,
+"n": "Battleship",
+"c": "classic",
+"x": "Brazilia / Argentina",
+"s": "play",
+"g": "battleship"
+},
+{
+"r": 19,
+"n": "Connect Four",
+"c": "abstract",
+"x": "Brazilia",
+"s": "play",
+"g": "connect4"
+},
+{
+"r": 20,
+"n": "Risk",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "arhipelag"
+},
+{
+"r": 21,
+"n": "Cluedo (Clue)",
+"c": "family",
+"x": "Brazilia",
+"s": "var",
+"g": "conac"
+},
+{
+"r": 22,
+"n": "Game of Life",
+"c": "family",
+"x": "Brazilia",
+"s": "var",
+"g": "roata"
+},
+{
+"r": 23,
+"n": "Guess Who? (Cine e?)",
+"c": "kids",
+"x": "Brazilia",
+"s": "var",
+"g": "portret"
+},
+{
+"r": 24,
+"n": "Șerpi și scări",
+"c": "kids",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "snakes"
+},
+{
+"r": 25,
+"n": "Table (Backgammon)",
+"c": "classic",
+"x": "Brazilia / Argentina",
+"s": "play",
+"g": "backgammon"
+},
+{
+"r": 26,
+"n": "Scrabble",
+"c": "family",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "litere"
+},
+{
+"r": 27,
+"n": "Blackjack",
+"c": "cards",
+"x": "Argentina / Brazilia",
+"s": "play",
+"g": "blackjack"
+},
+{
+"r": 28,
+"n": "Remi (Rummy)",
+"c": "cards",
+"x": "Argentina / Chile",
+"s": "play",
+"g": "rummy"
+},
+{
+"r": 29,
+"n": "Tormenta",
+"c": "rpg",
+"x": "Brazilia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 30,
+"n": "Dungeons & Dragons",
+"c": "rpg",
+"x": "Brazilia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 31,
+"n": "Magic: The Gathering",
+"c": "tcg",
+"x": "Brazilia",
+"s": "var",
+"g": "tcg"
+},
+{
+"r": 32,
+"n": "Pokémon TCG",
+"c": "tcg",
+"x": "Brazilia",
+"s": "var",
+"g": "tcg_evo"
+},
+{
+"r": 33,
+"n": "Yu-Gi-Oh! TCG",
+"c": "tcg",
+"x": "Brazilia",
+"s": "var",
+"g": "tcg_zone"
+},
+{
+"r": 34,
+"n": "Hanafuda",
+"c": "cards",
+"x": "Brazilia",
+"s": "play",
+"g": "hanafuda"
+},
+{
+"r": 35,
+"n": "Shogi",
+"c": "abstract",
+"x": "Brazilia",
+"s": "play",
+"g": "shogi"
+},
+{
+"r": 36,
+"n": "Mahjong",
+"c": "classic",
+"x": "Brazilia",
+"s": "play",
+"g": "mahjong"
+},
+{
+"r": 37,
+"n": "Go (weiqi, baduk)",
+"c": "abstract",
+"x": "Brazilia",
+"s": "play",
+"g": "go"
+},
+{
+"r": 38,
+"n": "Pictionary",
+"c": "party",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "schita"
+},
+{
+"r": 39,
+"n": "Taboo",
+"c": "party",
+"x": "Brazilia",
+"s": "var",
+"g": "oprite"
+},
+{
+"r": 40,
+"n": "Jenga",
+"c": "family",
+"x": "Brazilia",
+"s": "var",
+"g": "turnul"
+},
+{
+"r": 41,
+"n": "Mastermind",
+"c": "abstract",
+"x": "Brazilia",
+"s": "play",
+"g": "mastermind"
+},
+{
+"r": 42,
+"n": "Trivial Pursuit",
+"c": "party",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "cunoastere"
+},
+{
+"r": 43,
+"n": "Cards Against Humanity",
+"c": "party",
+"x": "Brazilia",
+"s": "var",
+"g": "gura"
+},
+{
+"r": 44,
+"n": "Werewolf / Mafia",
+"c": "party",
+"x": "Brazilia",
+"s": "var",
+"g": "lupii"
+},
+{
+"r": 45,
+"n": "Catan",
+"c": "strategy",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "insula"
+},
+{
+"r": 46,
+"n": "Carcassonne",
+"c": "family",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "mozaic"
+},
+{
+"r": 47,
+"n": "Ticket to Ride",
+"c": "family",
+"x": "Brazilia",
+"s": "var",
+"g": "magistrale"
+},
+{
+"r": 48,
+"n": "Codenames",
+"c": "party",
+"x": "Brazilia",
+"s": "var",
+"g": "spionii"
+},
+{
+"r": 49,
+"n": "Dixit",
+"c": "party",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "povestitor"
+},
+{
+"r": 50,
+"n": "Exploding Kittens",
+"c": "cards",
+"x": "Brazilia",
+"s": "var",
+"g": "fitil"
+},
+{
+"r": 51,
+"n": "Bang!",
+"c": "cards",
+"x": "Brazilia",
+"s": "var",
+"g": "valea"
+},
+{
+"r": 52,
+"n": "Munchkin",
+"c": "cards",
+"x": "Brazilia",
+"s": "var",
+"g": "hruba"
+},
+{
+"r": 53,
+"n": "Dobble (Spot It!)",
+"c": "party",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "fulger"
+},
+{
+"r": 54,
+"n": "Splendor",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "cristale"
+},
+{
+"r": 55,
+"n": "Azul",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "faianta"
+},
+{
+"r": 56,
+"n": "Wingspan",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "solzi"
+},
+{
+"r": 57,
+"n": "7 Wonders",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "epoci"
+},
+{
+"r": 58,
+"n": "Kingdomino",
+"c": "family",
+"x": "Brazilia",
+"s": "var",
+"g": "tinuturi"
+},
+{
+"r": 59,
+"n": "Love Letter",
+"c": "cards",
+"x": "Brazilia",
+"s": "var",
+"g": "curieri"
+},
+{
+"r": 60,
+"n": "Sushi Go!",
+"c": "cards",
+"x": "Brazilia",
+"s": "var",
+"g": "bufet"
+},
+{
+"r": 61,
+"n": "Spades",
+"c": "cards",
+"x": "Brazilia",
+"s": "var",
+"g": "pica"
+},
+{
+"r": 62,
+"n": "Hearts",
+"c": "cards",
+"x": "Brazilia",
+"s": "var",
+"g": "inimi"
+},
+{
+"r": 63,
+"n": "Whist",
+"c": "cards",
+"x": "Chile / Argentina",
+"s": "var",
+"g": "whist"
+},
+{
+"r": 64,
+"n": "Bridge",
+"c": "cards",
+"x": "Brazilia / Argentina",
+"s": "play",
+"g": "bridge"
+},
+{
+"r": 65,
+"n": "Briscola",
+"c": "cards",
+"x": "Argentina / Uruguay",
+"s": "play",
+"g": "briscola"
+},
+{
+"r": 66,
+"n": "Scopa",
+"c": "cards",
+"x": "Argentina / Uruguay",
+"s": "play",
+"g": "scopa"
+},
+{
+"r": 67,
+"n": "Rummikub",
+"c": "family",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "placute"
+},
+{
+"r": 68,
+"n": "Yahtzee",
+"c": "family",
+"x": "Brazilia / Argentina",
+"s": "var",
+"g": "zaruri5"
+},
+{
+"r": 69,
+"n": "Activity",
+"c": "party",
+"x": "Brazilia",
+"s": "var",
+"g": "treicai"
+},
+{
+"r": 70,
+"n": "Candy Land",
+"c": "kids",
+"x": "Brazilia",
+"s": "var",
+"g": "prajituri"
+},
+{
+"r": 71,
+"n": "Memory",
+"c": "kids",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "memory"
+},
+{
+"r": 72,
+"n": "Scotland Yard",
+"c": "family",
+"x": "Brazilia",
+"s": "var",
+"g": "umbra"
+},
+{
+"r": 73,
+"n": "Labirintul nebun (Das verrückte Labyrinth)",
+"c": "family",
+"x": "Brazilia",
+"s": "var",
+"g": "zidurile"
+},
+{
+"r": 74,
+"n": "Call of Cthulhu",
+"c": "rpg",
+"x": "Brazilia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 75,
+"n": "Pathfinder",
+"c": "rpg",
+"x": "Brazilia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 76,
+"n": "Vampire: The Masquerade",
+"c": "rpg",
+"x": "Brazilia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 77,
+"n": "Warhammer 40,000",
+"c": "minis",
+"x": "Brazilia / Argentina / Chile",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 78,
+"n": "Warhammer: Age of Sigmar",
+"c": "minis",
+"x": "Brazilia / Chile",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 79,
+"n": "Star Wars: X-Wing",
+"c": "minis",
+"x": "Brazilia",
+"s": "var",
+"g": "nave"
+},
+{
+"r": 80,
+"n": "Blood Bowl",
+"c": "minis",
+"x": "Brazilia",
+"s": "var",
+"g": "gridiron"
+},
+{
+"r": 81,
+"n": "Disney Lorcana",
+"c": "tcg",
+"x": "Brazilia",
+"s": "var",
+"g": "tcg_cerneala"
+},
+{
+"r": 82,
+"n": "Flesh and Blood",
+"c": "tcg",
+"x": "Brazilia",
+"s": "var",
+"g": "tcg_lant"
+},
+{
+"r": 83,
+"n": "Gloomhaven",
+"c": "coop",
+"x": "Brazilia",
+"s": "var",
+"g": "cripta"
+},
+{
+"r": 84,
+"n": "Terraforming Mars",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "reverdire"
+},
+{
+"r": 85,
+"n": "Root",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "codru"
+},
+{
+"r": 86,
+"n": "Scythe",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "hotar"
+},
+{
+"r": 87,
+"n": "Nim",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "nim"
+},
+{
+"r": 88,
+"n": "Gomoku",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "gomoku"
+},
+{
+"r": 89,
+"n": "Reversi / Othello",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "reversi"
+},
+{
+"r": 90,
+"n": "Hex",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "hex"
+},
+{
+"r": 91,
+"n": "Moara (Nine Men's Morris)",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "morris"
+},
+{
+"r": 92,
+"n": "Lotería",
+"c": "classic",
+"x": "Colombia / Peru",
+"s": "play",
+"g": "loteria"
+},
+{
+"r": 93,
+"n": "Xiangqi (șah chinezesc)",
+"c": "abstract",
+"x": "Brazilia",
+"s": "play",
+"g": "xiangqi"
+},
+{
+"r": 94,
+"n": "Stratego",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "ceata"
+},
+{
+"r": 95,
+"n": "Hanabi",
+"c": "coop",
+"x": "Brazilia",
+"s": "var",
+"g": "artificii"
+},
+{
+"r": 96,
+"n": "Small World",
+"c": "strategy",
+"x": "Brazilia",
+"s": "var",
+"g": "apus"
+},
+{
+"r": 97,
+"n": "Zombicide",
+"c": "coop",
+"x": "Brazilia",
+"s": "var",
+"g": "cenusii"
+},
+{
+"r": 98,
+"n": "Skull",
+"c": "party",
+"x": "Brazilia",
+"s": "var",
+"g": "capcana"
+},
+{
+"r": 99,
+"n": "Lost Cities",
+"c": "cards",
+"x": "Brazilia",
+"s": "var",
+"g": "expeditii"
+},
+{
+"r": 100,
+"n": "Bohnanza",
+"c": "cards",
+"x": "Brazilia",
+"s": "var",
+"g": "roade"
+}
+],
+"oceania": [
+{
+"r": 1,
+"n": "Monopoly",
+"c": "family",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "mosii"
+},
+{
+"r": 2,
+"n": "Șah",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "chess"
+},
+{
+"r": 3,
+"n": "Scrabble",
+"c": "family",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "litere"
+},
+{
+"r": 4,
+"n": "Poker",
+"c": "cards",
+"x": "Australia",
+"s": "play",
+"g": "poker"
+},
+{
+"r": 5,
+"n": "Two-up",
+"c": "classic",
+"x": "Australia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 6,
+"n": "Euchre",
+"c": "cards",
+"x": "Australia",
+"s": "play",
+"g": "euchre"
+},
+{
+"r": 7,
+"n": "Five Hundred (500)",
+"c": "cards",
+"x": "Australia",
+"s": "plan",
+"g": ""
+},
+{
+"r": 8,
+"n": "Cribbage",
+"c": "cards",
+"x": "Noua Zeelandă / Australia",
+"s": "play",
+"g": "cribbage"
+},
+{
+"r": 9,
+"n": "Bridge",
+"c": "cards",
+"x": "Australia / Noua Zeelandă",
+"s": "play",
+"g": "bridge"
+},
+{
+"r": 10,
+"n": "Bingo",
+"c": "classic",
+"x": "Australia / Noua Zeelandă",
+"s": "play",
+"g": "bingo"
+},
+{
+"r": 11,
+"n": "Dame",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "draughts"
+},
+{
+"r": 12,
+"n": "Uno",
+"c": "cards",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "culori"
+},
+{
+"r": 13,
+"n": "Domino",
+"c": "classic",
+"x": "Insulele Pacificului",
+"s": "play",
+"g": "domino"
+},
+{
+"r": 14,
+"n": "Cluedo (Clue)",
+"c": "family",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "conac"
+},
+{
+"r": 15,
+"n": "Trivial Pursuit",
+"c": "party",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "cunoastere"
+},
+{
+"r": 16,
+"n": "Yahtzee",
+"c": "family",
+"x": "Australia",
+"s": "var",
+"g": "zaruri5"
+},
+{
+"r": 17,
+"n": "Catan",
+"c": "strategy",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "insula"
+},
+{
+"r": 18,
+"n": "Carcassonne",
+"c": "family",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "mozaic"
+},
+{
+"r": 19,
+"n": "Ticket to Ride",
+"c": "family",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "magistrale"
+},
+{
+"r": 20,
+"n": "Sushi Go!",
+"c": "cards",
+"x": "Australia",
+"s": "var",
+"g": "bufet"
+},
+{
+"r": 21,
+"n": "Wingspan",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "solzi"
+},
+{
+"r": 22,
+"n": "Warhammer 40,000",
+"c": "minis",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 23,
+"n": "Warhammer: Age of Sigmar",
+"c": "minis",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "miniaturi"
+},
+{
+"r": 24,
+"n": "Flesh and Blood",
+"c": "tcg",
+"x": "Australia",
+"s": "var",
+"g": "tcg_lant"
+},
+{
+"r": 25,
+"n": "Pokémon TCG",
+"c": "tcg",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "tcg_evo"
+},
+{
+"r": 26,
+"n": "Magic: The Gathering",
+"c": "tcg",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "tcg"
+},
+{
+"r": 27,
+"n": "Dungeons & Dragons",
+"c": "rpg",
+"x": "Australia / Noua Zeelandă",
+"s": "kit",
+"g": ""
+},
+{
+"r": 28,
+"n": "Pathfinder",
+"c": "rpg",
+"x": "Australia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 29,
+"n": "Call of Cthulhu",
+"c": "rpg",
+"x": "Australia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 30,
+"n": "Mu Torere",
+"c": "abstract",
+"x": "Noua Zeelandă",
+"s": "plan",
+"g": ""
+},
+{
+"r": 31,
+"n": "Konane",
+"c": "abstract",
+"x": "Hawaii",
+"s": "var",
+"g": "konane"
+},
+{
+"r": 32,
+"n": "Hanafuda",
+"c": "cards",
+"x": "Hawaii",
+"s": "play",
+"g": "hanafuda"
+},
+{
+"r": 33,
+"n": "Crown and Anchor",
+"c": "classic",
+"x": "Australia / Noua Zeelandă",
+"s": "plan",
+"g": ""
+},
+{
+"r": 34,
+"n": "Pontoon",
+"c": "cards",
+"x": "Australia / Noua Zeelandă",
+"s": "plan",
+"g": ""
+},
+{
+"r": 35,
+"n": "Blackjack",
+"c": "cards",
+"x": "Australia",
+"s": "play",
+"g": "blackjack"
+},
+{
+"r": 36,
+"n": "Table (Backgammon)",
+"c": "classic",
+"x": "Australia",
+"s": "play",
+"g": "backgammon"
+},
+{
+"r": 37,
+"n": "Remi (Rummy)",
+"c": "cards",
+"x": "Australia / Noua Zeelandă",
+"s": "play",
+"g": "rummy"
+},
+{
+"r": 38,
+"n": "Whist",
+"c": "cards",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "whist"
+},
+{
+"r": 39,
+"n": "Hearts",
+"c": "cards",
+"x": "Australia",
+"s": "var",
+"g": "inimi"
+},
+{
+"r": 40,
+"n": "Spades",
+"c": "cards",
+"x": "Australia",
+"s": "var",
+"g": "pica"
+},
+{
+"r": 41,
+"n": "Oh Hell",
+"c": "cards",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "prinde"
+},
+{
+"r": 42,
+"n": "Canasta",
+"c": "cards",
+"x": "Australia / Noua Zeelandă",
+"s": "play",
+"g": "canasta"
+},
+{
+"r": 43,
+"n": "Rummikub",
+"c": "family",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "placute"
+},
+{
+"r": 44,
+"n": "Mahjong",
+"c": "classic",
+"x": "Australia / Noua Zeelandă",
+"s": "play",
+"g": "mahjong"
+},
+{
+"r": 45,
+"n": "Go (weiqi, baduk)",
+"c": "abstract",
+"x": "Australia",
+"s": "play",
+"g": "go"
+},
+{
+"r": 46,
+"n": "Connect Four",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "connect4"
+},
+{
+"r": 47,
+"n": "Battleship",
+"c": "classic",
+"x": "Australia / Noua Zeelandă",
+"s": "play",
+"g": "battleship"
+},
+{
+"r": 48,
+"n": "Șerpi și scări",
+"c": "kids",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "snakes"
+},
+{
+"r": 49,
+"n": "Ludo",
+"c": "family",
+"x": "Fiji / Insulele Pacificului",
+"s": "play",
+"g": "ludo"
+},
+{
+"r": 50,
+"n": "Pictionary",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "schita"
+},
+{
+"r": 51,
+"n": "Taboo",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "oprite"
+},
+{
+"r": 52,
+"n": "Jenga",
+"c": "family",
+"x": "Australia",
+"s": "var",
+"g": "turnul"
+},
+{
+"r": 53,
+"n": "Cards Against Humanity",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "gura"
+},
+{
+"r": 54,
+"n": "Activity",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "treicai"
+},
+{
+"r": 55,
+"n": "Codenames",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "spionii"
+},
+{
+"r": 56,
+"n": "Pandemic",
+"c": "coop",
+"x": "Australia",
+"s": "var",
+"g": "focare"
+},
+{
+"r": 57,
+"n": "Dixit",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "povestitor"
+},
+{
+"r": 58,
+"n": "Azul",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "faianta"
+},
+{
+"r": 59,
+"n": "Splendor",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "cristale"
+},
+{
+"r": 60,
+"n": "7 Wonders",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "epoci"
+},
+{
+"r": 61,
+"n": "Kingdomino",
+"c": "family",
+"x": "Australia",
+"s": "var",
+"g": "tinuturi"
+},
+{
+"r": 62,
+"n": "Cascadia",
+"c": "family",
+"x": "Australia",
+"s": "var",
+"g": "poieni"
+},
+{
+"r": 63,
+"n": "Everdell",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "catun"
+},
+{
+"r": 64,
+"n": "Terraforming Mars",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "reverdire"
+},
+{
+"r": 65,
+"n": "Root",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "codru"
+},
+{
+"r": 66,
+"n": "Scythe",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "hotar"
+},
+{
+"r": 67,
+"n": "Gloomhaven",
+"c": "coop",
+"x": "Australia",
+"s": "var",
+"g": "cripta"
+},
+{
+"r": 68,
+"n": "Spirit Island",
+"c": "coop",
+"x": "Australia",
+"s": "var",
+"g": "strajile"
+},
+{
+"r": 69,
+"n": "Exploding Kittens",
+"c": "cards",
+"x": "Australia",
+"s": "var",
+"g": "fitil"
+},
+{
+"r": 70,
+"n": "Love Letter",
+"c": "cards",
+"x": "Australia",
+"s": "var",
+"g": "curieri"
+},
+{
+"r": 71,
+"n": "Bang!",
+"c": "cards",
+"x": "Australia",
+"s": "var",
+"g": "valea"
+},
+{
+"r": 72,
+"n": "Munchkin",
+"c": "cards",
+"x": "Australia",
+"s": "var",
+"g": "hruba"
+},
+{
+"r": 73,
+"n": "Dobble (Spot It!)",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "fulger"
+},
+{
+"r": 74,
+"n": "Werewolf / Mafia",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "lupii"
+},
+{
+"r": 75,
+"n": "Blood on the Clocktower",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "ceasornic"
+},
+{
+"r": 76,
+"n": "The Resistance: Avalon",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "santinela"
+},
+{
+"r": 77,
+"n": "Secret Hitler",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "consiliul"
+},
+{
+"r": 78,
+"n": "Game of Life",
+"c": "family",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "roata"
+},
+{
+"r": 79,
+"n": "Risk",
+"c": "strategy",
+"x": "Australia / Noua Zeelandă",
+"s": "var",
+"g": "arhipelag"
+},
+{
+"r": 80,
+"n": "Candy Land",
+"c": "kids",
+"x": "Australia",
+"s": "var",
+"g": "prajituri"
+},
+{
+"r": 81,
+"n": "Guess Who? (Cine e?)",
+"c": "kids",
+"x": "Australia",
+"s": "var",
+"g": "portret"
+},
+{
+"r": 82,
+"n": "Mastermind",
+"c": "abstract",
+"x": "Australia",
+"s": "play",
+"g": "mastermind"
+},
+{
+"r": 83,
+"n": "Scotland Yard",
+"c": "family",
+"x": "Australia",
+"s": "var",
+"g": "umbra"
+},
+{
+"r": 84,
+"n": "Memory",
+"c": "kids",
+"x": "Australia",
+"s": "play",
+"g": "memory"
+},
+{
+"r": 85,
+"n": "Twister",
+"c": "party",
+"x": "Australia",
+"s": "brand",
+"g": ""
+},
+{
+"r": 86,
+"n": "Star Wars: X-Wing",
+"c": "minis",
+"x": "Australia",
+"s": "var",
+"g": "nave"
+},
+{
+"r": 87,
+"n": "Disney Lorcana",
+"c": "tcg",
+"x": "Australia",
+"s": "var",
+"g": "tcg_cerneala"
+},
+{
+"r": 88,
+"n": "Yu-Gi-Oh! TCG",
+"c": "tcg",
+"x": "Australia",
+"s": "var",
+"g": "tcg_zone"
+},
+{
+"r": 89,
+"n": "Blood Bowl",
+"c": "minis",
+"x": "Australia",
+"s": "var",
+"g": "gridiron"
+},
+{
+"r": 90,
+"n": "Vampire: The Masquerade",
+"c": "rpg",
+"x": "Australia",
+"s": "kit",
+"g": ""
+},
+{
+"r": 91,
+"n": "Hex",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "hex"
+},
+{
+"r": 92,
+"n": "Gomoku",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "gomoku"
+},
+{
+"r": 93,
+"n": "Reversi / Othello",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "play",
+"g": "reversi"
+},
+{
+"r": 94,
+"n": "Nim",
+"c": "abstract",
+"x": "Pe tot continentul",
+"s": "var",
+"g": "nim"
+},
+{
+"r": 95,
+"n": "Skull",
+"c": "party",
+"x": "Australia",
+"s": "var",
+"g": "capcana"
+},
+{
+"r": 96,
+"n": "Lost Cities",
+"c": "cards",
+"x": "Australia",
+"s": "var",
+"g": "expeditii"
+},
+{
+"r": 97,
+"n": "Hanabi",
+"c": "coop",
+"x": "Australia",
+"s": "var",
+"g": "artificii"
+},
+{
+"r": 98,
+"n": "Just One",
+"c": "coop",
+"x": "Australia",
+"s": "var",
+"g": "cuvantunic"
+},
+{
+"r": 99,
+"n": "Small World",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "apus"
+},
+{
+"r": 100,
+"n": "Stratego",
+"c": "strategy",
+"x": "Australia",
+"s": "var",
+"g": "ceata"
+}
+],
 "other": [
 {
 "r": 1,
@@ -3215,6 +7225,12 @@
 "Date sursă: vânzări Catan (Kosmos), Roll20/Orr Group (jocuri de rol), ICv2/GAMA (miniaturi și TCG), Statista (piețe), Gameology (România).",
 "Topul pentru România este cel mai nesigur: nu există statistici publice de vânzări, deci este o estimare.",
 "Categorii: Clasic, Abstract, Familie, Strategie, Party, Cooperativ, Cărți, Rol (RPG), Miniaturi, TCG, Copii.",
-"Topul „Alte continente” exclude Europa."
+"Topul „Alte continente” exclude Europa.",
+"Topurile pe continente (Africa, Asia, America de Nord, America de Sud, Oceania) sunt estimări editoriale, ca toate celelalte: combină tradiția locală de joc, popularitatea jocurilor internaționale din regiune și, unde există, date de piață. Fiecare are 100 de locuri distincte, mapate la catalogul PolyTabletop.",
+"Împărțirea pe continente: Turcia și Orientul Mijlociu sunt la Asia; Egiptul și Maghrebul la Africa; Mexicul, America Centrală și Caraibele la America de Nord; Australia, Noua Zeelandă, Hawaii și insulele Pacificului la Oceania; Rusia apare la Europa.",
+"Topurile pentru Africa, America de Sud și Oceania sunt, ca cel pentru România, mai puțin sigure decât celelalte: există puține statistici publice despre jocurile de masă din aceste regiuni, iar ultimele locuri sunt jocuri internaționale ordonate după prezența lor pe piețele regionale (Africa de Sud, Brazilia, Australia).",
+"Jocurile tradiționale regionale care nu sunt încă implementate (de exemplu Oware, Bao, Escoba, Burako, Two-up) au fost adăugate în catalog cu starea „planificat”; au reguli publice și nu au nume de marcă.",
+"Antarctica nu are top: nu are populație permanentă și nici o tradiție proprie de jocuri; stațiile de cercetare joacă jocurile aduse din țările de origine, care apar deja în celelalte topuri.",
+"Toate topurile (lume, Europa, cele cinci continente, alte continente, România) sunt estimări editoriale, nu o clasificare oficială."
 ]
 }

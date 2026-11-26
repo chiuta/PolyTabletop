@@ -1,6 +1,6 @@
 # Catalogul (generat)
 
-201 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
+251 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
 ## Implementat (182)
 
@@ -189,10 +189,60 @@
 | Go Fish (Pescuit) | Cărți | — | implementat |
 | Poker de zaruri | Zaruri | — | implementat |
 
-## Tradițional (0)
+## Tradițional (50)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
+| Oware | Abstract | Ghana / Africa de Vest | planificat (domeniu public) |
+| Bao | Abstract | Tanzania / Africa de Est | planificat (domeniu public) |
+| Seega | Abstract | Egipt | planificat (domeniu public) |
+| Yote | Abstract | Senegal / Africa de Vest | planificat (domeniu public) |
+| Hus | Abstract | Namibia | planificat (domeniu public) |
+| Tâb | Clasic | Egipt / Orientul Mijlociu | planificat (domeniu public) |
+| Senet | Clasic | Egiptul antic | planificat (domeniu public) |
+| Whot! | Cărți | Nigeria | planificat (domeniu public) |
+| Chkobba | Cărți | Tunisia | planificat (domeniu public) |
+| Ronda | Cărți | Maroc / Spania | planificat (domeniu public) |
+| Sholo Guti (Șaisprezece soldați) | Abstract | Bangladesh / India | planificat (domeniu public) |
+| Aadu Puli Attam (Oi și tigri) | Abstract | India | planificat (domeniu public) |
+| Mangala (mancala turcească) | Abstract | Turcia | planificat (domeniu public) |
+| Dama (dame turcești) | Abstract | Turcia / Orientul Mijlociu | planificat (domeniu public) |
+| Okey | Clasic | Turcia | planificat (domeniu public) |
+| Riichi Mahjong | Clasic | Japonia | planificat (domeniu public) |
+| Sic Bo | Clasic | China | planificat (domeniu public) |
+| Ashta Chamma | Clasic | India | planificat (domeniu public) |
+| Daifugo (Daihinmin) | Cărți | Japonia | planificat (domeniu public) |
+| Tiến lên | Cărți | Vietnam | planificat (domeniu public) |
+| Big Two (Pusoy dos) | Cărți | China / Filipine | planificat (domeniu public) |
+| Tong-its | Cărți | Filipine | planificat (domeniu public) |
+| Pasur | Cărți | Iran | planificat (domeniu public) |
+| Hokm | Cărți | Iran | planificat (domeniu public) |
+| Piști | Cărți | Turcia | planificat (domeniu public) |
+| Court Piece (Rang, Mendikot) | Cărți | India | planificat (domeniu public) |
+| Call Break | Cărți | Nepal / India | planificat (domeniu public) |
+| Pinochle | Cărți | SUA | planificat (domeniu public) |
+| Gin Rummy | Cărți | SUA | planificat (domeniu public) |
+| Crazy Eights | Cărți | SUA | planificat (domeniu public) |
+| Pitch (Setback) | Cărți | SUA | planificat (domeniu public) |
+| Bid Whist | Cărți | SUA | planificat (domeniu public) |
+| All Fours | Cărți | Trinidad și Tobago / Caraibe | planificat (domeniu public) |
+| Conquián | Cărți | Mexic | planificat (domeniu public) |
+| Chicken Foot (domino) | Clasic | SUA / Caraibe | planificat (domeniu public) |
+| Bunco | Clasic | SUA | planificat (domeniu public) |
+| Farkle (10 000) | Clasic | SUA | planificat (domeniu public) |
+| Liar's Dice (Cacho, Dudo, Perudo) | Clasic | America Latină | planificat (domeniu public) |
+| Crokinole | Familie | Canada | planificat (domeniu public) |
+| Chinchón | Cărți | Spania / America Latină | planificat (domeniu public) |
+| Burako (Buraco) | Cărți | Argentina / Uruguay / Brazilia | planificat (domeniu public) |
+| Escoba (Escoba de 15) | Cărți | Argentina / Uruguay | planificat (domeniu public) |
+| Cuarenta | Cărți | Ecuador | planificat (domeniu public) |
+| Generala | Clasic | Argentina / Uruguay | planificat (domeniu public) |
+| Parqués | Familie | Colombia | planificat (domeniu public) |
+| Five Hundred (500) | Cărți | SUA / Australia | planificat (domeniu public) |
+| Pontoon | Cărți | Australia / Marea Britanie | planificat (domeniu public) |
+| Two-up | Clasic | Australia | planificat (domeniu public) |
+| Crown and Anchor | Clasic | Marea Britanie / Oceania | planificat (domeniu public) |
+| Mu Torere | Abstract | Noua Zeelandă (maori) | planificat (domeniu public) |
 
 ## Variantă proprie (3)
 

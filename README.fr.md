@@ -6,13 +6,13 @@ Version: 0.9.1 · Last updated: 2026-11-26
 
 ## De quoi s'agit-il
 
-PolyTabletop (anciennement MASA) est une collection clean-room de jeux de société écrite en Rust : 171 jeux jouables contre l'ordinateur, dans le terminal ou dans une fenêtre graphique, avec en plus le mode « à deux sur le même poste » (hot-seat) et le jeu en réseau à deux. On y trouve des classiques abstraits, des jeux de cartes et de dés, des variantes originales de mécaniques modernes sous des noms propres, des jeux coopératifs avec un partenaire IA, des jeux à rôles cachés où des robots complètent la table, des jeux d'ambiance et de mots, ainsi que des moteurs de figurines et de cartes à collectionner avec des cartes originales. Le moteur et les jeux n'ont aucune dépendance externe ; seule l'interface graphique (`polytabletop-gui`) utilise `eframe`/egui. Le catalogue suit 201 jeux cibles.
+PolyTabletop est une collection clean-room de jeux de société écrite en Rust : 171 jeux jouables contre l'ordinateur, dans le terminal ou dans une fenêtre graphique, avec en plus le mode « à deux sur le même poste » (hot-seat) et le jeu en réseau à deux. On y trouve des classiques abstraits, des jeux de cartes et de dés, des variantes originales de mécaniques modernes sous des noms propres, des jeux coopératifs avec un partenaire IA, des jeux à rôles cachés où des robots complètent la table, des jeux d'ambiance et de mots, ainsi que des moteurs de figurines et de cartes à collectionner avec des cartes originales. Le moteur et les jeux n'ont aucune dépendance externe ; seule l'interface graphique (`polytabletop-gui`) utilise `eframe`/egui. Le catalogue suit 251 jeux cibles.
 
 Page de présentation : <https://polytabletop.chiuta.ro>. Guide d'installation court : [docs/INSTALL.fr.md](docs/INSTALL.fr.md) ([English](docs/INSTALL.en.md) · [Română](docs/INSTALL.ro.md) · [Italiano](docs/INSTALL.it.md) · [Español](docs/INSTALL.es.md) · [Português](docs/INSTALL.pt.md) · [Deutsch](docs/INSTALL.de.md) · [Magyar](docs/INSTALL.hu.md)).
 
 ## Utilisation
 
-- Liste et catalogue : `polytabletop list` affiche les 171 jeux jouables avec leurs règles en bref ; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` donne l'état des 201 entrées du catalogue.
+- Liste et catalogue : `polytabletop list` affiche les 171 jeux jouables avec leurs règles en bref ; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` donne l'état des 251 entrées du catalogue.
 - Jouer : `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. `--you one` (par défaut) vous fait Joueur 1, `two` Joueur 2, `both` est le mode hot-seat sur un seul clavier, `none` laisse l'ordinateur jouer les deux camps. `--seed N` rend la distribution des cartes et les dés reproductibles ; `--record FICHIER` enregistre une transcription.
 - En partie : saisissez le coup exactement comme `?` le liste (par exemple `e2e4`, `c3xe5`, `d6`), `?` = coups légaux, `hint` = suggestion de l'IA, `q` = quitter.
 - IA contre IA : `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (voir [docs/ARENA.md](docs/ARENA.md)).
@@ -33,7 +33,7 @@ cargo build --release
 
 ## Jeux
 
-171 jeux sont jouables dès maintenant, dans le terminal et dans l'interface graphique ; le catalogue compte 201 entrées (`polytabletop catalog` se termine par : implémentées 182, variantes propres prévues 3, boîte à outils générique 16). Les 16 entrées « boîte à outils » sont des systèmes de jeu de rôle, servis par le crate générique `polytabletop-rpg` (dés, fiches, tests de compétence, générateur de donjon, simulateur de batailles, journal), sans les règles d'aucun éditeur. Catégories et nombre de jeux, d'après `polytabletop-games/src/lib.rs` :
+171 jeux sont jouables dès maintenant, dans le terminal et dans l'interface graphique ; le catalogue compte 251 entrées (`polytabletop catalog` se termine par : implémentées 182, jeux traditionnels prévus 50, variantes propres prévues 3, boîte à outils générique 16). Les 16 entrées « boîte à outils » sont des systèmes de jeu de rôle, servis par le crate générique `polytabletop-rpg` (dés, fiches, tests de compétence, générateur de donjon, simulateur de batailles, journal), sans les règles d'aucun éditeur. Catégories et nombre de jeux, d'après `polytabletop-games/src/lib.rs` :
 
 | Catégorie | Jeux | Exemples (identifiants) |
 |---|---|---|

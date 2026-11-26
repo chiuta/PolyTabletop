@@ -17,7 +17,7 @@ def key(n):
 gc = open(f'{root}/tools/gen_catalog.py', encoding='utf8').read()
 TRAD = set(re.search(r'TRAD = set\("""(.*?)"""', gc, re.S).group(1).split('|'))
 cat = {}
-for m in re.finditer(r'E \{ name: "((?:[^"\\]|\\.)*)", category: "([^"]*)", origin: "([^"]*)", kind: Kind::(\w+), impl_id: "([^"]*)" \}', open(f'{root}/polytabletop-games/src/catalog.rs', encoding='utf8').read()):
+for m in re.finditer(r'E\s*\{\s*name:\s*"((?:[^"\\]|\\.)*)",\s*category:\s*"([^"]*)",\s*origin:\s*"([^"]*)",\s*kind:\s*Kind::(\w+),\s*impl_id:\s*"([^"]*)",?\s*\}', open(f'{root}/polytabletop-games/src/catalog.rs', encoding='utf8').read()):
     cat[key(m.group(1).replace('\\"', '"'))] = (m.group(4), m.group(5))
 src = open(f'{root}/polytabletop-games/src/lib.rs', encoding='utf8').read()
 src = src[src.index('pub fn playable()'):]
@@ -29,7 +29,8 @@ CATK = {'Clasic': 'classic', 'Abstract': 'abstract', 'Familie': 'family', 'Strat
 #         kit = toolkit RPG/miniaturi/TCG generic; brand = neimplementat din motive de mărci; plan = tradițional planificat
 wb = openpyxl.load_workbook(xlsx, read_only=True)
 lists, unmapped = {}, []
-for sheet, lid in (('Lume', 'world'), ('Europa', 'europe'), ('Alte continente', 'other'), ('România', 'romania')):
+for sheet, lid in (('Lume', 'world'), ('Europa', 'europe'), ('Africa', 'africa'), ('Asia', 'asia'), ('America de Nord', 'namerica'),
+                   ('America de Sud', 'samerica'), ('Oceania', 'oceania'), ('Alte continente', 'other'), ('România', 'romania')):
     rows = [r for r in wb[sheet].iter_rows(min_row=2, values_only=True) if r[0] is not None]
     out = []
     for loc, joc, c, extra in rows:
@@ -47,6 +48,10 @@ for sheet, lid in (('Lume', 'world'), ('Europa', 'europe'), ('Alte continente', 
             else: st, gid = 'brand', ''
         out.append({'r': int(loc), 'n': joc, 'c': CATK[c], 'x': extra or '', 's': st, 'g': gid})
     assert len(out) == 100, (sheet, len(out))
+    assert len({x['n'] for x in out}) == 100, sheet
+    gs = [x['g'] for x in out if x['g']]
+    if len(gs) != len(set(gs)):
+        print('atenție: același joc jucabil de două ori în', lid, sorted({g for g in gs if gs.count(g) > 1}))
     lists[lid] = out
 notes = [r[0] for r in wb['Note'].iter_rows(values_only=True) if r[0]]
 data = {'lists': lists, 'notes_ro': notes}

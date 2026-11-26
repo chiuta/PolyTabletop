@@ -6,13 +6,13 @@ Version: 0.9.1 · Last updated: 2026-11-26
 
 ## Che cos'è
 
-PolyTabletop (già MASA) è una raccolta clean-room di giochi da tavolo scritta in Rust: 171 giochi giocabili contro il computer, nel terminale o in una finestra grafica, più la modalità hot-seat sullo stesso computer e il gioco in rete per due persone. Ci sono classici astratti, giochi di carte e di dadi, varianti originali di meccaniche moderne con nomi propri, giochi cooperativi con un partner IA, giochi a ruoli nascosti in cui i robot completano il tavolo, giochi di società e di parole, motori per miniature e per carte collezionabili con carte originali. Il motore e i giochi non hanno dipendenze esterne; solo l'interfaccia grafica (`polytabletop-gui`) usa `eframe`/egui. Il catalogo traccia 201 giochi obiettivo.
+PolyTabletop è una raccolta clean-room di giochi da tavolo scritta in Rust: 171 giochi giocabili contro il computer, nel terminale o in una finestra grafica, più la modalità hot-seat sullo stesso computer e il gioco in rete per due persone. Ci sono classici astratti, giochi di carte e di dadi, varianti originali di meccaniche moderne con nomi propri, giochi cooperativi con un partner IA, giochi a ruoli nascosti in cui i robot completano il tavolo, giochi di società e di parole, motori per miniature e per carte collezionabili con carte originali. Il motore e i giochi non hanno dipendenze esterne; solo l'interfaccia grafica (`polytabletop-gui`) usa `eframe`/egui. Il catalogo traccia 251 giochi obiettivo.
 
 Pagina di presentazione: <https://polytabletop.chiuta.ro>. Guida rapida all'installazione: [docs/INSTALL.it.md](docs/INSTALL.it.md) ([English](docs/INSTALL.en.md) · [Română](docs/INSTALL.ro.md) · [Français](docs/INSTALL.fr.md) · [Español](docs/INSTALL.es.md) · [Português](docs/INSTALL.pt.md) · [Deutsch](docs/INSTALL.de.md) · [Magyar](docs/INSTALL.hu.md)).
 
 ## Uso
 
-- Elenco e catalogo: `polytabletop list` mostra i 171 giochi giocabili con le regole in breve; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` mostra lo stato delle 201 voci del catalogo.
+- Elenco e catalogo: `polytabletop list` mostra i 171 giochi giocabili con le regole in breve; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` mostra lo stato delle 251 voci del catalogo.
 - Giocare: `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. `--you one` (predefinito) ti rende Giocatore 1, `two` Giocatore 2, `both` è l'hot-seat su un'unica tastiera, `none` lascia giocare al computer entrambe le parti. `--seed N` rende riproducibili la distribuzione delle carte e i dadi; `--record FILE` salva una trascrizione.
 - In partita: scrivi la mossa esattamente come la elenca `?` (per esempio `e2e4`, `c3xe5`, `d6`), `?` = mosse legali, `hint` = suggerimento dell'IA, `q` = esci.
 - IA contro IA: `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (vedi [docs/ARENA.md](docs/ARENA.md)).
@@ -33,7 +33,7 @@ cargo build --release
 
 ## Giochi
 
-Si possono giocare subito 171 giochi, nel terminale e nell'interfaccia grafica; il catalogo ha 201 voci (`polytabletop catalog` termina con: implementate 182, varianti proprie previste 3, toolkit generico 16). Le 16 voci toolkit sono sistemi di gioco di ruolo, servite dal crate generico `polytabletop-rpg` (dadi, schede, prove di abilità, generatore di dungeon, simulatore di battaglie, diario), senza le regole di alcun editore. Categorie e numero di giochi, da `polytabletop-games/src/lib.rs`:
+Si possono giocare subito 171 giochi, nel terminale e nell'interfaccia grafica; il catalogo ha 251 voci (`polytabletop catalog` termina con: implementate 182, giochi tradizionali previsti 50, varianti proprie previste 3, toolkit generico 16). Le 16 voci toolkit sono sistemi di gioco di ruolo, servite dal crate generico `polytabletop-rpg` (dadi, schede, prove di abilità, generatore di dungeon, simulatore di battaglie, diario), senza le regole di alcun editore. Categorie e numero di giochi, da `polytabletop-games/src/lib.rs`:
 
 | Categoria | Giochi | Esempi (id) |
 |---|---|---|

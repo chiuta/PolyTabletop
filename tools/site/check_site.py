@@ -1,5 +1,5 @@
 #!/usr/bin/env python3 -I
-"""Verificări pentru docs/: HTML parsabil, JSON-uri, chei i18n în 8 limbi, linkuri relative, 4x100 rânduri, 171 pagini.
+"""Verificări pentru docs/: HTML parsabil, JSON-uri, chei i18n în 8 limbi, linkuri relative, 9x100 rânduri, 171 pagini.
 Rulare din rădăcina depozitului: python3 -I tools/site/check_site.py"""
 import os, re, json, sys, glob
 from html.parser import HTMLParser
@@ -41,8 +41,9 @@ for f in glob.glob(f'{docs}/jocuri/*.html') + [f'{docs}/index.html']:
     t = open(f, encoding='utf8').read()
     if f.endswith('index.html') and '/jocuri/' not in f:
         continue
-    m = re.search(r'const T=(\{.*?\});\nconst D=', t, re.S)
-    T = json.loads(m.group(1))
+    m = re.search(r'const TT=(\{.*?\});\nconst T=', t, re.S)
+    TT = json.loads(m.group(1))
+    T = {l: {k: v[i] for k, v in TT.items()} for i, l in enumerate(LANGS)}
     keys = set(re.findall(r'data-(?:i|ia|ialt)="(\w+)"', t))
     for l in LANGS:
         for k in keys:
@@ -53,7 +54,7 @@ t = open(f'{docs}/index.html', encoding='utf8').read()
 rk = json.load(open(f'{root}/tools/site/data/rankings.json', encoding='utf8'))['lists']
 rows = {k: len(v) for k, v in rk.items()}
 print('rânduri clasamente', rows)
-assert all(v == 100 for v in rows.values()) and len(rows) == 4
+assert all(v == 100 for v in rows.values()) and len(rows) == 9
 n_pages = len(glob.glob(f'{docs}/jocuri/*.html')) - 1
 print('pagini de joc', n_pages)
 if n_pages != 171: err.append('nu sunt 171 de pagini')

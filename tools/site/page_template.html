@@ -59,7 +59,8 @@
 <script>
 "use strict";
 const LANGS=["en","ro","fr","it","es","pt","de","hu"];
-const T=@@T@@;
+const TT=@@T@@;
+const T={};LANGS.forEach((l,i)=>{T[l]={};for(const k in TT)T[l][k]=TT[k][i]});
 const D=@@D@@;
 (function(){
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];

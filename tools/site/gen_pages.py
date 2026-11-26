@@ -36,7 +36,7 @@ for f in sorted(glob.glob(f'{root}/polytabletop-games/data/i18n/titles_*.tsv')):
             tsv[(p[0], p[1])] = (p[2], p[3])
 en_t = dict(l.rstrip('\n').split('\t') for l in open(f'{root}/tools/site/en_titles.tsv', encoding='utf8') if l.strip())
 rk = json.load(open(f'{root}/tools/site/data/rankings.json', encoding='utf8'))['lists']
-LNAME = {'world': 'rk_t_world', 'europe': 'rk_t_europe', 'other': 'rk_t_other', 'romania': 'rk_t_romania'}
+LNAME = {lid: f'rk_t_{lid}' for lid in rk}
 pos = {}
 for lid, L in rk.items():
     for x in L:
@@ -86,6 +86,12 @@ def png_size(p):
     return None
 
 STYLE = re.search(r'<style>\n(.*?)</style>', open(f'{root}/tools/site/template.html', encoding='utf8').read(), re.S).group(1)
+_DROP = ('.hero', '.sq1', '.pc-l', '.goboard', '.st-b', '.hx1', '.wood', '.die{', '.card{', '.hero-art', '@keyframes float', '@media (prefers-reduced-motion:no-preference){.hero-art', '.stats', '.tag{', '.lead{', '.cta{', '.bd', '.rk-', '.leg', '.cards{', '.card-b', '#glist', '.btn.', '.btn{', '.btn:', '@media(min-width:880px){.hero', '.two', '.demo', '.filters', '.chip', '.count')
+STYLE = '\n'.join(l for l in STYLE.split('\n') if not l.startswith(_DROP) or l.startswith('.filters') or l.startswith('.chip') or l.startswith('.count'))
+for _v in ('sq1', 'sq2', 'frame', 'pcl', 'pcd', 'pcs', 'go', 'goline', 'stb', 'stw', 'hx1', 'hx2', 'hx3', 'wood', 'pit', 's0', 's1', 's2', 'die', 'pip', 'card', 'ink', 'ink2', 'bd1b', 'bd1t', 'bd2b', 'bd2t', 'bd3b', 'bd3t', 'bd4b', 'bd4t', 'bd5b', 'bd5t'):
+    STYLE = re.sub(r'(?<=[;{\n])--%s:[^;}\n]*;?' % _v, '', STYLE)
+STYLE = re.sub(r';\}', '}', STYLE)
+STYLE = '\n'.join(l.strip() for l in STYLE.split('\n') if l.strip())
 STYLE += """
 .bc a{min-height:0;padding:0;display:inline;line-height:inherit}.bc{padding:1rem 0 .2rem;font-size:.95rem}.bc ol{list-style:none;display:flex;flex-wrap:wrap;gap:.2rem .5rem;margin:0;padding:0}
 .bc li+li::before{content:"›";margin-right:.5rem;color:var(--mut)}
@@ -106,6 +112,24 @@ video{width:100%;max-width:960px;height:auto;display:block;border-radius:10px;ba
 .lst .n{font-weight:650}.lst .k{font-size:.82rem;color:var(--mut)}.lst code{font-size:.82rem;word-break:break-all}
 .chk{display:flex;gap:.5rem;align-items:center;margin:.4rem 0;min-height:44px}.chk input{width:1.2rem;height:1.2rem}
 """
+STYLE += '''
+html.lb-open{overflow:hidden}
+.lb-t{cursor:zoom-in;display:block}
+dialog.lb{border:0;padding:0;margin:0;width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;background:rgba(5,8,12,.97);color:#fff;overflow:hidden}
+dialog.lb::backdrop{background:#000}
+.lb-st{display:flex;flex-direction:column;height:100%;background:#05080c}
+.lb-top{display:flex;gap:.5rem;align-items:center;padding:.5rem .8rem;border-bottom:1px solid #2c3745}
+.lb-info{flex:1;min-width:0}.lb-cnt{font-weight:700;font-variant-numeric:tabular-nums}.lb-cap{color:#c9d3df;font-size:.92rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb-b{display:inline-flex;align-items:center;justify-content:center;min-width:48px;min-height:48px;padding:0 .6rem;background:#1d2733;color:#fff;border:1px solid #7b8b9e;border-radius:10px;font-size:1.5rem;line-height:1;cursor:pointer;text-decoration:none}
+.lb-b:hover{background:#2b3a4b}
+.lb-b[hidden]{display:none}
+.lb :focus-visible{outline:3px solid #fff;outline-offset:2px}
+.lb-main{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding:.5rem}
+.lb-main img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;margin:auto}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:1;background:rgba(29,39,51,.88);min-width:52px;min-height:64px;font-size:2rem}
+.lb-p{left:.5rem}.lb-n{right:.5rem}
+@media(forced-colors:active){.lb-b{border-color:ButtonText}}
+'''
 shell = open(f'{root}/tools/site/page_template.html', encoding='utf8').read()
 
 def J(o):
@@ -119,15 +143,17 @@ def subset(html_text, extra=()):
     for m in re.finditer(r'data-a=\'([^\']*)\'', html_text):
         for v in json.loads(H.unescape(m.group(1))).values():
             if isinstance(v, str) and v.startswith('cat_'): keys.add(v)
-    return {l: {k: UI[l][k] for k in sorted(keys)} for l in LANGS}
+    return {k: [UI[l][k] for l in LANGS] for k in sorted(keys)}
 def render(main, page_js, title, desc, path, d, extra_keys=(), ld=''):
     T = subset(main + shell, extra_keys)
     out = shell
+    page_js = '\n'.join(l.strip() for l in page_js.split('\n') if l.strip() and not l.strip().startswith('//'))
     for k, v in (('@@TITLE@@', esc(title)), ('@@DESC@@', esc(desc)), ('@@URL@@', f'{SITE}/{path}'), ('@@HREFLANG@@', hreflang(path)),
                  ('@@LD@@', ld), ('@@STYLE@@', STYLE), ('@@MAIN@@', main), ('@@T@@', J(T)), ('@@D@@', J(d)), ('@@PAGE_JS@@', page_js)):
         out = out.replace(k, v)
     return out
 
+LB_JS = open(f'{root}/tools/site/lightbox.js', encoding='utf8').read().replace('/*TEST_HOOK*/', os.environ.get('PT_LB_TEST', ''))
 PAGE_JS = r'''
 window.pageApply=function(l,t,u){
   const title=u.gt(D.id),cat=t["cat_"+D.cat];
@@ -180,7 +206,7 @@ def media_html(gid, t_title):
     """Returnează (html, chei) pentru secțiunea media sau ''. Decide după existența fișierelor."""
     md = f'{docs}/media/{gid}'
     ex = lambda n: os.path.isfile(f'{md}/{n}')
-    def block(prefix, clip, poster, head_key, cap_keys, shot_key):
+    def block(prefix, clip, poster, head_key, cap_keys, shot_key, grp):
         shots = [f'{prefix}{i}.png' for i in (1, 2, 3) if ex(f'{prefix}{i}.png')]
         has_clip = ex(clip)
         if not shots and not has_clip: return ''
@@ -194,7 +220,7 @@ def media_html(gid, t_title):
                 sz = png_size(f'{md}/{s}')
                 wh = f' width="{sz[0]}" height="{sz[1]}"' if sz else ''
                 a = json.dumps({'n': i, 't': len(shots), 'title': '@' + gid}, ensure_ascii=False)
-                o.append(f'<li><a href="../media/{gid}/{s}" target="_blank" rel="noopener"><img src="../media/{gid}/{s}"{wh} loading="lazy" decoding="async" alt="" data-ialt="{shot_key}" data-a=\'{esc(a, quote=False)}\'></a></li>')
+                o.append(f'<li><a class="lb-t" data-g="{grp}" data-s="{i}" href="../media/{gid}/{s}" target="_blank" rel="noopener"><img src="../media/{gid}/{s}"{wh} loading="lazy" decoding="async" alt="" data-ialt="{shot_key}" data-a=\'{esc(a, quote=False)}\'></a></li>')
             o.append('</ul>')
         for ck in cap_keys:
             o.append(f'<p class="mut" data-i="{ck}"></p>')
@@ -208,8 +234,8 @@ def media_html(gid, t_title):
     ccaps = ['pg_media_cap']
     if c.get('shows_hidden'): ccaps.append('pg_media_hidden')
     if c.get('complete') is False: ccaps.append('pg_media_part')
-    gb = block('gui_shot', 'gui_clip.mp4', 'gui_poster.png', 'pg_gui_h', gcaps, 'pg_gui_shot_alt')
-    cb = block('shot', 'clip.mp4', 'poster.png', 'pg_cli_h', ccaps, 'pg_shot_alt')
+    gb = block('gui_shot', 'gui_clip.mp4', 'gui_poster.png', 'pg_gui_h', gcaps, 'pg_gui_shot_alt', 'gui')
+    cb = block('shot', 'clip.mp4', 'poster.png', 'pg_cli_h', ccaps, 'pg_shot_alt', 'cli')
     if not gb and not cb: return ''
     return '<section id="media" aria-labelledby="media-h">\n<h2 id="media-h" data-i="pg_media_h">Screenshots and clip</h2>\n' + gb + ('\n' if gb and cb else '') + cb + '\n</section>'
 
@@ -298,8 +324,11 @@ for gid, _, cat in games:
           'description': UI['en']['pg_desc'].format(title=T_en, cat=UI['en']['cat_' + ck]),
           'author': {'@type': 'Person', 'name': 'Alexio'}, 'isPartOf': {'@type': 'WebSite', 'name': 'PolyTabletop', 'url': SITE + '/'}}
     d = {'id': gid, 'cat': ck, 'GT': {k: all_gt[k] for k in {gid} | ({pv, nx} if len(sib) > 1 else set())}, 'RU': {k: v for k, v in g['rules'].items() if v and (k == 'en' or v != g['rules']['en'])}}
-    html = render(main, PAGE_JS, UI['en']['pg_title'].format(title=T_en), ld['description'], f'jocuri/{gid}.html', d,
-                  extra_keys=('pg_title', 'pg_desc', 'cat_' + ck), ld=f'<script type="application/ld+json" id="ld">{J(ld)}</script>')
+    has_lb = 'class="lb-t"' in main
+    pjs = PAGE_JS + (LB_JS if has_lb else '')
+    lbk = ('pg_gui_h', 'pg_cli_h', 'lb_dialog', 'lb_close', 'lb_prev', 'lb_next', 'lb_full', 'lb_orig', 'lb_s1', 'lb_s2', 'lb_s3') if has_lb else ()
+    html = render(main, pjs, UI['en']['pg_title'].format(title=T_en), ld['description'], f'jocuri/{gid}.html', d,
+                  extra_keys=('pg_title', 'pg_desc', 'cat_' + ck) + lbk, ld=f'<script type="application/ld+json" id="ld">{J(ld)}</script>')
     open(f'{docs}/jocuri/{gid}.html', 'w', encoding='utf8').write(html)
     sizes.append(len(html.encode('utf8')))
 

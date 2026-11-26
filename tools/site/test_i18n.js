@@ -6,6 +6,12 @@ const LANGS = ["en", "ro", "fr", "it", "es", "pt", "de", "hu"];
 let bad = 0;
 function load(file) {
   const t = fs.readFileSync(file, "utf8");
+  if (t.includes("const TT=")) {
+    const a = t.indexOf("const TT=") + 9, b = t.indexOf(";\nconst T=", a);
+    const TT = JSON.parse(t.slice(a, b)), T = {};
+    LANGS.forEach((l, i) => { T[l] = {}; for (const k in TT) T[l][k] = TT[k][i]; });
+    return { t, T };
+  }
   const i = t.indexOf("const T=") + 8;
   let j = t.indexOf(";\nconst D=", i);
   if (j < 0) j = t.indexOf("\n};\n", i) + 2;

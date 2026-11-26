@@ -449,6 +449,386 @@
 "Vietname",
 "Vietnam",
 "Vietnam"
+],
+"Africa Centrală": [
+"Central Africa",
+"Africa Centrală",
+"Afrique centrale",
+"Africa centrale",
+"África Central",
+"África Central",
+"Zentralafrika",
+"Közép-Afrika"
+],
+"Africa de Est": [
+"East Africa",
+"Africa de Est",
+"Afrique de l'Est",
+"Africa orientale",
+"África Oriental",
+"África Oriental",
+"Ostafrika",
+"Kelet-Afrika"
+],
+"Africa de Nord": [
+"North Africa",
+"Africa de Nord",
+"Afrique du Nord",
+"Africa settentrionale",
+"África del Norte",
+"Norte de África",
+"Nordafrika",
+"Észak-Afrika"
+],
+"Africa de Vest": [
+"West Africa",
+"Africa de Vest",
+"Afrique de l'Ouest",
+"Africa occidentale",
+"África Occidental",
+"África Ocidental",
+"Westafrika",
+"Nyugat-Afrika"
+],
+"Algeria": [
+"Algeria",
+"Algeria",
+"Algérie",
+"Algeria",
+"Argelia",
+"Argélia",
+"Algerien",
+"Algéria"
+],
+"Argentina": [
+"Argentina",
+"Argentina",
+"Argentine",
+"Argentina",
+"Argentina",
+"Argentina",
+"Argentinien",
+"Argentína"
+],
+"Asia Centrală": [
+"Central Asia",
+"Asia Centrală",
+"Asie centrale",
+"Asia centrale",
+"Asia Central",
+"Ásia Central",
+"Zentralasien",
+"Közép-Ázsia"
+],
+"Asia de Sud-Est": [
+"Southeast Asia",
+"Asia de Sud-Est",
+"Asie du Sud-Est",
+"Sud-est asiatico",
+"Sudeste Asiático",
+"Sudeste Asiático",
+"Südostasien",
+"Délkelet-Ázsia"
+],
+"Bangladesh": [
+"Bangladesh",
+"Bangladesh",
+"Bangladesh",
+"Bangladesh",
+"Bangladés",
+"Bangladeche",
+"Bangladesch",
+"Banglades"
+],
+"Bolivia": [
+"Bolivia",
+"Bolivia",
+"Bolivie",
+"Bolivia",
+"Bolivia",
+"Bolívia",
+"Bolivien",
+"Bolívia"
+],
+"Chile": [
+"Chile",
+"Chile",
+"Chili",
+"Cile",
+"Chile",
+"Chile",
+"Chile",
+"Chile"
+],
+"Colombia": [
+"Colombia",
+"Colombia",
+"Colombie",
+"Colombia",
+"Colombia",
+"Colômbia",
+"Kolumbien",
+"Kolumbia"
+],
+"Ecuador": [
+"Ecuador",
+"Ecuador",
+"Équateur",
+"Ecuador",
+"Ecuador",
+"Equador",
+"Ecuador",
+"Ecuador"
+],
+"Egipt": [
+"Egypt",
+"Egipt",
+"Égypte",
+"Egitto",
+"Egipto",
+"Egito",
+"Ägypten",
+"Egyiptom"
+],
+"Fiji": [
+"Fiji",
+"Fiji",
+"Fidji",
+"Figi",
+"Fiyi",
+"Fiji",
+"Fidschi",
+"Fidzsi"
+],
+"Ghana": [
+"Ghana",
+"Ghana",
+"Ghana",
+"Ghana",
+"Ghana",
+"Gana",
+"Ghana",
+"Ghána"
+],
+"Hawaii": [
+"Hawaii",
+"Hawaii",
+"Hawaï",
+"Hawaii",
+"Hawái",
+"Havaí",
+"Hawaii",
+"Hawaii"
+],
+"Insulele Pacificului": [
+"Pacific Islands",
+"Insulele Pacificului",
+"Îles du Pacifique",
+"Isole del Pacifico",
+"Islas del Pacífico",
+"Ilhas do Pacífico",
+"Pazifikinseln",
+"Csendes-óceáni szigetek"
+],
+"Iran": [
+"Iran",
+"Iran",
+"Iran",
+"Iran",
+"Irán",
+"Irão",
+"Iran",
+"Irán"
+],
+"Kenya": [
+"Kenya",
+"Kenya",
+"Kenya",
+"Kenya",
+"Kenia",
+"Quénia",
+"Kenia",
+"Kenya"
+],
+"Madagascar": [
+"Madagascar",
+"Madagascar",
+"Madagascar",
+"Madagascar",
+"Madagascar",
+"Madagáscar",
+"Madagaskar",
+"Madagaszkár"
+],
+"Maroc": [
+"Morocco",
+"Maroc",
+"Maroc",
+"Marocco",
+"Marruecos",
+"Marrocos",
+"Marokko",
+"Marokkó"
+],
+"Mexic": [
+"Mexico",
+"Mexic",
+"Mexique",
+"Messico",
+"México",
+"México",
+"Mexiko",
+"Mexikó"
+],
+"Namibia": [
+"Namibia",
+"Namibia",
+"Namibie",
+"Namibia",
+"Namibia",
+"Namíbia",
+"Namibia",
+"Namíbia"
+],
+"Nepal": [
+"Nepal",
+"Nepal",
+"Népal",
+"Nepal",
+"Nepal",
+"Nepal",
+"Nepal",
+"Nepál"
+],
+"Noua Zeelandă": [
+"New Zealand",
+"Noua Zeelandă",
+"Nouvelle-Zélande",
+"Nuova Zelanda",
+"Nueva Zelanda",
+"Nova Zelândia",
+"Neuseeland",
+"Új-Zéland"
+],
+"Pakistan": [
+"Pakistan",
+"Pakistan",
+"Pakistan",
+"Pakistan",
+"Pakistán",
+"Paquistão",
+"Pakistan",
+"Pakisztán"
+],
+"Pe tot continentul": [
+"Across the continent",
+"Pe tot continentul",
+"Sur tout le continent",
+"In tutto il continente",
+"En todo el continente",
+"Em todo o continente",
+"Auf dem ganzen Kontinent",
+"Az egész kontinensen"
+],
+"Peru": [
+"Peru",
+"Peru",
+"Pérou",
+"Perù",
+"Perú",
+"Peru",
+"Peru",
+"Peru"
+],
+"Senegal": [
+"Senegal",
+"Senegal",
+"Sénégal",
+"Senegal",
+"Senegal",
+"Senegal",
+"Senegal",
+"Szenegál"
+],
+"Singapore": [
+"Singapore",
+"Singapore",
+"Singapour",
+"Singapore",
+"Singapur",
+"Singapura",
+"Singapur",
+"Szingapúr"
+],
+"Sudan": [
+"Sudan",
+"Sudan",
+"Soudan",
+"Sudan",
+"Sudán",
+"Sudão",
+"Sudan",
+"Szudán"
+],
+"Tanzania": [
+"Tanzania",
+"Tanzania",
+"Tanzanie",
+"Tanzania",
+"Tanzania",
+"Tanzânia",
+"Tansania",
+"Tanzánia"
+],
+"Trinidad și Tobago": [
+"Trinidad and Tobago",
+"Trinidad și Tobago",
+"Trinité-et-Tobago",
+"Trinidad e Tobago",
+"Trinidad y Tobago",
+"Trindade e Tobago",
+"Trinidad und Tobago",
+"Trinidad és Tobago"
+],
+"Tunisia": [
+"Tunisia",
+"Tunisia",
+"Tunisie",
+"Tunisia",
+"Túnez",
+"Tunísia",
+"Tunesien",
+"Tunézia"
+],
+"Turcia": [
+"Turkey",
+"Turcia",
+"Turquie",
+"Turchia",
+"Turquía",
+"Turquia",
+"Türkei",
+"Törökország"
+],
+"Uruguay": [
+"Uruguay",
+"Uruguay",
+"Uruguay",
+"Uruguay",
+"Uruguay",
+"Uruguai",
+"Uruguay",
+"Uruguay"
+],
+"Venezuela": [
+"Venezuela",
+"Venezuela",
+"Venezuela",
+"Venezuela",
+"Venezuela",
+"Venezuela",
+"Venezuela",
+"Venezuela"
 ]
 },
 "notes": {
