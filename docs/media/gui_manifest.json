@@ -1,0 +1,1541 @@
+{
+ "66": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 135,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "amazoane": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 85,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "apus": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "arhipelag": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 226,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "artificii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 75,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "ayo": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 30,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "backgammon": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 107,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "baloot": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 126,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "barbut": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 224,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "battleship": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 75,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "belote": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 134,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "bile": {
+  "kind": "gui",
+  "frames": 12,
+  "moves": 11,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "bingo": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 80,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "blackjack": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 65,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "bresla": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 215,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "bridge": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 110,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "briscola": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "bufet": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 90,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "canasta": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 79,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "capcana": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "carrom": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 300,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "casino": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "catun": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 66,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "ceasornic": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 97,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "ceata": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 426,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cenusii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 75,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "cetatuia": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "chaupar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 644,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "chess": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 80,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "codru": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "coloane": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 143,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "conac": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "congkak": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "connect4": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "consiliul": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 41,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "coridor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "coroana": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 128,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cribbage": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 158,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cripta": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 53,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cristale": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "culori": {
+  "kind": "gui",
+  "frames": 23,
+  "moves": 22,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cunoastere": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 81,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cupe": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "curieri": {
+  "kind": "gui",
+  "frames": 15,
+  "moves": 14,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cuvantunic": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "dara": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "dictionar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 154,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "domino": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "doudizhu": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 42,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "draughts": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 252,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "draw"
+ },
+ "drum": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 67,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "durak": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 226,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "epoci": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "euchre": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 167,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "expeditii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 182,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "faianta": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 54,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "fanorona": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 129,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "draw"
+ },
+ "farul": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "fitil": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 56,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "focare": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 59,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "fulger": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 58,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "furnale": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "ganjifa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "go": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 106,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "gomoku": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 71,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "gospodaria": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "gridiron": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 140,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "gura": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "hanafuda": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 66,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "hasami": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 100,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "draw"
+ },
+ "hex": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 53,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "hotar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 101,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "hruba": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "hwatu": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 95,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "impostor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "inimi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 161,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "insula": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 125,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "izolare": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "janggi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 60,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "karuta": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 51,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "konane": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 46,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "linii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 35,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "litere": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "loteria": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "ludo": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 109,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "lupii": {
+  "kind": "gui",
+  "frames": 10,
+  "moves": 9,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "macao": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "magistrale": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 111,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "mahjong": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 101,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "makruk": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 314,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "draw"
+ },
+ "mancala": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "mastermind": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "memory": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "miniaturi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 65,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "morabaraba": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "morris": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 43,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "mosia": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 59,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "mosii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 226,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "mozaic": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 128,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "nave": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 82,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "nim": {
+  "kind": "gui",
+  "frames": 14,
+  "moves": 13,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "oprite": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 93,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "orasel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 79,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "ordine": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 105,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "pachisi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 136,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "paigow": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "pallanguzhi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 600,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "patru": {
+  "kind": "gui",
+  "frames": 18,
+  "moves": 17,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "patrula": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 73,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "pescuit": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 108,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "pica": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 86,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "placute": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 201,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "poieni": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 120,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "poker": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 78,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "poliedre": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "popa": {
+  "kind": "gui",
+  "frames": 8,
+  "moves": 7,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "portret": {
+  "kind": "gui",
+  "frames": 19,
+  "moves": 18,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "povestitor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 30,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "prajituri": {
+  "kind": "gui",
+  "frames": 19,
+  "moves": 18,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "prinde": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 136,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "puncte": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 60,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "reactii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 69,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "reverdire": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 228,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "reversi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 61,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "rezervatia": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 65,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "roade": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 144,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "roata": {
+  "kind": "gui",
+  "frames": 15,
+  "moves": 14,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "rotire": {
+  "kind": "gui",
+  "frames": 16,
+  "moves": 15,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "rummy": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 527,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "salina": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 90,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "santinela": {
+  "kind": "gui",
+  "frames": 14,
+  "moves": 13,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "schita": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "scopa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 125,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "septica": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "shogi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 100,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "sideral": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 134,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "skat": {
+  "kind": "gui",
+  "frames": 19,
+  "moves": 18,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "snakes": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 121,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "solzi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "spionii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 62,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "strajile": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 110,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "strapungere": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 76,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "sugoroku": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "sungka": {
+  "kind": "gui",
+  "frames": 10,
+  "moves": 9,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "surakarta": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 51,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "tablanet": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 51,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "taramuri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 37,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tarneeb": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 152,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "tarot": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 227,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "tcg": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 85,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "tcg_cerneala": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tcg_evo": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 54,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tcg_lant": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 176,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "tcg_zone": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 31,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "teenpatti": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "tigri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 144,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "draw"
+ },
+ "tinuturi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 54,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "treicai": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 93,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "treizeci1": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 51,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tripierd": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 29,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win1"
+ },
+ "trix": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 327,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "truco": {
+  "kind": "gui",
+  "frames": 4,
+  "moves": 3,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "turnul": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 62,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "umbra": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 94,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "valea": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 156,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "whist": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 53,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "xiangqi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 212,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": true,
+  "outcome": "win2"
+ },
+ "yut": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 104,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "zarpoker": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 74,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "zaruri5": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 148,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "zidurile": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ }
+}
