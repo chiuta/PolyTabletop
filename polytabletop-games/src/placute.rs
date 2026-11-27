@@ -682,7 +682,7 @@ impl Game for Placute {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1108,5 +1108,19 @@ mod viewer_tests {
         got.sort();
         want.sort();
         assert_eq!(got, want.iter().map(|s| s.as_str()).collect::<Vec<_>>());
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+
+    #[test]
+    fn ai_ignores_opponent_rack_and_pile_at_all_levels() {
+        audit("placute", Placute::with_seed, 1..=3, 5, 140, |g, salt| {
+            let foe = g.side.other().idx();
+            scramble_pool(&mut g.hands[foe], &mut g.pile, salt);
+        });
     }
 }

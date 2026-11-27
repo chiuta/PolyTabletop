@@ -173,6 +173,24 @@ impl Artificii {
             + self.piles.iter().map(|x| *x as usize).sum::<usize>()
     }
 
+    /// Copii care nu au apărut încă pe masă sau în aruncate (fără a scădea vreo mână): ce știe oricine
+    /// din informația publică. Estimarea făcută de AI pentru ce deduce partenerul nu citește mâna AI-ului.
+    fn unseen_public(&self) -> [[i32; 6]; 5] {
+        let mut r = [[0i32; 6]; 5];
+        for c in 0..5 {
+            for n in 1..=5usize {
+                r[c][n] = COPIES[n];
+            }
+            for n in 1..=self.piles[c] as usize {
+                r[c][n] -= 1;
+            }
+        }
+        for d in &self.discards {
+            r[d.c as usize][d.n as usize] -= 1;
+        }
+        r
+    }
+
     /// Copii nevăzute de `viewer` (pachet + propria mână), pe (culoare, număr).
     fn unseen(&self, viewer: usize) -> [[i32; 6]; 5] {
         let mut r = [[0i32; 6]; 5];
@@ -286,7 +304,8 @@ impl Artificii {
                     return -1000;
                 };
                 let to = 1 - p;
-                let rem = self.unseen(to);
+                // ce deduce partenerul: din informația publică (mâna mea nu se citește)
+                let rem = self.unseen_public();
                 let mut s = -6.0;
                 for (i, c) in self.hands[to].iter().enumerate() {
                     let (pb, ub, _) = self.probs(&rem, &self.know[to][i]);
@@ -459,7 +478,9 @@ impl Game for Artificii {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 
     fn render(&self) -> String {
@@ -643,5 +664,24 @@ mod viewer_tests {
         assert!(r.contains("Cărțile tale (J2)") && !r.contains(&h2), "{r}");
         Game::set_viewer(&mut g, None);
         assert!(Game::render(&g).contains("(J2, o vezi)"));
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_its_own_hidden_hand_and_the_deck_at_every_level() {
+        // cooperativ (stil Hanabi): informația ascunsă pentru cel la mutare e propria mână și pachetul
+        crate::p3_comun::ai_blind_check(
+            "artificii",
+            Artificii::with_seed,
+            |g, me, s| {
+                let i = me.idx();
+                crate::p3_comun::mix_unseen(&mut g.hands[i], &mut g.deck, 0, s);
+            },
+            10,
+        );
     }
 }

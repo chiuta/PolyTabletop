@@ -1333,8 +1333,11 @@ impl Game for TcgEvo {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert pescuirea forțată (pachetul real)
+    /// și răspunsul adversarului din mâna lui reală; evaluarea citește doar câmpul public, mâna proprie și
+    /// numărul cărților adverse.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1752,5 +1755,38 @@ mod viewer_tests {
         let a = Game::render(&g);
         Game::set_viewer(&mut g, Some(Player::Two));
         assert_ne!(a, Game::render(&g));
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_pachetele_si_premiile_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "tcg_evo",
+            TcgEvo::with_seed,
+            |g, me, seed| {
+                // mâna adversarului, pachetele și premiile (ale ambilor) sunt necunoscute jucătorului
+                for (k, q) in [me.other().idx(), me.idx()].into_iter().enumerate() {
+                    let s = &mut g.sides[q];
+                    let (nh, nd) = (s.hand.len(), s.deck.len());
+                    let mut pool: Vec<u8> = Vec::new();
+                    if k == 0 {
+                        pool.extend(s.hand.iter().copied());
+                    }
+                    pool.extend(s.deck.iter().copied());
+                    pool.extend(s.prizes.iter().copied());
+                    crate::p3_comun::shuffle_with(&mut pool, seed + q as u64);
+                    if k == 0 {
+                        s.hand = pool.drain(..nh).collect();
+                    }
+                    s.deck = pool.drain(..nd).collect();
+                    s.prizes = pool;
+                }
+            },
+            16,
+        );
     }
 }

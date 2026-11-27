@@ -771,7 +771,9 @@ impl Game for Litere {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1074,5 +1076,23 @@ mod tests {
             }
         }
         assert!(ai > rnd, "AI {ai} vs random {rnd}");
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_opponent_rack_and_bag_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "litere",
+            Litere::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                crate::p3_comun::mix_unseen(&mut g.racks[h], &mut g.bag, 0, s);
+            },
+            2,
+        );
     }
 }

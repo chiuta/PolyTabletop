@@ -1009,7 +1009,9 @@ impl Game for Codru {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1331,5 +1333,46 @@ mod tests {
             n += 1;
         }
         assert!(worst.as_secs_f32() < 1.0, "{worst:?}");
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_cards_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "codru",
+            Codru::with_seed,
+            |g, me, s| {
+                let h = me.other().idx();
+                let mut pool: Vec<usize> = Vec::new();
+                for suit in 0..4 {
+                    for _ in 0..g.hand[h][suit] {
+                        pool.push(suit);
+                    }
+                }
+                let n = pool.len();
+                pool.extend(g.deck.iter().copied());
+                crate::p3_comun::shuffle_with(&mut pool, s);
+                let mut hh = [0u8; 4];
+                for &c in &pool[..n] {
+                    hh[c] += 1;
+                }
+                g.hand[h] = hh;
+                g.deck = pool[n..].to_vec();
+                if g.fac[h] == Fac::Ins {
+                    let total: u8 = g.sup.iter().sum();
+                    let mut sup = [0u8; 4];
+                    let mut r = polytabletop_core::rng::Rng::new(s ^ 0xC0);
+                    for _ in 0..total {
+                        sup[r.below(4)] += 1;
+                    }
+                    g.sup = sup;
+                }
+            },
+            3,
+        );
     }
 }

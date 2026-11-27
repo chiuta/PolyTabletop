@@ -430,7 +430,7 @@ impl Game for DouDizhu {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -591,5 +591,33 @@ mod tests {
                 assert!(n < 3000);
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_cards_at_all_levels() {
+        audit("doudizhu", DouDizhu::with_seed, 1..=4, 3, 90, |g, salt| {
+            let me = g.side.idx();
+            let foe = 1 - me;
+            let n: usize = g.hands[foe].iter().map(|&x| x as usize).sum();
+            let mut pool: Vec<u8> = Vec::new();
+            for r in 0..15usize {
+                let total: usize = if r < 13 { 4 } else { 1 };
+                for _ in 0..total.saturating_sub(g.hands[me][r] as usize) {
+                    pool.push(r as u8);
+                }
+            }
+            shuffle(&mut pool, salt);
+            g.hands[foe] = [0; 15];
+            for &c in pool.iter().take(n) {
+                g.hands[foe][c as usize] += 1;
+            }
+            g.rng = Rng::new(salt ^ 3);
+        });
     }
 }

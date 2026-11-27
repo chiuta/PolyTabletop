@@ -270,7 +270,7 @@ impl Game for Pit {
         }
     }
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
@@ -321,5 +321,32 @@ mod tests {
         random_finishes(|s| Box::new(Pit::with_seed(s)), 4, 4000);
         ai_vs_random(|s| Box::new(Pit::with_seed(s)), 2, Player::One, 4000);
         ai_vs_random(|s| Box::new(Pit::with_seed(s)), 3, Player::Two, 4000);
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::audit;
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_hidden_offer_at_all_levels() {
+        audit("pit", Pit::with_seed, 1..=4, 1, 60, |g, salt| {
+            let me = g.actor();
+            let foe = 1 - me;
+            let mut r = Rng::new(salt);
+            let tot: u8 = g.hands[foe].iter().sum();
+            let mut h = [0u8; 3];
+            for _ in 0..tot {
+                h[r.below(3)] += 1;
+            }
+            g.hands[foe] = h;
+            if g.phase == Phase::Reply {
+                if let Some((_, n)) = g.offer {
+                    g.offer = Some((r.below(3) as u8, n));
+                }
+            }
+            g.rng = Rng::new(salt ^ 11);
+        });
     }
 }

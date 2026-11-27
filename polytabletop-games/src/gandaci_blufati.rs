@@ -256,3 +256,41 @@ mod t {
         let _ = Rng::new(1);
     }
 }
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_cartea_jucata_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "gandaci_blufati",
+            |s| B(Gandaci::with_seed(s)),
+            |g, me, seed| {
+                let x = &mut g.0;
+                let (m, o) = (me.idx(), 1 - me.idx());
+                // cărțile pe care jucătorul nu le vede: mâna adversarului, cartea jucată cu fața în jos, nedistribuite
+                let mut pool: Vec<usize> = Vec::new();
+                for c in 0..6 {
+                    let u = 6 - x.hand[m][c] - x.table[0][c] - x.table[1][c];
+                    for _ in 0..u.max(0) {
+                        pool.push(c);
+                    }
+                }
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                if let Ph::Call(_, c) = x.ph {
+                    if x.active != m {
+                        x.ph = Ph::Call(pool.pop().unwrap(), c);
+                    }
+                }
+                let n: i32 = x.hand[o].iter().sum();
+                x.hand[o] = [0; 6];
+                for _ in 0..n {
+                    let c = pool.pop().unwrap();
+                    x.hand[o][c] += 1;
+                }
+            },
+            12,
+        );
+    }
+}

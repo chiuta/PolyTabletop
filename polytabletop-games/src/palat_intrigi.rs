@@ -387,3 +387,38 @@ mod t {
         assert!(s.contains("Cărțile tale (J2)") && !s.contains("Cărțile tale (J1)"));
     }
 }
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_cartile_adversarului_nici_pachetul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "palat_intrigi",
+            |s| B(Palat::with_seed(s)),
+            |g, me, seed| {
+                let p = &mut g.0;
+                let (m, o) = (me.idx(), 1 - me.idx());
+                let mut pool: Vec<u8> = Vec::new();
+                for r in 0..4u8 {
+                    let seen = p.alive[m].iter().filter(|&&c| c == r).count()
+                        + p.dead[0]
+                            .iter()
+                            .chain(p.dead[1].iter())
+                            .filter(|&&c| c == r)
+                            .count();
+                    for _ in 0..3usize.saturating_sub(seen) {
+                        pool.push(r);
+                    }
+                }
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                let n = p.alive[o].len();
+                p.alive[o] = pool.drain(..n).collect();
+                p.deck = pool;
+                p.rng = Rng::new(seed ^ 0x99);
+            },
+            12,
+        );
+    }
+}

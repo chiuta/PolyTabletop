@@ -394,7 +394,9 @@ impl Game for Capcana {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 
     fn render(&self) -> String {
@@ -622,5 +624,32 @@ mod tests {
             }
         }
         assert!(wins >= 34, "wins {wins}");
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_opponent_discs_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "capcana",
+            Capcana::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                let hidden = g.mat[h].len().saturating_sub(g.flipped[h] as usize);
+                let mut pool: Vec<bool> = g.mat[h][..hidden].to_vec();
+                let (f, t) = g.hand[h];
+                pool.extend(std::iter::repeat_n(false, f as usize));
+                pool.extend(std::iter::repeat_n(true, t as usize));
+                crate::p3_comun::shuffle_with(&mut pool, s);
+                g.mat[h][..hidden].copy_from_slice(&pool[..hidden]);
+                let rest = &pool[hidden..];
+                let tr = rest.iter().filter(|&&x| x).count() as u8;
+                g.hand[h] = (rest.len() as u8 - tr, tr);
+            },
+            8,
+        );
     }
 }

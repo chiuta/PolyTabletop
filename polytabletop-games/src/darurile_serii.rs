@@ -23,6 +23,9 @@ pub enum Mv {
     Take(u8),
     /// răspuns la împărțire: perechea 0 sau 1
     Pair(u8),
+    /// sfârșitul rundei: se arată cărțile ascunse și se împart darurile (mutare forțată, ca evaluarea
+    /// să nu citească cartea ascunsă a adversarului)
+    Reveal,
 }
 
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
@@ -47,6 +50,10 @@ pub struct Darurile {
     drew: bool,
     viewer: Option<Player>,
     finished: Option<Outcome>,
+    /// runda e încheiată, dar cărțile ascunse nu au fost încă arătate (se așteaptă `Mv::Reveal`)
+    closing: bool,
+    /// ultima carte trasă automat (jucător, dar): evaluarea nu o citește, nu se știa înainte de tragere
+    fresh: Option<(usize, u8)>,
     dice: Dice,
 }
 
@@ -77,6 +84,8 @@ impl Darurile {
             drew: false,
             viewer: None,
             finished: None,
+            closing: false,
+            fresh: None,
             dice: Dice::new(seed),
         };
         g.deal();
@@ -122,6 +131,7 @@ impl Darurile {
         if !self.drew && self.pending.is_none() {
             if let Some(c) = self.draw_card() {
                 self.hand[self.side.idx()][c as usize] += 1;
+                self.fresh = Some((self.side.idx(), c));
             }
             self.drew = true;
         }
@@ -237,6 +247,9 @@ impl Game for Darurile {
         if self.finished.is_some() {
             return vec![];
         }
+        if self.closing {
+            return vec![Mv::Reveal];
+        }
         if let Some((_, pd)) = self.pending {
             return match pd {
                 Pending::Offer(c) => {
@@ -311,12 +324,21 @@ impl Game for Darurile {
     fn apply(&mut self, m: &Mv) {
         let p = self.side.idx();
         let o = 1 - p;
+        self.fresh = None;
         let take = |g: &mut Darurile, who: usize, c: u8| {
             if g.hand[who][c as usize] > 0 {
                 g.hand[who][c as usize] -= 1;
             }
         };
         match *m {
+            Mv::Reveal => {
+                self.closing = false;
+                self.finish_round();
+                if self.finished.is_none() {
+                    self.ensure_draw();
+                }
+                return;
+            }
             Mv::Secret(c) => {
                 take(self, p, c);
                 self.secret[p] = Some(c);
@@ -406,8 +428,14 @@ impl Game for Darurile {
             };
             return worst;
         }
+        let mut hand = self.hand[p.idx()];
+        if let Some((who, c)) = self.fresh {
+            if who == p.idx() && hand[c as usize] > 0 {
+                hand[c as usize] -= 1; // cartea tocmai trasă din pachet nu se știa la alegerea mutării
+            }
+        }
         self.value_for(p)
-            + self.hand[p.idx()]
+            + hand
                 .iter()
                 .zip(VAL)
                 .map(|(&n, v)| n as i32 * v as i32)
@@ -471,6 +499,9 @@ impl Game for Darurile {
         s.push_str(
             "Mutări: ascund 3, arunc 1 2, ofer 1 2 3, impart 1 2 + 3 4, ia 3, pereche 1|2.\n",
         );
+        if self.closing {
+            s.push_str("Runda s-a încheiat: scrie «arata» pentru a arăta cărțile ascunse.\n");
+        }
         s
     }
 
@@ -483,11 +514,13 @@ impl Game for Darurile {
             Mv::Split(a, b, c, d) => format!("impart {} {} + {} {}", f(a), f(b), f(c), f(d)),
             Mv::Take(c) => format!("ia {}", f(c)),
             Mv::Pair(i) => format!("pereche {}", i + 1),
+            Mv::Reveal => "arata".into(),
         }
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // un singur nivel: la adâncime 2 căutarea ar extinde răspunsurile adversarului din mâna lui reală
+        AiStyle::AlphaBeta(0)
     }
 
     fn set_viewer(&mut self, who: Option<Player>) {
@@ -498,10 +531,9 @@ impl Game for Darurile {
 impl Darurile {
     fn after_action(&mut self, actor: usize) {
         if self.round_over() {
-            self.finish_round();
-            if self.finished.is_none() {
-                self.ensure_draw();
-            }
+            // cărțile ascunse se arată printr-o mutare forțată: căutarea nu vede cartea ascunsă a adversarului
+            self.closing = true;
+            self.side = if actor == 0 { Player::Two } else { Player::One };
             return;
         }
         // alternare; cine și-a terminat acțiunile le lasă celuilalt
@@ -555,5 +587,62 @@ mod tests {
         polytabletop_core::GameObj::set_viewer(&mut g, Some(Player::One));
         let r1 = polytabletop_core::GameObj::render(&g);
         assert_ne!(r1, r2);
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_cartea_ascunsa_nici_pachetul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "darurile_serii",
+            Darurile::with_seed,
+            |g, me, seed| {
+                let (m, o) = (me.idx(), 1 - me.idx());
+                // cărțile necunoscute jucătorului: mâna și cartea ascunsă a adversarului, arse, pachet
+                let shown: [u8; 6] = match g.pending {
+                    Some((_, Pending::Offer(c))) => {
+                        let mut a = [0u8; 6];
+                        c.iter().for_each(|&x| a[x as usize] += 1);
+                        a
+                    }
+                    Some((_, Pending::Split(c))) => {
+                        let mut a = [0u8; 6];
+                        c.iter().for_each(|&x| a[x as usize] += 1);
+                        a
+                    }
+                    None => [0; 6],
+                };
+                let mut pool: Vec<u8> = Vec::new();
+                for c in 0..6 {
+                    let seen = g.hand[m][c]
+                        + g.table[0][c]
+                        + g.table[1][c]
+                        + shown[c]
+                        + (g.secret[m] == Some(c as u8)) as u8;
+                    for _ in 0..VAL[c].saturating_sub(seen) {
+                        pool.push(c as u8);
+                    }
+                }
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                let n: u8 = g.hand[o].iter().sum();
+                g.hand[o] = [0; 6];
+                for _ in 0..n {
+                    g.hand[o][pool.pop().unwrap() as usize] += 1;
+                }
+                if g.secret[o].is_some() {
+                    g.secret[o] = pool.pop();
+                }
+                let size: u8 = g.deck.iter().sum();
+                g.deck = [0; 6];
+                for c in pool.into_iter().take(size as usize) {
+                    g.deck[c as usize] += 1;
+                }
+                g.dice = Dice::new(seed ^ 0xDA);
+            },
+            12,
+        );
     }
 }

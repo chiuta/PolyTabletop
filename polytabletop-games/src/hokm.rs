@@ -531,3 +531,37 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_information_at_every_level() {
+        crate::p3_comun::ai_blind_check_with(
+            "hokm",
+            Hokm::with_seed,
+            |g, me, seed| {
+                let mut rng = Rng::new(seed);
+                let mut d = crate::p2_util::Mc::determinize(g, me, &mut rng);
+                if g.phase != Phase::Trump {
+                    // după alegerea atuului hakem-ul își vede toată mâna: doar mâna adversarului se amestecă
+                    let own = g.hands[me.idx()].clone();
+                    let n = g.hands[me.other().idx()].len();
+                    let mut opp: Vec<u8> = (0..52u8)
+                        .filter(|c| !own.contains(c) && !g.played.contains(c))
+                        .collect();
+                    crate::p3_comun::shuffle_with(&mut opp, seed);
+                    opp.truncate(n);
+                    sort_std(&mut opp);
+                    d.hands[me.idx()] = own;
+                    d.hands[me.other().idx()] = opp;
+                }
+                *g = d;
+            },
+            2,
+            4,
+            crate::p3_comun::Term::Check,
+        );
+    }
+}

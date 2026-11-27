@@ -10,7 +10,7 @@
 //!
 //! Mutări: `d 5h 6s` (dai în crib), `taie`, `5h` (joci), `go`, `numara`, `imparte`.
 //! Informația ascunsă: render() arată mâna Jucătorului 1; cribul și mâna adversarului apar
-//! doar când se numără. AI-ul (AlphaBeta(1)) citește doar propria mână și informațiile publice.
+//! doar când se numără. AI-ul (AlphaBeta(0)) citește doar propria mână și informațiile publice.
 
 use crate::cards::{full_deck, join_cards, shuffle, Card, Viewer};
 use crate::cardsb_util::sort_hand;
@@ -599,7 +599,7 @@ impl Game for Cribbage {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -763,5 +763,32 @@ mod tests {
         // ambele mâini goale -> ultima carte (1) + pereche (2) pentru J2
         assert_eq!(g.pegs[1], 3);
         assert_eq!(g.phase, Phase::ShowPone);
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_hand_deck_and_cut_at_all_levels() {
+        audit("cribbage", Cribbage::with_seed, 1..=4, 3, 70, |g, salt| {
+            let foe = g.side.other().idx();
+            let mut pool: Vec<Card> = g.hands[foe].clone();
+            pool.extend(g.deck.iter());
+            shuffle(&mut pool, salt);
+            let nh = g.hands[foe].len();
+            g.hands[foe] = pool.drain(..nh).collect();
+            g.deck = pool;
+            if g.phase == Phase::Peg || g.phase == Phase::Cut {
+                // cărțile păstrate de adversar (numărate abia la sfârșit) sunt ascunse
+                let k = g.kept[foe].len();
+                let mut pk: Vec<Card> = g.kept[foe].clone();
+                shuffle(&mut pk, salt ^ 5);
+                g.kept[foe] = pk.drain(..k).collect();
+            }
+            g.rng = Rng::new(salt ^ 3);
+        });
     }
 }

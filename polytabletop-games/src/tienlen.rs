@@ -26,6 +26,7 @@
 //!   3…A (12 ranguri).
 //! * Meci: primul la 3 mâini câștigate. Omise: penalizarea „2 rămas”, 3–4 jucători,
 //!   pierderea dreptului de a juca după pas, tăierea cu mai multă miză.
+//! * După o mână încheiată, câștigătorul scrie `imparte` (împărțirea nouă nu e cunoscută AI-ului).
 //! * Mutări: cărți separate prin spațiu: `3s`, `9h 9d`, `5c 6d 7h` (scară; culorile cărților
 //!   interioare se aleg automat — cele mai slabe; tu alegi culoarea cărții cele mai mari).
 //! * Informație ascunsă: vezi doar mâna ta; AI-ul citește doar mâna proprie și cărțile jucate
@@ -191,6 +192,8 @@ pub fn instant_win(hand: &[u8]) -> Option<&'static str> {
 pub enum Move {
     Play(Combo),
     Pass,
+    /// Pas forțat după o mână încheiată: împărțirea următoare (aleatoare) nu e vizibilă în căutare.
+    Deal,
 }
 
 #[derive(Clone)]
@@ -205,6 +208,8 @@ pub struct TienLen {
     wins: [u8; 2],
     hand_no: u8,
     over: bool,
+    /// Mâna s-a încheiat; câștigătorul trebuie să scrie `imparte`.
+    deal_next: Option<Player>,
     last: String,
     rng: Rng,
     viewer: Viewer,
@@ -233,6 +238,7 @@ impl TienLen {
             wins: [0; 2],
             hand_no: 1,
             over: false,
+            deal_next: None,
             last: String::new(),
             rng: Rng::new(seed),
             viewer: Viewer::Fixed(Player::One),
@@ -348,6 +354,9 @@ impl Game for TienLen {
         if self.over {
             return Vec::new();
         }
+        if self.deal_next.is_some() {
+            return vec![Move::Deal];
+        }
         let mut v: Vec<Move> = Vec::new();
         for c in gen_combos(&self.hands[self.side.idx()]) {
             if let Some(m) = self.must {
@@ -371,6 +380,10 @@ impl Game for TienLen {
     fn apply(&mut self, m: &Move) {
         let me = self.side;
         match m {
+            Move::Deal => {
+                let lead = self.deal_next.take();
+                self.deal(lead);
+            }
             Move::Pass => {
                 self.field = None;
                 self.side = self.holder;
@@ -400,7 +413,7 @@ impl Game for TienLen {
                         self.over = true;
                     } else {
                         self.hand_no += 1;
-                        self.deal(Some(me));
+                        self.deal_next = Some(me);
                     }
                     return;
                 }
@@ -489,12 +502,16 @@ impl Game for TienLen {
             self.hands[v.other().idx()].len()
         ));
         s.push_str(&format!("La mutare: Jucătorul {}\n", self.side.idx() + 1));
+        if self.deal_next.is_some() {
+            s.push_str("Scrie «imparte» pentru mâna următoare.\n");
+        }
         s
     }
 
     fn format_move(&self, m: &Move) -> String {
         match m {
             Move::Pass => "pas".into(),
+            Move::Deal => "imparte".into(),
             Move::Play(c) => c.text(),
         }
     }
@@ -644,6 +661,13 @@ mod tests {
         g.apply(&Move::Play(find(&g.hands[0].clone(), Kind::Single, 1, 5)));
         assert_eq!(g.wins(), (1, 0));
         assert_eq!(g.hand_no, 2);
+        // Noua împărțire e un pas forțat separat, nu parte din mutarea câștigătoare.
+        assert_eq!(Game::legal_moves(&g), vec![Move::Deal]);
+        assert!(Game::render(&g).contains("imparte"));
+        g.apply(&Move::Deal);
+        assert_eq!(g.hands[0].len(), 13);
+        assert_eq!(g.to_move(), Player::One);
+        assert!(g.deal_next.is_none());
     }
 
     #[test]
@@ -681,5 +705,28 @@ mod tests {
             n += 1;
         }
         assert!(g.outcome().is_some());
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit_seeds, scramble_pool};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_unused_cards_at_all_levels() {
+        audit_seeds(
+            "tienlen",
+            TienLen::with_seed,
+            1..=3,
+            5,
+            80,
+            |g, salt| {
+                let foe = g.side.other().idx();
+                scramble_pool(&mut g.hands[foe], &mut g.stock, salt);
+                g.rng = Rng::new(salt ^ 3);
+            },
+            &[7],
+        );
     }
 }

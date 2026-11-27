@@ -451,7 +451,9 @@ impl<S: TrickSpec> Game for Trick<S> {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 

@@ -531,3 +531,17 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+
+    #[test]
+    fn ai_ignores_opponent_tiles_and_boneyard_at_all_levels() {
+        audit("muggins", Muggins::with_seed, 1..=4, 3, 60, |g, salt| {
+            let foe = g.side.other().idx();
+            scramble_pool(&mut g.hands[foe], &mut g.stock, salt);
+        });
+    }
+}

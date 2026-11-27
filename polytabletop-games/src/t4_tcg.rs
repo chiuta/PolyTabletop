@@ -106,6 +106,9 @@ pub struct Tcg {
     over: Option<Outcome>,
     viewer: Option<Player>,
     last: String,
+    /// Valoarea unei creaturi pierdute în pasul curent din cauza unei cărți ascunse a adversarului
+    /// (pază Evo): evaluarea o numără în continuare, ca AI-ul să nu citească cartea ascunsă.
+    ghost: [i32; 2],
 }
 
 fn win(p: u8) -> Outcome {
@@ -145,6 +148,7 @@ impl Tcg {
             over: None,
             viewer: None,
             last: String::new(),
+            ghost: [0; 2],
         };
         for p in 0..2 {
             match sp.mode {
@@ -168,6 +172,22 @@ impl Tcg {
             g.begin(0);
         }
         g
+    }
+
+    /// Pentru teste (audit AI): amestecă ce nu vede jucătorul `1 - hide` (mâna, pachetul și cărțile de viață
+    /// ale lui `hide`) și resetează zarurile viitoarelor extrageri.
+    #[cfg(test)]
+    pub fn scramble(&mut self, hide: usize, seed: u64) {
+        let (h, l) = (self.hand[hide].len(), self.life[hide].len());
+        let mut pool: Vec<u8> = self.hand[hide].clone();
+        pool.extend(self.life[hide].iter().copied());
+        pool.extend(self.deck[hide].iter().copied());
+        crate::p3_comun::shuffle_with(&mut pool, seed);
+        self.hand[hide] = pool.drain(..h).collect();
+        self.life[hide] = pool.drain(..l).collect();
+        self.deck[hide] = pool;
+        crate::p3_comun::shuffle_with(&mut self.deck[1 - hide], seed ^ 0x31);
+        self.dice = Dice::new(seed ^ 0x9E37);
     }
 
     fn card(&self, c: u8) -> &'static Card {
@@ -292,15 +312,16 @@ impl Tcg {
         x
     }
 
+    fn creature_value(&self, p: usize, i: usize) -> i32 {
+        let c = &self.board[p][i];
+        let k = self.card(c.c);
+        (self.eff_pow(p, i) as i32 + (k.hp as i32 - c.dmg as i32).max(0)) * 3
+            + if k.fl & BLOCK != 0 { 2 } else { 0 }
+    }
+
     fn board_value(&self, p: usize) -> i32 {
-        self.board[p]
-            .iter()
-            .enumerate()
-            .map(|(i, c)| {
-                let k = self.card(c.c);
-                (self.eff_pow(p, i) as i32 + (k.hp as i32 - c.dmg as i32).max(0)) * 3
-                    + if k.fl & BLOCK != 0 { 2 } else { 0 }
-            })
+        (0..self.board[p].len())
+            .map(|i| self.creature_value(p, i))
             .sum()
     }
 
@@ -598,6 +619,8 @@ impl Tcg {
                             if k.kind == 0 && k.pow as i16 > ap {
                                 if let Some(i) = a {
                                     if i < self.board[me].len() {
+                                        let lost = self.creature_value(me, i);
+                                        self.ghost[me] += lost;
                                         self.board[me].remove(i);
                                     }
                                 }
@@ -923,6 +946,7 @@ impl Mini for Tcg {
 
     fn step(&mut self, m: &str) {
         self.last.clear();
+        self.ghost = [0; 2];
         let parts: Vec<&str> = m.split_whitespace().collect();
         let p = self.side as usize;
         match parts[0] {
@@ -1044,6 +1068,7 @@ impl Mini for Tcg {
         let mut sc = 0i32;
         sc += 3 * (self.hand[me].len() as i32 - self.hand[op].len() as i32);
         sc += self.board_value(me) - self.board_value(op);
+        sc += self.ghost[me] - self.ghost[op];
         sc += 3 * (self.zone[me].len() as i32 - self.zone[op].len() as i32);
         match self.sp.mode {
             Mode::Pirate | Mode::Evo | Mode::Mana => {
@@ -1282,6 +1307,19 @@ mod tests {
     use crate::t4_tdata::SPECS;
     use polytabletop_core::rng::Rng;
     use polytabletop_core::GameObj;
+
+    #[test]
+    fn ai_ignores_hidden_cards_at_every_level() {
+        for id in ["evolutia_circuitelor", "trepte_de_avangarda"] {
+            let sp = SPECS.iter().find(|s| s.id == id).expect("spec");
+            crate::p3_comun::ai_blind_check(
+                id,
+                |s| B(Tcg::with_seed(sp, s)),
+                |g, me, s| g.0.scramble(1 - me.idx(), s),
+                8,
+            );
+        }
+    }
 
     #[test]
     fn every_spec_plays_to_the_end_and_ai_is_legal() {

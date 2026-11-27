@@ -51,4 +51,9 @@ mod tests {
         crate::b6_ask::audit(&VULPE);
         crate::b6_deduce::audit(&FANTOMA);
     }
+
+    #[test]
+    fn fantoma_guesser_ignores_the_target_at_all_levels() {
+        crate::b6_deduce::a1_audit_all_levels(&FANTOMA, "fantoma_blanda");
+    }
 }

@@ -257,3 +257,26 @@ mod t {
         assert!(s.contains("Mâna ta (J1)") && !s.contains("Mâna ta (J2)"));
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+    use crate::brand_util::B;
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_deck_at_all_levels() {
+        audit(
+            "reguli_schimbatoare",
+            |s| B(Reguli::with_seed(s)),
+            1..=4,
+            3,
+            60,
+            |g, salt| {
+                let foe = 1 - g.0.mover;
+                scramble_pool(&mut g.0.hand[foe], &mut g.0.deck, salt);
+                g.0.rng = Rng::new(salt ^ 3);
+            },
+        );
+    }
+}

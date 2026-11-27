@@ -419,7 +419,9 @@ impl Game for MahjongAm {
         }
     }
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
@@ -498,5 +500,45 @@ mod tests {
         random_finishes(|s| Box::new(MahjongAm::with_seed(s)), 4, 1000);
         ai_vs_random(|s| Box::new(MahjongAm::with_seed(s)), 2, Player::One, 1000);
         ai_vs_random(|s| Box::new(MahjongAm::with_seed(s)), 3, Player::Two, 1000);
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_tiles_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "mahjong_am",
+            MahjongAm::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                if g.pending && g.turn == me.idx() {
+                    g.resolve();
+                }
+                let mut pool: Vec<u8> = Vec::new();
+                for t in 0..N {
+                    for _ in 0..g.hands[h][t] {
+                        pool.push(t as u8);
+                    }
+                }
+                let n = pool.len();
+                let rest: Vec<u8> = g.wall.iter().copied().filter(|&t| t != FLOWER).collect();
+                let flowers = g.wall.len() - rest.len();
+                pool.extend(rest);
+                crate::p3_comun::shuffle_with(&mut pool, s);
+                let mut hh = [0u8; N];
+                for &t in &pool[..n] {
+                    hh[t as usize] += 1;
+                }
+                g.hands[h] = hh;
+                let mut wall: Vec<u8> = pool[n..].to_vec();
+                wall.extend(std::iter::repeat_n(FLOWER, flowers));
+                crate::p3_comun::shuffle_with(&mut wall, s ^ 5);
+                g.wall = wall;
+            },
+            10,
+        );
     }
 }

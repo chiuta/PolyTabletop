@@ -338,6 +338,22 @@ mod tests {
     }
 
     #[test]
+    fn ai_nu_vede_zarurile_din_cupa_adversarului() {
+        crate::p3_comun::ai_blind_check(
+            "mexico",
+            Mexico::with_seed,
+            |g, me, seed| {
+                // zarurile viitoare (RNG-ul) nu le știe nimeni; cele din cupă sunt ale aruncătorului
+                g.rng = Rng::new(seed ^ 0x5eed);
+                if g.roller != me {
+                    g.dice = (g.rng.d6(), g.rng.d6());
+                }
+            },
+            40,
+        );
+    }
+
+    #[test]
     fn random_games_end_and_views_are_private() {
         for seed in 1..=30u64 {
             let mut g = Mexico::with_seed(seed);

@@ -18,6 +18,8 @@ pub struct Agenti {
     moves_by: [[i32; 6]; 2],
     side: Player,
     ply: u32,
+    /// Pasul forțat `numara` a fost jucat (abia atunci se citește scorul, ca AI-ul să nu-l vadă).
+    done: bool,
 }
 
 impl Agenti {
@@ -39,12 +41,16 @@ impl Agenti {
             moves_by: [[0; 6]; 2],
             side: Player::One,
             ply: 0,
+            done: false,
         }
     }
     fn score(&self, p: usize) -> i32 {
         (0..6).map(|a| self.val[p][a] * self.pos[a]).sum()
     }
     /// Scor estimat al adversarului (doar din mutările lui publice).
+    fn finished(&self) -> bool {
+        self.ply >= 24 || self.pos.iter().all(|&p| p >= 10)
+    }
     fn guess_opp(&self, o: usize) -> i32 {
         let tot: i32 = self.moves_by[o].iter().sum();
         (0..6)
@@ -62,13 +68,16 @@ impl Default for Agenti {
 
 impl Mini for Agenti {
     fn depth(&self) -> u32 {
-        1
+        0
     }
     fn side(&self) -> Player {
         self.side
     }
     fn moves(&self) -> Vec<String> {
         let mut v = Vec::new();
+        if self.finished() {
+            return if self.done { v } else { vec!["numara".into()] };
+        }
         for a in 0..6 {
             for k in 1..=3 {
                 if self.pos[a] + k <= 10 {
@@ -79,6 +88,10 @@ impl Mini for Agenti {
         v
     }
     fn step(&mut self, m: &str) {
+        if m == "numara" {
+            self.done = true;
+            return;
+        }
         let me = pi(self.side);
         let (a, k) = m[4..].split_once(',').unwrap();
         let a = (a.as_bytes()[0].to_ascii_uppercase() - b'A') as usize;
@@ -88,7 +101,7 @@ impl Mini for Agenti {
         self.side = self.side.other();
     }
     fn result(&self) -> Option<Outcome> {
-        if self.ply >= 24 || self.pos.iter().all(|&p| p >= 10) {
+        if self.done {
             return Some(by_score(self.score(0), self.score(1)));
         }
         None
@@ -114,10 +127,11 @@ impl Mini for Agenti {
             .map(|a| format!("{}={}", (b'A' + a as u8) as char, self.val[viewer][a]))
             .collect();
         s.push_str(&format!(
-            "Valorile tale (J{}): {}\nLa mutare: {} (mut X,k)\n",
+            "Valorile tale (J{}): {}\nLa mutare: {} ({})\n",
             viewer + 1,
             v.join(" "),
-            pname(self.side)
+            pname(self.side),
+            if self.finished() { "numara" } else { "mut X,k" }
         ));
         s
     }
@@ -163,5 +177,29 @@ mod t {
                 crate::brand_util::ai_of(&b, seed)
             );
         }
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+    use crate::brand_util::B;
+
+    #[test]
+    fn ai_ignores_opponent_values_even_on_the_last_move_at_all_levels() {
+        audit(
+            "agenti",
+            |s| B(Agenti::with_seed(s)),
+            1..=3,
+            1,
+            40,
+            |g, salt| {
+                let foe = 1 - pi(g.0.side);
+                let mut v: Vec<i32> = (0..6).collect();
+                shuffle(&mut v, salt);
+                g.0.val[foe].copy_from_slice(&v);
+            },
+        );
     }
 }

@@ -632,7 +632,7 @@ impl Game for Truco {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -810,5 +810,29 @@ mod tests {
             }
             assert!(g.outcome().is_some(), "seed {seed}");
         }
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, fake_cards};
+
+    #[test]
+    fn ai_ignores_opponent_cards_at_all_levels() {
+        audit("truco", Truco::with_seed, 1..=4, 3, 90, |g, salt| {
+            let me = g.side.idx();
+            let foe = 1 - me;
+            let mut ex: Vec<Card> = g.hands[me].clone();
+            ex.extend(g.orig[me].iter());
+            for t in &g.table {
+                ex.extend(t.iter().flatten());
+            }
+            let fake = fake_cards(deck40(), &ex, g.orig[foe].len(), salt);
+            let k = g.hands[foe].len().min(fake.len());
+            g.orig[foe] = fake.clone();
+            g.hands[foe] = fake[..k].to_vec();
+            g.rng = Rng::new(salt ^ 3);
+        });
     }
 }

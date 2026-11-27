@@ -358,7 +358,7 @@ impl Game for Pica {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -410,5 +410,20 @@ mod tests {
     fn bid_range() {
         let g = Pica::with_seed(4);
         assert_eq!(g.legal_moves().len(), 14);
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_stock_at_all_levels() {
+        audit("pica", Pica::with_seed, 1..=4, 3, 70, |g, salt| {
+            let foe = g.side.other().idx();
+            scramble_pool(&mut g.hands[foe], &mut g.stock, salt);
+            g.rng = Rng::new(salt ^ 3);
+        });
     }
 }

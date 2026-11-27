@@ -574,3 +574,20 @@ mod tests {
         assert!(g.outcome().is_some());
     }
 }
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_opponent_hand_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "callbreak",
+            CallBreak::with_seed,
+            |g, me, s| {
+                *g = g.determinize(me, &mut Rng::new(s));
+            },
+            4,
+        );
+    }
+}

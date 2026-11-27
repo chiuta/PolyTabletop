@@ -327,7 +327,9 @@ impl Game for Karuta {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -521,5 +523,36 @@ mod tests {
                 assert!(n < 4000, "seed {seed}");
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_unread_part_of_the_proverb_at_every_level() {
+        // pozițiile din care o atingere poate încheia partida sunt sărite (rezultatul real e vizibil
+        // doar prin `outcome`).
+        crate::p3_comun::ai_blind_check_with(
+            "karuta",
+            Karuta::with_seed,
+            |g, _me, s| {
+                let prefix: Vec<&str> =
+                    words(g.order[g.idx]).into_iter().take(g.revealed).collect();
+                let cands: Vec<u8> = (0..40u8)
+                    .filter(|&id| {
+                        let w = words(id);
+                        w.len() >= prefix.len() && w[..prefix.len()] == prefix[..]
+                    })
+                    .collect();
+                g.order[g.idx] = cands[(s as usize) % cands.len()];
+                let from = g.idx + 1;
+                crate::p3_comun::shuffle_with(&mut g.order[from..], s);
+            },
+            6,
+            1,
+            crate::p3_comun::Term::Skip,
+        );
     }
 }

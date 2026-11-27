@@ -2349,3 +2349,31 @@ mod tests {
         assert!(n > 10);
     }
 }
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_opponent_hand_and_wall_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "riichi",
+            Riichi::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                let mut pool: Vec<u8> = Vec::new();
+                for t in 0..34u8 {
+                    for _ in 0..g.closed[h][t as usize] {
+                        pool.push(t);
+                    }
+                }
+                let n = pool.len();
+                pool.extend(g.wall.iter().copied());
+                crate::p3_comun::shuffle_with(&mut pool, s);
+                g.closed[h] = counts_of(&pool[..n]);
+                g.wall = pool[n..].to_vec();
+            },
+            4,
+        );
+    }
+}

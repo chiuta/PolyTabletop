@@ -899,7 +899,9 @@ impl Game for Burako {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1143,5 +1145,37 @@ mod tests {
             }
         }
         assert!(wins * 3 >= n * 2, "AI won only {wins}/{n}");
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_cards_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "burako",
+            Burako::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                let (nh, nmh, nmm) = (
+                    g.hands[h].len(),
+                    g.muerto[h].len(),
+                    g.muerto[me.idx()].len(),
+                );
+                let mut pool: Vec<u8> = g.hands[h].clone();
+                pool.extend(g.muerto[h].iter().copied());
+                pool.extend(g.muerto[me.idx()].iter().copied());
+                pool.extend(g.stock.iter().copied());
+                crate::p3_comun::shuffle_with(&mut pool, s);
+                g.hands[h] = pool.drain(..nh).collect();
+                g.hands[h].sort_unstable();
+                g.muerto[h] = pool.drain(..nmh).collect();
+                g.muerto[me.idx()] = pool.drain(..nmm).collect();
+                g.stock = pool;
+            },
+            3,
+        );
     }
 }

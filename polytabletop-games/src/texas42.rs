@@ -376,8 +376,10 @@ impl Game for Texas42 {
             Mv::Play(d) => text(d),
         }
     }
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului
+    /// din mâna lui reală; evaluarea citește doar mâna proprie și punctele publice.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
@@ -417,6 +419,27 @@ mod tests {
         g.apply(&Mv::Play(id(6, 1)));
         g.apply(&Mv::Play(id(2, 0))); // atu bate
         assert_eq!(g.marks, [0, 1]); // licitatorul nu a făcut 30
+    }
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "texas42",
+            Texas42::with_seed,
+            |g, me, seed| {
+                // orice piese pe care jucătorul nu le vede (nici în mâna lui, nici pe masă)
+                let o = 1 - me.idx();
+                let mut pool: Vec<u8> = (0..28u8)
+                    .filter(|d| {
+                        !g.hands[me.idx()].contains(d) && !g.trick.iter().any(|&(_, x)| x == *d)
+                    })
+                    .collect();
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                let n = g.hands[o].len();
+                g.hands[o] = pool.into_iter().take(n).collect();
+            },
+            12,
+        );
     }
 
     #[test]

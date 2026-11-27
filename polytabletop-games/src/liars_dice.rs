@@ -487,3 +487,20 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_information_at_every_level() {
+        crate::p3_comun::ai_blind_check_with(
+            "liars_dice",
+            LiarsDice::with_seed,
+            |g, me, seed| *g = g.resample_hidden(me, seed),
+            2,
+            4,
+            crate::p3_comun::Term::Check,
+        );
+    }
+}

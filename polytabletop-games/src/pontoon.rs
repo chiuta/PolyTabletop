@@ -599,8 +599,10 @@ impl Game for Pontoon {
         .into()
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert cărțile reale din pachet și
+    /// răspunsul adversarului; `evaluate` citește doar cărțile proprii și un model cu pachet infinit.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -808,5 +810,36 @@ mod tests {
             let _ = &mut ai;
         }
         assert!(ai > rn, "ai {ai} vs random {rn}");
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_cartile_cu_fata_in_jos_nici_pachetul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "pontoon",
+            Pontoon::with_seed,
+            |g, me, seed| {
+                let o = me.other().idx();
+                let public = matches!(g.phase, Phase::Settle | Phase::Over)
+                    || (o == g.banker.idx() && g.phase == Phase::Banker);
+                let hidden: Vec<usize> = if public {
+                    Vec::new()
+                } else {
+                    (0..g.cards[o].len()).filter(|&i| !g.up[o][i]).collect()
+                };
+                let mut pool: Vec<u8> = g.deck.clone();
+                pool.extend(hidden.iter().map(|&i| g.cards[o][i]));
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                for &i in &hidden {
+                    g.cards[o][i] = pool.pop().unwrap();
+                }
+                g.deck = pool;
+            },
+            12,
+        );
     }
 }

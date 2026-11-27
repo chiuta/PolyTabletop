@@ -928,7 +928,9 @@ impl Game for TcgLant {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1348,5 +1350,29 @@ mod viewer_tests {
         let a = Game::render(&g);
         Game::set_viewer(&mut g, Some(Player::Two));
         assert_ne!(a, Game::render(&g));
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_cards_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "tcg_lant",
+            TcgLant::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                let nh = g.sides[h].hand.len();
+                let mut pool: Vec<u8> = g.sides[h].hand.clone();
+                pool.extend(g.sides[h].deck.iter().copied());
+                crate::p3_comun::shuffle_with(&mut pool, s);
+                g.sides[h].hand = pool.drain(..nh).collect();
+                g.sides[h].deck = pool;
+                crate::p3_comun::shuffle_with(&mut g.sides[me.idx()].deck, s ^ 3);
+            },
+            6,
+        );
     }
 }

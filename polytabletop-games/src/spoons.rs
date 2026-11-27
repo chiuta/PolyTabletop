@@ -294,7 +294,7 @@ impl Game for Spoons {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -356,5 +356,36 @@ mod tests {
     #[test]
     fn random_and_ai_games() {
         check_game(Spoons::with_seed, 3, 3500);
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_hand_stock_and_thrown_cards_at_all_levels() {
+        audit("spoons", Spoons::with_seed, 1..=4, 2, 60, |g, salt| {
+            let foe = g.side.other().idx();
+            let n = g.hands[foe].len();
+            let q = if g.dealer.idx() == foe {
+                g.queue.len()
+            } else {
+                0
+            };
+            let mut pool: Vec<u8> = std::mem::take(&mut g.hands[foe]);
+            pool.extend(g.stock.iter());
+            if q > 0 {
+                pool.extend(g.queue.iter());
+            }
+            shuffle(&mut pool, salt);
+            g.hands[foe] = pool.drain(..n).collect();
+            if q > 0 {
+                g.queue = pool.drain(..q).collect();
+            }
+            g.stock = pool;
+            g.rng = Rng::new(salt ^ 7);
+        });
     }
 }

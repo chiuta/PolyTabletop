@@ -66,7 +66,7 @@ pub struct Expeditii {
     phase: Phase,
     just_discarded: Option<u8>,
     /// Cartea trasă din pachet în ultima mutare (necunoscută la evaluare).
-    fresh: [bool; 2],
+    fresh: [Option<C>; 2],
     /// Ture consecutive încheiate fără tras din pachet (regulă anti-blocaj).
     stall: u8,
     over: bool,
@@ -132,7 +132,7 @@ impl Expeditii {
             side: Player::One,
             phase: Phase::Act,
             just_discarded: None,
-            fresh: [false; 2],
+            fresh: [None; 2],
             stall: 0,
             over: false,
             viewer: Some(Player::One),
@@ -162,7 +162,13 @@ impl Expeditii {
     fn heuristic(&self, p: usize) -> i32 {
         let o = 1 - p;
         let mut s = 0;
-        let known = self.hands[p].len() - usize::from(self.fresh[p]);
+        // mâna fără cartea abia trasă din pachet (după sortare nu mai e la sfârșit: se scoate după valoare)
+        let mut known_hand: Vec<C> = self.hands[p].clone();
+        if let Some(f) = self.fresh[p] {
+            if let Some(i) = known_hand.iter().position(|x| *x == f) {
+                known_hand.remove(i);
+            }
+        }
         for c in 0..5usize {
             let cur = exp_score(&self.exp[p][c]);
             // Potențial: ce am în mână și se poate juca în ordine crescătoare.
@@ -172,7 +178,7 @@ impl Expeditii {
                 .map(|x| x.v)
                 .max()
                 .unwrap_or(0);
-            let mut extra: Vec<C> = self.hands[p][..known]
+            let mut extra: Vec<C> = known_hand
                 .iter()
                 .copied()
                 .filter(|x| x.c as usize == c && x.v > top)
@@ -192,12 +198,12 @@ impl Expeditii {
             // Cărți din mână pe care adversarul le-ar putea valorifica (aruncate = cadou).
             let _ = o;
         }
-        for c in &self.hands[p][..known] {
+        for c in &known_hand {
             if self.exp[p][c.c as usize].is_empty() && c.v == 0 {
                 s -= 1;
             }
         }
-        if self.fresh[p] {
+        if self.fresh[p].is_some() {
             s += 3;
         }
         s
@@ -254,7 +260,7 @@ impl Game for Expeditii {
 
     fn apply(&mut self, m: &Move) {
         let p = self.side.idx();
-        self.fresh = [false; 2];
+        self.fresh = [None; 2];
         match *m {
             Move::Play(c) | Move::Discard(c) => {
                 let i = self.hands[p]
@@ -274,7 +280,7 @@ impl Game for Expeditii {
             Move::DrawDeck => {
                 let c = self.deck.pop().expect("deck");
                 self.hands[p].push(c);
-                self.fresh[p] = true;
+                self.fresh[p] = Some(c);
                 self.stall = 0;
                 self.end_turn();
             }
@@ -310,8 +316,10 @@ impl Game for Expeditii {
         a - opp
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert tragerea reală din pachet și
+    /// răspunsul adversarului; evaluarea citește doar mâna proprie (fără cartea abia trasă) și datele publice.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 
     fn render(&self) -> String {
@@ -527,5 +535,29 @@ mod viewer_tests {
         assert!(!r.contains("Mâna ta (J1)"));
         Game::set_viewer(&mut g, None);
         assert!(Game::render(&g).contains("Mâna ta (J1)"));
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_pachetul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "expeditii",
+            Expeditii::with_seed,
+            |g, me, seed| {
+                let o = me.other().idx();
+                let n = g.hands[o].len();
+                let mut pool: Vec<C> = g.hands[o].clone();
+                pool.extend(g.deck.iter().copied());
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                g.hands[o] = pool.drain(..n).collect();
+                g.deck = pool;
+                g.sort_hands();
+            },
+            24,
+        );
     }
 }

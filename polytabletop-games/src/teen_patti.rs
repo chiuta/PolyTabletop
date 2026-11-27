@@ -373,8 +373,10 @@ impl Game for TeenPatti {
         .into()
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert mutarea forțată `arata`
+    /// (cărțile reale ale adversarului) și răspunsurile lui; evaluarea citește doar mâna proprie și pariurile.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -539,5 +541,30 @@ mod tests {
                 assert_eq!(g.chips[0] + g.chips[1] + g.pot, 1000);
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_cartile_adversarului_nici_pachetul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "teenpatti",
+            TeenPatti::with_seed,
+            |g, me, seed| {
+                let o = me.other().idx();
+                let mut pool: Vec<u8> = g.deck.clone();
+                pool.extend(g.hands[o].iter().copied());
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                for i in 0..3 {
+                    g.hands[o][i] = pool.pop().unwrap();
+                }
+                g.deck = pool;
+                g.rng = Rng::new(seed ^ 0x7E);
+            },
+            12,
+        );
     }
 }

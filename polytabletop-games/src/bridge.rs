@@ -649,7 +649,9 @@ impl Game for Bridge {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -800,5 +802,38 @@ mod tests {
             }
             assert!(g.outcome().is_some(), "seed {seed}");
         }
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_opponent_hands_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "bridge",
+            Bridge::with_seed,
+            |g, me, s| {
+                let seats = g.my_seats(me.other());
+                let dummy = match (g.dummy_open, g.contract) {
+                    (true, Some(c)) => Some(if c.side == 0 { 0usize } else { 1 }),
+                    _ => None,
+                };
+                let hidden: Vec<usize> = seats
+                    .iter()
+                    .copied()
+                    .filter(|&x| Some(x) != dummy)
+                    .collect();
+                let sizes: Vec<usize> = hidden.iter().map(|&x| g.hands[x].len()).collect();
+                let mut pool: Vec<Card> = hidden.iter().flat_map(|&x| g.hands[x].clone()).collect();
+                crate::p3_comun::shuffle_with(&mut pool, s);
+                for (k, &x) in hidden.iter().enumerate() {
+                    g.hands[x] = pool.drain(..sizes[k]).collect();
+                    sort_hand(&mut g.hands[x]);
+                }
+            },
+            6,
+        );
     }
 }

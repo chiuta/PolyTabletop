@@ -372,6 +372,32 @@ mod tests {
     }
 
     #[test]
+    fn ai_nu_vede_rolurile_necunoscute() {
+        // lume alternativă: rolurile din locurile pe care jucătorul nu le știe se amestecă între ele
+        crate::p3_comun::ai_blind_check(
+            "noaptea_lupilor",
+            |s| {
+                let mut g = Noaptea::with_seed(s);
+                g.step("trag");
+                B(g)
+            },
+            |g, me, seed| {
+                let n = &mut g.0;
+                let known: Vec<usize> = n.facts[me.idx()].iter().map(|f| f.0).collect();
+                let free: Vec<usize> = (0..6).filter(|i| !known.contains(i)).collect();
+                let swapped = n.cur[0] != n.orig[0] || n.cur[1] != n.orig[1];
+                let mut vals: Vec<u8> = free.iter().map(|&i| n.orig[i]).collect();
+                crate::p3_comun::shuffle_with(&mut vals, seed);
+                for (k, &i) in free.iter().enumerate() {
+                    n.orig[i] = vals[k];
+                }
+                n.cur = final_roles(&n.orig, swapped);
+            },
+            12,
+        );
+    }
+
+    #[test]
     fn votul_nu_citeste_cartile_necunoscute() {
         polytabletop_core::ai::set_time_budget_override_ms(Some(6));
         let mut g = Noaptea::with_seed(6);

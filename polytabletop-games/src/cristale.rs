@@ -469,7 +469,7 @@ impl Game for Cristale {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 
     fn render(&self) -> String {
@@ -718,5 +718,20 @@ mod tests {
             }
         }
         assert!(wins >= 27, "wins {wins}");
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+
+    #[test]
+    fn ai_ignores_the_order_of_the_decks_at_all_levels() {
+        audit("cristale", Cristale::with_seed, 1..=4, 6, 200, |g, salt| {
+            for (l, d) in g.decks.iter_mut().enumerate() {
+                shuffle(d, salt + l as u64);
+            }
+        });
     }
 }

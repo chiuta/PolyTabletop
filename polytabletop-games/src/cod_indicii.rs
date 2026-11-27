@@ -343,3 +343,40 @@ mod tests {
         assert_eq!(a, ai_of(&h, 9));
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+    use crate::brand_util::B;
+
+    #[test]
+    fn ai_ignores_opponent_keys_code_and_clue_hand_at_all_levels() {
+        audit(
+            "cod_indicii",
+            |s| B(Cod::with_seed(s)),
+            1..=4,
+            1,
+            80,
+            |g, salt| {
+                let me = pi(Mini::side(&g.0));
+                let foe = 1 - me;
+                let enc = g.0.enc();
+                let mut free: Vec<usize> = (0..16).filter(|w| !g.0.kw[me].contains(w)).collect();
+                shuffle(&mut free, salt);
+                for i in 0..4 {
+                    g.0.kw[foe][i] = free[i];
+                }
+                if g.0.ph == Ph::Intercept && me != enc {
+                    let mut d: Vec<usize> = (0..4).collect();
+                    shuffle(&mut d, salt + 1);
+                    g.0.code = [d[0], d[1], d[2]];
+                    let mut pool: Vec<usize> = (0..16).collect();
+                    shuffle(&mut pool, salt + 2);
+                    g.0.hand = pool[..6].to_vec();
+                }
+                g.0.rng = Rng::new(salt ^ 5);
+            },
+        );
+    }
+}

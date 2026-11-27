@@ -256,7 +256,9 @@ impl Game for Briscola {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -414,5 +416,24 @@ mod tests {
             }
         }
         assert!(wins * 10 >= n * 7, "AI won only {wins}/{n}");
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_opponent_hand_and_stock_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "briscola",
+            Briscola::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                // stock[0] = atuul întors (public)
+                crate::p3_comun::mix_unseen(&mut g.hands[h], &mut g.stock, 1, s);
+            },
+            10,
+        );
     }
 }

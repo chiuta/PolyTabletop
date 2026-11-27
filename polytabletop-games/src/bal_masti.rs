@@ -57,6 +57,23 @@ impl Bal {
             last: String::new(),
         }
     }
+    /// Pentru teste (audit AI): re-trage măștile necunoscute lui `1 - hide` (a lui `hide` și, dacă cel la
+    /// mutare nu mai e sigur de masca lui, și a lui) și ce crede `hide`.
+    #[cfg(test)]
+    pub fn scramble(&mut self, hide: usize, seed: u64) {
+        let mut r = Rng::new(seed);
+        let me = 1 - hide;
+        if self.belief[me].is_none() || self.unsure[me] {
+            self.card[me] = r.below(6);
+        }
+        self.card[hide] = (self.card[me] + 1 + r.below(5)) % 6;
+        self.belief[hide] = if r.below(3) == 0 {
+            None
+        } else {
+            Some(self.card[hide])
+        };
+        self.unsure[hide] = r.below(2) == 0 && self.belief[hide].is_some();
+    }
     fn apply_power(&mut self, who: usize, r: usize) {
         let o = 1 - who;
         match r {
@@ -250,6 +267,15 @@ mod t {
     #[test]
     fn plays() {
         crate::brand_util::check(Bal::with_seed, 200);
+    }
+    #[test]
+    fn ai_ignores_hidden_information_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "bal_masti",
+            |s| B(Bal::with_seed(s)),
+            |g, me, s| g.0.scramble(1 - me.idx(), s),
+            14,
+        );
     }
     #[test]
     fn responder_ai_ignores_the_claimers_mask() {

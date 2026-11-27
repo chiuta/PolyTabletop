@@ -860,8 +860,10 @@ impl Game for Rezervatia {
         (self.heuristic(p.idx(), p.idx()) - self.heuristic(p.other().idx(), p.idx())) as i32
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului
+    /// din mâna lui reală; evaluarea citește doar mâna proprie (fără cărțile abia trase) și numărul cărților adverse.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 
     fn render(&self) -> String {
@@ -1374,5 +1376,28 @@ mod tests {
             g.apply(&m);
         }
         assert!(t.elapsed().as_secs_f64() < 30.0);
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_pachetul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "rezervatia",
+            Rezervatia::with_seed,
+            |g, me, seed| {
+                let o = me.other().idx();
+                let n = g.z[o].hand.len();
+                let mut pool: Vec<u8> = g.z[o].hand.clone();
+                pool.extend(g.deck.iter().copied());
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                g.z[o].hand = pool.drain(..n).collect();
+                g.deck = pool;
+            },
+            12,
+        );
     }
 }

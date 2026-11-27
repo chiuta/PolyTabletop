@@ -220,3 +220,26 @@ mod tests {
         assert!(g.render().contains("4/7"));
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::audit;
+
+    #[test]
+    fn ai_ignores_the_other_players_secret_pick_at_all_levels() {
+        audit(
+            "morra",
+            |_| Morra::new(),
+            1..=6,
+            1,
+            12,
+            |g, salt| {
+                if g.to_move() == Player::Two && g.pick[0].is_some() {
+                    let f = 1 + (salt % 5) as u8;
+                    g.pick[0] = Some((f, f + 1 + ((salt / 5) % 5) as u8));
+                }
+            },
+        );
+    }
+}

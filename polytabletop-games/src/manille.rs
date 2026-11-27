@@ -69,3 +69,18 @@ mod tests {
         check_game(Manille::with_seed, 3, 600);
     }
 }
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_cards_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "manille",
+            Manille::with_seed,
+            crate::q5_trick::scramble_hidden,
+            10,
+        );
+    }
+}

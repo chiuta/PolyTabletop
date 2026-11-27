@@ -275,3 +275,29 @@ pub fn audit(spec: &'static DSpec) {
         );
     }
 }
+
+/// Ghicitorul nu vede ținta (țintă alternativă cu aceleași indicii publice), la toate nivelurile.
+#[cfg(test)]
+pub fn a1_audit_all_levels(spec: &'static DSpec, name: &str) {
+    crate::ai_audit_a1::audit(
+        name,
+        |s| B(Deduce::with_seed(spec, s)),
+        1..=6,
+        1,
+        40,
+        |g, salt| {
+            let me = pi(Mini::side(&g.0));
+            if me != g.0.giver() {
+                let n = n_items(g.0.spec);
+                for k in 0..n {
+                    let c = (salt as usize + 1 + k) % n;
+                    if c != g.0.target && g.0.consistent(c) {
+                        g.0.target = c;
+                        break;
+                    }
+                }
+            }
+            g.0.rng = Rng::new(salt ^ 3);
+        },
+    );
+}

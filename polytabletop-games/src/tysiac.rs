@@ -360,15 +360,22 @@ impl Game for Tysiac {
         let mut v = 5 * (self.scores[me] - self.scores[1 - me]);
         match self.phase {
             Phase::Bid => {
-                // doar pentru jucătorul care tocmai a licitat (cel curent e adversarul)
+                // doar pentru jucătorul care tocmai a licitat (cel curent e adversarul); mâna
+                // adversarului nu se citește: se presupune că estimarea lui e chiar licitația
                 if let Some(h) = self.high {
-                    let x = (est(&self.hands[h]) - self.bid as i32) * 2;
-                    v += if h == me { x } else { -x };
+                    if h == me {
+                        v += (est(&self.hands[h]) - self.bid as i32) * 2;
+                    }
                 }
             }
             Phase::Take | Phase::Discard => {
-                let x = est(&self.hands[self.high.unwrap()]);
-                v += if self.high.unwrap() == me { x } else { -x };
+                let h = self.high.unwrap();
+                if h == me {
+                    v += est(&self.hands[h]);
+                } else {
+                    // declarantul advers: estimare publică (licitația), nu mâna lui
+                    v -= self.bid as i32;
+                }
             }
             _ => {}
         }
@@ -447,7 +454,7 @@ impl Game for Tysiac {
         }
     }
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
@@ -499,5 +506,38 @@ mod tests {
         random_finishes(|s| Box::new(Tysiac::with_seed(s)), 4, 1500);
         ai_vs_random(|s| Box::new(Tysiac::with_seed(s)), 2, Player::One, 1500);
         ai_vs_random(|s| Box::new(Tysiac::with_seed(s)), 3, Player::Two, 1500);
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_musik_at_all_levels() {
+        audit("tysiac", Tysiac::with_seed, 1..=4, 3, 90, |g, salt| {
+            let me = g.actor();
+            let foe = 1 - me;
+            let n = g.hands[foe].len();
+            if g.phase == Phase::Bid {
+                // înainte de licitație: mâna adversarului și cele două musik-uri sunt necunoscute
+                let mut pool: Vec<u8> = (0..24u8).filter(|c| !g.hands[me].contains(c)).collect();
+                shuffle(&mut pool, salt);
+                g.hands[foe] = pool.drain(..n).collect();
+                g.musik = [pool.drain(..2).collect(), pool.drain(..2).collect()];
+            } else {
+                let mut pool: Vec<u8> = (0..24u8)
+                    .filter(|c| {
+                        !g.hands[me].contains(c)
+                            && !g.trick.iter().any(|t| t.1 == *c)
+                            && !g.discards.contains(c)
+                    })
+                    .collect();
+                shuffle(&mut pool, salt);
+                g.hands[foe] = pool.drain(..n.min(pool.len())).collect();
+            }
+            g.rng = Rng::new(salt ^ 3);
+        });
     }
 }

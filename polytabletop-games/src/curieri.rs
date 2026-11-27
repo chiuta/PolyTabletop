@@ -462,7 +462,7 @@ impl Game for Curieri {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 
     fn render(&self) -> String {
@@ -658,5 +658,31 @@ mod tests {
             }
         }
         assert!(wins >= 40, "wins {wins}");
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_card_deck_and_removed_card_at_all_levels() {
+        audit("curieri", Curieri::with_seed, 1..=5, 1, 60, |g, salt| {
+            let foe = 1 - g.side.idx();
+            let mut pool: Vec<u8> = g.hands[foe].clone();
+            pool.extend(g.deck.iter());
+            pool.extend(g.hidden);
+            shuffle(&mut pool, salt);
+            let nh = g.hands[foe].len();
+            g.hands[foe] = pool.drain(..nh).collect();
+            if g.hidden.is_some() {
+                g.hidden = pool.pop();
+            }
+            g.deck = pool;
+            // ce a aflat adversarul despre mine nu influențează alegerea mea
+            g.know[foe] = None;
+            g.rng = Rng::new(salt ^ 5);
+        });
     }
 }

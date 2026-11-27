@@ -179,3 +179,11 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    #[test]
+    fn ai_ignores_hidden_cards_at_all_levels() {
+        crate::q2_trick::a1_support::ai_is_blind_all_levels::<super::TarockRules>("tarock");
+    }
+}

@@ -40,4 +40,14 @@ mod tests {
     fn pestera_monstrilor_ok() {
         crate::brand_util::check(|s| Deck::with_seed(&CFG, s), 800);
     }
+
+    #[test]
+    fn ai_ignores_hidden_cards_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "pestera_monstrilor",
+            |s| crate::brand_util::B(Deck::with_seed(&CFG, s)),
+            |g, me, s| g.0.scramble(1 - me.idx(), s),
+            6,
+        );
+    }
 }

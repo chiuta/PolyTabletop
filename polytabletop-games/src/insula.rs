@@ -156,6 +156,8 @@ pub struct Insula {
     plies: u32,
     winner: Option<Outcome>,
     last: String,
+    /// Cartea furată de tâlhar în ultima mutare (jucător, resursă): evaluarea nu o citește (nu se știa).
+    stolen: Option<(usize, usize)>,
     rng: Rng,
 }
 
@@ -221,6 +223,7 @@ impl Insula {
             plies: 0,
             winner: None,
             last: String::new(),
+            stolen: None,
             rng,
         }
     }
@@ -545,6 +548,7 @@ impl Game for Insula {
         self.plies += 1;
         let me = self.side;
         self.last.clear();
+        self.stolen = None;
         match *m {
             Move::Settle(x) => {
                 let x = x as usize;
@@ -617,6 +621,7 @@ impl Game for Insula {
                 if adjacent {
                     if let Some(r) = self.take_random_card(opp) {
                         self.hands[me.idx()][r] += 1;
+                        self.stolen = Some((me.idx(), r));
                     }
                 }
                 self.phase = Phase::Main;
@@ -648,16 +653,23 @@ impl Game for Insula {
             s
         };
         let mut s = side(p) - side(p.other());
-        let h = &self.hands[p.idx()];
+        // cartea furată chiar acum de tâlhar vine din mâna reală a adversarului: nu se numără
+        let mut h = self.hands[p.idx()];
+        if let Some((who, r)) = self.stolen {
+            if who == p.idx() && h[r] > 0 {
+                h[r] -= 1;
+            }
+        }
         let total: i32 = h.iter().map(|&x| x as i32).sum();
         s += 3 * total.min(9);
         if total > 7 {
             s -= 6 * (total - 7);
         }
-        if self.afford(p, COST_SETTLE) {
+        let can = |cost: [u8; 5]| (0..5).all(|r| h[r] >= cost[r]);
+        if can(COST_SETTLE) {
             s += 40;
         }
-        if self.afford(p, COST_CITY) {
+        if can(COST_CITY) {
             s += 50;
         }
         // grâu/minereu pentru orașe
@@ -795,8 +807,10 @@ impl Game for Insula {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert aruncarea (zaruri viitoare)
+    /// și răspunsurile adversarului; evaluarea citește doar tabla, mâna proprie și numărul cărților adverse.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1058,5 +1072,30 @@ mod tests {
             }
         }
         assert!(ai > rnd, "AI {ai} vs random {rnd}");
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_zarurile_viitoare_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "insula",
+            Insula::with_seed,
+            |g, me, seed| {
+                // mâna adversarului: aceleași cărți (numărul e public), alte resurse; zarurile viitoare: alt RNG
+                let o = me.other().idx();
+                let n: u8 = g.hands[o].iter().sum();
+                let mut rng = Rng::new(seed);
+                g.hands[o] = [0; 5];
+                for _ in 0..n {
+                    g.hands[o][rng.below(5)] += 1;
+                }
+                g.rng = Rng::new(seed ^ 0x1515);
+            },
+            24,
+        );
     }
 }

@@ -140,6 +140,19 @@ impl DogGame {
         self.deck.reverse();
     }
 
+    /// Pentru teste (audit AI): re-amestecă tot ce nu vede `me` (mâna adversarului și pachetul).
+    #[cfg(test)]
+    pub fn scramble_hidden_for_test(&mut self, me: Player, seed: u64) {
+        let o = 1 - me.idx();
+        let n = self.hands[o].len();
+        let mut pool: Vec<u8> = self.hands[o].clone();
+        pool.extend(self.deck.iter().copied());
+        crate::p3_comun::shuffle_with(&mut pool, seed);
+        self.hands[o] = pool.drain(..n).collect();
+        self.hands[o].sort_unstable();
+        self.deck = pool;
+    }
+
     /// Pentru teste: mâna lui J1, mâna lui J2, piesele lui J2 și ale lui J1 (în această ordine pe ultimul parametru).
     #[cfg(test)]
     pub fn test_setup(&mut self, h1: &[u8], h2: &[u8], p2: &[i16; 4], p1: [i16; 4]) {
@@ -622,6 +635,8 @@ impl Game for DogGame {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }

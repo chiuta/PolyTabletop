@@ -510,7 +510,7 @@ impl Game for Okey {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -697,5 +697,19 @@ mod tests {
             n += 1;
         }
         assert!(n > 4);
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+
+    #[test]
+    fn ai_ignores_opponent_tiles_and_stock_at_all_levels() {
+        audit("okey", Okey::with_seed, 1..=4, 3, 70, |g, salt| {
+            let foe = g.side.other().idx();
+            scramble_pool(&mut g.hands[foe], &mut g.stock, salt);
+        });
     }
 }

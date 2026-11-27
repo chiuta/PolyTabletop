@@ -97,6 +97,25 @@ impl Misterul {
     fn first(&self) -> usize {
         (self.round % 2) as usize
     }
+    /// Pentru teste (audit AI): schimbă ce nu vede jucătorul `1 - hide` (alegerea secretă a lui `hide`,
+    /// dacă `1 - hide` e spion: locația și dacă `hide` e spion) și zarurile viitoare.
+    #[cfg(test)]
+    pub fn scramble(&mut self, hide: usize, seed: u64) {
+        let mut r = Rng::new(seed);
+        let me = 1 - hide;
+        if self.spy[me] {
+            self.spy[hide] = r.below(2) == 0;
+            self.loc = r.below(10);
+        }
+        if self.acts[hide].is_some() {
+            self.acts[hide] = Some(match r.below(12) {
+                0 => Act::Pas,
+                1 => Act::Acuz,
+                k => Act::Loc(k - 2),
+            });
+        }
+        self.rng = Rng::new(seed ^ 0x77);
+    }
     /// Locațiile compatibile cu răspunsurile primite de `p` (le tratează ca adevărate).
     fn cands(&self, p: usize) -> Vec<usize> {
         (0..10)
@@ -358,5 +377,15 @@ mod tests {
     #[test]
     fn misterul_ok() {
         check(Misterul::with_seed, 300);
+    }
+
+    #[test]
+    fn ai_ignores_hidden_information_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "misterul_locatiei",
+            |s| B(Misterul::with_seed(s)),
+            |g, me, s| g.0.scramble(1 - me.idx(), s),
+            14,
+        );
     }
 }

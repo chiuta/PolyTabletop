@@ -309,6 +309,21 @@ mod tests {
     }
 
     #[test]
+    fn ai_ignores_the_other_teams_secret_answer_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "pubquiz",
+            PubQuiz::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                if g.answers[h].is_some() {
+                    g.answers[h] = Some((s % 4) as u8);
+                }
+            },
+            12,
+        );
+    }
+
+    #[test]
     fn random_games_end_and_second_team_is_blind() {
         for seed in 1..=10u64 {
             let mut g = PubQuiz::with_seed(seed);

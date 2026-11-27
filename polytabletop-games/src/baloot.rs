@@ -406,8 +406,10 @@ impl Game for Baloot {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului din
+    /// mâna lui reală (și următoarea împărțire); evaluarea citește doar mâna proprie și datele publice.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -545,5 +547,33 @@ mod tests {
             }
             assert!(g.outcome().is_some(), "seed {seed}");
         }
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "baloot",
+            Baloot::with_seed,
+            |g, me, seed| {
+                let o = me.other().idx();
+                let mut pool: Vec<Card> = full_deck(7)
+                    .into_iter()
+                    .filter(|c| {
+                        !g.hands[me.idx()].contains(c) && !g.trick.iter().any(|&(_, x)| x == *c)
+                    })
+                    .collect();
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                let n = g.hands[o].len();
+                g.hands[o] = pool.into_iter().take(n).collect();
+                sort_hand(&mut g.hands[o]);
+                g.rng = Rng::new(seed ^ 0xBA);
+            },
+            12,
+        );
     }
 }

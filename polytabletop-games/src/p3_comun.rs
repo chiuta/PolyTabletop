@@ -78,3 +78,167 @@ pub fn honest_eval<G: Honest>(g: &G, p: Player, base: u64) -> i32 {
 pub fn lvl() -> u64 {
     level().factor_x10()
 }
+
+/// Test de onestitate (audit AI): pentru mai multe semințe ale AI-ului, mutarea AI-ului trebuie să rămână
+/// identică după ce `scramble` re-amestecă informația ascunsă a adversarului (mână, stoc, rol, țintă
+/// secretă, zaruri viitoare). `scramble(stare, la_mutare, sare)`. Se verifică `ai_move` la nivelul curent
+/// și căutarea cu adâncimile pe care le folosesc nivelurile Easy/Normal/Hard/Expert (fără a schimba
+/// nivelul global, ca testele care rulează în paralel să nu se influențeze): un `AlphaBeta(1)` ar
+/// extinde la Hard/Expert răspunsurile adversarului din mâna lui reală și ar pica aici.
+/// `checks` = câte poziții se verifică per partidă; partidele se joacă cu mutări aleatoare.
+#[cfg(test)]
+pub fn ai_blind_check<G: Game + 'static>(
+    name: &str,
+    mk: impl Fn(u64) -> G,
+    scramble: impl Fn(&mut G, Player, u64),
+    checks: usize,
+) {
+    ai_blind_check_with(name, mk, scramble, checks, 3, Term::Check);
+}
+
+/// Adâncimile căutării `AlphaBeta(d)` la Easy, Normal, Hard, Expert (oglinda lui `ai::best_move`).
+#[cfg(test)]
+fn level_depths(d: u32) -> [u32; 4] {
+    [
+        d.saturating_sub(1).max(1),
+        d,
+        if d <= 4 { d + 1 } else { d },
+        if d <= 6 { d + 1 } else { d },
+    ]
+}
+
+/// Cum se tratează mutările care încheie partida în `ai_blind_check_with`.
+#[cfg(test)]
+#[derive(Clone, Copy, PartialEq, Eq)]
+pub enum Term {
+    /// Sfârșitul partidei trebuie să fie același în lumea amestecată.
+    Check,
+    /// Se sar pozițiile din care o mutare poate încheia partida (rezultatul real e vizibil căutării doar
+    /// prin `Game::outcome`).
+    Skip,
+    /// Sfârșitul partidei poate depinde de informația ascunsă, dar nu schimbă decizia (ex.: «strig» e
+    /// mereu cea mai bună mutare când ai linie); nu se compară.
+    Ignore,
+}
+
+/// Ca [`ai_blind_check`], cu `stride` (se verifică pozițiile cu `pas % stride == 1`, sau toate dacă
+/// `stride <= 1`) și tratamentul mutărilor terminale (`term`).
+#[cfg(test)]
+pub fn ai_blind_check_with<G: Game + 'static>(
+    name: &str,
+    mk: impl Fn(u64) -> G,
+    scramble: impl Fn(&mut G, Player, u64),
+    checks: usize,
+    stride: usize,
+    term: Term,
+) {
+    use polytabletop_core::ai::alphabeta_root;
+    use polytabletop_core::{AiStyle, GameObj};
+    for seed in 1..=3u64 {
+        let mut g = mk(seed);
+        let depths: Vec<u32> = match Game::ai_style(&g) {
+            AiStyle::AlphaBeta(d) => level_depths(d).to_vec(),
+            _ => Vec::new(),
+        };
+        let mut rng = Rng::new(seed * 77 + 5);
+        let mut done = 0;
+        for step in 0..600usize {
+            if Game::outcome(&g).is_some() || done >= checks {
+                break;
+            }
+            let legal = Game::legal_moves(&g);
+            if legal.is_empty() {
+                break;
+            }
+            let due = stride <= 1 || step % stride == 1;
+            let ends = term == Term::Skip
+                && legal.iter().any(|m| {
+                    let mut c = g.clone();
+                    Game::apply(&mut c, m);
+                    Game::outcome(&c).is_some()
+                });
+            if legal.len() > 1 && due && !ends {
+                let me = Game::to_move(&g);
+                // valoarea fiecărei mutări (copilul evaluat la rădăcină) nu trebuie să depindă de ce nu se vede:
+                // prinde și scurgerile care nu schimbă (încă) cea mai bună mutare, inclusiv ordinea din Easy
+                let mut w = g.clone();
+                scramble(&mut w, me, step as u64 * 7 + 11);
+                for m in &legal {
+                    let (mut cg, mut cw) = (g.clone(), w.clone());
+                    Game::apply(&mut cg, m);
+                    Game::apply(&mut cw, m);
+                    let (og, ow) = (Game::outcome(&cg).is_some(), Game::outcome(&cw).is_some());
+                    if term != Term::Ignore {
+                        assert_eq!(
+                            og, ow,
+                            "{name} (seed {seed}, pas {step}): sfârșitul partidei după {m:?} depinde de informația ascunsă"
+                        );
+                    }
+                    if !og && !ow {
+                        assert_eq!(
+                            Game::evaluate(&cg, me),
+                            Game::evaluate(&cw, me),
+                            "{name} (seed {seed}, pas {step}): evaluarea după {m:?} depinde de informația ascunsă"
+                        );
+                    }
+                }
+                for ai_seed in [3u64, 99, 4242] {
+                    let mut h = g.clone();
+                    scramble(&mut h, me, step as u64 * 13 + ai_seed + 1);
+                    assert_eq!(
+                        GameObj::ai_move(&g, ai_seed),
+                        GameObj::ai_move(&h, ai_seed),
+                        "{name} (seed {seed}, pas {step}): AI-ul depinde de informația ascunsă a adversarului"
+                    );
+                    for &d in &depths {
+                        let (a, b) = (
+                            alphabeta_root(&g, d, ai_seed),
+                            alphabeta_root(&h, d, ai_seed),
+                        );
+                        assert!(
+                            a == b,
+                            "{name} (seed {seed}, pas {step}): AI-ul (adâncime {d}) depinde de informația ascunsă: {a:?} != {b:?}"
+                        );
+                    }
+                }
+                done += 1;
+            }
+            let m = legal[rng.below(legal.len())].clone();
+            Game::apply(&mut g, &m);
+        }
+        assert!(done > 0, "{name}: nicio poziție verificată");
+    }
+}
+
+/// Amestecă (determinist, din `seed`) o listă: ajutor pentru funcțiile `scramble` din teste.
+#[cfg(test)]
+pub fn shuffle_with<T>(v: &mut [T], seed: u64) {
+    let mut rng = Rng::new(seed ^ 0xA3A3_5EED);
+    for i in (1..v.len()).rev() {
+        let j = rng.below(i + 1);
+        v.swap(i, j);
+    }
+}
+
+/// Scramble generic pentru jocurile `Honest`: lume alternativă compatibilă cu ce vede jucătorul `me`.
+#[cfg(test)]
+pub fn honest_scramble<G: Honest>(g: &mut G, me: Player, seed: u64) {
+    g.forget_fresh();
+    let mut rng = Rng::new(seed);
+    *g = g.determinize(me, &mut rng);
+}
+
+/// Amestecă (pentru teste) mâna ascunsă și stocul: primele `keep_bottom` cărți din stoc (ex. atuul arătat)
+/// rămân la locul lor; restul și mâna se redistribuie la întâmplare, păstrând mărimile.
+#[cfg(test)]
+pub fn mix_unseen<T: Clone>(hand: &mut Vec<T>, stock: &mut Vec<T>, keep_bottom: usize, seed: u64) {
+    let n = hand.len();
+    let keep = keep_bottom.min(stock.len());
+    let bottom: Vec<T> = stock[..keep].to_vec();
+    let mut pool: Vec<T> = hand.clone();
+    pool.extend(stock[keep..].iter().cloned());
+    shuffle_with(&mut pool, seed);
+    *hand = pool.drain(..n).collect();
+    *stock = bottom;
+    stock.extend(pool);
+}

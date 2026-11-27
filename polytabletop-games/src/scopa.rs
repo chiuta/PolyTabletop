@@ -533,8 +533,10 @@ impl Game for Scopa {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului din
+    /// mâna lui reală (și noua împărțire din pachet); evaluarea citește doar datele publice.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -787,5 +789,46 @@ mod tests {
             }
         }
         assert!(wins * 10 >= n * 8, "AI won only {wins}/{n}");
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_pachetul_la_orice_nivel() {
+        for (name, rules) in [("scopa", Rules::Scopa), ("chkobba", Rules::Chkobba)] {
+            crate::p3_comun::ai_blind_check(
+                name,
+                |s| Scopa::with_rules(s, rules),
+                |g, me, seed| {
+                    let o = me.other().idx();
+                    let n = g.hands[o].len();
+                    let mut pool: Vec<u8> = g.hands[o].clone();
+                    pool.extend(g.stock.iter().copied());
+                    crate::p3_comun::shuffle_with(&mut pool, seed);
+                    g.hands[o] = pool.drain(..n).collect();
+                    g.stock = pool;
+                    g.rng = Rng::new(seed ^ 0x5C);
+                },
+                12,
+            );
+        }
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_stock_at_all_levels() {
+        audit("scopa", Scopa::with_seed, 1..=4, 3, 70, |g, salt| {
+            let foe = g.side.other().idx();
+            scramble_pool(&mut g.hands[foe], &mut g.stock, salt);
+            g.rng = Rng::new(salt ^ 3);
+        });
     }
 }

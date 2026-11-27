@@ -471,7 +471,9 @@ impl Game for CallGame {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -695,5 +697,32 @@ mod viewer_tests {
             let r = Game::render(&g);
             assert!(r.contains("Fișa Jucătorului 1:"), "{r}");
         }
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_opponent_card_and_bag_at_every_level() {
+        crate::p3_comun::ai_blind_check_with(
+            "loteria",
+            CallGame::loteria_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                let mut r = Rng::new(s);
+                g.cards[h] = make_card(g.kind, &mut r);
+                let drawn = g.drawn.clone();
+                g.marks[h] = g.cards[h]
+                    .iter()
+                    .map(|&v| v == 0 || drawn.contains(&v))
+                    .collect();
+                shuffle(&mut g.bag, &mut r);
+            },
+            3,
+            1,
+            crate::p3_comun::Term::Ignore,
+        );
     }
 }

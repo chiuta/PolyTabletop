@@ -166,6 +166,20 @@ impl Deck {
             }
         }
     }
+    /// Pentru teste (audit AI): amestecă tot ce nu poate vedea jucătorul `1 - hide`: mâna și pachetul
+    /// lui `hide`, ordinea propriului pachet al celui la mutare și viitoarele extrageri din rând.
+    #[cfg(test)]
+    pub fn scramble(&mut self, hide: usize, seed: u64) {
+        let mut pool: Vec<u8> = self.hand[hide].clone();
+        pool.extend(self.deck[hide].iter().copied());
+        let n = self.hand[hide].len();
+        crate::p3_comun::shuffle_with(&mut pool, seed);
+        self.hand[hide] = pool.drain(..n).collect();
+        self.deck[hide] = pool;
+        crate::p3_comun::shuffle_with(&mut self.deck[1 - hide], seed ^ 0x77);
+        self.rng = Rng::new(seed ^ 0xABCD);
+    }
+
     fn all_cards(&self, p: usize) -> impl Iterator<Item = &u8> {
         self.deck[p]
             .iter()

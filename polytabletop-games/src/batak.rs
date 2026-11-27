@@ -544,3 +544,20 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_information_at_every_level() {
+        crate::p3_comun::ai_blind_check_with(
+            "batak",
+            Batak::with_seed,
+            crate::p3_comun::honest_scramble::<Batak>,
+            2,
+            4,
+            crate::p3_comun::Term::Check,
+        );
+    }
+}

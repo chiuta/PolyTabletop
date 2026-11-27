@@ -293,3 +293,47 @@ mod t {
         assert!(v.show().contains("Mâna ta"));
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::audit;
+    use crate::brand_util::B;
+
+    #[test]
+    fn ai_ignores_opponent_hand_bag_and_future_draws_at_all_levels() {
+        audit(
+            "vama_bacsis",
+            |s| B(Vama::with_seed(s)),
+            1..=4,
+            1,
+            40,
+            |g, salt| {
+                let me = pi(Mini::side(&g.0));
+                let mut r = Rng::new(salt);
+                let m = g.0.merchant();
+                if me != m {
+                    // vameșul nu vede mâna negustorului, nici conținutul sacului (doar mărimea)
+                    let n = g.0.size();
+                    let mut bag = [0i32; 4];
+                    for _ in 0..n {
+                        bag[r.below(4)] += 1;
+                    }
+                    let mut hand = bag;
+                    while hand.iter().sum::<i32>() < 6 {
+                        hand[r.below(4)] += 1;
+                    }
+                    g.0.bag = bag;
+                    g.0.hand[m] = hand;
+                } else {
+                    let mut hand = [0i32; 4];
+                    for _ in 0..6 {
+                        hand[r.below(4)] += 1;
+                    }
+                    g.0.hand[1 - m] = hand;
+                }
+                g.0.rng = Rng::new(salt ^ 9);
+            },
+        );
+    }
+}

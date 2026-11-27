@@ -72,6 +72,9 @@ pub struct Canasta {
     side: Player,
     phase: Phase,
     out: Option<Player>,
+    /// Mâna și 3-urile roșii ale celui la mutare chiar înainte de `roba` (cărțile trase din stoc nu sunt
+    /// cunoscute la alegere): evaluarea pleacă de la ele, ca AI-ul să nu vadă vârful stocului.
+    pre_draw: Option<(Vec<Card>, u8)>,
     log: String,
     viewer: Viewer,
 }
@@ -146,6 +149,7 @@ impl Canasta {
             side: Player::One,
             phase: Phase::Draw,
             out: None,
+            pre_draw: None,
             log: String::new(),
             viewer: Viewer::Fixed(Player::One),
         };
@@ -190,6 +194,10 @@ impl Canasta {
 
     /// Scorul lui `p`. `vis` = estimare cu informații doar ale lui p (mâna proprie la jumătate).
     fn total(&self, p: Player, vis: bool) -> i32 {
+        self.total_from(p, vis, &self.hands[p.idx()], self.red3[p.idx()])
+    }
+
+    fn total_from(&self, p: Player, vis: bool, hand: &[Card], red3: u8) -> i32 {
         let i = p.idx();
         let mut s: i32 = self.melds[i].iter().map(|m| m.pts).sum();
         for m in &self.melds[i] {
@@ -197,7 +205,7 @@ impl Canasta {
                 s += if m.wild == 0 { 500 } else { 300 };
             }
         }
-        let r = match self.red3[i] {
+        let r = match red3 {
             4 => 800,
             n => 100 * n as i32,
         };
@@ -205,7 +213,7 @@ impl Canasta {
         if self.out == Some(p) {
             s += 100;
         }
-        let hp: i32 = self.hands[i].iter().map(|&c| card_pts(c)).sum();
+        let hp: i32 = hand.iter().map(|&c| card_pts(c)).sum();
         s -= if vis { hp / 2 } else { hp };
         s
     }
@@ -373,10 +381,12 @@ impl Game for Canasta {
 
     fn apply(&mut self, m: &Move) {
         self.log.clear();
+        self.pre_draw = None;
         let p = self.side;
         let pi = p.idx();
         match *m {
             Move::Draw => {
+                self.pre_draw = Some((self.hands[pi].clone(), self.red3[pi]));
                 for _ in 0..2 {
                     if let Some(c) = self.stock.pop() {
                         self.hands[pi].push(c);
@@ -481,7 +491,11 @@ impl Game for Canasta {
             }
             s + 100 * self.red3[i] as i32
         };
-        let mut s = self.total(p, true) - opp;
+        let mut s = match &self.pre_draw {
+            // două cărți necunoscute: în medie ~10 puncte fiecare, socotite pe jumătate (ca restul mâinii)
+            Some((hand, red3)) if self.side == p => self.total_from(p, true, hand, *red3) - 10,
+            _ => self.total(p, true),
+        } - opp;
         // pericol: aruncarea de sus poate fi luată de adversar
         if let Some(&top) = self.pile.last() {
             if self.side == q && self.phase == Phase::Draw {
@@ -590,7 +604,9 @@ impl Game for Canasta {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -735,5 +751,24 @@ mod tests {
             }
             assert!(g.outcome().is_some(), "seed {seed}");
         }
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_opponent_hand_and_stock_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "canasta",
+            Canasta::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                crate::p3_comun::mix_unseen(&mut g.hands[h], &mut g.stock, 0, s);
+                sort_hand(&mut g.hands[h]);
+            },
+            4,
+        );
     }
 }

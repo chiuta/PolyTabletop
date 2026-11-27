@@ -489,7 +489,7 @@ impl Game for Conac {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -655,5 +655,46 @@ mod tests {
         assert!(r.contains("Mâna Jucătorului 1"));
         assert!(!r.contains("Mâna Jucătorului 2"));
         assert!(!r.contains(&format!("Soluția: {}", card_name(g.solution.0 as usize))));
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit_seeds, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_solution_at_all_levels() {
+        audit_seeds(
+            "conac",
+            Conac::with_seed,
+            1..=2,
+            7,
+            50,
+            |g, salt| {
+                // adversarul (cel care nu mută) și soluția sunt necunoscute celui care mută;
+                // sugestiile deja arătate lui rămân (sunt istorie publică pentru el)
+                let me = g.to_move().idx();
+                let foe = 1 - me;
+                let mut pool: Vec<u8> = (0..N_CARDS as u8)
+                    .filter(|c| !g.hands[me].contains(c))
+                    .collect();
+                shuffle(&mut pool, salt);
+                let mut hand: Vec<u8> = Vec::new();
+                let mut sol = [255u8; 3];
+                let range = [0u8..6, 6..12, 12..21];
+                for (k, r) in range.iter().enumerate() {
+                    if let Some(i) = pool.iter().position(|c| r.contains(c)) {
+                        sol[k] = pool.remove(i);
+                    }
+                }
+                hand.extend(pool.drain(..9.min(pool.len())));
+                if sol.iter().all(|&c| c != 255) {
+                    g.hands[foe] = hand;
+                    g.solution = (sol[0], sol[1], sol[2]);
+                }
+            },
+            &[7],
+        );
     }
 }

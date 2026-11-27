@@ -601,3 +601,13 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_information_at_all_levels() {
+        crate::ai_audit_a1::audit_honest("chicken_foot", ChickenFoot::with_seed, 1..=2, 11, 60);
+    }
+}

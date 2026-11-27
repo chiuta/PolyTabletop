@@ -23,7 +23,7 @@
 //! Mutări: `stoc`, `talon`, `5o`, `inchide-5o`, `urmatoarea`.
 //!
 //! Informație ascunsă ca la `scopa.rs`: `render` arată doar mâna jucătorului vizualizat (și
-//! combinațiile ei); AI-ul (`AlphaBeta(1)`) citește doar propria mână și talonul; cartea trasă
+//! combinațiile ei); AI-ul (`AlphaBeta(0)`) citește doar propria mână și talonul; cartea trasă
 //! din stoc de jucătorul evaluat e ignorată (nu se „trișează” pe stoc).
 
 use crate::baraja_es::{deck, join, pos, sorted, suit, text};
@@ -557,7 +557,7 @@ impl Game for Chinchon {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -867,5 +867,22 @@ mod tests {
             }
         }
         assert!(wins * 10 >= n * 7, "AI won only {wins}/{n}");
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_stock_at_all_levels() {
+        audit("chinchon", Chinchon::with_seed, 1..=4, 2, 70, |g, salt| {
+            let foe = g.side.other().idx();
+            if g.phase != Phase::RoundOver {
+                scramble_pool(&mut g.hands[foe], &mut g.stock, salt);
+            }
+            g.rng = Rng::new(salt ^ 13);
+        });
     }
 }

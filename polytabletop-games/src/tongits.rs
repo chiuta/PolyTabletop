@@ -976,3 +976,22 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_opponent_hand_and_stock_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "tongits",
+            Tongits::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                crate::p3_comun::mix_unseen(&mut g.hands[h], &mut g.stock, 0, s);
+                sort_cards(&mut g.hands[h]);
+            },
+            6,
+        );
+    }
+}

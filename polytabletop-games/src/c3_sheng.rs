@@ -345,3 +345,26 @@ mod t {
         assert!(!v.show().contains("Mâna ta (J2)"));
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+    use crate::brand_util::B;
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_stock_at_all_levels() {
+        audit(
+            "atu_si_perechi",
+            |s| B(with_seed(s)),
+            1..=4,
+            3,
+            40,
+            |g, salt| {
+                let foe = 1 - g.0.side;
+                scramble_pool(&mut g.0.hands[foe], &mut g.0.stock, salt);
+                g.0.sort();
+            },
+        );
+    }
+}

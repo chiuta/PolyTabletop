@@ -270,3 +270,36 @@ mod tests {
         assert_eq!(a, ai_of(&h, 5));
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::audit;
+    use crate::brand_util::B;
+
+    #[test]
+    fn ai_ignores_opponent_hand_played_card_and_tastes_at_all_levels() {
+        audit(
+            "potrivirea_cuvintelor",
+            |s| B(Potrivirea::with_seed(s)),
+            1..=4,
+            1,
+            60,
+            |g, salt| {
+                let me = pi(Mini::side(&g.0));
+                let foe = 1 - me;
+                let mut r = Rng::new(salt);
+                for c in g.0.hand[foe].iter_mut() {
+                    *c = r.below(12) as u8;
+                }
+                if foe == 0 && g.0.played[0].is_some() {
+                    g.0.played[0] = Some(r.below(12) as u8);
+                }
+                for t in g.0.taste.iter_mut() {
+                    *t = r.below(5) as i32 - 2;
+                }
+                g.0.rng = Rng::new(salt ^ 77);
+            },
+        );
+    }
+}

@@ -406,7 +406,7 @@ impl Game for Whot {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -591,5 +591,20 @@ mod tests {
             }
         }
         assert!(wins * 10 >= n * 6, "AI won only {wins}/{n}");
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_market_at_all_levels() {
+        audit("whot", Whot::with_seed, 1..=4, 3, 90, |g, salt| {
+            let foe = g.side.other().idx();
+            scramble_pool(&mut g.hands[foe], &mut g.stock, salt);
+            g.rng = Rng::new(salt ^ 3);
+        });
     }
 }

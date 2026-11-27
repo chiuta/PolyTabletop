@@ -25,7 +25,7 @@
 //!   Ținte: `e2` personajul advers 2, `m1` al meu.
 //!
 //! Informația ascunsă: mâinile, pachetele și conținutul călimărilor; `render()`
-//! arată doar mâna J1. AI-ul (AlphaBeta(1)) are `evaluate` care citește doar
+//! arată doar mâna J1. AI-ul (AlphaBeta(0)) are `evaluate` care citește doar
 //! câmpul public, mâna proprie și NUMĂRUL cărților adverse.
 
 use polytabletop_core::rng::Rng;
@@ -810,7 +810,7 @@ impl Game for TcgCerneala {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1183,5 +1183,33 @@ mod viewer_tests {
         let a = Game::render(&g);
         Game::set_viewer(&mut g, Some(Player::Two));
         assert_ne!(a, Game::render(&g));
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_decks_at_all_levels() {
+        audit(
+            "tcg_cerneala",
+            TcgCerneala::with_seed,
+            1..=3,
+            6,
+            120,
+            |g, salt| {
+                let me = g.turn.idx();
+                let foe = 1 - me;
+                let mut pool: Vec<u8> = g.sides[foe].hand.clone();
+                pool.extend(g.sides[foe].deck.iter());
+                shuffle(&mut pool, salt);
+                let nh = g.sides[foe].hand.len();
+                g.sides[foe].hand = pool.drain(..nh).collect();
+                g.sides[foe].deck = pool;
+                shuffle(&mut g.sides[me].deck, salt ^ 1);
+            },
+        );
     }
 }

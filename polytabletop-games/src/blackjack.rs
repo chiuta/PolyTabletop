@@ -21,7 +21,7 @@
 //!
 //! Hidden information: the deck and the dealer's hole card are in the state;
 //! `render()` shows the dealer's up card and "[??]" until the dealer plays.
-//! The AI (`AlphaBeta(1)`) uses `evaluate()`, which computes the expected
+//! The AI (`AlphaBeta(0)`) uses `evaluate()`, which computes the expected
 //! result of the position with an infinite-deck model from the player's cards
 //! and the dealer's up card only (the card drawn by the last hit/double is
 //! ignored and replaced by its expectation). Limitation: it does not count
@@ -449,7 +449,7 @@ impl Game for Blackjack {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -673,5 +673,30 @@ mod tests {
             rnd_sum += score(r.as_ref());
         }
         assert!(ai_sum > rnd_sum, "ai {ai_sum} vs random {rnd_sum}");
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+
+    /// Jucătorul (AI-ul) nu vede nici cartea ascunsă a dealerului, nici pachetul.
+    #[test]
+    fn ai_ignores_hole_card_and_deck_at_all_levels() {
+        audit(
+            "blackjack",
+            Blackjack::with_seed,
+            1..=6,
+            1,
+            60,
+            |g, salt| {
+                shuffle(&mut g.deck, salt);
+                if g.phase == Phase::Player && g.dealer.len() >= 2 {
+                    g.dealer[1] = (salt % 52) as u8;
+                }
+                g.rng = Rng::new(salt ^ 3);
+            },
+        );
     }
 }

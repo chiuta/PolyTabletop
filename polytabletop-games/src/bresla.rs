@@ -557,7 +557,7 @@ impl Game for Bresla {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 
     fn render(&self) -> String {
@@ -755,5 +755,22 @@ mod tests {
             }
         }
         assert!(wins >= 18, "wins {wins}");
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_deck_orders_at_all_levels() {
+        audit("bresla", Bresla::with_seed, 1..=4, 4, 120, |g, salt| {
+            let foe = 1 - g.side.idx();
+            let me = g.side.idx();
+            scramble_pool(&mut g.hand[foe], &mut g.deck[foe], salt);
+            shuffle(&mut g.deck[me], salt ^ 1);
+            g.rng = Rng::new(salt ^ 7);
+        });
     }
 }

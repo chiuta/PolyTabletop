@@ -388,7 +388,9 @@ impl Game for Mariash {
         }
     }
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
@@ -444,5 +446,37 @@ mod tests {
         random_finishes(|s| Box::new(Mariash::with_seed(s)), 4, 1500);
         ai_vs_random(|s| Box::new(Mariash::with_seed(s)), 2, Player::One, 1500);
         ai_vs_random(|s| Box::new(Mariash::with_seed(s)), 3, Player::Two, 1500);
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_cards_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "mariash",
+            Mariash::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                let mut free: Vec<u8> = (0..32u8)
+                    .filter(|c| {
+                        !g.hands[me.idx()].contains(c)
+                            && !g.trick.iter().any(|t| t.1 == *c)
+                            && !(g.forhont == me.idx() && g.discards.contains(c))
+                    })
+                    .collect();
+                crate::p3_comun::shuffle_with(&mut free, s);
+                let n = g.hands[h].len();
+                g.hands[h] = free.drain(..n).collect();
+                g.hands[h].sort_unstable();
+                if g.forhont == h && !g.discards.is_empty() {
+                    let k = g.discards.len();
+                    g.discards = free.drain(..k).collect();
+                }
+            },
+            10,
+        );
     }
 }

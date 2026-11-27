@@ -918,6 +918,8 @@ pub mod pontoon;
 pub mod twoup;
 
 // Valul P3
+#[cfg(test)]
+mod ai_audit_a1;
 pub mod all_fours;
 pub mod bid_whist;
 pub mod bunco;

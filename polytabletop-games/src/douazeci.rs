@@ -88,6 +88,9 @@ pub enum Mv {
     Pick(u8),
     Ask(u8),
     Guess(u8),
+    /// Pas forțat după ultima mutare a jocului: abia acum se dezvăluie dacă ghicirea a fost corectă
+    /// (altfel o încercare reușită ar încheia jocul și AI-ul ar vedea obiectul secret).
+    Reveal,
 }
 
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
@@ -174,7 +177,7 @@ impl Douazeci {
                     r.log = format!("«{}» nu e obiectul.", ITEMS[i as usize].0);
                 }
             }
-            Mv::Pick(_) => {}
+            Mv::Pick(_) | Mv::Reveal => {}
         }
         if solved || r.used >= MAX_USED {
             r.cost[r.guesser()] += if solved { r.used as i32 } else { FAIL_COST };
@@ -228,6 +231,7 @@ impl Game for Douazeci {
     fn legal_moves(&self) -> Vec<Mv> {
         let r = self.resolved();
         match r.phase {
+            Phase::Over if self.pending.is_some() => vec![Mv::Reveal],
             Phase::Over => Vec::new(),
             Phase::Pick => (0..ITEMS.len() as u8).map(Mv::Pick).collect(),
             Phase::Ask => {
@@ -252,12 +256,16 @@ impl Game for Douazeci {
                     self.setter + 1
                 );
             }
+            Mv::Reveal => {}
             g => self.pending = Some(g),
         }
     }
     fn outcome(&self) -> Option<Outcome> {
-        let r = self.resolved();
-        (r.phase == Phase::Over).then(|| by_points(r.cost[1], r.cost[0]))
+        // cât timp ultima mutare e „în așteptare”, rezultatul nu se citește (nu depinde de secret)
+        if self.pending.is_some() {
+            return None;
+        }
+        (self.phase == Phase::Over).then(|| by_points(self.cost[1], self.cost[0]))
     }
     fn evaluate(&self, p: Player) -> i32 {
         let me = p.idx();
@@ -287,7 +295,7 @@ impl Game for Douazeci {
                         0.0
                     }
                 }
-                Mv::Pick(_) => 0.0,
+                Mv::Pick(_) | Mv::Reveal => 0.0,
             };
             let x = (val * 400.0) as i32;
             v += if self.guesser() == me { x } else { -x };
@@ -338,6 +346,8 @@ impl Game for Douazeci {
                 "\nLa mutare: Jucătorul {}.",
                 self.to_move().idx() + 1
             ));
+        } else if self.pending.is_some() {
+            s.push_str("\nScrie «dezvaluie».");
         }
         s
     }
@@ -346,10 +356,11 @@ impl Game for Douazeci {
             Mv::Pick(i) => format!("obiect {}", ITEMS[i as usize].0),
             Mv::Ask(q) => format!("intreb {q}"),
             Mv::Guess(i) => format!("este {}", ITEMS[i as usize].0),
+            Mv::Reveal => "dezvaluie".into(),
         }
     }
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
@@ -393,5 +404,63 @@ mod tests {
         let r = ai_vs_random(|s| Box::new(Douazeci::with_seed(s)), 2, Player::One, 400);
         assert!(r.is_some());
         ai_vs_random(|s| Box::new(Douazeci::with_seed(s)), 3, Player::Two, 400);
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::audit;
+
+    /// Un obiect secret alternativ, la fel de compatibil cu tot ce a aflat ghicitorul.
+    fn same_view_secret(g: &Douazeci, salt: u64) -> usize {
+        let n = ITEMS.len();
+        let ans = |i: usize, q: u8| ITEMS[i].1 >> q & 1;
+        for k in 0..n {
+            let c = (salt as usize + 1 + k) % n;
+            if c == g.secret {
+                continue;
+            }
+            let mut qs: Vec<u8> = g.answers.iter().map(|a| a.0).collect();
+            if let Some(Mv::Ask(q)) = g.pending {
+                qs.push(q);
+            }
+            let same = qs.iter().all(|&q| ans(c, q) == ans(g.secret, q));
+            let wrong_guess = match g.pending {
+                Some(Mv::Guess(i)) => i as usize != c,
+                _ => true,
+            };
+            if same && wrong_guess && !g.eliminated.contains(&(c as u8)) {
+                return c;
+            }
+        }
+        g.secret
+    }
+
+    #[test]
+    fn ai_ignores_the_secret_object_at_all_levels() {
+        audit("douazeci", Douazeci::with_seed, 1..=4, 1, 60, |g, salt| {
+            // doar ghicitorul nu cunoaște obiectul
+            let r = g.resolved();
+            if r.phase == Phase::Ask && g.to_move().idx() == r.guesser() {
+                g.secret = same_view_secret(g, salt);
+            }
+        });
+    }
+
+    #[test]
+    fn last_guess_is_not_decided_before_the_forced_reveal() {
+        // runda 2, ultima ghicire: rezultatul apare abia după `dezvaluie`
+        let mut g = Douazeci::with_seed(3);
+        g.apply(&Mv::Pick(0));
+        g.apply(&Mv::Guess(0));
+        g.apply(&Mv::Pick(1));
+        assert_eq!(g.outcome(), None);
+        g.apply(&Mv::Guess(1));
+        assert_eq!(g.outcome(), None);
+        assert_eq!(g.legal_moves(), vec![Mv::Reveal]);
+        g.apply(&Mv::Reveal);
+        assert!(g.outcome().is_some());
+        assert!(g.legal_moves().is_empty());
     }
 }

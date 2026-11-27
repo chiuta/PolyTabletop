@@ -345,4 +345,38 @@ mod tests {
     fn trei_ok() {
         check(Trei::with_seed, 300);
     }
+
+    #[test]
+    fn ai_nu_vede_cuvantul_secret_al_dataorului() {
+        // ghicitorul vede doar indiciul: orice alt cuvânt cu aceleași însușiri dezvăluite e o lume posibilă
+        crate::p3_comun::ai_blind_check(
+            "trei_runde5",
+            |s| B(Trei::with_seed(s)),
+            |g, me, seed| {
+                let t = &mut g.0;
+                if t.ph != Ph::Guess || me.idx() == t.giver() {
+                    return;
+                }
+                let (Some(c), true) = (t.clue, t.pos < t.order.len()) else {
+                    return;
+                };
+                let truth = t.secret();
+                let alt: Vec<usize> = t
+                    .cands()
+                    .into_iter()
+                    .filter(|&w| w != truth && t.consistent(w, c, truth))
+                    .collect();
+                if !alt.is_empty() {
+                    let at = t.order[t.pos];
+                    t.deck[at] = alt[seed as usize % alt.len()];
+                }
+                // cărțile încă netrase nu le știe nimeni
+                let from = t.pos + 1;
+                if from < t.order.len() {
+                    crate::p3_comun::shuffle_with(&mut t.order[from..], seed);
+                }
+            },
+            12,
+        );
+    }
 }

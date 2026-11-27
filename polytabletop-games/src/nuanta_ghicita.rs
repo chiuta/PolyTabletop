@@ -258,3 +258,26 @@ mod t {
         }
     }
 }
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_tinta_secreta_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "nuanta_ghicita",
+            |s| B(Nuanta::with_seed(s)),
+            |g, me, seed| {
+                let n = &mut g.0;
+                // ținta e secretă pentru ghicitor și cele viitoare nu le știe nimeni
+                n.rng = Rng::new(seed ^ 0x7a);
+                if me.idx() != n.giver() {
+                    let reg = n.region();
+                    n.target = reg[seed as usize % reg.len()];
+                }
+            },
+            12,
+        );
+    }
+}

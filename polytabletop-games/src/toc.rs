@@ -100,6 +100,16 @@ mod tests {
     }
 
     #[test]
+    fn ai_ignores_opponent_hand_and_deck() {
+        crate::p3_comun::ai_blind_check(
+            "toc",
+            Toc::with_seed,
+            |g, me, s| g.0.scramble_hidden_for_test(me, s),
+            4,
+        );
+    }
+
+    #[test]
     fn four_goes_backwards_and_start_square_blocks() {
         let mut g = DogGame::with_seed(RULES, 3);
         g.test_setup(&[6, 4], &[3], &[-1; 4], [-1, 5, 0, -1]);

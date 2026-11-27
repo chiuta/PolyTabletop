@@ -834,7 +834,7 @@ impl Game for Tarot {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1155,5 +1155,40 @@ mod tests {
             }
         }
         assert!(wins * 10 >= n * 7, "AI won only {wins}/{n}");
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit_seeds, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_hand_extra_cards_and_dog_at_all_levels() {
+        audit_seeds(
+            "tarot",
+            Tarot::with_seed,
+            1..=2,
+            6,
+            50,
+            |g, salt| {
+                let foe = g.side.other().idx();
+                let mut pool: Vec<u8> = g.hands[foe].clone();
+                pool.extend(g.extra[foe].iter());
+                let dog_unknown = g.phase == Phase::Bid;
+                if dog_unknown {
+                    pool.extend(g.dog.iter());
+                }
+                shuffle(&mut pool, salt);
+                let (nh, ne) = (g.hands[foe].len(), g.extra[foe].len());
+                g.hands[foe] = pool.drain(..nh).collect();
+                g.extra[foe] = pool.drain(..ne).collect();
+                if dog_unknown {
+                    g.dog = pool;
+                }
+                g.rng = Rng::new(salt ^ 3);
+            },
+            &[7],
+        );
     }
 }

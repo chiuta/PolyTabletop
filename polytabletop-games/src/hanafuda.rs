@@ -752,8 +752,10 @@ impl Game for Hanafuda {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert mutarea forțată `intoarce`
+    /// (vârful real al stocului) și răspunsul adversarului; evaluarea citește doar datele publice.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1030,6 +1032,38 @@ mod tests {
                     }
                 }
             }
+        }
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_stocul_la_orice_nivel() {
+        for (name, kind) in [("hanafuda", 0), ("hwatu", 1)] {
+            crate::p3_comun::ai_blind_check(
+                name,
+                |s| {
+                    if kind == 0 {
+                        Hanafuda::with_seed(s)
+                    } else {
+                        Hanafuda::go_stop_with_seed(s)
+                    }
+                },
+                |g, me, seed| {
+                    let o = me.other().idx();
+                    let n = g.hands[o].len();
+                    let mut pool: Vec<u8> = g.hands[o].clone();
+                    pool.extend(g.deck.iter().copied());
+                    crate::p3_comun::shuffle_with(&mut pool, seed);
+                    g.hands[o] = pool.drain(..n).collect();
+                    g.deck = pool;
+                    g.rng = Rng::new(seed ^ 0x4A);
+                },
+                12,
+            );
         }
     }
 }

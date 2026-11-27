@@ -633,3 +633,23 @@ mod tests {
         assert!(g.outcome().is_some());
     }
 }
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_information_at_every_level() {
+        crate::p3_comun::ai_blind_check_with(
+            "bigtwo",
+            BigTwo::with_seed,
+            |g, me, seed| {
+                let mut rng = Rng::new(seed);
+                *g = crate::p2_util::Mc::determinize(g, me, &mut rng);
+            },
+            2,
+            4,
+            crate::p3_comun::Term::Check,
+        );
+    }
+}

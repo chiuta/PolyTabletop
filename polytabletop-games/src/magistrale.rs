@@ -862,7 +862,9 @@ impl Game for Magistrale {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1055,5 +1057,46 @@ mod tests {
             }
         }
         assert!(ai >= rnd, "AI {ai} vs random {rnd}");
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_cards_and_tickets_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "magistrale",
+            Magistrale::with_seed,
+            |g, me, s| {
+                let h = 1 - me.idx();
+                let mut pool: Vec<u8> = Vec::new();
+                for c in 0..6 {
+                    for _ in 0..g.hands[h][c] {
+                        pool.push(c as u8);
+                    }
+                }
+                let n = pool.len();
+                pool.extend(g.deck.iter().copied());
+                crate::p3_comun::shuffle_with(&mut pool, s);
+                let mut hh = [0u8; 6];
+                for &c in &pool[..n] {
+                    hh[c as usize] += 1;
+                }
+                g.hands[h] = hh;
+                g.deck = pool[n..].to_vec();
+                for c in 0..6 {
+                    g.blind[h][c] = g.blind[h][c].min(g.hands[h][c]);
+                }
+                let nt = g.tickets[h].len();
+                let mut tp: Vec<usize> = g.tickets[h].clone();
+                tp.extend(g.ticket_deck.iter().copied());
+                crate::p3_comun::shuffle_with(&mut tp, s ^ 9);
+                g.tickets[h] = tp.drain(..nt).collect();
+                g.ticket_deck = tp;
+            },
+            4,
+        );
     }
 }

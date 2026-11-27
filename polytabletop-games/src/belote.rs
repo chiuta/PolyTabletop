@@ -699,8 +699,10 @@ impl Game for Belote {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului din
+    /// mâna lui reală (și împărțirea reală din stoc); `evaluate` determinizează tot ce nu se vede.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -961,5 +963,31 @@ mod tests {
             }
         }
         assert!(wins * 10 >= n * 7, "AI won only {wins}/{n}");
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_stocul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check_with(
+            "belote",
+            Belote::with_seed,
+            |g, me, seed| {
+                let o = me.other().idx();
+                let n = g.hands[o].len();
+                let mut pool: Vec<u8> = g.hands[o].clone();
+                pool.extend(g.stock.iter().copied());
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                g.hands[o] = pool.drain(..n).collect();
+                g.stock = pool;
+                g.rng = Rng::new(seed ^ 0xBE);
+            },
+            2,
+            4,
+            crate::p3_comun::Term::Check,
+        );
     }
 }

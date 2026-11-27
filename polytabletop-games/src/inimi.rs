@@ -286,7 +286,9 @@ impl Game for Inimi {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -326,5 +328,20 @@ mod tests {
         g.trick = vec![(Player::One, c(7, 1))];
         g.side = Player::Two;
         assert_eq!(g.legal_moves(), vec![Move::Play(c(9, 1))]);
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_cards_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "inimi",
+            Inimi::with_seed,
+            |g, me, s| g.scramble_hidden(me, s),
+            10,
+        );
     }
 }

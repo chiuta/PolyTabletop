@@ -348,8 +348,11 @@ impl Game for Domino9 {
         }
     }
 
+    /// Adâncime 0: o singură mutare, fără răspunsul adversarului. `best_move` mărește adâncimea la
+    /// Hard/Expert, iar `AlphaBeta(1)` ar fi extins atunci mutările adversarului din mâna lui reală
+    /// (și ar fi tras din stocul real); evaluarea citește doar lanțul și mâna proprie.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -390,6 +393,19 @@ mod tests {
                 assert!(n < 400);
             }
         }
+    }
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_si_stocul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "domino9",
+            Domino9::with_seed,
+            |g, me, seed| {
+                let o = me.other().idx();
+                crate::p3_comun::mix_unseen(&mut g.hands[o], &mut g.stock, 0, seed);
+            },
+            12,
+        );
     }
 
     #[test]

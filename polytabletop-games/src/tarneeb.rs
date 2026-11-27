@@ -369,7 +369,7 @@ impl Game for Tarneeb {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -445,5 +445,26 @@ mod tests {
             }
             assert!(g.outcome().is_some(), "seed {seed}");
         }
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, fake_cards};
+
+    #[test]
+    fn ai_ignores_opponent_hand_at_all_levels() {
+        audit("tarneeb", Tarneeb::with_seed, 1..=4, 3, 70, |g, salt| {
+            let foe = g.side.other().idx();
+            let mut ex: Vec<Card> = g.hands[g.side.idx()].clone();
+            ex.extend(g.trick.iter().map(|t| t.1));
+            let fake = fake_cards(full_deck(2), &ex, g.hands[foe].len(), salt);
+            if fake.len() == g.hands[foe].len() {
+                g.hands[foe] = fake;
+                sort_hand(&mut g.hands[foe]);
+            }
+            g.rng = Rng::new(salt ^ 3);
+        });
     }
 }

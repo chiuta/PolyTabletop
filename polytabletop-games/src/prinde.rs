@@ -313,8 +313,10 @@ impl Game for Prinde {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului din
+    /// mâna lui reală (și următoarea împărțire); evaluarea citește doar mâna proprie și datele publice.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -359,5 +361,23 @@ mod tests {
         g.apply(&Move::Play(c(10, 3)));
         g.apply(&Move::Play(c(3, 0)));
         assert_eq!(g.tricks, [0, 1]);
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_stocul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "prinde",
+            Prinde::with_seed,
+            |g, me, seed| {
+                g.scramble_hidden(me, seed);
+                g.rng = Rng::new(seed ^ 0x9811);
+            },
+            12,
+        );
     }
 }

@@ -134,6 +134,9 @@ struct Side {
     spent: u8,
     res_used: bool,
     tn: u16,
+    /// Cărți trase în pasul curent printr-o vrajă (la sfârșitul mâinii): evaluarea nu le citește,
+    /// ca AI-ul să nu vadă vârful propriului pachet.
+    blind: u8,
 }
 
 #[derive(Clone)]
@@ -231,6 +234,21 @@ impl Game5 {
         };
         g.begin_turn(0);
         g
+    }
+
+    /// Pentru teste (audit AI): amestecă ce nu vede jucătorul `1 - hide` (mâna, pachetul și scuturile
+    /// lui `hide`) și ordinea propriului pachet al celui la mutare.
+    #[cfg(test)]
+    pub fn scramble(&mut self, hide: usize, seed: u64) {
+        let (h, sh) = (self.s[hide].hand.len(), self.s[hide].shield.len());
+        let mut pool: Vec<u8> = self.s[hide].hand.clone();
+        pool.extend(self.s[hide].shield.iter().copied());
+        pool.extend(self.s[hide].deck.iter().copied());
+        crate::p3_comun::shuffle_with(&mut pool, seed);
+        self.s[hide].hand = pool.drain(..h).collect();
+        self.s[hide].shield = pool.drain(..sh).collect();
+        self.s[hide].deck = pool;
+        crate::p3_comun::shuffle_with(&mut self.s[1 - hide].deck, seed ^ 0x55);
     }
 
     fn avail(&self, i: usize) -> u8 {
@@ -501,7 +519,10 @@ impl Game5 {
         let killed = self.kill_dead(foe);
         self.kill_dead(me);
         if killed > 0 && self.spec.twist & T_TROPHY != 0 {
+            let before = self.s[me].hand.len();
             self.draw1(me);
+            let got = self.s[me].hand.len().saturating_sub(before) as u8;
+            self.s[me].blind = self.s[me].blind.saturating_add(got);
         }
     }
 
@@ -510,9 +531,12 @@ impl Game5 {
         let idx = |s: &str| s[1..].parse::<usize>().unwrap() - 1;
         match fx {
             Fx::Draw(n) => {
+                let before = self.s[me].hand.len();
                 for _ in 0..n {
                     self.draw1(me);
                 }
+                let got = self.s[me].hand.len().saturating_sub(before) as u8;
+                self.s[me].blind = self.s[me].blind.saturating_add(got);
             }
             Fx::Bolt(n) => {
                 if tgt.starts_with('e') {
@@ -666,7 +690,10 @@ impl Game5 {
         let s = &self.s[i];
         let mut v: i32 = s.board.iter().map(|u| self.unit_sc(u)).sum();
         if detail {
-            for &c in &s.hand {
+            // cărțile trase chiar acum printr-o vrajă nu se citesc (valoare medie fixă)
+            let seen = s.hand.len().saturating_sub(s.blind as usize);
+            v += 5 * (s.hand.len() - seen) as i32;
+            for &c in &s.hand[..seen] {
                 v += if c == SRC {
                     3
                 } else if (c as usize) < self.spec.units.len() {
@@ -761,6 +788,8 @@ impl Mini for Game5 {
     fn step(&mut self, m: &str) {
         let me = self.turn.idx();
         let sp = self.spec;
+        self.s[0].blind = 0;
+        self.s[1].blind = 0;
         let parts: Vec<&str> = m.split_whitespace().collect();
         match parts[0] {
             "fin" => self.end_turn(),
@@ -1047,6 +1076,18 @@ mod t {
             big: s.big,
             max_turns: s.max_turns,
             twist: s.twist,
+        }
+    }
+
+    #[test]
+    fn ai_ignores_hidden_cards_at_every_level() {
+        for spec in all_modes() {
+            crate::p3_comun::ai_blind_check(
+                spec.id,
+                |s| B(Game5::new(spec, s)),
+                |g, me, s| g.0.scramble(1 - me.idx(), s),
+                8,
+            );
         }
     }
 

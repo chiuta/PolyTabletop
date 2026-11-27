@@ -680,7 +680,12 @@ impl Game for Skat {
                     let dp = self.pts[d.idx()] as i32;
                     let op = self.pts[d.other().idx()] as i32;
                     if p == d {
-                        let pile: i32 = self.pile.iter().map(|&c| card_points(c) as i32).sum();
+                        // skat-ul nevăzut (joc din mână) nu se citește; cărțile puse jos le știe declarantul
+                        let pile: i32 = if self.hand_game {
+                            0
+                        } else {
+                            self.pile.iter().map(|&c| card_points(c) as i32).sum()
+                        };
                         s += (dp + pile - op) * 10;
                     } else {
                         s += (op - dp) * 10;
@@ -798,8 +803,10 @@ impl Game for Skat {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului din
+    /// mâna lui reală; evaluarea citește doar mâna proprie, scorurile publice și (nu) skat-ul.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1145,5 +1152,49 @@ mod tests {
             }
         }
         assert!(wins * 10 >= n * 7, "AI won only {wins}/{n}");
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_skat_ul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "skat",
+            Skat::with_seed,
+            |g, me, seed| {
+                let (m, o) = (me.idx(), 1 - me.idx());
+                let mut pool: Vec<u8> = (0..32u8)
+                    .filter(|c| {
+                        !g.hands[m].contains(c)
+                            && g.led != Some(*c)
+                            && !(g.declarer == me && g.pile.contains(c) && !g.hand_game)
+                    })
+                    .collect();
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                let n = g.hands[o].len();
+                g.hands[o] = pool.drain(..n).collect();
+                // skat-ul rămâne necunoscut jucătorului până nu îl ia în mână
+                let skat_unseen = matches!(
+                    g.phase,
+                    Phase::BidSay | Phase::BidHold | Phase::BidSolo | Phase::NoDeal | Phase::Pickup
+                ) || g.hand_game
+                    || g.declarer != me;
+                if skat_unseen {
+                    g.skat = [pool.pop().unwrap(), pool.pop().unwrap()];
+                    if g.hand_game {
+                        g.pile = g.skat.to_vec();
+                    }
+                }
+                if g.declarer == me.other() && !g.hand_game && !g.pile.is_empty() {
+                    let k = g.pile.len();
+                    g.pile = pool.drain(..k).collect();
+                }
+                g.rng = Rng::new(seed ^ 0x5CA7);
+            },
+            12,
+        );
     }
 }

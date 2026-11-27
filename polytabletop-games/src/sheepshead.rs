@@ -87,6 +87,8 @@ pub struct Sheepshead {
     viewer: Option<Player>,
     hands: [Vec<u8>; 2],
     blind: Vec<u8>,
+    /// Cele două cărți ale blindului luate de declarant (doar pentru evaluare: blindul nu se vede la `iau`).
+    took: Vec<u8>,
     buried: Vec<u8>,
     picker: Option<usize>,
     phase: Phase,
@@ -117,6 +119,7 @@ impl Sheepshead {
             viewer: None,
             hands: [Vec::new(), Vec::new()],
             blind: Vec::new(),
+            took: Vec::new(),
             buried: Vec::new(),
             picker: None,
             phase: Phase::Over,
@@ -148,6 +151,7 @@ impl Sheepshead {
         }
         self.hands = [d[0..10].to_vec(), d[10..20].to_vec()];
         self.blind = d[20..22].to_vec();
+        self.took.clear();
         self.buried.clear();
         self.picker = None;
         self.trick.clear();
@@ -273,6 +277,7 @@ impl Game for Sheepshead {
             (Mv::Pick, Phase::Bid(_)) => {
                 self.picker = Some(p);
                 let b = std::mem::take(&mut self.blind);
+                self.took = b.clone();
                 self.hands[p].extend(b);
                 self.phase = Phase::Bury;
                 self.log = format!("J{} ia blindul și îngroapă două cărți.", p + 1);
@@ -348,13 +353,20 @@ impl Game for Sheepshead {
         let me = pl.idx();
         let mut v = 300 * (self.scores[me] - self.scores[1 - me]);
         v += 10 * (self.taken[me] - self.taken[1 - me]);
-        v += Self::hand_strength(&self.hands[me]);
+        // imediat după `iau` blindul încă nu se vede: evaluarea nu-l citește (decizia de a lua nu depinde de el)
+        let blind_unseen = self.phase == Phase::Bury && self.buried.is_empty();
+        let seen: Vec<u8> = self.hands[me]
+            .iter()
+            .copied()
+            .filter(|c| !(blind_unseen && self.picker == Some(me) && self.took.contains(c)))
+            .collect();
+        v += Self::hand_strength(&seen);
         match self.phase {
             Phase::Bury | Phase::Play => {
                 if let Some(pk) = self.picker {
                     if self.phase == Phase::Bury && pk == me {
                         // cât de bună e mâna cu care a ales (blind încă nevăzut în mâna 'inițială')
-                        v += 4 * (Self::hand_strength(&self.hands[me]) - 100);
+                        v += 4 * (Self::hand_strength(&seen) - 100);
                     }
                     if pk == me {
                         v += 6 * self.buried.iter().map(|&c| points(c) as i32).sum::<i32>();
@@ -431,8 +443,10 @@ impl Game for Sheepshead {
             Mv::Play(c) => text(c),
         }
     }
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului
+    /// din mâna lui reală; evaluarea citește doar mâna proprie, punctele publice și (nu) blindul.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
@@ -475,6 +489,36 @@ mod tests {
         h.trick = vec![(0, 7)]; // as de treflă (fail ♣) cerut: J2 trebuie să dea treflă (6 = K♣)
         let m = GameObj::legal_moves(&h);
         assert_eq!(m, vec!["Kc"], "{m:?}");
+    }
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_blindul_si_cartile_ingropate() {
+        crate::p3_comun::ai_blind_check(
+            "sheepshead",
+            Sheepshead::with_seed,
+            |g, me, seed| {
+                let (m, o) = (me.idx(), 1 - me.idx());
+                let own_buried = g.picker == Some(m);
+                let mut pool: Vec<u8> = (0..32u8)
+                    .filter(|c| {
+                        !g.hands[m].contains(c)
+                            && !g.trick.iter().any(|&(_, x)| x == *c)
+                            && !(own_buried && g.buried.contains(c))
+                    })
+                    .collect();
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                let mut it = pool.into_iter();
+                let n = g.hands[o].len();
+                g.hands[o] = it.by_ref().take(n).collect();
+                let k = g.blind.len();
+                g.blind = it.by_ref().take(k).collect();
+                if g.picker == Some(o) {
+                    let b = g.buried.len();
+                    g.buried = it.by_ref().take(b).collect();
+                }
+            },
+            12,
+        );
     }
 
     #[test]

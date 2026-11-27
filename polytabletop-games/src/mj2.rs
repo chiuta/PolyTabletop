@@ -807,6 +807,11 @@ impl Game for Mj2 {
                 }
             }
             Move::Draw => {
+                if self.wall.is_empty() {
+                    self.phase = Phase::Over;
+                    self.msg = "Zidul s-a terminat: mână remiză.".into();
+                    return;
+                }
                 let t = self.take_tile(i, false);
                 self.drawn = Some(t);
                 self.phase = Phase::Discard;
@@ -823,7 +828,14 @@ impl Game for Mj2 {
                 self.drawn = None;
                 let r = me.other();
                 if self.reactions(r, t).is_empty() {
-                    self.begin_draw(r);
+                    if self.wall.is_empty() {
+                        // sfârșitul zidului nu depinde de mâna adversarului (altfel căutarea ar vedea dacă
+                        // poate reacționa): trecerea la „trage” a adversarului constată remiza
+                        self.side = r;
+                        self.phase = Phase::Draw;
+                    } else {
+                        self.begin_draw(r);
+                    }
                 } else {
                     self.side = r;
                     self.phase = Phase::React;
@@ -997,8 +1009,10 @@ impl Game for Mj2 {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert reacțiile adversarului
+    /// din mâna lui reală și ar fi tras din zidul real; evaluarea citește doar mâna proprie și datele publice.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -1105,6 +1119,68 @@ mod tests {
         assert!(r.0 >= 24);
     }
 
+    /// Re-amestecă tot ce `me` nu vede: mâna adversarului, zidul și zidul mort (florile rămân la locul lor).
+    fn scramble_unseen(g: &mut Mj2, me: Player, seed: u64) {
+        let o = me.other().idx();
+        let mut vals: Vec<u8> = Vec::new();
+        for t in 0..34u8 {
+            for _ in 0..g.counts[o][t as usize] {
+                vals.push(t);
+            }
+        }
+        let nh = vals.len();
+        let wi: Vec<usize> = (0..g.wall.len()).filter(|&i| g.wall[i] < 34).collect();
+        let di: Vec<usize> = (0..g.dead.len()).filter(|&i| g.dead[i] < 34).collect();
+        vals.extend(wi.iter().map(|&i| g.wall[i]));
+        vals.extend(di.iter().map(|&i| g.dead[i]));
+        crate::p3_comun::shuffle_with(&mut vals, seed);
+        g.counts[o] = [0; 34];
+        for &t in &vals[..nh] {
+            g.counts[o][t as usize] += 1;
+        }
+        for (k, &i) in wi.iter().enumerate() {
+            g.wall[i] = vals[nh + k];
+        }
+        for (k, &i) in di.iter().enumerate() {
+            g.dead[i] = vals[nh + wi.len() + k];
+        }
+    }
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_zidul_la_orice_nivel() {
+        for (name, v) in [
+            ("guobiao", Variant::Guobiao),
+            ("sichuan_mahjong", Variant::Sichuan),
+        ] {
+            crate::p3_comun::ai_blind_check(name, |s| Mj2::with_seed(v, s), scramble_unseen, 8);
+        }
+    }
+
+    #[test]
+    fn sfarsitul_zidului_nu_depinde_de_mana_adversarului() {
+        for v in [Variant::Sichuan, Variant::Guobiao] {
+            for seed in 1..=12u64 {
+                let mut g = Mj2::with_seed(v, seed);
+                if g.phase == Phase::Declare {
+                    g.apply(&Move::Declare(0));
+                    g.apply(&Move::Declare(1));
+                }
+                g.wall = vec![5];
+                g.apply(&Move::Draw);
+                assert!(g.wall.is_empty() && g.phase == Phase::Discard);
+                let mut w = g.clone();
+                scramble_unseen(&mut w, Player::One, seed * 31);
+                for m in g.legal_moves() {
+                    let (mut a, mut b) = (g.clone(), w.clone());
+                    a.apply(&m);
+                    b.apply(&m);
+                    assert_eq!(a.outcome(), b.outcome(), "seed {seed}, {m:?}");
+                    assert_eq!(a.evaluate(Player::One), b.evaluate(Player::One));
+                }
+            }
+        }
+    }
+
     #[test]
     fn random_games_end() {
         for v in [Variant::Sichuan, Variant::Guobiao] {
@@ -1121,5 +1197,43 @@ mod tests {
                 }
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit_seeds, shuffle};
+
+    #[test]
+    fn sichuan_ai_ignores_opponent_tiles_and_walls_at_all_levels() {
+        audit_seeds(
+            "sichuan_mahjong",
+            |s| Mj2::with_seed(Variant::Sichuan, s),
+            1..=3,
+            3,
+            90,
+            |g, salt| {
+                let foe = g.side.other().idx();
+                let mut pool: Vec<u8> = Vec::new();
+                for t in 0..34u8 {
+                    for _ in 0..g.counts[foe][t as usize] {
+                        pool.push(t);
+                    }
+                }
+                let n = pool.len();
+                let (nw, nd) = (g.wall.len(), g.dead.len());
+                pool.extend(g.wall.iter());
+                pool.extend(g.dead.iter());
+                shuffle(&mut pool, salt);
+                g.counts[foe] = [0; 34];
+                for &t in &pool[..n] {
+                    g.counts[foe][t as usize] += 1;
+                }
+                g.wall = pool[n..n + nw].to_vec();
+                g.dead = pool[n + nw..n + nw + nd].to_vec();
+            },
+            &[7],
+        );
     }
 }

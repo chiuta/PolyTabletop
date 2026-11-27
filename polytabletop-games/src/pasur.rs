@@ -657,3 +657,26 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit_seeds, scramble_pool};
+
+    #[test]
+    fn ai_ignores_opponent_hand_and_stock_at_all_levels() {
+        audit_seeds(
+            "pasur",
+            Pasur::with_seed,
+            1..=3,
+            5,
+            80,
+            |g, salt| {
+                let foe = g.side.other().idx();
+                scramble_pool(&mut g.hands[foe], &mut g.stock, salt);
+                g.rng = Rng::new(salt ^ 3);
+            },
+            &[7],
+        );
+    }
+}

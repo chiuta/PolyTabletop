@@ -89,6 +89,17 @@ impl Cadran {
     fn giver(&self) -> usize {
         (self.round % 2) as usize
     }
+    /// Pentru teste (audit AI): schimbă înclinația ascunsă a lui `hide`, ținta secretă (dacă `hide`
+    /// e dătătorul) și zarurile viitoare.
+    #[cfg(test)]
+    pub fn scramble(&mut self, hide: usize, seed: u64) {
+        let mut r = Rng::new(seed);
+        self.bias[hide] = r.below(7) as i32 - 3;
+        if self.giver() == hide && self.ph != Ph::Deal {
+            self.target = 2 + r.below(17) as i32;
+        }
+        self.rng = Rng::new(seed ^ 0x5151);
+    }
     /// Deplasarea medie a dătătorului g, deduse din istoricul public.
     fn est_off(&self, g: usize) -> i32 {
         let v: Vec<i32> = self
@@ -233,6 +244,16 @@ mod tests {
     #[test]
     fn cadran_ok() {
         check(Cadran::with_seed, 200);
+    }
+
+    #[test]
+    fn ai_ignores_hidden_information_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "cadranul_ascuns",
+            |s| B(Cadran::with_seed(s)),
+            |g, me, s| g.0.scramble(1 - me.idx(), s),
+            12,
+        );
     }
 
     #[test]

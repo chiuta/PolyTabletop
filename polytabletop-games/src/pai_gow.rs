@@ -455,7 +455,7 @@ impl Game for PaiGow {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -599,5 +599,27 @@ mod tests {
                 assert_eq!(g.chips[0] + g.chips[1], 200);
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+    use crate::ai_audit_a1::{audit, shuffle};
+
+    #[test]
+    fn ai_ignores_opponent_tiles_deck_and_arrangement_at_all_levels() {
+        audit("paigow", PaiGow::with_seed, 1..=4, 1, 40, |g, salt| {
+            let foe = 1 - g.to_move().idx();
+            let mut pool: Vec<u8> = g.hands[foe].to_vec();
+            pool.extend(g.deck.iter());
+            shuffle(&mut pool, salt);
+            g.hands[foe].copy_from_slice(&pool[..4]);
+            g.deck = pool[4..].to_vec();
+            if g.chosen[foe].is_some() {
+                g.chosen[foe] = Some((salt % 3) as u8);
+            }
+            g.rng = Rng::new(salt ^ 3);
+        });
     }
 }

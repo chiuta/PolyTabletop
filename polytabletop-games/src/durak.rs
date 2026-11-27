@@ -409,8 +409,10 @@ impl Game for Durak {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului din
+    /// mâna lui reală (și tragerea din pachetul real); evaluarea citește doar mâna proprie și datele publice.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -647,5 +649,31 @@ mod tests {
             }
         }
         assert!(wins * 10 >= n * 7, "AI won only {wins}/{n}");
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_pachetul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "durak",
+            Durak::with_seed,
+            |g, me, seed| {
+                // atuul de jos (stock[0]) e public; restul pachetului și mâna adversarului nu
+                let o = me.other().idx();
+                let n = g.hands[o].len();
+                let mut pool: Vec<u8> = g.hands[o].clone();
+                pool.extend(g.stock.iter().skip(1).copied());
+                crate::p3_comun::shuffle_with(&mut pool, seed);
+                g.hands[o] = pool.drain(..n).collect();
+                for (i, c) in pool.into_iter().enumerate() {
+                    g.stock[i + 1] = c;
+                }
+            },
+            12,
+        );
     }
 }

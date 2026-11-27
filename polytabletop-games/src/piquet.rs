@@ -16,7 +16,7 @@
 //!   12) +40 în loc de 10. **Repique**: 30 de puncte din declarații înainte ca adversarul să aibă vreunul → +60;
 //!   **pique**: elderul ajunge la 30 (declarații + joc) înainte ca dealerul să aibă vreun punct → +30.
 //!
-//! Mutări: `d7h` (aruncă 7♥), `gata`, carte (`Ah`, `10c`), `urmatoarea`. Informație ascunsă: vezi `p3_comun`.
+//! Mutări: `d7h` (aruncă 7♥), `gata`, `declara` (pas forțat: declarațiile se calculează abia acum), carte (`Ah`, `10c`), `urmatoarea`. Informație ascunsă: vezi `p3_comun`.
 #![allow(clippy::if_same_then_else)]
 #![allow(clippy::needless_range_loop, clippy::type_complexity)]
 
@@ -31,6 +31,9 @@ const DEALS: u32 = 6;
 enum Phase {
     ExchE,
     ExchY,
+    /// Pas forțat după ultimul schimb: abia acum se calculează declarațiile din mâinile definitive
+    /// (altfel o mutare `gata` le-ar arăta AI-ului din mâna reală a adversarului).
+    Decl,
     Play,
     HandOver,
     Over,
@@ -40,6 +43,7 @@ enum Phase {
 pub enum Move {
     Discard(Card),
     Done,
+    Declare,
     Play(Card),
     Next,
 }
@@ -387,6 +391,7 @@ impl Game for Piquet {
         match self.phase {
             Phase::Over => Vec::new(),
             Phase::HandOver => vec![Move::Next],
+            Phase::Decl => vec![Move::Declare],
             Phase::ExchE | Phase::ExchY => {
                 let p = self.side.idx();
                 let mut v = Vec::new();
@@ -434,15 +439,18 @@ impl Game for Piquet {
                     self.phase = Phase::ExchY;
                     self.side = self.dealer;
                 } else {
-                    for q in 0..2 {
-                        sort_hand(&mut self.hands[q]);
-                    }
-                    self.fresh = [0, 0];
-                    self.declarations();
-                    self.phase = Phase::Play;
-                    self.side = self.elder();
-                    self.leader = self.side;
+                    // cărțile abia trase rămân „proaspete” până la `declara` (AI-ul nu le vede)
+                    self.phase = Phase::Decl;
                 }
+            }
+            Move::Declare => {
+                for q in 0..2 {
+                    sort_hand(&mut self.hands[q]);
+                }
+                self.declarations();
+                self.phase = Phase::Play;
+                self.side = self.elder();
+                self.leader = self.side;
             }
             Move::Play(c) => {
                 let p = self.side;
@@ -532,6 +540,9 @@ impl Game for Piquet {
                 s.push_str("Mâna s-a încheiat. Scrie «urmatoarea».\n");
                 return s;
             }
+            Phase::Decl => {
+                s.push_str("Schimbul s-a încheiat. Scrie «declara» pentru declarații.\n");
+            }
             _ => {}
         }
         s.push_str(&format!(
@@ -570,6 +581,7 @@ impl Game for Piquet {
         match m {
             Move::Next => "urmatoarea".into(),
             Move::Done => "gata".into(),
+            Move::Declare => "declara".into(),
             Move::Discard(c) => format!("d{}", c.text()),
             Move::Play(c) => c.text(),
         }
@@ -732,6 +744,8 @@ mod tests {
         assert_eq!(g.hands[g.elder().idx()].len(), 12);
         assert_eq!(g.talon.len(), 7);
         g.apply(&Move::Done); // dealerul nu schimbă
+        assert_eq!(g.phase, Phase::Decl);
+        g.apply(&Move::Declare);
         assert_eq!(g.phase, Phase::Play);
     }
 
@@ -750,5 +764,31 @@ mod tests {
             }
             assert_eq!(g.deal_no, 6);
         }
+    }
+}
+
+#[cfg(test)]
+mod a1_blind {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_hidden_information_at_all_levels() {
+        // determinizarea Piquet pune în talon și cărțile aruncate de adversar: aducem talonul la
+        // mărimea publică, ca lumea alternativă să arate la fel (același render)
+        crate::ai_audit_a1::audit_seeds(
+            "piquet",
+            Piquet::with_seed,
+            1..=2,
+            11,
+            60,
+            |g, salt| {
+                let me = g.to_move();
+                let nt = g.talon.len();
+                g.forget_fresh();
+                *g = g.determinize(me, &mut Rng::new(salt));
+                g.talon.truncate(nt);
+            },
+            &[7],
+        );
     }
 }

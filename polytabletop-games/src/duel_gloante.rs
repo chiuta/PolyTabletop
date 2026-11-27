@@ -65,6 +65,20 @@ impl Duel {
             round: 0,
         }
     }
+    /// Pentru teste (audit AI): amestecă cărțile încă netrase ale lui `hide` și alegerea lui secretă.
+    #[cfg(test)]
+    pub fn scramble(&mut self, hide: usize, seed: u64) {
+        let from = self.idx[hide].min(MAG);
+        crate::p3_comun::shuffle_with(&mut self.mag[hide][from..], seed);
+        if self.choice[hide].is_some() {
+            self.choice[hide] = Some(match seed % 3 {
+                0 => Act::Foc,
+                1 => Act::Scut,
+                _ => Act::Pas,
+            });
+        }
+    }
+
     /// Probabilitatea (în sutimi) ca următoarea carte a lui `p` să fie încărcată, din informația publică.
     fn p_live(&self, p: usize) -> i32 {
         let left = MAG - self.idx[p];
@@ -205,6 +219,15 @@ mod t {
     #[test]
     fn plays() {
         crate::brand_util::check(Duel::with_seed, 100);
+    }
+    #[test]
+    fn ai_ignores_hidden_information_at_every_level() {
+        crate::p3_comun::ai_blind_check(
+            "duel_gloante",
+            |s| B(Duel::with_seed(s)),
+            |g, me, s| g.0.scramble(1 - me.idx(), s),
+            12,
+        );
     }
     #[test]
     fn ai_ignores_the_other_magazine_and_choice() {

@@ -67,13 +67,19 @@ pub enum Move {
     Draw,
     Insert(u8),
     Give(K),
+    /// Bomba trasă fără Dezamorsare explodează (mutare forțată: căutarea nu vede cartea din vârful pachetului).
+    Explode,
 }
 
 #[derive(Clone, Copy, PartialEq, Eq, Debug)]
 enum Phase {
     Turn,
     Insert,
-    Give { to: usize },
+    Give {
+        to: usize,
+    },
+    /// Ai tras Bomba fără Dezamorsare: urmează `Move::Explode`.
+    Boom,
 }
 
 #[derive(Clone)]
@@ -234,6 +240,7 @@ impl Fitil {
                 }
             }
             Move::Give(k) => -k.value(),
+            Move::Explode => 0,
             Move::Play(_) => -5,
         }
     }
@@ -286,6 +293,7 @@ impl Game for Fitil {
         }
         let p = self.side.idx();
         match self.phase {
+            Phase::Boom => vec![Move::Explode],
             Phase::Insert => (0..=self.deck.len())
                 .map(|d| Move::Insert(d as u8))
                 .collect(),
@@ -330,13 +338,16 @@ impl Game for Fitil {
                         self.phase = Phase::Insert;
                     } else {
                         self.discard.push(K::Bomba);
-                        self.winner = Some(self.side.other());
+                        self.phase = Phase::Boom;
                     }
                 } else {
                     self.hands[p].push(c);
                     self.hands[p].sort_by_key(|k| *k as u8);
                     self.advance_draw();
                 }
+            }
+            Move::Explode => {
+                self.winner = Some(self.side.other());
             }
             Move::Insert(d) => {
                 let d = d as usize;
@@ -415,8 +426,10 @@ impl Game for Fitil {
         }
     }
 
+    /// Adâncime 0 (o singură mutare): `AlphaBeta(1)` ar fi extins la Hard/Expert răspunsul adversarului
+    /// din mâna lui reală; evaluarea (`heur`) citește doar ce știe jucătorul care mută.
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 
     fn render(&self) -> String {
@@ -461,6 +474,10 @@ impl Game for Fitil {
                 self.side.idx() + 1,
                 self.deck.len()
             )),
+            Phase::Boom => s.push_str(&format!(
+                "Mută J{}: ai tras Bomba și nu ai Dezamorsare! Scrie «explodeaza».\n",
+                self.side.idx() + 1
+            )),
             Phase::Give { to } => s.push_str(&format!(
                 "Mută J{}: dă o carte lui J{} (dau <carte>).\n",
                 self.side.idx() + 1,
@@ -478,6 +495,7 @@ impl Game for Fitil {
     fn format_move(&self, m: &Move) -> String {
         match m {
             Move::Draw => "trag".into(),
+            Move::Explode => "explodeaza".into(),
             Move::Insert(d) => format!("dezamorsez {d}"),
             Move::Give(k) => format!("dau {}", k.name()),
             Move::Pair(k) => format!("pereche {}", k.name()),
@@ -518,6 +536,9 @@ mod tests {
         g.hands[0].retain(|k| *k != K::Dezamorsare);
         g.deck.push(K::Bomba);
         g.apply(&Move::Draw);
+        assert!(g.outcome().is_none());
+        assert_eq!(g.legal_moves(), vec![Move::Explode]);
+        g.apply(&Move::Explode);
         assert_eq!(g.outcome(), Some(Outcome::Win(Player::Two)));
     }
 
@@ -591,5 +612,40 @@ mod tests {
             }
         }
         assert!(wins >= 36, "wins {wins}");
+    }
+}
+
+#[cfg(test)]
+mod a2_audit {
+    use super::*;
+
+    #[test]
+    fn ai_nu_vede_mana_adversarului_nici_pachetul_la_orice_nivel() {
+        crate::p3_comun::ai_blind_check(
+            "fitil",
+            Fitil::with_seed,
+            |g, me, seed| {
+                // ce nu vede jucătorul: mâna adversarului și pachetul; rămân la loc cărțile pe care le-a privit
+                // și adâncimea Bombei pe care o știe
+                let (m, o) = (me.idx(), 1 - me.idx());
+                let len = g.deck.len();
+                let known_peek = g.peek[m].len().min(len);
+                let known_bomb = g.bomb_known[m];
+                let is_known = |d: usize| d < known_peek || known_bomb == Some(d);
+                let n = g.hands[o].len();
+                let mut rest: Vec<K> = g.hands[o].clone();
+                for d in (0..len).filter(|&d| !is_known(d)) {
+                    rest.push(g.deck[len - 1 - d]);
+                }
+                crate::p3_comun::shuffle_with(&mut rest, seed);
+                g.hands[o] = rest.drain(..n).collect();
+                g.hands[o].sort_by_key(|k| *k as u8);
+                for d in (0..len).filter(|&d| !is_known(d)) {
+                    g.deck[len - 1 - d] = rest.pop().unwrap();
+                }
+                g.rng = Rng::new(seed ^ 0xF171);
+            },
+            12,
+        );
     }
 }

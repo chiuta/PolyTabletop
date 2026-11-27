@@ -318,7 +318,9 @@ impl Game for Mima {
         }
     }
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
+        // răspunsurile adversarului din mâna lui reală (informație ascunsă).
+        AiStyle::AlphaBeta(0)
     }
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
@@ -348,5 +350,34 @@ mod tests {
         random_finishes(|s| Box::new(Mima::with_seed(s)), 6, 400);
         ai_vs_random(|s| Box::new(Mima::with_seed(s)), 2, Player::One, 400);
         ai_vs_random(|s| Box::new(Mima::with_seed(s)), 3, Player::Two, 400);
+    }
+}
+
+#[cfg(test)]
+mod a3_audit {
+    use super::*;
+
+    #[test]
+    fn ai_ignores_the_secret_word_at_every_level() {
+        // pozițiile din care o ghicire încheie partida (runda a doua) sunt sărite: acolo rezultatul real
+        // al partidei e, prin regulă, citit de `outcome` (vezi raportul de audit).
+        crate::p3_comun::ai_blind_check_with(
+            "mima",
+            Mima::with_seed,
+            |g, me, s| {
+                // verdictul unei ghiciri în așteptare e public: starea se rezolvă întâi
+                *g = g.resolved();
+                let hide = 1 - me.idx();
+                if g.setter == hide && matches!(g.phase, Phase::Hint | Phase::Guess) {
+                    let c = g.candidates();
+                    if !c.is_empty() {
+                        g.secret = c[(s as usize) % c.len()] as usize;
+                    }
+                }
+            },
+            8,
+            1,
+            crate::p3_comun::Term::Skip,
+        );
     }
 }

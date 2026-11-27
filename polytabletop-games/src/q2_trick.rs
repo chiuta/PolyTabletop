@@ -330,7 +330,7 @@ impl<R: TrickRules> Game for Tk<R> {
     }
 
     fn ai_style(&self) -> AiStyle {
-        AiStyle::AlphaBeta(1)
+        AiStyle::AlphaBeta(0)
     }
 }
 
@@ -384,4 +384,20 @@ macro_rules! trick_game {
             }
         }
     };
+}
+
+#[cfg(test)]
+pub mod a1_support {
+    use super::*;
+    use crate::ai_audit_a1::{audit, scramble_pool};
+
+    /// AI-ul nu depinde de mâna adversarului și de cărțile nedistribuite, la niciun nivel.
+    pub fn ai_is_blind_all_levels<R: TrickRules>(name: &str) {
+        audit(name, Tk::<R>::with_seed, 1..=3, 3, 60, |g, salt| {
+            let foe = g.side.other().idx();
+            scramble_pool(&mut g.hands[foe], &mut g.stock, salt);
+            Tk::<R>::sort(&mut g.hands[foe]);
+            g.rng = Rng::new(salt ^ 1);
+        });
+    }
 }
