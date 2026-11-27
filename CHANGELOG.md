@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.0
+- 1200 playable games: every catalog entry now maps to its own distinct playable game (own variants, original titles, public mechanics only), in the terminal and in the GUI.
+- Play in the browser: new `polytabletop-web` crate (WebAssembly) and the `/play/` page on the site, with 8 interface languages, AI levels, human-vs-AI and two humans on one screen; built by CI.
+- AI honesty audit across ~150 hidden-information engines: the AI no longer reads hidden cards or dice; hot-seat safe viewers.
+- Site: 1200 game pages with terminal and GUI media, rankings 100% playable, play-in-browser links.
+- Known limits: terminal outcome of a few games (mima, karuta, burako, litere, loteria) still depends on hidden information; translations of rules for fr/it/es/pt/de/hu are family templates.
+
 ## v0.9.2
 - 240 playable games (was 171): 69 new. Împletitura, Cursa probelor and Itinerar; 16 role-playing adventures on the new `aventura` engine (Turnul Zorilor, Arhiva Abisală, Ruinele Cartografilor, Noapte de Catifea, Pădurea de Sticlă, Neon și Rune, Târgul Ciumat, Insula celor Două Luni, Hoții din Ceață, Crucea de Cenușă, Strada de Oțel, Ținutul Furtunilor, Epava din Inelul Șapte, Fiordul Gheții Negre, Mlaștina Strigoilor, Satul Lanternelor); 15 African and Middle-Eastern games (Oware, Bao, Seega, Yote, Hus, Tâb, Senet, Whot!, Chkobba, Ronda, Sholo Guti, Aadu Puli, Mangala, Dama, Okey); 12 Asian and Iranian games (Riichi Mahjong, Sic Bo, Ashta Chamma, Daifugo, Tiến lên, Big Two, Tongits, Pasur, Hokm, Pishti, Court Piece, Call Break); 12 North American games (Pinochle, Gin Rummy, Crazy Eights, Pitch, Bid Whist, All Fours, Conquián, Chicken Foot, Bunco, Farkle, Liar's Dice, Crokinole); 11 Latin American and Oceanian games (Chinchón, Burako, Escoba, Cuarenta, Generala, Parqués, Five Hundred, Pontoon, Two-up, Ancora, Mu Torere). Titles and short rules of all 69 are translated into the 8 languages; rules pages in `docs/reguli/` (the 16 adventures are still pending).
 - Catalog: 1200 entries, the new games marked as implemented (239 implemented, 214 traditional planned, 475 own variants planned, 272 generic toolkit: 84 RPG systems, 93 miniatures, 95 collectible cards); `docs/CATALOG.md` and `docs/JOCURI.md` (240 games) regenerated; shell completions regenerated for 240 ids.
