@@ -1,6 +1,6 @@
 # Jocurile jucabile
 
-Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (1196 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
+Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (1200 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
 
 Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferență între majuscule/minuscule, spațiile se ignoră); `?` listează mutările legale, `hint` cere sugestia AI-ului, `q` iese.
 
@@ -955,6 +955,10 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Strigoi de târg](#strigoi_de_targ) (`strigoi_de_targ`)
 - [Giganți de oțel](#giganti_de_otel) (`giganti_de_otel`)
 - [Salve și baionete](#salve_si_baionete) (`salve_si_baionete`)
+- [Ur cu cinci piese (cursa scurtă)](#ur_scurt) (`ur_scurt`)
+- [Latrunculi mic (6×6)](#latrunculi_mic) (`latrunculi_mic`)
+- [Piatră, hârtie, foarfece — meci scurt](#rps_scurt) (`rps_scurt`)
+- [Tărâmuri în Furtună](#tarimuri_in_furtuna) (`tarimuri_in_furtuna`)
 - [Arena pietrelor](#arena_pietrelor) (`arena_pietrelor`)
 - [Chemarea hoardelor](#chemarea_hoardelor) (`chemarea_hoardelor`)
 - [Escadre în nebuloasă](#escadre_in_nebuloasa) (`escadre_in_nebuloasa`)
@@ -21603,6 +21607,87 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - Sintaxă din regulile jocului: mv, atq, tira, fin.
 - Exemple legale la început: `mv`, `a1>b1`
 - La început sunt 87 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ur_scurt"></a>
+## Ur cu cinci piese (cursa scurtă)
+
+- **Id:** `ur_scurt`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ur_scurt` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă proprie a cursei din Ur: 5 piese pe jucător, patru zaruri 0–4, drum de 14 pătrate; rozetele (4, 8 comună și sigură, 14) dau o nouă aruncare; capturezi pe pătratele comune.
+- Câștigă primul care scoate toate cele 5 piese.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: arunc, de-la-spre (ex. 0-3), pas.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="latrunculi_mic"></a>
+## Latrunculi mic (6×6)
+
+- **Id:** `latrunculi_mic`
+- **Categorie:** Clasic
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play latrunculi_mic` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă proprie pe tablă 6×6: 12 piese fiecare, toate mută ca turnul, captură în clește de către piesa mutată; câștigă cine lasă adversarul cu o piesă sau fără mutări (după 240 de semi-mutări, cine are mai multe piese).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: a2-a5.
+- Exemple legale la început: `a2-a3`, `a2-a4`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="rps_scurt"></a>
+## Piatră, hârtie, foarfece — meci scurt
+
+- **Id:** `rps_scurt`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play rps_scurt` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Piatra sparge foarfeca, foarfeca taie hârtia, hârtia acoperă piatra.
+- Alegeți în secret, apoi arătați; primul la 3 runde câștigate (maximum 9 runde, egalitățile se reiau).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: piatra, hartie, foarfeca, arat.
+- Exemple legale la început: `piatra`, `hartie`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tarimuri_in_furtuna"></a>
+## Tărâmuri în Furtună
+
+- **Id:** `tarimuri_in_furtuna`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tarimuri_in_furtuna` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi pe tablă 8×8 cu ziduri și teren greu.
+- Unități (hp/mișcare/rază/zaruri/armură): p = Paladinul 4/3/1/3/2 [C]; f = Furtunarul 2/3/4/3/0; g = Gardianul 5/2/1/2/3 [H]; z = Zburătorul 2/5/1/2/0 [L].
+- Pe tură activezi 3 unități: mv a1>b2, atq a1>b2, tira (aruncarea forțată), fin.
+- Câștigă cine elimină oastea adversă sau are mai multe puncte după 10 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 155 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="arena_pietrelor"></a>
 ## Arena pietrelor

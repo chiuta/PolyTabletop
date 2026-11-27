@@ -90,8 +90,12 @@ pub mod t1_rpg;
 pub mod t1_specs;
 // T1-mods-end
 // T3-mods-begin
+pub mod d1_extra;
+pub mod latrunculi_mic;
 pub mod mn_engine;
 pub mod mn_specs;
+pub mod rps_scurt;
+pub mod ur_scurt;
 // T3-mods-end
 // T6-mods-begin
 pub mod altarul_sutelor;
@@ -1091,6 +1095,7 @@ pub struct Playable {
 
 /// Games whose `render` honours `set_viewer` (hot-seat shows only the mover's private info).
 pub const HOTSEAT_SAFE: &[&str] = &[
+    "rps_scurt",
     "atu_si_perechi", // C3
     "trenuri",
     "forme6",
@@ -8123,6 +8128,34 @@ fn playable_base() -> Vec<Playable> {
             category: "Miniaturi",
             rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×8. Unități (hp/mișcare/rază/zaruri-forță/armură): l = Linie 3/2/3/2/0; g = Grenadier 3/3/1/3/1 [C]; t = Tun 2/1/6/3/0 [H]; h = Husar 3/5/1/2/0 [F]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde (sau 18 puncte). Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. C = încărcare. F = flanc. Mutări: mv, atq, tira, fin.",
             make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::SALVE_SI_BAIONETE))),
+        },
+        Playable {
+            id: "ur_scurt",
+            title: "Ur cu cinci piese (cursa scurtă)",
+            category: "Clasic",
+            rules: "Variantă proprie a cursei din Ur: 5 piese pe jucător, patru zaruri 0–4, drum de 14 pătrate; rozetele (4, 8 comună și sigură, 14) dau o nouă aruncare; capturezi pe pătratele comune. Câștigă primul care scoate toate cele 5 piese. Mutări: arunc, de-la-spre (ex. 0-3), pas.",
+            make: || Box::new(ur_scurt::UrScurt::new()),
+        },
+        Playable {
+            id: "latrunculi_mic",
+            title: "Latrunculi mic (6×6)",
+            category: "Clasic",
+            rules: "Variantă proprie pe tablă 6×6: 12 piese fiecare, toate mută ca turnul, captură în clește de către piesa mutată; câștigă cine lasă adversarul cu o piesă sau fără mutări (după 240 de semi-mutări, cine are mai multe piese). Mutări: a2-a5.",
+            make: || Box::new(latrunculi_mic::LatrunculiMic::new()),
+        },
+        Playable {
+            id: "rps_scurt",
+            title: "Piatră, hârtie, foarfece — meci scurt",
+            category: "Copii",
+            rules: "Piatra sparge foarfeca, foarfeca taie hârtia, hârtia acoperă piatra. Alegeți în secret, apoi arătați; primul la 3 runde câștigate (maximum 9 runde, egalitățile se reiau). Mutări: piatra, hartie, foarfeca, arat.",
+            make: || Box::new(rps_scurt::RpsScurt::new()),
+        },
+        Playable {
+            id: "tarimuri_in_furtuna",
+            title: "Tărâmuri în Furtună",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi pe tablă 8×8 cu ziduri și teren greu. Unități (hp/mișcare/rază/zaruri/armură): p = Paladinul 4/3/1/3/2 [C]; f = Furtunarul 2/3/4/3/0; g = Gardianul 5/2/1/2/3 [H]; z = Zburătorul 2/5/1/2/0 [L]. Pe tură activezi 3 unități: mv a1>b2, atq a1>b2, tira (aruncarea forțată), fin. Câștigă cine elimină oastea adversă sau are mai multe puncte după 10 runde.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&d1_extra::TARIMURI_IN_FURTUNA))),
         },
         Playable {
             id: "arena_pietrelor",

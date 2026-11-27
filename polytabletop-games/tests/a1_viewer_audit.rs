@@ -940,6 +940,9 @@ const NO_HIDDEN_T4: &[&str] = &[
     "culoare_de_otel",
 ];
 
+/// D1: variante proprii; informație complet publică.
+const NO_HIDDEN_D1: &[&str] = &["ur_scurt", "latrunculi_mic", "tarimuri_in_furtuna"];
+
 #[test]
 fn every_playable_id_is_classified() {
     let mut unclassified = Vec::new();
@@ -962,7 +965,8 @@ fn every_playable_id_is_classified() {
                 || NO_HIDDEN_C6.contains(&p.id)
                 || NO_HIDDEN_T1.contains(&p.id)
                 || NO_HIDDEN_T3.contains(&p.id)
-                || NO_HIDDEN_T4.contains(&p.id),
+                || NO_HIDDEN_T4.contains(&p.id)
+                || NO_HIDDEN_D1.contains(&p.id),
         ]
         .iter()
         .filter(|b| **b)
@@ -1002,6 +1006,7 @@ fn lists_have_no_stale_or_duplicate_ids() {
         ("NO_HIDDEN_T1", NO_HIDDEN_T1),
         ("NO_HIDDEN_T3", NO_HIDDEN_T3),
         ("NO_HIDDEN_T4", NO_HIDDEN_T4),
+        ("NO_HIDDEN_D1", NO_HIDDEN_D1),
     ] {
         let set: BTreeSet<&str> = l.iter().copied().collect();
         assert_eq!(set.len(), l.len(), "{name} has duplicates");

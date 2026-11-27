@@ -525,7 +525,7 @@ pub const CATALOG: &[E] = &[
         category: "Miniaturi",
         origin: "Marea Britanie",
         kind: Kind::Implemented,
-        impl_id: "miniaturi",
+        impl_id: "tarimuri_in_furtuna",
     },
     E {
         name: "Star Wars: X-Wing",
@@ -2142,7 +2142,7 @@ pub const CATALOG: &[E] = &[
         category: "Clasic",
         origin: "Mesopotamia",
         kind: Kind::Implemented,
-        impl_id: "ur",
+        impl_id: "ur_scurt",
     },
     E {
         name: "Keno",
@@ -2345,7 +2345,7 @@ pub const CATALOG: &[E] = &[
         category: "Clasic",
         origin: "Roma antică",
         kind: Kind::Implemented,
-        impl_id: "latrunculi",
+        impl_id: "latrunculi_mic",
     },
     E {
         name: "Rithmomachia",
@@ -7098,7 +7098,7 @@ pub const CATALOG: &[E] = &[
         category: "Copii",
         origin: "China",
         kind: Kind::Implemented,
-        impl_id: "rps",
+        impl_id: "rps_scurt",
     },
     E {
         name: "Ascunselea (Hide-and-seek)",
