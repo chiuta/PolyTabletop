@@ -1,0 +1,15 @@
+[package]
+name = "polytabletop-web"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "PolyTabletop în browser (WebAssembly): aceleași jocuri și același AI ca în terminal și GUI"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+polytabletop-core = { path = "../polytabletop-core" }
+polytabletop-games = { path = "../polytabletop-games" }
+wasm-bindgen = "0.2"

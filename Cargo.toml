@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["polytabletop-core", "polytabletop-games", "polytabletop", "polytabletop-gui", "polytabletop-rpg"]
+members = ["polytabletop-core", "polytabletop-games", "polytabletop", "polytabletop-gui", "polytabletop-rpg", "polytabletop-web"]
 default-members = ["polytabletop-core", "polytabletop-games", "polytabletop", "polytabletop-rpg"]
 
 [workspace.package]

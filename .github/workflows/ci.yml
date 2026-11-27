@@ -28,6 +28,22 @@ jobs:
           grep -E "^test .* FAILED|panicked at|^---- .* stdout" /tmp/test.log | head -20 | while read -r l; do echo "::error::$l"; done || true
           exit ${rc:-0}
 
+  web:
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dtolnay/rust-toolchain@1.97.0
+        with:
+          targets: wasm32-unknown-unknown
+          components: clippy
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo clippy -p polytabletop-web -- -D warnings
+      - name: WebAssembly build
+        env:
+          CARGO_PROFILE_RELEASE_CODEGEN_UNITS: "16"
+          CARGO_PROFILE_RELEASE_OPT_LEVEL: "s"
+        run: cargo build -p polytabletop-web --target wasm32-unknown-unknown --release
+
   gui:
     runs-on: ubuntu-26.04
     steps:

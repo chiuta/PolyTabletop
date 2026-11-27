@@ -300,6 +300,7 @@ for gid, _, cat in games:
 <section id="rules" aria-labelledby="rules-h">
 <h2 id="rules-h" data-i="pg_rules_h">Rules in short</h2>
 <p class="rules" data-ru>{esc(g['rules']['en'])}</p>
+<p><a class="btn" href="../play/?g={gid}" data-i="pg_play_web">▶ Play in your browser</a></p>
 <p><a href="{GH}{gid}.md" rel="noopener" data-i="pg_rules_full">Full rules page (in Romanian, on GitHub)</a></p>
 <p class="mut" data-i="pg_rules_note"></p>
 </section>

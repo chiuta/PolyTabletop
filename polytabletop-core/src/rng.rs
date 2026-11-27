@@ -42,8 +42,8 @@ impl Rng {
             z = (z ^ (z >> 27)).wrapping_mul(0x94D0_49BB_1331_11EB);
             return Rng::new(z ^ (z >> 31));
         }
-        let n = std::time::SystemTime::now()
-            .duration_since(std::time::UNIX_EPOCH)
+        let n = web_time::SystemTime::now()
+            .duration_since(web_time::UNIX_EPOCH)
             .map(|d| d.as_nanos() as u64)
             .unwrap_or(0x1234_5678);
         Rng::new(n)

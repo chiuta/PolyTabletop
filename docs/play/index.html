@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PolyTabletop — joacă în browser</title>
+<style>
+:root{--bg:#14161c;--pn:#1d2029;--fg:#e2e6ee;--dim:#8a93a3;--ac:#7dcdff;--bd:#2c3140;--ok:#7be0a0;--bad:#ff6973}
+@media (prefers-color-scheme:light){:root{--bg:#f4f5f8;--pn:#fff;--fg:#1b1e26;--dim:#5b6475;--ac:#0b6fb8;--bd:#d5d9e2;--ok:#127a3d;--bad:#c0212f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,sans-serif}
+header{display:flex;gap:.8rem;align-items:center;padding:.6rem 1rem;border-bottom:1px solid var(--bd);flex-wrap:wrap}
+header h1{font-size:1.05rem;margin:0}header a{color:var(--ac)}
+main{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:1rem;padding:1rem;max-width:1200px;margin:auto}
+@media(max-width:760px){main{grid-template-columns:1fr}}
+.pn{background:var(--pn);border:1px solid var(--bd);border-radius:10px;padding:.8rem}
+input,select,button{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:.35rem .55rem}
+button{cursor:pointer}button:hover{border-color:var(--ac)}button.pri{background:var(--ac);color:#06121c;border-color:var(--ac);font-weight:600}
+#list{max-height:60vh;overflow:auto;margin-top:.5rem}
+#list button{display:block;width:100%;text-align:left;margin:2px 0;border-color:transparent;background:transparent}
+#list button:hover{background:var(--bg)}#list .cat{color:var(--dim);font-size:.8rem;margin:.6rem 0 .1rem}
+pre#board{margin:.5rem 0;padding:.7rem;background:#0c0e13;color:#dfe5ee;border-radius:8px;overflow:auto;font:13px/1.25 ui-monospace,Menlo,Consolas,monospace;max-height:60vh}
+#moves{display:flex;flex-wrap:wrap;gap:.35rem;margin:.5rem 0}
+#status{font-weight:600;min-height:1.4em}.win{color:var(--ok)}.lose{color:var(--bad)}
+.row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin:.4rem 0}
+details{margin-top:.5rem;color:var(--dim)}details pre{white-space:pre-wrap;font:inherit;color:var(--fg)}
+#log{color:var(--dim);font-size:.85rem;max-height:7rem;overflow:auto}
+</style>
+</head>
+<body>
+<header><h1>PolyTabletop</h1><a id="home" href="../">←</a><span style="flex:1"></span>
+<select id="lang"></select></header>
+<main>
+<section class="pn"><input id="q" type="search" style="width:100%"><div id="list"></div></section>
+<section class="pn" id="game"><div id="welcome"></div>
+<div id="play" hidden>
+<div class="row"><h2 id="gtitle" style="margin:0;font-size:1.15rem"></h2></div>
+<div class="row"><label><span id="l_mode"></span> <select id="mode"></select></label>
+<label><span id="l_level"></span> <select id="level"></select></label>
+<button id="restart" class="pri"></button></div>
+<div id="status"></div><pre id="board"></pre><div id="moves"></div>
+<div class="row"><input id="mv" list="mvl" style="flex:1;min-width:10rem"><datalist id="mvl"></datalist><button id="go"></button></div>
+<div id="log"></div><details><summary id="l_rules"></summary><pre id="rules"></pre></details>
+</div></section>
+</main>
+<script type="module">
+const T={
+ro:{t:"joacă în browser",search:"Caută un joc…",all:"Toate",mode:"Mod",m0:"Joc primul contra AI",m1:"Joc al doilea contra AI",m2:"Doi oameni (același ecran)",level:"Nivel AI",lv:["Ușor","Normal","Greu","Expert"],restart:"Partidă nouă",go:"Joacă",ph:"Scrie o mutare…",rules:"Reguli",your:"Rândul tău",ai:"Mută AI-ul…",p:"Rândul jucătorului",win:"Ai câștigat!",lose:"A câștigat AI-ul.",wp:"A câștigat jucătorul",draw:"Remiză.",load:"Se încarcă motorul…",err:"Motorul WebAssembly nu s-a putut încărca.",pick:"Alege un joc din listă.",cnt:"jocuri",hot:"Jucătorul 2: apasă pentru a vedea mâna",show:"Arată mâna"},
+en:{t:"play in your browser",search:"Search a game…",all:"All",mode:"Mode",m0:"I play first vs AI",m1:"I play second vs AI",m2:"Two humans (same screen)",level:"AI level",lv:["Easy","Normal","Hard","Expert"],restart:"New game",go:"Play",ph:"Type a move…",rules:"Rules",your:"Your move",ai:"AI is thinking…",p:"Player to move:",win:"You won!",lose:"The AI won.",wp:"Winner: player",draw:"Draw.",load:"Loading engine…",err:"Could not load the WebAssembly engine.",pick:"Pick a game from the list.",cnt:"games",hot:"",show:"Show hand"},
+fr:{t:"jouer dans le navigateur",search:"Chercher un jeu…",all:"Tous",mode:"Mode",m0:"Je joue en premier contre l'IA",m1:"Je joue en second contre l'IA",m2:"Deux humains (même écran)",level:"Niveau IA",lv:["Facile","Normal","Difficile","Expert"],restart:"Nouvelle partie",go:"Jouer",ph:"Saisir un coup…",rules:"Règles",your:"À vous de jouer",ai:"L'IA réfléchit…",p:"Joueur au trait :",win:"Vous avez gagné !",lose:"L'IA a gagné.",wp:"Gagnant : joueur",draw:"Match nul.",load:"Chargement du moteur…",err:"Impossible de charger le moteur WebAssembly.",pick:"Choisissez un jeu dans la liste.",cnt:"jeux",hot:"",show:"Montrer la main"},
+it:{t:"gioca nel browser",search:"Cerca un gioco…",all:"Tutti",mode:"Modalità",m0:"Gioco per primo contro l'IA",m1:"Gioco per secondo contro l'IA",m2:"Due persone (stesso schermo)",level:"Livello IA",lv:["Facile","Normale","Difficile","Esperto"],restart:"Nuova partita",go:"Gioca",ph:"Scrivi una mossa…",rules:"Regole",your:"Tocca a te",ai:"L'IA sta pensando…",p:"Tocca al giocatore:",win:"Hai vinto!",lose:"Ha vinto l'IA.",wp:"Vince il giocatore",draw:"Pareggio.",load:"Caricamento del motore…",err:"Impossibile caricare il motore WebAssembly.",pick:"Scegli un gioco dall'elenco.",cnt:"giochi",hot:"",show:"Mostra la mano"},
+es:{t:"jugar en el navegador",search:"Buscar un juego…",all:"Todos",mode:"Modo",m0:"Juego primero contra la IA",m1:"Juego segundo contra la IA",m2:"Dos personas (misma pantalla)",level:"Nivel de IA",lv:["Fácil","Normal","Difícil","Experto"],restart:"Partida nueva",go:"Jugar",ph:"Escribe una jugada…",rules:"Reglas",your:"Tu turno",ai:"La IA piensa…",p:"Turno del jugador:",win:"¡Has ganado!",lose:"Ganó la IA.",wp:"Gana el jugador",draw:"Tablas.",load:"Cargando el motor…",err:"No se pudo cargar el motor WebAssembly.",pick:"Elige un juego de la lista.",cnt:"juegos",hot:"",show:"Mostrar la mano"},
+pt:{t:"jogar no navegador",search:"Procurar um jogo…",all:"Todos",mode:"Modo",m0:"Jogo primeiro contra a IA",m1:"Jogo em segundo contra a IA",m2:"Duas pessoas (mesmo ecrã)",level:"Nível da IA",lv:["Fácil","Normal","Difícil","Especialista"],restart:"Novo jogo",go:"Jogar",ph:"Escreva uma jogada…",rules:"Regras",your:"A sua vez",ai:"A IA está a pensar…",p:"Vez do jogador:",win:"Ganhou!",lose:"A IA ganhou.",wp:"Vence o jogador",draw:"Empate.",load:"A carregar o motor…",err:"Não foi possível carregar o motor WebAssembly.",pick:"Escolha um jogo da lista.",cnt:"jogos",hot:"",show:"Mostrar a mão"},
+de:{t:"im Browser spielen",search:"Spiel suchen…",all:"Alle",mode:"Modus",m0:"Ich beginne gegen die KI",m1:"Ich ziehe als Zweiter gegen die KI",m2:"Zwei Menschen (ein Bildschirm)",level:"KI-Stufe",lv:["Leicht","Normal","Schwer","Experte"],restart:"Neue Partie",go:"Ziehen",ph:"Zug eingeben…",rules:"Regeln",your:"Du bist am Zug",ai:"Die KI überlegt…",p:"Am Zug ist Spieler",win:"Du hast gewonnen!",lose:"Die KI hat gewonnen.",wp:"Sieger: Spieler",draw:"Unentschieden.",load:"Engine wird geladen…",err:"Die WebAssembly-Engine konnte nicht geladen werden.",pick:"Wähle ein Spiel aus der Liste.",cnt:"Spiele",hot:"",show:"Hand zeigen"},
+hu:{t:"játék a böngészőben",search:"Játék keresése…",all:"Mind",mode:"Mód",m0:"Én kezdek az MI ellen",m1:"Én vagyok a második az MI ellen",m2:"Két ember (egy képernyő)",level:"MI-szint",lv:["Könnyű","Normál","Nehéz","Szakértő"],restart:"Új játszma",go:"Lépés",ph:"Írj egy lépést…",rules:"Szabályok",your:"Te jössz",ai:"Az MI gondolkodik…",p:"Soron lévő játékos:",win:"Nyertél!",lose:"Az MI nyert.",wp:"Nyertes: játékos",draw:"Döntetlen.",load:"A motor betöltése…",err:"A WebAssembly-motor nem tölthető be.",pick:"Válassz egy játékot a listából.",cnt:"játék",hot:"",show:"Kéz mutatása"}};
+const $=id=>document.getElementById(id);
+const qs=new URLSearchParams(location.search);
+let lang=qs.get('lang')||localStorage.getItem('ptt_lang')||(navigator.language||'en').slice(0,2);
+if(!T[lang])lang='en';
+let W,games=[],cur=null,M=null,busy=false;
+const tr=()=>T[lang];
+function ui(){const t=tr();document.documentElement.lang=lang;document.title='PolyTabletop — '+t.t;
+$('q').placeholder=t.search;$('l_mode').textContent=t.mode;$('l_level').textContent=t.level;$('restart').textContent=t.restart;$('go').textContent=t.go;$('mv').placeholder=t.ph;$('l_rules').textContent=t.rules;
+$('mode').innerHTML=[0,1,2].map(i=>`<option value="${i}">${t['m'+i]}</option>`).join('');
+$('level').innerHTML=t.lv.map((l,i)=>`<option value="${i}"${i==1?' selected':''}>${l}</option>`).join('');
+if(!cur)$('welcome').textContent=t.pick;$('home').href='../?lang='+lang}
+$('lang').innerHTML=Object.keys(T).map(l=>`<option value="${l}"${l==lang?' selected':''}>${l.toUpperCase()}</option>`).join('');
+$('lang').onchange=e=>{lang=e.target.value;localStorage.setItem('ptt_lang',lang);ui();loadList();if(cur)select(cur.id,true)};
+function loadList(){games=JSON.parse(W.games_json(lang));renderList()}
+function renderList(){const f=$('q').value.trim().toLowerCase();const by={};
+for(const g of games){if(f&&!g.title.toLowerCase().includes(f)&&!g.id.includes(f))continue;(by[g.cat]??=[]).push(g)}
+let h='';for(const c of Object.keys(by).sort()){h+=`<div class="cat">${c} (${by[c].length})</div>`;for(const g of by[c].sort((a,b)=>a.title.localeCompare(b.title,lang)))h+=`<button data-id="${g.id}">${g.title.replace(/</g,'&lt;')}</button>`}
+$('list').innerHTML=h||'—'}
+$('q').oninput=renderList;
+$('list').onclick=e=>{const b=e.target.closest('button');if(b)select(b.dataset.id)};
+function select(id,keep){cur=games.find(g=>g.id==id);if(!cur)return;history.replaceState(null,'','?g='+id+'&lang='+lang);
+$('welcome').hidden=true;$('play').hidden=false;$('gtitle').textContent=cur.title;
+$('rules').textContent=W.rules_text(id,lang);start()}
+function start(){const mode=+$('mode').value;W.set_ai(+$('level').value,400);
+M=new W.Match(cur.id,mode,Math.floor(Math.random()*9007199254740991));$('log').textContent='';refresh()}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function log(s){$('log').innerHTML=esc(s)+'<br>'+$('log').innerHTML}
+function refresh(){const t=tr();$('board').textContent=M.render();const out=M.outcome();const mode=+$('mode').value;
+const mv=JSON.parse(M.moves());$('mvl').innerHTML=mv.map(m=>`<option value="${esc(m)}">`).join('');
+$('moves').innerHTML=out||M.ai_turn()?'':(mv.length<=80?mv.map(m=>`<button data-m="${esc(m)}">${esc(m)}</button>`).join(''):'');
+const st=$('status');st.className='';
+if(out){if(out=='d')st.textContent=t.draw;else if(mode==2)st.textContent=t.wp+' '+out;else{const me=mode==0?'1':'2';st.textContent=out==me?t.win:t.lose;st.className=out==me?'win':'lose'}return}
+if(M.ai_turn()){st.textContent=t.ai;busy=true;setTimeout(()=>{const m=M.ai_step();if(m)log('AI: '+m);busy=false;refresh()},40)}
+else st.textContent=mode==2?t.p+' '+M.to_move():t.your}
+async function doMove(m){if(busy||!M)return;const r=M.play(m);if(r.startsWith('!')){$('status').textContent=r.slice(1);return}log('› '+r);$('mv').value='';refresh()}
+$('moves').onclick=e=>{const b=e.target.closest('button');if(b)doMove(b.dataset.m)};
+$('go').onclick=()=>doMove($('mv').value);$('mv').onkeydown=e=>{if(e.key=='Enter')doMove($('mv').value)};
+$('restart').onclick=()=>cur&&start();$('mode').onchange=$('level').onchange=()=>cur&&start();
+ui();$('welcome').textContent=tr().load;
+try{W=await import('./pkg/polytabletop_web.js');await W.default();loadList();$('welcome').textContent=tr().pick+' ('+games.length+' '+tr().cnt+')';
+const g=qs.get('g');if(g)select(g)}catch(e){console.error(e);$('welcome').textContent=tr().err}
+</script>
+</body>
+</html>

@@ -5,7 +5,8 @@ use crate::rng::Rng;
 use crate::{AiStyle, Game, Outcome, Player};
 use std::sync::atomic::{AtomicU64, AtomicU8, Ordering};
 use std::sync::OnceLock;
-use std::time::{Duration, Instant};
+use std::time::Duration;
+use web_time::Instant;
 
 const WIN: i32 = 1_000_000;
 

@@ -1713,6 +1713,9 @@ dependencies = [
 [[package]]
 name = "polytabletop-core"
 version = "0.1.0"
+dependencies = [
+ "web-time",
+]
 
 [[package]]
 name = "polytabletop-games"
@@ -1736,6 +1739,15 @@ name = "polytabletop-rpg"
 version = "0.1.0"
 dependencies = [
  "polytabletop-core",
+]
+
+[[package]]
+name = "polytabletop-web"
+version = "0.1.0"
+dependencies = [
+ "polytabletop-core",
+ "polytabletop-games",
+ "wasm-bindgen",
 ]
 
 [[package]]

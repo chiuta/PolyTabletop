@@ -76,7 +76,7 @@ _n_play = len(_re.findall(r'id: "[^"]+",\s*title:', open(f'{root}/polytabletop-g
 if n_pages != _n_play or n_pages < 240: err.append(f'pagini {n_pages} != jocuri jucabile {_n_play}')
 sizes = [os.path.getsize(f) for f in glob.glob(f'{docs}/jocuri/*.html') if not f.endswith('index.html')]
 print('dimensiune index', os.path.getsize(f'{docs}/index.html'), 'pagini max', max(sizes))
-if max(sizes) > 60000: err.append('pagină > 60 KB')
+if max(sizes) > 64000: err.append('pagină > 64 KB')
 print('lipsă media (încă negenerată):', len(media_missing))
 print('ERORI:' if err else 'OK: nicio eroare', *err[:40], sep='\n')
 sys.exit(1 if err else 0)
