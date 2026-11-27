@@ -28,14 +28,14 @@ details{margin-top:.5rem;color:var(--dim)}details pre{white-space:pre-wrap;font:
 </head>
 <body>
 <header><h1>PolyTabletop</h1><a id="home" href="../">←</a><span style="flex:1"></span>
-<select id="lang"></select></header>
+<select id="lang" autocomplete="off"></select></header>
 <main>
 <section class="pn"><input id="q" type="search" style="width:100%"><div id="list"></div></section>
 <section class="pn" id="game"><div id="welcome"></div>
 <div id="play" hidden>
 <div class="row"><h2 id="gtitle" style="margin:0;font-size:1.15rem"></h2></div>
-<div class="row"><label><span id="l_mode"></span> <select id="mode"></select></label>
-<label><span id="l_level"></span> <select id="level"></select></label>
+<div class="row"><label><span id="l_mode"></span> <select id="mode" autocomplete="off"></select></label>
+<label><span id="l_level"></span> <select id="level" autocomplete="off"></select></label>
 <button id="restart" class="pri"></button></div>
 <div id="status"></div><pre id="board"></pre><div id="moves"></div>
 <div class="row"><input id="mv" list="mvl" style="flex:1;min-width:10rem"><datalist id="mvl"></datalist><button id="go"></button></div>
