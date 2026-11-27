@@ -6,6 +6,22 @@
 //! used for our own games: we use the generic names ("Reversi",
 //! "Patru în linie", …).
 
+// C4-mods-begin
+pub mod c4_bingo;
+pub mod c4_capcana;
+pub mod c4_ceas;
+pub mod c4_cursa;
+pub mod c4_insula;
+pub mod c4_labirint;
+pub mod c4_memo;
+pub mod c4_mozaic;
+pub mod c4_pista;
+pub mod c4_regine;
+pub mod c4_secventa;
+pub mod c4_stapel;
+pub mod c4_urmarire;
+pub mod c4_util;
+// C4-mods-end
 // B6-mods-begin
 pub mod aruncari_cupe;
 pub mod b6_ask;
@@ -70,6 +86,18 @@ pub mod banane;
 pub mod banchiza;
 pub mod bilinele;
 pub mod brand_util;
+pub mod c3_dice;
+pub mod c3_dung;
+pub mod c3_kids1;
+pub mod c3_kids2;
+pub mod c3_litere;
+pub mod c3_nimmt;
+pub mod c3_pande;
+pub mod c3_pista;
+pub mod c3_sheng;
+pub mod c3_story;
+pub mod c3_tunel;
+pub mod c3_urcus;
 pub mod camile;
 pub mod caravana;
 pub mod cariera;
@@ -231,6 +259,59 @@ pub mod targul_mestesugarilor;
 pub mod treptele_civilizatiei;
 pub mod vanatorii_mamut;
 // B4-mods-end
+// C1-mods-begin
+pub mod anchetatori_in_ceata;
+pub mod aparatorii_orasului;
+pub mod asediul_turnului;
+pub mod axa_inventiilor;
+pub mod c1_alert;
+pub mod c1_crew;
+pub mod c1_cronol;
+pub mod c1_duel;
+pub mod c1_duet;
+pub mod c1_enigma;
+pub mod c1_graf;
+pub mod c1_mind;
+pub mod c1_noapte;
+pub mod c1_resist;
+pub mod c1_sky;
+pub mod c1_util;
+pub mod cabina_dubla;
+pub mod camera_cu_cifru;
+pub mod ceasul_apocalipsei;
+pub mod cina_cu_suspecti;
+pub mod conacul_cu_ghicitori;
+pub mod dosarul_cu_trei_fire;
+pub mod drumul_prin_mlastini;
+pub mod evadare_cu_cartele;
+pub mod expeditia_levatelor;
+pub mod focare_si_leacuri;
+pub mod focul_in_bloc;
+pub mod furtuna_de_nisip;
+pub mod gardienii_multiversului;
+pub mod ger_peste_avanpost;
+pub mod insula_scufundata;
+pub mod jaf_in_zgarie_nori;
+pub mod labirint_fara_cuvinte;
+pub mod lamele_in_pivnita;
+pub mod lupii_din_ceata;
+pub mod minciuna_savoroasa;
+pub mod modelaj_in_tacere;
+pub mod monstrii_din_sat;
+pub mod naufragiati_pe_insula;
+pub mod pictorul_pretins;
+pub mod placinta_in_obraz;
+pub mod rebus_in_cadre;
+pub mod sala_cu_mini_jocuri;
+pub mod sala_de_comanda_stelara;
+pub mod scene_din_patru_anotimpuri;
+pub mod sincron_numerelor;
+pub mod soarecii_din_castel;
+pub mod tema_in_doi;
+pub mod transee_tacute;
+pub mod vampirii_din_ceata;
+pub mod vrajitorii_din_ruine;
+// C1-mods-end
 pub mod aadupuli;
 pub mod aceydeucey;
 pub mod alquerque;
@@ -776,6 +857,7 @@ pub struct Playable {
 
 /// Games whose `render` honours `set_viewer` (hot-seat shows only the mover's private info).
 pub const HOTSEAT_SAFE: &[&str] = &[
+    "atu_si_perechi", // C3
     "trenuri",
     "forme6",
     "sir5",
@@ -896,6 +978,23 @@ pub const HOTSEAT_SAFE: &[&str] = &[
     "reguli_schimbatoare",
     "palat_intrigi",
     // B6-hs-end
+    // C1-hs-begin
+    "sincron_numerelor",
+    "cabina_dubla",
+    "expeditia_levatelor",
+    "tema_in_doi",
+    "transee_tacute",
+    "lupii_din_ceata",
+    "vampirii_din_ceata",
+    "modelaj_in_tacere",
+    "pictorul_pretins",
+    "minciuna_savoroasa",
+    "sala_cu_mini_jocuri",
+    // C1-hs-end
+    // C4-hs-begin
+    "trezirea_reginelor",
+    "fantoma_blanda",
+    // C4-hs-end
     "darurile_serii",
     "burako",
     "chinchon",
@@ -5331,6 +5430,831 @@ fn playable_base() -> Vec<Playable> {
             make: || Box::new(brand_util::B(cosmic_frontiera::Cosmic::new())),
         },
         // B4-reg-end
+        // C1-reg-begin
+        Playable {
+            id: "insula_scufundata",
+            title: "Insula care se Scufundă",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă pe o hartă 3×4: la sfârșitul rundei apar inundații; un loc inundat de două ori se scufundă pentru totdeauna (și odată cu el obiectul de pe el). Duceți 3 relicve la ieșire (nodul 0) înainte să se scufunde 4 locuri. Fiecare jucător are 4 acțiuni pe tură: mov n, fix n (scoate o inundație din locul curent sau vecin), iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(insula_scufundata::new())),
+        },
+        Playable {
+            id: "furtuna_de_nisip",
+            title: "Furtuna de Nisip",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă într-o grilă 3×3: nisipul se adună (2 loc pe rundă); un loc cu 2 straturi e blocat până îl săpați cu fix n. Furtuna crește în fiecare rundă (destin până la 11). Aduceți 3 piese de mașină din colțuri la oază (nodul 4) înainte de furtună. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(furtuna_de_nisip::new())),
+        },
+        Playable {
+            id: "focare_si_leacuri",
+            title: "Focare și Leacuri",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: 10 orașe pe un inel cu două scurtături; boala crește pe câte un oraș (2 pe rundă); la 3 niveluri izbucnește: destin +1 și vecinii se îmbolnăvesc. Adunați 3 probe de la laboratoare și duceți-le la centrul (nodul 0) înainte de 6 izbucniri. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(focare_si_leacuri::new())),
+        },
+        Playable {
+            id: "ceasul_apocalipsei",
+            title: "Ceasul Apocalipsei",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: 3 indicii de adunat și dus la ieșire; amenințarea izbucnește (destin +1) la a treia lovitură pe același loc, iar un monstru vă urmărește (pierdeți o viață dacă vă ajunge; fix n lângă el îl alungă). Destin maxim 7, 4 vieți. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(ceasul_apocalipsei::new())),
+        },
+        Playable {
+            id: "soarecii_din_castel",
+            title: "Șoarecii din Castel",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: doi șoareci aduc 2 bucăți de brânză (obiecte) la gaură (nodul 0) printr-un castel cu incendii care se întind (la prag trec la vecini; pe un loc la prag pierdeți o viață), iar o pisică vă vânează. 4 vieți, 14 runde. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(soarecii_din_castel::new())),
+        },
+        Playable {
+            id: "monstrii_din_sat",
+            title: "Monștrii din Sat",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: un monstru înaintează spre voi în fiecare rundă; adunați 3 dovezi și duceți-le în turn (nodul 0). Dacă monstrul vă atinge pierdeți o viață (5 în total); cu fix n lângă el îl alungați la început. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(monstrii_din_sat::new())),
+        },
+        Playable {
+            id: "labirint_fara_cuvinte",
+            title: "Labirintul fără Cuvinte",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă pe timp: 4 obiecte de luat și dus la ieșire (nodul 0) în doar 9 runde; într-o rundă pară doar J1 poate lua obiecte, într-una impară doar J2 (trebuie să vă coordonați fără cuvinte). Mutări: mov n, fix n (nu e nimic de curățat), iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(labirint_fara_cuvinte::new())),
+        },
+        Playable {
+            id: "naufragiati_pe_insula",
+            title: "Naufragiații pe Insulă",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de supraviețuire: adunați 4 bucăți de lemn și duceți-le la tabăra (nodul 0) ca să construiți o plută, în timp ce mareea scufundă locuri (la 2 niveluri un loc dispare) și o fiară vă urmărește (4 vieți). Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(naufragiati_pe_insula::new())),
+        },
+        Playable {
+            id: "focul_in_bloc",
+            title: "Focul în Bloc",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de salvare: 3 victime de dus afară (nodul 0) dintr-o clădire în flăcări; flăcările se întind (la prag trec la vecini), iar pe un loc la prag pierdeți o viață (6 în total). Mutări: mov n, fix n (stinge), iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(focul_in_bloc::new())),
+        },
+        Playable {
+            id: "asediul_turnului",
+            title: "Asediul Turnului",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: monștri apar pe inelul exterior și înaintează spre turn (nodul 0) câte un pas pe rundă; fix n ucide un monstru din locul curent sau vecin. Ajunși la turn ei îi cresc destinul (maxim 6). Ucideți 8 monștri în 16 runde. Mutări: mov n, fix n, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(asediul_turnului::new())),
+        },
+        Playable {
+            id: "jaf_in_zgarie_nori",
+            title: "Jaf în Zgârie-Nori",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de jaf: doi hoți iau 2 comori din seifuri și le duc la acoperiș (nodul 0) într-un turn cu 12 camere; un paznic vă patrulează (pierdeți o viață dacă vă ajunge; fix n lângă el îl derutează). Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.",
+            make: || Box::new(brand_util::B(jaf_in_zgarie_nori::new())),
+        },
+        Playable {
+            id: "aparatorii_orasului",
+            title: "Apărătorii Orașului",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: doi eroi (cu pachete diferite) bat un răufăcător cu 22 de puncte de viață. Mâna de 5 cărți deschise, 2 cărți pe tură: atac (a), apărare (d), vindecare (h), amețire (s). Răufăcătorul atacă sau urzește (destin până la 10). 14 runde.",
+            make: || Box::new(brand_util::B(aparatorii_orasului::new())),
+        },
+        Playable {
+            id: "vrajitorii_din_ruine",
+            title: "Vrăjitorii din Ruine",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: vrăjitori ce își încarcă cristale (c) și apoi lovesc (a cere 1 cristal și dă +2). Mâna de 4 cărți, 3 pe tură, contra unui nemuritor cu 28 de puncte; el atacă 3–5. 14 runde.",
+            make: || Box::new(brand_util::B(vrajitorii_din_ruine::new())),
+        },
+        Playable {
+            id: "gardienii_multiversului",
+            title: "Gardienii Multiversului",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: doi eroi bat un tiran cu 26 de puncte, pe un fundal care complotează (destin până la 8). 5 cărți deschise, 2 pe tură: atac, apărare, vindecare, amețire.",
+            make: || Box::new(brand_util::B(gardienii_multiversului::new())),
+        },
+        Playable {
+            id: "drumul_prin_mlastini",
+            title: "Drumul prin Mlaștini",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: străbateți mlaștinile adunând progres (p) până la 8, în timp ce umbra crește (destin până la 12); atacurile (a) o împing înapoi. 5 cărți deschise, 2 pe tură.",
+            make: || Box::new(brand_util::B(drumul_prin_mlastini::new())),
+        },
+        Playable {
+            id: "anchetatori_in_ceata",
+            title: "Anchetatori în Ceață",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: doi anchetatori adună progres (p) până la 7 înainte ca destinul să atingă 10; atacurile reduc destinul. Pachete cu cărți mai puține, fără epuizare. 12 runde.",
+            make: || Box::new(brand_util::B(anchetatori_in_ceata::new())),
+        },
+        Playable {
+            id: "lamele_in_pivnita",
+            title: "Lamele din Pivniță",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: doi luptători cu pachete mici contra unui căpitan cu 20 de puncte; cărțile nu se amestecă singure: `odih` aruncările înapoi costă 1 viață; fără cărți ești epuizat, iar epuizarea ambilor înseamnă eșec. 14 runde.",
+            make: || Box::new(brand_util::B(lamele_in_pivnita::new())),
+        },
+        Playable {
+            id: "ger_peste_avanpost",
+            title: "Ger peste Avanpost",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: doi veterani contra unui uriaș de gheață cu 30 de puncte; cărțile se epuizează (odih amestecă aruncările, 1 viață), iar gerul crește destinul (maxim 8). 16 runde.",
+            make: || Box::new(brand_util::B(ger_peste_avanpost::new())),
+        },
+        Playable {
+            id: "conacul_cu_ghicitori",
+            title: "Conacul cu Ghicitori",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: doi cercetători strâng progres (p) până la 6 într-un conac cu pachete mici (epuizare, odih = 1 viață) înainte ca destinul să atingă 9; atacurile îl scad. 12 runde.",
+            make: || Box::new(brand_util::B(conacul_cu_ghicitori::new())),
+        },
+        Playable {
+            id: "camera_cu_cifru",
+            title: "Camera cu Cifru",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de evadare: 3 încuietori în lanț, fiecare cu un cod de 3 cifre (0–4). Pe rând propuneți cod xyz; verific anunță cifrele la locul exact și pe cele aproape. 22 de propuneri în total.",
+            make: || Box::new(brand_util::B(camera_cu_cifru::new())),
+        },
+        Playable {
+            id: "evadare_cu_cartele",
+            title: "Evadare cu Cartele",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: 4 încuietori cu coduri de 3 cifre (0–3); ajutor (costă 2 timp) dezvăluie o cifră. Timp total 24; fiecare propunere costă 1.",
+            make: || Box::new(brand_util::B(evadare_cu_cartele::new())),
+        },
+        Playable {
+            id: "dosarul_cu_trei_fire",
+            title: "Dosarul cu Trei Fire",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de anchetă: 6 suspecți cu 3 însușiri (0–2) și 6 locuri de vizitat; viz L aduce un indiciu adevărat despre vinovat, acuz s îl acuză (2 șanse). Timp total 8.",
+            make: || Box::new(brand_util::B(dosarul_cu_trei_fire::new())),
+        },
+        Playable {
+            id: "scene_din_patru_anotimpuri",
+            title: "Scene din Patru Anotimpuri",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de anchetă: 8 suspecți cu 3 însușiri (0–2) și 7 locuri; viz L aduce un indiciu, acuz s acuză (2 șanse). Timp total 9.",
+            make: || Box::new(brand_util::B(scene_din_patru_anotimpuri::new())),
+        },
+        Playable {
+            id: "sincron_numerelor",
+            title: "Sincron de Numere",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă pentru doi: la nivelul L fiecare primește L numere (1–100) ascunse celuilalt; fără cuvinte, trebuie jucate în ordine crescătoare. joc = joci cea mai mică carte a ta; astept = lași ceasul comun să meargă cu 1. O greșeală costă o viață și aruncă cărțile mai mici. 6 niveluri, 3 vieți. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(sincron_numerelor::new())),
+        },
+        Playable {
+            id: "cabina_dubla",
+            title: "Cabina Dublă",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de aterizare: 7 runde. Fiecare aruncă 2 zaruri ascunse celuilalt; pun 1/pun 2 pune zarul ales pe axă, celălalt pe motoare. Diferența de pe axă ≤ 2 și suma motoarelor în fereastra rundei; 3 rezerve de greșeli, 2 relansări comune. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cabina_dubla::new())),
+        },
+        Playable {
+            id: "expeditia_levatelor",
+            title: "Expediția Levatelor",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de levate: 40 de cărți (4 culori 1–9 și atuuri 1–4), câte 10 fiecare. 3 cărți-țintă trebuie luate de jucătorul indicat. Culoarea cerută e obligatorie, atuul bate; câștigătorul conduce. joc a5 | levez (forțată). Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(expeditia_levatelor::new())),
+        },
+        Playable {
+            id: "tema_in_doi",
+            title: "Tema în Doi",
+            category: "Party",
+            rules: "Variantă originală cooperativă: 25 de cuvinte cu două teme fiecare; fiecare are o cheie secretă (9 agenți, 3 capcane). ind t n dă tema t și numărul n, celălalt ghicește (ghic k | stop). Găsiți cei 15 agenți în 9 ture, fără capcane. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(tema_in_doi::new())),
+        },
+        Playable {
+            id: "transee_tacute",
+            title: "Tranșee Tăcute",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: în fiecare rundă apare o amenințare (frig, ploaie, gaz, obuz); cărțile din mână le scot (joc i, joker: joc i tip). Dacă un tip ajunge la 3 pe masă, pierdeți; rezistați 14 runde. pas, pas încheie runda. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(transee_tacute::new())),
+        },
+        Playable {
+            id: "sala_de_comanda_stelara",
+            title: "Sala de Comandă Stelară",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă: o navă cu 3 zone; amenințările înaintează spre ea. 2 acțiuni pe jucător: tras z, scut z, repar, pas; ev = sfârșit de rundă. Integritate 7; rezistați 12 runde.",
+            make: || Box::new(brand_util::B(sala_de_comanda_stelara::new())),
+        },
+        Playable {
+            id: "lupii_din_ceata",
+            title: "Lupii din Ceață",
+            category: "Party",
+            rules: "Variantă originală cu roluri ascunse într-o noapte: lup, văzător, hoț, insomniac, sătean și tăbăcar (6 cărți: una pentru fiecare, trei pe masă, una scoasă). Noaptea fiecare acționează secret, ziua alegeți voteaza sau iert. Câștigă tăbăcarul executat; altfel moare lupul = victoria celorlalți. 3 mâini. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(lupii_din_ceata::new())),
+        },
+        Playable {
+            id: "vampirii_din_ceata",
+            title: "Vampirii din Ceață",
+            category: "Party",
+            rules: "Variantă originală cu roluri ascunse într-o noapte: vampir, văzător, bețiv, mușcător (marchează adversarul în echipa vampirilor), sătean și tăbăcar. Noaptea acțiuni secrete, ziua voteaza sau iert. Moare cineva din echipa rea = victoria celorlalți. 3 mâini. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(vampirii_din_ceata::new())),
+        },
+        Playable {
+            id: "axa_inventiilor",
+            title: "Axa Invențiilor",
+            category: "Party",
+            rules: "Variantă originală de petrecere: fiecare are o cronologie de invenții. trag arată o invenție (anul ascuns), pun k o așază pe poziția k, verific arată anul: loc corect = rămâne, altfel se aruncă. Primul la 7 cărți câștigă.",
+            make: || Box::new(brand_util::B(axa_inventiilor::new())),
+        },
+        Playable {
+            id: "modelaj_in_tacere",
+            title: "Modelaj în Tăcere",
+            category: "Party",
+            rules: "Variantă originală: cel care modelează dă indicii adevărate (ind A=2, cel mult 3, apoi 2 pe rând) despre un obiect ascuns (formă, mărime, culoare); celălalt ghicește (ghic k). 6 runde. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(modelaj_in_tacere::new())),
+        },
+        Playable {
+            id: "pictorul_pretins",
+            title: "Pictorul Pretins",
+            category: "Party",
+            rules: "Variantă originală: pictorul care știe subiectul dă indicii adevărate despre un desen ascuns (subiect, linie, început) iar celălalt, care nu îl vede, încearcă să-l ghicească. 6 runde. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(pictorul_pretins::new())),
+        },
+        Playable {
+            id: "placinta_in_obraz",
+            title: "Plăcinta în Obraz",
+            category: "Party",
+            rules: "Variantă originală de noroc și nervi: 6 pârghii, una dintre ele pornește plăcinta. Alegi pe rând (alege i, apoi arata): bună +1 și continui, rea: tura trece. 6 întrebări.",
+            make: || Box::new(brand_util::B(placinta_in_obraz::new())),
+        },
+        Playable {
+            id: "minciuna_savoroasa",
+            title: "Minciuna Savuroasă",
+            category: "Party",
+            rules: "Variantă originală de bluf: cel care alege fixează în secret una din 5 variante, celălalt ghicește (ghic g s) cu miza 1–3. Ghicit corect: câștigă miza; greșit: ascunzătorul primește 1. 6 runde. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(minciuna_savoroasa::new())),
+        },
+        Playable {
+            id: "sala_cu_mini_jocuri",
+            title: "Sala cu Mini-Jocuri",
+            category: "Party",
+            rules: "Variantă originală: fiecare rundă are gusturile unui public ascuns; joci 2 cărți (joc i,j) și publicul votează (voteaza); scena e cartea câștigătoare din runda precedentă. 7 runde. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(sala_cu_mini_jocuri::new())),
+        },
+        Playable {
+            id: "cina_cu_suspecti",
+            title: "Cina cu Suspecți",
+            category: "Party",
+            rules: "Variantă originală de petrecere: vinovatul de la cină e ascuns tuturor; pe rând puneți întrebări intreb A=v (răspuns public) și ghiciți (ghic k). 5 runde.",
+            make: || Box::new(brand_util::B(cina_cu_suspecti::new())),
+        },
+        Playable {
+            id: "rebus_in_cadre",
+            title: "Rebus în Cadre",
+            category: "Party",
+            rules: "Variantă originală de petrecere: un rebus se dezvăluie prin indicii pe rând (mai mult); oricine poate ghici oricând (ghic k). 6 runde, cel mult 4 indicii.",
+            make: || Box::new(brand_util::B(rebus_in_cadre::new())),
+        },
+        // C1-reg-end
+        // C3-reg-begin
+        Playable {
+            id: "ritualul_adancului",
+            title: "Ritualul Adâncului",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri. Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea. Misiune: supraviețuiește 14 runde (cultiști noi la fiecare 3 runde). Mutări: mers r c, lov r c, vindec, pas.",
+            make: || Box::new(brand_util::B(c3_dung::new(0))),
+        },
+        Playable {
+            id: "sigiliul_batran",
+            title: "Sigiliul Bătrân",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ cu zaruri: la începutul turei se aruncă zarurile; încheie sarcini cu zaruri suficient de mari (inch t), repetă aruncarea zarurilor care nu ajută o sarcină (refa t; rezultatul vine într-o mutare forțată) sau închei tura (sfarsit), când ameninţarea crește. Câștigă echipa dacă încheie numărul cerut de sarcini înainte să se umple ameninţarea (altfel remiză). 6 zaruri, 6 sarcini de încheiat înainte ca ceasul de miezul nopții să ajungă la 14. Mutări: inch t, refa t, sfarsit.",
+            make: || Box::new(brand_util::B(c3_dice::new(0))),
+        },
+        Playable {
+            id: "ceata_tenebrelor",
+            title: "Ceata Tenebrelor",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri. Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea. Misiune: curăță grila (7×6) de monștri, inclusiv valurile care apar la fiecare 4 runde. Mutări: mers r c, lov r c, vindec, pas.",
+            make: || Box::new(brand_util::B(c3_dung::new(1))),
+        },
+        Playable {
+            id: "galeria_prabusita",
+            title: "Galeria Prăbușită",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ pe un graf de locuri cu pericole care cresc: doi jucători în echipă, câteva acțiuni pe tură (mers la un vecin, cur = scade pericolul, rit = ritual într-un laborator curat, pas), apoi se trag la întâmplare locuri care se agravează; peste 3 izbucnește și infectează vecinii. Echipa câștigă cu numărul cerut de ritualuri, pierde la prea multe izbucniri sau când se termină rundele (remiză). 9 galerii, 4 acțiuni pe tură, 5 ritualuri de împlinit, cel mult 4 prăbușiri în lanț. Mutări: mers v, cur, rit, pas.",
+            make: || Box::new(brand_util::B(c3_pande::new(3))),
+        },
+        Playable {
+            id: "ceasul_templului",
+            title: "Ceasul Templului",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ cu zaruri: la începutul turei se aruncă zarurile; încheie sarcini cu zaruri suficient de mari (inch t), repetă aruncarea zarurilor care nu ajută o sarcină (refa t; rezultatul vine într-o mutare forțată) sau închei tura (sfarsit), când ameninţarea crește. Câștigă echipa dacă încheie numărul cerut de sarcini înainte să se umple ameninţarea (altfel remiză). 5 zaruri, 3 repetări pe tură, 5 camere de deschis înainte ca nisipul să atingă 11. Mutări: inch t, refa t, sfarsit.",
+            make: || Box::new(brand_util::B(c3_dice::new(1))),
+        },
+        Playable {
+            id: "scrisori_amestecate",
+            title: "Scrisori Amestecate",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de cuvinte: calculatorul alege un cuvânt secret de 5 litere; pe rând, cei doi jucători propun (ghic) un cuvânt compatibil cu toate indiciile; răspunsul (rasp, mutare forțată) arată + literă la locul ei, o literă în alt loc, - absentă. Echipa câștigă dacă ghicește în cel mult 8 propuneri, altfel remiză. Mutări: ghic cuvant, rasp.",
+            make: || Box::new(brand_util::B(c3_litere::new())),
+        },
+        Playable {
+            id: "urcus_coboras",
+            title: "Urcuș și Coborâș",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de cărți: două șiruri urcă de la 1 și două coboară de la 50; cărțile 2..49, mâini deschise de 7. Joc i s pune cartea i pe șirul s (urcând: mai mare sau exact cu 10 mai mică; coborând: invers), fin încheie tura după cel puțin 2 cărți jucate (1 când pachetul s-a golit), apoi pesc completează mâna. Echipa câștigă dacă joacă toate cărțile, pierde (remiză) dacă nu mai poate juca numărul cerut. Mutări: joc i s, fin, pesc.",
+            make: || Box::new(brand_util::B(c3_urcus::new())),
+        },
+        Playable {
+            id: "paleta_evadarii",
+            title: "Paleta Evadării",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih). După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată). Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul. Jetoane: chei, indicii, unelte; 7 camere din 12, timp 24, moral 6. Mutări: fac, ocol, odih 1..3.",
+            make: || Box::new(brand_util::B(c3_story::new(0))),
+        },
+        Playable {
+            id: "ancheta_nocturna",
+            title: "Ancheta Nocturnă",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih). După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată). Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul. Jetoane: martori, probe, intuiții; 8 piste din 13, timp 26, moral 6. Mutări: fac, ocol, odih 1..3.",
+            make: || Box::new(brand_util::B(c3_story::new(1))),
+        },
+        Playable {
+            id: "tunelul_blocat",
+            title: "Tunelul Blocat",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de drumuri: pe o tablă 7×7 echipa așază cărți de tunel (deschideri N/E/S/V) ca să închidă toate deschiderile libere. Pun i r c o așază cartea i în celula r c rotită de o×90° (deschiderile care se ating trebuie să se potrivească, nu se admit deschideri spre marginea tablei), arunc i aruncă o carte; apoi pesc trage. Câștigi când nu mai rămâne nicio deschidere liberă, pierzi (remiză) când cărțile se termină. Mutări: pun i r c o, arunc i, pesc.",
+            make: || Box::new(brand_util::B(c3_tunel::new())),
+        },
+        Playable {
+            id: "cripta_eroilor",
+            title: "Cripta Eroilor",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri. Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea. Misiune: curăță cripta (6×6) de monștri; lovitura costă 2 viață celui lovit. Mutări: mers r c, lov r c, vindec, pas.",
+            make: || Box::new(brand_util::B(c3_dung::new(2))),
+        },
+        Playable {
+            id: "pachetul_aventurierilor",
+            title: "Pachetul Aventurierilor",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih). După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată). Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul. Jetoane: arme, vrăji, bunuri; 8 locații din 12, timp 25, moral 7. Mutări: fac, ocol, odih 1..3.",
+            make: || Box::new(brand_util::B(c3_story::new(2))),
+        },
+        Playable {
+            id: "orasul_asediat",
+            title: "Orașul Asediat",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih). După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată). Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul. Jetoane: hrană, lemne, medicamente; 9 zile din 14, timp 30, moral 8, întâmplări frecvente. Mutări: fac, ocol, odih 1..3.",
+            make: || Box::new(brand_util::B(c3_story::new(3))),
+        },
+        Playable {
+            id: "fisuri_temporale",
+            title: "Fisuri Temporale",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih). După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată). Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul. Jetoane: unități de energie, ancore, dovezi; 7 epoci din 12, timp doar 20. Mutări: fac, ocol, odih 1..3.",
+            make: || Box::new(brand_util::B(c3_story::new(4))),
+        },
+        Playable {
+            id: "camera_cu_ghicitori",
+            title: "Camera cu Ghicitori",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih). După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată). Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul. Jetoane: litere, numere, simboluri; 7 ghicitori din 11, timp 21, moral 5. Mutări: fac, ocol, odih 1..3.",
+            make: || Box::new(brand_util::B(c3_story::new(5))),
+        },
+        Playable {
+            id: "zborul_bufnitelor",
+            title: "Zborul Bufnițelor",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de cursă: patru bufnițe trebuie să ajungă la sfârșitul unei piste colorate înainte ca soarele (pericolul) să avanseze 13 pași. Fiecare jucător are 3 cărți deschise: joacă o culoare (joc i p mută pionul p la următorul spațiu de acea culoare) sau aruncă o carte (arunc i); cărțile „soare” trase avansează pericolul. Echipa câștigă dacă toate bufnițele ajung. Mutări: joc i p, arunc i.",
+            make: || Box::new(brand_util::B(c3_pista::new(0))),
+        },
+        Playable {
+            id: "ogrul_pe_urme",
+            title: "Ogrul pe Urme",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de cursă cu zar: patru eroi pornesc pe o pistă colorată de 20 de spații spre comoară, iar ogrul pornește pe urmele lor. Zarul (mutare forțată) arată o culoare (mut p mută pionul la următorul spațiu de acea culoare), un joker (următorul spațiu) sau ogrul (avansează cu 1). Echipa câștigă dacă toți eroii ajung înainte ca ogrul să facă 9 pași. Mutări: zar, mut p, pas.",
+            make: || Box::new(brand_util::B(c3_pista::new(1))),
+        },
+        Playable {
+            id: "cetele_pustiei",
+            title: "Cetele Pustiei",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri. Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea. Misiune: doboară căpetenia (8 viață) pe grila 7×5; 3 acțiuni pe tură. Mutări: mers r c, lov r c, vindec, pas.",
+            make: || Box::new(brand_util::B(c3_dung::new(3))),
+        },
+        Playable {
+            id: "tinutul_ceturilor",
+            title: "Ținutul Cețurilor",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih). După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată). Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul. Jetoane: credință, oțel, ierburi; 9 poteci din 14, timp 29, moral 7. Mutări: fac, ocol, odih 1..3.",
+            make: || Box::new(brand_util::B(c3_story::new(6))),
+        },
+        Playable {
+            id: "garnizoana_cuibului",
+            title: "Garnizoana din Cuib",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ pe un graf de locuri cu pericole care cresc: doi jucători în echipă, câteva acțiuni pe tură (mers la un vecin, cur = scade pericolul, rit = ritual într-un laborator curat, pas), apoi se trag la întâmplare locuri care se agravează; peste 3 izbucnește și infectează vecinii. Echipa câștigă cu numărul cerut de ritualuri, pierde la prea multe izbucniri sau când se termină rundele (remiză). 9 sectoare, 4 ritualuri (baricade) de împlinit, cel mult 3 izbucniri. Mutări: mers v, cur, rit, pas.",
+            make: || Box::new(brand_util::B(c3_pande::new(2))),
+        },
+        Playable {
+            id: "calatoria_cetei",
+            title: "Călătoria Cetei",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri. Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea. Misiune: ambii eroi ajung pe ieșirile E de pe grila 8×5, în 22 de runde. Mutări: mers r c, lov r c, vindec, pas.",
+            make: || Box::new(brand_util::B(c3_dung::new(4))),
+        },
+        Playable {
+            id: "vanatorii_de_umbre",
+            title: "Vânătorii de Umbre",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih). După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată). Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul. Jetoane: amulete, gloanțe, informații; 8 misiuni din 12, timp 25, moral 6. Mutări: fac, ocol, odih 1..3.",
+            make: || Box::new(brand_util::B(c3_story::new(7))),
+        },
+        Playable {
+            id: "focar_zero",
+            title: "Focar Zero",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ pe un graf de locuri cu pericole care cresc: doi jucători în echipă, câteva acțiuni pe tură (mers la un vecin, cur = scade pericolul, rit = ritual într-un laborator curat, pas), apoi se trag la întâmplare locuri care se agravează; peste 3 izbucnește și infectează vecinii. Echipa câștigă cu numărul cerut de ritualuri, pierde la prea multe izbucniri sau când se termină rundele (remiză). 8 locuri, 3 acțiuni pe tură, 5 ritualuri de împlinit, cel mult 4 izbucniri. Mutări: mers v, cur, rit, pas.",
+            make: || Box::new(brand_util::B(c3_pande::new(0))),
+        },
+        Playable {
+            id: "calea_cavalerului",
+            title: "Calea Cavalerului",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih). După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată). Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul. Jetoane: mișcare, influență, cristale; 9 ținuturi din 14, timp 30, moral 8. Mutări: fac, ocol, odih 1..3.",
+            make: || Box::new(brand_util::B(c3_story::new(8))),
+        },
+        Playable {
+            id: "hotarul_cazut",
+            title: "Hotarul Căzut",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ pe un graf de locuri cu pericole care cresc: doi jucători în echipă, câteva acțiuni pe tură (mers la un vecin, cur = scade pericolul, rit = ritual într-un laborator curat, pas), apoi se trag la întâmplare locuri care se agravează; peste 3 izbucnește și infectează vecinii. Echipa câștigă cu numărul cerut de ritualuri, pierde la prea multe izbucniri sau când se termină rundele (remiză). 10 provincii, 3 acțiuni pe tură, 5 ritualuri de împlinit, cel mult 5 izbucniri. Mutări: mers v, cur, rit, pas.",
+            make: || Box::new(brand_util::B(c3_pande::new(1))),
+        },
+        Playable {
+            id: "padurea_juramintelor",
+            title: "Pădurea Jurămintelor",
+            category: "Cooperativ",
+            rules: "Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri. Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea. Misiune: doboară căpetenia pădurii (12 viață) pe grila 7×6; 3 acțiuni pe tură. Mutări: mers r c, lov r c, vindec, pas.",
+            make: || Box::new(brand_util::B(c3_dung::new(5))),
+        },
+        Playable {
+            id: "atu_si_perechi",
+            title: "Atu și Perechi",
+            category: "Cărți",
+            rules: "Variantă originală: joc de cărți cu ridicături, 2 jucători: 52 de cărți (2 culori × 13 ranguri × 2 exemplare), o culoare de atu și un rang-nivel (atu sunt și toate cărțile rangului-nivel). Mâinile de 13 cărți sunt ascunse; deschizi cu o carte sau cu o pereche de cărți identice (par i / par i j), celălalt răspunde cu același număr de cărți și dă culoarea cerută dacă poate; câștigătorul ridicăturii trage primul. Puncte: 5=5, 10=10, K=10; peste 50 câștigi. Mutări: par i, par i j, trag.",
+            make: || Box::new(brand_util::B(c3_sheng::new())),
+        },
+        Playable {
+            id: "randurile_cu_boi",
+            title: "Rândurile cu Boi",
+            category: "Cărți",
+            rules: "Variantă originală: joc de cărți cu rânduri, 2 jucători: pachet 1..104 cu penalizări („boi”); patru rânduri, mâini deschise de 10 cărți, joacă pe rând (joc i): cartea merge la rândul al cărui capăt e cel mai mare număr mai mic decât ea; a 6-a carte dintr-un rând îți aduce cele 5 cărți (boii lor); dacă e mai mică decât toate, alegi rândul de luat (rand r). După 20 de cărți câștigă cine are mai puțini boi. Mutări: joc i, rand r.",
+            make: || Box::new(brand_util::B(c3_nimmt::new())),
+        },
+        Playable {
+            id: "mana_sigura",
+            title: "Mâna Sigură",
+            category: "Copii",
+            rules: "Variantă originală: joc pentru copii cu mână fermă, 2 jucători: 10 piese cu valoare și dificultate; scot i încearcă o piesă, iar reușita (95-14·dificultate %) se hotărăște în mutarea forțată mana; la eșec celălalt primește 1. Câștigă cine are mai mulți bănuți după ultima piesă. Mutări: scot i, mana.",
+            make: || Box::new(brand_util::B(c3_kids1::mana_new())),
+        },
+        Playable {
+            id: "hipopotamii_lacomi",
+            title: "Hipopotamii Lacomi",
+            category: "Copii",
+            rules: "Variantă originală: joc pentru copii cu bile, 2 jucători: 8 runde cu câte 2 bile; fiecare alege tap 0..3 (energie totală 14 pe jucător, deschide pe rând), apoi lansez (forțat) împarte fiecare bilă proporțional cu energia investită. Câștigă cine adună mai multe bile. Mutări: tap k, lansez.",
+            make: || Box::new(brand_util::B(c3_kids1::hipo_new())),
+        },
+        Playable {
+            id: "pioni_prinsi",
+            title: "Pioni Prinși",
+            category: "Copii",
+            rules: "Variantă originală: joc de pioni pentru copii, 2 jucători, 3 pioni fiecare, inel de 24 de câmpuri: zar (forțat), mut k mută pionul k (cu 6 intri în joc și mai arunci); aterizând pe adversar îl trimiți în bază; trebuie să ajungi exact la 24. Primul cu 3 pioni acasă câștigă. Mutări: zar, mut k, pas.",
+            make: || Box::new(brand_util::B(c3_kids1::pioni_new())),
+        },
+        Playable {
+            id: "cursa_cascavalului",
+            title: "Cursa Cașcavalului",
+            category: "Copii",
+            rules: "Variantă originală: joc pentru copii de cursă cu capcană, 2 jucători, câte 2 șoricei pe o pistă 0..15: zar (forțat), mut k mută un șoricel; căsuțele 3, 6, 9 și 12 adaugă o piesă la capcană (4 = gata). Cu capcana gata poți declansez în loc de mutare: șoriceii adversarului de pe căsuțele 10-14 se întorc la start. Câștigă cine aduce ambii șoricei la cașcaval (15). Mutări: zar, mut k, declansez, pas.",
+            make: || Box::new(brand_util::B(c3_kids1::soareci_new())),
+        },
+        Playable {
+            id: "bilele_in_tub",
+            title: "Bilele în Tub",
+            category: "Copii",
+            rules: "Variantă originală: joc pentru copii cu bețe și bile, 2 jucători, informație perfectă: 12 bețe, 14 bile, fiecare sprijinită de 3 bețe; trag s scoate bățul s, iar bilele rămase fără sprijin cad pe seama celui care a tras. Când nu mai sunt bețe, câștigă cine are mai puține bile căzute pe seama sa. Mutări: trag s.",
+            make: || Box::new(brand_util::B(c3_kids1::tub_new())),
+        },
+        Playable {
+            id: "livada_cu_cirese",
+            title: "Livada cu Cireșe",
+            category: "Copii",
+            rules: "Variantă originală: joc pentru copii cu ghicit norocos, 2 jucători: gira învârte roata (rezultat în mutarea forțată roata): 1-4 cireșe în găleată, sau pasăre/câine/găleată vărsată (pierzi găleata; vărsată: și o cireașă din coș). Fixez mută cireșele din găleată în coș și predă tura. Primul cu 10 cireșe în coș câștigă. Mutări: gira, fixez, roata.",
+            make: || Box::new(brand_util::B(c3_kids2::cirese_new())),
+        },
+        Playable {
+            id: "gheata_subtire",
+            title: "Gheața Subțire",
+            category: "Copii",
+            rules: "Variantă originală: joc pentru copii cu bloc de gheață, 2 jucători: grilă 3×4; bat r c lovește blocul, iar izb (forțat) hotărăște dacă omulețul cade: risc 5% + 12% pentru fiecare vecin scos + 2% pentru fiecare bloc scos. Cine face omulețul să cadă pierde. Mutări: bat r c, izb.",
+            make: || Box::new(brand_util::B(c3_kids2::gheata_new())),
+        },
+        Playable {
+            id: "avionul_hapsan",
+            title: "Avionul Hapsân",
+            category: "Copii",
+            rules: "Variantă originală: joc pentru copii cu avion, 2 jucători, câte 3 găini: avionul trece în cerc prin 4 stații (J1 la 1, J2 la 3); înainte să sosească la stația ta alegi lovesc (clapeta, reușește 60%, nu două ture la rând) sau asteapt; zbor (forțat) hotărăște. Dacă avionul sosește și clapeta nu a reușit, pierzi o găină. Rămâne cine mai are găini. Mutări: lovesc, asteapt, zbor.",
+            make: || Box::new(brand_util::B(c3_kids2::avion_new())),
+        },
+        Playable {
+            id: "livada_si_corbul",
+            title: "Livada și Corbul",
+            category: "Copii",
+            rules: "Variantă originală: joc cooperativ pentru copii, 2 jucători în echipă: 4 pomi cu câte 4 fructe; zar (forțat) arată o culoare (un fruct de acea culoare), coșul (alegi două fructe: cos c) sau corbul (avansează). Echipa câștigă dacă strânge toate fructele înainte ca corbul să facă 6 pași (altfel remiză). Mutări: zar, cos c.",
+            make: || Box::new(brand_util::B(c3_kids2::livada_new())),
+        },
+        Playable {
+            id: "gainile_pe_cerc",
+            title: "Găinile pe Cerc",
+            category: "Copii",
+            rules: "Variantă originală: joc de memorie pentru copii, 2 jucători: 14 plăci (6 perechi de găini și 2 vulpi); intorc i întoarce o placă (ce e dedesubt se arată prin mutarea forțată arat). Două plăci egale = pereche pentru tine și mai întorci; neegale = tura trece; vulpea trece tura și te costă o pereche. Câștigă cine are mai multe perechi. Plăcile văzute rămân cunoscute de ambii. Mutări: intorc i, arat.",
+            make: || Box::new(brand_util::B(c3_kids2::gaini_new())),
+        },
+        Playable {
+            id: "clopotelul_fructelor",
+            title: "Clopoțelul Fructelor",
+            category: "Copii",
+            rules: "Variantă originală: joc de reflex pentru copii, 2 jucători: 20 de cărți cu fructe fiecare; rasf întoarce cartea de sus; dacă un fel de fruct are exact 5 pe cele două cărți vizibile poți suna (corect: duelul de reflexe duel, forțat, cu 65% pentru cel care a sunat; greșit: dai o carte). Cine rămâne fără cărți de întors pierde. Mutări: rasf, suna, trec, duel.",
+            make: || Box::new(brand_util::B(c3_kids2::halli_new())),
+        },
+        // C3-reg-end
+        // C4-reg-begin
+        Playable {
+            id: "trezirea_reginelor",
+            title: "Trezirea Reginelor",
+            category: "Copii",
+            rules: "12 regine dorm cu fața în jos. Cu un rege trezești o regină (valoarea apare abia la mutarea forțată arata), cu un cavaler furi o regină trează (un dragon o apără), cu o poțiune o adormi (o baghetă o apără). Aruncă numere singure, în pereche egală sau ca sumă a b c. Mâna ta e secretă. Câștigi cu 50 de puncte sau 5 regine.",
+            make: || c4_regine::make(),
+        },
+        Playable {
+            id: "gheata_alunecoasa",
+            title: "Pisoiul pe Gheață",
+            category: "Copii",
+            rules: "Pe rând, un pește fuge spre ieșire (10) și un pisoi îl urmărește pe un coridor de gheață. Alegi o alunecare 1–3; cu cât e mai lungă, cu atât poate ieși mai scurtă (rezultatul se află la mutarea forțată arata). Peștele ieșit ia 2 puncte, prins dă pisoiului 3. Rolurile alternează, 4 runde.",
+            make: || c4_urmarire::make("gheata_alunecoasa"),
+        },
+        Playable {
+            id: "turnul_rinocerului",
+            title: "Zgârie-norul Cartonat",
+            category: "Copii",
+            rules: "Construiți un turn comun din pereți cartonați de 3 înălțimi. Fiecare piesă pusă (pun w) are un risc public de prăbușire care crește cu înălțimea; la verific se hotărăște căderea. Cine dărâmă ia înapoi piesele căzute. Câștigă primul care rămâne fără piese.",
+            make: || c4_stapel::make("turnul_rinocerului"),
+        },
+        Playable {
+            id: "turnul_fermei",
+            title: "Turnul Animalelor",
+            category: "Copii",
+            rules: "Pui animale de 4 mărimi pe un turn comun. Zarul (zar) hotărăște: pui 1, pui 2, pui 1 și dai 1 adversarului sau doar dai 1 (ofer w). Un animal mare peste unul mic e mai riscant. Cine dărâmă (verific) ia piesele căzute. Câștigă primul fără piese.",
+            make: || c4_stapel::make("turnul_fermei"),
+        },
+        Playable {
+            id: "oua_din_cuib",
+            title: "Ouăle din Cuib",
+            category: "Copii",
+            rules: "Tragi dintr-un sac cu compoziție publică: ouă de valoare 1–3 le adaugi în pot, o piatră rea te costă; la 2 pietre pierzi potul. Cu stop bagi potul în scor. 8 ture în total; cel mai mare scor câștigă.",
+            make: || c4_capcana::make("oua_din_cuib"),
+        },
+        Playable {
+            id: "vulpea_dibace",
+            title: "Vulpea Dibace",
+            category: "Copii",
+            rules: "Un vulpoi ascuns dintre 12 suspecți (culoare, pălărie, coadă); nimeni nu-l știe. Pe rând puneți întrebări publice (intreb A=v, cel mult 3 pe jucător) și ghiciți (ghic k). Ghicit corect +2, greșit +1 pentru celălalt; 4 runde.",
+            make: || c4_pista::make("vulpea_dibace"),
+        },
+        Playable {
+            id: "plansa_cu_poze",
+            title: "Cartonașul cu Poze",
+            category: "Copii",
+            rules: "Fiecare are un cartonaș deschis cu 6 poze din 10. La scot ies două piese; tu iei una (ia 1 sau ia 2), cealaltă merge la adversar. O piesă se acoperă doar dacă o ai pe cartonaș. Primul cartonaș complet câștigă.",
+            make: || c4_bingo::make("plansa_cu_poze"),
+        },
+        Playable {
+            id: "memoria_luminilor",
+            title: "Memoria Luminilor",
+            category: "Copii",
+            rules: "Cine adaugă pune o culoare (r v a g) la coada secvenței; celălalt o repetă din memorie (secvența se ascunde). Greșeala dă o penalizare (3 = pierzi) și secvența se reia. AI-ul își amintește cel mult 7 semnale.",
+            make: || c4_secventa::make(),
+        },
+        Playable {
+            id: "catarul_incarcat",
+            title: "Măgarul Încărcat",
+            category: "Copii",
+            rules: "Încărcați pe rând un măgar cu lopeți (1), găleți (2) și saci (3). Limita lui ascunsă e între 10 și 22; riscul public al fiecărei piese vine din ce se știe. La verific poate da cu copita: cine încarcă ia înapoi piesele căzute. Primul fără piese câștigă.",
+            make: || c4_stapel::make("catarul_incarcat"),
+        },
+        Playable {
+            id: "butoiasul_corsar",
+            title: "Butoiașul Corsarului",
+            category: "Copii",
+            rules: "10 deschizături; într-una (ascunsă tuturor) sare corsarul. Pe rând înfigi o sabie (taie i); mutarea forțată arata spune dacă a sărit. Cine l-a trezit dă adversarului un punct și runda se reia. Primul la 3 puncte câștigă.",
+            make: || c4_capcana::make("butoiasul_corsar"),
+        },
+        Playable {
+            id: "piesa_la_timp",
+            title: "Piesa din Clepsidră",
+            category: "Copii",
+            rules: "Ai o clepsidră cu limită ascunsă (5–12 ticuri). Fiecare act costă 1–3 ticuri și adaugă 1, 2 sau 4 piese în pot. Dacă depășești limita pierzi potul; cu stop îl bagi în scor. 8 ture; cel mai mare scor câștigă.",
+            make: || c4_capcana::make("piesa_la_timp"),
+        },
+        Playable {
+            id: "iepuras_galop",
+            title: "Iepurașul și Găurile",
+            category: "Copii",
+            rules: "Cursă de 24 de pătrate cu 3 găuri (6, 11, 17): cine aterizează într-una se întoarce la start. Fața specială a zarului te face să pierzi tura. Primul care ajunge la capăt câștigă.",
+            make: || c4_cursa::make("iepuras_galop"),
+        },
+        Playable {
+            id: "balansul_cerdacului",
+            title: "Balanța Cerdacului",
+            category: "Copii",
+            rules: "Pui piese de greutate 1–4 pe taler stâng (s) sau drept (d). Dacă diferența dintre talere depășește 5, iei înapoi piesele talerului mai greu. Primul fără piese câștigă. Fără șansă: totul e determinist.",
+            make: || c4_stapel::make("balansul_cerdacului"),
+        },
+        Playable {
+            id: "gandacelul_adunat",
+            title: "Gândăcelul din Piese",
+            category: "Copii",
+            rules: "Fiecare își adună un gândăcel: corp, cap, 2 ochi, 2 antene, gură, 2 picioare; capul și restul cer corpul întâi. La scot ies două piese: iei una (ia 1/ia 2), cealaltă merge la adversar. Primul gândăcel complet câștigă.",
+            make: || c4_bingo::make("gandacelul_adunat"),
+        },
+        Playable {
+            id: "camara_adormita",
+            title: "Camera Somnoroasă",
+            category: "Copii",
+            rules: "Furi gustări din bucătărie fără să trezești tatăl: fiecare acțiune costă ticuri (1 sau 2) și dă 1 sau 3 gustări. Pragul ascuns e între 4 și 10; dacă îl depășești pierzi gustările din tură, cu stop le păstrezi. 8 ture, cel mai mare scor câștigă.",
+            make: || c4_capcana::make("camara_adormita"),
+        },
+        Playable {
+            id: "piratii_din_golf",
+            title: "Pirații din Golf",
+            category: "Copii",
+            rules: "Inel de 6 câmpuri numerotate (lemn, aur, lână) cu 6 locuri de ancorare între ele. La zar câmpul cu numărul aruncat produce pentru ancorele vecine. Construiești o ancoră cu 1 lemn, 1 aur, 1 lână; schimbi 2 la 1. Primul cu 4 ancore câștigă.",
+            make: || c4_insula::make(),
+        },
+        Playable {
+            id: "cetatea_si_drumul",
+            title: "Drumul spre Cetate",
+            category: "Copii",
+            rules: "Tablă comună 5×5. Din piața de 3 plăci iei una și o așezi lipită de cele existente (j r c). Primești 1 plus vecinii de același fel; cu f pui și un însoțitor (3 pe jucător) care la final ia mărimea grupului lui. 10 plăci pe jucător.",
+            make: || c4_mozaic::make("cetatea_si_drumul"),
+        },
+        Playable {
+            id: "insula_dragonilor",
+            title: "Insula Puilor de Dragon",
+            category: "Copii",
+            rules: "Fiecare își face propria insulă 5×5 din domino cu două terenuri și ouă de dragon. Din piața de 3 iei una și o așezi (j r c o); trebuie să atingă un teren la fel. Câștigă cine are mai multe ouă după 9 plăci.",
+            make: || c4_mozaic::make("insula_dragonilor"),
+        },
+        Playable {
+            id: "copii_contra_stafiilor",
+            title: "Copiii Apără Căsuța",
+            category: "Copii",
+            rules: "Cooperativ: trei monștri (puteri 7, 8, 9) vin spre căsuță. Arunci zarul (zar) și lovești un monstru (lucr t). Amenințarea crește la fiecare rundă și la fața 1. Dacă ajunge la 9 pierdeți amândoi (remiză); dacă îi înfrângeți, câștigă cine a lovit mai mult.",
+            make: || c4_ceas::make("copii_contra_stafiilor"),
+        },
+        Playable {
+            id: "labirint_nevazut",
+            title: "Labirintul cu Pereți Nevăzuți",
+            category: "Copii",
+            rules: "Tablă 5×5 cu pereți ascunși: fiecare muchie se hotărăște la prima încercare (30% perete), apoi rămâne cunoscută de amândoi. Mergi n/s/e/v; primul la comoara din centru câștigă.",
+            make: || c4_labirint::make(),
+        },
+        Playable {
+            id: "fantoma_de_pe_turn",
+            title: "Fantoma de pe Turn",
+            category: "Copii",
+            rules: "Cooperativ: 6 perechi de obiecte cu fața în jos. Întorci două cărți (intorc i, arata). Fiecare greșeală urcă fantoma pe turn (7 trepte). Dacă ajunge sus pierdeți amândoi (remiză); dacă găsiți toate perechile, câștigă cine are mai multe.",
+            make: || c4_memo::make("fantoma_de_pe_turn"),
+        },
+        Playable {
+            id: "trepte_soaptelor",
+            title: "Treptele Șoaptelor",
+            category: "Copii",
+            rules: "7 perechi de obiecte și 2 fantome cu fața în jos. O pereche găsită înaintează pionul tău cu 1–3 trepte (după obiect); o fantomă te coboară 2. Primul pion la treapta 14 câștigă.",
+            make: || c4_memo::make("trepte_soaptelor"),
+        },
+        Playable {
+            id: "stafia_din_castel",
+            title: "Stafia din Castel",
+            category: "Copii",
+            rules: "Cursă de 20 de pătrate cu 2 pioni pe jucător; fața specială a zarului mută stafia cu 2: pionii rămași în urma ei se întorc la start. Poți lovi pionul adversarului. Primul cu ambii pioni la capăt câștigă.",
+            make: || c4_cursa::make("stafia_din_castel"),
+        },
+        Playable {
+            id: "soricei_pe_branza",
+            title: "Șoricei pe Brânză",
+            category: "Copii",
+            rules: "Cursă de 22 de pătrate cu 2 șoricei pe jucător și o pisică: fața specială o mută cu 3 și șoriceii rămași în urma ei se întorc la start. O scurtătură de la 7 la 12. Primul cu ambii șoricei la brânză câștigă.",
+            make: || c4_cursa::make("soricei_pe_branza"),
+        },
+        Playable {
+            id: "stafii_comoara",
+            title: "Stafiile și Comoara",
+            category: "Copii",
+            rules: "7 perechi de comori și 3 stafii cu fața în jos. Pereche găsită: +1 și mai întorci. Stafie: adversarul ia un punct și tura trece. Cel mai mare scor câștigă când se termină comorile.",
+            make: || c4_memo::make("stafii_comoara"),
+        },
+        Playable {
+            id: "viermi_in_mar",
+            title: "Viermele din Măr",
+            category: "Copii",
+            rules: "Cursă de 18 pătrate cu 2 viermi pe jucător. Fața specială te lasă să arunci din nou; o gaură la 9 te întoarce la start; scurtătură de la 4 la 8; poți lovi viermele adversarului. Primul cu ambii viermi la capăt câștigă.",
+            make: || c4_cursa::make("viermi_in_mar"),
+        },
+        Playable {
+            id: "fantoma_fugara",
+            title: "Fantoma Fugară",
+            category: "Copii",
+            rules: "Un fantomă fuge pe un inel de 12 camere. Fiecare își mută urmăritorul (mut k înainte, inv k înapoi, 1–3); cine aterizează pe fantomă o prinde (+1). După fiecare mutare fantoma fuge (fuge). Primul la 3 prinderi câștigă.",
+            make: || c4_urmarire::make("fantoma_fugara"),
+        },
+        Playable {
+            id: "paianjen_pe_fir",
+            title: "Păianjenul de pe Fir",
+            category: "Copii",
+            rules: "Cursă de 20 de pătrate pe un fir; trebuie să ajungi exact la capăt. Fața păianjenului te trage înapoi 4 pătrate; scurtături 5→9 și 13→16; poți lovi pionul adversarului. Primul la capăt câștigă.",
+            make: || c4_cursa::make("paianjen_pe_fir"),
+        },
+        Playable {
+            id: "satul_din_piatra",
+            title: "Satul din Piatră și Lemn",
+            category: "Copii",
+            rules: "Cooperativ: construiți 4 clădiri (coliba, focul, câmpul, podul) înainte ca amenințarea să ajungă la 11. Cu zarul culegi resurse (culeg r) sau cheltuiești (constr t). Dacă ați terminat, câștigă cine a contribuit mai mult; altfel remiză.",
+            make: || c4_ceas::make("satul_din_piatra"),
+        },
+        Playable {
+            id: "zaruri_grabite",
+            title: "Zarurile Grăbite",
+            category: "Copii",
+            rules: "Cursă de 28 de pătrate cu 2 pioni pe jucător. Arunci două zaruri și alegi unul pentru un pion (mut k f); fața 0 nu există, dar o capcană la 14 te întoarce la start și o scurtătură duce de la 8 la 12. Primul cu ambii pioni la capăt câștigă.",
+            make: || c4_cursa::make("zaruri_grabite"),
+        },
+        Playable {
+            id: "pietre_sclipitoare",
+            title: "Pietrele Sclipitoare",
+            category: "Copii",
+            rules: "Tragi pietre dintr-un sac cu compoziție publică (valori 1–4 și 3 pietre cenușii). O singură piatră cenușie îți ia potul. Cu stop îl bagi în scor. 8 ture; cel mai mare scor câștigă.",
+            make: || c4_capcana::make("pietre_sclipitoare"),
+        },
+        Playable {
+            id: "corabii_din_vale",
+            title: "Corăbiile din Vale",
+            category: "Copii",
+            rules: "Cooperativ: trei bărci (10, 12 și 14 vâsle) trebuie să treacă valea înainte ca monstrul mării (amenințarea) să ajungă la 11. Arunci zarul și împingi o barcă (lucr t). Dacă ajung toate, câștigă cine a contribuit mai mult; altfel remiză.",
+            make: || c4_ceas::make("corabii_din_vale"),
+        },
+        Playable {
+            id: "piramida_bolovani",
+            title: "Piramida de Bolovani",
+            category: "Copii",
+            rules: "Încărcați pe rând o piramidă cu pietricele (2), bolovani (3) și stânci (4). Limita ascunsă e între 12 și 26. Zarul decide câte piese pui sau dai. Cine o prăbușește (verific) ia piesele căzute. Primul fără piese câștigă.",
+            make: || c4_stapel::make("piramida_bolovani"),
+        },
+        Playable {
+            id: "fantoma_blanda",
+            title: "Fantoma cea Blândă",
+            category: "Copii",
+            rules: "Fantoma (alternativ) știe o țintă dintre 12 (vis, culoare) și dă cel mult 2–3 indicii adevărate (ind A=v, gata); celălalt ghicește (ghic k, verific). Ținta e vizibilă doar fantomei. 6 runde; rolurile alternează.",
+            make: || c4_pista::make("fantoma_blanda"),
+        },
+        Playable {
+            id: "chei_si_usi",
+            title: "Cheile și Ușile",
+            category: "Copii",
+            rules: "8 perechi de chei, lacăte, uși și lăzi cu fața în jos. Întorci două cărți (intorc i, arata); pereche găsită: +1 și mai întorci. Cele mai multe perechi câștigă.",
+            make: || c4_memo::make("chei_si_usi"),
+        },
+        Playable {
+            id: "tort_pe_tort",
+            title: "Tortul cu Straturi",
+            category: "Copii",
+            rules: "Puneți pe rând straturi de tort (1 cireașă, 2 blat mic, 3 blat mijlociu, 4 blat mare). Un strat mai mare peste unul mai mic e mai riscant. Zarul hotărăște câte piese pui. Cine prăbușește tortul (verific) ia piesele căzute. Primul fără piese câștigă.",
+            make: || c4_stapel::make("tort_pe_tort"),
+        },
+        Playable {
+            id: "insula_cu_furtuni",
+            title: "Insula cu Furtuni",
+            category: "Copii",
+            rules: "8 perechi de obiecte de pe insulă și 2 furtuni cu fața în jos. Pereche găsită: pionul tău înaintează 1–3. Furtună: te întoarce 2 pătrate. Primul la 15 câștigă.",
+            make: || c4_memo::make("insula_cu_furtuni"),
+        },
+        Playable {
+            id: "parcul_perechilor",
+            title: "Parcul cu Perechi",
+            category: "Copii",
+            rules: "Fiecare are un parc propriu de 4×3. Din piața de 3 plăci cu perechi de animale iei una și o așezi (j r c o). La final primești 2 puncte pentru fiecare vecinătate de același animal. 6 plăci pe jucător.",
+            make: || c4_mozaic::make("parcul_perechilor"),
+        },
+        Playable {
+            id: "purcei_cursa_mare",
+            title: "Cursa Purceilor",
+            category: "Copii",
+            rules: "Cursă de 26 de pătrate cu 3 purcei pe jucător. Fața specială schimbă locul purceilor tăi cei mai avansați cu ai adversarului. Primul cu toți purceii la capăt câștigă.",
+            make: || c4_cursa::make("purcei_cursa_mare"),
+        },
+        // C4-reg-end
     ]
 }
 

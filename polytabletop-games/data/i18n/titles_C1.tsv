@@ -1,0 +1,313 @@
+# C1: jocuri cooperative și de petrecere, variante originale (generat de C1gen/gen.py)
+insula_scufundata	ro	Insula care se Scufundă	Variantă originală cooperativă pe o hartă 3×4: la sfârșitul rundei apar inundații; un loc inundat de două ori se scufundă pentru totdeauna (și odată cu el obiectul de pe el). Duceți 3 relicve la ieșire (nodul 0) înainte să se scufunde 4 locuri. Fiecare jucător are 4 acțiuni pe tură: mov n, fix n (scoate o inundație din locul curent sau vecin), iau, dau, fin; ev încheie runda.
+insula_scufundata	en	The Sinking Isle	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+insula_scufundata	fr	L'Île qui sombre	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+insula_scufundata	it	L'isola che affonda	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+insula_scufundata	es	La isla que se hunde	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+insula_scufundata	pt	A ilha que afunda	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+insula_scufundata	de	Die sinkende Insel	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+insula_scufundata	hu	A süllyedő sziget	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+furtuna_de_nisip	ro	Furtuna de Nisip	Variantă originală cooperativă într-o grilă 3×3: nisipul se adună (2 loc pe rundă); un loc cu 2 straturi e blocat până îl săpați cu fix n. Furtuna crește în fiecare rundă (destin până la 11). Aduceți 3 piese de mașină din colțuri la oază (nodul 4) înainte de furtună. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.
+furtuna_de_nisip	en	The Sand Tempest	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+furtuna_de_nisip	fr	La Tempête de sable	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+furtuna_de_nisip	it	La tempesta di sabbia	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+furtuna_de_nisip	es	La tormenta de arena	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+furtuna_de_nisip	pt	A tempestade de areia	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+furtuna_de_nisip	de	Der Sandsturm	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+furtuna_de_nisip	hu	A homokvihar	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+focare_si_leacuri	ro	Focare și Leacuri	Variantă originală cooperativă: 10 orașe pe un inel cu două scurtături; boala crește pe câte un oraș (2 pe rundă); la 3 niveluri izbucnește: destin +1 și vecinii se îmbolnăvesc. Adunați 3 probe de la laboratoare și duceți-le la centrul (nodul 0) înainte de 6 izbucniri. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.
+focare_si_leacuri	en	Outbreaks and Remedies	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+focare_si_leacuri	fr	Foyers et remèdes	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+focare_si_leacuri	it	Focolai e rimedi	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+focare_si_leacuri	es	Brotes y remedios	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+focare_si_leacuri	pt	Surtos e remédios	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+focare_si_leacuri	de	Seuchenherde und Heilmittel	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+focare_si_leacuri	hu	Járványgócok és gyógymódok	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+ceasul_apocalipsei	ro	Ceasul Apocalipsei	Variantă originală cooperativă: 3 indicii de adunat și dus la ieșire; amenințarea izbucnește (destin +1) la a treia lovitură pe același loc, iar un monstru vă urmărește (pierdeți o viață dacă vă ajunge; fix n lângă el îl alungă). Destin maxim 7, 4 vieți. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.
+ceasul_apocalipsei	en	The Doom Clock	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+ceasul_apocalipsei	fr	L'Horloge de l'apocalypse	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+ceasul_apocalipsei	it	L'orologio dell'apocalisse	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+ceasul_apocalipsei	es	El reloj del apocalipsis	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+ceasul_apocalipsei	pt	O relógio do apocalipse	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+ceasul_apocalipsei	de	Die Apokalypse-Uhr	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+ceasul_apocalipsei	hu	Az apokalipszis órája	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+soarecii_din_castel	ro	Șoarecii din Castel	Variantă originală cooperativă: doi șoareci aduc 2 bucăți de brânză (obiecte) la gaură (nodul 0) printr-un castel cu incendii care se întind (la prag trec la vecini; pe un loc la prag pierdeți o viață), iar o pisică vă vânează. 4 vieți, 14 runde. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.
+soarecii_din_castel	en	Mice of the Keep	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+soarecii_din_castel	fr	Les Souris du château	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+soarecii_din_castel	it	I topi del castello	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+soarecii_din_castel	es	Los ratones del castillo	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+soarecii_din_castel	pt	Os ratos do castelo	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+soarecii_din_castel	de	Die Mäuse der Burg	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+soarecii_din_castel	hu	A vár egerei	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+monstrii_din_sat	ro	Monștrii din Sat	Variantă originală cooperativă: un monstru înaintează spre voi în fiecare rundă; adunați 3 dovezi și duceți-le în turn (nodul 0). Dacă monstrul vă atinge pierdeți o viață (5 în total); cu fix n lângă el îl alungați la început. Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.
+monstrii_din_sat	en	The Village Monsters	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+monstrii_din_sat	fr	Les Monstres du village	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+monstrii_din_sat	it	I mostri del villaggio	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+monstrii_din_sat	es	Los monstruos de la aldea	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+monstrii_din_sat	pt	Os monstros da aldeia	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+monstrii_din_sat	de	Die Dorfmonster	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+monstrii_din_sat	hu	A falu szörnyei	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+labirint_fara_cuvinte	ro	Labirintul fără Cuvinte	Variantă originală cooperativă pe timp: 4 obiecte de luat și dus la ieșire (nodul 0) în doar 9 runde; într-o rundă pară doar J1 poate lua obiecte, într-una impară doar J2 (trebuie să vă coordonați fără cuvinte). Mutări: mov n, fix n (nu e nimic de curățat), iau, dau, fin; ev încheie runda.
+labirint_fara_cuvinte	en	The Wordless Maze	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+labirint_fara_cuvinte	fr	Le Labyrinthe sans mots	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+labirint_fara_cuvinte	it	Il labirinto senza parole	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+labirint_fara_cuvinte	es	El laberinto sin palabras	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+labirint_fara_cuvinte	pt	O labirinto sem palavras	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+labirint_fara_cuvinte	de	Das wortlose Labyrinth	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+labirint_fara_cuvinte	hu	A szótlan labirintus	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+naufragiati_pe_insula	ro	Naufragiații pe Insulă	Variantă originală cooperativă de supraviețuire: adunați 4 bucăți de lemn și duceți-le la tabăra (nodul 0) ca să construiți o plută, în timp ce mareea scufundă locuri (la 2 niveluri un loc dispare) și o fiară vă urmărește (4 vieți). Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.
+naufragiati_pe_insula	en	Castaways on the Isle	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+naufragiati_pe_insula	fr	Naufragés sur l'île	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+naufragiati_pe_insula	it	Naufraghi sull'isola	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+naufragiati_pe_insula	es	Náufragos en la isla	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+naufragiati_pe_insula	pt	Náufragos na ilha	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+naufragiati_pe_insula	de	Schiffbrüchige auf der Insel	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+naufragiati_pe_insula	hu	Hajótöröttek a szigeten	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+focul_in_bloc	ro	Focul în Bloc	Variantă originală cooperativă de salvare: 3 victime de dus afară (nodul 0) dintr-o clădire în flăcări; flăcările se întind (la prag trec la vecini), iar pe un loc la prag pierdeți o viață (6 în total). Mutări: mov n, fix n (stinge), iau, dau, fin; ev încheie runda.
+focul_in_bloc	en	Fire in the Block	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+focul_in_bloc	fr	Feu dans l'immeuble	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+focul_in_bloc	it	Fuoco nel palazzo	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+focul_in_bloc	es	Fuego en el bloque	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+focul_in_bloc	pt	Fogo no prédio	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+focul_in_bloc	de	Feuer im Wohnblock	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+focul_in_bloc	hu	Tűz a házban	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+asediul_turnului	ro	Asediul Turnului	Variantă originală cooperativă de apărare: monștri apar pe inelul exterior și înaintează spre turn (nodul 0) câte un pas pe rundă; fix n ucide un monstru din locul curent sau vecin. Ajunși la turn ei îi cresc destinul (maxim 6). Ucideți 8 monștri în 16 runde. Mutări: mov n, fix n, fin; ev încheie runda.
+asediul_turnului	en	Siege of the Tower	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+asediul_turnului	fr	Le Siège de la tour	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+asediul_turnului	it	L'assedio della torre	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+asediul_turnului	es	El asedio de la torre	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+asediul_turnului	pt	O cerco da torre	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+asediul_turnului	de	Die Belagerung des Turms	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+asediul_turnului	hu	A torony ostroma	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+jaf_in_zgarie_nori	ro	Jaf în Zgârie-Nori	Variantă originală cooperativă de jaf: doi hoți iau 2 comori din seifuri și le duc la acoperiș (nodul 0) într-un turn cu 12 camere; un paznic vă patrulează (pierdeți o viață dacă vă ajunge; fix n lângă el îl derutează). Mutări: mov n, fix n, iau, dau, fin; ev încheie runda.
+jaf_in_zgarie_nori	en	Skyscraper Heist	Original variant: cooperative map game against rising threats. Moves: mov n, fix n, iau, dau, fin, ev.
+jaf_in_zgarie_nori	fr	Casse en gratte-ciel	Variante originale: jeu coopératif sur carte contre des menaces croissantes. Coups: mov n, fix n, iau, dau, fin, ev.
+jaf_in_zgarie_nori	it	Colpo al grattacielo	Variante originale: gioco cooperativo su mappa contro minacce crescenti. Mosse: mov n, fix n, iau, dau, fin, ev.
+jaf_in_zgarie_nori	es	Atraco al rascacielos	Variante original: juego cooperativo en mapa contra amenazas crecientes. Jugadas: mov n, fix n, iau, dau, fin, ev.
+jaf_in_zgarie_nori	pt	Assalto ao arranha-céu	Variante original: jogo cooperativo em mapa contra ameaças crescentes. Jogadas: mov n, fix n, iau, dau, fin, ev.
+jaf_in_zgarie_nori	de	Einbruch im Hochhaus	Eigene Variante: kooperatives Kartenspiel gegen wachsende Bedrohungen. Züge: mov n, fix n, iau, dau, fin, ev.
+jaf_in_zgarie_nori	hu	Felhőkarcoló-rablás	Saját változat: kooperatív térképes játék növekvő fenyegetések ellen. Lépések: mov n, fix n, iau, dau, fin, ev.
+aparatorii_orasului	ro	Apărătorii Orașului	Variantă originală cooperativă: doi eroi (cu pachete diferite) bat un răufăcător cu 22 de puncte de viață. Mâna de 5 cărți deschise, 2 cărți pe tură: atac (a), apărare (d), vindecare (h), amețire (s). Răufăcătorul atacă sau urzește (destin până la 10). 14 runde.
+aparatorii_orasului	en	City Defenders	Original variant: cooperative card duel against a villain deck. Moves: joc i, fin, odih (doar cu epuizare), ev.
+aparatorii_orasului	fr	Les Défenseurs de la ville	Variante originale: duel coopératif de cartes contre un paquet adverse. Coups: joc i, fin, odih (doar cu epuizare), ev.
+aparatorii_orasului	it	I difensori della città	Variante originale: duello cooperativo di carte contro un mazzo avversario. Mosse: joc i, fin, odih (doar cu epuizare), ev.
+aparatorii_orasului	es	Los defensores de la ciudad	Variante original: duelo cooperativo de cartas contra un mazo rival. Jugadas: joc i, fin, odih (doar cu epuizare), ev.
+aparatorii_orasului	pt	Os defensores da cidade	Variante original: duelo cooperativo de cartas contra um baralho rival. Jogadas: joc i, fin, odih (doar cu epuizare), ev.
+aparatorii_orasului	de	Die Stadtverteidiger	Eigene Variante: kooperatives Kartenduell gegen ein Gegnerdeck. Züge: joc i, fin, odih (doar cu epuizare), ev.
+aparatorii_orasului	hu	A város védelmezői	Saját változat: kooperatív kártyapárbaj az ellenfél paklija ellen. Lépések: joc i, fin, odih (doar cu epuizare), ev.
+vrajitorii_din_ruine	ro	Vrăjitorii din Ruine	Variantă originală cooperativă: vrăjitori ce își încarcă cristale (c) și apoi lovesc (a cere 1 cristal și dă +2). Mâna de 4 cărți, 3 pe tură, contra unui nemuritor cu 28 de puncte; el atacă 3–5. 14 runde.
+vrajitorii_din_ruine	en	Sorcerers of the Ruins	Original variant: cooperative card duel against a villain deck. Moves: joc i, fin, odih (doar cu epuizare), ev.
+vrajitorii_din_ruine	fr	Les Sorciers des ruines	Variante originale: duel coopératif de cartes contre un paquet adverse. Coups: joc i, fin, odih (doar cu epuizare), ev.
+vrajitorii_din_ruine	it	Gli stregoni delle rovine	Variante originale: duello cooperativo di carte contro un mazzo avversario. Mosse: joc i, fin, odih (doar cu epuizare), ev.
+vrajitorii_din_ruine	es	Los hechiceros de las ruinas	Variante original: duelo cooperativo de cartas contra un mazo rival. Jugadas: joc i, fin, odih (doar cu epuizare), ev.
+vrajitorii_din_ruine	pt	Os feiticeiros das ruínas	Variante original: duelo cooperativo de cartas contra um baralho rival. Jogadas: joc i, fin, odih (doar cu epuizare), ev.
+vrajitorii_din_ruine	de	Die Zauberer der Ruinen	Eigene Variante: kooperatives Kartenduell gegen ein Gegnerdeck. Züge: joc i, fin, odih (doar cu epuizare), ev.
+vrajitorii_din_ruine	hu	A romok varázslói	Saját változat: kooperatív kártyapárbaj az ellenfél paklija ellen. Lépések: joc i, fin, odih (doar cu epuizare), ev.
+gardienii_multiversului	ro	Gardienii Multiversului	Variantă originală cooperativă: doi eroi bat un tiran cu 26 de puncte, pe un fundal care complotează (destin până la 8). 5 cărți deschise, 2 pe tură: atac, apărare, vindecare, amețire.
+gardienii_multiversului	en	Guardians of the Multiverse	Original variant: cooperative card duel against a villain deck. Moves: joc i, fin, odih (doar cu epuizare), ev.
+gardienii_multiversului	fr	Les Gardiens du multivers	Variante originale: duel coopératif de cartes contre un paquet adverse. Coups: joc i, fin, odih (doar cu epuizare), ev.
+gardienii_multiversului	it	I guardiani del multiverso	Variante originale: duello cooperativo di carte contro un mazzo avversario. Mosse: joc i, fin, odih (doar cu epuizare), ev.
+gardienii_multiversului	es	Los guardianes del multiverso	Variante original: duelo cooperativo de cartas contra un mazo rival. Jugadas: joc i, fin, odih (doar cu epuizare), ev.
+gardienii_multiversului	pt	Os guardiões do multiverso	Variante original: duelo cooperativo de cartas contra um baralho rival. Jogadas: joc i, fin, odih (doar cu epuizare), ev.
+gardienii_multiversului	de	Die Wächter des Multiversums	Eigene Variante: kooperatives Kartenduell gegen ein Gegnerdeck. Züge: joc i, fin, odih (doar cu epuizare), ev.
+gardienii_multiversului	hu	A multiverzum őrei	Saját változat: kooperatív kártyapárbaj az ellenfél paklija ellen. Lépések: joc i, fin, odih (doar cu epuizare), ev.
+drumul_prin_mlastini	ro	Drumul prin Mlaștini	Variantă originală cooperativă: străbateți mlaștinile adunând progres (p) până la 8, în timp ce umbra crește (destin până la 12); atacurile (a) o împing înapoi. 5 cărți deschise, 2 pe tură.
+drumul_prin_mlastini	en	The Marshland Road	Original variant: cooperative card duel against a villain deck. Moves: joc i, fin, odih (doar cu epuizare), ev.
+drumul_prin_mlastini	fr	La Route des marais	Variante originale: duel coopératif de cartes contre un paquet adverse. Coups: joc i, fin, odih (doar cu epuizare), ev.
+drumul_prin_mlastini	it	La strada delle paludi	Variante originale: duello cooperativo di carte contro un mazzo avversario. Mosse: joc i, fin, odih (doar cu epuizare), ev.
+drumul_prin_mlastini	es	El camino de los pantanos	Variante original: duelo cooperativo de cartas contra un mazo rival. Jugadas: joc i, fin, odih (doar cu epuizare), ev.
+drumul_prin_mlastini	pt	A estrada dos pântanos	Variante original: duelo cooperativo de cartas contra um baralho rival. Jogadas: joc i, fin, odih (doar cu epuizare), ev.
+drumul_prin_mlastini	de	Der Weg durch die Sümpfe	Eigene Variante: kooperatives Kartenduell gegen ein Gegnerdeck. Züge: joc i, fin, odih (doar cu epuizare), ev.
+drumul_prin_mlastini	hu	Az út a mocsarakon át	Saját változat: kooperatív kártyapárbaj az ellenfél paklija ellen. Lépések: joc i, fin, odih (doar cu epuizare), ev.
+anchetatori_in_ceata	ro	Anchetatori în Ceață	Variantă originală cooperativă: doi anchetatori adună progres (p) până la 7 înainte ca destinul să atingă 10; atacurile reduc destinul. Pachete cu cărți mai puține, fără epuizare. 12 runde.
+anchetatori_in_ceata	en	Investigators in the Fog	Original variant: cooperative card duel against a villain deck. Moves: joc i, fin, odih (doar cu epuizare), ev.
+anchetatori_in_ceata	fr	Enquêteurs dans la brume	Variante originale: duel coopératif de cartes contre un paquet adverse. Coups: joc i, fin, odih (doar cu epuizare), ev.
+anchetatori_in_ceata	it	Investigatori nella nebbia	Variante originale: duello cooperativo di carte contro un mazzo avversario. Mosse: joc i, fin, odih (doar cu epuizare), ev.
+anchetatori_in_ceata	es	Investigadores en la niebla	Variante original: duelo cooperativo de cartas contra un mazo rival. Jugadas: joc i, fin, odih (doar cu epuizare), ev.
+anchetatori_in_ceata	pt	Investigadores no nevoeiro	Variante original: duelo cooperativo de cartas contra um baralho rival. Jogadas: joc i, fin, odih (doar cu epuizare), ev.
+anchetatori_in_ceata	de	Ermittler im Nebel	Eigene Variante: kooperatives Kartenduell gegen ein Gegnerdeck. Züge: joc i, fin, odih (doar cu epuizare), ev.
+anchetatori_in_ceata	hu	Nyomozók a ködben	Saját változat: kooperatív kártyapárbaj az ellenfél paklija ellen. Lépések: joc i, fin, odih (doar cu epuizare), ev.
+lamele_in_pivnita	ro	Lamele din Pivniță	Variantă originală cooperativă: doi luptători cu pachete mici contra unui căpitan cu 20 de puncte; cărțile nu se amestecă singure: `odih` aruncările înapoi costă 1 viață; fără cărți ești epuizat, iar epuizarea ambilor înseamnă eșec. 14 runde.
+lamele_in_pivnita	en	Blades in the Cellar	Original variant: cooperative card duel against a villain deck. Moves: joc i, fin, odih (doar cu epuizare), ev.
+lamele_in_pivnita	fr	Les Lames de la cave	Variante originale: duel coopératif de cartes contre un paquet adverse. Coups: joc i, fin, odih (doar cu epuizare), ev.
+lamele_in_pivnita	it	Le lame nella cantina	Variante originale: duello cooperativo di carte contro un mazzo avversario. Mosse: joc i, fin, odih (doar cu epuizare), ev.
+lamele_in_pivnita	es	Las hojas del sótano	Variante original: duelo cooperativo de cartas contra un mazo rival. Jugadas: joc i, fin, odih (doar cu epuizare), ev.
+lamele_in_pivnita	pt	As lâminas do porão	Variante original: duelo cooperativo de cartas contra um baralho rival. Jogadas: joc i, fin, odih (doar cu epuizare), ev.
+lamele_in_pivnita	de	Die Klingen im Keller	Eigene Variante: kooperatives Kartenduell gegen ein Gegnerdeck. Züge: joc i, fin, odih (doar cu epuizare), ev.
+lamele_in_pivnita	hu	A pince pengéi	Saját változat: kooperatív kártyapárbaj az ellenfél paklija ellen. Lépések: joc i, fin, odih (doar cu epuizare), ev.
+ger_peste_avanpost	ro	Ger peste Avanpost	Variantă originală cooperativă: doi veterani contra unui uriaș de gheață cu 30 de puncte; cărțile se epuizează (odih amestecă aruncările, 1 viață), iar gerul crește destinul (maxim 8). 16 runde.
+ger_peste_avanpost	en	Frost over the Outpost	Original variant: cooperative card duel against a villain deck. Moves: joc i, fin, odih (doar cu epuizare), ev.
+ger_peste_avanpost	fr	Gel sur l'avant-poste	Variante originale: duel coopératif de cartes contre un paquet adverse. Coups: joc i, fin, odih (doar cu epuizare), ev.
+ger_peste_avanpost	it	Gelo sull'avamposto	Variante originale: duello cooperativo di carte contro un mazzo avversario. Mosse: joc i, fin, odih (doar cu epuizare), ev.
+ger_peste_avanpost	es	Hielo sobre el puesto	Variante original: duelo cooperativo de cartas contra un mazo rival. Jugadas: joc i, fin, odih (doar cu epuizare), ev.
+ger_peste_avanpost	pt	Gelo sobre o posto	Variante original: duelo cooperativo de cartas contra um baralho rival. Jogadas: joc i, fin, odih (doar cu epuizare), ev.
+ger_peste_avanpost	de	Frost über dem Außenposten	Eigene Variante: kooperatives Kartenduell gegen ein Gegnerdeck. Züge: joc i, fin, odih (doar cu epuizare), ev.
+ger_peste_avanpost	hu	Fagy az előőrs felett	Saját változat: kooperatív kártyapárbaj az ellenfél paklija ellen. Lépések: joc i, fin, odih (doar cu epuizare), ev.
+conacul_cu_ghicitori	ro	Conacul cu Ghicitori	Variantă originală cooperativă: doi cercetători strâng progres (p) până la 6 într-un conac cu pachete mici (epuizare, odih = 1 viață) înainte ca destinul să atingă 9; atacurile îl scad. 12 runde.
+conacul_cu_ghicitori	en	The Riddle Manor	Original variant: cooperative card duel against a villain deck. Moves: joc i, fin, odih (doar cu epuizare), ev.
+conacul_cu_ghicitori	fr	Le Manoir aux énigmes	Variante originale: duel coopératif de cartes contre un paquet adverse. Coups: joc i, fin, odih (doar cu epuizare), ev.
+conacul_cu_ghicitori	it	La villa degli enigmi	Variante originale: duello cooperativo di carte contro un mazzo avversario. Mosse: joc i, fin, odih (doar cu epuizare), ev.
+conacul_cu_ghicitori	es	La mansión de los enigmas	Variante original: duelo cooperativo de cartas contra un mazo rival. Jugadas: joc i, fin, odih (doar cu epuizare), ev.
+conacul_cu_ghicitori	pt	A mansão dos enigmas	Variante original: duelo cooperativo de cartas contra um baralho rival. Jogadas: joc i, fin, odih (doar cu epuizare), ev.
+conacul_cu_ghicitori	de	Das Rätselanwesen	Eigene Variante: kooperatives Kartenduell gegen ein Gegnerdeck. Züge: joc i, fin, odih (doar cu epuizare), ev.
+conacul_cu_ghicitori	hu	A rejtvények kastélya	Saját változat: kooperatív kártyapárbaj az ellenfél paklija ellen. Lépések: joc i, fin, odih (doar cu epuizare), ev.
+camera_cu_cifru	ro	Camera cu Cifru	Variantă originală cooperativă de evadare: 3 încuietori în lanț, fiecare cu un cod de 3 cifre (0–4). Pe rând propuneți cod xyz; verific anunță cifrele la locul exact și pe cele aproape. 22 de propuneri în total.
+camera_cu_cifru	en	The Cipher Room	Original variant: cooperative code-breaking: open a chain of locks in time. Moves: cod xyz, ajutor, verific, arata.
+camera_cu_cifru	fr	La Salle du chiffre	Variante originale: decryptage coopératif : ouvrir une série de serrures à temps. Coups: cod xyz, ajutor, verific, arata.
+camera_cu_cifru	it	La stanza del cifrario	Variante originale: decifrazione cooperativa: aprire una serie di serrature in tempo. Mosse: cod xyz, ajutor, verific, arata.
+camera_cu_cifru	es	La sala del cifrado	Variante original: descifrado cooperativo: abrir una serie de cerraduras a tiempo. Jugadas: cod xyz, ajutor, verific, arata.
+camera_cu_cifru	pt	A sala da cifra	Variante original: decifração cooperativa: abrir uma série de fechaduras a tempo. Jogadas: cod xyz, ajutor, verific, arata.
+camera_cu_cifru	de	Der Chiffrenraum	Eigene Variante: kooperatives Codeknacken: eine Reihe von Schlössern rechtzeitig öffnen. Züge: cod xyz, ajutor, verific, arata.
+camera_cu_cifru	hu	A kódszoba	Saját változat: kooperatív kódfejtés: zárak sorozatának kinyitása időre. Lépések: cod xyz, ajutor, verific, arata.
+evadare_cu_cartele	ro	Evadare cu Cartele	Variantă originală cooperativă: 4 încuietori cu coduri de 3 cifre (0–3); ajutor (costă 2 timp) dezvăluie o cifră. Timp total 24; fiecare propunere costă 1.
+evadare_cu_cartele	en	Escape by Cards	Original variant: cooperative code-breaking: open a chain of locks in time. Moves: cod xyz, ajutor, verific, arata.
+evadare_cu_cartele	fr	Évasion par cartes	Variante originale: decryptage coopératif : ouvrir une série de serrures à temps. Coups: cod xyz, ajutor, verific, arata.
+evadare_cu_cartele	it	Fuga con le carte	Variante originale: decifrazione cooperativa: aprire una serie di serrature in tempo. Mosse: cod xyz, ajutor, verific, arata.
+evadare_cu_cartele	es	Fuga con cartas	Variante original: descifrado cooperativo: abrir una serie de cerraduras a tiempo. Jugadas: cod xyz, ajutor, verific, arata.
+evadare_cu_cartele	pt	Fuga com cartas	Variante original: decifração cooperativa: abrir uma série de fechaduras a tempo. Jogadas: cod xyz, ajutor, verific, arata.
+evadare_cu_cartele	de	Flucht mit Karten	Eigene Variante: kooperatives Codeknacken: eine Reihe von Schlössern rechtzeitig öffnen. Züge: cod xyz, ajutor, verific, arata.
+evadare_cu_cartele	hu	Szökés kártyákkal	Saját változat: kooperatív kódfejtés: zárak sorozatának kinyitása időre. Lépések: cod xyz, ajutor, verific, arata.
+dosarul_cu_trei_fire	ro	Dosarul cu Trei Fire	Variantă originală cooperativă de anchetă: 6 suspecți cu 3 însușiri (0–2) și 6 locuri de vizitat; viz L aduce un indiciu adevărat despre vinovat, acuz s îl acuză (2 șanse). Timp total 8.
+dosarul_cu_trei_fire	en	The Three-Thread Case	Original variant: cooperative investigation: find the culprit from clues in time. Moves: viz L, acuz s, indiciu, verific.
+dosarul_cu_trei_fire	fr	Le Dossier aux trois fils	Variante originale: enquête coopérative : trouver le coupable grâce aux indices à temps. Coups: viz L, acuz s, indiciu, verific.
+dosarul_cu_trei_fire	it	Il caso dei tre fili	Variante originale: indagine cooperativa: trovare il colpevole dagli indizi in tempo. Mosse: viz L, acuz s, indiciu, verific.
+dosarul_cu_trei_fire	es	El caso de los tres hilos	Variante original: investigación cooperativa: hallar al culpable por las pistas a tiempo. Jugadas: viz L, acuz s, indiciu, verific.
+dosarul_cu_trei_fire	pt	O caso dos três fios	Variante original: investigação cooperativa: achar o culpado pelas pistas a tempo. Jogadas: viz L, acuz s, indiciu, verific.
+dosarul_cu_trei_fire	de	Der Fall mit drei Fäden	Eigene Variante: kooperative Ermittlung: den Täter anhand von Hinweisen rechtzeitig finden. Züge: viz L, acuz s, indiciu, verific.
+dosarul_cu_trei_fire	hu	A háromszálú ügy	Saját változat: kooperatív nyomozás: a tettes megtalálása nyomokból időre. Lépések: viz L, acuz s, indiciu, verific.
+scene_din_patru_anotimpuri	ro	Scene din Patru Anotimpuri	Variantă originală cooperativă de anchetă: 8 suspecți cu 3 însușiri (0–2) și 7 locuri; viz L aduce un indiciu, acuz s acuză (2 șanse). Timp total 9.
+scene_din_patru_anotimpuri	en	Scenes of Four Seasons	Original variant: cooperative investigation: find the culprit from clues in time. Moves: viz L, acuz s, indiciu, verific.
+scene_din_patru_anotimpuri	fr	Scènes de quatre saisons	Variante originale: enquête coopérative : trouver le coupable grâce aux indices à temps. Coups: viz L, acuz s, indiciu, verific.
+scene_din_patru_anotimpuri	it	Scene di quattro stagioni	Variante originale: indagine cooperativa: trovare il colpevole dagli indizi in tempo. Mosse: viz L, acuz s, indiciu, verific.
+scene_din_patru_anotimpuri	es	Escenas de cuatro estaciones	Variante original: investigación cooperativa: hallar al culpable por las pistas a tiempo. Jugadas: viz L, acuz s, indiciu, verific.
+scene_din_patru_anotimpuri	pt	Cenas de quatro estações	Variante original: investigação cooperativa: achar o culpado pelas pistas a tempo. Jogadas: viz L, acuz s, indiciu, verific.
+scene_din_patru_anotimpuri	de	Szenen aus vier Jahreszeiten	Eigene Variante: kooperative Ermittlung: den Täter anhand von Hinweisen rechtzeitig finden. Züge: viz L, acuz s, indiciu, verific.
+scene_din_patru_anotimpuri	hu	Négy évszak jelenetei	Saját változat: kooperatív nyomozás: a tettes megtalálása nyomokból időre. Lépések: viz L, acuz s, indiciu, verific.
+sincron_numerelor	ro	Sincron de Numere	Variantă originală cooperativă pentru doi: la nivelul L fiecare primește L numere (1–100) ascunse celuilalt; fără cuvinte, trebuie jucate în ordine crescătoare. joc = joci cea mai mică carte a ta; astept = lași ceasul comun să meargă cu 1. O greșeală costă o viață și aruncă cărțile mai mici. 6 niveluri, 3 vieți. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+sincron_numerelor	en	Numbers in Sync	Original variant: cooperative silent-timing game: play hidden numbers in ascending order. Moves: joc, astept, nivel.
+sincron_numerelor	fr	Nombres en phase	Variante originale: jeu coopératif de synchronisation silencieuse : jouer des nombres cachés par ordre croissant. Coups: joc, astept, nivel.
+sincron_numerelor	it	Numeri in sincrono	Variante originale: gioco cooperativo di sincronia silenziosa: giocare numeri nascosti in ordine crescente. Mosse: joc, astept, nivel.
+sincron_numerelor	es	Números en sincronía	Variante original: juego cooperativo de sincronía silenciosa: jugar números ocultos en orden creciente. Jugadas: joc, astept, nivel.
+sincron_numerelor	pt	Números em sincronia	Variante original: jogo cooperativo de sincronia silenciosa: jogar números ocultos em ordem crescente. Jogadas: joc, astept, nivel.
+sincron_numerelor	de	Zahlen im Takt	Eigene Variante: kooperatives Spiel stiller Synchronität: verdeckte Zahlen aufsteigend ausspielen. Züge: joc, astept, nivel.
+sincron_numerelor	hu	Számok összhangban	Saját változat: kooperatív néma időzítés: rejtett számok növekvő sorrendben. Lépések: joc, astept, nivel.
+cabina_dubla	ro	Cabina Dublă	Variantă originală cooperativă de aterizare: 7 runde. Fiecare aruncă 2 zaruri ascunse celuilalt; pun 1/pun 2 pune zarul ales pe axă, celălalt pe motoare. Diferența de pe axă ≤ 2 și suma motoarelor în fereastra rundei; 3 rezerve de greșeli, 2 relansări comune. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+cabina_dubla	en	The Double Cockpit	Original variant: cooperative dice game: two pilots balance axis and engines each round. Moves: pun 1, pun 2, relanc, zar, rezolv.
+cabina_dubla	fr	Le Cockpit double	Variante originale: jeu de dés coopératif : deux pilotes équilibrent l'axe et les moteurs à chaque tour. Coups: pun 1, pun 2, relanc, zar, rezolv.
+cabina_dubla	it	La cabina doppia	Variante originale: gioco di dadi cooperativo: due piloti bilanciano asse e motori a ogni round. Mosse: pun 1, pun 2, relanc, zar, rezolv.
+cabina_dubla	es	La cabina doble	Variante original: juego de dados cooperativo: dos pilotos equilibran el eje y los motores cada ronda. Jugadas: pun 1, pun 2, relanc, zar, rezolv.
+cabina_dubla	pt	A cabine dupla	Variante original: jogo de dados cooperativo: dois pilotos equilibram o eixo e os motores a cada rodada. Jogadas: pun 1, pun 2, relanc, zar, rezolv.
+cabina_dubla	de	Das Doppelcockpit	Eigene Variante: kooperatives Würfelspiel: zwei Piloten balancieren pro Runde Achse und Triebwerke. Züge: pun 1, pun 2, relanc, zar, rezolv.
+cabina_dubla	hu	A kettős pilótafülke	Saját változat: kooperatív kockajáték: két pilóta egyensúlyozza a tengelyt és a hajtóműveket. Lépések: pun 1, pun 2, relanc, zar, rezolv.
+expeditia_levatelor	ro	Expediția Levatelor	Variantă originală cooperativă de levate: 40 de cărți (4 culori 1–9 și atuuri 1–4), câte 10 fiecare. 3 cărți-țintă trebuie luate de jucătorul indicat. Culoarea cerută e obligatorie, atuul bate; câștigătorul conduce. joc a5 | levez (forțată). Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+expeditia_levatelor	en	The Trick Expedition	Original variant: cooperative trick-taking with mission cards. Moves: joc <culoare><valoare>, levez.
+expeditia_levatelor	fr	L'Expédition des plis	Variante originale: jeu de plis coopératif avec cartes mission. Coups: joc <culoare><valoare>, levez.
+expeditia_levatelor	it	La spedizione delle prese	Variante originale: gioco di prese cooperativo con carte missione. Mosse: joc <culoare><valoare>, levez.
+expeditia_levatelor	es	La expedición de las bazas	Variante original: juego de bazas cooperativo con cartas de misión. Jugadas: joc <culoare><valoare>, levez.
+expeditia_levatelor	pt	A expedição das vazas	Variante original: jogo de vazas cooperativo com cartas de missão. Jogadas: joc <culoare><valoare>, levez.
+expeditia_levatelor	de	Die Stich-Expedition	Eigene Variante: kooperatives Stichspiel mit Missionskarten. Züge: joc <culoare><valoare>, levez.
+expeditia_levatelor	hu	Az ütések expedíciója	Saját változat: kooperatív ütésjáték küldetéskártyákkal. Lépések: joc <culoare><valoare>, levez.
+tema_in_doi	ro	Tema în Doi	Variantă originală cooperativă: 25 de cuvinte cu două teme fiecare; fiecare are o cheie secretă (9 agenți, 3 capcane). ind t n dă tema t și numărul n, celălalt ghicește (ghic k | stop). Găsiți cei 15 agenți în 9 ture, fără capcane. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+tema_in_doi	en	Theme for Two	Original variant: cooperative word-association duet with secret keys. Moves: ind t n, ghic k, stop, rev.
+tema_in_doi	fr	Thème à deux	Variante originale: duo coopératif d'associations de mots avec clés secrètes. Coups: ind t n, ghic k, stop, rev.
+tema_in_doi	it	Tema in due	Variante originale: duetto cooperativo di associazioni di parole con chiavi segrete. Mosse: ind t n, ghic k, stop, rev.
+tema_in_doi	es	Tema a dúo	Variante original: dúo cooperativo de asociación de palabras con claves secretas. Jugadas: ind t n, ghic k, stop, rev.
+tema_in_doi	pt	Tema a dois	Variante original: dueto cooperativo de associação de palavras com chaves secretas. Jogadas: ind t n, ghic k, stop, rev.
+tema_in_doi	de	Thema zu zweit	Eigene Variante: kooperatives Wortassoziations-Duett mit geheimen Schlüsseln. Züge: ind t n, ghic k, stop, rev.
+tema_in_doi	hu	Téma kettesben	Saját változat: kooperatív szóasszociációs duó titkos kulcsokkal. Lépések: ind t n, ghic k, stop, rev.
+transee_tacute	ro	Tranșee Tăcute	Variantă originală cooperativă: în fiecare rundă apare o amenințare (frig, ploaie, gaz, obuz); cărțile din mână le scot (joc i, joker: joc i tip). Dacă un tip ajunge la 3 pe masă, pierdeți; rezistați 14 runde. pas, pas încheie runda. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+transee_tacute	en	Silent Trenches	Original variant: cooperative hand-shedding survival without talking. Moves: joc i, pas, amenint, trag.
+transee_tacute	fr	Tranchées silencieuses	Variante originale: survie coopérative en jouant ses cartes sans parler. Coups: joc i, pas, amenint, trag.
+transee_tacute	it	Trincee silenziose	Variante originale: sopravvivenza cooperativa giocando le carte senza parlare. Mosse: joc i, pas, amenint, trag.
+transee_tacute	es	Trincheras silenciosas	Variante original: supervivencia cooperativa jugando cartas sin hablar. Jugadas: joc i, pas, amenint, trag.
+transee_tacute	pt	Trincheiras silenciosas	Variante original: sobrevivência cooperativa jogando cartas sem falar. Jogadas: joc i, pas, amenint, trag.
+transee_tacute	de	Stille Schützengräben	Eigene Variante: kooperatives Überleben durch Kartenspielen ohne zu reden. Züge: joc i, pas, amenint, trag.
+transee_tacute	hu	Néma lövészárkok	Saját változat: kooperatív túlélés szavak nélküli kártyajátékkal. Lépések: joc i, pas, amenint, trag.
+sala_de_comanda_stelara	ro	Sala de Comandă Stelară	Variantă originală cooperativă: o navă cu 3 zone; amenințările înaintează spre ea. 2 acțiuni pe jucător: tras z, scut z, repar, pas; ev = sfârșit de rundă. Integritate 7; rezistați 12 runde.
+sala_de_comanda_stelara	en	The Star Command Room	Original variant: cooperative defence of a ship against approaching threats. Moves: tras z, scut z, repar, pas, ev.
+sala_de_comanda_stelara	fr	La Salle de commande stellaire	Variante originale: défense coopérative d'un vaisseau contre des menaces qui approchent. Coups: tras z, scut z, repar, pas, ev.
+sala_de_comanda_stelara	it	La sala di comando stellare	Variante originale: difesa cooperativa di un'astronave da minacce in avvicinamento. Mosse: tras z, scut z, repar, pas, ev.
+sala_de_comanda_stelara	es	La sala de mando estelar	Variante original: defensa cooperativa de una nave contra amenazas que se acercan. Jugadas: tras z, scut z, repar, pas, ev.
+sala_de_comanda_stelara	pt	A sala de comando estelar	Variante original: defesa cooperativa de uma nave contra ameaças que se aproximam. Jogadas: tras z, scut z, repar, pas, ev.
+sala_de_comanda_stelara	de	Die Sternenkommandozentrale	Eigene Variante: kooperative Verteidigung eines Schiffs gegen nahende Bedrohungen. Züge: tras z, scut z, repar, pas, ev.
+sala_de_comanda_stelara	hu	A csillagparancsnoki terem	Saját változat: kooperatív hajóvédelem közeledő fenyegetések ellen. Lépések: tras z, scut z, repar, pas, ev.
+lupii_din_ceata	ro	Lupii din Ceață	Variantă originală cu roluri ascunse într-o noapte: lup, văzător, hoț, insomniac, sătean și tăbăcar (6 cărți: una pentru fiecare, trei pe masă, una scoasă). Noaptea fiecare acționează secret, ziua alegeți voteaza sau iert. Câștigă tăbăcarul executat; altfel moare lupul = victoria celorlalți. 3 mâini. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+lupii_din_ceata	en	Wolves of the Mist	Original variant: one-night hidden-role deduction for two. Moves: trag, vad .., fur, pas, somn, zori, voteaza, iert, verifica.
+lupii_din_ceata	fr	Les Loups de la brume	Variante originale: déduction à rôles cachés en une nuit pour deux. Coups: trag, vad .., fur, pas, somn, zori, voteaza, iert, verifica.
+lupii_din_ceata	it	I lupi della nebbia	Variante originale: deduzione a ruoli nascosti in una notte per due. Mosse: trag, vad .., fur, pas, somn, zori, voteaza, iert, verifica.
+lupii_din_ceata	es	Los lobos de la niebla	Variante original: deducción de roles ocultos en una noche para dos. Jugadas: trag, vad .., fur, pas, somn, zori, voteaza, iert, verifica.
+lupii_din_ceata	pt	Os lobos da névoa	Variante original: dedução de papéis ocultos em uma noite para dois. Jogadas: trag, vad .., fur, pas, somn, zori, voteaza, iert, verifica.
+lupii_din_ceata	de	Die Nebelwölfe	Eigene Variante: Ein-Nacht-Deduktion mit verdeckten Rollen für zwei. Züge: trag, vad .., fur, pas, somn, zori, voteaza, iert, verifica.
+lupii_din_ceata	hu	A köd farkasai	Saját változat: egyéjszakás rejtett szerepes következtetés kettőre. Lépések: trag, vad .., fur, pas, somn, zori, voteaza, iert, verifica.
+vampirii_din_ceata	ro	Vampirii din Ceață	Variantă originală cu roluri ascunse într-o noapte: vampir, văzător, bețiv, mușcător (marchează adversarul în echipa vampirilor), sătean și tăbăcar. Noaptea acțiuni secrete, ziua voteaza sau iert. Moare cineva din echipa rea = victoria celorlalți. 3 mâini. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+vampirii_din_ceata	en	Vampires of the Mist	Original variant: one-night hidden-role deduction for two. Moves: trag, vad .., bea c, musc, pas, somn, zori, voteaza, iert, verifica.
+vampirii_din_ceata	fr	Les Vampires de la brume	Variante originale: déduction à rôles cachés en une nuit pour deux. Coups: trag, vad .., bea c, musc, pas, somn, zori, voteaza, iert, verifica.
+vampirii_din_ceata	it	I vampiri della nebbia	Variante originale: deduzione a ruoli nascosti in una notte per due. Mosse: trag, vad .., bea c, musc, pas, somn, zori, voteaza, iert, verifica.
+vampirii_din_ceata	es	Los vampiros de la niebla	Variante original: deducción de roles ocultos en una noche para dos. Jugadas: trag, vad .., bea c, musc, pas, somn, zori, voteaza, iert, verifica.
+vampirii_din_ceata	pt	Os vampiros da névoa	Variante original: dedução de papéis ocultos em uma noite para dois. Jogadas: trag, vad .., bea c, musc, pas, somn, zori, voteaza, iert, verifica.
+vampirii_din_ceata	de	Die Nebelvampire	Eigene Variante: Ein-Nacht-Deduktion mit verdeckten Rollen für zwei. Züge: trag, vad .., bea c, musc, pas, somn, zori, voteaza, iert, verifica.
+vampirii_din_ceata	hu	A köd vámpírjai	Saját változat: egyéjszakás rejtett szerepes következtetés kettőre. Lépések: trag, vad .., bea c, musc, pas, somn, zori, voteaza, iert, verifica.
+axa_inventiilor	ro	Axa Invențiilor	Variantă originală de petrecere: fiecare are o cronologie de invenții. trag arată o invenție (anul ascuns), pun k o așază pe poziția k, verific arată anul: loc corect = rămâne, altfel se aruncă. Primul la 7 cărți câștigă.
+axa_inventiilor	en	The Inventions Timeline	Original variant: timeline party game: place cards in chronological order. Moves: trag, pun k, verific.
+axa_inventiilor	fr	La Frise des inventions	Variante originale: jeu de société sur la chronologie : placer les cartes dans l'ordre. Coups: trag, pun k, verific.
+axa_inventiilor	it	La linea delle invenzioni	Variante originale: gioco da festa sulla cronologia: mettere le carte in ordine. Mosse: trag, pun k, verific.
+axa_inventiilor	es	La línea de los inventos	Variante original: juego de fiesta de cronología: colocar las cartas en orden. Jugadas: trag, pun k, verific.
+axa_inventiilor	pt	A linha dos inventos	Variante original: jogo de festa de cronologia: colocar as cartas em ordem. Jogadas: trag, pun k, verific.
+axa_inventiilor	de	Die Erfindungs-Zeitleiste	Eigene Variante: Party-Zeitleistenspiel: Karten chronologisch einordnen. Züge: trag, pun k, verific.
+axa_inventiilor	hu	A találmányok idővonala	Saját változat: időrendi partijáték: kártyák elhelyezése sorrendben. Lépések: trag, pun k, verific.
+modelaj_in_tacere	ro	Modelaj în Tăcere	Variantă originală: cel care modelează dă indicii adevărate (ind A=2, cel mult 3, apoi 2 pe rând) despre un obiect ascuns (formă, mărime, culoare); celălalt ghicește (ghic k). 6 runde. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+modelaj_in_tacere	en	Silent Sculpting	Original variant: party game: describe with true clues, the other guesses. Moves: ind A=v, gata, ghic k, verific.
+modelaj_in_tacere	fr	Modelage en silence	Variante originale: jeu d'ambiance : décrire avec de vrais indices, l'autre devine. Coups: ind A=v, gata, ghic k, verific.
+modelaj_in_tacere	it	Modellare in silenzio	Variante originale: gioco di società: descrivere con indizi veri, l'altro indovina. Mosse: ind A=v, gata, ghic k, verific.
+modelaj_in_tacere	es	Modelado en silencio	Variante original: juego de fiesta: describir con pistas verdaderas, el otro adivina. Jugadas: ind A=v, gata, ghic k, verific.
+modelaj_in_tacere	pt	Modelagem em silêncio	Variante original: jogo de festa: descrever com pistas verdadeiras, o outro adivinha. Jogadas: ind A=v, gata, ghic k, verific.
+modelaj_in_tacere	de	Stilles Modellieren	Eigene Variante: Partyspiel: mit wahren Hinweisen beschreiben, der andere rät. Züge: ind A=v, gata, ghic k, verific.
+modelaj_in_tacere	hu	Néma mintázás	Saját változat: partijáték: igaz nyomokkal leírni, a másik tippel. Lépések: ind A=v, gata, ghic k, verific.
+pictorul_pretins	ro	Pictorul Pretins	Variantă originală: pictorul care știe subiectul dă indicii adevărate despre un desen ascuns (subiect, linie, început) iar celălalt, care nu îl vede, încearcă să-l ghicească. 6 runde. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+pictorul_pretins	en	The Pretend Painter	Original variant: party game: describe with true clues, the other guesses. Moves: ind A=v, gata, ghic k, verific.
+pictorul_pretins	fr	Le Peintre simulé	Variante originale: jeu d'ambiance : décrire avec de vrais indices, l'autre devine. Coups: ind A=v, gata, ghic k, verific.
+pictorul_pretins	it	Il pittore finto	Variante originale: gioco di società: descrivere con indizi veri, l'altro indovina. Mosse: ind A=v, gata, ghic k, verific.
+pictorul_pretins	es	El pintor fingido	Variante original: juego de fiesta: describir con pistas verdaderas, el otro adivina. Jugadas: ind A=v, gata, ghic k, verific.
+pictorul_pretins	pt	O pintor fingido	Variante original: jogo de festa: descrever com pistas verdadeiras, o outro adivinha. Jogadas: ind A=v, gata, ghic k, verific.
+pictorul_pretins	de	Der falsche Maler	Eigene Variante: Partyspiel: mit wahren Hinweisen beschreiben, der andere rät. Züge: ind A=v, gata, ghic k, verific.
+pictorul_pretins	hu	A színlelő festő	Saját változat: partijáték: igaz nyomokkal leírni, a másik tippel. Lépések: ind A=v, gata, ghic k, verific.
+placinta_in_obraz	ro	Plăcinta în Obraz	Variantă originală de noroc și nervi: 6 pârghii, una dintre ele pornește plăcinta. Alegi pe rând (alege i, apoi arata): bună +1 și continui, rea: tura trece. 6 întrebări.
+placinta_in_obraz	en	Pie in the Face	Original variant: party game of luck and nerve: pick hidden good or bad boxes. Moves: alege i, arata, stop.
+placinta_in_obraz	fr	La Tarte en pleine figure	Variante originale: jeu d'ambiance de chance et de sang-froid : choisir des cases cachées bonnes ou mauvaises. Coups: alege i, arata, stop.
+placinta_in_obraz	it	La torta in faccia	Variante originale: gioco di società di fortuna e sangue freddo: scegliere caselle nascoste buone o cattive. Mosse: alege i, arata, stop.
+placinta_in_obraz	es	La tarta en la cara	Variante original: juego de fiesta de suerte y temple: elegir casillas ocultas buenas o malas. Jugadas: alege i, arata, stop.
+placinta_in_obraz	pt	A torta na cara	Variante original: jogo de festa de sorte e sangue-frio: escolher casas ocultas boas ou más. Jogadas: alege i, arata, stop.
+placinta_in_obraz	de	Die Torte ins Gesicht	Eigene Variante: Partyspiel um Glück und Nerven: verdeckte gute oder schlechte Felder wählen. Züge: alege i, arata, stop.
+placinta_in_obraz	hu	A torta az arcba	Saját változat: partijáték szerencsével és hidegvérrel: rejtett jó vagy rossz mezők. Lépések: alege i, arata, stop.
+minciuna_savoroasa	ro	Minciuna Savuroasă	Variantă originală de bluf: cel care alege fixează în secret una din 5 variante, celălalt ghicește (ghic g s) cu miza 1–3. Ghicit corect: câștigă miza; greșit: ascunzătorul primește 1. 6 runde. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+minciuna_savoroasa	en	The Tasty Lie	Original variant: party game of bluff: guess the other's hidden choice and stake tokens. Moves: alege f, ghic g s, dezvalui.
+minciuna_savoroasa	fr	Le Mensonge savoureux	Variante originale: jeu d'ambiance de bluff : deviner le choix caché de l'autre et miser des jetons. Coups: alege f, ghic g s, dezvalui.
+minciuna_savoroasa	it	La bugia gustosa	Variante originale: gioco di società di bluff: indovinare la scelta nascosta dell'altro e puntare gettoni. Mosse: alege f, ghic g s, dezvalui.
+minciuna_savoroasa	es	La mentira sabrosa	Variante original: juego de fiesta de farol: adivinar la elección oculta del otro y apostar fichas. Jugadas: alege f, ghic g s, dezvalui.
+minciuna_savoroasa	pt	A mentira saborosa	Variante original: jogo de festa de blefe: adivinhar a escolha oculta do outro e apostar fichas. Jogadas: alege f, ghic g s, dezvalui.
+minciuna_savoroasa	de	Die köstliche Lüge	Eigene Variante: Partyspiel mit Bluff: die verdeckte Wahl des anderen erraten und Marker setzen. Züge: alege f, ghic g s, dezvalui.
+minciuna_savoroasa	hu	Az ízes hazugság	Saját változat: blöffölős partijáték: a másik rejtett választásának kitalálása zsetonokkal. Lépések: alege f, ghic g s, dezvalui.
+sala_cu_mini_jocuri	ro	Sala cu Mini-Jocuri	Variantă originală: fiecare rundă are gusturile unui public ascuns; joci 2 cărți (joc i,j) și publicul votează (voteaza); scena e cartea câștigătoare din runda precedentă. 7 runde. Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+sala_cu_mini_jocuri	en	The Mini-Game Hall	Original variant: party game where a hidden audience decides the best card. Moves: joc i,j, voteaza.
+sala_cu_mini_jocuri	fr	La Salle des mini-jeux	Variante originale: jeu d'ambiance où un public caché choisit la meilleure carte. Coups: joc i,j, voteaza.
+sala_cu_mini_jocuri	it	La sala dei mini-giochi	Variante originale: gioco di società dove un pubblico nascosto sceglie la carta migliore. Mosse: joc i,j, voteaza.
+sala_cu_mini_jocuri	es	La sala de minijuegos	Variante original: juego de fiesta donde un público oculto elige la mejor carta. Jugadas: joc i,j, voteaza.
+sala_cu_mini_jocuri	pt	A sala dos minijogos	Variante original: jogo de festa em que um público oculto escolhe a melhor carta. Jogadas: joc i,j, voteaza.
+sala_cu_mini_jocuri	de	Die Minispiel-Halle	Eigene Variante: Partyspiel, in dem ein verdecktes Publikum die beste Karte wählt. Züge: joc i,j, voteaza.
+sala_cu_mini_jocuri	hu	A minijátékok terme	Saját változat: partijáték, ahol egy rejtett közönség dönti el a legjobb lapot. Lépések: joc i,j, voteaza.
+cina_cu_suspecti	ro	Cina cu Suspecți	Variantă originală de petrecere: vinovatul de la cină e ascuns tuturor; pe rând puneți întrebări intreb A=v (răspuns public) și ghiciți (ghic k). 5 runde.
+cina_cu_suspecti	en	Dinner with Suspects	Original variant: party game of yes/no questions about a hidden case, shared answers. Moves: intreb A=v, ghic k, raspuns, verific.
+cina_cu_suspecti	fr	Dîner avec suspects	Variante originale: jeu d'ambiance de questions oui/non sur une affaire cachée, réponses communes. Coups: intreb A=v, ghic k, raspuns, verific.
+cina_cu_suspecti	it	Cena con i sospettati	Variante originale: gioco di società di domande sì/no su un caso nascosto, risposte comuni. Mosse: intreb A=v, ghic k, raspuns, verific.
+cina_cu_suspecti	es	Cena con sospechosos	Variante original: juego de fiesta de preguntas sí/no sobre un caso oculto, respuestas comunes. Jugadas: intreb A=v, ghic k, raspuns, verific.
+cina_cu_suspecti	pt	Jantar com suspeitos	Variante original: jogo de festa de perguntas sim/não sobre um caso oculto, respostas comuns. Jogadas: intreb A=v, ghic k, raspuns, verific.
+cina_cu_suspecti	de	Dinner mit Verdächtigen	Eigene Variante: Partyspiel mit Ja/Nein-Fragen zu einem verborgenen Fall, gemeinsame Antworten. Züge: intreb A=v, ghic k, raspuns, verific.
+cina_cu_suspecti	hu	Vacsora gyanúsítottakkal	Saját változat: partijáték igen/nem kérdésekkel egy rejtett esetről, közös válaszokkal. Lépések: intreb A=v, ghic k, raspuns, verific.
+rebus_in_cadre	ro	Rebus în Cadre	Variantă originală de petrecere: un rebus se dezvăluie prin indicii pe rând (mai mult); oricine poate ghici oricând (ghic k). 6 runde, cel mult 4 indicii.
+rebus_in_cadre	en	Rebus in Frames	Original variant: party game with a ladder of clues revealed one by one. Moves: mai mult, ghic k, verific.
+rebus_in_cadre	fr	Rébus en cadres	Variante originale: jeu d'ambiance avec une échelle d'indices révélés un à un. Coups: mai mult, ghic k, verific.
+rebus_in_cadre	it	Rebus nei riquadri	Variante originale: gioco di società con una scala di indizi svelati uno alla volta. Mosse: mai mult, ghic k, verific.
+rebus_in_cadre	es	Rebus en marcos	Variante original: juego de fiesta con una escalera de pistas reveladas una a una. Jugadas: mai mult, ghic k, verific.
+rebus_in_cadre	pt	Rébus em quadros	Variante original: jogo de festa com uma escada de pistas reveladas uma a uma. Jogadas: mai mult, ghic k, verific.
+rebus_in_cadre	de	Rebus in Rahmen	Eigene Variante: Partyspiel mit einer Hinweisleiter, die Schritt für Schritt aufgedeckt wird. Züge: mai mult, ghic k, verific.
+rebus_in_cadre	hu	Rejtvény keretekben	Saját változat: partijáték lépcsőzetesen felfedett nyomokkal. Lépések: mai mult, ghic k, verific.

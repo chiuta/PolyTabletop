@@ -459,6 +459,47 @@ const NO_HIDDEN_B6: &[&str] = &[
     "aruncari_cupe",
 ];
 
+/// C4 (jocuri pentru copii, variante originale): nimic privat unui jucător (norocul e al nimănui sau e public).
+const NO_HIDDEN_C4: &[&str] = &[
+    "gheata_alunecoasa",
+    "turnul_rinocerului",
+    "turnul_fermei",
+    "oua_din_cuib",
+    "vulpea_dibace",
+    "plansa_cu_poze",
+    "memoria_luminilor",
+    "catarul_incarcat",
+    "butoiasul_corsar",
+    "piesa_la_timp",
+    "iepuras_galop",
+    "balansul_cerdacului",
+    "gandacelul_adunat",
+    "camara_adormita",
+    "piratii_din_golf",
+    "cetatea_si_drumul",
+    "insula_dragonilor",
+    "copii_contra_stafiilor",
+    "labirint_nevazut",
+    "fantoma_de_pe_turn",
+    "trepte_soaptelor",
+    "stafia_din_castel",
+    "soricei_pe_branza",
+    "stafii_comoara",
+    "viermi_in_mar",
+    "fantoma_fugara",
+    "paianjen_pe_fir",
+    "satul_din_piatra",
+    "zaruri_grabite",
+    "pietre_sclipitoare",
+    "corabii_din_vale",
+    "piramida_bolovani",
+    "chei_si_usi",
+    "tort_pe_tort",
+    "insula_cu_furtuni",
+    "parcul_perechilor",
+    "purcei_cursa_mare",
+];
+
 /// B4 (strategie, variante originale): informație perfectă sau mâini deschise.
 const NO_HIDDEN_B4: &[&str] = &[
     "negustori_port",
@@ -503,6 +544,80 @@ const NO_HIDDEN_B4: &[&str] = &[
     "frontiera_stelara",
 ];
 
+/// C1 (cooperative și petrecere, variante originale): nimic privat unui jucător.
+const NO_HIDDEN_C1: &[&str] = &[
+    "insula_scufundata",
+    "furtuna_de_nisip",
+    "focare_si_leacuri",
+    "ceasul_apocalipsei",
+    "soarecii_din_castel",
+    "monstrii_din_sat",
+    "labirint_fara_cuvinte",
+    "naufragiati_pe_insula",
+    "focul_in_bloc",
+    "asediul_turnului",
+    "jaf_in_zgarie_nori",
+    "aparatorii_orasului",
+    "vrajitorii_din_ruine",
+    "gardienii_multiversului",
+    "drumul_prin_mlastini",
+    "anchetatori_in_ceata",
+    "lamele_in_pivnita",
+    "ger_peste_avanpost",
+    "conacul_cu_ghicitori",
+    "camera_cu_cifru",
+    "evadare_cu_cartele",
+    "dosarul_cu_trei_fire",
+    "scene_din_patru_anotimpuri",
+    "sala_de_comanda_stelara",
+    "axa_inventiilor",
+    "placinta_in_obraz",
+    "cina_cu_suspecti",
+    "rebus_in_cadre",
+];
+
+/// C3 (cooperative, cărți, copii; variante originale): fără informație privată a unui jucător.
+const NO_HIDDEN_C3: &[&str] = &[
+    "ritualul_adancului",
+    "sigiliul_batran",
+    "ceata_tenebrelor",
+    "galeria_prabusita",
+    "ceasul_templului",
+    "scrisori_amestecate",
+    "urcus_coboras",
+    "paleta_evadarii",
+    "ancheta_nocturna",
+    "tunelul_blocat",
+    "cripta_eroilor",
+    "pachetul_aventurierilor",
+    "orasul_asediat",
+    "fisuri_temporale",
+    "camera_cu_ghicitori",
+    "zborul_bufnitelor",
+    "ogrul_pe_urme",
+    "cetele_pustiei",
+    "tinutul_ceturilor",
+    "garnizoana_cuibului",
+    "calatoria_cetei",
+    "vanatorii_de_umbre",
+    "focar_zero",
+    "calea_cavalerului",
+    "hotarul_cazut",
+    "padurea_juramintelor",
+    "randurile_cu_boi",
+    "mana_sigura",
+    "hipopotamii_lacomi",
+    "pioni_prinsi",
+    "cursa_cascavalului",
+    "bilele_in_tub",
+    "livada_cu_cirese",
+    "gheata_subtire",
+    "avionul_hapsan",
+    "livada_si_corbul",
+    "gainile_pe_cerc",
+    "clopotelul_fructelor",
+];
+
 #[test]
 fn every_playable_id_is_classified() {
     let mut unclassified = Vec::new();
@@ -512,10 +627,13 @@ fn every_playable_id_is_classified() {
             HOTSEAT_SAFE.contains(&p.id),
             SOLO_GOD.contains(&p.id),
             NO_HIDDEN.contains(&p.id)
-                || NO_HIDDEN_B2.contains(&p.id)
                 || NO_HIDDEN_B5.contains(&p.id)
+                || NO_HIDDEN_B2.contains(&p.id)
+                || NO_HIDDEN_B6.contains(&p.id)
+                || NO_HIDDEN_C4.contains(&p.id)
                 || NO_HIDDEN_B4.contains(&p.id)
-                || NO_HIDDEN_B6.contains(&p.id),
+                || NO_HIDDEN_C1.contains(&p.id)
+                || NO_HIDDEN_C3.contains(&p.id),
         ]
         .iter()
         .filter(|b| **b)
@@ -541,10 +659,13 @@ fn lists_have_no_stale_or_duplicate_ids() {
     for (name, l) in [
         ("SOLO_GOD", SOLO_GOD),
         ("NO_HIDDEN", NO_HIDDEN),
+        ("NO_HIDDEN_B5", NO_HIDDEN_B5),
         ("NO_HIDDEN_B2", NO_HIDDEN_B2),
         ("NO_HIDDEN_B6", NO_HIDDEN_B6),
-        ("NO_HIDDEN_B5", NO_HIDDEN_B5),
+        ("NO_HIDDEN_C4", NO_HIDDEN_C4),
         ("NO_HIDDEN_B4", NO_HIDDEN_B4),
+        ("NO_HIDDEN_C1", NO_HIDDEN_C1),
+        ("NO_HIDDEN_C3", NO_HIDDEN_C3),
     ] {
         let set: BTreeSet<&str> = l.iter().copied().collect();
         assert_eq!(set.len(), l.len(), "{name} has duplicates");

@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (694)
+## Implementat (811)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -602,15 +602,80 @@
 | Quelf | Party | Marea Britanie | implementat |
 | Bezzerwizzer | Party | Olanda | implementat |
 | Gestures | Party | SUA | implementat |
+| Rapidough | Party | SUA | implementat |
+| Pie Face | Party | SUA | implementat |
+| Fibbage | Party | SUA | implementat |
+| Jackbox Party Pack | Party | SUA | implementat |
 | Zip Zap Zop | Party | — | implementat |
 | Sardines | Party | Marea Britanie | implementat |
 | Wink Murder | Party | Marea Britanie | implementat |
+| How to Host a Murder | Party | SUA | implementat |
 | Pass the Parcel | Party | Marea Britanie | implementat |
 | Pin the Tail on the Donkey | Party | SUA | implementat |
+| Dingbats (Rebus) | Party | Marea Britanie | implementat |
+| Codenames: Duet | Party | Cehia | implementat |
+| A Fake Artist Goes to New York | Party | Japonia | implementat |
+| Ultimate Werewolf | Party | SUA | implementat |
+| Hitster | Party | Olanda | implementat |
 | Pub quiz | Party | Marea Britanie | implementat |
 | Ghicește melodia (Name That Tune) | Party | SUA | implementat |
 | Sticla (Spin the bottle) | Party | SUA | implementat |
 | Vânătoarea de comori (Treasure hunt) | Party | Marea Britanie | implementat |
+| One Night Ultimate Vampire | Party | SUA | implementat |
+| The Crew: The Quest for Planet Nine | Cooperativ | Germania | implementat |
+| Forbidden Island | Cooperativ | SUA | implementat |
+| Arkham Horror: The Card Game | Cooperativ | SUA | implementat |
+| Forbidden Desert | Cooperativ | SUA | implementat |
+| The Mind | Cooperativ | Germania | implementat |
+| Pandemic Legacy: Season 1 | Cooperativ | SUA | implementat |
+| Eldritch Horror | Cooperativ | SUA | implementat |
+| Sky Team | Cooperativ | Franța | implementat |
+| Marvel Champions: The Card Game | Cooperativ | SUA | implementat |
+| Gloomhaven: Jaws of the Lion | Cooperativ | SUA | implementat |
+| Mansions of Madness (ediția a 2-a) | Cooperativ | SUA | implementat |
+| Mice and Mystics | Cooperativ | SUA | implementat |
+| Horrified | Cooperativ | SUA | implementat |
+| Aeon's End | Cooperativ | SUA | implementat |
+| Magic Maze | Cooperativ | Franța | implementat |
+| Sentinels of the Multiverse | Cooperativ | SUA | implementat |
+| Robinson Crusoe: Adventures on the Cursed Island | Cooperativ | Polonia | implementat |
+| Exit: The Game | Cooperativ | Germania | implementat |
+| Unlock! | Cooperativ | Franța | implementat |
+| Flash Point: Fire Rescue | Cooperativ | SUA | implementat |
+| Castle Panic | Cooperativ | SUA | implementat |
+| The Lord of the Rings: The Card Game | Cooperativ | SUA | implementat |
+| Frosthaven | Cooperativ | SUA | implementat |
+| Sherlock Holmes Consulting Detective | Cooperativ | Marea Britanie | implementat |
+| Space Alert | Cooperativ | Cehia | implementat |
+| Burgle Bros. | Cooperativ | SUA | implementat |
+| The Grizzled | Cooperativ | Franța | implementat |
+| Chronicles of Crime | Cooperativ | Polonia | implementat |
+| Cthulhu: Death May Die | Cooperativ | SUA | implementat |
+| Elder Sign | Cooperativ | SUA | implementat |
+| Massive Darkness 2 | Cooperativ | SUA | implementat |
+| Sub Terra | Cooperativ | Polonia | implementat |
+| Escape: The Curse of the Temple | Cooperativ | Germania | implementat |
+| Letter Jam | Cooperativ | Cehia | implementat |
+| The Game | Cooperativ | Germania | implementat |
+| Deckscape | Cooperativ | Italia | implementat |
+| Detective: A Modern Crime Board Game | Cooperativ | Polonia | implementat |
+| Bandido | Cooperativ | Elveția | implementat |
+| HeroQuest | Cooperativ | Marea Britanie | implementat |
+| Pathfinder Adventure Card Game | Cooperativ | SUA | implementat |
+| This War of Mine: The Board Game | Cooperativ | Polonia | implementat |
+| TIME Stories | Cooperativ | Belgia | implementat |
+| Escape Room: The Game | Cooperativ | Olanda | implementat |
+| Hoot Owl Hoot! | Cooperativ | SUA | implementat |
+| Race to the Treasure! | Cooperativ | SUA | implementat |
+| Warhammer Quest | Cooperativ | Marea Britanie | implementat |
+| Tainted Grail: The Fall of Avalon | Cooperativ | Polonia | implementat |
+| Aliens: Another Glorious Day in the Corps | Cooperativ | SUA | implementat |
+| The Lord of the Rings: Journeys in Middle-earth | Cooperativ | SUA | implementat |
+| Hellboy: The Board Game | Cooperativ | SUA | implementat |
+| Pandemic Legacy: Season 0 | Cooperativ | SUA | implementat |
+| Mage Knight Board Game | Cooperativ | Cehia | implementat |
+| Pandemic: Fall of Rome | Cooperativ | SUA | implementat |
+| Oathsworn: Into the Deepwood | Cooperativ | Marea Britanie | implementat |
 | Solitaire (Klondike) | Cărți | Global | implementat |
 | War (Război / Bătălia) | Cărți | Global | implementat |
 | Old Maid (Bătrâna fată) | Cărți | Europa / Global | implementat |
@@ -631,6 +696,7 @@
 | Tysiąc (Tysiacha, o mie) | Cărți | Polonia / Rusia | implementat |
 | Klaverjas | Cărți | Olanda | implementat |
 | Batak | Cărți | Turcia | implementat |
+| Sheng ji (Tractor) | Cărți | China | implementat |
 | Twenty-Nine (29) | Cărți | India / Pakistan / Asia de Sud | implementat |
 | Sevens (Fan Tan) | Cărți | Global | implementat |
 | Three Card Brag | Cărți | Marea Britanie | implementat |
@@ -640,9 +706,17 @@
 | Tute | Cărți | Spania | implementat |
 | Skitgubbe | Cărți | Suedia | implementat |
 | Ulti | Cărți | Ungaria | implementat |
+| 6 nimmt! (Take 5) | Cărți | Germania | implementat |
 | Baccarat (Punto banco) | Cărți | Franța / Italia | implementat |
 | Piatră, hârtie, foarfece | Copii | China | implementat |
 | Ascunselea (Hide-and-seek) | Copii | Global | implementat |
+| Operation | Copii | SUA | implementat |
+| Hungry Hungry Hippos | Copii | SUA | implementat |
+| Trouble | Copii | SUA | implementat |
+| Mouse Trap | Copii | SUA | implementat |
+| KerPlunk | Copii | Marea Britanie | implementat |
+| Hi Ho! Cherry-O | Copii | SUA | implementat |
+| Don't Break the Ice | Copii | SUA | implementat |
 | Șotron (Hopscotch) | Copii | Global | implementat |
 | Baba-oarba (Blind man's buff) | Copii | Global | implementat |
 | Scaunele muzicale | Copii | Marea Britanie | implementat |
@@ -653,6 +727,49 @@
 | Cinci pietricele (Jacks / Knucklebones) | Copii | Global | implementat |
 | Mikado (Pick-up sticks) | Copii | Global | implementat |
 | Spânzurătoarea (Hangman) | Copii | Global | implementat |
+| Loopin' Louie | Copii | Germania | implementat |
+| Obstgarten (Orchard) | Copii | Germania | implementat |
+| Zicke Zacke Hühnerkacke (Chicken Cha Cha Cha) | Copii | Germania | implementat |
+| Halli Galli | Copii | Germania | implementat |
+| Sleeping Queens | Copii | SUA | implementat |
+| Ice Cool | Copii | Germania | implementat |
+| Rhino Hero | Copii | Germania | implementat |
+| Animal Upon Animal (Tier auf Tier) | Copii | Germania | implementat |
+| Gulo Gulo | Copii | Germania | implementat |
+| Outfoxed! | Copii | SUA | implementat |
+| Zingo | Copii | SUA | implementat |
+| Simon | Copii | SUA | implementat |
+| Buckaroo! | Copii | Marea Britanie | implementat |
+| Pop-Up Pirate | Copii | Japonia | implementat |
+| Perfection | Copii | SUA | implementat |
+| Lotti Karotti | Copii | Germania | implementat |
+| Bamboleo | Copii | Spania | implementat |
+| Cooties | Copii | SUA | implementat |
+| Don't Wake Daddy | Copii | SUA | implementat |
+| Catan Junior | Copii | Germania | implementat |
+| My First Carcassonne | Copii | Germania | implementat |
+| Dragomino | Copii | Franța | implementat |
+| Zombie Kidz Evolution | Copii | Franța | implementat |
+| The Magic Labyrinth | Copii | Germania | implementat |
+| The Enchanted Tower | Copii | Germania | implementat |
+| Spooky Stairs | Copii | Germania | implementat |
+| Das kleine Gespenst | Copii | Germania | implementat |
+| Viva Topo! | Copii | Germania | implementat |
+| Geister, Geister, Schatzsuchmeister | Copii | Germania | implementat |
+| Da ist der Wurm drin (Worm Up) | Copii | Germania | implementat |
+| Schnappt Hubi! | Copii | Germania | implementat |
+| Spinderella | Copii | Germania | implementat |
+| My First Stone Age | Copii | Germania | implementat |
+| Speedy Roll | Copii | Germania | implementat |
+| Funkelschatz | Copii | Germania | implementat |
+| Tal der Wikinger (Valley of the Vikings) | Copii | Germania | implementat |
+| Zauberberg (Magic Mountain) | Copii | Germania | implementat |
+| Mysterium Kids | Copii | Franța | implementat |
+| Die magischen Schlüssel (Magic Keys) | Copii | Germania | implementat |
+| Top the Cake | Copii | Germania | implementat |
+| Die Insel der Mookies | Copii | Germania | implementat |
+| Noah's Park | Copii | Germania | implementat |
+| Galloping Pigs | Copii | Germania | implementat |
 | Capra (Leapfrog) | Copii | Global | implementat |
 | Elasticul (Chinese jump rope) | Copii | China | implementat |
 | Statuile (Statues) | Copii | Global | implementat |
@@ -706,49 +823,10 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Variantă proprie (234)
+## Variantă proprie (117)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Rapidough | Party | SUA | planificat (variantă proprie) |
-| Pie Face | Party | SUA | planificat (variantă proprie) |
-| Fibbage | Party | SUA | planificat (variantă proprie) |
-| Jackbox Party Pack | Party | SUA | planificat (variantă proprie) |
-| How to Host a Murder | Party | SUA | planificat (variantă proprie) |
-| Dingbats (Rebus) | Party | Marea Britanie | planificat (variantă proprie) |
-| Codenames: Duet | Party | Cehia | planificat (variantă proprie) |
-| A Fake Artist Goes to New York | Party | Japonia | planificat (variantă proprie) |
-| Ultimate Werewolf | Party | SUA | planificat (variantă proprie) |
-| Hitster | Party | Olanda | planificat (variantă proprie) |
-| One Night Ultimate Vampire | Party | SUA | planificat (variantă proprie) |
-| The Crew: The Quest for Planet Nine | Cooperativ | Germania | planificat (variantă proprie) |
-| Forbidden Island | Cooperativ | SUA | planificat (variantă proprie) |
-| Arkham Horror: The Card Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Forbidden Desert | Cooperativ | SUA | planificat (variantă proprie) |
-| The Mind | Cooperativ | Germania | planificat (variantă proprie) |
-| Pandemic Legacy: Season 1 | Cooperativ | SUA | planificat (variantă proprie) |
-| Eldritch Horror | Cooperativ | SUA | planificat (variantă proprie) |
-| Sky Team | Cooperativ | Franța | planificat (variantă proprie) |
-| Marvel Champions: The Card Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Gloomhaven: Jaws of the Lion | Cooperativ | SUA | planificat (variantă proprie) |
-| Mansions of Madness (ediția a 2-a) | Cooperativ | SUA | planificat (variantă proprie) |
-| Mice and Mystics | Cooperativ | SUA | planificat (variantă proprie) |
-| Horrified | Cooperativ | SUA | planificat (variantă proprie) |
-| Aeon's End | Cooperativ | SUA | planificat (variantă proprie) |
-| Magic Maze | Cooperativ | Franța | planificat (variantă proprie) |
-| Sentinels of the Multiverse | Cooperativ | SUA | planificat (variantă proprie) |
-| Robinson Crusoe: Adventures on the Cursed Island | Cooperativ | Polonia | planificat (variantă proprie) |
-| Exit: The Game | Cooperativ | Germania | planificat (variantă proprie) |
-| Unlock! | Cooperativ | Franța | planificat (variantă proprie) |
-| Flash Point: Fire Rescue | Cooperativ | SUA | planificat (variantă proprie) |
-| Castle Panic | Cooperativ | SUA | planificat (variantă proprie) |
-| The Lord of the Rings: The Card Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Frosthaven | Cooperativ | SUA | planificat (variantă proprie) |
-| Sherlock Holmes Consulting Detective | Cooperativ | Marea Britanie | planificat (variantă proprie) |
-| Space Alert | Cooperativ | Cehia | planificat (variantă proprie) |
-| Burgle Bros. | Cooperativ | SUA | planificat (variantă proprie) |
-| The Grizzled | Cooperativ | Franța | planificat (variantă proprie) |
-| Chronicles of Crime | Cooperativ | Polonia | planificat (variantă proprie) |
 | Ghost Stories | Cooperativ | Franța | planificat (variantă proprie) |
 | One Deck Dungeon | Cooperativ | SUA | planificat (variantă proprie) |
 | Defenders of the Wild | Cooperativ | SUA | planificat (variantă proprie) |
@@ -788,84 +866,6 @@
 | Battlestar Galactica: The Board Game | Cooperativ | SUA | planificat (variantă proprie) |
 | Nemesis | Cooperativ | Polonia | planificat (variantă proprie) |
 | Final Girl | Cooperativ | SUA | planificat (variantă proprie) |
-| Cthulhu: Death May Die | Cooperativ | SUA | planificat (variantă proprie) |
-| Elder Sign | Cooperativ | SUA | planificat (variantă proprie) |
-| Massive Darkness 2 | Cooperativ | SUA | planificat (variantă proprie) |
-| Sub Terra | Cooperativ | Polonia | planificat (variantă proprie) |
-| Escape: The Curse of the Temple | Cooperativ | Germania | planificat (variantă proprie) |
-| Letter Jam | Cooperativ | Cehia | planificat (variantă proprie) |
-| The Game | Cooperativ | Germania | planificat (variantă proprie) |
-| Deckscape | Cooperativ | Italia | planificat (variantă proprie) |
-| Detective: A Modern Crime Board Game | Cooperativ | Polonia | planificat (variantă proprie) |
-| Bandido | Cooperativ | Elveția | planificat (variantă proprie) |
-| HeroQuest | Cooperativ | Marea Britanie | planificat (variantă proprie) |
-| Pathfinder Adventure Card Game | Cooperativ | SUA | planificat (variantă proprie) |
-| This War of Mine: The Board Game | Cooperativ | Polonia | planificat (variantă proprie) |
-| TIME Stories | Cooperativ | Belgia | planificat (variantă proprie) |
-| Escape Room: The Game | Cooperativ | Olanda | planificat (variantă proprie) |
-| Hoot Owl Hoot! | Cooperativ | SUA | planificat (variantă proprie) |
-| Race to the Treasure! | Cooperativ | SUA | planificat (variantă proprie) |
-| Warhammer Quest | Cooperativ | Marea Britanie | planificat (variantă proprie) |
-| Tainted Grail: The Fall of Avalon | Cooperativ | Polonia | planificat (variantă proprie) |
-| Aliens: Another Glorious Day in the Corps | Cooperativ | SUA | planificat (variantă proprie) |
-| The Lord of the Rings: Journeys in Middle-earth | Cooperativ | SUA | planificat (variantă proprie) |
-| Hellboy: The Board Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Pandemic Legacy: Season 0 | Cooperativ | SUA | planificat (variantă proprie) |
-| Mage Knight Board Game | Cooperativ | Cehia | planificat (variantă proprie) |
-| Pandemic: Fall of Rome | Cooperativ | SUA | planificat (variantă proprie) |
-| Oathsworn: Into the Deepwood | Cooperativ | Marea Britanie | planificat (variantă proprie) |
-| Sheng ji (Tractor) | Cărți | China | planificat (variantă proprie) |
-| 6 nimmt! (Take 5) | Cărți | Germania | planificat (variantă proprie) |
-| Operation | Copii | SUA | planificat (variantă proprie) |
-| Hungry Hungry Hippos | Copii | SUA | planificat (variantă proprie) |
-| Trouble | Copii | SUA | planificat (variantă proprie) |
-| Mouse Trap | Copii | SUA | planificat (variantă proprie) |
-| KerPlunk | Copii | Marea Britanie | planificat (variantă proprie) |
-| Hi Ho! Cherry-O | Copii | SUA | planificat (variantă proprie) |
-| Don't Break the Ice | Copii | SUA | planificat (variantă proprie) |
-| Loopin' Louie | Copii | Germania | planificat (variantă proprie) |
-| Obstgarten (Orchard) | Copii | Germania | planificat (variantă proprie) |
-| Zicke Zacke Hühnerkacke (Chicken Cha Cha Cha) | Copii | Germania | planificat (variantă proprie) |
-| Halli Galli | Copii | Germania | planificat (variantă proprie) |
-| Sleeping Queens | Copii | SUA | planificat (variantă proprie) |
-| Ice Cool | Copii | Germania | planificat (variantă proprie) |
-| Rhino Hero | Copii | Germania | planificat (variantă proprie) |
-| Animal Upon Animal (Tier auf Tier) | Copii | Germania | planificat (variantă proprie) |
-| Gulo Gulo | Copii | Germania | planificat (variantă proprie) |
-| Outfoxed! | Copii | SUA | planificat (variantă proprie) |
-| Zingo | Copii | SUA | planificat (variantă proprie) |
-| Simon | Copii | SUA | planificat (variantă proprie) |
-| Buckaroo! | Copii | Marea Britanie | planificat (variantă proprie) |
-| Pop-Up Pirate | Copii | Japonia | planificat (variantă proprie) |
-| Perfection | Copii | SUA | planificat (variantă proprie) |
-| Lotti Karotti | Copii | Germania | planificat (variantă proprie) |
-| Bamboleo | Copii | Spania | planificat (variantă proprie) |
-| Cooties | Copii | SUA | planificat (variantă proprie) |
-| Don't Wake Daddy | Copii | SUA | planificat (variantă proprie) |
-| Catan Junior | Copii | Germania | planificat (variantă proprie) |
-| My First Carcassonne | Copii | Germania | planificat (variantă proprie) |
-| Dragomino | Copii | Franța | planificat (variantă proprie) |
-| Zombie Kidz Evolution | Copii | Franța | planificat (variantă proprie) |
-| The Magic Labyrinth | Copii | Germania | planificat (variantă proprie) |
-| The Enchanted Tower | Copii | Germania | planificat (variantă proprie) |
-| Spooky Stairs | Copii | Germania | planificat (variantă proprie) |
-| Das kleine Gespenst | Copii | Germania | planificat (variantă proprie) |
-| Viva Topo! | Copii | Germania | planificat (variantă proprie) |
-| Geister, Geister, Schatzsuchmeister | Copii | Germania | planificat (variantă proprie) |
-| Da ist der Wurm drin (Worm Up) | Copii | Germania | planificat (variantă proprie) |
-| Schnappt Hubi! | Copii | Germania | planificat (variantă proprie) |
-| Spinderella | Copii | Germania | planificat (variantă proprie) |
-| My First Stone Age | Copii | Germania | planificat (variantă proprie) |
-| Speedy Roll | Copii | Germania | planificat (variantă proprie) |
-| Funkelschatz | Copii | Germania | planificat (variantă proprie) |
-| Tal der Wikinger (Valley of the Vikings) | Copii | Germania | planificat (variantă proprie) |
-| Zauberberg (Magic Mountain) | Copii | Germania | planificat (variantă proprie) |
-| Mysterium Kids | Copii | Franța | planificat (variantă proprie) |
-| Die magischen Schlüssel (Magic Keys) | Copii | Germania | planificat (variantă proprie) |
-| Top the Cake | Copii | Germania | planificat (variantă proprie) |
-| Die Insel der Mookies | Copii | Germania | planificat (variantă proprie) |
-| Noah's Park | Copii | Germania | planificat (variantă proprie) |
-| Galloping Pigs | Copii | Germania | planificat (variantă proprie) |
 | Karambolage | Copii | Germania | planificat (variantă proprie) |
 | Maskenball der Käfer | Copii | Germania | planificat (variantă proprie) |
 | Der schwarze Pirat | Copii | Germania | planificat (variantă proprie) |

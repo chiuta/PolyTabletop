@@ -1,6 +1,6 @@
 # Jocurile jucabile
 
-Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (690 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
+Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (807 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
 
 Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferență între majuscule/minuscule, spațiile se ignoră); `?` listează mutările legale, `hint` cere sugestia AI-ului, `q` iese.
 
@@ -621,6 +621,123 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Hoinarii Peșterii](#hoinarii_pesterii) (`hoinarii_pesterii`)
 - [Lanțul de Bufete](#lantul_bufetelor) (`lantul_bufetelor`)
 - [Frontiera Stelară](#frontiera_stelara) (`frontiera_stelara`)
+- [Insula care se Scufundă](#insula_scufundata) (`insula_scufundata`)
+- [Furtuna de Nisip](#furtuna_de_nisip) (`furtuna_de_nisip`)
+- [Focare și Leacuri](#focare_si_leacuri) (`focare_si_leacuri`)
+- [Ceasul Apocalipsei](#ceasul_apocalipsei) (`ceasul_apocalipsei`)
+- [Șoarecii din Castel](#soarecii_din_castel) (`soarecii_din_castel`)
+- [Monștrii din Sat](#monstrii_din_sat) (`monstrii_din_sat`)
+- [Labirintul fără Cuvinte](#labirint_fara_cuvinte) (`labirint_fara_cuvinte`)
+- [Naufragiații pe Insulă](#naufragiati_pe_insula) (`naufragiati_pe_insula`)
+- [Focul în Bloc](#focul_in_bloc) (`focul_in_bloc`)
+- [Asediul Turnului](#asediul_turnului) (`asediul_turnului`)
+- [Jaf în Zgârie-Nori](#jaf_in_zgarie_nori) (`jaf_in_zgarie_nori`)
+- [Apărătorii Orașului](#aparatorii_orasului) (`aparatorii_orasului`)
+- [Vrăjitorii din Ruine](#vrajitorii_din_ruine) (`vrajitorii_din_ruine`)
+- [Gardienii Multiversului](#gardienii_multiversului) (`gardienii_multiversului`)
+- [Drumul prin Mlaștini](#drumul_prin_mlastini) (`drumul_prin_mlastini`)
+- [Anchetatori în Ceață](#anchetatori_in_ceata) (`anchetatori_in_ceata`)
+- [Lamele din Pivniță](#lamele_in_pivnita) (`lamele_in_pivnita`)
+- [Ger peste Avanpost](#ger_peste_avanpost) (`ger_peste_avanpost`)
+- [Conacul cu Ghicitori](#conacul_cu_ghicitori) (`conacul_cu_ghicitori`)
+- [Camera cu Cifru](#camera_cu_cifru) (`camera_cu_cifru`)
+- [Evadare cu Cartele](#evadare_cu_cartele) (`evadare_cu_cartele`)
+- [Dosarul cu Trei Fire](#dosarul_cu_trei_fire) (`dosarul_cu_trei_fire`)
+- [Scene din Patru Anotimpuri](#scene_din_patru_anotimpuri) (`scene_din_patru_anotimpuri`)
+- [Sincron de Numere](#sincron_numerelor) (`sincron_numerelor`)
+- [Cabina Dublă](#cabina_dubla) (`cabina_dubla`)
+- [Expediția Levatelor](#expeditia_levatelor) (`expeditia_levatelor`)
+- [Tema în Doi](#tema_in_doi) (`tema_in_doi`)
+- [Tranșee Tăcute](#transee_tacute) (`transee_tacute`)
+- [Sala de Comandă Stelară](#sala_de_comanda_stelara) (`sala_de_comanda_stelara`)
+- [Lupii din Ceață](#lupii_din_ceata) (`lupii_din_ceata`)
+- [Vampirii din Ceață](#vampirii_din_ceata) (`vampirii_din_ceata`)
+- [Axa Invențiilor](#axa_inventiilor) (`axa_inventiilor`)
+- [Modelaj în Tăcere](#modelaj_in_tacere) (`modelaj_in_tacere`)
+- [Pictorul Pretins](#pictorul_pretins) (`pictorul_pretins`)
+- [Plăcinta în Obraz](#placinta_in_obraz) (`placinta_in_obraz`)
+- [Minciuna Savuroasă](#minciuna_savoroasa) (`minciuna_savoroasa`)
+- [Sala cu Mini-Jocuri](#sala_cu_mini_jocuri) (`sala_cu_mini_jocuri`)
+- [Cina cu Suspecți](#cina_cu_suspecti) (`cina_cu_suspecti`)
+- [Rebus în Cadre](#rebus_in_cadre) (`rebus_in_cadre`)
+- [Ritualul Adâncului](#ritualul_adancului) (`ritualul_adancului`)
+- [Sigiliul Bătrân](#sigiliul_batran) (`sigiliul_batran`)
+- [Ceata Tenebrelor](#ceata_tenebrelor) (`ceata_tenebrelor`)
+- [Galeria Prăbușită](#galeria_prabusita) (`galeria_prabusita`)
+- [Ceasul Templului](#ceasul_templului) (`ceasul_templului`)
+- [Scrisori Amestecate](#scrisori_amestecate) (`scrisori_amestecate`)
+- [Urcuș și Coborâș](#urcus_coboras) (`urcus_coboras`)
+- [Paleta Evadării](#paleta_evadarii) (`paleta_evadarii`)
+- [Ancheta Nocturnă](#ancheta_nocturna) (`ancheta_nocturna`)
+- [Tunelul Blocat](#tunelul_blocat) (`tunelul_blocat`)
+- [Cripta Eroilor](#cripta_eroilor) (`cripta_eroilor`)
+- [Pachetul Aventurierilor](#pachetul_aventurierilor) (`pachetul_aventurierilor`)
+- [Orașul Asediat](#orasul_asediat) (`orasul_asediat`)
+- [Fisuri Temporale](#fisuri_temporale) (`fisuri_temporale`)
+- [Camera cu Ghicitori](#camera_cu_ghicitori) (`camera_cu_ghicitori`)
+- [Zborul Bufnițelor](#zborul_bufnitelor) (`zborul_bufnitelor`)
+- [Ogrul pe Urme](#ogrul_pe_urme) (`ogrul_pe_urme`)
+- [Cetele Pustiei](#cetele_pustiei) (`cetele_pustiei`)
+- [Ținutul Cețurilor](#tinutul_ceturilor) (`tinutul_ceturilor`)
+- [Garnizoana din Cuib](#garnizoana_cuibului) (`garnizoana_cuibului`)
+- [Călătoria Cetei](#calatoria_cetei) (`calatoria_cetei`)
+- [Vânătorii de Umbre](#vanatorii_de_umbre) (`vanatorii_de_umbre`)
+- [Focar Zero](#focar_zero) (`focar_zero`)
+- [Calea Cavalerului](#calea_cavalerului) (`calea_cavalerului`)
+- [Hotarul Căzut](#hotarul_cazut) (`hotarul_cazut`)
+- [Pădurea Jurămintelor](#padurea_juramintelor) (`padurea_juramintelor`)
+- [Atu și Perechi](#atu_si_perechi) (`atu_si_perechi`)
+- [Rândurile cu Boi](#randurile_cu_boi) (`randurile_cu_boi`)
+- [Mâna Sigură](#mana_sigura) (`mana_sigura`)
+- [Hipopotamii Lacomi](#hipopotamii_lacomi) (`hipopotamii_lacomi`)
+- [Pioni Prinși](#pioni_prinsi) (`pioni_prinsi`)
+- [Cursa Cașcavalului](#cursa_cascavalului) (`cursa_cascavalului`)
+- [Bilele în Tub](#bilele_in_tub) (`bilele_in_tub`)
+- [Livada cu Cireșe](#livada_cu_cirese) (`livada_cu_cirese`)
+- [Gheața Subțire](#gheata_subtire) (`gheata_subtire`)
+- [Avionul Hapsân](#avionul_hapsan) (`avionul_hapsan`)
+- [Livada și Corbul](#livada_si_corbul) (`livada_si_corbul`)
+- [Găinile pe Cerc](#gainile_pe_cerc) (`gainile_pe_cerc`)
+- [Clopoțelul Fructelor](#clopotelul_fructelor) (`clopotelul_fructelor`)
+- [Trezirea Reginelor](#trezirea_reginelor) (`trezirea_reginelor`)
+- [Pisoiul pe Gheață](#gheata_alunecoasa) (`gheata_alunecoasa`)
+- [Zgârie-norul Cartonat](#turnul_rinocerului) (`turnul_rinocerului`)
+- [Turnul Animalelor](#turnul_fermei) (`turnul_fermei`)
+- [Ouăle din Cuib](#oua_din_cuib) (`oua_din_cuib`)
+- [Vulpea Dibace](#vulpea_dibace) (`vulpea_dibace`)
+- [Cartonașul cu Poze](#plansa_cu_poze) (`plansa_cu_poze`)
+- [Memoria Luminilor](#memoria_luminilor) (`memoria_luminilor`)
+- [Măgarul Încărcat](#catarul_incarcat) (`catarul_incarcat`)
+- [Butoiașul Corsarului](#butoiasul_corsar) (`butoiasul_corsar`)
+- [Piesa din Clepsidră](#piesa_la_timp) (`piesa_la_timp`)
+- [Iepurașul și Găurile](#iepuras_galop) (`iepuras_galop`)
+- [Balanța Cerdacului](#balansul_cerdacului) (`balansul_cerdacului`)
+- [Gândăcelul din Piese](#gandacelul_adunat) (`gandacelul_adunat`)
+- [Camera Somnoroasă](#camara_adormita) (`camara_adormita`)
+- [Pirații din Golf](#piratii_din_golf) (`piratii_din_golf`)
+- [Drumul spre Cetate](#cetatea_si_drumul) (`cetatea_si_drumul`)
+- [Insula Puilor de Dragon](#insula_dragonilor) (`insula_dragonilor`)
+- [Copiii Apără Căsuța](#copii_contra_stafiilor) (`copii_contra_stafiilor`)
+- [Labirintul cu Pereți Nevăzuți](#labirint_nevazut) (`labirint_nevazut`)
+- [Fantoma de pe Turn](#fantoma_de_pe_turn) (`fantoma_de_pe_turn`)
+- [Treptele Șoaptelor](#trepte_soaptelor) (`trepte_soaptelor`)
+- [Stafia din Castel](#stafia_din_castel) (`stafia_din_castel`)
+- [Șoricei pe Brânză](#soricei_pe_branza) (`soricei_pe_branza`)
+- [Stafiile și Comoara](#stafii_comoara) (`stafii_comoara`)
+- [Viermele din Măr](#viermi_in_mar) (`viermi_in_mar`)
+- [Fantoma Fugară](#fantoma_fugara) (`fantoma_fugara`)
+- [Păianjenul de pe Fir](#paianjen_pe_fir) (`paianjen_pe_fir`)
+- [Satul din Piatră și Lemn](#satul_din_piatra) (`satul_din_piatra`)
+- [Zarurile Grăbite](#zaruri_grabite) (`zaruri_grabite`)
+- [Pietrele Sclipitoare](#pietre_sclipitoare) (`pietre_sclipitoare`)
+- [Corăbiile din Vale](#corabii_din_vale) (`corabii_din_vale`)
+- [Piramida de Bolovani](#piramida_bolovani) (`piramida_bolovani`)
+- [Fantoma cea Blândă](#fantoma_blanda) (`fantoma_blanda`)
+- [Cheile și Ușile](#chei_si_usi) (`chei_si_usi`)
+- [Tortul cu Straturi](#tort_pe_tort) (`tort_pe_tort`)
+- [Insula cu Furtuni](#insula_cu_furtuni) (`insula_cu_furtuni`)
+- [Parcul cu Perechi](#parcul_perechilor) (`parcul_perechilor`)
+- [Cursa Purceilor](#purcei_cursa_mare) (`purcei_cursa_mare`)
 - [Hnefatafl](#hnefatafl) (`hnefatafl`)
 - [Brandubh](#brandubh) (`brandubh`)
 - [Pente](#pente) (`pente`)
@@ -13767,6 +13884,2438 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - Sintaxă din regulile jocului: ata k, ata k +, ras k, ras k +.
 - Exemple legale la început: `ata`, `0`
 - La început sunt 40 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="insula_scufundata"></a>
+## Insula care se Scufundă
+
+- **Id:** `insula_scufundata`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play insula_scufundata` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă pe o hartă 3×4: la sfârșitul rundei apar inundații; un loc inundat de două ori se scufundă pentru totdeauna (și odată cu el obiectul de pe el).
+- Duceți 3 relicve la ieșire (nodul 0) înainte să se scufunde 4 locuri.
+- Fiecare jucător are 4 acțiuni pe tură: mov n, fix n (scoate o inundație din locul curent sau vecin), iau, dau, fin; ev încheie runda.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="furtuna_de_nisip"></a>
+## Furtuna de Nisip
+
+- **Id:** `furtuna_de_nisip`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play furtuna_de_nisip` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă într-o grilă 3×3: nisipul se adună (2 loc pe rundă); un loc cu 2 straturi e blocat până îl săpați cu fix n.
+- Furtuna crește în fiecare rundă (destin până la 11).
+- Aduceți 3 piese de mașină din colțuri la oază (nodul 4) înainte de furtună.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n, iau, dau, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="focare_si_leacuri"></a>
+## Focare și Leacuri
+
+- **Id:** `focare_si_leacuri`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play focare_si_leacuri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: 10 orașe pe un inel cu două scurtături; boala crește pe câte un oraș (2 pe rundă); la 3 niveluri izbucnește: destin +1 și vecinii se îmbolnăvesc.
+- Adunați 3 probe de la laboratoare și duceți-le la centrul (nodul 0) înainte de 6 izbucniri.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n, iau, dau, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ceasul_apocalipsei"></a>
+## Ceasul Apocalipsei
+
+- **Id:** `ceasul_apocalipsei`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ceasul_apocalipsei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: 3 indicii de adunat și dus la ieșire; amenințarea izbucnește (destin +1) la a treia lovitură pe același loc, iar un monstru vă urmărește (pierdeți o viață dacă vă ajunge; fix n lângă el îl alungă).
+- Destin maxim 7, 4 vieți.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n, iau, dau, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="soarecii_din_castel"></a>
+## Șoarecii din Castel
+
+- **Id:** `soarecii_din_castel`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play soarecii_din_castel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: doi șoareci aduc 2 bucăți de brânză (obiecte) la gaură (nodul 0) printr-un castel cu incendii care se întind (la prag trec la vecini; pe un loc la prag pierdeți o viață), iar o pisică vă vânează. 4 vieți, 14 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n, iau, dau, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="monstrii_din_sat"></a>
+## Monștrii din Sat
+
+- **Id:** `monstrii_din_sat`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play monstrii_din_sat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: un monstru înaintează spre voi în fiecare rundă; adunați 3 dovezi și duceți-le în turn (nodul 0).
+- Dacă monstrul vă atinge pierdeți o viață (5 în total); cu fix n lângă el îl alungați la început.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n, iau, dau, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="labirint_fara_cuvinte"></a>
+## Labirintul fără Cuvinte
+
+- **Id:** `labirint_fara_cuvinte`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play labirint_fara_cuvinte` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă pe timp: 4 obiecte de luat și dus la ieșire (nodul 0) în doar 9 runde; într-o rundă pară doar J1 poate lua obiecte, într-una impară doar J2 (trebuie să vă coordonați fără cuvinte).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n (nu e nimic de curățat), iau, dau, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="naufragiati_pe_insula"></a>
+## Naufragiații pe Insulă
+
+- **Id:** `naufragiati_pe_insula`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play naufragiati_pe_insula` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă de supraviețuire: adunați 4 bucăți de lemn și duceți-le la tabăra (nodul 0) ca să construiți o plută, în timp ce mareea scufundă locuri (la 2 niveluri un loc dispare) și o fiară vă urmărește (4 vieți).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n, iau, dau, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="focul_in_bloc"></a>
+## Focul în Bloc
+
+- **Id:** `focul_in_bloc`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play focul_in_bloc` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă de salvare: 3 victime de dus afară (nodul 0) dintr-o clădire în flăcări; flăcările se întind (la prag trec la vecini), iar pe un loc la prag pierdeți o viață (6 în total).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n (stinge), iau, dau, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="asediul_turnului"></a>
+## Asediul Turnului
+
+- **Id:** `asediul_turnului`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play asediul_turnului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă de apărare: monștri apar pe inelul exterior și înaintează spre turn (nodul 0) câte un pas pe rundă; fix n ucide un monstru din locul curent sau vecin.
+- Ajunși la turn ei îi cresc destinul (maxim 6).
+- Ucideți 8 monștri în 16 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="jaf_in_zgarie_nori"></a>
+## Jaf în Zgârie-Nori
+
+- **Id:** `jaf_in_zgarie_nori`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play jaf_in_zgarie_nori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă de jaf: doi hoți iau 2 comori din seifuri și le duc la acoperiș (nodul 0) într-un turn cu 12 camere; un paznic vă patrulează (pierdeți o viață dacă vă ajunge; fix n lângă el îl derutează).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mov n, fix n, iau, dau, fin; ev încheie runda.
+- Exemple legale la început: `fin`, `mov`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="aparatorii_orasului"></a>
+## Apărătorii Orașului
+
+- **Id:** `aparatorii_orasului`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play aparatorii_orasului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: doi eroi (cu pachete diferite) bat un răufăcător cu 22 de puncte de viață.
+- Mâna de 5 cărți deschise, 2 cărți pe tură: atac (a), apărare (d), vindecare (h), amețire (s).
+- Răufăcătorul atacă sau urzește (destin până la 10). 14 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="vrajitorii_din_ruine"></a>
+## Vrăjitorii din Ruine
+
+- **Id:** `vrajitorii_din_ruine`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play vrajitorii_din_ruine` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: vrăjitori ce își încarcă cristale (c) și apoi lovesc (a cere 1 cristal și dă +2).
+- Mâna de 4 cărți, 3 pe tură, contra unui nemuritor cu 28 de puncte; el atacă 3–5. 14 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="gardienii_multiversului"></a>
+## Gardienii Multiversului
+
+- **Id:** `gardienii_multiversului`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play gardienii_multiversului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: doi eroi bat un tiran cu 26 de puncte, pe un fundal care complotează (destin până la 8). 5 cărți deschise, 2 pe tură: atac, apărare, vindecare, amețire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="drumul_prin_mlastini"></a>
+## Drumul prin Mlaștini
+
+- **Id:** `drumul_prin_mlastini`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play drumul_prin_mlastini` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: străbateți mlaștinile adunând progres (p) până la 8, în timp ce umbra crește (destin până la 12); atacurile (a) o împing înapoi. 5 cărți deschise, 2 pe tură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="anchetatori_in_ceata"></a>
+## Anchetatori în Ceață
+
+- **Id:** `anchetatori_in_ceata`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play anchetatori_in_ceata` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: doi anchetatori adună progres (p) până la 7 înainte ca destinul să atingă 10; atacurile reduc destinul.
+- Pachete cu cărți mai puține, fără epuizare. 12 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lamele_in_pivnita"></a>
+## Lamele din Pivniță
+
+- **Id:** `lamele_in_pivnita`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play lamele_in_pivnita` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: doi luptători cu pachete mici contra unui căpitan cu 20 de puncte; cărțile nu se amestecă singure: `odih` aruncările înapoi costă 1 viață; fără cărți ești epuizat, iar epuizarea ambilor înseamnă eșec. 14 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ger_peste_avanpost"></a>
+## Ger peste Avanpost
+
+- **Id:** `ger_peste_avanpost`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ger_peste_avanpost` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: doi veterani contra unui uriaș de gheață cu 30 de puncte; cărțile se epuizează (odih amestecă aruncările, 1 viață), iar gerul crește destinul (maxim 8). 16 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="conacul_cu_ghicitori"></a>
+## Conacul cu Ghicitori
+
+- **Id:** `conacul_cu_ghicitori`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play conacul_cu_ghicitori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: doi cercetători strâng progres (p) până la 6 într-un conac cu pachete mici (epuizare, odih = 1 viață) înainte ca destinul să atingă 9; atacurile îl scad. 12 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="camera_cu_cifru"></a>
+## Camera cu Cifru
+
+- **Id:** `camera_cu_cifru`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play camera_cu_cifru` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă de evadare: 3 încuietori în lanț, fiecare cu un cod de 3 cifre (0–4).
+- Pe rând propuneți cod xyz; verific anunță cifrele la locul exact și pe cele aproape. 22 de propuneri în total.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `cod`, `000`
+- La început sunt 250 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="evadare_cu_cartele"></a>
+## Evadare cu Cartele
+
+- **Id:** `evadare_cu_cartele`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play evadare_cu_cartele` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: 4 încuietori cu coduri de 3 cifre (0–3); ajutor (costă 2 timp) dezvăluie o cifră.
+- Timp total 24; fiecare propunere costă 1.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `cod`, `000`
+- La început sunt 129 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="dosarul_cu_trei_fire"></a>
+## Dosarul cu Trei Fire
+
+- **Id:** `dosarul_cu_trei_fire`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play dosarul_cu_trei_fire` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă de anchetă: 6 suspecți cu 3 însușiri (0–2) și 6 locuri de vizitat; viz L aduce un indiciu adevărat despre vinovat, acuz s îl acuză (2 șanse).
+- Timp total 8.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `viz`, `0`
+- La început sunt 34 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scene_din_patru_anotimpuri"></a>
+## Scene din Patru Anotimpuri
+
+- **Id:** `scene_din_patru_anotimpuri`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play scene_din_patru_anotimpuri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă de anchetă: 8 suspecți cu 3 însușiri (0–2) și 7 locuri; viz L aduce un indiciu, acuz s acuză (2 șanse).
+- Timp total 9.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `viz`, `0`
+- La început sunt 40 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sincron_numerelor"></a>
+## Sincron de Numere
+
+- **Id:** `sincron_numerelor`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sincron_numerelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă pentru doi: la nivelul L fiecare primește L numere (1–100) ascunse celuilalt; fără cuvinte, trebuie jucate în ordine crescătoare. joc = joci cea mai mică carte a ta; astept = lași ceasul comun să meargă cu 1.
+- O greșeală costă o viață și aruncă cărțile mai mici. 6 niveluri, 3 vieți.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `joc`, `astept`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cabina_dubla"></a>
+## Cabina Dublă
+
+- **Id:** `cabina_dubla`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cabina_dubla` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă de aterizare: 7 runde.
+- Fiecare aruncă 2 zaruri ascunse celuilalt; pun 1/pun 2 pune zarul ales pe axă, celălalt pe motoare.
+- Diferența de pe axă ≤ 2 și suma motoarelor în fereastra rundei; 3 rezerve de greșeli, 2 relansări comune.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="expeditia_levatelor"></a>
+## Expediția Levatelor
+
+- **Id:** `expeditia_levatelor`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play expeditia_levatelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă de levate: 40 de cărți (4 culori 1–9 și atuuri 1–4), câte 10 fiecare. 3 cărți-țintă trebuie luate de jucătorul indicat.
+- Culoarea cerută e obligatorie, atuul bate; câștigătorul conduce. joc a5 | levez (forțată).
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `joc`, `a3`
+- La început sunt 20 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tema_in_doi"></a>
+## Tema în Doi
+
+- **Id:** `tema_in_doi`
+- **Categorie:** Party
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play tema_in_doi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: 25 de cuvinte cu două teme fiecare; fiecare are o cheie secretă (9 agenți, 3 capcane). ind t n dă tema t și numărul n, celălalt ghicește (ghic k | stop).
+- Găsiți cei 15 agenți în 9 ture, fără capcane.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `ind`, `0`
+- La început sunt 108 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="transee_tacute"></a>
+## Tranșee Tăcute
+
+- **Id:** `transee_tacute`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play transee_tacute` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: în fiecare rundă apare o amenințare (frig, ploaie, gaz, obuz); cărțile din mână le scot (joc i, joker: joc i tip).
+- Dacă un tip ajunge la 3 pe masă, pierdeți; rezistați 14 runde. pas, pas încheie runda.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `amenint`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sala_de_comanda_stelara"></a>
+## Sala de Comandă Stelară
+
+- **Id:** `sala_de_comanda_stelara`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sala_de_comanda_stelara` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cooperativă: o navă cu 3 zone; amenințările înaintează spre ea. 2 acțiuni pe jucător: tras z, scut z, repar, pas; ev = sfârșit de rundă.
+- Integritate 7; rezistați 12 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `pas`, `scut`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lupii_din_ceata"></a>
+## Lupii din Ceață
+
+- **Id:** `lupii_din_ceata`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play lupii_din_ceata` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu roluri ascunse într-o noapte: lup, văzător, hoț, insomniac, sătean și tăbăcar (6 cărți: una pentru fiecare, trei pe masă, una scoasă).
+- Noaptea fiecare acționează secret, ziua alegeți voteaza sau iert.
+- Câștigă tăbăcarul executat; altfel moare lupul = victoria celorlalți. 3 mâini.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="vampirii_din_ceata"></a>
+## Vampirii din Ceață
+
+- **Id:** `vampirii_din_ceata`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play vampirii_din_ceata` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu roluri ascunse într-o noapte: vampir, văzător, bețiv, mușcător (marchează adversarul în echipa vampirilor), sătean și tăbăcar.
+- Noaptea acțiuni secrete, ziua voteaza sau iert.
+- Moare cineva din echipa rea = victoria celorlalți. 3 mâini.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="axa_inventiilor"></a>
+## Axa Invențiilor
+
+- **Id:** `axa_inventiilor`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play axa_inventiilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de petrecere: fiecare are o cronologie de invenții. trag arată o invenție (anul ascuns), pun k o așază pe poziția k, verific arată anul: loc corect = rămâne, altfel se aruncă.
+- Primul la 7 cărți câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `trag`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="modelaj_in_tacere"></a>
+## Modelaj în Tăcere
+
+- **Id:** `modelaj_in_tacere`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play modelaj_in_tacere` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cel care modelează dă indicii adevărate (ind A=2, cel mult 3, apoi 2 pe rând) despre un obiect ascuns (formă, mărime, culoare); celălalt ghicește (ghic k). 6 runde.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `ind`, `A=3`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pictorul_pretins"></a>
+## Pictorul Pretins
+
+- **Id:** `pictorul_pretins`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pictorul_pretins` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: pictorul care știe subiectul dă indicii adevărate despre un desen ascuns (subiect, linie, început) iar celălalt, care nu îl vede, încearcă să-l ghicească. 6 runde.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `ind`, `A=1`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="placinta_in_obraz"></a>
+## Plăcinta în Obraz
+
+- **Id:** `placinta_in_obraz`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play placinta_in_obraz` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de noroc și nervi: 6 pârghii, una dintre ele pornește plăcinta.
+- Alegi pe rând (alege i, apoi arata): bună +1 și continui, rea: tura trece. 6 întrebări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `alege`, `1`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="minciuna_savoroasa"></a>
+## Minciuna Savuroasă
+
+- **Id:** `minciuna_savoroasa`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play minciuna_savoroasa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de bluf: cel care alege fixează în secret una din 5 variante, celălalt ghicește (ghic g s) cu miza 1–3.
+- Ghicit corect: câștigă miza; greșit: ascunzătorul primește 1. 6 runde.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `alege`, `1`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sala_cu_mini_jocuri"></a>
+## Sala cu Mini-Jocuri
+
+- **Id:** `sala_cu_mini_jocuri`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sala_cu_mini_jocuri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: fiecare rundă are gusturile unui public ascuns; joci 2 cărți (joc i,j) și publicul votează (voteaza); scena e cartea câștigătoare din runda precedentă. 7 runde.
+- Informație ascunsă: vezi doar secretele tale (HOTSEAT_SAFE).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `joc`, `1,2`
+- La început sunt 20 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cina_cu_suspecti"></a>
+## Cina cu Suspecți
+
+- **Id:** `cina_cu_suspecti`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cina_cu_suspecti` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de petrecere: vinovatul de la cină e ascuns tuturor; pe rând puneți întrebări intreb A=v (răspuns public) și ghiciți (ghic k). 5 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `intreb`, `A=1`
+- La început sunt 168 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="rebus_in_cadre"></a>
+## Rebus în Cadre
+
+- **Id:** `rebus_in_cadre`
+- **Categorie:** Party
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play rebus_in_cadre` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de petrecere: un rebus se dezvăluie prin indicii pe rând (mai mult); oricine poate ghici oricând (ghic k). 6 runde, cel mult 4 indicii.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `mai`, `mult`
+- La început sunt 38 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ritualul_adancului"></a>
+## Ritualul Adâncului
+
+- **Id:** `ritualul_adancului`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ritualul_adancului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri.
+- Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea.
+- Misiune: supraviețuiește 14 runde (cultiști noi la fiecare 3 runde).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers r c, lov r c, vindec, pas.
+- Exemple legale la început: `mers`, `5`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sigiliul_batran"></a>
+## Sigiliul Bătrân
+
+- **Id:** `sigiliul_batran`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sigiliul_batran` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ cu zaruri: la începutul turei se aruncă zarurile; încheie sarcini cu zaruri suficient de mari (inch t), repetă aruncarea zarurilor care nu ajută o sarcină (refa t; rezultatul vine într-o mutare forțată) sau închei tura (sfarsit), când ameninţarea crește.
+- Câștigă echipa dacă încheie numărul cerut de sarcini înainte să se umple ameninţarea (altfel remiză). 6 zaruri, 6 sarcini de încheiat înainte ca ceasul de miezul nopții să ajungă la 14.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: inch t, refa t, sfarsit.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ceata_tenebrelor"></a>
+## Ceata Tenebrelor
+
+- **Id:** `ceata_tenebrelor`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ceata_tenebrelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri.
+- Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea.
+- Misiune: curăță grila (7×6) de monștri, inclusiv valurile care apar la fiecare 4 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers r c, lov r c, vindec, pas.
+- Exemple legale la început: `mers`, `5`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="galeria_prabusita"></a>
+## Galeria Prăbușită
+
+- **Id:** `galeria_prabusita`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play galeria_prabusita` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ pe un graf de locuri cu pericole care cresc: doi jucători în echipă, câteva acțiuni pe tură (mers la un vecin, cur = scade pericolul, rit = ritual într-un laborator curat, pas), apoi se trag la întâmplare locuri care se agravează; peste 3 izbucnește și infectează vecinii.
+- Echipa câștigă cu numărul cerut de ritualuri, pierde la prea multe izbucniri sau când se termină rundele (remiză). 9 galerii, 4 acțiuni pe tură, 5 ritualuri de împlinit, cel mult 4 prăbușiri în lanț.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers v, cur, rit, pas.
+- Exemple legale la început: `mers`, `2`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ceasul_templului"></a>
+## Ceasul Templului
+
+- **Id:** `ceasul_templului`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ceasul_templului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ cu zaruri: la începutul turei se aruncă zarurile; încheie sarcini cu zaruri suficient de mari (inch t), repetă aruncarea zarurilor care nu ajută o sarcină (refa t; rezultatul vine într-o mutare forțată) sau închei tura (sfarsit), când ameninţarea crește.
+- Câștigă echipa dacă încheie numărul cerut de sarcini înainte să se umple ameninţarea (altfel remiză). 5 zaruri, 3 repetări pe tură, 5 camere de deschis înainte ca nisipul să atingă 11.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: inch t, refa t, sfarsit.
+- Exemple legale la început: `arunc`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scrisori_amestecate"></a>
+## Scrisori Amestecate
+
+- **Id:** `scrisori_amestecate`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play scrisori_amestecate` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de cuvinte: calculatorul alege un cuvânt secret de 5 litere; pe rând, cei doi jucători propun (ghic) un cuvânt compatibil cu toate indiciile; răspunsul (rasp, mutare forțată) arată + literă la locul ei, o literă în alt loc, - absentă.
+- Echipa câștigă dacă ghicește în cel mult 8 propuneri, altfel remiză.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ghic cuvant, rasp.
+- Exemple legale la început: `ghic`, `aceea`
+- La început sunt 748 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="urcus_coboras"></a>
+## Urcuș și Coborâș
+
+- **Id:** `urcus_coboras`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play urcus_coboras` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de cărți: două șiruri urcă de la 1 și două coboară de la 50; cărțile 2..49, mâini deschise de 7.
+- Joc i s pune cartea i pe șirul s (urcând: mai mare sau exact cu 10 mai mică; coborând: invers), fin încheie tura după cel puțin 2 cărți jucate (1 când pachetul s-a golit), apoi pesc completează mâna.
+- Echipa câștigă dacă joacă toate cărțile, pierde (remiză) dacă nu mai poate juca numărul cerut.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i s, fin, pesc.
+- Exemple legale la început: `joc`, `1`
+- La început sunt 84 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="paleta_evadarii"></a>
+## Paleta Evadării
+
+- **Id:** `paleta_evadarii`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play paleta_evadarii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih).
+- După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată).
+- Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul.
+- Jetoane: chei, indicii, unelte; 7 camere din 12, timp 24, moral 6.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: fac, ocol, odih 1..3.
+- Exemple legale la început: `fac`, `ocol`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ancheta_nocturna"></a>
+## Ancheta Nocturnă
+
+- **Id:** `ancheta_nocturna`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ancheta_nocturna` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih).
+- După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată).
+- Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul.
+- Jetoane: martori, probe, intuiții; 8 piste din 13, timp 26, moral 6.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: fac, ocol, odih 1..3.
+- Exemple legale la început: `fac`, `ocol`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tunelul_blocat"></a>
+## Tunelul Blocat
+
+- **Id:** `tunelul_blocat`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tunelul_blocat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de drumuri: pe o tablă 7×7 echipa așază cărți de tunel (deschideri N/E/S/V) ca să închidă toate deschiderile libere.
+- Pun i r c o așază cartea i în celula r c rotită de o×90° (deschiderile care se ating trebuie să se potrivească, nu se admit deschideri spre marginea tablei), arunc i aruncă o carte; apoi pesc trage.
+- Câștigi când nu mai rămâne nicio deschidere liberă, pierzi (remiză) când cărțile se termină.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pun i r c o, arunc i, pesc.
+- Exemple legale la început: `pun`, `1`
+- La început sunt 118 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cripta_eroilor"></a>
+## Cripta Eroilor
+
+- **Id:** `cripta_eroilor`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cripta_eroilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri.
+- Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea.
+- Misiune: curăță cripta (6×6) de monștri; lovitura costă 2 viață celui lovit.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers r c, lov r c, vindec, pas.
+- Exemple legale la început: `mers`, `5`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pachetul_aventurierilor"></a>
+## Pachetul Aventurierilor
+
+- **Id:** `pachetul_aventurierilor`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pachetul_aventurierilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih).
+- După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată).
+- Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul.
+- Jetoane: arme, vrăji, bunuri; 8 locații din 12, timp 25, moral 7.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: fac, ocol, odih 1..3.
+- Exemple legale la început: `fac`, `ocol`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="orasul_asediat"></a>
+## Orașul Asediat
+
+- **Id:** `orasul_asediat`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play orasul_asediat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih).
+- După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată).
+- Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul.
+- Jetoane: hrană, lemne, medicamente; 9 zile din 14, timp 30, moral 8, întâmplări frecvente.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: fac, ocol, odih 1..3.
+- Exemple legale la început: `fac`, `ocol`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fisuri_temporale"></a>
+## Fisuri Temporale
+
+- **Id:** `fisuri_temporale`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fisuri_temporale` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih).
+- După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată).
+- Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul.
+- Jetoane: unități de energie, ancore, dovezi; 7 epoci din 12, timp doar 20.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: fac, ocol, odih 1..3.
+- Exemple legale la început: `fac`, `ocol`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="camera_cu_ghicitori"></a>
+## Camera cu Ghicitori
+
+- **Id:** `camera_cu_ghicitori`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play camera_cu_ghicitori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih).
+- După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată).
+- Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul.
+- Jetoane: litere, numere, simboluri; 7 ghicitori din 11, timp 21, moral 5.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: fac, ocol, odih 1..3.
+- Exemple legale la început: `fac`, `ocol`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zborul_bufnitelor"></a>
+## Zborul Bufnițelor
+
+- **Id:** `zborul_bufnitelor`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play zborul_bufnitelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de cursă: patru bufnițe trebuie să ajungă la sfârșitul unei piste colorate înainte ca soarele (pericolul) să avanseze 13 pași.
+- Fiecare jucător are 3 cărți deschise: joacă o culoare (joc i p mută pionul p la următorul spațiu de acea culoare) sau aruncă o carte (arunc i); cărțile „soare” trase avansează pericolul.
+- Echipa câștigă dacă toate bufnițele ajung.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i p, arunc i.
+- Exemple legale la început: `arunc`, `1`
+- La început sunt 42 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ogrul_pe_urme"></a>
+## Ogrul pe Urme
+
+- **Id:** `ogrul_pe_urme`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ogrul_pe_urme` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de cursă cu zar: patru eroi pornesc pe o pistă colorată de 20 de spații spre comoară, iar ogrul pornește pe urmele lor.
+- Zarul (mutare forțată) arată o culoare (mut p mută pionul la următorul spațiu de acea culoare), un joker (următorul spațiu) sau ogrul (avansează cu 1).
+- Echipa câștigă dacă toți eroii ajung înainte ca ogrul să facă 9 pași.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: zar, mut p, pas.
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cetele_pustiei"></a>
+## Cetele Pustiei
+
+- **Id:** `cetele_pustiei`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cetele_pustiei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri.
+- Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea.
+- Misiune: doboară căpetenia (8 viață) pe grila 7×5; 3 acțiuni pe tură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers r c, lov r c, vindec, pas.
+- Exemple legale la început: `mers`, `4`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tinutul_ceturilor"></a>
+## Ținutul Cețurilor
+
+- **Id:** `tinutul_ceturilor`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tinutul_ceturilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih).
+- După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată).
+- Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul.
+- Jetoane: credință, oțel, ierburi; 9 poteci din 14, timp 29, moral 7.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: fac, ocol, odih 1..3.
+- Exemple legale la început: `fac`, `ocol`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="garnizoana_cuibului"></a>
+## Garnizoana din Cuib
+
+- **Id:** `garnizoana_cuibului`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play garnizoana_cuibului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ pe un graf de locuri cu pericole care cresc: doi jucători în echipă, câteva acțiuni pe tură (mers la un vecin, cur = scade pericolul, rit = ritual într-un laborator curat, pas), apoi se trag la întâmplare locuri care se agravează; peste 3 izbucnește și infectează vecinii.
+- Echipa câștigă cu numărul cerut de ritualuri, pierde la prea multe izbucniri sau când se termină rundele (remiză). 9 sectoare, 4 ritualuri (baricade) de împlinit, cel mult 3 izbucniri.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers v, cur, rit, pas.
+- Exemple legale la început: `mers`, `2`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="calatoria_cetei"></a>
+## Călătoria Cetei
+
+- **Id:** `calatoria_cetei`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play calatoria_cetei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri.
+- Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea.
+- Misiune: ambii eroi ajung pe ieșirile E de pe grila 8×5, în 22 de runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers r c, lov r c, vindec, pas.
+- Exemple legale la început: `mers`, `4`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="vanatorii_de_umbre"></a>
+## Vânătorii de Umbre
+
+- **Id:** `vanatorii_de_umbre`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play vanatorii_de_umbre` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih).
+- După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată).
+- Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul.
+- Jetoane: amulete, gloanțe, informații; 8 misiuni din 12, timp 25, moral 6.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: fac, ocol, odih 1..3.
+- Exemple legale la început: `ocol`, `odih`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="focar_zero"></a>
+## Focar Zero
+
+- **Id:** `focar_zero`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play focar_zero` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ pe un graf de locuri cu pericole care cresc: doi jucători în echipă, câteva acțiuni pe tură (mers la un vecin, cur = scade pericolul, rit = ritual într-un laborator curat, pas), apoi se trag la întâmplare locuri care se agravează; peste 3 izbucnește și infectează vecinii.
+- Echipa câștigă cu numărul cerut de ritualuri, pierde la prea multe izbucniri sau când se termină rundele (remiză). 8 locuri, 3 acțiuni pe tură, 5 ritualuri de împlinit, cel mult 4 izbucniri.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers v, cur, rit, pas.
+- Exemple legale la început: `mers`, `1`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="calea_cavalerului"></a>
+## Calea Cavalerului
+
+- **Id:** `calea_cavalerului`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play calea_cavalerului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de scenarii cu resurse: șirul de scene e vizibil; plătești jetoane și timp ca să înfrunți scena curentă (fac), o ocolești pe seama moralului (ocol) sau te odihnești pentru un jeton (odih).
+- După fiecare acțiune se întâmplă uneori ceva neprevăzut (mutare forțată).
+- Câștigi cu numărul cerut de scene, pierzi (remiză) dacă se termină timpul sau moralul.
+- Jetoane: mișcare, influență, cristale; 9 ținuturi din 14, timp 30, moral 8.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: fac, ocol, odih 1..3.
+- Exemple legale la început: `ocol`, `odih`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hotarul_cazut"></a>
+## Hotarul Căzut
+
+- **Id:** `hotarul_cazut`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hotarul_cazut` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ pe un graf de locuri cu pericole care cresc: doi jucători în echipă, câteva acțiuni pe tură (mers la un vecin, cur = scade pericolul, rit = ritual într-un laborator curat, pas), apoi se trag la întâmplare locuri care se agravează; peste 3 izbucnește și infectează vecinii.
+- Echipa câștigă cu numărul cerut de ritualuri, pierde la prea multe izbucniri sau când se termină rundele (remiză). 10 provincii, 3 acțiuni pe tură, 5 ritualuri de împlinit, cel mult 5 izbucniri.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers v, cur, rit, pas.
+- Exemple legale la început: `mers`, `2`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="padurea_juramintelor"></a>
+## Pădurea Jurămintelor
+
+- **Id:** `padurea_juramintelor`
+- **Categorie:** Cooperativ
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play padurea_juramintelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: cooperativ de temniță pe grilă: doi eroi (J1 și J2) cu câteva acțiuni pe tură (mers, lov, vindec, pas), iar monștrii se mișcă și lovesc în faza lor forțată, fără zaruri.
+- Echipa pierde dacă un erou cade (remiză) și câștigă îndeplinind misiunea.
+- Misiune: doboară căpetenia pădurii (12 viață) pe grila 7×6; 3 acțiuni pe tură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mers r c, lov r c, vindec, pas.
+- Exemple legale la început: `mers`, `5`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="atu_si_perechi"></a>
+## Atu și Perechi
+
+- **Id:** `atu_si_perechi`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play atu_si_perechi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc de cărți cu ridicături, 2 jucători: 52 de cărți (2 culori × 13 ranguri × 2 exemplare), o culoare de atu și un rang-nivel (atu sunt și toate cărțile rangului-nivel).
+- Mâinile de 13 cărți sunt ascunse; deschizi cu o carte sau cu o pereche de cărți identice (par i / par i j), celălalt răspunde cu același număr de cărți și dă culoarea cerută dacă poate; câștigătorul ridicăturii trage primul.
+- Puncte: 5=5, 10=10, K=10; peste 50 câștigi.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: par i, par i j, trag.
+- Exemple legale la început: `par`, `1`
+- La început sunt 27 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="randurile_cu_boi"></a>
+## Rândurile cu Boi
+
+- **Id:** `randurile_cu_boi`
+- **Categorie:** Cărți
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play randurile_cu_boi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc de cărți cu rânduri, 2 jucători: pachet 1..104 cu penalizări („boi”); patru rânduri, mâini deschise de 10 cărți, joacă pe rând (joc i): cartea merge la rândul al cărui capăt e cel mai mare număr mai mic decât ea; a 6-a carte dintr-un rând îți aduce cele 5 cărți (boii lor); dacă e mai mică decât toate, alegi rândul de luat (rand r).
+- După 20 de cărți câștigă cine are mai puțini boi.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i, rand r.
+- Exemple legale la început: `joc`, `1`
+- La început sunt 20 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mana_sigura"></a>
+## Mâna Sigură
+
+- **Id:** `mana_sigura`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mana_sigura` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc pentru copii cu mână fermă, 2 jucători: 10 piese cu valoare și dificultate; scot i încearcă o piesă, iar reușita (95-14·dificultate %) se hotărăște în mutarea forțată mana; la eșec celălalt primește 1.
+- Câștigă cine are mai mulți bănuți după ultima piesă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: scot i, mana.
+- Exemple legale la început: `scot`, `1`
+- La început sunt 20 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hipopotamii_lacomi"></a>
+## Hipopotamii Lacomi
+
+- **Id:** `hipopotamii_lacomi`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hipopotamii_lacomi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc pentru copii cu bile, 2 jucători: 8 runde cu câte 2 bile; fiecare alege tap 0..3 (energie totală 14 pe jucător, deschide pe rând), apoi lansez (forțat) împarte fiecare bilă proporțional cu energia investită.
+- Câștigă cine adună mai multe bile.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: tap k, lansez.
+- Exemple legale la început: `tap`, `0`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pioni_prinsi"></a>
+## Pioni Prinși
+
+- **Id:** `pioni_prinsi`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pioni_prinsi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc de pioni pentru copii, 2 jucători, 3 pioni fiecare, inel de 24 de câmpuri: zar (forțat), mut k mută pionul k (cu 6 intri în joc și mai arunci); aterizând pe adversar îl trimiți în bază; trebuie să ajungi exact la 24.
+- Primul cu 3 pioni acasă câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: zar, mut k, pas.
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cursa_cascavalului"></a>
+## Cursa Cașcavalului
+
+- **Id:** `cursa_cascavalului`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cursa_cascavalului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc pentru copii de cursă cu capcană, 2 jucători, câte 2 șoricei pe o pistă 0..15: zar (forțat), mut k mută un șoricel; căsuțele 3, 6, 9 și 12 adaugă o piesă la capcană (4 = gata).
+- Cu capcana gata poți declansez în loc de mutare: șoriceii adversarului de pe căsuțele 10-14 se întorc la start.
+- Câștigă cine aduce ambii șoricei la cașcaval (15).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: zar, mut k, declansez, pas.
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bilele_in_tub"></a>
+## Bilele în Tub
+
+- **Id:** `bilele_in_tub`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bilele_in_tub` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc pentru copii cu bețe și bile, 2 jucători, informație perfectă: 12 bețe, 14 bile, fiecare sprijinită de 3 bețe; trag s scoate bățul s, iar bilele rămase fără sprijin cad pe seama celui care a tras.
+- Când nu mai sunt bețe, câștigă cine are mai puține bile căzute pe seama sa.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: trag s.
+- Exemple legale la început: `trag`, `1`
+- La început sunt 24 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="livada_cu_cirese"></a>
+## Livada cu Cireșe
+
+- **Id:** `livada_cu_cirese`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play livada_cu_cirese` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc pentru copii cu ghicit norocos, 2 jucători: gira învârte roata (rezultat în mutarea forțată roata): 1-4 cireșe în găleată, sau pasăre/câine/găleată vărsată (pierzi găleata; vărsată: și o cireașă din coș).
+- Fixez mută cireșele din găleată în coș și predă tura.
+- Primul cu 10 cireșe în coș câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: gira, fixez, roata.
+- Exemple legale la început: `gira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="gheata_subtire"></a>
+## Gheața Subțire
+
+- **Id:** `gheata_subtire`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play gheata_subtire` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc pentru copii cu bloc de gheață, 2 jucători: grilă 3×4; bat r c lovește blocul, iar izb (forțat) hotărăște dacă omulețul cade: risc 5% + 12% pentru fiecare vecin scos + 2% pentru fiecare bloc scos.
+- Cine face omulețul să cadă pierde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: bat r c, izb.
+- Exemple legale la început: `bat`, `1`
+- La început sunt 36 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="avionul_hapsan"></a>
+## Avionul Hapsân
+
+- **Id:** `avionul_hapsan`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play avionul_hapsan` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc pentru copii cu avion, 2 jucători, câte 3 găini: avionul trece în cerc prin 4 stații (J1 la 1, J2 la 3); înainte să sosească la stația ta alegi lovesc (clapeta, reușește 60%, nu două ture la rând) sau asteapt; zbor (forțat) hotărăște.
+- Dacă avionul sosește și clapeta nu a reușit, pierzi o găină.
+- Rămâne cine mai are găini.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: lovesc, asteapt, zbor.
+- Exemple legale la început: `asteapt`, `lovesc`
+- La început sunt 2 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="livada_si_corbul"></a>
+## Livada și Corbul
+
+- **Id:** `livada_si_corbul`
+- **Categorie:** Copii
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play livada_si_corbul` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc cooperativ pentru copii, 2 jucători în echipă: 4 pomi cu câte 4 fructe; zar (forțat) arată o culoare (un fruct de acea culoare), coșul (alegi două fructe: cos c) sau corbul (avansează).
+- Echipa câștigă dacă strânge toate fructele înainte ca corbul să facă 6 pași (altfel remiză).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: zar, cos c.
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="gainile_pe_cerc"></a>
+## Găinile pe Cerc
+
+- **Id:** `gainile_pe_cerc`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play gainile_pe_cerc` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc de memorie pentru copii, 2 jucători: 14 plăci (6 perechi de găini și 2 vulpi); intorc i întoarce o placă (ce e dedesubt se arată prin mutarea forțată arat).
+- Două plăci egale = pereche pentru tine și mai întorci; neegale = tura trece; vulpea trece tura și te costă o pereche.
+- Câștigă cine are mai multe perechi.
+- Plăcile văzute rămân cunoscute de ambii.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: intorc i, arat.
+- Exemple legale la început: `intorc`, `1`
+- La început sunt 28 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="clopotelul_fructelor"></a>
+## Clopoțelul Fructelor
+
+- **Id:** `clopotelul_fructelor`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play clopotelul_fructelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: joc de reflex pentru copii, 2 jucători: 20 de cărți cu fructe fiecare; rasf întoarce cartea de sus; dacă un fel de fruct are exact 5 pe cele două cărți vizibile poți suna (corect: duelul de reflexe duel, forțat, cu 65% pentru cel care a sunat; greșit: dai o carte).
+- Cine rămâne fără cărți de întors pierde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: rasf, suna, trec, duel.
+- Exemple legale la început: `rasf`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="trezirea_reginelor"></a>
+## Trezirea Reginelor
+
+- **Id:** `trezirea_reginelor`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play trezirea_reginelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 12 regine dorm cu fața în jos.
+- Cu un rege trezești o regină (valoarea apare abia la mutarea forțată arata), cu un cavaler furi o regină trează (un dragon o apără), cu o poțiune o adormi (o baghetă o apără).
+- Aruncă numere singure, în pereche egală sau ca sumă a b c.
+- Mâna ta e secretă.
+- Câștigi cu 50 de puncte sau 5 regine.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `arunc`, `cavaler`
+- La început sunt 14 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="gheata_alunecoasa"></a>
+## Pisoiul pe Gheață
+
+- **Id:** `gheata_alunecoasa`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play gheata_alunecoasa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pe rând, un pește fuge spre ieșire (10) și un pisoi îl urmărește pe un coridor de gheață.
+- Alegi o alunecare 1–3; cu cât e mai lungă, cu atât poate ieși mai scurtă (rezultatul se află la mutarea forțată arata).
+- Peștele ieșit ia 2 puncte, prins dă pisoiului 3.
+- Rolurile alternează, 4 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `desli`, `1`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="turnul_rinocerului"></a>
+## Zgârie-norul Cartonat
+
+- **Id:** `turnul_rinocerului`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play turnul_rinocerului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Construiți un turn comun din pereți cartonați de 3 înălțimi.
+- Fiecare piesă pusă (pun w) are un risc public de prăbușire care crește cu înălțimea; la verific se hotărăște căderea.
+- Cine dărâmă ia înapoi piesele căzute.
+- Câștigă primul care rămâne fără piese.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `pun`, `1`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="turnul_fermei"></a>
+## Turnul Animalelor
+
+- **Id:** `turnul_fermei`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play turnul_fermei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pui animale de 4 mărimi pe un turn comun.
+- Zarul (zar) hotărăște: pui 1, pui 2, pui 1 și dai 1 adversarului sau doar dai 1 (ofer w).
+- Un animal mare peste unul mic e mai riscant.
+- Cine dărâmă (verific) ia piesele căzute.
+- Câștigă primul fără piese.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="oua_din_cuib"></a>
+## Ouăle din Cuib
+
+- **Id:** `oua_din_cuib`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play oua_din_cuib` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tragi dintr-un sac cu compoziție publică: ouă de valoare 1–3 le adaugi în pot, o piatră rea te costă; la 2 pietre pierzi potul.
+- Cu stop bagi potul în scor. 8 ture în total; cel mai mare scor câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `tragi`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="vulpea_dibace"></a>
+## Vulpea Dibace
+
+- **Id:** `vulpea_dibace`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play vulpea_dibace` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Un vulpoi ascuns dintre 12 suspecți (culoare, pălărie, coadă); nimeni nu-l știe.
+- Pe rând puneți întrebări publice (intreb A=v, cel mult 3 pe jucător) și ghiciți (ghic k).
+- Ghicit corect +2, greșit +1 pentru celălalt; 4 runde.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `intreb`, `A=1`
+- La început sunt 66 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="plansa_cu_poze"></a>
+## Cartonașul cu Poze
+
+- **Id:** `plansa_cu_poze`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play plansa_cu_poze` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare are un cartonaș deschis cu 6 poze din 10.
+- La scot ies două piese; tu iei una (ia 1 sau ia 2), cealaltă merge la adversar.
+- O piesă se acoperă doar dacă o ai pe cartonaș.
+- Primul cartonaș complet câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `scot`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="memoria_luminilor"></a>
+## Memoria Luminilor
+
+- **Id:** `memoria_luminilor`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play memoria_luminilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cine adaugă pune o culoare (r v a g) la coada secvenței; celălalt o repetă din memorie (secvența se ascunde).
+- Greșeala dă o penalizare (3 = pierzi) și secvența se reia.
+- AI-ul își amintește cel mult 7 semnale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `adaug`, `r`
+- La început sunt 8 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="catarul_incarcat"></a>
+## Măgarul Încărcat
+
+- **Id:** `catarul_incarcat`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play catarul_incarcat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Încărcați pe rând un măgar cu lopeți (1), găleți (2) și saci (3).
+- Limita lui ascunsă e între 10 și 22; riscul public al fiecărei piese vine din ce se știe.
+- La verific poate da cu copita: cine încarcă ia înapoi piesele căzute.
+- Primul fără piese câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `pun`, `1`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="butoiasul_corsar"></a>
+## Butoiașul Corsarului
+
+- **Id:** `butoiasul_corsar`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play butoiasul_corsar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 10 deschizături; într-una (ascunsă tuturor) sare corsarul.
+- Pe rând înfigi o sabie (taie i); mutarea forțată arata spune dacă a sărit.
+- Cine l-a trezit dă adversarului un punct și runda se reia.
+- Primul la 3 puncte câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `taie`, `1`
+- La început sunt 20 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="piesa_la_timp"></a>
+## Piesa din Clepsidră
+
+- **Id:** `piesa_la_timp`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play piesa_la_timp` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Ai o clepsidră cu limită ascunsă (5–12 ticuri).
+- Fiecare act costă 1–3 ticuri și adaugă 1, 2 sau 4 piese în pot.
+- Dacă depășești limita pierzi potul; cu stop îl bagi în scor. 8 ture; cel mai mare scor câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `act`, `1`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="iepuras_galop"></a>
+## Iepurașul și Găurile
+
+- **Id:** `iepuras_galop`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play iepuras_galop` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă de 24 de pătrate cu 3 găuri (6, 11, 17): cine aterizează într-una se întoarce la start.
+- Fața specială a zarului te face să pierzi tura.
+- Primul care ajunge la capăt câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="balansul_cerdacului"></a>
+## Balanța Cerdacului
+
+- **Id:** `balansul_cerdacului`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play balansul_cerdacului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Pui piese de greutate 1–4 pe taler stâng (s) sau drept (d).
+- Dacă diferența dintre talere depășește 5, iei înapoi piesele talerului mai greu.
+- Primul fără piese câștigă.
+- Fără șansă: totul e determinist.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `pun`, `1`
+- La început sunt 24 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="gandacelul_adunat"></a>
+## Gândăcelul din Piese
+
+- **Id:** `gandacelul_adunat`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play gandacelul_adunat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare își adună un gândăcel: corp, cap, 2 ochi, 2 antene, gură, 2 picioare; capul și restul cer corpul întâi.
+- La scot ies două piese: iei una (ia 1/ia 2), cealaltă merge la adversar.
+- Primul gândăcel complet câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `scot`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="camara_adormita"></a>
+## Camera Somnoroasă
+
+- **Id:** `camara_adormita`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play camara_adormita` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Furi gustări din bucătărie fără să trezești tatăl: fiecare acțiune costă ticuri (1 sau 2) și dă 1 sau 3 gustări.
+- Pragul ascuns e între 4 și 10; dacă îl depășești pierzi gustările din tură, cu stop le păstrezi. 8 ture, cel mai mare scor câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `act`, `1`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="piratii_din_golf"></a>
+## Pirații din Golf
+
+- **Id:** `piratii_din_golf`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play piratii_din_golf` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Inel de 6 câmpuri numerotate (lemn, aur, lână) cu 6 locuri de ancorare între ele.
+- La zar câmpul cu numărul aruncat produce pentru ancorele vecine.
+- Construiești o ancoră cu 1 lemn, 1 aur, 1 lână; schimbi 2 la 1.
+- Primul cu 4 ancore câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cetatea_si_drumul"></a>
+## Drumul spre Cetate
+
+- **Id:** `cetatea_si_drumul`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cetatea_si_drumul` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă comună 5×5.
+- Din piața de 3 plăci iei una și o așezi lipită de cele existente (j r c).
+- Primești 1 plus vecinii de același fel; cu f pui și un însoțitor (3 pe jucător) care la final ia mărimea grupului lui. 10 plăci pe jucător.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `1`, `1`
+- La început sunt 420 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="insula_dragonilor"></a>
+## Insula Puilor de Dragon
+
+- **Id:** `insula_dragonilor`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play insula_dragonilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare își face propria insulă 5×5 din domino cu două terenuri și ouă de dragon.
+- Din piața de 3 iei una și o așezi (j r c o); trebuie să atingă un teren la fel.
+- Câștigă cine are mai multe ouă după 9 plăci.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `1`, `1`
+- La început sunt 640 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="copii_contra_stafiilor"></a>
+## Copiii Apără Căsuța
+
+- **Id:** `copii_contra_stafiilor`
+- **Categorie:** Copii
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play copii_contra_stafiilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cooperativ: trei monștri (puteri 7, 8, 9) vin spre căsuță.
+- Arunci zarul (zar) și lovești un monstru (lucr t).
+- Amenințarea crește la fiecare rundă și la fața 1.
+- Dacă ajunge la 9 pierdeți amândoi (remiză); dacă îi înfrângeți, câștigă cine a lovit mai mult.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="labirint_nevazut"></a>
+## Labirintul cu Pereți Nevăzuți
+
+- **Id:** `labirint_nevazut`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play labirint_nevazut` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tablă 5×5 cu pereți ascunși: fiecare muchie se hotărăște la prima încercare (30% perete), apoi rămâne cunoscută de amândoi.
+- Mergi n/s/e/v; primul la comoara din centru câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `mut`, `s`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fantoma_de_pe_turn"></a>
+## Fantoma de pe Turn
+
+- **Id:** `fantoma_de_pe_turn`
+- **Categorie:** Copii
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fantoma_de_pe_turn` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cooperativ: 6 perechi de obiecte cu fața în jos.
+- Întorci două cărți (intorc i, arata).
+- Fiecare greșeală urcă fantoma pe turn (7 trepte).
+- Dacă ajunge sus pierdeți amândoi (remiză); dacă găsiți toate perechile, câștigă cine are mai multe.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `intorc`, `1`
+- La început sunt 24 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="trepte_soaptelor"></a>
+## Treptele Șoaptelor
+
+- **Id:** `trepte_soaptelor`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play trepte_soaptelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 7 perechi de obiecte și 2 fantome cu fața în jos.
+- O pereche găsită înaintează pionul tău cu 1–3 trepte (după obiect); o fantomă te coboară 2.
+- Primul pion la treapta 14 câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `intorc`, `1`
+- La început sunt 32 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="stafia_din_castel"></a>
+## Stafia din Castel
+
+- **Id:** `stafia_din_castel`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play stafia_din_castel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă de 20 de pătrate cu 2 pioni pe jucător; fața specială a zarului mută stafia cu 2: pionii rămași în urma ei se întorc la start.
+- Poți lovi pionul adversarului.
+- Primul cu ambii pioni la capăt câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="soricei_pe_branza"></a>
+## Șoricei pe Brânză
+
+- **Id:** `soricei_pe_branza`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play soricei_pe_branza` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă de 22 de pătrate cu 2 șoricei pe jucător și o pisică: fața specială o mută cu 3 și șoriceii rămași în urma ei se întorc la start.
+- O scurtătură de la 7 la 12.
+- Primul cu ambii șoricei la brânză câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="stafii_comoara"></a>
+## Stafiile și Comoara
+
+- **Id:** `stafii_comoara`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play stafii_comoara` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 7 perechi de comori și 3 stafii cu fața în jos.
+- Pereche găsită: +1 și mai întorci.
+- Stafie: adversarul ia un punct și tura trece.
+- Cel mai mare scor câștigă când se termină comorile.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `intorc`, `1`
+- La început sunt 34 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="viermi_in_mar"></a>
+## Viermele din Măr
+
+- **Id:** `viermi_in_mar`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play viermi_in_mar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă de 18 pătrate cu 2 viermi pe jucător.
+- Fața specială te lasă să arunci din nou; o gaură la 9 te întoarce la start; scurtătură de la 4 la 8; poți lovi viermele adversarului.
+- Primul cu ambii viermi la capăt câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fantoma_fugara"></a>
+## Fantoma Fugară
+
+- **Id:** `fantoma_fugara`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fantoma_fugara` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Un fantomă fuge pe un inel de 12 camere.
+- Fiecare își mută urmăritorul (mut k înainte, inv k înapoi, 1–3); cine aterizează pe fantomă o prinde (+1).
+- După fiecare mutare fantoma fuge (fuge).
+- Primul la 3 prinderi câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `mut`, `1`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="paianjen_pe_fir"></a>
+## Păianjenul de pe Fir
+
+- **Id:** `paianjen_pe_fir`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play paianjen_pe_fir` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă de 20 de pătrate pe un fir; trebuie să ajungi exact la capăt.
+- Fața păianjenului te trage înapoi 4 pătrate; scurtături 5→9 și 13→16; poți lovi pionul adversarului.
+- Primul la capăt câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="satul_din_piatra"></a>
+## Satul din Piatră și Lemn
+
+- **Id:** `satul_din_piatra`
+- **Categorie:** Copii
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play satul_din_piatra` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cooperativ: construiți 4 clădiri (coliba, focul, câmpul, podul) înainte ca amenințarea să ajungă la 11.
+- Cu zarul culegi resurse (culeg r) sau cheltuiești (constr t).
+- Dacă ați terminat, câștigă cine a contribuit mai mult; altfel remiză.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zaruri_grabite"></a>
+## Zarurile Grăbite
+
+- **Id:** `zaruri_grabite`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play zaruri_grabite` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă de 28 de pătrate cu 2 pioni pe jucător.
+- Arunci două zaruri și alegi unul pentru un pion (mut k f); fața 0 nu există, dar o capcană la 14 te întoarce la start și o scurtătură duce de la 8 la 12.
+- Primul cu ambii pioni la capăt câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pietre_sclipitoare"></a>
+## Pietrele Sclipitoare
+
+- **Id:** `pietre_sclipitoare`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pietre_sclipitoare` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Tragi pietre dintr-un sac cu compoziție publică (valori 1–4 și 3 pietre cenușii).
+- O singură piatră cenușie îți ia potul.
+- Cu stop îl bagi în scor. 8 ture; cel mai mare scor câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `tragi`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="corabii_din_vale"></a>
+## Corăbiile din Vale
+
+- **Id:** `corabii_din_vale`
+- **Categorie:** Copii
+- **Jucători:** tu + partener AI contra jocului/adversarilor
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play corabii_din_vale` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cooperativ: trei bărci (10, 12 și 14 vâsle) trebuie să treacă valea înainte ca monstrul mării (amenințarea) să ajungă la 11.
+- Arunci zarul și împingi o barcă (lucr t).
+- Dacă ajung toate, câștigă cine a contribuit mai mult; altfel remiză.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="piramida_bolovani"></a>
+## Piramida de Bolovani
+
+- **Id:** `piramida_bolovani`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play piramida_bolovani` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Încărcați pe rând o piramidă cu pietricele (2), bolovani (3) și stânci (4).
+- Limita ascunsă e între 12 și 26.
+- Zarul decide câte piese pui sau dai.
+- Cine o prăbușește (verific) ia piesele căzute.
+- Primul fără piese câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fantoma_blanda"></a>
+## Fantoma cea Blândă
+
+- **Id:** `fantoma_blanda`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play fantoma_blanda` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fantoma (alternativ) știe o țintă dintre 12 (vis, culoare) și dă cel mult 2–3 indicii adevărate (ind A=v, gata); celălalt ghicește (ghic k, verific).
+- Ținta e vizibilă doar fantomei. 6 runde; rolurile alternează.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `ind`, `A=1`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chei_si_usi"></a>
+## Cheile și Ușile
+
+- **Id:** `chei_si_usi`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chei_si_usi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 8 perechi de chei, lacăte, uși și lăzi cu fața în jos.
+- Întorci două cărți (intorc i, arata); pereche găsită: +1 și mai întorci.
+- Cele mai multe perechi câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `intorc`, `1`
+- La început sunt 32 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tort_pe_tort"></a>
+## Tortul cu Straturi
+
+- **Id:** `tort_pe_tort`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tort_pe_tort` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Puneți pe rând straturi de tort (1 cireașă, 2 blat mic, 3 blat mijlociu, 4 blat mare).
+- Un strat mai mare peste unul mai mic e mai riscant.
+- Zarul hotărăște câte piese pui.
+- Cine prăbușește tortul (verific) ia piesele căzute.
+- Primul fără piese câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="insula_cu_furtuni"></a>
+## Insula cu Furtuni
+
+- **Id:** `insula_cu_furtuni`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play insula_cu_furtuni` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- 8 perechi de obiecte de pe insulă și 2 furtuni cu fața în jos.
+- Pereche găsită: pionul tău înaintează 1–3.
+- Furtună: te întoarce 2 pătrate.
+- Primul la 15 câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `intorc`, `1`
+- La început sunt 36 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="parcul_perechilor"></a>
+## Parcul cu Perechi
+
+- **Id:** `parcul_perechilor`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play parcul_perechilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Fiecare are un parc propriu de 4×3.
+- Din piața de 3 plăci cu perechi de animale iei una și o așezi (j r c o).
+- La final primești 2 puncte pentru fiecare vecinătate de același animal. 6 plăci pe jucător.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `1`, `1`
+- La început sunt 272 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="purcei_cursa_mare"></a>
+## Cursa Purceilor
+
+- **Id:** `purcei_cursa_mare`
+- **Categorie:** Copii
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play purcei_cursa_mare` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Cursă de 26 de pătrate cu 3 purcei pe jucător.
+- Fața specială schimbă locul purceilor tăi cei mai avansați cu ai adversarului.
+- Primul cu toți purceii la capăt câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: vezi lista `?`
+- Exemple legale la început: `zar`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="hnefatafl"></a>
 ## Hnefatafl
