@@ -17,6 +17,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "academia_vrajilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "aceydeucey": {
   "kind": "gui",
   "frames": 24,
@@ -35,6 +44,33 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "agentia_tacuta": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 61,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "ager_zaruri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "alarma_nava": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "all_fours": {
   "kind": "gui",
   "frames": 24,
@@ -50,6 +86,15 @@
   "moves": 77,
   "complete": true,
   "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "altarul_sutelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 41,
+  "complete": true,
+  "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -71,6 +116,24 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "ancheta_nocturna": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "anchetatori_in_ceata": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "ancora": {
   "kind": "gui",
   "frames": 24,
@@ -89,6 +152,33 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "apararea_planetei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 23,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "aparatorii_orasului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 60,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "apele_uitate": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "apus": {
   "kind": "gui",
   "frames": 24,
@@ -97,6 +187,33 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "arbori_poiana": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "arena_aliatilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "arena_pietrelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "arhipelag": {
   "kind": "gui",
@@ -116,6 +233,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "armata_de_cimpie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 44,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "armate_de_buzunar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 116,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "armonia": {
   "kind": "gui",
   "frames": 4,
@@ -124,6 +259,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "armuri_de_abur": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 71,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "artificii": {
   "kind": "gui",
@@ -152,6 +296,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "asalt_pe_statia_veche": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "ascunselea": {
   "kind": "gui",
   "frames": 9,
@@ -160,6 +313,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "asediul_turnului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "asezari_noi": {
   "kind": "gui",
@@ -188,6 +350,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "aspectul_destinului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 63,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "ataxx": {
   "kind": "gui",
   "frames": 24,
@@ -206,6 +377,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "aterizare_peste_oras": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 49,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "atlas_pierdut": {
   "kind": "gui",
   "frames": 24,
@@ -214,6 +394,69 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "atu_si_perechi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 65,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "aurul_solar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 83,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "automate_contra_roiului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 41,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "aventurieri_de_foileton": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "avioane_in_amurg": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 87,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "avionul_hapsan": {
+  "kind": "gui",
+  "frames": 18,
+  "moves": 17,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "axa_inventiilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
  },
  "ayo": {
   "kind": "gui",
@@ -269,6 +512,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "balada_vitejilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 78,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "balans": {
   "kind": "gui",
   "frames": 13,
@@ -277,6 +529,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "balansul_cerdacului": {
+  "kind": "gui",
+  "frames": 14,
+  "moves": 13,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "balaur_dinti": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "baloot": {
   "kind": "gui",
@@ -323,6 +593,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "bancnote_si_zaruri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 92,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "banda_nebuna": {
   "kind": "gui",
   "frames": 19,
@@ -331,6 +610,24 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "bande_in_hrube": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 64,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "bande_in_ruine": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 85,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
  },
  "bao": {
   "kind": "gui",
@@ -377,6 +674,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "basm_cu_balauri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 64,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "bastionul_cenusiu": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "batak": {
   "kind": "gui",
   "frames": 24,
@@ -403,6 +718,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "baza_stelara": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 30,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "bazarul_persan": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "beetle": {
   "kind": "gui",
@@ -440,6 +773,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "biblioteca_umbrelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 60,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "biciclete_si_taine": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "bid_whist": {
   "kind": "gui",
   "frames": 24,
@@ -464,6 +815,15 @@
   "moves": 11,
   "complete": true,
   "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "bilele_in_tub": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -503,6 +863,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "blindate_pe_sosea": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 60,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "blocaje": {
   "kind": "gui",
   "frames": 24,
@@ -521,6 +890,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "bocetul_vapaii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "boggle": {
   "kind": "gui",
   "frames": 22,
@@ -529,6 +907,24 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "bolizi_de_pustiu": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 49,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "bolizi_oval": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "brag": {
   "kind": "gui",
@@ -602,6 +998,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "butoiasul_corsar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cabina_dubla": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "cadranul_ascuns": {
   "kind": "gui",
   "frames": 24,
@@ -610,6 +1024,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "cadranul_ostasului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "cai_continentale": {
   "kind": "gui",
@@ -629,6 +1052,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "caiace_nord": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 149,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "calatoria_cetei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 41,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "calatoria_oracolului": {
   "kind": "gui",
   "frames": 24,
@@ -637,6 +1078,33 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "calatorii_cu_ceai": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "calea_ascunsa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 29,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "calea_cavalerului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 43,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
  },
  "calea_ferata_preriei": {
   "kind": "gui",
@@ -647,12 +1115,30 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "calea_flacarii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 49,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "callbreak": {
   "kind": "gui",
   "frames": 24,
   "moves": 140,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "camara_adormita": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 53,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -664,6 +1150,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "camera_cu_cifru": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "camera_cu_ghicitori": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "camere_fitil": {
   "kind": "gui",
@@ -692,6 +1196,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "campionii_urbei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "canasta": {
   "kind": "gui",
   "frames": 24,
@@ -700,6 +1213,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "cantecul_hoinar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "cap_de_pod": {
   "kind": "gui",
@@ -764,10 +1286,46 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "caravane_nisip": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cargoul_din_abis": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 65,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "cariera": {
   "kind": "gui",
   "frames": 24,
   "moves": 56,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cariere_zaruri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "carosate_de_fier": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 82,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -791,6 +1349,24 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "carti_prafuite": {
+  "kind": "gui",
+  "frames": 10,
+  "moves": 9,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "carti_si_gloante": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 107,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "cartierele_catedralei": {
   "kind": "gui",
   "frames": 24,
@@ -804,6 +1380,15 @@
   "kind": "gui",
   "frames": 24,
   "moves": 34,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "case_si_ierni": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -845,6 +1430,33 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "catapulta_nucilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 46,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "catarare_coloane": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 67,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "catarul_incarcat": {
+  "kind": "gui",
+  "frames": 23,
+  "moves": 22,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "categoria_indrazneata": {
   "kind": "gui",
   "frames": 24,
@@ -863,12 +1475,66 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "catuse_si_baionete": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cautatorii_de_cripte": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cavaler_si_magician": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 69,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cavaleri_mecanici": {
+  "kind": "gui",
+  "frames": 18,
+  "moves": 17,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cavaleri_si_pavaze": {
+  "kind": "gui",
+  "frames": 18,
+  "moves": 17,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "cavalerii_hotarului": {
   "kind": "gui",
   "frames": 24,
   "moves": 32,
   "complete": true,
   "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cavalerii_stelelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -890,6 +1556,33 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "ceasul_alb_negru": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 115,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "ceasul_apocalipsei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 54,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "ceasul_templului": {
+  "kind": "gui",
+  "frames": 23,
+  "moves": 22,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "ceata": {
   "kind": "gui",
   "frames": 24,
@@ -898,6 +1591,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "ceata_tenebrelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 97,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
  },
  "ceelo": {
   "kind": "gui",
@@ -917,6 +1619,15 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "cenusa_neuronilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "cenusii": {
   "kind": "gui",
   "frames": 24,
@@ -925,6 +1636,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "cercurile_noptii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 25,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "ceremonia_sabiei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 66,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "cetate_intrigi": {
   "kind": "gui",
@@ -935,6 +1664,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "cetatea_breslelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 64,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "cetatea_mirodeniilor": {
   "kind": "gui",
   "frames": 24,
@@ -944,10 +1682,28 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "cetatea_si_drumul": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "cetati_ascensiune": {
   "kind": "gui",
   "frames": 24,
   "moves": 46,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cetatile_din_furtuna": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 45,
   "complete": true,
   "hidden_info_shown": true,
   "graphical_board": false,
@@ -961,6 +1717,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "cetele_pustiei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 44,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "chaturaji": {
   "kind": "gui",
@@ -984,6 +1749,33 @@
   "kind": "gui",
   "frames": 24,
   "moves": 644,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "chei_chihlimbar": {
+  "kind": "gui",
+  "frames": 18,
+  "moves": 17,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "chei_si_usi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "chemarea_hoardelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 71,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -1097,6 +1889,33 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "cifra_cea_mare": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cimitirul_de_papusi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cina_cu_suspecti": {
+  "kind": "gui",
+  "frames": 11,
+  "moves": 10,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "cinci_pietricele": {
   "kind": "gui",
   "frames": 24,
@@ -1115,10 +1934,55 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "clanuri_de_oaza": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "clanuri_de_orhidee": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "clona_credincioasa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 54,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "clopotelul_fructelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 123,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "coarda": {
   "kind": "gui",
   "frames": 24,
   "moves": 35,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "coborarea_fara_lumina": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 46,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -1169,6 +2033,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "colorat_si_barat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "colturi": {
   "kind": "gui",
   "frames": 19,
@@ -1177,6 +2050,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "comando_de_elita": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "comori": {
   "kind": "gui",
@@ -1196,12 +2078,48 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "complotul_din_umbra": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 41,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "conac": {
   "kind": "gui",
   "frames": 24,
   "moves": 50,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "conacul_cu_ghicitori": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 46,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "conacul_infectat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "conacul_tradarii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -1250,10 +2168,64 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "continentul_necunoscut": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 44,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "contrabandistii_cetii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 79,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "copii_contra_stafiilor": {
+  "kind": "gui",
+  "frames": 17,
+  "moves": 16,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "corabii_cu_tunuri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 77,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "corabii_din_vale": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "corabii_nord": {
   "kind": "gui",
   "frames": 24,
   "moves": 33,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "corbul_de_furtuna": {
+  "kind": "gui",
+  "frames": 5,
+  "moves": 4,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -1268,6 +2240,24 @@
   "graphical_board": true,
   "outcome": "win1"
  },
+ "coridorul_incercarilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 68,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "coridorul_ruinat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 37,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "coroana": {
   "kind": "gui",
   "frames": 24,
@@ -1277,6 +2267,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "corsari_larg": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 57,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "corsari_si_amirali": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 23,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "cortina_influentei": {
   "kind": "gui",
   "frames": 24,
@@ -1285,6 +2293,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "cosasii_de_suflete": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "cosmic": {
   "kind": "gui",
@@ -1340,6 +2357,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "creaturi_de_pixeli": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 30,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "creaturi_necunoscute": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 37,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "cribbage": {
   "kind": "gui",
   "frames": 24,
@@ -1376,10 +2411,46 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "cripta_corbilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cripta_eroilor": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "cristale": {
   "kind": "gui",
   "frames": 24,
   "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cristale_chemari": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 35,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "cristale_de_aura": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
   "complete": true,
   "hidden_info_shown": true,
   "graphical_board": false,
@@ -1430,6 +2501,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "cruciada_de_otel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 68,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "cuarenta": {
   "kind": "gui",
   "frames": 24,
@@ -1456,6 +2536,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "culoare_de_otel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 27,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "culori": {
   "kind": "gui",
@@ -1484,6 +2573,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "cununa_veacurilor": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "cupe": {
   "kind": "gui",
   "frames": 24,
@@ -1511,12 +2609,39 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "curierii_stelelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 45,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "curierii_vraji": {
   "kind": "gui",
   "frames": 24,
   "moves": 32,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cursa_cascavalului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cursa_cuburilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 60,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -1529,12 +2654,30 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "cursa_prin_retea": {
+  "kind": "gui",
+  "frames": 17,
+  "moves": 16,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "cursa_probelor": {
   "kind": "gui",
   "frames": 24,
   "moves": 40,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "cursa_testoase": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -1673,6 +2816,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "descalecatorii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 27,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "detectiv": {
   "kind": "gui",
   "frames": 24,
@@ -1681,6 +2833,24 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "detectivii_magiei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "detectivii_spiritelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 31,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "dicebaseball": {
   "kind": "gui",
@@ -1700,6 +2870,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "dinti_crocodil": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 102,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "discuri": {
   "kind": "gui",
   "frames": 24,
@@ -1713,6 +2892,15 @@
   "kind": "gui",
   "frames": 24,
   "moves": 67,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "domeniul_monstrilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 58,
   "complete": true,
   "hidden_info_shown": true,
   "graphical_board": false,
@@ -1736,10 +2924,55 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "domni_si_arcasi": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "doppelkopf": {
   "kind": "gui",
   "frames": 24,
   "moves": 97,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "dosare_sub_sigiliu": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 73,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "dosarul_cu_trei_fire": {
+  "kind": "gui",
+  "frames": 11,
+  "moves": 10,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "doua_arene_o_baza": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "douasprezece_elemente": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
   "complete": true,
   "hidden_info_shown": true,
   "graphical_board": false,
@@ -1758,6 +2991,15 @@
   "kind": "gui",
   "frames": 24,
   "moves": 42,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "dragoni_la_hotar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
   "complete": true,
   "hidden_info_shown": true,
   "graphical_board": false,
@@ -1799,6 +3041,15 @@
   "graphical_board": true,
   "outcome": "win1"
  },
+ "drum_peste_munti": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "drumul_comorii": {
   "kind": "gui",
   "frames": 24,
@@ -1817,10 +3068,37 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "drumul_prin_mlastini": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "drumul_stivelor": {
   "kind": "gui",
   "frames": 24,
   "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "drumuri_si_sine": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 35,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "dublu_istet": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -1844,6 +3122,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "duel_fulger": {
+  "kind": "gui",
+  "frames": 17,
+  "moves": 16,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "duel_giuvaeruri": {
   "kind": "gui",
   "frames": 24,
@@ -1862,6 +3149,15 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "duel_prerie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 45,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "duelul_argumentelor": {
   "kind": "gui",
   "frames": 19,
@@ -1875,6 +3171,24 @@
   "kind": "gui",
   "frames": 24,
   "moves": 140,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "duelul_puterilor": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "duhuri_pirjol": {
+  "kind": "gui",
+  "frames": 17,
+  "moves": 16,
   "complete": true,
   "hidden_info_shown": true,
   "graphical_board": false,
@@ -1898,6 +3212,42 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "echipa_de_aventurieri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 69,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "echipaj_de_epava": {
+  "kind": "gui",
+  "frames": 12,
+  "moves": 11,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "echipajul_exploratorilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 74,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "echipajul_ratacit": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 25,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "elasticul": {
   "kind": "gui",
   "frames": 7,
@@ -1916,6 +3266,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "energia_luptatorilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "epava_din_inelul_sapte": {
   "kind": "gui",
   "frames": 24,
@@ -1924,6 +3283,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "epoca_cenusie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 28,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "epoca_coloniilor": {
   "kind": "gui",
@@ -1940,6 +3308,114 @@
   "moves": 38,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "epoci_sub_lupa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "ere_si_monumente": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 57,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "eroi_arena": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 102,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "eroi_contra_raufacatori": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 59,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "eroi_cu_fise": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 43,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "eroi_de_targ": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "eroi_intre_lumi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 43,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "eroi_pe_acoperis": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "eroul_din_zaruri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 30,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "escadre_in_nebuloasa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 62,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "escadrila_cerului_rosu": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "escadrile_de_hartie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 84,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -1979,6 +3455,33 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "evadare_cu_cartele": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "evolutia_circuitelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "expeditia_levatelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 27,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "expeditia_ruinelor": {
   "kind": "gui",
   "frames": 24,
@@ -2015,12 +3518,39 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "faclia_din_hornuri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "faclia_stinsa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "faianta": {
   "kind": "gui",
   "frames": 24,
   "moves": 54,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "falange_si_calarime": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 103,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -2042,6 +3572,51 @@
   "graphical_board": true,
   "outcome": "draw"
  },
+ "fantoma_blanda": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 30,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "fantoma_de_pe_turn": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "fantoma_fugara": {
+  "kind": "gui",
+  "frames": 14,
+  "moves": 13,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "faptura_din_fag": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "farfurii_zburatoare": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 102,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "farkle": {
   "kind": "gui",
   "frames": 24,
@@ -2059,6 +3634,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "fauri_zaruri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "favoritul_judecatorului": {
   "kind": "gui",
@@ -2087,6 +3671,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "fiare_si_vrajitori": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 37,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "fiordul_gheatii_negre": {
   "kind": "gui",
   "frames": 24,
@@ -2105,12 +3698,39 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "fisa_fara_clase": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 69,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "fisuri_temporale": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 29,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "fitil": {
   "kind": "gui",
   "frames": 24,
   "moves": 56,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "fitilul_aprins": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 41,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -2150,6 +3770,33 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "flota_infiltrata": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "flote_cu_aburi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 77,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "flote_in_inel": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "flotele_cosmice": {
   "kind": "gui",
   "frames": 24,
@@ -2159,12 +3806,75 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "flotele_in_duel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "fluturi_prinsi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "foc_si_pulbere": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 70,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "focar_zero": {
+  "kind": "gui",
+  "frames": 10,
+  "moves": 9,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "focare": {
   "kind": "gui",
   "frames": 24,
   "moves": 59,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "focare_dupa_catastrofa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 25,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "focare_si_leacuri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 49,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "focul_in_bloc": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 107,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -2204,6 +3914,33 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "fratii_de_carapace": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "fratii_dezbinati": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 67,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "fregate_in_vid": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 86,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "frontiera_stelara": {
   "kind": "gui",
   "frames": 24,
@@ -2231,6 +3968,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "furia_haitei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 53,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "furnale": {
   "kind": "gui",
   "frames": 24,
@@ -2240,12 +3986,84 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "furnici_zburdalnice": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 58,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "furtuna_de_nisip": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "furtuna_interzisa": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "gainile_pe_cerc": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 42,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "galeria_prabusita": {
+  "kind": "gui",
+  "frames": 10,
+  "moves": 9,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "galerii_cu_dubluri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 56,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "gandacelul_adunat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "gandaci_blufati": {
   "kind": "gui",
   "frames": 24,
   "moves": 33,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "gandaci_mascati": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -2267,6 +4085,42 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "gardiene_de_cristal": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "gardieni_si_corsari": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "gardienii_multiversului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 60,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "garnizoana_cuibului": {
+  "kind": "gui",
+  "frames": 8,
+  "moves": 7,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "gebeta": {
   "kind": "gui",
   "frames": 23,
@@ -2285,6 +4139,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "genezele_prafului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 45,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "genial": {
   "kind": "gui",
   "frames": 24,
@@ -2294,6 +4157,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "ger_peste_avanpost": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 25,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "gesturi_mute": {
   "kind": "gui",
   "frames": 24,
@@ -2302,6 +4174,33 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "gheata_alunecoasa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 108,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "gheata_subtire": {
+  "kind": "gui",
+  "frames": 15,
+  "moves": 14,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "giganti_de_otel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 85,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "gin_rummy": {
   "kind": "gui",
@@ -2411,6 +4310,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "haita_furioasa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "halma": {
   "kind": "gui",
   "frames": 24,
@@ -2446,6 +4354,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "harta_cu_cifre": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "hasami": {
   "kind": "gui",
@@ -2483,6 +4400,15 @@
   "graphical_board": true,
   "outcome": "win2"
  },
+ "hipopotamii_lacomi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "hnefatafl": {
   "kind": "gui",
   "frames": 24,
@@ -2500,6 +4426,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "hoinarii_cu_zaruri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 45,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "hoinarii_pesterii": {
   "kind": "gui",
@@ -2519,12 +4454,39 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "hornul_cu_masinarii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "hotar": {
   "kind": "gui",
   "frames": 24,
   "moves": 101,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "hotarul_cazut": {
+  "kind": "gui",
+  "frames": 10,
+  "moves": 9,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "hoti_fructe": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -2564,6 +4526,24 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "hrube_cu_comori": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 61,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "hrube_si_comori": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 41,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "hus": {
   "kind": "gui",
   "frames": 8,
@@ -2591,12 +4571,48 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "iarna_taberei": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "iepuras_galop": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 306,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "iepuri": {
   "kind": "gui",
   "frames": 24,
   "moves": 58,
   "complete": true,
   "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "iluzia_cenusie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "imperii_de_stele": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -2645,6 +4661,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "inaltimi_cu_eroi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 49,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "inchizitorul_umbrei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 28,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "indicii_cascada": {
   "kind": "gui",
   "frames": 13,
@@ -2663,6 +4697,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "infirmeria_de_noapte": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "inimi": {
   "kind": "gui",
   "frames": 24,
@@ -2671,6 +4714,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "inimi_din_umbra": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "insula": {
   "kind": "gui",
@@ -2681,10 +4733,46 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "insula_apelor_urcate": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 28,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "insula_celor_doua_luni": {
   "kind": "gui",
   "frames": 24,
   "moves": 67,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "insula_cu_furtuni": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "insula_dragonilor": {
+  "kind": "gui",
+  "frames": 19,
+  "moves": 18,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "insula_scufundata": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 27,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -2726,6 +4814,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "istet_la_cub": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 61,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "itinerar": {
   "kind": "gui",
   "frames": 24,
@@ -2762,6 +4859,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "jaf_in_zgarie_nori": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "janggi": {
   "kind": "gui",
   "frames": 24,
@@ -2779,6 +4885,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "jetoane_cerc": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "jigsaw": {
   "kind": "gui",
@@ -2807,6 +4922,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "jucariile_curajoase": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "jungle": {
   "kind": "gui",
   "frames": 24,
@@ -2815,6 +4939,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "juramant_de_otel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 57,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "jurament_si_obstacol": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 88,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "kalah": {
   "kind": "gui",
@@ -2915,6 +5057,42 @@
   "graphical_board": true,
   "outcome": "win2"
  },
+ "labirint_fara_cuvinte": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "labirint_nevazut": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 86,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "lame_si_ghiare": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 84,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "lamele_in_pivnita": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "lampioane_lac": {
   "kind": "gui",
   "frames": 24,
@@ -2969,6 +5147,33 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "latrunculi_mic": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 206,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "leacul_molimei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 90,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "legamant_de_piatra": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 23,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "legenda_potrivita": {
   "kind": "gui",
   "frames": 19,
@@ -2978,10 +5183,46 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "legiunea_in_retragere": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 66,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "legiuni_frante": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "legiuni_si_cohorte": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 100,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "legiuni_si_falange": {
   "kind": "gui",
   "frames": 24,
   "moves": 57,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "leul_frizerie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 68,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -3050,6 +5291,24 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "livada_cu_cirese": {
+  "kind": "gui",
+  "frames": 17,
+  "moves": 16,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "livada_si_corbul": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "long_nard": {
   "kind": "gui",
   "frames": 24,
@@ -3086,6 +5345,15 @@
   "graphical_board": true,
   "outcome": "win2"
  },
+ "lumea_dintre_lumini": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 25,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "lumina": {
   "kind": "gui",
   "frames": 24,
@@ -3095,12 +5363,84 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "lumina_care_scade": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 87,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "luna_in_cioburi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 44,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "lupii": {
   "kind": "gui",
   "frames": 10,
   "moves": 9,
   "complete": true,
   "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "lupii_din_ceata": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "lupta_cu_pelerine": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 58,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "lupta_fuziunii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "lupta_in_nori": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 56,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "lupta_pe_etape": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "luptatori_cu_aura": {
+  "kind": "gui",
+  "frames": 16,
+  "moves": 15,
+  "complete": true,
+  "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -3121,6 +5461,24 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "maestri_zar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 400,
+  "complete": false,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "unfinished"
+ },
+ "magii_mici": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 51,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "magistrale": {
   "kind": "gui",
@@ -3185,6 +5543,24 @@
   "graphical_board": true,
   "outcome": "draw"
  },
+ "mana_sigura": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 42,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "mana_stanga_cu_pumnal": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 49,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "manastirea_harnica": {
   "kind": "gui",
   "frames": 24,
@@ -3248,12 +5624,30 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "maresali_de_fier": {
+  "kind": "gui",
+  "frames": 11,
+  "moves": 10,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "margine": {
   "kind": "gui",
   "frames": 24,
   "moves": 76,
   "complete": true,
   "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "marginea_nevazuta": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 59,
+  "complete": true,
+  "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -3292,6 +5686,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "masinarii_de_abur": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 57,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "masini_ceas_zero": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "mastermind": {
   "kind": "gui",
@@ -3338,6 +5750,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "memoria_luminilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 400,
+  "complete": false,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "unfinished"
+ },
  "memory": {
   "kind": "gui",
   "frames": 24,
@@ -3356,10 +5777,37 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "mercenari_stelari": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "mersatori_si_pusasi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 80,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "mesterii_catedralei": {
   "kind": "gui",
   "frames": 24,
   "moves": 37,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "mestesugul_razboiului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -3392,10 +5840,28 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "minciuna_savoroasa": {
+  "kind": "gui",
+  "frames": 19,
+  "moves": 18,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "mingea": {
   "kind": "gui",
   "frames": 19,
   "moves": 18,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "mingea_de_piele": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 93,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -3410,6 +5876,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "misiuni_dincolo_de_stele": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "misterul_locatiei": {
   "kind": "gui",
   "frames": 24,
@@ -3419,6 +5894,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "mituri_si_zei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "mlastina_strigoilor": {
   "kind": "gui",
   "frames": 24,
@@ -3427,6 +5911,33 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "modelaj_in_tacere": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 31,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "monstrii_din_sat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "monstrii_orasului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 56,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "morabaraba": {
   "kind": "gui",
@@ -3500,6 +6011,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "movila_de_piatra": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "mozaic": {
   "kind": "gui",
   "frames": 24,
@@ -3518,6 +6038,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "muncile_semizeului": {
+  "kind": "gui",
+  "frames": 23,
+  "moves": 22,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "mus": {
   "kind": "gui",
   "frames": 24,
@@ -3526,6 +6055,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "mutantii_zonei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 103,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "mutorere": {
   "kind": "gui",
@@ -3554,12 +6092,57 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "naufragiati_pe_insula": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "nava_fara_capitan": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "nava_fara_raspuns": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 85,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "nave": {
   "kind": "gui",
   "frames": 24,
   "moves": 82,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "nave_de_expeditie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "nave_in_deriva": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 80,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -3571,6 +6154,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "neamul_pietrei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 31,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "negustori_port": {
   "kind": "gui",
@@ -3653,6 +6245,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "oastea_cea_mare": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 77,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "oastea_de_zaruri": {
+  "kind": "gui",
+  "frames": 5,
+  "moves": 4,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "obiect_fulger": {
   "kind": "gui",
   "frames": 24,
@@ -3661,6 +6271,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "ogrul_pe_urme": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 46,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "oina": {
   "kind": "gui",
@@ -3734,6 +6353,24 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "orasel_caraghios": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 35,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "orasul_asediat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 25,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "orasul_comun": {
   "kind": "gui",
   "frames": 24,
@@ -3742,6 +6379,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "orasul_cu_ceata": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "orasul_fabricilor": {
   "kind": "gui",
@@ -3752,10 +6398,37 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "orasul_in_crestere": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 27,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "orasul_piramidelor": {
   "kind": "gui",
   "frames": 24,
   "moves": 35,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "orasul_prafuit": {
+  "kind": "gui",
+  "frames": 23,
+  "moves": 22,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "orbita_in_flacari": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 28,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -3770,6 +6443,33 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "ordine_pe_caroiaj": {
+  "kind": "gui",
+  "frames": 19,
+  "moves": 18,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "ordinul_luminii": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "orizont_de_astrolabe": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "ospatul_fiordului": {
   "kind": "gui",
   "frames": 24,
@@ -3778,6 +6478,42 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "osti_de_hotar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 94,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "osti_pe_o_fila": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 66,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "otel_si_soapte": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "oua_din_cuib": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 64,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "oversevens": {
   "kind": "gui",
@@ -3806,6 +6542,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "pachetul_aventurierilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 41,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "pachinko": {
   "kind": "gui",
   "frames": 24,
@@ -3824,6 +6569,33 @@
   "graphical_board": true,
   "outcome": "win1"
  },
+ "padure_cu_muschete": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 35,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "padurea_coruptiei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 79,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "padurea_juramintelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 127,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "padurea_spiridusilor": {
   "kind": "gui",
   "frames": 24,
@@ -3841,6 +6613,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "paianjen_pe_fir": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "paigow": {
   "kind": "gui",
@@ -3878,6 +6659,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "paleta_evadarii": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "pallanguzhi": {
   "kind": "gui",
   "frames": 24,
@@ -3896,6 +6686,42 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "palnia_mortilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "panze_si_ghiulele": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 80,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "papusarii_umbrei": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "papusile_dorintei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 43,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "paradox_temporal": {
   "kind": "gui",
   "frames": 24,
@@ -3904,6 +6730,24 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "paradoxul_trezit": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 64,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "parame_largate": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 74,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "parc_dino": {
   "kind": "gui",
@@ -3922,6 +6766,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "parcul_perechilor": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "parimpar": {
   "kind": "gui",
@@ -3959,10 +6812,37 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "pasi_de_evolutie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 51,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "pasi_de_otel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 70,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "passedix": {
   "kind": "gui",
   "frames": 24,
   "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "pastorii_viei": {
+  "kind": "gui",
+  "frames": 23,
+  "moves": 22,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -4004,6 +6884,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "patrula_linia_rosie": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "patrule_in_lan": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "pavilion_vesel": {
   "kind": "gui",
   "frames": 24,
@@ -4012,6 +6910,33 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "paznicii_padurii": {
+  "kind": "gui",
+  "frames": 17,
+  "moves": 16,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "pe_valuri_de_otel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "pecetea_magilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "pegsol": {
   "kind": "gui",
@@ -4067,6 +6992,15 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "peritorii_coroanei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "perquackey": {
   "kind": "gui",
   "frames": 24,
@@ -4103,6 +7037,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "petale_si_spini": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "petitschevaux": {
   "kind": "gui",
   "frames": 24,
@@ -4130,6 +7073,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "pictorul_pretins": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 35,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "pictura_manastire": {
   "kind": "gui",
   "frames": 24,
@@ -4139,12 +7091,30 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "piesa_la_timp": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "pietre_puzzle": {
   "kind": "gui",
   "frames": 5,
   "moves": 4,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "pietre_sclipitoare": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 35,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -4175,6 +7145,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "pioni_prinsi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 102,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "piquet": {
   "kind": "gui",
   "frames": 24,
@@ -4192,6 +7171,42 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "piramida_bolovani": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "pirat_cernit": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 98,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "pirati_de_hartie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "piratii_din_golf": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 400,
+  "complete": false,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "unfinished"
  },
  "pisici": {
   "kind": "gui",
@@ -4211,6 +7226,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "pistoale_in_praf": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "pit": {
   "kind": "gui",
   "frames": 22,
@@ -4229,12 +7253,39 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "pivnita_strabuna": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 88,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "placinta_in_obraz": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 70,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "placute": {
   "kind": "gui",
   "frames": 24,
   "moves": 201,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "planeta_cu_spini": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -4246,6 +7297,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "plansa_cu_poze": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "planul_scapat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 74,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "plapuma": {
   "kind": "gui",
@@ -4269,6 +7338,15 @@
   "kind": "gui",
   "frames": 24,
   "moves": 35,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "pofta_zarurilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -4336,6 +7414,24 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "popoarele_si_epocile": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 70,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "porcusorul_lacom": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 82,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "portret": {
   "kind": "gui",
@@ -4409,6 +7505,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "povesti_din_ceata": {
+  "kind": "gui",
+  "frames": 19,
+  "moves": 18,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "povesti_din_han": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "povesti_negre": {
   "kind": "gui",
   "frames": 13,
@@ -4424,6 +7538,15 @@
   "moves": 30,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "pragul_dificultatii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 58,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -4445,6 +7568,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "prieteni_la_ghicit": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "primarul_si_lupul": {
   "kind": "gui",
   "frames": 24,
@@ -4458,6 +7590,24 @@
   "kind": "gui",
   "frames": 24,
   "moves": 136,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "prinsi_intre_ceruri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 43,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "provincii_de_jad": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
   "complete": true,
   "hidden_info_shown": true,
   "graphical_board": false,
@@ -4490,6 +7640,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "pumnul_din_umbra": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 45,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "puncte": {
   "kind": "gui",
   "frames": 24,
@@ -4499,12 +7658,111 @@
   "graphical_board": true,
   "outcome": "win1"
  },
+ "puncte_nu_clase": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 82,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "purcei_cursa_mare": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 104,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "purcei_pe_masa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "pusasi_pe_planeta_rosie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 83,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "pustiul_cenusiu": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 69,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "pustiul_mutantilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 49,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "raid_in_tinuturi_vechi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "randuri_colorate": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "randurile_cu_boi": {
+  "kind": "gui",
+  "frames": 23,
+  "moves": 22,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "rapide": {
   "kind": "gui",
   "frames": 24,
   "moves": 28,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "razboinica_de_bronz": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 70,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "razboinici_de_fiord": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 67,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -4516,6 +7774,51 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "rebus_in_cadre": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "recif_zburdalnic": {
+  "kind": "gui",
+  "frames": 20,
+  "moves": 19,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "regate_de_cenusa": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "regele_metropolei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 59,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "regimente_pe_cimpie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "reguli_schimbatoare": {
   "kind": "gui",
@@ -4580,6 +7883,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "ricosetul_bilelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "riichi": {
   "kind": "gui",
   "frames": 24,
@@ -4589,6 +7901,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "ringul_cu_bila": {
+  "kind": "gui",
+  "frames": 23,
+  "moves": 22,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "rithmomachia": {
   "kind": "gui",
   "frames": 24,
@@ -4597,6 +7918,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "ritualul_adancului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 59,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "rivalii_colonizarii": {
   "kind": "gui",
@@ -4625,12 +7955,39 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "roata_anotimpurilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "roata_puterilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 69,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "roata_zilelor": {
   "kind": "gui",
   "frames": 24,
   "moves": 48,
   "complete": true,
   "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "roboti_de_lupta": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 29,
+  "complete": true,
+  "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -4642,6 +7999,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "roiul_si_vanatorii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "ronda": {
   "kind": "gui",
@@ -4670,10 +8036,28 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "rps_scurt": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "ruinele_cartografilor": {
   "kind": "gui",
   "frames": 24,
   "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "ruinele_eonilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 49,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -4697,10 +8081,55 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "runa_si_lama": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 68,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "sabatul_de_pe_deal": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "saga_in_graba": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "sah960": {
   "kind": "gui",
   "frames": 24,
   "moves": 119,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "sala_cu_mini_jocuri": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "sala_de_comanda_stelara": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 58,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -4733,6 +8162,42 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "salve_pe_front": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 43,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "salve_si_baionete": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 88,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "sangele_noptii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 31,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "sania_cu_clopote": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "sanma": {
   "kind": "gui",
   "frames": 24,
@@ -4746,6 +8211,15 @@
   "kind": "gui",
   "frames": 24,
   "moves": 87,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "santierul_orbital": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 77,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -4778,6 +8252,15 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "sase_lumi_in_flacari": {
+  "kind": "gui",
+  "frames": 18,
+  "moves": 17,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "sat_mic": {
   "kind": "gui",
   "frames": 24,
@@ -4787,6 +8270,24 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "satul_de_la_rascruce": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "satul_din_piatra": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "satul_lanternelor": {
   "kind": "gui",
   "frames": 24,
@@ -4795,6 +8296,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "satul_stafiilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "scattergories": {
   "kind": "gui",
@@ -4813,6 +8323,33 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "scaunul_cu_colti": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "scena_virtuala": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 27,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "scene_din_patru_anotimpuri": {
+  "kind": "gui",
+  "frames": 7,
+  "moves": 6,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "schafkopf": {
   "kind": "gui",
@@ -4841,6 +8378,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "schite_de_constructie": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 79,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "schite_rapide": {
   "kind": "gui",
   "frames": 24,
@@ -4859,12 +8405,75 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "scoala_darurilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "scoala_de_vraji": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 27,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "scopa": {
   "kind": "gui",
   "frames": 24,
   "moves": 125,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "scrisori_amestecate": {
+  "kind": "gui",
+  "frames": 7,
+  "moves": 6,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "scufundarea_adanca": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 92,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "scutierii_pasului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 45,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "scuturi_si_mana": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 23,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "scuturi_si_raze": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 84,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -4913,6 +8522,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "seniorul_hatisurilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "septica": {
   "kind": "gui",
   "frames": 24,
@@ -4948,6 +8566,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "sfetnici_cetate": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "shashki": {
   "kind": "gui",
@@ -5057,6 +8684,15 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "sigiliul_batran": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 31,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "simon": {
   "kind": "gui",
   "frames": 24,
@@ -5065,6 +8701,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "sincron_numerelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 400,
+  "complete": false,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "unfinished"
  },
  "sir5": {
   "kind": "gui",
@@ -5165,6 +8810,24 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "soapte_din_abis": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 58,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "soarecii_din_castel": {
+  "kind": "gui",
+  "frames": 19,
+  "moves": 18,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
  "soarele_licitat": {
   "kind": "gui",
   "frames": 24,
@@ -5173,6 +8836,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "soarta_e_aruncata": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 80,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "solzi": {
   "kind": "gui",
@@ -5183,12 +8855,75 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "somnorosii_din_vale": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 43,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "soricei_cascaval": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 58,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "soricei_pe_branza": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 70,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "sotron": {
   "kind": "gui",
   "frames": 24,
   "moves": 34,
   "complete": true,
   "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "spada_fara_stapan": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 53,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "spadasinii_marilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 76,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "spargatori_retea": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "spartura_dintre_lumi": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
  },
@@ -5219,12 +8954,57 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "stafia_din_castel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 400,
+  "complete": false,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "unfinished"
+ },
+ "stafii_comoara": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 46,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "stapanii_elementelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "statia_dintre_stele": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 34,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "statuile": {
   "kind": "gui",
   "frames": 24,
   "moves": 120,
   "complete": true,
   "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "stele_fara_catastif": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 31,
+  "complete": true,
+  "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
  },
@@ -5255,6 +9035,33 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "straja_pe_culme": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 26,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "strajeri_de_umbra": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "straji_ceruri": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 30,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "strajile": {
   "kind": "gui",
   "frames": 24,
@@ -5272,6 +9079,15 @@
   "hidden_info_shown": false,
   "graphical_board": true,
   "outcome": "win2"
+ },
+ "strigoi_de_targ": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "sudoku": {
   "kind": "gui",
@@ -5300,6 +9116,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "sulite_si_archebuze": {
+  "kind": "gui",
+  "frames": 15,
+  "moves": 14,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "sungka": {
   "kind": "gui",
   "frames": 10,
@@ -5326,6 +9151,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "tabara_regelui": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 69,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "tabele_fara_sfarsit": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 62,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "tablanet": {
   "kind": "gui",
@@ -5372,10 +9215,28 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "tancuri_in_lan": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 93,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "tangram": {
   "kind": "gui",
   "frames": 15,
   "moves": 14,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "tapul_sprinten": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 98,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -5408,6 +9269,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "taramuri_paralele": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 27,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "targul_ciumat": {
   "kind": "gui",
   "frames": 24,
@@ -5434,6 +9304,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "tarimuri_in_furtuna": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 63,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
  },
  "tarneeb": {
   "kind": "gui",
@@ -5534,6 +9413,33 @@
   "graphical_board": false,
   "outcome": "draw"
  },
+ "tema_in_doi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 73,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "temnita_clepsidrei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 29,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "temnita_unui_pachet": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "templele": {
   "kind": "gui",
   "frames": 24,
@@ -5615,6 +9521,24 @@
   "graphical_board": true,
   "outcome": "draw"
  },
+ "tineri_cu_pelerine": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 66,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tinta_fixata": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 106,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "tinut_zane": {
   "kind": "gui",
   "frames": 24,
@@ -5624,10 +9548,55 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "tinutul_cenusiu": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tinutul_cetelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tinutul_ceturilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 29,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "tinutul_furtunilor": {
   "kind": "gui",
   "frames": 24,
   "moves": 49,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tinutul_uitat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 64,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tinutul_zimtat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 25,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -5650,6 +9619,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "tinuturi_si_vraji": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "titani_de_ceata": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 60,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "toc": {
   "kind": "gui",
@@ -5687,10 +9674,46 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "torpiloare_in_noapte": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "tort_pe_tort": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 149,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "totem_grabit": {
   "kind": "gui",
   "frames": 21,
   "moves": 20,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "tovarasul_din_gong": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 47,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "transee_tacute": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 95,
   "complete": true,
   "hidden_info_shown": true,
   "graphical_board": false,
@@ -5704,6 +9727,24 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "trei_cetati": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "trei_randuri_zar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 64,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "trei_runde": {
   "kind": "gui",
@@ -5768,6 +9809,33 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "trepte_de_avangarda": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 59,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "trepte_de_destin": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 55,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "trepte_soaptelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 42,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "treptele_civilizatiei": {
   "kind": "gui",
   "frames": 24,
@@ -5785,6 +9853,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "trezirea_reginelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 60,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "trictrac": {
   "kind": "gui",
@@ -5831,6 +9908,24 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "trupe_de_plumb": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "trupe_sub_trei_sori": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 87,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "truth_dare": {
   "kind": "gui",
   "frames": 24,
@@ -5839,6 +9934,33 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "tunelul_blocat": {
+  "kind": "gui",
+  "frames": 6,
+  "moves": 5,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "turneul_celor_trei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "turnirul_animalutelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 41,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "turnul": {
   "kind": "gui",
@@ -5857,6 +9979,42 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "draw"
+ },
+ "turnul_clatinat": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 77,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "turnul_fermei": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 81,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "turnul_razvratitilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 51,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "turnul_rinocerului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 68,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "turnul_zorilor": {
   "kind": "gui",
@@ -5930,6 +10088,42 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "ucenicii_cenusii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 36,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "ucenicii_de_otel": {
+  "kind": "gui",
+  "frames": 16,
+  "moves": 15,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "ucenicii_luminii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "ucenicii_vantului": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 31,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "uckers": {
   "kind": "gui",
   "frames": 24,
@@ -5938,6 +10132,15 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "ulita_neagra": {
+  "kind": "gui",
+  "frames": 17,
+  "moves": 16,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "ulti": {
   "kind": "gui",
@@ -5948,6 +10151,24 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "ultima_supravietuitoare": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 39,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "ultimele_animale": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "umbra": {
   "kind": "gui",
   "frames": 24,
@@ -5957,6 +10178,42 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "umbre_cu_lame": {
+  "kind": "gui",
+  "frames": 11,
+  "moves": 10,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "umbre_de_neon": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 32,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "umbre_pe_lande": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 38,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "umbre_peste_cetate": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 73,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "ur": {
   "kind": "gui",
   "frames": 24,
@@ -5965,6 +10222,33 @@
   "hidden_info_shown": false,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "ur_scurt": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 266,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "urcus_coboras": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 66,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "urme_in_ceata_adanca": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 28,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
  },
  "valea": {
   "kind": "gui",
@@ -6002,10 +10286,46 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "vampirii_din_ceata": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "vanatoarea_de_noapte": {
+  "kind": "gui",
+  "frames": 15,
+  "moves": 14,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "vanatori_imagini": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 48,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "vanatorii_campie": {
   "kind": "gui",
   "frames": 24,
   "moves": 40,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "vanatorii_de_umbre": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 37,
   "complete": true,
   "hidden_info_shown": true,
   "graphical_board": false,
@@ -6029,6 +10349,105 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "vara_masinilor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 91,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "varful_fumegand": {
+  "kind": "gui",
+  "frames": 22,
+  "moves": 21,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "vartej_de_zaruri": {
+  "kind": "gui",
+  "frames": 23,
+  "moves": 22,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "vasul_pustiit": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 27,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "veacul_regimentelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 44,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "verde_galben_rosu": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "viermi_in_mar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 72,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "viermisori_gratar": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 303,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "vinovat_tainuit": {
+  "kind": "gui",
+  "frames": 13,
+  "moves": 12,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "vitraliul_zarurilor": {
+  "kind": "gui",
+  "frames": 21,
+  "moves": 20,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "vizuina_cu_comori": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 40,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "vorbe_scurte": {
   "kind": "gui",
   "frames": 24,
@@ -6037,6 +10456,33 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win1"
+ },
+ "vrajitori_in_ger": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 84,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "vrajitorii_din_ruine": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 42,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "vulpea_dibace": {
+  "kind": "gui",
+  "frames": 9,
+  "moves": 8,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
  },
  "war": {
   "kind": "gui",
@@ -6128,6 +10574,15 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "zar_peste_masa": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 84,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "zara": {
   "kind": "gui",
   "frames": 24,
@@ -6146,10 +10601,64 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "zarul_nebuniei": {
+  "kind": "gui",
+  "frames": 6,
+  "moves": 5,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "zarul_taios": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 46,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
  "zaruri5": {
   "kind": "gui",
   "frames": 24,
   "moves": 148,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "zaruri_asezari": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 65,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "zaruri_cosmice": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 50,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "zaruri_grabite": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "zaruri_in_duel": {
+  "kind": "gui",
+  "frames": 19,
+  "moves": 18,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
@@ -6173,6 +10682,33 @@
   "graphical_board": false,
   "outcome": "win1"
  },
+ "zbor_de_lancii": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 24,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "zborul_bufnitelor": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 25,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "zece_la_fel": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "zece_usi": {
   "kind": "gui",
   "frames": 24,
@@ -6182,6 +10718,33 @@
   "graphical_board": false,
   "outcome": "win2"
  },
+ "zeii_adormiti": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 45,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
+ "zeii_de_lut": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 82,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "zero_contra_infinit": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 33,
+  "complete": true,
+  "hidden_info_shown": true,
+  "graphical_board": false,
+  "outcome": "win1"
+ },
  "zgarie_nori": {
   "kind": "gui",
   "frames": 24,
@@ -6190,6 +10753,15 @@
   "hidden_info_shown": true,
   "graphical_board": false,
   "outcome": "win2"
+ },
+ "zidul_de_scuturi": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 52,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win1"
  },
  "zidurile": {
   "kind": "gui",
@@ -6204,6 +10776,24 @@
   "kind": "gui",
   "frames": 24,
   "moves": 34,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "win2"
+ },
+ "zmeul_de_cremene": {
+  "kind": "gui",
+  "frames": 24,
+  "moves": 45,
+  "complete": true,
+  "hidden_info_shown": false,
+  "graphical_board": false,
+  "outcome": "draw"
+ },
+ "zorii_climei": {
+  "kind": "gui",
+  "frames": 16,
+  "moves": 15,
   "complete": true,
   "hidden_info_shown": false,
   "graphical_board": false,
