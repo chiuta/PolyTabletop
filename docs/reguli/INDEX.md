@@ -2,7 +2,7 @@
 
 Fiecare pagină descrie, pentru implementarea din acest depozit: scopul, pregătirea, structura turei, sintaxa mutărilor (cu exemple rulate efectiv în CLI cu `--seed 1`), regulile speciale, punctajul, sfârșitul jocului, notele despre AI și informația ascunsă și diferențele față de regulile tradiționale.
 
-Ordinea este cea din `polytabletop list`; partea a doua (jocurile 121–924) este în [INDEX2.md](INDEX2.md). Regulile scurte și sintaxa generală sunt și în `docs/JOCURI.md`.
+Ordinea este cea din `polytabletop list`; partea a doua (jocurile 121–1196) este în [INDEX2.md](INDEX2.md). Regulile scurte și sintaxa generală sunt și în `docs/JOCURI.md`.
 
 Observații comune:
 

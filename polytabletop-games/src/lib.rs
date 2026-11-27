@@ -6,6 +6,58 @@
 //! used for our own games: we use the generic names ("Reversi",
 //! "Patru în linie", …).
 
+// T2-mods-begin
+pub mod agentia_tacuta;
+pub mod bande_in_hrube;
+pub mod bocetul_vapaii;
+pub mod calatorii_cu_ceai;
+pub mod cenusa_neuronilor;
+pub mod cimitirul_de_papusi;
+pub mod coborarea_fara_lumina;
+pub mod corbul_de_furtuna;
+pub mod cununa_veacurilor;
+pub mod epoca_cenusie;
+pub mod epoci_sub_lupa;
+pub mod faclia_din_hornuri;
+pub mod faptura_din_fag;
+pub mod fratii_dezbinati;
+pub mod genezele_prafului;
+pub mod hornul_cu_masinarii;
+pub mod luna_in_cioburi;
+pub mod mana_stanga_cu_pumnal;
+pub mod movila_de_piatra;
+pub mod orizont_de_astrolabe;
+pub mod otel_si_soapte;
+pub mod pastorii_viei;
+pub mod povesti_din_han;
+pub mod prinsi_intre_ceruri;
+pub mod pustiul_mutantilor;
+pub mod regimente_pe_cimpie;
+pub mod sabatul_de_pe_deal;
+pub mod sania_cu_clopote;
+pub mod seniorul_hatisurilor;
+pub mod somnorosii_din_vale;
+pub mod stele_fara_catastif;
+pub mod straja_pe_culme;
+pub mod t2_drum;
+pub mod t2_duel;
+pub mod t2_mini;
+pub mod t2_util;
+pub mod tancuri_in_lan;
+pub mod tinutul_zimtat;
+pub mod trupe_sub_trei_sori;
+pub mod turneul_celor_trei;
+pub mod turnul_razvratitilor;
+pub mod ucenicii_de_otel;
+pub mod umbre_cu_lame;
+pub mod umbre_pe_lande;
+pub mod urme_in_ceata_adanca;
+pub mod veacul_regimentelor;
+pub mod vizuina_cu_comori;
+pub mod zarul_taios;
+pub mod zidul_de_scuturi;
+pub mod zmeul_de_cremene;
+// T2-mods-end
 // C4-mods-begin
 pub mod c4_bingo;
 pub mod c4_capcana;
@@ -33,6 +85,59 @@ pub mod zr_risc;
 pub mod zr_trei;
 pub mod zr_util;
 // C6-mods-end
+// T1-mods-begin
+pub mod t1_rpg;
+pub mod t1_specs;
+// T1-mods-end
+// T3-mods-begin
+pub mod mn_engine;
+pub mod mn_specs;
+// T3-mods-end
+// T6-mods-begin
+pub mod altarul_sutelor;
+pub mod caravane_nisip;
+pub mod cautatorii_de_cripte;
+pub mod cavalerii_stelelor;
+pub mod cercurile_noptii;
+pub mod clanuri_de_oaza;
+pub mod comando_de_elita;
+pub mod corsari_si_amirali;
+pub mod creaturi_de_pixeli;
+pub mod cruciada_de_otel;
+pub mod detectivii_spiritelor;
+pub mod dosare_sub_sigiliu;
+pub mod duelul_puterilor;
+pub mod eroi_intre_lumi;
+pub mod flotele_in_duel;
+pub mod fratii_de_carapace;
+pub mod gardiene_de_cristal;
+pub mod haita_furioasa;
+pub mod imperii_de_stele;
+pub mod legiuni_frante;
+pub mod lupta_fuziunii;
+pub mod marginea_nevazuta;
+pub mod masini_ceas_zero;
+pub mod mituri_si_zei;
+pub mod muncile_semizeului;
+pub mod orasel_caraghios;
+pub mod papusile_dorintei;
+pub mod pasi_de_evolutie;
+pub mod raid_in_tinuturi_vechi;
+pub mod razboinica_de_bronz;
+pub mod recif_zburdalnic;
+pub mod roiul_si_vanatorii;
+pub mod scena_virtuala;
+pub mod scoala_darurilor;
+pub mod soapte_din_abis;
+pub mod spargatori_retea;
+pub mod stapanii_elementelor;
+pub mod straji_ceruri;
+pub mod t6_tcg;
+pub mod turnirul_animalutelor;
+pub mod ucenicii_luminii;
+pub mod umbre_de_neon;
+pub mod vanatoarea_de_noapte;
+// T6-mods-end
 // B6-mods-begin
 pub mod aruncari_cupe;
 pub mod b6_ask;
@@ -97,6 +202,12 @@ pub mod banane;
 pub mod banchiza;
 pub mod bilinele;
 pub mod brand_util;
+// T4-mods-begin
+pub mod t4_sdata;
+pub mod t4_skirm;
+pub mod t4_tcg;
+pub mod t4_tdata;
+// T4-mods-end
 pub mod c3_dice;
 pub mod c3_dung;
 pub mod c3_kids1;
@@ -220,6 +331,55 @@ pub mod telefon_desenat;
 pub mod tesatura_epocilor;
 pub mod trei_runde5;
 // B5-mods-end
+// T5-mods-begin
+pub mod arena_aliatilor;
+pub mod biblioteca_umbrelor;
+pub mod cavaleri_mecanici;
+pub mod cetatile_din_furtuna;
+pub mod chei_chihlimbar;
+pub mod cosasii_de_suflete;
+pub mod creaturi_necunoscute;
+pub mod cristale_chemari;
+pub mod cristale_de_aura;
+pub mod cursa_prin_retea;
+pub mod domeniul_monstrilor;
+pub mod dragoni_la_hotar;
+pub mod drum_peste_munti;
+pub mod duel_fulger;
+pub mod duhuri_pirjol;
+pub mod eroi_contra_raufacatori;
+pub mod eroi_de_targ;
+pub mod lumea_dintre_lumini;
+pub mod lupta_pe_etape;
+pub mod luptatori_cu_aura;
+pub mod magii_mici;
+pub mod mercenari_stelari;
+pub mod misiuni_dincolo_de_stele;
+pub mod orasul_prafuit;
+pub mod papusarii_umbrei;
+pub mod pecetea_magilor;
+pub mod povesti_din_ceata;
+pub mod provincii_de_jad;
+pub mod pumnul_din_umbra;
+pub mod roata_anotimpurilor;
+pub mod roboti_de_lupta;
+pub mod sangele_noptii;
+pub mod sase_lumi_in_flacari;
+pub mod scaunul_cu_colti;
+pub mod scoala_de_vraji;
+pub mod spartura_dintre_lumi;
+pub mod statia_dintre_stele;
+pub mod t5_tcg;
+pub mod taramuri_paralele;
+pub mod tinutul_cenusiu;
+pub mod tinuturi_si_vraji;
+pub mod tovarasul_din_gong;
+pub mod trei_cetati;
+pub mod ucenicii_cenusii;
+pub mod ucenicii_vantului;
+pub mod varful_fumegand;
+pub mod zero_contra_infinit;
+// T5-mods-end
 // B4-mods-begin
 pub mod asezarile_imperiului;
 pub mod b4_c;
@@ -1186,6 +1346,107 @@ pub const HOTSEAT_SAFE: &[&str] = &[
     "vinovat_tainuit",
     "prieteni_la_ghicit",
     // C5-hs-end
+    // T4-hs-begin
+    "pirati_de_hartie",
+    "evolutia_circuitelor",
+    "energia_luptatorilor",
+    "ceasul_alb_negru",
+    "trepte_de_avangarda",
+    "doua_arene_o_baza",
+    "scuturi_si_mana",
+    // T4-hs-end
+    // T5-hs-begin
+    "cristale_chemari",
+    "duhuri_pirjol",
+    "cursa_prin_retea",
+    "chei_chihlimbar",
+    "provincii_de_jad",
+    "mercenari_stelari",
+    "pecetea_magilor",
+    "biblioteca_umbrelor",
+    "tinutul_cenusiu",
+    "cavaleri_mecanici",
+    "arena_aliatilor",
+    "creaturi_necunoscute",
+    "sangele_noptii",
+    "misiuni_dincolo_de_stele",
+    "lumea_dintre_lumini",
+    "drum_peste_munti",
+    "pumnul_din_umbra",
+    "tinuturi_si_vraji",
+    "papusarii_umbrei",
+    "povesti_din_ceata",
+    "scaunul_cu_colti",
+    "trei_cetati",
+    "sase_lumi_in_flacari",
+    "magii_mici",
+    "luptatori_cu_aura",
+    "ucenicii_vantului",
+    "cosasii_de_suflete",
+    "tovarasul_din_gong",
+    "zero_contra_infinit",
+    "duel_fulger",
+    "domeniul_monstrilor",
+    "taramuri_paralele",
+    "cristale_de_aura",
+    "lupta_pe_etape",
+    "eroi_contra_raufacatori",
+    "roata_anotimpurilor",
+    "roboti_de_lupta",
+    "statia_dintre_stele",
+    "scoala_de_vraji",
+    "varful_fumegand",
+    "cetatile_din_furtuna",
+    "dragoni_la_hotar",
+    "ucenicii_cenusii",
+    "eroi_de_targ",
+    "spartura_dintre_lumi",
+    "orasul_prafuit",
+    // T5-hs-end
+    // T6-hs-begin
+    "spargatori_retea",
+    "duelul_puterilor",
+    "altarul_sutelor",
+    "straji_ceruri",
+    "haita_furioasa",
+    "caravane_nisip",
+    "legiuni_frante",
+    "marginea_nevazuta",
+    "imperii_de_stele",
+    "dosare_sub_sigiliu",
+    "umbre_de_neon",
+    "roiul_si_vanatorii",
+    "corsari_si_amirali",
+    "soapte_din_abis",
+    "clanuri_de_oaza",
+    "cautatorii_de_cripte",
+    "razboinica_de_bronz",
+    "muncile_semizeului",
+    "ucenicii_luminii",
+    "gardiene_de_cristal",
+    "masini_ceas_zero",
+    "creaturi_de_pixeli",
+    "scoala_darurilor",
+    "vanatoarea_de_noapte",
+    "cavalerii_stelelor",
+    "flotele_in_duel",
+    "cruciada_de_otel",
+    "orasel_caraghios",
+    "recif_zburdalnic",
+    "turnirul_animalutelor",
+    "comando_de_elita",
+    "fratii_de_carapace",
+    "raid_in_tinuturi_vechi",
+    "detectivii_spiritelor",
+    "stapanii_elementelor",
+    "cercurile_noptii",
+    "pasi_de_evolutie",
+    "scena_virtuala",
+    "papusile_dorintei",
+    "eroi_intre_lumi",
+    "mituri_si_zei",
+    "lupta_fuziunii",
+    // T6-hs-end
 ];
 
 fn playable_base() -> Vec<Playable> {
@@ -7158,6 +7419,1922 @@ fn playable_base() -> Vec<Playable> {
             make: || Box::new(brand_util::B(zr_misc::Fitil::new())),
         },
         // C6-reg-end
+        // T1-reg-begin
+        Playable {
+            id: "curierii_stelelor",
+            title: "Curierii stelelor",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi curieri stelari se întrec spre portul de destinație prin salturi riscante. Fiecare erou (Pilot / Negustor) are 18 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: se aruncă 3d6 și suma trebuie să fie sub țintă (11 + 2×(pricepere − dificultate), între 5 și 16); cu 5 sub țintă = excelent. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: al doilea care joacă în rundă are +1 la verificări. Mutarea «tinta» înseamnă a înainta pe drum (1/1/2 pași după parțial/reușit/excelent); primul la 14 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 14 runde decide drumul parcurs. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(0))),
+        },
+        Playable {
+            id: "fisa_fara_clase",
+            title: "Fișa fără clase",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi aventurieri cu fișe fără clase, construite din puncte, se înfruntă într-un duel. Fiecare erou (Mercenar / Savant) are 14 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +3), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: se aruncă 3d6 și suma trebuie să fie sub țintă (11 + 2×(pricepere − dificultate), între 5 și 16); cu 5 sub țintă = excelent (o ratare la mustață dă „parțial”). Rezultatul se aplică imediat. Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei. Câștigi când adversarul ajunge la 0 PV; după 16 runde decid PV. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(1))),
+        },
+        Playable {
+            id: "runa_si_lama",
+            title: "Runa și lama",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un războinic și un preot al runelor își măsoară iscusința cu lama și cu rune. Fiecare erou (Războinic / Preot al runelor) are 13 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈5/2⌉) și 5/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: un rezultat ratat costă 1 PV. Câștigi când adversarul ajunge la 0 PV; după 18 runde decid PV. Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(2))),
+        },
+        Playable {
+            id: "saga_in_graba",
+            title: "Saga în grabă",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un duel pripit, cu zaruri explozive, între un pistolar și un vrăjitor. Fiecare erou (Pistolar / Vrăjitor) are 16 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: un singur zar cu mărimea după pricepere (4 + 2×pricepere, maxim d12), care explodează la maxim (până la 3 ori), contra 3 + dificultate; cu 4 peste = excelent. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură). Câștigi când adversarul ajunge la 0 PV; după 20 runde decid PV. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(3))),
+        },
+        Playable {
+            id: "aspectul_destinului",
+            title: "Aspectul destinului",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi eroi își construiesc faima prin aspecte, noroc și răsturnări de situație. Fiecare erou (Spadasin / Intrigant) are 13 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: câștigi gardă 4+1 și vindeci 4/2 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: patru zaruri cu +1/0/−1, plus pricepere − dificultate: 0 = parțial, 1–2 = reușit, 3+ = excelent, sub 0 = ratat. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Fără regulă specială. Mutarea «tinta» înseamnă o faptă: faima crește cu 1/1/2 după parțial/reușit/excelent; primul la 13 faimă câștigă; după 14 runde decide faima. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(4))),
+        },
+        Playable {
+            id: "pustiul_cenusiu",
+            title: "Pustiul cenușiu",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un vânător și o căpetenie se înfruntă într-un pustiu cenușiu. Fiecare erou (Vânător / Căpetenie) are 13 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +2), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: 2d6 + pricepere − dificultate: până la 6 ratat, 7–9 parțial, 10–12 reușit, 13+ excelent. La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: cine e lovit primește +1 focus. Câștigi când adversarul ajunge la 0 PV; după 16 runde decid PV. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(5))),
+        },
+        Playable {
+            id: "hrube_cu_comori",
+            title: "Hrube cu comori",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi aventurieri coboară în hrube pline de comori, cursă spre cea mai adâncă încăpere. Fiecare erou (Hoț / Luptător) are 12 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: 2d6 + pricepere − dificultate: până la 6 ratat, 7–9 parțial, 10–12 reușit, 13+ excelent. La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Fără regulă specială. Mutarea «tinta» înseamnă a înainta pe drum (0/2/3 pași după parțial/reușit/excelent); primul la 6 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 18 runde decide drumul parcurs. Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(6))),
+        },
+        Playable {
+            id: "pivnita_strabuna",
+            title: "Pivnița străbună",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi cercetași coboară într-o pivniță străbună, cu capcane și vlăguire. Fiecare erou (Cavaler / Cleric) are 13 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 3 focus, minte: te vindeci cu 5 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat. Rezultatul se aplică imediat. Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei. Mutarea «tinta» înseamnă a înainta pe drum (1/2/3 pași după parțial/reușit/excelent); primul la 7 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 20 runde decide drumul parcurs. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(7))),
+        },
+        Playable {
+            id: "palnia_mortilor",
+            title: "Pâlnia morților",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi supraviețuitori fragili se bat într-o pâlnie a morților. Fiecare erou (Țăran viteaz / Cultist) are 28 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈3/2⌉) și 3/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat (o ratare la mustață dă „parțial”). După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: un rezultat ratat costă 1 PV. Câștigi când adversarul ajunge la 0 PV; după 14 runde decid PV. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(8))),
+        },
+        Playable {
+            id: "nava_fara_raspuns",
+            title: "Nava fără răspuns",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi membri ai echipajului fug spre capsula de salvare pe o navă fără răspuns. Fiecare erou (Inginer / Medic) are 10 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 2 focus, minte: adversarul pierde 4 focus și garda, plus ⌈4/2⌉ PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial. La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată. Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările. Mutarea «tinta» înseamnă a înainta pe drum (1/2/2 pași după parțial/reușit/excelent); primul la 6 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 16 runde decide drumul parcurs. La 11 stres pierzi (ratările adaugă stres). Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(9))),
+        },
+        Playable {
+            id: "faclia_stinsa",
+            title: "Făclia stinsă",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi căutători coboară cu făclia care scade, tot mai adânc. Fiecare erou (Hoț / Paznic) are 16 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: al doilea care joacă în rundă are +1 la verificări. Mutarea «tinta» înseamnă a înainta pe drum (0/2/3 pași după parțial/reușit/excelent); primul la 16 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 18 runde decide drumul parcurs. La 18 stres pierzi (ratările adaugă stres). Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(10))),
+        },
+        Playable {
+            id: "mutantii_zonei",
+            title: "Mutanții Zonei",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi mutanți străbat Zona spre un refugiu legendar, plătind cu stres mutațiile. Fiecare erou (Hamalul / Fermecătorul) are 16 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 1 focus, minte: te vindeci cu 3 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere + 2 zaruri d6, fiecare 5+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial. La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată. Regulă specială: fiecare vrajă costă +1 stres. Mutarea «tinta» înseamnă a înainta pe drum (1/2/3 pași după parțial/reușit/excelent); primul la 11 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 20 runde decide drumul parcurs. La 13 stres pierzi. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(11))),
+        },
+        Playable {
+            id: "ceremonia_sabiei",
+            title: "Ceremonia sabiei",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi emisari își câștigă onoarea la o ceremonie a sabiei. Fiecare erou (Sabiaș / Curtean) are 10 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: câștigi gardă 5+1 și vindeci 5/2 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere + 2 zaruri d10 (10 explodează), păstrezi cele mai bune (pricepere la număr) și aduni, contra 8 + 6×dificultate; cu 8 peste = excelent. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: al doilea care joacă în rundă are +1 la verificări. Mutarea «tinta» înseamnă o faptă: faima crește cu 1/1/2 după parțial/reușit/excelent; primul la 7 faimă câștigă; după 14 runde decide faima. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(12))),
+        },
+        Playable {
+            id: "paradoxul_trezit",
+            title: "Paradoxul trezit",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un mag trezit și un gardian se înfruntă; fiecare vrajă trezește paradoxul. Fiecare erou (Mag trezit / Gardian) are 22 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 2 focus, minte: adversarul pierde 3 focus și garda, plus ⌈3/2⌉ PV), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1. La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: fiecare vrajă costă +1 stres. Câștigi când adversarul ajunge la 0 PV; după 16 runde decid PV. La 14 stres pierzi. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(13))),
+        },
+        Playable {
+            id: "furia_haitei",
+            title: "Furia haitei",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: O haită în furie și un vânător se măsoară în luptă deschisă. Fiecare erou (Lup de război / Vânător de lupi) are 17 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: rănești cu 4 PV și te vindeci cu jumătate), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: pricepere + 2 zaruri d6, fiecare 5+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial. La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată. Regulă specială: cine e lovit primește +1 focus. Câștigi când adversarul ajunge la 0 PV; după 18 runde decid PV. La 9 stres pierzi. Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, forteaza.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(14))),
+        },
+        Playable {
+            id: "ordinul_luminii",
+            title: "Ordinul Luminii",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un cavaler al Ordinului Luminii se duelează cu un contrabandist pilot. Fiecare erou (Cavaler al luminii / Contrabandist) are 14 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 1 focus, minte: lovitură de vrajă fără gardă: 2 PV), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură). Câștigi când adversarul ajunge la 0 PV; după 20 runde decid PV. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(15))),
+        },
+        Playable {
+            id: "pragul_dificultatii",
+            title: "Pragul dificultății",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi eroi măsoară dificultatea în trepte de prag. Fiecare erou (Explorator / Mercenar) are 13 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: te vindeci cu 3 PV), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat (o ratare la mustață dă „parțial”). După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Fără regulă specială. Câștigi când adversarul ajunge la 0 PV; după 14 runde decid PV. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(16))),
+        },
+        Playable {
+            id: "ruinele_eonilor",
+            title: "Ruinele eonilor",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi cercetători jefuiesc ruinele eonilor după faimă și relicve. Fiecare erou (Arhiv / Căutător) are 13 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 3 focus, minte: adversarul pierde 5 focus și garda, plus ⌈5/2⌉ PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: fiecare vrajă costă +1 stres. Mutarea «tinta» înseamnă o faptă: faima crește cu 1/2/2 după parțial/reușit/excelent; primul la 9 faimă câștigă; după 16 runde decide faima. La 9 stres pierzi. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(17))),
+        },
+        Playable {
+            id: "vara_masinilor",
+            title: "Vara mașinilor",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi copii descoperă taine într-o vară cu mașinării ciudate. Fiecare erou (Copil inventator / Copil curios) are 8 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: te vindeci cu 3 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial. La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată. Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările. Mutarea «tinta» înseamnă o faptă: faima crește cu 0/2/3 după parțial/reușit/excelent; primul la 6 faimă câștigă; după 18 runde decide faima. La 6 stres pierzi. Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(18))),
+        },
+        Playable {
+            id: "padurea_coruptiei",
+            title: "Pădurea corupției",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi rătăcitori se bat în pădurea corupției, unde fiecare vrajă lasă urme. Fiecare erou (Vânător / Vrăjitoare) are 14 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: rănești cu 4 PV și te vindeci cu jumătate), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent (o ratare la mustață dă „parțial”). La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: fiecare vrajă costă +1 stres. Câștigi când adversarul ajunge la 0 PV; după 20 runde decid PV. La 7 stres pierzi. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(19))),
+        },
+        Playable {
+            id: "iluzia_cenusie",
+            title: "Iluzia cenușie",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi oameni scoși din iluzia cenușie se înfruntă între spaime. Fiecare erou (Dezabuzat / Medium) are 22 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈2/2⌉) și 2/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1. La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările. Câștigi când adversarul ajunge la 0 PV; după 14 runde decid PV. La 16 stres pierzi (ratările adaugă stres). Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(20))),
+        },
+        Playable {
+            id: "tinutul_uitat",
+            title: "Ținutul uitat",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi pelerini străbat un ținut uitat, hex cu hex. Fiecare erou (Pădurar / Pelerin) are 13 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈3/2⌉) și 3/2 PV pierdute), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial. La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată. Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei. Mutarea «tinta» înseamnă a înainta pe drum (1/2/2 pași după parțial/reușit/excelent); primul la 8 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 16 runde decide drumul parcurs. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(21))),
+        },
+        Playable {
+            id: "cargoul_din_abis",
+            title: "Cargoul din abis",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi oameni de pe cargoul din abis își dispută ultima gură de aer. Fiecare erou (Marinar / Biolog) are 26 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +5), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: pricepere + 2 zaruri d6, fiecare 5+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial. La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată. Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările. Câștigi când adversarul ajunge la 0 PV; după 18 runde decid PV. La 16 stres pierzi (ratările adaugă stres). Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, forteaza.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(22))),
+        },
+        Playable {
+            id: "carti_si_gloante",
+            title: "Cărți și gloanțe",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi vânători de recompense își dispută faima în orașul de la graniță. Fiecare erou (Pistolar / Pastor) are 22 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: un singur zar cu mărimea după pricepere (4 + 2×pricepere, maxim d12), care explodează la maxim (până la 3 ori), contra 3 + dificultate; cu 4 peste = excelent (o ratare la mustață dă „parțial”). După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură). Mutarea «tinta» înseamnă o faptă: faima crește cu 1/2/3 după parțial/reușit/excelent; primul la 18 faimă câștigă; după 20 runde decide faima. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(23))),
+        },
+        Playable {
+            id: "trepte_de_destin",
+            title: "Trepte de destin",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi adepți urcă trepte de destin și se înfruntă. Fiecare erou (Adept al săbiei / Elementalist) are 17 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: un singur zar cu mărimea după pricepere (4 + 2×pricepere, maxim d12), care explodează la maxim (până la 3 ori), contra 3 + dificultate; cu 4 peste = excelent. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: al doilea care joacă în rundă are +1 la verificări. Câștigi când adversarul ajunge la 0 PV; după 14 runde decid PV. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(24))),
+        },
+        Playable {
+            id: "clona_credincioasa",
+            title: "Clona credincioasă",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Două clone loiale își toarnă una alteia vina; trădarea se adună. Fiecare erou (Clonă slujbașă / Clonă trădătoare) are 12 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +2), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: pricepere + 1 zaruri d6 (cel puțin 2), se adună; pentru fiecare valoare apărută de cel puțin două ori se adaugă încă un zar d6 (maxim 2 în plus); prag 8 + 4×dificultate, cu 8 peste = excelent (o ratare la mustață dă „parțial”). Rezultatul se aplică imediat. Regulă specială: un rezultat ratat costă 1 PV. Câștigi când adversarul ajunge la 0 PV; după 16 runde decid PV. La 8 stres pierzi (ratările adaugă stres). Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(25))),
+        },
+        Playable {
+            id: "planul_scapat",
+            title: "Planul scăpat de sub control",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi complotiști își văd planul scăpat de sub control. Fiecare erou (Planificator / Improvizator) are 18 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈3/2⌉) și 3/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: patru zaruri cu +1/0/−1, plus pricepere − dificultate: 0 = parțial, 1–2 = reușit, 3+ = excelent, sub 0 = ratat (o ratare la mustață dă „parțial”). La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: un rezultat ratat costă 1 PV. Mutarea «tinta» înseamnă o faptă: faima crește cu 0/2/3 după parțial/reușit/excelent; primul la 16 faimă câștigă; după 18 runde decide faima. La 16 stres pierzi (ratările adaugă stres). Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(26))),
+        },
+        Playable {
+            id: "jurament_si_obstacol",
+            title: "Jurământ și obstacol",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi eroi își țin jurămintele și înfruntă obstacolele. Fiecare erou (Jurătorul / Vagabondul) are 20 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 3 focus, minte: câștigi gardă 5+1 și vindeci 5/2 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere + 2 zaruri d10 (10 explodează), păstrezi cele mai bune (pricepere la număr) și aduni, contra 8 + 6×dificultate; cu 8 peste = excelent (o ratare la mustață dă „parțial”). După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei. Mutarea «tinta» înseamnă o faptă: faima crește cu 1/2/3 după parțial/reușit/excelent; primul la 16 faimă câștigă; după 20 runde decide faima. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(27))),
+        },
+        Playable {
+            id: "galerii_cu_dubluri",
+            title: "Galerii cu dubluri",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Dublurile fac legea în galeriile adânci. Fiecare erou (Gladiator / Vrăjitor de mină) are 14 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: pricepere + 1 zaruri d6 (cel puțin 2), se adună; pentru fiecare valoare apărută de cel puțin două ori se adaugă încă un zar d6 (maxim 2 în plus); prag 8 + 4×dificultate, cu 8 peste = excelent. Rezultatul se aplică imediat. Regulă specială: cine e lovit primește +1 focus. Câștigi când adversarul ajunge la 0 PV; după 14 runde decid PV. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(28))),
+        },
+        Playable {
+            id: "cavaler_si_magician",
+            title: "Cavaler și magician",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un cavaler și un magician se înfruntă după reguli de onoare și vrăji. Fiecare erou (Cavaler / Magician) are 19 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 2 focus, minte: câștigi gardă 4+1 și vindeci 4/2 PV), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: al doilea care joacă în rundă are +1 la verificări. Câștigi când adversarul ajunge la 0 PV; după 16 runde decid PV. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(29))),
+        },
+        Playable {
+            id: "tabele_fara_sfarsit",
+            title: "Tabele fără sfârșit",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un duel cu tabele lungi de răni, răni grele și efecte. Fiecare erou (Luptător / Vrăjitor) are 28 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: adversarul pierde 2 focus și garda, plus ⌈2/2⌉ PV), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent (o ratare la mustață dă „parțial”). Rezultatul se aplică imediat. Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei. Câștigi când adversarul ajunge la 0 PV; după 18 runde decid PV. Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(30))),
+        },
+        Playable {
+            id: "puncte_nu_clase",
+            title: "Puncte, nu clase",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi eroi construiți din puncte se bat; reușita excelentă dă acțiune în plus. Fiecare erou (Gigant puternic / Ager) are 14 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 1 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: se aruncă 3d6 și suma trebuie să fie sub țintă (11 + 2×(pricepere − dificultate), între 5 și 16); cu 5 sub țintă = excelent. Rezultatul se aplică imediat. Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură). Câștigi când adversarul ajunge la 0 PV; după 20 runde decid PV. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(31))),
+        },
+        Playable {
+            id: "lupta_cu_pelerine",
+            title: "Lupta cu pelerine",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi eroi cu pelerine se înfruntă într-o ciocnire de puteri. Fiecare erou (Forțos / Telepat) are 20 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: lovitură de vrajă fără gardă: 5 PV), «odihna» (+1 PV, +2 focus, −1 stres). Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat. La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură). Câștigi când adversarul ajunge la 0 PV; după 14 runde decid PV. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(32))),
+        },
+        Playable {
+            id: "tabara_regelui",
+            title: "Tabăra regelui",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi cavaleri își dispută faima la tabăra regelui, între onoare și nebunie. Fiecare erou (Cavaler / Bardă) are 18 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 2 focus, minte: câștigi gardă 3+1 și vindeci 3/2 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: se aruncă 3d6 și suma trebuie să fie sub țintă (11 + 2×(pricepere − dificultate), între 5 și 16); cu 5 sub țintă = excelent (o ratare la mustață dă „parțial”). După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările. Mutarea «tinta» înseamnă o faptă: faima crește cu 1/2/2 după parțial/reușit/excelent; primul la 16 faimă câștigă; după 16 runde decide faima. La 16 stres pierzi. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(33))),
+        },
+        Playable {
+            id: "spadasinii_marilor",
+            title: "Spadasinii mărilor",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi spadasini ai mărilor își măsoară faima în abordaje. Fiecare erou (Spadasin / Căpitan) are 16 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură). Mutarea «tinta» înseamnă o faptă: faima crește cu 0/2/3 după parțial/reușit/excelent; primul la 14 faimă câștigă; după 18 runde decide faima. Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(34))),
+        },
+        Playable {
+            id: "aurul_solar",
+            title: "Aurul solar",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi aleși ai aurului solar își folosesc harurile într-o luptă cu pumni mari. Fiecare erou (Soare Ales / Lună Aleasă) are 28 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 1 focus, minte: lovitură de vrajă fără gardă: 2 PV), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură). Câștigi când adversarul ajunge la 0 PV; după 20 runde decid PV. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(35))),
+        },
+        Playable {
+            id: "echipajul_exploratorilor",
+            title: "Echipajul exploratorilor",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un echipaj de exploratori caută o pistă prin necunoscut. Fiecare erou (Comandant / Inginer) are 14 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: te vindeci cu 3 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat (o ratare la mustață dă „parțial”). După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: al doilea care joacă în rundă are +1 la verificări. Mutarea «tinta» înseamnă a înainta pe drum (1/1/2 pași după parțial/reușit/excelent); primul la 9 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 14 runde decide drumul parcurs. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(36))),
+        },
+        Playable {
+            id: "inchizitorul_umbrei",
+            title: "Inchizitorul umbrei",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un inchizitor vânează un eretic într-un oraș al umbrelor. Fiecare erou (Inchizitor / Eretic) are 12 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 3 focus, minte: adversarul pierde 5 focus și garda, plus ⌈5/2⌉ PV), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent (o ratare la mustață dă „parțial”). La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările. Câștigi când adversarul ajunge la 0 PV; după 16 runde decid PV. La 8 stres pierzi. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(37))),
+        },
+        Playable {
+            id: "contrabandistii_cetii",
+            title: "Contrabandiștii cetii",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi contrabandiști își dispută un jaf în ceață. Fiecare erou (Pilot / Spărgător) are 21 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +3), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1. La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: al doilea care joacă în rundă are +1 la verificări. Mutarea «tinta» înseamnă o faptă: faima crește cu 0/2/3 după parțial/reușit/excelent; primul la 18 faimă câștigă; după 18 runde decide faima. Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(38))),
+        },
+        Playable {
+            id: "legiunea_in_retragere",
+            title: "Legiunea în retragere",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Rămășițele unei legiuni se retrag peste un pod rupt. Fiecare erou (Căpitan / Medic) are 20 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: te vindeci cu 4 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1. La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei. Mutarea «tinta» înseamnă a înainta pe drum (1/2/3 pași după parțial/reușit/excelent); primul la 16 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 20 runde decide drumul parcurs. La 14 stres pierzi. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(39))),
+        },
+        Playable {
+            id: "inimi_din_umbra",
+            title: "Inimi din umbră",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi adolescenți-monștri se țin în „sfori” de inimi. Fiecare erou (Vampir / Vârcolac) are 9 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈2/2⌉) și 2/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: 2d6 + pricepere − dificultate: până la 6 ratat, 7–9 parțial, 10–12 reușit, 13+ excelent. La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările. Mutarea «tinta» înseamnă o faptă: faima crește cu 1/1/2 după parțial/reușit/excelent; primul la 8 faimă câștigă; după 14 runde decide faima. La 8 stres pierzi. Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(40))),
+        },
+        Playable {
+            id: "tineri_cu_pelerine",
+            title: "Tineri cu pelerine",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi tineri cu puteri se luptă înainte să rămână fără mantie. Fiecare erou (Tânăr zburător / Tânără cu focul) are 11 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: 2d6 + pricepere − dificultate: până la 6 ratat, 7–9 parțial, 10–12 reușit, 13+ excelent. La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit. Regulă specială: cine e lovit primește +1 focus. Câștigi când adversarul ajunge la 0 PV; după 16 runde decid PV. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, plata.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(41))),
+        },
+        Playable {
+            id: "biciclete_si_taine",
+            title: "Biciclete și taine",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi prieteni pedalează spre taina de la marginea orașului. Fiecare erou (Biciclist viteaz / Biciclistă isteață) are 8 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: câștigi gardă 5+1 și vindeci 5/2 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: un singur zar cu mărimea după pricepere (4 + 2×pricepere, maxim d12), care explodează la maxim (până la 3 ori), contra 3 + dificultate; cu 4 peste = excelent. După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1. Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările. Mutarea «tinta» înseamnă a înainta pe drum (0/2/3 pași după parțial/reușit/excelent); primul la 7 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 18 runde decide drumul parcurs. La 6 stres pierzi. Oboseală: de la runda 13 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, noroc.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(42))),
+        },
+        Playable {
+            id: "juramant_de_otel",
+            title: "Jurământ de oțel",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Doi purtători de jurământ străbat un ținut aspru spre ținta lor. Fiecare erou (Pelerin de oțel / Vânătoarea) are 13 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: câștigi gardă 3+1 și vindeci 3/2 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: un zar d6 + pricepere (minus dificultatea peste 1) contra a două zaruri d10: depășești ambele = reușit (excelent dacă cele două sunt egale), unul singur = parțial. Cu 2+ noroc și un rezultat sub reușit poți arde momentul („arde”): pierzi tot norocul, iar rezultatul devine reușit; reușitele aduc noroc. Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei. Mutarea «tinta» înseamnă a înainta pe drum (1/2/3 pași după parțial/reușit/excelent); primul la 8 câștigă; piedicile și primejdiile îl lovesc pe cel din față; după 20 runde decide drumul parcurs. Oboseală: de la runda 15 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, arde.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(43))),
+        },
+        Playable {
+            id: "lumina_care_scade",
+            title: "Lumina care scade",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Supraviețuitorii își spun adevărurile cât mai ține lumina. Fiecare erou (Supraviețuitor / Povestitoare) are 9 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: te vindeci cu 4 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul). Verificarea: pricepere + 2 zaruri d6, fiecare 5+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial. La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată. Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările. Mutarea «tinta» înseamnă o faptă: faima crește cu 1/1/2 după parțial/reușit/excelent; primul la 8 faimă câștigă; după 14 runde decide faima. La 13 stres pierzi (ratările adaugă stres). Oboseală: de la runda 11 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(44))),
+        },
+        Playable {
+            id: "turnul_clatinat",
+            title: "Turnul clătinat",
+            category: "Rol (RPG)",
+            rules: "Variantă originală cu MJ automat, 2 jucători: Un turn de piese se clatină la fiecare încercare riscantă. Fiecare erou (Curajos / Prudent) are 12 PV. La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +2), «odihna» (+2 PV, +2 focus, −1 stres). Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1. La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată. Regulă specială: al doilea care joacă în rundă are +1 la verificări. Câștigi când adversarul ajunge la 0 PV; după 16 runde decid PV. La 7 stres pierzi. Oboseală: de la runda 12 fiecare eveniment al MJ-ului costă 1 PV eroului din urmă (la egalitate, celui care joacă al doilea). Mutări: atac, aparare, arta, odihna, tira, accept, forteaza.",
+            make: || Box::new(brand_util::B(t1_rpg::Rpg::new(45))),
+        },
+        // T1-reg-end
+        // T2-reg-begin
+        Playable {
+            id: "epoci_sub_lupa",
+            title: "Epoci sub lupă (drum: ruine)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin ruine, 6 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Pavăzarul, Cercetașul, Tălmaciul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 memorie pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: odihna vindecă 3 PV în loc de 2. Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 6 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(epoci_sub_lupa::new())),
+        },
+        Playable {
+            id: "faclia_din_hornuri",
+            title: "Făclia din hornuri (drum: peșteră)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin peșteră, 7 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Pușcașul, Cercetașul, Predicatorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 torță pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: rănile sunt cu 1 mai mari, dar și câștigul cu 1; odihna vindecă 3 PV în loc de 2. Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(faclia_din_hornuri::new())),
+        },
+        Playable {
+            id: "cununa_veacurilor",
+            title: "Cununa veacurilor (duel: oraș)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în oraș, zaruri d20. Fiecare alege o clasă (alege k): Alchimist, Ciomăgar, Vraci. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 faimă); special costă faimă și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: dacă toate zarurile (cel puțin două) reușesc, daunele se dublează; «lovesc+» cheltuiește 1 faimă pentru un zar în plus. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(cununa_veacurilor::new())),
+        },
+        Playable {
+            id: "genezele_prafului",
+            title: "Genezele prafului (drum: deșert)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin deșert, 7 stații, zaruri d10 (reușită la ≥ 5). Alegi eroul (alege k): Mercenarul, Tâlharul, Sfătuitorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 ecou pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: rănile sunt cu 1 mai mari, dar și câștigul cu 1; «capcana» (1 ecou): următoarea probă a adversarului cere o reușită în plus. Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(genezele_prafului::new())),
+        },
+        Playable {
+            id: "luna_in_cioburi",
+            title: "Luna în cioburi (duel: noapte)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în noapte, zaruri d10. Fiecare alege o clasă (alege k): Frate pavăzar, Pavăzar, Fermecător. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 cioburi); special costă cioburi și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); «lovesc+» cheltuiește 1 cioburi pentru un zar în plus. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(luna_in_cioburi::new())),
+        },
+        Playable {
+            id: "tinutul_zimtat",
+            title: "Ținutul zimțat (duel: munte)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în munte, zaruri d20. Fiecare alege o clasă (alege k): Căpcăun flămând, Ghicitor, Mercenar. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 mânie); special costă mânie și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: sub jumătate din PV ai +1 daună; garda întoarce 1 daună atacatorului. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(tinutul_zimtat::new())),
+        },
+        Playable {
+            id: "cenusa_neuronilor",
+            title: "Cenușa neuronilor (drum: cenușă)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin cenușă, 6 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Pavăzarul, Hoțul, Negociatorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 nervi pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «capcana» (1 nervi): următoarea probă a adversarului cere o reușită în plus; «obiect»: o dată pe joc, reușită sigură cu câștig întreg; rănile sunt cu 1 mai mari, dar și câștigul cu 1. Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 6 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(cenusa_neuronilor::new())),
+        },
+        Playable {
+            id: "turneul_celor_trei",
+            title: "Turneul celor trei (duel: oraș)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în oraș, zaruri d6. Fiecare alege o clasă (alege k): Luptător cu laț, Vampir de hrubă, Hoț de acoperișuri. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 avânt); special costă avânt și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: dacă toate zarurile (cel puțin două) reușesc, daunele se dublează; garda întoarce 1 daună atacatorului. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(turneul_celor_trei::new())),
+        },
+        Playable {
+            id: "zmeul_de_cremene",
+            title: "Zmeul de cremene (duel: peșteră)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în peșteră, zaruri d6. Fiecare alege o clasă (alege k): Ghicitor, Luptător cu laț, Cleric bătrân. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 foc); special costă foc și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: sub jumătate din PV ai +1 daună; dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(zmeul_de_cremene::new())),
+        },
+        Playable {
+            id: "umbre_pe_lande",
+            title: "Umbre pe lande (drum: ceață)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin ceață, 7 stații, zaruri d10 (reușită la ≥ 5). Alegi eroul (alege k): Lăncierul, Vânătorul, Sfătuitorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 liniște pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «capcana» (1 liniște): următoarea probă a adversarului cere o reușită în plus. Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(umbre_pe_lande::new())),
+        },
+        Playable {
+            id: "somnorosii_din_vale",
+            title: "Somnoroșii din vale (duel: noapte)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în noapte, zaruri d12. Fiecare alege o clasă (alege k): Păstor, Luptător cu laț, Vrăjitoare de râu. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 vis); special costă vis și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: «lovesc+» cheltuiește 1 vis pentru un zar în plus; garda întoarce 1 daună atacatorului. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(somnorosii_din_vale::new())),
+        },
+        Playable {
+            id: "prinsi_intre_ceruri",
+            title: "Prinși între ceruri (drum: templu)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin templu, 6 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Pavăzarul, Tâlharul, Judecătorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 har pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «capcana» (1 har): următoarea probă a adversarului cere o reușită în plus; «obiect»: o dată pe joc, reușită sigură cu câștig întreg. Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 6 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(prinsi_intre_ceruri::new())),
+        },
+        Playable {
+            id: "sabatul_de_pe_deal",
+            title: "Sabatul de pe deal (duel: pădure)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în pădure, zaruri d100. Fiecare alege o clasă (alege k): Pândar, Cioară de seară, Tâlhar de drumuri. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 farmec); special costă farmec și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(sabatul_de_pe_deal::new())),
+        },
+        Playable {
+            id: "vizuina_cu_comori",
+            title: "Vizuina cu comori (drum: peșteră)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin peșteră, 7 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Străjerul, Pândarul, Vraciul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 mană pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; odihna vindecă 3 PV în loc de 2. Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(vizuina_cu_comori::new())),
+        },
+        Playable {
+            id: "cimitirul_de_papusi",
+            title: "Cimitirul de păpuși (duel: morminte)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în morminte, zaruri d10. Fiecare alege o clasă (alege k): Rob liber, Vânător, Duh însetat. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 șoaptă); special costă șoaptă și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); sub jumătate din PV ai +1 daună. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(cimitirul_de_papusi::new())),
+        },
+        Playable {
+            id: "umbre_cu_lame",
+            title: "Umbre cu lame (duel: noapte)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în noapte, zaruri d6. Fiecare alege o clasă (alege k): Gladiator, Mag de furtună, Bastonar. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 tăcere); special costă tăcere și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: dacă toate zarurile (cel puțin două) reușesc, daunele se dublează; garda întoarce 1 daună atacatorului. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(umbre_cu_lame::new())),
+        },
+        Playable {
+            id: "calatorii_cu_ceai",
+            title: "Călătorii cu ceai (drum: câmpie)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin câmpie, 7 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Lăncierul, Tâlharul, Predicatorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 popas pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: odihna vindecă 3 PV în loc de 2; «obiect»: o dată pe joc, reușită sigură cu câștig întreg. Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(calatorii_cu_ceai::new())),
+        },
+        Playable {
+            id: "pustiul_mutantilor",
+            title: "Pustiul mutanților (drum: deșert)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin deșert, 6 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Pavăzarul, Pândarul, Judecătorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 mutație pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «capcana» (1 mutație): următoarea probă a adversarului cere o reușită în plus; rănile sunt cu 1 mai mari, dar și câștigul cu 1. Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 6 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(pustiul_mutantilor::new())),
+        },
+        Playable {
+            id: "ucenicii_de_otel",
+            title: "Ucenicii de oțel (duel: fier)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în fier, zaruri d100. Fiecare alege o clasă (alege k): Ghicitor, Duh însetat, Spadasin. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 ritm); special costă ritm și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); dacă toate zarurile (cel puțin două) reușesc, daunele se dublează. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(ucenicii_de_otel::new())),
+        },
+        Playable {
+            id: "turnul_razvratitilor",
+            title: "Turnul răzvrătiților (drum: turn)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin turn, 7 stații, zaruri d10 (reușită la ≥ 5). Alegi eroul (alege k): Pușcașul, Vânătorul, Tălmaciul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 ură pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «capcana» (1 ură): următoarea probă a adversarului cere o reușită în plus. Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(turnul_razvratitilor::new())),
+        },
+        Playable {
+            id: "coborarea_fara_lumina",
+            title: "Coborârea fără lumină (drum: mină)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin mină, 7 stații, zaruri d10 (reușită la ≥ 5). Alegi eroul (alege k): Spadasinul, Cercetașul, Tălmaciul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 dor pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: rănile sunt cu 1 mai mari, dar și câștigul cu 1; «capcana» (1 dor): următoarea probă a adversarului cere o reușită în plus. Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(coborarea_fara_lumina::new())),
+        },
+        Playable {
+            id: "stele_fara_catastif",
+            title: "Stele fără catastif (drum: stele)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin stele, 6 stații, zaruri d20 (reușită la ≥ 9). Alegi eroul (alege k): Străjerul, Pândarul, Predicatorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 credite pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; odihna vindecă 3 PV în loc de 2. Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 6 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(stele_fara_catastif::new())),
+        },
+        Playable {
+            id: "zarul_taios",
+            title: "Zarul tăios (duel: fier)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în fier, zaruri d20. Fiecare alege o clasă (alege k): Căpitan de strajă, Maestru de lanțuri, Doctor de câmp. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 uzură); special costă uzură și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1; sub jumătate din PV ai +1 daună. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(zarul_taios::new())),
+        },
+        Playable {
+            id: "sania_cu_clopote",
+            title: "Sania cu clopote (drum: gheață)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin gheață, 7 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Ciomăgarul, Hoțul, Predicatorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 frig pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «capcana» (1 frig): următoarea probă a adversarului cere o reușită în plus; odihna vindecă 3 PV în loc de 2. Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(sania_cu_clopote::new())),
+        },
+        Playable {
+            id: "urme_in_ceata_adanca",
+            title: "Urme în ceața adâncă (drum: ceață)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin ceață, 6 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Ciomăgarul, Pândarul, Sfătuitorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 luciditate pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: rănile sunt cu 1 mai mari, dar și câștigul cu 1; «obiect»: o dată pe joc, reușită sigură cu câștig întreg. Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 6 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(urme_in_ceata_adanca::new())),
+        },
+        Playable {
+            id: "corbul_de_furtuna",
+            title: "Corbul de furtună (duel: vânt)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în vânt, zaruri d6. Fiecare alege o clasă (alege k): Maestru de lanțuri, Șoptitor, Tâlhar cu pumnal. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 libertate); special costă libertate și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: «lovesc+» cheltuiește 1 libertate pentru un zar în plus; dacă toate zarurile (cel puțin două) reușesc, daunele se dublează. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(corbul_de_furtuna::new())),
+        },
+        Playable {
+            id: "pastorii_viei",
+            title: "Păstorii viei (duel: sat)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în sat, zaruri d6. Fiecare alege o clasă (alege k): Cioară de seară, Alchimist, Pavăzar. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 dreptate); special costă dreptate și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: garda întoarce 1 daună atacatorului; o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture). Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(pastorii_viei::new())),
+        },
+        Playable {
+            id: "seniorul_hatisurilor",
+            title: "Seniorul hățișurilor (drum: pădure)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin pădure, 7 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Pavăzarul, Tâlharul, Vraciul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 curaj pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; odihna vindecă 3 PV în loc de 2. Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(seniorul_hatisurilor::new())),
+        },
+        Playable {
+            id: "otel_si_soapte",
+            title: "Oțel și șoapte (duel: turn)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în turn, zaruri d20. Fiecare alege o clasă (alege k): Doctor de câmp, Vânător, Paznic de nopți. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 vrajă); special costă vrajă și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: sub jumătate din PV ai +1 daună; «lovesc+» cheltuiește 1 vrajă pentru un zar în plus. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(otel_si_soapte::new())),
+        },
+        Playable {
+            id: "bocetul_vapaii",
+            title: "Bocetul văpăii (duel: cenușă)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în cenușă, zaruri d6. Fiecare alege o clasă (alege k): Iscoadă, Luptător cu laț, Căpcăun flămând. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 dispreț); special costă dispreț și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1; sub jumătate din PV ai +1 daună. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(bocetul_vapaii::new())),
+        },
+        Playable {
+            id: "mana_stanga_cu_pumnal",
+            title: "Mâna stângă cu pumnal (duel: oraș)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în oraș, zaruri d20. Fiecare alege o clasă (alege k): Paznic de nopți, Pelerin, Cavaler vagabond. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 tertip); special costă tertip și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: dacă toate zarurile (cel puțin două) reușesc, daunele se dublează; dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(mana_stanga_cu_pumnal::new())),
+        },
+        Playable {
+            id: "movila_de_piatra",
+            title: "Movila de piatră (drum: munte)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin munte, 6 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Străjerul, Vânzătorul de zvonuri, Sfătuitorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 temei pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: odihna vindecă 3 PV în loc de 2; rănile sunt cu 1 mai mari, dar și câștigul cu 1. Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 6 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(movila_de_piatra::new())),
+        },
+        Playable {
+            id: "hornul_cu_masinarii",
+            title: "Hornul cu mașinării (drum: oraș)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin oraș, 7 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Pavăzarul, Hoțul, Vraciul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 scânteie pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; «capcana» (1 scânteie): următoarea probă a adversarului cere o reușită în plus. Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(hornul_cu_masinarii::new())),
+        },
+        Playable {
+            id: "povesti_din_han",
+            title: "Povești din han (duel: sat)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în sat, zaruri d6. Fiecare alege o clasă (alege k): Pândar, Pavăzar, Hipnotizor. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 poftă); special costă poftă și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: garda întoarce 1 daună atacatorului; «lovesc+» cheltuiește 1 poftă pentru un zar în plus. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(povesti_din_han::new())),
+        },
+        Playable {
+            id: "agentia_tacuta",
+            title: "Agenția tăcută (drum: noapte)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin noapte, 6 stații, zaruri d100 (reușită la ≥ 41). Alegi eroul (alege k): Pușcașul, Hoțul, Negociatorul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 rațiune pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; «capcana» (1 rațiune): următoarea probă a adversarului cere o reușită în plus; rănile sunt cu 1 mai mari, dar și câștigul cu 1. Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 6 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(agentia_tacuta::new())),
+        },
+        Playable {
+            id: "epoca_cenusie",
+            title: "Epoca cenușie (duel: ruine)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: duel de aventurieri în ruine, zaruri d10. Fiecare alege o clasă (alege k): Vrăjitoare de râu, Frate pavăzar, Mercenar. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 voință); special costă voință și are efectul clasei; poțiune vindecă 4 PV. Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); garda întoarce 1 daună atacatorului. Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV. Mutări: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.",
+            make: || Box::new(brand_util::B(epoca_cenusie::new())),
+        },
+        Playable {
+            id: "orizont_de_astrolabe",
+            title: "Orizont de astrolabe (drum: stele)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin stele, 7 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Străjerul, Pândarul, Tălmaciul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 lumină pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «capcana» (1 lumină): următoarea probă a adversarului cere o reușită în plus; odihna vindecă 3 PV în loc de 2. Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 7 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(orizont_de_astrolabe::new())),
+        },
+        Playable {
+            id: "faptura_din_fag",
+            title: "Făptura din fag (drum: pădure)",
+            category: "Rol (RPG)",
+            rules: "Variantă originală: drum cu întâlniri prin pădure, 6 stații, zaruri d6 (reușită la ≥ 3). Alegi eroul (alege k): Lăncierul, Tâlharul, Vraciul. Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV. Variantele cu + cheltuiesc 1 teamă pentru un zar în plus; odihnesc vindecă 2 PV. Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; odihna vindecă 3 PV în loc de 2. Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață. Câștigă cine are mai multe puncte după 6 stații sau 18 ture. Mutări: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.",
+            make: || Box::new(brand_util::B(faptura_din_fag::new())),
+        },
+        Playable {
+            id: "regimente_pe_cimpie",
+            title: "Regimente pe câmpie (bătălie: câmpie)",
+            category: "Miniaturi",
+            rules: "Variantă originală: bătălie de miniaturi pe tablă pătrățică 8×8 (câmpie), 6 unități pe parte (Pedestrași, Arcași, Călăreți, Uriaș de război, Căpitan); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă. Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea. Reguli proprii: flancare: +1 zar dacă un aliat e lângă țintă; asalt: unitățile de corp la corp care s-au mutat cel puțin 2 au +1 zar; moral: o unitate la cel mult o treime din PV șovăie (−1 zar). Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final. Mutări: uN r,c, uN r,c x uM, tira.",
+            make: || Box::new(brand_util::B(regimente_pe_cimpie::new())),
+        },
+        Playable {
+            id: "tancuri_in_lan",
+            title: "Tancuri în lan (bătălie: sat)",
+            category: "Miniaturi",
+            rules: "Variantă originală: bătălie de miniaturi pe tablă pătrățică 9×7 (sat), 7 unități pe parte (Pușcași, Tun antitanc, Tanc greu, Autoblindat, Căpitan); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (1 obiectiv(e) «*»). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă. Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea. Reguli proprii: tir din mișcare: trăgătorii care s-au mutat au −1 zar; flancare: +1 zar dacă un aliat e lângă țintă. Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final. Mutări: uN r,c, uN r,c x uM, tira.",
+            make: || Box::new(brand_util::B(tancuri_in_lan::new())),
+        },
+        Playable {
+            id: "veacul_regimentelor",
+            title: "Veacul regimentelor (bătălie: pod)",
+            category: "Miniaturi",
+            rules: "Variantă originală: bătălie de miniaturi pe tablă hexagonală 7×7 (pod), 6 unități pe parte (Halebardieri, Arbaletieri, Cavaleri, Bestie de asediu, Comandant); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (1 obiectiv(e) «*»). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă. Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea. Reguli proprii: asalt: unitățile de corp la corp care s-au mutat cel puțin 2 au +1 zar; flancare: +1 zar dacă un aliat e lângă țintă; contralovitură: apărătorul de corp la corp răspunde cu jumătate din zaruri. Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final. Mutări: uN r,c, uN r,c x uM, tira.",
+            make: || Box::new(brand_util::B(veacul_regimentelor::new())),
+        },
+        Playable {
+            id: "trupe_sub_trei_sori",
+            title: "Trupe sub trei sori (bătălie: stele)",
+            category: "Miniaturi",
+            rules: "Variantă originală: bătălie de miniaturi pe tablă pătrățică 8×8 (stele), 7 unități pe parte (Pușcași stelari, Trăgători de elită, Mers blindat, Tun de câmp, Comandant); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 7 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă. Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea. Reguli proprii: mișcare și distanțe cu diagonale; tir din mișcare: trăgătorii care s-au mutat au −1 zar; moral: o unitate la cel mult o treime din PV șovăie (−1 zar). Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final. Mutări: uN r,c, uN r,c x uM, tira.",
+            make: || Box::new(brand_util::B(trupe_sub_trei_sori::new())),
+        },
+        Playable {
+            id: "bande_in_hrube",
+            title: "Bande în hrube (bătălie: oraș)",
+            category: "Miniaturi",
+            rules: "Variantă originală: bătălie de miniaturi pe tablă pătrățică 7×7 (oraș), 5 unități pe parte (Pistolar, Aruncător de grenade, Șef de bandă, Mutant uriaș); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 7 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă. Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea. Reguli proprii: mișcare și distanțe cu diagonale; moral: o unitate la cel mult o treime din PV șovăie (−1 zar); contralovitură: apărătorul de corp la corp răspunde cu jumătate din zaruri. Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final. Mutări: uN r,c, uN r,c x uM, tira.",
+            make: || Box::new(brand_util::B(bande_in_hrube::new())),
+        },
+        Playable {
+            id: "zidul_de_scuturi",
+            title: "Zidul de scuturi (bătălie: câmpie)",
+            category: "Miniaturi",
+            rules: "Variantă originală: bătălie de miniaturi pe tablă hexagonală 8×8 (câmpie), 6 unități pe parte (Scutieri, Arcași, Lăncieri călare, Monstru de luptă, Stegar); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (fără obiective (contează pierderile)). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă. Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea. Reguli proprii: flancare: +1 zar dacă un aliat e lângă țintă; asalt: unitățile de corp la corp care s-au mutat cel puțin 2 au +1 zar; moral: o unitate la cel mult o treime din PV șovăie (−1 zar); contralovitură: apărătorul de corp la corp răspunde cu jumătate din zaruri. Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final. Mutări: uN r,c, uN r,c x uM, tira.",
+            make: || Box::new(brand_util::B(zidul_de_scuturi::new())),
+        },
+        Playable {
+            id: "straja_pe_culme",
+            title: "Strajă pe culme (bătălie: munte)",
+            category: "Miniaturi",
+            rules: "Variantă originală: bătălie de miniaturi pe tablă pătrățică 8×7 (munte), 6 unități pe parte (Străji, Arcași de potecă, Căpetenie, Iscoade călare); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 7 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă. Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea. Reguli proprii: mișcare și distanțe cu diagonale; contralovitură: apărătorul de corp la corp răspunde cu jumătate din zaruri; asalt: unitățile de corp la corp care s-au mutat cel puțin 2 au +1 zar. Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final. Mutări: uN r,c, uN r,c x uM, tira.",
+            make: || Box::new(brand_util::B(straja_pe_culme::new())),
+        },
+        Playable {
+            id: "fratii_dezbinati",
+            title: "Frații dezbinați (bătălie: fortăreață)",
+            category: "Miniaturi",
+            rules: "Variantă originală: bătălie de miniaturi pe tablă hexagonală 7×7 (fortăreață), 6 unități pe parte (Pușcași blindați, Trăgători grei, Cuirasat, Tun de asediu, Căpitan); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă. Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea. Reguli proprii: tir din mișcare: trăgătorii care s-au mutat au −1 zar; flancare: +1 zar dacă un aliat e lângă țintă; moral: o unitate la cel mult o treime din PV șovăie (−1 zar). Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final. Mutări: uN r,c, uN r,c x uM, tira.",
+            make: || Box::new(brand_util::B(fratii_dezbinati::new())),
+        },
+        // T2-reg-end
+        // T3-reg-begin
+        Playable {
+            id: "eroi_pe_acoperis",
+            title: "Eroi pe acoperiș",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): f = Zburătorul 3/4/1/2/1 [L]; t = Titanul 5/2/1/3/2 [KH]; a = Arcașa 2/3/4/2/0; s = Scutierul 4/3/1/2/2. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 9 runde. Lovitura reușită împinge ținta (sau o rănește în plus dacă nu are loc). H = nu atacă după mișcare. L = zburător. K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::EROI_PE_ACOPERIS))),
+        },
+        Playable {
+            id: "razboinici_de_fiord",
+            title: "Războinici de fiord",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×6. Unități (hp/mișcare/rază/zaruri-forță/armură): g = Garda 2/3/1/3/1 [F]; b = Berserkul 3/4/1/4/0 [C]; l = Lăncierul 2/3/2/2/1; a = Arcașul 1/3/4/2/0. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Un 6 la zar rănește dublu. Flanc: +1 zar dacă un aliat e lângă țintă. C = încărcare. F = flanc. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::RAZBOINICI_DE_FIORD))),
+        },
+        Playable {
+            id: "osti_pe_o_fila",
+            title: "Oști pe o filă",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×9. Unități (hp/mișcare/rază/zaruri-forță/armură): p = Pușcaș 2/3/5/2/1; m = Mercenar 3/3/1/3/1; o = Ogar 5/2/1/4/2 [H]; r = Cercetaș 1/5/3/1/0 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde (sau 16 puncte). Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::OSTI_PE_O_FILA))),
+        },
+        Playable {
+            id: "bande_in_ruine",
+            title: "Bande în ruine",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): c = Căpitan 3/3/1/3/1 [F]; h = Hoț 2/4/1/2/0; t = Tragător 2/3/4/2/0; d = Doctor 2/3/1/1/0 [M]. Pe tură poți activa 5 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Terenul dificil (~) dă +1 armură. M = vindecă aliații vecini. F = flanc. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::BANDE_IN_RUINE))),
+        },
+        Playable {
+            id: "masinarii_de_abur",
+            title: "Mașinării de abur",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): k = Colos 6/2/1/4/3 [HB]; t = Tunar 3/2/5/3/1 [B]; s = Soldat 2/3/1/2/1; m = Mecanic 2/3/1/1/0 [M]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. M = vindecă aliații vecini. B = explozie. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::MASINARII_DE_ABUR))),
+        },
+        Playable {
+            id: "strigoi_de_targ",
+            title: "Strigoi de târg",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 7×7. Unități (hp/mișcare/rază/zaruri-forță/armură): f = Fantomă 2/4/1/2/0 [L]; l = Lampadar 3/3/3/2/1; p = Păpușar 3/3/1/3/1 [K]; c = Clovn 2/4/1/3/0 [C]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 8 puncte sau ai mai multe după 9 runde. Un 6 la zar rănește dublu. Lovitura reușită împinge ținta (sau o rănește în plus dacă nu are loc). L = zburător. C = încărcare. K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::STRIGOI_DE_TARG))),
+        },
+        Playable {
+            id: "giganti_de_otel",
+            title: "Giganți de oțel",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×8. Unități (hp/mișcare/rază/zaruri-forță/armură): u = Uriaș 6/2/5/4/2 [H]; m = Mijlociu 4/3/4/3/1 [H]; s = Sprinter 2/5/2/2/0 [L]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::GIGANTI_DE_OTEL))),
+        },
+        Playable {
+            id: "salve_si_baionete",
+            title: "Salve și baionete",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×8. Unități (hp/mișcare/rază/zaruri-forță/armură): l = Linie 3/2/3/2/0; g = Grenadier 3/3/1/3/1 [C]; t = Tun 2/1/6/3/0 [H]; h = Husar 3/5/1/2/0 [F]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde (sau 18 puncte). Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. C = încărcare. F = flanc. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::SALVE_SI_BAIONETE))),
+        },
+        Playable {
+            id: "arena_pietrelor",
+            title: "Arena pietrelor",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 6×6. Unități (hp/mișcare/rază/zaruri-forță/armură): r = Ritualist 2/3/3/2/0; l = Luptător 3/3/1/3/1 [K]; s = Străjer 3/2/1/2/2. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 7 puncte sau ai mai multe după 8 runde. Flanc: +1 zar dacă un aliat e lângă țintă. Lovitura reușită împinge ținta (sau o rănește în plus dacă nu are loc). K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::ARENA_PIETRELOR))),
+        },
+        Playable {
+            id: "chemarea_hoardelor",
+            title: "Chemarea hoardelor",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×7. Unități (hp/mișcare/rază/zaruri-forță/armură): h = Hoardă 2/3/1/3/0 [C]; s = Șaman 2/3/3/2/0 [M]; m = Monstru 5/3/1/4/1 [K]; a = Aruncător 1/4/4/1/0. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde (sau 14 puncte). Un 6 la zar rănește dublu. Încărcare: +1 zar după o mutare de cel puțin 2 pași. M = vindecă aliații vecini. C = încărcare. K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::CHEMAREA_HOARDELOR))),
+        },
+        Playable {
+            id: "escadre_in_nebuloasa",
+            title: "Escadre în nebuloasă",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×8. Unități (hp/mișcare/rază/zaruri-forță/armură): c = Crucișător 7/2/4/4/2 [H]; f = Fregată 4/3/3/3/1; i = Interceptor 1/6/2/2/0 [L]; p = Portavion 6/1/3/2/3 [HM]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. M = vindecă aliații vecini. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::ESCADRE_IN_NEBULOASA))),
+        },
+        Playable {
+            id: "blindate_pe_sosea",
+            title: "Blindate pe șosea",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×9. Unități (hp/mișcare/rază/zaruri-forță/armură): b = Blindat 4/3/4/3/2 [H]; t = Transportor 3/4/1/1/1; i = Infanterist 2/3/3/2/0; a = Antitanc 2/2/5/4/0 [H]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: duci unități pe rândul de la capătul opus (ies din joc, câte 2 puncte); primul la 6 puncte sau cu mai multe după 12 runde câștigă. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::BLINDATE_PE_SOSEA))),
+        },
+        Playable {
+            id: "patrule_in_lan",
+            title: "Patrule în lan",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×7. Unități (hp/mișcare/rază/zaruri-forță/armură): f = Pușcaș 2/3/4/2/0; m = Mitralior 2/2/6/3/0 [H]; c = Comandant 3/3/2/2/1 [F]; s = Sanitar 2/3/1/1/0 [M]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 9 runde. Obstacolele (#) blochează tragerea de la distanță. Terenul dificil (~) dă +1 armură. H = nu atacă după mișcare. M = vindecă aliații vecini. F = flanc. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::PATRULE_IN_LAN))),
+        },
+        Playable {
+            id: "vrajitori_in_ger",
+            title: "Vrăjitori în ger",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): v = Vrăjitor 3/3/5/3/0 [B]; a = Aprentis 2/3/3/2/0; s = Soldat de gheață 3/3/1/2/1; l = Lup 2/5/1/2/0 [C]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Terenul dificil (~) dă +1 armură. C = încărcare. B = explozie. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::VRAJITORI_IN_GER))),
+        },
+        Playable {
+            id: "bolizi_de_pustiu",
+            title: "Bolizi de pustiu",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×7. Unități (hp/mișcare/rază/zaruri-forță/armură): b = Buggy 2/6/2/2/0 [L]; c = Camion 4/4/1/3/2 [CK]; m = Motocicletă 1/7/1/2/0 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde. Încărcare: +1 zar după o mutare de cel puțin 2 pași. L = zburător. C = încărcare. K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::BOLIZI_DE_PUSTIU))),
+        },
+        Playable {
+            id: "legiuni_si_cohorte",
+            title: "Legiuni și cohorte",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×8. Unități (hp/mișcare/rază/zaruri-forță/armură): l = Legionar 4/2/1/3/2; a = Arcaș 2/3/4/2/0; c = Călăreț 3/5/1/3/0 [C]; t = Triarii 5/2/1/3/3 [H]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde (sau 20 puncte). Flanc: +1 zar dacă un aliat e lângă țintă. H = nu atacă după mișcare. C = încărcare. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::LEGIUNI_SI_COHORTE))),
+        },
+        Playable {
+            id: "falange_si_calarime",
+            title: "Falangă și călărime",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×7. Unități (hp/mișcare/rază/zaruri-forță/armură): f = Falangist 4/2/1/3/3 [H]; c = Cavalerist 3/5/1/3/1 [C]; p = Praștiaș 1/3/3/1/0; e = Elefant 6/3/1/4/2 [KC]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde (sau 20 puncte). Încărcare: +1 zar după o mutare de cel puțin 2 pași. Flanc: +1 zar dacă un aliat e lângă țintă. H = nu atacă după mișcare. C = încărcare. K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::FALANGE_SI_CALARIME))),
+        },
+        Playable {
+            id: "gardieni_si_corsari",
+            title: "Gardieni și corsari",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): g = Gardian 3/3/1/3/1 [F]; k = Corsar 2/4/3/2/0; m = Mentor 3/3/2/3/1 [B]; d = Droid 2/3/4/2/1. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 8 puncte sau ai mai multe după 9 runde. Un 6 la zar rănește dublu. Lovitura reușită împinge ținta (sau o rănește în plus dacă nu are loc). B = explozie. F = flanc. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::GARDIENI_SI_CORSARI))),
+        },
+        Playable {
+            id: "carosate_de_fier",
+            title: "Carosate de fier",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×10. Unități (hp/mișcare/rază/zaruri-forță/armură): t = Tanc 4/3/4/3/2 [H]; i = Infanterie 2/2/3/2/1; m = Mersător 6/2/5/4/2 [HB]; a = Aviator 2/7/2/2/0 [L]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde (sau 24 puncte). Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. B = explozie. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::CAROSATE_DE_FIER))),
+        },
+        Playable {
+            id: "titani_de_ceata",
+            title: "Titani de ceață",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×9. Unități (hp/mișcare/rază/zaruri-forță/armură): t = Titan 9/2/5/5/3 [HBK]; s = Scutier 3/3/2/2/1 [M]; e = Explorator 3/5/3/3/1 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde. Obstacolele (#) blochează tragerea de la distanță. Un 6 la zar rănește dublu. H = nu atacă după mișcare. L = zburător. M = vindecă aliații vecini. B = explozie. K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::TITANI_DE_CEATA))),
+        },
+        Playable {
+            id: "nave_in_deriva",
+            title: "Nave în derivă",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×9. Unități (hp/mișcare/rază/zaruri-forță/armură): c = Cuirasat 8/1/5/4/3 [H]; f = Fregată 4/3/3/3/1; e = Escortă 2/5/2/2/0 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::NAVE_IN_DERIVA))),
+        },
+        Playable {
+            id: "balada_vitejilor",
+            title: "Balada vitejilor",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 7×7. Unități (hp/mișcare/rază/zaruri-forță/armură): e = Erou 4/3/1/4/1 [F]; t = Tâlhar 2/4/1/2/0; a = Arcaș 1/3/4/2/0; m = Menestrel 2/3/1/1/0 [M]. Pe tură poți activa 2 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 12 runde. Un 6 la zar rănește dublu. Flanc: +1 zar dacă un aliat e lângă țintă. M = vindecă aliații vecini. F = flanc. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::BALADA_VITEJILOR))),
+        },
+        Playable {
+            id: "echipaj_de_epava",
+            title: "Echipaj de epavă",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): k = Căpitan 3/3/3/3/1; s = Salvator 2/4/1/2/0; r = Robot 3/2/2/2/2 [H]; p = Pilot 2/5/3/2/0 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 7 puncte sau ai mai multe după 8 runde. Terenul dificil (~) dă +1 armură. H = nu atacă după mișcare. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::ECHIPAJ_DE_EPAVA))),
+        },
+        Playable {
+            id: "armate_de_buzunar",
+            title: "Armate de buzunar",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 11×9. Unități (hp/mișcare/rază/zaruri-forță/armură): i = Infanterie 2/2/2/2/1; t = Tanc 4/4/3/3/2; a = Artilerie 2/1/6/4/0 [H]; z = Zburător 3/7/2/2/0 [L]. Pe tură poți activa 5 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 12 runde (sau 22 puncte). H = nu atacă după mișcare. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::ARMATE_DE_BUZUNAR))),
+        },
+        Playable {
+            id: "roata_puterilor",
+            title: "Roata puterilor",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): v = Viteaz 3/4/1/3/1; g = Gigant 5/2/1/4/2 [K]; m = Mag 2/3/4/3/0 [B]; z = Zburător 2/5/2/2/0 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Un 6 la zar rănește dublu. Lovitura reușită împinge ținta (sau o rănește în plus dacă nu are loc). L = zburător. B = explozie. K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::ROATA_PUTERILOR))),
+        },
+        Playable {
+            id: "escadrile_de_hartie",
+            title: "Escadrile de hârtie",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×10. Unități (hp/mișcare/rază/zaruri-forță/armură): v = Vânător 2/6/2/2/0 [L]; b = Bombardier 3/4/2/3/1 [L]; a = As 2/7/3/3/0 [L]. Pe tură poți activa 6 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::ESCADRILE_DE_HARTIE))),
+        },
+        Playable {
+            id: "mersatori_si_pusasi",
+            title: "Mersători și pușcași",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): m = Mersător 5/3/3/4/2 [H]; p = Pușcaș 2/3/4/2/0; g = Grenadier 2/3/3/3/1 [B]; s = Scout 1/5/2/1/0 [L]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. B = explozie. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::MERSATORI_SI_PUSASI))),
+        },
+        Playable {
+            id: "aterizare_peste_oras",
+            title: "Aterizare peste oraș",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×9. Unități (hp/mișcare/rază/zaruri-forță/armură): a = Aeronavă 3/6/1/1/1 [L]; t = Tanc 4/3/4/3/2 [H]; s = Soldat 2/3/3/2/0; w = Walker 4/2/3/3/2 [K]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: duci unități pe rândul de la capătul opus (ies din joc, câte 2 puncte); primul la 8 puncte sau cu mai multe după 12 runde câștigă. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::ATERIZARE_PESTE_ORAS))),
+        },
+        Playable {
+            id: "case_si_ierni",
+            title: "Case și ierni",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): c = Cavaler 4/4/1/3/2 [C]; l = Lăncier 2/3/1/2/1 [F]; a = Arcaș 1/3/4/2/0; b = Bastard 3/3/1/3/1. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 10 puncte sau ai mai multe după 9 runde. Încărcare: +1 zar după o mutare de cel puțin 2 pași. Flanc: +1 zar dacă un aliat e lângă țintă. C = încărcare. F = flanc. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::CASE_SI_IERNI))),
+        },
+        Playable {
+            id: "osti_de_hotar",
+            title: "Oști de hotar",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×8. Unități (hp/mișcare/rază/zaruri-forță/armură): z = Zid de scuturi 4/2/1/3/3 [H]; t = Tăietor 3/3/1/4/1; a = Arbaletier 2/3/4/3/0; c = Cavaler 4/5/1/3/2 [C]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde (sau 22 puncte). Încărcare: +1 zar după o mutare de cel puțin 2 pași. Flanc: +1 zar dacă un aliat e lângă țintă. H = nu atacă după mișcare. C = încărcare. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::OSTI_DE_HOTAR))),
+        },
+        Playable {
+            id: "pusasi_pe_planeta_rosie",
+            title: "Pușcași pe planeta roșie",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×8. Unități (hp/mișcare/rază/zaruri-forță/armură): p = Pușcaș 2/3/5/2/0; e = Exo-armură 5/2/3/4/2 [H]; s = Săritor 2/5/1/3/0 [LC]; m = Medic 2/3/1/1/0 [M]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Terenul dificil (~) dă +1 armură. Un 6 la zar rănește dublu. H = nu atacă după mișcare. L = zburător. M = vindecă aliații vecini. C = încărcare. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::PUSASI_PE_PLANETA_ROSIE))),
+        },
+        Playable {
+            id: "coridorul_ruinat",
+            title: "Coridorul ruinat",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 6×6. Unități (hp/mișcare/rază/zaruri-forță/armură): s = Soldat 2/3/4/2/1; t = Tunar 2/2/5/3/0 [H]; m = Mercenar 3/3/1/3/1 [C]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 8 runde. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. C = încărcare. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::CORIDORUL_RUINAT))),
+        },
+        Playable {
+            id: "ringul_cu_bila",
+            title: "Ringul cu bilă",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 7×9. Unități (hp/mișcare/rază/zaruri-forță/armură): a = Atacant 2/4/1/2/0; t = Tank 4/2/1/3/2 [KH]; r = Rapid 1/5/1/1/0 [L]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: duci unități pe rândul de la capătul opus (ies din joc, câte 2 puncte); primul la 6 puncte sau cu mai multe după 14 runde câștigă. Flanc: +1 zar dacă un aliat e lângă țintă. Lovitura reușită împinge ținta (sau o rănește în plus dacă nu are loc). H = nu atacă după mișcare. L = zburător. K = împinge. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::RINGUL_CU_BILA))),
+        },
+        Playable {
+            id: "domni_si_arcasi",
+            title: "Domni și arcași",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×8. Unități (hp/mișcare/rază/zaruri-forță/armură): c = Călăreț 3/5/1/3/1 [C]; s = Sergent 2/3/1/2/1 [F]; a = Arcaș 1/3/4/2/0; d = Domn 4/3/1/4/2. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 10 runde. Încărcare: +1 zar după o mutare de cel puțin 2 pași. Flanc: +1 zar dacă un aliat e lângă țintă. C = încărcare. F = flanc. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::DOMNI_SI_ARCASI))),
+        },
+        Playable {
+            id: "basm_cu_balauri",
+            title: "Basm cu balauri",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8. Unități (hp/mișcare/rază/zaruri-forță/armură): b = Balaur 6/5/2/4/2 [LB]; c = Cavaler 3/3/1/3/2 [C]; v = Vrăjitoare 2/3/4/2/0 [M]; g = Goblin 1/4/1/2/0. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Un 6 la zar rănește dublu. Încărcare: +1 zar după o mutare de cel puțin 2 pași. L = zburător. M = vindecă aliații vecini. C = încărcare. B = explozie. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::BASM_CU_BALAURI))),
+        },
+        Playable {
+            id: "avioane_in_amurg",
+            title: "Avioane în amurg",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×10. Unități (hp/mișcare/rază/zaruri-forță/armură): a = Vânător 2/6/2/2/0 [L]; b = Bombardier 4/4/2/3/1 [L]; e = As 3/7/3/3/1 [L]. Pe tură poți activa 5 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::AVIOANE_IN_AMURG))),
+        },
+        Playable {
+            id: "torpiloare_in_noapte",
+            title: "Torpiloare în noapte",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×8. Unități (hp/mișcare/rază/zaruri-forță/armură): t = Torpilor 2/5/3/3/0 [L]; e = Escortor 4/3/3/3/1; c = Cargou 6/2/1/1/2 [H]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::TORPILOARE_IN_NOAPTE))),
+        },
+        Playable {
+            id: "corabii_cu_tunuri",
+            title: "Corăbii cu tunuri",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×9. Unități (hp/mișcare/rază/zaruri-forță/armură): f = Fregată 5/3/3/3/1; g = Galion 7/2/3/4/2 [H]; s = Șalupă 2/5/2/2/0 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde. Un 6 la zar rănește dublu. H = nu atacă după mișcare. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::CORABII_CU_TUNURI))),
+        },
+        Playable {
+            id: "panze_si_ghiulele",
+            title: "Pânze și ghiulele",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×9. Unități (hp/mișcare/rază/zaruri-forță/armură): b = Brig 4/4/3/3/1; f = Fregată 5/3/3/3/2; c = Cutter 2/5/2/2/0 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Terenul dificil (~) dă +1 armură. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::PANZE_SI_GHIULELE))),
+        },
+        Playable {
+            id: "pe_valuri_de_otel",
+            title: "Pe valuri de oțel",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 11×8. Unități (hp/mișcare/rază/zaruri-forță/armură): c = Cuirasat 8/2/6/5/3 [H]; d = Distrugător 3/5/3/3/1 [L]; k = Crucișător 5/3/4/3/2. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::PE_VALURI_DE_OTEL))),
+        },
+        Playable {
+            id: "flote_cu_aburi",
+            title: "Flote cu aburi",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×8. Unități (hp/mișcare/rază/zaruri-forță/armură): n = Monitor 6/2/4/4/3 [HB]; v = Vapor rapid 3/4/3/3/1; z = Zeppelin 3/3/2/3/1 [L]; t = Tender 3/3/1/1/1 [M]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Obstacolele (#) blochează tragerea de la distanță. Un 6 la zar rănește dublu. H = nu atacă după mișcare. L = zburător. M = vindecă aliații vecini. B = explozie. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::FLOTE_CU_ABURI))),
+        },
+        Playable {
+            id: "flote_in_inel",
+            title: "Flote în inel",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×9. Unități (hp/mișcare/rază/zaruri-forță/armură): c = Cruiser 5/3/4/3/2; e = Escortă 2/5/2/2/0 [L]; d = Dronă 1/6/1/2/0 [L]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 9 runde. Obstacolele (#) blochează tragerea de la distanță. Lovitura reușită împinge ținta (sau o rănește în plus dacă nu are loc). L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::FLOTE_IN_INEL))),
+        },
+        Playable {
+            id: "fregate_in_vid",
+            title: "Fregate în vid",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 12×9. Unități (hp/mișcare/rază/zaruri-forță/armură): f = Fregată 4/3/4/3/1; c = Cuirasat 7/2/5/4/2 [H]; r = Rapid 2/5/2/2/0 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 12 runde. H = nu atacă după mișcare. L = zburător. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::FREGATE_IN_VID))),
+        },
+        Playable {
+            id: "scuturi_si_raze",
+            title: "Scuturi și raze",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×8. Unități (hp/mișcare/rază/zaruri-forță/armură): s = Scutier 5/3/3/4/3; r = Rapid 3/5/3/3/1 [L]; m = Medical 4/3/1/1/1 [M]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul are efect fix: forță minus armură (minim 1), fără zaruri. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde. L = zburător. M = vindecă aliații vecini. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::SCUTURI_SI_RAZE))),
+        },
+        Playable {
+            id: "orbita_in_flacari",
+            title: "Orbită în flăcări",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×8. Unități (hp/mișcare/rază/zaruri-forță/armură): f = Fregată 4/3/4/3/1; l = Lansator 3/3/2/2/1 [L]; g = Gigant orbital 8/1/5/5/3 [HB]. Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 9 runde. Obstacolele (#) blochează tragerea de la distanță. H = nu atacă după mișcare. L = zburător. B = explozie. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::ORBITA_IN_FLACARI))),
+        },
+        Playable {
+            id: "nave_de_expeditie",
+            title: "Nave de expediție",
+            category: "Miniaturi",
+            rules: "Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×8. Unități (hp/mișcare/rază/zaruri-forță/armură): e = Explorator 4/4/3/3/1; s = Scut mobil 3/3/2/2/2 [M]; k = Vânător 2/6/2/3/0 [L]. Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”. Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1. Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde. Terenul dificil (~) dă +1 armură. L = zburător. M = vindecă aliații vecini. Mutări: mv, atq, tira, fin.",
+            make: || Box::new(brand_util::B(mn_engine::Mn::new(&mn_specs::NAVE_DE_EXPEDITIE))),
+        },
+        // T3-reg-end
+        // T4-reg-begin
+        Playable {
+            id: "ulita_neagra",
+            title: "Ulița Neagră",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu ruine (pereți și adăpost). La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Vigilent 4/5/1/3/4; Acrobat 2/6/1/2/3; Aruncător de cuțite 2/3/4/2/3; Căpetenie de bandă 4/4/1/2/4; Gealat 3/4/1/2/4; Pungaș 2/5/1/1/3. J1: Vigilent, Acrobat, Aruncător de cuțite. J2: Căpetenie de bandă, 2× Gealat, 2× Pungaș. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: flancare (+1 zar dacă un aliat e lângă țintă); contraatac (supraviețuitorii din corp la corp lovesc înapoi); zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri; trăgători mobili. Câștigi doborând liderul inamic. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("ulita_neagra"),
+        },
+        Playable {
+            id: "mingea_de_piele",
+            title: "Mingea de Piele",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 7×9 pătrată (8 direcții) cu teren deschis. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Atacant 2/6/1/2/3; Mijlocaș 3/4/1/2/4; Fundaș 4/3/1/2/5; Portar 3/3/1/2/5. J1: 2× Atacant, 2× Mijlocaș, Fundaș, Portar. J2: 2× Atacant, 2× Mijlocaș, Fundaș, Portar. Atac: cel mai bun zar al atacatorului contra celui mai bun al apărătorului (țintă−1 zaruri); câștigă cel mai mare, la diferență de 3 paguba se dublează. Reguli speciale: împingere (2+ pagube în corp la corp împing ținta); zone de control (mutarea lângă un inamic te oprește). Unități speciale: trăgători mobili. Du mingea (o) în rândul din spate al adversarului ca să marchezi, pasează cu p; primul la 3 câștigă. Cel mult 16 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), p uN uM, end.",
+            make: || crate::t4_skirm::make("mingea_de_piele"),
+        },
+        Playable {
+            id: "regate_de_cenusa",
+            title: "Regate de Cenușă",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu o creastă centrală cu treceri. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Rege-Cenușă 5/3/1/3/5; Gardian cu scut 4/2/1/3/5; Arcaș de ceață 2/3/5/2/3; Vrăjitor al focului 2/3/4/2/3; Lăncier 3/3/1/2/4. J1: Rege-Cenușă, 2× Gardian cu scut, Arcaș de ceață, Vrăjitor al focului. J2: Rege-Cenușă, 2× Gardian cu scut, Arcaș de ceață, Vrăjitor al focului. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: lideri; atacuri în arie (1 pagubă în jurul țintei, și aliaților); armură (cu 1 pagubă mai puțin). Câștigi doborând liderul inamic. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("regate_de_cenusa"),
+        },
+        Playable {
+            id: "fiare_si_vrajitori",
+            title: "Fiare și Vrăjitori",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×8 hexagonală cu dărâmături (adăpost) și câțiva pereți. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Vrăjitor al turmei 5/3/4/3/3; Fiară cu coarne 6/4/1/3/5; Lup de stâncă 3/6/1/2/3; Șaman vindecător 2/3/1/1/3; Bătăuș de turmă 3/3/1/2/4. J1: Vrăjitor al turmei, Fiară cu coarne, Lup de stâncă, Șaman vindecător, Bătăuș de turmă. J2: Vrăjitor al turmei, Fiară cu coarne, Lup de stâncă, Șaman vindecător, Bătăuș de turmă. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); împingere (2+ pagube în corp la corp împing ținta). Unități speciale: lideri; atacuri în arie (1 pagubă în jurul țintei, și aliaților); vindecători (h); armură (cu 1 pagubă mai puțin). Câștigi doborând liderul inamic. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, end.",
+            make: || crate::t4_skirm::make("fiare_si_vrajitori"),
+        },
+        Playable {
+            id: "cadranul_ostasului",
+            title: "Cadranul Ostașului",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×8 hexagonală cu dealuri (înălțimi). La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Cavaler de cadran 6/4/1/4/5; Arcaș de cadran 4/3/5/3/3; Vrăjitor de cadran 4/3/4/3/3; Scutier 3/4/1/2/4. J1: Cavaler de cadran, Arcaș de cadran, Vrăjitor de cadran, Scutier. J2: Cavaler de cadran, Arcaș de cadran, Vrăjitor de cadran, Scutier. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: atacuri în arie (1 pagubă în jurul țintei, și aliaților); cadrane (mai puține zaruri pe măsură ce scade viața). Câștigi distrugând toate unitățile inamice. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("cadranul_ostasului"),
+        },
+        Playable {
+            id: "trupe_de_plumb",
+            title: "Trupe de Plumb",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu dărâmături (adăpost) și câțiva pereți. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Pușcaș 2/4/4/2/4; Mitralior 2/2/6/3/4; Tanc ușor 5/5/5/3/6; Sapator 2/4/1/2/3; Medic de front 2/3/1/1/3. J1: 2× Pușcaș, Mitralior, Tanc ușor, Sapator, Medic de front. J2: 2× Pușcaș, Mitralior, Tanc ușor, Sapator, Medic de front. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: imobilizare (focul la distanță încetinește ținta); moral (șocul slăbește unitățile; r reface moralul). Unități speciale: vindecători (h); armură (cu 1 pagubă mai puțin). Controlează punctele + (mai multe unități la cel mult 1 pas); fiecare rundă dă un punct pentru fiecare punct ținut; primul la 8 câștigă. Cel mult 10 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, r uN, end.",
+            make: || crate::t4_skirm::make("trupe_de_plumb"),
+        },
+        Playable {
+            id: "hrube_si_comori",
+            title: "Hrube și Comori",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 8×8 pătrată (4 direcții) cu coridoare cu pereți. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Cavaler de peșteră 4/3/1/3/5; Preot al luminii 3/3/2/2/3; Mag al scânteii 3/3/5/2/3; Hoț cu arc 2/4/5/2/3; Orc de hrubă 4/3/1/2/4; Scheletar 1/3/1/2/3; Trol de peșteră 6/2/1/3/4. J1: Cavaler de peșteră, Preot al luminii, Mag al scânteii, Hoț cu arc. J2: 2× Orc de hrubă, 2× Scheletar, Trol de peșteră. Atac: cel mai bun zar al atacatorului contra celui mai bun al apărătorului (țintă−1 zaruri); câștigă cel mai mare, la diferență de 3 paguba se dublează. Reguli speciale: contraatac (supraviețuitorii din corp la corp lovesc înapoi). Unități speciale: atacuri în arie (1 pagubă în jurul țintei, și aliaților); vindecători (h). Adu jetoanele $ înapoi în primele tale două rânduri; primul la 3 câștigă. Cel mult 16 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, end.",
+            make: || crate::t4_skirm::make("hrube_si_comori"),
+        },
+        Playable {
+            id: "inaltimi_cu_eroi",
+            title: "Înălțimi cu Eroi",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×9 hexagonală cu dealuri (înălțimi). La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Erou de vale 4/4/1/3/4; Arcaș de creastă 2/3/6/2/3; Titan de piatră 6/2/1/4/5; Iscoadă 2/6/1/2/3; Zburător 2/6/2/2/3. J1: Erou de vale, Arcaș de creastă, Titan de piatră, Iscoadă, Zburător. J2: Erou de vale, Arcaș de creastă, Titan de piatră, Iscoadă, Zburător. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: zburători (ignoră terenul); armură (cu 1 pagubă mai puțin). Câștigi distrugând toate unitățile inamice. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("inaltimi_cu_eroi"),
+        },
+        Playable {
+            id: "lame_si_ghiare",
+            title: "Lame și Gheare",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu stâlpi și adăposturi împrăștiate. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Mare Războinic 5/4/1/4/5; Gheară de pădure 3/5/1/3/3; Gardă de fier 5/2/1/3/5; Haiduc 3/3/1/3/4; Cercetaș cu arc 2/3/4/2/3. J1: Mare Războinic, Gheară de pădure, Gardă de fier, Haiduc, Cercetaș cu arc. J2: Mare Războinic, Gheară de pădure, Gardă de fier, Haiduc, Cercetaș cu arc. Atac: cel mai bun zar al atacatorului contra celui mai bun al apărătorului (țintă−1 zaruri); câștigă cel mai mare, la diferență de 3 paguba se dublează. Reguli speciale: contraatac (supraviețuitorii din corp la corp lovesc înapoi); flancare (+1 zar dacă un aliat e lângă țintă); împingere (2+ pagube în corp la corp împing ținta). Unități speciale: lideri; armură (cu 1 pagubă mai puțin). Câștigi doborând liderul inamic. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("lame_si_ghiare"),
+        },
+        Playable {
+            id: "strajeri_de_umbra",
+            title: "Străjerii din Umbră",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 8×10 pătrată (4 direcții) cu coridoare cu pereți. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Străjer 3/4/4/3/4; Căpitan de străji 4/4/3/3/4; Ghicitor 2/4/1/1/3; Ghoul de umbră 2/4/1/2/3; Cioban al umbrei 4/3/1/3/5; Spectru 3/5/1/2/4. J1: 3× Străjer, Căpitan de străji, Ghicitor. J2: 4× Ghoul de umbră, Cioban al umbrei, Spectru. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri; zburători (ignoră terenul); vindecători (h). Jucătorul 1 trebuie să ducă 3 unități în ultimul rând; Jucătorul 2 câștigă distrugându-le sau ținând toate rundele. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, end.",
+            make: || crate::t4_skirm::make("strajeri_de_umbra"),
+        },
+        Playable {
+            id: "padure_cu_muschete",
+            title: "Pădure cu Mușchete",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×8 pătrată (8 direcții) cu dărâmături (adăpost) și câțiva pereți. La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Pușcaș de graniță 2/4/5/2/4; Luptător cu topor 3/5/1/2/3; Locotenent 3/4/3/2/4; Gealat de pădure 3/4/1/2/4. J1: Locotenent, 2× Pușcaș de graniță, Luptător cu topor, Gealat de pădure. J2: Locotenent, 2× Pușcaș de graniță, Luptător cu topor, Gealat de pădure. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: moral (șocul slăbește unitățile; r reface moralul); imobilizare (focul la distanță încetinește ținta). Unități speciale: lideri. Controlează punctele + (mai multe unități la cel mult 1 pas); fiecare rundă dă un punct pentru fiecare punct ținut; primul la 7 câștigă. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), r uN, end.",
+            make: || crate::t4_skirm::make("padure_cu_muschete"),
+        },
+        Playable {
+            id: "catuse_si_baionete",
+            title: "Cartușe și Baionete",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu teren deschis. Puncte de acțiune: 2 plus 1 pentru fiecare lider viu (maxim 5); fiecare acțiune costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Soldat de linie 2/3/5/2/4; Grenadier 3/3/1/3/4; Ofițer 3/4/3/2/4; Tobosar 2/4/1/1/3. J1: 3× Soldat de linie, Grenadier, Ofițer, Tobosar. J2: 3× Soldat de linie, Grenadier, Ofițer, Tobosar. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: moral (șocul slăbește unitățile; r reface moralul); asalt (+1 zar după o mutare de 2+ pătrate); zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri; vindecători (h). Câștigi distrugând toate unitățile inamice. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, r uN, end.",
+            make: || crate::t4_skirm::make("catuse_si_baionete"),
+        },
+        Playable {
+            id: "armata_de_cimpie",
+            title: "Armata de Câmpie",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 12×8 pătrată (8 direcții) cu teren deschis. Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Batalion de linie 4/2/4/3/4; Cavalerie ușoară 3/7/1/3/4; Artilerie de câmp 3/1/7/4/5; General 3/5/1/2/4. J1: 3× Batalion de linie, 2× Cavalerie ușoară, Artilerie de câmp, General. J2: 3× Batalion de linie, 2× Cavalerie ușoară, Artilerie de câmp, General. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); flancare (+1 zar dacă un aliat e lângă țintă); moral (șocul slăbește unitățile; r reface moralul). Unități speciale: lideri. Controlează punctele + (mai multe unități la cel mult 1 pas); fiecare rundă dă un punct pentru fiecare punct ținut; primul la 9 câștigă. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), r uN, end.",
+            make: || crate::t4_skirm::make("armata_de_cimpie"),
+        },
+        Playable {
+            id: "sulite_si_archebuze",
+            title: "Suliți și Archebuze",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 12×8 pătrată (8 direcții) cu teren deschis. Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Pichier 4/2/1/3/5; Archebuzier 3/3/4/3/4; Cavalerie de oțel 4/6/1/3/5; Colonel 3/5/1/2/4. J1: 2× Pichier, 2× Archebuzier, Cavalerie de oțel, Colonel. J2: 2× Pichier, 2× Archebuzier, Cavalerie de oțel, Colonel. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); flancare (+1 zar dacă un aliat e lângă țintă); zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri; armură (cu 1 pagubă mai puțin). Câștigi doborând liderul inamic. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("sulite_si_archebuze"),
+        },
+        Playable {
+            id: "patrula_linia_rosie",
+            title: "Patrula de pe Linia Roșie",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×9 pătrată (8 direcții) cu ruine (pereți și adăpost). La fiecare tură ai 4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Pușcaș de patrulă 2/4/6/3/4; Lunetist 2/2/7/2/3; Sergent 3/4/5/3/4; Gealat de infiltrare 2/5/3/2/3. J1: 2× Pușcaș de patrulă, Lunetist, Sergent, Gealat de infiltrare. J2: 2× Pușcaș de patrulă, Lunetist, Sergent, Gealat de infiltrare. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: imobilizare (focul la distanță încetinește ținta). Unități speciale: lideri; trăgători mobili. Adu jetoanele $ înapoi în primele tale două rânduri; primul la 2 câștigă. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("patrula_linia_rosie"),
+        },
+        Playable {
+            id: "pistoale_in_praf",
+            title: "Pistoale în Praf",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu dărâmături (adăpost) și câțiva pereți. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Pistolar 3/4/5/2/4; Pușcaș cu carabină 2/3/7/2/4; Șerif 4/4/4/3/4; Tâlhar 2/5/3/2/3; Doctor de vagon 2/3/1/1/3. J1: Pistolar, Pușcaș cu carabină, Șerif, Doctor de vagon. J2: 2× Tâlhar, Pistolar, Pușcaș cu carabină, Doctor de vagon. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: contraatac (supraviețuitorii din corp la corp lovesc înapoi). Unități speciale: lideri; vindecători (h); trăgători mobili. Adu jetoanele $ înapoi în primele tale două rânduri; primul la 3 câștigă. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, end.",
+            make: || crate::t4_skirm::make("pistoale_in_praf"),
+        },
+        Playable {
+            id: "carti_prafuite",
+            title: "Cărți Prăfuite",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×8 pătrată (8 direcții) cu stâlpi și adăposturi împrăștiate. La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Pistolar de noroc 2/4/5/2/3; Căpitanul bandei 3/4/4/3/4; Bătăuș de bar 3/3/1/3/4; Hoț de cai 2/6/1/2/3. J1: Căpitanul bandei, 2× Pistolar de noroc, Bătăuș de bar, Hoț de cai. J2: Căpitanul bandei, 2× Pistolar de noroc, Bătăuș de bar, Hoț de cai. Atac: cel mai bun zar al atacatorului contra celui mai bun al apărătorului (țintă−1 zaruri); câștigă cel mai mare, la diferență de 3 paguba se dublează. Reguli speciale: împingere (2+ pagube în corp la corp împing ținta). Unități speciale: lideri; trăgători mobili. Adu jetoanele $ înapoi în primele tale două rânduri; primul la 3 câștigă. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("carti_prafuite"),
+        },
+        Playable {
+            id: "aventurieri_de_foileton",
+            title: "Aventurieri de Foileton",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu ruine (pereți și adăpost). La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Eroul de serie 4/5/3/3/4; Asistentul isteț 2/6/3/2/3; Atletul 3/5/1/3/4; Cercetașa curajoasă 2/4/4/2/3; Ucigaș cu mantie 3/4/1/3/4. J1: Eroul de serie, Asistentul isteț, Atletul. J2: Ucigaș cu mantie, Cercetașa curajoasă, Atletul, Asistentul isteț. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: împingere (2+ pagube în corp la corp împing ținta); flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: lideri. Adu jetoanele $ înapoi în primele tale două rânduri; primul la 4 câștigă. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("aventurieri_de_foileton"),
+        },
+        Playable {
+            id: "clanuri_de_orhidee",
+            title: "Clanurile de Orhidee",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu stâlpi și adăposturi împrăștiate. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Maestru de clan 4/4/1/4/5; Spadasin 3/4/1/3/4; Arcaș de ceremonie 2/3/5/2/3; Călugăr de templu 3/3/1/2/3; Ucenic 2/4/1/2/3. J1: Maestru de clan, 2× Spadasin, Arcaș de ceremonie, Călugăr de templu. J2: Maestru de clan, 2× Spadasin, Arcaș de ceremonie, 2× Ucenic. Atac: cel mai bun zar al atacatorului contra celui mai bun al apărătorului (țintă−1 zaruri); câștigă cel mai mare, la diferență de 3 paguba se dublează. Reguli speciale: contraatac (supraviețuitorii din corp la corp lovesc înapoi); flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: lideri; vindecători (h). Câștigi doborând liderul inamic. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, end.",
+            make: || crate::t4_skirm::make("clanuri_de_orhidee"),
+        },
+        Playable {
+            id: "spada_fara_stapan",
+            title: "Sabia fără Stăpân",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 7×7 pătrată (4 direcții) cu stâlpi și adăposturi împrăștiate. La fiecare tură ai 2 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Samurai fără stăpân 4/4/1/4/5; Lăncier rătăcit 3/4/1/3/4; Mercenar 3/3/1/3/4; Arcaș de drum 2/3/4/2/3. J1: Samurai fără stăpân, Lăncier rătăcit, Arcaș de drum. J2: 2× Mercenar, 2× Arcaș de drum. Atac: cel mai bun zar al atacatorului contra celui mai bun al apărătorului (țintă−1 zaruri); câștigă cel mai mare, la diferență de 3 paguba se dublează. Reguli speciale: contraatac (supraviețuitorii din corp la corp lovesc înapoi); împingere (2+ pagube în corp la corp împing ținta). Unități speciale: lideri. Câștigi distrugând toate unitățile inamice. Cel mult 16 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("spada_fara_stapan"),
+        },
+        Playable {
+            id: "legamant_de_piatra",
+            title: "Legământ de Piatră",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu o creastă centrală cu treceri. Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Gardă de piatră 5/2/1/3/5; Arbaletier de munte 2/3/5/3/3; Thane de peșteră 5/3/1/3/5; Sapator 3/3/1/3/4; Orc de câmp 2/4/1/2/4. J1: 2× Gardă de piatră, 2× Arbaletier de munte, Thane de peșteră, Sapator. J2: 5× Orc de câmp, Sapator, Arbaletier de munte. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: moral (șocul slăbește unitățile; r reface moralul); asalt (+1 zar după o mutare de 2+ pătrate); flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: lideri; armură (cu 1 pagubă mai puțin). Controlează punctele + (mai multe unități la cel mult 1 pas); fiecare rundă dă un punct pentru fiecare punct ținut; primul la 8 câștigă. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), r uN, end.",
+            make: || crate::t4_skirm::make("legamant_de_piatra"),
+        },
+        Playable {
+            id: "armuri_de_abur",
+            title: "Armuri de Abur",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×9 pătrată (8 direcții) cu ruine (pereți și adăpost). La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Trăgător cu abur 2/4/5/2/4; Mers de oțel 6/3/5/3/5; Căpitan de abur 4/4/3/3/4; Grenadier cu flacără 3/3/3/2/3. J1: 2× Trăgător cu abur, Mers de oțel, Căpitan de abur, Grenadier cu flacără. J2: 2× Trăgător cu abur, Mers de oțel, Căpitan de abur, Grenadier cu flacără. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: imobilizare (focul la distanță încetinește ținta). Unități speciale: lideri; atacuri în arie (1 pagubă în jurul țintei, și aliaților); armură (cu 1 pagubă mai puțin). Câștigi distrugând toate unitățile inamice. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("armuri_de_abur"),
+        },
+        Playable {
+            id: "zbor_de_lancii",
+            title: "Zbor de Lănci",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 12×8 pătrată (8 direcții) cu teren deschis. Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Cavalerie grea 4/6/1/4/5; Pedestrime cu scut 3/3/1/3/4; Arcași montați 2/6/4/2/3; Comandant 3/5/1/3/4. J1: 2× Cavalerie grea, 2× Pedestrime cu scut, Arcași montați, Comandant. J2: 2× Cavalerie grea, 2× Pedestrime cu scut, Arcași montați, Comandant. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: lideri; trăgători mobili. Controlează punctele + (mai multe unități la cel mult 1 pas); fiecare rundă dă un punct pentru fiecare punct ținut; primul la 9 câștigă. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("zbor_de_lancii"),
+        },
+        Playable {
+            id: "douasprezece_elemente",
+            title: "Douăsprezece Elemente",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 10×8 pătrată (4 direcții) cu teren deschis. La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Element de lănci 3/3/1/3/4; Element de arcași 2/3/4/2/3; Element de care 3/5/1/3/4; General 3/4/1/2/4. J1: 2× Element de lănci, 2× Element de arcași, Element de care, General. J2: 2× Element de lănci, 2× Element de arcași, Element de care, General. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); flancare (+1 zar dacă un aliat e lângă țintă); zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri. Câștigi doborând liderul inamic. Cel mult 16 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("douasprezece_elemente"),
+        },
+        Playable {
+            id: "oastea_cea_mare",
+            title: "Oastea cea Mare",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 12×9 pătrată (4 direcții) cu o creastă centrală cu treceri. La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Pedestrime de linie 3/3/1/3/4; Pedestrime ușoară 2/4/3/2/3; Cavalerie de elită 4/6/1/3/5; General de oaste 4/5/1/3/4. J1: 3× Pedestrime de linie, 2× Pedestrime ușoară, Cavalerie de elită, General de oaste. J2: 3× Pedestrime de linie, 2× Pedestrime ușoară, Cavalerie de elită, General de oaste. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); flancare (+1 zar dacă un aliat e lângă țintă); moral (șocul slăbește unitățile; r reface moralul); zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri. Câștigi doborând liderul inamic. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), r uN, end.",
+            make: || crate::t4_skirm::make("oastea_cea_mare"),
+        },
+        Playable {
+            id: "mestesugul_razboiului",
+            title: "Meșteșugul Războiului",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu o creastă centrală cu treceri. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Infanterie de elită 4/3/1/3/5; Arcași ușori 2/4/4/2/3; Cavalerie de război 3/6/1/3/4; Strateg 3/4/1/3/4. J1: 2× Infanterie de elită, 2× Arcași ușori, Cavalerie de război, Strateg. J2: 2× Infanterie de elită, 2× Arcași ușori, Cavalerie de război, Strateg. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: flancare (+1 zar dacă un aliat e lângă țintă); asalt (+1 zar după o mutare de 2+ pătrate). Unități speciale: lideri. Controlează punctele + (mai multe unități la cel mult 1 pas); fiecare rundă dă un punct pentru fiecare punct ținut; primul la 8 câștigă. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("mestesugul_razboiului"),
+        },
+        Playable {
+            id: "ordine_pe_caroiaj",
+            title: "Ordine pe Caroiaj",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 12×8 pătrată (4 direcții) cu teren deschis. La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Unitate de linie 3/3/1/3/4; Unitate de arcași 2/3/4/2/3; Unitate de care 3/5/1/3/4; General 3/4/1/3/4. J1: 2× Unitate de linie, 2× Unitate de arcași, Unitate de care, General. J2: 2× Unitate de linie, 2× Unitate de arcași, Unitate de care, General. Atac: cel mai bun zar al atacatorului contra celui mai bun al apărătorului (țintă−1 zaruri); câștigă cel mai mare, la diferență de 3 paguba se dublează. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri. Controlează punctele + (mai multe unități la cel mult 1 pas); fiecare rundă dă un punct pentru fiecare punct ținut; primul la 8 câștigă. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("ordine_pe_caroiaj"),
+        },
+        Playable {
+            id: "cavaleri_si_pavaze",
+            title: "Cavaleri și Pavaze",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu teren deschis. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Cavaler greu 5/5/1/4/5; Pavăzar 4/2/1/2/6; Arbaletier cu pavăză 3/3/5/2/4; Senior 4/4/1/3/5. J1: Cavaler greu, 2× Pavăzar, Arbaletier cu pavăză, Senior. J2: Cavaler greu, 2× Pavăzar, Arbaletier cu pavăză, Senior. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); contraatac (supraviețuitorii din corp la corp lovesc înapoi). Unități speciale: lideri. Câștigi doborând liderul inamic. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("cavaleri_si_pavaze"),
+        },
+        Playable {
+            id: "maresali_de_fier",
+            title: "Mareșali de Fier",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 12×8 pătrată (8 direcții) cu stâlpi și adăposturi împrăștiate. Puncte de acțiune: 2 plus 1 pentru fiecare lider viu (maxim 5); fiecare acțiune costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Regiment de bătaie 4/3/1/3/4; Mașini de asediu 3/1/7/4/4; Mareșal 3/6/1/2/4; Călăreți de oțel 4/6/1/3/5. J1: 2× Regiment de bătaie, Mașini de asediu, Mareșal, 2× Călăreți de oțel. J2: 2× Regiment de bătaie, Mașini de asediu, Mareșal, 2× Călăreți de oțel. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: asalt (+1 zar după o mutare de 2+ pătrate); flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: lideri. Câștigi doborând liderul inamic. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("maresali_de_fier"),
+        },
+        Playable {
+            id: "salve_pe_front",
+            title: "Salve pe Front",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 11×9 hexagonală cu teren deschis. Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Brigadă de linie 5/2/3/3/4; Brigadă de cavalerie 4/5/1/3/4; Baterie 3/1/6/4/4; Corp de armată 4/3/1/2/4. J1: 3× Brigadă de linie, Brigadă de cavalerie, Baterie, Corp de armată. J2: 3× Brigadă de linie, Brigadă de cavalerie, Baterie, Corp de armată. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: moral (șocul slăbește unitățile; r reface moralul); flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: lideri. Controlează punctele + (mai multe unități la cel mult 1 pas); fiecare rundă dă un punct pentru fiecare punct ținut; primul la 8 câștigă. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), r uN, end.",
+            make: || crate::t4_skirm::make("salve_pe_front"),
+        },
+        Playable {
+            id: "foc_si_pulbere",
+            title: "Foc și Pulbere",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 11×8 pătrată (4 direcții) cu dărâmături (adăpost) și câțiva pereți. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Brigadă cu pușcă 4/3/4/3/4; Tunuri de câmp 3/1/6/4/4; Cavalerie de recunoaștere 3/6/1/2/4; General de armată 3/5/1/3/4. J1: 3× Brigadă cu pușcă, Tunuri de câmp, Cavalerie de recunoaștere, General de armată. J2: 3× Brigadă cu pușcă, Tunuri de câmp, Cavalerie de recunoaștere, General de armată. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: moral (șocul slăbește unitățile; r reface moralul); imobilizare (focul la distanță încetinește ținta). Unități speciale: lideri. Câștigi distrugând toate unitățile inamice. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), r uN, end.",
+            make: || crate::t4_skirm::make("foc_si_pulbere"),
+        },
+        Playable {
+            id: "pasi_de_otel",
+            title: "Pași de Oțel",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 10×9 hexagonală cu stâlpi și adăposturi împrăștiate. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Mers ușor 4/5/5/2/5; Mers greu 6/3/6/3/6; Pușcaș în exoschelet 3/4/4/2/4; Comandant de mers 5/4/5/3/5. J1: Mers ușor, Mers greu, Pușcaș în exoschelet, Comandant de mers. J2: Mers ușor, Mers greu, Pușcaș în exoschelet, Comandant de mers. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri; armură (cu 1 pagubă mai puțin). Câștigi doborând liderul inamic. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("pasi_de_otel"),
+        },
+        Playable {
+            id: "escadrila_cerului_rosu",
+            title: "Escadrila Cerului Roșu",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 10×10 hexagonală cu teren deschis. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Vânător 3/6/3/3/4; Bombardier 5/4/2/4/5; Escortă 2/7/3/2/3; Comandant de escadrilă 4/6/3/3/4. J1: 2× Vânător, Bombardier, Comandant de escadrilă, Escortă. J2: 2× Vânător, Bombardier, Comandant de escadrilă, Escortă. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Unități speciale: lideri; zburători (ignoră terenul); atacuri în arie (1 pagubă în jurul țintei, și aliaților); trăgători mobili. Câștigi doborând liderul inamic. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("escadrila_cerului_rosu"),
+        },
+        Playable {
+            id: "lupta_in_nori",
+            title: "Luptă în Nori",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×9 hexagonală cu teren deschis. La fiecare tură ai 2 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Biplan agil 2/7/2/3/4; Monoplan 3/6/3/3/4; Tunar de coadă 3/5/4/2/4; As 4/7/3/4/5. J1: Biplan agil, Monoplan, Tunar de coadă, As. J2: Biplan agil, Monoplan, Tunar de coadă, As. Atac: cel mai bun zar al atacatorului contra celui mai bun al apărătorului (țintă−1 zaruri); câștigă cel mai mare, la diferență de 3 paguba se dublează. Reguli speciale: flancare (+1 zar dacă un aliat e lângă țintă); moral (șocul slăbește unitățile; r reface moralul). Unități speciale: lideri; zburători (ignoră terenul). Câștigi distrugând toate unitățile inamice. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), r uN, end.",
+            make: || crate::t4_skirm::make("lupta_in_nori"),
+        },
+        Playable {
+            id: "echipajul_ratacit",
+            title: "Echipajul Rătăcit",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu dărâmături (adăpost) și câțiva pereți. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Pilot 3/4/5/2/4; Tehnician 2/4/3/2/3; Mercenar 4/4/1/3/4; Bandit stelar 2/4/4/2/4; Dronă sălbatică 1/6/1/2/3. J1: Pilot, Tehnician, Mercenar. J2: 3× Bandit stelar, 2× Dronă sălbatică. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: imobilizare (focul la distanță încetinește ținta). Unități speciale: vindecători (h). Adu jetoanele $ înapoi în primele tale două rânduri; primul la 3 câștigă. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, end.",
+            make: || crate::t4_skirm::make("echipajul_ratacit"),
+        },
+        Playable {
+            id: "planeta_cu_spini",
+            title: "Planeta cu Spini",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×9 hexagonală cu ruine (pereți și adăpost). La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Infanterist colonial 3/4/5/3/4; Sergent colonial 4/4/4/3/4; Flăcărar 3/3/3/2/3; Vierme de spini 2/5/1/2/4; Zburător de spini 2/6/1/2/3; Colos de spini 7/3/1/4/5. J1: 2× Infanterist colonial, Sergent colonial, Flăcărar. J2: 3× Vierme de spini, 2× Zburător de spini, Colos de spini. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: moral (șocul slăbește unitățile; r reface moralul); zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri; zburători (ignoră terenul); atacuri în arie (1 pagubă în jurul țintei, și aliaților); armură (cu 1 pagubă mai puțin). Controlează punctele + (mai multe unități la cel mult 1 pas); fiecare rundă dă un punct pentru fiecare punct ținut; primul la 7 câștigă. Cel mult 12 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), r uN, end.",
+            make: || crate::t4_skirm::make("planeta_cu_spini"),
+        },
+        Playable {
+            id: "zeii_de_lut",
+            title: "Zeii de Lut",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 9×8 hexagonală cu dealuri (înălțimi). La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Zeu al furtunii 6/4/4/4/5; Erou de lut 5/4/1/3/5; Zeiță a vânătorii 3/3/6/3/3; Monstru de piatră 7/3/1/4/5; Preoteasă 3/3/1/1/3. J1: Zeu al furtunii, Erou de lut, Zeiță a vânătorii, Preoteasă. J2: Zeu al furtunii, Erou de lut, Monstru de piatră, Zeiță a vânătorii. Atac: cel mai bun zar al atacatorului contra celui mai bun al apărătorului (țintă−1 zaruri); câștigă cel mai mare, la diferență de 3 paguba se dublează. Reguli speciale: împingere (2+ pagube în corp la corp împing ținta); flancare (+1 zar dacă un aliat e lângă țintă). Unități speciale: lideri; atacuri în arie (1 pagubă în jurul țintei, și aliaților); vindecători (h); armură (cu 1 pagubă mai puțin). Câștigi doborând liderul inamic. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, end.",
+            make: || crate::t4_skirm::make("zeii_de_lut"),
+        },
+        Playable {
+            id: "asalt_pe_statia_veche",
+            title: "Asalt pe Stația Veche",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 10×9 pătrată (8 direcții) cu coridoare cu pereți. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Rebel cu pușcă 3/4/5/3/4; Mecanic de stație 3/3/3/2/3; Lunetist 2/3/7/3/3; Soldat de asalt 3/3/5/2/4; Robot de pază 5/3/5/3/5. J1: Rebel cu pușcă, Mecanic de stație, Lunetist. J2: 3× Soldat de asalt, Robot de pază. Atac: 2d6 plus zarurile unității trebuie să atingă 5 plus ținta; la o diferență de 4 se adaugă o pagubă. Reguli speciale: imobilizare (focul la distanță încetinește ținta). Unități speciale: vindecători (h); armură (cu 1 pagubă mai puțin). Adu jetoanele $ înapoi în primele tale două rânduri; primul la 3 câștigă. Cel mult 14 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), h uN uM, end.",
+            make: || crate::t4_skirm::make("asalt_pe_statia_veche"),
+        },
+        Playable {
+            id: "culoare_de_otel",
+            title: "Culoare de Oțel",
+            category: "Miniaturi",
+            rules: "Variantă originală pentru doi pe o tablă 7×11 pătrată (4 direcții) cu coridoare cu pereți. La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1. Unități (viață/mutare/bătaie/zaruri/țintă): Gardian în armură 4/3/5/3/5; Sergent în armură 4/3/5/3/5; Roi de ghiare 2/6/1/2/3; Patriarh al roiului 5/5/1/3/4. J1: 4× Gardian în armură, Sergent în armură. J2: 6× Roi de ghiare, Patriarh al roiului. Atac: arunci zarurile unității; fiecare zar cel puțin egal cu ținta apărătorului lovește. Reguli speciale: zone de control (mutarea lângă un inamic te oprește). Unități speciale: lideri; armură (cu 1 pagubă mai puțin). Jucătorul 1 trebuie să ducă 2 unități în ultimul rând; Jucătorul 2 câștigă distrugându-le sau ținând toate rundele. Cel mult 16 runde, apoi decide scorul. Mutări: m uN d4 (mută), a uN uM (atacă), end.",
+            make: || crate::t4_skirm::make("culoare_de_otel"),
+        },
+        Playable {
+            id: "pirati_de_hartie",
+            title: "Pirații de Hârtie",
+            category: "TCG",
+            rules: "Duel original cu pachete fixe de 30 de cărți. Aurul crește cu 2 pe tură (maxim 10). Ai o zonă de viață de 5 cărți ascunse: o lovitură în căpitan trimite o carte în mână, iar la zonă goală pierzi. Căpitanul tău (putere 4) poate ataca. Poți ataca doar personaje inamice obosite, gardienii trebuie loviți primii, iar un căpitan e lovit doar de o putere cel puțin egală cu a lui. Mutări: joaca i [tN], atac c|l t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || crate::t4_tcg::make("pirati_de_hartie"),
+        },
+        Playable {
+            id: "evolutia_circuitelor",
+            title: "Evoluția Circuitelor",
+            category: "TCG",
+            rules: "Duel original cu pachete fixe de 30 cărți și o măsură comună de memorie: începi cu 3, fiecare carte jucată sau evoluție cheltuiește costul, iar când memoria scade sub zero tura ta se încheie și adversarul pornește cu atât. Evoluezi (evo i j) o creatură de nivel N într-o carte de nivel N+1 de aceeași culoare cu 2 mai ieftin. Pază: 5 cărți ascunse; o lovitură în jucător răstoarnă una, iar o creatură mai puternică decât atacatorul îl distruge. Fără pază, o lovitură câștigă. Mutări: joaca i [tN], evo i j, atac c t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || crate::t4_tcg::make("evolutia_circuitelor"),
+        },
+        Playable {
+            id: "energia_luptatorilor",
+            title: "Energia Luptătorilor",
+            category: "TCG",
+            rules: "Duel original cu pachete fixe de 30 cărți. Energia vine din mână: o dată pe tură încarci o carte (pune i) în zona de energie; toată energia e gata la începutul turei. Căpitanul tău (putere 3, +2 trezit când viața e la jumătate sau mai puțin) începe cu 8 viață. Atacă doar personaje inamice obosite sau căpitanul; întâi gardienii; un luptător dublu lovește de 2 ori. Câștigi ducând căpitanul adversarului la 0. Mutări: pune i, joaca i [tN], atac c|l t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || crate::t4_tcg::make("energia_luptatorilor"),
+        },
+        Playable {
+            id: "ceasul_alb_negru",
+            title: "Ceasul Alb-Negru",
+            category: "TCG",
+            rules: "Duel original cu pachete fixe de 40 de cărți. Trei locuri în față, stocul crește cu 3 pe tură (maxim 8) și cu 1 la fiecare lovitură în jucător. O carte climax (cost 0) dă oricărui atacator +2 putere și +1 suflet în tura aceea. O lovitură în jucător scoate din pachet cărți-suflet în ceasul de daune; dacă iese o carte de anulare, toată lovitura se anulează. Șapte cărți în ceas fac un nivel; la nivelul 3 pierzi. Personajele se luptă după putere (cel mai slab cade, la egalitate cad ambele). Mutări: joaca i [tN], atac c t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || crate::t4_tcg::make("ceasul_alb_negru"),
+        },
+        Playable {
+            id: "trepte_de_avangarda",
+            title: "Treptele Avangardei",
+            category: "TCG",
+            rules: "Duel original cu pachete fixe de 30 de cărți. Avangarda ta începe la nivelul 0; o dată pe tură urci (ride i) o carte cu un nivel mai sus peste ea. Chemi (joaca i) gratis unități de cel mult nivelul avangardei în 4 locuri din spate. Atacul avangardei descoperă mai întâi cartea de deasupra (un declanșator adaugă 2 putere și 1 daună), apoi apărătorul poate garda (garda i) cu cărți din mână, fiecare adăugând scutul ei; lovitura reușește dacă puterea e cel puțin puterea avangardei plus scuturile și adaugă cărți de daune (la 6 pierzi). Ceilalți atacatori retrag o unitate de putere egală sau mai mică. Mutări: ride i, joaca i, atac c|l t|p, garda i, nu, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || crate::t4_tcg::make("trepte_de_avangarda"),
+        },
+        Playable {
+            id: "doua_arene_o_baza",
+            title: "Două Arene, o Bază",
+            category: "TCG",
+            rules: "Duel original cu pachete fixe de 30 de cărți. Jucătorii alternează acțiuni singulare: joacă o carte, atacă cu o unitate pregătită sau dau pas (gata). Unitățile sunt de sol sau de aer: o unitate lovește doar gardienii și unitățile din arena ei, sau baza când nu stă niciun gardian din acea arenă. Unitățile proaspete nu pot ataca. Când amândoi dau pas la rând, runda se încheie: totul se pregătește, fiecare trage 2 și pune o carte din mână cu fața în jos ca resursă (pune i); cine a dat primul pas acționează primul. Bazele au 22 viață. Mutări: pune i, joaca i [tN], atac c t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || crate::t4_tcg::make("doua_arene_o_baza"),
+        },
+        Playable {
+            id: "scuturi_si_mana",
+            title: "Scuturi și Mană",
+            category: "TCG",
+            rules: "Duel original cu pachete fixe de 30 de cărți. O dată pe tură pui o carte din mână în zona de mană (pune i); o carte cere atâta mană neobosită cât costul ei, inclusiv una de culoarea ei. 5 scuturi ascunse apără fiecare jucător: o creatură atacatoare sparge unul (două dacă e dublă), cartea merge în mâna proprietarului, dar o carte cu declanșator se joacă imediat gratis. Gardienii se atacă primii; poți ataca creaturi inamice obosite; creaturile se bat după putere. Fără scuturi, o lovitură câștigă. Mutări: pune i, joaca i [tN], atac c t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || crate::t4_tcg::make("scuturi_si_mana"),
+        },
+        // T4-reg-end
+        // T5-reg-begin
+        Playable {
+            id: "cristale_chemari",
+            title: "Cristale și Chemări",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Gărzile Soarelui contra Magii Cenușii), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea. Câștigi când viața adversarului ajunge la 0 (start 18). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cristale_chemari::new())),
+        },
+        Playable {
+            id: "duhuri_pirjol",
+            title: "Duhurile Pârjolului",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Clanul Cremenii contra Clanul Cenușii), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Fiecare are 5 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 4) și îl dă în mână adversarului; lovitura fără scuturi câștigă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(duhuri_pirjol::new())),
+        },
+        Playable {
+            id: "cursa_prin_retea",
+            title: "Cursa prin Rețea",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Hoții de Date contra Corporația Albă), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 7. Câștigi la 7 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cursa_prin_retea::new())),
+        },
+        Playable {
+            id: "chei_chihlimbar",
+            title: "Trei Chei de Chihlimbar",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Casa Clopotului contra Casa Fierarilor), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 7. Câștigi la 8 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(chei_chihlimbar::new())),
+        },
+        Playable {
+            id: "provincii_de_jad",
+            title: "Provinciile de Jad",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Dragonii de Jad contra Corbii de Ceață), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(provincii_de_jad::new())),
+        },
+        Playable {
+            id: "mercenari_stelari",
+            title: "Mercenarii Stelari",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Flota Liberă contra Imperiul Ceții), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9. Câștigi când viața adversarului ajunge la 0 (start 25). Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(mercenari_stelari::new())),
+        },
+        Playable {
+            id: "pecetea_magilor",
+            title: "Pecetea Magilor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Cercul Verde contra Cercul Roșu), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 9). Câștigi când viața adversarului ajunge la 0 (start 20). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(pecetea_magilor::new())),
+        },
+        Playable {
+            id: "biblioteca_umbrelor",
+            title: "Biblioteca Umbrelor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Arhivarii contra Cititorii de Noapte), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea. Câștigi când viața adversarului ajunge la 0 (start 20). Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(biblioteca_umbrelor::new())),
+        },
+        Playable {
+            id: "tinutul_cenusiu",
+            title: "Ținutul Cenușiu",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Păstorii Colinei contra Oamenii Mlaștinii), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8). Fiecare are 3 zone cu 10 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber). Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(tinutul_cenusiu::new())),
+        },
+        Playable {
+            id: "cavaleri_mecanici",
+            title: "Cavaleri Mecanici",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Echipa Albastră contra Echipa Roșie), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9. Fiecare are 6 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 3) și îl dă în mână adversarului; lovitura fără scuturi câștigă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: nicio unitate nu are boală de invocare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cavaleri_mecanici::new())),
+        },
+        Playable {
+            id: "arena_aliatilor",
+            title: "Arena Aliaților",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Echipa Soarelui contra Echipa Lunii), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea. Fiecare are 7 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 4) și îl dă în mână adversarului; lovitura fără scuturi câștigă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(arena_aliatilor::new())),
+        },
+        Playable {
+            id: "creaturi_necunoscute",
+            title: "Creaturile Necunoscute",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Vânătorii de Urme contra Păzitorii Pădurii), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 7). Câștigi când viața adversarului ajunge la 0 (start 20). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber). Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(creaturi_necunoscute::new())),
+        },
+        Playable {
+            id: "sangele_noptii",
+            title: "Sângele Nopții",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Neamul Corbului contra Neamul Lupului), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(sangele_noptii::new())),
+        },
+        Playable {
+            id: "misiuni_dincolo_de_stele",
+            title: "Misiuni dincolo de Stele",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Federația Exploratorilor contra Hegemonia Nordului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi la 8 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(misiuni_dincolo_de_stele::new())),
+        },
+        Playable {
+            id: "lumea_dintre_lumini",
+            title: "Lumea dintre Lumini",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Ordinul Zorilor contra Ordinul Amurgului), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9. Fiecare are 3 zone cu 8 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: nicio unitate nu are boală de invocare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(lumea_dintre_lumini::new())),
+        },
+        Playable {
+            id: "drum_peste_munti",
+            title: "Drum peste Munți",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Tovarășii contra Umbrele Drumului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea. Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(drum_peste_munti::new())),
+        },
+        Playable {
+            id: "pumnul_din_umbra",
+            title: "Pumnul din Umbră",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Lotusul Negru contra Călugării Lunii), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber). Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(pumnul_din_umbra::new())),
+        },
+        Playable {
+            id: "tinuturi_si_vraji",
+            title: "Ținuturi și Vrăji",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Regatul Gloriei contra Regatul Cenușii), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 9). Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(tinuturi_si_vraji::new())),
+        },
+        Playable {
+            id: "papusarii_umbrei",
+            title: "Păpușarii din Umbră",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Cercul Îngust contra Cercul Larg), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi la 8 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(papusarii_umbrei::new())),
+        },
+        Playable {
+            id: "povesti_din_ceata",
+            title: "Povești din Ceață",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Cercul Cărturarilor contra Cultul Adâncurilor), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 7. Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(povesti_din_ceata::new())),
+        },
+        Playable {
+            id: "scaunul_cu_colti",
+            title: "Scaunul cu Colți",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Casa Lupului contra Casa Corbului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi la 12 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(scaunul_cu_colti::new())),
+        },
+        Playable {
+            id: "trei_cetati",
+            title: "Cele Trei Cetăți",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Oastea Nordului contra Hoardele Pădurii), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8). Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(trei_cetati::new())),
+        },
+        Playable {
+            id: "sase_lumi_in_flacari",
+            title: "Șase Lumi în Flăcări",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Legiunea Aurie contra Roiul Verde), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9. Fiecare are 3 zone cu 8 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: nicio unitate nu are boală de invocare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(sase_lumi_in_flacari::new())),
+        },
+        Playable {
+            id: "magii_mici",
+            title: "Magii Mici",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Elevii Pădurii contra Elevii Stâncilor), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 7), dar pierzi cartea. Câștigi când viața adversarului ajunge la 0 (start 18). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(magii_mici::new())),
+        },
+        Playable {
+            id: "luptatori_cu_aura",
+            title: "Luptători cu Aură",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Frații Muntelui contra Oștenii Vântului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9. Câștigi când viața adversarului ajunge la 0 (start 25). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(luptatori_cu_aura::new())),
+        },
+        Playable {
+            id: "ucenicii_vantului",
+            title: "Ucenicii Vântului",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Satul Frunzișului contra Satul Dunelor), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea. Câștigi când viața adversarului ajunge la 0 (start 16). Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(ucenicii_vantului::new())),
+        },
+        Playable {
+            id: "cosasii_de_suflete",
+            title: "Cosașii de Suflete",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Gărzile Sufletelor contra Umbrele Cenușii), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi când viața adversarului ajunge la 0 (start 22). Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cosasii_de_suflete::new())),
+        },
+        Playable {
+            id: "tovarasul_din_gong",
+            title: "Tovarășul din Gong",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Frații Gongului contra Frații Tobei), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea. Fiecare are 5 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 3) și îl dă în mână adversarului; lovitura fără scuturi câștigă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(tovarasul_din_gong::new())),
+        },
+        Playable {
+            id: "zero_contra_infinit",
+            title: "Zero contra Infinit",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Legiunea Zero contra Nucleul Infinit), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 10 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8). Câștigi când viața adversarului ajunge la 0 (start 18). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(zero_contra_infinit::new())),
+        },
+        Playable {
+            id: "duel_fulger",
+            title: "Duel Fulger",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Duelistul Alb contra Duelistul Negru), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 12 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 6. Câștigi când viața adversarului ajunge la 0 (start 20). Până la 4 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: nicio unitate nu are boală de invocare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(duel_fulger::new())),
+        },
+        Playable {
+            id: "domeniul_monstrilor",
+            title: "Domeniul Monștrilor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Hoardele de Foc contra Hoardele de Apă), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea. Fiecare are 5 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 4) și îl dă în mână adversarului; lovitura fără scuturi câștigă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber). Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(domeniul_monstrilor::new())),
+        },
+        Playable {
+            id: "taramuri_paralele",
+            title: "Tărâmuri Paralele",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Tribul Subteranilor contra Tribul Cerului), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi când viața adversarului ajunge la 0 (start 20). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(taramuri_paralele::new())),
+        },
+        Playable {
+            id: "cristale_de_aura",
+            title: "Cristale de Aură",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Cavalerii Albaștri contra Cavalerii Roșii), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 7), dar pierzi cartea. Fiecare are 5 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 4) și îl dă în mână adversarului; lovitura fără scuturi câștigă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cristale_de_aura::new())),
+        },
+        Playable {
+            id: "lupta_pe_etape",
+            title: "Lupta pe Etape",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Clanul Vulturului contra Clanul Taurului), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 9). Câștigi când viața adversarului ajunge la 0 (start 28). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber). Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(lupta_pe_etape::new())),
+        },
+        Playable {
+            id: "eroi_contra_raufacatori",
+            title: "Eroi contra Răufăcători",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Liga Eroilor contra Frăția Răufăcătorilor), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea. Câștigi când viața adversarului ajunge la 0 (start 28). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(eroi_contra_raufacatori::new())),
+        },
+        Playable {
+            id: "roata_anotimpurilor",
+            title: "Roata Anotimpurilor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Surorile Primăverii contra Frații Iernii), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi la 10 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(roata_anotimpurilor::new())),
+        },
+        Playable {
+            id: "roboti_de_lupta",
+            title: "Roboții de Luptă",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Lancea de Oțel contra Legiunea Gri), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8). Câștigi când viața adversarului ajunge la 0 (start 24). Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: nicio unitate nu are boală de invocare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(roboti_de_lupta::new())),
+        },
+        Playable {
+            id: "statia_dintre_stele",
+            title: "Stația dintre Stele",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Consiliul Stației contra Flota Exilaților), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi la 10 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(statia_dintre_stele::new())),
+        },
+        Playable {
+            id: "scoala_de_vraji",
+            title: "Școala de Vrăji",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Casa Șoimului contra Casa Bursucului), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 7). Câștigi când viața adversarului ajunge la 0 (start 20). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(scoala_de_vraji::new())),
+        },
+        Playable {
+            id: "varful_fumegand",
+            title: "Vârful Fumegând",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Compania Drumului contra Slujitorii Umbrei), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: unitățile se vindecă la începutul turei tale. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(varful_fumegand::new())),
+        },
+        Playable {
+            id: "cetatile_din_furtuna",
+            title: "Cetățile din Furtună",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Casa Orașului contra Clanurile Stâncii), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8). Fiecare are 3 zone cu 10 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber). Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cetatile_din_furtuna::new())),
+        },
+        Playable {
+            id: "dragoni_la_hotar",
+            title: "Dragoni la Hotar",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Păstorii Dragonilor contra Rătăcitorii Munților), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 7. Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(dragoni_la_hotar::new())),
+        },
+        Playable {
+            id: "ucenicii_cenusii",
+            title: "Ucenicii Cenușii",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Ucenicii Focului contra Ucenicii Apei), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea. Câștigi când viața adversarului ajunge la 0 (start 15). Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(ucenicii_cenusii::new())),
+        },
+        Playable {
+            id: "eroi_de_targ",
+            title: "Eroi de Târg",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Gilda Negustorilor contra Gilda Mercenarilor), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9. Câștigi când viața adversarului ajunge la 0 (start 30). Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(eroi_de_targ::new())),
+        },
+        Playable {
+            id: "spartura_dintre_lumi",
+            title: "Spărtura dintre Lumi",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Cuțitele Verii contra Cuțitele Iernii), mână ascunsă. Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9. Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Răsucire: nicio unitate nu are boală de invocare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(spartura_dintre_lumi::new())),
+        },
+        Playable {
+            id: "orasul_prafuit",
+            title: "Orășelul Prăfuit",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe construite de joc (Banda Pustiei contra Legea Orașului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8. Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare. Mutări: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(orasul_prafuit::new())),
+        },
+        // T5-reg-end
+        // T6-reg-begin
+        Playable {
+            id: "spargatori_retea",
+            title: "Spărgătorii de rețea",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Echipa Furișată contra Paznicii Nodului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură. Câștigi la 14 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, pescuit, îngheț, întoarcere în mână, întărire. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(spargatori_retea::new())),
+        },
+        Playable {
+            id: "duelul_puterilor",
+            title: "Duelul puterilor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Liga Strălucirii contra Frăția Prăpastiei), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, binecuvântare, întărire, nimicire, măturare. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(duelul_puterilor::new())),
+        },
+        Playable {
+            id: "altarul_sutelor",
+            title: "Altarul sutelor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cultul Lumânării contra Ordinul Cenușii), mână ascunsă. Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, vindecare, nimicire, măturare, pescuit. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(altarul_sutelor::new())),
+        },
+        Playable {
+            id: "straji_ceruri",
+            title: "Străjerii cerurilor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Oștirea Aurorei contra Legiunea Amurgului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, binecuvântare, vindecare, măturare, trezire. Răsucire: toate unitățile au elan (atacă imediat). Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(straji_ceruri::new())),
+        },
+        Playable {
+            id: "haita_furioasa",
+            title: "Haita furioasă",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Haita Lunii Roșii contra Stejarii Bătrâni), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează. Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, întărire, măturare, îngheț, pescuit. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(haita_furioasa::new())),
+        },
+        Playable {
+            id: "caravane_nisip",
+            title: "Caravanele de nisip",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Casa Fântânii contra Casa Șacalului), mână ascunsă. Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8, și se reface la fiecare tură. Câștigi la 15 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: îngheț, pescuit, întoarcere în mână, lovitură, vindecare. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(caravane_nisip::new())),
+        },
+        Playable {
+            id: "legiuni_frante",
+            title: "Legiunile frânte",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Corpul de Fier contra Războinicii Roșii), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: măturare, lovitură, binecuvântare, nimicire, întărire. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(legiuni_frante::new())),
+        },
+        Playable {
+            id: "marginea_nevazuta",
+            title: "Marginea nevăzută",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cercul Veghetorilor contra Societatea Uitării), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură. Fiecare are 3 zone cu 7 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, îngheț, întoarcere în mână, pescuit, nimicire. Răsucire: daunele nu se vindecă niciodată. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(marginea_nevazuta::new())),
+        },
+        Playable {
+            id: "imperii_de_stele",
+            title: "Imperii de stele",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Imperiul Zorilor contra Liga Neagră), mână ascunsă. Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură. Fiecare are 4 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 5); fără sigilii, următoarea lovitură directă câștigă. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: măturare, lovitură, binecuvântare, vindecare, trezire. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(imperii_de_stele::new())),
+        },
+        Playable {
+            id: "dosare_sub_sigiliu",
+            title: "Dosare sub sigiliu",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Biroul Anchetelor contra Agenția Tăcută), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 9); energia se reface la fiecare tură. Fiecare are 3 zone cu 6 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, pescuit, nimicire, vindecare, îngheț. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(dosare_sub_sigiliu::new())),
+        },
+        Playable {
+            id: "umbre_de_neon",
+            title: "Umbre de neon",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Gașca Străzii contra Corporația Aurie), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, îngheț, întoarcere în mână, întărire, măturare. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(umbre_de_neon::new())),
+        },
+        Playable {
+            id: "roiul_si_vanatorii",
+            title: "Roiul și vânătorii",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Roiul din Peșteri contra Vânătorii de Trofee), mână ascunsă. Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează. Fiecare are 3 zone cu 7 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: măturare, lovitură, binecuvântare, întărire, pescuit. Răsucire: toate unitățile au elan (atacă imediat). Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(roiul_si_vanatorii::new())),
+        },
+        Playable {
+            id: "corsari_si_amirali",
+            title: "Corsari și amirali",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Frăția Pânzelor Negre contra Flota Coroanei), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Câștigi la 15 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, întoarcere în mână, întărire, pescuit, vindecare. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(corsari_si_amirali::new())),
+        },
+        Playable {
+            id: "soapte_din_abis",
+            title: "Șoapte din abis",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Veghea Clopotului contra Ucenicii Mării), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, armură, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: nimicire, întoarcere în mână, lovitură, îngheț, pescuit. Răsucire: daunele nu se vindecă niciodată. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(soapte_din_abis::new())),
+        },
+        Playable {
+            id: "clanuri_de_oaza",
+            title: "Clanurile oazei",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Clanul Palmierului contra Clanul Scorpionului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Rezerva de energie primește +3 la fiecare tură proprie (maximum 10); ce nu cheltui se păstrează. Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: binecuvântare, lovitură, întărire, nimicire, vindecare. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(clanuri_de_oaza::new())),
+        },
+        Playable {
+            id: "cautatorii_de_cripte",
+            title: "Căutătorii de cripte",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Expediția Aurie contra Șacalii Cenușii), mână ascunsă. Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Fiecare are 3 zone cu 8 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, pescuit, nimicire, întoarcere în mână, întărire. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cautatorii_de_cripte::new())),
+        },
+        Playable {
+            id: "razboinica_de_bronz",
+            title: "Războinica de bronz",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Taberele Nordului contra Garda Cetății), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, întărire, binecuvântare, măturare, nimicire. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(razboinica_de_bronz::new())),
+        },
+        Playable {
+            id: "muncile_semizeului",
+            title: "Muncile semizeului",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Eroii Olimpului contra Monștrii Labirintului), mână ascunsă. Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8, și se reface la fiecare tură. Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: binecuvântare, lovitură, vindecare, nimicire, îngheț. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(muncile_semizeului::new())),
+        },
+        Playable {
+            id: "ucenicii_luminii",
+            title: "Ucenicii luminii",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Școala Zorilor contra Școala Cețurilor), mână ascunsă. Start: 7 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Resurse: 10 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 7); energia se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 18); lovitura directă scade viața cu atacul unității. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: întărire, lovitură, pescuit, vindecare, binecuvântare. Răsucire: toate unitățile au elan (atacă imediat). Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(ucenicii_luminii::new())),
+        },
+        Playable {
+            id: "gardiene_de_cristal",
+            title: "Gardienele de cristal",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cercul Lunii contra Cercul Umbrei), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează. Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: vindecare, lovitură, binecuvântare, trezire, întărire. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(gardiene_de_cristal::new())),
+        },
+        Playable {
+            id: "masini_ceas_zero",
+            title: "Mașinile orei zero",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Rezistența Subterană contra Rețeaua de Oțel), mână ascunsă. Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 10, și se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, nimicire, măturare, binecuvântare, îngheț. Răsucire: daunele nu se vindecă niciodată. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(masini_ceas_zero::new())),
+        },
+        Playable {
+            id: "creaturi_de_pixeli",
+            title: "Creaturi de pixeli",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Echipa Verde contra Echipa Violet), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură. Câștigi la 14 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: întărire, binecuvântare, lovitură, pescuit, trezire. Răsucire: toate unitățile au elan (atacă imediat). Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(creaturi_de_pixeli::new())),
+        },
+        Playable {
+            id: "scoala_darurilor",
+            title: "Școala darurilor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Elevii Curții contra Clanul Trecutului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Fiecare are 3 zone cu 7 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: trezire, lovitură, întărire, îngheț, întoarcere în mână. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(scoala_darurilor::new())),
+        },
+        Playable {
+            id: "vanatoarea_de_noapte",
+            title: "Vânătoarea de noapte",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Vânătorii din Liceu contra Frăția Colților), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează. Fiecare are 4 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 5); fără sigilii, următoarea lovitură directă câștigă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, nimicire, îngheț, pescuit, vindecare. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(vanatoarea_de_noapte::new())),
+        },
+        Playable {
+            id: "cavalerii_stelelor",
+            title: "Cavalerii stelelor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Ordinul Strălucitor contra Cetatea Neagră), mână ascunsă. Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8, și se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, binecuvântare, întărire, vindecare, măturare. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cavalerii_stelelor::new())),
+        },
+        Playable {
+            id: "flotele_in_duel",
+            title: "Flotele în duel",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Armada Albastră contra Flota Răzvrătită), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Fiecare are 3 zone cu 6 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: măturare, lovitură, nimicire, îngheț, pescuit. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(flotele_in_duel::new())),
+        },
+        Playable {
+            id: "cruciada_de_otel",
+            title: "Cruciada de oțel",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Oștirea Sfântă contra Hoarda Fărâmițată), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, primul, armură, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: nimicire, măturare, binecuvântare, lovitură, vindecare. Răsucire: daunele nu se vindecă niciodată. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cruciada_de_otel::new())),
+        },
+        Playable {
+            id: "orasel_caraghios",
+            title: "Orășelul caraghios",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Familia Din Colț contra Vecinii Zgomotoși), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează. Câștigi la 12 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: întoarcere în mână, pescuit, întărire, lovitură, îngheț. Răsucire: toate unitățile au elan (atacă imediat). Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(orasel_caraghios::new())),
+        },
+        Playable {
+            id: "recif_zburdalnic",
+            title: "Recif zburdalnic",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Clanul Coralilor contra Clanul Meduzei), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură. Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: îngheț, pescuit, întărire, lovitură, întoarcere în mână. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(recif_zburdalnic::new())),
+        },
+        Playable {
+            id: "turnirul_animalutelor",
+            title: "Turnirul animăluțelor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Echipa Fulgerilor contra Echipa Frunzelor), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Resurse: 10 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Câștigi la 14 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: pescuit, vindecare, lovitură, binecuvântare, trezire. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(turnirul_animalutelor::new())),
+        },
+        Playable {
+            id: "comando_de_elita",
+            title: "Comando de elită",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Echipa Albastră contra Rețeaua Roșie), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, măturare, nimicire, întărire, întoarcere în mână. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(comando_de_elita::new())),
+        },
+        Playable {
+            id: "fratii_de_carapace",
+            title: "Frații de carapace",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Frații din Canal contra Clanul Labei), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură. Câștigi la 15 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, binecuvântare, trezire, întărire, îngheț. Răsucire: daunele nu se vindecă niciodată. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(fratii_de_carapace::new())),
+        },
+        Playable {
+            id: "raid_in_tinuturi_vechi",
+            title: "Raid în ținuturile vechi",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Alianța Cetăților contra Hoarda Pustie), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 5); fără sigilii, următoarea lovitură directă câștigă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: nimicire, lovitură, binecuvântare, măturare, vindecare. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(raid_in_tinuturi_vechi::new())),
+        },
+        Playable {
+            id: "detectivii_spiritelor",
+            title: "Detectivii spiritelor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Biroul Dincolo contra Banda Pragului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează. Fiecare are 3 zone cu 7 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: îngheț, lovitură, pescuit, întoarcere în mână, trezire. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(detectivii_spiritelor::new())),
+        },
+        Playable {
+            id: "stapanii_elementelor",
+            title: "Stăpânii elementelor",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Pelerinii Aerului contra Garda Focului), mână ascunsă. Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 8, și se reface la fiecare tură. Fiecare are 3 zone cu 6 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, măturare, îngheț, binecuvântare, vindecare. Răsucire: toate unitățile au elan (atacă imediat). Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(stapanii_elementelor::new())),
+        },
+        Playable {
+            id: "cercurile_noptii",
+            title: "Cercurile nopții",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cercul Trandafirului contra Cercul Lanțului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură. Fiecare are 4 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: nimicire, lovitură, pescuit, întoarcere în mână, îngheț. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(cercurile_noptii::new())),
+        },
+        Playable {
+            id: "pasi_de_evolutie",
+            title: "Pașii evoluției",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cultul Mugurilor contra Cultul Penelor), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: întărire, binecuvântare, lovitură, nimicire, trezire. Răsucire: cine ucide o unitate în luptă trage o carte. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(pasi_de_evolutie::new())),
+        },
+        Playable {
+            id: "scena_virtuala",
+            title: "Scena virtuală",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Trupa Aurorei contra Trupa Mării), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. Rezerva de energie primește +3 la fiecare tură proprie (maximum 10); ce nu cheltui se păstrează. Câștigi la 13 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: vindecare, pescuit, întărire, trezire, lovitură. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(scena_virtuala::new())),
+        },
+        Playable {
+            id: "papusile_dorintei",
+            title: "Păpușile dorinței",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Atelierul Porțelanului contra Cutia Cu Chei), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură. Fiecare are 3 zone cu 8 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, binecuvântare, întoarcere în mână, vindecare, îngheț. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(papusile_dorintei::new())),
+        },
+        Playable {
+            id: "eroi_intre_lumi",
+            title: "Eroi între lumi",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Tărâmul Cheii contra Tărâmul Furtunii), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul. Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură. Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: măturare, lovitură, întărire, nimicire, pescuit. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(eroi_intre_lumi::new())),
+        },
+        Playable {
+            id: "mituri_si_zei",
+            title: "Mituri și zei",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cetele Soarelui contra Cetele Trăsnetului), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul. Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură. Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă. Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: lovitură, binecuvântare, îngheț, nimicire, vindecare. Răsucire: toate unitățile au elan (atacă imediat). Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(mituri_si_zei::new())),
+        },
+        Playable {
+            id: "lupta_fuziunii",
+            title: "Lupta fuziunii",
+            category: "TCG",
+            rules: "Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Dojo Dinspre Soare contra Dojo Dinspre Lună), mână ascunsă. Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul. Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează. Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității. Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, primul, armură, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători. Vrăji: întărire, lovitură, măturare, binecuvântare, nimicire. Răsucire: loviturile directe sunt cu 1 mai tari. Mutări: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).",
+            make: || Box::new(brand_util::B(lupta_fuziunii::new())),
+        },
+        // T6-reg-end
     ]
 }
 

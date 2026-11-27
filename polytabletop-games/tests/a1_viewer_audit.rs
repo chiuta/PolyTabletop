@@ -702,6 +702,58 @@ const NO_HIDDEN_C2: &[&str] = &[
     "complotul_din_umbra",
 ];
 
+// T3-begin
+/// T3 (miniaturi, variante originale): tabla și zarurile sunt publice, nicio informație privată.
+const NO_HIDDEN_T3: &[&str] = &[
+    "eroi_pe_acoperis",
+    "razboinici_de_fiord",
+    "osti_pe_o_fila",
+    "bande_in_ruine",
+    "masinarii_de_abur",
+    "strigoi_de_targ",
+    "giganti_de_otel",
+    "salve_si_baionete",
+    "arena_pietrelor",
+    "chemarea_hoardelor",
+    "escadre_in_nebuloasa",
+    "blindate_pe_sosea",
+    "patrule_in_lan",
+    "vrajitori_in_ger",
+    "bolizi_de_pustiu",
+    "legiuni_si_cohorte",
+    "falange_si_calarime",
+    "gardieni_si_corsari",
+    "carosate_de_fier",
+    "titani_de_ceata",
+    "nave_in_deriva",
+    "balada_vitejilor",
+    "echipaj_de_epava",
+    "armate_de_buzunar",
+    "roata_puterilor",
+    "escadrile_de_hartie",
+    "mersatori_si_pusasi",
+    "aterizare_peste_oras",
+    "case_si_ierni",
+    "osti_de_hotar",
+    "pusasi_pe_planeta_rosie",
+    "coridorul_ruinat",
+    "ringul_cu_bila",
+    "domni_si_arcasi",
+    "basm_cu_balauri",
+    "avioane_in_amurg",
+    "torpiloare_in_noapte",
+    "corabii_cu_tunuri",
+    "panze_si_ghiulele",
+    "pe_valuri_de_otel",
+    "flote_cu_aburi",
+    "flote_in_inel",
+    "fregate_in_vid",
+    "scuturi_si_raze",
+    "orbita_in_flacari",
+    "nave_de_expeditie",
+];
+// T3-end
+
 /// C6 (zaruri, variante originale): zarurile sunt publice, nicio informație privată.
 const NO_HIDDEN_C6: &[&str] = &[
     "farfurii_zburatoare",
@@ -745,6 +797,149 @@ const NO_HIDDEN_C6: &[&str] = &[
     "fitilul_aprins",
 ];
 
+/// T1 (RPG, variante originale): zarurile și fișele sunt publice, nicio informație privată.
+const NO_HIDDEN_T1: &[&str] = &[
+    "curierii_stelelor",
+    "fisa_fara_clase",
+    "runa_si_lama",
+    "saga_in_graba",
+    "aspectul_destinului",
+    "pustiul_cenusiu",
+    "hrube_cu_comori",
+    "pivnita_strabuna",
+    "palnia_mortilor",
+    "nava_fara_raspuns",
+    "faclia_stinsa",
+    "mutantii_zonei",
+    "ceremonia_sabiei",
+    "paradoxul_trezit",
+    "furia_haitei",
+    "ordinul_luminii",
+    "pragul_dificultatii",
+    "ruinele_eonilor",
+    "vara_masinilor",
+    "padurea_coruptiei",
+    "iluzia_cenusie",
+    "tinutul_uitat",
+    "cargoul_din_abis",
+    "carti_si_gloante",
+    "trepte_de_destin",
+    "clona_credincioasa",
+    "planul_scapat",
+    "jurament_si_obstacol",
+    "galerii_cu_dubluri",
+    "cavaler_si_magician",
+    "tabele_fara_sfarsit",
+    "puncte_nu_clase",
+    "lupta_cu_pelerine",
+    "tabara_regelui",
+    "spadasinii_marilor",
+    "aurul_solar",
+    "echipajul_exploratorilor",
+    "inchizitorul_umbrei",
+    "contrabandistii_cetii",
+    "legiunea_in_retragere",
+    "inimi_din_umbra",
+    "tineri_cu_pelerine",
+    "biciclete_si_taine",
+    "juramant_de_otel",
+    "lumina_care_scade",
+    "turnul_clatinat",
+];
+
+/// T2 (RPG și miniaturi, variante originale): zarurile sunt publice, nicio informație privată.
+const NO_HIDDEN_T2: &[&str] = &[
+    "epoci_sub_lupa",
+    "faclia_din_hornuri",
+    "cununa_veacurilor",
+    "genezele_prafului",
+    "luna_in_cioburi",
+    "tinutul_zimtat",
+    "cenusa_neuronilor",
+    "turneul_celor_trei",
+    "zmeul_de_cremene",
+    "umbre_pe_lande",
+    "somnorosii_din_vale",
+    "prinsi_intre_ceruri",
+    "sabatul_de_pe_deal",
+    "vizuina_cu_comori",
+    "cimitirul_de_papusi",
+    "umbre_cu_lame",
+    "calatorii_cu_ceai",
+    "pustiul_mutantilor",
+    "ucenicii_de_otel",
+    "turnul_razvratitilor",
+    "coborarea_fara_lumina",
+    "stele_fara_catastif",
+    "zarul_taios",
+    "sania_cu_clopote",
+    "urme_in_ceata_adanca",
+    "corbul_de_furtuna",
+    "pastorii_viei",
+    "seniorul_hatisurilor",
+    "otel_si_soapte",
+    "bocetul_vapaii",
+    "mana_stanga_cu_pumnal",
+    "movila_de_piatra",
+    "hornul_cu_masinarii",
+    "povesti_din_han",
+    "agentia_tacuta",
+    "epoca_cenusie",
+    "orizont_de_astrolabe",
+    "faptura_din_fag",
+    "regimente_pe_cimpie",
+    "tancuri_in_lan",
+    "veacul_regimentelor",
+    "trupe_sub_trei_sori",
+    "bande_in_hrube",
+    "zidul_de_scuturi",
+    "straja_pe_culme",
+    "fratii_dezbinati",
+];
+
+/// T4 (miniaturi, variante originale): informație complet deschisă; zarurile sunt publice.
+const NO_HIDDEN_T4: &[&str] = &[
+    "ulita_neagra",
+    "mingea_de_piele",
+    "regate_de_cenusa",
+    "fiare_si_vrajitori",
+    "cadranul_ostasului",
+    "trupe_de_plumb",
+    "hrube_si_comori",
+    "inaltimi_cu_eroi",
+    "lame_si_ghiare",
+    "strajeri_de_umbra",
+    "padure_cu_muschete",
+    "catuse_si_baionete",
+    "armata_de_cimpie",
+    "sulite_si_archebuze",
+    "patrula_linia_rosie",
+    "pistoale_in_praf",
+    "carti_prafuite",
+    "aventurieri_de_foileton",
+    "clanuri_de_orhidee",
+    "spada_fara_stapan",
+    "legamant_de_piatra",
+    "armuri_de_abur",
+    "zbor_de_lancii",
+    "douasprezece_elemente",
+    "oastea_cea_mare",
+    "mestesugul_razboiului",
+    "ordine_pe_caroiaj",
+    "cavaleri_si_pavaze",
+    "maresali_de_fier",
+    "salve_pe_front",
+    "foc_si_pulbere",
+    "pasi_de_otel",
+    "escadrila_cerului_rosu",
+    "lupta_in_nori",
+    "echipajul_ratacit",
+    "planeta_cu_spini",
+    "zeii_de_lut",
+    "asalt_pe_statia_veche",
+    "culoare_de_otel",
+];
+
 #[test]
 fn every_playable_id_is_classified() {
     let mut unclassified = Vec::new();
@@ -759,11 +954,15 @@ fn every_playable_id_is_classified() {
                 || NO_HIDDEN_B6.contains(&p.id)
                 || NO_HIDDEN_C4.contains(&p.id)
                 || NO_HIDDEN_B4.contains(&p.id)
+                || NO_HIDDEN_T2.contains(&p.id)
                 || NO_HIDDEN_C1.contains(&p.id)
                 || NO_HIDDEN_C3.contains(&p.id)
                 || NO_HIDDEN_C5.contains(&p.id)
                 || NO_HIDDEN_C2.contains(&p.id)
-                || NO_HIDDEN_C6.contains(&p.id),
+                || NO_HIDDEN_C6.contains(&p.id)
+                || NO_HIDDEN_T1.contains(&p.id)
+                || NO_HIDDEN_T3.contains(&p.id)
+                || NO_HIDDEN_T4.contains(&p.id),
         ]
         .iter()
         .filter(|b| **b)
@@ -794,11 +993,15 @@ fn lists_have_no_stale_or_duplicate_ids() {
         ("NO_HIDDEN_B6", NO_HIDDEN_B6),
         ("NO_HIDDEN_C4", NO_HIDDEN_C4),
         ("NO_HIDDEN_B4", NO_HIDDEN_B4),
+        ("NO_HIDDEN_T2", NO_HIDDEN_T2),
         ("NO_HIDDEN_C1", NO_HIDDEN_C1),
         ("NO_HIDDEN_C3", NO_HIDDEN_C3),
         ("NO_HIDDEN_C5", NO_HIDDEN_C5),
         ("NO_HIDDEN_C2", NO_HIDDEN_C2),
         ("NO_HIDDEN_C6", NO_HIDDEN_C6),
+        ("NO_HIDDEN_T1", NO_HIDDEN_T1),
+        ("NO_HIDDEN_T3", NO_HIDDEN_T3),
+        ("NO_HIDDEN_T4", NO_HIDDEN_T4),
     ] {
         let set: BTreeSet<&str> = l.iter().copied().collect();
         assert_eq!(set.len(), l.len(), "{name} has duplicates");

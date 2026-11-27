@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (928)
+## Implementat (1200)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -747,6 +747,278 @@
 | Ulti | Cărți | Ungaria | implementat |
 | 6 nimmt! (Take 5) | Cărți | Germania | implementat |
 | Baccarat (Punto banco) | Cărți | Franța / Italia | implementat |
+| Traveller | Rol (RPG) | Marea Britanie / SUA | implementat |
+| GURPS | Rol (RPG) | SUA | implementat |
+| RuneQuest | Rol (RPG) | SUA | implementat |
+| Savage Worlds | Rol (RPG) | SUA | implementat |
+| Fate Core | Rol (RPG) | SUA | implementat |
+| Apocalypse World | Rol (RPG) | SUA | implementat |
+| Dungeon World | Rol (RPG) | SUA | implementat |
+| Old School Essentials | Rol (RPG) | Marea Britanie | implementat |
+| Dungeon Crawl Classics | Rol (RPG) | SUA | implementat |
+| Mothership | Rol (RPG) | SUA | implementat |
+| Shadowdark RPG | Rol (RPG) | SUA | implementat |
+| Mutant: Year Zero | Rol (RPG) | Suedia | implementat |
+| Legend of the Five Rings RPG | Rol (RPG) | SUA | implementat |
+| Mage: The Ascension | Rol (RPG) | SUA | implementat |
+| Werewolf: The Apocalypse | Rol (RPG) | SUA | implementat |
+| Star Wars Roleplaying Game (West End Games) | Rol (RPG) | SUA | implementat |
+| Cypher System | Rol (RPG) | SUA | implementat |
+| Numenera | Rol (RPG) | SUA | implementat |
+| Tales from the Loop | Rol (RPG) | Suedia | implementat |
+| Symbaroum | Rol (RPG) | Suedia | implementat |
+| Kult | Rol (RPG) | Suedia | implementat |
+| Forbidden Lands | Rol (RPG) | Suedia | implementat |
+| Alien RPG | Rol (RPG) | Suedia / SUA | implementat |
+| Deadlands | Rol (RPG) | SUA | implementat |
+| Earthdawn | Rol (RPG) | SUA | implementat |
+| Paranoia | Rol (RPG) | SUA | implementat |
+| Fiasco | Rol (RPG) | SUA | implementat |
+| Burning Wheel | Rol (RPG) | Canada | implementat |
+| Tunnels & Trolls | Rol (RPG) | SUA | implementat |
+| Chivalry & Sorcery | Rol (RPG) | SUA | implementat |
+| Rolemaster | Rol (RPG) | SUA | implementat |
+| Hero System | Rol (RPG) | SUA | implementat |
+| Mutants & Masterminds | Rol (RPG) | SUA | implementat |
+| Pendragon | Rol (RPG) | SUA | implementat |
+| 7th Sea | Rol (RPG) | SUA | implementat |
+| Exalted | Rol (RPG) | SUA | implementat |
+| Star Trek Adventures | Rol (RPG) | Marea Britanie | implementat |
+| Dark Heresy | Rol (RPG) | Marea Britanie | implementat |
+| Scum and Villainy | Rol (RPG) | SUA | implementat |
+| Band of Blades | Rol (RPG) | SUA | implementat |
+| Monsterhearts | Rol (RPG) | SUA | implementat |
+| Masks: A New Generation | Rol (RPG) | SUA | implementat |
+| Kids on Bikes | Rol (RPG) | SUA | implementat |
+| Ironsworn | Rol (RPG) | SUA | implementat |
+| Ten Candles | Rol (RPG) | SUA | implementat |
+| Dread | Rol (RPG) | SUA | implementat |
+| Microscope | Rol (RPG) | SUA | implementat |
+| Torchbearer | Rol (RPG) | Canada | implementat |
+| 13th Age | Rol (RPG) | SUA | implementat |
+| Degenesis | Rol (RPG) | Germania | implementat |
+| Splittermond | Rol (RPG) | Germania | implementat |
+| Midgard | Rol (RPG) | Germania | implementat |
+| Neuroshima | Rol (RPG) | Polonia | implementat |
+| 3D&T | Rol (RPG) | Brazilia | implementat |
+| Old Dragon | Rol (RPG) | Brazilia | implementat |
+| Les Ombres d'Esteren | Rol (RPG) | Franța | implementat |
+| Rêve de Dragon | Rol (RPG) | Franța | implementat |
+| In Nomine Satanis / Magna Veritas | Rol (RPG) | Franța | implementat |
+| Aquelarre | Rol (RPG) | Spania | implementat |
+| Dračí doupě | Rol (RPG) | Cehia | implementat |
+| Nechronica | Rol (RPG) | Japonia | implementat |
+| Shinobigami | Rol (RPG) | Japonia | implementat |
+| Ryuutama | Rol (RPG) | Japonia | implementat |
+| Gamma World | Rol (RPG) | SUA | implementat |
+| Mythras | Rol (RPG) | Marea Britanie | implementat |
+| Spire: The City Must Fall | Rol (RPG) | Marea Britanie | implementat |
+| Heart: The City Beneath | Rol (RPG) | Marea Britanie | implementat |
+| Stars Without Number | Rol (RPG) | SUA | implementat |
+| The Black Hack | Rol (RPG) | Marea Britanie | implementat |
+| Troika! | Rol (RPG) | Marea Britanie | implementat |
+| Trail of Cthulhu | Rol (RPG) | Marea Britanie | implementat |
+| Lady Blackbird | Rol (RPG) | SUA | implementat |
+| Dogs in the Vineyard | Rol (RPG) | SUA | implementat |
+| Labyrinth Lord | Rol (RPG) | SUA | implementat |
+| Swords & Wizardry | Rol (RPG) | SUA | implementat |
+| Lamentations of the Flame Princess | Rol (RPG) | Finlanda | implementat |
+| Knave | Rol (RPG) | Marea Britanie | implementat |
+| Cairn | Rol (RPG) | Marea Britanie | implementat |
+| Into the Odd | Rol (RPG) | Noua Zeelandă | implementat |
+| Basic Fantasy RPG | Rol (RPG) | SUA | implementat |
+| Delta Green | Rol (RPG) | SUA | implementat |
+| Eon | Rol (RPG) | Suedia | implementat |
+| Coriolis: The Third Horizon | Rol (RPG) | Suedia | implementat |
+| Vaesen | Rol (RPG) | Suedia | implementat |
+| Kings of War | Miniaturi | Marea Britanie | implementat |
+| Flames of War | Miniaturi | Noua Zeelandă | implementat |
+| Warhammer: The Old World | Miniaturi | Marea Britanie | implementat |
+| Star Wars: Legion | Miniaturi | SUA | implementat |
+| Necromunda | Miniaturi | Marea Britanie | implementat |
+| Warhammer Fantasy Battle | Miniaturi | Marea Britanie | implementat |
+| Middle-earth Strategy Battle Game | Miniaturi | Marea Britanie | implementat |
+| Warhammer: The Horus Heresy | Miniaturi | Marea Britanie | implementat |
+| Marvel Crisis Protocol | Miniaturi | SUA | implementat |
+| Saga | Miniaturi | Marea Britanie | implementat |
+| One Page Rules (Grimdark Future / Age of Fantasy) | Miniaturi | Marea Britanie | implementat |
+| Mordheim | Miniaturi | Marea Britanie | implementat |
+| Warmachine | Miniaturi | SUA | implementat |
+| Malifaux | Miniaturi | SUA | implementat |
+| BattleTech | Miniaturi | SUA | implementat |
+| Black Powder | Miniaturi | Marea Britanie | implementat |
+| Warhammer Underworlds | Miniaturi | Marea Britanie | implementat |
+| Warcry | Miniaturi | Marea Britanie | implementat |
+| Star Wars: Armada | Miniaturi | SUA | implementat |
+| Team Yankee | Miniaturi | Noua Zeelandă | implementat |
+| Chain of Command | Miniaturi | Marea Britanie | implementat |
+| Frostgrave | Miniaturi | Marea Britanie | implementat |
+| Gaslands | Miniaturi | Marea Britanie | implementat |
+| Hail Caesar | Miniaturi | Marea Britanie | implementat |
+| Field of Glory | Miniaturi | Marea Britanie | implementat |
+| Star Wars: Shatterpoint | Miniaturi | SUA | implementat |
+| Legions Imperialis | Miniaturi | Marea Britanie | implementat |
+| Adeptus Titanicus | Miniaturi | Marea Britanie | implementat |
+| Battlefleet Gothic | Miniaturi | Marea Britanie | implementat |
+| Song of Blades and Heroes | Miniaturi | Marea Britanie | implementat |
+| Stargrave | Miniaturi | Marea Britanie | implementat |
+| Epic Armageddon | Miniaturi | Marea Britanie | implementat |
+| HeroClix | Miniaturi | SUA | implementat |
+| Wings of Glory | Miniaturi | Italia | implementat |
+| Dust Tactics | Miniaturi | SUA | implementat |
+| Dropzone Commander | Miniaturi | Marea Britanie | implementat |
+| A Song of Ice and Fire: Tabletop Miniatures Game | Miniaturi | SUA | implementat |
+| Conquest: The Last Argument of Kings | Miniaturi | SUA | implementat |
+| Warpath | Miniaturi | Marea Britanie | implementat |
+| Deadzone | Miniaturi | Marea Britanie | implementat |
+| Dreadball | Miniaturi | Marea Britanie | implementat |
+| Lion Rampant | Miniaturi | Marea Britanie | implementat |
+| Dragon Rampant | Miniaturi | Marea Britanie | implementat |
+| Blood Red Skies | Miniaturi | Marea Britanie | implementat |
+| Cruel Seas | Miniaturi | Marea Britanie | implementat |
+| Black Seas | Miniaturi | Marea Britanie | implementat |
+| Sails of Glory | Miniaturi | Spania | implementat |
+| Victory at Sea | Miniaturi | Marea Britanie | implementat |
+| Dystopian Wars | Miniaturi | Marea Britanie | implementat |
+| Firestorm Armada | Miniaturi | Marea Britanie | implementat |
+| Full Thrust | Miniaturi | Marea Britanie | implementat |
+| Star Fleet Battles | Miniaturi | SUA | implementat |
+| Dropfleet Commander | Miniaturi | Marea Britanie | implementat |
+| Star Trek: Attack Wing | Miniaturi | SUA | implementat |
+| Batman Miniature Game | Miniaturi | Marea Britanie | implementat |
+| Guild Ball | Miniaturi | Marea Britanie | implementat |
+| Wrath of Kings | Miniaturi | SUA | implementat |
+| Hordes | Miniaturi | SUA | implementat |
+| Mage Knight | Miniaturi | SUA | implementat |
+| Axis & Allies Miniatures | Miniaturi | SUA | implementat |
+| Dungeons & Dragons Miniatures | Miniaturi | SUA | implementat |
+| HeroScape | Miniaturi | SUA | implementat |
+| Confrontation | Miniaturi | Franța | implementat |
+| Rangers of Shadow Deep | Miniaturi | Marea Britanie | implementat |
+| Muskets & Tomahawks | Miniaturi | Marea Britanie | implementat |
+| Sharp Practice | Miniaturi | Marea Britanie | implementat |
+| Lasalle | Miniaturi | SUA | implementat |
+| Pike & Shotte | Miniaturi | Marea Britanie | implementat |
+| Force on Force | Miniaturi | SUA | implementat |
+| A Fistful of Lead | Miniaturi | Marea Britanie | implementat |
+| Dead Man's Hand | Miniaturi | Marea Britanie | implementat |
+| Pulp Alley | Miniaturi | SUA | implementat |
+| Bushido | Miniaturi | Marea Britanie | implementat |
+| Ronin | Miniaturi | Marea Britanie | implementat |
+| Oathmark | Miniaturi | Marea Britanie | implementat |
+| Konflikt '47 | Miniaturi | Marea Britanie | implementat |
+| Impetus | Miniaturi | Italia | implementat |
+| De Bellis Antiquitatis (DBA) | Miniaturi | Marea Britanie | implementat |
+| De Bellis Multitudinis (DBM) | Miniaturi | Marea Britanie | implementat |
+| L'Art de la Guerre | Miniaturi | Franța | implementat |
+| To the Strongest! | Miniaturi | Marea Britanie | implementat |
+| Swordpoint | Miniaturi | Marea Britanie | implementat |
+| Warmaster | Miniaturi | Marea Britanie | implementat |
+| Volley & Bayonet | Miniaturi | SUA | implementat |
+| Fire and Fury | Miniaturi | SUA | implementat |
+| Heavy Gear | Miniaturi | Canada | implementat |
+| Aeronautica Imperialis | Miniaturi | Marea Britanie | implementat |
+| Check Your 6! | Miniaturi | SUA | implementat |
+| Five Parsecs From Home | Miniaturi | Marea Britanie | implementat |
+| Project Pandora | Miniaturi | Marea Britanie | implementat |
+| Mythic Battles: Pantheon | Miniaturi | Franța | implementat |
+| Star Wars: Imperial Assault | Miniaturi | SUA | implementat |
+| Space Hulk | Miniaturi | Marea Britanie | implementat |
+| One Piece Card Game | TCG | Japonia | implementat |
+| Digimon Card Game | TCG | Japonia | implementat |
+| Dragon Ball Super Card Game | TCG | Japonia | implementat |
+| Weiß Schwarz | TCG | Japonia | implementat |
+| Cardfight!! Vanguard | TCG | Japonia | implementat |
+| Star Wars: Unlimited | TCG | SUA | implementat |
+| Duel Masters | TCG | SUA / Japonia | implementat |
+| Final Fantasy Trading Card Game | TCG | Japonia | implementat |
+| Battle Spirits | TCG | Japonia | implementat |
+| Android: Netrunner | TCG | SUA | implementat |
+| KeyForge | TCG | SUA | implementat |
+| Legend of the Five Rings (CCG) | TCG | SUA | implementat |
+| Star Wars: Destiny | TCG | SUA | implementat |
+| Force of Will | TCG | Japonia | implementat |
+| Grand Archive | TCG | SUA | implementat |
+| Sorcery: Contested Realm | TCG | SUA | implementat |
+| Gundam Card Game | TCG | Japonia | implementat |
+| Union Arena | TCG | Japonia | implementat |
+| MetaZoo | TCG | SUA | implementat |
+| Vampire: The Eternal Struggle | TCG | SUA | implementat |
+| Star Trek Customizable Card Game | TCG | SUA | implementat |
+| Star Wars Customizable Card Game | TCG | SUA | implementat |
+| Middle-earth Collectible Card Game | TCG | SUA | implementat |
+| Shadowfist | TCG | Hong Kong / SUA | implementat |
+| Spellfire | TCG | SUA | implementat |
+| Illuminati: New World Order | TCG | SUA | implementat |
+| Call of Cthulhu: The Card Game | TCG | SUA | implementat |
+| A Game of Thrones: The Card Game | TCG | SUA | implementat |
+| Warhammer: Invasion | TCG | SUA | implementat |
+| Warhammer 40,000: Conquest | TCG | SUA | implementat |
+| Magi-Nation Duel | TCG | SUA | implementat |
+| Dragon Ball Z Collectible Card Game | TCG | SUA | implementat |
+| Naruto Collectible Card Game | TCG | SUA | implementat |
+| Bleach Trading Card Game | TCG | SUA | implementat |
+| Future Card Buddyfight | TCG | Japonia | implementat |
+| Z/X Zillions of Enemy X | TCG | Japonia | implementat |
+| Yu-Gi-Oh! Rush Duel | TCG | Japonia | implementat |
+| Kaijudo: Clash of the Duel Masters | TCG | SUA | implementat |
+| Chaotic | TCG | SUA | implementat |
+| Redakai | TCG | Canada / SUA | implementat |
+| Universal Fighting System | TCG | SUA | implementat |
+| Vs. System | TCG | SUA | implementat |
+| The Wheel of Time Collectible Card Game | TCG | SUA | implementat |
+| BattleTech Collectible Card Game | TCG | SUA | implementat |
+| Babylon 5 Collectible Card Game | TCG | SUA | implementat |
+| Harry Potter Trading Card Game | TCG | SUA | implementat |
+| The Lord of the Rings Trading Card Game | TCG | SUA | implementat |
+| Warlord: Saga of the Storm | TCG | SUA | implementat |
+| Blue Moon | TCG | Germania | implementat |
+| Ashes: Rise of the Phoenixborn | TCG | SUA | implementat |
+| Hero Realms | TCG | SUA | implementat |
+| Riftbound: League of Legends Trading Card Game | TCG | SUA | implementat |
+| Doomtown | TCG | SUA | implementat |
+| Netrunner (1996) | TCG | SUA | implementat |
+| OverPower | TCG | SUA | implementat |
+| Hecatomb | TCG | SUA | implementat |
+| Guardians | TCG | SUA | implementat |
+| Rage | TCG | SUA | implementat |
+| Dune (CCG) | TCG | SUA | implementat |
+| Doomtrooper | TCG | SUA | implementat |
+| On the Edge | TCG | SUA | implementat |
+| Galactic Empires | TCG | SUA | implementat |
+| The X-Files Collectible Card Game | TCG | SUA | implementat |
+| Shadowrun: The Trading Card Game | TCG | SUA | implementat |
+| Aliens vs. Predator Collectible Card Game | TCG | SUA | implementat |
+| 7th Sea CCG | TCG | SUA | implementat |
+| Mythos CCG | TCG | SUA | implementat |
+| Legend of the Burning Sands | TCG | SUA | implementat |
+| Tomb Raider CCG | TCG | SUA | implementat |
+| Xena: Warrior Princess CCG | TCG | SUA | implementat |
+| Hercules: The Legendary Journeys CCG | TCG | SUA | implementat |
+| Young Jedi Collectible Card Game | TCG | SUA | implementat |
+| Sailor Moon Collectible Card Game | TCG | SUA | implementat |
+| The Terminator CCG | TCG | SUA | implementat |
+| Digi-Battle Card Game | TCG | Japonia | implementat |
+| X-Men Trading Card Game | TCG | SUA | implementat |
+| Buffy the Vampire Slayer CCG | TCG | SUA | implementat |
+| Jedi Knights Trading Card Game | TCG | SUA | implementat |
+| Star Wars Trading Card Game | TCG | SUA | implementat |
+| Warhammer 40,000 Collectible Card Game | TCG | SUA | implementat |
+| The Simpsons Trading Card Game | TCG | SUA | implementat |
+| SpongeBob SquarePants Trading Card Game | TCG | SUA | implementat |
+| Neopets Trading Card Game | TCG | SUA | implementat |
+| G.I. Joe Trading Card Game | TCG | SUA | implementat |
+| Teenage Mutant Ninja Turtles Trading Card Game | TCG | SUA | implementat |
+| WoW Trading Card Game | TCG | SUA | implementat |
+| YuYu Hakusho Trading Card Game | TCG | SUA | implementat |
+| Avatar: The Last Airbender Trading Card Game | TCG | SUA | implementat |
+| Vampire: The Masquerade – Rivals | TCG | SUA | implementat |
+| Shadowverse: Evolve | TCG | Japonia | implementat |
+| hololive OFFICIAL CARD GAME | TCG | Japonia | implementat |
+| WIXOSS | TCG | Japonia | implementat |
+| Altered TCG | TCG | Franța | implementat |
+| Mitos y Leyendas | TCG | Chile | implementat |
+| Dragon Ball Super Card Game Fusion World | TCG | Japonia | implementat |
 | Piatră, hârtie, foarfece | Copii | China | implementat |
 | Ascunselea (Hide-and-seek) | Copii | Global | implementat |
 | Operation | Copii | SUA | implementat |
@@ -945,280 +1217,8 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Toolkit (272)
+## Toolkit (0)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Traveller | Rol (RPG) | Marea Britanie / SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| GURPS | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| RuneQuest | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Savage Worlds | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Fate Core | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Apocalypse World | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dungeon World | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Old School Essentials | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dungeon Crawl Classics | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mothership | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Shadowdark RPG | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mutant: Year Zero | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Legend of the Five Rings RPG | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mage: The Ascension | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Werewolf: The Apocalypse | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Wars Roleplaying Game (West End Games) | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Cypher System | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Numenera | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Tales from the Loop | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Symbaroum | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Kult | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Forbidden Lands | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Alien RPG | Rol (RPG) | Suedia / SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Deadlands | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Earthdawn | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Paranoia | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Fiasco | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Burning Wheel | Rol (RPG) | Canada | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Tunnels & Trolls | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Chivalry & Sorcery | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Rolemaster | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Hero System | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mutants & Masterminds | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Pendragon | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| 7th Sea | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Exalted | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Trek Adventures | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dark Heresy | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Scum and Villainy | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Band of Blades | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Monsterhearts | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Masks: A New Generation | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Kids on Bikes | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Ironsworn | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Ten Candles | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dread | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Microscope | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Torchbearer | Rol (RPG) | Canada | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| 13th Age | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Degenesis | Rol (RPG) | Germania | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Splittermond | Rol (RPG) | Germania | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Midgard | Rol (RPG) | Germania | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Neuroshima | Rol (RPG) | Polonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| 3D&T | Rol (RPG) | Brazilia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Old Dragon | Rol (RPG) | Brazilia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Les Ombres d'Esteren | Rol (RPG) | Franța | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Rêve de Dragon | Rol (RPG) | Franța | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| In Nomine Satanis / Magna Veritas | Rol (RPG) | Franța | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Aquelarre | Rol (RPG) | Spania | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dračí doupě | Rol (RPG) | Cehia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Nechronica | Rol (RPG) | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Shinobigami | Rol (RPG) | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Ryuutama | Rol (RPG) | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Gamma World | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mythras | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Spire: The City Must Fall | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Heart: The City Beneath | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Stars Without Number | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| The Black Hack | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Troika! | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Trail of Cthulhu | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Lady Blackbird | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dogs in the Vineyard | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Labyrinth Lord | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Swords & Wizardry | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Lamentations of the Flame Princess | Rol (RPG) | Finlanda | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Knave | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Cairn | Rol (RPG) | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Into the Odd | Rol (RPG) | Noua Zeelandă | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Basic Fantasy RPG | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Delta Green | Rol (RPG) | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Eon | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Coriolis: The Third Horizon | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Vaesen | Rol (RPG) | Suedia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Kings of War | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Flames of War | Miniaturi | Noua Zeelandă | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warhammer: The Old World | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Wars: Legion | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Necromunda | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warhammer Fantasy Battle | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Middle-earth Strategy Battle Game | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warhammer: The Horus Heresy | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Marvel Crisis Protocol | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Saga | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| One Page Rules (Grimdark Future / Age of Fantasy) | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mordheim | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warmachine | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Malifaux | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| BattleTech | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Black Powder | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warhammer Underworlds | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warcry | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Wars: Armada | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Team Yankee | Miniaturi | Noua Zeelandă | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Chain of Command | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Frostgrave | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Gaslands | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Hail Caesar | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Field of Glory | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Wars: Shatterpoint | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Legions Imperialis | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Adeptus Titanicus | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Battlefleet Gothic | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Song of Blades and Heroes | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Stargrave | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Epic Armageddon | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| HeroClix | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Wings of Glory | Miniaturi | Italia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dust Tactics | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dropzone Commander | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| A Song of Ice and Fire: Tabletop Miniatures Game | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Conquest: The Last Argument of Kings | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warpath | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Deadzone | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dreadball | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Lion Rampant | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dragon Rampant | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Blood Red Skies | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Cruel Seas | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Black Seas | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Sails of Glory | Miniaturi | Spania | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Victory at Sea | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dystopian Wars | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Firestorm Armada | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Full Thrust | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Fleet Battles | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dropfleet Commander | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Trek: Attack Wing | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Batman Miniature Game | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Guild Ball | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Wrath of Kings | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Hordes | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mage Knight | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Axis & Allies Miniatures | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dungeons & Dragons Miniatures | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| HeroScape | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Confrontation | Miniaturi | Franța | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Rangers of Shadow Deep | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Muskets & Tomahawks | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Sharp Practice | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Lasalle | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Pike & Shotte | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Force on Force | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| A Fistful of Lead | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dead Man's Hand | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Pulp Alley | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Bushido | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Ronin | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Oathmark | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Konflikt '47 | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Impetus | Miniaturi | Italia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| De Bellis Antiquitatis (DBA) | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| De Bellis Multitudinis (DBM) | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| L'Art de la Guerre | Miniaturi | Franța | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| To the Strongest! | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Swordpoint | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warmaster | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Volley & Bayonet | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Fire and Fury | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Heavy Gear | Miniaturi | Canada | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Aeronautica Imperialis | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Check Your 6! | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Five Parsecs From Home | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Project Pandora | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mythic Battles: Pantheon | Miniaturi | Franța | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Wars: Imperial Assault | Miniaturi | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Space Hulk | Miniaturi | Marea Britanie | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| One Piece Card Game | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Digimon Card Game | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dragon Ball Super Card Game | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Weiß Schwarz | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Cardfight!! Vanguard | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Wars: Unlimited | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Duel Masters | TCG | SUA / Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Final Fantasy Trading Card Game | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Battle Spirits | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Android: Netrunner | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| KeyForge | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Legend of the Five Rings (CCG) | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Wars: Destiny | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Force of Will | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Grand Archive | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Sorcery: Contested Realm | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Gundam Card Game | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Union Arena | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| MetaZoo | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Vampire: The Eternal Struggle | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Trek Customizable Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Wars Customizable Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Middle-earth Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Shadowfist | TCG | Hong Kong / SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Spellfire | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Illuminati: New World Order | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Call of Cthulhu: The Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| A Game of Thrones: The Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warhammer: Invasion | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warhammer 40,000: Conquest | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Magi-Nation Duel | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dragon Ball Z Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Naruto Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Bleach Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Future Card Buddyfight | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Z/X Zillions of Enemy X | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Yu-Gi-Oh! Rush Duel | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Kaijudo: Clash of the Duel Masters | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Chaotic | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Redakai | TCG | Canada / SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Universal Fighting System | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Vs. System | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| The Wheel of Time Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| BattleTech Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Babylon 5 Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Harry Potter Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| The Lord of the Rings Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warlord: Saga of the Storm | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Blue Moon | TCG | Germania | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Ashes: Rise of the Phoenixborn | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Hero Realms | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Riftbound: League of Legends Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Doomtown | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Netrunner (1996) | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| OverPower | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Hecatomb | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Guardians | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Rage | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dune (CCG) | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Doomtrooper | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| On the Edge | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Galactic Empires | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| The X-Files Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Shadowrun: The Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Aliens vs. Predator Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| 7th Sea CCG | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mythos CCG | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Legend of the Burning Sands | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Tomb Raider CCG | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Xena: Warrior Princess CCG | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Hercules: The Legendary Journeys CCG | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Young Jedi Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Sailor Moon Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| The Terminator CCG | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Digi-Battle Card Game | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| X-Men Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Buffy the Vampire Slayer CCG | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Jedi Knights Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Star Wars Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Warhammer 40,000 Collectible Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| The Simpsons Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| SpongeBob SquarePants Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Neopets Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| G.I. Joe Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Teenage Mutant Ninja Turtles Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| WoW Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| YuYu Hakusho Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Avatar: The Last Airbender Trading Card Game | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Vampire: The Masquerade – Rivals | TCG | SUA | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Shadowverse: Evolve | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| hololive OFFICIAL CARD GAME | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| WIXOSS | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Altered TCG | TCG | Franța | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Mitos y Leyendas | TCG | Chile | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
-| Dragon Ball Super Card Game Fusion World | TCG | Japonia | toolkit generic (RPG: vezi polytabletop-rpg; TCG/miniaturi: planificat) |
 

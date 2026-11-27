@@ -180,7 +180,10 @@ impl Game for Boggle {
         let mut v = vec![Move::Pass];
         if self.claims(self.side.idx()) < MAX_CLAIMS {
             for w in &self.found {
-                if !self.taken.iter().any(|t| &t.0 == w) && !v.contains(&Move::Word(w.clone())) {
+                if text(w) != "pas"
+                    && !self.taken.iter().any(|t| &t.0 == w)
+                    && !v.contains(&Move::Word(w.clone()))
+                {
                     v.push(Move::Word(w.clone()));
                 }
             }

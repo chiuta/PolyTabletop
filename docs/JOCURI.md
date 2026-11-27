@@ -1,6 +1,6 @@
 # Jocurile jucabile
 
-Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (924 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
+Generat de `tools/gen_docs.py` din `polytabletop list` și `polytabletop play ID` (1196 jocuri). Nu edita manual; regenerează cu `python3 -I tools/gen_docs.py`.
 
 Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferență între majuscule/minuscule, spațiile se ignoră); `?` listează mutările legale, `hint` cere sugestia AI-ului, `q` iese.
 
@@ -855,6 +855,278 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - [Scufundarea adâncă](#scufundarea_adanca) (`scufundarea_adanca`)
 - [Cursa cuburilor](#cursa_cuburilor) (`cursa_cuburilor`)
 - [Fitilul aprins](#fitilul_aprins) (`fitilul_aprins`)
+- [Curierii stelelor](#curierii_stelelor) (`curierii_stelelor`)
+- [Fișa fără clase](#fisa_fara_clase) (`fisa_fara_clase`)
+- [Runa și lama](#runa_si_lama) (`runa_si_lama`)
+- [Saga în grabă](#saga_in_graba) (`saga_in_graba`)
+- [Aspectul destinului](#aspectul_destinului) (`aspectul_destinului`)
+- [Pustiul cenușiu](#pustiul_cenusiu) (`pustiul_cenusiu`)
+- [Hrube cu comori](#hrube_cu_comori) (`hrube_cu_comori`)
+- [Pivnița străbună](#pivnita_strabuna) (`pivnita_strabuna`)
+- [Pâlnia morților](#palnia_mortilor) (`palnia_mortilor`)
+- [Nava fără răspuns](#nava_fara_raspuns) (`nava_fara_raspuns`)
+- [Făclia stinsă](#faclia_stinsa) (`faclia_stinsa`)
+- [Mutanții Zonei](#mutantii_zonei) (`mutantii_zonei`)
+- [Ceremonia sabiei](#ceremonia_sabiei) (`ceremonia_sabiei`)
+- [Paradoxul trezit](#paradoxul_trezit) (`paradoxul_trezit`)
+- [Furia haitei](#furia_haitei) (`furia_haitei`)
+- [Ordinul Luminii](#ordinul_luminii) (`ordinul_luminii`)
+- [Pragul dificultății](#pragul_dificultatii) (`pragul_dificultatii`)
+- [Ruinele eonilor](#ruinele_eonilor) (`ruinele_eonilor`)
+- [Vara mașinilor](#vara_masinilor) (`vara_masinilor`)
+- [Pădurea corupției](#padurea_coruptiei) (`padurea_coruptiei`)
+- [Iluzia cenușie](#iluzia_cenusie) (`iluzia_cenusie`)
+- [Ținutul uitat](#tinutul_uitat) (`tinutul_uitat`)
+- [Cargoul din abis](#cargoul_din_abis) (`cargoul_din_abis`)
+- [Cărți și gloanțe](#carti_si_gloante) (`carti_si_gloante`)
+- [Trepte de destin](#trepte_de_destin) (`trepte_de_destin`)
+- [Clona credincioasă](#clona_credincioasa) (`clona_credincioasa`)
+- [Planul scăpat de sub control](#planul_scapat) (`planul_scapat`)
+- [Jurământ și obstacol](#jurament_si_obstacol) (`jurament_si_obstacol`)
+- [Galerii cu dubluri](#galerii_cu_dubluri) (`galerii_cu_dubluri`)
+- [Cavaler și magician](#cavaler_si_magician) (`cavaler_si_magician`)
+- [Tabele fără sfârșit](#tabele_fara_sfarsit) (`tabele_fara_sfarsit`)
+- [Puncte, nu clase](#puncte_nu_clase) (`puncte_nu_clase`)
+- [Lupta cu pelerine](#lupta_cu_pelerine) (`lupta_cu_pelerine`)
+- [Tabăra regelui](#tabara_regelui) (`tabara_regelui`)
+- [Spadasinii mărilor](#spadasinii_marilor) (`spadasinii_marilor`)
+- [Aurul solar](#aurul_solar) (`aurul_solar`)
+- [Echipajul exploratorilor](#echipajul_exploratorilor) (`echipajul_exploratorilor`)
+- [Inchizitorul umbrei](#inchizitorul_umbrei) (`inchizitorul_umbrei`)
+- [Contrabandiștii cetii](#contrabandistii_cetii) (`contrabandistii_cetii`)
+- [Legiunea în retragere](#legiunea_in_retragere) (`legiunea_in_retragere`)
+- [Inimi din umbră](#inimi_din_umbra) (`inimi_din_umbra`)
+- [Tineri cu pelerine](#tineri_cu_pelerine) (`tineri_cu_pelerine`)
+- [Biciclete și taine](#biciclete_si_taine) (`biciclete_si_taine`)
+- [Jurământ de oțel](#juramant_de_otel) (`juramant_de_otel`)
+- [Lumina care scade](#lumina_care_scade) (`lumina_care_scade`)
+- [Turnul clătinat](#turnul_clatinat) (`turnul_clatinat`)
+- [Epoci sub lupă (drum: ruine)](#epoci_sub_lupa) (`epoci_sub_lupa`)
+- [Făclia din hornuri (drum: peșteră)](#faclia_din_hornuri) (`faclia_din_hornuri`)
+- [Cununa veacurilor (duel: oraș)](#cununa_veacurilor) (`cununa_veacurilor`)
+- [Genezele prafului (drum: deșert)](#genezele_prafului) (`genezele_prafului`)
+- [Luna în cioburi (duel: noapte)](#luna_in_cioburi) (`luna_in_cioburi`)
+- [Ținutul zimțat (duel: munte)](#tinutul_zimtat) (`tinutul_zimtat`)
+- [Cenușa neuronilor (drum: cenușă)](#cenusa_neuronilor) (`cenusa_neuronilor`)
+- [Turneul celor trei (duel: oraș)](#turneul_celor_trei) (`turneul_celor_trei`)
+- [Zmeul de cremene (duel: peșteră)](#zmeul_de_cremene) (`zmeul_de_cremene`)
+- [Umbre pe lande (drum: ceață)](#umbre_pe_lande) (`umbre_pe_lande`)
+- [Somnoroșii din vale (duel: noapte)](#somnorosii_din_vale) (`somnorosii_din_vale`)
+- [Prinși între ceruri (drum: templu)](#prinsi_intre_ceruri) (`prinsi_intre_ceruri`)
+- [Sabatul de pe deal (duel: pădure)](#sabatul_de_pe_deal) (`sabatul_de_pe_deal`)
+- [Vizuina cu comori (drum: peșteră)](#vizuina_cu_comori) (`vizuina_cu_comori`)
+- [Cimitirul de păpuși (duel: morminte)](#cimitirul_de_papusi) (`cimitirul_de_papusi`)
+- [Umbre cu lame (duel: noapte)](#umbre_cu_lame) (`umbre_cu_lame`)
+- [Călătorii cu ceai (drum: câmpie)](#calatorii_cu_ceai) (`calatorii_cu_ceai`)
+- [Pustiul mutanților (drum: deșert)](#pustiul_mutantilor) (`pustiul_mutantilor`)
+- [Ucenicii de oțel (duel: fier)](#ucenicii_de_otel) (`ucenicii_de_otel`)
+- [Turnul răzvrătiților (drum: turn)](#turnul_razvratitilor) (`turnul_razvratitilor`)
+- [Coborârea fără lumină (drum: mină)](#coborarea_fara_lumina) (`coborarea_fara_lumina`)
+- [Stele fără catastif (drum: stele)](#stele_fara_catastif) (`stele_fara_catastif`)
+- [Zarul tăios (duel: fier)](#zarul_taios) (`zarul_taios`)
+- [Sania cu clopote (drum: gheață)](#sania_cu_clopote) (`sania_cu_clopote`)
+- [Urme în ceața adâncă (drum: ceață)](#urme_in_ceata_adanca) (`urme_in_ceata_adanca`)
+- [Corbul de furtună (duel: vânt)](#corbul_de_furtuna) (`corbul_de_furtuna`)
+- [Păstorii viei (duel: sat)](#pastorii_viei) (`pastorii_viei`)
+- [Seniorul hățișurilor (drum: pădure)](#seniorul_hatisurilor) (`seniorul_hatisurilor`)
+- [Oțel și șoapte (duel: turn)](#otel_si_soapte) (`otel_si_soapte`)
+- [Bocetul văpăii (duel: cenușă)](#bocetul_vapaii) (`bocetul_vapaii`)
+- [Mâna stângă cu pumnal (duel: oraș)](#mana_stanga_cu_pumnal) (`mana_stanga_cu_pumnal`)
+- [Movila de piatră (drum: munte)](#movila_de_piatra) (`movila_de_piatra`)
+- [Hornul cu mașinării (drum: oraș)](#hornul_cu_masinarii) (`hornul_cu_masinarii`)
+- [Povești din han (duel: sat)](#povesti_din_han) (`povesti_din_han`)
+- [Agenția tăcută (drum: noapte)](#agentia_tacuta) (`agentia_tacuta`)
+- [Epoca cenușie (duel: ruine)](#epoca_cenusie) (`epoca_cenusie`)
+- [Orizont de astrolabe (drum: stele)](#orizont_de_astrolabe) (`orizont_de_astrolabe`)
+- [Făptura din fag (drum: pădure)](#faptura_din_fag) (`faptura_din_fag`)
+- [Regimente pe câmpie (bătălie: câmpie)](#regimente_pe_cimpie) (`regimente_pe_cimpie`)
+- [Tancuri în lan (bătălie: sat)](#tancuri_in_lan) (`tancuri_in_lan`)
+- [Veacul regimentelor (bătălie: pod)](#veacul_regimentelor) (`veacul_regimentelor`)
+- [Trupe sub trei sori (bătălie: stele)](#trupe_sub_trei_sori) (`trupe_sub_trei_sori`)
+- [Bande în hrube (bătălie: oraș)](#bande_in_hrube) (`bande_in_hrube`)
+- [Zidul de scuturi (bătălie: câmpie)](#zidul_de_scuturi) (`zidul_de_scuturi`)
+- [Strajă pe culme (bătălie: munte)](#straja_pe_culme) (`straja_pe_culme`)
+- [Frații dezbinați (bătălie: fortăreață)](#fratii_dezbinati) (`fratii_dezbinati`)
+- [Eroi pe acoperiș](#eroi_pe_acoperis) (`eroi_pe_acoperis`)
+- [Războinici de fiord](#razboinici_de_fiord) (`razboinici_de_fiord`)
+- [Oști pe o filă](#osti_pe_o_fila) (`osti_pe_o_fila`)
+- [Bande în ruine](#bande_in_ruine) (`bande_in_ruine`)
+- [Mașinării de abur](#masinarii_de_abur) (`masinarii_de_abur`)
+- [Strigoi de târg](#strigoi_de_targ) (`strigoi_de_targ`)
+- [Giganți de oțel](#giganti_de_otel) (`giganti_de_otel`)
+- [Salve și baionete](#salve_si_baionete) (`salve_si_baionete`)
+- [Arena pietrelor](#arena_pietrelor) (`arena_pietrelor`)
+- [Chemarea hoardelor](#chemarea_hoardelor) (`chemarea_hoardelor`)
+- [Escadre în nebuloasă](#escadre_in_nebuloasa) (`escadre_in_nebuloasa`)
+- [Blindate pe șosea](#blindate_pe_sosea) (`blindate_pe_sosea`)
+- [Patrule în lan](#patrule_in_lan) (`patrule_in_lan`)
+- [Vrăjitori în ger](#vrajitori_in_ger) (`vrajitori_in_ger`)
+- [Bolizi de pustiu](#bolizi_de_pustiu) (`bolizi_de_pustiu`)
+- [Legiuni și cohorte](#legiuni_si_cohorte) (`legiuni_si_cohorte`)
+- [Falangă și călărime](#falange_si_calarime) (`falange_si_calarime`)
+- [Gardieni și corsari](#gardieni_si_corsari) (`gardieni_si_corsari`)
+- [Carosate de fier](#carosate_de_fier) (`carosate_de_fier`)
+- [Titani de ceață](#titani_de_ceata) (`titani_de_ceata`)
+- [Nave în derivă](#nave_in_deriva) (`nave_in_deriva`)
+- [Balada vitejilor](#balada_vitejilor) (`balada_vitejilor`)
+- [Echipaj de epavă](#echipaj_de_epava) (`echipaj_de_epava`)
+- [Armate de buzunar](#armate_de_buzunar) (`armate_de_buzunar`)
+- [Roata puterilor](#roata_puterilor) (`roata_puterilor`)
+- [Escadrile de hârtie](#escadrile_de_hartie) (`escadrile_de_hartie`)
+- [Mersători și pușcași](#mersatori_si_pusasi) (`mersatori_si_pusasi`)
+- [Aterizare peste oraș](#aterizare_peste_oras) (`aterizare_peste_oras`)
+- [Case și ierni](#case_si_ierni) (`case_si_ierni`)
+- [Oști de hotar](#osti_de_hotar) (`osti_de_hotar`)
+- [Pușcași pe planeta roșie](#pusasi_pe_planeta_rosie) (`pusasi_pe_planeta_rosie`)
+- [Coridorul ruinat](#coridorul_ruinat) (`coridorul_ruinat`)
+- [Ringul cu bilă](#ringul_cu_bila) (`ringul_cu_bila`)
+- [Domni și arcași](#domni_si_arcasi) (`domni_si_arcasi`)
+- [Basm cu balauri](#basm_cu_balauri) (`basm_cu_balauri`)
+- [Avioane în amurg](#avioane_in_amurg) (`avioane_in_amurg`)
+- [Torpiloare în noapte](#torpiloare_in_noapte) (`torpiloare_in_noapte`)
+- [Corăbii cu tunuri](#corabii_cu_tunuri) (`corabii_cu_tunuri`)
+- [Pânze și ghiulele](#panze_si_ghiulele) (`panze_si_ghiulele`)
+- [Pe valuri de oțel](#pe_valuri_de_otel) (`pe_valuri_de_otel`)
+- [Flote cu aburi](#flote_cu_aburi) (`flote_cu_aburi`)
+- [Flote în inel](#flote_in_inel) (`flote_in_inel`)
+- [Fregate în vid](#fregate_in_vid) (`fregate_in_vid`)
+- [Scuturi și raze](#scuturi_si_raze) (`scuturi_si_raze`)
+- [Orbită în flăcări](#orbita_in_flacari) (`orbita_in_flacari`)
+- [Nave de expediție](#nave_de_expeditie) (`nave_de_expeditie`)
+- [Ulița Neagră](#ulita_neagra) (`ulita_neagra`)
+- [Mingea de Piele](#mingea_de_piele) (`mingea_de_piele`)
+- [Regate de Cenușă](#regate_de_cenusa) (`regate_de_cenusa`)
+- [Fiare și Vrăjitori](#fiare_si_vrajitori) (`fiare_si_vrajitori`)
+- [Cadranul Ostașului](#cadranul_ostasului) (`cadranul_ostasului`)
+- [Trupe de Plumb](#trupe_de_plumb) (`trupe_de_plumb`)
+- [Hrube și Comori](#hrube_si_comori) (`hrube_si_comori`)
+- [Înălțimi cu Eroi](#inaltimi_cu_eroi) (`inaltimi_cu_eroi`)
+- [Lame și Gheare](#lame_si_ghiare) (`lame_si_ghiare`)
+- [Străjerii din Umbră](#strajeri_de_umbra) (`strajeri_de_umbra`)
+- [Pădure cu Mușchete](#padure_cu_muschete) (`padure_cu_muschete`)
+- [Cartușe și Baionete](#catuse_si_baionete) (`catuse_si_baionete`)
+- [Armata de Câmpie](#armata_de_cimpie) (`armata_de_cimpie`)
+- [Suliți și Archebuze](#sulite_si_archebuze) (`sulite_si_archebuze`)
+- [Patrula de pe Linia Roșie](#patrula_linia_rosie) (`patrula_linia_rosie`)
+- [Pistoale în Praf](#pistoale_in_praf) (`pistoale_in_praf`)
+- [Cărți Prăfuite](#carti_prafuite) (`carti_prafuite`)
+- [Aventurieri de Foileton](#aventurieri_de_foileton) (`aventurieri_de_foileton`)
+- [Clanurile de Orhidee](#clanuri_de_orhidee) (`clanuri_de_orhidee`)
+- [Sabia fără Stăpân](#spada_fara_stapan) (`spada_fara_stapan`)
+- [Legământ de Piatră](#legamant_de_piatra) (`legamant_de_piatra`)
+- [Armuri de Abur](#armuri_de_abur) (`armuri_de_abur`)
+- [Zbor de Lănci](#zbor_de_lancii) (`zbor_de_lancii`)
+- [Douăsprezece Elemente](#douasprezece_elemente) (`douasprezece_elemente`)
+- [Oastea cea Mare](#oastea_cea_mare) (`oastea_cea_mare`)
+- [Meșteșugul Războiului](#mestesugul_razboiului) (`mestesugul_razboiului`)
+- [Ordine pe Caroiaj](#ordine_pe_caroiaj) (`ordine_pe_caroiaj`)
+- [Cavaleri și Pavaze](#cavaleri_si_pavaze) (`cavaleri_si_pavaze`)
+- [Mareșali de Fier](#maresali_de_fier) (`maresali_de_fier`)
+- [Salve pe Front](#salve_pe_front) (`salve_pe_front`)
+- [Foc și Pulbere](#foc_si_pulbere) (`foc_si_pulbere`)
+- [Pași de Oțel](#pasi_de_otel) (`pasi_de_otel`)
+- [Escadrila Cerului Roșu](#escadrila_cerului_rosu) (`escadrila_cerului_rosu`)
+- [Luptă în Nori](#lupta_in_nori) (`lupta_in_nori`)
+- [Echipajul Rătăcit](#echipajul_ratacit) (`echipajul_ratacit`)
+- [Planeta cu Spini](#planeta_cu_spini) (`planeta_cu_spini`)
+- [Zeii de Lut](#zeii_de_lut) (`zeii_de_lut`)
+- [Asalt pe Stația Veche](#asalt_pe_statia_veche) (`asalt_pe_statia_veche`)
+- [Culoare de Oțel](#culoare_de_otel) (`culoare_de_otel`)
+- [Pirații de Hârtie](#pirati_de_hartie) (`pirati_de_hartie`)
+- [Evoluția Circuitelor](#evolutia_circuitelor) (`evolutia_circuitelor`)
+- [Energia Luptătorilor](#energia_luptatorilor) (`energia_luptatorilor`)
+- [Ceasul Alb-Negru](#ceasul_alb_negru) (`ceasul_alb_negru`)
+- [Treptele Avangardei](#trepte_de_avangarda) (`trepte_de_avangarda`)
+- [Două Arene, o Bază](#doua_arene_o_baza) (`doua_arene_o_baza`)
+- [Scuturi și Mană](#scuturi_si_mana) (`scuturi_si_mana`)
+- [Cristale și Chemări](#cristale_chemari) (`cristale_chemari`)
+- [Duhurile Pârjolului](#duhuri_pirjol) (`duhuri_pirjol`)
+- [Cursa prin Rețea](#cursa_prin_retea) (`cursa_prin_retea`)
+- [Trei Chei de Chihlimbar](#chei_chihlimbar) (`chei_chihlimbar`)
+- [Provinciile de Jad](#provincii_de_jad) (`provincii_de_jad`)
+- [Mercenarii Stelari](#mercenari_stelari) (`mercenari_stelari`)
+- [Pecetea Magilor](#pecetea_magilor) (`pecetea_magilor`)
+- [Biblioteca Umbrelor](#biblioteca_umbrelor) (`biblioteca_umbrelor`)
+- [Ținutul Cenușiu](#tinutul_cenusiu) (`tinutul_cenusiu`)
+- [Cavaleri Mecanici](#cavaleri_mecanici) (`cavaleri_mecanici`)
+- [Arena Aliaților](#arena_aliatilor) (`arena_aliatilor`)
+- [Creaturile Necunoscute](#creaturi_necunoscute) (`creaturi_necunoscute`)
+- [Sângele Nopții](#sangele_noptii) (`sangele_noptii`)
+- [Misiuni dincolo de Stele](#misiuni_dincolo_de_stele) (`misiuni_dincolo_de_stele`)
+- [Lumea dintre Lumini](#lumea_dintre_lumini) (`lumea_dintre_lumini`)
+- [Drum peste Munți](#drum_peste_munti) (`drum_peste_munti`)
+- [Pumnul din Umbră](#pumnul_din_umbra) (`pumnul_din_umbra`)
+- [Ținuturi și Vrăji](#tinuturi_si_vraji) (`tinuturi_si_vraji`)
+- [Păpușarii din Umbră](#papusarii_umbrei) (`papusarii_umbrei`)
+- [Povești din Ceață](#povesti_din_ceata) (`povesti_din_ceata`)
+- [Scaunul cu Colți](#scaunul_cu_colti) (`scaunul_cu_colti`)
+- [Cele Trei Cetăți](#trei_cetati) (`trei_cetati`)
+- [Șase Lumi în Flăcări](#sase_lumi_in_flacari) (`sase_lumi_in_flacari`)
+- [Magii Mici](#magii_mici) (`magii_mici`)
+- [Luptători cu Aură](#luptatori_cu_aura) (`luptatori_cu_aura`)
+- [Ucenicii Vântului](#ucenicii_vantului) (`ucenicii_vantului`)
+- [Cosașii de Suflete](#cosasii_de_suflete) (`cosasii_de_suflete`)
+- [Tovarășul din Gong](#tovarasul_din_gong) (`tovarasul_din_gong`)
+- [Zero contra Infinit](#zero_contra_infinit) (`zero_contra_infinit`)
+- [Duel Fulger](#duel_fulger) (`duel_fulger`)
+- [Domeniul Monștrilor](#domeniul_monstrilor) (`domeniul_monstrilor`)
+- [Tărâmuri Paralele](#taramuri_paralele) (`taramuri_paralele`)
+- [Cristale de Aură](#cristale_de_aura) (`cristale_de_aura`)
+- [Lupta pe Etape](#lupta_pe_etape) (`lupta_pe_etape`)
+- [Eroi contra Răufăcători](#eroi_contra_raufacatori) (`eroi_contra_raufacatori`)
+- [Roata Anotimpurilor](#roata_anotimpurilor) (`roata_anotimpurilor`)
+- [Roboții de Luptă](#roboti_de_lupta) (`roboti_de_lupta`)
+- [Stația dintre Stele](#statia_dintre_stele) (`statia_dintre_stele`)
+- [Școala de Vrăji](#scoala_de_vraji) (`scoala_de_vraji`)
+- [Vârful Fumegând](#varful_fumegand) (`varful_fumegand`)
+- [Cetățile din Furtună](#cetatile_din_furtuna) (`cetatile_din_furtuna`)
+- [Dragoni la Hotar](#dragoni_la_hotar) (`dragoni_la_hotar`)
+- [Ucenicii Cenușii](#ucenicii_cenusii) (`ucenicii_cenusii`)
+- [Eroi de Târg](#eroi_de_targ) (`eroi_de_targ`)
+- [Spărtura dintre Lumi](#spartura_dintre_lumi) (`spartura_dintre_lumi`)
+- [Orășelul Prăfuit](#orasul_prafuit) (`orasul_prafuit`)
+- [Spărgătorii de rețea](#spargatori_retea) (`spargatori_retea`)
+- [Duelul puterilor](#duelul_puterilor) (`duelul_puterilor`)
+- [Altarul sutelor](#altarul_sutelor) (`altarul_sutelor`)
+- [Străjerii cerurilor](#straji_ceruri) (`straji_ceruri`)
+- [Haita furioasă](#haita_furioasa) (`haita_furioasa`)
+- [Caravanele de nisip](#caravane_nisip) (`caravane_nisip`)
+- [Legiunile frânte](#legiuni_frante) (`legiuni_frante`)
+- [Marginea nevăzută](#marginea_nevazuta) (`marginea_nevazuta`)
+- [Imperii de stele](#imperii_de_stele) (`imperii_de_stele`)
+- [Dosare sub sigiliu](#dosare_sub_sigiliu) (`dosare_sub_sigiliu`)
+- [Umbre de neon](#umbre_de_neon) (`umbre_de_neon`)
+- [Roiul și vânătorii](#roiul_si_vanatorii) (`roiul_si_vanatorii`)
+- [Corsari și amirali](#corsari_si_amirali) (`corsari_si_amirali`)
+- [Șoapte din abis](#soapte_din_abis) (`soapte_din_abis`)
+- [Clanurile oazei](#clanuri_de_oaza) (`clanuri_de_oaza`)
+- [Căutătorii de cripte](#cautatorii_de_cripte) (`cautatorii_de_cripte`)
+- [Războinica de bronz](#razboinica_de_bronz) (`razboinica_de_bronz`)
+- [Muncile semizeului](#muncile_semizeului) (`muncile_semizeului`)
+- [Ucenicii luminii](#ucenicii_luminii) (`ucenicii_luminii`)
+- [Gardienele de cristal](#gardiene_de_cristal) (`gardiene_de_cristal`)
+- [Mașinile orei zero](#masini_ceas_zero) (`masini_ceas_zero`)
+- [Creaturi de pixeli](#creaturi_de_pixeli) (`creaturi_de_pixeli`)
+- [Școala darurilor](#scoala_darurilor) (`scoala_darurilor`)
+- [Vânătoarea de noapte](#vanatoarea_de_noapte) (`vanatoarea_de_noapte`)
+- [Cavalerii stelelor](#cavalerii_stelelor) (`cavalerii_stelelor`)
+- [Flotele în duel](#flotele_in_duel) (`flotele_in_duel`)
+- [Cruciada de oțel](#cruciada_de_otel) (`cruciada_de_otel`)
+- [Orășelul caraghios](#orasel_caraghios) (`orasel_caraghios`)
+- [Recif zburdalnic](#recif_zburdalnic) (`recif_zburdalnic`)
+- [Turnirul animăluțelor](#turnirul_animalutelor) (`turnirul_animalutelor`)
+- [Comando de elită](#comando_de_elita) (`comando_de_elita`)
+- [Frații de carapace](#fratii_de_carapace) (`fratii_de_carapace`)
+- [Raid în ținuturile vechi](#raid_in_tinuturi_vechi) (`raid_in_tinuturi_vechi`)
+- [Detectivii spiritelor](#detectivii_spiritelor) (`detectivii_spiritelor`)
+- [Stăpânii elementelor](#stapanii_elementelor) (`stapanii_elementelor`)
+- [Cercurile nopții](#cercurile_noptii) (`cercurile_noptii`)
+- [Pașii evoluției](#pasi_de_evolutie) (`pasi_de_evolutie`)
+- [Scena virtuală](#scena_virtuala) (`scena_virtuala`)
+- [Păpușile dorinței](#papusile_dorintei) (`papusile_dorintei`)
+- [Eroi între lumi](#eroi_intre_lumi) (`eroi_intre_lumi`)
+- [Mituri și zei](#mituri_si_zei) (`mituri_si_zei`)
+- [Lupta fuziunii](#lupta_fuziunii) (`lupta_fuziunii`)
 - [Hnefatafl](#hnefatafl) (`hnefatafl`)
 - [Brandubh](#brandubh) (`brandubh`)
 - [Pente](#pente) (`pente`)
@@ -18983,6 +19255,6465 @@ Sintaxa generală: scrii mutarea exact cum apare în lista `?` (fără diferenț
 - Sintaxă din regulile jocului: tira, des v fir, pas.
 - Exemple legale la început: `tira`
 - La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="curierii_stelelor"></a>
+## Curierii stelelor
+
+- **Id:** `curierii_stelelor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play curierii_stelelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi curieri stelari se întrec spre portul de destinație prin salturi riscante.
+- Fiecare erou (Pilot / Negustor) are 18 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: se aruncă 3d6 și suma trebuie să fie sub țintă (11 + 2×(pricepere − dificultate), între 5 și 16); cu 5 sub țintă = excelent.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: al doilea care joacă în rundă are +1 la verificări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fisa_fara_clase"></a>
+## Fișa fără clase
+
+- **Id:** `fisa_fara_clase`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fisa_fara_clase` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi aventurieri cu fișe fără clase, construite din puncte, se înfruntă într-un duel.
+- Fiecare erou (Mercenar / Savant) are 14 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +3), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: se aruncă 3d6 și suma trebuie să fie sub țintă (11 + 2×(pricepere − dificultate), între 5 și 16); cu 5 sub țintă = excelent (o ratare la mustață dă „parțial”).
+- Rezultatul se aplică imediat.
+- Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="runa_si_lama"></a>
+## Runa și lama
+
+- **Id:** `runa_si_lama`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play runa_si_lama` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un războinic și un preot al runelor își măsoară iscusința cu lama și cu rune.
+- Fiecare erou (Războinic / Preot al runelor) are 13 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈5/2⌉) și 5/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: un rezultat ratat costă 1 PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="saga_in_graba"></a>
+## Saga în grabă
+
+- **Id:** `saga_in_graba`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play saga_in_graba` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un duel pripit, cu zaruri explozive, între un pistolar și un vrăjitor.
+- Fiecare erou (Pistolar / Vrăjitor) are 16 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: un singur zar cu mărimea după pricepere (4 + 2×pricepere, maxim d12), care explodează la maxim (până la 3 ori), contra 3 + dificultate; cu 4 peste = excelent.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="aspectul_destinului"></a>
+## Aspectul destinului
+
+- **Id:** `aspectul_destinului`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play aspectul_destinului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi eroi își construiesc faima prin aspecte, noroc și răsturnări de situație.
+- Fiecare erou (Spadasin / Intrigant) are 13 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: câștigi gardă 4+1 și vindeci 4/2 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: patru zaruri cu +1/0/−1, plus pricepere − dificultate: 0 = parțial, 1–2 = reușit, 3+ = excelent, sub 0 = ratat.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Fără regulă specială.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pustiul_cenusiu"></a>
+## Pustiul cenușiu
+
+- **Id:** `pustiul_cenusiu`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pustiul_cenusiu` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un vânător și o căpetenie se înfruntă într-un pustiu cenușiu.
+- Fiecare erou (Vânător / Căpetenie) are 13 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +2), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: 2d6 + pricepere − dificultate: până la 6 ratat, 7–9 parțial, 10–12 reușit, 13+ excelent.
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: cine e lovit primește +1 focus.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hrube_cu_comori"></a>
+## Hrube cu comori
+
+- **Id:** `hrube_cu_comori`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hrube_cu_comori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi aventurieri coboară în hrube pline de comori, cursă spre cea mai adâncă încăpere.
+- Fiecare erou (Hoț / Luptător) are 12 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: 2d6 + pricepere − dificultate: până la 6 ratat, 7–9 parțial, 10–12 reușit, 13+ excelent.
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Fără regulă specială.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pivnita_strabuna"></a>
+## Pivnița străbună
+
+- **Id:** `pivnita_strabuna`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pivnita_strabuna` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi cercetași coboară într-o pivniță străbună, cu capcane și vlăguire.
+- Fiecare erou (Cavaler / Cleric) are 13 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 3 focus, minte: te vindeci cu 5 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat.
+- Rezultatul se aplică imediat.
+- Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="palnia_mortilor"></a>
+## Pâlnia morților
+
+- **Id:** `palnia_mortilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play palnia_mortilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi supraviețuitori fragili se bat într-o pâlnie a morților.
+- Fiecare erou (Țăran viteaz / Cultist) are 28 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈3/2⌉) și 3/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat (o ratare la mustață dă „parțial”).
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: un rezultat ratat costă 1 PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="nava_fara_raspuns"></a>
+## Nava fără răspuns
+
+- **Id:** `nava_fara_raspuns`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play nava_fara_raspuns` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi membri ai echipajului fug spre capsula de salvare pe o navă fără răspuns.
+- Fiecare erou (Inginer / Medic) are 10 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 2 focus, minte: adversarul pierde 4 focus și garda, plus ⌈4/2⌉ PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial.
+- La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată.
+- Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="faclia_stinsa"></a>
+## Făclia stinsă
+
+- **Id:** `faclia_stinsa`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play faclia_stinsa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi căutători coboară cu făclia care scade, tot mai adânc.
+- Fiecare erou (Hoț / Paznic) are 16 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: al doilea care joacă în rundă are +1 la verificări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mutantii_zonei"></a>
+## Mutanții Zonei
+
+- **Id:** `mutantii_zonei`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mutantii_zonei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi mutanți străbat Zona spre un refugiu legendar, plătind cu stres mutațiile.
+- Fiecare erou (Hamalul / Fermecătorul) are 16 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 1 focus, minte: te vindeci cu 3 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere + 2 zaruri d6, fiecare 5+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial.
+- La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată.
+- Regulă specială: fiecare vrajă costă +1 stres.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ceremonia_sabiei"></a>
+## Ceremonia sabiei
+
+- **Id:** `ceremonia_sabiei`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ceremonia_sabiei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi emisari își câștigă onoarea la o ceremonie a sabiei.
+- Fiecare erou (Sabiaș / Curtean) are 10 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: câștigi gardă 5+1 și vindeci 5/2 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere + 2 zaruri d10 (10 explodează), păstrezi cele mai bune (pricepere la număr) și aduni, contra 8 + 6×dificultate; cu 8 peste = excelent.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: al doilea care joacă în rundă are +1 la verificări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="paradoxul_trezit"></a>
+## Paradoxul trezit
+
+- **Id:** `paradoxul_trezit`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play paradoxul_trezit` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un mag trezit și un gardian se înfruntă; fiecare vrajă trezește paradoxul.
+- Fiecare erou (Mag trezit / Gardian) are 22 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 2 focus, minte: adversarul pierde 3 focus și garda, plus ⌈3/2⌉ PV), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1.
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: fiecare vrajă costă +1 stres.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="furia_haitei"></a>
+## Furia haitei
+
+- **Id:** `furia_haitei`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play furia_haitei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: O haită în furie și un vânător se măsoară în luptă deschisă.
+- Fiecare erou (Lup de război / Vânător de lupi) are 17 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: rănești cu 4 PV și te vindeci cu jumătate), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: pricepere + 2 zaruri d6, fiecare 5+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial.
+- La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată.
+- Regulă specială: cine e lovit primește +1 focus.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, forteaza.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ordinul_luminii"></a>
+## Ordinul Luminii
+
+- **Id:** `ordinul_luminii`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ordinul_luminii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un cavaler al Ordinului Luminii se duelează cu un contrabandist pilot.
+- Fiecare erou (Cavaler al luminii / Contrabandist) are 14 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 1 focus, minte: lovitură de vrajă fără gardă: 2 PV), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pragul_dificultatii"></a>
+## Pragul dificultății
+
+- **Id:** `pragul_dificultatii`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pragul_dificultatii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi eroi măsoară dificultatea în trepte de prag.
+- Fiecare erou (Explorator / Mercenar) are 13 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: te vindeci cu 3 PV), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat (o ratare la mustață dă „parțial”).
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Fără regulă specială.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ruinele_eonilor"></a>
+## Ruinele eonilor
+
+- **Id:** `ruinele_eonilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ruinele_eonilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi cercetători jefuiesc ruinele eonilor după faimă și relicve.
+- Fiecare erou (Arhiv / Căutător) are 13 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 3 focus, minte: adversarul pierde 5 focus și garda, plus ⌈5/2⌉ PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: fiecare vrajă costă +1 stres.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="vara_masinilor"></a>
+## Vara mașinilor
+
+- **Id:** `vara_masinilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play vara_masinilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi copii descoperă taine într-o vară cu mașinării ciudate.
+- Fiecare erou (Copil inventator / Copil curios) are 8 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: te vindeci cu 3 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial.
+- La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată.
+- Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="padurea_coruptiei"></a>
+## Pădurea corupției
+
+- **Id:** `padurea_coruptiei`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play padurea_coruptiei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi rătăcitori se bat în pădurea corupției, unde fiecare vrajă lasă urme.
+- Fiecare erou (Vânător / Vrăjitoare) are 14 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: rănești cu 4 PV și te vindeci cu jumătate), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent (o ratare la mustață dă „parțial”).
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: fiecare vrajă costă +1 stres.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="iluzia_cenusie"></a>
+## Iluzia cenușie
+
+- **Id:** `iluzia_cenusie`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play iluzia_cenusie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi oameni scoși din iluzia cenușie se înfruntă între spaime.
+- Fiecare erou (Dezabuzat / Medium) are 22 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈2/2⌉) și 2/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1.
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tinutul_uitat"></a>
+## Ținutul uitat
+
+- **Id:** `tinutul_uitat`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tinutul_uitat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi pelerini străbat un ținut uitat, hex cu hex.
+- Fiecare erou (Pădurar / Pelerin) are 13 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈3/2⌉) și 3/2 PV pierdute), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial.
+- La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată.
+- Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cargoul_din_abis"></a>
+## Cargoul din abis
+
+- **Id:** `cargoul_din_abis`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cargoul_din_abis` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi oameni de pe cargoul din abis își dispută ultima gură de aer.
+- Fiecare erou (Marinar / Biolog) are 26 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +5), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: pricepere + 2 zaruri d6, fiecare 5+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial.
+- La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată.
+- Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, forteaza.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="carti_si_gloante"></a>
+## Cărți și gloanțe
+
+- **Id:** `carti_si_gloante`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play carti_si_gloante` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi vânători de recompense își dispută faima în orașul de la graniță.
+- Fiecare erou (Pistolar / Pastor) are 22 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: un singur zar cu mărimea după pricepere (4 + 2×pricepere, maxim d12), care explodează la maxim (până la 3 ori), contra 3 + dificultate; cu 4 peste = excelent (o ratare la mustață dă „parțial”).
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="trepte_de_destin"></a>
+## Trepte de destin
+
+- **Id:** `trepte_de_destin`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play trepte_de_destin` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi adepți urcă trepte de destin și se înfruntă.
+- Fiecare erou (Adept al săbiei / Elementalist) are 17 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: un singur zar cu mărimea după pricepere (4 + 2×pricepere, maxim d12), care explodează la maxim (până la 3 ori), contra 3 + dificultate; cu 4 peste = excelent.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: al doilea care joacă în rundă are +1 la verificări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="clona_credincioasa"></a>
+## Clona credincioasă
+
+- **Id:** `clona_credincioasa`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play clona_credincioasa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Două clone loiale își toarnă una alteia vina; trădarea se adună.
+- Fiecare erou (Clonă slujbașă / Clonă trădătoare) are 12 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +2), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: pricepere + 1 zaruri d6 (cel puțin 2), se adună; pentru fiecare valoare apărută de cel puțin două ori se adaugă încă un zar d6 (maxim 2 în plus); prag 8 + 4×dificultate, cu 8 peste = excelent (o ratare la mustață dă „parțial”).
+- Rezultatul se aplică imediat.
+- Regulă specială: un rezultat ratat costă 1 PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="planul_scapat"></a>
+## Planul scăpat de sub control
+
+- **Id:** `planul_scapat`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play planul_scapat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi complotiști își văd planul scăpat de sub control.
+- Fiecare erou (Planificator / Improvizator) are 18 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈3/2⌉) și 3/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: patru zaruri cu +1/0/−1, plus pricepere − dificultate: 0 = parțial, 1–2 = reușit, 3+ = excelent, sub 0 = ratat (o ratare la mustață dă „parțial”).
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: un rezultat ratat costă 1 PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="jurament_si_obstacol"></a>
+## Jurământ și obstacol
+
+- **Id:** `jurament_si_obstacol`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play jurament_si_obstacol` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi eroi își țin jurămintele și înfruntă obstacolele.
+- Fiecare erou (Jurătorul / Vagabondul) are 20 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 3 focus, minte: câștigi gardă 5+1 și vindeci 5/2 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere + 2 zaruri d10 (10 explodează), păstrezi cele mai bune (pricepere la număr) și aduni, contra 8 + 6×dificultate; cu 8 peste = excelent (o ratare la mustață dă „parțial”).
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="galerii_cu_dubluri"></a>
+## Galerii cu dubluri
+
+- **Id:** `galerii_cu_dubluri`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play galerii_cu_dubluri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Dublurile fac legea în galeriile adânci.
+- Fiecare erou (Gladiator / Vrăjitor de mină) are 14 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: pricepere + 1 zaruri d6 (cel puțin 2), se adună; pentru fiecare valoare apărută de cel puțin două ori se adaugă încă un zar d6 (maxim 2 în plus); prag 8 + 4×dificultate, cu 8 peste = excelent.
+- Rezultatul se aplică imediat.
+- Regulă specială: cine e lovit primește +1 focus.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cavaler_si_magician"></a>
+## Cavaler și magician
+
+- **Id:** `cavaler_si_magician`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cavaler_si_magician` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un cavaler și un magician se înfruntă după reguli de onoare și vrăji.
+- Fiecare erou (Cavaler / Magician) are 19 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 2 focus, minte: câștigi gardă 4+1 și vindeci 4/2 PV), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: al doilea care joacă în rundă are +1 la verificări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tabele_fara_sfarsit"></a>
+## Tabele fără sfârșit
+
+- **Id:** `tabele_fara_sfarsit`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tabele_fara_sfarsit` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un duel cu tabele lungi de răni, răni grele și efecte.
+- Fiecare erou (Luptător / Vrăjitor) are 28 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: adversarul pierde 2 focus și garda, plus ⌈2/2⌉ PV), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent (o ratare la mustață dă „parțial”).
+- Rezultatul se aplică imediat.
+- Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="puncte_nu_clase"></a>
+## Puncte, nu clase
+
+- **Id:** `puncte_nu_clase`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play puncte_nu_clase` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi eroi construiți din puncte se bat; reușita excelentă dă acțiune în plus.
+- Fiecare erou (Gigant puternic / Ager) are 14 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 1 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: se aruncă 3d6 și suma trebuie să fie sub țintă (11 + 2×(pricepere − dificultate), între 5 și 16); cu 5 sub țintă = excelent.
+- Rezultatul se aplică imediat.
+- Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lupta_cu_pelerine"></a>
+## Lupta cu pelerine
+
+- **Id:** `lupta_cu_pelerine`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play lupta_cu_pelerine` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi eroi cu pelerine se înfruntă într-o ciocnire de puteri.
+- Fiecare erou (Forțos / Telepat) are 20 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: lovitură de vrajă fără gardă: 5 PV), «odihna» (+1 PV, +2 focus, −1 stres).
+- Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat.
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tabara_regelui"></a>
+## Tabăra regelui
+
+- **Id:** `tabara_regelui`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tabara_regelui` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi cavaleri își dispută faima la tabăra regelui, între onoare și nebunie.
+- Fiecare erou (Cavaler / Bardă) are 18 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 2 focus, minte: câștigi gardă 3+1 și vindeci 3/2 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: se aruncă 3d6 și suma trebuie să fie sub țintă (11 + 2×(pricepere − dificultate), între 5 și 16); cu 5 sub țintă = excelent (o ratare la mustață dă „parțial”).
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="spadasinii_marilor"></a>
+## Spadasinii mărilor
+
+- **Id:** `spadasinii_marilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play spadasinii_marilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi spadasini ai mărilor își măsoară faima în abordaje.
+- Fiecare erou (Spadasin / Căpitan) are 16 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: reușita dă o acțiune în plus; parțialul dă +1 noroc), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="aurul_solar"></a>
+## Aurul solar
+
+- **Id:** `aurul_solar`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play aurul_solar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi aleși ai aurului solar își folosesc harurile într-o luptă cu pumni mari.
+- Fiecare erou (Soare Ales / Lună Aleasă) are 28 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 1 focus, minte: lovitură de vrajă fără gardă: 2 PV), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: pricepere + 2 zaruri d6, fiecare 6+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: o reușită excelentă dă o acțiune în plus (o dată pe tură).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="echipajul_exploratorilor"></a>
+## Echipajul exploratorilor
+
+- **Id:** `echipajul_exploratorilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play echipajul_exploratorilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un echipaj de exploratori caută o pistă prin necunoscut.
+- Fiecare erou (Comandant / Inginer) are 14 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: te vindeci cu 3 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: d20 + 2×pricepere contra pragului 8 + 3×dificultate; 20 sau +7 peste prag = excelent, 1 = ratat (o ratare la mustață dă „parțial”).
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: al doilea care joacă în rundă are +1 la verificări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="inchizitorul_umbrei"></a>
+## Inchizitorul umbrei
+
+- **Id:** `inchizitorul_umbrei`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play inchizitorul_umbrei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un inchizitor vânează un eretic într-un oraș al umbrelor.
+- Fiecare erou (Inchizitor / Eretic) are 12 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/4/6 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 3 focus, minte: adversarul pierde 5 focus și garda, plus ⌈5/2⌉ PV), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: se aruncă d100 și trebuie să fie sub țintă (50 + 12×(pricepere − dificultate), între 8 și 95); sub o cincime din țintă = excelent (o ratare la mustață dă „parțial”).
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="contrabandistii_cetii"></a>
+## Contrabandiștii cetii
+
+- **Id:** `contrabandistii_cetii`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play contrabandistii_cetii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi contrabandiști își dispută un jaf în ceață.
+- Fiecare erou (Pilot / Spărgător) are 21 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +3), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1.
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: al doilea care joacă în rundă are +1 la verificări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="legiunea_in_retragere"></a>
+## Legiunea în retragere
+
+- **Id:** `legiunea_in_retragere`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play legiunea_in_retragere` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Rămășițele unei legiuni se retrag peste un pod rupt.
+- Fiecare erou (Căpitan / Medic) are 20 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: te vindeci cu 4 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1.
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="inimi_din_umbra"></a>
+## Inimi din umbră
+
+- **Id:** `inimi_din_umbra`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play inimi_din_umbra` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi adolescenți-monștri se țin în „sfori” de inimi.
+- Fiecare erou (Vampir / Vârcolac) are 9 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 1 focus, minte: adversarul primește blestem (−1 la următoarea verificare, per ⌈2/2⌉) și 2/2 PV pierdute), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: 2d6 + pricepere − dificultate: până la 6 ratat, 7–9 parțial, 10–12 reușit, 13+ excelent.
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tineri_cu_pelerine"></a>
+## Tineri cu pelerine
+
+- **Id:** `tineri_cu_pelerine`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tineri_cu_pelerine` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi tineri cu puteri se luptă înainte să rămână fără mantie.
+- Fiecare erou (Tânăr zburător / Tânără cu focul) are 11 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 2/3/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: lovitură de vrajă fără gardă: 3 PV), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: 2d6 + pricepere − dificultate: până la 6 ratat, 7–9 parțial, 10–12 reușit, 13+ excelent.
+- La parțial poți plăti („plata”) 1 PV și rezultatul devine reușit.
+- Regulă specială: cine e lovit primește +1 focus.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, plata.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="biciclete_si_taine"></a>
+## Biciclete și taine
+
+- **Id:** `biciclete_si_taine`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play biciclete_si_taine` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi prieteni pedalează spre taina de la marginea orașului.
+- Fiecare erou (Biciclist viteaz / Biciclistă isteață) are 8 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 3 focus, minte: câștigi gardă 5+1 și vindeci 5/2 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: un singur zar cu mărimea după pricepere (4 + 2×pricepere, maxim d12), care explodează la maxim (până la 3 ori), contra 3 + dificultate; cu 4 peste = excelent.
+- După aruncare poți cheltui 1 noroc („noroc”): treapta crește cu 1.
+- Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, noroc.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="juramant_de_otel"></a>
+## Jurământ de oțel
+
+- **Id:** `juramant_de_otel`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play juramant_de_otel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Doi purtători de jurământ străbat un ținut aspru spre ținta lor.
+- Fiecare erou (Pelerin de oțel / Vânătoarea) are 13 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/2), «arta» (costă 2 focus, minte: câștigi gardă 3+1 și vindeci 3/2 PV), «odihna» (+2 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: un zar d6 + pricepere (minus dificultatea peste 1) contra a două zaruri d10: depășești ambele = reușit (excelent dacă cele două sunt egale), unul singur = parțial.
+- Cu 2+ noroc și un rezultat sub reușit poți arde momentul („arde”): pierzi tot norocul, iar rezultatul devine reușit; reușitele aduc noroc.
+- Regulă specială: o lovitură de 3+ PV adaugă 1 stres țintei.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, arde.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lumina_care_scade"></a>
+## Lumina care scade
+
+- **Id:** `lumina_care_scade`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play lumina_care_scade` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Supraviețuitorii își spun adevărurile cât mai ține lumina.
+- Fiecare erou (Supraviețuitor / Povestitoare) are 9 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/3/4 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 1/2/3), «arta» (costă 2 focus, minte: te vindeci cu 4 PV), «odihna» (+1 PV, +2 focus, −1 stres), «tinta» (obiectivul).
+- Verificarea: pricepere + 2 zaruri d6, fiecare 5+ e un succes; reușești cu 1 + dificultate/3 succese, cu 2 în plus e excelent, mai puține dar nenule = parțial.
+- La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată.
+- Regulă specială: cu stresul la jumătate din maxim sau mai mult, −1 la toate verificările.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tinta, tira, accept, forteaza.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="turnul_clatinat"></a>
+## Turnul clătinat
+
+- **Id:** `turnul_clatinat`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play turnul_clatinat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală cu MJ automat, 2 jucători: Un turn de piese se clatină la fiecare încercare riscantă.
+- Fiecare erou (Curajos / Prudent) are 12 PV.
+- La începutul fiecărei runde MJ-ul trage un eveniment cu d6; apoi fiecare pe rând alege o acțiune: «atac» (forță, dăunează 1/2/5 PV după parțial/reușit/excelent), «aparare» (iscusință, gardă 0/2/4), «arta» (costă 1 focus, minte: adversarul e marcat: următoarea ta lovitură lovește cu +2), «odihna» (+2 PV, +2 focus, −1 stres).
+- Verificarea: pricepere zaruri d6 și contează cel mai mare (la pricepere 0: două zaruri, cel mai mic); 6 = reușit (două de 6 = excelent), 4–5 = parțial; dificultate 4+ scade zarul cu 1.
+- La ratat sau parțial poți forța („forteaza”): +1 stres și reiei aruncarea, o singură dată.
+- Regulă specială: al doilea care joacă în rundă are +1 la verificări.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: atac, aparare, arta, odihna, tira, accept, forteaza.
+- Exemple legale la început: `tira`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="epoci_sub_lupa"></a>
+## Epoci sub lupă (drum: ruine)
+
+- **Id:** `epoci_sub_lupa`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play epoci_sub_lupa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin ruine, 6 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Pavăzarul, Cercetașul, Tălmaciul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 memorie pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: odihna vindecă 3 PV în loc de 2.
+- Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="faclia_din_hornuri"></a>
+## Făclia din hornuri (drum: peșteră)
+
+- **Id:** `faclia_din_hornuri`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play faclia_din_hornuri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin peșteră, 7 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Pușcașul, Cercetașul, Predicatorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 torță pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: rănile sunt cu 1 mai mari, dar și câștigul cu 1; odihna vindecă 3 PV în loc de 2.
+- Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cununa_veacurilor"></a>
+## Cununa veacurilor (duel: oraș)
+
+- **Id:** `cununa_veacurilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cununa_veacurilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în oraș, zaruri d20.
+- Fiecare alege o clasă (alege k): Alchimist, Ciomăgar, Vraci. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 faimă); special costă faimă și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: dacă toate zarurile (cel puțin două) reușesc, daunele se dublează; «lovesc+» cheltuiește 1 faimă pentru un zar în plus.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="genezele_prafului"></a>
+## Genezele prafului (drum: deșert)
+
+- **Id:** `genezele_prafului`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play genezele_prafului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin deșert, 7 stații, zaruri d10 (reușită la ≥ 5).
+- Alegi eroul (alege k): Mercenarul, Tâlharul, Sfătuitorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 ecou pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: rănile sunt cu 1 mai mari, dar și câștigul cu 1; «capcana» (1 ecou): următoarea probă a adversarului cere o reușită în plus.
+- Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="luna_in_cioburi"></a>
+## Luna în cioburi (duel: noapte)
+
+- **Id:** `luna_in_cioburi`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play luna_in_cioburi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în noapte, zaruri d10.
+- Fiecare alege o clasă (alege k): Frate pavăzar, Pavăzar, Fermecător. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 cioburi); special costă cioburi și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); «lovesc+» cheltuiește 1 cioburi pentru un zar în plus.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tinutul_zimtat"></a>
+## Ținutul zimțat (duel: munte)
+
+- **Id:** `tinutul_zimtat`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tinutul_zimtat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în munte, zaruri d20.
+- Fiecare alege o clasă (alege k): Căpcăun flămând, Ghicitor, Mercenar. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 mânie); special costă mânie și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: sub jumătate din PV ai +1 daună; garda întoarce 1 daună atacatorului.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cenusa_neuronilor"></a>
+## Cenușa neuronilor (drum: cenușă)
+
+- **Id:** `cenusa_neuronilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cenusa_neuronilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin cenușă, 6 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Pavăzarul, Hoțul, Negociatorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 nervi pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «capcana» (1 nervi): următoarea probă a adversarului cere o reușită în plus; «obiect»: o dată pe joc, reușită sigură cu câștig întreg; rănile sunt cu 1 mai mari, dar și câștigul cu 1.
+- Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="turneul_celor_trei"></a>
+## Turneul celor trei (duel: oraș)
+
+- **Id:** `turneul_celor_trei`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play turneul_celor_trei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în oraș, zaruri d6.
+- Fiecare alege o clasă (alege k): Luptător cu laț, Vampir de hrubă, Hoț de acoperișuri. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 avânt); special costă avânt și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: dacă toate zarurile (cel puțin două) reușesc, daunele se dublează; garda întoarce 1 daună atacatorului.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zmeul_de_cremene"></a>
+## Zmeul de cremene (duel: peșteră)
+
+- **Id:** `zmeul_de_cremene`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play zmeul_de_cremene` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în peșteră, zaruri d6.
+- Fiecare alege o clasă (alege k): Ghicitor, Luptător cu laț, Cleric bătrân. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 foc); special costă foc și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: sub jumătate din PV ai +1 daună; dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="umbre_pe_lande"></a>
+## Umbre pe lande (drum: ceață)
+
+- **Id:** `umbre_pe_lande`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play umbre_pe_lande` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin ceață, 7 stații, zaruri d10 (reușită la ≥ 5).
+- Alegi eroul (alege k): Lăncierul, Vânătorul, Sfătuitorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 liniște pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «capcana» (1 liniște): următoarea probă a adversarului cere o reușită în plus.
+- Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="somnorosii_din_vale"></a>
+## Somnoroșii din vale (duel: noapte)
+
+- **Id:** `somnorosii_din_vale`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play somnorosii_din_vale` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în noapte, zaruri d12.
+- Fiecare alege o clasă (alege k): Păstor, Luptător cu laț, Vrăjitoare de râu. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 vis); special costă vis și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: «lovesc+» cheltuiește 1 vis pentru un zar în plus; garda întoarce 1 daună atacatorului.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="prinsi_intre_ceruri"></a>
+## Prinși între ceruri (drum: templu)
+
+- **Id:** `prinsi_intre_ceruri`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play prinsi_intre_ceruri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin templu, 6 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Pavăzarul, Tâlharul, Judecătorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 har pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «capcana» (1 har): următoarea probă a adversarului cere o reușită în plus; «obiect»: o dată pe joc, reușită sigură cu câștig întreg.
+- Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sabatul_de_pe_deal"></a>
+## Sabatul de pe deal (duel: pădure)
+
+- **Id:** `sabatul_de_pe_deal`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sabatul_de_pe_deal` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în pădure, zaruri d100.
+- Fiecare alege o clasă (alege k): Pândar, Cioară de seară, Tâlhar de drumuri. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 farmec); special costă farmec și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="vizuina_cu_comori"></a>
+## Vizuina cu comori (drum: peșteră)
+
+- **Id:** `vizuina_cu_comori`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play vizuina_cu_comori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin peșteră, 7 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Străjerul, Pândarul, Vraciul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 mană pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; odihna vindecă 3 PV în loc de 2.
+- Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cimitirul_de_papusi"></a>
+## Cimitirul de păpuși (duel: morminte)
+
+- **Id:** `cimitirul_de_papusi`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cimitirul_de_papusi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în morminte, zaruri d10.
+- Fiecare alege o clasă (alege k): Rob liber, Vânător, Duh însetat. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 șoaptă); special costă șoaptă și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); sub jumătate din PV ai +1 daună.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="umbre_cu_lame"></a>
+## Umbre cu lame (duel: noapte)
+
+- **Id:** `umbre_cu_lame`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play umbre_cu_lame` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în noapte, zaruri d6.
+- Fiecare alege o clasă (alege k): Gladiator, Mag de furtună, Bastonar. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 tăcere); special costă tăcere și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: dacă toate zarurile (cel puțin două) reușesc, daunele se dublează; garda întoarce 1 daună atacatorului.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="calatorii_cu_ceai"></a>
+## Călătorii cu ceai (drum: câmpie)
+
+- **Id:** `calatorii_cu_ceai`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play calatorii_cu_ceai` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin câmpie, 7 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Lăncierul, Tâlharul, Predicatorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 popas pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: odihna vindecă 3 PV în loc de 2; «obiect»: o dată pe joc, reușită sigură cu câștig întreg.
+- Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pustiul_mutantilor"></a>
+## Pustiul mutanților (drum: deșert)
+
+- **Id:** `pustiul_mutantilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pustiul_mutantilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin deșert, 6 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Pavăzarul, Pândarul, Judecătorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 mutație pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «capcana» (1 mutație): următoarea probă a adversarului cere o reușită în plus; rănile sunt cu 1 mai mari, dar și câștigul cu 1.
+- Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ucenicii_de_otel"></a>
+## Ucenicii de oțel (duel: fier)
+
+- **Id:** `ucenicii_de_otel`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ucenicii_de_otel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în fier, zaruri d100.
+- Fiecare alege o clasă (alege k): Ghicitor, Duh însetat, Spadasin. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 ritm); special costă ritm și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); dacă toate zarurile (cel puțin două) reușesc, daunele se dublează.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="turnul_razvratitilor"></a>
+## Turnul răzvrătiților (drum: turn)
+
+- **Id:** `turnul_razvratitilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play turnul_razvratitilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin turn, 7 stații, zaruri d10 (reușită la ≥ 5).
+- Alegi eroul (alege k): Pușcașul, Vânătorul, Tălmaciul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 ură pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «capcana» (1 ură): următoarea probă a adversarului cere o reușită în plus.
+- Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="coborarea_fara_lumina"></a>
+## Coborârea fără lumină (drum: mină)
+
+- **Id:** `coborarea_fara_lumina`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play coborarea_fara_lumina` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin mină, 7 stații, zaruri d10 (reușită la ≥ 5).
+- Alegi eroul (alege k): Spadasinul, Cercetașul, Tălmaciul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 dor pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: rănile sunt cu 1 mai mari, dar și câștigul cu 1; «capcana» (1 dor): următoarea probă a adversarului cere o reușită în plus.
+- Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="stele_fara_catastif"></a>
+## Stele fără catastif (drum: stele)
+
+- **Id:** `stele_fara_catastif`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play stele_fara_catastif` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin stele, 6 stații, zaruri d20 (reușită la ≥ 9).
+- Alegi eroul (alege k): Străjerul, Pândarul, Predicatorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 credite pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; odihna vindecă 3 PV în loc de 2.
+- Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zarul_taios"></a>
+## Zarul tăios (duel: fier)
+
+- **Id:** `zarul_taios`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play zarul_taios` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în fier, zaruri d20.
+- Fiecare alege o clasă (alege k): Căpitan de strajă, Maestru de lanțuri, Doctor de câmp. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 uzură); special costă uzură și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1; sub jumătate din PV ai +1 daună.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sania_cu_clopote"></a>
+## Sania cu clopote (drum: gheață)
+
+- **Id:** `sania_cu_clopote`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sania_cu_clopote` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin gheață, 7 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Ciomăgarul, Hoțul, Predicatorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 frig pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «capcana» (1 frig): următoarea probă a adversarului cere o reușită în plus; odihna vindecă 3 PV în loc de 2.
+- Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="urme_in_ceata_adanca"></a>
+## Urme în ceața adâncă (drum: ceață)
+
+- **Id:** `urme_in_ceata_adanca`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play urme_in_ceata_adanca` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin ceață, 6 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Ciomăgarul, Pândarul, Sfătuitorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 luciditate pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: rănile sunt cu 1 mai mari, dar și câștigul cu 1; «obiect»: o dată pe joc, reușită sigură cu câștig întreg.
+- Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="corbul_de_furtuna"></a>
+## Corbul de furtună (duel: vânt)
+
+- **Id:** `corbul_de_furtuna`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play corbul_de_furtuna` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în vânt, zaruri d6.
+- Fiecare alege o clasă (alege k): Maestru de lanțuri, Șoptitor, Tâlhar cu pumnal. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 libertate); special costă libertate și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: «lovesc+» cheltuiește 1 libertate pentru un zar în plus; dacă toate zarurile (cel puțin două) reușesc, daunele se dublează.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pastorii_viei"></a>
+## Păstorii viei (duel: sat)
+
+- **Id:** `pastorii_viei`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pastorii_viei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în sat, zaruri d6.
+- Fiecare alege o clasă (alege k): Cioară de seară, Alchimist, Pavăzar. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 dreptate); special costă dreptate și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: garda întoarce 1 daună atacatorului; o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture).
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="seniorul_hatisurilor"></a>
+## Seniorul hățișurilor (drum: pădure)
+
+- **Id:** `seniorul_hatisurilor`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play seniorul_hatisurilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin pădure, 7 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Pavăzarul, Tâlharul, Vraciul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 curaj pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; odihna vindecă 3 PV în loc de 2.
+- Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="otel_si_soapte"></a>
+## Oțel și șoapte (duel: turn)
+
+- **Id:** `otel_si_soapte`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play otel_si_soapte` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în turn, zaruri d20.
+- Fiecare alege o clasă (alege k): Doctor de câmp, Vânător, Paznic de nopți. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 vrajă); special costă vrajă și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: sub jumătate din PV ai +1 daună; «lovesc+» cheltuiește 1 vrajă pentru un zar în plus.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bocetul_vapaii"></a>
+## Bocetul văpăii (duel: cenușă)
+
+- **Id:** `bocetul_vapaii`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bocetul_vapaii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în cenușă, zaruri d6.
+- Fiecare alege o clasă (alege k): Iscoadă, Luptător cu laț, Căpcăun flămând. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 dispreț); special costă dispreț și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1; sub jumătate din PV ai +1 daună.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mana_stanga_cu_pumnal"></a>
+## Mâna stângă cu pumnal (duel: oraș)
+
+- **Id:** `mana_stanga_cu_pumnal`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mana_stanga_cu_pumnal` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în oraș, zaruri d20.
+- Fiecare alege o clasă (alege k): Paznic de nopți, Pelerin, Cavaler vagabond. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 tertip); special costă tertip și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: dacă toate zarurile (cel puțin două) reușesc, daunele se dublează; dacă toate zarurile (cel puțin două) arată 1, te rănești cu 1.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="movila_de_piatra"></a>
+## Movila de piatră (drum: munte)
+
+- **Id:** `movila_de_piatra`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play movila_de_piatra` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin munte, 6 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Străjerul, Vânzătorul de zvonuri, Sfătuitorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 temei pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: odihna vindecă 3 PV în loc de 2; rănile sunt cu 1 mai mari, dar și câștigul cu 1.
+- Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hornul_cu_masinarii"></a>
+## Hornul cu mașinării (drum: oraș)
+
+- **Id:** `hornul_cu_masinarii`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hornul_cu_masinarii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin oraș, 7 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Pavăzarul, Hoțul, Vraciul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 scânteie pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; «capcana» (1 scânteie): următoarea probă a adversarului cere o reușită în plus.
+- Primul care termină drumul ia +4; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="povesti_din_han"></a>
+## Povești din han (duel: sat)
+
+- **Id:** `povesti_din_han`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play povesti_din_han` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în sat, zaruri d6.
+- Fiecare alege o clasă (alege k): Pândar, Pavăzar, Hipnotizor. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 poftă); special costă poftă și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: garda întoarce 1 daună atacatorului; «lovesc+» cheltuiește 1 poftă pentru un zar în plus.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="agentia_tacuta"></a>
+## Agenția tăcută (drum: noapte)
+
+- **Id:** `agentia_tacuta`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play agentia_tacuta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin noapte, 6 stații, zaruri d100 (reușită la ≥ 41).
+- Alegi eroul (alege k): Pușcașul, Hoțul, Negociatorul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 rațiune pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; «capcana» (1 rațiune): următoarea probă a adversarului cere o reușită în plus; rănile sunt cu 1 mai mari, dar și câștigul cu 1.
+- Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="epoca_cenusie"></a>
+## Epoca cenușie (duel: ruine)
+
+- **Id:** `epoca_cenusie`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play epoca_cenusie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: duel de aventurieri în ruine, zaruri d10.
+- Fiecare alege o clasă (alege k): Vrăjitoare de râu, Frate pavăzar, Mercenar. lovesc aruncă zarurile clasei (reușită la ≥ tn; daune = reușite × daune − armură, minim 1); parez = gardă (+2 armură până la tura ta, +1 voință); special costă voință și are efectul clasei; poțiune vindecă 4 PV.
+- Reguli proprii: o lovitură de cel puțin 3 daune provoacă sângerare (1 PV pe tură, cel mult 3 ture); garda întoarce 1 daună atacatorului.
+- Pierde cine ajunge la 0 PV; după 14 ture decide procentul de PV.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, lovesc, lovesc+, parez, special, potiune, trec, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="orizont_de_astrolabe"></a>
+## Orizont de astrolabe (drum: stele)
+
+- **Id:** `orizont_de_astrolabe`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play orizont_de_astrolabe` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin stele, 7 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Străjerul, Pândarul, Tălmaciul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 lumină pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «capcana» (1 lumină): următoarea probă a adversarului cere o reușită în plus; odihna vindecă 3 PV în loc de 2.
+- Primul care termină drumul ia +3; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="faptura_din_fag"></a>
+## Făptura din fag (drum: pădure)
+
+- **Id:** `faptura_din_fag`
+- **Categorie:** Rol (RPG)
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play faptura_din_fag` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: drum cu întâlniri prin pădure, 6 stații, zaruri d6 (reușită la ≥ 3).
+- Alegi eroul (alege k): Lăncierul, Tâlharul, Vraciul.
+- Povestitorul automat scoate la fiecare stație o întâlnire (primejdie, teren sau om, cu pericol, câștig și rană). infrunt, furis sau vorbesc aruncă zarurile eroului; ai nevoie de atâtea reușite cât pericolul (±1 după fel); abordarea potrivită dă câștigul întreg, celelalte jumătate; eșecul costă PV.
+- Variantele cu + cheltuiesc 1 teamă pentru un zar în plus; odihnesc vindecă 2 PV.
+- Reguli proprii: «obiect»: o dată pe joc, reușită sigură cu câștig întreg; odihna vindecă 3 PV în loc de 2.
+- Primul care termină drumul ia +5; la 0 PV pierzi 2 puncte și revii la jumătate de viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: alege k, infrunt, furis, vorbesc (cu +), odihnesc, capcana, obiect, tira.
+- Exemple legale la început: `alege`, `0`
+- La început sunt 6 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="regimente_pe_cimpie"></a>
+## Regimente pe câmpie (bătălie: câmpie)
+
+- **Id:** `regimente_pe_cimpie`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play regimente_pe_cimpie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: bătălie de miniaturi pe tablă pătrățică 8×8 (câmpie), 6 unități pe parte (Pedestrași, Arcași, Călăreți, Uriaș de război, Căpitan); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă.
+- Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea.
+- Reguli proprii: flancare: +1 zar dacă un aliat e lângă țintă; asalt: unitățile de corp la corp care s-au mutat cel puțin 2 au +1 zar; moral: o unitate la cel mult o treime din PV șovăie (−1 zar).
+- Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: uN r,c, uN r,c x uM, tira.
+- Exemple legale la început: `u0`, `1,0`
+- La început sunt 198 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tancuri_in_lan"></a>
+## Tancuri în lan (bătălie: sat)
+
+- **Id:** `tancuri_in_lan`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play tancuri_in_lan` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: bătălie de miniaturi pe tablă pătrățică 9×7 (sat), 7 unități pe parte (Pușcași, Tun antitanc, Tanc greu, Autoblindat, Căpitan); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (1 obiectiv(e) «*»). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă.
+- Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea.
+- Reguli proprii: tir din mișcare: trăgătorii care s-au mutat au −1 zar; flancare: +1 zar dacă un aliat e lângă țintă.
+- Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: uN r,c, uN r,c x uM, tira.
+- Exemple legale la început: `u0`, `1,0`
+- La început sunt 260 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="veacul_regimentelor"></a>
+## Veacul regimentelor (bătălie: pod)
+
+- **Id:** `veacul_regimentelor`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play veacul_regimentelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: bătălie de miniaturi pe tablă hexagonală 7×7 (pod), 6 unități pe parte (Halebardieri, Arbaletieri, Cavaleri, Bestie de asediu, Comandant); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (1 obiectiv(e) «*»). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă.
+- Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea.
+- Reguli proprii: asalt: unitățile de corp la corp care s-au mutat cel puțin 2 au +1 zar; flancare: +1 zar dacă un aliat e lângă țintă; contralovitură: apărătorul de corp la corp răspunde cu jumătate din zaruri.
+- Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: uN r,c, uN r,c x uM, tira.
+- Exemple legale la început: `u0`, `1,0`
+- La început sunt 426 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="trupe_sub_trei_sori"></a>
+## Trupe sub trei sori (bătălie: stele)
+
+- **Id:** `trupe_sub_trei_sori`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play trupe_sub_trei_sori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: bătălie de miniaturi pe tablă pătrățică 8×8 (stele), 7 unități pe parte (Pușcași stelari, Trăgători de elită, Mers blindat, Tun de câmp, Comandant); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 7 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă.
+- Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea.
+- Reguli proprii: mișcare și distanțe cu diagonale; tir din mișcare: trăgătorii care s-au mutat au −1 zar; moral: o unitate la cel mult o treime din PV șovăie (−1 zar).
+- Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: uN r,c, uN r,c x uM, tira.
+- Exemple legale la început: `u0`, `1,0`
+- La început sunt 1080 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bande_in_hrube"></a>
+## Bande în hrube (bătălie: oraș)
+
+- **Id:** `bande_in_hrube`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bande_in_hrube` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: bătălie de miniaturi pe tablă pătrățică 7×7 (oraș), 5 unități pe parte (Pistolar, Aruncător de grenade, Șef de bandă, Mutant uriaș); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 7 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă.
+- Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea.
+- Reguli proprii: mișcare și distanțe cu diagonale; moral: o unitate la cel mult o treime din PV șovăie (−1 zar); contralovitură: apărătorul de corp la corp răspunde cu jumătate din zaruri.
+- Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: uN r,c, uN r,c x uM, tira.
+- Exemple legale la început: `u0`, `1,0`
+- La început sunt 388 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zidul_de_scuturi"></a>
+## Zidul de scuturi (bătălie: câmpie)
+
+- **Id:** `zidul_de_scuturi`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play zidul_de_scuturi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: bătălie de miniaturi pe tablă hexagonală 8×8 (câmpie), 6 unități pe parte (Scutieri, Arcași, Lăncieri călare, Monstru de luptă, Stegar); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (fără obiective (contează pierderile)). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă.
+- Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea.
+- Reguli proprii: flancare: +1 zar dacă un aliat e lângă țintă; asalt: unitățile de corp la corp care s-au mutat cel puțin 2 au +1 zar; moral: o unitate la cel mult o treime din PV șovăie (−1 zar); contralovitură: apărătorul de corp la corp răspunde cu jumătate din zaruri.
+- Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: uN r,c, uN r,c x uM, tira.
+- Exemple legale la început: `u0`, `1,0`
+- La început sunt 290 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="straja_pe_culme"></a>
+## Strajă pe culme (bătălie: munte)
+
+- **Id:** `straja_pe_culme`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play straja_pe_culme` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: bătălie de miniaturi pe tablă pătrățică 8×7 (munte), 6 unități pe parte (Străji, Arcași de potecă, Căpetenie, Iscoade călare); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 7 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă.
+- Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea.
+- Reguli proprii: mișcare și distanțe cu diagonale; contralovitură: apărătorul de corp la corp răspunde cu jumătate din zaruri; asalt: unitățile de corp la corp care s-au mutat cel puțin 2 au +1 zar.
+- Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: uN r,c, uN r,c x uM, tira.
+- Exemple legale la început: `u0`, `1,0`
+- La început sunt 726 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fratii_dezbinati"></a>
+## Frații dezbinați (bătălie: fortăreață)
+
+- **Id:** `fratii_dezbinati`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fratii_dezbinati` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală: bătălie de miniaturi pe tablă hexagonală 7×7 (fortăreață), 6 unități pe parte (Pușcași blindați, Trăgători grei, Cuirasat, Tun de asediu, Căpitan); teren: # blocaj, + acoperire, ~ teren greu, * obiectiv (2 obiectiv(e) «*»). 6 runde; fiecare unitate se activează o dată pe rundă, alternativ: «uN r,c» mută unitatea N, «uN r,c x uM» mută și atacă.
+- Atacul aruncă zaruri d6 (lovește la ≥ tn), apoi salvări; acoperirea ușurează salvarea.
+- Reguli proprii: tir din mișcare: trăgătorii care s-au mutat au −1 zar; flancare: +1 zar dacă un aliat e lângă țintă; moral: o unitate la cel mult o treime din PV șovăie (−1 zar).
+- Puncte: pierderile provocate (după cost) + 2 pe obiectiv controlat la sfârșitul rundei; câștigi eliminând armata adversă sau cu mai multe puncte la final.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: uN r,c, uN r,c x uM, tira.
+- Exemple legale la început: `u0`, `1,0`
+- La început sunt 514 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="eroi_pe_acoperis"></a>
+## Eroi pe acoperiș
+
+- **Id:** `eroi_pe_acoperis`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play eroi_pe_acoperis` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): f = Zburătorul 3/4/1/2/1 [L]; t = Titanul 5/2/1/3/2 [KH]; a = Arcașa 2/3/4/2/0; s = Scutierul 4/3/1/2/2.
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 9 runde.
+- Lovitura reușită împinge ținta (sau o rănește în plus dacă nu are loc).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 137 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="razboinici_de_fiord"></a>
+## Războinici de fiord
+
+- **Id:** `razboinici_de_fiord`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play razboinici_de_fiord` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×6.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): g = Garda 2/3/1/3/1 [F]; b = Berserkul 3/4/1/4/0 [C]; l = Lăncierul 2/3/2/2/1; a = Arcașul 1/3/4/2/0.
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Un 6 la zar rănește dublu.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 91 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="osti_pe_o_fila"></a>
+## Oști pe o filă
+
+- **Id:** `osti_pe_o_fila`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play osti_pe_o_fila` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): p = Pușcaș 2/3/5/2/1; m = Mercenar 3/3/1/3/1; o = Ogar 5/2/1/4/2 [H]; r = Cercetaș 1/5/3/1/0 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde (sau 16 puncte).
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 227 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bande_in_ruine"></a>
+## Bande în ruine
+
+- **Id:** `bande_in_ruine`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bande_in_ruine` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): c = Căpitan 3/3/1/3/1 [F]; h = Hoț 2/4/1/2/0; t = Tragător 2/3/4/2/0; d = Doctor 2/3/1/1/0 [M].
+- Pe tură poți activa 5 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Terenul dificil (~) dă +1 armură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 81 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="masinarii_de_abur"></a>
+## Mașinării de abur
+
+- **Id:** `masinarii_de_abur`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play masinarii_de_abur` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): k = Colos 6/2/1/4/3 [HB]; t = Tunar 3/2/5/3/1 [B]; s = Soldat 2/3/1/2/1; m = Mecanic 2/3/1/1/0 [M].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 137 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="strigoi_de_targ"></a>
+## Strigoi de târg
+
+- **Id:** `strigoi_de_targ`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play strigoi_de_targ` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 7×7.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): f = Fantomă 2/4/1/2/0 [L]; l = Lampadar 3/3/3/2/1; p = Păpușar 3/3/1/3/1 [K]; c = Clovn 2/4/1/3/0 [C].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 8 puncte sau ai mai multe după 9 runde.
+- Un 6 la zar rănește dublu.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 211 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="giganti_de_otel"></a>
+## Giganți de oțel
+
+- **Id:** `giganti_de_otel`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play giganti_de_otel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): u = Uriaș 6/2/5/4/2 [H]; m = Mijlociu 4/3/4/3/1 [H]; s = Sprinter 2/5/2/2/0 [L].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 173 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="salve_si_baionete"></a>
+## Salve și baionete
+
+- **Id:** `salve_si_baionete`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play salve_si_baionete` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): l = Linie 3/2/3/2/0; g = Grenadier 3/3/1/3/1 [C]; t = Tun 2/1/6/3/0 [H]; h = Husar 3/5/1/2/0 [F].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul are efect fix: forță minus armură (minim 1), fără zaruri.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde (sau 18 puncte).
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 87 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="arena_pietrelor"></a>
+## Arena pietrelor
+
+- **Id:** `arena_pietrelor`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play arena_pietrelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 6×6.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): r = Ritualist 2/3/3/2/0; l = Luptător 3/3/1/3/1 [K]; s = Străjer 3/2/1/2/2.
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 7 puncte sau ai mai multe după 8 runde.
+- Flanc: +1 zar dacă un aliat e lângă țintă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 95 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chemarea_hoardelor"></a>
+## Chemarea hoardelor
+
+- **Id:** `chemarea_hoardelor`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play chemarea_hoardelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×7.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): h = Hoardă 2/3/1/3/0 [C]; s = Șaman 2/3/3/2/0 [M]; m = Monstru 5/3/1/4/1 [K]; a = Aruncător 1/4/4/1/0.
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde (sau 14 puncte).
+- Un 6 la zar rănește dublu.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 149 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="escadre_in_nebuloasa"></a>
+## Escadre în nebuloasă
+
+- **Id:** `escadre_in_nebuloasa`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play escadre_in_nebuloasa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): c = Crucișător 7/2/4/4/2 [H]; f = Fregată 4/3/3/3/1; i = Interceptor 1/6/2/2/0 [L]; p = Portavion 6/1/3/2/3 [HM].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 77 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="blindate_pe_sosea"></a>
+## Blindate pe șosea
+
+- **Id:** `blindate_pe_sosea`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play blindate_pe_sosea` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): b = Blindat 4/3/4/3/2 [H]; t = Transportor 3/4/1/1/1; i = Infanterist 2/3/3/2/0; a = Antitanc 2/2/5/4/0 [H].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: duci unități pe rândul de la capătul opus (ies din joc, câte 2 puncte); primul la 6 puncte sau cu mai multe după 12 runde câștigă.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 233 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="patrule_in_lan"></a>
+## Patrule în lan
+
+- **Id:** `patrule_in_lan`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play patrule_in_lan` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×7.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): f = Pușcaș 2/3/4/2/0; m = Mitralior 2/2/6/3/0 [H]; c = Comandant 3/3/2/2/1 [F]; s = Sanitar 2/3/1/1/0 [M].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 9 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 147 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="vrajitori_in_ger"></a>
+## Vrăjitori în ger
+
+- **Id:** `vrajitori_in_ger`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play vrajitori_in_ger` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): v = Vrăjitor 3/3/5/3/0 [B]; a = Aprentis 2/3/3/2/0; s = Soldat de gheață 3/3/1/2/1; l = Lup 2/5/1/2/0 [C].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Terenul dificil (~) dă +1 armură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 133 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="bolizi_de_pustiu"></a>
+## Bolizi de pustiu
+
+- **Id:** `bolizi_de_pustiu`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play bolizi_de_pustiu` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×7.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): b = Buggy 2/6/2/2/0 [L]; c = Camion 4/4/1/3/2 [CK]; m = Motocicletă 1/7/1/2/0 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde.
+- Încărcare: +1 zar după o mutare de cel puțin 2 pași.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 391 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="legiuni_si_cohorte"></a>
+## Legiuni și cohorte
+
+- **Id:** `legiuni_si_cohorte`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play legiuni_si_cohorte` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): l = Legionar 4/2/1/3/2; a = Arcaș 2/3/4/2/0; c = Călăreț 3/5/1/3/0 [C]; t = Triarii 5/2/1/3/3 [H].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul are efect fix: forță minus armură (minim 1), fără zaruri.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde (sau 20 puncte).
+- Flanc: +1 zar dacă un aliat e lângă țintă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 99 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="falange_si_calarime"></a>
+## Falangă și călărime
+
+- **Id:** `falange_si_calarime`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play falange_si_calarime` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×7.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): f = Falangist 4/2/1/3/3 [H]; c = Cavalerist 3/5/1/3/1 [C]; p = Praștiaș 1/3/3/1/0; e = Elefant 6/3/1/4/2 [KC].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul are efect fix: forță minus armură (minim 1), fără zaruri.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde (sau 20 puncte).
+- Încărcare: +1 zar după o mutare de cel puțin 2 pași.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 93 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="gardieni_si_corsari"></a>
+## Gardieni și corsari
+
+- **Id:** `gardieni_si_corsari`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play gardieni_si_corsari` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): g = Gardian 3/3/1/3/1 [F]; k = Corsar 2/4/3/2/0; m = Mentor 3/3/2/3/1 [B]; d = Droid 2/3/4/2/1.
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 8 puncte sau ai mai multe după 9 runde.
+- Un 6 la zar rănește dublu.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 171 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="carosate_de_fier"></a>
+## Carosate de fier
+
+- **Id:** `carosate_de_fier`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play carosate_de_fier` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×10.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): t = Tanc 4/3/4/3/2 [H]; i = Infanterie 2/2/3/2/1; m = Mersător 6/2/5/4/2 [HB]; a = Aviator 2/7/2/2/0 [L].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul are efect fix: forță minus armură (minim 1), fără zaruri.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde (sau 24 puncte).
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 127 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="titani_de_ceata"></a>
+## Titani de ceață
+
+- **Id:** `titani_de_ceata`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play titani_de_ceata` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): t = Titan 9/2/5/5/3 [HBK]; s = Scutier 3/3/2/2/1 [M]; e = Explorator 3/5/3/3/1 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 111 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="nave_in_deriva"></a>
+## Nave în derivă
+
+- **Id:** `nave_in_deriva`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play nave_in_deriva` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): c = Cuirasat 8/1/5/4/3 [H]; f = Fregată 4/3/3/3/1; e = Escortă 2/5/2/2/0 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 187 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="balada_vitejilor"></a>
+## Balada vitejilor
+
+- **Id:** `balada_vitejilor`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play balada_vitejilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 7×7.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): e = Erou 4/3/1/4/1 [F]; t = Tâlhar 2/4/1/2/0; a = Arcaș 1/3/4/2/0; m = Menestrel 2/3/1/1/0 [M].
+- Pe tură poți activa 2 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 12 runde.
+- Un 6 la zar rănește dublu.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 67 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="echipaj_de_epava"></a>
+## Echipaj de epavă
+
+- **Id:** `echipaj_de_epava`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play echipaj_de_epava` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): k = Căpitan 3/3/3/3/1; s = Salvator 2/4/1/2/0; r = Robot 3/2/2/2/2 [H]; p = Pilot 2/5/3/2/0 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 7 puncte sau ai mai multe după 8 runde.
+- Terenul dificil (~) dă +1 armură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 173 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="armate_de_buzunar"></a>
+## Armate de buzunar
+
+- **Id:** `armate_de_buzunar`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play armate_de_buzunar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 11×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): i = Infanterie 2/2/2/2/1; t = Tanc 4/4/3/3/2; a = Artilerie 2/1/6/4/0 [H]; z = Zburător 3/7/2/2/0 [L].
+- Pe tură poți activa 5 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul are efect fix: forță minus armură (minim 1), fără zaruri.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 12 runde (sau 22 puncte).
+- H = nu atacă după mișcare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 129 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="roata_puterilor"></a>
+## Roata puterilor
+
+- **Id:** `roata_puterilor`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play roata_puterilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): v = Viteaz 3/4/1/3/1; g = Gigant 5/2/1/4/2 [K]; m = Mag 2/3/4/3/0 [B]; z = Zburător 2/5/2/2/0 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Un 6 la zar rănește dublu.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 175 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="escadrile_de_hartie"></a>
+## Escadrile de hârtie
+
+- **Id:** `escadrile_de_hartie`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play escadrile_de_hartie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×10.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): v = Vânător 2/6/2/2/0 [L]; b = Bombardier 3/4/2/3/1 [L]; a = As 2/7/3/3/0 [L].
+- Pe tură poți activa 6 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- L = zburător.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 435 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mersatori_si_pusasi"></a>
+## Mersători și pușcași
+
+- **Id:** `mersatori_si_pusasi`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mersatori_si_pusasi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): m = Mersător 5/3/3/4/2 [H]; p = Pușcaș 2/3/4/2/0; g = Grenadier 2/3/3/3/1 [B]; s = Scout 1/5/2/1/0 [L].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 175 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="aterizare_peste_oras"></a>
+## Aterizare peste oraș
+
+- **Id:** `aterizare_peste_oras`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play aterizare_peste_oras` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): a = Aeronavă 3/6/1/1/1 [L]; t = Tanc 4/3/4/3/2 [H]; s = Soldat 2/3/3/2/0; w = Walker 4/2/3/3/2 [K].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: duci unități pe rândul de la capătul opus (ies din joc, câte 2 puncte); primul la 8 puncte sau cu mai multe după 12 runde câștigă.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 267 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="case_si_ierni"></a>
+## Case și ierni
+
+- **Id:** `case_si_ierni`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play case_si_ierni` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): c = Cavaler 4/4/1/3/2 [C]; l = Lăncier 2/3/1/2/1 [F]; a = Arcaș 1/3/4/2/0; b = Bastard 3/3/1/3/1.
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 10 puncte sau ai mai multe după 9 runde.
+- Încărcare: +1 zar după o mutare de cel puțin 2 pași.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 185 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="osti_de_hotar"></a>
+## Oști de hotar
+
+- **Id:** `osti_de_hotar`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play osti_de_hotar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): z = Zid de scuturi 4/2/1/3/3 [H]; t = Tăietor 3/3/1/4/1; a = Arbaletier 2/3/4/3/0; c = Cavaler 4/5/1/3/2 [C].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul are efect fix: forță minus armură (minim 1), fără zaruri.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde (sau 22 puncte).
+- Încărcare: +1 zar după o mutare de cel puțin 2 pași.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 71 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pusasi_pe_planeta_rosie"></a>
+## Pușcași pe planeta roșie
+
+- **Id:** `pusasi_pe_planeta_rosie`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pusasi_pe_planeta_rosie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): p = Pușcaș 2/3/5/2/0; e = Exo-armură 5/2/3/4/2 [H]; s = Săritor 2/5/1/3/0 [LC]; m = Medic 2/3/1/1/0 [M].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Terenul dificil (~) dă +1 armură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 209 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="coridorul_ruinat"></a>
+## Coridorul ruinat
+
+- **Id:** `coridorul_ruinat`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play coridorul_ruinat` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 6×6.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): s = Soldat 2/3/4/2/1; t = Tunar 2/2/5/3/0 [H]; m = Mercenar 3/3/1/3/1 [C].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 8 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 37 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ringul_cu_bila"></a>
+## Ringul cu bilă
+
+- **Id:** `ringul_cu_bila`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ringul_cu_bila` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 7×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): a = Atacant 2/4/1/2/0; t = Tank 4/2/1/3/2 [KH]; r = Rapid 1/5/1/1/0 [L].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul are efect fix: forță minus armură (minim 1), fără zaruri.
+- Scop: duci unități pe rândul de la capătul opus (ies din joc, câte 2 puncte); primul la 6 puncte sau cu mai multe după 14 runde câștigă.
+- Flanc: +1 zar dacă un aliat e lângă țintă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 133 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="domni_si_arcasi"></a>
+## Domni și arcași
+
+- **Id:** `domni_si_arcasi`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play domni_si_arcasi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 9×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): c = Călăreț 3/5/1/3/1 [C]; s = Sergent 2/3/1/2/1 [F]; a = Arcaș 1/3/4/2/0; d = Domn 4/3/1/4/2.
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 10 runde.
+- Încărcare: +1 zar după o mutare de cel puțin 2 pași.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `a1>b1`
+- La început sunt 89 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="basm_cu_balauri"></a>
+## Basm cu balauri
+
+- **Id:** `basm_cu_balauri`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play basm_cu_balauri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 8×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): b = Balaur 6/5/2/4/2 [LB]; c = Cavaler 3/3/1/3/2 [C]; v = Vrăjitoare 2/3/4/2/0 [M]; g = Goblin 1/4/1/2/0.
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Un 6 la zar rănește dublu.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 153 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="avioane_in_amurg"></a>
+## Avioane în amurg
+
+- **Id:** `avioane_in_amurg`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play avioane_in_amurg` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 10×10.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): a = Vânător 2/6/2/2/0 [L]; b = Bombardier 4/4/2/3/1 [L]; e = As 3/7/3/3/1 [L].
+- Pe tură poți activa 5 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- L = zburător.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 417 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="torpiloare_in_noapte"></a>
+## Torpiloare în noapte
+
+- **Id:** `torpiloare_in_noapte`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play torpiloare_in_noapte` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): t = Torpilor 2/5/3/3/0 [L]; e = Escortor 4/3/3/3/1; c = Cargou 6/2/1/1/2 [H].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 9 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 165 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="corabii_cu_tunuri"></a>
+## Corăbii cu tunuri
+
+- **Id:** `corabii_cu_tunuri`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play corabii_cu_tunuri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): f = Fregată 5/3/3/3/1; g = Galion 7/2/3/4/2 [H]; s = Șalupă 2/5/2/2/0 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde.
+- Un 6 la zar rănește dublu.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 77 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="panze_si_ghiulele"></a>
+## Pânze și ghiulele
+
+- **Id:** `panze_si_ghiulele`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play panze_si_ghiulele` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): b = Brig 4/4/3/3/1; f = Fregată 5/3/3/3/2; c = Cutter 2/5/2/2/0 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Terenul dificil (~) dă +1 armură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 115 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pe_valuri_de_otel"></a>
+## Pe valuri de oțel
+
+- **Id:** `pe_valuri_de_otel`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pe_valuri_de_otel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 11×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): c = Cuirasat 8/2/6/5/3 [H]; d = Distrugător 3/5/3/3/1 [L]; k = Crucișător 5/3/4/3/2.
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 215 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="flote_cu_aburi"></a>
+## Flote cu aburi
+
+- **Id:** `flote_cu_aburi`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play flote_cu_aburi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): n = Monitor 6/2/4/4/3 [HB]; v = Vapor rapid 3/4/3/3/1; z = Zeppelin 3/3/2/3/1 [L]; t = Tender 3/3/1/1/1 [M].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 115 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="flote_in_inel"></a>
+## Flote în inel
+
+- **Id:** `flote_in_inel`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play flote_in_inel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): c = Cruiser 5/3/4/3/2; e = Escortă 2/5/2/2/0 [L]; d = Dronă 1/6/1/2/0 [L].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 9 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 221 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fregate_in_vid"></a>
+## Fregate în vid
+
+- **Id:** `fregate_in_vid`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fregate_in_vid` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă pătrățită 12×9.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): f = Fregată 4/3/4/3/1; c = Cuirasat 7/2/5/4/2 [H]; r = Rapid 2/5/2/2/0 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul are efect fix: forță minus armură (minim 1), fără zaruri.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 12 runde.
+- H = nu atacă după mișcare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 185 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scuturi_si_raze"></a>
+## Scuturi și raze
+
+- **Id:** `scuturi_si_raze`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play scuturi_si_raze` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 10×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): s = Scutier 5/3/3/4/3; r = Rapid 3/5/3/3/1 [L]; m = Medical 4/3/1/1/1 [M].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul are efect fix: forță minus armură (minim 1), fără zaruri.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 11 runde.
+- L = zburător.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 155 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="orbita_in_flacari"></a>
+## Orbită în flăcări
+
+- **Id:** `orbita_in_flacari`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play orbita_in_flacari` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): f = Fregată 4/3/4/3/1; l = Lansator 3/3/2/2/1 [L]; g = Gigant orbital 8/1/5/5/3 [HB].
+- Pe tură poți activa 4 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: la sfârșitul turei ții punctele marcate cu * (mai multe unități în jur decât adversarul) și aduni 9 puncte sau ai mai multe după 9 runde.
+- Obstacolele (#) blochează tragerea de la distanță.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 97 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="nave_de_expeditie"></a>
+## Nave de expediție
+
+- **Id:** `nave_de_expeditie`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play nave_de_expeditie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală de miniaturi pentru doi jucători pe o tablă hexagonală 9×8.
+- Unități (hp/mișcare/rază/zaruri-forță/armură): e = Explorator 4/4/3/3/1; s = Scut mobil 3/3/2/2/2 [M]; k = Vânător 2/6/2/3/0 [L].
+- Pe tură poți activa 3 unități: fiecare se poate muta („mv a1>b2”) și apoi ataca („atq a1>b2”); încheii cu „fin”.
+- Atacul aruncă zaruri în mutarea forțată „tira”: fiecare zar peste armură rănește cu 1.
+- Scop: elimini oastea adversă sau ai mai multe puncte de pierderi după 10 runde.
+- Terenul dificil (~) dă +1 armură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: mv, atq, tira, fin.
+- Exemple legale la început: `mv`, `b1>a1`
+- La început sunt 113 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ulita_neagra"></a>
+## Ulița Neagră
+
+- **Id:** `ulita_neagra`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ulita_neagra` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu ruine (pereți și adăpost).
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Vigilent 4/5/1/3/4;
+- Acrobat 2/6/1/2/3;
+- Aruncător de cuțite 2/3/4/2/3;
+- Căpetenie de bandă 4/4/1/2/4;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 328 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mingea_de_piele"></a>
+## Mingea de Piele
+
+- **Id:** `mingea_de_piele`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mingea_de_piele` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 7×9 pătrată (8 direcții) cu teren deschis.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Atacant 2/6/1/2/3;
+- Mijlocaș 3/4/1/2/4;
+- Fundaș 4/3/1/2/5;
+- Portar 3/3/1/2/5.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), p uN uM, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 502 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="regate_de_cenusa"></a>
+## Regate de Cenușă
+
+- **Id:** `regate_de_cenusa`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play regate_de_cenusa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu o creastă centrală cu treceri.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Rege-Cenușă 5/3/1/3/5;
+- Gardian cu scut 4/2/1/3/5;
+- Arcaș de ceață 2/3/5/2/3;
+- Vrăjitor al focului 2/3/4/2/3;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 220 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fiare_si_vrajitori"></a>
+## Fiare și Vrăjitori
+
+- **Id:** `fiare_si_vrajitori`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play fiare_si_vrajitori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×8 hexagonală cu dărâmături (adăpost) și câțiva pereți.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Vrăjitor al turmei 5/3/4/3/3;
+- Fiară cu coarne 6/4/1/3/5;
+- Lup de stâncă 3/6/1/2/3;
+- Șaman vindecător 2/3/1/1/3;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 358 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cadranul_ostasului"></a>
+## Cadranul Ostașului
+
+- **Id:** `cadranul_ostasului`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cadranul_ostasului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×8 hexagonală cu dealuri (înălțimi).
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Cavaler de cadran 6/4/1/4/5;
+- Arcaș de cadran 4/3/5/3/3;
+- Vrăjitor de cadran 4/3/4/3/3;
+- Scutier 3/4/1/2/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 235 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="trupe_de_plumb"></a>
+## Trupe de Plumb
+
+- **Id:** `trupe_de_plumb`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play trupe_de_plumb` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu dărâmături (adăpost) și câțiva pereți.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Pușcaș 2/4/4/2/4;
+- Mitralior 2/2/6/3/4;
+- Tanc ușor 5/5/5/3/6;
+- Sapator 2/4/1/2/3;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 520 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="hrube_si_comori"></a>
+## Hrube și Comori
+
+- **Id:** `hrube_si_comori`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play hrube_si_comori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 8×8 pătrată (4 direcții) cu coridoare cu pereți.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Cavaler de peșteră 4/3/1/3/5;
+- Preot al luminii 3/3/2/2/3;
+- Mag al scânteii 3/3/5/2/3;
+- Hoț cu arc 2/4/5/2/3;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 115 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="inaltimi_cu_eroi"></a>
+## Înălțimi cu Eroi
+
+- **Id:** `inaltimi_cu_eroi`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play inaltimi_cu_eroi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×9 hexagonală cu dealuri (înălțimi).
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Erou de vale 4/4/1/3/4;
+- Arcaș de creastă 2/3/6/2/3;
+- Titan de piatră 6/2/1/4/5;
+- Iscoadă 2/6/1/2/3;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 415 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lame_si_ghiare"></a>
+## Lame și Gheare
+
+- **Id:** `lame_si_ghiare`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play lame_si_ghiare` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu stâlpi și adăposturi împrăștiate.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Mare Războinic 5/4/1/4/5;
+- Gheară de pădure 3/5/1/3/3;
+- Gardă de fier 5/2/1/3/5;
+- Haiduc 3/3/1/3/4;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 271 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="strajeri_de_umbra"></a>
+## Străjerii din Umbră
+
+- **Id:** `strajeri_de_umbra`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play strajeri_de_umbra` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 8×10 pătrată (4 direcții) cu coridoare cu pereți.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Străjer 3/4/4/3/4;
+- Căpitan de străji 4/4/3/3/4;
+- Ghicitor 2/4/1/1/3;
+- Ghoul de umbră 2/4/1/2/3;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 199 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="padure_cu_muschete"></a>
+## Pădure cu Mușchete
+
+- **Id:** `padure_cu_muschete`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play padure_cu_muschete` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×8 pătrată (8 direcții) cu dărâmături (adăpost) și câțiva pereți.
+- La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Pușcaș de graniță 2/4/5/2/4;
+- Luptător cu topor 3/5/1/2/3;
+- Locotenent 3/4/3/2/4;
+- Gealat de pădure 3/4/1/2/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 526 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="catuse_si_baionete"></a>
+## Cartușe și Baionete
+
+- **Id:** `catuse_si_baionete`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play catuse_si_baionete` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu teren deschis.
+- Puncte de acțiune: 2 plus 1 pentru fiecare lider viu (maxim 5); fiecare acțiune costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Soldat de linie 2/3/5/2/4;
+- Grenadier 3/3/1/3/4;
+- Ofițer 3/4/3/2/4;
+- Tobosar 2/4/1/1/3.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 451 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="armata_de_cimpie"></a>
+## Armata de Câmpie
+
+- **Id:** `armata_de_cimpie`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play armata_de_cimpie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 12×8 pătrată (8 direcții) cu teren deschis.
+- Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Batalion de linie 4/2/4/3/4;
+- Cavalerie ușoară 3/7/1/3/4;
+- Artilerie de câmp 3/1/7/4/5;
+- General 3/5/1/2/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 718 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sulite_si_archebuze"></a>
+## Suliți și Archebuze
+
+- **Id:** `sulite_si_archebuze`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play sulite_si_archebuze` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 12×8 pătrată (8 direcții) cu teren deschis.
+- Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Pichier 4/2/1/3/5;
+- Archebuzier 3/3/4/3/4;
+- Cavalerie de oțel 4/6/1/3/5;
+- Colonel 3/5/1/2/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 535 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="patrula_linia_rosie"></a>
+## Patrula de pe Linia Roșie
+
+- **Id:** `patrula_linia_rosie`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play patrula_linia_rosie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×9 pătrată (8 direcții) cu ruine (pereți și adăpost).
+- La fiecare tură ai 4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Pușcaș de patrulă 2/4/6/3/4;
+- Lunetist 2/2/7/2/3;
+- Sergent 3/4/5/3/4;
+- Gealat de infiltrare 2/5/3/2/3.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 445 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pistoale_in_praf"></a>
+## Pistoale în Praf
+
+- **Id:** `pistoale_in_praf`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pistoale_in_praf` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu dărâmături (adăpost) și câțiva pereți.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Pistolar 3/4/5/2/4;
+- Pușcaș cu carabină 2/3/7/2/4;
+- Șerif 4/4/4/3/4;
+- Tâlhar 2/5/3/2/3;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 340 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="carti_prafuite"></a>
+## Cărți Prăfuite
+
+- **Id:** `carti_prafuite`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play carti_prafuite` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×8 pătrată (8 direcții) cu stâlpi și adăposturi împrăștiate.
+- La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Pistolar de noroc 2/4/5/2/3;
+- Căpitanul bandei 3/4/4/3/4;
+- Bătăuș de bar 3/3/1/3/4;
+- Hoț de cai 2/6/1/2/3.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 508 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="aventurieri_de_foileton"></a>
+## Aventurieri de Foileton
+
+- **Id:** `aventurieri_de_foileton`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play aventurieri_de_foileton` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu ruine (pereți și adăpost).
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Eroul de serie 4/5/3/3/4;
+- Asistentul isteț 2/6/3/2/3;
+- Atletul 3/5/1/3/4;
+- Cercetașa curajoasă 2/4/4/2/3;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 394 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="clanuri_de_orhidee"></a>
+## Clanurile de Orhidee
+
+- **Id:** `clanuri_de_orhidee`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play clanuri_de_orhidee` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu stâlpi și adăposturi împrăștiate.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Maestru de clan 4/4/1/4/5;
+- Spadasin 3/4/1/3/4;
+- Arcaș de ceremonie 2/3/5/2/3;
+- Călugăr de templu 3/3/1/2/3;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 313 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="spada_fara_stapan"></a>
+## Sabia fără Stăpân
+
+- **Id:** `spada_fara_stapan`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play spada_fara_stapan` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 7×7 pătrată (4 direcții) cu stâlpi și adăposturi împrăștiate.
+- La fiecare tură ai 2 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Samurai fără stăpân 4/4/1/4/5;
+- Lăncier rătăcit 3/4/1/3/4;
+- Mercenar 3/3/1/3/4;
+- Arcaș de drum 2/3/4/2/3.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 118 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="legamant_de_piatra"></a>
+## Legământ de Piatră
+
+- **Id:** `legamant_de_piatra`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play legamant_de_piatra` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu o creastă centrală cu treceri.
+- Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Gardă de piatră 5/2/1/3/5;
+- Arbaletier de munte 2/3/5/3/3;
+- Thane de peșteră 5/3/1/3/5;
+- Sapator 3/3/1/3/4;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 277 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="armuri_de_abur"></a>
+## Armuri de Abur
+
+- **Id:** `armuri_de_abur`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play armuri_de_abur` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×9 pătrată (8 direcții) cu ruine (pereți și adăpost).
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Trăgător cu abur 2/4/5/2/4;
+- Mers de oțel 6/3/5/3/5;
+- Căpitan de abur 4/4/3/3/4;
+- Grenadier cu flacără 3/3/3/2/3.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 412 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zbor_de_lancii"></a>
+## Zbor de Lănci
+
+- **Id:** `zbor_de_lancii`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play zbor_de_lancii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 12×8 pătrată (8 direcții) cu teren deschis.
+- Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Cavalerie grea 4/6/1/4/5;
+- Pedestrime cu scut 3/3/1/3/4;
+- Arcași montați 2/6/4/2/3;
+- Comandant 3/5/1/3/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 943 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="douasprezece_elemente"></a>
+## Douăsprezece Elemente
+
+- **Id:** `douasprezece_elemente`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play douasprezece_elemente` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 10×8 pătrată (4 direcții) cu teren deschis.
+- La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Element de lănci 3/3/1/3/4;
+- Element de arcași 2/3/4/2/3;
+- Element de care 3/5/1/3/4;
+- General 3/4/1/2/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 232 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="oastea_cea_mare"></a>
+## Oastea cea Mare
+
+- **Id:** `oastea_cea_mare`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play oastea_cea_mare` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 12×9 pătrată (4 direcții) cu o creastă centrală cu treceri.
+- La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Pedestrime de linie 3/3/1/3/4;
+- Pedestrime ușoară 2/4/3/2/3;
+- Cavalerie de elită 4/6/1/3/5;
+- General de oaste 4/5/1/3/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 286 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mestesugul_razboiului"></a>
+## Meșteșugul Războiului
+
+- **Id:** `mestesugul_razboiului`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play mestesugul_razboiului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu o creastă centrală cu treceri.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Infanterie de elită 4/3/1/3/5;
+- Arcași ușori 2/4/4/2/3;
+- Cavalerie de război 3/6/1/3/4;
+- Strateg 3/4/1/3/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 451 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ordine_pe_caroiaj"></a>
+## Ordine pe Caroiaj
+
+- **Id:** `ordine_pe_caroiaj`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play ordine_pe_caroiaj` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 12×8 pătrată (4 direcții) cu teren deschis.
+- La fiecare tură un zar de comandă dă 2–4 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Unitate de linie 3/3/1/3/4;
+- Unitate de arcași 2/3/4/2/3;
+- Unitate de care 3/5/1/3/4;
+- General 3/4/1/3/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 247 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cavaleri_si_pavaze"></a>
+## Cavaleri și Pavaze
+
+- **Id:** `cavaleri_si_pavaze`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play cavaleri_si_pavaze` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 10×8 pătrată (8 direcții) cu teren deschis.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Cavaler greu 5/5/1/4/5;
+- Pavăzar 4/2/1/2/6;
+- Arbaletier cu pavăză 3/3/5/2/4;
+- Senior 4/4/1/3/5.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 394 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="maresali_de_fier"></a>
+## Mareșali de Fier
+
+- **Id:** `maresali_de_fier`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play maresali_de_fier` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 12×8 pătrată (8 direcții) cu stâlpi și adăposturi împrăștiate.
+- Puncte de acțiune: 2 plus 1 pentru fiecare lider viu (maxim 5); fiecare acțiune costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Regiment de bătaie 4/3/1/3/4;
+- Mașini de asediu 3/1/7/4/4;
+- Mareșal 3/6/1/2/4;
+- Călăreți de oțel 4/6/1/3/5.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 667 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="salve_pe_front"></a>
+## Salve pe Front
+
+- **Id:** `salve_pe_front`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play salve_pe_front` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 11×9 hexagonală cu teren deschis.
+- Punctele de acțiune sunt jumătate din unitățile tale vii (2–5); fiecare acțiune costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Brigadă de linie 5/2/3/3/4;
+- Brigadă de cavalerie 4/5/1/3/4;
+- Baterie 3/1/6/4/4;
+- Corp de armată 4/3/1/2/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 235 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="foc_si_pulbere"></a>
+## Foc și Pulbere
+
+- **Id:** `foc_si_pulbere`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play foc_si_pulbere` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 11×8 pătrată (4 direcții) cu dărâmături (adăpost) și câțiva pereți.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Brigadă cu pușcă 4/3/4/3/4;
+- Tunuri de câmp 3/1/6/4/4;
+- Cavalerie de recunoaștere 3/6/1/2/4;
+- General de armată 3/5/1/3/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 238 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pasi_de_otel"></a>
+## Pași de Oțel
+
+- **Id:** `pasi_de_otel`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play pasi_de_otel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 10×9 hexagonală cu stâlpi și adăposturi împrăștiate.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Mers ușor 4/5/5/2/5;
+- Mers greu 6/3/6/3/6;
+- Pușcaș în exoschelet 3/4/4/2/4;
+- Comandant de mers 5/4/5/3/5.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 286 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="escadrila_cerului_rosu"></a>
+## Escadrila Cerului Roșu
+
+- **Id:** `escadrila_cerului_rosu`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play escadrila_cerului_rosu` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 10×10 hexagonală cu teren deschis.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Vânător 3/6/3/3/4;
+- Bombardier 5/4/2/4/5;
+- Escortă 2/7/3/2/3;
+- Comandant de escadrilă 4/6/3/3/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 787 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lupta_in_nori"></a>
+## Luptă în Nori
+
+- **Id:** `lupta_in_nori`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play lupta_in_nori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×9 hexagonală cu teren deschis.
+- La fiecare tură ai 2 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Biplan agil 2/7/2/3/4;
+- Monoplan 3/6/3/3/4;
+- Tunar de coadă 3/5/4/2/4;
+- As 4/7/3/4/5.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 667 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="echipajul_ratacit"></a>
+## Echipajul Rătăcit
+
+- **Id:** `echipajul_ratacit`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play echipajul_ratacit` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 8×8 pătrată (8 direcții) cu dărâmături (adăpost) și câțiva pereți.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Pilot 3/4/5/2/4;
+- Tehnician 2/4/3/2/3;
+- Mercenar 4/4/1/3/4;
+- Bandit stelar 2/4/4/2/4;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 313 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="planeta_cu_spini"></a>
+## Planeta cu Spini
+
+- **Id:** `planeta_cu_spini`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play planeta_cu_spini` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×9 hexagonală cu ruine (pereți și adăpost).
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Infanterist colonial 3/4/5/3/4;
+- Sergent colonial 4/4/4/3/4;
+- Flăcărar 3/3/3/2/3;
+- Vierme de spini 2/5/1/2/4;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), r uN, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 280 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zeii_de_lut"></a>
+## Zeii de Lut
+
+- **Id:** `zeii_de_lut`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play zeii_de_lut` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 9×8 hexagonală cu dealuri (înălțimi).
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Zeu al furtunii 6/4/4/4/5;
+- Erou de lut 5/4/1/3/5;
+- Zeiță a vânătorii 3/3/6/3/3;
+- Monstru de piatră 7/3/1/4/5;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 250 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="asalt_pe_statia_veche"></a>
+## Asalt pe Stația Veche
+
+- **Id:** `asalt_pe_statia_veche`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play asalt_pe_statia_veche` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 10×9 pătrată (8 direcții) cu coridoare cu pereți.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Rebel cu pușcă 3/4/5/3/4;
+- Mecanic de stație 3/3/3/2/3;
+- Lunetist 2/3/7/3/3;
+- Soldat de asalt 3/3/5/2/4;
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), h uN uM, end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 202 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="culoare_de_otel"></a>
+## Culoare de Oțel
+
+- **Id:** `culoare_de_otel`
+- **Categorie:** Miniaturi
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** nu
+- **Pornire:** `polytabletop play culoare_de_otel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi pe o tablă 7×11 pătrată (4 direcții) cu coridoare cu pereți.
+- La fiecare tură ai 3 puncte de acțiune; fiecare mutare, atac sau acțiune specială costă 1.
+- Unități (viață/mutare/bătaie/zaruri/țintă): Gardian în armură 4/3/5/3/5;
+- Sergent în armură 4/3/5/3/5;
+- Roi de ghiare 2/6/1/2/3;
+- Patriarh al roiului 5/5/1/3/4.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: m uN d4 (mută), a uN uM (atacă), end.
+- Exemple legale la început: `m`, `u0`
+- La început sunt 106 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pirati_de_hartie"></a>
+## Pirații de Hârtie
+
+- **Id:** `pirati_de_hartie`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pirati_de_hartie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel original cu pachete fixe de 30 de cărți.
+- Aurul crește cu 2 pe tură (maxim 10).
+- Ai o zonă de viață de 5 cărți ascunse: o lovitură în căpitan trimite o carte în mână, iar la zonă goală pierzi.
+- Căpitanul tău (putere 4) poate ataca.
+- Poți ataca doar personaje inamice obosite, gardienii trebuie loviți primii, iar un căpitan e lovit doar de o putere cel puțin egală cu a lui.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joaca i [tN], atac c|l t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `atac`, `l`
+- La început sunt 4 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="evolutia_circuitelor"></a>
+## Evoluția Circuitelor
+
+- **Id:** `evolutia_circuitelor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play evolutia_circuitelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel original cu pachete fixe de 30 cărți și o măsură comună de memorie: începi cu 3, fiecare carte jucată sau evoluție cheltuiește costul, iar când memoria scade sub zero tura ta se încheie și adversarul pornește cu atât.
+- Evoluezi (evo i j) o creatură de nivel N într-o carte de nivel N+1 de aceeași culoare cu 2 mai ieftin.
+- Pază: 5 cărți ascunse; o lovitură în jucător răstoarnă una, iar o creatură mai puternică decât atacatorul îl distruge.
+- Fără pază, o lovitură câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joaca i [tN], evo i j, atac c t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joaca`, `0`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="energia_luptatorilor"></a>
+## Energia Luptătorilor
+
+- **Id:** `energia_luptatorilor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play energia_luptatorilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel original cu pachete fixe de 30 cărți.
+- Energia vine din mână: o dată pe tură încarci o carte (pune i) în zona de energie; toată energia e gata la începutul turei.
+- Căpitanul tău (putere 3, +2 trezit când viața e la jumătate sau mai puțin) începe cu 8 viață.
+- Atacă doar personaje inamice obosite sau căpitanul; întâi gardienii; un luptător dublu lovește de 2 ori.
+- Câștigi ducând căpitanul adversarului la 0.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pune i, joaca i [tN], atac c|l t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `pune`, `0`
+- La început sunt 14 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ceasul_alb_negru"></a>
+## Ceasul Alb-Negru
+
+- **Id:** `ceasul_alb_negru`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play ceasul_alb_negru` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel original cu pachete fixe de 40 de cărți.
+- Trei locuri în față, stocul crește cu 3 pe tură (maxim 8) și cu 1 la fiecare lovitură în jucător.
+- O carte climax (cost 0) dă oricărui atacator +2 putere și +1 suflet în tura aceea.
+- O lovitură în jucător scoate din pachet cărți-suflet în ceasul de daune; dacă iese o carte de anulare, toată lovitura se anulează.
+- Șapte cărți în ceas fac un nivel; la nivelul 3 pierzi.
+- Personajele se luptă după putere (cel mai slab cade, la egalitate cad ambele).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joaca i [tN], atac c t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joaca`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="trepte_de_avangarda"></a>
+## Treptele Avangardei
+
+- **Id:** `trepte_de_avangarda`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play trepte_de_avangarda` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel original cu pachete fixe de 30 de cărți.
+- Avangarda ta începe la nivelul 0; o dată pe tură urci (ride i) o carte cu un nivel mai sus peste ea.
+- Chemi (joaca i) gratis unități de cel mult nivelul avangardei în 4 locuri din spate.
+- Atacul avangardei descoperă mai întâi cartea de deasupra (un declanșator adaugă 2 putere și 1 daună), apoi apărătorul poate garda (garda i) cu cărți din mână, fiecare adăugând scutul ei; lovitura reușește dacă puterea e cel puțin puterea avangardei plus scuturile și adaugă cărți de daune (la 6 pierzi).
+- Ceilalți atacatori retrag o unitate de putere egală sau mai mică.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: ride i, joaca i, atac c|l t|p, garda i, nu, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joaca`, `0`
+- La început sunt 10 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="doua_arene_o_baza"></a>
+## Două Arene, o Bază
+
+- **Id:** `doua_arene_o_baza`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play doua_arene_o_baza` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel original cu pachete fixe de 30 de cărți.
+- Jucătorii alternează acțiuni singulare: joacă o carte, atacă cu o unitate pregătită sau dau pas (gata).
+- Unitățile sunt de sol sau de aer: o unitate lovește doar gardienii și unitățile din arena ei, sau baza când nu stă niciun gardian din acea arenă.
+- Unitățile proaspete nu pot ataca.
+- Când amândoi dau pas la rând, runda se încheie: totul se pregătește, fiecare trage 2 și pune o carte din mână cu fața în jos ca resursă (pune i); cine a dat primul pas acționează primul.
+- Bazele au 22 viață.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pune i, joaca i [tN], atac c t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `pune`, `0`
+- La început sunt 12 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scuturi_si_mana"></a>
+## Scuturi și Mană
+
+- **Id:** `scuturi_si_mana`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play scuturi_si_mana` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Duel original cu pachete fixe de 30 de cărți.
+- O dată pe tură pui o carte din mână în zona de mană (pune i); o carte cere atâta mană neobosită cât costul ei, inclusiv una de culoarea ei. 5 scuturi ascunse apără fiecare jucător: o creatură atacatoare sparge unul (două dacă e dublă), cartea merge în mâna proprietarului, dar o carte cu declanșator se joacă imediat gratis.
+- Gardienii se atacă primii; poți ataca creaturi inamice obosite; creaturile se bat după putere.
+- Fără scuturi, o lovitură câștigă.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: pune i, joaca i [tN], atac c t|p, gata. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `pune`, `0`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cristale_chemari"></a>
+## Cristale și Chemări
+
+- **Id:** `cristale_chemari`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cristale_chemari` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Gărzile Soarelui contra Magii Cenușii), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea.
+- Câștigi când viața adversarului ajunge la 0 (start 18).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="duhuri_pirjol"></a>
+## Duhurile Pârjolului
+
+- **Id:** `duhuri_pirjol`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play duhuri_pirjol` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Clanul Cremenii contra Clanul Cenușii), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Fiecare are 5 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 4) și îl dă în mână adversarului; lovitura fără scuturi câștigă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cursa_prin_retea"></a>
+## Cursa prin Rețea
+
+- **Id:** `cursa_prin_retea`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cursa_prin_retea` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Hoții de Date contra Corporația Albă), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 7.
+- Câștigi la 7 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="chei_chihlimbar"></a>
+## Trei Chei de Chihlimbar
+
+- **Id:** `chei_chihlimbar`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play chei_chihlimbar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Casa Clopotului contra Casa Fierarilor), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 7.
+- Câștigi la 8 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="provincii_de_jad"></a>
+## Provinciile de Jad
+
+- **Id:** `provincii_de_jad`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play provincii_de_jad` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Dragonii de Jad contra Corbii de Ceață), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mercenari_stelari"></a>
+## Mercenarii Stelari
+
+- **Id:** `mercenari_stelari`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mercenari_stelari` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Flota Liberă contra Imperiul Ceții), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9.
+- Câștigi când viața adversarului ajunge la 0 (start 25).
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: cine ucide o unitate în luptă trage o carte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pecetea_magilor"></a>
+## Pecetea Magilor
+
+- **Id:** `pecetea_magilor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pecetea_magilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Cercul Verde contra Cercul Roșu), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 9).
+- Câștigi când viața adversarului ajunge la 0 (start 20).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: loviturile directe sunt cu 1 mai tari.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="biblioteca_umbrelor"></a>
+## Biblioteca Umbrelor
+
+- **Id:** `biblioteca_umbrelor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play biblioteca_umbrelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Arhivarii contra Cititorii de Noapte), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea.
+- Câștigi când viața adversarului ajunge la 0 (start 20).
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tinutul_cenusiu"></a>
+## Ținutul Cenușiu
+
+- **Id:** `tinutul_cenusiu`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play tinutul_cenusiu` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Păstorii Colinei contra Oamenii Mlaștinii), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8).
+- Fiecare are 3 zone cu 10 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cavaleri_mecanici"></a>
+## Cavaleri Mecanici
+
+- **Id:** `cavaleri_mecanici`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cavaleri_mecanici` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Echipa Albastră contra Echipa Roșie), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9.
+- Fiecare are 6 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 3) și îl dă în mână adversarului; lovitura fără scuturi câștigă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: nicio unitate nu are boală de invocare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="arena_aliatilor"></a>
+## Arena Aliaților
+
+- **Id:** `arena_aliatilor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play arena_aliatilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Echipa Soarelui contra Echipa Lunii), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea.
+- Fiecare are 7 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 4) și îl dă în mână adversarului; lovitura fără scuturi câștigă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: cine ucide o unitate în luptă trage o carte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 13 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="creaturi_necunoscute"></a>
+## Creaturile Necunoscute
+
+- **Id:** `creaturi_necunoscute`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play creaturi_necunoscute` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Vânătorii de Urme contra Păzitorii Pădurii), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 7).
+- Câștigi când viața adversarului ajunge la 0 (start 20).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sangele_noptii"></a>
+## Sângele Nopții
+
+- **Id:** `sangele_noptii`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sangele_noptii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Neamul Corbului contra Neamul Lupului), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="misiuni_dincolo_de_stele"></a>
+## Misiuni dincolo de Stele
+
+- **Id:** `misiuni_dincolo_de_stele`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play misiuni_dincolo_de_stele` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Federația Exploratorilor contra Hegemonia Nordului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi la 8 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lumea_dintre_lumini"></a>
+## Lumea dintre Lumini
+
+- **Id:** `lumea_dintre_lumini`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play lumea_dintre_lumini` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Ordinul Zorilor contra Ordinul Amurgului), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9.
+- Fiecare are 3 zone cu 8 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: nicio unitate nu are boală de invocare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="drum_peste_munti"></a>
+## Drum peste Munți
+
+- **Id:** `drum_peste_munti`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play drum_peste_munti` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Tovarășii contra Umbrele Drumului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea.
+- Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pumnul_din_umbra"></a>
+## Pumnul din Umbră
+
+- **Id:** `pumnul_din_umbra`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pumnul_din_umbra` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Lotusul Negru contra Călugării Lunii), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tinuturi_si_vraji"></a>
+## Ținuturi și Vrăji
+
+- **Id:** `tinuturi_si_vraji`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play tinuturi_si_vraji` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Regatul Gloriei contra Regatul Cenușii), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 9).
+- Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: cine ucide o unitate în luptă trage o carte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="papusarii_umbrei"></a>
+## Păpușarii din Umbră
+
+- **Id:** `papusarii_umbrei`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play papusarii_umbrei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Cercul Îngust contra Cercul Larg), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi la 8 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="povesti_din_ceata"></a>
+## Povești din Ceață
+
+- **Id:** `povesti_din_ceata`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play povesti_din_ceata` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Cercul Cărturarilor contra Cultul Adâncurilor), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 7.
+- Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scaunul_cu_colti"></a>
+## Scaunul cu Colți
+
+- **Id:** `scaunul_cu_colti`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play scaunul_cu_colti` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Casa Lupului contra Casa Corbului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi la 12 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="trei_cetati"></a>
+## Cele Trei Cetăți
+
+- **Id:** `trei_cetati`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play trei_cetati` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Oastea Nordului contra Hoardele Pădurii), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8).
+- Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: loviturile directe sunt cu 1 mai tari.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="sase_lumi_in_flacari"></a>
+## Șase Lumi în Flăcări
+
+- **Id:** `sase_lumi_in_flacari`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play sase_lumi_in_flacari` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Legiunea Aurie contra Roiul Verde), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9.
+- Fiecare are 3 zone cu 8 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: nicio unitate nu are boală de invocare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `2`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="magii_mici"></a>
+## Magii Mici
+
+- **Id:** `magii_mici`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play magii_mici` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Elevii Pădurii contra Elevii Stâncilor), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 7), dar pierzi cartea.
+- Câștigi când viața adversarului ajunge la 0 (start 18).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="luptatori_cu_aura"></a>
+## Luptători cu Aură
+
+- **Id:** `luptatori_cu_aura`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play luptatori_cu_aura` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Frații Muntelui contra Oștenii Vântului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9.
+- Câștigi când viața adversarului ajunge la 0 (start 25).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: loviturile directe sunt cu 1 mai tari.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ucenicii_vantului"></a>
+## Ucenicii Vântului
+
+- **Id:** `ucenicii_vantului`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play ucenicii_vantului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Satul Frunzișului contra Satul Dunelor), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea.
+- Câștigi când viața adversarului ajunge la 0 (start 16).
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cosasii_de_suflete"></a>
+## Cosașii de Suflete
+
+- **Id:** `cosasii_de_suflete`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cosasii_de_suflete` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Gărzile Sufletelor contra Umbrele Cenușii), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi când viața adversarului ajunge la 0 (start 22).
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="tovarasul_din_gong"></a>
+## Tovarășul din Gong
+
+- **Id:** `tovarasul_din_gong`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play tovarasul_din_gong` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Frații Gongului contra Frații Tobei), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea.
+- Fiecare are 5 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 3) și îl dă în mână adversarului; lovitura fără scuturi câștigă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: cine ucide o unitate în luptă trage o carte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="zero_contra_infinit"></a>
+## Zero contra Infinit
+
+- **Id:** `zero_contra_infinit`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play zero_contra_infinit` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Legiunea Zero contra Nucleul Infinit), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 10 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8).
+- Câștigi când viața adversarului ajunge la 0 (start 18).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="duel_fulger"></a>
+## Duel Fulger
+
+- **Id:** `duel_fulger`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play duel_fulger` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Duelistul Alb contra Duelistul Negru), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 12 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 6.
+- Câștigi când viața adversarului ajunge la 0 (start 20).
+- Până la 4 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: nicio unitate nu are boală de invocare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="domeniul_monstrilor"></a>
+## Domeniul Monștrilor
+
+- **Id:** `domeniul_monstrilor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play domeniul_monstrilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Hoardele de Foc contra Hoardele de Apă), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea.
+- Fiecare are 5 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 4) și îl dă în mână adversarului; lovitura fără scuturi câștigă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 13 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="taramuri_paralele"></a>
+## Tărâmuri Paralele
+
+- **Id:** `taramuri_paralele`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play taramuri_paralele` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Tribul Subteranilor contra Tribul Cerului), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi când viața adversarului ajunge la 0 (start 20).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cristale_de_aura"></a>
+## Cristale de Aură
+
+- **Id:** `cristale_de_aura`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cristale_de_aura` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Cavalerii Albaștri contra Cavalerii Roșii), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 7), dar pierzi cartea.
+- Fiecare are 5 scuturi: lovitura directă reușită rupe 1 scut (2 dacă atacul e cel puțin 4) și îl dă în mână adversarului; lovitura fără scuturi câștigă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: loviturile directe sunt cu 1 mai tari.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lupta_pe_etape"></a>
+## Lupta pe Etape
+
+- **Id:** `lupta_pe_etape`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play lupta_pe_etape` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Clanul Vulturului contra Clanul Taurului), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 9).
+- Câștigi când viața adversarului ajunge la 0 (start 28).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="eroi_contra_raufacatori"></a>
+## Eroi contra Răufăcători
+
+- **Id:** `eroi_contra_raufacatori`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play eroi_contra_raufacatori` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Liga Eroilor contra Frăția Răufăcătorilor), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea.
+- Câștigi când viața adversarului ajunge la 0 (start 28).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="roata_anotimpurilor"></a>
+## Roata Anotimpurilor
+
+- **Id:** `roata_anotimpurilor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play roata_anotimpurilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Surorile Primăverii contra Frații Iernii), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi la 10 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="roboti_de_lupta"></a>
+## Roboții de Luptă
+
+- **Id:** `roboti_de_lupta`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play roboti_de_lupta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Lancea de Oțel contra Legiunea Gri), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8).
+- Câștigi când viața adversarului ajunge la 0 (start 24).
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: nicio unitate nu are boală de invocare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="statia_dintre_stele"></a>
+## Stația dintre Stele
+
+- **Id:** `statia_dintre_stele`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play statia_dintre_stele` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Consiliul Stației contra Flota Exilaților), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi la 10 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scoala_de_vraji"></a>
+## Școala de Vrăji
+
+- **Id:** `scoala_de_vraji`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play scoala_de_vraji` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Casa Șoimului contra Casa Bursucului), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 7).
+- Câștigi când viața adversarului ajunge la 0 (start 20).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="varful_fumegand"></a>
+## Vârful Fumegând
+
+- **Id:** `varful_fumegand`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play varful_fumegand` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Compania Drumului contra Slujitorii Umbrei), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: unitățile se vindecă la începutul turei tale.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`
+- La început sunt 1 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cetatile_din_furtuna"></a>
+## Cetățile din Furtună
+
+- **Id:** `cetatile_din_furtuna`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cetatile_din_furtuna` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Casa Orașului contra Clanurile Stâncii), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui o sursă (sursa i): energia +1 (maximum 8).
+- Fiecare are 3 zone cu 10 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Coloane: unitatea k atacă doar unitatea k adversă sau direct dacă aceasta nu există (zburătorii aleg liber).
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `3`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="dragoni_la_hotar"></a>
+## Dragoni la Hotar
+
+- **Id:** `dragoni_la_hotar`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play dragoni_la_hotar` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Păstorii Dragonilor contra Rătăcitorii Munților), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 7.
+- Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ucenicii_cenusii"></a>
+## Ucenicii Cenușii
+
+- **Id:** `ucenicii_cenusii`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play ucenicii_cenusii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Ucenicii Focului contra Ucenicii Apei), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână ca sursă (sursa i): energia +1 (maximum 8), dar pierzi cartea.
+- Câștigi când viața adversarului ajunge la 0 (start 15).
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: loviturile directe sunt cu 1 mai tari.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `sursa`, `1`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="eroi_de_targ"></a>
+## Eroi de Târg
+
+- **Id:** `eroi_de_targ`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play eroi_de_targ` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Gilda Negustorilor contra Gilda Mercenarilor), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9.
+- Câștigi când viața adversarului ajunge la 0 (start 30).
+- Până la 6 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: cine ucide o unitate în luptă trage o carte.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="spartura_dintre_lumi"></a>
+## Spărtura dintre Lumi
+
+- **Id:** `spartura_dintre_lumi`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play spartura_dintre_lumi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Cuțitele Verii contra Cuțitele Iernii), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9.
+- Fiecare are 3 zone cu 9 viață; unitatea lovește o zonă (atac k zN); două zone distruse câștigă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+- Răsucire: nicio unitate nu are boală de invocare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `4`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="orasul_prafuit"></a>
+## Orășelul Prăfuit
+
+- **Id:** `orasul_prafuit`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play orasul_prafuit` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe construite de joc (Banda Pustiei contra Legea Orașului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); cine nu mai poate trage la începutul turei pierde; după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8.
+- Câștigi la 9 puncte: unitățile pregătite fac misiune (miss k: obosesc și aduc valoarea lor), iar atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități cu cost, atac/rezistență și cuvinte-cheie (Elan, Gardian, Zburător, Lovește primul, Armură, Venin); în luptă ambele lovesc, daunele rămân; vrăji: pescuit, lovitură, măturare, binecuvântare, întărire, distrugere, întoarcere în mână, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: joc i [țintă], sursa i, atac k [eN|zN], miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `joc`, `1`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="spargatori_retea"></a>
+## Spărgătorii de rețea
+
+- **Id:** `spargatori_retea`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play spargatori_retea` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Echipa Furișată contra Paznicii Nodului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură.
+- Câștigi la 14 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, pescuit, îngheț, întoarcere în mână, întărire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="duelul_puterilor"></a>
+## Duelul puterilor
+
+- **Id:** `duelul_puterilor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play duelul_puterilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Liga Strălucirii contra Frăția Prăpastiei), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, binecuvântare, întărire, nimicire, măturare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="altarul_sutelor"></a>
+## Altarul sutelor
+
+- **Id:** `altarul_sutelor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play altarul_sutelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cultul Lumânării contra Ordinul Cenușii), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, vindecare, nimicire, măturare, pescuit.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="straji_ceruri"></a>
+## Străjerii cerurilor
+
+- **Id:** `straji_ceruri`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play straji_ceruri` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Oștirea Aurorei contra Legiunea Amurgului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, binecuvântare, vindecare, măturare, trezire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="haita_furioasa"></a>
+## Haita furioasă
+
+- **Id:** `haita_furioasa`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play haita_furioasa` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Haita Lunii Roșii contra Stejarii Bătrâni), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează.
+- Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, întărire, măturare, îngheț, pescuit.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="caravane_nisip"></a>
+## Caravanele de nisip
+
+- **Id:** `caravane_nisip`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play caravane_nisip` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Casa Fântânii contra Casa Șacalului), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8, și se reface la fiecare tură.
+- Câștigi la 15 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: îngheț, pescuit, întoarcere în mână, lovitură, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="legiuni_frante"></a>
+## Legiunile frânte
+
+- **Id:** `legiuni_frante`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play legiuni_frante` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Corpul de Fier contra Războinicii Roșii), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: măturare, lovitură, binecuvântare, nimicire, întărire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="marginea_nevazuta"></a>
+## Marginea nevăzută
+
+- **Id:** `marginea_nevazuta`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play marginea_nevazuta` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cercul Veghetorilor contra Societatea Uitării), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură.
+- Fiecare are 3 zone cu 7 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, îngheț, întoarcere în mână, pescuit, nimicire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="imperii_de_stele"></a>
+## Imperii de stele
+
+- **Id:** `imperii_de_stele`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play imperii_de_stele` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Imperiul Zorilor contra Liga Neagră), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură.
+- Fiecare are 4 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 5); fără sigilii, următoarea lovitură directă câștigă.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: măturare, lovitură, binecuvântare, vindecare, trezire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="dosare_sub_sigiliu"></a>
+## Dosare sub sigiliu
+
+- **Id:** `dosare_sub_sigiliu`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play dosare_sub_sigiliu` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Biroul Anchetelor contra Agenția Tăcută), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 9); energia se reface la fiecare tură.
+- Fiecare are 3 zone cu 6 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, pescuit, nimicire, vindecare, îngheț.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="umbre_de_neon"></a>
+## Umbre de neon
+
+- **Id:** `umbre_de_neon`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play umbre_de_neon` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Gașca Străzii contra Corporația Aurie), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, îngheț, întoarcere în mână, întărire, măturare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="roiul_si_vanatorii"></a>
+## Roiul și vânătorii
+
+- **Id:** `roiul_si_vanatorii`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play roiul_si_vanatorii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Roiul din Peșteri contra Vânătorii de Trofee), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează.
+- Fiecare are 3 zone cu 7 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: măturare, lovitură, binecuvântare, întărire, pescuit.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="corsari_si_amirali"></a>
+## Corsari și amirali
+
+- **Id:** `corsari_si_amirali`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play corsari_si_amirali` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Frăția Pânzelor Negre contra Flota Coroanei), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Câștigi la 15 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, întoarcere în mână, întărire, pescuit, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="soapte_din_abis"></a>
+## Șoapte din abis
+
+- **Id:** `soapte_din_abis`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play soapte_din_abis` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Veghea Clopotului contra Ucenicii Mării), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, armură, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: nimicire, întoarcere în mână, lovitură, îngheț, pescuit.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="clanuri_de_oaza"></a>
+## Clanurile oazei
+
+- **Id:** `clanuri_de_oaza`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play clanuri_de_oaza` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Clanul Palmierului contra Clanul Scorpionului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Rezerva de energie primește +3 la fiecare tură proprie (maximum 10); ce nu cheltui se păstrează.
+- Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: binecuvântare, lovitură, întărire, nimicire, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cautatorii_de_cripte"></a>
+## Căutătorii de cripte
+
+- **Id:** `cautatorii_de_cripte`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cautatorii_de_cripte` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Expediția Aurie contra Șacalii Cenușii), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Fiecare are 3 zone cu 8 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, pescuit, nimicire, întoarcere în mână, întărire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="razboinica_de_bronz"></a>
+## Războinica de bronz
+
+- **Id:** `razboinica_de_bronz`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play razboinica_de_bronz` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Taberele Nordului contra Garda Cetății), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, întărire, binecuvântare, măturare, nimicire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="muncile_semizeului"></a>
+## Muncile semizeului
+
+- **Id:** `muncile_semizeului`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play muncile_semizeului` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Eroii Olimpului contra Monștrii Labirintului), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8, și se reface la fiecare tură.
+- Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: binecuvântare, lovitură, vindecare, nimicire, îngheț.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="ucenicii_luminii"></a>
+## Ucenicii luminii
+
+- **Id:** `ucenicii_luminii`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play ucenicii_luminii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Școala Zorilor contra Școala Cețurilor), mână ascunsă.
+- Start: 7 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Resurse: 10 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 7); energia se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 18); lovitura directă scade viața cu atacul unității.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: întărire, lovitură, pescuit, vindecare, binecuvântare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="gardiene_de_cristal"></a>
+## Gardienele de cristal
+
+- **Id:** `gardiene_de_cristal`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play gardiene_de_cristal` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cercul Lunii contra Cercul Umbrei), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează.
+- Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: vindecare, lovitură, binecuvântare, trezire, întărire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="masini_ceas_zero"></a>
+## Mașinile orei zero
+
+- **Id:** `masini_ceas_zero`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play masini_ceas_zero` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Rezistența Subterană contra Rețeaua de Oțel), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 10, și se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, nimicire, măturare, binecuvântare, îngheț.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="creaturi_de_pixeli"></a>
+## Creaturi de pixeli
+
+- **Id:** `creaturi_de_pixeli`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play creaturi_de_pixeli` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Echipa Verde contra Echipa Violet), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură.
+- Câștigi la 14 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: întărire, binecuvântare, lovitură, pescuit, trezire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scoala_darurilor"></a>
+## Școala darurilor
+
+- **Id:** `scoala_darurilor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play scoala_darurilor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Elevii Curții contra Clanul Trecutului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Fiecare are 3 zone cu 7 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, primul); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: trezire, lovitură, întărire, îngheț, întoarcere în mână.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="vanatoarea_de_noapte"></a>
+## Vânătoarea de noapte
+
+- **Id:** `vanatoarea_de_noapte`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play vanatoarea_de_noapte` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Vânătorii din Liceu contra Frăția Colților), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează.
+- Fiecare are 4 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 5); fără sigilii, următoarea lovitură directă câștigă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, nimicire, îngheț, pescuit, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cavalerii_stelelor"></a>
+## Cavalerii stelelor
+
+- **Id:** `cavalerii_stelelor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cavalerii_stelelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Ordinul Strălucitor contra Cetatea Neagră), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8, și se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, binecuvântare, întărire, vindecare, măturare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="flotele_in_duel"></a>
+## Flotele în duel
+
+- **Id:** `flotele_in_duel`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play flotele_in_duel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Armada Albastră contra Flota Răzvrătită), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Fiecare are 3 zone cu 6 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: măturare, lovitură, nimicire, îngheț, pescuit.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cruciada_de_otel"></a>
+## Cruciada de oțel
+
+- **Id:** `cruciada_de_otel`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cruciada_de_otel` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Oștirea Sfântă contra Hoarda Fărâmițată), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, primul, armură, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: nimicire, măturare, binecuvântare, lovitură, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="orasel_caraghios"></a>
+## Orășelul caraghios
+
+- **Id:** `orasel_caraghios`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play orasel_caraghios` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Familia Din Colț contra Vecinii Zgomotoși), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează.
+- Câștigi la 12 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: întoarcere în mână, pescuit, întărire, lovitură, îngheț.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="recif_zburdalnic"></a>
+## Recif zburdalnic
+
+- **Id:** `recif_zburdalnic`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play recif_zburdalnic` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Clanul Coralilor contra Clanul Meduzei), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură.
+- Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: îngheț, pescuit, întărire, lovitură, întoarcere în mână.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="turnirul_animalutelor"></a>
+## Turnirul animăluțelor
+
+- **Id:** `turnirul_animalutelor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play turnirul_animalutelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Echipa Fulgerilor contra Echipa Frunzelor), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Resurse: 10 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Câștigi la 14 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: pescuit, vindecare, lovitură, binecuvântare, trezire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="comando_de_elita"></a>
+## Comando de elită
+
+- **Id:** `comando_de_elita`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play comando_de_elita` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Echipa Albastră contra Rețeaua Roșie), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, măturare, nimicire, întărire, întoarcere în mână.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="fratii_de_carapace"></a>
+## Frații de carapace
+
+- **Id:** `fratii_de_carapace`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play fratii_de_carapace` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Frații din Canal contra Clanul Labei), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură.
+- Câștigi la 15 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, binecuvântare, trezire, întărire, îngheț.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="raid_in_tinuturi_vechi"></a>
+## Raid în ținuturile vechi
+
+- **Id:** `raid_in_tinuturi_vechi`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play raid_in_tinuturi_vechi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Alianța Cetăților contra Hoarda Pustie), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 5); fără sigilii, următoarea lovitură directă câștigă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: nimicire, lovitură, binecuvântare, măturare, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="detectivii_spiritelor"></a>
+## Detectivii spiritelor
+
+- **Id:** `detectivii_spiritelor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play detectivii_spiritelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Biroul Dincolo contra Banda Pragului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează.
+- Fiecare are 3 zone cu 7 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: îngheț, lovitură, pescuit, întoarcere în mână, trezire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="stapanii_elementelor"></a>
+## Stăpânii elementelor
+
+- **Id:** `stapanii_elementelor`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play stapanii_elementelor` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Pelerinii Aerului contra Garda Focului), mână ascunsă.
+- Start: 5 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 8, și se reface la fiecare tură.
+- Fiecare are 3 zone cu 6 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, gardă, zbor, armură); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, măturare, îngheț, binecuvântare, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="cercurile_noptii"></a>
+## Cercurile nopții
+
+- **Id:** `cercurile_noptii`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play cercurile_noptii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cercul Trandafirului contra Cercul Lanțului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură.
+- Fiecare are 4 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: nimicire, lovitură, pescuit, întoarcere în mână, îngheț.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 13 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="pasi_de_evolutie"></a>
+## Pașii evoluției
+
+- **Id:** `pasi_de_evolutie`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play pasi_de_evolutie` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cultul Mugurilor contra Cultul Penelor), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Resurse: 11 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 20); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: întărire, binecuvântare, lovitură, nimicire, trezire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="scena_virtuala"></a>
+## Scena virtuală
+
+- **Id:** `scena_virtuala`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play scena_virtuala` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Trupa Aurorei contra Trupa Mării), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- Rezerva de energie primește +3 la fiecare tură proprie (maximum 10); ce nu cheltui se păstrează.
+- Câștigi la 13 puncte de glorie: o unitate pregătită poate pleca în misiune (miss k: obosește și aduce glorie egală cu costul ei); atacurile lovesc doar unități obosite; nu există lovitură directă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, zbor, primul, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: vindecare, pescuit, întărire, trezire, lovitură.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 9 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="papusile_dorintei"></a>
+## Păpușile dorinței
+
+- **Id:** `papusile_dorintei`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play papusile_dorintei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Atelierul Porțelanului contra Cutia Cu Chei), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- O dată pe tură poți pune orice carte din mână drept sursă (sursa i): energia +1 (maximum 8), dar cartea se pierde; energia se reface la fiecare tură.
+- Fiecare are 3 zone cu 8 viață; o unitate lovește o zonă (atac k zN); cu două zone distruse pierzi.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, binecuvântare, întoarcere în mână, vindecare, îngheț.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 11 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="eroi_intre_lumi"></a>
+## Eroi între lumi
+
+- **Id:** `eroi_intre_lumi`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play eroi_intre_lumi` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Tărâmul Cheii contra Tărâmul Furtunii), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 15 ture pe jucător decide scorul.
+- Energia crește singură cu 1 la fiecare tură proprie, până la 9, și se reface la fiecare tură.
+- Câștigi când viața adversarului ajunge la 0 (start 22); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: măturare, lovitură, întărire, nimicire, pescuit.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 5 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="mituri_si_zei"></a>
+## Mituri și zei
+
+- **Id:** `mituri_si_zei`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play mituri_si_zei` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Cetele Soarelui contra Cetele Trăsnetului), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 16 ture pe jucător decide scorul.
+- Resurse: 12 cărți-sursă în fiecare pachet; o dată pe tură pui una (sursa i): energia +1 (maximum 8); energia se reface la fiecare tură.
+- Fiecare are 5 sigilii: o lovitură directă rupe 1 sigiliu (2 dacă atacul e cel puțin 4); fără sigilii, următoarea lovitură directă câștigă.
+- Până la 5 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (gardă, zbor, primul, armură, venin); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: lovitură, binecuvântare, îngheț, nimicire, vindecare.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `sursa`
+- La început sunt 3 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
+
+<a id="lupta_fuziunii"></a>
+## Lupta fuziunii
+
+- **Id:** `lupta_fuziunii`
+- **Categorie:** TCG
+- **Jucători:** 2 (tu contra calculatorului; `--you both` = 2 oameni la masă, `--you none` = AI contra AI)
+- **Informație ascunsă:** da; „la masă” (`--you both`) ascunde informația celui care nu e la mutare
+- **Pornire:** `polytabletop play lupta_fuziunii` (`--you two` = calculatorul începe; `--seed N` = AI reproductibil)
+
+**Reguli pe scurt**
+
+- Variantă originală pentru doi: pachete fixe de 30 de cărți construite de joc (Dojo Dinspre Soare contra Dojo Dinspre Lună), mână ascunsă.
+- Start: 6 cărți (J2 primește una în plus); la începutul turei tragi o carte (cine nu mai poate trage pierde); după 14 ture pe jucător decide scorul.
+- Rezerva de energie primește +2 la fiecare tură proprie (maximum 9); ce nu cheltui se păstrează.
+- Câștigi când viața adversarului ajunge la 0 (start 24); lovitura directă scade viața cu atacul unității.
+- Până la 6 unități pe câmp, cu cost, atac/viață și cuvinte-cheie (elan, primul, armură, venin, sorbire); unitățile noi nu pot ataca (decât cu elan); în luptă ambele lovesc, daunele se șterg la sfârșitul turei; lovitura directă e oprită de o gardă neobosită; zburătorii pot fi loviți doar de zburători.
+- Vrăji: întărire, lovitură, măturare, binecuvântare, nimicire.
+
+**Mutări** (din `?` pe un joc nou, `legal_moves`)
+
+- Sintaxă din regulile jocului: sursa i, joc i [țintă eN|mN|f|zN], atac k țintă, miss k, fin. Informație ascunsă: vezi doar mâna ta (HOTSEAT_SAFE).
+- Exemple legale la început: `fin`, `joc`
+- La început sunt 7 cuvinte în lista `?` (mutările cu spații se numără pe cuvinte).
 
 <a id="hnefatafl"></a>
 ## Hnefatafl

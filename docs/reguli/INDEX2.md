@@ -1,6 +1,6 @@
-# Reguli detaliate: jocurile 121–924 (partea a doua din `polytabletop list`)
+# Reguli detaliate: jocurile 121–1196 (partea a doua din `polytabletop list`)
 
-Pagini de reguli în română pentru jocurile 121–924, în ordinea din `polytabletop list`. Primele 120 de jocuri sunt în [INDEX.md](INDEX.md).
+Pagini de reguli în română pentru jocurile 121–1196, în ordinea din `polytabletop list`. Primele 120 de jocuri sunt în [INDEX.md](INDEX.md).
 
 Observații comune:
 
@@ -741,78 +741,350 @@ Observații comune:
 | 847 | [`scufundarea_adanca`](scufundarea_adanca.md) | Scufundarea adâncă |  | nu | — |
 | 848 | [`cursa_cuburilor`](cursa_cuburilor.md) | Cursa cuburilor |  | nu | — |
 | 849 | [`fitilul_aprins`](fitilul_aprins.md) | Fitilul aprins |  | nu | — |
-| 850 | [`hnefatafl`](hnefatafl.md) | Hnefatafl |  | nu | — |
-| 851 | [`brandubh`](brandubh.md) | Brandubh |  | nu | — |
-| 852 | [`pente`](pente.md) | Pente |  | nu | — |
-| 853 | [`havannah`](havannah.md) | Havannah |  | nu | — |
-| 854 | [`chinese_checkers`](chinese_checkers.md) | Table chinezească (Chinese Checkers) |  | nu | — |
-| 855 | [`goose`](goose.md) | Jocul gâștei (Game of the Goose) |  | nu | — |
-| 856 | [`keno`](keno.md) | Keno |  | nu | — |
-| 857 | [`sichuan_mahjong`](sichuan_mahjong.md) | Mahjong Sichuan |  | da | — |
-| 858 | [`long_nard`](long_nard.md) | Long Nard (Narde) |  | nu | — |
-| 859 | [`shove_ha_penny`](shove_ha_penny.md) | Shove ha'penny |  | nu | — |
-| 860 | [`rithmomachia`](rithmomachia.md) | Rithmomachia |  | nu | — |
-| 861 | [`pong_hau_kiki`](pong_hau_kiki.md) | Pong hau k'i |  | nu | — |
-| 862 | [`patolli`](patolli.md) | Patolli |  | nu | — |
-| 863 | [`duodecim_scripta`](duodecim_scripta.md) | Duodecim scripta |  | nu | — |
-| 864 | [`jigsaw`](jigsaw.md) | Puzzle cu piese (Jigsaw) |  | nu | — |
-| 865 | [`guobiao`](guobiao.md) | Mahjong oficial chinez (Guobiao) |  | da | — |
-| 866 | [`boggle`](boggle.md) | Boggle |  | nu | — |
-| 867 | [`kings`](kings.md) | Kings (Ring of Fire) |  | nu | — |
-| 868 | [`celebrity`](celebrity.md) | Celebrity (Fishbowl) |  | da | — |
-| 869 | [`pin_the_tail`](pin_the_tail.md) | Prinde coada măgarului |  | nu | — |
-| 870 | [`war`](war.md) | Război (War) |  | nu | — |
-| 871 | [`tressette`](tressette.md) | Tressette (Italia) |  | da | — |
-| 872 | [`piquet`](piquet.md) | Piquet (Franța) |  | da | — |
-| 873 | [`batak`](batak.md) | Batak (Turcia) |  | da | — |
-| 874 | [`yaniv`](yaniv.md) | Yaniv (Israel) |  | da | — |
-| 875 | [`ascunselea`](ascunselea.md) | Ascunselea (Hide-and-seek) |  | da | — |
-| 876 | [`de_a_prinselea`](de_a_prinselea.md) | De-a prinselea (Tag) |  | nu | — |
-| 877 | [`elasticul`](elasticul.md) | Elasticul |  | nu | — |
-| 878 | [`oina`](oina.md) | Oina |  | nu | — |
-| 879 | [`loto_imagini`](loto_imagini.md) | Loto cu imagini (Picture lotto) |  | nu | — |
-| 880 | [`bau_cua`](bau_cua.md) | Bầu cua (dovleac, crab, pește) |  | nu | — |
-| 881 | [`yacht`](yacht.md) | Yacht |  | nu | — |
-| 882 | [`chicago`](chicago.md) | Chicago (zaruri) |  | nu | — |
-| 883 | [`zara`](zara.md) | Zara (joc) |  | nu | — |
-| 884 | [`daldos`](daldos.md) | Daldøs |  | nu | — |
-| 885 | [`colturi`](colturi.md) | Colțuri (poliomino 10×10) |  | nu | — |
-| 886 | [`sah960`](sah960.md) | Șah cu start amestecat (fără rocadă) |  | nu | — |
-| 887 | [`impingere`](impingere.md) | Împingere pe pătrate (7×7) |  | nu | — |
-| 888 | [`roiul`](roiul.md) | Roiul (insecte pe masă) |  | nu | — |
-| 889 | [`terase`](terase.md) | Terase (construcție 5×5) |  | nu | — |
-| 890 | [`cartimut`](cartimut.md) | Mutări din cărți (5×5) |  | nu | — |
-| 891 | [`sferturi`](sferturi.md) | Sferturi (rotire 6×6) |  | nu | — |
-| 892 | [`inele`](inele.md) | Inele și semne (hex) |  | nu | — |
-| 893 | [`sase`](sase.md) | Șase în linie (13×13) |  | nu | — |
-| 894 | [`morpiuri9`](morpiuri9.md) | Morpion în nouă (9×9) |  | nu | — |
-| 895 | [`drumul_stivelor`](drumul_stivelor.md) | Drumul stivelor (5×5) |  | nu | — |
-| 896 | [`margine`](margine.md) | De la margine (hex 37) |  | nu | — |
-| 897 | [`izvoare`](izvoare.md) | Izvoare (stive conectate 7×7) |  | nu | — |
-| 898 | [`trei_tipuri`](trei_tipuri.md) | Trei tipuri (stive 6×6) |  | nu | — |
-| 899 | [`bilinele`](bilinele.md) | Bile și inele (hex 37) |  | nu | — |
-| 900 | [`animale`](animale.md) | Animale (mini-șah 3×4) |  | nu | — |
-| 901 | [`iepuri`](iepuri.md) | Iepurii și Elefantul (8×8) |  | nu | — |
-| 902 | [`asalt`](asalt.md) | Asalt (pioni 7×7) |  | nu | — |
-| 903 | [`dar4`](dar4.md) | Piesa dăruită (4×4) |  | nu | — |
-| 904 | [`piramida`](piramida.md) | Piramida (bile pe 4 niveluri) |  | nu | — |
-| 905 | [`cuburi`](cuburi.md) | Cuburi glisante (5×5) |  | nu | — |
-| 906 | [`culori_pas`](culori_pas.md) | Culori în șir (turnuri 8×8) |  | nu | — |
-| 907 | [`hochei_masa`](hochei_masa.md) | Hochei pe masă (ture) |  | nu | — |
-| 908 | [`trenuri`](trenuri.md) | Trenuri de domino (2 jucători) |  | da | — |
-| 909 | [`marmure`](marmure.md) | Marmure (curse cu scurtătură) |  | nu | — |
-| 910 | [`blocaje`](blocaje.md) | Blocaje (curse cu blocuri) |  | nu | — |
-| 911 | [`zbor`](zbor.md) | Zbor (curse cu salturi) |  | nu | — |
-| 912 | [`perechi_duel`](perechi_duel.md) | Perechi în piramidă (duel) |  | nu | — |
-| 913 | [`discuri`](discuri.md) | Discuri (fotbal pe ture) |  | nu | — |
-| 914 | [`armonia`](armonia.md) | Armonia florilor (7×7) |  | nu | — |
-| 915 | [`cai_de_curse`](cai_de_curse.md) | Cai de curse (traseu 40) |  | nu | — |
-| 916 | [`cub2`](cub2.md) | Cub 2×2: duel |  | nu | — |
-| 917 | [`flipper_duel`](flipper_duel.md) | Flipper (duel de scor) |  | nu | — |
-| 918 | [`scuze`](scuze.md) | Pardon (curse cu cărți) |  | nu | — |
-| 919 | [`forme6`](forme6.md) | Forme și culori (plăcuțe) |  | da | — |
-| 920 | [`palate`](palate.md) | Palate (orașul cu monede) |  | da | — |
-| 921 | [`sir5`](sir5.md) | Șir de cinci (cărți și jetoane) |  | da | — |
-| 922 | [`kilometri`](kilometri.md) | Kilometri (cursă cu cărți) |  | da | — |
-| 923 | [`camile`](camile.md) | Cursa cămilelor (pariuri) |  | nu | — |
-| 924 | [`tren_jaf`](tren_jaf.md) | Jaful din tren (programe) |  | da | — |
+| 850 | [`curierii_stelelor`](curierii_stelelor.md) | Curierii stelelor |  | nu | — |
+| 851 | [`fisa_fara_clase`](fisa_fara_clase.md) | Fișa fără clase |  | nu | — |
+| 852 | [`runa_si_lama`](runa_si_lama.md) | Runa și lama |  | nu | — |
+| 853 | [`saga_in_graba`](saga_in_graba.md) | Saga în grabă |  | nu | — |
+| 854 | [`aspectul_destinului`](aspectul_destinului.md) | Aspectul destinului |  | nu | — |
+| 855 | [`pustiul_cenusiu`](pustiul_cenusiu.md) | Pustiul cenușiu |  | nu | — |
+| 856 | [`hrube_cu_comori`](hrube_cu_comori.md) | Hrube cu comori |  | nu | — |
+| 857 | [`pivnita_strabuna`](pivnita_strabuna.md) | Pivnița străbună |  | nu | — |
+| 858 | [`palnia_mortilor`](palnia_mortilor.md) | Pâlnia morților |  | nu | — |
+| 859 | [`nava_fara_raspuns`](nava_fara_raspuns.md) | Nava fără răspuns |  | nu | — |
+| 860 | [`faclia_stinsa`](faclia_stinsa.md) | Făclia stinsă |  | nu | — |
+| 861 | [`mutantii_zonei`](mutantii_zonei.md) | Mutanții Zonei |  | nu | — |
+| 862 | [`ceremonia_sabiei`](ceremonia_sabiei.md) | Ceremonia sabiei |  | nu | — |
+| 863 | [`paradoxul_trezit`](paradoxul_trezit.md) | Paradoxul trezit |  | nu | — |
+| 864 | [`furia_haitei`](furia_haitei.md) | Furia haitei |  | nu | — |
+| 865 | [`ordinul_luminii`](ordinul_luminii.md) | Ordinul Luminii |  | nu | — |
+| 866 | [`pragul_dificultatii`](pragul_dificultatii.md) | Pragul dificultății |  | nu | — |
+| 867 | [`ruinele_eonilor`](ruinele_eonilor.md) | Ruinele eonilor |  | nu | — |
+| 868 | [`vara_masinilor`](vara_masinilor.md) | Vara mașinilor |  | nu | — |
+| 869 | [`padurea_coruptiei`](padurea_coruptiei.md) | Pădurea corupției |  | nu | — |
+| 870 | [`iluzia_cenusie`](iluzia_cenusie.md) | Iluzia cenușie |  | nu | — |
+| 871 | [`tinutul_uitat`](tinutul_uitat.md) | Ținutul uitat |  | nu | — |
+| 872 | [`cargoul_din_abis`](cargoul_din_abis.md) | Cargoul din abis |  | nu | — |
+| 873 | [`carti_si_gloante`](carti_si_gloante.md) | Cărți și gloanțe |  | nu | — |
+| 874 | [`trepte_de_destin`](trepte_de_destin.md) | Trepte de destin |  | nu | — |
+| 875 | [`clona_credincioasa`](clona_credincioasa.md) | Clona credincioasă |  | nu | — |
+| 876 | [`planul_scapat`](planul_scapat.md) | Planul scăpat de sub control |  | nu | — |
+| 877 | [`jurament_si_obstacol`](jurament_si_obstacol.md) | Jurământ și obstacol |  | nu | — |
+| 878 | [`galerii_cu_dubluri`](galerii_cu_dubluri.md) | Galerii cu dubluri |  | nu | — |
+| 879 | [`cavaler_si_magician`](cavaler_si_magician.md) | Cavaler și magician |  | nu | — |
+| 880 | [`tabele_fara_sfarsit`](tabele_fara_sfarsit.md) | Tabele fără sfârșit |  | nu | — |
+| 881 | [`puncte_nu_clase`](puncte_nu_clase.md) | Puncte, nu clase |  | nu | — |
+| 882 | [`lupta_cu_pelerine`](lupta_cu_pelerine.md) | Lupta cu pelerine |  | nu | — |
+| 883 | [`tabara_regelui`](tabara_regelui.md) | Tabăra regelui |  | nu | — |
+| 884 | [`spadasinii_marilor`](spadasinii_marilor.md) | Spadasinii mărilor |  | nu | — |
+| 885 | [`aurul_solar`](aurul_solar.md) | Aurul solar |  | nu | — |
+| 886 | [`echipajul_exploratorilor`](echipajul_exploratorilor.md) | Echipajul exploratorilor |  | nu | — |
+| 887 | [`inchizitorul_umbrei`](inchizitorul_umbrei.md) | Inchizitorul umbrei |  | nu | — |
+| 888 | [`contrabandistii_cetii`](contrabandistii_cetii.md) | Contrabandiștii cetii |  | nu | — |
+| 889 | [`legiunea_in_retragere`](legiunea_in_retragere.md) | Legiunea în retragere |  | nu | — |
+| 890 | [`inimi_din_umbra`](inimi_din_umbra.md) | Inimi din umbră |  | nu | — |
+| 891 | [`tineri_cu_pelerine`](tineri_cu_pelerine.md) | Tineri cu pelerine |  | nu | — |
+| 892 | [`biciclete_si_taine`](biciclete_si_taine.md) | Biciclete și taine |  | nu | — |
+| 893 | [`juramant_de_otel`](juramant_de_otel.md) | Jurământ de oțel |  | nu | — |
+| 894 | [`lumina_care_scade`](lumina_care_scade.md) | Lumina care scade |  | nu | — |
+| 895 | [`turnul_clatinat`](turnul_clatinat.md) | Turnul clătinat |  | nu | — |
+| 896 | [`epoci_sub_lupa`](epoci_sub_lupa.md) | Epoci sub lupă (drum: ruine) |  | nu | — |
+| 897 | [`faclia_din_hornuri`](faclia_din_hornuri.md) | Făclia din hornuri (drum: peșteră) |  | nu | — |
+| 898 | [`cununa_veacurilor`](cununa_veacurilor.md) | Cununa veacurilor (duel: oraș) |  | nu | — |
+| 899 | [`genezele_prafului`](genezele_prafului.md) | Genezele prafului (drum: deșert) |  | nu | — |
+| 900 | [`luna_in_cioburi`](luna_in_cioburi.md) | Luna în cioburi (duel: noapte) |  | nu | — |
+| 901 | [`tinutul_zimtat`](tinutul_zimtat.md) | Ținutul zimțat (duel: munte) |  | nu | — |
+| 902 | [`cenusa_neuronilor`](cenusa_neuronilor.md) | Cenușa neuronilor (drum: cenușă) |  | nu | — |
+| 903 | [`turneul_celor_trei`](turneul_celor_trei.md) | Turneul celor trei (duel: oraș) |  | nu | — |
+| 904 | [`zmeul_de_cremene`](zmeul_de_cremene.md) | Zmeul de cremene (duel: peșteră) |  | nu | — |
+| 905 | [`umbre_pe_lande`](umbre_pe_lande.md) | Umbre pe lande (drum: ceață) |  | nu | — |
+| 906 | [`somnorosii_din_vale`](somnorosii_din_vale.md) | Somnoroșii din vale (duel: noapte) |  | nu | — |
+| 907 | [`prinsi_intre_ceruri`](prinsi_intre_ceruri.md) | Prinși între ceruri (drum: templu) |  | nu | — |
+| 908 | [`sabatul_de_pe_deal`](sabatul_de_pe_deal.md) | Sabatul de pe deal (duel: pădure) |  | nu | — |
+| 909 | [`vizuina_cu_comori`](vizuina_cu_comori.md) | Vizuina cu comori (drum: peșteră) |  | nu | — |
+| 910 | [`cimitirul_de_papusi`](cimitirul_de_papusi.md) | Cimitirul de păpuși (duel: morminte) |  | nu | — |
+| 911 | [`umbre_cu_lame`](umbre_cu_lame.md) | Umbre cu lame (duel: noapte) |  | nu | — |
+| 912 | [`calatorii_cu_ceai`](calatorii_cu_ceai.md) | Călătorii cu ceai (drum: câmpie) |  | nu | — |
+| 913 | [`pustiul_mutantilor`](pustiul_mutantilor.md) | Pustiul mutanților (drum: deșert) |  | nu | — |
+| 914 | [`ucenicii_de_otel`](ucenicii_de_otel.md) | Ucenicii de oțel (duel: fier) |  | nu | — |
+| 915 | [`turnul_razvratitilor`](turnul_razvratitilor.md) | Turnul răzvrătiților (drum: turn) |  | nu | — |
+| 916 | [`coborarea_fara_lumina`](coborarea_fara_lumina.md) | Coborârea fără lumină (drum: mină) |  | nu | — |
+| 917 | [`stele_fara_catastif`](stele_fara_catastif.md) | Stele fără catastif (drum: stele) |  | nu | — |
+| 918 | [`zarul_taios`](zarul_taios.md) | Zarul tăios (duel: fier) |  | nu | — |
+| 919 | [`sania_cu_clopote`](sania_cu_clopote.md) | Sania cu clopote (drum: gheață) |  | nu | — |
+| 920 | [`urme_in_ceata_adanca`](urme_in_ceata_adanca.md) | Urme în ceața adâncă (drum: ceață) |  | nu | — |
+| 921 | [`corbul_de_furtuna`](corbul_de_furtuna.md) | Corbul de furtună (duel: vânt) |  | nu | — |
+| 922 | [`pastorii_viei`](pastorii_viei.md) | Păstorii viei (duel: sat) |  | nu | — |
+| 923 | [`seniorul_hatisurilor`](seniorul_hatisurilor.md) | Seniorul hățișurilor (drum: pădure) |  | nu | — |
+| 924 | [`otel_si_soapte`](otel_si_soapte.md) | Oțel și șoapte (duel: turn) |  | nu | — |
+| 925 | [`bocetul_vapaii`](bocetul_vapaii.md) | Bocetul văpăii (duel: cenușă) |  | nu | — |
+| 926 | [`mana_stanga_cu_pumnal`](mana_stanga_cu_pumnal.md) | Mâna stângă cu pumnal (duel: oraș) |  | nu | — |
+| 927 | [`movila_de_piatra`](movila_de_piatra.md) | Movila de piatră (drum: munte) |  | nu | — |
+| 928 | [`hornul_cu_masinarii`](hornul_cu_masinarii.md) | Hornul cu mașinării (drum: oraș) |  | nu | — |
+| 929 | [`povesti_din_han`](povesti_din_han.md) | Povești din han (duel: sat) |  | nu | — |
+| 930 | [`agentia_tacuta`](agentia_tacuta.md) | Agenția tăcută (drum: noapte) |  | nu | — |
+| 931 | [`epoca_cenusie`](epoca_cenusie.md) | Epoca cenușie (duel: ruine) |  | nu | — |
+| 932 | [`orizont_de_astrolabe`](orizont_de_astrolabe.md) | Orizont de astrolabe (drum: stele) |  | nu | — |
+| 933 | [`faptura_din_fag`](faptura_din_fag.md) | Făptura din fag (drum: pădure) |  | nu | — |
+| 934 | [`regimente_pe_cimpie`](regimente_pe_cimpie.md) | Regimente pe câmpie (bătălie: câmpie) |  | nu | — |
+| 935 | [`tancuri_in_lan`](tancuri_in_lan.md) | Tancuri în lan (bătălie: sat) |  | nu | — |
+| 936 | [`veacul_regimentelor`](veacul_regimentelor.md) | Veacul regimentelor (bătălie: pod) |  | nu | — |
+| 937 | [`trupe_sub_trei_sori`](trupe_sub_trei_sori.md) | Trupe sub trei sori (bătălie: stele) |  | nu | — |
+| 938 | [`bande_in_hrube`](bande_in_hrube.md) | Bande în hrube (bătălie: oraș) |  | nu | — |
+| 939 | [`zidul_de_scuturi`](zidul_de_scuturi.md) | Zidul de scuturi (bătălie: câmpie) |  | nu | — |
+| 940 | [`straja_pe_culme`](straja_pe_culme.md) | Strajă pe culme (bătălie: munte) |  | nu | — |
+| 941 | [`fratii_dezbinati`](fratii_dezbinati.md) | Frații dezbinați (bătălie: fortăreață) |  | nu | — |
+| 942 | [`eroi_pe_acoperis`](eroi_pe_acoperis.md) | Eroi pe acoperiș |  | nu | — |
+| 943 | [`razboinici_de_fiord`](razboinici_de_fiord.md) | Războinici de fiord |  | nu | — |
+| 944 | [`osti_pe_o_fila`](osti_pe_o_fila.md) | Oști pe o filă |  | nu | — |
+| 945 | [`bande_in_ruine`](bande_in_ruine.md) | Bande în ruine |  | nu | — |
+| 946 | [`masinarii_de_abur`](masinarii_de_abur.md) | Mașinării de abur |  | nu | — |
+| 947 | [`strigoi_de_targ`](strigoi_de_targ.md) | Strigoi de târg |  | nu | — |
+| 948 | [`giganti_de_otel`](giganti_de_otel.md) | Giganți de oțel |  | nu | — |
+| 949 | [`salve_si_baionete`](salve_si_baionete.md) | Salve și baionete |  | nu | — |
+| 950 | [`arena_pietrelor`](arena_pietrelor.md) | Arena pietrelor |  | nu | — |
+| 951 | [`chemarea_hoardelor`](chemarea_hoardelor.md) | Chemarea hoardelor |  | nu | — |
+| 952 | [`escadre_in_nebuloasa`](escadre_in_nebuloasa.md) | Escadre în nebuloasă |  | nu | — |
+| 953 | [`blindate_pe_sosea`](blindate_pe_sosea.md) | Blindate pe șosea |  | nu | — |
+| 954 | [`patrule_in_lan`](patrule_in_lan.md) | Patrule în lan |  | nu | — |
+| 955 | [`vrajitori_in_ger`](vrajitori_in_ger.md) | Vrăjitori în ger |  | nu | — |
+| 956 | [`bolizi_de_pustiu`](bolizi_de_pustiu.md) | Bolizi de pustiu |  | nu | — |
+| 957 | [`legiuni_si_cohorte`](legiuni_si_cohorte.md) | Legiuni și cohorte |  | nu | — |
+| 958 | [`falange_si_calarime`](falange_si_calarime.md) | Falangă și călărime |  | nu | — |
+| 959 | [`gardieni_si_corsari`](gardieni_si_corsari.md) | Gardieni și corsari |  | nu | — |
+| 960 | [`carosate_de_fier`](carosate_de_fier.md) | Carosate de fier |  | nu | — |
+| 961 | [`titani_de_ceata`](titani_de_ceata.md) | Titani de ceață |  | nu | — |
+| 962 | [`nave_in_deriva`](nave_in_deriva.md) | Nave în derivă |  | nu | — |
+| 963 | [`balada_vitejilor`](balada_vitejilor.md) | Balada vitejilor |  | nu | — |
+| 964 | [`echipaj_de_epava`](echipaj_de_epava.md) | Echipaj de epavă |  | nu | — |
+| 965 | [`armate_de_buzunar`](armate_de_buzunar.md) | Armate de buzunar |  | nu | — |
+| 966 | [`roata_puterilor`](roata_puterilor.md) | Roata puterilor |  | nu | — |
+| 967 | [`escadrile_de_hartie`](escadrile_de_hartie.md) | Escadrile de hârtie |  | nu | — |
+| 968 | [`mersatori_si_pusasi`](mersatori_si_pusasi.md) | Mersători și pușcași |  | nu | — |
+| 969 | [`aterizare_peste_oras`](aterizare_peste_oras.md) | Aterizare peste oraș |  | nu | — |
+| 970 | [`case_si_ierni`](case_si_ierni.md) | Case și ierni |  | nu | — |
+| 971 | [`osti_de_hotar`](osti_de_hotar.md) | Oști de hotar |  | nu | — |
+| 972 | [`pusasi_pe_planeta_rosie`](pusasi_pe_planeta_rosie.md) | Pușcași pe planeta roșie |  | nu | — |
+| 973 | [`coridorul_ruinat`](coridorul_ruinat.md) | Coridorul ruinat |  | nu | — |
+| 974 | [`ringul_cu_bila`](ringul_cu_bila.md) | Ringul cu bilă |  | nu | — |
+| 975 | [`domni_si_arcasi`](domni_si_arcasi.md) | Domni și arcași |  | nu | — |
+| 976 | [`basm_cu_balauri`](basm_cu_balauri.md) | Basm cu balauri |  | nu | — |
+| 977 | [`avioane_in_amurg`](avioane_in_amurg.md) | Avioane în amurg |  | nu | — |
+| 978 | [`torpiloare_in_noapte`](torpiloare_in_noapte.md) | Torpiloare în noapte |  | nu | — |
+| 979 | [`corabii_cu_tunuri`](corabii_cu_tunuri.md) | Corăbii cu tunuri |  | nu | — |
+| 980 | [`panze_si_ghiulele`](panze_si_ghiulele.md) | Pânze și ghiulele |  | nu | — |
+| 981 | [`pe_valuri_de_otel`](pe_valuri_de_otel.md) | Pe valuri de oțel |  | nu | — |
+| 982 | [`flote_cu_aburi`](flote_cu_aburi.md) | Flote cu aburi |  | nu | — |
+| 983 | [`flote_in_inel`](flote_in_inel.md) | Flote în inel |  | nu | — |
+| 984 | [`fregate_in_vid`](fregate_in_vid.md) | Fregate în vid |  | nu | — |
+| 985 | [`scuturi_si_raze`](scuturi_si_raze.md) | Scuturi și raze |  | nu | — |
+| 986 | [`orbita_in_flacari`](orbita_in_flacari.md) | Orbită în flăcări |  | nu | — |
+| 987 | [`nave_de_expeditie`](nave_de_expeditie.md) | Nave de expediție |  | nu | — |
+| 988 | [`ulita_neagra`](ulita_neagra.md) | Ulița Neagră |  | nu | — |
+| 989 | [`mingea_de_piele`](mingea_de_piele.md) | Mingea de Piele |  | nu | — |
+| 990 | [`regate_de_cenusa`](regate_de_cenusa.md) | Regate de Cenușă |  | nu | — |
+| 991 | [`fiare_si_vrajitori`](fiare_si_vrajitori.md) | Fiare și Vrăjitori |  | nu | — |
+| 992 | [`cadranul_ostasului`](cadranul_ostasului.md) | Cadranul Ostașului |  | nu | — |
+| 993 | [`trupe_de_plumb`](trupe_de_plumb.md) | Trupe de Plumb |  | nu | — |
+| 994 | [`hrube_si_comori`](hrube_si_comori.md) | Hrube și Comori |  | nu | — |
+| 995 | [`inaltimi_cu_eroi`](inaltimi_cu_eroi.md) | Înălțimi cu Eroi |  | nu | — |
+| 996 | [`lame_si_ghiare`](lame_si_ghiare.md) | Lame și Gheare |  | nu | — |
+| 997 | [`strajeri_de_umbra`](strajeri_de_umbra.md) | Străjerii din Umbră |  | nu | — |
+| 998 | [`padure_cu_muschete`](padure_cu_muschete.md) | Pădure cu Mușchete |  | nu | — |
+| 999 | [`catuse_si_baionete`](catuse_si_baionete.md) | Cartușe și Baionete |  | nu | — |
+| 1000 | [`armata_de_cimpie`](armata_de_cimpie.md) | Armata de Câmpie |  | nu | — |
+| 1001 | [`sulite_si_archebuze`](sulite_si_archebuze.md) | Suliți și Archebuze |  | nu | — |
+| 1002 | [`patrula_linia_rosie`](patrula_linia_rosie.md) | Patrula de pe Linia Roșie |  | nu | — |
+| 1003 | [`pistoale_in_praf`](pistoale_in_praf.md) | Pistoale în Praf |  | nu | — |
+| 1004 | [`carti_prafuite`](carti_prafuite.md) | Cărți Prăfuite |  | nu | — |
+| 1005 | [`aventurieri_de_foileton`](aventurieri_de_foileton.md) | Aventurieri de Foileton |  | nu | — |
+| 1006 | [`clanuri_de_orhidee`](clanuri_de_orhidee.md) | Clanurile de Orhidee |  | nu | — |
+| 1007 | [`spada_fara_stapan`](spada_fara_stapan.md) | Sabia fără Stăpân |  | nu | — |
+| 1008 | [`legamant_de_piatra`](legamant_de_piatra.md) | Legământ de Piatră |  | nu | — |
+| 1009 | [`armuri_de_abur`](armuri_de_abur.md) | Armuri de Abur |  | nu | — |
+| 1010 | [`zbor_de_lancii`](zbor_de_lancii.md) | Zbor de Lănci |  | nu | — |
+| 1011 | [`douasprezece_elemente`](douasprezece_elemente.md) | Douăsprezece Elemente |  | nu | — |
+| 1012 | [`oastea_cea_mare`](oastea_cea_mare.md) | Oastea cea Mare |  | nu | — |
+| 1013 | [`mestesugul_razboiului`](mestesugul_razboiului.md) | Meșteșugul Războiului |  | nu | — |
+| 1014 | [`ordine_pe_caroiaj`](ordine_pe_caroiaj.md) | Ordine pe Caroiaj |  | nu | — |
+| 1015 | [`cavaleri_si_pavaze`](cavaleri_si_pavaze.md) | Cavaleri și Pavaze |  | nu | — |
+| 1016 | [`maresali_de_fier`](maresali_de_fier.md) | Mareșali de Fier |  | nu | — |
+| 1017 | [`salve_pe_front`](salve_pe_front.md) | Salve pe Front |  | nu | — |
+| 1018 | [`foc_si_pulbere`](foc_si_pulbere.md) | Foc și Pulbere |  | nu | — |
+| 1019 | [`pasi_de_otel`](pasi_de_otel.md) | Pași de Oțel |  | nu | — |
+| 1020 | [`escadrila_cerului_rosu`](escadrila_cerului_rosu.md) | Escadrila Cerului Roșu |  | nu | — |
+| 1021 | [`lupta_in_nori`](lupta_in_nori.md) | Luptă în Nori |  | nu | — |
+| 1022 | [`echipajul_ratacit`](echipajul_ratacit.md) | Echipajul Rătăcit |  | nu | — |
+| 1023 | [`planeta_cu_spini`](planeta_cu_spini.md) | Planeta cu Spini |  | nu | — |
+| 1024 | [`zeii_de_lut`](zeii_de_lut.md) | Zeii de Lut |  | nu | — |
+| 1025 | [`asalt_pe_statia_veche`](asalt_pe_statia_veche.md) | Asalt pe Stația Veche |  | nu | — |
+| 1026 | [`culoare_de_otel`](culoare_de_otel.md) | Culoare de Oțel |  | nu | — |
+| 1027 | [`pirati_de_hartie`](pirati_de_hartie.md) | Pirații de Hârtie |  | da | — |
+| 1028 | [`evolutia_circuitelor`](evolutia_circuitelor.md) | Evoluția Circuitelor |  | da | — |
+| 1029 | [`energia_luptatorilor`](energia_luptatorilor.md) | Energia Luptătorilor |  | da | — |
+| 1030 | [`ceasul_alb_negru`](ceasul_alb_negru.md) | Ceasul Alb-Negru |  | da | — |
+| 1031 | [`trepte_de_avangarda`](trepte_de_avangarda.md) | Treptele Avangardei |  | da | — |
+| 1032 | [`doua_arene_o_baza`](doua_arene_o_baza.md) | Două Arene, o Bază |  | da | — |
+| 1033 | [`scuturi_si_mana`](scuturi_si_mana.md) | Scuturi și Mană |  | da | — |
+| 1034 | [`cristale_chemari`](cristale_chemari.md) | Cristale și Chemări |  | da | — |
+| 1035 | [`duhuri_pirjol`](duhuri_pirjol.md) | Duhurile Pârjolului |  | da | — |
+| 1036 | [`cursa_prin_retea`](cursa_prin_retea.md) | Cursa prin Rețea |  | da | — |
+| 1037 | [`chei_chihlimbar`](chei_chihlimbar.md) | Trei Chei de Chihlimbar |  | da | — |
+| 1038 | [`provincii_de_jad`](provincii_de_jad.md) | Provinciile de Jad |  | da | — |
+| 1039 | [`mercenari_stelari`](mercenari_stelari.md) | Mercenarii Stelari |  | da | — |
+| 1040 | [`pecetea_magilor`](pecetea_magilor.md) | Pecetea Magilor |  | da | — |
+| 1041 | [`biblioteca_umbrelor`](biblioteca_umbrelor.md) | Biblioteca Umbrelor |  | da | — |
+| 1042 | [`tinutul_cenusiu`](tinutul_cenusiu.md) | Ținutul Cenușiu |  | da | — |
+| 1043 | [`cavaleri_mecanici`](cavaleri_mecanici.md) | Cavaleri Mecanici |  | da | — |
+| 1044 | [`arena_aliatilor`](arena_aliatilor.md) | Arena Aliaților |  | da | — |
+| 1045 | [`creaturi_necunoscute`](creaturi_necunoscute.md) | Creaturile Necunoscute |  | da | — |
+| 1046 | [`sangele_noptii`](sangele_noptii.md) | Sângele Nopții |  | da | — |
+| 1047 | [`misiuni_dincolo_de_stele`](misiuni_dincolo_de_stele.md) | Misiuni dincolo de Stele |  | da | — |
+| 1048 | [`lumea_dintre_lumini`](lumea_dintre_lumini.md) | Lumea dintre Lumini |  | da | — |
+| 1049 | [`drum_peste_munti`](drum_peste_munti.md) | Drum peste Munți |  | da | — |
+| 1050 | [`pumnul_din_umbra`](pumnul_din_umbra.md) | Pumnul din Umbră |  | da | — |
+| 1051 | [`tinuturi_si_vraji`](tinuturi_si_vraji.md) | Ținuturi și Vrăji |  | da | — |
+| 1052 | [`papusarii_umbrei`](papusarii_umbrei.md) | Păpușarii din Umbră |  | da | — |
+| 1053 | [`povesti_din_ceata`](povesti_din_ceata.md) | Povești din Ceață |  | da | — |
+| 1054 | [`scaunul_cu_colti`](scaunul_cu_colti.md) | Scaunul cu Colți |  | da | — |
+| 1055 | [`trei_cetati`](trei_cetati.md) | Cele Trei Cetăți |  | da | — |
+| 1056 | [`sase_lumi_in_flacari`](sase_lumi_in_flacari.md) | Șase Lumi în Flăcări |  | da | — |
+| 1057 | [`magii_mici`](magii_mici.md) | Magii Mici |  | da | — |
+| 1058 | [`luptatori_cu_aura`](luptatori_cu_aura.md) | Luptători cu Aură |  | da | — |
+| 1059 | [`ucenicii_vantului`](ucenicii_vantului.md) | Ucenicii Vântului |  | da | — |
+| 1060 | [`cosasii_de_suflete`](cosasii_de_suflete.md) | Cosașii de Suflete |  | da | — |
+| 1061 | [`tovarasul_din_gong`](tovarasul_din_gong.md) | Tovarășul din Gong |  | da | — |
+| 1062 | [`zero_contra_infinit`](zero_contra_infinit.md) | Zero contra Infinit |  | da | — |
+| 1063 | [`duel_fulger`](duel_fulger.md) | Duel Fulger |  | da | — |
+| 1064 | [`domeniul_monstrilor`](domeniul_monstrilor.md) | Domeniul Monștrilor |  | da | — |
+| 1065 | [`taramuri_paralele`](taramuri_paralele.md) | Tărâmuri Paralele |  | da | — |
+| 1066 | [`cristale_de_aura`](cristale_de_aura.md) | Cristale de Aură |  | da | — |
+| 1067 | [`lupta_pe_etape`](lupta_pe_etape.md) | Lupta pe Etape |  | da | — |
+| 1068 | [`eroi_contra_raufacatori`](eroi_contra_raufacatori.md) | Eroi contra Răufăcători |  | da | — |
+| 1069 | [`roata_anotimpurilor`](roata_anotimpurilor.md) | Roata Anotimpurilor |  | da | — |
+| 1070 | [`roboti_de_lupta`](roboti_de_lupta.md) | Roboții de Luptă |  | da | — |
+| 1071 | [`statia_dintre_stele`](statia_dintre_stele.md) | Stația dintre Stele |  | da | — |
+| 1072 | [`scoala_de_vraji`](scoala_de_vraji.md) | Școala de Vrăji |  | da | — |
+| 1073 | [`varful_fumegand`](varful_fumegand.md) | Vârful Fumegând |  | da | — |
+| 1074 | [`cetatile_din_furtuna`](cetatile_din_furtuna.md) | Cetățile din Furtună |  | da | — |
+| 1075 | [`dragoni_la_hotar`](dragoni_la_hotar.md) | Dragoni la Hotar |  | da | — |
+| 1076 | [`ucenicii_cenusii`](ucenicii_cenusii.md) | Ucenicii Cenușii |  | da | — |
+| 1077 | [`eroi_de_targ`](eroi_de_targ.md) | Eroi de Târg |  | da | — |
+| 1078 | [`spartura_dintre_lumi`](spartura_dintre_lumi.md) | Spărtura dintre Lumi |  | da | — |
+| 1079 | [`orasul_prafuit`](orasul_prafuit.md) | Orășelul Prăfuit |  | da | — |
+| 1080 | [`spargatori_retea`](spargatori_retea.md) | Spărgătorii de rețea |  | da | — |
+| 1081 | [`duelul_puterilor`](duelul_puterilor.md) | Duelul puterilor |  | da | — |
+| 1082 | [`altarul_sutelor`](altarul_sutelor.md) | Altarul sutelor |  | da | — |
+| 1083 | [`straji_ceruri`](straji_ceruri.md) | Străjerii cerurilor |  | da | — |
+| 1084 | [`haita_furioasa`](haita_furioasa.md) | Haita furioasă |  | da | — |
+| 1085 | [`caravane_nisip`](caravane_nisip.md) | Caravanele de nisip |  | da | — |
+| 1086 | [`legiuni_frante`](legiuni_frante.md) | Legiunile frânte |  | da | — |
+| 1087 | [`marginea_nevazuta`](marginea_nevazuta.md) | Marginea nevăzută |  | da | — |
+| 1088 | [`imperii_de_stele`](imperii_de_stele.md) | Imperii de stele |  | da | — |
+| 1089 | [`dosare_sub_sigiliu`](dosare_sub_sigiliu.md) | Dosare sub sigiliu |  | da | — |
+| 1090 | [`umbre_de_neon`](umbre_de_neon.md) | Umbre de neon |  | da | — |
+| 1091 | [`roiul_si_vanatorii`](roiul_si_vanatorii.md) | Roiul și vânătorii |  | da | — |
+| 1092 | [`corsari_si_amirali`](corsari_si_amirali.md) | Corsari și amirali |  | da | — |
+| 1093 | [`soapte_din_abis`](soapte_din_abis.md) | Șoapte din abis |  | da | — |
+| 1094 | [`clanuri_de_oaza`](clanuri_de_oaza.md) | Clanurile oazei |  | da | — |
+| 1095 | [`cautatorii_de_cripte`](cautatorii_de_cripte.md) | Căutătorii de cripte |  | da | — |
+| 1096 | [`razboinica_de_bronz`](razboinica_de_bronz.md) | Războinica de bronz |  | da | — |
+| 1097 | [`muncile_semizeului`](muncile_semizeului.md) | Muncile semizeului |  | da | — |
+| 1098 | [`ucenicii_luminii`](ucenicii_luminii.md) | Ucenicii luminii |  | da | — |
+| 1099 | [`gardiene_de_cristal`](gardiene_de_cristal.md) | Gardienele de cristal |  | da | — |
+| 1100 | [`masini_ceas_zero`](masini_ceas_zero.md) | Mașinile orei zero |  | da | — |
+| 1101 | [`creaturi_de_pixeli`](creaturi_de_pixeli.md) | Creaturi de pixeli |  | da | — |
+| 1102 | [`scoala_darurilor`](scoala_darurilor.md) | Școala darurilor |  | da | — |
+| 1103 | [`vanatoarea_de_noapte`](vanatoarea_de_noapte.md) | Vânătoarea de noapte |  | da | — |
+| 1104 | [`cavalerii_stelelor`](cavalerii_stelelor.md) | Cavalerii stelelor |  | da | — |
+| 1105 | [`flotele_in_duel`](flotele_in_duel.md) | Flotele în duel |  | da | — |
+| 1106 | [`cruciada_de_otel`](cruciada_de_otel.md) | Cruciada de oțel |  | da | — |
+| 1107 | [`orasel_caraghios`](orasel_caraghios.md) | Orășelul caraghios |  | da | — |
+| 1108 | [`recif_zburdalnic`](recif_zburdalnic.md) | Recif zburdalnic |  | da | — |
+| 1109 | [`turnirul_animalutelor`](turnirul_animalutelor.md) | Turnirul animăluțelor |  | da | — |
+| 1110 | [`comando_de_elita`](comando_de_elita.md) | Comando de elită |  | da | — |
+| 1111 | [`fratii_de_carapace`](fratii_de_carapace.md) | Frații de carapace |  | da | — |
+| 1112 | [`raid_in_tinuturi_vechi`](raid_in_tinuturi_vechi.md) | Raid în ținuturile vechi |  | da | — |
+| 1113 | [`detectivii_spiritelor`](detectivii_spiritelor.md) | Detectivii spiritelor |  | da | — |
+| 1114 | [`stapanii_elementelor`](stapanii_elementelor.md) | Stăpânii elementelor |  | da | — |
+| 1115 | [`cercurile_noptii`](cercurile_noptii.md) | Cercurile nopții |  | da | — |
+| 1116 | [`pasi_de_evolutie`](pasi_de_evolutie.md) | Pașii evoluției |  | da | — |
+| 1117 | [`scena_virtuala`](scena_virtuala.md) | Scena virtuală |  | da | — |
+| 1118 | [`papusile_dorintei`](papusile_dorintei.md) | Păpușile dorinței |  | da | — |
+| 1119 | [`eroi_intre_lumi`](eroi_intre_lumi.md) | Eroi între lumi |  | da | — |
+| 1120 | [`mituri_si_zei`](mituri_si_zei.md) | Mituri și zei |  | da | — |
+| 1121 | [`lupta_fuziunii`](lupta_fuziunii.md) | Lupta fuziunii |  | da | — |
+| 1122 | [`hnefatafl`](hnefatafl.md) | Hnefatafl |  | nu | — |
+| 1123 | [`brandubh`](brandubh.md) | Brandubh |  | nu | — |
+| 1124 | [`pente`](pente.md) | Pente |  | nu | — |
+| 1125 | [`havannah`](havannah.md) | Havannah |  | nu | — |
+| 1126 | [`chinese_checkers`](chinese_checkers.md) | Table chinezească (Chinese Checkers) |  | nu | — |
+| 1127 | [`goose`](goose.md) | Jocul gâștei (Game of the Goose) |  | nu | — |
+| 1128 | [`keno`](keno.md) | Keno |  | nu | — |
+| 1129 | [`sichuan_mahjong`](sichuan_mahjong.md) | Mahjong Sichuan |  | da | — |
+| 1130 | [`long_nard`](long_nard.md) | Long Nard (Narde) |  | nu | — |
+| 1131 | [`shove_ha_penny`](shove_ha_penny.md) | Shove ha'penny |  | nu | — |
+| 1132 | [`rithmomachia`](rithmomachia.md) | Rithmomachia |  | nu | — |
+| 1133 | [`pong_hau_kiki`](pong_hau_kiki.md) | Pong hau k'i |  | nu | — |
+| 1134 | [`patolli`](patolli.md) | Patolli |  | nu | — |
+| 1135 | [`duodecim_scripta`](duodecim_scripta.md) | Duodecim scripta |  | nu | — |
+| 1136 | [`jigsaw`](jigsaw.md) | Puzzle cu piese (Jigsaw) |  | nu | — |
+| 1137 | [`guobiao`](guobiao.md) | Mahjong oficial chinez (Guobiao) |  | da | — |
+| 1138 | [`boggle`](boggle.md) | Boggle |  | nu | — |
+| 1139 | [`kings`](kings.md) | Kings (Ring of Fire) |  | nu | — |
+| 1140 | [`celebrity`](celebrity.md) | Celebrity (Fishbowl) |  | da | — |
+| 1141 | [`pin_the_tail`](pin_the_tail.md) | Prinde coada măgarului |  | nu | — |
+| 1142 | [`war`](war.md) | Război (War) |  | nu | — |
+| 1143 | [`tressette`](tressette.md) | Tressette (Italia) |  | da | — |
+| 1144 | [`piquet`](piquet.md) | Piquet (Franța) |  | da | — |
+| 1145 | [`batak`](batak.md) | Batak (Turcia) |  | da | — |
+| 1146 | [`yaniv`](yaniv.md) | Yaniv (Israel) |  | da | — |
+| 1147 | [`ascunselea`](ascunselea.md) | Ascunselea (Hide-and-seek) |  | da | — |
+| 1148 | [`de_a_prinselea`](de_a_prinselea.md) | De-a prinselea (Tag) |  | nu | — |
+| 1149 | [`elasticul`](elasticul.md) | Elasticul |  | nu | — |
+| 1150 | [`oina`](oina.md) | Oina |  | nu | — |
+| 1151 | [`loto_imagini`](loto_imagini.md) | Loto cu imagini (Picture lotto) |  | nu | — |
+| 1152 | [`bau_cua`](bau_cua.md) | Bầu cua (dovleac, crab, pește) |  | nu | — |
+| 1153 | [`yacht`](yacht.md) | Yacht |  | nu | — |
+| 1154 | [`chicago`](chicago.md) | Chicago (zaruri) |  | nu | — |
+| 1155 | [`zara`](zara.md) | Zara (joc) |  | nu | — |
+| 1156 | [`daldos`](daldos.md) | Daldøs |  | nu | — |
+| 1157 | [`colturi`](colturi.md) | Colțuri (poliomino 10×10) |  | nu | — |
+| 1158 | [`sah960`](sah960.md) | Șah cu start amestecat (fără rocadă) |  | nu | — |
+| 1159 | [`impingere`](impingere.md) | Împingere pe pătrate (7×7) |  | nu | — |
+| 1160 | [`roiul`](roiul.md) | Roiul (insecte pe masă) |  | nu | — |
+| 1161 | [`terase`](terase.md) | Terase (construcție 5×5) |  | nu | — |
+| 1162 | [`cartimut`](cartimut.md) | Mutări din cărți (5×5) |  | nu | — |
+| 1163 | [`sferturi`](sferturi.md) | Sferturi (rotire 6×6) |  | nu | — |
+| 1164 | [`inele`](inele.md) | Inele și semne (hex) |  | nu | — |
+| 1165 | [`sase`](sase.md) | Șase în linie (13×13) |  | nu | — |
+| 1166 | [`morpiuri9`](morpiuri9.md) | Morpion în nouă (9×9) |  | nu | — |
+| 1167 | [`drumul_stivelor`](drumul_stivelor.md) | Drumul stivelor (5×5) |  | nu | — |
+| 1168 | [`margine`](margine.md) | De la margine (hex 37) |  | nu | — |
+| 1169 | [`izvoare`](izvoare.md) | Izvoare (stive conectate 7×7) |  | nu | — |
+| 1170 | [`trei_tipuri`](trei_tipuri.md) | Trei tipuri (stive 6×6) |  | nu | — |
+| 1171 | [`bilinele`](bilinele.md) | Bile și inele (hex 37) |  | nu | — |
+| 1172 | [`animale`](animale.md) | Animale (mini-șah 3×4) |  | nu | — |
+| 1173 | [`iepuri`](iepuri.md) | Iepurii și Elefantul (8×8) |  | nu | — |
+| 1174 | [`asalt`](asalt.md) | Asalt (pioni 7×7) |  | nu | — |
+| 1175 | [`dar4`](dar4.md) | Piesa dăruită (4×4) |  | nu | — |
+| 1176 | [`piramida`](piramida.md) | Piramida (bile pe 4 niveluri) |  | nu | — |
+| 1177 | [`cuburi`](cuburi.md) | Cuburi glisante (5×5) |  | nu | — |
+| 1178 | [`culori_pas`](culori_pas.md) | Culori în șir (turnuri 8×8) |  | nu | — |
+| 1179 | [`hochei_masa`](hochei_masa.md) | Hochei pe masă (ture) |  | nu | — |
+| 1180 | [`trenuri`](trenuri.md) | Trenuri de domino (2 jucători) |  | da | — |
+| 1181 | [`marmure`](marmure.md) | Marmure (curse cu scurtătură) |  | nu | — |
+| 1182 | [`blocaje`](blocaje.md) | Blocaje (curse cu blocuri) |  | nu | — |
+| 1183 | [`zbor`](zbor.md) | Zbor (curse cu salturi) |  | nu | — |
+| 1184 | [`perechi_duel`](perechi_duel.md) | Perechi în piramidă (duel) |  | nu | — |
+| 1185 | [`discuri`](discuri.md) | Discuri (fotbal pe ture) |  | nu | — |
+| 1186 | [`armonia`](armonia.md) | Armonia florilor (7×7) |  | nu | — |
+| 1187 | [`cai_de_curse`](cai_de_curse.md) | Cai de curse (traseu 40) |  | nu | — |
+| 1188 | [`cub2`](cub2.md) | Cub 2×2: duel |  | nu | — |
+| 1189 | [`flipper_duel`](flipper_duel.md) | Flipper (duel de scor) |  | nu | — |
+| 1190 | [`scuze`](scuze.md) | Pardon (curse cu cărți) |  | nu | — |
+| 1191 | [`forme6`](forme6.md) | Forme și culori (plăcuțe) |  | da | — |
+| 1192 | [`palate`](palate.md) | Palate (orașul cu monede) |  | da | — |
+| 1193 | [`sir5`](sir5.md) | Șir de cinci (cărți și jetoane) |  | da | — |
+| 1194 | [`kilometri`](kilometri.md) | Kilometri (cursă cu cărți) |  | da | — |
+| 1195 | [`camile`](camile.md) | Cursa cămilelor (pariuri) |  | nu | — |
+| 1196 | [`tren_jaf`](tren_jaf.md) | Jaful din tren (programe) |  | da | — |

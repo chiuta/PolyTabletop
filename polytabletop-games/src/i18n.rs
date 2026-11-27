@@ -9,7 +9,7 @@ use std::collections::HashMap;
 use std::sync::OnceLock;
 
 /// Embedded files, in override order (later files override earlier ones).
-const FILES: [&str; 26] = [
+const FILES: [&str; 32] = [
     include_str!("../data/i18n/titles_00.tsv"),
     include_str!("../data/i18n/titles_01.tsv"),
     include_str!("../data/i18n/titles_02.tsv"),
@@ -30,12 +30,18 @@ const FILES: [&str; 26] = [
     include_str!("../data/i18n/titles_B3.tsv"),
     include_str!("../data/i18n/titles_B5.tsv"),
     include_str!("../data/i18n/titles_B4.tsv"),
+    include_str!("../data/i18n/titles_T2.tsv"),
     include_str!("../data/i18n/titles_C1.tsv"),
     include_str!("../data/i18n/titles_C3.tsv"),
     include_str!("../data/i18n/titles_C4.tsv"),
     include_str!("../data/i18n/titles_C5.tsv"),
     include_str!("../data/i18n/titles_C2.tsv"),
     include_str!("../data/i18n/titles_C6.tsv"),
+    include_str!("../data/i18n/titles_T1.tsv"), // T1
+    include_str!("../data/i18n/titles_T3.tsv"), // T3
+    include_str!("../data/i18n/titles_T4.tsv"),
+    include_str!("../data/i18n/titles_T5.tsv"),
+    include_str!("../data/i18n/titles_T6.tsv"), // T6
 ];
 
 type Entry = (&'static str, &'static str);
