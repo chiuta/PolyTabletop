@@ -659,6 +659,92 @@ const NO_HIDDEN_C5: &[&str] = &[
     "zaruri_asezari",
 ];
 
+/// C2 (jocuri cooperative, variante originale): nimic privat unui jucător (pachete cu ordine ascunsă, mâini deschise).
+const NO_HIDDEN_C2: &[&str] = &[
+    "satul_stafiilor",
+    "paznicii_padurii",
+    "scutierii_pasului",
+    "alarma_nava",
+    "automate_contra_roiului",
+    "temnita_clepsidrei",
+    "campionii_urbei",
+    "academia_vrajilor",
+    "apararea_planetei",
+    "bastionul_cenusiu",
+    "umbre_peste_cetate",
+    "calea_flacarii",
+    "temnita_unui_pachet",
+    "hoinarii_cu_zaruri",
+    "eroi_cu_fise",
+    "tinutul_cetelor",
+    "jucariile_curajoase",
+    "conacul_infectat",
+    "ultima_supravietuitoare",
+    "cripta_corbilor",
+    "continentul_necunoscut",
+    "zeii_adormiti",
+    "apele_uitate",
+    "cantecul_hoinar",
+    "orasul_cu_ceata",
+    "detectivii_magiei",
+    "vasul_pustiit",
+    "iarna_taberei",
+    "neamul_pietrei",
+    "insula_apelor_urcate",
+    "nava_fara_capitan",
+    "ultimele_animale",
+    "zorii_climei",
+    "calea_ascunsa",
+    "focare_dupa_catastrofa",
+    "furtuna_interzisa",
+    "conacul_tradarii",
+    "flota_infiltrata",
+    "complotul_din_umbra",
+];
+
+/// C6 (zaruri, variante originale): zarurile sunt publice, nicio informație privată.
+const NO_HIDDEN_C6: &[&str] = &[
+    "farfurii_zburatoare",
+    "verde_galben_rosu",
+    "pofta_zarurilor",
+    "purcei_pe_masa",
+    "zarul_nebuniei",
+    "peritorii_coroanei",
+    "cifra_cea_mare",
+    "zece_la_fel",
+    "vartej_de_zaruri",
+    "petale_si_spini",
+    "zaruri_in_duel",
+    "zar_peste_masa",
+    "coridorul_incercarilor",
+    "bancnote_si_zaruri",
+    "satul_de_la_rascruce",
+    "soarta_e_aruncata",
+    "bazarul_persan",
+    "cetatea_breslelor",
+    "santierul_orbital",
+    "schite_de_constructie",
+    "tinta_fixata",
+    "popoarele_si_epocile",
+    "baza_stelara",
+    "orasul_in_crestere",
+    "infirmeria_de_noapte",
+    "descalecatorii",
+    "colorat_si_barat",
+    "harta_cu_cifre",
+    "vitraliul_zarurilor",
+    "drumuri_si_sine",
+    "eroul_din_zaruri",
+    "regele_metropolei",
+    "ere_si_monumente",
+    "echipa_de_aventurieri",
+    "oastea_de_zaruri",
+    "leacul_molimei",
+    "scufundarea_adanca",
+    "cursa_cuburilor",
+    "fitilul_aprins",
+];
+
 #[test]
 fn every_playable_id_is_classified() {
     let mut unclassified = Vec::new();
@@ -675,7 +761,9 @@ fn every_playable_id_is_classified() {
                 || NO_HIDDEN_B4.contains(&p.id)
                 || NO_HIDDEN_C1.contains(&p.id)
                 || NO_HIDDEN_C3.contains(&p.id)
-                || NO_HIDDEN_C5.contains(&p.id),
+                || NO_HIDDEN_C5.contains(&p.id)
+                || NO_HIDDEN_C2.contains(&p.id)
+                || NO_HIDDEN_C6.contains(&p.id),
         ]
         .iter()
         .filter(|b| **b)
@@ -709,6 +797,8 @@ fn lists_have_no_stale_or_duplicate_ids() {
         ("NO_HIDDEN_C1", NO_HIDDEN_C1),
         ("NO_HIDDEN_C3", NO_HIDDEN_C3),
         ("NO_HIDDEN_C5", NO_HIDDEN_C5),
+        ("NO_HIDDEN_C2", NO_HIDDEN_C2),
+        ("NO_HIDDEN_C6", NO_HIDDEN_C6),
     ] {
         let set: BTreeSet<&str> = l.iter().copied().collect();
         assert_eq!(set.len(), l.len(), "{name} has duplicates");

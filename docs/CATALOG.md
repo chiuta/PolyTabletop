@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (850)
+## Implementat (928)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -650,6 +650,45 @@
 | Burgle Bros. | Cooperativ | SUA | implementat |
 | The Grizzled | Cooperativ | Franța | implementat |
 | Chronicles of Crime | Cooperativ | Polonia | implementat |
+| Ghost Stories | Cooperativ | Franța | implementat |
+| One Deck Dungeon | Cooperativ | SUA | implementat |
+| Defenders of the Wild | Cooperativ | SUA | implementat |
+| Too Many Bones | Cooperativ | SUA | implementat |
+| Legendary: A Marvel Deck Building Game | Cooperativ | SUA | implementat |
+| Harry Potter: Hogwarts Battle | Cooperativ | SUA | implementat |
+| Dead of Winter: A Cross Roads Game | Cooperativ | SUA | implementat |
+| Sleeping Gods | Cooperativ | SUA | implementat |
+| Forgotten Waters | Cooperativ | SUA | implementat |
+| Mechs vs. Minions | Cooperativ | SUA | implementat |
+| The 7th Continent | Cooperativ | Franța | implementat |
+| Freedom: The Underground Railroad | Cooperativ | SUA | implementat |
+| Return to Dark Tower | Cooperativ | SUA | implementat |
+| Arkham Horror (ediția a 3-a) | Cooperativ | SUA | implementat |
+| Shadows over Camelot | Cooperativ | Franța | implementat |
+| Lord of the Rings (Knizia) | Cooperativ | Germania | implementat |
+| Daybreak | Cooperativ | SUA | implementat |
+| Paleo | Cooperativ | Germania | implementat |
+| Atlantis Rising | Cooperativ | SUA | implementat |
+| The Captain Is Dead | Cooperativ | SUA | implementat |
+| Stuffed Fables | Cooperativ | SUA | implementat |
+| Vagrantsong | Cooperativ | SUA | implementat |
+| Champions of Hara | Cooperativ | SUA | implementat |
+| Roll Player Adventures | Cooperativ | SUA | implementat |
+| Resident Evil 2: The Board Game | Cooperativ | SUA | implementat |
+| Black Orchestra | Cooperativ | SUA | implementat |
+| Endangered | Cooperativ | SUA | implementat |
+| XCOM: The Board Game | Cooperativ | SUA | implementat |
+| The Dresden Files Cooperative Card Game | Cooperativ | SUA | implementat |
+| Star Trek: Panic | Cooperativ | SUA | implementat |
+| 5-Minute Dungeon | Cooperativ | SUA | implementat |
+| Pandemic Legacy: Season 2 | Cooperativ | SUA | implementat |
+| Forbidden Sky | Cooperativ | SUA | implementat |
+| Legends of Andor | Cooperativ | Germania | implementat |
+| Castle Ravenloft Board Game | Cooperativ | SUA | implementat |
+| Betrayal at House on the Hill | Cooperativ | SUA | implementat |
+| Battlestar Galactica: The Board Game | Cooperativ | SUA | implementat |
+| Nemesis | Cooperativ | Polonia | implementat |
+| Final Girl | Cooperativ | SUA | implementat |
 | Cthulhu: Death May Die | Cooperativ | SUA | implementat |
 | Elder Sign | Cooperativ | SUA | implementat |
 | Massive Darkness 2 | Cooperativ | SUA | implementat |
@@ -837,23 +876,62 @@
 | Doppelt so clever (Twice as Clever) | Zaruri | Germania | implementat |
 | Clever hoch drei (Clever Cubed) | Zaruri | Germania | implementat |
 | Qwinto | Zaruri | Germania | implementat |
+| Noch mal! (Encore!) | Zaruri | Germania | implementat |
+| Las Vegas | Zaruri | Germania | implementat |
+| Alien Frontiers | Zaruri | SUA | implementat |
+| Roll Through the Ages | Zaruri | SUA | implementat |
+| Pandemic: The Cure | Zaruri | SUA | implementat |
+| Martian Dice | Zaruri | SUA | implementat |
+| Cthulhu Dice | Zaruri | SUA | implementat |
+| King of New York | Zaruri | SUA | implementat |
+| Dungeon Roll | Zaruri | SUA | implementat |
+| Dice Town | Zaruri | Franța / Germania | implementat |
+| Dice City | Zaruri | Cehia | implementat |
+| Dice Hospital | Zaruri | Marea Britanie | implementat |
+| Dice Settlers | Zaruri | Franța | implementat |
+| Roll Player | Zaruri | SUA | implementat |
+| Space Base | Zaruri | SUA | implementat |
+| Troyes | Zaruri | Franța | implementat |
+| Yspahan | Zaruri | Franța | implementat |
+| Sagrada | Zaruri | SUA | implementat |
+| Railroad Ink | Zaruri | Italia | implementat |
 | Cosmic Wimpout | Zaruri | SUA | implementat |
+| Tenzi | Zaruri | SUA | implementat |
+| Pass the Pigs | Zaruri | Marea Britanie | implementat |
 | Beetle | Zaruri | Marea Britanie | implementat |
 | Knucklebones (Tali) | Zaruri | Grecia / Roma antică | implementat |
 | Chicago (zaruri) | Zaruri | Europa | implementat |
 | Passe-dix | Zaruri | Franța | implementat |
 | Over and Under Seven | Zaruri | Marea Britanie | implementat |
 | Chowka Bara | Zaruri | India | implementat |
+| Ligretto Dice | Zaruri | Germania | implementat |
+| Fuse | Zaruri | SUA | implementat |
+| Nations: The Dice Game | Zaruri | Suedia | implementat |
+| Cubitos | Zaruri | Franța | implementat |
+| Deep Sea Adventure | Zaruri | Japonia | implementat |
+| Alea Iacta Est | Zaruri | Germania | implementat |
 | Kismet | Zaruri | SUA | implementat |
 | Crag | Zaruri | SUA | implementat |
+| Toss Up! | Zaruri | SUA | implementat |
+| Greed (joc de zaruri) | Zaruri | SUA | implementat |
 | Zara (joc) | Zaruri | Italia | implementat |
 | Dice Baseball | Zaruri | SUA | implementat |
+| Beat That! | Zaruri | SUA | implementat |
+| Rolling America | Zaruri | Japonia / SUA | implementat |
+| Dungeon Fighter | Zaruri | Spania | implementat |
 | Skunk | Zaruri | SUA | implementat |
+| Petals Around the Rose | Zaruri | SUA | implementat |
 | Perquackey | Zaruri | SUA | implementat |
+| Dragon Dice | Zaruri | SUA | implementat |
+| Button Men | Zaruri | SUA | implementat |
 | Dead Man's Dice | Zaruri | Marea Britanie | implementat |
+| Beer die | Zaruri | SUA | implementat |
 | Bo Bing (Pua Tiong Chiu) | Zaruri | China / Taiwan | implementat |
 | Daldøs | Zaruri | Norvegia | implementat |
 | Drop Dead | Zaruri | SUA | implementat |
+| To Court the King | Zaruri | SUA | implementat |
+| Roll for It! | Zaruri | SUA | implementat |
+| Blueprints | Zaruri | SUA | implementat |
 | Howzat! (dice cricket) | Zaruri | Marea Britanie | implementat |
 | Bar dice | Zaruri | Global | implementat |
 
@@ -862,88 +940,10 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Variantă proprie (78)
+## Variantă proprie (0)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
-| Ghost Stories | Cooperativ | Franța | planificat (variantă proprie) |
-| One Deck Dungeon | Cooperativ | SUA | planificat (variantă proprie) |
-| Defenders of the Wild | Cooperativ | SUA | planificat (variantă proprie) |
-| Too Many Bones | Cooperativ | SUA | planificat (variantă proprie) |
-| Legendary: A Marvel Deck Building Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Harry Potter: Hogwarts Battle | Cooperativ | SUA | planificat (variantă proprie) |
-| Dead of Winter: A Cross Roads Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Sleeping Gods | Cooperativ | SUA | planificat (variantă proprie) |
-| Forgotten Waters | Cooperativ | SUA | planificat (variantă proprie) |
-| Mechs vs. Minions | Cooperativ | SUA | planificat (variantă proprie) |
-| The 7th Continent | Cooperativ | Franța | planificat (variantă proprie) |
-| Freedom: The Underground Railroad | Cooperativ | SUA | planificat (variantă proprie) |
-| Return to Dark Tower | Cooperativ | SUA | planificat (variantă proprie) |
-| Arkham Horror (ediția a 3-a) | Cooperativ | SUA | planificat (variantă proprie) |
-| Shadows over Camelot | Cooperativ | Franța | planificat (variantă proprie) |
-| Lord of the Rings (Knizia) | Cooperativ | Germania | planificat (variantă proprie) |
-| Daybreak | Cooperativ | SUA | planificat (variantă proprie) |
-| Paleo | Cooperativ | Germania | planificat (variantă proprie) |
-| Atlantis Rising | Cooperativ | SUA | planificat (variantă proprie) |
-| The Captain Is Dead | Cooperativ | SUA | planificat (variantă proprie) |
-| Stuffed Fables | Cooperativ | SUA | planificat (variantă proprie) |
-| Vagrantsong | Cooperativ | SUA | planificat (variantă proprie) |
-| Champions of Hara | Cooperativ | SUA | planificat (variantă proprie) |
-| Roll Player Adventures | Cooperativ | SUA | planificat (variantă proprie) |
-| Resident Evil 2: The Board Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Black Orchestra | Cooperativ | SUA | planificat (variantă proprie) |
-| Endangered | Cooperativ | SUA | planificat (variantă proprie) |
-| XCOM: The Board Game | Cooperativ | SUA | planificat (variantă proprie) |
-| The Dresden Files Cooperative Card Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Star Trek: Panic | Cooperativ | SUA | planificat (variantă proprie) |
-| 5-Minute Dungeon | Cooperativ | SUA | planificat (variantă proprie) |
-| Pandemic Legacy: Season 2 | Cooperativ | SUA | planificat (variantă proprie) |
-| Forbidden Sky | Cooperativ | SUA | planificat (variantă proprie) |
-| Legends of Andor | Cooperativ | Germania | planificat (variantă proprie) |
-| Castle Ravenloft Board Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Betrayal at House on the Hill | Cooperativ | SUA | planificat (variantă proprie) |
-| Battlestar Galactica: The Board Game | Cooperativ | SUA | planificat (variantă proprie) |
-| Nemesis | Cooperativ | Polonia | planificat (variantă proprie) |
-| Final Girl | Cooperativ | SUA | planificat (variantă proprie) |
-| Noch mal! (Encore!) | Zaruri | Germania | planificat (variantă proprie) |
-| Las Vegas | Zaruri | Germania | planificat (variantă proprie) |
-| Alien Frontiers | Zaruri | SUA | planificat (variantă proprie) |
-| Roll Through the Ages | Zaruri | SUA | planificat (variantă proprie) |
-| Pandemic: The Cure | Zaruri | SUA | planificat (variantă proprie) |
-| Martian Dice | Zaruri | SUA | planificat (variantă proprie) |
-| Cthulhu Dice | Zaruri | SUA | planificat (variantă proprie) |
-| King of New York | Zaruri | SUA | planificat (variantă proprie) |
-| Dungeon Roll | Zaruri | SUA | planificat (variantă proprie) |
-| Dice Town | Zaruri | Franța / Germania | planificat (variantă proprie) |
-| Dice City | Zaruri | Cehia | planificat (variantă proprie) |
-| Dice Hospital | Zaruri | Marea Britanie | planificat (variantă proprie) |
-| Dice Settlers | Zaruri | Franța | planificat (variantă proprie) |
-| Roll Player | Zaruri | SUA | planificat (variantă proprie) |
-| Space Base | Zaruri | SUA | planificat (variantă proprie) |
-| Troyes | Zaruri | Franța | planificat (variantă proprie) |
-| Yspahan | Zaruri | Franța | planificat (variantă proprie) |
-| Sagrada | Zaruri | SUA | planificat (variantă proprie) |
-| Railroad Ink | Zaruri | Italia | planificat (variantă proprie) |
-| Tenzi | Zaruri | SUA | planificat (variantă proprie) |
-| Pass the Pigs | Zaruri | Marea Britanie | planificat (variantă proprie) |
-| Ligretto Dice | Zaruri | Germania | planificat (variantă proprie) |
-| Fuse | Zaruri | SUA | planificat (variantă proprie) |
-| Nations: The Dice Game | Zaruri | Suedia | planificat (variantă proprie) |
-| Cubitos | Zaruri | Franța | planificat (variantă proprie) |
-| Deep Sea Adventure | Zaruri | Japonia | planificat (variantă proprie) |
-| Alea Iacta Est | Zaruri | Germania | planificat (variantă proprie) |
-| Toss Up! | Zaruri | SUA | planificat (variantă proprie) |
-| Greed (joc de zaruri) | Zaruri | SUA | planificat (variantă proprie) |
-| Beat That! | Zaruri | SUA | planificat (variantă proprie) |
-| Rolling America | Zaruri | Japonia / SUA | planificat (variantă proprie) |
-| Dungeon Fighter | Zaruri | Spania | planificat (variantă proprie) |
-| Petals Around the Rose | Zaruri | SUA | planificat (variantă proprie) |
-| Dragon Dice | Zaruri | SUA | planificat (variantă proprie) |
-| Button Men | Zaruri | SUA | planificat (variantă proprie) |
-| Beer die | Zaruri | SUA | planificat (variantă proprie) |
-| To Court the King | Zaruri | SUA | planificat (variantă proprie) |
-| Roll for It! | Zaruri | SUA | planificat (variantă proprie) |
-| Blueprints | Zaruri | SUA | planificat (variantă proprie) |
 
 ## Toolkit (272)
 

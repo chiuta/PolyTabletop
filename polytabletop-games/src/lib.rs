@@ -22,6 +22,17 @@ pub mod c4_stapel;
 pub mod c4_urmarire;
 pub mod c4_util;
 // C4-mods-end
+// C6-mods-begin
+pub mod zr_arunc;
+pub mod zr_duel;
+pub mod zr_flota;
+pub mod zr_grid;
+pub mod zr_loc;
+pub mod zr_misc;
+pub mod zr_risc;
+pub mod zr_trei;
+pub mod zr_util;
+// C6-mods-end
 // B6-mods-begin
 pub mod aruncari_cupe;
 pub mod b6_ask;
@@ -367,6 +378,14 @@ pub mod vinovat_tainuit;
 pub mod zaruri_asezari;
 pub mod zaruri_cosmice;
 // C5-mods-end
+// C2-mods-begin
+pub mod c2_betray;
+pub mod c2_quest;
+pub mod c2_route;
+pub mod c2_siege;
+pub mod c2_specs;
+pub mod c2_surv;
+// C2-mods-end
 pub mod aadupuli;
 pub mod aceydeucey;
 pub mod alquerque;
@@ -6589,6 +6608,556 @@ fn playable_base() -> Vec<Playable> {
             make: || Box::new(brand_util::B(zaruri_asezari::new())),
         },
         // C5-reg-end
+        // C2-reg-begin
+        Playable {
+            id: "satul_stafiilor",
+            title: "Satul Stafiilor",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 4 culoare (nord, est, sud, vest); echipa (J1: Preotul și Vânătoarea, câte 2 acțiuni pe rând) apără o bază cu 10 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Cura (cur) dă +2 bazei. Câștigă echipa (J1) dacă ține baza 8 runde și doboară căpetenia; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, cur k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::SATUL_STAFIILOR))),
+        },
+        Playable {
+            id: "paznicii_padurii",
+            title: "Paznicii Pădurii",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 5 culoare (luncă, pădure, stâncă, râu, deal); echipa (J1: Lupul și Vulturul, câte 2 acțiuni pe rând) apără o bază cu 9 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Înghețul (ingh) oprește un culoar o rundă. Cura (cur) dă +2 bazei. Câștigă echipa (J1) dacă elimină 11 amenințări; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, ingh L k, cur k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::PAZNICII_PADURII))),
+        },
+        Playable {
+            id: "scutierii_pasului",
+            title: "Scutierii Pasului",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 3 culoare (pasul, podul, poarta); echipa (J1: Arcașa și Scutierul, câte 2 acțiuni pe rând) apără o bază cu 7 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Zidul (zid) absorb lovituri pe culoar. Câștigă echipa (J1) dacă ține baza 9 runde și doboară căpetenia; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, zid L k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::SCUTIERII_PASULUI))),
+        },
+        Playable {
+            id: "alarma_nava",
+            title: "Alarma pe Navă",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 4 culoare (punte, motoare, scuturi, arme); echipa (J1: Pilotul și Inginera, câte 2 acțiuni pe rând) apără o bază cu 12 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Zidul (zid) absorb lovituri pe culoar. Cura (cur) dă +2 bazei. Câștigă echipa (J1) dacă elimină 12 amenințări; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, zid L k, cur k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::ALARMA_NAVA))),
+        },
+        Playable {
+            id: "automate_contra_roiului",
+            title: "Automatele contra Roiului",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 3 culoare (stânga, centru, dreapta); echipa (J1: Tunarul și Reparatorul, câte 2 acțiuni pe rând) apără o bază cu 9 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Zidul (zid) absorb lovituri pe culoar. Cura (cur) dă +2 bazei. Câștigă echipa (J1) dacă ține baza 8 runde și doboară căpetenia; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, zid L k, cur k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::AUTOMATE_CONTRA_ROIULUI))),
+        },
+        Playable {
+            id: "temnita_clepsidrei",
+            title: "Temnița Clepsidrei",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 3 culoare (coridor, sală, gârlă); echipa (J1: Cavalerul și Magiciana, câte 2 acțiuni pe rând) apără o bază cu 6 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Înghețul (ingh) oprește un culoar o rundă. Câștigă echipa (J1) dacă ține baza 6 runde și doboară căpetenia; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, ingh L k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::TEMNITA_CLEPSIDREI))),
+        },
+        Playable {
+            id: "campionii_urbei",
+            title: "Campionii Orașului",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 4 culoare (bancă, port, turn, metrou); echipa (J1: Zburătorul și Scutul, câte 2 acțiuni pe rând) apără o bază cu 10 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Cura (cur) dă +2 bazei. Câștigă echipa (J1) dacă ține baza 8 runde și doboară căpetenia; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, cur k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::CAMPIONII_URBEI))),
+        },
+        Playable {
+            id: "academia_vrajilor",
+            title: "Academia Vrăjilor",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 4 culoare (bibliotecă, seră, turn, pivniță); echipa (J1: Ucenicul și Ucenica, câte 2 acțiuni pe rând) apără o bază cu 10 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Înghețul (ingh) oprește un culoar o rundă. Cura (cur) dă +2 bazei. Câștigă echipa (J1) dacă ține baza 7 runde și doboară căpetenia; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, ingh L k, cur k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::ACADEMIA_VRAJILOR))),
+        },
+        Playable {
+            id: "apararea_planetei",
+            title: "Apărarea Planetei",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 5 culoare (America, Europa, Asia, Africa, Oceania); echipa (J1: Comandantul și Cercetașa, câte 2 acțiuni pe rând) apără o bază cu 11 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Zidul (zid) absorb lovituri pe culoar. Înghețul (ingh) oprește un culoar o rundă. Câștigă echipa (J1) dacă elimină 14 amenințări; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, zid L k, ingh L k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::APARAREA_PLANETEI))),
+        },
+        Playable {
+            id: "bastionul_cenusiu",
+            title: "Bastionul Cenușiu",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 4 culoare (poarta, zid, turn, curte); echipa (J1: Paznicul și Vrăjitoarea, câte 2 acțiuni pe rând) apără o bază cu 8 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Zidul (zid) absorb lovituri pe culoar. Cura (cur) dă +2 bazei. Câștigă echipa (J1) dacă ține baza 10 runde și doboară căpetenia; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, zid L k, cur k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::BASTIONUL_CENUSIU))),
+        },
+        Playable {
+            id: "umbre_peste_cetate",
+            title: "Umbre peste Cetate",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 4 culoare (turnir, pădure, lac, drum); echipa (J1: Cavalerul Alb și Cavalerul Roșu, câte 2 acțiuni pe rând) apără o bază cu 8 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Zidul (zid) absorb lovituri pe culoar. Înghețul (ingh) oprește un culoar o rundă. Câștigă echipa (J1) dacă ține baza 9 runde și doboară căpetenia; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, zid L k, ingh L k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::UMBRE_PESTE_CETATE))),
+        },
+        Playable {
+            id: "calea_flacarii",
+            title: "Calea Flăcării",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de apărare: 4 culoare (poteca, mlaștina, peștera, muntele); echipa (J1: Purtătorul și Însoțitorul, câte 2 acțiuni pe rând) apără o bază cu 9 viață. Fiecare acțiune joacă o carte (1–5) din mână: atac L k lovește amenințarea cea mai apropiată de pe culoarul L cu valoarea cărții k (pe care personajul o poate spori cu un bonus propriu). J2 este Jocul: mutarea forțată eveniment înaintează amenințările, cele care ajung rup baza și apar altele noi (a cincea parte din ele mai tari pe parcurs). Înghețul (ingh) oprește un culoar o rundă. Cura (cur) dă +2 bazei. Câștigă echipa (J1) dacă ține baza 10 runde și doboară căpetenia; câștigă Jocul (J2) dacă baza cade sau timpul se depășește. Mutări: atac L k, ingh L k, cur k, pas.",
+            make: || Box::new(brand_util::B(c2_siege::S::new(&c2_specs::CALEA_FLACARII))),
+        },
+        Playable {
+            id: "temnita_unui_pachet",
+            title: "Temnița dintr-un Pachet",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Luptătorul și Hoața, câte 2 acțiuni) trece prin 5 întâlniri și o încercare finală (putere 11). Cărțile au trei feluri (Forță, Iscusință, Minte) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și fiecare erou trage o carte în plus; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (8 viață). Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::TEMNITA_UNUI_PACHET))),
+        },
+        Playable {
+            id: "hoinarii_cu_zaruri",
+            title: "Hoinarii cu Zaruri",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Gheară și Scânteie, câte 2 acțiuni) trece prin 6 întâlniri și o încercare finală (putere 12). Cărțile au trei feluri (Forță, Viteză, Magie) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și eroii se vindecă cu 1; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (9 viață), iar odihna (+1 viață, o carte) poate fi folosită. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, odihna, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::HOINARII_CU_ZARURI))),
+        },
+        Playable {
+            id: "eroi_cu_fise",
+            title: "Eroii cu Fișe",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Elfa și Piticul, câte 2 acțiuni) trece prin 6 întâlniri și o încercare finală (putere 12). Cărțile au trei feluri (Corp, Dibăcie, Voință) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și fiecare erou trage o carte în plus; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (8 viață), iar odihna (+1 viață, o carte) poate fi folosită. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, odihna, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::EROI_CU_FISE))),
+        },
+        Playable {
+            id: "tinutul_cetelor",
+            title: "Ținutul Cetelor",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Căpitana și Arcașul, câte 2 acțiuni) trece prin 5 întâlniri și o încercare finală (putere 13). Cărțile au trei feluri (Luptă, Grație, Duh) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și eroii se vindecă cu 1; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (7 viață). Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::TINUTUL_CETELOR))),
+        },
+        Playable {
+            id: "jucariile_curajoase",
+            title: "Jucăriile Curajoase",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Ursulețul și Iepurașul, câte 2 acțiuni) trece prin 5 întâlniri și o încercare finală (putere 10). Cărțile au trei feluri (Curaj, Joacă, Poveste) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și eroii se vindecă cu 1; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (10 viață), iar odihna (+1 viață, o carte) poate fi folosită. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, odihna, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::JUCARIILE_CURAJOASE))),
+        },
+        Playable {
+            id: "conacul_infectat",
+            title: "Conacul Infectat",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Polițista și Studentul, câte 2 acțiuni) trece prin 6 întâlniri și o încercare finală (putere 13). Cărțile au trei feluri (Tragere, Fugă, Reflecție) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și fiecare erou trage o carte în plus; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (7 viață), iar după 14 runde timpul expiră. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::CONACUL_INFECTAT))),
+        },
+        Playable {
+            id: "ultima_supravietuitoare",
+            title: "Ultima Supraviețuitoare",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Tânăra și Paznicul, câte 2 acțiuni) trece prin 5 întâlniri și o încercare finală (putere 12). Cărțile au trei feluri (Luptă, Ascundere, Ingeniozitate) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și eroii se vindecă cu 1; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (6 viață), iar odihna (+1 viață, o carte) poate fi folosită, iar după 13 runde timpul expiră. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, odihna, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::ULTIMA_SUPRAVIETUITOARE))),
+        },
+        Playable {
+            id: "cripta_corbilor",
+            title: "Cripta Corbilor",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Clericul și Ranger-ul, câte 2 acțiuni) trece prin 6 întâlniri și o încercare finală (putere 13). Cărțile au trei feluri (Sabie, Rugă, Săgeată) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și fiecare erou trage o carte în plus; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (8 viață), iar odihna (+1 viață, o carte) poate fi folosită. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, odihna, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::CRIPTA_CORBILOR))),
+        },
+        Playable {
+            id: "continentul_necunoscut",
+            title: "Continentul Necunoscut",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Exploratoarea și Geologul, câte 2 acțiuni) trece prin 8 întâlniri și o încercare finală (putere 11). Cărțile au trei feluri (Rezistență, Orientare, Cunoaștere) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și fiecare erou trage o carte în plus; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (9 viață), iar odihna (+1 viață, o carte) poate fi folosită, iar după 18 runde timpul expiră. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, odihna, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::CONTINENTUL_NECUNOSCUT))),
+        },
+        Playable {
+            id: "zeii_adormiti",
+            title: "Zeii Adormiți",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Căpitana și Cartograful, câte 2 acțiuni) trece prin 7 întâlniri și o încercare finală (putere 12). Cărțile au trei feluri (Cutezanță, Marinărie, Înțelepciune) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și eroii se vindecă cu 1; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (8 viață), iar odihna (+1 viață, o carte) poate fi folosită, iar după 16 runde timpul expiră. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, odihna, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::ZEII_ADORMITI))),
+        },
+        Playable {
+            id: "apele_uitate",
+            title: "Apele Uitate",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Pirata și Cârmaciul, câte 2 acțiuni) trece prin 6 întâlniri și o încercare finală (putere 11). Cărțile au trei feluri (Sabie, Cârmă, Vorbă) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și fiecare erou trage o carte în plus; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (8 viață), iar după 15 runde timpul expiră. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::APELE_UITATE))),
+        },
+        Playable {
+            id: "cantecul_hoinar",
+            title: "Cântecul Hoinar",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Menestrelul și Fantoma, câte 2 acțiuni) trece prin 5 întâlniri și o încercare finală (putere 11). Cărțile au trei feluri (Melodie, Umbră, Amintire) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și eroii se vindecă cu 1; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (7 viață), iar odihna (+1 viață, o carte) poate fi folosită. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, odihna, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::CANTECUL_HOINAR))),
+        },
+        Playable {
+            id: "orasul_cu_ceata",
+            title: "Orașul cu Ceață",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Anchetatorul și Bibliotecara, câte 2 acțiuni) trece prin 7 întâlniri și o încercare finală (putere 14). Cărțile au trei feluri (Curaj, Rațiune, Credință) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și eroii se vindecă cu 1; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (7 viață), iar după 17 runde timpul expiră. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::ORASUL_CU_CEATA))),
+        },
+        Playable {
+            id: "detectivii_magiei",
+            title: "Detectivii Magiei",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Vrăjitorul și Ofițera, câte 2 acțiuni) trece prin 5 întâlniri și o încercare finală (putere 11). Cărțile au trei feluri (Putere, Anchetă, Vorbă) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și fiecare erou trage o carte în plus; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (8 viață), iar după 12 runde timpul expiră. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::DETECTIVII_MAGIEI))),
+        },
+        Playable {
+            id: "vasul_pustiit",
+            title: "Vasul Pustiit",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de drum cu întâlniri: echipa (J1: Medicul și Inginerul, câte 2 acțiuni) trece prin 7 întâlniri și o încercare finală (putere 13). Cărțile au trei feluri (Foc, Tehnică, Liniște) și valori 1–4: joc k adaugă la progresul întâlnirii valoarea întreagă dacă felul se potrivește, altfel jumătate (rotunjit în sus). Când progresul ajunge la putere, întâlnirea cade și fiecare erou trage o carte în plus; avans (forțat) dezvăluie următoarea. J2 este Jocul: eveniment (forțat) — întâlnirea lovește un erou (6 viață), iar odihna (+1 viață, o carte) poate fi folosită, iar după 16 runde timpul expiră. Câștigă echipa dacă învinge încercarea finală; Jocul câștigă dacă ambii eroi cad. Mutări: joc k, odihna, pas, avans.",
+            make: || Box::new(brand_util::B(c2_quest::Q::new(&c2_specs::VASUL_PUSTIIT))),
+        },
+        Playable {
+            id: "iarna_taberei",
+            title: "Iarna Taberei",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de supraviețuire: 4 oameni, resurse hrană, materiale, combustibil; echipa (J1: Vânătorul și Medica, câte 2 acțiuni pe rând) adună resurse (cauta i: 0=Magazinul (+2 hrană); 1=Depozitul (+3 materiale); 2=Școala (+2 materiale); 3=Benzinăria (+3 combustibil); fiecare loc o dată pe rundă), lucrează la proiectul „Baricada” (lucru: 2 materiale → +1; trebuie 8) și întreține moralul (ingrij: 1 hrană → +1 moral, maxim 6). J2 este Jocul: eveniment (forțat) — hrănire (hrană: jumătate din oameni, rotunjit în sus), apoi criza anunțată public (un anumit număr dintr-o resursă, altfel moral pierdut). Câștigă echipa (J1) terminând proiectul în 10 runde; Jocul (J2) câștigă dacă moralul sau oamenii se termină. Mutări: cauta i, lucru, ingrij, pas.",
+            make: || Box::new(brand_util::B(c2_surv::V::new(&c2_specs::IARNA_TABEREI))),
+        },
+        Playable {
+            id: "neamul_pietrei",
+            title: "Neamul Pietrei",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de supraviețuire: 5 oameni, resurse carne, piatră, lemn; echipa (J1: Culegătoarea și Vânătorul, câte 2 acțiuni pe rând) adună resurse (cauta i: 0=Savana (+3 carne); 1=Cariera (+2 piatră); 2=Pădurea (+2 lemn); 3=Râul (+2 carne); fiecare loc o dată pe rundă), lucrează la proiectul „Tabăra” (lucru: 2 piatră → +1; trebuie 7) și întreține moralul (ingrij: 1 carne → +1 moral, maxim 7). J2 este Jocul: eveniment (forțat) — hrănire (carne: jumătate din oameni, rotunjit în sus), apoi criza anunțată public (un anumit număr dintr-o resursă, altfel moral pierdut). Câștigă echipa (J1) terminând proiectul în 10 runde; Jocul (J2) câștigă dacă moralul sau oamenii se termină. Mutări: cauta i, lucru, ingrij, pas.",
+            make: || Box::new(brand_util::B(c2_surv::V::new(&c2_specs::NEAMUL_PIETREI))),
+        },
+        Playable {
+            id: "insula_apelor_urcate",
+            title: "Insula Apelor Urcate",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de supraviețuire: 4 oameni, resurse grâne, blocuri, funii; echipa (J1: Arhitecta și Marinarul, câte 2 acțiuni pe rând) adună resurse (cauta i: 0=Ferma (+2 grâne); 1=Cariera (+3 blocuri); 2=Pădurea (+2 funii); 3=Portul (+2 blocuri); fiecare loc o dată pe rundă), lucrează la proiectul „Digul” (lucru: 2 blocuri → +1; trebuie 9) și întreține moralul (ingrij: 1 grâne → +1 moral, maxim 5). J2 este Jocul: eveniment (forțat) — hrănire (grâne: jumătate din oameni, rotunjit în sus), apoi criza anunțată public (un anumit număr dintr-o resursă, altfel moral pierdut). Câștigă echipa (J1) terminând proiectul în 11 runde; Jocul (J2) câștigă dacă moralul sau oamenii se termină. Mutări: cauta i, lucru, ingrij, pas.",
+            make: || Box::new(brand_util::B(c2_surv::V::new(&c2_specs::INSULA_APELOR_URCATE))),
+        },
+        Playable {
+            id: "nava_fara_capitan",
+            title: "Nava fără Căpitan",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de supraviețuire: 4 oameni, resurse aer, energie, piese; echipa (J1: Ofițerul și Inginera, câte 2 acțiuni pe rând) adună resurse (cauta i: 0=Punte (+2 aer); 1=Reactor (+3 energie); 2=Atelier (+3 piese); 3=Hangar (+2 energie); fiecare loc o dată pe rundă), lucrează la proiectul „Saltul” (lucru: 2 energie → +1; trebuie 8) și întreține moralul (ingrij: 1 aer → +1 moral, maxim 6). J2 este Jocul: eveniment (forțat) — hrănire (aer: jumătate din oameni, rotunjit în sus), apoi criza anunțată public (un anumit număr dintr-o resursă, altfel moral pierdut). Câștigă echipa (J1) terminând proiectul în 9 runde; Jocul (J2) câștigă dacă moralul sau oamenii se termină. Mutări: cauta i, lucru, ingrij, pas.",
+            make: || Box::new(brand_util::B(c2_surv::V::new(&c2_specs::NAVA_FARA_CAPITAN))),
+        },
+        Playable {
+            id: "ultimele_animale",
+            title: "Ultimele Animale",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de supraviețuire: 3 oameni, resurse hrană, fonduri, teren; echipa (J1: Biologul și Ranger-ul, câte 2 acțiuni pe rând) adună resurse (cauta i: 0=Savana (+2 hrană); 1=Donații (+3 fonduri); 2=Rezervația (+2 teren); 3=Laboratorul (+2 fonduri); fiecare loc o dată pe rundă), lucrează la proiectul „Rezervația” (lucru: 2 fonduri → +1; trebuie 7) și întreține moralul (ingrij: 1 hrană → +1 moral, maxim 6). J2 este Jocul: eveniment (forțat) — hrănire (hrană: jumătate din oameni, rotunjit în sus), apoi criza anunțată public (un anumit număr dintr-o resursă, altfel moral pierdut). Câștigă echipa (J1) terminând proiectul în 9 runde; Jocul (J2) câștigă dacă moralul sau oamenii se termină. Mutări: cauta i, lucru, ingrij, pas.",
+            make: || Box::new(brand_util::B(c2_surv::V::new(&c2_specs::ULTIMELE_ANIMALE))),
+        },
+        Playable {
+            id: "zorii_climei",
+            title: "Zorii Climei",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă de supraviețuire: 4 oameni, resurse energie, fonduri, voință; echipa (J1: Delegata și Inventatorul, câte 2 acțiuni pe rând) adună resurse (cauta i: 0=Rețeaua (+2 energie); 1=Banca (+3 fonduri); 2=Piața (+2 voință); 3=Laboratorul (+2 fonduri); fiecare loc o dată pe rundă), lucrează la proiectul „Tranziția” (lucru: 2 fonduri → +1; trebuie 9) și întreține moralul (ingrij: 1 energie → +1 moral, maxim 6). J2 este Jocul: eveniment (forțat) — hrănire (energie: jumătate din oameni, rotunjit în sus), apoi criza anunțată public (un anumit număr dintr-o resursă, altfel moral pierdut). Câștigă echipa (J1) terminând proiectul în 11 runde; Jocul (J2) câștigă dacă moralul sau oamenii se termină. Mutări: cauta i, lucru, ingrij, pas.",
+            make: || Box::new(brand_util::B(c2_surv::V::new(&c2_specs::ZORII_CLIMEI))),
+        },
+        Playable {
+            id: "calea_ascunsa",
+            title: "Calea Ascunsă",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă pe graf: 12 noduri-popas pe un inel; baza este nodul 0, nodurile multiple de 4 sunt surse. Echipa (J1: Conductoarea și Gazda, câte 3 acțiuni pe rând) mută (mers N), stinge focare (stinge: -1; al doilea personaj curăță tot), ridică piese din surse (ia, maxim 2) și le predă la bază (preda). J2 este Jocul: eveniment (forțat) — 5 (în creștere) focare noi; un nod cu 3 focare care primește altul izbucnește și adaugă focare vecinilor. Câștigă echipa cu 4 piese predate; Jocul câștigă la 2 izbucniri. Mutări: mers N, stinge, ia, preda, zbor N, pas.",
+            make: || Box::new(brand_util::B(c2_route::R::new(&c2_specs::CALEA_ASCUNSA))),
+        },
+        Playable {
+            id: "focare_dupa_catastrofa",
+            title: "Focare după Catastrofă",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă pe graf: 14 noduri-oraș pe un inel cu legături diametrale; baza este nodul 0, nodurile multiple de 5 sunt surse. Echipa (J1: Medicul și Curierul, câte 3 acțiuni pe rând) mută (mers N), stinge focare (stinge: -1; al doilea personaj curăță tot), ridică piese din surse (ia, maxim 2) și le predă la bază (preda); din bază se poate zbura (zbor N) la un nod cu focare. J2 este Jocul: eveniment (forțat) — 5 (în creștere) focare noi; un nod cu 3 focare care primește altul izbucnește și adaugă focare vecinilor. Câștigă echipa cu 4 piese predate; Jocul câștigă la 3 izbucniri. Mutări: mers N, stinge, ia, preda, zbor N, pas.",
+            make: || Box::new(brand_util::B(c2_route::R::new(&c2_specs::FOCARE_DUPA_CATASTROFA))),
+        },
+        Playable {
+            id: "furtuna_interzisa",
+            title: "Furtuna Interzisă",
+            category: "Cooperativ",
+            rules: "Variantă originală cooperativă pe graf: 10 noduri-stâlp pe un inel cu legături diametrale; baza este nodul 0, nodurile multiple de 3 sunt surse. Echipa (J1: Electriciana și Alpinistul, câte 3 acțiuni pe rând) mută (mers N), stinge focare (stinge: -1; al doilea personaj curăță tot), ridică piese din surse (ia, maxim 2) și le predă la bază (preda). J2 este Jocul: eveniment (forțat) — 4 (în creștere) focare noi; un nod cu 3 focare care primește altul izbucnește și adaugă focare vecinilor. Câștigă echipa cu 3 piese predate; Jocul câștigă la 2 izbucniri. Mutări: mers N, stinge, ia, preda, zbor N, pas.",
+            make: || Box::new(brand_util::B(c2_route::R::new(&c2_specs::FURTUNA_INTERZISA))),
+        },
+        Playable {
+            id: "conacul_tradarii",
+            title: "Conacul Trădării",
+            category: "Cooperativ",
+            rules: "Variantă originală în două faze, pentru doi jucători: faza 1 — explorare, pe rând (explora, apoi revela forțat) dintr-un pachet de 18 camere; fiecare cameră poate da un obiect sau un semn (și obiect); la 4 semne începe apariția și cine a dezvăluit semnul-limită devine trădător. Faza 2 — duel cu informație perfectă pe o linie 0..6: eroul (5+ viață) vrea să ajungă la capăt sau să doboare creatura (av, sprint cu obiect, lovesc, lovesc+, scut, pas); trădătorul mută creatura (mers, sare, izbeste dacă e lângă erou, blestem: paralizează eroul o tură). Câștigă cine își atinge scopul; după 70 de mutări câștigă trădătorul. Mutări: explora, revela, av, sprint, lovesc, lovesc+, scut, pas, mers, sare, izbeste, blestem.",
+            make: || Box::new(brand_util::B(c2_betray::Bt::new(&c2_specs::CONACUL_TRADARII))),
+        },
+        Playable {
+            id: "flota_infiltrata",
+            title: "Flota Infiltrată",
+            category: "Cooperativ",
+            rules: "Variantă originală în două faze, pentru doi jucători: faza 1 — explorare, pe rând (explora, apoi revela forțat) dintr-un pachet de 16 camere; fiecare cameră poate da un obiect sau un semn (și obiect); la 3 semne începe apariția și celălalt jucător decât cel care a dezvăluit semnul-limită devine trădător. Faza 2 — duel cu informație perfectă pe o linie 0..7: eroul (6+ viață) vrea să ajungă la capăt sau să doboare creatura (av, sprint cu obiect, lovesc, lovesc+, scut, pas); trădătorul mută creatura (mers, sare, izbeste dacă e lângă erou, blestem: paralizează eroul o tură). Câștigă cine își atinge scopul; după 70 de mutări câștigă trădătorul. Mutări: explora, revela, av, sprint, lovesc, lovesc+, scut, pas, mers, sare, izbeste, blestem.",
+            make: || Box::new(brand_util::B(c2_betray::Bt::new(&c2_specs::FLOTA_INFILTRATA))),
+        },
+        Playable {
+            id: "complotul_din_umbra",
+            title: "Complotul din Umbră",
+            category: "Cooperativ",
+            rules: "Variantă originală în două faze, pentru doi jucători: faza 1 — explorare, pe rând (explora, apoi revela forțat) dintr-un pachet de 20 camere; fiecare cameră poate da un obiect sau un semn (și obiect); la 5 semne începe apariția și celălalt jucător decât cel care a dezvăluit semnul-limită devine trădător. Faza 2 — duel cu informație perfectă pe o linie 0..5: eroul (7+ viață) vrea să ajungă la capăt sau să doboare creatura (av, sprint cu obiect, lovesc, lovesc+, scut, pas); trădătorul mută creatura (mers, sare, izbeste dacă e lângă erou, blestem: paralizează eroul o tură). Câștigă cine își atinge scopul; după 70 de mutări câștigă trădătorul. Mutări: explora, revela, av, sprint, lovesc, lovesc+, scut, pas, mers, sare, izbeste, blestem.",
+            make: || Box::new(brand_util::B(c2_betray::Bt::new(&c2_specs::COMPLOTUL_DIN_UMBRA))),
+        },
+        // C2-reg-end
+        // C6-reg-begin
+        Playable {
+            id: "farfurii_zburatoare",
+            title: "Farfurii zburătoare",
+            category: "Zaruri",
+            rules: "Variantă originală: 10 zaruri cu tancuri, raze și trei feluri de pământeni. La fiecare aruncare tancurile se pun deoparte, apoi alegi UN fel de față neluat încă și păstrezi toate zarurile cu el. Te poți opri doar dacă ai cel puțin tot atâtea raze ca tancuri; altfel pierzi tura. Punctaj: pământenii păstrați (+3 dacă ai toate cele trei feluri). 6 runde. Mutări: tira, pastrez raza|om|vaca|gaina, continui, opresc.",
+            make: || Box::new(brand_util::B(zr_risc::Risc::new(zr_risc::Kind::Martian))),
+        },
+        Playable {
+            id: "verde_galben_rosu",
+            title: "Verde, galben, roșu",
+            category: "Zaruri",
+            rules: "Variantă originală: 10 zaruri cu 3 fețe verzi, 2 galbene, 1 roșie. Fiecare verde aruncat se păstrează (1 punct), galbenele se pot relansa, roșul scoate zarul din joc; dacă apare roșu fără niciun verde, pierzi punctele turei. Poți opri oricând după o aruncare și încasezi. 6 runde. Mutări: tira, continui, opresc.",
+            make: || Box::new(brand_util::B(zr_risc::Risc::new(zr_risc::Kind::TossUp))),
+        },
+        Playable {
+            id: "pofta_zarurilor",
+            title: "Pofta zarurilor",
+            category: "Zaruri",
+            rules: "Variantă originală: 6 zaruri; punctează fiecare 1 (10), fiecare 5 (5) și grupurile de trei sau mai multe (1: 100, celelalte valoare×10, dublu pentru fiecare zar în plus). Păstrezi cel puțin un zar care punctează; dacă niciunul nu punctează, pierzi tura. Dacă toate cele 6 punctează, arunci iar toate. Încasezi cu cel puțin 15 puncte. 6 runde. Mutări: tira, pastrez 1x2 5x1 …, continui, opresc.",
+            make: || Box::new(brand_util::B(zr_risc::Risc::new(zr_risc::Kind::Greed))),
+        },
+        Playable {
+            id: "purcei_pe_masa",
+            title: "Purcei pe masă",
+            category: "Zaruri",
+            rules: "Variantă originală: arunci doi purcei (poziții: stânga, dreapta, spate, picioare, urechi). Doi pe aceeași parte = 1 punct; pe părți opuse = pierzi punctele turei; altfel spate 5, picioare 10, urechi 15 (suma, dublă dacă sunt la fel). Continui sau încasezi; primul la 50 câștigă. Mutări: tira, arunc, opresc.",
+            make: || Box::new(brand_util::B(zr_risc::Risc::new(zr_risc::Kind::Pigs))),
+        },
+        Playable {
+            id: "zarul_nebuniei",
+            title: "Zarul nebuniei",
+            category: "Zaruri",
+            rules: "Variantă originală: fiecare pornește cu 3 puncte de luciditate (maxim 4). Pe rând arunci un zar cu 12 fețe: marele zeu (cel mai lucid pierde 1), tentacul (pierzi 1), semn (alegi: lovesc = adversarul pierde 1, sau vindec = +1), ochi (cel mai puțin lucid pierde 1), soare (+1). La 0 pierzi; după 80 de ture decide luciditatea. Mutări: tira, lovesc, vindec.",
+            make: || Box::new(brand_util::B(zr_risc::Risc::new(zr_risc::Kind::Cthulhu))),
+        },
+        Playable {
+            id: "peritorii_coroanei",
+            title: "Peritorii coroanei",
+            category: "Zaruri",
+            rules: "Variantă originală: 6 zaruri; la fiecare aruncare alegi o valoare neluată în tura asta și păstrezi toate zarurile cu ea (valoare × număr). Dacă nicio valoare nouă nu ți se potrivește, tura e ratată. Toate cele șase valori adunate dau +8. Poți opri oricând și încasezi. 5 runde. Mutări: tira, pastrez v, continui, opresc.",
+            make: || Box::new(brand_util::B(zr_risc::Risc::new(zr_risc::Kind::Court))),
+        },
+        Playable {
+            id: "cifra_cea_mare",
+            title: "Cifra cea mare",
+            category: "Zaruri",
+            rules: "Variantă originală: în fiecare rundă cine începe alege 2–4 zaruri, le aruncă și le aranjează într-un număr; celălalt poate renunța (dă 1 punct) sau arunca același număr de zaruri. Cel cu numărul mai mare ia (zaruri−1) puncte. 6 runde. Mutări: zaruri n, tira, ordin cifre, primesc, renunt.",
+            make: || Box::new(brand_util::B(zr_duel::Cifra::new())),
+        },
+        Playable {
+            id: "zece_la_fel",
+            title: "Zece la fel",
+            category: "Zaruri",
+            rules: "Variantă originală: fiecare are 10 zaruri. Pe rând arunci zarurile neblocate: la prima aruncare alegi fața-țintă („tinta v”), apoi blochezi zarurile cu fața-țintă (“bloc”) sau schimbi ținta („schimb v”) dacă altă față are mai multe decât ai blocat. Primul care blochează toate 10 câștigă (celălalt are o tură de egalare). Mutări: tira, tinta v, bloc, schimb v.",
+            make: || Box::new(brand_util::B(zr_duel::Zece::new())),
+        },
+        Playable {
+            id: "vartej_de_zaruri",
+            title: "Vârtej de zaruri",
+            category: "Zaruri",
+            rules: "Variantă originală: fiecare are 8 zaruri. Trei grămezi comune au vârfuri vizibile. Pe rând arunci zarurile rămase și pui oricâte pe o grămadă al cărei vârf diferă cu cel mult 1 („joc v g”), apoi „pas”. Primul care rămâne fără zaruri câștigă. Mutări: tira, joc v g, pas.",
+            make: || Box::new(brand_util::B(zr_duel::Vartej::new())),
+        },
+        Playable {
+            id: "petale_si_spini",
+            title: "Petale și spini",
+            category: "Zaruri",
+            rules: "Variantă originală de ghicit regula: cine aruncă alege 3–5 zaruri; celălalt ghicește „numărul petalelor” (ghic k) sau trece. Corect = zaruri−2 puncte pentru ghicitor, greșit = 1 punct pentru cel care aruncă. După runda 3 regula se dezvăluie în afișare. 8 runde. Mutări: zaruri n, tira, ghic k, trec.",
+            make: || Box::new(brand_util::B(zr_duel::Petale::new())),
+        },
+        Playable {
+            id: "zaruri_in_duel",
+            title: "Zaruri în duel",
+            category: "Zaruri",
+            rules: "Variantă originală: fiecare are cinci zaruri (d4, d6, d8, d12, d20), aruncate la început. Atac de forță: un zar de-al tău cu valoare ≥ ținta o capturează („forta a t”); atac de îndemânare: suma a 2+ zaruri proprii = valoarea ținței („indemanare a,b t”). Atacatorii se re-aruncă. Câștigă cine rămâne cu zaruri sau, după două pasuri la rând, cu suma fețelor mai mare. Mutări: tira, forta, indemanare, pas.",
+            make: || Box::new(brand_util::B(zr_duel::Butoane::new())),
+        },
+        Playable {
+            id: "zar_peste_masa",
+            title: "Zar peste masă",
+            category: "Zaruri",
+            rules: "Variantă originală de „aruncat peste masă” (îndemânarea e simulată cu probabilități publice): alegi ținta (usor 70% +1, tintit 50% +2, risc 30% +4; ratarea la risc dă 1 adversarului), adversarul poate folosi una din cele 2 gărzi (−20% șansă), apoi „tira”. Primul la 12 puncte câștigă. Mutări: usor, tintit, risc, garda, liber, tira.",
+            make: || Box::new(brand_util::B(zr_arunc::ZarMasa::new())),
+        },
+        Playable {
+            id: "coridorul_incercarilor",
+            title: "Coridorul încercărilor",
+            category: "Zaruri",
+            rules: "Variantă originală: cinci monștri (viață 3,4,5,4,6) pe un coridor comun. Pe rând lovești: usor (85%, 1), mediu (60%, 2), greu (35%, 3; ratarea costă 1 punct), apoi tira. Cine dă lovitura finală ia recompensa egală cu viața inițială. La final contează punctele. Mutări: usor, mediu, greu, tira.",
+            make: || Box::new(brand_util::B(zr_arunc::Coridor::new())),
+        },
+        Playable {
+            id: "bancnote_si_zaruri",
+            title: "Bancnote și zaruri",
+            category: "Zaruri",
+            rules: "Variantă originală de majoritate: 8 zaruri fiecare, 6 mese numerotate cu bancnote aleatoare ×1–5. La fiecare tură arunci zarurile rămase și pui TOATE zarurile cu o valoare la masa cu același număr. La final de rundă masa e câștigată de cine are mai multe zaruri (egal = nimeni). 4 runde. Mutări: tira, pon v loc, pas, ronda.",
+            make: || Box::new(brand_util::B(zr_loc::Loc::new(&zr_loc::BANCNOTE))),
+        },
+        Playable {
+            id: "satul_de_la_rascruce",
+            title: "Satul de la răscruce",
+            category: "Zaruri",
+            rules: "Variantă originală: 5 zaruri aruncate la începutul rundei; le pui pe clădiri cu condiții (bancă ≥4, moară impar, han par, primărie orice, fântână ≤3). La final de rundă fiecare clădire revine celui cu suma mai mare pe ea (egal = nimeni). 6 runde. Mutări: tira, pon v loc, pas, ronda.",
+            make: || Box::new(brand_util::B(zr_loc::Loc::new(&zr_loc::RASCRUCE))),
+        },
+        Playable {
+            id: "soarta_e_aruncata",
+            title: "Soarta e aruncată",
+            category: "Zaruri",
+            rules: "Variantă originală: 6 zaruri pe rundă; fiecare clădire cere două zaruri cu aceeași valoare (forum 1, terme 2, apeduct 3, arenă 4, templu 5, drum 6). Primul care pune al doilea zar o închide și încasează recompensa. 6 runde. Mutări: tira, pon v loc, pas, ronda.",
+            make: || Box::new(brand_util::B(zr_loc::Loc::new(&zr_loc::SOARTA))),
+        },
+        Playable {
+            id: "bazarul_persan",
+            title: "Bazarul persan",
+            category: "Zaruri",
+            rules: "Variantă originală: 6 zaruri; fiecare taraba (1–6) acceptă o valoare exactă și un singur zar pe rundă; mai sunt caravana și hanul. Efectul e imediat (monede, mărfuri, mirodenii; unele locuri costă). La final: 4 monede, 2 mărfuri sau 1 mirodenie = 1 punct. 6 runde. Mutări: tira, pon v loc, pas, ronda.",
+            make: || Box::new(brand_util::B(zr_loc::Loc::new(&zr_loc::BAZAR))),
+        },
+        Playable {
+            id: "cetatea_breslelor",
+            title: "Cetatea breslelor",
+            category: "Zaruri",
+            rules: "Variantă originală: 6 zaruri și 3 galbeni venit pe rundă; fiecare breaslă are condiție de valoare și cost per zar. La final de rundă fiecare breaslă revine celui cu suma mai mare (egal = nimeni). Puncte din bresle, galbeni (3=1p) și ucenici. 5 runde. Mutări: tira, pon v loc, pas, ronda.",
+            make: || Box::new(brand_util::B(zr_loc::Loc::new(&zr_loc::BRESLE))),
+        },
+        Playable {
+            id: "santierul_orbital",
+            title: "Șantierul orbital",
+            category: "Zaruri",
+            rules: "Variantă originală: 4 nave-zaruri pe rundă, locuri exclusive cu efect imediat: docuri de minereu (≤3) și combustibil (≥4), uzină (par, costă 2 minereu + 1 combustibil), stație (impar), colonizare (6, costă 3 minereu + 2 combustibil, 2 puncte). Venit 1 minereu pe rundă. 8 runde. Mutări: tira, pon v loc, pas, ronda.",
+            make: || Box::new(brand_util::B(zr_loc::Loc::new(&zr_loc::DOCURI))),
+        },
+        Playable {
+            id: "schite_de_constructie",
+            title: "Schițe de construcție",
+            category: "Zaruri",
+            rules: "Variantă originală: 7 zaruri pe rundă; patru schițe cer câte trei zaruri de același tip: turn (≥5), pod (≤2), fântână (par), casă (impar). Primul care adună trei pe o schiță o termină și încasează puncte/resurse. 5 runde. Mutări: tira, pon v loc, pas, ronda.",
+            make: || Box::new(brand_util::B(zr_loc::Loc::new(&zr_loc::PLANURI))),
+        },
+        Playable {
+            id: "tinta_fixata",
+            title: "Ținta fixată",
+            category: "Zaruri",
+            rules: "Variantă originală: 6 zaruri pe rundă; șase cărți-țintă cer fiecare două zaruri cu aceeași valoare (1 la 6), cu 5,4,3,3,2,1 puncte. Cine pune al doilea zar ia cartea. 8 runde. Mutări: tira, pon v loc, pas, ronda.",
+            make: || Box::new(brand_util::B(zr_loc::Loc::new(&zr_loc::TINTA))),
+        },
+        Playable {
+            id: "popoarele_si_epocile",
+            title: "Popoarele și epocile",
+            category: "Zaruri",
+            rules: "Variantă originală: 5 zaruri; ogoare (impar), fierărie (par), armată (≥3, costă hrană) și monument (orice, costă oțel). Fiecare loc revine celui cu suma mai mare la final de rundă (egal = nimeni). Hrana, oțelul și gloria se convertesc în puncte (3/2/1). 6 runde. Mutări: tira, pon v loc, pas, ronda.",
+            make: || Box::new(brand_util::B(zr_loc::Loc::new(&zr_loc::POPOARE))),
+        },
+        Playable {
+            id: "baza_stelara",
+            title: "Baza stelară",
+            category: "Zaruri",
+            rules: "Variantă originală: în fiecare rundă se aruncă două zaruri; cărțile cu numărul egal cu suma produc pentru proprietar (cele pasive și la adversar). Apoi fiecare poate cumpăra o carte din piața publică (2 exemplare). Scor: puncte + energie/3. 10 runde. Mutări: tira, compro i, pas.",
+            make: || Box::new(brand_util::B(zr_flota::Flota::new(&zr_flota::BAZA))),
+        },
+        Playable {
+            id: "orasul_in_crestere",
+            title: "Orașul în creștere",
+            category: "Zaruri",
+            rules: "Variantă originală: două zaruri pe rundă; clădirile cu numărul egal cu UNUL dintre zaruri produc lemn sau faimă. Cumperi clădiri cu lemn (una pe rundă). Scor: puncte + faimă/2. 9 runde. Mutări: tira, compro i, pas.",
+            make: || Box::new(brand_util::B(zr_flota::Flota::new(&zr_flota::ORAS))),
+        },
+        Playable {
+            id: "infirmeria_de_noapte",
+            title: "Infirmeria de noapte",
+            category: "Zaruri",
+            rules: "Variantă originală: două zaruri pe rundă; paturile și cabinetele cu numărul aruncat aduc fonduri sau vindecări. Cumperi dotări cu fonduri (3 exemplare fiecare). Scor: puncte + vindecări/2. 8 runde. Mutări: tira, compro i, pas.",
+            make: || Box::new(brand_util::B(zr_flota::Flota::new(&zr_flota::INFIRM))),
+        },
+        Playable {
+            id: "descalecatorii",
+            title: "Descălecătorii",
+            category: "Zaruri",
+            rules: "Variantă originală: suma a două zaruri activează așezările cu acel număr (merinde sau pământ). Cumperi câmpuri, sate și fortărețe cu merinde. Scor: puncte + pământ/2. 9 runde. Mutări: tira, compro i, pas.",
+            make: || Box::new(brand_util::B(zr_flota::Flota::new(&zr_flota::DESCAL))),
+        },
+        Playable {
+            id: "colorat_si_barat",
+            title: "Colorat și bărat",
+            category: "Zaruri",
+            rules: "Variantă originală: tablă 5×5 cu cinci regiuni; 4 zaruri comune (culoare + număr 1–5). Alegi un zar și barezi „număr” celule consecutive pe un rând din regiunea culorii („pon d r c”), legate de ce ai bărat (prima dată prin coloana din mijloc). Puncte: celule, coloane complete (4, sau 2 dacă și adversarul a completat-o), regiuni complete (3). 8 runde. Mutări: tira, pon d r c, salt d.",
+            make: || Box::new(brand_util::B(zr_grid::Grid::new(zr_grid::Kind::Colorat))),
+        },
+        Playable {
+            id: "harta_cu_cifre",
+            title: "Harta cu cifre",
+            category: "Zaruri",
+            rules: "Variantă originală: tablă 4×4; 4 zaruri comune pe rundă, două alegeri fiecare. Pui valoarea într-o celulă liberă astfel încât toate rândurile și coloanele să rămână crescătoare (necrescător, fără scăderi). Puncte: celule, rânduri/coloane complete (3). 8 runde. Mutări: tira, pon d r c, salt d.",
+            make: || Box::new(brand_util::B(zr_grid::Grid::new(zr_grid::Kind::Harta))),
+        },
+        Playable {
+            id: "vitraliul_zarurilor",
+            title: "Vitraliul zarurilor",
+            category: "Zaruri",
+            rules: "Variantă originală: tablă 4×4; 5 zaruri colorate comune pe rundă. Primul zar la margine, apoi mereu lipit (și în diagonală) de unul existent; vecinii pe orizontală/verticală nu pot avea aceeași culoare sau valoare. Puncte: zaruri puse, rânduri cu 4 valori distincte (4), coloane cu 4 culori distincte (5). 4 runde. Mutări: tira, pon d r c, salt d.",
+            make: || Box::new(brand_util::B(zr_grid::Grid::new(zr_grid::Kind::Vitraliu))),
+        },
+        Playable {
+            id: "drumuri_si_sine",
+            title: "Drumuri și șine",
+            category: "Zaruri",
+            rules: "Variantă originală: tablă 5×5 cu o răscruce în centru; 4 zaruri de piese (dreaptă, curbă, T, cruce) pe rundă, 2 alegeri fiecare. Piesa se pune cu rotație aleasă lângă o capătă deschisă a rețelei, cu o legătură înapoi. Scor: 2 × piese conectate la centru − capete moarte. 7 runde. Mutări: tira, pon d r c rot, salt d.",
+            make: || Box::new(brand_util::B(zr_grid::Grid::new(zr_grid::Kind::Drumuri))),
+        },
+        Playable {
+            id: "eroul_din_zaruri",
+            title: "Eroul din zaruri",
+            category: "Zaruri",
+            rules: "Variantă originală: patru atribute cu câte trei locuri; 4 zaruri comune pe rundă, două alegeri fiecare. Pui zarul pe un atribut („pon d a”). Un atribut complet dă ponderea (3,2,2,1) × modificator al sumei (≤6: −1, 7–9: 0, 10–12: +1, 13–15: +2, 16+: +3) + 2. 6 runde. Mutări: tira, pon d a, salt d.",
+            make: || Box::new(brand_util::B(zr_grid::Grid::new(zr_grid::Kind::Erou))),
+        },
+        Playable {
+            id: "regele_metropolei",
+            title: "Regele metropolei",
+            category: "Zaruri",
+            rules: "Variantă originală: 6 zaruri, până la 3 aruncări pe tură (relansez i,j). Fețele 1/2/3: trei la fel dau puncte; atac (lovești adversarul), vindecare (+viață, max 10), energie (2 energie = 1 punct). Primul la 20 de puncte sau care doboară adversarul câștigă. Mutări: tira, relansez i,j, fin.",
+            make: || Box::new(brand_util::B(zr_trei::Trei::new(zr_trei::Kind::Rege))),
+        },
+        Playable {
+            id: "ere_si_monumente",
+            title: "Ere și monumente",
+            category: "Zaruri",
+            rules: "Variantă originală: 5 zaruri, până la 3 aruncări. Muncă, hrană, mărfuri, monede, craniu (nu se relansează; 2 craniu = −1, 3 = pierzi muncitorii). 6 muncitori = monument (+4), 3 mărfuri = +2, hrană 2 pe tură (lipsa costă). 8 ture. Mutări: tira, relansez i,j, fin.",
+            make: || Box::new(brand_util::B(zr_trei::Trei::new(zr_trei::Kind::Ere))),
+        },
+        Playable {
+            id: "echipa_de_aventurieri",
+            title: "Echipa de aventurieri",
+            category: "Zaruri",
+            rules: "Variantă originală: alegi adâncimea 1–3 („nivel n”), apoi se aruncă 6 zaruri-aventurieri (luptător, mag, preot, hoț, erou, pergament) și n+1 monștri de 4 tipuri; relansezi până la 2 ori și potrivești monștrii. Fiecare monstru neînvins costă 1 viață; experiența = înfrânți × adâncime (+bonus). 6 ture. Mutări: nivel n, tira, relansez i,j, fin.",
+            make: || Box::new(brand_util::B(zr_trei::Trei::new(zr_trei::Kind::Echipa))),
+        },
+        Playable {
+            id: "oastea_de_zaruri",
+            title: "Oastea de zaruri",
+            category: "Zaruri",
+            rules: "Variantă originală: fiecare armată are 8 unități (zaruri). Arunci toate unitățile (relansezi până la 2 ori): corp la corp, tragere, magie și perechi de semne lovesc; scuturile tale (aruncate la tura precedentă) apără; perechile de manevră recuperează unități. Pierzi dacă rămâi fără unități. Mutări: tira, relansez i,j, fin.",
+            make: || Box::new(brand_util::B(zr_trei::Trei::new(zr_trei::Kind::Oastea))),
+        },
+        Playable {
+            id: "leacul_molimei",
+            title: "Leacul molimei",
+            category: "Zaruri",
+            rules: "Variantă originală de întrecere: 5 zaruri (patru boli, pericol, medic-joker), până la 3 aruncări; pericolul nu se relansează. Trei zaruri la fel (cu medici) dau o probă (cinci = două); trei probe dintr-o boală = leac. Trei pericole ți-o iau pe una. Primul cu 3 leacuri câștigă. Mutări: tira, relansez i,j, fin.",
+            make: || Box::new(brand_util::B(zr_trei::Trei::new(zr_trei::Kind::Leac))),
+        },
+        Playable {
+            id: "scufundarea_adanca",
+            title: "Scufundarea adâncă",
+            category: "Zaruri",
+            rules: "Variantă originală: doi scafandri cu 25 de aer comun, pe o cărare de 16 comori. La începutul turei alegi „coboara” sau „urca” (o singură întoarcere), aerul scade cu comorile purtate, arunci 2 zaruri de 1–3 minus comorile purtate și mergi (sari peste locuri ocupate), apoi „iau”, „las” sau „nimic”. Cine nu ajunge înapoi când se termină aerul pierde comorile. 3 runde. Mutări: coboara, urca, tira, iau, las, nimic.",
+            make: || Box::new(brand_util::B(zr_misc::Scufundare::new())),
+        },
+        Playable {
+            id: "cursa_cuburilor",
+            title: "Cursa cuburilor",
+            category: "Zaruri",
+            rules: "Variantă originală: fiecare are un săculeț cu zaruri (la început 5 simple). Tura: extragi 3 zaruri și le arunci (fiecare față dă mișcare și monede); poți trage încă unul („trag”) dar cu două fețe goale ratezi tura. Apoi cumperi un zar mai bun (alergător 4, negustor 3, turbo 6). Pista are 28 de pași; ultima tură se joacă egal. Mutări: tira, trag, opresc, cumpar tip, pas.",
+            make: || Box::new(brand_util::B(zr_misc::Cuburi::new())),
+        },
+        Playable {
+            id: "fitilul_aprins",
+            title: "Fitilul aprins",
+            category: "Zaruri",
+            rules: "Variantă originală: patru bombe cu 4–6 fire, fiecare cu o condiție de zar. Pe rând arunci 5 zaruri și tai fire („des v fir”); cine taie ultimul fir ia valoarea bombei. Fiecare „pas” consumă un fitil (5); la zero bomba explodează și cel care a spus pasul pierde 2. Mutări: tira, des v fir, pas.",
+            make: || Box::new(brand_util::B(zr_misc::Fitil::new())),
+        },
+        // C6-reg-end
     ]
 }
 
