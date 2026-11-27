@@ -16,8 +16,8 @@ for f in sorted(glob.glob(f'{root}/polytabletop-games/data/i18n/titles_*.tsv')):
         if len(p) >= 3 and p[1] in LANGS and p[2]:
             tsv[(p[0], p[1])] = p[2]
 en = dict(l.rstrip('\n').split('\t') for l in open(f'{root}/tools/site/en_titles.tsv', encoding='utf8') if l.strip())
-CATS = ['Abstract', 'Cărți', 'Strategie', 'Party', 'Zaruri', 'Clasic', 'Familie', 'Miniaturi', 'Cooperativ', 'TCG', 'Deducție', 'Cuvinte', 'Copii']
-CK = {c: k for c, k in zip(CATS, ['abstract', 'cards', 'strategy', 'party', 'dice', 'classic', 'family', 'minis', 'coop', 'tcg', 'deduction', 'words', 'kids'])}
+CATS = ['Abstract', 'Cărți', 'Strategie', 'Party', 'Zaruri', 'Clasic', 'Familie', 'Miniaturi', 'Cooperativ', 'TCG', 'Deducție', 'Cuvinte', 'Copii', 'Rol (RPG)']
+CK = {c: k for c, k in zip(CATS, ['abstract', 'cards', 'strategy', 'party', 'dice', 'classic', 'family', 'minis', 'coop', 'tcg', 'deduction', 'words', 'kids', 'rpg'])}
 
 def hero_svg():
     import math

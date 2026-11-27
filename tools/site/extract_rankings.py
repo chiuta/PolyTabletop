@@ -25,7 +25,7 @@ TRAD |= set(c100.TRAD_NEW) | {key(n) for n, _, _ in dcont.NEW}   # noile jocuri 
 for a, cn in c100.ALIAS.items():   # dubluri unificate în catalog: numele vechi din topurile pe regiuni se mapează la intrarea păstrată
     cat[a] = cat[cn]
 src = open(f'{root}/polytabletop-games/src/lib.rs', encoding='utf8').read()
-src = src[src.index('pub fn playable()'):]
+src = src[src.index('fn playable_base()'):] + open(f'{root}/polytabletop-games/src/q6_reg.rs', encoding='utf8').read() + open(f'{root}/polytabletop-games/src/b1_reg.rs', encoding='utf8').read()
 playable = set(re.findall(r'id: "([^"]+)",\s*title:', src))
 
 CATK = {'Clasic': 'classic', 'Abstract': 'abstract', 'Familie': 'family', 'Strategie': 'strategy', 'Party': 'party', 'Cooperativ': 'coop',

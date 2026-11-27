@@ -24,8 +24,8 @@ au = open(f'{root}/polytabletop-games/tests/a1_viewer_audit.rs', encoding='utf8'
 def arr(name):
     return set(re.findall(r'"([^"]+)"', re.search(r'const %s: &\[&str\] = &\[(.*?)\];' % name, au, re.S).group(1)))
 god, nohid = arr('SOLO_GOD'), arr('NO_HIDDEN')
-CATS = ['Abstract', 'Cărți', 'Strategie', 'Party', 'Zaruri', 'Clasic', 'Familie', 'Miniaturi', 'Cooperativ', 'TCG', 'Deducție', 'Cuvinte', 'Copii']
-CK = dict(zip(CATS, ['abstract', 'cards', 'strategy', 'party', 'dice', 'classic', 'family', 'minis', 'coop', 'tcg', 'deduction', 'words', 'kids']))
+CATS = ['Abstract', 'Cărți', 'Strategie', 'Party', 'Zaruri', 'Clasic', 'Familie', 'Miniaturi', 'Cooperativ', 'TCG', 'Deducție', 'Cuvinte', 'Copii', 'Rol (RPG)']
+CK = dict(zip(CATS, ['abstract', 'cards', 'strategy', 'party', 'dice', 'classic', 'family', 'minis', 'coop', 'tcg', 'deduction', 'words', 'kids', 'rpg']))
 tsv = {}
 for f in sorted(glob.glob(f'{root}/polytabletop-games/data/i18n/titles_*.tsv')):
     for l in open(f, encoding='utf8'):
@@ -360,7 +360,7 @@ main = f'''<nav class="bc" aria-label="Breadcrumb" data-ia="pg_bc"><ol>
 <ul class="lst" id="glist">{lis}</ul>
 </section>
 <p style="margin:1rem 0 2rem"><a href="../index.html#rankings-world" data-lk data-i="nav_rank">Rankings</a></p>'''
-dl = {'L': [[gid, CK[c], 1 if gid in inrank else 0] for gid, _, c in games], 'CK': ['classic', 'abstract', 'family', 'strategy', 'party', 'coop', 'cards', 'minis', 'tcg', 'dice', 'deduction', 'words', 'kids'], 'GT': all_gt}
+dl = {'L': [[gid, CK[c], 1 if gid in inrank else 0] for gid, _, c in games], 'CK': ['classic', 'abstract', 'family', 'strategy', 'party', 'coop', 'cards', 'minis', 'tcg', 'dice', 'deduction', 'words', 'kids', 'rpg'], 'GT': all_gt}
 used = set(CK.values())
 LJS = LIST_JS + '''
 document.querySelector("#q").addEventListener("input",()=>{if(window.__draw)window.__draw()});
