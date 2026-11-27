@@ -2,7 +2,7 @@
 
 1200 de intrări, grupate după tip, din `polytabletop catalog`. Regenerat de `tools/gen_docs.py`; sursa e `tools/data` (via `tools/gen_catalog.py`).
 
-## Implementat (811)
+## Implementat (850)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -770,6 +770,22 @@
 | Die Insel der Mookies | Copii | Germania | implementat |
 | Noah's Park | Copii | Germania | implementat |
 | Galloping Pigs | Copii | Germania | implementat |
+| Karambolage | Copii | Germania | implementat |
+| Maskenball der Käfer | Copii | Germania | implementat |
+| Der schwarze Pirat | Copii | Germania | implementat |
+| Beppo der Bock | Copii | Germania | implementat |
+| Wer war's? (Whoowasit?) | Copii | Germania | implementat |
+| Diego Drachenzahn | Copii | Germania | implementat |
+| Gute Freunde | Copii | Germania | implementat |
+| Corsaro | Copii | Germania | implementat |
+| Leinen Los! | Copii | Germania | implementat |
+| Kayanak | Copii | Germania | implementat |
+| Arbos | Copii | Germania | implementat |
+| Château Roquefort | Copii | Germania | implementat |
+| Coconuts (Coco Crazy) | Copii | Germania | implementat |
+| Monza | Copii | Germania | implementat |
+| Ribbit (Schildkrötenrennen) | Copii | Germania | implementat |
+| Leo muss zum Friseur | Copii | Germania | implementat |
 | Capra (Leapfrog) | Copii | Global | implementat |
 | Elasticul (Chinese jump rope) | Copii | China | implementat |
 | Statuile (Statues) | Copii | Global | implementat |
@@ -783,14 +799,29 @@
 | Mingea (Dodgeball) | Copii | Global | implementat |
 | Snap | Copii | Marea Britanie | implementat |
 | Slapjack | Copii | SUA | implementat |
+| Crocodile Dentist | Copii | Marea Britanie | implementat |
+| Pictureka! | Copii | SUA | implementat |
 | Loto cu imagini (Picture lotto) | Copii | Europa | implementat |
+| Ants in the Pants | Copii | SUA | implementat |
+| Elefun | Copii | SUA | implementat |
 | Craps | Zaruri | SUA | implementat |
+| King of Tokyo | Zaruri | SUA | implementat |
+| Qwixx | Zaruri | Germania | implementat |
+| Ganz schön clever (That's Pretty Clever) | Zaruri | Germania | implementat |
+| Can't Stop | Zaruri | SUA | implementat |
+| Zombie Dice | Zaruri | SUA | implementat |
 | Yatzy | Zaruri | Suedia / Scandinavia | implementat |
+| Roll for the Galaxy | Zaruri | SUA | implementat |
+| Kingsburg | Zaruri | Italia | implementat |
 | Shut the Box | Zaruri | Franța / Marea Britanie | implementat |
+| Catan: The Dice Game (Catan Dice Game) | Zaruri | Germania | implementat |
+| Heckmeck am Bratwurmeck (Pickomino) | Zaruri | Germania | implementat |
 | Chinchirorin | Zaruri | Japonia | implementat |
 | Chō-han (Chō-han bakuchi) | Zaruri | Japonia | implementat |
 | Bầu cua cá cọp | Zaruri | Vietnam | implementat |
 | Mexico (Mäxchen, Mia) | Zaruri | Europa / Mexic | implementat |
+| Pig | Zaruri | SUA | implementat |
+| Left Center Right (LCR) | Zaruri | SUA | implementat |
 | Hazard | Zaruri | Marea Britanie / Orientul Mijlociu | implementat |
 | Chuck-a-luck | Zaruri | SUA / Marea Britanie | implementat |
 | Ship, Captain, and Crew | Zaruri | SUA / Marea Britanie | implementat |
@@ -798,6 +829,14 @@
 | Yacht | Zaruri | Asia / Marea Britanie | implementat |
 | Schocken | Zaruri | Germania | implementat |
 | Cee-lo | Zaruri | China / SUA | implementat |
+| Bang! The Dice Game | Zaruri | Italia | implementat |
+| Dice Forge | Zaruri | Franța | implementat |
+| Dice Throne | Zaruri | SUA | implementat |
+| Quarriors! | Zaruri | SUA | implementat |
+| Dice Masters | Zaruri | SUA | implementat |
+| Doppelt so clever (Twice as Clever) | Zaruri | Germania | implementat |
+| Clever hoch drei (Clever Cubed) | Zaruri | Germania | implementat |
+| Qwinto | Zaruri | Germania | implementat |
 | Cosmic Wimpout | Zaruri | SUA | implementat |
 | Beetle | Zaruri | Marea Britanie | implementat |
 | Knucklebones (Tali) | Zaruri | Grecia / Roma antică | implementat |
@@ -823,7 +862,7 @@
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
 
-## Variantă proprie (117)
+## Variantă proprie (78)
 
 | Nume | Categorie | Origine | Stare |
 |---|---|---|---|
@@ -866,45 +905,6 @@
 | Battlestar Galactica: The Board Game | Cooperativ | SUA | planificat (variantă proprie) |
 | Nemesis | Cooperativ | Polonia | planificat (variantă proprie) |
 | Final Girl | Cooperativ | SUA | planificat (variantă proprie) |
-| Karambolage | Copii | Germania | planificat (variantă proprie) |
-| Maskenball der Käfer | Copii | Germania | planificat (variantă proprie) |
-| Der schwarze Pirat | Copii | Germania | planificat (variantă proprie) |
-| Beppo der Bock | Copii | Germania | planificat (variantă proprie) |
-| Wer war's? (Whoowasit?) | Copii | Germania | planificat (variantă proprie) |
-| Diego Drachenzahn | Copii | Germania | planificat (variantă proprie) |
-| Gute Freunde | Copii | Germania | planificat (variantă proprie) |
-| Corsaro | Copii | Germania | planificat (variantă proprie) |
-| Leinen Los! | Copii | Germania | planificat (variantă proprie) |
-| Kayanak | Copii | Germania | planificat (variantă proprie) |
-| Arbos | Copii | Germania | planificat (variantă proprie) |
-| Château Roquefort | Copii | Germania | planificat (variantă proprie) |
-| Coconuts (Coco Crazy) | Copii | Germania | planificat (variantă proprie) |
-| Monza | Copii | Germania | planificat (variantă proprie) |
-| Ribbit (Schildkrötenrennen) | Copii | Germania | planificat (variantă proprie) |
-| Leo muss zum Friseur | Copii | Germania | planificat (variantă proprie) |
-| Crocodile Dentist | Copii | Marea Britanie | planificat (variantă proprie) |
-| Pictureka! | Copii | SUA | planificat (variantă proprie) |
-| Ants in the Pants | Copii | SUA | planificat (variantă proprie) |
-| Elefun | Copii | SUA | planificat (variantă proprie) |
-| King of Tokyo | Zaruri | SUA | planificat (variantă proprie) |
-| Qwixx | Zaruri | Germania | planificat (variantă proprie) |
-| Ganz schön clever (That's Pretty Clever) | Zaruri | Germania | planificat (variantă proprie) |
-| Can't Stop | Zaruri | SUA | planificat (variantă proprie) |
-| Zombie Dice | Zaruri | SUA | planificat (variantă proprie) |
-| Roll for the Galaxy | Zaruri | SUA | planificat (variantă proprie) |
-| Kingsburg | Zaruri | Italia | planificat (variantă proprie) |
-| Catan: The Dice Game (Catan Dice Game) | Zaruri | Germania | planificat (variantă proprie) |
-| Heckmeck am Bratwurmeck (Pickomino) | Zaruri | Germania | planificat (variantă proprie) |
-| Pig | Zaruri | SUA | planificat (variantă proprie) |
-| Left Center Right (LCR) | Zaruri | SUA | planificat (variantă proprie) |
-| Bang! The Dice Game | Zaruri | Italia | planificat (variantă proprie) |
-| Dice Forge | Zaruri | Franța | planificat (variantă proprie) |
-| Dice Throne | Zaruri | SUA | planificat (variantă proprie) |
-| Quarriors! | Zaruri | SUA | planificat (variantă proprie) |
-| Dice Masters | Zaruri | SUA | planificat (variantă proprie) |
-| Doppelt so clever (Twice as Clever) | Zaruri | Germania | planificat (variantă proprie) |
-| Clever hoch drei (Clever Cubed) | Zaruri | Germania | planificat (variantă proprie) |
-| Qwinto | Zaruri | Germania | planificat (variantă proprie) |
 | Noch mal! (Encore!) | Zaruri | Germania | planificat (variantă proprie) |
 | Las Vegas | Zaruri | Germania | planificat (variantă proprie) |
 | Alien Frontiers | Zaruri | SUA | planificat (variantă proprie) |

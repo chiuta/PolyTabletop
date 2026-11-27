@@ -1,6 +1,6 @@
-# Reguli detaliate: jocurile 121–807 (partea a doua din `polytabletop list`)
+# Reguli detaliate: jocurile 121–846 (partea a doua din `polytabletop list`)
 
-Pagini de reguli în română pentru jocurile 121–807, în ordinea din `polytabletop list`. Primele 120 de jocuri sunt în [INDEX.md](INDEX.md).
+Pagini de reguli în română pentru jocurile 121–846, în ordinea din `polytabletop list`. Primele 120 de jocuri sunt în [INDEX.md](INDEX.md).
 
 Observații comune:
 
@@ -624,78 +624,117 @@ Observații comune:
 | 730 | [`insula_cu_furtuni`](insula_cu_furtuni.md) | Insula cu Furtuni |  | nu | — |
 | 731 | [`parcul_perechilor`](parcul_perechilor.md) | Parcul cu Perechi |  | nu | — |
 | 732 | [`purcei_cursa_mare`](purcei_cursa_mare.md) | Cursa Purceilor |  | nu | — |
-| 733 | [`hnefatafl`](hnefatafl.md) | Hnefatafl |  | nu | — |
-| 734 | [`brandubh`](brandubh.md) | Brandubh |  | nu | — |
-| 735 | [`pente`](pente.md) | Pente |  | nu | — |
-| 736 | [`havannah`](havannah.md) | Havannah |  | nu | — |
-| 737 | [`chinese_checkers`](chinese_checkers.md) | Table chinezească (Chinese Checkers) |  | nu | — |
-| 738 | [`goose`](goose.md) | Jocul gâștei (Game of the Goose) |  | nu | — |
-| 739 | [`keno`](keno.md) | Keno |  | nu | — |
-| 740 | [`sichuan_mahjong`](sichuan_mahjong.md) | Mahjong Sichuan |  | da | — |
-| 741 | [`long_nard`](long_nard.md) | Long Nard (Narde) |  | nu | — |
-| 742 | [`shove_ha_penny`](shove_ha_penny.md) | Shove ha'penny |  | nu | — |
-| 743 | [`rithmomachia`](rithmomachia.md) | Rithmomachia |  | nu | — |
-| 744 | [`pong_hau_kiki`](pong_hau_kiki.md) | Pong hau k'i |  | nu | — |
-| 745 | [`patolli`](patolli.md) | Patolli |  | nu | — |
-| 746 | [`duodecim_scripta`](duodecim_scripta.md) | Duodecim scripta |  | nu | — |
-| 747 | [`jigsaw`](jigsaw.md) | Puzzle cu piese (Jigsaw) |  | nu | — |
-| 748 | [`guobiao`](guobiao.md) | Mahjong oficial chinez (Guobiao) |  | da | — |
-| 749 | [`boggle`](boggle.md) | Boggle |  | nu | — |
-| 750 | [`kings`](kings.md) | Kings (Ring of Fire) |  | nu | — |
-| 751 | [`celebrity`](celebrity.md) | Celebrity (Fishbowl) |  | da | — |
-| 752 | [`pin_the_tail`](pin_the_tail.md) | Prinde coada măgarului |  | nu | — |
-| 753 | [`war`](war.md) | Război (War) |  | nu | — |
-| 754 | [`tressette`](tressette.md) | Tressette (Italia) |  | da | — |
-| 755 | [`piquet`](piquet.md) | Piquet (Franța) |  | da | — |
-| 756 | [`batak`](batak.md) | Batak (Turcia) |  | da | — |
-| 757 | [`yaniv`](yaniv.md) | Yaniv (Israel) |  | da | — |
-| 758 | [`ascunselea`](ascunselea.md) | Ascunselea (Hide-and-seek) |  | da | — |
-| 759 | [`de_a_prinselea`](de_a_prinselea.md) | De-a prinselea (Tag) |  | nu | — |
-| 760 | [`elasticul`](elasticul.md) | Elasticul |  | nu | — |
-| 761 | [`oina`](oina.md) | Oina |  | nu | — |
-| 762 | [`loto_imagini`](loto_imagini.md) | Loto cu imagini (Picture lotto) |  | nu | — |
-| 763 | [`bau_cua`](bau_cua.md) | Bầu cua (dovleac, crab, pește) |  | nu | — |
-| 764 | [`yacht`](yacht.md) | Yacht |  | nu | — |
-| 765 | [`chicago`](chicago.md) | Chicago (zaruri) |  | nu | — |
-| 766 | [`zara`](zara.md) | Zara (joc) |  | nu | — |
-| 767 | [`daldos`](daldos.md) | Daldøs |  | nu | — |
-| 768 | [`colturi`](colturi.md) | Colțuri (poliomino 10×10) |  | nu | — |
-| 769 | [`sah960`](sah960.md) | Șah cu start amestecat (fără rocadă) |  | nu | — |
-| 770 | [`impingere`](impingere.md) | Împingere pe pătrate (7×7) |  | nu | — |
-| 771 | [`roiul`](roiul.md) | Roiul (insecte pe masă) |  | nu | — |
-| 772 | [`terase`](terase.md) | Terase (construcție 5×5) |  | nu | — |
-| 773 | [`cartimut`](cartimut.md) | Mutări din cărți (5×5) |  | nu | — |
-| 774 | [`sferturi`](sferturi.md) | Sferturi (rotire 6×6) |  | nu | — |
-| 775 | [`inele`](inele.md) | Inele și semne (hex) |  | nu | — |
-| 776 | [`sase`](sase.md) | Șase în linie (13×13) |  | nu | — |
-| 777 | [`morpiuri9`](morpiuri9.md) | Morpion în nouă (9×9) |  | nu | — |
-| 778 | [`drumul_stivelor`](drumul_stivelor.md) | Drumul stivelor (5×5) |  | nu | — |
-| 779 | [`margine`](margine.md) | De la margine (hex 37) |  | nu | — |
-| 780 | [`izvoare`](izvoare.md) | Izvoare (stive conectate 7×7) |  | nu | — |
-| 781 | [`trei_tipuri`](trei_tipuri.md) | Trei tipuri (stive 6×6) |  | nu | — |
-| 782 | [`bilinele`](bilinele.md) | Bile și inele (hex 37) |  | nu | — |
-| 783 | [`animale`](animale.md) | Animale (mini-șah 3×4) |  | nu | — |
-| 784 | [`iepuri`](iepuri.md) | Iepurii și Elefantul (8×8) |  | nu | — |
-| 785 | [`asalt`](asalt.md) | Asalt (pioni 7×7) |  | nu | — |
-| 786 | [`dar4`](dar4.md) | Piesa dăruită (4×4) |  | nu | — |
-| 787 | [`piramida`](piramida.md) | Piramida (bile pe 4 niveluri) |  | nu | — |
-| 788 | [`cuburi`](cuburi.md) | Cuburi glisante (5×5) |  | nu | — |
-| 789 | [`culori_pas`](culori_pas.md) | Culori în șir (turnuri 8×8) |  | nu | — |
-| 790 | [`hochei_masa`](hochei_masa.md) | Hochei pe masă (ture) |  | nu | — |
-| 791 | [`trenuri`](trenuri.md) | Trenuri de domino (2 jucători) |  | da | — |
-| 792 | [`marmure`](marmure.md) | Marmure (curse cu scurtătură) |  | nu | — |
-| 793 | [`blocaje`](blocaje.md) | Blocaje (curse cu blocuri) |  | nu | — |
-| 794 | [`zbor`](zbor.md) | Zbor (curse cu salturi) |  | nu | — |
-| 795 | [`perechi_duel`](perechi_duel.md) | Perechi în piramidă (duel) |  | nu | — |
-| 796 | [`discuri`](discuri.md) | Discuri (fotbal pe ture) |  | nu | — |
-| 797 | [`armonia`](armonia.md) | Armonia florilor (7×7) |  | nu | — |
-| 798 | [`cai_de_curse`](cai_de_curse.md) | Cai de curse (traseu 40) |  | nu | — |
-| 799 | [`cub2`](cub2.md) | Cub 2×2: duel |  | nu | — |
-| 800 | [`flipper_duel`](flipper_duel.md) | Flipper (duel de scor) |  | nu | — |
-| 801 | [`scuze`](scuze.md) | Pardon (curse cu cărți) |  | nu | — |
-| 802 | [`forme6`](forme6.md) | Forme și culori (plăcuțe) |  | da | — |
-| 803 | [`palate`](palate.md) | Palate (orașul cu monede) |  | da | — |
-| 804 | [`sir5`](sir5.md) | Șir de cinci (cărți și jetoane) |  | da | — |
-| 805 | [`kilometri`](kilometri.md) | Kilometri (cursă cu cărți) |  | da | — |
-| 806 | [`camile`](camile.md) | Cursa cămilelor (pariuri) |  | nu | — |
-| 807 | [`tren_jaf`](tren_jaf.md) | Jaful din tren (programe) |  | da | — |
+| 733 | [`bolizi_oval`](bolizi_oval.md) | Bolizi pe Oval |  | nu | — |
+| 734 | [`pirat_cernit`](pirat_cernit.md) | Piratul Cernit |  | nu | — |
+| 735 | [`tapul_sprinten`](tapul_sprinten.md) | Țapul Sprinten |  | nu | — |
+| 736 | [`balaur_dinti`](balaur_dinti.md) | Balaurul cu Dinți de Lapte |  | nu | — |
+| 737 | [`corsari_larg`](corsari_larg.md) | Corsarii din Larg |  | nu | — |
+| 738 | [`parame_largate`](parame_largate.md) | Parâme Largate |  | nu | — |
+| 739 | [`caiace_nord`](caiace_nord.md) | Caiacele Nordului |  | nu | — |
+| 740 | [`cursa_testoase`](cursa_testoase.md) | Cursa Țestoaselor |  | nu | — |
+| 741 | [`gandaci_mascati`](gandaci_mascati.md) | Gândacii Mascați |  | nu | — |
+| 742 | [`soricei_cascaval`](soricei_cascaval.md) | Șoricei și Caș |  | nu | — |
+| 743 | [`vanatori_imagini`](vanatori_imagini.md) | Vânătorii de Imagini |  | nu | — |
+| 744 | [`ricosetul_bilelor`](ricosetul_bilelor.md) | Ricoșeul Bilelor |  | nu | — |
+| 745 | [`catapulta_nucilor`](catapulta_nucilor.md) | Catapulta cu Nuci |  | nu | — |
+| 746 | [`furnici_zburdalnice`](furnici_zburdalnice.md) | Furnici Zburdalnice |  | nu | — |
+| 747 | [`fluturi_prinsi`](fluturi_prinsi.md) | Fluturi de Prins |  | nu | — |
+| 748 | [`leul_frizerie`](leul_frizerie.md) | Leul la Frizerie |  | nu | — |
+| 749 | [`vinovat_tainuit`](vinovat_tainuit.md) | Vinovatul Tăinuit |  | da | — |
+| 750 | [`prieteni_la_ghicit`](prieteni_la_ghicit.md) | Prieteni la Ghicit |  | da | — |
+| 751 | [`dinti_crocodil`](dinti_crocodil.md) | Dinții Crocodilului |  | nu | — |
+| 752 | [`arbori_poiana`](arbori_poiana.md) | Arborii din Poiană |  | nu | — |
+| 753 | [`porcusorul_lacom`](porcusorul_lacom.md) | Porcușorul Lacom |  | nu | — |
+| 754 | [`hoti_fructe`](hoti_fructe.md) | Hoții de Fructe |  | nu | — |
+| 755 | [`jetoane_cerc`](jetoane_cerc.md) | Jetoane în Cerc |  | nu | — |
+| 756 | [`catarare_coloane`](catarare_coloane.md) | Cățărarea pe Coloane |  | nu | — |
+| 757 | [`viermisori_gratar`](viermisori_gratar.md) | Viermișorii de pe Grătar |  | nu | — |
+| 758 | [`randuri_colorate`](randuri_colorate.md) | Rânduri Colorate |  | nu | — |
+| 759 | [`trei_randuri_zar`](trei_randuri_zar.md) | Trei Rânduri cu Zaruri |  | nu | — |
+| 760 | [`ager_zaruri`](ager_zaruri.md) | Agerul cu Zaruri |  | nu | — |
+| 761 | [`dublu_istet`](dublu_istet.md) | Dublu Isteț |  | nu | — |
+| 762 | [`istet_la_cub`](istet_la_cub.md) | Isteț la Cub |  | nu | — |
+| 763 | [`monstrii_orasului`](monstrii_orasului.md) | Monștrii Orașului |  | nu | — |
+| 764 | [`duel_prerie`](duel_prerie.md) | Duel în Prerie |  | nu | — |
+| 765 | [`eroi_arena`](eroi_arena.md) | Eroii din Arenă |  | nu | — |
+| 766 | [`fauri_zaruri`](fauri_zaruri.md) | Făurarii de Zaruri |  | nu | — |
+| 767 | [`cariere_zaruri`](cariere_zaruri.md) | Carierele cu Zaruri |  | nu | — |
+| 768 | [`maestri_zar`](maestri_zar.md) | Maeștrii Zarului |  | nu | — |
+| 769 | [`sfetnici_cetate`](sfetnici_cetate.md) | Sfetnicii Cetății |  | nu | — |
+| 770 | [`zaruri_cosmice`](zaruri_cosmice.md) | Zaruri Cosmice |  | nu | — |
+| 771 | [`zaruri_asezari`](zaruri_asezari.md) | Zarurile Așezărilor |  | nu | — |
+| 772 | [`hnefatafl`](hnefatafl.md) | Hnefatafl |  | nu | — |
+| 773 | [`brandubh`](brandubh.md) | Brandubh |  | nu | — |
+| 774 | [`pente`](pente.md) | Pente |  | nu | — |
+| 775 | [`havannah`](havannah.md) | Havannah |  | nu | — |
+| 776 | [`chinese_checkers`](chinese_checkers.md) | Table chinezească (Chinese Checkers) |  | nu | — |
+| 777 | [`goose`](goose.md) | Jocul gâștei (Game of the Goose) |  | nu | — |
+| 778 | [`keno`](keno.md) | Keno |  | nu | — |
+| 779 | [`sichuan_mahjong`](sichuan_mahjong.md) | Mahjong Sichuan |  | da | — |
+| 780 | [`long_nard`](long_nard.md) | Long Nard (Narde) |  | nu | — |
+| 781 | [`shove_ha_penny`](shove_ha_penny.md) | Shove ha'penny |  | nu | — |
+| 782 | [`rithmomachia`](rithmomachia.md) | Rithmomachia |  | nu | — |
+| 783 | [`pong_hau_kiki`](pong_hau_kiki.md) | Pong hau k'i |  | nu | — |
+| 784 | [`patolli`](patolli.md) | Patolli |  | nu | — |
+| 785 | [`duodecim_scripta`](duodecim_scripta.md) | Duodecim scripta |  | nu | — |
+| 786 | [`jigsaw`](jigsaw.md) | Puzzle cu piese (Jigsaw) |  | nu | — |
+| 787 | [`guobiao`](guobiao.md) | Mahjong oficial chinez (Guobiao) |  | da | — |
+| 788 | [`boggle`](boggle.md) | Boggle |  | nu | — |
+| 789 | [`kings`](kings.md) | Kings (Ring of Fire) |  | nu | — |
+| 790 | [`celebrity`](celebrity.md) | Celebrity (Fishbowl) |  | da | — |
+| 791 | [`pin_the_tail`](pin_the_tail.md) | Prinde coada măgarului |  | nu | — |
+| 792 | [`war`](war.md) | Război (War) |  | nu | — |
+| 793 | [`tressette`](tressette.md) | Tressette (Italia) |  | da | — |
+| 794 | [`piquet`](piquet.md) | Piquet (Franța) |  | da | — |
+| 795 | [`batak`](batak.md) | Batak (Turcia) |  | da | — |
+| 796 | [`yaniv`](yaniv.md) | Yaniv (Israel) |  | da | — |
+| 797 | [`ascunselea`](ascunselea.md) | Ascunselea (Hide-and-seek) |  | da | — |
+| 798 | [`de_a_prinselea`](de_a_prinselea.md) | De-a prinselea (Tag) |  | nu | — |
+| 799 | [`elasticul`](elasticul.md) | Elasticul |  | nu | — |
+| 800 | [`oina`](oina.md) | Oina |  | nu | — |
+| 801 | [`loto_imagini`](loto_imagini.md) | Loto cu imagini (Picture lotto) |  | nu | — |
+| 802 | [`bau_cua`](bau_cua.md) | Bầu cua (dovleac, crab, pește) |  | nu | — |
+| 803 | [`yacht`](yacht.md) | Yacht |  | nu | — |
+| 804 | [`chicago`](chicago.md) | Chicago (zaruri) |  | nu | — |
+| 805 | [`zara`](zara.md) | Zara (joc) |  | nu | — |
+| 806 | [`daldos`](daldos.md) | Daldøs |  | nu | — |
+| 807 | [`colturi`](colturi.md) | Colțuri (poliomino 10×10) |  | nu | — |
+| 808 | [`sah960`](sah960.md) | Șah cu start amestecat (fără rocadă) |  | nu | — |
+| 809 | [`impingere`](impingere.md) | Împingere pe pătrate (7×7) |  | nu | — |
+| 810 | [`roiul`](roiul.md) | Roiul (insecte pe masă) |  | nu | — |
+| 811 | [`terase`](terase.md) | Terase (construcție 5×5) |  | nu | — |
+| 812 | [`cartimut`](cartimut.md) | Mutări din cărți (5×5) |  | nu | — |
+| 813 | [`sferturi`](sferturi.md) | Sferturi (rotire 6×6) |  | nu | — |
+| 814 | [`inele`](inele.md) | Inele și semne (hex) |  | nu | — |
+| 815 | [`sase`](sase.md) | Șase în linie (13×13) |  | nu | — |
+| 816 | [`morpiuri9`](morpiuri9.md) | Morpion în nouă (9×9) |  | nu | — |
+| 817 | [`drumul_stivelor`](drumul_stivelor.md) | Drumul stivelor (5×5) |  | nu | — |
+| 818 | [`margine`](margine.md) | De la margine (hex 37) |  | nu | — |
+| 819 | [`izvoare`](izvoare.md) | Izvoare (stive conectate 7×7) |  | nu | — |
+| 820 | [`trei_tipuri`](trei_tipuri.md) | Trei tipuri (stive 6×6) |  | nu | — |
+| 821 | [`bilinele`](bilinele.md) | Bile și inele (hex 37) |  | nu | — |
+| 822 | [`animale`](animale.md) | Animale (mini-șah 3×4) |  | nu | — |
+| 823 | [`iepuri`](iepuri.md) | Iepurii și Elefantul (8×8) |  | nu | — |
+| 824 | [`asalt`](asalt.md) | Asalt (pioni 7×7) |  | nu | — |
+| 825 | [`dar4`](dar4.md) | Piesa dăruită (4×4) |  | nu | — |
+| 826 | [`piramida`](piramida.md) | Piramida (bile pe 4 niveluri) |  | nu | — |
+| 827 | [`cuburi`](cuburi.md) | Cuburi glisante (5×5) |  | nu | — |
+| 828 | [`culori_pas`](culori_pas.md) | Culori în șir (turnuri 8×8) |  | nu | — |
+| 829 | [`hochei_masa`](hochei_masa.md) | Hochei pe masă (ture) |  | nu | — |
+| 830 | [`trenuri`](trenuri.md) | Trenuri de domino (2 jucători) |  | da | — |
+| 831 | [`marmure`](marmure.md) | Marmure (curse cu scurtătură) |  | nu | — |
+| 832 | [`blocaje`](blocaje.md) | Blocaje (curse cu blocuri) |  | nu | — |
+| 833 | [`zbor`](zbor.md) | Zbor (curse cu salturi) |  | nu | — |
+| 834 | [`perechi_duel`](perechi_duel.md) | Perechi în piramidă (duel) |  | nu | — |
+| 835 | [`discuri`](discuri.md) | Discuri (fotbal pe ture) |  | nu | — |
+| 836 | [`armonia`](armonia.md) | Armonia florilor (7×7) |  | nu | — |
+| 837 | [`cai_de_curse`](cai_de_curse.md) | Cai de curse (traseu 40) |  | nu | — |
+| 838 | [`cub2`](cub2.md) | Cub 2×2: duel |  | nu | — |
+| 839 | [`flipper_duel`](flipper_duel.md) | Flipper (duel de scor) |  | nu | — |
+| 840 | [`scuze`](scuze.md) | Pardon (curse cu cărți) |  | nu | — |
+| 841 | [`forme6`](forme6.md) | Forme și culori (plăcuțe) |  | da | — |
+| 842 | [`palate`](palate.md) | Palate (orașul cu monede) |  | da | — |
+| 843 | [`sir5`](sir5.md) | Șir de cinci (cărți și jetoane) |  | da | — |
+| 844 | [`kilometri`](kilometri.md) | Kilometri (cursă cu cărți) |  | da | — |
+| 845 | [`camile`](camile.md) | Cursa cămilelor (pariuri) |  | nu | — |
+| 846 | [`tren_jaf`](tren_jaf.md) | Jaful din tren (programe) |  | da | — |

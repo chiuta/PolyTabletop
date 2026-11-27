@@ -312,6 +312,61 @@ pub mod transee_tacute;
 pub mod vampirii_din_ceata;
 pub mod vrajitorii_din_ruine;
 // C1-mods-end
+// C5-mods-begin
+pub mod ager_zaruri;
+pub mod arbori_poiana;
+pub mod balaur_dinti;
+pub mod bolizi_oval;
+pub mod c5_alloc;
+pub mod c5_bag;
+pub mod c5_bet;
+pub mod c5_cs;
+pub mod c5_duel;
+pub mod c5_foaie;
+pub mod c5_forge;
+pub mod c5_memo;
+pub mod c5_push;
+pub mod c5_race;
+pub mod c5_roll3;
+pub mod c5_rows;
+pub mod c5_shot;
+pub mod c5_worm;
+pub mod caiace_nord;
+pub mod cariere_zaruri;
+pub mod catapulta_nucilor;
+pub mod catarare_coloane;
+pub mod corsari_larg;
+pub mod cursa_testoase;
+pub mod dinti_crocodil;
+pub mod dublu_istet;
+pub mod duel_prerie;
+pub mod eroi_arena;
+pub mod fauri_zaruri;
+pub mod fluturi_prinsi;
+pub mod furnici_zburdalnice;
+pub mod gandaci_mascati;
+pub mod hoti_fructe;
+pub mod istet_la_cub;
+pub mod jetoane_cerc;
+pub mod leul_frizerie;
+pub mod maestri_zar;
+pub mod monstrii_orasului;
+pub mod parame_largate;
+pub mod pirat_cernit;
+pub mod porcusorul_lacom;
+pub mod prieteni_la_ghicit;
+pub mod randuri_colorate;
+pub mod ricosetul_bilelor;
+pub mod sfetnici_cetate;
+pub mod soricei_cascaval;
+pub mod tapul_sprinten;
+pub mod trei_randuri_zar;
+pub mod vanatori_imagini;
+pub mod viermisori_gratar;
+pub mod vinovat_tainuit;
+pub mod zaruri_asezari;
+pub mod zaruri_cosmice;
+// C5-mods-end
 pub mod aadupuli;
 pub mod aceydeucey;
 pub mod alquerque;
@@ -1108,6 +1163,10 @@ pub const HOTSEAT_SAFE: &[&str] = &[
     "chkobba",
     "ronda",
     "okey",
+    // C5-hs-begin
+    "vinovat_tainuit",
+    "prieteni_la_ghicit",
+    // C5-hs-end
 ];
 
 fn playable_base() -> Vec<Playable> {
@@ -6255,6 +6314,281 @@ fn playable_base() -> Vec<Playable> {
             make: || c4_cursa::make("purcei_cursa_mare"),
         },
         // C4-reg-end
+        // C5-reg-begin
+        Playable {
+            id: "bolizi_oval",
+            title: "Bolizi pe Oval",
+            category: "Copii",
+            rules: "Variantă originală: câte două mașini pe un oval de 24 de pătrate. Arunci zarul (arunc), muți una dintre mașini (muta k). Pe pătratele de turbo mergi încă 3, pe cele de pană pierzi tura. Câștigă cine aduce ambele mașini la linia de sosire. Mutări: arunc, muta k, pas.",
+            make: || Box::new(brand_util::B(bolizi_oval::new())),
+        },
+        Playable {
+            id: "pirat_cernit",
+            title: "Piratul Cernit",
+            category: "Copii",
+            rules: "Variantă originală: trei pirați pe un traseu de 20 de pătrate; cine aterizează pe un pirat al adversarului îl trimite înapoi la start. Pătrate de recif (înapoi), de vânt (tură în plus) și de furtună (pierzi tura). Câștigă cine își aduce toți cei trei pirați la țărm. Mutări: arunc, muta k, pas.",
+            make: || Box::new(brand_util::B(pirat_cernit::new())),
+        },
+        Playable {
+            id: "tapul_sprinten",
+            title: "Țapul Sprinten",
+            category: "Copii",
+            rules: "Variantă originală: trei țapi pe un drum de munte de 18 pătrate. Ieși din staul doar cu un 6 (și mai arunci o dată). Cine aterizează pe un țap străin îl trimite în staul. Câștigă cine aduce doi țapi pe pășune. Mutări: arunc, muta k, pas.",
+            make: || Box::new(brand_util::B(tapul_sprinten::new())),
+        },
+        Playable {
+            id: "balaur_dinti",
+            title: "Balaurul cu Dinți de Lapte",
+            category: "Copii",
+            rules: "Variantă originală: doi pui de balaur pe un drum de 30 de pătrate cu scări (înainte) și tobogane (înapoi). Sosirea se face cu zar exact. Câștigă primul pui de balaur care ajunge în peșteră. Mutări: arunc, muta k, pas.",
+            make: || Box::new(brand_util::B(balaur_dinti::new())),
+        },
+        Playable {
+            id: "corsari_larg",
+            title: "Corsarii din Larg",
+            category: "Copii",
+            rules: "Variantă originală: două corăbii pe un traseu de 22 de pătrate; abordezi o corabie rivală aterizând pe ea (se întoarce în port). Pătrate cu vânt bun (+3), cu calm (pierzi tura) și cu comoară (tură în plus). Câștigă cine își duce ambele corăbii la insulă. Mutări: arunc, muta k, pas.",
+            make: || Box::new(brand_util::B(corsari_larg::new())),
+        },
+        Playable {
+            id: "parame_largate",
+            title: "Parâme Largate",
+            category: "Copii",
+            rules: "Variantă originală: trei bărci pe un râu de 20 de pătrate, zar cu patru fețe. Curenți (+2), vârtejuri (−2) și un vad (tură în plus); la sosire e nevoie de zar exact. Câștigă cine ajunge cu două bărci la ponton. Mutări: arunc, muta k, pas.",
+            make: || Box::new(brand_util::B(parame_largate::new())),
+        },
+        Playable {
+            id: "caiace_nord",
+            title: "Caiacele Nordului",
+            category: "Copii",
+            rules: "Variantă originală: două caiace pe un fiord de 28 de pătrate, zar cu trei fețe; lovești un caiac rival aterizând pe el (îl trimiți la mal). Copci de pește dau tură în plus, gheața pierde tura. Câștigă cine aduce ambele caiace la tabără. Mutări: arunc, muta k, pas.",
+            make: || Box::new(brand_util::B(caiace_nord::new())),
+        },
+        Playable {
+            id: "cursa_testoase",
+            title: "Cursa Țestoaselor",
+            category: "Copii",
+            rules: "Variantă originală: cinci țestoase colorate; mai întâi își alege fiecare câte două (alege t), apoi, la fiecare tură, încurajezi o culoare (incurajez t) și o mutare forțată (trag) trage o culoare la întâmplare: aceea avansează 1, iar dacă a fost cea încurajată avansează încă 1. Câștigă proprietarul primei țestoase care ajunge la 12. Mutări: alege t, incurajez t, trag.",
+            make: || Box::new(brand_util::B(cursa_testoase::new())),
+        },
+        Playable {
+            id: "gandaci_mascati",
+            title: "Gândacii Mascați",
+            category: "Copii",
+            rules: "Variantă originală: 16 plăci cu fața în jos (7 perechi de gândaci și 2 jokeri). Întorci o placă (volta i, apoi arata), apoi încă una: perechea potrivită se ia (jokerul se potrivește cu orice gândac) și mai întorci; altfel tura trece, dar plăcile văzute rămân cunoscute. Primul la 5 perechi câștigă. Mutări: volta i, arata.",
+            make: || Box::new(brand_util::B(gandaci_mascati::new())),
+        },
+        Playable {
+            id: "soricei_cascaval",
+            title: "Șoricei și Caș",
+            category: "Copii",
+            rules: "Variantă originală: 20 de plăci cu fața în jos: 8 feluri de caș (câte două) și 4 pisici. Întorci două plăci (volta i, arata): perechea de caș se ia, mai întorci; o pisică descoperită te costă un punct și încheie tura. Primul la 6 caș câștigă. Mutări: volta i, arata.",
+            make: || Box::new(brand_util::B(soricei_cascaval::new())),
+        },
+        Playable {
+            id: "vanatori_imagini",
+            title: "Vânătorii de Imagini",
+            category: "Copii",
+            rules: "Variantă originală: 25 de imagini ascunse (5 feluri); la fiecare rundă ținta publică e o pereche „A + B”. Întorci două plăci (volta i, arata): dacă sunt exact A și B, le iei (+1) și apare o țintă nouă; altfel se întorc, dar sunt cunoscute de amândoi. Primul la 5 puncte câștigă. Mutări: volta i, arata.",
+            make: || Box::new(brand_util::B(vanatori_imagini::new())),
+        },
+        Playable {
+            id: "ricosetul_bilelor",
+            title: "Ricoșeul Bilelor",
+            category: "Copii",
+            rules: "Variantă originală de îndemânare transformată în șansă controlată: ai trei lovituri pe tură (tir a, apoi lansez). Lovitură scurtă (70%, 1 punct), ricoșeu pe o bandă (45%, 2) sau pe două benzi (25%, 4, ratarea costă 1); fiecare reușită consecutivă adaugă 5% precizie. Primul la 14 puncte câștigă. Mutări: tir a, lansez, stau.",
+            make: || Box::new(brand_util::B(ricosetul_bilelor::new())),
+        },
+        Playable {
+            id: "catapulta_nucilor",
+            title: "Catapulta cu Nuci",
+            category: "Copii",
+            rules: "Variantă originală: catapulta trage în coroana unui palmier și face să cadă nuci de patru culori. Alegi forța (tir a: ușoară 75%, medie 55%, puternică 35% care aduce două nuci); mutarea forțată lansez decide, iar nuca căzută are o culoare la întâmplare. Câștigă cine strânge primul două nuci din fiecare culoare. Mutări: tir a, lansez, stau.",
+            make: || Box::new(brand_util::B(catapulta_nucilor::new())),
+        },
+        Playable {
+            id: "furnici_zburdalnice",
+            title: "Furnici Zburdalnice",
+            category: "Copii",
+            rules: "Variantă originală: bobârnaci de furnici spre un buzunar. Alegi distanța (tir a: scurtă 80% 1 punct, medie 55% 3, lungă 30% 6); punctele turei nu sunt salvate până nu spui stau, iar o ratare le pierde și încheie tura. Primul la 25 de puncte câștigă. Mutări: tir a, lansez, stau.",
+            make: || Box::new(brand_util::B(furnici_zburdalnice::new())),
+        },
+        Playable {
+            id: "fluturi_prinsi",
+            title: "Fluturi de Prins",
+            category: "Copii",
+            rules: "Variantă originală: fluturi zburați de un elefant jucăuș. Ai patru încercări pe tură cu plasă mică (65%, 1 fluture), mare (45%, 2) sau dublă (30%, 4); orice ratare încheie tura, iar seria de reușite crește precizia cu 8%. Primul la 18 fluturi câștigă. Mutări: tir a, lansez, stau.",
+            make: || Box::new(brand_util::B(fluturi_prinsi::new())),
+        },
+        Playable {
+            id: "leul_frizerie",
+            title: "Leul la Frizerie",
+            category: "Copii",
+            rules: "Variantă originală: tunzi coama leului. Două încercări pe tură (tir a): tuns fin (85%, 1 punct), tunsoare medie (60%, 2, ratare −1) sau freză îndrăzneață (35%, 4, ratare −2). Primul la 15 puncte câștigă. Mutări: tir a, lansez, stau.",
+            make: || Box::new(brand_util::B(leul_frizerie::new())),
+        },
+        Playable {
+            id: "vinovat_tainuit",
+            title: "Vinovatul Tăinuit",
+            category: "Copii",
+            rules: "Variantă originală: un vinovat ascuns dintre 18 suspecți (pălărie, haină, încălțăminte). Ținta nu o știe nimeni; pe rând puneți întrebări da/nu despre o trăsătură (intreb X=v, cel mult 4 pe jucător, răspunsurile sunt publice) sau ghiciți (ghic k): corect +2, greșit +1 pentru celălalt. 6 runde. Mutări: intreb X=v, ghic k, raspuns, verific.",
+            make: || Box::new(brand_util::B(vinovat_tainuit::new())),
+        },
+        Playable {
+            id: "prieteni_la_ghicit",
+            title: "Prieteni la Ghicit",
+            category: "Copii",
+            rules: "Variantă originală: patru jucării; la fiecare rundă (rolurile alternează) unul alege în secret o jucărie (alege f), celălalt ghicește (ghic g, cu miză s de 1–3 jetoane); ghicit corect: ghicitorul +s, greșit: cel care alege +1. Istoricul alegerilor dezvăluite e public. 8 runde. Mutări: alege f, ghic g s, dezvalui.",
+            make: || Box::new(brand_util::B(prieteni_la_ghicit::new())),
+        },
+        Playable {
+            id: "dinti_crocodil",
+            title: "Dinții Crocodilului",
+            category: "Copii",
+            rules: "Variantă originală: opt dinți ascunși, dintre care unul singur „mușcă”. Pe rând apeși un dinte (alege i, apoi arata): sigur +1 și continui; dintele rău îți ia punctele nesalvate și tura trece; cu stop salvezi. 6 runde. Mutări: alege i, arata, stop.",
+            make: || Box::new(brand_util::B(dinti_crocodil::new())),
+        },
+        Playable {
+            id: "arbori_poiana",
+            title: "Arborii din Poiană",
+            category: "Copii",
+            rules: "Variantă originală: fiecare își plantează propria poiană de 5×4 cu răsaduri luate pe rând din oferta comună (patru specii). Răsadurile se plantează lângă unul propriu dacă se poate. Se punctează grupurile de cel puțin trei copaci de aceeași specie și rândurile sau coloanele cu toate cele patru specii. Mutări: alege o răsadă din ofertă și o căsuță liberă.",
+            make: || Box::new(arbori_poiana::new()),
+        },
+        Playable {
+            id: "porcusorul_lacom",
+            title: "Porcușorul Lacom",
+            category: "Zaruri",
+            rules: "Variantă originală: un singur zar. Spui continu și mutarea forțată arunc dă un număr: 1 îți pierde punctele turei, un 6 te obligă să mai arunci, altfel se adună. Cu opresc salvezi punctele turei. Primul la 50 câștigă. Mutări: continu, arunc, opresc.",
+            make: || Box::new(brand_util::B(porcusorul_lacom::new())),
+        },
+        Playable {
+            id: "hoti_fructe",
+            title: "Hoții de Fructe",
+            category: "Zaruri",
+            rules: "Variantă originală: un păhar cu 13 zaruri de trei feluri (6 blânde, 4 mijlocii, 3 aprige). Tragi trei, le arunci (continu, apoi arunc): fruct (+1), mușcătură (câinele; trei te trimit acasă fără nimic) sau fugă (zarul se aruncă iar). Cu opresc salvezi fructele. Primul la 10 câștigă. Mutări: continu, arunc, opresc.",
+            make: || Box::new(brand_util::B(hoti_fructe::new())),
+        },
+        Playable {
+            id: "jetoane_cerc",
+            title: "Jetoane în Cerc",
+            category: "Zaruri",
+            rules: "Variantă originală de noroc pur: fiecare are 3 jetoane și aruncă (arunc) până la 3 zaruri după câte jetoane are. Fețele: dau (un jeton merge la celălalt), pot (un jeton în potul comun), iau (iei un jeton de la celălalt), trei fețe goale. Rămâi fără jetoane și pierzi. Mutări: arunc.",
+            make: || Box::new(brand_util::B(jetoane_cerc::new())),
+        },
+        Playable {
+            id: "catarare_coloane",
+            title: "Cățărarea pe Coloane",
+            category: "Zaruri",
+            rules: "Variantă originală: coloanele 2–12 au lungimi proprii (2,3,5,6,7,8,7,6,5,3,2). Arunci patru zaruri (arunc), le împerechezi (cuplu k) și avansezi cel mult trei alpiniști temporari; continu aruncă iar, opresc salvează, iar fără împerechere posibilă pierzi tot (bust). Câștigă cine închide primul două coloane. Mutări: arunc, cuplu k [suma], continu, opresc, bust.",
+            make: || Box::new(brand_util::B(catarare_coloane::new())),
+        },
+        Playable {
+            id: "viermisori_gratar",
+            title: "Viermișorii de pe Grătar",
+            category: "Zaruri",
+            rules: "Variantă originală: opt zaruri cu fețele 1–5 și un vierme (valorează 5). Arunci (arunc), alegi o față nefolosită (alege f) și pui deoparte toate zarurile cu ea, apoi continu sau opresc. Ai nevoie de 16 puncte și un vierme. Iei de pe grătar piesa exactă sau cea mai mare mai mică (poți fura piesa de sus a adversarului); altfel pierzi piesa de sus și cea mai mare piesă dispare. Câștigă cine are mai mulți viermi. Mutări: arunc, alege f, continu, opresc, bust.",
+            make: || Box::new(brand_util::B(viermisori_gratar::new())),
+        },
+        Playable {
+            id: "randuri_colorate",
+            title: "Rânduri Colorate",
+            category: "Zaruri",
+            rules: "Variantă originală: patru rânduri (roșu și galben urcă 2→12, verde și albastru coboară 12→2), marcaje doar spre dreapta. Suma zarurilor albe o poate folosi oricine (m r); apoi cel la rând poate folosi un zar alb plus zarul colorat al rândului (c w r). Un rând cu 4 marcaje se poate încheia. Penalizare dacă nu marchezi nimic; scorul crește triunghiular. Jocul se termină la două rânduri blocate sau 4 penalizări. Mutări: arunc, m r, c w r, pas.",
+            make: || Box::new(brand_util::B(randuri_colorate::new())),
+        },
+        Playable {
+            id: "trei_randuri_zar",
+            title: "Trei Rânduri cu Zaruri",
+            category: "Zaruri",
+            rules: "Variantă originală: o foaie cu 3 rânduri de 8 căsuțe. Cel la rând aruncă trei zaruri și alege care se adună (dados m); apoi amândoi scriu suma într-o căsuță (pun r c): crescător pe rând, fără număr repetat pe coloană. Cine nu poate sau nu vrea să scrie (pas) primește o penalizare dacă e la rând. Rând complet +6, coloană completă +3. Mutări: arunc, dados m, pun r c, pas.",
+            make: || Box::new(brand_util::B(trei_randuri_zar::new())),
+        },
+        Playable {
+            id: "ager_zaruri",
+            title: "Agerul cu Zaruri",
+            category: "Zaruri",
+            rules: "Variantă originală: șase zaruri (cinci colorate, unul alb). Cel la rând aruncă (arunc) și alege până la trei zaruri (alege d a): cel colorat în zona lui, cel alb oriunde; zarurile mai mici decât cel ales trec pe tava de argint, de unde celălalt alege unul. Cinci zone: încrucișare 1–6, sumă cu zarul alb, urcare cu praguri, multiplicator și șir crescător. 6 ture fiecare. Mutări: arunc, alege d a, gata, pas.",
+            make: || Box::new(brand_util::B(ager_zaruri::new())),
+        },
+        Playable {
+            id: "dublu_istet",
+            title: "Dublu Isteț",
+            category: "Zaruri",
+            rules: "Variantă originală cu aceleași șase zaruri, dar zone rearanjate: șir lung (mov), multiplicator 1–4 (portocaliu), încrucișare, sumă și urcare cu praguri mai mari. Aceleași mutări: arunc, alege d a, gata, pas. 6 ture fiecare; zonă completă +6. Mutări: arunc, alege d a, gata, pas.",
+            make: || Box::new(brand_util::B(dublu_istet::new())),
+        },
+        Playable {
+            id: "istet_la_cub",
+            title: "Isteț la Cub",
+            category: "Zaruri",
+            rules: "Variantă originală: șapte ture fiecare și până la patru zaruri pe tură, deci tava de argint se umple mai repede. Zone mai generoase: urcare cu praguri mici, multiplicator până la ×5. Mutări: arunc, alege d a, gata, pas; zonă completă +4. Mutări: arunc, alege d a, gata, pas.",
+            make: || Box::new(brand_util::B(istet_la_cub::new())),
+        },
+        Playable {
+            id: "monstrii_orasului",
+            title: "Monștrii Orașului",
+            category: "Zaruri",
+            rules: "Variantă originală: șase zaruri (1, 2, 3, inimă, gheară, energie), până la trei aruncări (arunc, apoi reia m sau gata). Trei de același număr dau puncte; inimile vindecă (nu în centru); ghearele lovesc centrul sau, dacă ești tu în centru, pe celălalt, care poate ceda locul (cedez | raman). Energia se schimbă în glorie (e vp: 3 → 2 puncte) sau gheare mai tari (e gheare: 6). 15 puncte sau adversarul fără viață. Mutări: arunc, reia m, gata, cedez, raman, e vp, e gheare, fin.",
+            make: || Box::new(brand_util::B(monstrii_orasului::new())),
+        },
+        Playable {
+            id: "duel_prerie",
+            title: "Duel în Prerie",
+            category: "Zaruri",
+            rules: "Variantă originală: cinci zaruri (săgeată, dinamită, foc aproape, foc departe, bere, mitralieră), trei aruncări (arunc, reia m, gata). Săgețile se iau din teanc și se blochează, dinamitele se blochează (trei = pierzi o viață și tura); când teancul se golește fiecare pierde atâtea vieți câte săgeți are. Tragi doar cu fața potrivită distanței (alternă). Cine ajunge la zero vieți pierde. Mutări: arunc, reia m, gata.",
+            make: || Box::new(brand_util::B(duel_prerie::new())),
+        },
+        Playable {
+            id: "eroi_arena",
+            title: "Eroii din Arenă",
+            category: "Zaruri",
+            rules: "Variantă originală: Cavalerul contra Vrăjitoarei, 30 de viață, cinci zaruri cu simboluri proprii fiecărui erou, trei aruncări (arunc, reia m, gata). Apoi alegi o abilitate pe care o permit zarurile (abil k) sau nimic; simbolul „punct” strânge puncte de luptă pentru abilitatea supremă. Cine rămâne fără viață pierde. Mutări: arunc, reia m, gata, abil k, nimic.",
+            make: || Box::new(brand_util::B(eroi_arena::new())),
+        },
+        Playable {
+            id: "fauri_zaruri",
+            title: "Făurarii de Zaruri",
+            category: "Zaruri",
+            rules: "Variantă originală: fiecare are două zaruri cu fețe de recompensă (aur, soare, lună, glorie). Fiecare rundă începe cu binecuvantare (se aruncă toate zarurile și se primesc recompensele); apoi ai două acțiuni: forja i d f (cumperi fața i din sanctuar cu aur și o pui peste fața f a zarului d), cartea c (plătești soare/lună pentru glorie) sau pas. 9 runde; câștigă cine are mai multă glorie. Mutări: binecuvantare, forja i d f, cartea c, pas.",
+            make: || Box::new(brand_util::B(fauri_zaruri::new())),
+        },
+        Playable {
+            id: "cariere_zaruri",
+            title: "Carierele cu Zaruri",
+            category: "Zaruri",
+            rules: "Variantă originală: fiecare are un sac de zaruri (6 novici și 2 străjeri). Tura începe cu trag (scoți cinci zaruri și le arunci); fețele de energie se adună, unitățile se așază pe teren (dep i, cel mult 3). Cu energia cumperi zaruri din rezerva publică (cumpar t); unitățile gata atacă (atac i j; j = 0 lovește direct dacă adversarul n-are unități) și câștigi glorie cât costă unitatea doborâtă (1 la lovitură directă). Primul la 12 glorie câștigă. Mutări: trag, dep i, cumpar t, atac i j, fin.",
+            make: || Box::new(brand_util::B(cariere_zaruri::new())),
+        },
+        Playable {
+            id: "maestri_zar",
+            title: "Maeștrii Zarului",
+            category: "Zaruri",
+            rules: "Variantă originală: duel de armate din zaruri, fiecare cu 12 viață. Tura: trag (patru zaruri aruncate), energie automată, dep i (cel mult 4 unități), cumpar t, atac i j (j = 0 lovitură directă doar dacă adversarul n-are unități: scade viața cu forța unității). Cine rămâne fără viață pierde. Mutări: trag, dep i, cumpar t, atac i j, fin.",
+            make: || Box::new(brand_util::B(maestri_zar::new())),
+        },
+        Playable {
+            id: "sfetnici_cetate",
+            title: "Sfetnicii Cetății",
+            category: "Zaruri",
+            rules: "Variantă originală: în fiecare rundă ambii aruncă două zaruri (arunc) și, alternativ, ocupă sfetnici cu numerele 1–12 (pun n d: zarul d valorează n, sau d = 3 pentru suma celor două); un sfetnic poate fi ocupat o singură dată pe rundă și dă lemn, piatră, aur, glorie sau soldați. Apoi se construiește (constr b). După rundele 2, 4 și 6 vine o invazie: cine are prea puțini soldați pierde 2 glorie. 6 runde. Mutări: arunc, pun n d, pas, constr b, gata.",
+            make: || Box::new(brand_util::B(sfetnici_cetate::new())),
+        },
+        Playable {
+            id: "zaruri_cosmice",
+            title: "Zaruri Cosmice",
+            category: "Zaruri",
+            rules: "Variantă originală: fiecare are zaruri-muncitori (3 la început) cu fețele explorare, așezare, producție, livrare, dezvoltare și joker. După arunc, jokerii se fixează (fixez d f), iar un zar poate fi schimbat contra unui credit (ajust d f); gata rezolvă fazele pentru ambii: explorare +1 carte, așezare (2 cărți → lume, +1 glorie), producție (marfă pe lume), livrare (marfă → credit și glorie), dezvoltare (3 cărți → 3 glorie). Apoi recrut (zar nou contra 2 credite) sau fin. 8 runde. Mutări: arunc, fixez d f, ajust d f, gata, recrut, fin.",
+            make: || Box::new(brand_util::B(zaruri_cosmice::new())),
+        },
+        Playable {
+            id: "zaruri_asezari",
+            title: "Zarurile Așezărilor",
+            category: "Zaruri",
+            rules: "Variantă originală: șase zaruri cu cinci resurse (lemn, argilă, oaie, grâu, minereu) și aur (joker). Trei aruncări (arunc, reia m, gata), apoi cheltui zarurile pe construcții din lanțul tău (constr x): patru drumuri, patru așezări (cer drumul cu același număr) și patru orașe (cer așezarea). Tura fără construcție costă 1 glorie. Primul la 12 glorie câștigă. Mutări: arunc, reia m, gata, constr x, fin.",
+            make: || Box::new(brand_util::B(zaruri_asezari::new())),
+        },
+        // C5-reg-end
     ]
 }
 

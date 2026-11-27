@@ -234,7 +234,7 @@ fn no_private_hand(id: &str) -> bool {
         id,
         // single player vs. dealer / chance: nothing hidden from the other seat;
         // barbut = open dice duel; karuta = the hidden reading order is not per-seat.
-        "blackjack" | "bingo" | "loteria" | "barbut" | "karuta"
+        "blackjack" | "bingo" | "loteria" | "barbut" | "karuta" | "vinovat_tainuit"
     )
 }
 
@@ -471,6 +471,7 @@ fn check_determinism(id: &'static str, make: fn() -> Box<dyn GameObj>) -> Vec<St
             | "kilometri"
             | "camile"
             | "tren_jaf"
+            | "arbori_poiana"
             | "alquerque"
             | "camelot"
             | "chaturanga"

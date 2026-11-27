@@ -618,6 +618,47 @@ const NO_HIDDEN_C3: &[&str] = &[
     "clopotelul_fructelor",
 ];
 
+/// C5 (copii și zaruri, variante originale): nimic privat unui jucător (zaruri, piese și plăci sunt publice sau nu le știe nimeni).
+const NO_HIDDEN_C5: &[&str] = &[
+    "bolizi_oval",
+    "pirat_cernit",
+    "tapul_sprinten",
+    "balaur_dinti",
+    "corsari_larg",
+    "parame_largate",
+    "caiace_nord",
+    "cursa_testoase",
+    "gandaci_mascati",
+    "soricei_cascaval",
+    "vanatori_imagini",
+    "ricosetul_bilelor",
+    "catapulta_nucilor",
+    "furnici_zburdalnice",
+    "fluturi_prinsi",
+    "leul_frizerie",
+    "dinti_crocodil",
+    "arbori_poiana",
+    "porcusorul_lacom",
+    "hoti_fructe",
+    "jetoane_cerc",
+    "catarare_coloane",
+    "viermisori_gratar",
+    "randuri_colorate",
+    "trei_randuri_zar",
+    "ager_zaruri",
+    "dublu_istet",
+    "istet_la_cub",
+    "monstrii_orasului",
+    "duel_prerie",
+    "eroi_arena",
+    "fauri_zaruri",
+    "cariere_zaruri",
+    "maestri_zar",
+    "sfetnici_cetate",
+    "zaruri_cosmice",
+    "zaruri_asezari",
+];
+
 #[test]
 fn every_playable_id_is_classified() {
     let mut unclassified = Vec::new();
@@ -633,7 +674,8 @@ fn every_playable_id_is_classified() {
                 || NO_HIDDEN_C4.contains(&p.id)
                 || NO_HIDDEN_B4.contains(&p.id)
                 || NO_HIDDEN_C1.contains(&p.id)
-                || NO_HIDDEN_C3.contains(&p.id),
+                || NO_HIDDEN_C3.contains(&p.id)
+                || NO_HIDDEN_C5.contains(&p.id),
         ]
         .iter()
         .filter(|b| **b)
@@ -666,6 +708,7 @@ fn lists_have_no_stale_or_duplicate_ids() {
         ("NO_HIDDEN_B4", NO_HIDDEN_B4),
         ("NO_HIDDEN_C1", NO_HIDDEN_C1),
         ("NO_HIDDEN_C3", NO_HIDDEN_C3),
+        ("NO_HIDDEN_C5", NO_HIDDEN_C5),
     ] {
         let set: BTreeSet<&str> = l.iter().copied().collect();
         assert_eq!(set.len(), l.len(), "{name} has duplicates");
