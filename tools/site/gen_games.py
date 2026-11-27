@@ -4,7 +4,7 @@ Rulare: python3 -I tools/site/gen_games.py   (din rădăcina depozitului)"""
 import re, json, glob, os, sys
 root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 src = open(f'{root}/polytabletop-games/src/lib.rs', encoding='utf8').read()
-src = src[src.index('pub fn playable()'):]
+src = src[src.index('fn playable_base()'):] + ''.join(open(f'{root}/polytabletop-games/src/{r}.rs', encoding='utf8').read() for r in ('q6_reg', 'b1_reg'))
 games = re.findall(r'id: "([^"]+)",\s*title: "([^"]*)",\s*category: "([^"]*)"', src)
 LANGS = ['en', 'ro', 'fr', 'it', 'es', 'pt', 'de', 'hu']
 tsv = {}
@@ -16,8 +16,8 @@ for f in sorted(glob.glob(f'{root}/polytabletop-games/data/i18n/titles_*.tsv')):
         if len(p) >= 3 and p[1] in LANGS and p[2]:
             tsv[(p[0], p[1])] = p[2]
 en = dict(l.rstrip('\n').split('\t') for l in open(f'{root}/tools/site/en_titles.tsv', encoding='utf8') if l.strip())
-CATS = ['Abstract', 'Cărți', 'Strategie', 'Party', 'Zaruri', 'Clasic', 'Familie', 'Miniaturi', 'Cooperativ', 'TCG', 'Deducție', 'Cuvinte']
-CK = {c: k for c, k in zip(CATS, ['abstract', 'cards', 'strategy', 'party', 'dice', 'classic', 'family', 'minis', 'coop', 'tcg', 'deduction', 'words'])}
+CATS = ['Abstract', 'Cărți', 'Strategie', 'Party', 'Zaruri', 'Clasic', 'Familie', 'Miniaturi', 'Cooperativ', 'TCG', 'Deducție', 'Cuvinte', 'Copii']
+CK = {c: k for c, k in zip(CATS, ['abstract', 'cards', 'strategy', 'party', 'dice', 'classic', 'family', 'minis', 'coop', 'tcg', 'deduction', 'words', 'kids'])}
 
 def hero_svg():
     import math
@@ -86,7 +86,7 @@ for gid, ro, cat in games:
         elif lg == 'ro':
             t[lg] = ro
         else:
-            t[lg] = en[gid]   # fallback: titlul englez până sosesc traducerile din TSV
+            t[lg] = en.get(gid) or tsv.get((gid, 'en')) or gid   # fallback: titlul englez până sosesc traducerile din TSV
     # compactare: păstrăm doar ce diferă de en
     d = {'i': gid, 'c': CK[cat], 'en': t['en']}
     for lg in LANGS[1:]:

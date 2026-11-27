@@ -72,7 +72,7 @@ for k, v in cl.items():
 n_pages = len(glob.glob(f'{docs}/jocuri/*.html')) - 1
 print('pagini de joc', n_pages)
 import re as _re
-_n_play = len(_re.findall(r'id: "[^"]+",\s*title:', open(f'{root}/polytabletop-games/src/lib.rs', encoding='utf8').read().split('pub fn playable()', 1)[1]))
+_n_play = len(_re.findall(r'id: "[^"]+",\s*title:', open(f'{root}/polytabletop-games/src/lib.rs', encoding='utf8').read().split('fn playable_base()', 1)[1] + ''.join(open(f'{root}/polytabletop-games/src/{r}.rs', encoding='utf8').read() for r in ('q6_reg', 'b1_reg'))))
 if n_pages != _n_play or n_pages < 240: err.append(f'pagini {n_pages} != jocuri jucabile {_n_play}')
 sizes = [os.path.getsize(f) for f in glob.glob(f'{docs}/jocuri/*.html') if not f.endswith('index.html')]
 print('dimensiune index', os.path.getsize(f'{docs}/index.html'), 'pagini max', max(sizes))
