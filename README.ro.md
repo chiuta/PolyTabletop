@@ -37,19 +37,19 @@ Se pot juca acum 1200 de jocuri, în terminal și în interfața grafică; catal
 
 | Categorie | Jocuri | Exemple (id-uri) |
 |---|---|---|
-| Cărți | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
-| Abstract | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
-| Strategie | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, plus variante originale ale unor jocuri moderne |
-| Cooperativ | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
-| Party | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Zaruri | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
-| Clasic | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
-| Familie | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
-| Miniaturi | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Cărți colecționabile (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
-| Deducție | 1 | `conac` |
-| Cuvinte | 1 | `litere` |
-| **Total** | **240** | |
+| Abstracte | 100 | |
+| Clasice | 100 | |
+| Familie | 100 | |
+| Strategie | 100 | |
+| Petrecere | 100 | |
+| Cooperative | 100 | |
+| Cărți | 100 | |
+| Jocuri de rol | 100 | |
+| Miniaturi | 100 | |
+| Cărți de colecție | 100 | |
+| Copii | 100 | |
+| Zaruri | 100 | |
+| **Total** | **1200** | |
 
 475 de intrări din catalog sunt planificate ca variante originale cu titluri proprii (de exemplu Twister, Campionii Distracției, Turistico), iar 214 ca jocuri tradiționale cu reguli publice. Regulile pe scurt ale fiecărui joc sunt în [docs/JOCURI.md](docs/JOCURI.md), catalogul generat în [docs/CATALOG.md](docs/CATALOG.md). În interfața grafică, 36 de jocuri au tablă desenată cu mutări prin click (șah, dame, reversi, patru în linie, gomoku, go, moara, xiangqi, shogi, table, ludo și pachisi, hex, familia mancala și altele); celelalte jocuri apar în text, cu mutările legale ca butoane.
 

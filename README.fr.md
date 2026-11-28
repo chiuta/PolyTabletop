@@ -37,19 +37,19 @@ cargo build --release
 
 | Catégorie | Jeux | Exemples (identifiants) |
 |---|---|---|
-| Cartes | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
-| Abstrait | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
-| Stratégie | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, ainsi que des variantes originales de jeux modernes |
-| Coopératif | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
-| Ambiance (party) | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Dés | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
-| Classique | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
-| Famille | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
-| Figurines | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Cartes à collectionner (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
-| Déduction | 1 | `conac` |
-| Mots | 1 | `litere` |
-| **Total** | **240** | |
+| Abstraits | 100 | |
+| Classiques | 100 | |
+| Famille | 100 | |
+| Stratégie | 100 | |
+| Ambiance | 100 | |
+| Coopératifs | 100 | |
+| Cartes | 100 | |
+| Jeux de rôle | 100 | |
+| Figurines | 100 | |
+| Cartes à collectionner | 100 | |
+| Enfants | 100 | |
+| Dés | 100 | |
+| **Total** | **1200** | |
 
 475 entrées du catalogue sont prévues comme variantes originales sous leur propre titre (par exemple Twister, Campionii Distracției, Turistico) et 214 comme jeux traditionnels aux règles publiques. Les règles abrégées de chaque jeu figurent dans [docs/JOCURI.md](docs/JOCURI.md), le catalogue généré dans [docs/CATALOG.md](docs/CATALOG.md). Dans l'interface graphique, 36 jeux ont un plateau dessiné avec des coups au clic (échecs, dames, reversi, puissance quatre, gomoku, go, moulin, xiangqi, shogi, backgammon, ludo et pachisi, hex, la famille mancala et d'autres) ; les autres jeux s'affichent en texte, leurs coups légaux étant proposés comme boutons.
 

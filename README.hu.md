@@ -37,19 +37,19 @@ Jelenleg 1200 játék játszható, terminálban és a grafikus felületen is; a 
 
 | Kategória | Játékok | Példák (azonosítók) |
 |---|---|---|
-| Kártya | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
-| Absztrakt | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
-| Stratégia | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, valamint modern játékok eredeti változatai |
-| Kooperatív | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
-| Társasági (party) | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Kocka | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
-| Klasszikus | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
-| Családi | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
-| Miniatúrák | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Gyűjthető kártyák (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
-| Következtetés | 1 | `conac` |
-| Szójáték | 1 | `litere` |
-| **Összesen** | **240** | |
+| Absztrakt | 100 | |
+| Klasszikus | 100 | |
+| Család | 100 | |
+| Stratégia | 100 | |
+| Társas/party | 100 | |
+| Kooperatív | 100 | |
+| Kártya | 100 | |
+| Szerepjáték | 100 | |
+| Miniatúrák | 100 | |
+| Gyűjthető kártyák | 100 | |
+| Gyerekek | 100 | |
+| Kocka | 100 | |
+| **Összesen** | **1200** | |
 
 A katalógus 475 bejegyzése saját címmel ellátott eredeti változatként van tervezve (például Twister, Campionii Distracției, Turistico), 214 pedig nyilvános szabályú hagyományos játékként. Minden játék rövid szabályai a [docs/JOCURI.md](docs/JOCURI.md) fájlban, a generált katalógus a [docs/CATALOG.md](docs/CATALOG.md) fájlban található. A grafikus felületen 36 játéknak van megrajzolt táblája kattintással tehető lépésekkel (sakk, dáma, reversi, négy egy sorban, gomoku, go, malom, xiangqi, shogi, backgammon, ludo és pachisi, hex, a mancala család és továbbiak); a többi játék szövegként jelenik meg, a szabályos lépések gombokként.
 

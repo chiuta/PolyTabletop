@@ -37,19 +37,19 @@ Ya se pueden jugar 1200 juegos, en la terminal y en la interfaz gráfica; el cat
 
 | Categoría | Juegos | Ejemplos (id) |
 |---|---|---|
-| Cartas | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
-| Abstractos | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
-| Estrategia | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, y variantes originales de juegos modernos |
-| Cooperativos | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
-| Fiesta (party) | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Dados | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
-| Clásicos | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
-| Familiares | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
-| Miniaturas | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Cartas coleccionables (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
-| Deducción | 1 | `conac` |
-| Palabras | 1 | `litere` |
-| **Total** | **240** | |
+| Abstractos | 100 | |
+| Clásicos | 100 | |
+| Familiares | 100 | |
+| Estrategia | 100 | |
+| Fiesta | 100 | |
+| Cooperativos | 100 | |
+| Cartas | 100 | |
+| Rol | 100 | |
+| Miniaturas | 100 | |
+| Cartas coleccionables | 100 | |
+| Infantiles | 100 | |
+| Dados | 100 | |
+| **Total** | **1200** | |
 
 475 entradas del catálogo están previstas como variantes originales con título propio (por ejemplo Twister, Campionii Distracției, Turistico) y 214 como juegos tradicionales con reglas públicas. Las reglas resumidas de cada juego están en [docs/JOCURI.md](docs/JOCURI.md) y el catálogo generado en [docs/CATALOG.md](docs/CATALOG.md). En la interfaz gráfica, 36 juegos tienen un tablero dibujado con jugadas por clic (ajedrez, damas, reversi, cuatro en línea, gomoku, go, el molino, xiangqi, shogi, backgammon, ludo y pachisi, hex, la familia mancala y más); los demás juegos aparecen como texto, con las jugadas legales como botones.
 

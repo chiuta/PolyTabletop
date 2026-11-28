@@ -210,6 +210,88 @@ pub fn ai_blind_check_with<G: Game + 'static>(
     }
 }
 
+/// Test de onestitate pentru `Game::ai_view`: două lumi pe care jucătorul la mutare nu le poate deosebi
+/// (`scramble` re-amestecă informația ascunsă) trebuie să dea aceeași vedere pentru AI, deci aceleași
+/// rezultate terminale, aceeași evaluare după fiecare mutare și aceeași mutare aleasă, *inclusiv* la
+/// mutările care încheie partida (spre deosebire de `ai_blind_check`, care citește starea reală).
+#[cfg(test)]
+pub fn ai_view_check<G: Game + 'static>(
+    name: &str,
+    mk: impl Fn(u64) -> G,
+    scramble: impl Fn(&mut G, Player, u64),
+    checks: usize,
+) {
+    use polytabletop_core::ai::alphabeta_root;
+    use polytabletop_core::{AiStyle, GameObj};
+    for seed in 1..=3u64 {
+        let mut g = mk(seed);
+        let depths: Vec<u32> = match Game::ai_style(&g) {
+            AiStyle::AlphaBeta(d) => level_depths(d).to_vec(),
+            _ => Vec::new(),
+        };
+        let mut rng = Rng::new(seed * 131 + 7);
+        let mut done = 0;
+        for step in 0..800usize {
+            if Game::outcome(&g).is_some() || done >= checks {
+                break;
+            }
+            let legal = Game::legal_moves(&g);
+            if legal.is_empty() {
+                break;
+            }
+            if legal.len() > 1 {
+                let me = Game::to_move(&g);
+                let mut h = g.clone();
+                scramble(&mut h, me, step as u64 * 7 + 11);
+                let (vg, vh) = (Game::ai_view(&g, me), Game::ai_view(&h, me));
+                assert_eq!(
+                    Game::legal_moves(&vg).len(),
+                    legal.len(),
+                    "{name} (seed {seed}, pas {step}): vederea schimbă mutările legale"
+                );
+                for m in &legal {
+                    let (mut a, mut b) = (vg.clone(), vh.clone());
+                    Game::apply(&mut a, m);
+                    Game::apply(&mut b, m);
+                    assert_eq!(
+                        Game::outcome(&a),
+                        Game::outcome(&b),
+                        "{name} (seed {seed}, pas {step}): rezultatul după {m:?} depinde de informația ascunsă"
+                    );
+                    if Game::outcome(&a).is_none() {
+                        assert_eq!(
+                            Game::evaluate(&a, me),
+                            Game::evaluate(&b, me),
+                            "{name} (seed {seed}, pas {step}): evaluarea după {m:?} depinde de informația ascunsă"
+                        );
+                    }
+                }
+                for ai_seed in [3u64, 99] {
+                    assert_eq!(
+                        GameObj::ai_move(&g, ai_seed),
+                        GameObj::ai_move(&h, ai_seed),
+                        "{name} (seed {seed}, pas {step}): AI-ul depinde de informația ascunsă"
+                    );
+                    for &d in &depths {
+                        let (x, y) = (
+                            alphabeta_root(&vg, d, ai_seed),
+                            alphabeta_root(&vh, d, ai_seed),
+                        );
+                        assert!(
+                            x == y,
+                            "{name} (seed {seed}, pas {step}): adâncimea {d}: {x:?} != {y:?}"
+                        );
+                    }
+                }
+                done += 1;
+            }
+            let m = legal[rng.below(legal.len())].clone();
+            Game::apply(&mut g, &m);
+        }
+        assert!(done > 0, "{name}: nicio poziție verificată");
+    }
+}
+
 /// Amestecă (determinist, din `seed`) o listă: ajutor pentru funcțiile `scramble` din teste.
 #[cfg(test)]
 pub fn shuffle_with<T>(v: &mut [T], seed: u64) {

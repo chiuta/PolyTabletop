@@ -15,6 +15,7 @@
 
 use crate::brand_util::*;
 use crate::w7_util::Dice;
+use polytabletop_core::rng::Rng;
 use polytabletop_core::{Outcome, Player};
 
 pub const BLOCK: u8 = 1;
@@ -1221,6 +1222,46 @@ impl Mini for Tcg {
     fn view(&mut self, w: Option<Player>) {
         self.viewer = w;
     }
+
+    /// Clock and Mana: damage/shield cards are pulled from hidden zones, so the real zones and the dice
+    /// stream must not reach the search. The opponent's hand, shields and deck are pooled and re-dealt
+    /// (same sizes), as are the viewer's own shields (Mana) and deck; the dice are reseeded. Everything is
+    /// derived from the viewer's own render, so indistinguishable worlds give the same view.
+    fn ai_view(&self, viewer: Player) -> Tcg {
+        let mut v = self.clone();
+        if !matches!(self.sp.mode, Mode::Clock | Mode::Mana) {
+            return v;
+        }
+        let me = viewer.idx();
+        let op = 1 - me;
+        let mut seen = self.clone();
+        seen.viewer = Some(viewer);
+        let mut rng = Rng::new(crate::p3_comun::fnv(&seen.show()));
+        let mut pool: Vec<u8> = v.hand[op].clone();
+        pool.extend(v.life[op].iter().copied());
+        pool.extend(v.deck[op].iter().copied());
+        pool.sort_unstable();
+        crate::cards52::shuffle(&mut pool, &mut rng);
+        let (nh, nl) = (v.hand[op].len(), v.life[op].len());
+        v.hand[op] = pool.drain(..nh).collect();
+        v.life[op] = pool.drain(..nl).collect();
+        v.deck[op] = pool;
+        let mut own: Vec<u8> = v.deck[me].clone();
+        let nl = if self.sp.mode == Mode::Mana {
+            own.extend(v.life[me].iter().copied());
+            v.life[me].len()
+        } else {
+            0
+        };
+        own.sort_unstable();
+        crate::cards52::shuffle(&mut own, &mut rng);
+        if nl > 0 {
+            v.life[me] = own.drain(..nl).collect();
+        }
+        v.deck[me] = own;
+        v.dice = Dice::new(rng.next_u64());
+        v
+    }
 }
 
 fn flags(f: u8) -> String {
@@ -1399,6 +1440,32 @@ mod tests {
                 g.0.show()
             };
             assert_eq!(run(9), run(9), "{}", sp.id);
+        }
+    }
+
+    #[cfg(test)]
+    mod ai_view_audit {
+        use super::*;
+        use crate::t4_tdata::SPECS;
+
+        #[test]
+        fn ai_view_hides_zones_and_dice_in_clock_and_mana() {
+            for id in ["ceasul_alb_negru", "scuturi_si_mana"] {
+                let sp = SPECS.iter().find(|s| s.id == id).expect("spec");
+                crate::p3_comun::ai_view_check(
+                    id,
+                    |s| B(Tcg::with_seed(sp, s)),
+                    |g, me, s| {
+                        g.0.scramble(1 - me.idx(), s);
+                        // propriile scuturi sunt și ele nevăzute (Mana)
+                        let own = me.idx();
+                        let mut t = g.0.life[own].clone();
+                        crate::p3_comun::shuffle_with(&mut t, s ^ 5);
+                        g.0.life[own] = t;
+                    },
+                    8,
+                );
+            }
         }
     }
 }

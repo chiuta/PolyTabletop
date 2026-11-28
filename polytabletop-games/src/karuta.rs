@@ -92,6 +92,8 @@ pub struct Karuta {
     last: String,
     last_actor: Option<Player>,
     last_heur: i32,
+    /// AI view: touching only scores the visible heuristic (whether it was the right card is hidden).
+    blind: bool,
 }
 
 impl Default for Karuta {
@@ -127,6 +129,7 @@ impl Karuta {
             last: String::new(),
             last_actor: None,
             last_heur: 0,
+            blind: false,
         }
     }
 
@@ -184,7 +187,12 @@ impl Karuta {
         }
         let n = t.len() as f64 + d as f64 / 3.0;
         let p = 1.0 / n;
-        (1000.0 * (2.0 * p - 1.0)) as i32
+        // doar un candidat sigur (nicio carte fără masă compatibilă) merită atins: altfel valoarea e negativă
+        if t.len() == 1 && d == 0 {
+            1000
+        } else {
+            (-1000.0 * (1.0 - p)) as i32 - 1
+        }
     }
 }
 
@@ -227,6 +235,9 @@ impl Game for Karuta {
             Move::Take(id) => {
                 // euristica se calculează înainte de rezolvare, doar din informația vizibilă
                 self.last_heur = self.confidence(id);
+                if self.blind {
+                    return;
+                }
                 let cur = self.order[self.idx];
                 let mine = me.idx();
                 let theirs = 1 - mine;
@@ -326,6 +337,94 @@ impl Game for Karuta {
         }
     }
 
+    /// The unread part of the reading order is unknown: the current proverb (consistent with the revealed
+    /// prefix) and the rest are sampled from the cards not yet read, with a seed that depends only on public
+    /// information (revealed prefix, table, already-read proverbs).
+    fn ai_view(&self, viewer: Player) -> Karuta {
+        let mut v = self.clone();
+        if self.done || self.idx >= self.order.len() {
+            return v;
+        }
+        let read: Vec<u8> = self.order[..self.idx].to_vec();
+        let table = self.on_table();
+        let unread_table: Vec<u8> = table
+            .iter()
+            .copied()
+            .filter(|id| !read.contains(id))
+            .collect();
+        let remaining = self.order.len() - self.idx;
+        if unread_table.len() > remaining {
+            return v;
+        }
+        let nfalse = remaining - unread_table.len();
+        let false_pool: Vec<u8> = (0..40u8)
+            .filter(|id| !table.contains(id) && !read.contains(id))
+            .collect();
+        if nfalse > false_pool.len() {
+            return v;
+        }
+        let prefix: Vec<&str> = words(self.order[self.idx])
+            .into_iter()
+            .take(self.revealed)
+            .collect();
+        let fits = |id: u8| {
+            let w = words(id);
+            w.len() >= prefix.len() && w[..prefix.len()] == prefix[..]
+        };
+        // seed from public data only (the real current proverb is never read)
+        let mut seed = crate::p3_comun::fnv(&format!(
+            "{:?}{:?}{}{}",
+            self.sides,
+            read,
+            self.revealed,
+            self.turn.idx()
+        ));
+        seed ^= prefix.iter().fold(0u64, |a, w| a ^ crate::p3_comun::fnv(w));
+        let _ = viewer;
+        let mut rng = Rng::new(seed);
+        // weights: unread table cards count 1, a false card nfalse/|false_pool|
+        let wf = if false_pool.is_empty() {
+            0.0
+        } else {
+            nfalse as f64 / false_pool.len() as f64
+        };
+        let mut cand: Vec<(u8, bool, f64)> = Vec::new();
+        for &id in unread_table.iter().filter(|&&i| fits(i)) {
+            cand.push((id, false, 1.0));
+        }
+        for &id in false_pool.iter().filter(|&&i| fits(i)) {
+            if wf > 0.0 {
+                cand.push((id, true, wf));
+            }
+        }
+        if cand.is_empty() {
+            return v;
+        }
+        let total: f64 = cand.iter().map(|c| c.2).sum();
+        let mut x = (rng.next_u64() >> 11) as f64 / (1u64 << 53) as f64 * total;
+        let mut pick = cand[cand.len() - 1];
+        for c in &cand {
+            if x < c.2 {
+                pick = *c;
+                break;
+            }
+            x -= c.2;
+        }
+        let (cur, cur_false, _) = pick;
+        let mut rest: Vec<u8> = unread_table.iter().copied().filter(|&i| i != cur).collect();
+        let mut fp: Vec<u8> = false_pool.iter().copied().filter(|&i| i != cur).collect();
+        shuffle(&mut fp, &mut rng);
+        fp.truncate(nfalse - cur_false as usize);
+        rest.extend(fp);
+        rest.sort_unstable();
+        shuffle(&mut rest, &mut rng);
+        let mut order = read;
+        order.push(cur);
+        order.extend(rest);
+        v.order = order;
+        v.blind = true;
+        v
+    }
     fn ai_style(&self) -> AiStyle {
         // Adâncimea 0 = o singură mutare la TOATE nivelurile: la Hard/Expert adâncimea 1 ar extinde
         // răspunsurile adversarului din mâna lui reală (informație ascunsă).
@@ -554,5 +653,34 @@ mod a3_audit {
             1,
             crate::p3_comun::Term::Skip,
         );
+    }
+
+    #[cfg(test)]
+    mod ai_view_audit {
+        use super::*;
+
+        #[test]
+        fn ai_view_hides_the_unread_proverbs_even_on_terminal_moves() {
+            crate::p3_comun::ai_view_check(
+                "karuta",
+                Karuta::with_seed,
+                |g, _me, s| {
+                    // alt proverb curent din aceleași necitite (aceeași mulțime), cu prefix compatibil
+                    let prefix: Vec<&str> =
+                        words(g.order[g.idx]).into_iter().take(g.revealed).collect();
+                    let alts: Vec<usize> = (g.idx..g.order.len())
+                        .filter(|&j| {
+                            let w = words(g.order[j]);
+                            w.len() >= prefix.len() && w[..prefix.len()] == prefix[..]
+                        })
+                        .collect();
+                    let j = alts[(s as usize) % alts.len()];
+                    g.order.swap(g.idx, j);
+                    let from = g.idx + 1;
+                    crate::p3_comun::shuffle_with(&mut g.order[from..], s);
+                },
+                12,
+            );
+        }
     }
 }

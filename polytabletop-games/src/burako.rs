@@ -538,6 +538,29 @@ impl Game for Burako {
         };
     }
 
+    /// Unseen cards (opponent hand, both muertos, stock) are re-dealt at random with the same sizes;
+    /// the seed depends only on what `viewer` sees. The private RNG (future deals) is replaced as well.
+    fn ai_view(&self, viewer: Player) -> Burako {
+        let mut v = self.clone();
+        let me = viewer.idx();
+        let h = 1 - me;
+        let mut rng = Rng::new(crate::p3_comun::view_seed(self, viewer));
+        let (nh, nmh, nmm) = (v.hands[h].len(), v.muerto[h].len(), v.muerto[me].len());
+        let mut pool: Vec<u8> = v.hands[h].clone();
+        pool.extend(v.muerto[h].iter().copied());
+        pool.extend(v.muerto[me].iter().copied());
+        pool.extend(v.stock.iter().copied());
+        pool.sort_unstable();
+        shuffle(&mut pool, &mut rng);
+        v.hands[h] = pool.drain(..nh).collect();
+        v.hands[h].sort_unstable();
+        v.muerto[h] = pool.drain(..nmh).collect();
+        v.muerto[me] = pool.drain(..nmm).collect();
+        v.stock = pool;
+        v.rng = Rng::new(rng.next_u64());
+        v
+    }
+
     fn to_move(&self) -> Player {
         self.side
     }
@@ -1177,5 +1200,38 @@ mod a3_audit {
             },
             3,
         );
+    }
+
+    #[cfg(test)]
+    mod ai_view_audit {
+        use super::*;
+
+        #[test]
+        fn ai_view_hides_hands_muertos_and_stock_even_at_round_end() {
+            crate::p3_comun::ai_view_check(
+                "burako",
+                Burako::with_seed,
+                |g, me, s| {
+                    let h = 1 - me.idx();
+                    let (nh, nmh, nmm) = (
+                        g.hands[h].len(),
+                        g.muerto[h].len(),
+                        g.muerto[me.idx()].len(),
+                    );
+                    let mut pool: Vec<u8> = g.hands[h].clone();
+                    pool.extend(g.muerto[h].iter().copied());
+                    pool.extend(g.muerto[me.idx()].iter().copied());
+                    pool.extend(g.stock.iter().copied());
+                    crate::p3_comun::shuffle_with(&mut pool, s);
+                    g.hands[h] = pool.drain(..nh).collect();
+                    g.hands[h].sort_unstable();
+                    g.muerto[h] = pool.drain(..nmh).collect();
+                    g.muerto[me.idx()] = pool.drain(..nmm).collect();
+                    g.stock = pool;
+                    g.rng = Rng::new(s ^ 0x55);
+                },
+                6,
+            );
+        }
     }
 }

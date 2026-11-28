@@ -37,19 +37,19 @@ cargo build --release
 
 | Kategorie | Spiele | Beispiele (IDs) |
 |---|---|---|
-| Karten | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
-| Abstrakt | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
-| Strategie | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, dazu originale Varianten moderner Spiele |
-| Kooperativ | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
-| Partyspiele | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Würfel | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
-| Klassiker | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
-| Familie | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
-| Miniaturen | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Sammelkarten (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
-| Deduktion | 1 | `conac` |
-| Wörter | 1 | `litere` |
-| **Gesamt** | **240** | |
+| Abstrakt | 100 | |
+| Klassiker | 100 | |
+| Familie | 100 | |
+| Strategie | 100 | |
+| Party | 100 | |
+| Kooperativ | 100 | |
+| Karten | 100 | |
+| Rollenspiele | 100 | |
+| Miniaturen | 100 | |
+| Sammelkarten | 100 | |
+| Kinder | 100 | |
+| Würfel | 100 | |
+| **Gesamt** | **1200** | |
 
 475 Katalogeinträge sind als originale Varianten mit eigenem Titel geplant (zum Beispiel Twister, Campionii Distracției, Turistico) und 214 als traditionelle Spiele mit öffentlichen Regeln. Die Kurzregeln jedes Spiels stehen in [docs/JOCURI.md](docs/JOCURI.md), der erzeugte Katalog in [docs/CATALOG.md](docs/CATALOG.md). In der grafischen Oberfläche haben 36 Spiele ein gezeichnetes Brett mit Zügen per Klick (Schach, Dame, Reversi, Vier gewinnt, Gomoku, Go, Mühle, Xiangqi, Shogi, Backgammon, Ludo und Pachisi, Hex, die Mancala-Familie und weitere); die übrigen Spiele erscheinen als Text, ihre legalen Züge als Schaltflächen.
 

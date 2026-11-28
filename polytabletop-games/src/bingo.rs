@@ -176,6 +176,15 @@ impl CallGame {
             .any(|pat| pat.iter().all(|&c| m[c]))
     }
 
+    fn phase_code(&self) -> u8 {
+        match self.phase {
+            Phase::Draw => 0,
+            Phase::Mark(p) => 1 + p.idx() as u8,
+            Phase::Claim(p) => 3 + p.idx() as u8,
+            Phase::Over => 5,
+        }
+    }
+
     fn side_len(&self) -> usize {
         match self.kind {
             Kind::Bingo => 5,
@@ -307,6 +316,44 @@ impl Game for CallGame {
 
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
+    }
+
+    /// The opponent's card and the order of the bag are unseen: a fresh card is dealt to the opponent
+    /// (its marks follow the numbers already called) and the bag is reshuffled; seed from public data only.
+    fn ai_view(&self, viewer: Player) -> CallGame {
+        let mut v = self.clone();
+        if self.phase == Phase::Over {
+            return v;
+        }
+        let h = 1 - viewer.idx();
+        let mut seed = 0xB1_u64;
+        let mut mine = self.cards[viewer.idx()].clone();
+        mine.extend(self.drawn.iter().copied());
+        mine.push(self.phase_code());
+        for x in mine {
+            seed = crate::p3_comun::fnv(&format!("{seed}:{x}"));
+        }
+        let mut rng = Rng::new(seed);
+        v.cards[h] = make_card(self.kind, &mut rng);
+        let cur = self.drawn.len().saturating_sub(1);
+        let pending_cur = match self.phase {
+            Phase::Mark(Player::One) => true,
+            Phase::Mark(Player::Two) => h == 1,
+            _ => false,
+        };
+        v.marks[h] = v.cards[h]
+            .iter()
+            .map(|&c| {
+                c == 0
+                    || self
+                        .drawn
+                        .iter()
+                        .enumerate()
+                        .any(|(i, &d)| d == c && !(pending_cur && i == cur))
+            })
+            .collect();
+        shuffle(&mut v.bag, &mut rng);
+        v
     }
 
     fn to_move(&self) -> Player {
@@ -724,5 +771,44 @@ mod a3_audit {
             1,
             crate::p3_comun::Term::Ignore,
         );
+    }
+
+    #[cfg(test)]
+    mod ai_view_audit {
+        use super::*;
+
+        #[test]
+        fn ai_view_hides_the_opponent_card_and_bag_even_on_claims() {
+            for kind in [Kind::Bingo, Kind::Loteria] {
+                crate::p3_comun::ai_view_check(
+                    "loteria/bingo",
+                    |s| CallGame::make(kind, s),
+                    |g, me, s| {
+                        let h = 1 - me.idx();
+                        let mut r = Rng::new(s);
+                        g.cards[h] = make_card(g.kind, &mut r);
+                        let pending_cur = match g.phase {
+                            Phase::Mark(Player::One) => true,
+                            Phase::Mark(Player::Two) => h == 1,
+                            _ => false,
+                        };
+                        let cur = g.drawn.len().saturating_sub(1);
+                        let drawn = g.drawn.clone();
+                        g.marks[h] = g.cards[h]
+                            .iter()
+                            .map(|&v| {
+                                v == 0
+                                    || drawn
+                                        .iter()
+                                        .enumerate()
+                                        .any(|(i, &d)| d == v && !(pending_cur && i == cur))
+                            })
+                            .collect();
+                        shuffle(&mut g.bag, &mut r);
+                    },
+                    12,
+                );
+            }
+        }
     }
 }

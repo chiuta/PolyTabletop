@@ -118,6 +118,16 @@ pub trait Game: Clone {
     /// Whose private information `render` shows: `Some(p)` = always `p`'s,
     /// `None` = hot-seat (the mover's). Games without hidden hands ignore it.
     fn set_viewer(&mut self, _who: Option<Player>) {}
+    /// The state as `viewer` can know it, for the AI search: everything the viewer cannot see
+    /// (opponent hands, stock order, secret words, future dice...) is replaced by a fill sampled
+    /// (determinised) from what the viewer *does* know. The sample must be a deterministic
+    /// function of the viewer's information only, so that two worlds the viewer cannot tell
+    /// apart yield the same view. `ai::best_move` searches `ai_view(to_move)`, never the real
+    /// state, so terminal outcomes and heuristics cannot read hidden information.
+    /// Default: perfect information, the identity.
+    fn ai_view(&self, _viewer: Player) -> Self {
+        self.clone()
+    }
 }
 
 /// Object-safe view of a game, with moves as text.

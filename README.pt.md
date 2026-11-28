@@ -37,19 +37,19 @@ Já se podem jogar 1200 jogos, no terminal e na interface gráfica; o catálogo 
 
 | Categoria | Jogos | Exemplos (id) |
 |---|---|---|
-| Cartas | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
-| Abstratos | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
-| Estratégia | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, e variantes originais de jogos modernos |
-| Cooperativos | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
-| Festa (party) | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Dados | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
-| Clássicos | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
-| Família | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
-| Miniaturas | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Cartas colecionáveis (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
-| Dedução | 1 | `conac` |
-| Palavras | 1 | `litere` |
-| **Total** | **240** | |
+| Abstratos | 100 | |
+| Clássicos | 100 | |
+| Família | 100 | |
+| Estratégia | 100 | |
+| Festa | 100 | |
+| Cooperativos | 100 | |
+| Cartas | 100 | |
+| RPG | 100 | |
+| Miniaturas | 100 | |
+| Cartas colecionáveis | 100 | |
+| Infantis | 100 | |
+| Dados | 100 | |
+| **Total** | **1200** | |
 
 475 entradas do catálogo estão previstas como variantes originais com título próprio (por exemplo Twister, Campionii Distracției, Turistico) e 214 como jogos tradicionais com regras públicas. As regras resumidas de cada jogo estão em [docs/JOCURI.md](docs/JOCURI.md) e o catálogo gerado em [docs/CATALOG.md](docs/CATALOG.md). Na interface gráfica, 36 jogos têm tabuleiro desenhado com jogadas por clique (xadrez, damas, reversi, quatro em linha, gomoku, go, moinho, xiangqi, shogi, gamão, ludo e pachisi, hex, a família mancala e outros); os restantes aparecem em texto, com as jogadas legais como botões.
 
