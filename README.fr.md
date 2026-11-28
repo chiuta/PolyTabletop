@@ -6,13 +6,13 @@ Version: 1.0.0 · Last updated: 2026-11-28
 
 ## De quoi s'agit-il
 
-PolyTabletop est une collection clean-room de jeux de société écrite en Rust : 240 jeux jouables contre l'ordinateur, dans le terminal ou dans une fenêtre graphique, avec en plus le mode « à deux sur le même poste » (hot-seat) et le jeu en réseau à deux. On y trouve des classiques abstraits, des jeux de cartes et de dés, des variantes originales de mécaniques modernes sous des noms propres, des jeux coopératifs avec un partenaire IA, des jeux à rôles cachés où des robots complètent la table, des jeux d'ambiance et de mots, ainsi que des moteurs de figurines et de cartes à collectionner avec des cartes originales. Le moteur et les jeux n'ont aucune dépendance externe ; seule l'interface graphique (`polytabletop-gui`) utilise `eframe`/egui. Le catalogue suit 1200 jeux cibles.
+PolyTabletop est une collection clean-room de jeux de société écrite en Rust : 1200 jeux jouables contre l'ordinateur, dans le terminal ou dans une fenêtre graphique, avec en plus le mode « à deux sur le même poste » (hot-seat) et le jeu en réseau à deux. On y trouve des classiques abstraits, des jeux de cartes et de dés, des variantes originales de mécaniques modernes sous des noms propres, des jeux coopératifs avec un partenaire IA, des jeux à rôles cachés où des robots complètent la table, des jeux d'ambiance et de mots, ainsi que des moteurs de figurines et de cartes à collectionner avec des cartes originales. Le moteur et les jeux n'ont aucune dépendance externe ; seule l'interface graphique (`polytabletop-gui`) utilise `eframe`/egui. Le catalogue suit 1200 jeux cibles.
 
 Page de présentation : <https://polytabletop.chiuta.ro>. Guide d'installation court : [docs/INSTALL.fr.md](docs/INSTALL.fr.md) ([English](docs/INSTALL.en.md) · [Română](docs/INSTALL.ro.md) · [Italiano](docs/INSTALL.it.md) · [Español](docs/INSTALL.es.md) · [Português](docs/INSTALL.pt.md) · [Deutsch](docs/INSTALL.de.md) · [Magyar](docs/INSTALL.hu.md)).
 
 ## Utilisation
 
-- Liste et catalogue : `polytabletop list` affiche les 240 jeux jouables avec leurs règles en bref ; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` donne l'état des 1200 entrées du catalogue.
+- Liste et catalogue : `polytabletop list` affiche les 1200 jeux jouables avec leurs règles en bref ; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` donne l'état des 1200 entrées du catalogue.
 - Jouer : `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. `--you one` (par défaut) vous fait Joueur 1, `two` Joueur 2, `both` est le mode hot-seat sur un seul clavier, `none` laisse l'ordinateur jouer les deux camps. `--seed N` rend la distribution des cartes et les dés reproductibles ; `--record FICHIER` enregistre une transcription.
 - En partie : saisissez le coup exactement comme `?` le liste (par exemple `e2e4`, `c3xe5`, `d6`), `?` = coups légaux, `hint` = suggestion de l'IA, `q` = quitter.
 - IA contre IA : `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (voir [docs/ARENA.md](docs/ARENA.md)).
@@ -33,7 +33,7 @@ cargo build --release
 
 ## Jeux
 
-240 jeux sont jouables dès maintenant, dans le terminal et dans l'interface graphique ; le catalogue compte 1200 entrées (`polytabletop catalog` se termine par : implémentées 239, jeux traditionnels prévus 214, variantes propres prévues 475, boîte à outils générique 272). Les 272 entrées « boîte à outils » sont les 84 systèmes de jeu de rôle (les 16 autres sont des aventures jouables), servis par le crate générique `polytabletop-rpg` (dés, fiches, tests de compétence, générateur de donjon, simulateur de batailles, journal), plus les 93 titres de figurines et 95 de cartes à collectionner pas encore dans le programme, tous sans les règles d'aucun éditeur. Chacune des douze catégories du catalogue compte exactement 100 entrées distinctes. Catégories et nombre de jeux, d'après `polytabletop-games/src/lib.rs` :
+1200 jeux sont jouables dès maintenant, dans le terminal et dans l'interface graphique ; le catalogue compte 1200 entrées (`polytabletop catalog` se termine par : implémentées 239, jeux traditionnels prévus 214, variantes propres prévues 475, boîte à outils générique 272). Les 272 entrées « boîte à outils » sont les 84 systèmes de jeu de rôle (les 16 autres sont des aventures jouables), servis par le crate générique `polytabletop-rpg` (dés, fiches, tests de compétence, générateur de donjon, simulateur de batailles, journal), plus les 93 titres de figurines et 95 de cartes à collectionner pas encore dans le programme, tous sans les règles d'aucun éditeur. Chacune des douze catégories du catalogue compte exactement 100 entrées distinctes. Catégories et nombre de jeux, d'après `polytabletop-games/src/lib.rs` :
 
 | Catégorie | Jeux | Exemples (identifiants) |
 |---|---|---|
@@ -55,7 +55,7 @@ cargo build --release
 
 ## Langues
 
-PolyTabletop parle 8 langues : English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. Les interfaces en ligne de commande et graphique sont traduites dans les 8. La langue est choisie par `--lang xx`, puis `POLYTABLETOP_LANG`, puis le `LANG` du système, sinon le roumain. Les titres et les règles des 240 jeux sont traduits dans les 8 langues (`polytabletop-games/data/i18n/`, avec repli sur le texte roumain si une entrée manque) ; le texte à l'intérieur des jeux (cartes, banques de contenu, invites) est encore en roumain. La notation des coups (`e2e4`, `c3-d4`) ne change jamais. Détails : [docs/I18N.md](docs/I18N.md).
+PolyTabletop parle 8 langues : English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. Les interfaces en ligne de commande et graphique sont traduites dans les 8. La langue est choisie par `--lang xx`, puis `POLYTABLETOP_LANG`, puis le `LANG` du système, sinon le roumain. Les titres et les règles des 1200 jeux sont traduits dans les 8 langues (`polytabletop-games/data/i18n/`, avec repli sur le texte roumain si une entrée manque) ; le texte à l'intérieur des jeux (cartes, banques de contenu, invites) est encore en roumain. La notation des coups (`e2e4`, `c3-d4`) ne change jamais. Détails : [docs/I18N.md](docs/I18N.md).
 
 ## IA
 

@@ -1,281 +1,281 @@
 # Q6: Hnefatafl … Daldøs (Val 17); regulile în limbile fr/it/es/de/hu/pt revin la română (fallback)
 hnefatafl	en	Hnefatafl	Hnefatafl 11x11 (Copenhagen variant): attackers (P1) move first and try to capture the defenders' king; the king wins by reaching a corner. Pieces move like rooks and capture by sandwiching. Moves: d1-d4.
 hnefatafl	ro	Hnefatafl	Hnefatafl 11×11 (varianta Copenhaga): atacatorii (J1) mută primii și vor să prindă regele apărătorilor (J2); regele câștigă ajungând într-un colț. Piesele mută ca turnul, capturează prin încadrare. Mutări: d1-d4.
-hnefatafl	fr	Hnefatafl	
-hnefatafl	it	Hnefatafl	
-hnefatafl	es	Hnefatafl	
-hnefatafl	de	Hnefatafl	
-hnefatafl	hu	Hnefatafl	
-hnefatafl	pt	Hnefatafl	
+hnefatafl	fr	Hnefatafl	Hnefatafl 11×11 (variante de Copenhague) : les attaquants (J1) jouent en premier et veulent capturer le roi des défenseurs (J2) ; le roi gagne en atteignant un coin. Les pièces se déplacent comme la tour et capturent par encadrement. Coups : d1-d4.
+hnefatafl	it	Hnefatafl	Hnefatafl 11×11 (variante di Copenaghen): gli attaccanti (G1) muovono per primi e vogliono catturare il re dei difensori (G2); il re vince raggiungendo un angolo. I pezzi si muovono come la torre e catturano per accerchiamento. Mosse: d1-d4.
+hnefatafl	es	Hnefatafl	Hnefatafl 11×11 (variante de Copenhague): los atacantes (J1) mueven primero e intentan capturar al rey de los defensores; el rey gana al llegar a una esquina. Las piezas se mueven como torres y capturan por emparedamiento. Jugadas: d1-d4.
+hnefatafl	de	Hnefatafl	Hnefatafl 11×11 (Kopenhagener Variante): Die Angreifer (S1) ziehen zuerst und wollen den König der Verteidiger (S2) fangen; der König gewinnt, wenn er eine Ecke erreicht. Die Steine ziehen wie der Turm und schlagen durch Einschließen. Züge: d1-d4.
+hnefatafl	hu	Hnefatafl	Hnefatafl 11×11 (koppenhágai változat): a támadók (1. játékos) lépnek először, és el akarják fogni a védők (2. játékos) királyát; a király akkor nyer, ha eléri a sarkot. A bábuk bástyaként lépnek, bekerítéssel ütnek. Lépések: d1-d4.
+hnefatafl	pt	Hnefatafl	Hnefatafl 11×11 (variante de Copenhaga): os atacantes (J1) jogam primeiro e tentam capturar o rei dos defensores; o rei ganha ao chegar a um canto. As peças movem-se como torres e capturam por emparedamento. Jogadas: d1-d4.
 brandubh	en	Brandubh	Brandubh 7x7 (Ireland): 8 attackers against 4 defenders and a king; the king wins by reaching a corner, and is captured by sandwiching. Pieces move like rooks. Moves: d1-d4.
 brandubh	ro	Brandubh	Brandubh 7×7 (Irlanda): 8 atacatori contra 4 apărători și rege; regele câștigă ajungând într-un colț sau pe tron cu apărare liberă, e capturat prin încadrare. Piesele mută ca turnul. Mutări: d1-d4.
-brandubh	fr	Brandubh	
-brandubh	it	Brandubh	
-brandubh	es	Brandubh	
-brandubh	de	Brandubh	
-brandubh	hu	Brandubh	
-brandubh	pt	Brandubh	
+brandubh	fr	Brandubh	Brandubh 7×7 (Irlande) : 8 attaquants contre 4 défenseurs et un roi ; le roi gagne en atteignant un coin ou le trône avec une défense libre, et se capture par encadrement. Les pièces se déplacent comme la tour. Coups : d1-d4.
+brandubh	it	Brandubh	Brandubh 7×7 (Irlanda): 8 attaccanti contro 4 difensori e un re; il re vince raggiungendo un angolo o il trono con la difesa libera, e viene catturato per accerchiamento. I pezzi si muovono come la torre. Mosse: d1-d4.
+brandubh	es	Brandubh	Brandubh 7×7 (Irlanda): 8 atacantes contra 4 defensores y un rey; el rey gana al llegar a una esquina y se captura entre dos piezas. Las piezas se mueven como torres. Jugadas: d1-d4.
+brandubh	de	Brandubh	Brandubh 7×7 (Irland): 8 Angreifer gegen 4 Verteidiger und einen König; der König gewinnt, wenn er eine Ecke oder den Thron mit freier Deckung erreicht, und wird durch Einschließen gefangen. Die Steine ziehen wie der Turm. Züge: d1-d4.
+brandubh	hu	Brandubh	Brandubh 7×7 (Írország): 8 támadó 4 védő és egy király ellen; a király akkor nyer, ha eléri a sarkot vagy a trónt szabad fedezékkel, és bekerítéssel foghatják el. A bábuk bástyaként lépnek. Lépések: d1-d4.
+brandubh	pt	Brandubh	Brandubh 7×7 (Irlanda): 8 atacantes contra 4 defensores e um rei; o rei ganha ao chegar a um canto e é capturado entre duas peças. As peças movem-se como torres. Jogadas: d1-d4.
 pente	en	Pente	Pente (USA) on a 19x19 board: make five in a row or capture five pairs (flank exactly two enemy stones). Player 1's first move must be at the center and their second stone at least 3 points away. Moves: k10.
 pente	ro	Pente	Pente (SUA) pe tabla 19×19: aliniezi 5 pietre sau capturezi 5 perechi (încadrezi exact două pietre adverse). Prima mutare a lui J1 trebuie să fie în centru, iar a doua piatră a lui J1 la cel puțin 3 intersecții de centru. Mutări: k10.
-pente	fr	Pente	
-pente	it	Pente	
-pente	es	Pente	
-pente	de	Pente	
-pente	hu	Pente	
-pente	pt	Pente	
+pente	fr	Pente	Pente (États-Unis) sur un plateau 19×19 : alignez 5 pierres ou capturez 5 paires (en encadrant exactement deux pierres adverses). Le premier coup de J1 doit être au centre, et sa deuxième pierre à au moins 3 intersections du centre. Coups : k10.
+pente	it	Pente	Pente (USA) sulla tavola 19×19: allinea 5 pietre o cattura 5 coppie (racchiudendo esattamente due pietre avversarie). La prima mossa di G1 deve essere al centro e la sua seconda pietra ad almeno 3 incroci dal centro. Mosse: k10.
+pente	es	Pente	Pente (EE. UU.) en un tablero de 19×19: forma cinco en línea o captura cinco parejas (flanqueando exactamente dos piedras enemigas). La primera jugada del jugador 1 debe ser en el centro y su segunda piedra a al menos 3 puntos de distancia. Jugadas: k10.
+pente	de	Pente	Pente (USA) auf dem 19×19-Brett: Du reihst 5 Steine aneinander oder fängst 5 Paare (genau zwei gegnerische Steine einschließen). Der erste Zug von S1 muss in die Mitte, sein zweiter Stein mindestens 3 Schnittpunkte von der Mitte entfernt. Züge: k10.
+pente	hu	Pente	Pente (USA) 19×19-es táblán: 5 követ sorba raksz, vagy 5 párt fogsz el (pontosan két ellenséges követ kerítesz be). Az 1. játékos első lépése a tábla közepére kerül, második köve pedig legalább 3 metszéspontra a középponttól. Lépések: k10.
+pente	pt	Pente	Pente (EUA) num tabuleiro de 19×19: forma cinco em linha ou captura cinco pares (flanqueando exatamente duas pedras inimigas). A primeira jogada do jogador 1 tem de ser no centro e a sua segunda pedra a pelo menos 3 pontos de distância. Jogadas: k10.
 havannah	en	Havannah	Havannah (UK) on a hexagonal board of side 8: win with a ring, a bridge (two corners) or a fork (three sides). The pie rule «swap» is available after the first move. Moves: h8, swap.
 havannah	ro	Havannah	Havannah (Marea Britanie) pe tabla hexagonală cu latura 8: câștigi cu un inel, un pod (legi două colțuri) sau o furcă (legi trei laturi). Poți folosi «swap» după prima mutare. Mutări: h8, swap.
-havannah	fr	Havannah	
-havannah	it	Havannah	
-havannah	es	Havannah	
-havannah	de	Havannah	
-havannah	hu	Havannah	
-havannah	pt	Havannah	
+havannah	fr	Havannah	Havannah (Royaume-Uni) sur un plateau hexagonal de côté 8 : on gagne avec un anneau, un pont (relier deux coins) ou une fourche (relier trois côtés). On peut utiliser « swap » après le premier coup. Coups : h8, swap.
+havannah	it	Havannah	Havannah (Regno Unito) sulla tavola esagonale di lato 8: si vince con un anello, un ponte (collegare due angoli) o una forchetta (collegare tre lati). Dopo la prima mossa si può usare «swap». Mosse: h8, swap.
+havannah	es	Havannah	Havannah (Reino Unido) en un tablero hexagonal de lado 8: se gana con un anillo, un puente (dos esquinas) o una horquilla (tres lados). La regla del pastel «swap» está disponible tras la primera jugada. Jugadas: h8, swap.
+havannah	de	Havannah	Havannah (Großbritannien) auf dem sechseckigen Brett mit Seitenlänge 8: Du gewinnst mit einem Ring, einer Brücke (verbindet zwei Ecken) oder einer Gabel (verbindet drei Seiten). Nach dem ersten Zug darf „swap“ benutzt werden. Züge: h8, swap.
+havannah	hu	Havannah	Havannah (Egyesült Királyság) 8 oldalhosszúságú hatszögletű táblán: nyerhetsz gyűrűvel, híddal (két sarkot köt össze) vagy villával (három oldalt köt össze). Az első lépés után használhatod a „swap”-ot. Lépések: h8, swap.
+havannah	pt	Havannah	Havannah (Reino Unido) num tabuleiro hexagonal de lado 8: ganha-se com um anel, uma ponte (dois cantos) ou uma forquilha (três lados). A regra da torta «swap» está disponível após a primeira jogada. Jogadas: h8, swap.
 chinese_checkers	en	Chinese Checkers (Sternhalma)	Star board with 121 holes, 10 pieces each: step to a neighbouring hole or chain jumps over pieces; fill the opposite triangle to win. After 300 moves progress is compared. Moves: d4-e5 (without the jump route).
 chinese_checkers	ro	Table chinezească (Chinese Checkers)	Tablă stelată cu 121 de găuri, 10 piese pe jucător: pas pe o gaură vecină sau salturi înlănțuite peste piese; câștigi umplând triunghiul opus. După 300 de mutări se compară progresul. Mutări: d4-e5 (fără traseul sărit).
-chinese_checkers	fr	Dames chinoises	
-chinese_checkers	it	Dama cinese	
-chinese_checkers	es	Damas chinas	
-chinese_checkers	de	Chinese Checkers (Sternhalma)	
-chinese_checkers	hu	Kínai dáma	
-chinese_checkers	pt	Damas chinesas	
+chinese_checkers	fr	Dames chinoises	Plateau en étoile de 121 trous, 10 pions par joueur : un pas vers un trou voisin ou des sauts enchaînés par-dessus des pions ; on gagne en remplissant le triangle opposé. Après 300 coups, on compare la progression. Coups : d4-e5 (sans le trajet sauté).
+chinese_checkers	it	Dama cinese	Tavola a stella con 121 buchi, 10 pedine per giocatore: un passo verso un buco vicino o salti concatenati sopra altre pedine; vince chi riempie il triangolo opposto. Dopo 300 mosse si confronta il progresso. Mosse: d4-e5 (senza il percorso saltato).
+chinese_checkers	es	Damas chinas	Tablero en estrella con 121 agujeros, 10 fichas cada uno: avanza a un agujero vecino o encadena saltos sobre fichas; gana quien llene el triángulo opuesto. Tras 300 jugadas se compara el avance. Jugadas: d4-e5 (sin la ruta de salto).
+chinese_checkers	de	Chinese Checkers (Sternhalma)	Sternbrett mit 121 Löchern, 10 Steine pro Spieler: ein Schritt auf ein Nachbarloch oder verkettete Sprünge über Steine; du gewinnst, indem du das gegenüberliegende Dreieck füllst. Nach 300 Zügen wird der Fortschritt verglichen. Züge: d4-e5 (ohne den übersprungenen Weg).
+chinese_checkers	hu	Kínai dáma	Csillag alakú tábla 121 lyukkal, játékosonként 10 bábu: lépés egy szomszédos lyukra vagy láncolt ugrások bábuk felett; úgy nyersz, hogy kitöltöd a szemközti háromszöget. 300 lépés után az előrehaladást hasonlítják össze. Lépések: d4-e5 (az átugrott útvonal nélkül).
+chinese_checkers	pt	Damas chinesas	Tabuleiro em estrela com 121 buracos, 10 peças cada um: avança para um buraco vizinho ou encadeia saltos sobre peças; ganha quem preencher o triângulo oposto. Após 300 jogadas compara-se o avanço. Jogadas: d4-e5 (sem o percurso do salto).
 goose	en	Game of the Goose	Race along 63 spaces with two dice: geese (move again), bridge, inn, well, maze, prison, death; reach 63 exactly. Well and prison cost 3 turns. Moves: arunc, astept.
 goose	ro	Jocul gâștei (Game of the Goose)	Cărare de 63 de căsuțe, două zaruri: gâște (mai mergi o dată), pod, han, fântână, labirint, închisoare, moarte; ajungi exact pe 63. Fântâna și închisoarea costă 3 ture. Mutări: arunc, astept.
-goose	fr	Game of the Goose	
-goose	it	Game of the Goose	
-goose	es	Game of the Goose	
-goose	de	Game of the Goose	
-goose	hu	Game of the Goose	
-goose	pt	Game of the Goose	
+goose	fr	Game of the Goose	Parcours de 63 cases, deux dés : oies (on rejoue), pont, auberge, puits, labyrinthe, prison, mort ; il faut arriver exactement sur 63. Le puits et la prison coûtent 3 tours. Coups : arunc, astept.
+goose	it	Game of the Goose	Percorso di 63 caselle, due dadi: oche (si tira di nuovo), ponte, locanda, pozzo, labirinto, prigione, morte; bisogna arrivare esattamente sul 63. Pozzo e prigione costano 3 turni. Mosse: arunc, astept.
+goose	es	Game of the Goose	Juego de la oca: carrera por 63 casillas con dos dados: ocas (vuelves a tirar), puente, posada, pozo, laberinto, prisión, muerte; hay que llegar exactamente a 63. El pozo y la prisión cuestan 3 turnos. Jugadas: arunc, astept.
+goose	de	Game of the Goose	Weg mit 63 Feldern, zwei Würfel: Gänse (du ziehst noch einmal), Brücke, Gasthaus, Brunnen, Labyrinth, Gefängnis, Tod; du musst genau auf 63 landen. Brunnen und Gefängnis kosten 3 Runden. Züge: arunc, astept.
+goose	hu	Game of the Goose	63 mezős ösvény, két kocka: libák (még egyet lépsz), híd, fogadó, kút, labirintus, börtön, halál; pontosan a 63-ra kell érkezned. A kút és a börtön 3 kört vesz el. Lépések: arunc, astept.
+goose	pt	Game of the Goose	Jogo do ganso: corrida por 63 casas com dois dados: gansos (voltas a jogar), ponte, estalagem, poço, labirinto, prisão, morte; é preciso chegar exatamente a 63. O poço e a prisão custam 3 turnos. Jogadas: arunc, astept.
 keno	en	Keno	Each picks 5 numbers out of 80, then 20 are drawn; payout (our own): 2 hits = 1, 3 = 3, 4 = 20, 5 = 400 points. 5 rounds. Moves: n17, random, extrag.
 keno	ro	Keno	Fiecare alege 5 numere din 80, apoi se extrag 20; plata (a noastră): 2 nimeriri = 1, 3 = 3, 4 = 20, 5 = 400 de puncte. 5 runde. Mutări: n17, random, extrag.
-keno	fr	Keno	
-keno	it	Keno	
-keno	es	Keno	
-keno	de	Keno	
-keno	hu	Keno	
-keno	pt	Keno	
+keno	fr	Keno	Chacun choisit 5 numéros sur 80, puis 20 sont tirés ; gains (les nôtres) : 2 bons numéros = 1, 3 = 3, 4 = 20, 5 = 400 points. 5 manches. Coups : n17, random, extrag.
+keno	it	Keno	Ciascuno sceglie 5 numeri su 80, poi ne vengono estratti 20; vincite (nostre): 2 centri = 1, 3 = 3, 4 = 20, 5 = 400 punti. 5 round. Mosse: n17, random, extrag.
+keno	es	Keno	Cada uno elige 5 números entre 80 y después se extraen 20; pago (propio): 2 aciertos = 1, 3 = 3, 4 = 20, 5 = 400 puntos. 5 rondas. Jugadas: n17, random, extrag.
+keno	de	Keno	Jeder wählt 5 Zahlen aus 80, danach werden 20 gezogen; Auszahlung (unsere eigene): 2 Treffer = 1, 3 = 3, 4 = 20, 5 = 400 Punkte. 5 Runden. Züge: n17, random, extrag.
+keno	hu	Keno	Mindenki 5 számot választ 80-ból, majd 20-at húznak ki; kifizetés (a miénk): 2 találat = 1, 3 = 3, 4 = 20, 5 = 400 pont. 5 forduló. Lépések: n17, random, extrag.
+keno	pt	Keno	Cada um escolhe 5 números entre 80 e depois são extraídos 20; pagamento (próprio): 2 acertos = 1, 3 = 3, 4 = 20, 5 = 400 pontos. 5 rondas. Jogadas: n17, random, extrag.
 sichuan_mahjong	en	Sichuan Mahjong	Sichuan Mahjong for 2 players: 108 tiles (no honors), each declares a missing suit (lipsa m|s|p) and discards it first; no chow, only pung, kong and win; play stops at the first win. Moves: lipsa m, trage, d5m, pung, kong, mahjong, pas.
 sichuan_mahjong	ro	Mahjong Sichuan	Mahjong Sichuan pentru 2 jucători: 108 piese (fără onoruri), fiecare declară o culoare lipsă (lipsa m|s|p) și o aruncă întâi; fără chi, doar pung, kong și câștig; jocul se oprește la primul câștig. Mutări: lipsa m, trage, d5m, pung, kong, mahjong, pas.
-sichuan_mahjong	fr	Mahjong du Sichuan	
-sichuan_mahjong	it	Mahjong del Sichuan	
-sichuan_mahjong	es	Mahjong de Sichuan	
-sichuan_mahjong	de	Sichuan-Mahjong	
-sichuan_mahjong	hu	Szecsuani madzsong	
-sichuan_mahjong	pt	Mahjong de Sichuan	
+sichuan_mahjong	fr	Mahjong du Sichuan	Mahjong du Sichuan à 2 joueurs : 108 tuiles (sans honneurs) ; chacun déclare une famille manquante (lipsa m|s|p) et la défausse en premier ; pas de chi, seulement pung, kong et victoire ; la partie s'arrête à la première victoire. Coups : lipsa m, trage, d5m, pung, kong, mahjong, pas.
+sichuan_mahjong	it	Mahjong del Sichuan	Mahjong del Sichuan per 2 giocatori: 108 tessere (senza onori); ognuno dichiara un seme mancante (lipsa m|s|p) e lo scarta per primo; niente chi, solo pung, kong e vittoria; la partita termina alla prima vittoria. Mosse: lipsa m, trage, d5m, pung, kong, mahjong, pas.
+sichuan_mahjong	es	Mahjong de Sichuan	Mahjong de Sichuan para 2 jugadores: 108 fichas (sin honores); cada uno declara un palo que no quiere (lipsa m|s|p) y lo descarta primero; no hay chow, solo pung, kong y victoria; la partida termina con la primera victoria. Jugadas: lipsa m, trage, d5m, pung, kong, mahjong, pas.
+sichuan_mahjong	de	Sichuan-Mahjong	Sichuan-Mahjong für 2 Spieler: 108 Steine (ohne Ehrensteine); jeder erklärt eine fehlende Farbe (lipsa m|s|p) und wirft sie zuerst ab; kein Chi, nur Pung, Kong und Gewinn; das Spiel endet beim ersten Gewinn. Züge: lipsa m, trage, d5m, pung, kong, mahjong, pas.
+sichuan_mahjong	hu	Szecsuani madzsong	Szecsuani madzsong 2 játékosra: 108 lapka (becsületlapok nélkül); mindenki bejelent egy hiányzó színt (lipsa m|s|p), és azt dobja el először; chi nincs, csak pung, kong és nyerés; a játék az első nyerésnél véget ér. Lépések: lipsa m, trage, d5m, pung, kong, mahjong, pas.
+sichuan_mahjong	pt	Mahjong de Sichuan	Mahjong de Sichuan para 2 jogadores: 108 peças (sem honras); cada um declara um naipe que não quer (lipsa m|s|p) e descarta-o primeiro; não há chow, só pung, kong e vitória; o jogo termina na primeira vitória. Jogadas: lipsa m, trage, d5m, pung, kong, mahjong, pas.
 long_nard	en	Long Nard (Narde)	Long Nard (Long Backgammon): 15 checkers each on a single 24-point circuit, no hitting (points held by the opponent are blocked), one checker from the head per turn; first to bear off 15 wins. Moves: 13/17, 24/off.
 long_nard	ro	Long Nard (Narde)	Narde lungi: 15 piese pe jucător, 24 de puncte pe un singur cerc, fără lovire (punct blocat de adversar), o singură piesă din cap pe tură; câștigă cine scoate primul cele 15 piese. Mutări: 13/17, 24/off.
-long_nard	fr	Long Nard (Narde)	
-long_nard	it	Long Nard (Narde)	
-long_nard	es	Long Nard (Narde)	
-long_nard	de	Long Nard (Narde)	
-long_nard	hu	Long Nard (Narde)	
-long_nard	pt	Long Nard (Narde)	
+long_nard	fr	Long Nard (Narde)	Longues nardes : 15 pions par joueur, 24 points sur un seul cercle, sans frappe (point bloqué par l'adversaire), un seul pion pris de la tête par tour ; gagne celui qui sort le premier ses 15 pions. Coups : 13/17, 24/off.
+long_nard	it	Long Nard (Narde)	Nard lungo: 15 pedine per giocatore, 24 punti su un unico cerchio, senza colpire (punto bloccato dall'avversario), una sola pedina dalla testa per turno; vince chi porta fuori per primo le 15 pedine. Mosse: 13/17, 24/off.
+long_nard	es	Long Nard (Narde)	Long Nard (Narde, backgammon largo): 15 fichas cada uno en un único circuito de 24 puntos, sin golpear (los puntos ocupados por el rival quedan bloqueados), una sola ficha de la cabeza por turno; gana quien saque primero sus 15 fichas. Jugadas: 13/17, 24/off.
+long_nard	de	Long Nard (Narde)	Lange Nard: 15 Steine pro Spieler, 24 Punkte auf einem einzigen Kreis, kein Schlagen (ein vom Gegner besetzter Punkt ist blockiert), pro Zug nur ein Stein vom Kopf; es gewinnt, wer zuerst alle 15 Steine herausbringt. Züge: 13/17, 24/off.
+long_nard	hu	Long Nard (Narde)	Hosszú nard: játékosonként 15 bábu, 24 pont egyetlen körön, nincs ütés (az ellenfél által foglalt pont blokkolt), körönként csak egy bábu indulhat a fejről; az nyer, aki elsőként viszi ki mind a 15 bábut. Lépések: 13/17, 24/off.
+long_nard	pt	Long Nard (Narde)	Long Nard (Narde, gamão longo): 15 peças cada um num único circuito de 24 pontos, sem bater (os pontos ocupados pelo adversário ficam bloqueados), uma só peça da cabeça por turno; ganha quem retirar primeiro as suas 15 peças. Jogadas: 13/17, 24/off.
 shove_ha_penny	en	Shove ha'penny	Shove 5 coins along a board with 9 beds; a bed is claimed after 3 coins; close all 9 beds to win. Moves: p4, f7 (target + kind), then lansez.
 shove_ha_penny	ro	Shove ha'penny	Împingi 5 monede pe o tablă cu 9 paturi; un pat se închide după 3 monede; câștigi când ai închis toate cele 9 paturi. Mutări: p4, f7 (țintă + tip), apoi lansez.
-shove_ha_penny	fr	Shove ha'penny	
-shove_ha_penny	it	Shove ha'penny	
-shove_ha_penny	es	Shove ha'penny	
-shove_ha_penny	de	Shove ha'penny	
-shove_ha_penny	hu	Shove ha'penny	
-shove_ha_penny	pt	Shove ha'penny	
+shove_ha_penny	fr	Shove ha'penny	On pousse 5 pièces sur un plateau à 9 lits ; un lit se ferme après 3 pièces ; on gagne en fermant les 9 lits. Coups : p4, f7 (cible + type), puis lansez.
+shove_ha_penny	it	Shove ha'penny	Si spingono 5 monete su una tavola con 9 letti; un letto si chiude dopo 3 monete; vince chi chiude tutti e 9 i letti. Mosse: p4, f7 (bersaglio + tipo), poi lansez.
+shove_ha_penny	es	Shove ha'penny	Shove ha'penny: desliza 5 monedas por un tablero con 9 casillas; una casilla se reclama tras 3 monedas; gana quien cierre las 9. Jugadas: p4, f7 (objetivo + tipo), luego lansez.
+shove_ha_penny	de	Shove ha'penny	Du schiebst 5 Münzen über ein Brett mit 9 Betten; ein Bett schließt sich nach 3 Münzen; du gewinnst, wenn du alle 9 Betten geschlossen hast. Züge: p4, f7 (Ziel + Art), dann lansez.
+shove_ha_penny	hu	Shove ha'penny	5 érmét tolsz egy 9 ágyas táblán; egy ágy 3 érme után lezárul; az nyer, aki mind a 9 ágyat lezárta. Lépések: p4, f7 (cél + típus), majd lansez.
+shove_ha_penny	pt	Shove ha'penny	Shove ha'penny: desliza 5 moedas por um tabuleiro com 9 casas; uma casa é reclamada após 3 moedas; ganha quem fechar as 9. Jogadas: p4, f7 (alvo + tipo), depois lansez.
 rithmomachia	en	Rithmomachia	Rithmomachia (simplified variant): 8x16 board, round, triangle and square pieces with values; captures by meeting, assault and siege; win with 8 captures or by taking the pyramid king. Moves: a3-a5, a3xa5.
 rithmomachia	ro	Rithmomachia	Rithmomachia (varianta simplificată): 8×16, piese rotunde, triunghiuri și pătrate cu valori; capturi prin întâlnire, asalt și asediu; câștigi cu 8 capturi sau prinzând regele-piramidă. Mutări: a3-a5, a3xa5.
-rithmomachia	fr	Rithmomachia	
-rithmomachia	it	Rithmomachia	
-rithmomachia	es	Rithmomachia	
-rithmomachia	de	Rithmomachia	
-rithmomachia	hu	Rithmomachia	
-rithmomachia	pt	Rithmomachia	
+rithmomachia	fr	Rithmomachia	Rithmomachia (variante simplifiée) : 8×16, pièces rondes, triangles et carrés portant des valeurs ; captures par rencontre, assaut et siège ; on gagne avec 8 captures ou en prenant le roi-pyramide. Coups : a3-a5, a3xa5.
+rithmomachia	it	Rithmomachia	Rithmomachia (variante semplificata): 8×16, pezzi rotondi, triangoli e quadrati con valori; catture per incontro, assalto e assedio; si vince con 8 catture o prendendo il re-piramide. Mosse: a3-a5, a3xa5.
+rithmomachia	es	Rithmomachia	Rithmomachia (variante simplificada): tablero de 8×16, piezas redondas, triangulares y cuadradas con valores; capturas por encuentro, asalto y asedio; se gana con 8 capturas o tomando al rey pirámide. Jugadas: a3-a5, a3xa5.
+rithmomachia	de	Rithmomachia	Rithmomachia (vereinfachte Variante): 8×16, runde, dreieckige und quadratische Steine mit Werten; Schlagen durch Begegnung, Sturm und Belagerung; du gewinnst mit 8 Gefangenen oder indem du den Pyramidenkönig fängst. Züge: a3-a5, a3xa5.
+rithmomachia	hu	Rithmomachia	Rithmomachia (egyszerűsített változat): 8×16, kerek, háromszögű és négyzet alakú bábuk értékekkel; ütés találkozással, rohammal és ostrommal; 8 elfogással vagy a piramiskirály elfogásával nyersz. Lépések: a3-a5, a3xa5.
+rithmomachia	pt	Rithmomachia	Rithmomachia (variante simplificada): tabuleiro de 8×16, peças redondas, triangulares e quadradas com valores; capturas por encontro, assalto e cerco; ganha-se com 8 capturas ou tomando o rei pirâmide. Jogadas: a3-a5, a3xa5.
 pong_hau_kiki	en	Pong hau k'i	Pong hau k'i (China): 5 points, 2 pieces each; step to a neighbouring empty point; win by blocking your opponent. Moves: 1-3.
 pong_hau_kiki	ro	Pong hau k'i	Pong hau k'i (China): 5 puncte, 2 piese pe jucător; muți pe un punct vecin liber; câștigi blocând adversarul. Mutări: 1-3.
-pong_hau_kiki	fr	Pong hau k'i	
-pong_hau_kiki	it	Pong hau k'i	
-pong_hau_kiki	es	Pong hau k'i	
-pong_hau_kiki	de	Pong hau k'i	
-pong_hau_kiki	hu	Pong hau k'i	
-pong_hau_kiki	pt	Pong hau k'i	
+pong_hau_kiki	fr	Pong hau k'i	Pong hau k'i (Chine) : 5 points, 2 pions par joueur ; on se déplace sur un point voisin libre ; on gagne en bloquant l'adversaire. Coups : 1-3.
+pong_hau_kiki	it	Pong hau k'i	Pong hau k'i (Cina): 5 punti, 2 pedine per giocatore; ci si sposta su un punto vicino libero; vince chi blocca l'avversario. Mosse: 1-3.
+pong_hau_kiki	es	Pong hau k'i	Pong hau k'i (China): 5 puntos, 2 fichas cada uno; avanza a un punto vecino vacío; gana quien bloquee al rival. Jugadas: 1-3.
+pong_hau_kiki	de	Pong hau k'i	Pong hau k'i (China): 5 Punkte, 2 Steine pro Spieler; du ziehst auf einen freien Nachbarpunkt; du gewinnst, indem du den Gegner blockierst. Züge: 1-3.
+pong_hau_kiki	hu	Pong hau k'i	Pong hau k'i (Kína): 5 pont, játékosonként 2 bábu; egy szomszédos szabad pontra lépsz; az ellenfél blokkolásával nyersz. Lépések: 1-3.
+pong_hau_kiki	pt	Pong hau k'i	Pong hau k'i (China): 5 pontos, 2 peças cada um; avança para um ponto vizinho vazio; ganha quem bloquear o adversário. Jogadas: 1-3.
 patolli	en	Patolli	Patolli (reconstruction): 52-square cross-shaped track, 6 pieces each, 5 beans (marked faces = steps); bear off exactly at the end. Moves: piesa 0, piesa 17.
 patolli	ro	Patolli	Patolli (reconstituire): cale în cruce de 52 de pătrate, 6 piese pe jucător, 5 boabe (numărul fețelor marcate = pași); scoți piesele exact la sfârșit. Mutări: piesa 0, piesa 17.
-patolli	fr	Patolli	
-patolli	it	Patolli	
-patolli	es	Patolli	
-patolli	de	Patolli	
-patolli	hu	Patolli	
-patolli	pt	Patolli	
+patolli	fr	Patolli	Patolli (reconstitution) : parcours en croix de 52 cases, 6 pions par joueur, 5 graines (le nombre de faces marquées = pas) ; il faut sortir les pions exactement à la fin. Coups : piesa 0, piesa 17.
+patolli	it	Patolli	Patolli (ricostruzione): percorso a croce di 52 caselle, 6 pedine per giocatore, 5 semi (numero di facce segnate = passi); le pedine devono uscire esattamente alla fine. Mosse: piesa 0, piesa 17.
+patolli	es	Patolli	Patolli (reconstrucción): circuito en cruz de 52 casillas, 6 fichas cada uno, 5 frijoles (las caras marcadas = pasos); hay que salir exactamente al final. Jugadas: piesa 0, piesa 17.
+patolli	de	Patolli	Patolli (Rekonstruktion): kreuzförmiger Weg aus 52 Feldern, 6 Steine pro Spieler, 5 Bohnen (Zahl der markierten Seiten = Schritte); du bringst die Steine nur mit genauem Wurf am Ende hinaus. Züge: piesa 0, piesa 17.
+patolli	hu	Patolli	Patolli (rekonstrukció): kereszt alakú, 52 mezős pálya, játékosonként 6 bábu, 5 bab (a megjelölt oldalak száma = lépések); a bábukat a végén pontos dobással viszed ki. Lépések: piesa 0, piesa 17.
+patolli	pt	Patolli	Patolli (reconstrução): percurso em cruz de 52 casas, 6 peças cada um, 5 feijões (as faces marcadas = passos); é preciso sair exatamente no fim. Jogadas: piesa 0, piesa 17.
 duodecim_scripta	en	Duodecim scripta	Duodecim scripta (modern reconstruction): 36 points on a single track, 15 checkers each, 3 dice with separate steps; a point with two checkers is blocked; a lone checker that is hit returns to the bar. Moves: bar/3, 13/17, 36/off.
 duodecim_scripta	ro	Duodecim scripta	Duodecim scripta (reconstituire modernă): 36 de puncte pe o singură cale, 15 piese pe jucător, 3 zaruri cu pași separați; un punct cu două piese e blocat; piesele singure lovite se întorc pe bară. Mutări: bar/3, 13/17, 36/off.
-duodecim_scripta	fr	Duodecim scripta	
-duodecim_scripta	it	Duodecim scripta	
-duodecim_scripta	es	Duodecim scripta	
-duodecim_scripta	de	Duodecim scripta	
-duodecim_scripta	hu	Duodecim scripta	
-duodecim_scripta	pt	Duodecim scripta	
+duodecim_scripta	fr	Duodecim scripta	Duodecim scripta (reconstitution moderne) : 36 points sur un seul parcours, 15 pions par joueur, 3 dés aux pas séparés ; un point occupé par deux pions est bloqué ; les pions seuls touchés retournent sur la barre. Coups : bar/3, 13/17, 36/off.
+duodecim_scripta	it	Duodecim scripta	Duodecim scripta (ricostruzione moderna): 36 punti su un unico percorso, 15 pedine per giocatore, 3 dadi con passi separati; un punto con due pedine è bloccato; le pedine singole colpite tornano sulla barra. Mosse: bar/3, 13/17, 36/off.
+duodecim_scripta	es	Duodecim scripta	Duodecim scripta (reconstrucción moderna): 36 puntos en una sola pista, 15 fichas cada uno, 3 dados con pasos separados; un punto con dos fichas queda bloqueado; una ficha sola que es golpeada vuelve a la barra. Jugadas: bar/3, 13/17, 36/off.
+duodecim_scripta	de	Duodecim scripta	Duodecim scripta (moderne Rekonstruktion): 36 Punkte auf einem einzigen Weg, 15 Steine pro Spieler, 3 Würfel mit getrennten Schritten; ein Punkt mit zwei Steinen ist blockiert; getroffene Einzelsteine kehren auf die Bar zurück. Züge: bar/3, 13/17, 36/off.
+duodecim_scripta	hu	Duodecim scripta	Duodecim scripta (modern rekonstrukció): 36 pont egyetlen pályán, játékosonként 15 bábu, 3 kocka külön lépésekkel; a két bábuval foglalt pont blokkolt; az ütött magányos bábuk visszakerülnek a sávra. Lépések: bar/3, 13/17, 36/off.
+duodecim_scripta	pt	Duodecim scripta	Duodecim scripta (reconstrução moderna): 36 pontos numa única pista, 15 peças cada um, 3 dados com passos separados; um ponto com duas peças fica bloqueado; uma peça sozinha que é atingida volta à barra. Jogadas: bar/3, 13/17, 36/off.
 jigsaw	en	Jigsaw puzzle	4x4 jigsaw race: in turn place one piece that fits its neighbours (flat edges on the frame); points = 1 + joined neighbours, last piece +3. Moves: p7r2c3.
 jigsaw	ro	Puzzle cu piese (Jigsaw)	Puzzle 4×4 în întrecere: pe rând așezi o piesă care se potrivește cu vecinele (margini plate pe cadru); punctele = 1 + vecinii îmbinați, ultima piesă +3. Mutări: p7r2c3.
-jigsaw	fr	Puzzle (jigsaw)	
-jigsaw	it	Puzzle (jigsaw)	
-jigsaw	es	Rompecabezas (jigsaw)	
-jigsaw	de	Puzzle (Jigsaw)	
-jigsaw	hu	Kirakó (jigsaw)	
-jigsaw	pt	Quebra-cabeça (jigsaw)	
+jigsaw	fr	Puzzle (jigsaw)	Puzzle 4×4 en compétition : chacun à son tour pose une pièce qui s'accorde avec ses voisines (bords plats sur le cadre) ; points = 1 + voisines assemblées, dernière pièce +3. Coups : p7r2c3.
+jigsaw	it	Puzzle (jigsaw)	Puzzle 4×4 in gara: a turno si posa un pezzo che combacia con i vicini (bordi piatti sulla cornice); punti = 1 + vicini incastrati, ultimo pezzo +3. Mosse: p7r2c3.
+jigsaw	es	Rompecabezas (jigsaw)	Carrera de rompecabezas de 4×4: por turnos, coloca una pieza que encaje con sus vecinas (bordes rectos en el marco); puntos = 1 + vecinas unidas, la última pieza +3. Jugadas: p7r2c3.
+jigsaw	de	Puzzle (Jigsaw)	Puzzle 4×4 im Wettstreit: Abwechselnd setzt du ein Teil ein, das zu den Nachbarn passt (glatte Kanten am Rahmen); Punkte = 1 + verbundene Nachbarn, das letzte Teil +3. Züge: p7r2c3.
+jigsaw	hu	Kirakó (jigsaw)	4×4-es kirakó versenyben: felváltva helyezel le egy darabot, amely illeszkedik a szomszédaihoz (sima élek a kereten); pont = 1 + az összekapcsolt szomszédok, az utolsó darab +3. Lépések: p7r2c3.
+jigsaw	pt	Quebra-cabeça (jigsaw)	Corrida de quebra-cabeças de 4×4: à vez, coloca uma peça que encaixe nas suas vizinhas (bordos retos na moldura); pontos = 1 + vizinhas unidas, a última peça +3. Jogadas: p7r2c3.
 guobiao	en	Chinese Official Mahjong (Guobiao)	Guobiao Mahjong for 2 players: 144 tiles with flowers; a winning hand needs at least 8 points (documented subset of the official patterns) plus flowers. Moves: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
 guobiao	ro	Mahjong oficial chinez (Guobiao)	Mahjong Guobiao pentru 2 jucători: 144 de piese cu flori; mâna câștigătoare are cel puțin 8 puncte (subset documentat al combinațiilor oficiale) plus florile. Mutări: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
-guobiao	fr	Mahjong officiel chinois (Guobiao)	
-guobiao	it	Mahjong ufficiale cinese (Guobiao)	
-guobiao	es	Mahjong oficial chino (Guobiao)	
-guobiao	de	Chinesisches Offizielles Mahjong (Guobiao)	
-guobiao	hu	Kínai hivatalos madzsong (Guobiao)	
-guobiao	pt	Mahjong oficial chinês (Guobiao)	
+guobiao	fr	Mahjong officiel chinois (Guobiao)	Mahjong Guobiao à 2 joueurs : 144 tuiles avec fleurs ; une main gagnante vaut au moins 8 points (sous-ensemble documenté des combinaisons officielles) plus les fleurs. Coups : trage, d5m, pung, kong, chi2m3m, mahjong, pas.
+guobiao	it	Mahjong ufficiale cinese (Guobiao)	Mahjong Guobiao per 2 giocatori: 144 tessere con fiori; una mano vincente vale almeno 8 punti (sottoinsieme documentato delle combinazioni ufficiali) più i fiori. Mosse: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
+guobiao	es	Mahjong oficial chino (Guobiao)	Mahjong oficial chino (Guobiao) para 2 jugadores: 144 fichas con flores; una mano ganadora necesita al menos 8 puntos (un subconjunto documentado de las combinaciones oficiales) más las flores. Jugadas: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
+guobiao	de	Chinesisches Offizielles Mahjong (Guobiao)	Guobiao-Mahjong für 2 Spieler: 144 Steine mit Blumen; die Gewinnhand hat mindestens 8 Punkte (dokumentierte Teilmenge der offiziellen Kombinationen) plus die Blumen. Züge: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
+guobiao	hu	Kínai hivatalos madzsong (Guobiao)	Guobiao madzsong 2 játékosra: 144 lapka virágokkal; a nyerő kéznek legalább 8 pontja van (a hivatalos kombinációk dokumentált részhalmaza) plusz a virágok. Lépések: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
+guobiao	pt	Mahjong oficial chinês (Guobiao)	Mahjong oficial chinês (Guobiao) para 2 jogadores: 144 peças com flores; uma mão vencedora precisa de pelo menos 8 pontos (um subconjunto documentado das combinações oficiais) mais as flores. Jogadas: trage, d5m, pung, kong, chi2m3m, mahjong, pas.
 boggle	en	Boggle	Boggle: 4x4 letter grid; in turn write one word of at least 3 letters formed from adjacent cubes, valid and not yet found; points grow with length. Moves: casa, pas.
 boggle	ro	Boggle	Boggle: tablă 4×4 de litere; pe rând scrii câte un cuvânt de cel puțin 3 litere format din cuburi vecine, valid în dicționar și încă negăsit; punctele cresc cu lungimea. Mutări: casa, pas.
-boggle	fr	Boggle	
-boggle	it	Boggle	
-boggle	es	Boggle	
-boggle	de	Boggle	
-boggle	hu	Boggle	
-boggle	pt	Boggle	
+boggle	fr	Boggle	Boggle : grille 4×4 de lettres ; à tour de rôle, on écrit un mot d'au moins 3 lettres formé de cubes voisins, valide dans le dictionnaire et pas encore trouvé ; les points augmentent avec la longueur. Coups : casa, pas.
+boggle	it	Boggle	Boggle: griglia 4×4 di lettere; a turno si scrive una parola di almeno 3 lettere formata da cubi adiacenti, valida nel dizionario e non ancora trovata; i punti crescono con la lunghezza. Mosse: casa, pas.
+boggle	es	Boggle	Boggle: cuadrícula de letras de 4×4; por turnos escribe una palabra de al menos 3 letras formada con cubos adyacentes, válida y aún no encontrada; los puntos crecen con la longitud. Jugadas: casa, pas.
+boggle	de	Boggle	Boggle: 4×4-Buchstabenbrett; abwechselnd schreibst du je ein Wort mit mindestens 3 Buchstaben aus benachbarten Würfeln, das im Wörterbuch steht und noch nicht gefunden wurde; die Punkte steigen mit der Länge. Züge: casa, pas.
+boggle	hu	Boggle	Boggle: 4×4-es betűtábla; felváltva írsz egy-egy legalább 3 betűs szót szomszédos kockákból, amely szerepel a szótárban és még nem találták meg; a pontok a hosszal nőnek. Lépések: casa, pas.
+boggle	pt	Boggle	Boggle: grelha de letras de 4×4; à vez, escreve uma palavra de pelo menos 3 letras formada com cubos adjacentes, válida e ainda não encontrada; os pontos aumentam com o comprimento. Jogadas: casa, pas.
 kings	en	Kings (Ring of Fire)	Kings without alcohol: draw cards in turn, each rank has a rule; sips are penalty tokens; the fourth king makes you take the whole cup. Moves: trag, scut, atac.
 kings	ro	Kings (Ring of Fire)	Kings fără alcool: tragi pe rând cărți cu reguli pe rang; înghițiturile sunt jetoane de penalizare; al patrulea rege te face să iei tot paharul. Mutări: trag, scut, atac.
-kings	fr	Kings (Ring of Fire)	
-kings	it	Kings (Ring of Fire)	
-kings	es	Kings (Ring of Fire)	
-kings	de	Kings (Ring of Fire)	
-kings	hu	Kings (Ring of Fire)	
-kings	pt	Kings (Ring of Fire)	
+kings	fr	Kings (Ring of Fire)	Kings sans alcool : on pioche tour à tour des cartes aux règles liées au rang ; les gorgées sont des jetons de pénalité ; le quatrième roi vous fait vider tout le verre. Coups : trag, scut, atac.
+kings	it	Kings (Ring of Fire)	Kings senza alcol: si pescano a turno carte con regole legate al valore; i sorsi sono gettoni di penalità; il quarto re ti fa bere tutto il bicchiere. Mosse: trag, scut, atac.
+kings	es	Kings (Ring of Fire)	Kings (Ring of Fire) sin alcohol: se roban cartas por turnos y cada valor tiene una regla; los sorbos son fichas de penalización; el cuarto rey te obliga a tomar todo el vaso. Jugadas: trag, scut, atac.
+kings	de	Kings (Ring of Fire)	Kings ohne Alkohol: Reihum ziehst du Karten mit Regeln je nach Rang; die Schlucke sind Strafmarker; der vierte König zwingt dich, das ganze Glas zu nehmen. Züge: trag, scut, atac.
+kings	hu	Kings (Ring of Fire)	Kings alkohol nélkül: felváltva húzol lapokat rangonként más szabállyal; a kortyok büntetőzsetonok; a negyedik király miatt az egész poharat el kell vinned. Lépések: trag, scut, atac.
+kings	pt	Kings (Ring of Fire)	Kings (Ring of Fire) sem álcool: tiram-se cartas à vez e cada valor tem uma regra; os goles são fichas de penalização; o quarto rei obriga-te a beber o copo todo. Jogadas: trag, scut, atac.
 celebrity	en	Celebrity (Fishbowl)	Celebrity: a bowl of 12 names, three rounds (describe, act, one word); a simulated teammate guesses; most guesses win. The top name is only shown to the giver. Moves: dau, sar, ghicesc.
 celebrity	ro	Celebrity (Fishbowl)	Celebrity: vas cu 12 nume, trei runde (descrii, mimezi, un singur cuvânt); coechipierul simulat ghicește; câștigă cine ghicește mai multe. Numele de sus se vede doar de cel care îl dă. Mutări: dau, sar, ghicesc.
-celebrity	fr	Célébrités (Fishbowl)	
-celebrity	it	Celebrity (Fishbowl)	
-celebrity	es	Celebrity (Fishbowl)	
-celebrity	de	Celebrity (Fishbowl)	
-celebrity	hu	Celebrity (Fishbowl)	
-celebrity	pt	Celebrity (Fishbowl)	
+celebrity	fr	Célébrités (Fishbowl)	Celebrity : un bol de 12 noms, trois manches (décrire, mimer, un seul mot) ; le coéquipier simulé devine ; gagne celui qui devine le plus. Le nom du dessus n'est visible que par celui qui le fait deviner. Coups : dau, sar, ghicesc.
+celebrity	it	Celebrity (Fishbowl)	Celebrity: una ciotola con 12 nomi, tre round (descrivere, mimare, una sola parola); il compagno simulato indovina; vince chi indovina di più. Il nome in cima è visibile solo a chi lo fa indovinare. Mosse: dau, sar, ghicesc.
+celebrity	es	Celebrity (Fishbowl)	Celebrity: un cuenco con 12 nombres, tres rondas (describir, mimar, una sola palabra); un compañero simulado adivina; gana quien acierte más. El nombre de arriba solo lo ve quien da las pistas. Jugadas: dau, sar, ghicesc.
+celebrity	de	Celebrity (Fishbowl)	Celebrity: Schüssel mit 12 Namen, drei Runden (beschreiben, pantomimisch darstellen, nur ein Wort); der simulierte Teampartner rät; es gewinnt, wer mehr errät. Der oberste Name ist nur für den sichtbar, der ihn vermittelt. Züge: dau, sar, ghicesc.
+celebrity	hu	Celebrity (Fishbowl)	Celebrity: egy tál 12 névvel, három forduló (körülírás, némajáték, egyetlen szó); a szimulált csapattárs tippel; az nyer, aki többet talál ki. A legfelső nevet csak az látja, aki közvetíti. Lépések: dau, sar, ghicesc.
+celebrity	pt	Celebrity (Fishbowl)	Celebrity: uma taça com 12 nomes, três rondas (descrever, mimar, uma só palavra); um colega simulado adivinha; ganha quem acertar mais. O nome de cima só é visto por quem dá as pistas. Jogadas: dau, sar, ghicesc.
 pin_the_tail	en	Pin the Tail on the Donkey	On a 7x5 field pick a target, get spun (random error) and pin the tail: 5 points exact, 3, 2, 1 by distance; 5 rounds. Moves: c3, then invart.
 pin_the_tail	ro	Prinde coada măgarului	Pe un câmp 7×5 alegi o țintă, te învârți (eroare aleatoare) și prinzi coada: 5 puncte exact, 3, 2, 1 după distanță; 5 runde. Mutări: c3, apoi invart.
-pin_the_tail	fr	Colle la queue de l'âne	
-pin_the_tail	it	Attacca la coda all'asino	
-pin_the_tail	es	Ponle la cola al burro	
-pin_the_tail	de	Schwanz an den Esel heften	
-pin_the_tail	hu	Tűzd fel a szamár farkát	
-pin_the_tail	pt	Prenda o rabo no burro	
+pin_the_tail	fr	Colle la queue de l'âne	Sur un terrain 7×5, on choisit une cible, on tourne sur soi-même (erreur aléatoire) et on plante la queue : 5 points si c'est exact, puis 3, 2, 1 selon la distance ; 5 manches. Coups : c3, puis invart.
+pin_the_tail	it	Attacca la coda all'asino	Su un campo 7×5 si sceglie un bersaglio, ci si fa girare su sé stessi (errore casuale) e si appende la coda: 5 punti se esatto, poi 3, 2, 1 in base alla distanza; 5 round. Mosse: c3, poi invart.
+pin_the_tail	es	Ponle la cola al burro	En un campo de 7×5 elige un objetivo, que te hagan girar (error aleatorio) y clava la cola: 5 puntos si aciertas exacto, y 3, 2, 1 según la distancia; 5 rondas. Jugadas: c3, luego invart.
+pin_the_tail	de	Schwanz an den Esel heften	Auf einem 7×5-Feld wählst du ein Ziel, drehst dich (zufälliger Fehler) und heftest den Schwanz an: 5 Punkte bei genauem Treffer, 3, 2, 1 je nach Entfernung; 5 Runden. Züge: c3, dann invart.
+pin_the_tail	hu	Tűzd fel a szamár farkát	Egy 7×5-ös mezőn célt választasz, megpörögsz (véletlen hiba), és felhelyezed a farkat: pontos találatra 5 pont, távolságtól függően 3, 2, 1; 5 forduló. Lépések: c3, majd invart.
+pin_the_tail	pt	Prenda o rabo no burro	Num campo de 7×5 escolhe um alvo, deixa-te rodar (erro aleatório) e espeta o rabo: 5 pontos se acertares exatamente, e 3, 2, 1 consoante a distância; 5 rondas. Jogadas: c3, depois invart.
 war	en	War	War: each flips the top card, the higher takes both; ties start a war (cards face down plus one up). Win by taking every card (move cap, then most cards). Moves: joc.
 war	ro	Război (War)	Război: fiecare întoarce cartea de sus, cea mai mare ia ambele; la egalitate «război» (cărți acoperite și una descoperită). Câștigă cine ia toate cărțile (limită de mutări, apoi mai multe cărți). Mutări: joc.
-war	fr	La Bataille	
-war	it	Guerra	
-war	es	La Guerra	
-war	de	Krieg (Kartenspiel)	
-war	hu	Háború (kártyajáték)	
-war	pt	Guerra (jogo de cartas)	
+war	fr	La Bataille	Bataille : chacun retourne sa carte du dessus, la plus haute remporte les deux ; en cas d'égalité, « guerre » (cartes face cachée et une face visible). Gagne celui qui prend toutes les cartes (limite de coups, puis le plus de cartes). Coups : joc.
+war	it	Guerra	Guerra: ognuno gira la carta in cima, la più alta prende entrambe; in caso di parità «guerra» (carte coperte e una scoperta). Vince chi prende tutte le carte (limite di mosse, poi chi ha più carte). Mosse: joc.
+war	es	La Guerra	La Guerra: cada uno da la vuelta a la carta de arriba y la más alta se lleva ambas; los empates inician una guerra (cartas boca abajo más una boca arriba). Gana quien se lleve todas las cartas (con un límite de jugadas; después, quien tenga más cartas). Jugadas: joc.
+war	de	Krieg (Kartenspiel)	Krieg: Jeder deckt die oberste Karte auf, die höhere nimmt beide; bei Gleichstand „Krieg“ (verdeckte Karten und eine offene). Es gewinnt, wer alle Karten bekommt (Zuglimit, danach zählt die größere Kartenzahl). Züge: joc.
+war	hu	Háború (kártyajáték)	Háború: mindenki felfordítja a legfelső lapját, a magasabb viszi mindkettőt; döntetlenkor „háború” (fedett lapok és egy felfordított). Az nyer, aki az összes lapot megszerzi (lépéshatár, utána a több lap dönt). Lépések: joc.
+war	pt	Guerra (jogo de cartas)	Guerra: cada um vira a carta de cima e a mais alta leva ambas; os empates iniciam uma guerra (cartas viradas para baixo mais uma virada para cima). Ganha quem levar todas as cartas (com um limite de jogadas; depois, quem tiver mais cartas). Jogadas: joc.
 tressette	en	Tressette	Tressette (Italian 40-card deck, 2 players): follow suit, rank order 3 2 A K Q J 7 6 5 4, no trump; points A 1, 3/2/K/Q/J 1/3; last trick +1. Moves: 3d, Rs, Cc.
 tressette	ro	Tressette (Italia)	Tressette (40 de cărți italiene, 2 jucători): obligatoriu să răspunzi la culoare, ordinea 3 2 A R C F 7 6 5 4, fără atu; puncte A 1, 3/2/R/C/F ⅓; ultima levată +1. Mutări: 3d, Rs, Cc.
-tressette	fr	Tressette	
-tressette	it	Tressette	
-tressette	es	Tresillo (Tressette)	
-tressette	de	Tressette	
-tressette	hu	Tressette	
-tressette	pt	Tressette	
+tressette	fr	Tressette	Tressette (40 cartes italiennes, 2 joueurs) : il faut fournir la couleur, ordre 3 2 A R C F 7 6 5 4, sans atout ; points : A 1, 3/2/R/C/F ⅓ ; dernier pli +1. Coups : 3d, Rs, Cc.
+tressette	it	Tressette	Tressette (40 carte italiane, 2 giocatori): obbligo di rispondere al seme, ordine 3 2 A R C F 7 6 5 4, senza briscola; punti: A 1, 3/2/R/C/F ⅓; ultima presa +1. Mosse: 3d, Rs, Cc.
+tressette	es	Tresillo (Tressette)	Tresillo italiano (Tressette): baraja italiana de 40 cartas, 2 jugadores; hay que seguir el palo, orden de las cartas 3 2 A K Q J 7 6 5 4, sin triunfo; puntos: A 1, 3/2/K/Q/J 1/3; última baza +1. Jugadas: 3d, Rs, Cc.
+tressette	de	Tressette	Tressette (40 italienische Karten, 2 Spieler): Bedienpflicht, Rangfolge 3 2 A R C F 7 6 5 4, kein Trumpf; Punkte A 1, 3/2/R/C/F je ⅓; der letzte Stich +1. Züge: 3d, Rs, Cc.
+tressette	hu	Tressette	Tressette (40 olasz lap, 2 játékos): színre színt kell adni, a sorrend 3 2 A R C F 7 6 5 4, nincs adu; pontok: A 1, 3/2/R/C/F egyenként ⅓; az utolsó ütés +1. Lépések: 3d, Rs, Cc.
+tressette	pt	Tressette	Tressette: baralho italiano de 40 cartas, 2 jogadores; é obrigatório assistir ao naipe, ordem das cartas 3 2 A K Q J 7 6 5 4, sem trunfo; pontos: A 1, 3/2/K/Q/J 1/3; última vaza +1. Jogadas: 3d, Rs, Cc.
 piquet	en	Piquet	Piquet (32 cards): exchange, declarations (point, sequences, sets) and 12 tricks; our own trick-scoring variant. Moves: d7h, gata, Ah, urmatoarea.
 piquet	ro	Piquet (Franța)	Piquet (32 de cărți): schimb de cărți, declarații (punct, secvențe, seturi) și 12 levate; variantă proprie de punctare a jocului. Mutări: d7h, gata, Ah, urmatoarea.
-piquet	fr	Piquet	
-piquet	it	Picchetto	
-piquet	es	Piquet	
-piquet	de	Piquet	
-piquet	hu	Piquet	
-piquet	pt	Piquet	
+piquet	fr	Piquet	Piquet (32 cartes) : échange de cartes, annonces (point, séquences, brelans) et 12 levées ; notre propre variante de décompte. Coups : d7h, gata, Ah, urmatoarea.
+piquet	it	Picchetto	Piquet (32 carte): scambio di carte, dichiarazioni (punto, sequenze, tris) e 12 prese; variante di punteggio propria. Mosse: d7h, gata, Ah, urmatoarea.
+piquet	es	Piquet	Piquet (32 cartas): descarte, declaraciones (punto, secuencias, tríos y cuartetos) y 12 bazas; variante propia de puntuación por bazas. Jugadas: d7h, gata, Ah, urmatoarea.
+piquet	de	Piquet	Piquet (32 Karten): Kartentausch, Ansagen (Punkt, Folgen, Sätze) und 12 Stiche; eine eigene Wertungsvariante des Spiels. Züge: d7h, gata, Ah, urmatoarea.
+piquet	hu	Piquet	Piquet (32 lap): lapcsere, bemondások (pont, sorozatok, szettek) és 12 ütés; a játék saját pontozású változata. Lépések: d7h, gata, Ah, urmatoarea.
+piquet	pt	Piquet	Piquet (32 cartas): troca, declarações (ponto, sequências, trios e quadras) e 12 vazas; variante própria de pontuação por vazas. Jogadas: d7h, gata, Ah, urmatoarea.
 batak	en	Batak	Batak adapted for 2 players (13 cards each): bid tricks, pick trump, the bidder must take at least the bid. Moves: 6, pas, atu h, Ah.
 batak	ro	Batak (Turcia)	Batak adaptat la 2 jucători (13 cărți fiecare): licitezi levatele, alegi atu (pică implicit), cine licitează trebuie să facă cel puțin cât a promis. Mutări: 6, pas, atu h, Ah.
-batak	fr	Batak	
-batak	it	Batak	
-batak	es	Batak	
-batak	de	Batak	
-batak	hu	Batak	
-batak	pt	Batak	
+batak	fr	Batak	Batak adapté à 2 joueurs (13 cartes chacun) : on enchérit sur les plis, on choisit l'atout (pique par défaut) ; l'enchérisseur doit faire au moins autant de plis qu'il a promis. Coups : 6, pas, atu h, Ah.
+batak	it	Batak	Batak adattato a 2 giocatori (13 carte ciascuno): si dichiarano le prese, si sceglie la briscola (picche per default); chi dichiara deve fare almeno quante prese ha promesso. Mosse: 6, pas, atu h, Ah.
+batak	es	Batak	Batak adaptado para 2 jugadores (13 cartas cada uno): se puja por bazas, se elige el triunfo y quien ha pujado debe ganar al menos tantas bazas como su puja. Jugadas: 6, pas, atu h, Ah.
+batak	de	Batak	Batak für 2 Spieler angepasst (je 13 Karten): Du reizt Stiche, wählst den Trumpf (standardmäßig Pik); wer das Gebot abgibt, muss mindestens so viele Stiche machen, wie er versprochen hat. Züge: 6, pas, atu h, Ah.
+batak	hu	Batak	Kétszemélyesre igazított Batak (fejenként 13 lap): ütésekre licitálsz, adut választasz (alapból pikk); a licitáló legalább annyi ütést kell hogy vigyen, amennyit vállalt. Lépések: 6, pas, atu h, Ah.
+batak	pt	Batak	Batak adaptado para 2 jogadores (13 cartas cada um): licitam-se vazas, escolhe-se o trunfo e quem licitou tem de ganhar pelo menos tantas vazas quanto a sua licitação. Jogadas: 6, pas, atu h, Ah.
 yaniv	en	Yaniv	Yaniv: discard a card, set or run, then draw from the stock or the discard pile; call «yaniv» with at most 7 points in hand; if the opponent has less or equal you are caught (assaf). Moves: yaniv, 5h,5s-stoc, 5h-ia:7c.
 yaniv	ro	Yaniv (Israel)	Yaniv: arunci o carte, un set sau o secvență, apoi tragi din stoc sau talon; strigi «yaniv» cu cel mult 7 puncte în mână; dacă adversarul are mai puțin sau egal ești «asaf». Mutări: yaniv, 5h,5s-stoc, 5h-ia:7c.
-yaniv	fr	Yaniv	
-yaniv	it	Yaniv	
-yaniv	es	Yaniv	
-yaniv	de	Yaniv	
-yaniv	hu	Yaniv	
-yaniv	pt	Yaniv	
+yaniv	fr	Yaniv	Yaniv : on jette une carte, un brelan ou une suite, puis on pioche dans la pioche ou la défausse ; on annonce « yaniv » avec au plus 7 points en main ; si l'adversaire a moins ou autant, on est « asaf ». Coups : yaniv, 5h,5s-stoc, 5h-ia:7c.
+yaniv	it	Yaniv	Yaniv: si scarta una carta, un tris o una scala, poi si pesca dal mazzo o dagli scarti; si annuncia «yaniv» con al massimo 7 punti in mano; se l'avversario ne ha meno o altrettanti si è «asaf». Mosse: yaniv, 5h,5s-stoc, 5h-ia:7c.
+yaniv	es	Yaniv	Yaniv: descarta una carta, un grupo o una escalera y después roba del mazo o de la pila de descarte; canta «yaniv» con 7 puntos o menos en la mano; si el rival tiene menos o igual, te pillan (assaf). Jugadas: yaniv, 5h,5s-stoc, 5h-ia:7c.
+yaniv	de	Yaniv	Yaniv: Du wirfst eine Karte, einen Satz oder eine Reihe ab und ziehst dann vom Stapel oder vom Ablagestapel; du rufst „Yaniv“ mit höchstens 7 Punkten auf der Hand; hat der Gegner gleich viel oder weniger, bist du „Asaf“. Züge: yaniv, 5h,5s-stoc, 5h-ia:7c.
+yaniv	hu	Yaniv	Yaniv: egy lapot, egy szettet vagy egy sorozatot dobsz le, majd a húzópakliból vagy a dobott lapok közül húzol; legfeljebb 7 pontnyi lappal a kezedben kiálthatod: „yaniv”; ha az ellenfélnek kevesebb vagy ugyanannyi van, „asaf” vagy. Lépések: yaniv, 5h,5s-stoc, 5h-ia:7c.
+yaniv	pt	Yaniv	Yaniv: descarta uma carta, um grupo ou uma sequência e depois tira do baralho ou da pilha de descarte; canta «yaniv» com 7 pontos ou menos na mão; se o adversário tiver menos ou igual, és apanhado (assaf). Jogadas: yaniv, 5h,5s-stoc, 5h-ia:7c.
 ascunselea	en	Hide-and-seek	Hide-and-seek on a 3x3 yard, 4 rounds: the hider secretly picks a spot, the seeker has 3 tries with warm/cold hints; faster means more points. Moves: ascunde b2, cauta b2.
 ascunselea	ro	Ascunselea (Hide-and-seek)	Ascunselea pe o curte 3×3, 4 runde: ascunzătorul alege în secret o ascunzătoare, căutătorul are 3 încercări cu indiciu cald/rece; mai repede = mai multe puncte. Mutări: ascunde b2, cauta b2.
-ascunselea	fr	Cache-cache	
-ascunselea	it	Nascondino	
-ascunselea	es	Escondite	
-ascunselea	de	Verstecken	
-ascunselea	hu	Bújócska	
-ascunselea	pt	Esconde-esconde	
+ascunselea	fr	Cache-cache	Cache-cache dans une cour 3×3, 4 manches : le cacheur choisit en secret une cachette, le chercheur a 3 essais avec indice chaud/froid ; plus c'est rapide, plus on marque. Coups : ascunde b2, cauta b2.
+ascunselea	it	Nascondino	Nascondino in un cortile 3×3, 4 round: chi si nasconde sceglie in segreto un nascondiglio, chi cerca ha 3 tentativi con indizio caldo/freddo; più è veloce, più punti. Mosse: ascunde b2, cauta b2.
+ascunselea	es	Escondite	Escondite en un patio de 3×3, 4 rondas: quien se esconde elige un lugar en secreto y quien busca tiene 3 intentos con pistas de «frío» y «caliente»; cuanto antes lo encuentre, más puntos. Jugadas: ascunde b2, cauta b2.
+ascunselea	de	Verstecken	Verstecken auf einem 3×3-Hof, 4 Runden: Der Versteckende wählt heimlich ein Versteck, der Suchende hat 3 Versuche mit Warm-kalt-Hinweis; je schneller, desto mehr Punkte. Züge: ascunde b2, cauta b2.
+ascunselea	hu	Bújócska	Bújócska egy 3×3-as udvaron, 4 forduló: a bújó titokban kiválaszt egy rejtekhelyet, a kereső 3 kísérletet kap meleg/hideg jelzéssel; minél gyorsabb, annál több pont. Lépések: ascunde b2, cauta b2.
+ascunselea	pt	Esconde-esconde	Esconde-esconde num pátio de 3×3, 4 rondas: quem se esconde escolhe em segredo um lugar e quem procura tem 3 tentativas com pistas de «frio» e «quente»; quanto mais depressa o encontrar, mais pontos. Jogadas: ascunde b2, cauta b2.
 de_a_prinselea	en	Tag	Chase on a 7x7 field: a chaser who ends adjacent swaps roles (and waits one move); whoever is not chasing at the end of a round scores 1; 15 rounds. Moves: n, s, e, v, ne, nv, se, sv, stai.
 de_a_prinselea	ro	De-a prinselea (Tag)	Urmărire pe un câmp 7×7: prinzătorul care ajunge adiacent schimbă rolurile (și stă o mutare); cel care nu e prinzător la sfârșitul rundei primește 1 punct; 15 runde. Mutări: n, s, e, v, ne, nv, se, sv, stai.
-de_a_prinselea	fr	Chat perché	
-de_a_prinselea	it	Acchiapparella	
-de_a_prinselea	es	Pilla-pilla	
-de_a_prinselea	de	Fangen	
-de_a_prinselea	hu	Fogócska	
-de_a_prinselea	pt	Pega-pega	
+de_a_prinselea	fr	Chat perché	Poursuite sur un terrain 7×7 : le poursuivant qui arrive en position adjacente échange les rôles (et saute un coup) ; celui qui n'est pas poursuivant en fin de manche reçoit 1 point ; 15 manches. Coups : n, s, e, v, ne, nv, se, sv, stai.
+de_a_prinselea	it	Acchiapparella	Inseguimento su un campo 7×7: l'inseguitore che arriva in una casella adiacente scambia i ruoli (e salta una mossa); chi non è inseguitore a fine round riceve 1 punto; 15 round. Mosse: n, s, e, v, ne, nv, se, sv, stai.
+de_a_prinselea	es	Pilla-pilla	Pilla-pilla en un campo de 7×7: quien persigue y termina junto al otro cambia de papel (y espera una jugada); quien no esté persiguiendo al final de una ronda puntúa 1; 15 rondas. Jugadas: n, s, e, v, ne, nv, se, sv, stai.
+de_a_prinselea	de	Fangen	Verfolgung auf einem 7×7-Feld: Wer als Fänger angrenzend ankommt, tauscht die Rollen (und setzt einen Zug aus); wer am Rundenende nicht Fänger ist, bekommt 1 Punkt; 15 Runden. Züge: n, s, e, v, ne, nv, se, sv, stai.
+de_a_prinselea	hu	Fogócska	Üldözés egy 7×7-es mezőn: az a fogó, aki szomszédos mezőre ér, szerepet cserél (és egy lépést kihagy); aki a forduló végén nem fogó, 1 pontot kap; 15 forduló. Lépések: n, s, e, v, ne, nv, se, sv, stai.
+de_a_prinselea	pt	Pega-pega	Pega-pega num campo de 7×7: quem persegue e termina ao lado do outro troca de papel (e espera uma jogada); quem não estiver a perseguir no fim de uma ronda pontua 1; 15 rondas. Jogadas: n, s, e, v, ne, nv, se, sv, stai.
 elasticul	en	Chinese jump rope	The rope rises through 7 levels; at each level pick an easy or hard jump (different odds and points), then jump; a miss eliminates you. Moves: usor, greu, sari.
 elasticul	ro	Elasticul	Elasticul urcă în 7 niveluri; la fiecare nivel alegi salt ușor sau greu (șanse și puncte diferite), apoi sari; cine greșește e eliminat. Mutări: usor, greu, sari.
-elasticul	fr	Corde élastique	
-elasticul	it	Elastico	
-elasticul	es	Comba elástica	
-elasticul	de	Gummitwist	
-elasticul	hu	Gumizás	
-elasticul	pt	Elástico	
+elasticul	fr	Corde élastique	L'élastique monte sur 7 niveaux ; à chaque niveau, on choisit un saut facile ou difficile (chances et points différents), puis on saute ; qui échoue est éliminé. Coups : usor, greu, sari.
+elasticul	it	Elastico	L'elastico sale su 7 livelli; a ogni livello si sceglie un salto facile o difficile (probabilità e punti diversi), poi si salta; chi sbaglia è eliminato. Mosse: usor, greu, sari.
+elasticul	es	Comba elástica	La cuerda sube por 7 niveles; en cada nivel eliges un salto fácil o difícil (con distintas probabilidades y puntos) y saltas; un fallo te elimina. Jugadas: usor, greu, sari.
+elasticul	de	Gummitwist	Das Gummiband steigt in 7 Stufen; auf jeder Stufe wählst du einen leichten oder schweren Sprung (unterschiedliche Chancen und Punkte) und springst dann; wer danebenliegt, scheidet aus. Züge: usor, greu, sari.
+elasticul	hu	Gumizás	A gumi 7 szintig emelkedik; minden szinten könnyű vagy nehéz ugrást választasz (eltérő esély és pontszám), aztán ugrasz; aki hibázik, kiesik. Lépések: usor, greu, sari.
+elasticul	pt	Elástico	A corda sobe por 7 níveis; em cada nível escolhes um salto fácil ou difícil (com probabilidades e pontos diferentes) e saltas; uma falha elimina-te. Jogadas: usor, greu, sari.
 oina	en	Oină	Stylised oina: 6 innings of 3 outs; the batter picks a strike, the fielder a position, then it resolves; a ball caught in the chosen zone burns the batter, otherwise he runs and scores 1/2/4. Moves: usoara, medie, puternica, aproape, mijloc, departe, arunca.
 oina	ro	Oina	Oina stilizată: 6 reprize cu 3 arși; bătăușul alege lovitura, apărătorul poziția, apoi se aruncă; mingea prinsă în zona aleasă arde bătăușul, altfel aleargă și marchează 1/2/4. Mutări: usoara, medie, puternica, aproape, mijloc, departe, arunca.
-oina	fr	Oină	
-oina	it	Oina	
-oina	es	Oina	
-oina	de	Oina	
-oina	hu	Oina	
-oina	pt	Oina	
+oina	fr	Oină	Oina stylisée : 6 manches de 3 éliminations ; le batteur choisit la frappe, le défenseur sa position, puis on lance ; une balle attrapée dans la zone choisie élimine le batteur, sinon il court et marque 1/2/4. Coups : usoara, medie, puternica, aproape, mijloc, departe, arunca.
+oina	it	Oina	Oina stilizzata: 6 riprese da 3 eliminazioni; il battitore sceglie il colpo, il difensore la posizione, poi si lancia; la palla presa nella zona scelta elimina il battitore, altrimenti questi corre e segna 1/2/4. Mosse: usoara, medie, puternica, aproape, mijloc, departe, arunca.
+oina	es	Oina	Oina estilizada: 6 entradas de 3 eliminaciones; el bateador elige un golpe, el defensor una posición y después se resuelve; una bola atrapada en la zona elegida quema al bateador; si no, corre y anota 1/2/4. Jugadas: usoara, medie, puternica, aproape, mijloc, departe, arunca.
+oina	de	Oina	Stilisierte Oina: 6 Spielabschnitte mit je 3 Aus; der Schlagmann wählt den Schlag, der Verteidiger die Position, dann wird geworfen; wird der Ball in der gewählten Zone gefangen, ist der Schlagmann aus, sonst läuft er und punktet 1/2/4. Züge: usoara, medie, puternica, aproape, mijloc, departe, arunca.
+oina	hu	Oina	Stilizált oina: 6 játékrész, egyenként 3 kiesővel; az ütő kiválasztja az ütést, a védő a pozíciót, majd dobás következik; ha a labdát a választott zónában elkapják, az ütő kiesik, különben fut, és 1/2/4 pontot szerez. Lépések: usoara, medie, puternica, aproape, mijloc, departe, arunca.
+oina	pt	Oina	Oina estilizada: 6 entradas de 3 eliminações; o batedor escolhe uma pancada, o defensor uma posição e depois resolve-se; uma bola apanhada na zona escolhida queima o batedor; se não, corre e pontua 1/2/4. Jogadas: usoara, medie, puternica, aproape, mijloc, departe, arunca.
 loto_imagini	en	Picture lotto	Picture lotto with 3x3 cards from 24 pictures; draw in turn from the bag, cover the matching picture or pass; first full card calls lotto. Moves: trage, acopera, pas.
 loto_imagini	ro	Loto cu imagini (Picture lotto)	Cartonașe 3×3 cu imagini din 24; tragi pe rând din sac, acoperi imaginea de pe cartonaș sau o lași; primul cu cartonașul plin strigă loto. Mutări: trage, acopera, pas.
-loto_imagini	fr	Loto d'images	
-loto_imagini	it	Tombola con immagini	
-loto_imagini	es	Lotería de imágenes	
-loto_imagini	de	Bildlotto	
-loto_imagini	hu	Képes lottó	
-loto_imagini	pt	Loto de imagens	
+loto_imagini	fr	Loto d'images	Cartons 3×3 avec des images tirées de 24 ; on tire à tour de rôle dans le sac, on couvre l'image sur son carton ou on la laisse ; le premier à carton plein crie loto. Coups : trage, acopera, pas.
+loto_imagini	it	Tombola con immagini	Cartelle 3×3 con immagini scelte tra 24; si estrae a turno dal sacchetto, si copre l'immagine sulla cartella o la si lascia; il primo con la cartella piena grida tombola. Mosse: trage, acopera, pas.
+loto_imagini	es	Lotería de imágenes	Lotería de imágenes con cartones de 3×3 sobre 24 dibujos; se saca del saco por turnos, se tapa el dibujo correspondiente o se pasa; el primer cartón completo canta lotería. Jugadas: trage, acopera, pas.
+loto_imagini	de	Bildlotto	3×3-Karten mit Bildern aus 24; reihum ziehst du aus dem Sack und deckst das Bild auf deiner Karte ab oder lässt es; wer zuerst die volle Karte hat, ruft Lotto. Züge: trage, acopera, pas.
+loto_imagini	hu	Képes lottó	3×3-as kártyák 24 képből; felváltva húzol a zsákból, és letakarod a képet a kártyádon, vagy kihagyod; aki elsőként tölti ki a kártyáját, kiáltja: lottó. Lépések: trage, acopera, pas.
+loto_imagini	pt	Loto de imagens	Loto de imagens com cartões de 3×3 sobre 24 desenhos; tira-se do saco à vez, tapa-se o desenho correspondente ou passa-se; o primeiro cartão completo canta loto. Jogadas: trage, acopera, pas.
 bau_cua	en	Bầu cua cá cọp	Bầu cua: three dice with deer, gourd, rooster, fish, crab, shrimp; the bettor stakes symbols, the banker rolls; 1:1 per matching die. 12 rounds with alternating roles. Moves: cerb 5, peste 10, gata, arunc.
 bau_cua	ro	Bầu cua (dovleac, crab, pește)	Bầu cua: trei zaruri cu cerb, dovleac, cocoș, pește, crab, creveți; parierul pune mize pe simboluri, bancherul aruncă; plată 1:1 per zar. 12 runde cu roluri alternante. Mutări: cerb 5, peste 10, gata, arunc.
-bau_cua	fr	Bầu cua cá cọp	
-bau_cua	it	Bầu cua cá cọp	
-bau_cua	es	Bầu cua cá cọp	
-bau_cua	de	Bầu cua cá cọp	
-bau_cua	hu	Bầu cua cá cọp	
-bau_cua	pt	Bầu cua cá cọp	
+bau_cua	fr	Bầu cua cá cọp	Bầu cua : trois dés avec cerf, citrouille, coq, poisson, crabe, crevettes ; le parieur mise sur des symboles, le banquier lance ; paiement 1:1 par dé. 12 manches avec rôles alternés. Coups : cerb 5, peste 10, gata, arunc.
+bau_cua	it	Bầu cua cá cọp	Bầu cua: tre dadi con cervo, zucca, gallo, pesce, granchio, gamberi; lo scommettitore punta sui simboli, il banco lancia; pagamento 1:1 per dado. 12 round con ruoli alternati. Mosse: cerb 5, peste 10, gata, arunc.
+bau_cua	es	Bầu cua cá cọp	Bầu cua: tres dados con ciervo, calabaza, gallo, pez, cangrejo y camarón; el apostante apuesta a símbolos y la banca tira; se paga 1:1 por cada dado que coincida. 12 rondas con papeles alternos. Jugadas: cerb 5, peste 10, gata, arunc.
+bau_cua	de	Bầu cua cá cọp	Bầu cua: drei Würfel mit Hirsch, Kürbis, Hahn, Fisch, Krabbe und Garnele; der Setzer platziert Einsätze auf Symbole, der Bankhalter würfelt; Auszahlung 1:1 pro Würfel. 12 Runden mit wechselnden Rollen. Züge: cerb 5, peste 10, gata, arunc.
+bau_cua	hu	Bầu cua cá cọp	Bầu cua: három kocka szarvassal, tökkel, kakassal, hallal, rákkal és garnélával; a fogadó tétet tesz a jelekre, a bankár dob; kifizetés kockánként 1:1. 12 forduló váltakozó szerepekkel. Lépések: cerb 5, peste 10, gata, arunc.
+bau_cua	pt	Bầu cua cá cọp	Bầu cua: três dados com veado, cabaça, galo, peixe, caranguejo e camarão; o apostador aposta em símbolos e a banca lança; paga-se 1:1 por cada dado coincidente. 12 rondas com papéis alternados. Jogadas: cerb 5, peste 10, gata, arunc.
 yacht	en	Yacht	Yacht: 12 rounds, up to 3 rolls of 5 dice, score into 12 categories (each once); yacht = five of a kind = 50. Moves: arunc, tine 3 3 5, scor casa.
 yacht	ro	Yacht	Yacht: 12 runde, până la 3 aruncări cu 5 zaruri, scrii scorul în 12 categorii (fiecare o dată); yacht = cinci egale = 50. Mutări: arunc, tine 3 3 5, scor casa.
-yacht	fr	Yacht	
-yacht	it	Yacht	
-yacht	es	Yacht	
-yacht	de	Yacht	
-yacht	hu	Yacht	
-yacht	pt	Yacht	
+yacht	fr	Yacht	Yacht : 12 manches, jusqu'à 3 lancers de 5 dés, on inscrit son score dans 12 catégories (chacune une fois) ; yacht = cinq dés identiques = 50. Coups : arunc, tine 3 3 5, scor casa.
+yacht	it	Yacht	Yacht: 12 round, fino a 3 lanci con 5 dadi, si segna il punteggio in 12 categorie (ognuna una volta); yacht = cinque dadi uguali = 50. Mosse: arunc, tine 3 3 5, scor casa.
+yacht	es	Yacht	Yacht: 12 rondas, hasta 3 tiradas de 5 dados y se anota en 12 categorías (cada una una vez); yacht = cinco iguales = 50. Jugadas: arunc, tine 3 3 5, scor casa.
+yacht	de	Yacht	Yacht: 12 Runden, bis zu 3 Würfe mit 5 Würfeln; du trägst die Punkte in eine von 12 Kategorien ein (jede einmal); Yacht = fünf Gleiche = 50. Züge: arunc, tine 3 3 5, scor casa.
+yacht	hu	Yacht	Yacht: 12 forduló, fordulónként legfeljebb 3 dobás 5 kockával; a pontszámot 12 kategória egyikébe írod (mindegyikbe egyszer); yacht = öt egyforma = 50. Lépések: arunc, tine 3 3 5, scor casa.
+yacht	pt	Yacht	Yacht: 12 rondas, até 3 lançamentos de 5 dados e pontua-se em 12 categorias (cada uma uma vez); yacht = cinco iguais = 50. Jogadas: arunc, tine 3 3 5, scor casa.
 chicago	en	Chicago (dice)	Chicago: 11 rounds with target 2…12; roll two dice summing to the target to score that many points; optionally keep a die and re-roll the other. Moves: arunc, tin 1, tin 2, gata, rearunc.
 chicago	ro	Chicago (zaruri)	Chicago: 11 runde cu ținta 2…12; aruncând două zaruri cu suma egală cu ținta iei atâtea puncte; opțional păstrezi un zar și rearunci. Mutări: arunc, tin 1, tin 2, gata, rearunc.
-chicago	fr	Chicago (dés)	
-chicago	it	Chicago (dadi)	
-chicago	es	Chicago (dados)	
-chicago	de	Chicago (Würfel)	
-chicago	hu	Chicago (kocka)	
-chicago	pt	Chicago (dados)	
+chicago	fr	Chicago (dés)	Chicago : 11 manches avec pour cible 2…12 ; en lançant deux dés dont la somme égale la cible, on marque autant de points ; en option, on garde un dé et on relance. Coups : arunc, tin 1, tin 2, gata, rearunc.
+chicago	it	Chicago (dadi)	Chicago: 11 round con bersaglio 2…12; lanciando due dadi la cui somma è uguale al bersaglio si prendono altrettanti punti; facoltativamente si tiene un dado e si rilancia. Mosse: arunc, tin 1, tin 2, gata, rearunc.
+chicago	es	Chicago (dados)	Chicago: 11 rondas con objetivo 2…12; tira dos dados cuya suma sea el objetivo para puntuar tantos puntos; opcionalmente guarda un dado y vuelve a tirar el otro. Jugadas: arunc, tin 1, tin 2, gata, rearunc.
+chicago	de	Chicago (Würfel)	Chicago: 11 Runden mit dem Ziel 2…12; würfelst du mit zwei Würfeln eine Augensumme gleich dem Ziel, erhältst du entsprechend viele Punkte; optional behältst du einen Würfel und wirfst neu. Züge: arunc, tin 1, tin 2, gata, rearunc.
+chicago	hu	Chicago (kocka)	Chicago: 11 forduló 2…12 célszámmal; ha két kockával a célszámmal egyező összeget dobsz, annyi pontot kapsz; kívánság szerint megtartasz egy kockát, és újradobsz. Lépések: arunc, tin 1, tin 2, gata, rearunc.
+chicago	pt	Chicago (dados)	Chicago: 11 rondas com objetivo 2…12; lança dois dados cuja soma seja o objetivo para pontuar esses pontos; opcionalmente guarda um dado e volta a lançar o outro. Jogadas: arunc, tin 1, tin 2, gata, rearunc.
 zara	en	Zara (game)	Zara (reconstruction): each calls a number 4-17, three dice are rolled; whoever called the sum scores that many points; 10 rounds. Moves: n13, arunc.
 zara	ro	Zara (joc)	Zara (reconstituire): fiecare strigă un număr 4–17, se aruncă 3 zaruri; cine a strigat suma ia atâtea puncte; 10 runde. Mutări: n13, arunc.
-zara	fr	Zara (jeu)	
-zara	it	Zara (gioco)	
-zara	es	Zara (juego)	
-zara	de	Zara (Würfelspiel)	
-zara	hu	Zara (kockajáték)	
-zara	pt	Zara (jogo)	
+zara	fr	Zara (jeu)	Zara (reconstitution) : chacun annonce un nombre de 4 à 17, on lance 3 dés ; celui qui a annoncé la somme marque autant de points ; 10 manches. Coups : n13, arunc.
+zara	it	Zara (gioco)	Zara (ricostruzione): ognuno annuncia un numero da 4 a 17, si lanciano 3 dadi; chi ha annunciato la somma prende altrettanti punti; 10 round. Mosse: n13, arunc.
+zara	es	Zara (juego)	Zara (reconstrucción): cada uno dice un número del 4 al 17 y se tiran tres dados; quien haya dicho la suma puntúa esa cantidad de puntos; 10 rondas. Jugadas: n13, arunc.
+zara	de	Zara (Würfelspiel)	Zara (Rekonstruktion): Jeder ruft eine Zahl von 4 bis 17, dann werden 3 Würfel geworfen; wer die Summe gerufen hat, bekommt so viele Punkte; 10 Runden. Züge: n13, arunc.
+zara	hu	Zara (kockajáték)	Zara (rekonstrukció): mindenki bemond egy 4–17 közötti számot, majd 3 kockával dobnak; aki az összeget mondta, annyi pontot kap; 10 forduló. Lépések: n13, arunc.
+zara	pt	Zara (jogo)	Zara (reconstrução): cada um diz um número de 4 a 17 e lançam-se três dados; quem tiver dito a soma pontua essa quantidade de pontos; 10 rondas. Jogadas: n13, arunc.
 daldos	en	Daldøs	Daldøs (reconstruction): boat-shaped board with 3 rows, 12 pieces, two 4-sided dice; a 1 «dals» a piece, then pieces run the circuit and remove enemy pieces. Moves: dal, h5+3.
 daldos	ro	Daldøs	Daldøs (reconstituire): tablă-barcă cu 3 rânduri, 12 piese, două zaruri cu 4 fețe; un 1 «dalează» o piesă, apoi piesele parcurg circuitul și scot piesele adverse. Mutări: dal, h5+3.
-daldos	fr	Daldøs	
-daldos	it	Daldøs	
-daldos	es	Daldøs	
-daldos	de	Daldøs	
-daldos	hu	Daldøs	
-daldos	pt	Daldøs	
+daldos	fr	Daldøs	Daldøs (reconstitution) : plateau en forme de bateau à 3 rangées, 12 pions, deux dés à 4 faces ; un 1 « dale » un pion, puis les pions parcourent le circuit et sortent les pions adverses. Coups : dal, h5+3.
+daldos	it	Daldøs	Daldøs (ricostruzione): tavola a forma di barca con 3 file, 12 pedine, due dadi a 4 facce; un 1 «mette in gioco» una pedina, poi le pedine percorrono il circuito ed eliminano quelle avversarie. Mosse: dal, h5+3.
+daldos	es	Daldøs	Daldøs (reconstrucción): tablero con forma de barco y 3 filas, 12 fichas y dos dados de 4 caras; un 1 «dals» una ficha, y después las fichas recorren el circuito y retiran fichas enemigas. Jugadas: dal, h5+3.
+daldos	de	Daldøs	Daldøs (Rekonstruktion): Bootsbrett mit 3 Reihen, 12 Steine, zwei vierseitige Würfel; eine 1 „setzt“ einen Stein ein, danach durchlaufen die Steine den Rundweg und werfen gegnerische Steine hinaus. Züge: dal, h5+3.
+daldos	hu	Daldøs	Daldøs (rekonstrukció): hajó alakú tábla 3 sorral, 12 bábu, két négyoldalú kocka; az 1-es „beteszi” a bábut, aztán a bábuk bejárják a kört, és kiütik az ellenfél bábuit. Lépések: dal, h5+3.
+daldos	pt	Daldøs	Daldøs (reconstrução): tabuleiro em forma de barco com 3 filas, 12 peças e dois dados de 4 faces; um 1 «dals» uma peça e depois as peças percorrem o circuito e retiram peças inimigas. Jogadas: dal, h5+3.

@@ -6,13 +6,13 @@ Version: 1.0.0 · Last updated: 2026-11-28
 
 ## Qué es
 
-PolyTabletop es una colección clean-room de juegos de mesa escrita en Rust: 240 juegos que se pueden jugar contra el ordenador, en la terminal o en una ventana gráfica, además del modo hot-seat en un mismo equipo y el juego en red para dos personas. Hay clásicos abstractos, juegos de cartas y de dados, variantes originales de mecánicas modernas con nombres propios, juegos cooperativos con un compañero de IA, juegos de roles ocultos en los que los robots completan la mesa, juegos de fiesta y de palabras, y motores de miniaturas y de cartas coleccionables con cartas originales. El motor y los juegos no tienen dependencias externas; solo la interfaz gráfica (`polytabletop-gui`) usa `eframe`/egui. El catálogo recoge 1200 juegos objetivo.
+PolyTabletop es una colección clean-room de juegos de mesa escrita en Rust: 1200 juegos que se pueden jugar contra el ordenador, en la terminal o en una ventana gráfica, además del modo hot-seat en un mismo equipo y el juego en red para dos personas. Hay clásicos abstractos, juegos de cartas y de dados, variantes originales de mecánicas modernas con nombres propios, juegos cooperativos con un compañero de IA, juegos de roles ocultos en los que los robots completan la mesa, juegos de fiesta y de palabras, y motores de miniaturas y de cartas coleccionables con cartas originales. El motor y los juegos no tienen dependencias externas; solo la interfaz gráfica (`polytabletop-gui`) usa `eframe`/egui. El catálogo recoge 1200 juegos objetivo.
 
 Página de presentación: <https://polytabletop.chiuta.ro>. Guía breve de instalación: [docs/INSTALL.es.md](docs/INSTALL.es.md) ([English](docs/INSTALL.en.md) · [Română](docs/INSTALL.ro.md) · [Français](docs/INSTALL.fr.md) · [Italiano](docs/INSTALL.it.md) · [Português](docs/INSTALL.pt.md) · [Deutsch](docs/INSTALL.de.md) · [Magyar](docs/INSTALL.hu.md)).
 
 ## Uso
 
-- Lista y catálogo: `polytabletop list` muestra los 240 juegos jugables con sus reglas resumidas; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` muestra el estado de las 1200 entradas del catálogo.
+- Lista y catálogo: `polytabletop list` muestra los 1200 juegos jugables con sus reglas resumidas; `polytabletop catalog [--kind implemented|traditional|branded|toolkit]` muestra el estado de las 1200 entradas del catálogo.
 - Jugar: `polytabletop play ID [--you one|two|both|none] [--seed N] [--level easy|normal|hard|expert] [--lang xx]`. `--you one` (predeterminado) te hace Jugador 1, `two` Jugador 2, `both` es el modo hot-seat con un solo teclado, y `none` deja que el ordenador juegue los dos bandos. `--seed N` hace reproducibles el reparto de cartas y los dados; `--record ARCHIVO` guarda una transcripción.
 - Durante la partida: escribe la jugada exactamente como la lista `?` (por ejemplo `e2e4`, `c3xe5`, `d6`), `?` = jugadas legales, `hint` = sugerencia de la IA, `q` = salir.
 - IA contra IA: `polytabletop arena ID [--games N] [--ms A:B[:C]] [--level easy:hard] [--threads T]`, `polytabletop bench`, `polytabletop ladder ID` (véase [docs/ARENA.md](docs/ARENA.md)).
@@ -33,7 +33,7 @@ cargo build --release
 
 ## Juegos
 
-Ya se pueden jugar 240 juegos, en la terminal y en la interfaz gráfica; el catálogo tiene 1200 entradas (`polytabletop catalog` termina con: implementadas 239, juegos tradicionales previstos 214, variantes propias previstas 475, kit genérico 272). Las 272 entradas de kit son los 84 sistemas de juego de rol (los otros 16 son aventuras jugables), atendidos por el crate genérico `polytabletop-rpg` (dados, fichas, pruebas de habilidad, generador de mazmorras, simulador de batallas, diario), más los 93 títulos de miniaturas y 95 de cartas coleccionables que aún no están en el programa, todos sin las reglas de ninguna editorial. Cada una de las doce categorías del catálogo tiene exactamente 100 entradas distintas. Categorías y número de juegos, según `polytabletop-games/src/lib.rs`:
+Ya se pueden jugar 1200 juegos, en la terminal y en la interfaz gráfica; el catálogo tiene 1200 entradas (`polytabletop catalog` termina con: implementadas 239, juegos tradicionales previstos 214, variantes propias previstas 475, kit genérico 272). Las 272 entradas de kit son los 84 sistemas de juego de rol (los otros 16 son aventuras jugables), atendidos por el crate genérico `polytabletop-rpg` (dados, fichas, pruebas de habilidad, generador de mazmorras, simulador de batallas, diario), más los 93 títulos de miniaturas y 95 de cartas coleccionables que aún no están en el programa, todos sin las reglas de ninguna editorial. Cada una de las doce categorías del catálogo tiene exactamente 100 entradas distintas. Categorías y número de juegos, según `polytabletop-games/src/lib.rs`:
 
 | Categoría | Juegos | Ejemplos (id) |
 |---|---|---|
@@ -55,7 +55,7 @@ Ya se pueden jugar 240 juegos, en la terminal y en la interfaz gráfica; el cat�
 
 ## Idiomas
 
-PolyTabletop habla 8 idiomas: English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. Las interfaces de línea de comandos y gráfica están traducidas a los 8. El idioma se elige con `--lang xx`, luego `POLYTABLETOP_LANG`, luego el `LANG` del sistema; si no, rumano. Los títulos y las reglas de los 240 juegos están traducidos a los 8 idiomas (`polytabletop-games/data/i18n/`, con recurso al texto rumano si falta una entrada); el texto dentro de los juegos (cartas, bancos de contenido, avisos) sigue en rumano. La notación de las jugadas (`e2e4`, `c3-d4`) nunca cambia. Detalles: [docs/I18N.md](docs/I18N.md).
+PolyTabletop habla 8 idiomas: English, Română, Français, Italiano, Español, Português, Deutsch, Magyar. Las interfaces de línea de comandos y gráfica están traducidas a los 8. El idioma se elige con `--lang xx`, luego `POLYTABLETOP_LANG`, luego el `LANG` del sistema; si no, rumano. Los títulos y las reglas de los 1200 juegos están traducidos a los 8 idiomas (`polytabletop-games/data/i18n/`, con recurso al texto rumano si falta una entrada); el texto dentro de los juegos (cartas, bancos de contenido, avisos) sigue en rumano. La notación de las jugadas (`e2e4`, `c3-d4`) nunca cambia. Detalles: [docs/I18N.md](docs/I18N.md).
 
 ## IA
 
