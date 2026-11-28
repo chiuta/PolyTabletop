@@ -22,6 +22,10 @@ pub trait Mini: Clone {
     /// cu șansă/informație ascunsă). Căutarea nu depinde de ceasul mașinii: rezultat determinist.
     fn depth(&self) -> u32;
     fn view(&mut self, _w: Option<Player>) {}
+    /// See `Game::ai_view`.
+    fn ai_view(&self, _viewer: Player) -> Self {
+        self.clone()
+    }
 }
 
 #[derive(Clone)]
@@ -58,6 +62,9 @@ impl<M: Mini> Game for B<M> {
     }
     fn set_viewer(&mut self, who: Option<Player>) {
         self.0.view(who);
+    }
+    fn ai_view(&self, viewer: Player) -> Self {
+        B(self.0.ai_view(viewer))
     }
 }
 

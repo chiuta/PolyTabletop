@@ -132,6 +132,12 @@ impl Mima {
         let r = self.resolved();
         (r.cost[0], r.cost[1])
     }
+    /// Same state with the secret word zeroed (used to derive seeds from public information only).
+    fn hidden_secret(&self) -> Mima {
+        let mut c = self.clone();
+        c.secret = 0;
+        c
+    }
     fn guesser(&self) -> usize {
         1 - self.setter
     }
@@ -325,6 +331,25 @@ impl Game for Mima {
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
     }
+    /// The guesser does not know the secret word: it is replaced by a candidate drawn (from the
+    /// public hints) with a seed derived only from what the guesser sees.
+    fn ai_view(&self, viewer: Player) -> Mima {
+        let mut v = self.clone();
+        let r = self.resolved();
+        if matches!(r.phase, Phase::Hint | Phase::Guess) && r.setter != viewer.idx() {
+            // the verdict of a pending guess is public once resolved; the sample must not read the secret
+            let mut base = r.clone();
+            base.pending = None;
+            let c = base.candidates();
+            if !c.is_empty() {
+                let mut rng = Rng::new(crate::p3_comun::view_seed(&base.hidden_secret(), viewer));
+                let s = c[rng.below(c.len())] as usize;
+                v = r;
+                v.secret = s;
+            }
+        }
+        v
+    }
 }
 
 #[cfg(test)]
@@ -379,5 +404,26 @@ mod a3_audit {
             1,
             crate::p3_comun::Term::Skip,
         );
+    }
+
+    #[cfg(test)]
+    mod ai_view_audit {
+        use super::*;
+
+        #[test]
+        fn ai_view_hides_the_secret_even_on_terminal_moves() {
+            crate::p3_comun::ai_view_check(
+                "mima",
+                Mima::with_seed,
+                |g, me, s| {
+                    *g = g.resolved();
+                    if g.setter == 1 - me.idx() && matches!(g.phase, Phase::Hint | Phase::Guess) {
+                        let c = g.candidates();
+                        g.secret = c[(s as usize) % c.len()] as usize;
+                    }
+                },
+                12,
+            );
+        }
     }
 }

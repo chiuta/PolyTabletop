@@ -37,19 +37,19 @@ cargo build --release
 
 | Category | Games | Examples (ids) |
 |---|---|---|
-| Cards | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
-| Abstract | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
-| Strategy | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, plus original variants of modern designs |
-| Cooperative | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
-| Party | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Dice | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
-| Classic | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
-| Family | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
-| Miniatures | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Collectible cards (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
-| Deduction | 1 | `conac` |
-| Words | 1 | `litere` |
-| **Total** | **240** | |
+| Abstract | 100 | |
+| Classic | 100 | |
+| Family | 100 | |
+| Strategy | 100 | |
+| Party | 100 | |
+| Cooperative | 100 | |
+| Cards | 100 | |
+| Role-playing | 100 | |
+| Miniatures | 100 | |
+| Collectible cards | 100 | |
+| Children | 100 | |
+| Dice | 100 | |
+| **Total** | **1200** | |
 
 475 catalog entries are planned as original variants under their own titles (for example Twister, Campionii Distracției, Turistico) and 214 as traditional games with public rules. Short rules for every game are in [docs/JOCURI.md](docs/JOCURI.md), the generated catalog in [docs/CATALOG.md](docs/CATALOG.md). In the graphical interface, 36 games have a drawn board with clickable moves (chess, draughts, reversi, four in a row, gomoku, go, morris, xiangqi, shogi, backgammon, ludo and pachisi, hex, the mancala family and more); the other games are shown as text with their legal moves as buttons.
 

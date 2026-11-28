@@ -12,6 +12,9 @@ const WIN: i32 = 1_000_000;
 
 /// Best move according to the game's preferred AI style.
 pub fn best_move<G: Game>(g: &G, seed: u64) -> Option<G::Move> {
+    // search a determinised view: the AI must not see the opponent's hidden information
+    let view = g.ai_view(g.to_move());
+    let g = &view;
     let lv = level();
     match g.ai_style() {
         AiStyle::AlphaBeta(d) => {

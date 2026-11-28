@@ -37,19 +37,19 @@ Si possono giocare subito 1200 giochi, nel terminale e nell'interfaccia grafica;
 
 | Categoria | Giochi | Esempi (id) |
 |---|---|---|
-| Carte | 70 | `septica`, `macao`, `belote`, `bridge`, `poker`, `rummy`, `tarot`, `skat`, `briscola`, `cribbage`, `hanafuda`, `pinochle`, `gin_rummy` |
-| Astratti | 50 | `chess`, `draughts`, `reversi`, `go`, `xiangqi`, `shogi`, `hex`, `gomoku`, `mancala`, `konane`, `oware`, `bao` |
-| Strategia | 24 | `insula`, `mozaic`, `arhipelag`, `apus`, `gospodaria`, `furnale`, più varianti originali di giochi moderni |
-| Cooperativi | 22 | `artificii`, `focare`, `strajile`, `cripta`, `turnul_zorilor`, `arhiva_abisala` |
-| Party | 17 | `lupii`, `consiliul`, `spionii`, `povestitor`, `impostor` |
-| Dadi | 17 | `backgammon`, `ludo`, `snakes`, `barbut`, `zarpoker`, `yut`, `sicbo`, `farkle` |
-| Classici | 17 | `domino`, `mahjong`, `battleship`, `mastermind`, `bingo`, `riichi`, `senet` |
-| Famiglia | 10 | `orasel`, `roata`, `turnul`, `zidurile`, `ashtachamma`, `crokinole` |
-| Miniature | 6 | `miniaturi`, `nave`, `patrula`, `gridiron` |
-| Carte collezionabili (TCG) | 5 | `tcg`, `tcg_evo`, `tcg_zone`, `tcg_lant`, `tcg_cerneala` |
-| Deduzione | 1 | `conac` |
-| Parole | 1 | `litere` |
-| **Totale** | **240** | |
+| Astratti | 100 | |
+| Classici | 100 | |
+| Famiglia | 100 | |
+| Strategia | 100 | |
+| Party | 100 | |
+| Cooperativi | 100 | |
+| Carte | 100 | |
+| Giochi di ruolo | 100 | |
+| Miniature | 100 | |
+| Carte collezionabili | 100 | |
+| Bambini | 100 | |
+| Dadi | 100 | |
+| **Totale** | **1200** | |
 
 475 voci del catalogo sono previste come varianti originali con titolo proprio (per esempio Twister, Campionii Distracției, Turistico) e 214 come giochi tradizionali con regole pubbliche. Le regole in breve di ogni gioco sono in [docs/JOCURI.md](docs/JOCURI.md), il catalogo generato in [docs/CATALOG.md](docs/CATALOG.md). Nell'interfaccia grafica 36 giochi hanno una scacchiera disegnata con mosse a clic (scacchi, dama, reversi, forza quattro, gomoku, go, mulino, xiangqi, shogi, backgammon, ludo e pachisi, hex, la famiglia mancala e altri); gli altri giochi compaiono come testo, con le mosse legali come pulsanti.
 

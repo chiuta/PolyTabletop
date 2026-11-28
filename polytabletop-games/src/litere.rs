@@ -544,6 +544,27 @@ impl Game for Litere {
     fn set_viewer(&mut self, who: Option<Player>) {
         self.viewer = who;
     }
+
+    /// The opponent's rack and the bag are unseen: they are pooled and re-dealt at random (same sizes), the
+    /// seed depending only on what `viewer` sees; the private RNG (exchange shuffles) is replaced too.
+    fn ai_view(&self, viewer: Player) -> Litere {
+        let mut v = self.clone();
+        let h = 1 - viewer.idx();
+        let mut rng = Rng::new(crate::p3_comun::view_seed(self, viewer));
+        let n = v.racks[h].len();
+        let mut pool: Vec<u8> = v.racks[h].clone();
+        pool.extend(v.bag.iter().copied());
+        pool.sort_unstable();
+        for i in (1..pool.len()).rev() {
+            let j = rng.below(i + 1);
+            pool.swap(i, j);
+        }
+        v.racks[h] = pool.drain(..n).collect();
+        v.bag = pool;
+        v.fresh[h] = 0;
+        v.rng = Rng::new(rng.next_u64());
+        v
+    }
     type Move = Move;
 
     fn to_move(&self) -> Player {
@@ -1094,5 +1115,24 @@ mod a3_audit {
             },
             2,
         );
+    }
+
+    #[cfg(test)]
+    mod ai_view_audit {
+        use super::*;
+
+        #[test]
+        fn ai_view_hides_the_opponent_rack_and_bag_even_when_going_out() {
+            crate::p3_comun::ai_view_check(
+                "litere",
+                Litere::with_seed,
+                |g, me, s| {
+                    let h = 1 - me.idx();
+                    crate::p3_comun::mix_unseen(&mut g.racks[h], &mut g.bag, 0, s);
+                    g.rng = Rng::new(s ^ 0x77);
+                },
+                4,
+            );
+        }
     }
 }
